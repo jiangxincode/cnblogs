@@ -3,6 +3,7 @@
 * Eclipse的项目地址：http://www.eclipse.org/
 * Eclipse MarketPlace地址：http://marketplace.eclipse.org/
 * 各个版本的下载地址：http://www.eclipse.org/downloads/
+* 帮助地址：http://help.eclipse.org/
 
 
 # Eclipse CDT
@@ -158,7 +159,9 @@
 # Maven and M2Eclipse
 
 * Maven项目地址：http://maven.apache.org/
-* POM参考：http://maven.apache.org/pom.html
+* POM Reference: http://maven.apache.org/pom.html
+* Settings Reference: http://maven.apache.org/settings.html
+* Core Plug-ins List: http://maven.apache.org/plugins/index.html
 * M2Eclipse项目地址：http://www.eclipse.org/m2e/
 * 安装说明（Eclipse EE中自带）：http://www.eclipse.org/m2e/m2e-downloads.html
 * 如何用Maven创建web项目（具体步骤）：http://blog.csdn.net/chuyuqing/article/details/28879477
