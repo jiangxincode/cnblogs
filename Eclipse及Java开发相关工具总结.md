@@ -144,15 +144,6 @@
 * OGNL：http://commons.apache.org/proper/commons-ognl/
 
 
-# Subclipse
-
-    Subclipse is an Eclipse Team Provider plug-in providing support for Subversion within the Eclipse IDE.
-
-* 项目地址：http://subclipse.tigris.org/
-* 如何结合使用 Subversion 和 Eclipse：http://www.ibm.com/developerworks/cn/opensource/os-ecl-subversion/
-* Eclipse + SVN + Google code搭建代码仓库：http://convolute.iteye.com/blog/564247
-
-
 # TeXlipse
 
 * 项目地址：http://texlipse.sourceforge.net/
@@ -170,6 +161,7 @@
 * POM Reference: http://maven.apache.org/pom.html
 * Settings Reference: http://maven.apache.org/settings.html
 * Core Plug-ins List: http://maven.apache.org/plugins/index.html
+* Maven Ant Tasks: http://maven.apache.org/ant-tasks/
 * M2Eclipse项目地址：http://www.eclipse.org/m2e/
 * 安装说明（Eclipse EE中自带）：http://www.eclipse.org/m2e/m2e-downloads.html
 * 如何用Maven创建web项目（具体步骤）：http://blog.csdn.net/chuyuqing/article/details/28879477
@@ -368,6 +360,19 @@ Additionally it includes CPD, the copy-paste-detector. CPD finds duplicated code
 * 官网：http://hibernate.org/
 
 
+# Json-lib
+
+* 官网：https://sourceforge.net/projects/json-lib/
+
+
+# Jackson
+
+* 下载：http://wiki.fasterxml.com/JacksonDownload
+* fasterxml: http://fasterxml.com/
+* javadoc: http://wiki.fasterxml.com/JacksonJavaDocs
+* Jackson 框架，轻易转换JSON: http://www.cnblogs.com/hoojo/archive/2011/04/22/2024628.html
+
+
 # Eclipse插件开发
 
 * Eclipse Plug-in & OSGI：http://www.blogjava.net/zhuxing/category/33273.html
@@ -380,3 +385,4 @@ Additionally it includes CPD, the copy-paste-detector. CPD finds duplicated code
 * Linux下安装最新的Eclipse：http://www.cnblogs.com/jiangxinnju/p/4780268.html
 * C++ unit test start guide, how to set up Google Test (gtest) in Eclipse?：http://www.codeproject.com/Articles/811934/Cplusplus-unit-test-start-guide-how-to-set-up-Goog
 * eclipse调试的方法和技巧：http://www.cnblogs.com/ycxyyzw/archive/2013/03/27/2983905.html
+* Javadoc转换chm帮助文档的四种方法总结: http://lishunli.iteye.com/blog/1051688
