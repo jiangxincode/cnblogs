@@ -111,6 +111,7 @@
     The Simple Logging Facade for Java (SLF4J) serves as a simple facade or abstraction for various logging frameworks (e.g. java.util.logging, logback, log4j) allowing the end user to plug in the desired logging framework at deployment time.
 
 * 官方网址：http://www.slf4j.org/
+* 为什么要使用SLF4J而不是Log4J: http://www.importnew.com/7450.html
 
 
 # Log4j
@@ -126,6 +127,9 @@
     Logback is intended as a successor to the popular log4j project, picking up where log4j leaves off.
 
 * 官方网址：http://logback.qos.ch/
+* Java程序员修炼之道 之 Logging(1/3) - Logback 配置:http://www.blogjava.net/justfly/archive/2014/08/10/416768.html
+* Java程序员修炼之道 之 Logging(2/3) - 怎么写Log:http://www.blogjava.net/justfly/archive/2014/08/13/416925.html
+* Java程序员修炼之道 之 Logging(3/3) - 怎么分析Log:http://www.blogjava.net/justfly/archive/2014/09/17/418034.html
 
 
 # guava
@@ -338,6 +342,13 @@ Additionally it includes CPD, the copy-paste-detector. CPD finds duplicated code
     The JBoss AS community project has been renamed to the WildFly community project, which has a new home at wildfly.org. The JBoss name now only applies to the commercially supported product, called JBoss EAP, which is derived from the WildFly community project and is available at http://www.jboss.org/products/eap/overview/.
 
 
+# GlassFish
+
+    GlassFish 是一款强健的商业兼容应用服务器，达到产品级质量，可免费用于开发、部署和重新分发。
+
+* 官网：https://glassfish.java.net/
+
+
 # Virgo
 
     Virgo from EclipseRT is a completely module-based Java application server that is designed to run enterprise Java applications and Spring-powered applications with a high degree of flexibility and reliability. It offers a simple yet comprehensive platform to develop, deploy, and service enterprise Java applications.
@@ -345,19 +356,41 @@ Additionally it includes CPD, the copy-paste-detector. CPD finds duplicated code
 * 官网：http://www.eclipse.org/virgo/
 
 
+# Jetty
+
+    Jetty provides a Web server and javax.servlet container, plus support for SPDY, WebSocket, OSGi, JMX, JNDI, JAAS and many other integrations. These components are open source and available for commercial use and distribution.
+
+* 官网：http://www.eclipse.org/jetty/
+
+
 # SSH相关
 
 ## Struts
 
 * 官网：http://struts.apache.org/
+* 源码：
+    * deprecated: http://svn.apache.org/repos/asf/struts/
+    * now: https://github.com/apache/struts/blob/master/src/site/site.xml:w
+    
 
 ## Spring
 
 * 官网：http://spring.io/
+* 文档：http://docs.spring.io/spring/docs/current/spring-framework-reference/htmlsingle/
+* 源码：
+    * Spring 3.0(deprecated) https://src.springframework.org/svn/spring-framework/
+    * Spring 2.5及以下(deprecated) https://src.springframework.org/svn/spring-maintenance/
+    * Spring Security(deprecated) https://src.springframework.org/svn/spring-security/:w
+    * spring-framework https://github.com/spring-projects/spring-framework/
+
 
 ## Hibernate
 
 * 官网：http://hibernate.org/
+* 文档：http://hibernate.org/orm/documentation
+* 源码：
+    * 匿名可访问地址 http://anonsvn.jboss.org/repos/hibernate
+    * 开发者访问地址 http://svn.jboss.org/repos/hibernate
 
 
 # Json-lib
@@ -373,6 +406,23 @@ Additionally it includes CPD, the copy-paste-detector. CPD finds duplicated code
 * Jackson 框架，轻易转换JSON: http://www.cnblogs.com/hoojo/archive/2011/04/22/2024628.html
 
 
+# JDOM
+
+* 官网：http://www.jdom.org/
+* Javadoc: http://www.jdom.org/downloads/docs.html
+
+
+# Dom4j
+
+* 官网：http://dom4j.github.io/
+
+
+# Restlet
+
+* 官网：http://restlet.com/
+
+
+
 # Eclipse插件开发
 
 * Eclipse Plug-in & OSGI：http://www.blogjava.net/zhuxing/category/33273.html
@@ -385,4 +435,5 @@ Additionally it includes CPD, the copy-paste-detector. CPD finds duplicated code
 * Linux下安装最新的Eclipse：http://www.cnblogs.com/jiangxinnju/p/4780268.html
 * C++ unit test start guide, how to set up Google Test (gtest) in Eclipse?：http://www.codeproject.com/Articles/811934/Cplusplus-unit-test-start-guide-how-to-set-up-Goog
 * eclipse调试的方法和技巧：http://www.cnblogs.com/ycxyyzw/archive/2013/03/27/2983905.html
+* eclipse远程调试Tomcat方法:http://blog.csdn.net/afgasdg/article/details/9236877
 * Javadoc转换chm帮助文档的四种方法总结: http://lishunli.iteye.com/blog/1051688
