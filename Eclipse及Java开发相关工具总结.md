@@ -91,6 +91,17 @@
 * JUnit4 详解：http://www.cnblogs.com/eggbucket/archive/2012/02/02/2335697.html
 
 
+# DbUnit
+
+* 官网：http://dbunit.sourceforge.net/
+
+
+# JMockit
+
+* 官网：http://jmockit.org/
+* 各种mock工具的比较：http://jmockit.org/MockingToolkitComparisonMatrix.html
+
+
 # TestNG
 
     TestNG is a testing framework inspired from JUnit and NUnit but introducing some new functionalities that make it more powerful and easier to use.
@@ -142,9 +153,11 @@
     Apache Commons is an Apache project focused on all aspects of reusable Java components.
 
 * 官网：http://commons.apache.org/
+* BeanUtils: http://commons.apache.org/proper/commons-beanutils/
 * IO：http://commons.apache.org/proper/commons-io/
 * Lang：http://commons.apache.org/proper/commons-lang/
 * Logging: http://commons.apache.org/proper/commons-logging/
+* Commons Math: http://commons.apache.org/proper/commons-math/
 * OGNL：http://commons.apache.org/proper/commons-ognl/
 
 
@@ -231,6 +244,7 @@
 * FindBugs Bug Descriptions：http://findbugs.sourceforge.net/bugDescriptions.html
 * 浅淡静态代码分析工具：http://www.cnblogs.com/hyddd/archive/2008/12/16/1356310.html
 * 七款代码味道识别工具【简介】：http://blog.csdn.net/lovelion/article/details/18467149
+* mvn: http://mvnrepository.com/artifact/com.google.code.findbugs
 
 
 # PMD
@@ -322,6 +336,11 @@
 * 使用eclipse连接hadoop失败情况：http://blog.csdn.net/yunlong34574/article/details/21331927
 
 
+# ZooKeeper
+
+* 官网：http://zookeeper.apache.org/
+
+
 # GProf
 
 * Linux Tools Project/GProf/User Guide：http://wiki.eclipse.org/Linux_Tools_Project/GProf/User_Guide
@@ -405,6 +424,11 @@
 * Jackson 框架，轻易转换JSON: http://www.cnblogs.com/hoojo/archive/2011/04/22/2024628.html
 
 
+# fastjson
+
+* mvn: http://mvnrepository.com/artifact/com.alibaba/fastjson
+
+
 # JDOM
 
 * 官网：http://www.jdom.org/
@@ -416,10 +440,33 @@
 * 官网：http://dom4j.github.io/
 
 
+# httpclient
+
+* 官网：http://hc.apache.org/
+
+
 # Restlet
 
 * 官网：http://restlet.com/
 
+
+# JMX
+
+* JMX Technology Home Page: http://www.oracle.com/technetwork/java/javase/tech/javamanagement-140525.html
+* JMX的Hello World: http://www.blogjava.net/hengheng123456789/articles/65690.html
+* JMX(TM) Remote API RI, Optional Packages: http://mvnrepository.com/artifact/org.jvnet.opendmk/jmxremote_optional
+
+
+# jsch
+
+* 官网：http://www.jcraft.com/jsch/
+
+
+# antlr
+
+    ANTLR (ANother Tool for Language Recognition) is a powerful parser generator for reading, processing, executing, or translating structured text or binary files. It's widely used to build languages, tools, and frameworks. From a grammar, ANTLR generates a parser that can build and walk parse trees.
+
+* 官网：http://www.antlr.org/
 
 
 # Eclipse插件开发
