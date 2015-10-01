@@ -33,11 +33,6 @@
 * 安装说明：http://www.eclipse.org/photran/download.php
 
 
-# ScalaIDE
-
-* 项目地址：http://scala-ide.org/
-
-
 # Cusp
 
 * 使用 Cusp Eclipse 插件开发 Lisp 应用程序：https://www.ibm.com/developerworks/cn/opensource/os-eclipse-lispcusp/
