@@ -88,6 +88,7 @@
     JUnit is a simple framework to write repeatable tests. It is an instance of the xUnit architecture for unit testing frameworks.
 
 * 项目地址：http://junit.org/
+* Junit4 JavaDoc: http://junit.org/javadoc/latest/index.html
 * JUnit4 详解：http://www.cnblogs.com/eggbucket/archive/2012/02/02/2335697.html
 
 
