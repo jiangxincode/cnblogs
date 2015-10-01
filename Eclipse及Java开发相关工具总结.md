@@ -478,4 +478,6 @@
 * C++ unit test start guide, how to set up Google Test (gtest) in Eclipse?：http://www.codeproject.com/Articles/811934/Cplusplus-unit-test-start-guide-how-to-set-up-Goog
 * eclipse调试的方法和技巧：http://www.cnblogs.com/ycxyyzw/archive/2013/03/27/2983905.html
 * eclipse远程调试Tomcat方法:http://blog.csdn.net/afgasdg/article/details/9236877
+* src源代码生成html格式文档：http://www.cnblogs.com/shenliang123/archive/2012/04/23/2466483.html
+* 自己动手制作chm格式开源文档：http://www.cnblogs.com/shenliang123/archive/2012/04/23/2466441.html
 * Javadoc转换chm帮助文档的四种方法总结: http://lishunli.iteye.com/blog/1051688
