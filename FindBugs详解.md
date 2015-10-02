@@ -8,10 +8,12 @@
 
 * 在工程添加注解依赖的jar包：使用Find bugs注解需要用到两个jar包，annotations.jar和jsr305.jar。在eclipse中装完Find bugs插件后，在eclipse目录下可以找到这两个jar包文件。
 * 添加注解：在疑问代码所在的类或者方法前面添加注解。其中，value的值就是前面提到的find bugs告警信息中的模式，因为value是一个数组，所以可以同时添加多个模式。justification的值是一句描述信息，你可以理解为是这条注解的注释，内容可以是任意的。
-···
+
+···java
 	@edu.umd.cs.findbugs.annotations
 	SuppressWarnings(value={"NM_CONFUSING"}, justification="remove findbugs")
 ···
+
 
 * 重新运行Find bugs进行检查：添加完注解后，接下来应该重新运行find bugs工具进行检查，以确定误报已经被消除。
 
@@ -20,7 +22,8 @@
 A mutable static field could be changed by malicious code or by accident. The field could be made package protected to avoid this vulnerability.
 
 我这样定义了多个数组，均使用了 public final static 修饰符：
-···
+
+···java
 	public final static double[][][] Y_MIN_SCOPE=
 	{
 		{{-120, -25}},
@@ -41,6 +44,7 @@ A mutable static field could be changed by malicious code or by accident. The fi
 ···
 
 findbugs给的修改提示是：
+
 ···
 	In LTE3DConstant 
 	Field LTE3DConstant.Y_MIN_SCOPE 
@@ -54,7 +58,7 @@ findbugs给的修改提示是：
 
 修改成这样就不报错了。
 
-···
+···java
 	protected final double[][][] Y_MIN_SCOPE=
 	{
 		{{-120, -25}},
