@@ -458,6 +458,13 @@
 * 官网：http://www.jcraft.com/jsch/
 
 
+# OpenLDAP
+
+    OpenLDAP Software is an open source implementation of the Lightweight Directory Access Protocol.
+
+* 官网：http://www.openldap.org/
+
+
 # antlr
 
     ANTLR (ANother Tool for Language Recognition) is a powerful parser generator for reading, processing, executing, or translating structured text or binary files. It's widely used to build languages, tools, and frameworks. From a grammar, ANTLR generates a parser that can build and walk parse trees.
