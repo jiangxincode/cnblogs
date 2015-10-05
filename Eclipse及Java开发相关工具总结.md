@@ -385,6 +385,11 @@
 * 源码：
     * deprecated: http://svn.apache.org/repos/asf/struts/
     * now: https://github.com/apache/struts/blob/master/src/site/site.xml:w
+* 教程：
+    * Struts 2.0系列: http://www.blogjava.net/max/category/16130.html?Show=All
+    * Struts2中的零配置与CoC（Convention over Configration）: http://andlu.iteye.com/blog/112675
+    * struts2采用convention-plugin实现零配置: http://javeye.iteye.com/blog/358744
+    * 改写Restful2ActionMapper让Struts2支持REST风格的URL映射: http://andlu.iteye.com/blog/110934
     
 
 ## Spring
