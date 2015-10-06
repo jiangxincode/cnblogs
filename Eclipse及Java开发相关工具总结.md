@@ -412,6 +412,17 @@
     * 开发者访问地址 http://svn.jboss.org/repos/hibernate
 
 
+## iBATIS/MyBatis
+
+* iBATIS官网：http://ibatis.apache.org/
+* MyBatis官网：http://mybatis.github.io/
+
+
+## TopLink
+
+* 官网：http://www.oracle.com/technetwork/cn/middleware/toplink/overview/index-097741-zhs.html
+
+
 # Json-lib
 
 * 官网：https://sourceforge.net/projects/json-lib/
