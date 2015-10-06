@@ -1,8 +1,41 @@
-自从接触编程以来，已经接触了无数的IDE，但是Eclipse这个IDE一直陪伴着我，现在将一些经常使用的插件记录一下。（我一般是下载Eclipse IDE for Java EE Developers，然后根据需要再安装额外的插件。）另外顺便把一些Java项目开发常用的工具也总结一下，这些工具通常都提供Eclipse的对应插件。
-        
+# Java Commons
+
+* The Java™ Tutorials: http://docs.oracle.com/javase/tutorial/index.html
+* Java Platform, Enterprise Edition (Java EE): http://docs.oracle.com/javaee/
+* Overriding and Hiding Methods: http://docs.oracle.com/javase/tutorial/java/IandI/override.html
+* The Java® Language Specification: https://docs.oracle.com/javase/specs/jls/se7/html/index.html
+* The Java® Virtual Machine Specification: https://docs.oracle.com/javase/specs/jvms/se7/html/
+* Setting Project Facets: http://docs.oracle.com/cd/E13224_01/wlw/docs103/guide/ideuserguide/projects/conFacets.html
+
+* Java开源大全: http://www.open-open.com/
+* importnew: http://www.importnew.com/
+* jarFinder: http://www.jarfinder.com/
+* java sampleexamples: http://java.sampleexamples.com/
+* java examples: http://www.javased.com/
+* java papers: http://javapapers.com/
+
+
+# Java tutorial
+
+* Java Versions, Features and History: http://javapapers.com/core-java/java-features-and-history/
+* Introduction to Java Programming, Eighth Edition: http://www.cs.armstrong.edu/liang/intro8e/
+* Java 理论与实践: http://www.ibm.com/developerworks/cn/java/j-jtp/
+* Java多线程：http://blog.csdn.net/column/details/multithreading.html
+* 深入理解Java：SimpleDateFormat安全的时间格式化: http://www.cnblogs.com/peida/archive/2013/05/31/3070790.html
+* 深入理解Java：注解（Annotation）基本概念: http://www.cnblogs.com/peida/archive/2013/04/23/3036035.html
+* Java annotation 自定义注释@interface的用法: http://www.blogjava.net/hao446tian/archive/2011/10/25/361960.html
+* JAVA正则表达式高级用法(分组与捕获): http://www.cnblogs.com/lovingprince/archive/2008/08/06/2166368.html
+* Flatten your objects Discover the secrets of the Java Serialization API: http://www.javaworld.com/article/2076120/java-se/flatten-your-objects.html
+* The Java serialization algorithm revealed: http://www.javaworld.com/article/2072752/the-java-serialization-algorithm-revealed.html
+* Java Performance Tuning Guide: http://java-performance.info/
+* 构建一个文本可视化和分析应用程序: http://www.ibm.com/developerworks/cn/opensource/os-txtviz/
+
+
+# Eclipse        
+
 * Eclipse的项目地址：http://www.eclipse.org/
 * Eclipse MarketPlace地址：http://marketplace.eclipse.org/
-* 各个版本的下载地址：http://www.eclipse.org/downloads/
+* 各个版本的下载地址(我一般下载JavaEE)：http://www.eclipse.org/downloads/
 * 帮助地址：http://help.eclipse.org/
 
 
@@ -328,8 +361,14 @@
 
 # Hadoop
 
+* http://hadoop.apache.org/
 * Eclipse下搭建Hadoop2.4.0开发环境：http://www.cnblogs.com/kinglau/p/3802705.html
 * 使用eclipse连接hadoop失败情况：http://blog.csdn.net/yunlong34574/article/details/21331927
+
+
+# nutch
+
+* http://nutch.apache.org/
 
 
 # ZooKeeper
@@ -452,6 +491,11 @@
 * 官网：http://dom4j.github.io/
 
 
+# JACOB
+
+* 官网：http://danadler.com/jacob/
+
+
 # httpclient
 
 * 官网：http://hc.apache.org/
@@ -493,6 +537,18 @@
     ANTLR (ANother Tool for Language Recognition) is a powerful parser generator for reading, processing, executing, or translating structured text or binary files. It's widely used to build languages, tools, and frameworks. From a grammar, ANTLR generates a parser that can build and walk parse trees.
 
 * 官网：http://www.antlr.org/
+
+
+# 分词
+
+* ik-analyze(java开源中文分词器): https://code.google.com/p/ik-analyzer/
+
+
+# Lucene
+
+* http://lucene.apache.org/
+* Solr: http://lucene.apache.org/solr/
+* Lucene原理与代码分析: http://www.cnblogs.com/forfuture1978/category/300665.html
 
 
 # Eclipse插件开发
