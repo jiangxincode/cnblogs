@@ -49,22 +49,35 @@
 为了一个粘贴搞出这么多事来，确实是麻烦。不过还有一个更加简单的方法，用命令开始粘贴模式，即： 
 
     :set paste
+
 粘贴
+
 :set nopaste 或者:set paste!
+
 由于粘贴模式和上面的smartindent、autoindent模式是互斥的，而smartindent是不可少的，所以粘贴完后使用上面的两条命令之一来关闭粘贴模式。
+
 另外还可以通过绑定自定义快捷键的方式来快速切换，例如将下属配置加入到.vimrc中
+
 方式1：
+
 set pastetoggle=<F4>
+
 方式2：
+
 :map <F8> :set paste
+
 :map <F9> :set nopaste
+
 注意：方式1在阅读和编辑模式下都可以使用，对粘贴模式开启和关闭进行切换；方式2是在阅读模式下使用，按下相应的快捷键就相当于执行后面定义的命令。
 
 ## 解决在insert模式下面backspace键无法删除的问题
 
 vim 在插入模式下<BS>有几种工作方式，默认是设置成vi兼容，这样就会出现无法删除此次插入前文字的情况。执行以下命令即可：
+
 :set backspace=indent,eol,start
+
 或者：
+
 set nocompatible
 
 ## vim 替换
@@ -79,68 +92,98 @@ set nocompatible
 ## Vim局部排序
 
 如果我们想以第4列数据进行排序，可以在vim中如此做：
+
 1,12!sort -r -n -k4.1,5
--r 降序排序
--n 按数字大小排序
--k,表示根据那个字段排序，4.1,表示第4列第一个字符开始 ，5表示到第5个字段为结束
--t 后面跟分隔符，缺省是空格
+
+* -r 降序排序
+* -n 按数字大小排序
+* -k,表示根据那个字段排序，4.1,表示第4列第一个字符开始 ，5表示到第5个字段为结束
+* -t 后面跟分隔符，缺省是空格
 
 在VIM里面, 如果你要把从当前行以下20行按字母顺序排序
+
 .,+20!sort
 
 ## 同时打开、显示多个文件
 
-打开多个文件：
-1.vim还没有启动的时候：
-在终端里输入 
-vim file1 file2 ... filen便可以打开所有想要打开的文件
-2.vim已经启动
-输入
-:open file
-可以再打开一个文件，并且此时vim里会显示出file文件的内容。
+vim还没有启动的时候：在终端里输入 
+
+    vim file1 file2 ... filen
+
+vim已经启动，输入
+
+    :open file
 
 同时显示多个文件：
+
 :split
+
 :vsplit
 
 在文件之间切换：
+
 1.文件间切换
+
 Ctrl+6—下一个文件
+
 :bn—下一个文件
+
 :bp—上一个文件
+
 对于用(v)split在多个窗格中打开的文件，这种方法只会在当前窗格中切换不同的文件。
+
 2.在窗格间切换的方法
-Ctrl+w+方向键——切换到前／下／上／后一个窗格
-Ctrl+w+h/j/k/l ——同上
-Ctrl+ww——依次向后切换到下一个窗格中
+
+* Ctrl+w+方向键——切换到前／下／上／后一个窗格
+* Ctrl+w+h/j/k/l ——同上
+* Ctrl+ww——依次向后切换到下一个窗格中
 
 ## 用vim修改文件编码为utf-8 
 
 网页常常会出现乱码的情况，一般都是编码设置不对造成的。例如一个网页源文件的编码不是utf8的，但声明为utf8<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />网页就会出现乱码。可以用vim修改源文件编码为utf8，
+
 命令是 :set fileencoding=utf-8
+
 如果用vim打开文件时里面有乱码，可能用上面的命令修改文件后无法保存。可以用其他软件打开文件，然后把内容拷贝到vim里再保存就行了。
 
 ## gvim编码配置 
 
 Vim / gVim 在中文 Windows 下的字符编码有两个问题：
+
 默认没有编码检测功能
+
 如果一个文件本身采用的字符集比 GBK 大（如 UTF-8、UTF-16、GB18030），那么其中无法在 GBK 中对应的字符都会出现乱码，保存时会丢失。即使编辑文件时正确检测出文件格式也无济于事。
+
 第一个问题的解决办法是在 ~/.vimrc 中加入以下配置：
+
 set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
+
 第二个问题的解决办法是强制要求 Vim 的内部编码采用某种 UTF 编码。比如 UTF-8：
+
 set encoding=utf-8
+
 但是，把 Vim 的内部编码设为 UTF-8 会带来以下新问题
+
 使用非 GUI 界面的 vim 时会乱码 
+
 提示信息（比如E492: 不是编辑器的命令: foo）会乱码 
+
 要解决非 GUI 界面的 vim 的乱码问题，需要设置终端编码为系统默认编码：
+
 set termencoding=cp936
+
 而要让提示信息不乱码则要需要使用 UTF-8 版本的提示信息：
+
 language messages zh_CN.UTF-8
+
 综上所述，在中文 Windows 下正确配置字符编码，需要把以下内容加入你的 ~/.vimrc 中
-set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
-set encoding=utf-8
-set termencoding=cp936
-language messages zh_CN.UTF-8
+
+```
+    set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
+    set encoding=utf-8
+    set termencoding=cp936
+    language messages zh_CN.UTF-8
+```
 
 ## What is the <leader> in a .vimrc file?
 
@@ -149,53 +192,79 @@ language messages zh_CN.UTF-8
 ## ctags的安装
 
 ctags工具是用来遍历源代码文件生成tags文件，这些tags文件能被编辑器或其它工具用来快速查找定位源代码中的符号（tag/symbol），如变量名，函数名等。比如，tags文件就是Taglist和OmniCppComplete工作的基础。
+
 sudo apt-get install ctags
+
 在程序的根目录下运行ctags -R，生成tags文件，然后在编辑程序时按Ctrl+]就会跳转到当前光标所在东西的定义处。若有多个tag，执行:ts，进行选择。按Ctrl+o即可跳回。不过，当修改过代码后，需要重新生成tags。
 
 ## VIM重新载入文件   .
 
 有时候要使用VIM打开了一些文件，但是在其他地方把次文件改动了，例如使用git进行checkout等操作，需要重新载入此文件。
+
 1 重新载入当前文件：
+
 :e
+
 :e! #放弃当前修改，强制重新载入
+
 2 重新载入所有打开的文件：
+
 :bufdo e 或者 :bufdo :e!
+
 :bufdo命令表示把后面的命令应用到所有buffer中的文件。
 
 ## 大小写转换
 
 　　vim中大小写转化的命令是：gu或者gU，形象一点的解释就是小u意味着转为小写，大U意味着转为大写。接下来说明对这两个命令的限定（限定操作的行，字母，单词）等等。
+
 整篇文章大写转化为小写
+
 打开文件后，无须进入命令行模式。
+
 键入:ggguG
+
 解释一下：ggguG分作三段gg gu G
-gg=光标到文件第一个字符
-gu=把选定范围全部小写
-G=到文件结束
+
+* gg=光标到文件第一个字符
+* gu=把选定范围全部小写
+* G=到文件结束
 
 整篇文章小写转化为大写
+
 打开文件后，无须进入命令行模式。
+
 键入:gggUG
+
 解释一下：gggUG分作三段gg gU G
-gg=光标到文件第一个字符
-gU=把选定范围全部大写
-G=到文件结束
+
+*gg=光标到文件第一个字符
+*gU=把选定范围全部大写
+*G=到文件结束
 
 只转化某个单词
+
 guw 、gue、gUw、gUe
+
 这样，光标后面的单词便会进行大小写转换
+
 想转换5个单词的命令如下：
+
 gu5w、gu5e、gU5w、gU5e
 
 转换几行的大小写
+
 将光标定位到想转换的行上，键入：1gU
+
 从光标所在行往下一行都进行小写到大写的转换
+
 10gU，则进行11行小写到大写的转换
+
 以此类推，就出现其他的大小写转换命令
-gU0 ：从光标所在位置到行首，都变为大写
-gU$ ：从光标所在位置到行尾，都变为大写
-gUG ：从光标所在位置到文章最后一个字符，都变为大写
-gU1G ：从光标所在位置到文章第一个字符，都变为大写
+
+* gU0 ：从光标所在位置到行首，都变为大写
+* gU$ ：从光标所在位置到行尾，都变为大写
+* gUG ：从光标所在位置到文章最后一个字符，都变为大写
+* gU1G ：从光标所在位置到文章第一个字符，都变为大写
 
 ## vim脚本
 
