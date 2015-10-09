@@ -186,7 +186,8 @@
 * IO：http://commons.apache.org/proper/commons-io/
 * Lang：http://commons.apache.org/proper/commons-lang/
 * Logging: http://commons.apache.org/proper/commons-logging/
-* Commons Math: http://commons.apache.org/proper/commons-math/
+* Math: http://commons.apache.org/proper/commons-math/
+* Net: http://commons.apache.org/proper/commons-net/
 * OGNL：http://commons.apache.org/proper/commons-ognl/
 
 
