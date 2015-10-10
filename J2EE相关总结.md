@@ -367,6 +367,11 @@
 * 使用eclipse连接hadoop失败情况：http://blog.csdn.net/yunlong34574/article/details/21331927
 
 
+# Spark
+
+http://spark.apache.org/
+
+
 # nutch
 
 * http://nutch.apache.org/
