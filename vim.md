@@ -261,5 +261,5 @@ ctags工具是用来遍历源代码文件生成tags文件，这些tags文件能�
 
 # Emacs
 
-emacswiki: http://www.emacswiki.org/emacs/
-GNU Emacs Manuals Online: http://www.gnu.org/software/emacs/manual/
+* emacswiki: http://www.emacswiki.org/emacs/
+* GNU Emacs Manuals Online: http://www.gnu.org/software/emacs/manual/

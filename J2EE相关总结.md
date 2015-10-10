@@ -479,6 +479,8 @@ http://spark.apache.org/
 * fasterxml: http://fasterxml.com/
 * javadoc: http://wiki.fasterxml.com/JacksonJavaDocs
 * Jackson 框架，轻易转换JSON: http://www.cnblogs.com/hoojo/archive/2011/04/22/2024628.html
+* bson4json: https://github.com/michel-kraemer/bson4jackson
+* Binary JSON with bson4jackson: http://www.michel-kraemer.com/binary-json-with-bson4jackson
 
 
 # fastjson
