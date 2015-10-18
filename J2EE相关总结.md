@@ -207,6 +207,8 @@
 * Maven项目地址：http://maven.apache.org/
 * POM Reference: http://maven.apache.org/pom.html
 * Settings Reference: http://maven.apache.org/settings.html
+* Introduction to Repositories: http://maven.apache.org/guides/introduction/introduction-to-repositories.html
+* Using Mirrors for Repositories: http://maven.apache.org/guides/mini/guide-mirror-settings.html
 * Core Plug-ins List: http://maven.apache.org/plugins/index.html
 * Maven Ant Tasks: http://maven.apache.org/ant-tasks/
 * M2Eclipse项目地址：http://www.eclipse.org/m2e/
@@ -557,6 +559,11 @@ http://spark.apache.org/
 * http://lucene.apache.org/
 * Solr: http://lucene.apache.org/solr/
 * Lucene原理与代码分析: http://www.cnblogs.com/forfuture1978/category/300665.html
+
+
+# Amateras
+
+* EclipseHTMLEditor/AmasterasUML/AmaterasERD: http://amateras.osdn.jp/cgi-bin/fswiki_en/wiki.cgi
 
 
 # Eclipse插件开发
