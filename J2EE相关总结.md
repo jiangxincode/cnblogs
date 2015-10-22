@@ -183,6 +183,7 @@
 
 * 官网：http://commons.apache.org/
 * BeanUtils: http://commons.apache.org/proper/commons-beanutils/
+* DBCP: http://commons.apache.org/proper/commons-dbcp/
 * IO：http://commons.apache.org/proper/commons-io/
 * Lang：http://commons.apache.org/proper/commons-lang/
 * Logging: http://commons.apache.org/proper/commons-logging/
