@@ -435,6 +435,8 @@ JavaDoc: https://storm.apache.org/javadoc/apidocs/index.html
 
     The JBoss AS community project has been renamed to the WildFly community project, which has a new home at wildfly.org. The JBoss name now only applies to the commercially supported product, called JBoss EAP, which is derived from the WildFly community project and is available at http://www.jboss.org/products/eap/overview/.
 
+* java 利用JAX-RS快速开发RESTful 服务(以JBoss为容器)：http://www.cnblogs.com/yjmyzz/p/javaee-jax-rs-tutorial.html
+
 
 # GlassFish
 
@@ -548,6 +550,15 @@ JavaDoc: https://storm.apache.org/javadoc/apidocs/index.html
 
 * 官网：http://restlet.com/
 
+
+# Jersey
+
+    Developing RESTful Web services that seamlessly support exposing your data in a variety of representation media types and abstract away the low-level details of the client-server communication is not an easy task without a good toolkit. In order to simplify development of RESTful Web services and their clients in Java, a standard and portable JAX-RS API has been designed. Jersey RESTful Web Services framework is open source, production quality, framework for developing RESTful Web Services in Java that provides support for JAX-RS APIs and serves as a JAX-RS (JSR 311 & JSR 339) Reference Implementation.
+
+    Jersey framework is more than the JAX-RS Reference Implementation. Jersey provides it’s own API that extend the JAX-RS toolkit with additional features and utilities to further simplify RESTful service and client development. Jersey also exposes numerous extension SPIs so that developers may extend Jersey to best suit their needs.
+
+* https://jersey.java.net/
+* 使用 Jersey 和 Apache Tomcat 构建 RESTful Web 服务: http://www.ibm.com/developerworks/cn/web/wa-aj-tomcat/
 
 # JMX
 
