@@ -64,9 +64,12 @@
 
 # Eclipse根据java代码生成UML图
 
-* ModelGoon UML4Java: http://marketplace.eclipse.org/content/modelgoon-uml4java
-* Green UML: http://marketplace.eclipse.org/content/green-uml
+* Eclipse UML插件AmaterasUML的配置及使用(推荐): http://blog.csdn.net/asce1885/article/details/40744163
+* EclipseHTMLEditor/AmasterasUML/AmaterasERD: http://amateras.osdn.jp/cgi-bin/fswiki_en/wiki.cgi
+* GEF: http://www.eclipse.org/gef/
+* Green UML: http://green.sourceforge.net/index.html
 * Eclipse UML Generators: http://www.eclipse.org/umlgen
+* ModelGoon UML4Java: http://marketplace.eclipse.org/content/modelgoon-uml4java
 * agile(收费): http://www.agilej.com/
 
 # PyDev
@@ -590,10 +593,6 @@ JavaDoc: https://storm.apache.org/javadoc/apidocs/index.html
 * Solr: http://lucene.apache.org/solr/
 * Lucene原理与代码分析: http://www.cnblogs.com/forfuture1978/category/300665.html
 
-
-# Amateras
-
-* EclipseHTMLEditor/AmasterasUML/AmaterasERD: http://amateras.osdn.jp/cgi-bin/fswiki_en/wiki.cgi
 
 
 # Eclipse插件开发

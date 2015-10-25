@@ -185,6 +185,58 @@
 * 手动删除锁定文件：在命令提示符下cd 到svn项目出现问题的文件所在目录下，执行命令del lock /q/s。等待删除lock文件成功，重新更新SVN。
 
 
+## SVN版本冲突，commit时出现.mine等文件
+
+以commit后自动生成R.java.mine，R.java.r3368，R.java.r3439为例。因为发生冲突了，别人和你都从3368这个版本对r.java这个文件进行了修改，别人修改后先提交了形成3439版本，然后你做了提交操作，这时为了避免你覆盖别人的修改工作，SVN提示你发生了冲突，并自动形成R.java.mine、R.java.r3368、R.java.r3439这三个文件。其中：
+
+* R.java.mine 你自己修改后准备提交的那个版本；
+* R.java.r3368 你们的初始版本；
+* R.java.r3439 别人在你之前提交的那个版本；
+* R.java 自动合并了你的版本和别人提交的版本形成的（其中用<<<<<、======、>>>>>等符号标记出了自动合并的部分）。
+
+自动生成这些文件的目的是便于你手动合并你们两个人的修改。这时建议你查看一下这个文件的历史记录，看看3439这个版本是谁提交的，问问他修改了什么地方，然后你手动将你们两个人的修改合并到同一个文件r.java中，然后使用SVN标记“冲突已解决”，标记后多余的文件会被自动删除，然后你就可以正常提交了。
+
+
+##  SVN的钩子--限制强制写日志
+
+SVN本身并不提供这种强制写log的功能，而是通过一系列的钩子程序(我们称为hook脚本)，在提交之前(pre-commit)，提交过程中(start-commit)，提交之后(post-commit)，调用预定的钩子程序来完成一些附加的功能。本次我们要实现的是在提交到版本库之前检查用户是否已经写了注释，当然要使用pre-commit这个钩子程序。我们打开SVN的repository下的hook目录，可以发现有好几个文件，其中一个是“pre-commit.tmpl”。这个文件是一个模板文件，它告诉了我们如何实现提交前控制。打开该模板文件，我们看到如下一段说明：
+
+```shell
+    # The pre-commit hook is invoked before a Subversion txn is
+    # committed.   Subversion runs this hook by invoking a program
+    # (script, executable, binary, etc.) named 'pre-commit' (for which
+    # this file is a template), with the following ordered arguments:
+    #
+    #    [1] REPOS-PATH    (the path to this repository)                             
+    #    [2] TXN-NAME      (the name of the txn about to be committed) 
+    #
+    # The default working directory for the invocation is undefined, so
+    # the program should set one explicitly if it cares.
+    #
+    # If the hook program exits with success, the txn is committed; but
+    # if it exits with failure (non-zero), the txn is aborted, no commit
+    # takes place, and STDERR is returned to the client.    The hook
+    # program can use the 'svnlook' utility to help it examine the txn.
+```
+
+我们看到在一个提交事务执行之前，该hook脚本会被调用。然后向该脚本传递两个参数：REPOS-PATH和TXN-NAME，一个是用户要提交的URL，一个是本次事务的一个事务号。如果提交成功则返回0，否则返回其它非0结果。那么我们的钩子程序就是要在事务提交之前，拦截这些请求，然后通过svnlook命令来检查是否已经写了log。示例代码：
+
+```shell
+    REPOS="$1"
+    TXN="$2"
+    # Make sure that the log message contains some text.
+    SVNLOOK=/usr/bin/svnlook
+    LOGMSG=$($SVNLOOK log -t "$TXN" "$REPOS" | \
+       grep "[a-zA-Z0-9]" | wc -c)
+    if [ "$LOGMSG" -lt 48 ]; then
+    #-eq 等于号  -gt 大于号   -lt小于号  ，显示输入的长短为10(如果数字或者字母表示最少要写9个，如果汉字是一个根据自己的需求可以任意修改
+            echo -e "\n至少输入4个汉字" >&2
+            exit 1
+    fi
+    exit 0
+```
+
+
 # GIT
 
 ## 项目地址：
