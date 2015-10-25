@@ -29,6 +29,16 @@
 * The Java serialization algorithm revealed: http://www.javaworld.com/article/2072752/the-java-serialization-algorithm-revealed.html
 * Java Performance Tuning Guide: http://java-performance.info/
 * 构建一个文本可视化和分析应用程序: http://www.ibm.com/developerworks/cn/opensource/os-txtviz/
+* Top 10 Java Debugging Tips with Eclipse: http://javapapers.com/core-java/top-10-java-debugging-tips-with-eclipse/
+* Linux下安装最新的Eclipse：http://www.cnblogs.com/jiangxinnju/p/4780268.html
+* C++ unit test start guide, how to set up Google Test (gtest) in Eclipse?：http://www.codeproject.com/Articles/811934/Cplusplus-unit-test-start-guide-how-to-set-up-Goog
+* eclipse调试的方法和技巧：http://www.cnblogs.com/ycxyyzw/archive/2013/03/27/2983905.html
+* eclipse远程调试Tomcat方法:http://blog.csdn.net/afgasdg/article/details/9236877
+* Eclipse远程调试出现“JDWP Transport dt_socket failed to initialize”的解决方案: http://www.cnblogs.com/jiangxinnju/p/4906457.html
+* tomcat startup.sh/shutdown.sh/setclasspath.sh/catalina.sh分析：http://vekergu.blog.51cto.com/9966832/d-2
+* src源代码生成html格式文档：http://www.cnblogs.com/shenliang123/archive/2012/04/23/2466483.html
+* 自己动手制作chm格式开源文档：http://www.cnblogs.com/shenliang123/archive/2012/04/23/2466441.html
+* Javadoc转换chm帮助文档的四种方法总结: http://lishunli.iteye.com/blog/1051688
 
 
 # Eclipse        
@@ -45,6 +55,19 @@
 * 安装说明：http://www.eclipse.org/cdt/downloads.php
 * 也可以在Eclipse的MarketPlace中搜索CDT，但是需要注意搜到的CDT版本是否与Eclipse版本匹配。
 
+
+# Eclipse GUI Plugin
+
+* WindowBuilder(SWT Designer): http://www.eclipse.org/windowbuilder/
+* Jigloo SWT/Swing GUI Builder: http://marketplace.eclipse.org/content/jigloo-swtswing-gui-builder
+* Visual Editor: http://wiki.eclipse.org/Visual_Editor_Project
+
+# Eclipse根据java代码生成UML图
+
+* ModelGoon UML4Java: http://marketplace.eclipse.org/content/modelgoon-uml4java
+* Green UML: http://marketplace.eclipse.org/content/green-uml
+* Eclipse UML Generators: http://www.eclipse.org/umlgen
+* agile(收费): http://www.agilej.com/
 
 # PyDev
 
@@ -375,6 +398,12 @@
 http://spark.apache.org/
 
 
+# Storm
+
+http://storm.apache.org/index.html
+JavaDoc: https://storm.apache.org/javadoc/apidocs/index.html
+
+
 # nutch
 
 * http://nutch.apache.org/
@@ -574,12 +603,3 @@ http://spark.apache.org/
 * 插件开发总览：http://www.cnblogs.com/xing901022/p/4115610.html
 
 
-# 其它内容：
-
-* Linux下安装最新的Eclipse：http://www.cnblogs.com/jiangxinnju/p/4780268.html
-* C++ unit test start guide, how to set up Google Test (gtest) in Eclipse?：http://www.codeproject.com/Articles/811934/Cplusplus-unit-test-start-guide-how-to-set-up-Goog
-* eclipse调试的方法和技巧：http://www.cnblogs.com/ycxyyzw/archive/2013/03/27/2983905.html
-* eclipse远程调试Tomcat方法:http://blog.csdn.net/afgasdg/article/details/9236877
-* src源代码生成html格式文档：http://www.cnblogs.com/shenliang123/archive/2012/04/23/2466483.html
-* 自己动手制作chm格式开源文档：http://www.cnblogs.com/shenliang123/archive/2012/04/23/2466441.html
-* Javadoc转换chm帮助文档的四种方法总结: http://lishunli.iteye.com/blog/1051688

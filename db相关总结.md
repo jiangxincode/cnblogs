@@ -2,6 +2,12 @@
 
 * http://db-engines.com/en/ranking
 * Tech On The Net: http://www.techonthenet.com/index.php
+* SQL Pretty Printer formatter: http://www.dpriver.com/index.php
+* ApexSQL: http://www.apexsql.com/
+* Withdata: http://www.withdata.com/index.html
+
+    Founded in 2002, Withdata Software is a technology company producing high-quality software for database administrators and developers.
+    We do our best to design and develop products that remove complexity, and compress time frames. We are glad to realize that our products take usual chores upon themselves, so that our customers could have more time left for their creative work.
 
 
 # Oracle MySQL
@@ -45,6 +51,7 @@
 
     Navicat Premium 是一套数据库管理工具，让你以单一程序同時连接到 MySQL、MariaDB、SQL Server、SQLite、Oracle 和 PostgreSQL 数据库。
 
+* PL/SQL Developer(可以美化sql脚本): http://www.allroundautomations.com/registered/plsqldev.html
 * ToadWorld: http://www.toadworld.com/
 
 * Oracle 11g安装图文攻略: http://jingyan.baidu.com/article/9f7e7ec04c14c76f29155465.html
