@@ -592,6 +592,13 @@ JavaDoc: https://storm.apache.org/javadoc/apidocs/index.html
 
 * 官网：http://www.antlr.org/
 
+* ANTLR plugin for Eclipse(2 or below): https://sourceforge.net/projects/antlreclipse/
+* ANTLR IDE:
+    * https://sourceforge.net/projects/antlrv3ide/ (unsupported)
+    * https://github.com/jknack/antlr-ide (unsupported,3 or below)
+    * https://github.com/jknack/antlr4ide
+* Antlr v4入门教程和实例: http://blog.csdn.net/dc_726/article/details/45399371
+
 
 # 分词
 
