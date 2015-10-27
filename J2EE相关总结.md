@@ -605,6 +605,11 @@ JavaDoc: https://storm.apache.org/javadoc/apidocs/index.html
 * ik-analyze(java开源中文分词器): https://code.google.com/p/ik-analyzer/
 
 
+# 规则引擎
+
+* Java规则引擎与其API(JSR-94)：http://www.ibm.com/developerworks/cn/java/j-java-rules/
+
+
 # Lucene
 
 * http://lucene.apache.org/
