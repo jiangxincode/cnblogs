@@ -608,6 +608,23 @@ JavaDoc: https://storm.apache.org/javadoc/apidocs/index.html
 # 规则引擎
 
 * Java规则引擎与其API(JSR-94)：http://www.ibm.com/developerworks/cn/java/j-java-rules/
+* 开源规则流引擎实践: http://www.ibm.com/developerworks/cn/opensource/os-drools/
+* Ilog JRules: http://www-01.ibm.com/software/websphere/products/business-rule-management/
+* Drools: http://drools.org/
+* Jess: http://www.jessrules.com/
+* Java bytecode instruction listings: https://en.wikipedia.org/wiki/Java_bytecode_instruction_listings
+
+
+# jBPM
+
+* http://www.jbpm.org/
+
+
+# OpenAS2
+
+    OpenAS2 is a java-based implementation of the EDIINT AS2 standard. It is intended to be used as a server. It is extremely configurable and supports a wide variety of signing and encryption algorithms.
+
+* https://sourceforge.net/projects/openas2/
 
 
 # Lucene
