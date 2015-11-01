@@ -618,6 +618,7 @@ JavaDoc: https://storm.apache.org/javadoc/apidocs/index.html
 # jBPM
 
 * http://www.jbpm.org/
+* jbpm5.1介绍：http://www.cnblogs.com/skyme/archive/2011/11/06/2233192.html
 
 
 # OpenAS2

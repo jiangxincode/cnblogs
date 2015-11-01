@@ -86,7 +86,13 @@
 # hbase
 
 * http://hbase.apache.org/
+* HBase 官方文档(中文)：http://yankaycom-wordpress.stor.sinaapp.com/hbase/book.html?q=/wp-content/hbase/book.html
 
+
+# Hive
+
+* http://hive.apache.org/
+* https://cwiki.apache.org/confluence/display/Hive/Home
 
 # Others
 
