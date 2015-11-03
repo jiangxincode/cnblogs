@@ -39,6 +39,7 @@
 * Documents: http://docs.oracle.com/en/database/
 * Database Reference: http://docs.oracle.com/cd/B28359_01/server.111/b28320/index.htm
 * Database SQL Language Reference: http://docs.oracle.com/cd/B28359_01/server.111/b28286/index.htm
+* Listener Control Utility (LSNRCTL): http://docs.oracle.com/cd/A87861_01/NT817EE/network.817/a76933/controlu.htm#433891
 
 * Oracle SQL Developer: http://www.oracle.com/technetwork/developer-tools/sql-developer/overview/index.html
 * Instant Client Downloads for Microsoft Windows (32-bit): http://www.oracle.com/technetwork/topics/winsoft-085727.html
