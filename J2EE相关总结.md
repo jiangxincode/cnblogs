@@ -611,14 +611,20 @@ JavaDoc: https://storm.apache.org/javadoc/apidocs/index.html
 * Java规则引擎与其API(JSR-94)：http://www.ibm.com/developerworks/cn/java/j-java-rules/
 * 规则，推理机和规则引擎: http://holbrook.github.io/2012/03/20/rule_engine_1.html
 * 规则引擎中常用的模式匹配算法: http://holbrook.github.io/2012/12/05/algorithm_of_pattern_match.html
-* Drools规则描述语言快速手册: http://holbrook.github.io/2012/12/06/rule_language.html
 * Java规则引擎规范：JSR94: http://holbrook.github.io/2012/12/07/jsr94.html
 * jsr223-Java中的script引擎接口: http://www.ticmy.com/?p=267
 * 开源规则流引擎实践: http://www.ibm.com/developerworks/cn/opensource/os-drools/
 * Ilog JRules: http://www-01.ibm.com/software/websphere/products/business-rule-management/
-* Drools: http://drools.org/
 * Jess: http://www.jessrules.com/
 * Java bytecode instruction listings: https://en.wikipedia.org/wiki/Java_bytecode_instruction_listings
+
+
+# Drools:
+
+* http://drools.org/
+* http://drools.org/download/download.html
+* http://docs.jboss.org/drools/release/6.0.1.Final/drools-docs/html_single/index.html
+* Drools规则描述语言快速手册: http://holbrook.github.io/2012/12/06/rule_language.html
 
 
 # jBPM
