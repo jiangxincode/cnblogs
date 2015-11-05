@@ -22,6 +22,7 @@
 * Introduction to Java Programming, Eighth Edition: http://www.cs.armstrong.edu/liang/intro8e/
 * Java 理论与实践: http://www.ibm.com/developerworks/cn/java/j-jtp/
 * Java多线程：http://blog.csdn.net/column/details/multithreading.html
+* 敏捷开发中高质量 Java 代码开发实践: http://www.ibm.com/developerworks/cn/java/j-lo-agile/
 * 深入理解Java：SimpleDateFormat安全的时间格式化: http://www.cnblogs.com/peida/archive/2013/05/31/3070790.html
 * 深入理解Java：注解（Annotation）基本概念: http://www.cnblogs.com/peida/archive/2013/04/23/3036035.html
 * Java annotation 自定义注释@interface的用法: http://www.blogjava.net/hao446tian/archive/2011/10/25/361960.html
@@ -32,7 +33,6 @@
 * 构建一个文本可视化和分析应用程序: http://www.ibm.com/developerworks/cn/opensource/os-txtviz/
 * Top 10 Java Debugging Tips with Eclipse: http://javapapers.com/core-java/top-10-java-debugging-tips-with-eclipse/
 * Linux下安装最新的Eclipse：http://www.cnblogs.com/jiangxinnju/p/4780268.html
-* C++ unit test start guide, how to set up Google Test (gtest) in Eclipse?：http://www.codeproject.com/Articles/811934/Cplusplus-unit-test-start-guide-how-to-set-up-Goog
 * eclipse调试的方法和技巧：http://www.cnblogs.com/ycxyyzw/archive/2013/03/27/2983905.html
 * eclipse远程调试Tomcat方法:http://blog.csdn.net/afgasdg/article/details/9236877
 * Eclipse远程调试出现“JDWP Transport dt_socket failed to initialize”的解决方案: http://www.cnblogs.com/jiangxinnju/p/4906457.html
@@ -48,13 +48,6 @@
 * Eclipse MarketPlace地址：http://marketplace.eclipse.org/
 * 各个版本的下载地址(我一般下载JavaEE)：http://www.eclipse.org/downloads/
 * 帮助地址：http://help.eclipse.org/
-
-
-# Eclipse CDT
-
-* 项目地址：http://www.eclipse.org/cdt/
-* 安装说明：http://www.eclipse.org/cdt/downloads.php
-* 也可以在Eclipse的MarketPlace中搜索CDT，但是需要注意搜到的CDT版本是否与Eclipse版本匹配。
 
 
 # Eclipse GUI Plugin
