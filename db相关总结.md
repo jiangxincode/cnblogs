@@ -76,12 +76,33 @@
 * Oracle Berkeley DB：http://www.oracle.com/technetwork/database/database-technologies/berkeleydb/overview/index.html
 
 
+# nosql
+
+* NoSQL数据库笔谈: http://old.sebug.net/paper/databases/nosql/Nosql.html
+
+
 # mongodb
 
 * https://www.mongodb.org/
+* https://docs.mongodb.org/manual/
+* http://api.mongodb.org/java/
 * MonjaDB (MongoDB GUI client tool) : http://www.jumperz.net/index.php?i=2&a=0&b=9
-* MONGOVUE: http://www.mongovue.com/
-* MongoDB API Documentation for Java: http://api.mongodb.org/java/
+* mongolab: https://mongolab.com/
+* Spring Data MongoDB hello world example: http://www.mkyong.com/mongodb/spring-data-mongodb-hello-world-example/
+* MongoDB设置访问权限、设置用户: http://www.cnblogs.com/zengen/archive/2011/04/23/2025722.html
+
+
+## MONGOVUE
+
+* http://www.mongovue.com/
+
+
+## Morphia
+
+    The Java Object Document Mapper for MongoDB
+
+* http://mongodb.github.io/morphia/
+* NoSQL 之 Morphia 操作 MongoDB: http://www.cnblogs.com/hoojo/archive/2012/02/17/2355384.html
 
 
 # hbase

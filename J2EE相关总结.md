@@ -27,6 +27,7 @@
 * 深入理解Java：注解（Annotation）基本概念: http://www.cnblogs.com/peida/archive/2013/04/23/3036035.html
 * Java annotation 自定义注释@interface的用法: http://www.blogjava.net/hao446tian/archive/2011/10/25/361960.html
 * JAVA正则表达式高级用法(分组与捕获): http://www.cnblogs.com/lovingprince/archive/2008/08/06/2166368.html
+* Java RMI 入门指南: http://www.blogjava.net/zhenyu33154/articles/320245.html
 * Flatten your objects Discover the secrets of the Java Serialization API: http://www.javaworld.com/article/2076120/java-se/flatten-your-objects.html
 * The Java serialization algorithm revealed: http://www.javaworld.com/article/2072752/the-java-serialization-algorithm-revealed.html
 * Java Performance Tuning Guide: http://java-performance.info/
