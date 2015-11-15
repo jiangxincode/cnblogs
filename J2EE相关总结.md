@@ -49,6 +49,7 @@
 * Eclipse MarketPlace地址：http://marketplace.eclipse.org/
 * 各个版本的下载地址(我一般下载JavaEE)：http://www.eclipse.org/downloads/
 * 帮助地址：http://help.eclipse.org/
+* FAQ What is a Quick Fix?: http://wiki.eclipse.org/FAQ_What_is_a_Quick_Fix?
 
 
 # Eclipse GUI Plugin
@@ -290,6 +291,13 @@
 # JD(Java Decompiler)
 
 * 项目地址及安装说明：http://jd.benow.ca/
+
+
+# ProGuard
+
+    ProGuard is a free Java class file shrinker, optimizer, obfuscator, and preverifier. It detects and removes unused classes, fields, methods, and attributes. It optimizes bytecode and removes unused instructions. It renames the remaining classes, fields, and methods using short meaningless names. Finally, it preverifies the processed code for Java 6 or higher, or for Java Micro Edition.
+
+* http://proguard.sourceforge.net/
 
 
 # FindBugs
