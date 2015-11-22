@@ -53,7 +53,6 @@
 
     Navicat Premium 是一套数据库管理工具，让你以单一程序同時连接到 MySQL、MariaDB、SQL Server、SQLite、Oracle 和 PostgreSQL 数据库。
 
-* PL/SQL Developer(可以美化sql脚本): http://www.allroundautomations.com/registered/plsqldev.html
 * ToadWorld: http://www.toadworld.com/
 
 * Oracle 11g安装图文攻略: http://jingyan.baidu.com/article/9f7e7ec04c14c76f29155465.html
@@ -65,6 +64,11 @@
 * oracle客户端软件的说明：http://blog.csdn.net/haiross/article/details/17917637
 * 怎么判断oracle客户端、服务器端的位数：http://blog.csdn.net/linghe301/article/details/8471945
 
+
+## PL/SQL Developer
+
+* http://www.allroundautomations.com/registered/plsqldev.html
+* 配置：localhost:1521/orcl
 
 ## 常用命令
 
@@ -83,6 +87,11 @@
     select instance_name from v$instance; --查询实例名
     show parameter instance_name;
 
+    -- 数据库实例名对应着SID，查询SID还可以使用下面的方式：
+    -- linux下在配置oracle环境变量的情况可以使用 echo $ORACLE_SID,如果没有可以使用ps -ef |grep oracle 来查询，结果中的xxxx就是对应的SID。
+    -- oracle    2548     1  0 Aug17 ?        00:00:00 ora_pmon_xxxx 
+    -- 在windows环境下,oracle是以后台服务的方式被管理的,所以看"控制面板->管理工具->服务 里面的名称:"OracleServiceORCL",则ORCL就是sid; 
+
     select value from v$parameter where name='db_domin'; --查询数据库域名
     show parameter domain;
 
@@ -92,18 +101,12 @@
     show parameter service;
     show parameter names;
 
+
+    alter user sys identified by new_password --修改用户密码
+    alter user system account unlock --解锁用户
+
 ```
 
-注：数据库实例名对应着SID，查询SID还可以使用下面的方式：
-
-* linux下查询sid 
-
-在配置oracle环境变量的情况可以使用 echo $ORACLE_SID,如果没有可以使用ps -ef |grep oracle 来查询，结果中的xxxx就是对应的SID。
-oracle    2548     1  0 Aug17 ?        00:00:00 ora_pmon_xxxx 
-
-* windows下查询sid
-
-在windows环境下,oracle是以后台服务的方式被管理的,所以看"控制面板->管理工具->服务 里面的名称:"OracleServiceORCL",则ORCL就是sid; 
 
 
 ### 启动数据库
@@ -141,6 +144,7 @@ linux下以oracle用户登录
     sqlplus scott/tiger@orcl --非管理员用户登陆
     
 ```
+
 
 ### 设置sqlplus显示格式
 
@@ -207,13 +211,6 @@ Dbsnmp/dbsnmp              SYSDBA 或 NORMAL        复制管理员
  
 登录身份：指登录时的Role指定，oracle11g中分SYSDBA和default两种。在安装Oracle 10g的时候，提示创建数据库，在创建的同时提示你输入口令，若此时你输入了密码，在登录数据库的时候用户名sys 对应的密码就应该是你创建数据库时候输入的口令。而非默认的change_on_install.
 
-如果在安装Oracle 11g时忘了设置口令，之后登陆不上去，可以进行如下操作：
-
-```sql
-    sqlplus /nolog
-    connect /as sysdba
-    alter user sys identified by change_on_install
-```
 
 
 ## SID和service_name的区别
@@ -293,6 +290,244 @@ Oracle客户端    需要安装配置             不用安装
 那么在开发的时候到底需要启动哪些服务呢？对新手来说，要是只用Oracle自带的sql*plus的话，只要启动OracleServiceORCL即可，要是使用PL/SQL Developer等第三方工具的话，OracleOraDb11g_home1TNSListener服务也要开启。OracleDBConsoleorcl是进入基于web的EM必须开启的，其余服务很少用。
 
 注：ORCL是数据库实例名，默认的数据库是ORCL，你可以创建其他的，即OracleService+数据库名。
+
+## oracle 临时表空间和数据表空间
+
+Oracle临时表空间主要用来做查询和存放一些缓冲区数据。临时表空间消耗的主要原因是需要对查询的中间结果进行排序。重启数据库可以释放临时表空间，如果不能重启实例，而一直保持问题sql语句的执行，temp表空间会一直增长。直到耗尽硬盘空间。网上有人猜测在磁盘空间的分配上，oracle使用的是贪心算法，如果上次磁盘空间消耗达到1GB，那么临时表空间就是1GB。也就是说当前临时表空间文件的大小是历史上使用临时表空间最大的大小。临时表空间的主要作用：
+
+* 索引create或rebuild
+* Order by 或 group by
+* Distinct 操作
+* Union 或 intersect 或 minus
+* Sort-merge joins
+* analyze
+ 
+数据表空间：表空间的作用能帮助DBA用户完成以下工作:
+
+* 决定数据库实体的空间分配;
+* 设置数据库用户的空间份额;
+* 控制数据库部分数据的可用性;
+* 分布数据于不同的设备之间以改善性能;
+* 备份和恢复数据。
+
+用户创建其数据库实体时其必须于给定的表空间中具有相应的权力,所以对一个用户来说,其要操纵一个ORACLE数据库中的数据,应该:
+
+* 被授予关于一个或多个表空间中的RESOURCE特权;
+* 被指定缺省表空间;
+* 被分配指定表空间的存储空间使用份额;
+* 被指定缺省临时段表空间。
+
+表空间的维护是由ORACLE数据库系统管理员DBA通过SQL*PLUS语句实现的,其中表空间创建与修改中的文件名是不能带路径的,因此DBA必须在ORACLE/DBS目录中操作。
+
+## Oracle安装错误ora-00922（缺少或无效选项）
+
+安装Oracle 11g R2的过程中，在新建数据库实例时出现了该错误，如果选择"忽略"就会出现ora-28000错误。经网络查询验证，这是属于在前面配置管理员密码的时候，采用了数字开头的密码，Oracle貌似对此不支持，但当时不提示出错，晕倒！据说包含其他非法特殊字符也可能产生此问题。
+
+ORA-00922: 选项缺失或无效  
+
+错误原因：一般是语句的语法有问题。比如命名不对，关键字写错等等。对于非标准的命名，一般采用双引号来创建。
+
+标识符命名规则:
+
+* 必须以字母开始。
+* 长度不能超过30个单字节字符。
+* 只能包括A-Z，a-z，0-9，_，$和#。
+* 不能在相同用户下建立两个同名的对象。
+* 不能使用保留字和关键字
+
+ORA-28000: 账户锁定
+
+* 使用PL/SQL，登录名为system,数据库名称不变，选择类型的时候把Normal修改为Sysdba;
+* 选择myjob,查看users;
+* 选择system,右击点击“编辑”；
+* 修改密码，把“帐户被锁住”的勾去掉；
+* 点击“应用”再点击“关闭”；
+* 重新登录就可以通过验证了
+
+## oracle emca常用命令 
+$ emctl stop dbconsole
+$emca -r 修复完毕，dbconsole 可以正常使用了
+
+创建一个EM资料库
+emca -repos create
+
+重建一个EM资料库
+emca -repos recreate
+删除一个EM资料库
+emca -repos drop
+配置数据库的 Database Control
+emca -config dbcontrol db
+删除数据库的 Database Control配置
+emca -deconfig dbcontrol db
+重新配置db control的端口，默认端口在1158
+emca -reconfig ports
+emca -reconfig ports -dbcontrol_http_port 1160
+emca -reconfig ports -agent_port 3940
+先设置ORACLE_SID环境变量后,启动EM console服务
+emctl start dbconsole
+emctl stop dbconsole
+emctl status dbconsole
+重新配置dbconsole的步骤
+emca -repos drop 删除DBConsole
+emca -repos create 重建
+emca -config dbcontrol db 配置
+emctl start dbconsole 启动
+
+
+## linux/unix平台Oracle sqlplus 中Backspace无法删除字符
+
+Oracle sqlplus在打错字符时我们可以使用ctrl+backspace组合键实现删除功能。但是你一定要使用Backspace键删除的话，会出现^H，无法删除。这是因为linux中对tty设备的字符转换没有配置好，可通过stty命令修改终端配置来实现Backspace删除功能。具体修改办法如下：
+
+```shell
+    [oracle@www.yeserver.com ~]$ id
+    uid=800(oracle) gid=803(oinstall) groups=800(dba),801(oper),803(oinstall)
+    [oracle@www.yeserver.com ~]$ stty erase ^h
+```
+
+若要恢复Ctrl+Backspace组合键删除功能，可执行以下命令:
+
+```shell
+    [oracle@www.yeserver.com ~]$ id
+    uid=800(oracle) gid=803(oinstall) groups=800(dba),801(oper),803(oinstall)
+    [oracle@www.yeserver.com ~]$ stty erase ^?
+```
+
+同时可通过stty -a查看所有的终端设置
+
+```shell
+    [oracle@www.yeserver.com ~]$ id
+    uid=800(oracle) gid=803(oinstall) groups=800(dba),801(oper),803(oinstall)
+    [oracle@www.yeserver.com ~]$ stty -a
+    speed 38400 baud; rows 37; columns 122; line = 0;
+    intr = ^C; quit = ^\; erase = ^?; kill = ^U; eof = ^D; eol = ; eol2 = ; swtch = ; start = ^Q;
+    stop = ^S; susp = ^Z; rprnt = ^R; werase = ^W; lnext = ^V; flush = ^O; min = 1; time = 0;
+    -parenb -parodd cs8 -hupcl -cstopb cread -clocal -crtscts -cdtrdsr
+    -ignbrk -brkint -ignpar -parmrk -inpck -istrip -inlcr -igncr icrnl ixon -ixoff -iuclc -ixany -imaxbel -iutf8
+    opost -olcuc -ocrnl onlcr -onocr -onlret -ofill -ofdel nl0 cr0 tab0 bs0 vt0 ff0
+    isig icanon iexten echo echoe echok -echonl -noflsh -xcase -tostop -echoprt echoctl echoke
+```
+
+## ORACLE的CONNECT和RESOURCE角色权限
+
+最近在处理数据库的用户权限问题，之前惯性思维，觉得给用户授权RESOURCE权限之后，用户的一般权限都会有，等到发现用户有RESOURCE角色，却没有创建视图的权限之后，才发现这部分还是一知半解啊，所以此处整理了一下相关的CONNECT角色和RESOURCE角色的内容。一般情况下，在新建数据库用户后，都会习惯性的给用户授权CONNECT角色和RESOURCE角色：
+
+    GRANT connect,resource TO 用户;
+
+但是拥有这两个角色的用户都拥有什么权限呢？可以使用如下语句查看一下：
+
+    SELECT * FROM dba_sys_privs WHERE grantee IN ('RESOURCE', 'CONNECT') ORDER BY 1;
+
+从查询结果可以看到：
+ 
+CONNECT角色：仅具有创建SESSION的权限
+RESOURCE角色：仅具有创建CLUSTER,INDEXTYPE,OPERATOR,PROCEDEURE,SEQUENCE,TABLE,TRIGGER,TYPE的权限
+
+确实没有创建视图的权限，由此看来如果需要创建视图权限，只能单独授权：
+
+    GRANT CREATE VIEW TO 用户;
+
+同时，当把ORACLE resource角色授予一个user的时候，不但会授予ORACLE resource角色本身的权限，而且还有unlimited tablespace权限，但是，当把resource授予一个role时，就不会授予unlimited tablespace权限。
+
+那么，一个用户，如果查看他拥有什么权限呢？可以使用PLSQL Developer工具。在PLSQL Developer中可以很方便的查看用户的各种类型权限（包括对象权限，角色权限，系统权限），如果要使用SQL语句查询也可以：
+ 
+    SELECT * FROM dba_tab_privs a WHERE a.grantee = '用户名'; --对象权限
+    SELECT * FROM dba_role_privs a WHERE a.GRANTEE = '用户名'; --角色权限
+    SELECT * FROM dba_sys_privs a WHERE a.GRANTEE = '用户名'; --系统权限
+
+## oracle 的修改SID 
+
+1、检查原来的数据库实例名（sid）
+
+    oracle@oracle[/home/oracle]> echo $ORACLE_SID 
+    orcl
+    oracle@oracle[/home/oracle]> sqlplus / as sysdba
+    SQL*Plus: Release 10.2.0.1.0 - Production on Sun Dec 20 11:14:49 2009
+    Copyright (c) 1982, 2005, Oracle. All rights reserved.
+    Connected to:
+    Oracle Database 10g Enterprise Edition Release 10.2.0.1.0 - Production
+    With the Partitioning, OLAP and Data Mining options
+    sys@ORCL> select instance from v$thread;
+    INSTANCE
+    --------------------------------------------------------------------------------
+    orcl
+
+2、关闭数据库
+
+注意不能用shutdown abort，只能是shutdown immediate或shutdown normal
+
+    sys@ORCL> shutdown immediate 
+    Database closed.
+    Database dismounted.
+    ORACLE instance shut down.
+    sys@ORCL> exit
+    Disconnected from Oracle Database 10g Enterprise Edition Release 10.2.0.1.0 - Production
+    With the Partitioning, OLAP and Data Mining options
+
+3、修改oracle用户的ORACLE_SID环境变量，如由orcl修改为ybbe
+
+4、修改/etc/oratab文件，将sid名由旧的修改为新的，如从orcl修改为ybbe
+
+5、进入到$ORACLE_HOME/dbs目录，将所有文件名中包含原来的sid的修改为对应的新sid的。如我对如下文件修改为其后对应的文件
+
+    hc_orcl.dat->hc_ybbe.dat 
+    lkORCL->lkYBBE
+    orapworcl->orapwybbe
+    snapcf_orcl.f->snapcf_cnhtm.f
+    spfileorcl.ora->spfilecnhtm.ora
+    cd $ORACLE_HOME/dbs
+    orapwd file=orapwybbe password='ybbe' entries=5 force=y
+
+可以用命令进行对上面的文件进行自动生成
+
+6、使新修改的ORACLE_SID环境变量生效
+
+    oracle@oracle[/oracle/app/10.1/dbs]> . ~/.bash_profile 
+    oracle@oracle[/oracle/app/10.1/dbs]> echo $ORACLE_SID
+    cnhtm
+
+7、重建口令文件
+
+因为口令文件改名后不能在新实例中使用，所以重建
+
+    oracle@oracle[/oracle/app/10.1/dbs]> orapwd file=$ORACLE_HOME/dbs/orapw$ORACLE_SID password=oracle entries=5 force=y 
+    oracle@oracle[/oracle/app/10.1/dbs]> ls -lrt orapw*
+    -rw-r----- 1 oracle oinstall 2048 Dec 20 11:27 orapwybbe
+
+8、启动数据库
+
+    oracle@oracle[/oracle/app/10.1/dbs]> sqlplus / as sysdba 
+    SQL*Plus: Release 10.2.0.1.0 - Production on Sun Dec 20 11:29:53 2009
+    Copyright (c) 1982, 2005, Oracle. All rights reserved.
+    Connected to an idle instance.
+    idle> startup
+    ORACLE instance started.
+    Total System Global Area 167772160 bytes
+    Fixed Size 1218292 bytes
+    Variable Size 62916876 bytes
+    Database Buffers 96468992 bytes
+    Redo Buffers 7168000 bytes
+    Database mounted.
+    Database opened.
+
+9、检查数据库实例名。通过如下语句检查数据库实例名，发现实例名已经由orcl变成ybbe
+
+    select instance from v$thread; 
+    INSTANCE
+
+## ESCAPE关键字用法
+
+　　定义：escape关键字经常用于使某些特殊字符，如通配符：'%','_'转义为它们原来的字符的意义，被定义的转义字符通常使用'\',但是也可以使用其他的符号。实例：
+
+    SQL> select * from t11 where name like '%_%';
+    SQL> select * from t11 where name like '%\_%' escape '\';
+
+注意：如果是 '/' 作为检索字符， 必须 用 '/' 作为转义符， 正斜扛也一样。
+
+    select * from wan_test where psid like '%//%' escape '/'
+
+1.使用 ESCAPE 关键字定义转义符。在模式中，当转义符置于通配符之前时，该通配符就解释为普通字符。
+2.ESCAPE 'escape_character' 允许在字符串中搜索通配符而不是将其作为通配符使用。escape_character 是放在通配符前表示此特殊用途的字符。
+
 
 
 # DB2
