@@ -5,7 +5,6 @@
 * W3School: http://www.w3school.com.cn/index.html
 * 前端开发框架对比：http://www.ibm.com/developerworks/cn/web/1404_wangfx_jsframeworks/
 
-
 ## Tools
 
 * firebug: http://getfirebug.com/
@@ -15,6 +14,18 @@
 ## ECMACSCRIPT
 
 官网：http://www.ecmascript.org/index.php
+
+
+## RequireJS
+
+    RequireJS is a JavaScript file and module loader. It is optimized for in-browser use, but it can be used in other JavaScript environments, like Rhino and Node. Using a modular script loader like RequireJS will improve the speed and quality of your code.
+
+* http://requirejs.org/
+
+* Javascript模块化编程（一）：模块的写法: http://www.ruanyifeng.com/blog/2012/10/javascript_module.html
+* Javascript模块化编程（二）：AMD规范: http://www.ruanyifeng.com/blog/2012/10/asynchronous_module_definition.html
+* Javascript模块化编程（三）：require.js的用法: http://www.ruanyifeng.com/blog/2012/11/require_js.html
+
 
 
 ## json
@@ -99,7 +110,8 @@
 
 ## angularjs
 
-* 官网：https://angularjs.org/
+* https://angularjs.org/
+* http://marketplace.eclipse.org/content/angularjs-eclipse
 
 
 ## Ember.js
@@ -122,3 +134,4 @@
 * WordPress: https://cn.wordpress.org/
 
 
+## Chrome调试
