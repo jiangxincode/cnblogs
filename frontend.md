@@ -10,6 +10,19 @@
 * firebug: http://getfirebug.com/
 * Brackets: http://brackets.io/
 
+## WTP
+
+Web Tools Platform(WTP): http://www.eclipse.org/webtools/
+
+
+## JSDT
+
+    The JavaScript Development Tools (JSDT) provide plug-ins that implement an IDE supporting the development of JavaScript applications and JavaScript within web applications. It adds a JavaScript project type and perspective to the Eclipse Workbench as well as a number of views, editors, wizards, and builders.
+
+* 官网：http://www.eclipse.org/webtools/jsdt/
+
+注：如果安装了WTP就不用再安装JSDT了，后者是前者的一个子项目
+
 
 ## ECMACSCRIPT
 
@@ -132,6 +145,21 @@
 ## WordPress
 
 * WordPress: https://cn.wordpress.org/
+
+
+## echarts
+
+* http://echarts.baidu.com/index.html
+
+
+## CommonJS
+
+* http://www.commonjs.org/
+
+## Foundation
+
+* http://foundation.zurb.com/
+* http://www.foundcss.com/
 
 
 ## Chrome调试

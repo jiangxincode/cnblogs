@@ -127,12 +127,6 @@
 * 官网：http://www.aptana.com/
 
 
-# JSDT
-
-    The JavaScript Development Tools (JSDT) provide plug-ins that implement an IDE supporting the development of JavaScript applications and JavaScript within web applications. It adds a JavaScript project type and perspective to the Eclipse Workbench as well as a number of views, editors, wizards, and builders.
-
-* 官网：http://www.eclipse.org/webtools/jsdt/
-
 # JUnit
 
     JUnit is a simple framework to write repeatable tests. It is an instance of the xUnit architecture for unit testing frameworks.
