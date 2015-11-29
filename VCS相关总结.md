@@ -17,6 +17,10 @@
 * <del>http://www.svnhost.cn/</del> (SVN)
 * <del>http://www.chinasvn.com</del> (SVN)
 
+* Travis CI
+
+https://travis-ci.org/
+
 
 # SVN
 

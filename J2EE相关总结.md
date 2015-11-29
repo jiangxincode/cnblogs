@@ -5,6 +5,7 @@
 * Java Platform, Enterprise Edition (Java EE): http://docs.oracle.com/javaee/
 * The Java® Language Specification: https://docs.oracle.com/javase/specs/jls/se7/html/index.html
 * The Java® Virtual Machine Specification: https://docs.oracle.com/javase/specs/jvms/se7/html/
+* JDK Tools and Utilities: http://docs.oracle.com/javase/6/docs/technotes/tools/
 * Setting Project Facets: http://docs.oracle.com/cd/E13224_01/wlw/docs103/guide/ideuserguide/projects/conFacets.html
 * Overriding and Hiding Methods: http://docs.oracle.com/javase/tutorial/java/IandI/override.html
 
@@ -35,6 +36,7 @@
 * Top 10 Java Debugging Tips with Eclipse: http://javapapers.com/core-java/top-10-java-debugging-tips-with-eclipse/
 * Linux下安装最新的Eclipse：http://www.cnblogs.com/jiangxinnju/p/4780268.html
 * eclipse调试的方法和技巧：http://www.cnblogs.com/ycxyyzw/archive/2013/03/27/2983905.html
+* eclipse调试java程序的九个技巧: http://www.cnblogs.com/lingiu/p/3802391.html
 * eclipse远程调试Tomcat方法:http://blog.csdn.net/afgasdg/article/details/9236877
 * Eclipse远程调试出现“JDWP Transport dt_socket failed to initialize”的解决方案: http://www.cnblogs.com/jiangxinnju/p/4906457.html
 * tomcat startup.sh/shutdown.sh/setclasspath.sh/catalina.sh分析：http://vekergu.blog.51cto.com/9966832/d-2
@@ -67,6 +69,13 @@
 * Eclipse UML Generators: http://www.eclipse.org/umlgen
 * ModelGoon UML4Java: http://marketplace.eclipse.org/content/modelgoon-uml4java
 * agile(收费): http://www.agilej.com/
+
+# AnyEdit
+
+    AnyEdit plugin adds several new tools to the context menu of text- based Eclipse editors, to output consoles, to Eclipse main menu and editor toolbar. AnyEdit contributes also Import/Export working sets wizards.
+
+* http://marketplace.eclipse.org/content/anyedit-tools
+
 
 # PyDev
 
@@ -231,6 +240,7 @@
 * M2Eclipse项目地址：http://www.eclipse.org/m2e/
 * 安装说明（Eclipse EE中自带）：http://www.eclipse.org/m2e/m2e-downloads.html
 * 如何用Maven创建web项目（具体步骤）：http://blog.csdn.net/chuyuqing/article/details/28879477
+* maven依赖总结: http://blog.csdn.net/lastsweetop/article/details/8493475
 * 常见Maven仓库：
     * http://mvnrepository.com/    （搜索）
     * http://maven.oschina.net/home.html    （搜索）
