@@ -258,6 +258,31 @@ ctags工具是用来遍历源代码文件生成tags文件，这些tags文件能�
 
 会提示无法加载python27.dll, 针对于这种情况,请到官方下载 windows 版本的 32位 的python 2.7.x 安装文件. 使用64位的python无法正常在gvim中使用。python3.x系列在某些vim相关插件中仍不支持,所以依旧推荐使用2.7.x
 
+# 用vim格式化代码
+
+在vim的官方FAQ （http://vimdoc.sourceforge.net/cgi-bin/vimfaq2html3.pl）找到的：
+
+格式化全文： gg=G
+
+自动缩进当前行： ==
+
+这个是原文节选：
+
+14.6. How do I format/indent an entire file?
+
+You can format/indent an entire file using the gg=G command, where
+
+     gg - Goto the beginning of the file
+     =   - apply indentation
+     G   - till end of file
+
+For more information, read
+
+     :help gg
+     :help =
+     :help G
+     :help 'formatprg'
+     :help C-indenting
 
 # Emacs
 
