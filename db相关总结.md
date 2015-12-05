@@ -105,8 +105,11 @@
     alter user sys identified by new_password --修改用户密码
     alter user system account unlock --解锁用户
 
-```
+    --在sqlplus中执行sql脚本，下面两种方式都可以
+    START file_name
+    @file_name
 
+```
 
 
 ### 启动数据库
@@ -581,6 +584,12 @@ sessions是个派生值,由processes的值决定,公式sessions=1.1*process + 5�
 # Oracle Berkeley DB
 
 * Oracle Berkeley DB：http://www.oracle.com/technetwork/database/database-technologies/berkeleydb/overview/index.html
+
+
+# SQLite
+
+* http://www.sqlite.org/
+* DB Browser for SQLite: http://sqlitebrowser.org/
 
 
 # nosql
