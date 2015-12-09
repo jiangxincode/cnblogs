@@ -29,7 +29,7 @@ https://travis-ci.org/
 * 原项目地址，现在仍保留：http://subversion.tigris.org/
 * 现在：http://subversion.apache.org/
 * 安装包下载地址：http://subversion.apache.org/packages.html
-* Subversion: http://subclipse.tigris.org/
+* subclipse: http://subclipse.tigris.org/
 * Windows Command Line客户端推荐Win32Svn：http://sourceforge.net/projects/win32svn/
 * Windows GUI客户端推荐TortoiseSVN：http://tortoisesvn.net/
 * Linux GUI客户端推荐RabbitVCS：http://rabbitvcs.org/
@@ -48,6 +48,7 @@ https://travis-ci.org/
 * 使用svn——项目的目录布局：http://www.cnitblog.com/stomic/archive/2008/03/17/41043.html
 * 如何结合使用 Subversion 和 Eclipse：http://www.ibm.com/developerworks/cn/opensource/os-ecl-subversion/
 * Eclipse + SVN + Google code搭建代码仓库：http://convolute.iteye.com/blog/564247
+* MyEclipse使用总结——MyEclipse10安装SVN插件: http://www.cnblogs.com/xdp-gacl/p/3497016.html
 
 
 ## 简单教程（详细说明参考前面的教程地址，此处仅为了速查速用）

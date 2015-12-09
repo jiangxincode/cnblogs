@@ -34,6 +34,7 @@
 * Java Performance Tuning Guide: http://java-performance.info/
 * 构建一个文本可视化和分析应用程序: http://www.ibm.com/developerworks/cn/opensource/os-txtviz/
 * Top 10 Java Debugging Tips with Eclipse: http://javapapers.com/core-java/top-10-java-debugging-tips-with-eclipse/
+* POJO模式: http://www.cnblogs.com/yezhenhan/archive/2011/11/21/2256642.html
 * Linux下安装最新的Eclipse：http://www.cnblogs.com/jiangxinnju/p/4780268.html
 * eclipse调试的方法和技巧：http://www.cnblogs.com/ycxyyzw/archive/2013/03/27/2983905.html
 * eclipse调试java程序的九个技巧: http://www.cnblogs.com/lingiu/p/3802391.html
@@ -43,6 +44,8 @@
 * src源代码生成html格式文档：http://www.cnblogs.com/shenliang123/archive/2012/04/23/2466483.html
 * 自己动手制作chm格式开源文档：http://www.cnblogs.com/shenliang123/archive/2012/04/23/2466441.html
 * Javadoc转换chm帮助文档的四种方法总结: http://lishunli.iteye.com/blog/1051688
+* Java数字图像处理基础知识 - 必读: http://blog.csdn.net/jia20003/article/details/7279667
+
 
 
 # Eclipse        
@@ -559,6 +562,10 @@ JavaDoc: https://storm.apache.org/javadoc/apidocs/index.html
 # JACOB
 
 * 官网：http://danadler.com/jacob/
+* Java操作Microsoft Word之jacob: http://xiaoduan.blog.51cto.com/502137/136692/
+* 浅析JACOB: http://www.blogjava.net/lusm/archive/2008/11/22/jacob.html
+* JACOB的语法: http://www.bitscn.com/pdb/java/200904/161117.html
+
 
 
 # httpclient
