@@ -174,6 +174,7 @@
 # SoapUI
 
 * http://www.soapui.org/
+* Automating SoapUI using Groovy – A Walk Through: http://www.codeproject.com/Articles/820414/Automating-SoapUI-using-Groovy-A-Walk-Through
 
 
 # SLF4J

@@ -41,6 +41,8 @@
 * Database SQL Language Reference: http://docs.oracle.com/cd/B28359_01/server.111/b28286/index.htm
 * Listener Control Utility (LSNRCTL): http://docs.oracle.com/cd/A87861_01/NT817EE/network.817/a76933/controlu.htm#433891
 * Database Concepts: http://docs.oracle.com/database/121/CNCPT/toc.htm
+* The differences of "on delete cascade" and "on delete set null": http://docs.oracle.com/cd/B28359_01/server.111/b28286/clauses002.htm (search "on delete")
+* Database Error Messages: http://docs.oracle.com/cd/B28359_01/server.111/b28278/toc.htm
 
 * Oracle SQL Developer: http://www.oracle.com/technetwork/developer-tools/sql-developer/overview/index.html
 * Instant Client Downloads for Microsoft Windows (32-bit): http://www.oracle.com/technetwork/topics/winsoft-085727.html
@@ -63,6 +65,7 @@
 * oracle的各版本发行时间及特点: http://blog.csdn.net/dream19881003/article/details/7178357
 * oracle客户端软件的说明：http://blog.csdn.net/haiross/article/details/17917637
 * 怎么判断oracle客户端、服务器端的位数：http://blog.csdn.net/linghe301/article/details/8471945
+* oracle数据导入与导出: http://blog.csdn.net/loadrunn/article/details/7283441
 
 
 ## PL/SQL Developer
@@ -75,6 +78,35 @@
 ### 杂项
 
 ```sql
+
+    -- Windows下以管理员身份启动数据库
+    net start oracleserviceorcl -- 后面的orcl是你安装的数据库实例名
+    net start oracleoradb11g_home1tnslistener --非必须
+
+    -- linux下以sysdba用户登录，然后启动数据库
+    sqlplus / as sysdba
+    startup
+    
+    -- sqlplus登陆方式
+    sqlplus / as sysdba --以操作系统权限认证的oracle sys管理员登陆
+
+    sqlplus /nolog
+    conn / as sysdba --以操作系统权限认证的oracle sys管理员登陆
+
+
+    sqlplus sys/password@orcl as sysdba --以sys用户登陆必须使用as sysdba
+
+    sqlplus /nolog --不在cmd或者teminal当中暴露密码的登陆方式
+    conn sys/password as sysdba
+
+
+    sqlplus --不显露密码的方式登陆
+    Enter user-name：sys
+    Enter password：password as sysdba --以sys用户登陆的话 必须要加上as sysdba子句
+
+    sqlplus scott/tiger@orcl --非管理员用户登陆
+    
+    
     desc v$database; --查询v$database数据库的表结构
 
     show parameter name; -- 查看一些数据库的名字信息
@@ -108,68 +140,8 @@
     --在sqlplus中执行sql脚本，下面两种方式都可以
     START file_name
     @file_name
-
-```
-
-
-### 启动数据库
-
-Windows下以管理员身份运行：
-
-    net start oracleserviceorcl (后面的orcl是你安装的数据库实例名)
-    net start oracleoradb11g_home1tnslistener (非必须)
-
-linux下以oracle用户登录
-
-    sqlplus / as sysdba
-    startup
-
-
-### sqlplus登陆方式
-
-```sql
-    sqlplus / as sysdba --以操作系统权限认证的oracle sys管理员登陆
-
-    sqlplus /nolog
-    conn / as sysdba --以操作系统权限认证的oracle sys管理员登陆
-
-
-    sqlplus sys/password@orcl as sysdba --以sys用户登陆必须使用as sysdba
-
-    sqlplus /nolog --不在cmd或者teminal当中暴露密码的登陆方式
-    conn sys/password as sysdba
-
-
-    sqlplus --不显露密码的方式登陆
-    Enter user-name：sys
-    Enter password：password as sysdba --以sys用户登陆的话 必须要加上as sysdba子句
-
-    sqlplus scott/tiger@orcl --非管理员用户登陆
     
-```
-
-
-### 设置sqlplus显示格式
-
-```sql
-    -- 设置sqlplus模式显示总行数
-    show pagesize; --查看当前的pagesize
-    set pagesize 300;
-
-    -- 设置sqlplus模式显示行宽度
-    show linesize; --查看当前的linesize
-    set linesize 300;
-
-    -- 修改安装目录glogin.sql文件才能保证之前的设置永久生效
-    set pagesize 300;
-    set linesize 300;
-```
-
-### oracle创建表之前判断表是否存在，如果存在则删除已有表
-
-在sqlserver中，有if exit()这样的语句，但是在oracle中却没有。如果直接使用drop table那么如果表不存在会报错，导致后续语句无法运行。因此可以通过一个存储过来来进行判断。主要是查询all_tables表的TABLE_NAME和OWNER，如果表存在，则执行execute immediate 'drop table TABLE_NAME'; 
-
-```sql
+    
     --判断表是否存在，如果存在则删除
     declare 
           num   number; 
@@ -191,7 +163,22 @@ linux下以oracle用户登录
             COMM NUMBER(7, 2),
             DEPTNO NUMBER(2));
     可以将上述存储过程加载到每一个create table前面。
+    
+    
+    -- 设置sqlplus模式显示总行数
+    show pagesize; --查看当前的pagesize
+    set pagesize 300;
+
+    -- 设置sqlplus模式显示行宽度
+    show linesize; --查看当前的linesize
+    set linesize 300;
+
+    -- 修改安装目录glogin.sql文件才能保证之前的设置永久生效
+    set pagesize 300;
+    set linesize 300;
+
 ```
+
 
 ## Oracle 11g 默认用户名和密码
 
