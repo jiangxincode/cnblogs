@@ -23,6 +23,7 @@
 * Introduction to Java Programming, Eighth Edition: http://www.cs.armstrong.edu/liang/intro8e/
 * Java 理论与实践: http://www.ibm.com/developerworks/cn/java/j-jtp/
 * Java多线程：http://blog.csdn.net/column/details/multithreading.html
+* Java Runtime.exec()的使用: http://www.cnblogs.com/mingforyou/p/3551199.html
 * 敏捷开发中高质量 Java 代码开发实践: http://www.ibm.com/developerworks/cn/java/j-lo-agile/
 * 深入理解Java：SimpleDateFormat安全的时间格式化: http://www.cnblogs.com/peida/archive/2013/05/31/3070790.html
 * 深入理解Java：注解（Annotation）基本概念: http://www.cnblogs.com/peida/archive/2013/04/23/3036035.html
