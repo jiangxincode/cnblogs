@@ -46,6 +46,7 @@
 * 自己动手制作chm格式开源文档：http://www.cnblogs.com/shenliang123/archive/2012/04/23/2466441.html
 * Javadoc转换chm帮助文档的四种方法总结: http://lishunli.iteye.com/blog/1051688
 * Java数字图像处理基础知识 - 必读: http://blog.csdn.net/jia20003/article/details/7279667
+* Java反序列化时对象注入可以造成代码执行漏洞: http://0day5.com/archives/3572
 
 
 
