@@ -47,6 +47,12 @@
 * Javadoc转换chm帮助文档的四种方法总结: http://lishunli.iteye.com/blog/1051688
 * Java数字图像处理基础知识 - 必读: http://blog.csdn.net/jia20003/article/details/7279667
 * Java反序列化时对象注入可以造成代码执行漏洞: http://0day5.com/archives/3572
+* Eclipse中用两个控制台测试网络通信程序: http://blog.csdn.net/f309587969/article/details/7097976
+* Eclipse jar打包详解: http://jingyan.baidu.com/article/219f4bf7d0ef87de442d3820.html
+* Java NIO与IO的区别和比较: http://my.oschina.net/u/2001537/blog/353035
+* Eclipse中Ant的配置与测试 转: http://www.cnblogs.com/jiangxinnju/p/5040436.html
+* 如何使用Eclipse将Java项目打成jar包？:http://jingyan.baidu.com/article/4dc40848b5a8c9c8d946f139.html
+* 如何使用eclipse生成javadoc帮助文档？:http://jingyan.baidu.com/article/dca1fa6f4d3d7ff1a4405239.html
 
 
 
