@@ -30,6 +30,8 @@
 * 现在：http://subversion.apache.org/
 * 安装包下载地址：http://subversion.apache.org/packages.html
 * subclipse: http://subclipse.tigris.org/
+* Subversive - SVN Team Provider: http://marketplace.eclipse.org/content/subversive-svn-team-provider
+* CVS Team Provider: http://mvnrepository.com/artifact/org.eclipse.team.cvs
 * Windows Command Line客户端推荐Win32Svn：http://sourceforge.net/projects/win32svn/
 * Windows GUI客户端推荐TortoiseSVN：http://tortoisesvn.net/
 * Linux GUI客户端推荐RabbitVCS：http://rabbitvcs.org/

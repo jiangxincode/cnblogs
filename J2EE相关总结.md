@@ -213,6 +213,12 @@
 * Java程序员修炼之道 之 Logging(2/3) - 怎么写Log:http://www.blogjava.net/justfly/archive/2014/08/13/416925.html
 * Java程序员修炼之道 之 Logging(3/3) - 怎么分析Log:http://www.blogjava.net/justfly/archive/2014/09/17/418034.html
 
+# 代码评审
+
+* Jupiter: http://csdl.ics.hawaii.edu/research/jupiter/
+* Peer Code Reviews Made Easy with Eclipse Plug-In: http://www.cnblogs.com/jiangxinnju/p/4782282.html
+* reviewclipse: https://www.inso.tuwien.ac.at/projects/reviewclipse/
+* Effective Code Reviews Without the Pain: http://www.developer.com/tech/article.php/3579756/Effective-Code-Reviews-Without-the-Pain.htm
 
 # guava
 
