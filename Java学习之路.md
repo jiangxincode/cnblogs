@@ -1,16 +1,11 @@
-
-
 # JDK
 
 JDK(Java Development Kit)是一个写Java程序所需的开发环境。它由一个处于操作系统层之上的运行环境，还有开发者编译、调试和运行Java应用程序所需的工具组成。JDK是Sun Microsystems为Java程序员提供的产品。目前JDK已经成为使用最广泛的Java SDK（Software development kit）。 JDK包含的基本组件包括：
 
-javac – 编译器，将源程序转成字节码
-
-jar – 打包工具，将相关的类文件打包成一个文件
-
-javadoc – 文档生成器，从源码注释中提取文档
-
-jdb – debugger，查错工具
+* javac: 编译器，将源程序转成字节码
+* jar: 打包工具，将相关的类文件打包成一个文件
+* javadoc: 文档生成器，从源码注释中提取文档
+* jdb: debugger，查错工具
 
 JDK中还包括完整的JRE（Java Runtime Environment，Java运行环境），也被称为private runtime。包括了用于产品环境的各种库类，以及给开发员使用的补充库，如国际化的库、IDL库。 JDK中还包括各种例子程序，用以展示Java API中的各部分。
 
@@ -18,17 +13,17 @@ JDK中还包括完整的JRE（Java Runtime Environment，Java运行环境），�
 
 安装jdk以后，需要配置一下环境变量，在我的电脑->属性->高级->环境变量->系统变量中添加以下环境变量(假定你的jdk安装在c:\jdk1.6）:
 
-JAVA_HOME=c:\jdk1.6
+    JAVA_HOME=c:\jdk1.6
 
 JAVA_HOME指向的是JDK的安装路径，在这路径下你应该能够找到bin、lib等目录。JDK的安装路径可以选择任意磁盘目录，不过建议你放的目录层次浅一点。
 
-CLASSPATH=. ;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar
+    CLASSPATH=. ;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar
 
 注：.;一定不能少，因为它代表当前路径。
 
 在系统变量里找到Path变量，这是系统自带的，不用新建。你只需修改一下，使他指向JDK的bin目录，这样你在控制台下面编译、执行程序时就不需要再键入一大串路径了。双击Path，在已有的变量后加上：
 
-;%JAVA_HOME%\bin;%JAVA_HOME%\jre\bin
+    ;%JAVA_HOME%\bin;%JAVA_HOME%\jre\bin
 
 注：注意前面的分号。
 
@@ -58,27 +53,23 @@ OpenIDK只包含最精简的JDK：OpenJDK不包含其他的软件包，比如Rhi
 
 Debian, Ubuntu等系统：在命令行中，键入：
 
-$sudo apt-get install openjdk-7-jre
-
-$sudo apt-get install openjdk-6-jre
+    $sudo apt-get install openjdk-7-jre
+    $sudo apt-get install openjdk-6-jre
 
 需要注意的是，openjdk-?-jre包只包含Java运行时环境（Java Runtime Environment）。如果是要开发Java应用程序，则需要安装openjdk-?-jdk包。命令如下：
 
-$sudo apt-get install openjdk-7-jdk
-
-$sudo apt-get install openjdk-6-jdk
+    $sudo apt-get install openjdk-7-jdk
+    $sudo apt-get install openjdk-6-jdk
 
 Fedora, OracleLinux, Red Hat Enterprise Linux等系统：在命令行中，键入：
 
-$ su -c "yum install java-1.7.0-openjdk"
-
-$ su -c "yum install java-1.6.0-openjdk"
+    $ su -c "yum install java-1.7.0-openjdk"
+    $ su -c "yum install java-1.6.0-openjdk"
 
 需要注意的是，java-1.?.0-openjdk包只包含Java运行时环境（Java Runtime Environment）。如果是要开发Java应用程序，则需要安装java-1.?.0-openjdk-devel包。命令如下：
 
-$ su -c "yum install java-1.7.0-openjdk-devel"
-
-$ su -c "yum install java-1.6.0-openjdk-devel"
+    $ su -c "yum install java-1.7.0-openjdk-devel"
+    $ su -c "yum install java-1.6.0-openjdk-devel"
 
 # 制作可执行的JAR文件包及jar命令详解
 
@@ -88,60 +79,48 @@ $ su -c "yum install java-1.6.0-openjdk-devel"
 
 JAR 文件就是 Java Archive File，顾名思意，它的应用是与 Java 息息相关的，是 Java 的一种文档格式。JAR 文件非常类似 ZIP 文件——准确的说，它就是 ZIP 文件，所以叫它文件包。JAR 文件与 ZIP 文件唯一的区别就是在 JAR 文件的内容中，包含了一个 META-INF/MANIFEST.MF 文件，这个文件是在生成 JAR 文件的时候自动创建的。举个例子，如果我们具有如下目录结构的一些文件：
 
-	==  
-
-	`-- test  
-
-		`-- Test.class  
+    ==
+	-- test  
+		-- Test.class  
 
 把它压缩成 ZIP 文件 test.zip，则这个 ZIP 文件的内部目录结构为：
 
-	test.zip  
-
-	`-- test  
-
-　　　 `-- Test.class  
+    test.zip  
+	-- test  
+        -- Test.class  
 
 如果我们使用 JDK 的 jar 命令把它打成 JAR 文件包 test.jar，则这个 JAR 文件的内部目录结构为：
-```
-　　test.jar  
 
-　　|-- META-INF  
-
-　　|　 -- MANIFEST.MF  
-
-　　-- test
-
-　　　　--Test.class
-```
+    test.jar  
+    -- META-INF  
+        -- MANIFEST.MF  
+    -- test
+        --Test.class
 
 ## 创建可执行的 JAR 文件包
 
 制作一个可执行的 JAR 文件包来发布你的程序是 JAR 文件包最典型的用法。 Java 程序是由若干个 .class 文件组成的。这些 .class 文件必须根据它们所属的包不同而分级分目录存放；运行前需要把所有用到的包的根目录指定给 CLASSPATH 环境变量或者 java 命令的 -cp 参数；运行时还要到控制台下去使用 java 命令来运行，如果需要直接双击运行必须写 Windows 的批处理文件 (.bat) 或者 Linux 的 Shell 程序。因此，许多人说，Java 是一种方便开发者苦了用户的程序设计语言。其实不然，如果开发者能够制作一个可执行的 JAR 文件包交给用户，那么用户使用起来就方便了。在 Windows 下安装 JRE (Java Runtime Environment) 的时候，安装文件会将 .jar 文件映射给 javaw.exe 打开。那么，对于一个可执行的 JAR 文件包，用户只需要双击它就可以运行程序了。那么现在的关键就是如何来创建这个可执行的 JAR 文件包。 创建可执行的 JAR 文件包，需要使用带 cvfm 参数的 jar 命令，同样以上述 test 目录为例，命令如下：
 
-jar cvfm test.jar manifest.mf test
+    jar cvfm test.jar manifest.mf test
 
 这里 test.jar 和 manifest.mf 两个文件，分别是对应的参数 f 和 m，其重头戏在 manifest.mf。因为要创建可执行的 JAR 文件包，光靠指定一个 manifest.mf 文件是不够的，因为 MANIFEST 是 JAR 文件包的特征，可执行的 JAR 文件包和不可执行的 JAR 文件包都包含 MANIFEST。关键在于可执行 JAR 文件包的 MANIFEST，其内容包含了 Main-Class 一项。这在 MANIFEST 中书写格式如下：
 
-Main-Class: 可执行主类全名(包含包名) 
+    Main-Class: 可执行主类全名(包含包名) 
 
 例如，假设上例中的 Test.class 是属于 test 包的，而且是可执行的类 (定义了 public static void main(String[]) 方法)，那么这个 manifest.mf 可以编辑如下： 
 
-Main-Class: test.Test <回车>; 
+    Main-Class: test.Test <回车>; 
 
 这个 manifest.mf 可以放在任何位置，也可以是其它的文件名，只需要有 Main-Class: test.Test 一行，且该行以一个回车符结束即可。创建了 manifest.mf 文件之后，我们的目录结构变为：  
 
-　　==  
-
-　　|-- test  
-
-　　|　 `-- Test.class  
-
-`-- manifest.mf 
+    ==
+    -- test  
+        -- Test.class  
+    -- manifest.mf 
 
 这时候，需要到 test 目录的上级目录中去使用 jar 命令来创建 JAR 文件包。也就是在目录树中使用“==”表示的那个目录中，使用如下命令： 
 
-jar cvfm test.jar manifest.mf test
+    jar cvfm test.jar manifest.mf test
 
 之后在“==”目录中创建了 test.jar，这个 test.jar 就是执行的 JAR 文件包。运行时只需要使用 java -jar test.jar 命令即可。需要注意的是，创建的 JAR 文件包中需要包含完整的、与 Java 程序的包结构对应的目录结构，就像上例一样。而 Main-Class 指定的类，也必须是完整的、包含包路径的类名，如上例的 test.Test；而且在没有打成 JAR 文件包之前可以使用 java <类名>; 来运行这个类，即在上例中 java test.Test 是可以正确运行的 (当然要在 CLASSPATH 正确的情况下)。
 
@@ -155,25 +134,18 @@ jar {ctxu}[vfm0M] [jar-文件] [manifest-文件] [-C 目录] 文件名 ...
 
 其中 {ctxu} 是 jar 命令的子命令，每次 jar 命令只能包含 ctxu 中的一个，它们分别表示：
 
--c　创建新的 JAR 文件包
-
--t　列出 JAR 文件包的内容列表
-
--x　展开 JAR 文件包的指定文件或者所有文件
-
--u　更新已存在的 JAR 文件包 (添加文件到 JAR 文件包中) 
+    -c　创建新的 JAR 文件包
+    -t　列出 JAR 文件包的内容列表
+    -x　展开 JAR 文件包的指定文件或者所有文件
+    -u　更新已存在的 JAR 文件包 (添加文件到 JAR 文件包中) 
 
 [vfm0M] 中的选项可以任选，也可以不选，它们是 jar 命令的选项参数
 
--v　生成详细报告并打印到标准输出
-
--f　指定 JAR 文件名，通常这个参数是必须的
-
--m　指定需要包含的 MANIFEST 清单文件
-
--0　只存储，不压缩，这样产生的 JAR 文件包会比不用该参数产生的体积大，但速度更快
-
--M　不产生所有项的清单（MANIFEST〕文件，此参数会忽略 -m 参数
+    -v　生成详细报告并打印到标准输出
+    -f　指定 JAR 文件名，通常这个参数是必须的
+    -m　指定需要包含的 MANIFEST 清单文件
+    -0　只存储，不压缩，这样产生的 JAR 文件包会比不用该参数产生的体积大，但速度更快
+    -M　不产生所有项的清单（MANIFEST〕文件，此参数会忽略 -m 参数
 
 [jar-文件] 即需要生成、查看、更新或者解开的 JAR 文件包，它是 -f 参数的附属参数  
 
@@ -309,19 +281,15 @@ javadoc生成时出错：编码GBK的不可映射字符
 
 public类只是说明这个类可以被它所在的包外面的类所访问到，如果不加，只能在包内被访问，但在某些情况下也是可以的，例如以下例子就是正确的：
 
-class Example
-
-{ 
-
-	public static void main(String args[])
-
-	{ 
-
-		System.out.println("This is a simple Java program."); 
-
-	}
-
-}
+```java
+    class Example
+    { 
+        public static void main(String args[])
+        { 
+            System.out.println("This is a simple Java program."); 
+        }
+    }
+```
 
 # 向包中添加类
 
@@ -10455,27 +10423,18 @@ Class.class就是得到或者生成这个Class类的Class Object；
 
 .myeclipse目录总体是安装了myeclipse插件的目录，而且这个大的myeclipse插件实际是由很多小的插件组成的，比如tomacat插件，spring插件等等。 
 
-.classpath文件是用来描述程序模块编译的类路径的。 
-
-.myhibernatedata文件里写了一些资源文件的信息。 
-
-.myhibernatedata中是hibernate依赖目录描述。 
-
-.mystrutsdata描述struts的数据信息。 
-
-.project存储项目的一些基本配置信息的。 
-
-.springBeans是存储Spring工具的配置信息的，路径不对，工具有可能不能用的。
-
-
+    .classpath文件是用来描述程序模块编译的类路径的。 
+    .myhibernatedata文件里写了一些资源文件的信息。 
+    .myhibernatedata中是hibernate依赖目录描述。 
+    .mystrutsdata描述struts的数据信息。 
+    .project存储项目的一些基本配置信息的。 
+    .springBeans是存储Spring工具的配置信息的，路径不对，工具有可能不能用的。
 
 新建WebRoot文件夹，然后在项目工程目录下找到.mymetadata文件，里面的
 
-<attributes> 
-
-<attribute name="<SPAN class=hilite1>webrootdir</SPAN>" value="WebRoot" /> 
-
-</attributes> 
+    <attributes> 
+    <attribute name="<SPAN class=hilite1>webrootdir</SPAN>" value="WebRoot" /> 
+    </attributes> 
 
 这句话应该是来设置项目的根目录的
 
@@ -10483,121 +10442,75 @@ Class.class就是得到或者生成这个Class类的Class Object；
 
 最近碰到添加了SSH的支持，但又发现有些包或配置文件不正确，想重新添加，但MyEclipse没有自动重新加载功能，于是到网上搜索了相关内容，总结如下：
 
-撤消MyEclipse对Struts的支持
-
-关键的步骤是两个，一是删除，二是
+## 撤消MyEclipse对Struts的支持
 
 第一步删除struts-config.xml文件。删除config文件是主要的，否则重新部署struts时MyEclipse会瘫痪。其他由MyEclipse自动生成的struts相关文件可以不去理会，等重新部署的时候如有重名他们将会被自动覆盖。
 
 第二步修改.project文件。用记事本打开.project文件，删除：
 
-<nature>com.genuitec.eclipse.cross.easystruts.eclipse.easystrutsnature</nature>
+    <nature>com.genuitec.eclipse.cross.easystruts.eclipse.easystrutsnature</nature>
 
 保存退出。右键单击项目，选择Refresh让新改的.project文件生效。这时候struts功能又可以使用了，再重新部署struts功能即可。
 
-撤消MyEclipse对Hibernate的支持
+## 撤消MyEclipse对Hibernate的支持
 
 我是通过菜单MyEclipse->Project Capabilities添加了对Hibernate的支持，添加容易，删除难，菜单里好像没有删除对Hibernate支持的功能，只能手工删除了： 
 
-1.把项目根目录下文件.myhibernatedata删除 
+第一步把项目根目录下文件.myhibernatedata删除 
 
-2.修改项目根目录下文件.project：删除其中两段内容： 
+第二步修改项目根目录下文件.project：删除其中两段内容： 
 
-<buildCommand>
+    <buildCommand>
+        <name>com.genuitec.eclipse.hibernate.HibernateBuilder</name>
+        <arguments>
+        </arguments>
+    </buildCommand> 
 
-<name>com.genuitec.eclipse.hibernate.HibernateBuilder</name>
+    <nature>com.genuitec.eclipse.hibernate.hibernatenature</nature> 
 
-<arguments>
+第三步删除Hibernate对应的mapping file,class 
 
-</arguments>
-
-</buildCommand> 
-
-<nature>com.genuitec.eclipse.hibernate.hibernatenature</nature> 
-
-3.删除Hibernate对应的mapping file,class 
-
-撤消MyEclipse对Spring的支持
+## 撤消MyEclipse对Spring的支持
 
 1. 从build path中删除spring libs
-
 2. 手工修改工程目录下的.project文件中相关的内容
-
 3. 删除工程目录下的.springBean文件
 
 刷新工程，在工程右键菜单的myeclipse下面add spring capacity项就又回来了
 
 # 异常：created a ThreadLocal with key of type
 
-异常信息
+异常信息:
 
-created a ThreadLocal with key of type [com.opensymphony.xwork2.inject.ContainerImpl$10] (value [com.opensymphony.xwork2.inject.ContainerImpl$10@12c74b9]) and a value of type [java.lang.Object[]] (value [[Ljava.lang.Object;@1a34544]) but failed to remove it.
-
-
-
-解决办法
+    created a ThreadLocal with key of type [com.opensymphony.xwork2.inject.ContainerImpl$10] (value [com.opensymphony.xwork2.inject.ContainerImpl$10@12c74b9]) and a value of type [java.lang.Object[]] (value [[Ljava.lang.Object;@1a34544]) but failed to remove it.
 
 原因大概是说tomcat 6.025之后引入了一种内存泄露的检查机制，会把不能垃圾收集的对像做日志。
 
-
-
 第一种解决办法：使用低于6版本的tomcat。
 
+第二种解决办法：在tomcat的server.xml文件（在tomcat的安装路径下的conf文件夹里）中把监听关掉：就是把下面三句话括起来就可以啦。
 
-
-第二种解决办法：在tomcat的server.xml文件（在tomcat的安装路径下的conf文件夹里）中把这个监听关掉：
-
-
-
-<Listener className="org.apache.catalina.core.JreMemoryLeakPreventionListener"/>
-
-就是用 把下面三句话括起来就可以啦。
-
-
-
-<Listener className="org.apache.catalina.core.JreMemoryLeakPreventionListener" />
-
-<Listener className="org.apache.catalina.mbeans.GlobalResourcesLifecycleListener" />
-
-<Listener className="org.apache.catalina.core.ThreadLocalLeakPreventionListener" />
+```xml
+    <Listener className="org.apache.catalina.core.JreMemoryLeakPreventionListener" />
+    <Listener className="org.apache.catalina.mbeans.GlobalResourcesLifecycleListener" />
+    <Listener className="org.apache.catalina.core.ThreadLocalLeakPreventionListener" />
+```
 
 # 服务器的瞬时 Diffie-Hellman 公共密钥过弱
 
 最新版本的chrome（45.0.2454.85 m）在访问证书时，会报“服务器的瞬时 Diffie-Hellman 公共密钥过弱”。最开始以为是证书制作的问题，百度时看到一个解决方法是通过设置tomcat的机密级别：在<connector>中加入
 
+    ciphers="TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256,TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA,TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384,TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA256,TLS_RSA_WITH_AES_128_CBC_SHA,TLS_RSA_WITH_AES_256_CBC_SHA256,TLS_RSA_WITH_AES_256_CBC_SHA" 
 
-
-ciphers="TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256,TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA,TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384,TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA256,TLS_RSA_WITH_AES_128_CBC_SHA,TLS_RSA_WITH_AES_256_CBC_SHA256,TLS_RSA_WITH_AES_256_CBC_SHA" 
-
-
-
-但在本机测试可以，线上环境却会报：unsupported cipher suite XXX
-
-经过测试发现，JDK1.6和JDK1.7支持的加密算法是不一样的，测试升级JDK，问题解决。
-
-
+但在本机测试可以，线上环境却会报："unsupported cipher suite XXX"。经过测试发现，JDK1.6和JDK1.7支持的加密算法是不一样的，测试升级JDK，问题解决。
 
 补充：tomcat最好也换也tomcat7
 
 # 比较好的文章
 
-浅析Web工程目录和tomcat目录
-
-http://blog.csdn.net/ystyaoshengting/article/details/6204886
-
-web.xml配置详解
-
-http://twb.iteye.com/blog/196733
-
-CSS3美化有序列表
-
-http://www.w3cplus.com/css3/css3-ordered-list-styles
-
-简洁纯净的CSS表单设计实例
-
-http://blog.bingo929.com/clean-and-pure-css-form-design.html
-
-DreamweaverCS5+Tomcat环境配置：
-
-http://blog.csdn.net/jnqqls/article/details/7024170
+* 浅析Web工程目录和tomcat目录: http://blog.csdn.net/ystyaoshengting/article/details/6204886
+* web.xml配置详解: http://twb.iteye.com/blog/196733
+* CSS3美化有序列表: http://www.w3cplus.com/css3/css3-ordered-list-styles
+* 简洁纯净的CSS表单设计实例: http://blog.bingo929.com/clean-and-pure-css-form-design.html
+* DreamweaverCS5+Tomcat环境配置: http://blog.csdn.net/jnqqls/article/details/7024170
 
