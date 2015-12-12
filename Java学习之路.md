@@ -2,7 +2,7 @@
 
 # JDK
 
-## JDK(Java Development Kit)是一个写Java程序所需的开发环境。它由一个处于操作系统层之上的运行环境，还有开发者编译、调试和运行Java应用程序所需的工具组成。JDK是Sun Microsystems为Java程序员提供的产品。目前JDK已经成为使用最广泛的Java SDK（Software development kit）。 JDK包含的基本组件包括：
+JDK(Java Development Kit)是一个写Java程序所需的开发环境。它由一个处于操作系统层之上的运行环境，还有开发者编译、调试和运行Java应用程序所需的工具组成。JDK是Sun Microsystems为Java程序员提供的产品。目前JDK已经成为使用最广泛的Java SDK（Software development kit）。 JDK包含的基本组件包括：
 
 javac – 编译器，将源程序转成字节码
 
