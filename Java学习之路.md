@@ -9765,123 +9765,59 @@ public class Coon {
 
 Comparable & Comparator 都是用来实现集合中元素的比较、排序的，只是 Comparable 是在集合内部定义的方法实现的排序，Comparator 是在集合外部实现的排序，所以，如想实现排序，就需要在集合外定义 Comparator 接口的方法或在集合内实现 Comparable 接口的方法。
 
-
-
-Comparator位于包java.util下，而Comparable位于包   java.lang下
-
-
+Comparator位于包java.util下，而Comparable位于包java.lang下
 
 Comparable 是一个对象本身就已经支持自比较所需要实现的接口（如 String、Integer 自己就可以完成比较大小操作，已经实现了Comparable接口）   
 
+自定义的类要在加入list容器中后能够排序，可以实现Comparable接口，在用Collections类的sort方法排序时，如果不指定Comparator，那么就以自然顺序排序，如API所说：
 
-
- 自定义的类要在加入list容器中后能够排序，可以实现Comparable接口，在用Collections类的sort方法排序时，如果不指定Comparator，那么就以自然顺序排序，如API所说：
-
-Sorts the specified list into ascending order, according to the natural ordering of its elements. All elements in the list must implement the Comparable interface
+    Sorts the specified list into ascending order, according to the natural ordering of its elements. All elements in the list must implement the Comparable interface
 
 这里的自然顺序就是实现Comparable接口设定的排序方式。
 
-
-
 而 Comparator 是一个专用的比较器，当这个对象不支持自比较或者自比较函数不能满足你的要求时，你可以写一个比较器来完成两个对象之间大小的比较。
-
-  
 
 可以说一个是自已完成比较，一个是外部程序实现比较的差别而已。
 
-
-
 用 Comparator 是策略模式（strategy design pattern），就是不改变对象自身，而用一个策略对象（strategy object）来改变它的行为。
-
-  
 
 比如：你想对整数采用绝对值大小来排序，Integer 是不符合要求的，你不需要去修改 Integer 类（实际上你也不能这么做）去改变它的排序行为，只要使用一个实现了 Comparator 接口的对象来实现控制它的排序就行了。
 
-
-
-
-
-// AbsComparator.java     
-
-import   java.util.*;
-
-
-
-public   class   AbsComparator   implements   Comparator   {     
-
-    public   int   compare(Object   o1,   Object   o2)   {     
-
-      int   v1   =   Math.abs(((Integer)o1).intValue());     
-
-      int   v2   =   Math.abs(((Integer)o2).intValue());     
-
-      return   v1   >   v2   ?   1   :   (v1   ==   v2   ?   0   :   -1);     
-
-    }     
-
-}
-
-
-
-    
+```java
+    // AbsComparator.java     
+    import   java.util.*;
+    public   class   AbsComparator   implements   Comparator   {     
+        public   int   compare(Object   o1,   Object   o2)   {     
+          int   v1   =   Math.abs(((Integer)o1).intValue());     
+          int   v2   =   Math.abs(((Integer)o2).intValue());     
+          return   v1   >   v2   ?   1   :   (v1   ==   v2   ?   0   :   -1);     
+        }     
+    }
+```
 
 可以用下面这个类测试 AbsComparator：     
 
+```java
+    import   java.util.*;     
+    public   class   Test   {     
+        public   static   void   main(String[]   args)   {     
+          //产生一个20个随机整数的数组（有正有负）     
+          Random   rnd   =   new   Random();     
+          Integer[]   integers   =   new   Integer[20];     
+          for(int   i   =   0;   i   <   integers.length;   i++)     
+          integers[i]   =   new   Integer(rnd.nextInt(100)   *   (rnd.nextBoolean()   ?   1   :   -1));     
+          System.out.println("用Integer内置方法排序：");     
+          Arrays.sort(integers);     
+          System.out.println(Arrays.asList(integers));     
 
+          System.out.println("用AbsComparator排序：");     
+          Arrays.sort(integers,   new   AbsComparator());     
+          System.out.println(Arrays.asList(integers));     
+        }     
+    }
+```
 
-// Test.java     
-
-import   java.util.*;     
-
-
-
-public   class   Test   {     
-
-    public   static   void   main(String[]   args)   {     
-
-    
-
-      //产生一个20个随机整数的数组（有正有负）     
-
-      Random   rnd   =   new   Random();     
-
-      Integer[]   integers   =   new   Integer[20];     
-
-      for(int   i   =   0;   i   <   integers.length;   i++)     
-
-      integers[i]   =   new   Integer(rnd.nextInt(100)   *   (rnd.nextBoolean()   ?   1   :   -1));     
-
-    
-
-      System.out.println("用Integer内置方法排序：");     
-
-      Arrays.sort(integers);     
-
-      System.out.println(Arrays.asList(integers));     
-
-    
-
-      System.out.println("用AbsComparator排序：");     
-
-      Arrays.sort(integers,   new   AbsComparator());     
-
-      System.out.println(Arrays.asList(integers));     
-
-    }     
-
-}
-
-
-
-
-
-
-
- Collections.sort((List<T> list, Comparator<? super T> c)是用来对list排序的。
-
-
-
-
+Collections.sort((List<T> list, Comparator<? super T> c)是用来对list排序的。
 
 如果不是调用sort方法，相要直接比较两个对象的大小，如下：
 
@@ -9893,531 +9829,65 @@ true only if the specified object is also a comparator and it imposes the same o
 
 有时在实现Comparator接口时，并没有实现equals方法，可程序并没有报错，原因是实现该接口的类也是Object类的子类，而Object类已经实现了equals方法
 
-
-
  Comparable接口只提供了   int   compareTo(T   o)方法，也就是说假如我定义了一个Person类，这个类实现了   Comparable接口，那么当我实例化Person类的person1后，我想比较person1和一个现有的Person对象person2的大小时，我就可以这样来调用：person1.comparTo(person2),通过返回值就可以判断了；而此时如果你定义了一个   PersonComparator（实现了Comparator接口）的话，那你就可以这样：PersonComparator   comparator=   new   PersonComparator();
 
 comparator.compare(person1,person2);。
 
 # 在多线程中创建单例模式的双重锁定(Double-Check Locking ) 
 
-public class SingleTon {
-
-   
-
-    private static SingleTon singleTon = null;
-
-   
-
-       
-
-    public SingleTon() {
-
-        // TODO Auto-generated constructor stub
-
-    }
-
-   
-
-   
-
-    public static SingleTon getInstance(){
-
-        if (singleTon == null) {
-
-            synchronized (SingleTon.class) {
-
-                if (singleTon == null) {
-
-                    singleTon = new SingleTon();
-
+```java
+    public class SingleTon {
+        private static SingleTon singleTon = null;
+        public SingleTon() {
+            // TODO Auto-generated constructor stub
+        }
+        public static SingleTon getInstance(){
+            if (singleTon == null) {
+                synchronized (SingleTon.class) {
+                    if (singleTon == null) {
+                        singleTon = new SingleTon();
+                    }
                 }
-
             }
-
+            return singleTon;
         }
-
-        return singleTon;
-
     }
+```
 
+为何要使用双重检查锁定呢？考虑这样一种情况，就是有两个线程同时到达，即同时调用 getInstance() 方法，此时由于 singleTon == null ，所以很明显，两个线程都可以通过第一重的 singleTon == null ，进入第一重 if 语句后，由于存在锁机制，所以会有一个线程进入 lock 语句并进入第二重 singleTon == null ，而另外的一个线程则会在 lock 语句的外面等待。而当第一个线程执行完 new  SingleTon（）语句后，便会退出锁定区域，此时，第二个线程便可以进入 lock 语句块，此时，如果没有第二重 singleTon == null 的话，那么第二个线程还是可以调用 new  SingleTon （）语句，这样第二个线程也会创建一个 SingleTon实例，这样也还是违背了单例模式的初衷的，所以这里必须要使用双重检查锁定。细心的朋友一定会发现，如果我去掉第一重 singleton == null ，程序还是可以在多线程下完好的运行的，考虑在没有第一重 singleton == null 的情况下，当有两个线程同时到达，此时，由于 lock 机制的存在，第一个线程会进入 lock 语句块，并且可以顺利执行 new SingleTon（），当第一个线程退出 lock 语句块时， singleTon 这个静态变量已不为 null 了，所以当第二个线程进入 lock 时，还是会被第二重 singleton == null 挡在外面，而无法执行 new Singleton（），所以在没有第一重 singleton == null 的情况下，也是可以实现单例模式的？那么为什么需要第一重 singleton == null 呢？这里就涉及一个性能问题了，因为对于单例模式的话，new SingleTon（）只需要执行一次就 OK 了，而如果没有第一重 singleTon == null 的话，每一次有线程进入 getInstance（）时，均会执行锁定操作来实现线程同步，这是非常耗费性能的，而如果我加上第一重 singleTon == null 的话，那么就只有在第一次，也就是 singleTton ==null 成立时的情况下执行一次锁定以实现线程同步，而以后的话，便只要直接返回 Singleton 实例就 OK 了而根本无需再进入 lock 语句块了，这样就可以解决由线程同步带来的性能问题了。如果将方法使用synchronize进行修饰，虽然也可以解决问题，但是会导致性能的下降。
 
-
-}
-
-为何要使用双重检查锁定呢？上文已经大概说了一下。
-
-考虑这样一种情况，就是有两个线程同时到达，即同时调用 getInstance() 方法，
-
-此时由于 singleTon == null ，所以很明显，两个线程都可以通过第一重的 singleTon == null ，
-
-进入第一重 if 语句后，由于存在锁机制，所以会有一个线程进入 lock 语句并进入第二重 singleTon == null ，
-
-而另外的一个线程则会在 lock 语句的外面等待。
-
-而当第一个线程执行完 new  SingleTon（）语句后，便会退出锁定区域，此时，第二个线程便可以进入 lock 语句块，
-
-此时，如果没有第二重 singleTon == null 的话，那么第二个线程还是可以调用 new  SingleTon （）语句，
-
-这样第二个线程也会创建一个 SingleTon实例，这样也还是违背了单例模式的初衷的，
-
-所以这里必须要使用双重检查锁定。
-
-细心的朋友一定会发现，如果我去掉第一重 singleton == null ，程序还是可以在多线程下完好的运行的，
-
-考虑在没有第一重 singleton == null 的情况下，
-
-当有两个线程同时到达，此时，由于 lock 机制的存在，第一个线程会进入 lock 语句块，并且可以顺利执行 new SingleTon（），
-
-当第一个线程退出 lock 语句块时， singleTon 这个静态变量已不为 null 了，所以当第二个线程进入 lock 时，
-
-还是会被第二重 singleton == null 挡在外面，而无法执行 new Singleton（），
-
-所以在没有第一重 singleton == null 的情况下，也是可以实现单例模式的？那么为什么需要第一重 singleton == null 呢？
-
-这里就涉及一个性能问题了，因为对于单例模式的话，new SingleTon（）只需要执行一次就 OK 了，
-
-而如果没有第一重 singleTon == null 的话，每一次有线程进入 getInstance（）时，均会执行锁定操作来实现线程同步，
-
-这是非常耗费性能的，而如果我加上第一重 singleTon == null 的话，
-
-那么就只有在第一次，也就是 singleTton ==null 成立时的情况下执行一次锁定以实现线程同步，
-
-而以后的话，便只要直接返回 Singleton 实例就 OK 了而根本无需再进入 lock 语句块了，这样就可以解决由线程同步带来的性能问题了。
-
-如果将方法使用synchronize进行修饰，虽然也可以解决问题，但是会导致性能的下降。
-
-public class SingleTon {
-
-   
-
-    private static SingleTon singleTon = null;
-
-   
-
-       
-
-    public SingleTon() {
-
-        // TODO Auto-generated constructor stub
-
-    }
-
-   
-
-   
-
-    public static synchronized SingleTon getInstance(){
-
-        if (singleTon == null) {
-
-              singleTon = new SingleTon();
-
+```java
+    public class SingleTon {
+        private static SingleTon singleTon = null;
+        public SingleTon() {
+            // TODO Auto-generated constructor stub
         }
-
-        return singleTon;
-
-    }
-
-
-
-}
-
-# 相等测试(equals)
-
-equals方法的重要性毋须多言,只要你想比较的两个对象不仅仅局限在只是同一对象（即它们的引用相同）,你就应该实现equals方法,让对象用你认为相等的条件来进行比较。
-
-　　下面的内容只是API的规范,没有什么太高深的意义,但我之所以最先把它列在这儿,是因为这些规范在事实中并不是真正能保证得到实现。
-
-
-
-1。自反性：对于任何引用类型, o.equals(o) == true成立。 
-
-2。对称性：如果 o.equals(o1) == true 成立,那么o1.equals(o)==true也一定要成立。 
-
-3。传递性：如果 o.equals(o1) == true 成立且 o1.equals(o2) == true 成立,那么o.equals(o2) == true 也成立。 
-
-4。一致性：如果第一次调用o.equals(o1) == true成立再o和o1没有改变的情况下以后的任何次调用都成立。 
-
-5。o.equals(null) == true 任何时间都不成立。 
-
-　　以上几条规则并不是最完整的表述,详细的请参见API文档。
-
-    但是在hashCode()函数的协定中，要求“如果根据 equals(Object) 方法，两个对象是相等的，那么对这两个对象中的每个对象调用 hashCode 方法都必须生成相同的整数结果。”，因此我个人认为equals方法还应该加上这第6条规定：
-
-6。如果 o.equals(o1) == true 成立,那么必须有o.hashCode==o1.hashCode()。
-
-
-
-　　对于Object类,它提供了一个最最严密的实现,那就是只有是同一对象是,equals方法才返回true,也就是人们常说的引用比较而不是值比较。这个实现严密得已经没有什么实际的意义,所以在具体子类(相对于Object来说)中,如果我们要进行对象的值比较,就必须实现自己的equals方法。
-
-
-
-　　先来看一下以下这段引自于JDK中的程序:
-
-（说明：attribute在FieldPosition中有这样的定义：private Format.Field attribute;）
-
-    public boolean equals(Object obj)
-
-    {
-
-        if (obj == null) return false;
-
-        if (!(obj instanceof FieldPosition))
-
-            return false;
-
-        FieldPosition other = (FieldPosition) obj;
-
-        if (attribute == null) {
-
-            if (other.attribute != null) {
-
-                return false;
-
+        public static synchronized SingleTon getInstance(){
+            if (singleTon == null) {
+                  singleTon = new SingleTon();
             }
-
+            return singleTon;
         }
-
-        else if (!attribute.equals(other.attribute)) {
-
-            return false;
-
-        }
-
-        return (beginIndex == other.beginIndex
-
-            && endIndex == other.endIndex
-
-            && field == other.field);
-
     }
+```
 
-　　这是JDK中java.text.FieldPosition的标准实现,似乎没有什么可说的. 我相信大多数或绝大多数程序员认为,这是正确的合法的equals实现.毕竟它是JDK的API实现啊. 还是让我们以事实来说话吧:
+#  Class类
 
+Class类是为了保存JAVA虚拟机运行时(RTTI)对所有对象进行类型识别的信息而设立的。当然Class也是继承自Object类的,每个类都有Class对象,想得到一个类的Class对象共有三种方法.  
 
+1:调用getClass()   
 
-package debug;
+    Employee emp;  
+    Class cls=emp.getClass();  
 
-import java.text.*;
+2:静态方法forName(String  clsName)   
 
-public class Test {
+    String className="Employee";  
+    Class  cls=Class.forName(className);  
 
-public static void main(String[] args) {
+3:class成员变量法 
 
-    FieldPosition fp = new FieldPosition(10);
-
-    FieldPosition fp1 = new MyTest(10);
-
-    System.out.println(fp.equals(fp1));
-
-    System.out.println(fp1.equals(fp));
-
-}
-
-}
-
-class MyTest extends FieldPosition{
-
-int x = 10;
-
-public MyTest(int x){
-
-    super(x);
-
-    this.x = x;
-
-}
-
-public boolean equals(Object o){
-
-    if(o==null) return false;
-
-    if(!(o instanceof MyTest )) return false;
-
-    return ((MyTest)o).x == this.x;
-
-}
-
-}
-
-　　 运行一下看看会打印出什么:
-
-
-
-System.out.println(fp.equals(fp1));打印true
-
-System.out.println(fp1.equals(fp));打印flase　　
-
-　　两个对象,出现了不对称的equals算法.问题出在哪里(脑筋急转弯：当然出在JDK实现的固有BUG，看来JDK中的东西未必就完全都是最最最正确的，我们要敢于怀疑它！)?
-
-
-
-　　我相信有太多的程序员在实现equals方法时都用过instanceof运行符来进行短路优化的，实事求是地说很长一段时间我也这么用过。太多的教程，文档都给了我们这样的误导。而有些稍有了解的程序员可能知道这样的优化可能有些不对但找不出问题的关键。另外一种极端是知道这个技术缺陷的骨灰级专家就提议不要这样应用。
-
-
-
-　　我们知道，"通常"要对两个对象进行比较，那么它们"应该"是同一类型。所以首先利用nstanceof运行符进行短路优化（“短路”《Short-circuiting》，而短路的最大好处就是能够优化性能。所谓的短路就是当第一个被运算的表达式的结果已经能够决定运算的最终结果时，就不会再去计算其他的表达式，因此可以避免掉额外且不必要的运算操作，尤其是当所略过的是复杂或含有过程调用的表达式时，短路的性能提升幅度更为明显。比如我们在if中同时用&&判断多个条件的时候，遇到第一个false的时候就不会再计算后面的表达式是否为true了），如果被比较的对象不和当前对象是同一类型则不用比较返回false,但事实上，"子类是父类的一个实例"，所以如果 子类 instanceof 父类，始终返回true,这时肯定不会发生短路优化，下面的比较有可能出现多种情况，一种是父类不能造型成子类而抛出异常（比如子类.equals(父类)后，在equals内部会进行试图将父类向下造型成子类的操作），另一种是父类的private 成员没有被子类继承而不能进行比较，还有就是形成上面这种不对称比较。可能会出现太多的情况。
-
-
-
-　　那么，是不是就不能用 instanceof运行符来进行优化？答案是否定的，JDK中仍然有很多实现是正确的，如果一个class是final的，明知它不可能有子类，为什么不用instanceof来优化呢？（可见对于不涉及子类的问题时，用instanceof进行短路优化还是很可行的）
-
-
-
-　　为了维护SUN的开发小组的声誉，我不说明哪个类中，但有一个小组成员在用这个方法优化时在后加加上了加上了这样的注释：
-
-
-
-if (this == obj)             // quick check（也就是短路优化）
-
-         return true;
-
-      if (!(obj instanceof XXXXClass)) // (1) same object?
-
-         return false;　　可能是有些疑问，但不知道如何做（不知道为什么没有打电话给我......）
-
-
-
-　　那么对于非final类，如何进行类型的quick check呢？
-
-
-
-if(obj.getClass() != XXXClass.class) return false;
-
-　　用被比较对象的class对象和当前对象的class比较，看起来是没有问题，但是，如果这个类的子类没有重新实现equals方法，那么当子类.equals(子类)比较时，也就是要使用“if(obj.getClass() != XXXClass.class) return false;”来进行比较了，显然obj.getClass()《这个是字类》 肯定不等于XXXCalss.class《这个是父类》,从这里就直接返回得到false的结果了，因此子类中定义的equals实际上根本没发挥出应有的效力来，所以if(obj.getClass() != this.getClass()) return false;才是正确的比较。 呵呵，看到了没？我们首先否定了instanceof，接下来又否定了“obj.getClass() != XXXClass.class”这种错误的比较做法，最后才给出了正确的比较方法。
-
-另外一个quick check是if(this==obj) return true;而且这个短路优化应该放在“obj.getClass() != XXXClass.class”优化的前面。
-
-
-
-　　是否equals方法一定比较的两个对象就一定是要同一类型？上面我用了"通常"，这也是绝大多数程序员的愿望，但是有些特殊的情况，我们可以进行不同类型的比较，这并不违反规范。但这种特殊情况是非常罕见的，一个不恰当的例子是，Integer类的equals可以和Sort做比较，比较它们的value是不是同一数学值。（事实上JDK的API中并没有这样做，所以我才说是不恰当的例子）。在完成quick check以后，我们就要真正实现你认为的“相等”。对于如果实现对象相等，没有太高的要求，比如你自己实现的“人”类，你可以认为只要name相同即认为它们是相等的，其它的sex,ago都可以不考虑。这是不完全实现，但是如果是完全实现，即要求所有的属性都是相同的，那么如何实现equals方法？
-
-
-
-class Human{
-
-private String name;
-
-private int ago;
-
-private String sex;
-
-....................
-
-public boolean equals(Object obj){
-
-quick check.......
-
-Human other = (Human)ojb;
-
-return this.name.equals(other.name) 
-
-   && this.ago == ohter.ago
-
-   && this.sex.equals(other.sex);
-
-}
-
-}
-
-　　 这是一个完全实现，但是，有时equals实现是在父类中实现的，而且要求被子类继承后，父类的equals能正确的工作，这时父类中的equals并不事实知道子类到底扩展了哪些属性，所以用上面的方法无法使equals得到完全实现。
-
-
-
-　　一个好的方法是利用反射来对equals进行完全实现： 给出一个完整的在父类中定义的equals方法（只是比较字段）的实现：
-
-public boolean equals(Object obj){
-
-if(obj == this)
-
-      return true;
-
-if(obj.getClass() != this.getClass())
-
-      return false;
-
-Class c = this.getClass();
-
-Filed[] fds = c.getDeclaredFields();
-
-for(Filed f:fds){
-
-   if(!f.get(this).equals(f.get(obj)))
-
-    return false;
-
-}
-
-return true;
-
-}
-
-　　为了说明的方便，上明的实现省略了异常，这样的实现放在父类中，可以保证你的子类的equals可以按你的愿望正确地工作。当然这里只是考虑了基于字段相等的比较，如何还涉及到基于方法等其他方面的相等比较，则应该扩展上面的代码，反射出更多的东西（比如方法）来加以比较判断。
-
-
-
-　　关于equals方法的最后一点是：如果你要是自己重写（正确说应该是履盖）了equals方法，那同时就一定要重写hashCode()，否则.............
-
-
-
-　　我们还是看一下这个例子：
-
-
-
-public final class PhoneNumber {
-
-    private final int areaCode;
-
-    private final int exchange;
-
-    private final int extension;
-
-    public PhoneNumber(int areaCode, int exchange, int extension) {
-
-        rangeCheck(areaCode, 999, "area code");
-
-        rangeCheck(exchange, 99999999, "exchange");
-
-        rangeCheck(extension, 9999, "extension");
-
-        this.areaCode = areaCode;
-
-        this.exchange = exchange;
-
-        this.extension = extension;
-
-    }
-
-    private static void rangeCheck(int arg, int max, String name) {
-
-        if(arg < 0 || arg > max)
-
-            throw new IllegalArgumentException(name + ": " + arg);
-
-    }
-
-    public boolean equals(Object o) {
-
-        if(o == this)
-
-            return true;
-
-        if(!(o instanceof PhoneNumber))
-
-            return false;
-
-        PhoneNumber pn = (PhoneNumber)o;
-
-        return pn.extension == extension && pn.exchange == exchange && pn.areaCode == areaCode;
-
-    }
-
-}
-
-　　注意这个类是final的，所以这个equals实现没有什么问题。
-
-
-
-　　我们来测试一下:
-
-
-
-    public static void main(String[] args) {
-
-        Map hm = new HashMap();
-
-        PhoneNumber pn = new PhoneNumber(123, 38942, 230);
-
-        hm.put(pn, "I love you");
-
-        PhoneNumber pn1 = new PhoneNumber(123, 38942, 230);
-
-        System.out.println(pn);
-
-        System.out.println("pn.equals(pn1) is " + pn.equals(pn1));
-
-        System.out.println(hm.get(pn1));
-
-        System.out.println(hm.get(pn));
-
-    }
-
-　　既然pn.equals(pn1),那么我put(pn,"I love you");后，get(pn1)这什么是null呢？
-
-
-
-　　答案是因为pn和pn1的hashCode不一样，而hashMap就是以hashCode为主键的。
-
-
-
-　　所以根据规范要求（在文章最开始部分提到的标准equals方法需要满足的6条性质），如果两个对象进行equals比较时如果返回true,那么它们的hashcode要求返回相等的值。
-
-
-
-此外，在写hashCode函数时，需要注意：
-
-随便你怎么写，只要保证A.equals(B)一定可以推出A.hashCode()==B.hashCode()就行；当然，应该尽量使得A.equals(B)==false的时候，使得A.hashCode()尽量不等于B.hashCode()，绝对不会相等是不可能的，但是要尽量降低概率。
-
-
-
-比如：
-
-public int hashCode() { 
-
-        int result; 
-
-        result = getName().hashCode(); 
-
-        result = 29 * result + getBirthday().hashCode(); 
-
-        return result; 
-
-    } 
-
-其时就是需要你根据自己的类给出特有的一种算法，能够满足通过该算法得到的这个整数值（也就是hashCode）能够区别该类的各个实例。
-
-#  Class.class.getClass()
-
-Class与class都继承自Object,class实体来代表java运行时的class和interface等等，
-
-Class.class就是得到或者生成这个Class类的Class Object；
-
-而.getClass()本就是返回一个类对应的Class   Object  ，
-
-所以Class.class.getClass()最后还是返回Class   Object
-
- 
-
-总结如下（转）：
-
-  Class类是为了保存JAVA虚拟机运行时(RTTI)对所有对象进行类型识别的信息而设立的.  
-
-  当然Class也是继承自Object类的,每个类都有Class对象,想得到一个类的Class对象共有三种方法.  
-
-  1:调用getClass()   
-
-  Employee emp;  
-
-  Class   cls=emp.getClass();  
-
-  2:静态方法forName(String   )   
-
-  String   className="Employee";  
-
-  Class   cls=Class.forName(className);  
-
-  3:class成员变量法 
-
-  Class   cls=Employee.class;   
-
-
-
-  Class.class.getClass()的意思应该很清楚了
-
-  Class.class返回一个Class类的Class对象,
-
-  在调用getClass()又一次返回Class的对象。
+    Class cls=Employee.class;   
 
 # myeclipse工程结构问题
 
@@ -10513,4 +9983,3 @@ Class.class就是得到或者生成这个Class类的Class Object；
 * CSS3美化有序列表: http://www.w3cplus.com/css3/css3-ordered-list-styles
 * 简洁纯净的CSS表单设计实例: http://blog.bingo929.com/clean-and-pure-css-form-design.html
 * DreamweaverCS5+Tomcat环境配置: http://blog.csdn.net/jnqqls/article/details/7024170
-
