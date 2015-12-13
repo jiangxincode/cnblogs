@@ -5,3 +5,7 @@
 欢迎来到我的博客：
 
 http://www.cnblogs.com/jiangxinnju/
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/jiangxincode/cnblogs/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
