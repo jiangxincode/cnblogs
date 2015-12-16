@@ -1,6 +1,7 @@
 # 代码托管网站:
 
 * https://github.com/ (Git)
+* http://www.gitlab.cc/ (Git)
 * https://bitbucket.org/ (Git Mercurial)
 * https://sourceforge.net/ (Git Mercurial SVN)
 * http://www.codeplex.com/
@@ -16,10 +17,6 @@
 * <del>http://svn.coollittlethings.com/index.php</del>
 * <del>http://www.svnhost.cn/</del> (SVN)
 * <del>http://www.chinasvn.com</del> (SVN)
-
-* Travis CI: https://travis-ci.org/
-* codeclimate: https://codeclimate.com/
-
 
 
 # SVN
@@ -254,6 +251,17 @@ SVN本身并不提供这种强制写log的功能，而是通过一系列的钩�
 * tortoisegit：https://code.google.com/p/tortoisegit/
 * gitlab：https://about.gitlab.com/
 
+* http://githuber.info/index
+
+* Travis CI: https://travis-ci.org/
+* appveyor: https://ci.appveyor.com/
+* codeclimate: https://codeclimate.com/
+* GITTER: https://gitter.im/home
+* Waffle: https://waffle.io/
+* bitdeli: https://bitdeli.com/
+* COVERALLS: https://coveralls.io/
+* COVERITY: https://scan.coverity.com/
+* choosealicense: http://choosealicense.com/
 
 ## 教程地址：
 

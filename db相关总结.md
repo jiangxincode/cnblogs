@@ -53,6 +53,8 @@
 * Navicat: http://www.navicat.com.cn/
 * Navicat Premium: http://www.navicat.com.cn/products/navicat-premium
 
+* DBeaver: http://dbeaver.jkiss.org/
+
     Navicat Premium 是一套数据库管理工具，让你以单一程序同時连接到 MySQL、MariaDB、SQL Server、SQLite、Oracle 和 PostgreSQL 数据库。
 
 * ToadWorld: http://www.toadworld.com/
