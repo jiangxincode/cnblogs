@@ -320,6 +320,11 @@
 * 项目地址及安装说明：http://jd.benow.ca/
 
 
+# jad
+
+* jad: http://varaneckas.com/jad/
+* jadclipse: https://sourceforge.net/projects/jadclipse/
+
 # ProGuard
 
     ProGuard is a free Java class file shrinker, optimizer, obfuscator, and preverifier. It detects and removes unused classes, fields, methods, and attributes. It optimizes bytecode and removes unused instructions. It renames the remaining classes, fields, and methods using short meaningless names. Finally, it preverifies the processed code for Java 6 or higher, or for Java Micro Edition.
@@ -657,6 +662,7 @@ JavaDoc: https://storm.apache.org/javadoc/apidocs/index.html
 * Ilog JRules: http://www-01.ibm.com/software/websphere/products/business-rule-management/
 * Jess: http://www.jessrules.com/
 * Java bytecode instruction listings: https://en.wikipedia.org/wiki/Java_bytecode_instruction_listings
+* ZeroCrawler V0.1：多线程爬虫: http://www.cnblogs.com/FengYan/archive/2012/11/27/2788369.html
 
 
 # Drools:
@@ -683,8 +689,13 @@ JavaDoc: https://storm.apache.org/javadoc/apidocs/index.html
 # Lucene
 
 * http://lucene.apache.org/
-* Solr: http://lucene.apache.org/solr/
 * Lucene原理与代码分析: http://www.cnblogs.com/forfuture1978/category/300665.html
+
+
+# Solr
+
+* http://lucene.apache.org/solr/
+* solr教程，值得刚接触搜索开发人员一看: http://blog.csdn.net/awj3584/article/details/16963525
 
 
 
