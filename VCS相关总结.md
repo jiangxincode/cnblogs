@@ -250,6 +250,7 @@ SVN本身并不提供这种强制写log的功能，而是通过一系列的钩�
 * SourceTree：https://www.sourcetreeapp.com/
 * tortoisegit：https://code.google.com/p/tortoisegit/
 * gitlab：https://about.gitlab.com/
+* EGit：http://www.eclipse.org/egit/download/
 
 * http://githuber.info/index
 
@@ -315,9 +316,20 @@ git push origin master:b1
 解决办法就是使用”git init –bare”方法创建一个所谓的裸仓库，之所以叫裸仓库是因为这个仓库只保存git历史提交的版本信息，而不允许用户在上面进行各种git操作，如果你硬要操作的话，只会得到下面的错误（”This operation must be run in a work tree”）这个就是最好把远端仓库初始化成bare仓库的原因。 
 
 
+# Mercurial
+
+* Mercurial：https://mercurial.selenic.com/
+* mercurialeclipse： https://bitbucket.org/mercurialeclipse/main/wiki/Home
+* tortoisehg：http://tortoisehg.bitbucket.org/
+
+
+# perforce
+
+* https://www.perforce.com/
+
 # Others
 
 * CVS：http://www.nongnu.org/cvs/
-* Mercurial：https://mercurial.selenic.com/
-* tortoisehg：http://tortoisehg.bitbucket.org/
 * bazaar：http://bazaar.canonical.com/en/
+
+
