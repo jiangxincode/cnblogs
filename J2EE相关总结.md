@@ -87,6 +87,34 @@
 
 * http://marketplace.eclipse.org/content/anyedit-tools
 
+# EClim (不推荐)
+
+* http://eclim.org
+
+
+# eclipse-games
+
+* http://eclipse-games.sourceforge.net/
+
+
+# eclipse-rbe
+
+    Eclipse plugin for editing Java resource bundles. Lets you manage all localized .properties files in one screen. Some features: sorted keys, warning icons on missing keys/values, conversion to/from Unicode, hierarchical view of keys, and more. 
+
+* https://github.com/essiembre/eclipse-rbe
+
+
+# FileSync
+
+    FileSync plugin for Eclipse is a file synchronisation tool. The main goal is to keep files outside of Eclipse projects in-sync with Eclipse project files. The plugin works as builder in Eclipse and will synchronize all changes on Eclipse project files to mapped external folders. E.g. if a file is created, changed or deleted in Eclipse, then the mapped (external) file will be created, changed or deleted too. Please note, that synchronization works is only in one direction - from Eclipse to the rest of the world.
+    
+* http://andrei.gmxhome.de/filesync/
+
+# Apache IvyDE
+
+    Apache IvyDE is the Eclipse plugin which integrates Apache Ivy's dependency management into Eclipse™.
+
+* http://ant.apache.org/ivy/ivyde/index.html
 
 # PyDev
 
@@ -132,6 +160,12 @@
 
 * 项目地址：http://sourceforge.net/projects/asmplugin/
 
+
+# Bytecode Outline plugin for Eclipse
+
+    Bytecode Outline plugin shows disassembled bytecode of current Java editor or class file, allows bytecode compare for Java/class files and shows ASMifier code for current bytecode.
+
+* http://asm.ow2.org/eclipse/index.html
 
 # Spket IDE（提供Eclipse的插件）
 
@@ -212,6 +246,14 @@
 * Java程序员修炼之道 之 Logging(1/3) - Logback 配置:http://www.blogjava.net/justfly/archive/2014/08/10/416768.html
 * Java程序员修炼之道 之 Logging(2/3) - 怎么写Log:http://www.blogjava.net/justfly/archive/2014/08/13/416925.html
 * Java程序员修炼之道 之 Logging(3/3) - 怎么分析Log:http://www.blogjava.net/justfly/archive/2014/09/17/418034.html
+
+
+# Log4E
+
+    Log4E is an Eclipse Plugin which helps you to use your logger easily in Java Projects.The Plugin Log4E is not bound to any special logging framework. Thus you might be able to adapt to your own logger by defining your own templates using the preferences. It has active support for Log4j, Log4j 2, SLF4J, Commons Logging and JDK 1.4 logging.
+    
+* http://log4e.jayefem.de/
+
 
 # 代码评审
 
@@ -325,6 +367,17 @@
 * jad: http://varaneckas.com/jad/
 * jadclipse: https://sourceforge.net/projects/jadclipse/
 
+# jdec
+
+* http://jdec.sourceforge.net/
+* Jode Eclipse Plugin: http://blog.technoetic.com/open-source/jode-eclipse-plugin/
+
+# JODE
+
+    JODE is a java package containing a decompiler and an optimizer (aka obfuscator ;-) for java.
+
+* https://sourceforge.net/projects/jode/
+
 # ProGuard
 
     ProGuard is a free Java class file shrinker, optimizer, obfuscator, and preverifier. It detects and removes unused classes, fields, methods, and attributes. It optimizes bytecode and removes unused instructions. It renames the remaining classes, fields, and methods using short meaningless names. Finally, it preverifies the processed code for Java 6 or higher, or for Java Micro Edition.
@@ -362,6 +415,19 @@
 * JDepend4Eclipse：http://marketplace.eclipse.org/content/jdepend4eclipse
 
 
+# SourceHelper
+
+    The “Source Helper” plugin is an Eclipse plugin that takes a very useful feature that exists in Intellij IDEA and puts it into Eclipse. In short, the feature shows the code of an out-of-visible-range starting bracket by floating a window that shows the code you cannot see. This helps immensely when trying to identify what closing bracket belongs to what part of the code.
+
+* http://hexapixel.com/projects/sourcehelper
+
+
+# Structure101
+
+    Structure101 is an agile architecture development environment (ADE) that lets the software development team organize a codebase.
+    
+* http://structure101.com/
+
 # inFusion
 
     Whether you own, are responsible for, or are acquiring software projects in C/C++ or Java, inFusion puts you in full control of architecture and design quality. inFusion makes quality assurance of multi-million LOC systems not merely practical, but effective, successfully handling both object oriented and procedural style code.
@@ -387,7 +453,9 @@
 
     Checkstyle is a development tool to help programmers write Java code that adheres to a coding standard. It automates the process of checking Java code to spare humans of this boring (but important) task. This makes it ideal for projects that want to enforce a coding standard.
 
-* 项目地址：http://checkstyle.sourceforge.net/   
+* 项目地址：http://checkstyle.sourceforge.net/
+* Eclipse Checkstyle plug-in: https://sourceforge.net/projects/eclipse-cs/
+* Checkclipse: https://sourceforge.net/projects/checkclipse/   
 
 
 ## CCT
@@ -472,6 +540,7 @@ JavaDoc: https://storm.apache.org/javadoc/apidocs/index.html
 
 * java 利用JAX-RS快速开发RESTful 服务(以JBoss为容器)：http://www.cnblogs.com/yjmyzz/p/javaee-jax-rs-tutorial.html
 
+* JbossTools：http://download.jboss.org/jbosstools/updates/JBossTools-2.1.2.GA
 
 # GlassFish
 
@@ -526,6 +595,9 @@ JavaDoc: https://storm.apache.org/javadoc/apidocs/index.html
     * Spring Security(deprecated) https://src.springframework.org/svn/spring-security/:w
     * spring-framework https://github.com/spring-projects/spring-framework/
 
+* Spring Tool Suite：http://spring.io/tools/sts
+* spring-ide：http://marketplace.eclipse.org/content/spring-ide
+
 
 ## Hibernate
 
@@ -534,6 +606,8 @@ JavaDoc: https://storm.apache.org/javadoc/apidocs/index.html
 * 源码：
     * 匿名可访问地址 http://anonsvn.jboss.org/repos/hibernate
     * 开发者访问地址 http://svn.jboss.org/repos/hibernate
+    
+* hibernator：https://sourceforge.net/projects/hibernator/
 
 
 ## iBATIS/MyBatis
