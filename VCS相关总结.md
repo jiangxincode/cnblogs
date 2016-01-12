@@ -48,6 +48,8 @@
 * 如何结合使用 Subversion 和 Eclipse：http://www.ibm.com/developerworks/cn/opensource/os-ecl-subversion/
 * Eclipse + SVN + Google code搭建代码仓库：http://convolute.iteye.com/blog/564247
 * MyEclipse使用总结——MyEclipse10安装SVN插件: http://www.cnblogs.com/xdp-gacl/p/3497016.html
+* SVN版本库无损迁移与自动备份（一）:http://www.cnblogs.com/springside-example/archive/2011/11/30/2530176.html
+* SVN版本库无损迁移与自动备份（二）:http://www.cnblogs.com/springside-example/archive/2011/11/30/2530174.html
 
 
 ## 简单教程（详细说明参考前面的教程地址，此处仅为了速查速用）
