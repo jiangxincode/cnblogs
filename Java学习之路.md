@@ -9988,6 +9988,35 @@ Class类是为了保存JAVA虚拟机运行时(RTTI)对所有对象进行类型�
 
 补充：tomcat最好也换也tomcat7
 
+# Tomcat启动报Error listenerStart错误
+
+今天启动Tomcat启动不了，报以下错： 
+
+    org.apache.catalina.core.StandardContext startInternal 
+    SEVERE: Error listenerStart 
+    org.apache.catalina.core.StandardContext startInternal 
+    SEVERE: Context [/******] startup failed due to previous errors 
+
+Tomcat报的错太含糊了，什么错都没报出来，只提示了Error listenerStart。为了调试，我们要获得更详细的日志。可以在WEB-INF/classes目录下新建一个文件叫logging.properties，内容如下 
+
+```properties
+    handlers = org.apache.juli.FileHandler, java.util.logging.ConsoleHandler  
+      
+    ############################################################  
+    # Handler specific properties.  
+    # Describes specific configuration info for Handlers.  
+    ############################################################  
+      
+    org.apache.juli.FileHandler.level = FINE  
+    org.apache.juli.FileHandler.directory = ${catalina.base}/logs  
+    org.apache.juli.FileHandler.prefix = error-debug.  
+      
+    java.util.logging.ConsoleHandler.level = FINE  
+    java.util.logging.ConsoleHandler.formatter = java.util.logging.SimpleFormatter  
+```
+
+这样，我们再启动tomcat时，就会在logs目录下生成一个更详细的日志error-debug.2012-05-31.log。我碰到的错误是FileNotFoundException.大家碰到的错应该各式各样都有，所以就要具体问题具体分析了。 tomcat的logging文档具体可参考http://tomcat.apache.org/tomcat-7.0-doc/logging.html 
+
 # 比较好的文章
 
 * 浅析Web工程目录和tomcat目录: http://blog.csdn.net/ystyaoshengting/article/details/6204886
