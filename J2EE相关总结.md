@@ -361,11 +361,16 @@
 
 * 项目地址及安装说明：http://jd.benow.ca/
 
+注：不支持命令行使用，因而很难批量编译。
+
 
 # jad
 
 * jad: http://varaneckas.com/jad/
 * jadclipse: https://sourceforge.net/projects/jadclipse/
+
+注：jad支持命令行方式使用，最新版本为1.5.8g，支持的class版本过低。经常出现问题：The class file version is 48.0 (only 45.3, 46.0 and 47.0 are supported)。还有一个工具uuDeJava，也是基于jad，所以估计也难以避免这个问题。
+
 
 # jdec
 
@@ -377,6 +382,13 @@
     JODE is a java package containing a decompiler and an optimizer (aka obfuscator ;-) for java.
 
 * https://sourceforge.net/projects/jode/
+
+# DJ Java Decompiler
+
+* http://dj.navexpress.com/
+
+注：收费软件，没有试用过
+
 
 # ProGuard
 
