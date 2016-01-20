@@ -54,6 +54,7 @@
 * 如何使用Eclipse将Java项目打成jar包？:http://jingyan.baidu.com/article/4dc40848b5a8c9c8d946f139.html
 * 如何使用eclipse生成javadoc帮助文档？:http://jingyan.baidu.com/article/dca1fa6f4d3d7ff1a4405239.html
 * [改编]深入equals方法，讨论instanceof的使用！: http://www.blogjava.net/bacoo/archive/2007/12/20/169176.html
+* 如何查看class文件的jdk版本：http://jingyan.baidu.com/article/e6c8503c7001b8e54f1a1804.html
 
 
 # Eclipse        

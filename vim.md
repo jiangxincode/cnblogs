@@ -97,12 +97,14 @@ vim 在插入模式下<BS>有几种工作方式，默认是设置成vi兼容，�
 
 ## vim 替换
 
+```
     :0,$s/^/#/gc " 在行首加一个#号
     :6,10s/^/#/gc " 在6~10行的行首加一个#号
     :%s/^ *//g " 删除行首的空格
     :%s/ *$//g " 删除行尾的空格
     :%s/^\n//g " 删除空行
     :g/^s*$/d " 删除空行
+```
 
 ## Vim局部排序
 
@@ -209,8 +211,10 @@ ctags工具是用来遍历源代码文件生成tags文件，这些tags文件能�
 
 1 重新载入当前文件：
 
+```
     :e
     :e! #放弃当前修改，强制重新载入
+```
 
 2 重新载入所有打开的文件：
 
@@ -258,7 +262,7 @@ ctags工具是用来遍历源代码文件生成tags文件，这些tags文件能�
 
 会提示无法加载python27.dll, 针对于这种情况,请到官方下载 windows 版本的 32位 的python 2.7.x 安装文件. 使用64位的python无法正常在gvim中使用。python3.x系列在某些vim相关插件中仍不支持,所以依旧推荐使用2.7.x
 
-# 用vim格式化代码
+## 用vim格式化代码
 
 在vim的官方FAQ （http://vimdoc.sourceforge.net/cgi-bin/vimfaq2html3.pl）找到的：
 
@@ -284,7 +288,14 @@ For more information, read
      :help 'formatprg'
      :help C-indenting
 
+     
+## VIM 编辑二进制文件 （vim手册载录）
+
+帮助文档：23.4
+
+
 # Emacs
 
 * emacswiki: http://www.emacswiki.org/emacs/
 * GNU Emacs Manuals Online: http://www.gnu.org/software/emacs/manual/
+

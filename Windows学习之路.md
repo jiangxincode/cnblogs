@@ -100,3 +100,8 @@ PowerShell的默认启动路径其实就是执行PowerShell时指定的默认工作目录. 你可以编辑Po
 如果是Windows 7中遇到类似问题，参考：
 http://jingyan.baidu.com/article/ab69b270bb7b2a2ca6189f6d.html
 
+
+# 文章
+
+* Powershell 错误记录:详细错误：http://www.pstips.net/powershell-error-record-details.html
+
