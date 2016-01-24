@@ -369,6 +369,7 @@
 
 * jad: http://varaneckas.com/jad/
 * jadclipse: https://sourceforge.net/projects/jadclipse/
+* Eclipse Class Decompiler——Java反编译插件: http://www.blogjava.net/cnfree/archive/2012/10/30/390457.html
 
 注：jad支持命令行方式使用，最新版本为1.5.8g，支持的class版本过低。经常出现问题：The class file version is 48.0 (only 45.3, 46.0 and 47.0 are supported)。还有一个工具uuDeJava，也是基于jad，所以估计也难以避免这个问题。
 
@@ -377,6 +378,8 @@
 
 * http://jdec.sourceforge.net/
 * Jode Eclipse Plugin: http://blog.technoetic.com/open-source/jode-eclipse-plugin/
+
+
 
 # JODE
 
@@ -637,6 +640,10 @@ JavaDoc: https://storm.apache.org/javadoc/apidocs/index.html
 # Json-lib
 
 * 官网：https://sourceforge.net/projects/json-lib/
+
+# Eclipse Json Editor Plugin
+
+* https://sourceforge.net/projects/eclipsejsonedit/
 
 
 # Jackson
