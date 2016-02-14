@@ -14,5 +14,12 @@
 * 安装说明：http://scala-ide.org/documentation.html
 
 
+# SBT
+
+    用于Scala和Java项目的开源构建工具，类似于Java的Maven和Ant。
+    
+* http://www.scala-sbt.org/
+
+
 
 
