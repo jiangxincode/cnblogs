@@ -58,3 +58,12 @@
 * Chun Tian (binghe): http://tianchunbinghe.blog.163.com/
 * Lisp as an Alternative to Java: http://www.flownet.com/ron/papers/lisp-java/
 * Lisp as an Alternative to Java: http://www.norvig.com/java-lisp.html
+
+
+# Clojure
+
+## Leiningen
+
+    一个自动化构建和依赖性管理工具，用于使用Clojure编程语言写的软件项目
+
+* http://leiningen.org/
