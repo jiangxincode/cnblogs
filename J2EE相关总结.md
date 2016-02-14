@@ -92,6 +92,9 @@
 
 * http://eclim.org
 
+# Eclipse EditorList Plug-in
+
+* https://sourceforge.net/projects/editorlist/
 
 # eclipse-games
 
@@ -180,6 +183,37 @@
     Build web applications quickly and easily using the industry’s leading web application IDE. Aptana Studio harnesses the flexibility of Eclipse and focuses it into a powerful web development engine.
 
 * 官网：http://www.aptana.com/
+
+
+# Hudson
+
+    用Java编写的持续集成（CI）工具。
+
+* http://hudson-ci.org/
+
+
+# Jenkins
+
+    用Java编写的一个开源持续集成工具。项目是在和Oracle发生争执后的来自于Hudson 的分支。
+    
+* https://jenkins-ci.org/
+
+
+# Atlassian Bamboo
+
+    持续集成和交付工具，它将自动化构建、测试和发布捆绑到单个流程中。
+    
+* https://www.atlassian.com/software/bamboo/
+
+
+# TeamCity
+
+    来自于JetBrains的一个基于Java构建的管理和持续集成服务器。
+    
+* https://www.jetbrains.com/teamcity/
+
+
+# 
 
 
 # JUnit
@@ -289,11 +323,6 @@
 * 下载地址：http://sourceforge.net/projects/texlipse/
 
 
-# Xtext
-
-* 项目地址：http://www.eclipse.org/Xtext/
-
-
 # Maven and M2Eclipse
 
 * Maven项目地址：http://maven.apache.org/
@@ -318,11 +347,26 @@
     * http://people.apache.org/repo/m2-snapshot-repository/
     * http://mirrors.ibiblio.org/maven2/org/acegisecurity/
 
+    
+
+# Gradle
+
+    一个开源的自动化构建系统，建立在Apache Ant和Maven Apache概念的基础上，并引入了基于Groovy的特定领域语言（DSL），而不是使用Apache Maven宣布的项目配置XML形式。
+    
+* http://gradle.org/
+
 
 # Ant
 
 * 项目地址：http://ant.apache.org/
 * 用户手册：http://ant.apache.org/manual/index.html
+
+
+# Ivy
+
+    Apache Ant项目的一个子项目，一个可传递的依赖项管理器。
+    
+* http://ant.apache.org/ivy/
 
 
 # Eclipse Color Themes
@@ -491,6 +535,7 @@
 
 * 项目地址：http://www8.hp.com/us/en/software-solutions/static-code-analysis-sast/index.html
 * 用Fortify SCA分析代码漏洞：http://www.cnblogs.com/hyddd/archive/2009/02/23/1396790.html
+* SEI CERT Coding Standards: https://www.securecoding.cert.org/confluence/display/seccode/SEI+CERT+Coding+Standards
 * HP Fortify Taxonomy: Software Security Errors：http://www.hpenterprisesecurity.com/vulncat/en/vulncat/index.html
 * Sebug漏洞库：http://old.sebug.net/
 * The Open Web Application Security Project：https://www.owasp.org
@@ -724,6 +769,12 @@ JavaDoc: https://storm.apache.org/javadoc/apidocs/index.html
     Apache CXF is an open source services framework. CXF helps you build and develop services using frontend programming APIs, like JAX-WS and JAX-RS. These services can speak a variety of protocols such as SOAP, XML/HTTP, RESTful HTTP, or CORBA and work over a variety of transports such as HTTP, JMS or JBI.
 
 官网: http://cxf.apache.org/
+
+
+
+# Xtext
+
+* 项目地址：http://www.eclipse.org/Xtext/
 
 
 # antlr
