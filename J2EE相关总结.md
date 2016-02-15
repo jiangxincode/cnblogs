@@ -347,6 +347,91 @@
     * http://people.apache.org/repo/m2-snapshot-repository/
     * http://mirrors.ibiblio.org/maven2/org/acegisecurity/
 
+## maven下载源码和javadoc
+
+当在IDE中使用Maven时如果想要看引用的jar包中类的源码和javadoc需要通过maven命令下载这些源码，然后再进行引入，通过mvn命令能够容易的达到这个目的：
+
+```
+    mvn dependency:sources
+    mvn dependency:resolve -Dclassifier=javadoc
+```
+
+命令使用方法：首先进入到相应的pom.xml目录中，然后执行以上命令。第一个命令尝试下载在pom.xml中依赖的文件的源代码。第二个命令尝试下载对应的javadocs。但是有可能一些文件没有源代码或者javadocs。也可以通过配置文件添加，打开maven配置文件 setting.xml文件(.../.m2/settings.xml) 增加如下配置：
+```
+    <profiles>  
+    <profile>  
+        <id>downloadSources</id>  
+        <properties>  
+            <downloadSources>true</downloadSources>  
+            <downloadJavadocs>true</downloadJavadocs>             
+        </properties>
+    </profile>
+    </profiles>
+
+    <activeProfiles>  
+      <activeProfile>downloadSources</activeProfile>
+    </activeProfiles>  
+```
+
+配置eclipse
+
+    Window > Preferences > Maven and checking the "Download Artifact Sources" and "Download Artifact JavaDoc" options
+
+## maven快速下载某个jar包依赖的所有jar
+
+经常碰到这种事情:在一些非maven工程中(由于某种原因这种工程还是手工添加依赖的),需要用到某个新的类库(假设这个类库发布在maven库中),而这个类库又间接依赖很多其他类库,如果依赖路径非常复杂的话,一个个检查手动下载是很麻烦的事.下面给出一个便捷的办法，创建一个新目录里面建一个maven pom文件, 添加需要依赖的类库:
+
+```
+    <?xml version="1.0"?>
+    <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+        <modelVersion>4.0.0</modelVersion>
+        <groupId>com.dep.download</groupId>
+        <artifactId>dep-download</artifactId>
+        <version>1.0-SNAPSHOT</version>
+        <dependencies>
+            <dependency>
+                <groupId>com.xx.xxx</groupId>
+                <artifactId>yy-yyy</artifactId>
+                <version>x.y.z</version>
+                <scope/>
+            </dependency>
+        </dependencies>
+    </project>
+```
+
+在这个目录下运行命令，所有跟这个类库相关的直接和间接依赖的jar包都会下载到 ./target/dependency/下
+
+    mvn -f download-dep-pom.xml dependency:copy-dependencies
+
+
+## 杂项
+
+间接依赖的jar包能否直接使用
+
+如果工程依赖A.jar，并用maven设置好依赖，同时A.jar会依赖B.jar，所以maven在下载A.jar的同时会下载B.jar，这时如果项目发现需要使用B.jar中的一些内容，在maven中不必从新设置依赖，可以在工程中直接使用。
+
+
+
+把某个本地jar包安装到本地仓库中
+
+mvn install:install-file -DgroupId="edu.jiangxin" -DartifactId=”gcu” -Dversion="1.0.0"
+
+-Dpackaging=”jar” -Dfile="D:\CS\J2EE\lib\edu.jiangxin.gcu-1.0.0.jar"
+
+
+
+把某个本地jar包部署到某个远程仓库中
+
+mvn deploy:deploy-file -DgroupId="edu.jiangxin" -DartifactId=”gcu” -Dversion="1.0.0"
+
+-Dpackaging=”jar” -Dfile="D:\CS\J2EE\lib\edu.jiangxin.gcu-1.0.0.jar" -Durl=http://yourlocalrepository:8888/archiva/repository/internal
+
+-DrepositoryId=internal
+
+maven中如何生成javadoc
+
+mvn javadoc:javadoc
+
     
 
 # Gradle
