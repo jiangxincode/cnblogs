@@ -286,6 +286,7 @@ SVN本身并不提供这种强制写log的功能，而是通过一系列的钩�
 * Caching your GitHub password in Git：https://help.github.com/articles/caching-your-github-password-in-git/
 * github使用指南：https://github.com/NeuOL/neuola-legacy/wiki/github使用指南
 * github创建tag: http://caibaojian.com/github-create-tag.html
+* Commit message 和 Change log 编写指南：http://www.ruanyifeng.com/blog/2016/01/commit_message_change_log.html
 
 ## install
 
