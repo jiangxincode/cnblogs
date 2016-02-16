@@ -338,34 +338,37 @@ ORA-28000: 账户锁定
 * 点击“应用”再点击“关闭”；
 * 重新登录就可以通过验证了
 
-## oracle emca常用命令 
-$ emctl stop dbconsole
-$emca -r 修复完毕，dbconsole 可以正常使用了
+## oracle emca常用命令
 
-创建一个EM资料库
-emca -repos create
+``` 
+    $ emctl stop dbconsole
+    $emca -r 修复完毕，dbconsole 可以正常使用了
 
-重建一个EM资料库
-emca -repos recreate
-删除一个EM资料库
-emca -repos drop
-配置数据库的 Database Control
-emca -config dbcontrol db
-删除数据库的 Database Control配置
-emca -deconfig dbcontrol db
-重新配置db control的端口，默认端口在1158
-emca -reconfig ports
-emca -reconfig ports -dbcontrol_http_port 1160
-emca -reconfig ports -agent_port 3940
-先设置ORACLE_SID环境变量后,启动EM console服务
-emctl start dbconsole
-emctl stop dbconsole
-emctl status dbconsole
-重新配置dbconsole的步骤
-emca -repos drop 删除DBConsole
-emca -repos create 重建
-emca -config dbcontrol db 配置
-emctl start dbconsole 启动
+    创建一个EM资料库
+    emca -repos create
+
+    重建一个EM资料库
+    emca -repos recreate
+    删除一个EM资料库
+    emca -repos drop
+    配置数据库的 Database Control
+    emca -config dbcontrol db
+    删除数据库的 Database Control配置
+    emca -deconfig dbcontrol db
+    重新配置db control的端口，默认端口在1158
+    emca -reconfig ports
+    emca -reconfig ports -dbcontrol_http_port 1160
+    emca -reconfig ports -agent_port 3940
+    先设置ORACLE_SID环境变量后,启动EM console服务
+    emctl start dbconsole
+    emctl stop dbconsole
+    emctl status dbconsole
+    重新配置dbconsole的步骤
+    emca -repos drop 删除DBConsole
+    emca -repos create 重建
+    emca -config dbcontrol db 配置
+    emctl start dbconsole 启动
+```
 
 ## 系统表
 
