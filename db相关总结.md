@@ -1,6 +1,6 @@
 # 通用：
 
-* http://db-engines.com/en/ranking
+* http://db-engines.com
 * Tech On The Net: http://www.techonthenet.com/index.php
 * SQL Pretty Printer formatter: http://www.dpriver.com/index.php
 * ApexSQL: http://www.apexsql.com/
@@ -76,112 +76,6 @@
 
 * http://www.allroundautomations.com/registered/plsqldev.html
 * 配置：localhost:1521/orcl
-
-## 常用命令
-
-### 杂项
-
-```sql
-
-    -- Windows下以管理员身份启动数据库
-    net start oracleserviceorcl -- 后面的orcl是你安装的数据库实例名
-    net start oracleoradb11g_home1tnslistener --非必须
-
-    -- linux下以sysdba用户登录，然后启动数据库
-    sqlplus / as sysdba
-    startup
-    
-    -- sqlplus登陆方式
-    sqlplus / as sysdba --以操作系统权限认证的oracle sys管理员登陆
-
-    sqlplus /nolog
-    conn / as sysdba --以操作系统权限认证的oracle sys管理员登陆
-
-
-    sqlplus sys/password@orcl as sysdba --以sys用户登陆必须使用as sysdba
-
-    sqlplus /nolog --不在cmd或者teminal当中暴露密码的登陆方式
-    conn sys/password as sysdba
-
-
-    sqlplus --不显露密码的方式登陆
-    Enter user-name：sys
-    Enter password：password as sysdba --以sys用户登陆的话 必须要加上as sysdba子句
-
-    sqlplus scott/tiger@orcl --非管理员用户登陆
-    
-    
-    desc v$database; --查询v$database数据库的表结构
-
-    show parameter name; -- 查看一些数据库的名字信息
-
-    select global_name from global_name; -- 查看oracle的全局数据库名
-
-    select name,dbid from v$database; -- 查看数据库名
-    show parameter db_name;
-
-    select instance_name from v$instance; --查询实例名
-    show parameter instance_name;
-
-    -- 数据库实例名对应着SID，查询SID还可以使用下面的方式：
-    -- linux下在配置oracle环境变量的情况可以使用 echo $ORACLE_SID,如果没有可以使用ps -ef |grep oracle 来查询，结果中的xxxx就是对应的SID。
-    -- oracle    2548     1  0 Aug17 ?        00:00:00 ora_pmon_xxxx 
-    -- 在windows环境下,oracle是以后台服务的方式被管理的,所以看"控制面板->管理工具->服务 里面的名称:"OracleServiceORCL",则ORCL就是sid; 
-
-    select value from v$parameter where name='db_domin'; --查询数据库域名
-    show parameter domain;
-
-    --查询数据库服务名，数据库如果有域，则数据库服务名就是全局数据库名；如果没有，则数据库服务名就是数据库名。
-    select value from v$parameter where name='service_name';
-    show parameter service_name
-    show parameter service;
-    show parameter names;
-
-
-    alter user sys identified by new_password --修改用户密码
-    alter user system account unlock --解锁用户
-
-    --在sqlplus中执行sql脚本，下面两种方式都可以
-    START file_name
-    @file_name
-    
-    
-    --判断表是否存在，如果存在则删除
-    declare 
-          num   number; 
-    begin 
-          select count(1) into num from all_tables where TABLE_NAME = 'EMP' and OWNER='SCOTT'; 
-          if   num=1   then 
-              execute immediate 'drop table EMP'; 
-          end   if; 
-    end; 
-    / 
-    --创建表
-    CREATE TABLE EMP
-           (EMPNO NUMBER(4) NOT NULL,
-            ENAME VARCHAR2(10),
-            JOB VARCHAR2(9),
-            MGR NUMBER(4),
-            HIREDATE DATE,
-            SAL NUMBER(7, 2),
-            COMM NUMBER(7, 2),
-            DEPTNO NUMBER(2));
-    可以将上述存储过程加载到每一个create table前面。
-    
-    
-    -- 设置sqlplus模式显示总行数
-    show pagesize; --查看当前的pagesize
-    set pagesize 300;
-
-    -- 设置sqlplus模式显示行宽度
-    show linesize; --查看当前的linesize
-    set linesize 300;
-
-    -- 修改安装目录glogin.sql文件才能保证之前的设置永久生效
-    set pagesize 300;
-    set linesize 300;
-
-```
 
 
 ## Oracle 11g 默认用户名和密码
@@ -373,6 +267,105 @@ ORA-28000: 账户锁定
 ## 系统表
 
 ```sql
+    -- Windows下以管理员身份启动数据库
+    net start oracleserviceorcl -- 后面的orcl是你安装的数据库实例名
+    net start oracleoradb11g_home1tnslistener --非必须
+
+    -- linux下以sysdba用户登录，然后启动数据库
+    sqlplus / as sysdba
+    startup
+    
+    -- sqlplus登陆方式
+    sqlplus / as sysdba --以操作系统权限认证的oracle sys管理员登陆
+
+    sqlplus /nolog
+    conn / as sysdba --以操作系统权限认证的oracle sys管理员登陆
+
+
+    sqlplus sys/password@orcl as sysdba --以sys用户登陆必须使用as sysdba
+
+    sqlplus /nolog --不在cmd或者teminal当中暴露密码的登陆方式
+    conn sys/password as sysdba
+
+
+    sqlplus --不显露密码的方式登陆
+    Enter user-name：sys
+    Enter password：password as sysdba --以sys用户登陆的话 必须要加上as sysdba子句
+
+    sqlplus scott/tiger@orcl --非管理员用户登陆
+    
+    
+    desc v$database; --查询v$database数据库的表结构
+
+    show parameter name; -- 查看一些数据库的名字信息
+
+    select global_name from global_name; -- 查看oracle的全局数据库名
+
+    select name,dbid from v$database; -- 查看数据库名
+    show parameter db_name;
+
+    select instance_name from v$instance; --查询实例名
+    show parameter instance_name;
+
+    -- 数据库实例名对应着SID，查询SID还可以使用下面的方式：
+    -- linux下在配置oracle环境变量的情况可以使用 echo $ORACLE_SID,如果没有可以使用ps -ef |grep oracle 来查询，结果中的xxxx就是对应的SID。
+    -- oracle    2548     1  0 Aug17 ?        00:00:00 ora_pmon_xxxx 
+    -- 在windows环境下,oracle是以后台服务的方式被管理的,所以看"控制面板->管理工具->服务 里面的名称:"OracleServiceORCL",则ORCL就是sid; 
+
+    select value from v$parameter where name='db_domin'; --查询数据库域名
+    show parameter domain;
+
+    --查询数据库服务名，数据库如果有域，则数据库服务名就是全局数据库名；如果没有，则数据库服务名就是数据库名。
+    select value from v$parameter where name='service_name';
+    show parameter service_name
+    show parameter service;
+    show parameter names;
+
+
+    alter user sys identified by new_password --修改用户密码
+    alter user system account unlock --解锁用户
+
+    --在sqlplus中执行sql脚本，下面两种方式都可以
+    START file_name
+    @file_name
+    
+    
+    --判断表是否存在，如果存在则删除
+    declare 
+          num   number; 
+    begin 
+          select count(1) into num from all_tables where TABLE_NAME = 'EMP' and OWNER='SCOTT'; 
+          if   num=1   then 
+              execute immediate 'drop table EMP'; 
+          end   if; 
+    end; 
+    / 
+    --创建表
+    CREATE TABLE EMP
+           (EMPNO NUMBER(4) NOT NULL,
+            ENAME VARCHAR2(10),
+            JOB VARCHAR2(9),
+            MGR NUMBER(4),
+            HIREDATE DATE,
+            SAL NUMBER(7, 2),
+            COMM NUMBER(7, 2),
+            DEPTNO NUMBER(2));
+    可以将上述存储过程加载到每一个create table前面。
+    
+    
+    -- 设置sqlplus模式显示总行数
+    show pagesize; --查看当前的pagesize
+    set pagesize 300;
+
+    -- 设置sqlplus模式显示行宽度
+    show linesize; --查看当前的linesize
+    set linesize 300;
+
+    -- 修改安装目录glogin.sql文件才能保证之前的设置永久生效
+    set pagesize 300;
+    set linesize 300;
+    
+    
     -- oracle常用系统表   
     -- dba_开头
 
