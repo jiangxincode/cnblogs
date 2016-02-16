@@ -10,7 +10,7 @@
     We do our best to design and develop products that remove complexity, and compress time frames. We are glad to realize that our products take usual chores upon themselves, so that our customers could have more time left for their creative work.
 
 
-# Oracle MySQL
+# MySQL
 
 * MySQL: http://www.mysql.com/
 * MySQL参考：http://dev.mysql.com/doc/#manual
@@ -367,6 +367,154 @@ emca -repos create 重建
 emca -config dbcontrol db 配置
 emctl start dbconsole 启动
 
+## 系统表
+
+```sql
+    -- oracle常用系统表   
+    -- dba_开头
+
+    select * from dba_users; --数据库用户信息  
+    select * from dba_segments; --表段信息  
+    select * from dba_extents; --数据区信息  
+    select * from dba_objects; --数据库对象信息  
+    select * from dba_tablespaces; --数据库表空间信息  
+    select * from dba_data_files; --数据文件设置信息  
+    select * from dba_temp_files; --临时数据文件信息  
+    select * from dba_rollback_segs; --回滚段信息  
+    select * from dba_ts_quotas; --用户表空间配额信息  
+    select * from dba_free_space; --数据库空闲空间信息  
+    select * from dba_profiles; --数据库用户资源限制信息  
+    select * from dba_sys_privs; --用户的系统权限信息  
+    select * from dba_tab_privs; --用户具有的对象权限信息  
+    select * from dba_col_privs; --用户具有的列对象权限信息  
+    select * from dba_role_privs; --用户具有的角色信息  
+    select * from dba_audit_trail; --审计跟踪记录信息  
+    select * from dba_stmt_audit_opts; --审计设置信息  
+    select * from dba_audit_object; --对象审计结果信息  
+    select * from dba_audit_session; --会话审计结果信息  
+    select * from dba_indexes; --用户模式的索引信息  
+
+    -- user_开头  
+    select * from user_objects; --用户对象信息  
+    select * from user_source; --数据库用户的所有资源对象信息  
+    select * from user_segments; --用户的表段信息  
+    select * from user_tables; --用户的表对象信息  
+    select * from user_tab_columns; --用户的表列信息  
+    select * from user_constraints; --用户的对象约束信息  
+    select * from user_sys_privs; --当前用户的系统权限信息  
+    select * from user_tab_privs; --当前用户的对象权限信息  
+    select * from user_col_privs; --当前用户的表列权限信息  
+    select * from user_col_comments; -- 查询本用户的表的列名和注释
+    select * from user_role_privs; --当前用户的角色权限信息  
+    select * from user_indexes; --用户的索引信息  
+    select * from user_ind_columns; --用户的索引对应的表列信息  
+    select * from user_cons_columns; --用户的约束对应的表列信息  
+    select * from user_clusters; --用户的所有簇信息  
+    select * from user_clu_columns; --用户的簇所包含的内容信息  
+    select * from user_cluster_hash_expressions; --散列簇的信息  
+
+
+    -- all_开头  
+    select * from all_users; --数据库所有用户的信息  
+    select * from all_objects; --数据库所有的对象的信息  
+    select * from all_def_audit_opts; --所有默认的审计设置信息  
+    select * from all_tables; --所有的表对象信息  
+    select * from all_indexes; --所有的数据库对象索引的信息  
+    select * from all_tab_comments; --查询所有用户的表,视图等
+    select * from all_col_comments; --查询所有用户的表的列名和注释.
+    select * from all_tab_columns; --查询所有用户的表的列名等信息(详细但是没有备注)
+
+
+    -- v$开头  
+    select * from v$database; --数据库信息  
+    select * from v$datafile; --数据文件信息  
+    select * from v$controlfile; --控制文件信息  
+    select * from v$logfile; --重做日志信息  
+    select * from v$instance; --数据库实例信息  
+    select * from v$log; --日志组信息  
+    select * from v$loghist; --日志历史信息  
+    select * from v$sga; --数据库SGA信息  
+    select * from v$parameter; --初始化参数信息  
+    select * from v$process; --数据库服务器进程信息  
+    select * from v$bgprocess; --数据库后台进程信息  
+    select * from v$controlfile_record_section; --控制文件记载的各部分信息  
+    select * from v$thread; --线程信息  
+    select * from v$datafile_header; --数据文件头所记载的信息  
+    select * from v$archived_log; --归档日志信息  
+    select * from v$archive_dest; --归档日志的设置信息  
+    select * from v$logmnr_contents; --归档日志分析的DML DDL结果信息  
+    select * from v$logmnr_dictionary; --日志分析的字典文件信息  
+    select * from v$logmnr_logs; --日志分析的日志列表信息  
+    select * from v$tablespace; --表空间信息  
+    select * from v$tempfile; --临时文件信息  
+    select * from v$filestat; --数据文件的I/O统计信息  
+    select * from v$undostat; --Undo数据信息  
+    select * from v$rollname; --在线回滚段信息  
+    select * from v$session; --会话信息  
+    select * from v$transaction; --事务信息  
+    select * from v$rollstat; --回滚段统计信息  
+    select * from v$pwfile_users; --特权用户信息  
+    select * from v$sqlarea; --当前查询过的sql语句访问过的资源及相关的信息  
+    select * from v$sql; --与v$sqlarea基本相同的相关信息  
+    select * from v$sysstat; --数据库系统状态信息  
+
+    -- session_开头  
+    select * from session_roles; --会话的角色信息  
+    select * from session_privs; --会话的权限信息  
+
+    -- index_开头  
+    select * from index_stats; --索引的设置和存储信息  
+
+    -- 伪表  
+    select * from dual; --系统伪列表信息  
+      
+    -- 删除表对象  
+    select 'drop table '||segment_name from dba_segments where owner='VPMUSER' and segment_type='TABLE';  
+    -- 创建表对象  
+    select  
+    'create table '||segment_name || ' as select * from '||segment_name ||'@DBLINK'  
+    from dba_segments where owner='VPMUSER' and segment_type='TABLE';  
+      
+    -- 检查表是否完整导入  
+    select segment_name from dba_segments@aaa where owner='VPMUSER' and segment_type='TABLE'   
+    and (segment_name not like 'BIN$%'  
+    and segment_name not like '%201%')  
+    minus  
+    select segment_name from dba_segments where owner='VPMUSER' and segment_type='TABLE'  and segment_name not like 'BIN$%' 
+
+
+    --查询用户所有表的语句1
+    select t.table_name,t.comments from user_tab_comments t
+     
+    --查询用户所有表的语句2:
+    select r1, r2, r3, r5
+    from (select a.table_name r1, a.column_name r2, a.comments r3
+              from user_col_comments a),
+           (select t.table_name r4, t.comments r5 from user_tab_comments t)
+    where r4 = r1
+     
+
+    -- 查找表的所有索引（包括索引名，类型，构成列）：
+    select t.*,i.index_type from user_ind_columns t,user_indexes i where t.index_name = i.index_name and t.table_name = i.table_name and t.table_name = 要查询的表    
+    -- 查找表的主键（包括名称，构成列）：
+    select cu.* from user_cons_columns cu, user_constraints au where cu.constraint_name = au.constraint_name and au.constraint_type = 'P' and au.table_name = 要查询的表     
+     
+    -- 查找表的唯一性约束（包括名称，构成列）：
+    select column_name from user_cons_columns cu, user_constraints au where cu.constraint_name = au.constraint_name and au.constraint_type = 'U' and au.table_name = 要查询的表  
+      
+    -- 查找表的外键（包括名称，引用表的表名和对应的键名，下面是分成多步查询）：  
+    select * from user_constraints c where c.constraint_type = 'R' and c.table_name = 要查询的表
+
+    -- 查询外键约束的列名：
+    select * from user_cons_columns cl where cl.constraint_name = 外键名称
+
+    -- 查询引用表的键的列名：
+    select * from user_cons_columns cl where cl.constraint_name = 外键引用表的键名     
+
+    -- 查询表的所有列及其属性
+    select t.*,c.COMMENTS from user_tab_columns t,user_col_comments c where t.table_name = c.table_name and t.column_name = c.column_name and t.table_name = 要查询的表
+
+```
 
 ## linux/unix平台Oracle sqlplus 中Backspace无法删除字符
 
@@ -432,7 +580,7 @@ RESOURCE角色：仅具有创建CLUSTER,INDEXTYPE,OPERATOR,PROCEDEURE,SEQUENCE,T
 
 1、检查原来的数据库实例名（sid）
 
-    oracle@oracle[/home/oracle]> echo $ORACLE_SID 
+    oracle@oracle[/home/oracle]> echo $ORACLE_SID
     orcl
     oracle@oracle[/home/oracle]> sqlplus / as sysdba
     SQL*Plus: Release 10.2.0.1.0 - Production on Sun Dec 20 11:14:49 2009
@@ -565,6 +713,40 @@ sessions是个派生值,由processes的值决定,公式sessions=1.1*process + 5�
     show parameter session; --显示：sessions integer 445
 ```
 
+## 忘记oracle的sys用户密码怎么修改
+
+### 忘记除SYS、SYSTEM用户之外的用户的登录密码
+
+    CONN SYS/PASS_WORD AS SYSDBA; --用SYS (或SYSTEM)用户登录
+    ALTER USER user_name IDENTIFIED BY "newpassword"; --修改用户的密码，密码不能是数字开头，否则会出现：ORA-00988: 口令缺失或无效
+
+### 忘记SYS用户，或者是SYSTEM用户的密码
+
+    CONN SYS/PASS_WORD AS SYSDBA; --如果是忘记SYSTEM用户的密码，可以用SYS用户登录。
+    ALTER USER SYSTEM IDENTIFIED BY "newpassword";
+
+    CONN SYSTEM/PASS_WORD AS SYSDBA; --如果是忘记SYS用户的密码，可以用SYSTEM用户登录。
+    ALTER USER SYS IDENTIFIED BY "newpassword";
+
+### SYS,SYSTEM用户的密码都忘记
+
+Oracle提供了两种验证方式，一种是OS验证，另一种密码文件验证方式，如果是第一种方式用以下方法修改密码：
+
+```sql
+　　sqlplus /nolog;
+　　connect / as sysdba
+　　alter user sys identified by newpassword;
+　　alter user system identified by newpassword;
+```
+
+如果是第二种方法可以使用ORAPWD.EXE 工具修改密码。打开命令提示符窗口，输入如下命令：
+
+    orapwd file=D:\oracle10g\database\pwdctcsys.ora password=newpassword
+
+这个命令重新生成了数据库的密码文件。密码文件的位置在ORACLE_HOME目录下的\database目录下。这个密码是修改sys用户的密码。除sys其他用户的密码不会改变。也可以下方法修改密码，设定完后，重新启动服务，再次登陆就可以了。
+
+    orapwd file=pwdxxx.ora password=newpassword entries=10
+　　
 
 # DB2
 
@@ -622,6 +804,7 @@ sessions是个派生值,由processes的值决定,公式sessions=1.1*process + 5�
 
 * http://hive.apache.org/
 * https://cwiki.apache.org/confluence/display/Hive/Home
+
 
 # Others
 
