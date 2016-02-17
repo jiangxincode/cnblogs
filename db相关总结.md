@@ -40,6 +40,7 @@
 * Database Concepts: http://docs.oracle.com/database/121/CNCPT/toc.htm
 * The differences of "on delete cascade" and "on delete set null": http://docs.oracle.com/cd/B28359_01/server.111/b28286/clauses002.htm (search "on delete")
 * Database Error Messages: http://docs.oracle.com/cd/B28359_01/server.111/b28278/toc.htm
+* 5 Introduction to LOBs: http://docs.oracle.com/cd/B10500_01/appdev.920/a96583/cci05lob.htm
 
 * Oracle SQL Developer: http://www.oracle.com/technetwork/developer-tools/sql-developer/overview/index.html
 * Instant Client Downloads for Microsoft Windows (32-bit): http://www.oracle.com/technetwork/topics/winsoft-085727.html
@@ -89,7 +90,7 @@ sysman/oem_temp            sysman                  为 oms 的用户名
 
 scott/tiger                NORMAL                  普通用户
 
-aqadm /aqadm               SYSDBA 或 NORMAL        高级队列管理员
+aqadm/aqadm               SYSDBA 或 NORMAL        高级队列管理员
 
 Dbsnmp/dbsnmp              SYSDBA 或 NORMAL        复制管理员
  
