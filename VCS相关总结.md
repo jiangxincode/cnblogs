@@ -5,7 +5,7 @@
 * https://bitbucket.org/ (Git Mercurial)
 * https://sourceforge.net/ (Git Mercurial SVN)
 * http://www.codeplex.com/
-* http://code.taobao.org/ (SVN)
+* <del>http://code.taobao.org/</del> (SVN)
 * http://git.oschina.net/
 * http://www.javaforge.com (Git Mercurial SVN)
 * http://unfuddle.com
