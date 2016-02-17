@@ -6,9 +6,6 @@
 * ApexSQL: http://www.apexsql.com/
 * Withdata: http://www.withdata.com/index.html
 
-    Founded in 2002, Withdata Software is a technology company producing high-quality software for database administrators and developers.
-    We do our best to design and develop products that remove complexity, and compress time frames. We are glad to realize that our products take usual chores upon themselves, so that our customers could have more time left for their creative work.
-
 
 # MySQL
 
@@ -351,7 +348,23 @@ ORA-28000: 账户锁定
             COMM NUMBER(7, 2),
             DEPTNO NUMBER(2));
     可以将上述存储过程加载到每一个create table前面。
-    
+
+    --ORACLE 判断序列是否存在,如果存在就删除
+
+    declare   
+     V_NUM number;
+
+    BEGIN  
+      ----多次删除时，每次都将v_num设置成为0
+        V_NUM := 0;  
+        ----判断序列 seq_name_1 是否存在（区分大小写）
+        select count(0) into V_NUM from user_sequences where sequence_name = 'SEQ_BUSINESS_PROCESS_INDEX_ID'; 
+        ----如果存在立即删除  
+        if V_NUM > 0 then   
+        execute immediate 'DROP SEQUENCE  SEQ_BUSINESS_PROCESS_INDEX_ID';   
+        end if;
+    END;
+   
     
     -- 设置sqlplus模式显示总行数
     show pagesize; --查看当前的pagesize
