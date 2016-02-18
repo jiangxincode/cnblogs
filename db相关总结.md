@@ -68,6 +68,7 @@
 * oracle客户端软件的说明：http://blog.csdn.net/haiross/article/details/17917637
 * 怎么判断oracle客户端、服务器端的位数：http://blog.csdn.net/linghe301/article/details/8471945
 * oracle数据导入与导出: http://blog.csdn.net/loadrunn/article/details/7283441
+* EXECUTE IMMEDIATE 常见使用方法: http://blog.itpub.net/27042095/viewspace-739404/
 
 
 ## PL/SQL Developer
@@ -756,7 +757,7 @@ Oracle提供了两种验证方式，一种是OS验证，另一种密码文件验
 这个命令重新生成了数据库的密码文件。密码文件的位置在ORACLE_HOME目录下的\database目录下。这个密码是修改sys用户的密码。除sys其他用户的密码不会改变。也可以下方法修改密码，设定完后，重新启动服务，再次登陆就可以了。
 
     orapwd file=pwdxxx.ora password=newpassword entries=10
-　　
+
 
 # DB2
 
