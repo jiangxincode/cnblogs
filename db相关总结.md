@@ -5,6 +5,7 @@
 * SQL Pretty Printer formatter: http://www.dpriver.com/index.php
 * ApexSQL: http://www.apexsql.com/
 * Withdata: http://www.withdata.com/index.html
+* 红宝书：http://www.redbook.io/
 
 
 # MySQL
