@@ -6,6 +6,11 @@
 * ApexSQL: http://www.apexsql.com/
 * Withdata: http://www.withdata.com/index.html
 * 红宝书：http://www.redbook.io/
+* erwin: http://erwin.com/
+* DBeaver: http://dbeaver.jkiss.org/
+* Navicat: http://www.navicat.com.cn/
+* Navicat Premium: http://www.navicat.com.cn/products/navicat-premium
+* 0xDBE: https://www.jetbrains.com/dbe/
 
 
 # MySQL
@@ -48,15 +53,6 @@
 
 * Oracle SQL Handler：http://www.heartblue.cn/
 * SI Object Browser：http://www.presoft.com.cn/ob/
-
-* DBeaver: http://dbeaver.jkiss.org/
-
-* Navicat: http://www.navicat.com.cn/
-* Navicat Premium: http://www.navicat.com.cn/products/navicat-premium
-
-    Navicat Premium 是一套数据库管理工具，让你以单一程序同時连接到 MySQL、MariaDB、SQL Server、SQLite、Oracle 和 PostgreSQL 数据库。
-
-* 0xDBE: https://www.jetbrains.com/dbe/
 
 * ToadWorld: http://www.toadworld.com/
 
