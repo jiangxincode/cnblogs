@@ -66,12 +66,31 @@
 * 怎么判断oracle客户端、服务器端的位数：http://blog.csdn.net/linghe301/article/details/8471945
 * oracle数据导入与导出: http://blog.csdn.net/loadrunn/article/details/7283441
 * EXECUTE IMMEDIATE 常见使用方法: http://blog.itpub.net/27042095/viewspace-739404/
+* Oracle11g自带的SQL developer无法打开解决方案(百度文库)： http://wenku.baidu.com/link?url=scHbokjqF7nK8kca00Pxrm8uaUmm7HNkgXLGaq0tNU-9T2zOrc08oZ7YJkXagD-QbQUmQl7c1wiZNigvIZ9YNVwMU9qIgxBI34HfkM8kWdO
 
 
 ## PL/SQL Developer
 
 * http://www.allroundautomations.com/registered/plsqldev.html
 * 配置：localhost:1521/orcl
+
+## navicat 连接Oracle 报错：Cannot load OCI DLL, 126
+
+windows Server 2008 服务器上安装了Oracle 11g R2，在用Navicat去连接Oracle时，提示以下错误：
+
+    Cannot load OCI DLL, 126: Instant Client package is required for Baic and TNS connection ，For more information: http://wiki.navicat.com/wiki/index.php/Instant_client_required
+
+查看上述链接页面提示，Navicat only support 32-bit instant client， 因此，尽管我们安装了64位的Oracle，但由于Navicat仅支持32位的，因此我们还需下载一个32位的客户端， 下载地址：
+
+    http://www.oracle.com/technetwork/topics/winsoft-085727.html。
+
+以下为完整的解决方法：
+
+* 在上述地址中下载文件：instantclient-basic-nt-12.1.0.2.0.zip,
+* 解压此安装包至：D:/app/administrator/product/instantclient_2_2_x32
+* 打开Navicat，选择工具→选项→其他→OCI，然后设置OCI library为：D:app/administrator/product/instantclient_12_2_x32/oci.dll，设置SQL *plus为：D:/app/administrator/product/11.2.0/dbhome_1/BIN/sqlplus.exe。确定。
+* 测试成功。
+
 
 
 ## Oracle 11g 默认用户名和密码
@@ -202,6 +221,44 @@ Oracle临时表空间主要用来做查询和存放一些缓冲区数据。临�
 * 被指定缺省临时段表空间。
 
 表空间的维护是由ORACLE数据库系统管理员DBA通过SQL*PLUS语句实现的,其中表空间创建与修改中的文件名是不能带路径的,因此DBA必须在ORACLE/DBS目录中操作。
+
+## 使sqlplus中方向键可用
+
+使Unix下的sqlplus/rman也像windows下sqlplus/rman命令一样，可以通过左右箭头修改命令，通过上下箭头查看命令历史。The rlwrap (readline wrapper) utility provides a command history and editing of keyboard input for any other command. This is a really handy addition to SQL*Plus and RMAN on Linux. 而rlwrap会用到readline包，首先要安装readline，然后安装rlwrap。
+
+### 下载
+
+* readline下载：http://directory.fsf.org/project/readline/
+* rlwrap下载：http://utopia.knoware.nl/~hlub/uck/rlwrap/
+
+### 安装（使用root登陆，平台是Solaris，其它类似）
+```
+    # install readline：
+    gunzip readline-5.0.tar.gz
+    tar xvf readline-5.0.tar
+    cd readline-5.0
+    ./configure
+    make
+    make install
+
+    # install rlwrap：
+    gunzip rlwrap-0.30.tar.gz
+    tar xvf rlwrap-0.30.tar
+    cd rlwrap-0.30
+    ./configure
+    make
+    make check
+    make install
+```
+
+### 使用
+
+# rlwrap sqlplus user/pwd@testdb
+
+可以设别名放到.bash_porfile里，然后直接使用别名即可。
+
+    alias rlsqlplus='rlwrap sqlplus'
+    source ~/.bash_porfile
 
 ## Oracle安装错误ora-00922（缺少或无效选项）
 
@@ -788,6 +845,48 @@ Oracle提供了两种验证方式，一种是OS验证，另一种密码文件验
 * Spring Data MongoDB hello world example: http://www.mkyong.com/mongodb/spring-data-mongodb-hello-world-example/
 * MongoDB设置访问权限、设置用户: http://www.cnblogs.com/zengen/archive/2011/04/23/2025722.html
 
+## 三招解决MongoDB的磁盘IO问题
+
+### 使用组合式的大文档
+
+我们知道MongoDB是一个文档数据库，其每一条记录都是一个JSON格式的文档。比如像下面的例子，每一天会生成一条这样的统计数据：
+
+    { metric: "content_count", client: 5, value: 51, date: ISODate("2012-04-01 13:00") }{ metric: "content_count", client: 5, value: 49, date: ISODate("2012-04-02 13:00") } 
+
+而如果采用组合式大文档的话，就可以这样将一个月的数据全部存到一条记录里：
+    
+    { metric: "content_count", client: 5, month: "2012-04", 1: 51, 2: 49, ... } 
+    
+通过上面两种方式存储，预先一共存储大约7GB的数据（机器只有1.7GB的内存），测试读取一年信息，这二者的读性能差别很明显：第一种: 1.6秒；第二种: 0.3秒。那么问题在哪里呢？实际上原因是组合式的存储在读取数据的时候，可以读取更少的文档数量。而读取文档如果不能完全在内存中的话，其代价主要是被花在磁盘seek上，第一种存储方式在获取一年数据时，需要读取的文档数更多，所以磁盘seek的数量也越多。所以更慢。实际上MongoDB的知名使用者foursquare就大量采用这种方式来提升读性能。见此
+
+### 采用特殊的索引结构 
+
+我们知道，MongoDB和传统数据库一样，都是采用B树作为索引的数据结构。对于树形的索引来说，保存热数据使用到的索引在存储上越集中，索引浪费掉的内存也越小。所以我们对比下面两种索引结构：
+
+    db.metrics.ensureIndex({ metric: 1, client: 1, date: 1}) 
+    db.metrics.ensureIndex({ date: 1, metric: 1, client: 1 }) 
+    
+采用这两种不同的结构，在插入性能上的差别也很明显。当采用第一种结构时，数据量在2千万以下时，能够基本保持10k/s 的插入速度，而当数据量再增大，其插入速度就会慢慢降低到2.5k/s，当数据量再增大时，其性能可能会更低。而采用第二种结构时，插入速度能够基本稳定在10k/s。其原因是第二种结构将date字段放在了索引的第一位，这样在构建索引时，新数据更新索引时，不是在中间去更新的，只是在索引的尾巴处进行修改。那些插入时间过早的索引在后续的插入操作中几乎不需要进行修改。而第一种情况下，由于date字段不在最前面，所以其索引更新经常是发生在树结构的中间，导致索引结构会经常进行大规模的变化。
+
+###预留空间
+
+与第1点相同，这一点同样是考虑到传统机械硬盘的主要操作时间是花在磁盘seek操作上。
+比如还是拿第1点中的例子来说，我们在插入数据的时候，预先将这一年的数据需要的空间都一次性插入。这能保证我们这一年12个月的数据是在一条记录中，是顺序存储在磁盘上的，那么在读取的时候，我们可能只需要一次对磁盘的顺序读操作就能够读到一年的数据，相比前面的12次读取来说，磁盘seek也只有一次。
+```
+    db.metrics.insert([    { metric: 'content_count', client: 3, date: '2012-01', 0: 0, 1: 0, 2: 0, ... }  
+      { .................................., date: '2012-02', ... })   
+    { .................................., date: '2012-03', ... })   
+    { .................................., date: '2012-04', ... })   
+    { .................................., date: '2012-05', ... }) 
+    { .................................., date: '2012-06', ... })    
+    { .................................., date: '2012-07', ... })    
+    { .................................., date: '2012-08', ... })   
+    { .................................., date: '2012-09', ... })    
+    { .................................., date: '2012-10', ... })   
+    { .................................., date: '2012-11', ... })   
+    { .................................., date: '2012-12', ... })])
+```
+
 
 ## MONGOVUE
 
@@ -821,3 +920,8 @@ Oracle提供了两种验证方式，一种是OS验证，另一种密码文件验
 * Teradata Aster: http://developer.teradata.com/aster
 * actian: http://www.actian.com/
 
+# 数据模型
+
+## PowerDesigner两张表主键如何设成一致的
+
+设置方法：Tools--->Model Options->Model Settings。在Data Item组框中定义数据项的唯一性代码选项(Unique Code)与重用选项（Allow Reuse）。把allow reuse选上，去掉unique code选项。
