@@ -17,7 +17,7 @@
 * Python for Windows Extensions: https://sourceforge.net/projects/pywin32/
 * Stani's Python Editor(SPE): https://sourceforge.net/projects/spe/
 * Ulipad: https://github.com/limodou/ulipad
- 
+
 * Python Tools for Visual Studio: http://microsoft.github.io/PTVS/
 * Virtualenv: https://virtualenv.pypa.io/en/latest/index.html
 * Pillow: http://pillow.readthedocs.org/en/latest/index.html
@@ -26,12 +26,12 @@
 * SCons: A software construction tool: http://www.scons.org/
 
 * http://effbot.org/
-* ×ÄÄ¾ÄñPythonÉçÇø: http://wiki.woodpecker.org.cn/moin/
+* å•„æœ¨é¸ŸPythonç¤¾åŒº: http://wiki.woodpecker.org.cn/moin/
 
-* ³õÌ½ÑéÖ¤ÂëÊ¶±ğ£ºhttp://drops.wooyun.org/tips/4550
-* Python ³ÌĞòÔ±±ØÖª±Ø»áµÄ¿ª·¢Õß¹¤¾ß: http://www.oschina.net/news/48645/python-developer-tools?from=20140210
-* Python×Ô¶¯µ¥Ôª²âÊÔ¿ò¼Ü: http://www.ibm.com/developerworks/cn/linux/l-pyunit/
-* Python 3.0 ÇÀ¡°ÏÊ¡±ÌåÑé: http://blog.csdn.net/gzlaiyonghao/article/details/1772209
+* åˆæ¢éªŒè¯ç è¯†åˆ«ï¼šhttp://drops.wooyun.org/tips/4550
+* Python ç¨‹åºå‘˜å¿…çŸ¥å¿…ä¼šçš„å¼€å‘è€…å·¥å…·: http://www.oschina.net/news/48645/python-developer-tools?from=20140210
+* Pythonè‡ªåŠ¨å•å…ƒæµ‹è¯•æ¡†æ¶: http://www.ibm.com/developerworks/cn/linux/l-pyunit/
+* Python 3.0 æŠ¢â€œé²œâ€ä½“éªŒ: http://blog.csdn.net/gzlaiyonghao/article/details/1772209
 * Dive Into Python 3: http://getpython3.com/diveintopython3/
 * Swaroop C H: http://www.swaroopch.com/
 * JPype: http://www.ibm.com/developerworks/cn/opensource/os-cn-jpype/index.html

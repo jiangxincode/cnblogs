@@ -27,7 +27,7 @@ http://astyle.sourceforge.net/astyle.html
 ## 加入到VS2008,VS2005
 
 + 工具——>外部工具——>添加
-+ 标题：astyle 
++ 标题：astyle
 + 命令：AStyle.exe （填好astyle.exe的路径）
 + 参数：--style=allman -N $(ItemDir)$(ItemFileName)$(ItemExt)
 + 初始目录：$(TargetDir)
@@ -37,7 +37,7 @@ http://astyle.sourceforge.net/astyle.html
 ## 加入到VS6
 
 + Tools——>Customize——>Tools
-+ 标题：astyle 
++ 标题：astyle
 + 命令：AStyle.exe （填好astyle.exe的路径）
 + 参数：--style=ansi -s4 --suffix=.orig $(FileName)$(FileExt)
 + 初始目录：$(FileDir)
@@ -66,15 +66,15 @@ http://astyle.sourceforge.net/astyle.html
 
 ## 控制台目录批处理(astyle.bat)
 
-```Bash
-REM 批量将本目录中的所有C++文件用Astyle进行代码美化操作
-REM 设置Astyle命令位置和参数
-@echo off
-set astyle="astyle.exe"
-REM 循环遍历目录
-for /r . %%a in (*.cpp;*.c) do %astyle% --style=ansi --pad=oper --unpad=paren -s4 -n "%%a"
-for /r . %%a in (*.hpp;*.h) do %astyle% --style=ansi --pad=oper --unpad=paren -s4 -n "%%a"
-REM 删除所有的astyle生成文件
-for /r . %%a in (*.orig) do del "%%a"
-pause
+```bat
+	REM 批量将本目录中的所有C++文件用Astyle进行代码美化操作
+	REM 设置Astyle命令位置和参数
+	@echo off
+	set astyle="astyle.exe"
+	REM 循环遍历目录
+	for /r . %%a in (*.cpp;*.c) do %astyle% --style=ansi --pad=oper --unpad=paren -s4 -n "%%a"
+	for /r . %%a in (*.hpp;*.h) do %astyle% --style=ansi --pad=oper --unpad=paren -s4 -n "%%a"
+	REM 删除所有的astyle生成文件
+	for /r . %%a in (*.orig) do del "%%a"
+	pause
 ```

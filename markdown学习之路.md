@@ -1,7 +1,7 @@
-* Markdown Óï·¨ËµÃ÷ (¼òÌåÖĞÎÄ°æ): http://wowubuntu.com/markdown/
+* Markdown è¯­æ³•è¯´æ˜ (ç®€ä½“ä¸­æ–‡ç‰ˆ): http://wowubuntu.com/markdown/
 * Online Markdown Editor, DILLINGER: http://dillinger.io/
 * Cmd Markdown: https://www.zybuluo.com/mdeditor
-* Âí¿Ë·ÉÏó: https://maxiang.io/
-* 10¿îÁ÷ĞĞµÄMarkdown±à¼­Æ÷£¬×ÜÓĞÒ»¿îÊÊºÏÄã: http://code.csdn.net/news/2819623
-* Çó¹ØÓÚ Markdown »òÀàËÆ±ê¼ÇÓïÑÔµÄÈÎºÎÍÂ²Û¡¢½¨Òé¡¢¸öÈËÊ¹ÓÃ·ç¸ñËµÃ÷: http://cn.v2ex.com/t/102885
+* é©¬å…‹é£è±¡: https://maxiang.io/
+* 10æ¬¾æµè¡Œçš„Markdownç¼–è¾‘å™¨ï¼Œæ€»æœ‰ä¸€æ¬¾é€‚åˆä½ : http://code.csdn.net/news/2819623
+* æ±‚å…³äº Markdown æˆ–ç±»ä¼¼æ ‡è®°è¯­è¨€çš„ä»»ä½•åæ§½ã€å»ºè®®ã€ä¸ªäººä½¿ç”¨é£æ ¼è¯´æ˜: http://cn.v2ex.com/t/102885
 * Markdeep: http://casual-effects.com/markdeep/
