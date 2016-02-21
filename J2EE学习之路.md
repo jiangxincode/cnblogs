@@ -58,7 +58,7 @@
 * Lifetimes of cryptographic hash functions: http://valerieaurora.org/hash.html
 
 
-# Eclipse        
+# Eclipse
 
 * Eclipse的项目地址：http://www.eclipse.org/
 * Eclipse MarketPlace地址：http://marketplace.eclipse.org/
@@ -105,7 +105,7 @@
 
 # eclipse-rbe
 
-    Eclipse plugin for editing Java resource bundles. Lets you manage all localized .properties files in one screen. Some features: sorted keys, warning icons on missing keys/values, conversion to/from Unicode, hierarchical view of keys, and more. 
+    Eclipse plugin for editing Java resource bundles. Lets you manage all localized .properties files in one screen. Some features: sorted keys, warning icons on missing keys/values, conversion to/from Unicode, hierarchical view of keys, and more.
 
 * https://github.com/essiembre/eclipse-rbe
 
@@ -113,7 +113,7 @@
 # FileSync
 
     FileSync plugin for Eclipse is a file synchronisation tool. The main goal is to keep files outside of Eclipse projects in-sync with Eclipse project files. The plugin works as builder in Eclipse and will synchronize all changes on Eclipse project files to mapped external folders. E.g. if a file is created, changed or deleted in Eclipse, then the mapped (external) file will be created, changed or deleted too. Please note, that synchronization works is only in one direction - from Eclipse to the rest of the world.
-    
+
 * http://andrei.gmxhome.de/filesync/
 
 # Apache IvyDE
@@ -152,16 +152,6 @@
 * 项目地址：http://sourceforge.net/projects/dandelion-ecl/
 
 
-# Matclipse
-
-* 使用教程：http://undocumentedmatlab.com/blog/matclipse-eclipse-matlab-interface
-
-
-# Octclipse
-
-* 项目地址：http://sourceforge.net/projects/octclipse/
-
-
 # asmplugin
 
 * 项目地址：http://sourceforge.net/projects/asmplugin/
@@ -197,25 +187,22 @@
 # Jenkins
 
     用Java编写的一个开源持续集成工具。项目是在和Oracle发生争执后的来自于Hudson 的分支。
-    
+
 * https://jenkins-ci.org/
 
 
 # Atlassian Bamboo
 
     持续集成和交付工具，它将自动化构建、测试和发布捆绑到单个流程中。
-    
+
 * https://www.atlassian.com/software/bamboo/
 
 
 # TeamCity
 
     来自于JetBrains的一个基于Java构建的管理和持续集成服务器。
-    
+
 * https://www.jetbrains.com/teamcity/
-
-
-# 
 
 
 # JUnit
@@ -288,7 +275,7 @@
 # Log4E
 
     Log4E is an Eclipse Plugin which helps you to use your logger easily in Java Projects.The Plugin Log4E is not bound to any special logging framework. Thus you might be able to adapt to your own logger by defining your own templates using the preferences. It has active support for Log4j, Log4j 2, SLF4J, Commons Logging and JDK 1.4 logging.
-    
+
 * http://log4e.jayefem.de/
 
 
@@ -317,12 +304,6 @@
 * Math: http://commons.apache.org/proper/commons-math/
 * Net: http://commons.apache.org/proper/commons-net/
 * OGNL：http://commons.apache.org/proper/commons-ognl/
-
-
-# TeXlipse
-
-* 项目地址：http://texlipse.sourceforge.net/
-* 下载地址：http://sourceforge.net/projects/texlipse/
 
 
 # Maven and M2Eclipse
@@ -360,19 +341,19 @@
 
 命令使用方法：首先进入到相应的pom.xml目录中，然后执行以上命令。第一个命令尝试下载在pom.xml中依赖的文件的源代码。第二个命令尝试下载对应的javadocs。但是有可能一些文件没有源代码或者javadocs。也可以通过配置文件添加，打开maven配置文件 setting.xml文件(.../.m2/settings.xml) 增加如下配置：
 ```
-    <profiles>  
-    <profile>  
-        <id>downloadSources</id>  
-        <properties>  
-            <downloadSources>true</downloadSources>  
-            <downloadJavadocs>true</downloadJavadocs>             
+    <profiles>
+    <profile>
+        <id>downloadSources</id>
+        <properties>
+            <downloadSources>true</downloadSources>
+            <downloadJavadocs>true</downloadJavadocs>
         </properties>
     </profile>
     </profiles>
 
-    <activeProfiles>  
+    <activeProfiles>
       <activeProfile>downloadSources</activeProfile>
-    </activeProfiles>  
+    </activeProfiles>
 ```
 
 配置eclipse
@@ -434,12 +415,12 @@ maven中如何生成javadoc
 
 mvn javadoc:javadoc
 
-    
+
 
 # Gradle
 
     一个开源的自动化构建系统，建立在Apache Ant和Maven Apache概念的基础上，并引入了基于Groovy的特定领域语言（DSL），而不是使用Apache Maven宣布的项目配置XML形式。
-    
+
 * http://gradle.org/
 
 
@@ -452,12 +433,12 @@ mvn javadoc:javadoc
 # Ivy
 
     Apache Ant项目的一个子项目，一个可传递的依赖项管理器。
-    
+
 * http://ant.apache.org/ivy/
 
 
 # Eclipse Color Themes
-      
+
 * 项目地址：http://eclipsecolorthemes.org/
 
 
@@ -572,7 +553,7 @@ mvn javadoc:javadoc
 # Structure101
 
     Structure101 is an agile architecture development environment (ADE) that lets the software development team organize a codebase.
-    
+
 * http://structure101.com/
 
 # inFusion
@@ -602,14 +583,14 @@ mvn javadoc:javadoc
 
 * 项目地址：http://checkstyle.sourceforge.net/
 * Eclipse Checkstyle plug-in: https://sourceforge.net/projects/eclipse-cs/
-* Checkclipse: https://sourceforge.net/projects/checkclipse/   
+* Checkclipse: https://sourceforge.net/projects/checkclipse/
 
 
 ## CCT
 
     代码规模统计工具CCT是根据华为公司的项目特点而开发的软件规模统计工具；它既可以统计指定版本的非空非注释行，也可以通过比较当前版本和基础版本，计算新增修改规模得到增强项目的规模。CCT通过辨认不同的扩展名支持对多种语言的规模统计，包括C,C++,JAVA,DELPHI,汇编(ASM),SQL,JSP,ASP,HTML和TXT等文件。
 
-    
+
 # EJ-Technologies一家（收费）
 
 * 公司网址：http://www.ej-technologies.com/index.html
@@ -731,7 +712,7 @@ JavaDoc: https://storm.apache.org/javadoc/apidocs/index.html
     * Struts2中的零配置与CoC（Convention over Configration）: http://andlu.iteye.com/blog/112675
     * struts2采用convention-plugin实现零配置: http://javeye.iteye.com/blog/358744
     * 改写Restful2ActionMapper让Struts2支持REST风格的URL映射: http://andlu.iteye.com/blog/110934
-    
+
 
 ## Spring
 
@@ -754,7 +735,7 @@ JavaDoc: https://storm.apache.org/javadoc/apidocs/index.html
 * 源码：
     * 匿名可访问地址 http://anonsvn.jboss.org/repos/hibernate
     * 开发者访问地址 http://svn.jboss.org/repos/hibernate
-    
+
 * hibernator：https://sourceforge.net/projects/hibernator/
 
 
@@ -806,7 +787,8 @@ JavaDoc: https://storm.apache.org/javadoc/apidocs/index.html
 
 # JACOB
 
-* 官网：http://danadler.com/jacob/
+* old：http://danadler.com/jacob/
+* new：https://sourceforge.net/projects/jacob-project/
 * Java操作Microsoft Word之jacob: http://xiaoduan.blog.51cto.com/502137/136692/
 * 浅析JACOB: http://www.blogjava.net/lusm/archive/2008/11/22/jacob.html
 * JACOB的语法: http://www.bitscn.com/pdb/java/200904/161117.html
