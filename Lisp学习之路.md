@@ -2,8 +2,10 @@
 
 * Common Lisp: https://en.wikipedia.org/wiki/Common_Lisp
 * Clozure Common Lisp: http://ccl.clozure.com/
+* CLISP - an ANSI Common Lisp: https://sourceforge.net/projects/clisp/
 * Allegro CL: http://franz.com/products/allegrocl/
 * CMUCL: http://www.cons.org/cmucl/
+* Steel Bank Common Lisp: https://sourceforge.net/projects/sbcl/
 * Common Lisp HyperSpec: http://www.lispworks.com/documentation/HyperSpec/Front/index.htm
 * Common Lisp wiki: http://www.cliki.net/
 * https://common-lisp.net/index.html
@@ -18,6 +20,7 @@
 * SLIME: The Superior Lisp Interaction Mode for Emacs: https://common-lisp.net/project/slime/
 * https://github.com/slime/slime/
 * Lispbox: https://common-lisp.net/project/lispbox/
+* Jabberwocky a Lisp IDE: https://sourceforge.net/projects/jabberwocky/
 * Limp: http://www.vim.org/scripts/script.php?script_id=2219
 * LispWorks: http://www.lispworks.com/
 * Racket: http://racket-lang.org/
@@ -27,6 +30,7 @@
 * Build Your Own Lisp: http://www.buildyourownlisp.com/contents
 * Lisp Programming with Cusp: http://www.sergeykolos.com/cusp/intro/
 * MELPA: http://melpa.org/
+* CLOCC - Common Lisp Open Code Collection: https://sourceforge.net/projects/clocc/
 
 # Tutorials
 
@@ -35,7 +39,7 @@
 * The Roots of Lisp: http://www.paulgraham.com/rootsoflisp.html
 * Teach Yourself Scheme in Fixnum Days: http://ds26gte.github.io/tyscheme/index.html
 * Scheme语言简明教程: http://songjinghe.github.io/TYS-zh-translation/
-* The Revised6 Report on the Algorithmic Language Scheme: http://www.r6rs.org/ 
+* The Revised6 Report on the Algorithmic Language Scheme: http://www.r6rs.org/
 * The Scheme Programming Language: http://www.scheme.com/tspl4/
 * Chez Scheme: http://www.scheme.com/
 * SLIME User Manual, version 2.14: https://common-lisp.net/project/slime/doc/html/
@@ -54,16 +58,17 @@
 * 【LISP】Pascal Costanza：极端片面的Lisp介绍: http://www.cnblogs.com/ronli/archive/2011/10/21/HelloLisp.html
 * Practical Common Lisp: http://gigamonkeys.com/book/
 * On Lisp: http://www.paulgraham.com/onlisp.html
+* On Lisp (Chinese Translation): https://sourceforge.net/projects/onlisp-cn/
 * ANSI Common Lisp 中文翻譯版: http://acl.readthedocs.org/en/latest/
 * Chun Tian (binghe): http://tianchunbinghe.blog.163.com/
 * Lisp as an Alternative to Java: http://www.flownet.com/ron/papers/lisp-java/
 * Lisp as an Alternative to Java: http://www.norvig.com/java-lisp.html
+* The Common Lisp Cookbook: http://cl-cookbook.sourceforge.net/
+
 
 
 # Clojure
 
-## Leiningen
-
-    一个自动化构建和依赖性管理工具，用于使用Clojure编程语言写的软件项目
-
-* http://leiningen.org/
+* Clojure: http://clojure.org/
+* Getting Started: http://dev.clojure.org/display/doc/Getting+Started
+* Leiningen(一个自动化构建和依赖性管理工具，用于使用Clojure编程语言写的软件项目): http://leiningen.org/
