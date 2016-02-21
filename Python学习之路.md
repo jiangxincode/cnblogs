@@ -35,3 +35,12 @@
 * Dive Into Python 3: http://getpython3.com/diveintopython3/
 * Swaroop C H: http://www.swaroopch.com/
 * JPype: http://www.ibm.com/developerworks/cn/opensource/os-cn-jpype/index.html
+
+# PyDev
+
+* 项目地址：http://www.pydev.org/
+* 安装说明：http://www.pydev.org/download.html
+* 与之相关的LiClipse项目地址：http://www.liclipse.com/liclipse/
+* PyDev Manual：http://www.pydev.org/manual.html
+
+

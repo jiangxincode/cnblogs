@@ -22,6 +22,8 @@
 * Lispbox: https://common-lisp.net/project/lispbox/
 * Jabberwocky a Lisp IDE: https://sourceforge.net/projects/jabberwocky/
 * Limp: http://www.vim.org/scripts/script.php?script_id=2219
+* 使用 Cusp Eclipse 插件开发 Lisp 应用程序：https://www.ibm.com/developerworks/cn/opensource/os-eclipse-lispcusp/
+* Dandelion: http://sourceforge.net/projects/dandelion-ecl/
 * LispWorks: http://www.lispworks.com/
 * Racket: http://racket-lang.org/
 * MIT/GNU Scheme: http://www.gnu.org/software/mit-scheme/

@@ -124,34 +124,11 @@
 
 * http://ant.apache.org/ivy/ivyde/index.html
 
-# PyDev
-
-* 项目地址：http://www.pydev.org/
-* 安装说明：http://www.pydev.org/download.html
-* 与之相关的LiClipse项目地址：http://www.liclipse.com/liclipse/
-* PyDev Manual：http://www.pydev.org/manual.html
-
 
 # EPIC
 
 * 项目地址：http://www.epic-ide.org/
 * 安装说明：http://www.cnblogs.com/itech/archive/2010/02/23/1671676.html
-
-
-# Photran
-
-* 项目地址：http://www.eclipse.org/photran/
-* 安装说明：http://www.eclipse.org/photran/download.php
-
-
-# Cusp
-
-* 使用 Cusp Eclipse 插件开发 Lisp 应用程序：https://www.ibm.com/developerworks/cn/opensource/os-eclipse-lispcusp/
-
-
-# Dandelion
-
-* 项目地址：http://sourceforge.net/projects/dandelion-ecl/
 
 
 # asmplugin
