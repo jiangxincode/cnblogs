@@ -73,27 +73,27 @@ Fedora, OracleLinux, Red Hat Enterprise Linux等系统：在命令行中，键�
 
 # 制作可执行的JAR文件包及jar命令详解
 
-常常在网上看到有人询问：如何把 java 程序编译成 .exe 文件。通常回答只有两种，一种是制作一个可执行的 JAR 文件包，然后就可以双击运行了；而另一种是使用 JET 来进行编译。但是 JET 是要用钱买的，而且据说 JET 也不是能把所有的 Java 程序都编译成执行文件，性能也要打些折扣。所以，使用制作可执行 JAR 文件包的方法就是最佳选择了，何况它还能保持 Java 的跨平台特性。下面就来看看什么是 JAR 文件包吧。  
+常常在网上看到有人询问：如何把 java 程序编译成 .exe 文件。通常回答只有两种，一种是制作一个可执行的 JAR 文件包，然后就可以双击运行了；而另一种是使用 JET 来进行编译。但是 JET 是要用钱买的，而且据说 JET 也不是能把所有的 Java 程序都编译成执行文件，性能也要打些折扣。所以，使用制作可执行 JAR 文件包的方法就是最佳选择了，何况它还能保持 Java 的跨平台特性。下面就来看看什么是 JAR 文件包吧。
 
 ## JAR 文件包
 
 JAR 文件就是 Java Archive File，顾名思意，它的应用是与 Java 息息相关的，是 Java 的一种文档格式。JAR 文件非常类似 ZIP 文件——准确的说，它就是 ZIP 文件，所以叫它文件包。JAR 文件与 ZIP 文件唯一的区别就是在 JAR 文件的内容中，包含了一个 META-INF/MANIFEST.MF 文件，这个文件是在生成 JAR 文件的时候自动创建的。举个例子，如果我们具有如下目录结构的一些文件：
 
     ==
-	-- test  
-		-- Test.class  
+	-- test
+		-- Test.class
 
 把它压缩成 ZIP 文件 test.zip，则这个 ZIP 文件的内部目录结构为：
 
-    test.zip  
-	-- test  
-        -- Test.class  
+    test.zip
+	-- test
+        -- Test.class
 
 如果我们使用 JDK 的 jar 命令把它打成 JAR 文件包 test.jar，则这个 JAR 文件的内部目录结构为：
 
-    test.jar  
-    -- META-INF  
-        -- MANIFEST.MF  
+    test.jar
+    -- META-INF
+        -- MANIFEST.MF
     -- test
         --Test.class
 
@@ -105,20 +105,20 @@ JAR 文件就是 Java Archive File，顾名思意，它的应用是与 Java 息�
 
 这里 test.jar 和 manifest.mf 两个文件，分别是对应的参数 f 和 m，其重头戏在 manifest.mf。因为要创建可执行的 JAR 文件包，光靠指定一个 manifest.mf 文件是不够的，因为 MANIFEST 是 JAR 文件包的特征，可执行的 JAR 文件包和不可执行的 JAR 文件包都包含 MANIFEST。关键在于可执行 JAR 文件包的 MANIFEST，其内容包含了 Main-Class 一项。这在 MANIFEST 中书写格式如下：
 
-    Main-Class: 可执行主类全名(包含包名) 
+    Main-Class: 可执行主类全名(包含包名)
 
-例如，假设上例中的 Test.class 是属于 test 包的，而且是可执行的类 (定义了 public static void main(String[]) 方法)，那么这个 manifest.mf 可以编辑如下： 
+例如，假设上例中的 Test.class 是属于 test 包的，而且是可执行的类 (定义了 public static void main(String[]) 方法)，那么这个 manifest.mf 可以编辑如下：
 
-    Main-Class: test.Test <回车>; 
+    Main-Class: test.Test <回车>;
 
-这个 manifest.mf 可以放在任何位置，也可以是其它的文件名，只需要有 Main-Class: test.Test 一行，且该行以一个回车符结束即可。创建了 manifest.mf 文件之后，我们的目录结构变为：  
+这个 manifest.mf 可以放在任何位置，也可以是其它的文件名，只需要有 Main-Class: test.Test 一行，且该行以一个回车符结束即可。创建了 manifest.mf 文件之后，我们的目录结构变为：
 
     ==
-    -- test  
-        -- Test.class  
-    -- manifest.mf 
+    -- test
+        -- Test.class
+    -- manifest.mf
 
-这时候，需要到 test 目录的上级目录中去使用 jar 命令来创建 JAR 文件包。也就是在目录树中使用“==”表示的那个目录中，使用如下命令： 
+这时候，需要到 test 目录的上级目录中去使用 jar 命令来创建 JAR 文件包。也就是在目录树中使用“==”表示的那个目录中，使用如下命令：
 
     jar cvfm test.jar manifest.mf test
 
@@ -130,14 +130,14 @@ jar 是随 JDK 安装的，在 JDK 安装目录下的 bin 目录中，Windows �
 
 使用不带任何参数的 jar 命令我们可以看到 jar 命令的用法如下：
 
-jar {ctxu}[vfm0M] [jar-文件] [manifest-文件] [-C 目录] 文件名 ... 
+	jar {ctxu}[vfm0M] [jar-文件] [manifest-文件] [-C 目录] 文件名 ...
 
 其中 {ctxu} 是 jar 命令的子命令，每次 jar 命令只能包含 ctxu 中的一个，它们分别表示：
 
     -c　创建新的 JAR 文件包
     -t　列出 JAR 文件包的内容列表
     -x　展开 JAR 文件包的指定文件或者所有文件
-    -u　更新已存在的 JAR 文件包 (添加文件到 JAR 文件包中) 
+    -u　更新已存在的 JAR 文件包 (添加文件到 JAR 文件包中)
 
 [vfm0M] 中的选项可以任选，也可以不选，它们是 jar 命令的选项参数
 
@@ -147,11 +147,11 @@ jar {ctxu}[vfm0M] [jar-文件] [manifest-文件] [-C 目录] 文件名 ...
     -0　只存储，不压缩，这样产生的 JAR 文件包会比不用该参数产生的体积大，但速度更快
     -M　不产生所有项的清单（MANIFEST〕文件，此参数会忽略 -m 参数
 
-[jar-文件] 即需要生成、查看、更新或者解开的 JAR 文件包，它是 -f 参数的附属参数  
+[jar-文件] 即需要生成、查看、更新或者解开的 JAR 文件包，它是 -f 参数的附属参数
 
 [manifest-文件] 即 MANIFEST 清单文件，它是 -m 参数的附属参数
 
-[-C 目录] 表示转到指定目录下去执行这个 jar 命令的操作。它相当于先使用 cd 命令转该目录下再执行不带 -C 参数的 jar 命令，它只能在创建和更新 JAR 文件包的时候可用。　　  
+[-C 目录] 表示转到指定目录下去执行这个 jar 命令的操作。它相当于先使用 cd 命令转该目录下再执行不带 -C 参数的 jar 命令，它只能在创建和更新 JAR 文件包的时候可用。　　
 
 文件名 ... 指定一个文件/目录列表，这些文件/目录就是要添加到 JAR 文件包中的文件/目录。如果指定了目录，那么 jar 命令打包的时候会自动把该目录中的所有文件和子目录打入包中。
 
@@ -169,87 +169,87 @@ jar {ctxu}[vfm0M] [jar-文件] [manifest-文件] [-C 目录] 文件名 ...
 
 该命令与 2) 结果类似，但在生成的 test.jar 中没有包含 META-INF/MANIFEST 文件，打包过程的信息也略有差别：
 
-增加：test/(读入= 0) (写出= 0)(存储了 0%)  
+增加：test/(读入= 0) (写出= 0)(存储了 0%)
 
-增加：test/Test.class(读入= 7) (写出= 6)(压缩了 14%)  
+增加：test/Test.class(读入= 7) (写出= 6)(压缩了 14%)
 
-4) jar cvfm test.jar manifest.mf test  
+4) jar cvfm test.jar manifest.mf test
 
-运行结果与 2) 相似，显示信息也相同，只是生成 JAR 包中的 META-INF/MANIFEST 内容不同，是包含了 manifest.mf 的内容  
+运行结果与 2) 相似，显示信息也相同，只是生成 JAR 包中的 META-INF/MANIFEST 内容不同，是包含了 manifest.mf 的内容
 
-5) jar tf test.jar  
+5) jar tf test.jar
 
-在 test.jar 已经存在的情况下，可以查看 test.jar 中的内容，如对于 2) 和 3) 生成的 test.jar 分别应该此命令，结果如下；  
+在 test.jar 已经存在的情况下，可以查看 test.jar 中的内容，如对于 2) 和 3) 生成的 test.jar 分别应该此命令，结果如下；
 
-对于 2)  
+对于 2)
 
-META-INF/  
+META-INF/
 
-META-INF/MANIFEST.MF  
+META-INF/MANIFEST.MF
 
-test/  
+test/
 
-test/Test.class  
+test/Test.class
 
-对于 3)  
+对于 3)
 
-test/  
+test/
 
-test/Test.class  
+test/Test.class
 
-6) jar tvf test.jar  
+6) jar tvf test.jar
 
-除显示 5) 中显示的内容外，还包括包内文件的详细信息，如：  
+除显示 5) 中显示的内容外，还包括包内文件的详细信息，如：
 
-0 Wed Jun 19 15:39:06 GMT 2002 META-INF/  
+0 Wed Jun 19 15:39:06 GMT 2002 META-INF/
 
-86 Wed Jun 19 15:39:06 GMT 2002 META-INF/MANIFEST.MF  
+86 Wed Jun 19 15:39:06 GMT 2002 META-INF/MANIFEST.MF
 
-0 Wed Jun 19 15:33:04 GMT 2002 test/  
+0 Wed Jun 19 15:33:04 GMT 2002 test/
 
-7 Wed Jun 19 15:33:04 GMT 2002 test/Test.class  
+7 Wed Jun 19 15:33:04 GMT 2002 test/Test.class
 
-7) jar xf test.jar  
+7) jar xf test.jar
 
-解开 test.jar 到当前目录，不显示任何信息，对于 2) 生成的 test.jar，解开后的目录结构如下：  
+解开 test.jar 到当前目录，不显示任何信息，对于 2) 生成的 test.jar，解开后的目录结构如下：
 
-　　==  
+　　==
 
-　　|-- META-INF  
+　　|-- META-INF
 
-　　|　 -- MANIFEST  
+　　|　 -- MANIFEST
 
-　　-- test  
+　　-- test
 
-　　　　--Test.class  
+　　　　--Test.class
 
-8) jar xvf test.jar  
+8) jar xvf test.jar
 
-运行结果与 7) 相同，对于解压过程有详细信息显示，如：  
+运行结果与 7) 相同，对于解压过程有详细信息显示，如：
 
-创建：META-INF/  
+创建：META-INF/
 
-展开：META-INF/MANIFEST.MF  
+展开：META-INF/MANIFEST.MF
 
-创建：test/  
+创建：test/
 
-展开：test/Test.class  
+展开：test/Test.class
 
-9) jar uf test.jar manifest.mf  
+9) jar uf test.jar manifest.mf
 
-在 test.jar 中添加了文件 manifest.mf，此使用 jar tf 来查看 test.jar 可以发现 test.jar 中比原来多了一个 manifest。这里顺便提一下，如果使用 -m 参数并指定 manifest.mf 文件，那么 manifest.mf 是作为清单文件 MANIFEST 来使用的，它的内容会被添加到 MANIFEST 中；但是，如果作为一般文件添加到 JAR 文件包中，它跟一般文件无异。  
+在 test.jar 中添加了文件 manifest.mf，此使用 jar tf 来查看 test.jar 可以发现 test.jar 中比原来多了一个 manifest。这里顺便提一下，如果使用 -m 参数并指定 manifest.mf 文件，那么 manifest.mf 是作为清单文件 MANIFEST 来使用的，它的内容会被添加到 MANIFEST 中；但是，如果作为一般文件添加到 JAR 文件包中，它跟一般文件无异。
 
-10) jar uvf test.jar manifest.mf  
+10) jar uvf test.jar manifest.mf
 
-与 9) 结果相同，同时有详细信息显示，如：  
+与 9) 结果相同，同时有详细信息显示，如：
 
-增加：manifest.mf(读入= 17) (写出= 19)(压缩了 -11%)  
+增加：manifest.mf(读入= 17) (写出= 19)(压缩了 -11%)
 
 关于 JAR 文件包的一些技巧
 
 使用 unzip 来解压 JAR 文件：在介绍 JAR 文件的时候就已经说过了，JAR 文件实际上就是 ZIP 文件，所以可以使用常见的一些解压 ZIP 文件的工具来解压 JAR 文件，如 Windows 下的 WinZip、WinRAR 等和 Linux 下的 unzip 等。使用 WinZip 和 WinRAR 等来解压是因为它们解压比较直观，方便。而使用 unzip，则是因为它解压时可以使用 -d 参数指定目标目录。在解压一个 JAR 文件的时候是不能使用 jar 的 -C 参数来指定解压的目标的，因为 -C 参数只在创建或者更新包的时候可用。那么需要将文件解压到某个指定目录下的时候就需要先将这具 JAR 文件拷贝到目标目录下，再进行解压，比较麻烦。如果使用 unzip，就不需要这么麻烦了，只需要指定一个 -d 参数即可。如：
 
-unzip test.jar -d dest/  
+unzip test.jar -d dest/
 
 使用 WinZip 或者 WinRAR 等工具创建 JAR 文件：上面提到 JAR 文件就是包含了 META-INF/MANIFEST 的 ZIP 文件，所以，只需要使用 WinZip、WinRAR 等工具创建所需要 ZIP 压缩包，再往这个 ZIP 压缩包中添加一个包含 MANIFEST 文件的 META-INF 目录即可。对于使用 jar 命令的 -m 参数指定清单文件的情况，只需要将这个 MANIFEST 按需要修改即可。
 
@@ -259,11 +259,11 @@ jar cvfM test.zip test
 
 # javadoc注意点（原创）
 
-javadoc生成文档时总是报java.lang.IllegalArgumentException错  
+javadoc生成文档时总是报java.lang.IllegalArgumentException错
 
 JavamavenEXTSUNJDK .
 
-javadoc生成文档时总是报java.lang.IllegalArgumentException错误,是classpath里面字符冲突引起的。我在classpath中包含了%JAVA_HOME%\lib;解决方法是重新设置classpath或者删除classpath.要注意设置完成后重启下cmd或者editplus，重启后生效！ 
+javadoc生成文档时总是报java.lang.IllegalArgumentException错误,是classpath里面字符冲突引起的。我在classpath中包含了%JAVA_HOME%\lib;解决方法是重新设置classpath或者删除classpath.要注意设置完成后重启下cmd或者editplus，重启后生效！
 
 见官方参考文档 http://maven.apache.org/plugins/maven-javadoc-plugin/faq.html
 
@@ -283,10 +283,10 @@ public类只是说明这个类可以被它所在的包外面的类所访问到�
 
 ```java
     class Example
-    { 
+    {
         public static void main(String args[])
-        { 
-            System.out.println("This is a simple Java program."); 
+        {
+            System.out.println("This is a simple Java program.");
         }
     }
 ```
@@ -313,13 +313,13 @@ public class Employee
 
 # Java中char到底是多少字节？
 
-貌似一个简单的问题（也许还真是简单的）但是却把曾经自认为弄清楚的我弄得莫名其妙 。char在Java中应该是16个字节 ，byte在Java中应该是8个字节 ，char x = '编'; //这样是合法的，输出也是16个字节 ，但是 
+貌似一个简单的问题（也许还真是简单的）但是却把曾经自认为弄清楚的我弄得莫名其妙 。char在Java中应该是16个字节 ，byte在Java中应该是8个字节 ，char x = '编'; //这样是合法的，输出也是16个字节 ，但是
 
-String str = "编"; 
+String str = "编";
 
-byte[] bytes = str.getBytes(); //我想不明白，为什么这里要占用3个byte呢? 
+byte[] bytes = str.getBytes(); //我想不明白，为什么这里要占用3个byte呢?
 
-3个byte一共是3*8=24个字节，那么char x怎么又放得下？我坚信char是16个字节， 但是str.getBytes()这个东西到底又怎么回事？ 
+3个byte一共是3*8=24个字节，那么char x怎么又放得下？我坚信char是16个字节， 但是str.getBytes()这个东西到底又怎么回事？
 
 首先，要搞清楚 code point 和 encoding 的区别。Java 是遵循 unicode 4.0 标准的，而内部的 character 以 utf-16 作为 encoding。unicode 4.0 标准包含从 U+0000-U+FFFF 的基本多语言平面和 U+10000-U+10FFFF 的扩展平面的文字，这是 code point。Java 的 char 类型是 16 bit 的，所以单个 char 只支持基本平面内的文字，而扩展平面的文字是由一对 char 来表示的。 而 String.getBytes() 这个方法是按照指定的 encoding 返回字符串，一般中文系统的默认编码是 utf-8 (linux, mac) 或者 gbk/gb18030 (windows)。只要是基本平面内的文字，utf-8码的中文都是3字节的，而 gbk/gbk18030 是2字节的。
 
@@ -415,9 +415,9 @@ direcotry.getPath();                    //得到的是..
 
 ## System.getenv()
 
-getenv是获取系统的环境变更，对于windows对在系统属性-->高级-->环境变量中设置的变量将显示在此(对于linux,通过export设置的变量将显示在此) 
+getenv是获取系统的环境变更，对于windows对在系统属性-->高级-->环境变量中设置的变量将显示在此(对于linux,通过export设置的变量将显示在此)
 
-System.out.println(System.getenv()); 
+System.out.println(System.getenv());
 
 ## java中的URL类
 
@@ -425,7 +425,7 @@ System.out.println(System.getenv());
 
 URL gamelan = new URL("http://www.gamelan.com/");
 
-以上是绝对URL对象，也可以创建相对的URL 对象。 
+以上是绝对URL对象，也可以创建相对的URL 对象。
 
 创建相对的URL对象：
 
@@ -473,7 +473,7 @@ URL gamelan = new URL("http", "www.gamelan.com", 80,
 
 URL 中的含有特殊字符的情况：
 
-有些URL含有特殊字符，比如空格： 
+有些URL含有特殊字符，比如空格：
 
 http://foo.com/hello world/
 
@@ -483,17 +483,17 @@ URL url = new URL("http://foo.com/hello%20world");
 
 以上URL中只有一个特殊字符，因此手动编码相对简单。
 
-当URL中的特殊字符很多时，或者特殊字符数目不确定时，就不能使用手动编码了，这时需要使用java.net.URI类去自动完成编码： 
+当URL中的特殊字符很多时，或者特殊字符数目不确定时，就不能使用手动编码了，这时需要使用java.net.URI类去自动完成编码：
 
 URI uri = new URI("http", "foo.com", "/hello world/", "");
 
-然后，将URI转换成URL： 
+然后，将URI转换成URL：
 
 URL url = uri.toURL();
 
 异常：MalformedURLException
 
-URL构造函数可能会抛出异常，使用如下方法捕获异常: 
+URL构造函数可能会抛出异常，使用如下方法捕获异常:
 
 try {
 
@@ -1034,7 +1034,7 @@ Eclipse中还有很多快捷键，无法一一列举，用户可以通过帮助�
 ## Eclipse中修改注释中@author
 
 首先按以下步骤进入要修改的位置：
- 
+
 Window-->Preferences-->Java-->Code Style-->Code Templates
 点击Comments，找到Types 然后双击填入以下几个东西即可，然后在新建类的时候在Generate comments前面√即可
 
@@ -1059,7 +1059,7 @@ Window-->Preferences-->Java-->Code Style-->Code Templates
 
 今天同事问一问题，就说在eclipse中调试时，鼠标移动到变量上不显示值，这个原来自己也遇到过，没注意，反正就使用ctrl+shift+i嘛，也可以的，刚查了一下，解决方法如下：
 
- 
+
 
 Window->Preferences->Java->Editor->Hovers 将[Variable Values]选择即可，如果第一个[Combined Hover]已经勾选，则将这个勾去掉，勾选[Variable Values]。如果还不行，就只能用ctrl+shift+i快捷键了。
 
@@ -1077,11 +1077,11 @@ Window->Preferences->Java->Editor->Hovers 将[Variable Values]选择即可，如
 
 ## Eclipse乱码问题
 
-我的eclipse在执行System.out.println("中文出现乱码！");时，控制台上打印的都是乱码，这个是什么问题啊！我整个eclipse的工作空间都设为UTF-8了啊！！！好晕啊！ 对啊，设置为GBK的就没有问题，我用maven跑工程的时候为什么控制台又不是乱码了？maven的那些工程都是设置的UTF-8的。 
+我的eclipse在执行System.out.println("中文出现乱码！");时，控制台上打印的都是乱码，这个是什么问题啊！我整个eclipse的工作空间都设为UTF-8了啊！！！好晕啊！ 对啊，设置为GBK的就没有问题，我用maven跑工程的时候为什么控制台又不是乱码了？maven的那些工程都是设置的UTF-8的。
 
 把整个工程的“Text file encoding”属性设为GBK，就不会有乱码了。设置方法：在eclipse中右击工程，点击弹出框最下面的“Properties”，然后在弹出的窗口左侧点击“Resource”，便可以在窗口的右部看到“Text file encoding”属性，点击“Other”前的单选框，在下拉列表中选择“GBK”。最后，点击右下部的“Apply”，“OK”退出。这样设置后，你再执行System.out.println("中文出现乱码！");时控制台上就不会是乱码了。
 
-	 
+
 
 Eclipse 的控制台必须用GBK编码。所以条件1和条件4必须同时满足否则运行的还是乱码。才能保证不是乱码。
 
@@ -1105,11 +1105,11 @@ Eclipse 的控制台必须用GBK编码。所以条件1和条件4必须同时满�
 
 这样保证了工作空间和工程代码编程方式和工程里的单独文件的编码格式的不冲突。
 
-## 如何修改eclipse的默认工作空间 
+## 如何修改eclipse的默认工作空间
 
 打开eclipse，选择File菜单，再选择switch workspace，最后选择other，接着你就选择你想要存储的工作区间
 
-## Eclipse中Build path specifies execution environment J2SE-1.5.There are no JREs installed.. 
+## Eclipse中Build path specifies execution environment J2SE-1.5.There are no JREs installed..
 
 提示警告：
 
@@ -1145,7 +1145,7 @@ Window > Preferences > Java > Build Path > Source and Output Folder
 
 ## Eclipse 中给项目自动创建ant的build.xml文件
 
-Eclipse 自动生成 Ant的Build.xml 配置文件,生成的方法很隐蔽 
+Eclipse 自动生成 Ant的Build.xml 配置文件,生成的方法很隐蔽
 
 选择你要生成Build.xml文件的项目,右键. Export-> General -> Ant Buildfiles .
 
@@ -1207,7 +1207,7 @@ Eclipse有直接查看java文档和类库源码的功能，不过得手工添加
 
 * 另有一种不含BOM的UTF-8格式的文件，则不易与ANSI相区分，因此未能识别此类格式。
 
-* 
+*
 
 * @param file 待判断的文件
 
@@ -1225,7 +1225,7 @@ Eclipse有直接查看java文档和类库源码的功能，不过得手工添加
 
   * 0xff。而ANSI格式是没有BOM的。另有一种不含BOM的UTF-8格式的文件，则不易与ANSI相区分，因此未能识别此类格式。
 
-* 
+*
 
   * @param file
 
@@ -1245,13 +1245,13 @@ Eclipse有直接查看java文档和类库源码的功能，不过得手工添加
 
 ## eclipse 自动补全的设置，不用按 alt-/ 了
 
-偶然间看到了这个，或许有和我一样不喜欢按 alt-/ 兄弟用得上。不用老去按那个 alt-/ 了，还是方便不少。 
+偶然间看到了这个，或许有和我一样不喜欢按 alt-/ 兄弟用得上。不用老去按那个 alt-/ 了，还是方便不少。
 
-打开 Eclipse -> Window -> Perferences，会打开个Perferences 的设置界面。 
+打开 Eclipse -> Window -> Perferences，会打开个Perferences 的设置界面。
 
-会看到只有一个"."存在。表示：只有输入"."之后才会有代码提示，我们要修改的地方就是这里，可是Eclipse默认只允许输入4个自定义字符。 
+会看到只有一个"."存在。表示：只有输入"."之后才会有代码提示，我们要修改的地方就是这里，可是Eclipse默认只允许输入4个自定义字符。
 
-不过我们可以把当前的设置导出，保存为一个文件，然后在文件中修改，再导入设置，这样就可以突破Eclipse的限制。 先把上图中"."的地方输入几个随便的字符，例如"asdf"，点最下面的"OK"来保存设置。 然后打开 Eclipse的 File -> Export,在窗口中展开 General -> Perferences-->Export all然后点击 NEXT。然后点击"Browse"选择任意的一个路径，保存配置文件，然后点击"Finish"。 用记事本打开刚才保存的那个配置文件（扩展文件名：*.epf），按"ctrl + F"，输入刚才设置的"asdf"，找到刚才字符串。把"asdf"修改为"abcdefghijklmnopqrstuvwxyz."，然后保存，退出记事本。 打 开Eclipse的 File -> Import 然后在打开的窗口里展开 General -> Perferences，点击NEXT，选中刚才修改过的配置文件，Finish。现在，再打开Window -> Perferences，并依次展开 Java -> Editor -> Content Assist，会发现已经超过了4个字符，也就是说我们输入任何字母和"."都会有代码提示了。 
+不过我们可以把当前的设置导出，保存为一个文件，然后在文件中修改，再导入设置，这样就可以突破Eclipse的限制。 先把上图中"."的地方输入几个随便的字符，例如"asdf"，点最下面的"OK"来保存设置。 然后打开 Eclipse的 File -> Export,在窗口中展开 General -> Perferences-->Export all然后点击 NEXT。然后点击"Browse"选择任意的一个路径，保存配置文件，然后点击"Finish"。 用记事本打开刚才保存的那个配置文件（扩展文件名：*.epf），按"ctrl + F"，输入刚才设置的"asdf"，找到刚才字符串。把"asdf"修改为"abcdefghijklmnopqrstuvwxyz."，然后保存，退出记事本。 打 开Eclipse的 File -> Import 然后在打开的窗口里展开 General -> Perferences，点击NEXT，选中刚才修改过的配置文件，Finish。现在，再打开Window -> Perferences，并依次展开 Java -> Editor -> Content Assist，会发现已经超过了4个字符，也就是说我们输入任何字母和"."都会有代码提示了。
 
 修改之后，默认是你输入某个字符200毫秒之后出现代码提示，如果出现输入很卡的情况，需要把提示延迟调高一些；如果你嫌它太慢，可以修改成更小的数字，不过数字改的越小，对系统性能的要求就越高，我设置的是50毫秒。现在，Eclipse用起来是不是更加顺手了？
 
@@ -1329,7 +1329,7 @@ Native library location:(None)
 
 在项目右键点击->Properties->Builder->Maven Project Builder取消勾选就可以了。其他保持不变。
 
-## build.properties does not exist 
+## build.properties does not exist
 
 在导入工程时，老是报：build.properties does not exist错误，不甚其烦，原因是.project文件中设置了:
 
@@ -1485,11 +1485,11 @@ public void f(Obj b) throws IOException {
 
     mr.UseResource();
 
-  } catch (MyException e) { 
+  } catch (MyException e) {
 
     // handle my exception
 
-  } catch (Throwable e) { 
+  } catch (Throwable e) {
 
     // handle all other exceptions
 
@@ -1545,15 +1545,15 @@ static final int BSIZE = 8 * SIZE
 
 JAVA的优势在于：跨平台，开源，有甲骨文、ibm等大公司的强力支持，简单易学。C++最大的优势在于她的通用和全面。
 
-JAVA和C++都是面向对象语言。也就是说，它们都能够实现面向对象思想（封装，继乘，多态）。而由于C++为了照顾大量的C语言使用者，而兼容了C，使得自身仅仅成为了带类的C语言，多多少少影响了其面向对象的彻底性。JAVA则是完全的面向对象语言，它句法更清晰，规模更小，更易学。它是在对多种程序设计语言进行了深入细致研究的基础上，摒弃了其他语言的不足之处，从根本上解决了C++的固有缺陷。 
+JAVA和C++都是面向对象语言。也就是说，它们都能够实现面向对象思想（封装，继乘，多态）。而由于C++为了照顾大量的C语言使用者，而兼容了C，使得自身仅仅成为了带类的C语言，多多少少影响了其面向对象的彻底性。JAVA则是完全的面向对象语言，它句法更清晰，规模更小，更易学。它是在对多种程序设计语言进行了深入细致研究的基础上，摒弃了其他语言的不足之处，从根本上解决了C++的固有缺陷。
 
-Java和C++的相似之处多于不同之处，但两种语言有几处主要的不同使得Java更容易学习，并且编程环境更为简单。 我在这里不能完全列出不同之处，仅列出比较显著的区别： 
+Java和C++的相似之处多于不同之处，但两种语言有几处主要的不同使得Java更容易学习，并且编程环境更为简单。 我在这里不能完全列出不同之处，仅列出比较显著的区别：
 
-指针：JAVA语言让编程者无法通过指针来直接访问内存，并且增添了自动的内存管理功能，从而有效地防止了C／C++语言中指针操作失误，如野指针所造成的系统崩溃。但也不是说JAVA没有指针，虚拟机内部还是使用了指针，只是外人不得使用而已。这有利于Java程序的安全。 
+指针：JAVA语言让编程者无法通过指针来直接访问内存，并且增添了自动的内存管理功能，从而有效地防止了C／C++语言中指针操作失误，如野指针所造成的系统崩溃。但也不是说JAVA没有指针，虚拟机内部还是使用了指针，只是外人不得使用而已。这有利于Java程序的安全。
 
 多重继承：C++支持多重继承，这是C++的一个特征，它允许多父类派生一个类。尽管多重继承功能很强，但使用复杂，而且会引起许多麻烦，编译程序实现它也很不容易。Java不支持多重继承，但允许一个类继承多个接口(extends+implement)，实现了C++多重继承的功能，又避免了C++中的多重继承实现方式带来的诸多不便。
 
-数据类型及类：Java是完全面向对象的语言，所有函数和变量都必须是类的一部分。除了基本数据类型之外，其余的都作为类对象，包括数组。对象将数据和方法结合起来，把它们封装在类中，这样每个对象都可实现自己的特点和行为。而C++允许将函数和变量定义为全局的。此外，Java中取消了C／C++中的结构和联合，消除了不必要的麻烦。 
+数据类型及类：Java是完全面向对象的语言，所有函数和变量都必须是类的一部分。除了基本数据类型之外，其余的都作为类对象，包括数组。对象将数据和方法结合起来，把它们封装在类中，这样每个对象都可实现自己的特点和行为。而C++允许将函数和变量定义为全局的。此外，Java中取消了C／C++中的结构和联合，消除了不必要的麻烦。
 
 自动内存管理：Java程序中所有的对象都是用new操作符建立在内存堆栈上，这个操作符类似于C++的new操作符。下面的语句由一个建立了一个类Read的对象，然后调用该对象的work方法：
 
@@ -1565,17 +1565,17 @@ r.work()；
 
 操作符重载：Java不支持操作符重载。操作符重载被认为是C++的突出特征，在Java中虽然类大体上可以实现这样的功能，但操作符重载的方便性仍然丢失了不少。Java语言不支持操作符重载是为了保持Java语言尽可能简单。
 
-预处理功能：Java不支持预处理功能。C／C++在编译过程中都有一个预编泽阶段，即众所周知的预处理器。预处理器为开发人员提供了方便，但增加了编译的复杂性。JAVA虚拟机没有预处理器，但它提供的引入语句(import)与C++预处理器的功能类似。 
+预处理功能：Java不支持预处理功能。C／C++在编译过程中都有一个预编泽阶段，即众所周知的预处理器。预处理器为开发人员提供了方便，但增加了编译的复杂性。JAVA虚拟机没有预处理器，但它提供的引入语句(import)与C++预处理器的功能类似。
 
 缺省函数参数：Java不支持缺省函数参数，而C++支持。
 
-函数：在C中，代码组织在函数中，函数可以访问程序的全局变量。C++增加了类，提供了类算法，该算法是与类相连的函数，C++类方法与Java类方法十分相似，然而，由于C++仍然支持C，所以不能阻止C++开发人员使用函数，结果函数和方法混合使用使得程序比较混乱。Java没有函数，作为一个比C++更纯的面向对象的语言，Java强迫开发人员把所有例行程序包括在类中，事实上，用方法实现例行程序可激励开发人员更好地组织编码。 
+函数：在C中，代码组织在函数中，函数可以访问程序的全局变量。C++增加了类，提供了类算法，该算法是与类相连的函数，C++类方法与Java类方法十分相似，然而，由于C++仍然支持C，所以不能阻止C++开发人员使用函数，结果函数和方法混合使用使得程序比较混乱。Java没有函数，作为一个比C++更纯的面向对象的语言，Java强迫开发人员把所有例行程序包括在类中，事实上，用方法实现例行程序可激励开发人员更好地组织编码。
 
 字符串 ：C和C++不支持字符串变量，在C和C++程序中使用Null终止符代表字符串的结束，在Java中字符串是用类对象(string和stringBuffer)来实现的，这些类对象是Java语言的核心，用类对象实现字符串有以下几个优点：
 
 	在整个系统中建立字符串和访问字符串元素的方法是一致的；
 
-	Java字符串类是作为Java语言的一部分定义的，而不是作为外加的延伸部分； 
+	Java字符串类是作为Java语言的一部分定义的，而不是作为外加的延伸部分；
 
 	Java字符串执行运行时检空，可帮助排除一些运行时发生的错误；
 
@@ -1583,7 +1583,7 @@ r.work()；
 
 goto语句：“可怕”的goto语句是C和C++的“遗物”，它是该语言技术上的合法部分，引用goto语句引起了程序结构的混乱，不易理解，goto语句子要用于无条件转移子程序和多结构分支技术。鉴于以广理由，Java不提供goto语句，它虽然指定goto作为关键字，但不支持它的使用，使程序简洁易读。
 
-类型转换：在C和C++中有时出现数据类型的隐含转换，这就涉及了自动强制类型转换问题。例如，在C++中可将一浮点值赋予整型变量，并去掉其尾数。Java不支持C++中的自动强制类型转换，如果需要，必须由程序显式进行强制类型转换。 
+类型转换：在C和C++中有时出现数据类型的隐含转换，这就涉及了自动强制类型转换问题。例如，在C++中可将一浮点值赋予整型变量，并去掉其尾数。Java不支持C++中的自动强制类型转换，如果需要，必须由程序显式进行强制类型转换。
 
 异常：JAVA中的异常机制用于捕获例外事件，增强系统容错能力
 
@@ -1629,17 +1629,17 @@ C++比JAVA快，当然这不是绝对的。如果你熟悉JAVA的工作原理就
 
 序列化机制是通过java.io.ObjectOutputStream类和java.io.ObjectInputStream类来实现的。在 序列化(serialize)一个对象的时候，会先实例化一个ObjectOutputStream对象，然后调用其writeObject()方法；在反序列化(deserialize)的时候，则会实例化一个ObjectInputStream对象，然后调用其readObject()方法。
 
-Java的序列化机制是通过在运行时判断类的serialVersionUID来验证版本一致性的。在进行反序列化时，JVM会把传来的字节流中的serialVersionUID与本地相应实体（类）的serialVersionUID进行比较，如果相同就认为是一致的，可以进行反序列化，否则就会出现序列化版本不一致的异常。 
+Java的序列化机制是通过在运行时判断类的serialVersionUID来验证版本一致性的。在进行反序列化时，JVM会把传来的字节流中的serialVersionUID与本地相应实体（类）的serialVersionUID进行比较，如果相同就认为是一致的，可以进行反序列化，否则就会出现序列化版本不一致的异常。
 
-当实现java.io.Serializable接口的实体（类）没有显式地定义一个名为serialVersionUID，类型为long的变量时，Java序列化机制会根据编译的class自动生成一个serialVersionUID作序列化版本比较用，这种情况下，只有同一次编译生成的 class才会生成相同的serialVersionUID 。 
+当实现java.io.Serializable接口的实体（类）没有显式地定义一个名为serialVersionUID，类型为long的变量时，Java序列化机制会根据编译的class自动生成一个serialVersionUID作序列化版本比较用，这种情况下，只有同一次编译生成的 class才会生成相同的serialVersionUID 。
 
-如果我们不希望通过编译来强制划分软件版本，即实现序列化接口的实体能够兼容先前版本，未作更改的类，就需要显式地定义一个名为serialVersionUID，类型为long的变量，不修改这个变量值的序列化实体都可以相互进行串行化和反串行化。 
+如果我们不希望通过编译来强制划分软件版本，即实现序列化接口的实体能够兼容先前版本，未作更改的类，就需要显式地定义一个名为serialVersionUID，类型为long的变量，不修改这个变量值的序列化实体都可以相互进行串行化和反串行化。
 
 设置 serialVersionUID默认的生成方式：
 
-	private static final long serialVersionUID = 545456546548431L; 
+	private static final long serialVersionUID = 545456546548431L;
 
-serialVersionUID的作用：serialVersionUID 用来表明类的不同版本间的兼容性。如果你修改了此类, 要修改此值。否则以前用老版本的类序列化的类恢复时会出错。 
+serialVersionUID的作用：serialVersionUID 用来表明类的不同版本间的兼容性。如果你修改了此类, 要修改此值。否则以前用老版本的类序列化的类恢复时会出错。
 
 在JDK中，可以利用JDK的bin目录下的serialver.exe工具产生这个serialVersionUID，对于Test.class，执行命令：serialver Test。
 
@@ -1647,41 +1647,41 @@ serialVersionUID的作用：serialVersionUID 用来表明类的不同版本间�
 
 # Java序列化二
 
-当两个进程在进行远程通信时，彼此可以发送各种类型的数据。无论是何种类型的数据，都会以二进制序列的形式在网络上传送。发送方需要把这个Java对象转换为字节序列，才能在网络上传送；接收方则需要把字节序列再恢复为Java对象。 把Java对象转换为字节序列的过程称为对象的序列化。把字节序列恢复为Java对象的过程称为对象的反序列化。 
+当两个进程在进行远程通信时，彼此可以发送各种类型的数据。无论是何种类型的数据，都会以二进制序列的形式在网络上传送。发送方需要把这个Java对象转换为字节序列，才能在网络上传送；接收方则需要把字节序列再恢复为Java对象。 把Java对象转换为字节序列的过程称为对象的序列化。把字节序列恢复为Java对象的过程称为对象的反序列化。
 
-对象的序列化主要有两种用途： 
+对象的序列化主要有两种用途：
 
-1） 把对象的字节序列永久地保存到硬盘上，通常存放在一个文件中； 
+1） 把对象的字节序列永久地保存到硬盘上，通常存放在一个文件中；
 
 2） 在网络上传送对象的字节序列。
 
 ## JDK类库中的序列化API
 
-java.io.ObjectOutputStream代表对象输出流，它的writeObject(Object obj)方法可对参数指定的obj对象进行序列化，把得到的字节序列写到一个目标输出流中。 
+java.io.ObjectOutputStream代表对象输出流，它的writeObject(Object obj)方法可对参数指定的obj对象进行序列化，把得到的字节序列写到一个目标输出流中。
 
 java.io.ObjectInputStream代表对象输入流，它的readObject()方法从一个源输入流中读取字节序列，再把它们反序列化为一个对象，并将其返回。
 
-只有实现了Serializable和Externalizable接口的类的对象才能被序列化。Externalizable接口继承自 Serializable接口，实现Externalizable接口的类完全由自身来控制序列化的行为，而仅实现Serializable接口的类可以 采用默认的序列化方式 。 
+只有实现了Serializable和Externalizable接口的类的对象才能被序列化。Externalizable接口继承自 Serializable接口，实现Externalizable接口的类完全由自身来控制序列化的行为，而仅实现Serializable接口的类可以 采用默认的序列化方式 。
 
-对象序列化包括如下步骤： 
+对象序列化包括如下步骤：
 
-1） 创建一个对象输出流，它可以包装一个其他类型的目标输出流，如文件输出流； 
+1） 创建一个对象输出流，它可以包装一个其他类型的目标输出流，如文件输出流；
 
-2） 通过对象输出流的writeObject()方法写对象。 
+2） 通过对象输出流的writeObject()方法写对象。
 
-对象反序列化的步骤如下： 
+对象反序列化的步骤如下：
 
-1） 创建一个对象输入流，它可以包装一个其他类型的源输入流，如文件输入流； 
+1） 创建一个对象输入流，它可以包装一个其他类型的源输入流，如文件输入流；
 
-2） 通过对象输入流的readObject()方法读取对象。 
+2） 通过对象输入流的readObject()方法读取对象。
 
-下面让我们来看一个对应的例子，类的内容如下： 
+下面让我们来看一个对应的例子，类的内容如下：
 
 
 
-import java.io.*; 
+import java.io.*;
 
-import java.util.Date; 
+import java.util.Date;
 
 public class ObjectSaver {
 
@@ -1689,85 +1689,85 @@ public class ObjectSaver {
 
               ObjectOutputStream out = new ObjectOutputStream
 
-                     (new FileOutputStream("D:""objectFile.obj")); 
+                     (new FileOutputStream("D:""objectFile.obj"));
 
 
 
-              //序列化对象 
+              //序列化对象
 
-              Customer customer = new Customer("阿蜜果", 24); 
+              Customer customer = new Customer("阿蜜果", 24);
 
-              out.writeObject("你好!"); 
+              out.writeObject("你好!");
 
-              out.writeObject(new Date()); 
+              out.writeObject(new Date());
 
-              out.writeObject(customer); 
+              out.writeObject(customer);
 
-              out.writeInt(123); //写入基本类型数据 
+              out.writeInt(123); //写入基本类型数据
 
-              out.close(); 
+              out.close();
 
 
 
-              //反序列化对象 
+              //反序列化对象
 
               ObjectInputStream in = new ObjectInputStream
 
-                     (new FileInputStream("D:""objectFile.obj")); 
+                     (new FileInputStream("D:""objectFile.obj"));
 
-              System.out.println("obj1=" + (String) in.readObject()); 
+              System.out.println("obj1=" + (String) in.readObject());
 
-              System.out.println("obj2=" + (Date) in.readObject()); 
+              System.out.println("obj2=" + (Date) in.readObject());
 
-              Customer obj3 = (Customer) in.readObject(); 
+              Customer obj3 = (Customer) in.readObject();
 
-              System.out.println("obj3=" + obj3); 
+              System.out.println("obj3=" + obj3);
 
-              int obj4 = in.readInt(); 
+              int obj4 = in.readInt();
 
               System.out.println("obj4=" + obj4);
 
-              in.close(); 
+              in.close();
 
        }
 
-} 
+}
 
 
 
-class Customer implements Serializable { 
+class Customer implements Serializable {
 
-       private String name; 
+       private String name;
 
-       private int age; 
+       private int age;
 
-       public Customer(String name, int age) { 
+       public Customer(String name, int age) {
 
-              this.name = name; 
+              this.name = name;
 
-              this.age = age; 
+              this.age = age;
 
-       } 
+       }
 
-       public String toString() { 
+       public String toString() {
 
-              return "name=" + name + ", age=" + age; 
+              return "name=" + name + ", age=" + age;
 
-       } 
+       }
 
-} 
+}
 
 
 
-	输出结果如下： 
+	输出结果如下：
 
-	obj1=你好! 
+	obj1=你好!
 
-	obj2=Sat Sep 15 22:02:21 CST 2007 
+	obj2=Sat Sep 15 22:02:21 CST 2007
 
-	obj3=name=阿蜜果, age=24 
+	obj3=name=阿蜜果, age=24
 
-	obj4=123 
+	obj4=123
 
 	因此例比较简单，在此不再详述。
 
@@ -1775,35 +1775,35 @@ class Customer implements Serializable {
 
 ObjectOutputStream只能对Serializable接口的类的对象进行序列化。默认情况下，ObjectOutputStream按照默认方式序列化，这种序列化方式仅仅对对象的非transient的实例变量进行序列化，而不会序列化对象 的transient的实例变量，也不会序列化静态变量。
 
-当ObjectOutputStream按照默认方式反序列化时，具有如下特点： 
+当ObjectOutputStream按照默认方式反序列化时，具有如下特点：
 
-	如果在内存中对象所属的类还没有被加载，那么会先加载并初始化这个类。如果在classpath中不存在相应的类文件，那么会抛出ClassNotFoundException； 
+	如果在内存中对象所属的类还没有被加载，那么会先加载并初始化这个类。如果在classpath中不存在相应的类文件，那么会抛出ClassNotFoundException；
 
-	在反序列化时不会调用类的任何构造方法。 
+	在反序列化时不会调用类的任何构造方法。
 
 如果用户希望控制类的序列化方式，可以在可序列化类中提供以下形式的writeObject()和readObject()方法。
 
 
 
-private void writeObject(java.io.ObjectOutputStream out) throws IOException 
+private void writeObject(java.io.ObjectOutputStream out) throws IOException
 
-private void readObject(java.io.ObjectInputStream in) throws IOException, ClassNotFoundException; 
+private void readObject(java.io.ObjectInputStream in) throws IOException, ClassNotFoundException;
 
 当ObjectOutputStream对一个Customer对象进行序列化时，如果该对象具有writeObject()方法，那么就会执行这一方法，否则就按默认方式序列化。在该对象的writeObjectt()方法中，可以先调用ObjectOutputStream的 defaultWriteObject()方法，使得对象输出流先执行默认的序列化操作。同理可得出反序列化的情况，不过这次是 defaultReadObject()方法。
 
-有些对象中包含一些敏感信息，这些信息不宜对外公开。如果按照默认方式对它们序列化，那么它们的序列化数据在网络上传输时，可能会被不法份子窃取。对于这类信息，可以对它们进行加密后再序列化，在反序列化时则需要解密，再恢复为原来的信息。 
+有些对象中包含一些敏感信息，这些信息不宜对外公开。如果按照默认方式对它们序列化，那么它们的序列化数据在网络上传输时，可能会被不法份子窃取。对于这类信息，可以对它们进行加密后再序列化，在反序列化时则需要解密，再恢复为原来的信息。
 
-默认的序列化方式会序列化整个对象图，这需要递归遍历对象图。如果对象图很复杂，递归遍历操作需要消耗很多的空间和时间，它的内部数据结构为双向列表。 
+默认的序列化方式会序列化整个对象图，这需要递归遍历对象图。如果对象图很复杂，递归遍历操作需要消耗很多的空间和时间，它的内部数据结构为双向列表。
 
 在应用时，如果对某些成员变量都改为transient类型，将节省空间和时间，提高序列化的性能。
 
 ## 实现Externalizable接口
 
-Externalizable接口继承自Serializable接口，如果一个类实现了Externalizable接口，那么将完全由这个类控制自身的序列化行为。Externalizable接口声明了两个方法： 
+Externalizable接口继承自Serializable接口，如果一个类实现了Externalizable接口，那么将完全由这个类控制自身的序列化行为。Externalizable接口声明了两个方法：
 
-public void writeExternal(ObjectOutput out) throws IOException 
+public void writeExternal(ObjectOutput out) throws IOException
 
-public void readExternal(ObjectInput in) throws IOException , ClassNotFoundException 
+public void readExternal(ObjectInput in) throws IOException , ClassNotFoundException
 
 	前者负责序列化操作，后者负责反序列化操作。 在对实现了Externalizable接口的类的对象进行反序列化时，会先调用类的不带参数的构造方法，这是有别于默认反序列方式的。如果把类的不带参数的构造方法删除，或者把该构造方法的访问权限设置为private、默认或protected级别，会抛出 java.io.InvalidException: no valid constructor异常。
 
@@ -1811,9 +1811,9 @@ public void readExternal(ObjectInput in) throws IOException , ClassNotFoundExcep
 
 凡是实现Serializable接口的类都有一个表示序列化版本标识符的静态变量：
 
-private static final long serialVersionUID; 
+private static final long serialVersionUID;
 
-以上serialVersionUID的取值是Java运行时环境根据类的内部细节自动生成的。如果对类的源代码作了修改，再重新编译，新生成的类文件的serialVersionUID的取值有可能也会发生变化。 
+以上serialVersionUID的取值是Java运行时环境根据类的内部细节自动生成的。如果对类的源代码作了修改，再重新编译，新生成的类文件的serialVersionUID的取值有可能也会发生变化。
 
 类的serialVersionUID的默认值完全依赖于Java编译器的实现，对于同一个类，用不同的Java编译器编译，有可能会导致不同的 serialVersionUID，也有可能相同。为了提高哦啊serialVersionUID的独立性和确定性，强烈建议在一个可序列化类中显示的定义serialVersionUID，为它赋予明确的值。
 
@@ -1867,9 +1867,9 @@ public class StaticBlockTest{
 
 		try{
 
-		        Class.forName("Test");   
+		        Class.forName("Test");
 
-    		    Class.forName("Test"); 
+    		    Class.forName("Test");
 
 		} catch(ClassNotFoundException e) {
 
@@ -1877,9 +1877,9 @@ public class StaticBlockTest{
 
 		}
 
-		  
 
-	}	
+
+	}
 
 }
 
@@ -2051,13 +2051,13 @@ BBA
 
 ）
 
-public class FinallyTest 
+public class FinallyTest
 
 	{
 
 		public static void main(String[] args) {
 
-			 
+
 
 			System.out.println("x的值是"+new FinallyTest().test());;
 
@@ -2107,13 +2107,13 @@ x的值是1
 
 若finally中包含return语句
 
-public class FinallyTest 
+public class FinallyTest
 
 	{
 
 		public static void main(String[] args) {
 
-			 
+
 
 			System.out.println("x的值是"+new FinallyTest().test());;
 
@@ -2175,25 +2175,25 @@ public class FinallyTest4 {
 
 	public static StringBuffer tt() {
 
-	StringBuffer k = new StringBuffer();  
+	StringBuffer k = new StringBuffer();
 
-	try {  
+	try {
 
-	k.append(2);  
+	k.append(2);
 
-		return k;  
+		return k;
 
-	} catch(Exception e){  
+	} catch(Exception e){
 
-		k.append(3);  
+		k.append(3);
 
-		return k;  
+		return k;
 
-	} finally {  
+	} finally {
 
-		k.append(5);   
+		k.append(5);
 
-	}  
+	}
 
 	}
 
@@ -2209,7 +2209,7 @@ break跳出当前语句块,循环则跳出当前循环,也可在多重循环嵌�
 
 System.exit(0)表示关闭虚拟机,即使是finally语句块也不会执行
 
-# java存储数据的地方以及九种基本类型 
+# java存储数据的地方以及九种基本类型
 
 寄存器（register）：这是最快的存储区——处理器内部。但是寄存器数量及其有限，所以寄存器由编译器根据需求进行分配，你不能直接控制，也不能在程序中感觉到寄存器存在的任何迹象。
 
@@ -2249,7 +2249,7 @@ void   - -    -   Void
 
 1、abstract是抽象的，指的是方法只有声明而没有实现，他的实现要放入声明该类的子类中实现。
 
-2、static是静态的，是一种属于类而不属于对象的方法或者属性，而我们知道，类其实也是一个对象，他是在class文件加载到虚拟机以后就会产生的对象，通常来说它是单例的，就是整个虚拟机中只有一个这样的类对象（当然，如果用新的类加载器也会生成新的类的对象）。 
+2、static是静态的，是一种属于类而不属于对象的方法或者属性，而我们知道，类其实也是一个对象，他是在class文件加载到虚拟机以后就会产生的对象，通常来说它是单例的，就是整个虚拟机中只有一个这样的类对象（当然，如果用新的类加载器也会生成新的类的对象）。
 
 3、synchronized 是同步，是一种相对线程的锁。
 
@@ -2267,161 +2267,161 @@ native，这个东西本身就和abstract冲突，他们都是方法的声明，
 
 ## final
 
-它可以用于以下四个地方： 定义变量，包括静态的和非静态的；定义方法的参数；定义方法；定义类。 
+它可以用于以下四个地方： 定义变量，包括静态的和非静态的；定义方法的参数；定义方法；定义类。
 
-我们依次来回顾一下每种情况下final的作用。首先来看第一种情况，如果final修饰的是一个基本类型，就表示这个变量被赋予的值是不可变的，即它是个常量；如果final修饰的是一个对象，就表示这个变量被赋予的引用是不可变的，这里需要提醒大家注意的是，不可改变的只是这个变量所保存的引用，并不是这个引用所指向的对象。在第二种情况下，final的含义与第一种情况相同。实际上对于前两种情况，有一种更贴切的表述final的含义的描述，那就是，如果一个变量或方法参数被final修饰，就表示它只能被赋值一次，但是JAVA虚拟机为变量设定的默认值不记作一次赋值。 被final修饰的变量必须被初始化。初始化的方式有以下几种： 在定义的时候初始化；final变量可以在初始化块中初始化，不可以在静态初始化块中初始化；静态final变量可以在静态初始化块中初始化，不可以在初始化块中初始化；final变量还可以在类的构造器中初始化，但是静态final变量不可以。 
+我们依次来回顾一下每种情况下final的作用。首先来看第一种情况，如果final修饰的是一个基本类型，就表示这个变量被赋予的值是不可变的，即它是个常量；如果final修饰的是一个对象，就表示这个变量被赋予的引用是不可变的，这里需要提醒大家注意的是，不可改变的只是这个变量所保存的引用，并不是这个引用所指向的对象。在第二种情况下，final的含义与第一种情况相同。实际上对于前两种情况，有一种更贴切的表述final的含义的描述，那就是，如果一个变量或方法参数被final修饰，就表示它只能被赋值一次，但是JAVA虚拟机为变量设定的默认值不记作一次赋值。 被final修饰的变量必须被初始化。初始化的方式有以下几种： 在定义的时候初始化；final变量可以在初始化块中初始化，不可以在静态初始化块中初始化；静态final变量可以在静态初始化块中初始化，不可以在初始化块中初始化；final变量还可以在类的构造器中初始化，但是静态final变量不可以。
 
-通过下面的代码可以验证以上的观点： 
+通过下面的代码可以验证以上的观点：
 
 
 
-public class FinalTest {   
+public class FinalTest {
 
-    // 在定义时初始化   
+    // 在定义时初始化
 
-    public final int A = 10;   
+    public final int A = 10;
 
-  
 
-    public final int B;   
 
-    // 在初始化块中初始化   
+    public final int B;
 
-    {   
+    // 在初始化块中初始化
 
-        B = 20;   
+    {
 
-    }   
+        B = 20;
 
-  
+    }
 
-    // 非静态final变量不能在静态初始化块中初始化   
 
-    // public final int C;   
 
-    // static {   
+    // 非静态final变量不能在静态初始化块中初始化
 
-    // C = 30;   
+    // public final int C;
 
-    // }   
+    // static {
 
-  
+    // C = 30;
 
-    // 静态常量，在定义时初始化   
+    // }
 
-    public static final int STATIC_D = 40;   
 
-  
 
-    public static final int STATIC_E;   
+    // 静态常量，在定义时初始化
 
-    // 静态常量，在静态初始化块中初始化   
+    public static final int STATIC_D = 40;
 
-    static {   
 
-        STATIC_E = 50;   
 
-    }   
+    public static final int STATIC_E;
 
-  
+    // 静态常量，在静态初始化块中初始化
 
-    // 静态变量不能在初始化块中初始化   
+    static {
 
-    // public static final int STATIC_F;   
+        STATIC_E = 50;
 
-    // {   
+    }
 
-    // STATIC_F = 60;   
 
-    // }   
 
-  
+    // 静态变量不能在初始化块中初始化
 
-    public final int G;   
+    // public static final int STATIC_F;
 
-  
+    // {
 
-    // 静态final变量不可以在构造器中初始化   
+    // STATIC_F = 60;
 
-    // public static final int STATIC_H;   
+    // }
 
-  
 
-    // 在构造器中初始化   
 
-    public FinalTest() {   
+    public final int G;
 
-        G = 70;   
 
-        // 静态final变量不可以在构造器中初始化   
 
-        // STATIC_H = 80;   
+    // 静态final变量不可以在构造器中初始化
 
-  
+    // public static final int STATIC_H;
 
-        // 给final的变量第二次赋值时，编译会报错   
 
-        // A = 99;   
 
-        // STATIC_D = 99;   
+    // 在构造器中初始化
 
-    }   
+    public FinalTest() {
 
-  
+        G = 70;
 
-    // final变量未被初始化，编译时就会报错   
+        // 静态final变量不可以在构造器中初始化
 
-    // public final int I;   
+        // STATIC_H = 80;
 
-  
 
-    // 静态final变量未被初始化，编译时就会报错   
 
-    // public static final int STATIC_J;   
+        // 给final的变量第二次赋值时，编译会报错
 
-}  
+        // A = 99;
 
-我们运行上面的代码之后出了可以发现final变量（常量）和静态final变量（静态常量）未被初始化时，编译会报错。 用final修饰的变量（常量）比非final的变量（普通变量）拥有更高的效率，因此我们在实际编程中应该尽可能多的用常量来代替普通变量，这也是一个很好的编程习惯。 
+        // STATIC_D = 99;
+
+    }
+
+
+
+    // final变量未被初始化，编译时就会报错
+
+    // public final int I;
+
+
+
+    // 静态final变量未被初始化，编译时就会报错
+
+    // public static final int STATIC_J;
+
+}
+
+我们运行上面的代码之后出了可以发现final变量（常量）和静态final变量（静态常量）未被初始化时，编译会报错。 用final修饰的变量（常量）比非final的变量（普通变量）拥有更高的效率，因此我们在实际编程中应该尽可能多的用常量来代替普通变量，这也是一个很好的编程习惯。
 
 当final用来定义一个方法时，会有什么效果呢？正如大家所知，它表示这个方法不可以被子类重写，但是它这不影响它被子类继承。我们写段代码来验证一下：
 
-class ParentClass {   
+class ParentClass {
 
-    public final void TestFinal() {   
+    public final void TestFinal() {
 
-        System.out.println("父类--这是一个final方法");   
+        System.out.println("父类--这是一个final方法");
 
-    }   
+    }
 
-}   
+}
 
-  
 
-public class SubClass extends ParentClass {   
 
-    /**  
+public class SubClass extends ParentClass {
 
-     * 子类无法重写（override）父类的final方法，否则编译时会报错  
+    /**
 
-     */  
+     * 子类无法重写（override）父类的final方法，否则编译时会报错
 
-    // public void TestFinal() {   
+     */
 
-    // System.out.println("子类--重写final方法");   
+    // public void TestFinal() {
 
-    // }   
+    // System.out.println("子类--重写final方法");
 
-       
+    // }
 
-    public static void main(String[] args) {   
 
-        SubClass sc = new SubClass();   
 
-        sc.TestFinal();   
+    public static void main(String[] args) {
 
-    }   
+        SubClass sc = new SubClass();
 
-}  
+        sc.TestFinal();
+
+    }
+
+}
 
 这里需要特殊说明的是，具有private访问权限的方法也可以增加final修饰，但是由于子类无法继承private方法，因此也无法重写它。编译器在处理private方法时，是按照final方法来对待的，这样可以提高该方法被调用时的效率。不过子类仍然可以定义同父类中的private方法具有同样结构的方法，但是这并不会产生重写的效果，而且它们之间也不存在必然联系。
 
@@ -2429,23 +2429,23 @@ public class SubClass extends ParentClass {
 
 
 
-public final class FinalTest {   
+public final class FinalTest {
 
-    int i = 10;   
+    int i = 10;
 
-  
 
-    public static void main(String[] args) {   
 
-        FinalTest ft = new FinalTest();   
+    public static void main(String[] args) {
 
-        ft.i = 99;   
+        FinalTest ft = new FinalTest();
 
-        System.out.println(ft.i);   
+        ft.i = 99;
 
-    }   
+        System.out.println(ft.i);
 
-}  
+    }
+
+}
 
 public final class FinalTest {
 
@@ -2471,159 +2471,159 @@ public final class FinalTest {
 
 ## finally
 
-这个就比较简单了，它只能用在try/catch语句中，并且附带着一个语句块，表示这段语句最终总是被执行。请看下面的代码： 
+这个就比较简单了，它只能用在try/catch语句中，并且附带着一个语句块，表示这段语句最终总是被执行。请看下面的代码：
 
-public final class FinallyTest {   
+public final class FinallyTest {
 
-    public static void main(String[] args) {   
+    public static void main(String[] args) {
 
-        try {   
+        try {
 
-            throw new NullPointerException();   
+            throw new NullPointerException();
 
-        } catch (NullPointerException e) {   
+        } catch (NullPointerException e) {
 
-            System.out.println("程序抛出了异常");   
+            System.out.println("程序抛出了异常");
 
-        } finally {   
+        } finally {
 
-            System.out.println("执行了finally语句块");   
+            System.out.println("执行了finally语句块");
 
-        }   
+        }
 
-    }   
+    }
 
-}  
+}
 
 
 
-	运行结果说明了finally的作用： 程序抛出了异常并且执行了finally语句块。请大家注意，捕获程序抛出的异常之后，既不加处理，也不继续向上抛出异常，并不是良好的编程习惯，它掩盖了程序执行中发生的错误，这里只是方便演示，请不要学习。 那么有没有一种情况使finally语句块得不到执行呢？大家可能想到了return、continue、break这三个可以打乱代码顺序执行语句的规律。那我们就来试试看，这三个语句是否能影响finally语句块的执行： 
+	运行结果说明了finally的作用： 程序抛出了异常并且执行了finally语句块。请大家注意，捕获程序抛出的异常之后，既不加处理，也不继续向上抛出异常，并不是良好的编程习惯，它掩盖了程序执行中发生的错误，这里只是方便演示，请不要学习。 那么有没有一种情况使finally语句块得不到执行呢？大家可能想到了return、continue、break这三个可以打乱代码顺序执行语句的规律。那我们就来试试看，这三个语句是否能影响finally语句块的执行：
 
-public final class FinallyTest {   
+public final class FinallyTest {
 
-    // 测试return语句   
+    // 测试return语句
 
-    public ReturnClass testReturn() {   
+    public ReturnClass testReturn() {
 
-        try {   
+        try {
 
-            return new ReturnClass();   
+            return new ReturnClass();
 
-        } catch (Exception e) {   
+        } catch (Exception e) {
 
-            e.printStackTrace();   
+            e.printStackTrace();
 
-        } finally {   
+        } finally {
 
-            System.out.println("执行了finally语句");   
+            System.out.println("执行了finally语句");
 
-        }   
+        }
 
-        return null;   
+        return null;
 
-    }   
+    }
 
-  
 
-    // 测试continue语句   
 
-    public void testContinue() {   
+    // 测试continue语句
 
-        for (int i = 0; i < 3; i++) {   
+    public void testContinue() {
 
-            try {   
+        for (int i = 0; i < 3; i++) {
 
-                System.out.println(i);   
+            try {
 
-                if (i == 1) {   
+                System.out.println(i);
 
-                    continue;   
+                if (i == 1) {
 
-                }   
+                    continue;
 
-            } catch (Exception e) {   
+                }
 
-                e.printStackTrace();   
+            } catch (Exception e) {
 
-            } finally {   
+                e.printStackTrace();
 
-                System.out.println("执行了finally语句");   
+            } finally {
 
-            }   
+                System.out.println("执行了finally语句");
 
-        }   
+            }
 
-    }   
+        }
 
-  
+    }
 
-    // 测试break语句   
 
-    public void testBreak() {   
 
-        for (int i = 0; i < 3; i++) {   
+    // 测试break语句
 
-            try {   
+    public void testBreak() {
 
-                System.out.println(i);   
+        for (int i = 0; i < 3; i++) {
 
-                if (i == 1) {   
+            try {
 
-                    break;   
+                System.out.println(i);
 
-                }   
+                if (i == 1) {
 
-            } catch (Exception e) {   
+                    break;
 
-                e.printStackTrace();   
+                }
 
-            } finally {   
+            } catch (Exception e) {
 
-                System.out.println("执行了finally语句");   
+                e.printStackTrace();
 
-            }   
+            } finally {
 
-        }   
+                System.out.println("执行了finally语句");
 
-    }   
+            }
 
-  
+        }
 
-    public static void main(String[] args) {   
+    }
 
-        FinallyTest ft = new FinallyTest();   
 
-        // 测试return语句   
 
-        ft.testReturn();   
+    public static void main(String[] args) {
 
-        System.out.println();   
+        FinallyTest ft = new FinallyTest();
 
-        // 测试continue语句   
+        // 测试return语句
 
-        ft.testContinue();   
+        ft.testReturn();
 
-        System.out.println();   
+        System.out.println();
 
-        // 测试break语句   
+        // 测试continue语句
 
-        ft.testBreak();   
+        ft.testContinue();
 
-    }   
+        System.out.println();
 
-}   
+        // 测试break语句
 
-  
+        ft.testBreak();
 
-class ReturnClass {   
+    }
 
-    public ReturnClass() {   
+}
 
-        System.out.println("执行了return语句");   
 
-    }   
 
-}  
+class ReturnClass {
+
+    public ReturnClass() {
+
+        System.out.println("执行了return语句");
+
+    }
+
+}
 
 public final class FinallyTest {
 
@@ -2755,33 +2755,33 @@ class ReturnClass {
 
 
 
-上面这段代码的运行结果如下： 
+上面这段代码的运行结果如下：
 
-执行了return语句 
+执行了return语句
 
-执行了finally语句 
-
-
-
-0 
-
-执行了finally语句 
-
-1 
-
-执行了finally语句 
-
-2 
-
-执行了finally语句 
+执行了finally语句
 
 
 
-0 
+0
 
-执行了finally语句 
+执行了finally语句
 
-1 
+1
+
+执行了finally语句
+
+2
+
+执行了finally语句
+
+
+
+0
+
+执行了finally语句
+
+1
 
 执行了finally语句
 
@@ -2791,49 +2791,49 @@ class ReturnClass {
 
 最后，我们再来看看finalize，它是一个方法，属于java.lang.Object类，它的定义如下：
 
-protected void finalize() throws Throwable { }  
+protected void finalize() throws Throwable { }
 
 	众所周知，finalize()方法是GC（garbage collector）运行机制的一部分，关于GC的知识我们将在后续的章节中来回顾。 在此我们只说说finalize()方法的作用是什么呢？ finalize()方法是在GC清理它所从属的对象时被调用的，如果执行它的过程中抛出了无法捕获的异常（uncaught exception），GC将终止对改对象的清理，并且该异常会被忽略；直到下一次GC开始清理这个对象时，它的finalize()会被再次调用。 请看下面的示例：
 
- 
 
-public final class FinallyTest {   
 
-    // 重写finalize()方法  
+public final class FinallyTest {
 
-    protected void finalize() throws Throwable {   
+    // 重写finalize()方法
 
-        System.out.println("执行了finalize()方法");   
+    protected void finalize() throws Throwable {
 
-    }   
+        System.out.println("执行了finalize()方法");
 
-  
-
-    public static void main(String[] args) {   
-
-        FinallyTest ft = new FinallyTest();   
-
-        ft = null; 
-
-        System.gc();   
-
-    }   
-
-}  
+    }
 
 
 
-	运行结果： 执行了finalize()方法 
+    public static void main(String[] args) {
 
-程序调用了java.lang.System类的gc()方法，引起GC的执行，GC在清理ft对象时调用了它的finalize()方法，因此才有了上面的输出结果。调用System.gc()等同于调用下面这行代码： Runtime.getRuntime().gc();  
+        FinallyTest ft = new FinallyTest();
+
+        ft = null;
+
+        System.gc();
+
+    }
+
+}
+
+
+
+	运行结果： 执行了finalize()方法
+
+程序调用了java.lang.System类的gc()方法，引起GC的执行，GC在清理ft对象时调用了它的finalize()方法，因此才有了上面的输出结果。调用System.gc()等同于调用下面这行代码： Runtime.getRuntime().gc();
 
 调用它们的作用只是建议垃圾收集器（GC）启动，清理无用的对象释放内存空间，但是GC的启动并不是一定的，这由JAVA虚拟机来决定。直到JAVA虚拟机停止运行，有些对象的finalize()可能都没有被运行过，那么怎样保证所有对象的这个方法在JAVA虚拟机停止运行之前一定被调用呢？答案是我们可以调用System类的另一个方法：
 
-public static void runFinalizersOnExit(boolean value) {   
+public static void runFinalizersOnExit(boolean value) {
 
-    //other code   
+    //other code
 
-}  
+}
 
 
 
@@ -2993,7 +2993,7 @@ assert list.removeAll();这样看起来好像没有问题 但是想想如果asse
 
 boolean boo = list.removeAl();
 
-assert boo; 
+assert boo;
 
 ## eclipse 中怎样设置 参数来 使用 Asset
 
@@ -3279,7 +3279,7 @@ class Outer
 
     private int index = 10;
 
-    class Inner 
+    class Inner
 
     {
 
@@ -3307,7 +3307,7 @@ class Outer
 
 
 
-    void print() 
+    void print()
 
     {
 
@@ -3321,11 +3321,11 @@ class Outer
 
 
 
-class Test 
+class Test
 
 {
 
-    public static void main(String[] args) 
+    public static void main(String[] args)
 
     {
 
@@ -3341,19 +3341,19 @@ class Test
 
 1.2在main中显式返回内部类引用
 
-class Outer 
+class Outer
 
 {
 
     private int index = 10;
 
-    class Inner 
+    class Inner
 
     {
 
         private int index = 20;
 
-        void print() 
+        void print()
 
         {
 
@@ -3371,7 +3371,7 @@ class Outer
 
 
 
-    Inner getInner() 
+    Inner getInner()
 
     {
 
@@ -3383,11 +3383,11 @@ class Outer
 
 
 
-class Test 
+class Test
 
 {
 
-    public static void main(String[] args) 
+    public static void main(String[] args)
 
     {
 
@@ -3405,19 +3405,19 @@ Inner是Outer的内部类，所以在类Test中必须用属性引用符来标识
 
 1.3当main方法在Outer类内部
 
-class Outer 
+class Outer
 
 {
 
         private int index = 10;
 
-        class Inner 
+        class Inner
 
         {
 
              private int index = 20;
 
-             void print() 
+             void print()
 
              {
 
@@ -3435,7 +3435,7 @@ class Outer
 
 
 
-        Inner getInner() 
+        Inner getInner()
 
         {
 
@@ -3445,7 +3445,7 @@ class Outer
 
 
 
-        public static void main(String[] args) 
+        public static void main(String[] args)
 
         {
 
@@ -3463,11 +3463,11 @@ class Outer
 
 1.4在main方法中直接产生内部类对象
 
-class Test 
+class Test
 
 {
 
-        public static void main(String[] args) 
+        public static void main(String[] args)
 
         {
 
@@ -3491,7 +3491,7 @@ class Outer
 
 {
 
-        int num=10; 
+        int num=10;
 
         public void print(final int aArgs)
 
@@ -3515,7 +3515,7 @@ class Outer
 
                  public void print()
 
-                 {     
+                 {
 
                      int num=30;
 
@@ -3661,7 +3661,7 @@ public class Test extends WithInner.Inner
 
     }
 
-} 
+}
 
 因为每一个内部类都有一个指向外部类的引用，在继承一个内部类，必须先创建一个外部类，通过这个外部类引用来调用其内部类的构造方法。如果继承的内部类是一个静态内部类，则就不需要这样，直接super()调用即可；
 
@@ -3681,7 +3681,7 @@ interface Machine
 
 class Person
 
-{     
+{
 
     void run()
 
@@ -3785,7 +3785,7 @@ class C extends A
 
     {
 
-        return new B() 
+        return new B()
 
         {
 
@@ -3923,7 +3923,7 @@ IA I=new IA(){};
 
 7、方法中的内部类只允许访问方法中的final局部变量和方法的final参数列表，所以说方法中的内部类和内部类没什麽区别。但方法中的内部类不能在方法以外访问，方法中不可以有static内部类
 
-8、匿名内部类如果继承自接口,必须实现指定接口的方法,且无参数 
+8、匿名内部类如果继承自接口,必须实现指定接口的方法,且无参数
 
 9、匿名内部类如果继承自类,参数必须按父类的构造函数的参数传递
 
@@ -3973,11 +3973,11 @@ META-INF
 
 File 类封装了对用户机器的文件系统进行操作的功能。例如，可以用 File 类获得文件上次修改的时间，移动，或者对文件进行删除、重命名。换句话说，流类关注的是文件内容，而 File 类关注的是文件在磁盘上的存储。File 不属于文件流 , 只能代表一个文件或是目录的路径名而已。
 
-FileInputStream 类或者 FileReader 类的构造函数有多个，其中典型的两个分别为：一个使用 File 对象为参数；而另一个使用表示路径的 String 对象作为参数；那两者有什么区别，或者说哪个更好呢？如果处理文件或者目录名，就应该使用 File 对象，而不是字符串。因为 File 类有一定的封装，比如它知道一些文件系统对大小写是敏感的，并且目录尾的“ / ”字符无关紧要。 但是如果仅是图方便的话直接用String对象作为参数也未尝不可。 
+FileInputStream 类或者 FileReader 类的构造函数有多个，其中典型的两个分别为：一个使用 File 对象为参数；而另一个使用表示路径的 String 对象作为参数；那两者有什么区别，或者说哪个更好呢？如果处理文件或者目录名，就应该使用 File 对象，而不是字符串。因为 File 类有一定的封装，比如它知道一些文件系统对大小写是敏感的，并且目录尾的“ / ”字符无关紧要。 但是如果仅是图方便的话直接用String对象作为参数也未尝不可。
 
 ## FileInputStream 类和FileReader类的区别
 
-FileInputStream 与 FileReader 两个类的构造函数的形式和参数都相同，参数为 File 对象或者表示路径的 String ，它们到底有何区别呢？ 
+FileInputStream 与 FileReader 两个类的构造函数的形式和参数都相同，参数为 File 对象或者表示路径的 String ，它们到底有何区别呢？
 
 为了弄明白这两者的区别，我们先看一下InputStream和Reader两个类的区别。
 
@@ -3993,7 +3993,7 @@ FileInputStream 类以二进制输入 / 输出， I/O 速度快且效率高，�
 
 ## FileReader 类
 
-FileReader 类介绍： InputStreamReader 类的子类，所有方法（read （）等）都从父类 InputStreamReader 中继承来，该类与它的父类 InputStreamReader 的主要不同在于构造函数。从 InputStreamReader 的构造函数中看到，参数为 InputStream 和编码方式，可以看出，当要指定编码方式时，必须使用 InputStreamReader 类；而 FileReader 构造函数的参数与 FileInputStream 同，为 File 对象或表示 path 的 String ，可以看出当要根据 File 对象或者 String 读取一个文件时，用 FileReader ，我想FileReader 子类的作用也就在于这个小分工吧。 一般用法： 
+FileReader 类介绍： InputStreamReader 类的子类，所有方法（read （）等）都从父类 InputStreamReader 中继承来，该类与它的父类 InputStreamReader 的主要不同在于构造函数。从 InputStreamReader 的构造函数中看到，参数为 InputStream 和编码方式，可以看出，当要指定编码方式时，必须使用 InputStreamReader 类；而 FileReader 构造函数的参数与 FileInputStream 同，为 File 对象或表示 path 的 String ，可以看出当要根据 File 对象或者 String 读取一个文件时，用 FileReader ，我想FileReader 子类的作用也就在于这个小分工吧。 一般用法：
 
 FileReader fr = new FileReader("ming.txt");
 
@@ -4005,9 +4005,9 @@ FileReader fr = new FileReader("ming.txt");
 
 　　 {
 
-　　　 System.out.print((char)ch); 
+　　　 System.out.print((char)ch);
 
-　　 } 
+　　 }
 
 ## InputStreamReader 类
 
@@ -4019,11 +4019,11 @@ FileReader fr = new FileReader("ming.txt");
 
 　　 {
 
-　　　 System.out.print((char)ch); 
+　　　 System.out.print((char)ch);
 
-　　 } 
+　　 }
 
-## BufferedReader 类 
+## BufferedReader 类
 
 BufferedReader 由Reader类扩展而来，提供通用的缓冲方式文本读取，而且提供了很实用的readLine，读取分行文本很适合，BufferedReader是针对Reader的，不直接针对文件，也不是只针对文件读取。一般用法：
 
@@ -4037,21 +4037,21 @@ BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream
 
 　　{
 
-　　　System.out.println(data); 
+　　　System.out.println(data);
 
 　　}
 
-      
 
-总结以上内容，得出比较好的规范用法： 
+
+总结以上内容，得出比较好的规范用法：
 
 1）
 
-File file = new File ("hello.txt"); 
+File file = new File ("hello.txt");
 
-FileInputStream in=new FileInputStream(file); 
+FileInputStream in=new FileInputStream(file);
 
- 
+
 
 2）
 
@@ -4063,15 +4063,15 @@ InputStreamReader inReader=new InputStreamReader(in);
 
 BufferedReader bufReader=new BufferedReader(inReader);
 
- 
 
-3）    File file = new File ("hello.txt"); 
 
-FileReader fileReader=new FileReader(file); 
+3）    File file = new File ("hello.txt");
 
-BufferedReader bufReader=new BufferedReader(fileReader); 
+FileReader fileReader=new FileReader(file);
 
- 
+BufferedReader bufReader=new BufferedReader(fileReader);
+
+
 
 1）
 
@@ -4081,9 +4081,9 @@ FileInputStream in=new FileInputStream(file);
 
 InputStreamReader inReader=new InputStreamReader(in);
 
-BufferedReader bufReader=new BufferedReader(inReader); 
+BufferedReader bufReader=new BufferedReader(inReader);
 
- 
+
 
 2）
 
@@ -4093,9 +4093,9 @@ File file = new File ("hello.txt");
 
 in=new FileInputStream(file);
 
-BufferedReader bufReader=new BufferedReader(new InputStreamReader(in)); 
+BufferedReader bufReader=new BufferedReader(new InputStreamReader(in));
 
- 
+
 
 3）
 
@@ -4105,7 +4105,7 @@ BufferedReader bufReader=new BufferedReader(new InputStreamReader(new FileInputS
 
 (file)));
 
- 
+
 
 上述两种写法的微小区别：
 
@@ -4671,17 +4671,17 @@ Variant bln astr obj vnt 做布尔变量用时，用bln，做字符串数组用�
 
 # 分词工具比较
 
-IKAnalyzer 
+IKAnalyzer
 
 http://code.google.com/p/ik-analyzer/
 
 IKAnalyzer是一个开源的，基于java语言开发的轻量级的中文分词工具包。从2006年12月推出1.0版开始，IKAnalyzer已经推出了3个大版本。最初，它是以开源项目Luence为应用主体的，结合词典分词和文法分析算法的中文分词组件。新版本的IKAnalyzer3.0则发展为面向Java的公用分词组件，独立于Lucene项目，同时提供了对Lucene的默认优化实现。
 
-语言和平台： 基于java 语言开发，最初它是以开源项目Luence 为应用主体的，结合词典分词和文法分析算法的中文分词组件。新版本的IKAnalyzer 3.0 则发展为面向 Java 的公用分词组件，独立于 Lucene 项目，同时提供了对 Lucene 的默认优化实现。 
+语言和平台： 基于java 语言开发，最初它是以开源项目Luence 为应用主体的，结合词典分词和文法分析算法的中文分词组件。新版本的IKAnalyzer 3.0 则发展为面向 Java 的公用分词组件，独立于 Lucene 项目，同时提供了对 Lucene 的默认优化实现。
 
-算法：采用了特有的“正向迭代最细粒度切分算法” 。采用了多子处理器分析模式，支持：英文字母（ IP 地址、Email、URL ）、数字（日期、常用中文数量词、罗马数字、科学计数法），中文词汇（姓名、地名处理）等分词处理。优化的词典存储，更小的内存占用。支持用户词典扩展定义。针对 Lucene 全文检索优化的查询分析器 IKQueryParser ；采用歧义分析算法优化查询关键字的搜索排列组合，能极大的提高 Lucene 检索的命中率。 
+算法：采用了特有的“正向迭代最细粒度切分算法” 。采用了多子处理器分析模式，支持：英文字母（ IP 地址、Email、URL ）、数字（日期、常用中文数量词、罗马数字、科学计数法），中文词汇（姓名、地名处理）等分词处理。优化的词典存储，更小的内存占用。支持用户词典扩展定义。针对 Lucene 全文检索优化的查询分析器 IKQueryParser ；采用歧义分析算法优化查询关键字的搜索排列组合，能极大的提高 Lucene 检索的命中率。
 
-性能：60 万字 / 秒 
+性能：60 万字 / 秒
 
 IKAnalyzer基于lucene2.0版本API开发，实现了以词典分词为基础的正反向全切分算法，是LuceneAnalyzer接口的实现。该算法适合与互联网用户的搜索习惯和企业知识库检索，用户可以用句子中涵盖的中文词汇搜索，如用"人民"搜索含"人民币"的文章，这是大部分用户的搜索思维；不适合用于知识挖掘和网络爬虫技术，全切分法容易造成知识歧义，因为在语义学上"人民"和"人民币"是完全搭不上关系的。
 
@@ -4703,45 +4703,45 @@ http://www.ictclas.org/index.html
 
 ictclas4j
 
-ictclas4j中文分词系统是sinboy在中科院张华平和刘群老师的研制的FreeICTCLAS的基础上完成的一个java开源分词项目，简化了原分词程序的复杂度，旨在为广大的中文分词爱好者一个更好的学习机会。 
+ictclas4j中文分词系统是sinboy在中科院张华平和刘群老师的研制的FreeICTCLAS的基础上完成的一个java开源分词项目，简化了原分词程序的复杂度，旨在为广大的中文分词爱好者一个更好的学习机会。
 
-性能：分词速度单机996KB/s ， API 不超过 200KB ，各种词典数据压缩后不到 3M. 
+性能：分词速度单机996KB/s ， API 不超过 200KB ，各种词典数据压缩后不到 3M.
 
-准确率：分词精度98.45% 
+准确率：分词精度98.45%
 
-语言和平台：ICTCLAS 全部采用 C/C++ 编写，支持 Linux 、 FreeBSD 及 Windows 系列操作系统，支持 C/C++ 、 C# 、 Delphi 、 Java 等主流的开发语言。 
+语言和平台：ICTCLAS 全部采用 C/C++ 编写，支持 Linux 、 FreeBSD 及 Windows 系列操作系统，支持 C/C++ 、 C# 、 Delphi 、 Java 等主流的开发语言。
 
-Author：中国科学院计算技术研究所 
+Author：中国科学院计算技术研究所
 
-主要功能：中文分词；词性标注；命名实体识别；新词识别；未登录词识别;同时支持用户词典；支持繁体中文；支持GBK 、 UTF-8 、 UTF-7 、 UNICODE 等多种编码格式。 
+主要功能：中文分词；词性标注；命名实体识别；新词识别；未登录词识别;同时支持用户词典；支持繁体中文；支持GBK 、 UTF-8 、 UTF-7 、 UNICODE 等多种编码格式。
 
 算法：完美PDAT 大规模知识库管理技术（ 200510130690.3 ），在高速度与高精度之间取得了重大突破，该技术可以管理百万级别的词典知识库，单机每秒可以查询 100 万词条，而内存消耗不到知识库大小的 1.5 倍。层叠隐马尔可夫模型（ Hierarchical Hidden Markov Model ） ，该分词系统的主要是思想是先通过 CHMM( 层叠形马尔可夫模型 ) 进行分词 , 通过分层 , 既增加了分词的准确性 , 又保证了分词的效率 . 共分五层 , 如下图所示。基本思路是进行原子切分 , 然后在此基础上进行 N- 最短路径粗切分 , 找出前 N 个最符合的切分结果 , 生成二元分词表 , 然后生成分词结果 , 接着进行词性标注并完成主要分词步骤 .
 
 imdict
 
-imdict-chinese-analyzer是imdict智能词典的智能中文分词模块，算法基于隐马尔科夫模型(Hidden Markov Model，HMM)，是中国科学院计算技术研究所的ictclas中文分词程序的重新实现（基于Java），可以直接为lucene搜索引擎提供简体中文分词支持。 
+imdict-chinese-analyzer是imdict智能词典的智能中文分词模块，算法基于隐马尔科夫模型(Hidden Markov Model，HMM)，是中国科学院计算技术研究所的ictclas中文分词程序的重新实现（基于Java），可以直接为lucene搜索引擎提供简体中文分词支持。
 
-imdict-chinese-analyzer 是imdict智能词典的智能中文分词模块 
+imdict-chinese-analyzer 是imdict智能词典的智能中文分词模块
 
 算法：基于隐马尔科夫模型(Hidden Markov Model，HMM)，是中国科学院计算技术研究所的 ictclas 中文分词程序的重新实现（基于Java），可以直接为lucene 搜索引擎提供简体中文分词支持 。
 
-主要功能： 
+主要功能：
 
-完全 Unicode 支持：分词核心模块完全采用Unicode 编码，无须各种汉字编码的转换，极大的提升了分词的效率。 
+完全 Unicode 支持：分词核心模块完全采用Unicode 编码，无须各种汉字编码的转换，极大的提升了分词的效率。
 
-提升搜索效率：根据imdict智能词典的实践，在有智能中文分词的情况下，索引文件比没有中文分词的索引文件小 1/3 
+提升搜索效率：根据imdict智能词典的实践，在有智能中文分词的情况下，索引文件比没有中文分词的索引文件小 1/3
 
-提高搜索准确度：imdict -chinese-analyzer采用了 HHMM 分词模型，极大的提高了分词的准确率，在此基础上的搜索，比对汉字逐个切分要准确得多！ 
+提高搜索准确度：imdict -chinese-analyzer采用了 HHMM 分词模型，极大的提高了分词的准确率，在此基础上的搜索，比对汉字逐个切分要准确得多！
 
 更高效的数据结构：为了提高效率，针对常用中文检索的应用场景，imdict-chinese-analyzer 对一些不必要的功能进行了删减，例如词性标注、人名识别、时间识别等等。另外还修改了算法的数据结构，在内存占用量缩减到 1/3 的情况下把效率提升了数倍。
 
-paoding 
+paoding
 
 http://www.oschina.net/p/paoding/
 
-Paoding's Knives中文分词基于Java的开源中文分词组件，提供lucene和solr 接口，具有极高效率和高扩展性。引入隐喻，采用完全的面向对象设计，构思先进。高效率：在PIII 1G内存个人机器上，1秒可准确分词100万汉字。采用基于不限制个数的词典文件对文章进行有效切分，使能够将对词汇分类定义。能够对未知的词汇进行合理解析。 
+Paoding's Knives中文分词基于Java的开源中文分词组件，提供lucene和solr 接口，具有极高效率和高扩展性。引入隐喻，采用完全的面向对象设计，构思先进。高效率：在PIII 1G内存个人机器上，1秒可准确分词100万汉字。采用基于不限制个数的词典文件对文章进行有效切分，使能够将对词汇分类定义。能够对未知的词汇进行合理解析。
 
-语言和平台：Java  提供 lucence  3.0  接口，仅支持 Java 语言。 Paoding（庖丁解牛分词）基于Java的开源中文分词组件，提供lucene和solr 接口，具有极高效率和高扩展性 。引入隐喻，采用完全的面向对象设计，构思先进。 
+语言和平台：Java  提供 lucence  3.0  接口，仅支持 Java 语言。 Paoding（庖丁解牛分词）基于Java的开源中文分词组件，提供lucene和solr 接口，具有极高效率和高扩展性 。引入隐喻，采用完全的面向对象设计，构思先进。
 
 MMSEG4J
 
@@ -4835,7 +4835,7 @@ java -jar start.jar
 
 验证是否启动成功
 
-用浏览器打开 
+用浏览器打开
 
 http://localhost:8983/solr/#/
 
@@ -4857,7 +4857,7 @@ java -jar start.jar
 
 Nutch自带了一个脚本，./bin/crawl，把抓取的各个步骤合并成一个命令，看一下它的用法
 
-$ bin/crawl 
+$ bin/crawl
 
 Missing seedDir : crawl <seedDir> <crawlDir> <solrURL> <numberOfRounds>
 
@@ -5039,19 +5039,12 @@ b[i]=i+"hello ";
 
 近日，笔者在java编程中因为疏忽对String数组的初始化定义错误，导致程序运行出错。现将所理解的String数组在此进行说明，并对String数组初始化进行分析。
 
-
-
-//一维数组
-
-String[] str = new String[5]; //创建一个长度为5的String(字符串)型的一维数组
-
-String[] str = new String[]{"","","","",""};
-
-String[] str = {"","","","",""};
-
-//二维数组
-
-String[][] str = new String[2][2]; //创建一个2行2列的二维数组
+	//一维数组
+	String[] str = new String[5]; //创建一个长度为5的String(字符串)型的一维数组
+	String[] str = new String[]{"","","","",""};
+	String[] str = {"","","","",""};
+	//二维数组
+	String[][] str = new String[2][2]; //创建一个2行2列的二维数组
 
 String数组初始化区别
 
@@ -5089,7 +5082,7 @@ String[] str = {"1","2","3"}与String[] str = new String[]{"1","2","3"}在内存
 
 笔者所犯错误为在初始化数组的时候定义为String[] str = new String[]{}，如此定义相当于创建了创建一个长度为0的String型的一维数组。在后期为其赋值的时候str[0]="A"，就会抛出异常。
 
-# 字符串的各种编码转换 
+# 字符串的各种编码转换
 
 java中的String类是按照unicode进行编码的，当使用String(byte[] bytes, String encoding)构造字符串时，encoding所指的是bytes中的数据是按照那种方式编码的，而不是最后产生的String是什么编码方式，换句话说，是让系统把bytes中的数据由encoding编码方式转换成unicode编码。如果不指明，bytes的编码方式将由jdk根据操作系统决定。
 
@@ -5121,15 +5114,15 @@ Java的class文件采用utf8的编码方式，JVM运行时采用utf16，Java的�
 
 assertEquals(160, Charset.availableCharsets().size());
 
-Set<String> charsetNames = Charset.availableCharsets().keySet();  
+Set<String> charsetNames = Charset.availableCharsets().keySet();
 
-assertTrue(charsetNames.contains("utf-8")); 
+assertTrue(charsetNames.contains("utf-8"));
 
 assertTrue(charsetNames.contains("utf-16"));
 
 assertTrue(charsetNames.contains("gb2312"));
 
-assertTrue(Charset.isSupported("utf-8")); 
+assertTrue(Charset.isSupported("utf-8"));
 
 需要在哪些时候注意编码问题？
 
@@ -5139,27 +5132,27 @@ assertTrue(Charset.isSupported("utf-8"));
 
 InputStream is = new FileInputStream("res/input2.data");
 
-InputStreamReader streamReader = new InputStreamReader(is, "GB18030"); 
+InputStreamReader streamReader = new InputStreamReader(is, "GB18030");
 
 这里可以看到，我们采用了GB18030编码读取外部数据，通过查看streamReader的encoding可以印证：
 
-assertEquals("GB18030", streamReader.getEncoding()); 
+assertEquals("GB18030", streamReader.getEncoding());
 
 正是由于上面我们为外部资源指定了正确的编码，当它转成char数组时才能正确地进行解码（GB18030 -> unicode）：
 
-char[] chars = new char[is.available()]; 
+char[] chars = new char[is.available()];
 
-streamReader.read(chars, 0, is.available()); 
+streamReader.read(chars, 0, is.available());
 
 但我们经常写的代码就像下面这样：
 
-InputStream is = new FileInputStream("res/input2.data"); 
+InputStream is = new FileInputStream("res/input2.data");
 
-InputStreamReader streamReader = new InputStreamReader(is); 
+InputStreamReader streamReader = new InputStreamReader(is);
 
 这时候InputStreamReader采用什么编码方式读取外部资源呢？Unicode？不是，这时候采用的编码方式是JVM的默认字符集，这个默认字符集在虚拟机启动时决定，通常根据语言环境和底层操作系统的 charset 来确定。可以通过以下方式得到JVM的默认字符集：
 
-Charset.defaultCharset(); 
+Charset.defaultCharset();
 
 为什么要这样？因为我们从外部资源读取数据，而外部资源的编码方式通常跟操作系统所使用的字符集一样，所以采用这种默认方式是可以理解的。
 
@@ -5169,21 +5162,21 @@ Charset.defaultCharset();
 
 我们通常通过以下代码把字符串转换成字节数组：
 
-"string".getBytes(); 
+"string".getBytes();
 
 但你是否注意过这个转换采用的编码呢？其实上面这句代码跟下面这句是等价的：
 
-"string".getBytes(Charset.defaultCharset()); 
+"string".getBytes(Charset.defaultCharset());
 
 也就是说它根据JVM的默认编码（而不是你可能以为的unicode）把字符串转换成一个字节数组。反之，如何从字节数组创建一个字符串呢？
 
-new String("string".getBytes()); 
+new String("string".getBytes());
 
 同样，这个方法使用平台的默认字符集解码字节的指定数组（这里的解码指从一种字符集到unicode）。
 
 字符串编码迷思：
 
-new String(input.getBytes("ISO-8859-1"), "GB18030"); 
+new String(input.getBytes("ISO-8859-1"), "GB18030");
 
 上面这段代码代表什么？有人会说： “把input字符串从ISO-8859-1编码方式转换成GB18030编码方式”。如果这种说法正确，那么又如何解释我们刚提到的java字符串都采用unicode编码呢？
 
@@ -5193,7 +5186,7 @@ new String(input.getBytes("ISO-8859-1"), "GB18030");
 
 所以，我们在处理java的编码问题时，要分清楚三个概念：Java采用的编码：unicode，JVM平台默认字符集和外部资源的编码。通过Eclipse下的演示工程,介绍如何打包这样的项目：要导出的类里边用到了别的jar包。
 
-# JAVA调用系统命令或可执行程序  
+# JAVA调用系统命令或可执行程序
 
 通过 java.lang.Runtime 类可以方便的调用操作系统命令或者一个可执行程序，下面的小例子在windows和linux分别测试通过。基本原理是首先通过 Runtime.getRuntime() 返回与当前 Java 应用程序相关的运行时对象，然后调用run.exec(cmd)  另启一个进程来执行命令（cmd为要执行的命令）。
 
@@ -5263,7 +5256,7 @@ public class TestRunTime {
 
 		String cmd = "ping www.baidu.com";
 
-		
+
 
 		//linux
 
@@ -5403,7 +5396,7 @@ ClassLoader.getSystemResourceAsStream ：
 
 
 
- 
+
 
 
 
@@ -5411,7 +5404,7 @@ InputStream is4 = ClassLoader.getSystemResourceAsStream("properties/PayManagment
 
 System.out.println(is4);//不为null
 
-# jps的用法及常见问题介绍 
+# jps的用法及常见问题介绍
 
 jps类似linux的ps命令，不同的是ps是用来显示进程，而jps只显示java进程，准确的说是当前用户已启动的部分java进程信息，信息包括进程号和简短的进程command。
 
@@ -5541,7 +5534,7 @@ DesiredCapabilities ieCapabilities = DesiredCapabilities.internetExplorer();
 
 ieCapabilities.setCapability
 
-      
+
 
 (InternetExplorerDriver.INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS,true);
 
@@ -5549,33 +5542,33 @@ WebDriver oWebDriver = new InternetExplorerDriver(ieCapabilities);
 
 # 过时date.toLocaleString()的解决方法
 
-System.out.println(new java.util.Date());  
+System.out.println(new java.util.Date());
 
 输出：Thu Jan 27 14:43:28 CST 2011
 
-System.out.println(new java.util.Date().toLocaleString());  
+System.out.println(new java.util.Date().toLocaleString());
 
 输出：2011-1-27 14:45:21
 
 不过现在toLocaleString()方法已过时，由DateFormat.format(Date date)取代。
 
-DateFormat ddf = DateFormat.getDateInstance();  
+DateFormat ddf = DateFormat.getDateInstance();
 
-DateFormat dtf = DateFormat.getTimeInstance();  
+DateFormat dtf = DateFormat.getTimeInstance();
 
-DateFormat ddtf = DateFormat.getDateTimeInstance();  
+DateFormat ddtf = DateFormat.getDateTimeInstance();
 
-Date date = new Date();  
+Date date = new Date();
 
-System.out.println("日期：" + ddf.format(date));  
+System.out.println("日期：" + ddf.format(date));
 
-System.out.println("时间：" + dtf.format(date));  
+System.out.println("时间：" + dtf.format(date));
 
-System.out.println("日期时间：" + ddtf.format(date));  
+System.out.println("日期时间：" + ddtf.format(date));
 
-SimpleDateFormat sdf = (SimpleDateFormat) DateFormat.getDateTimeInstance();  
+SimpleDateFormat sdf = (SimpleDateFormat) DateFormat.getDateTimeInstance();
 
-System.out.println("日期时间：" + sdf.format(date));  
+System.out.println("日期时间：" + sdf.format(date));
 
 输出：
 
@@ -5587,7 +5580,7 @@ System.out.println("日期时间：" + sdf.format(date));
 
 日期时间：2011-2-9 11:16:02
 
- 
+
 
 *************以上是在window系统下，linux系统下不能这么处理***********
 
@@ -5595,35 +5588,35 @@ linux系统下用以上获取回来的初始时间格式与此不同。
 
 # 关于toString
 
-List list = new ArrayList(); 
+List list = new ArrayList();
 
-list.add("a"); 
+list.add("a");
 
-list.add(null); 
+list.add(null);
 
-list.add("b"); 
+list.add("b");
 
-for(int i=0;i<list.size();i++){ 
+for(int i=0;i<list.size();i++){
 
-     System.out.println(list.get(i).toString()); 
+     System.out.println(list.get(i).toString());
 
-     在遍历第二个null值时就报空指针异常 
+     在遍历第二个null值时就报空指针异常
 
-但是我写成 
+但是我写成
 
-    System.out.println((String)list.get(i));//遍历第二个值等于null时候就没错是为什么？ 
+    System.out.println((String)list.get(i));//遍历第二个值等于null时候就没错是为什么？
 
 }
 
 
 
-public String toString() { 
+public String toString() {
 
-return getClass().getName() + "@" + Integer.toHexString(hashCode()); 
+return getClass().getName() + "@" + Integer.toHexString(hashCode());
 
 
 
-} 
+}
 
 当一个OBJECT==null的时候，并没有被初始化，没初始化怎么能调用toString方法呢
 
@@ -5707,7 +5700,7 @@ A、Expires（期限） 　　
 
 说明：可以用于设定网页的到期时间。一旦网页过期，必须到服务器上重新传输。 　　
 
-用法：<meta http-equiv="expires" content="Fri,12 Jan 2001 18:18:18 GMT"> 
+用法：<meta http-equiv="expires" content="Fri,12 Jan 2001 18:18:18 GMT">
 
 注意：必须使用GMT的时间格式。 　　
 
@@ -5715,7 +5708,7 @@ B、Pragma(cache模式） 　　
 
 说明：禁止浏览器从本地计算机的缓存中访问页面内容。 　　
 
-用法：<meta http-equiv="Pragma" content="no-cache"> 
+用法：<meta http-equiv="Pragma" content="no-cache">
 
 注意：这样设定，访问者将无法脱机浏览。 　　
 
@@ -5725,7 +5718,7 @@ C、Refresh（刷新） 　　
 
 用法：<meta http-equiv="Refresh" content="2;URL=http://www.root.net">；（注意后面的引号，分别在秒数的前面和网址的后面） 　　
 
-注意：其中的2是指停留2秒钟后自动刷新到URL网址。  
+注意：其中的2是指停留2秒钟后自动刷新到URL网址。
 
 D、Set-Cookie(cookie设定） 　　
 
@@ -5861,7 +5854,7 @@ function compare(a,b)
 
 if (a &lt;b)
 
-   {alert(&quot;a小于b&quot;);}   
+   {alert(&quot;a小于b&quot;);}
 
 else if (a&gt;b)
 
@@ -5915,7 +5908,7 @@ else
 
 <script type="text/javascript">
 
-//<![CDATA[                                            
+//<![CDATA[
 
 function compare(a,b)
 
@@ -5935,7 +5928,7 @@ else
 
 }
 
-//]]>                                      
+//]]>
 
 </script>
 
@@ -6029,21 +6022,21 @@ zhaodaola.com,rongshu.com,paimai.com,zhaopin.com
 
 
 
-国际域名注册规则： 
+国际域名注册规则：
 
-　　1、只提供英文字母（a-z，不区分大小写）、数字（0-9）、以及"-"（英文中的连词号，即中横线），不能使用空格及特殊字符(如!、$、&、? 等)。 
+　　1、只提供英文字母（a-z，不区分大小写）、数字（0-9）、以及"-"（英文中的连词号，即中横线），不能使用空格及特殊字符(如!、$、&、? 等)。
 
-　　2、"-"不能用作开头和结尾 
+　　2、"-"不能用作开头和结尾
 
-　　3、域名最长可达67个字节(包括后缀.com、.net、.org等)。 
+　　3、域名最长可达67个字节(包括后缀.com、.net、.org等)。
 
-中国34个顶级域名之行政区域名 
+中国34个顶级域名之行政区域名
 
-　　BJ-北京市； SH-上海市； TJ-天津市； CQ-重庆市； HE-河北省； SX-山西省； NM -内蒙古自治区； LN-辽宁省； JL-吉林省； HL-黑龙江省； JS-江苏省； ZJ-浙江省； AH-安徽省； FJ-福建省； JX-江西省； SD-山东省； HA-河南省； HB-湖北省； HN-湖南省； GD-广东省； GX-广西壮族自治区； HI-海南省； SC-四川省； GZ-贵州省； YN -云南省； XZ-西藏自治区； SN-陕西省； GS-甘肃省； QH-青海省； NX-宁夏回族自治区； XJ-新疆维吾尔自治区； TW-台湾； HK-香港； MO-澳门。此外，从2002年12月份开始，CNNIC开放了国内.cn域名下的二级域名注册，可以在.CN下直接注册域名，如Google所注册的国内域名为：Google.cn。 第三类顶级域名，也就是所谓的“新顶级域名”，是ICANN根据互联网发展需要，在2000年11月做出决议，从2001年开始使用的国际顶级域名，也包含7类：biz, info，name，pro，aero, coop, museum。 其中前4个是非限制性域，后3个是限制性域，如aero需是航空业公司注册，museum需是博物馆，coop需是集体企业（非投资人控制，无须利润最大化）注册。这7个顶级域名的含义和注册管理机构如下： .aero，航空运输业专用，由比利时国际航空通信技术协会（SITA）负责； .biz，可以替代.com的通用域名，监督机构是JVTeam； .coop，商业合作社专用，由位于华盛顿的美国全国合作商业协会（NCBA）负责管理； .info，可以替代.net的通用域名，由19个因特网域名注册公司联合成立的Afilias负责；　.museum，博物馆专用，由博物馆域名管理协会（MDMA）监督； .name，是个人网站的专用域名，由英国的“环球姓名注册”（GlobeNameRegistry）负责； .pro，医生和律师等职业专用，监督机构是爱尔兰都柏林的一家网络域名公司“职业注册”（RegistryPro）。 关于ICANN为什么要增加新的7个域的背景资料：　自80年代国际互联网出现以来，.com、.net、.org一直是商家和消费者最热衷的三个通用顶级域。特别是.com域名，更是占据了通用顶级域的80%以上。多年来NSI公司长期垄断对这三个域的注册和管理权。1999年，ICANN、美国商务部终止了这种垄断局面，在REGISTRAR这个层面引入了竞争机制。但是在REGISTRY这个层面上的竞争还是不够，造成了DNS体系多年来没有显著改善。新的7个顶级域的REGISTRY也于2000年11月选定，NSI除了在INFO域REGISTRY的中有少量股份外，与其它各主要新域REGISTRY没有干系。这样，新的顶级域的推出，将会在REGISTRY业内引进竞争机制。新的REGISTRY从技术到运营机制方面都有改进，如：一改今日WHOIS分散在各个REGISGTRAR的局面，实行同一的WHOIS；域名信息（zone file）和WHOIS查询全球范围5分钟更新，此前.COM域下需要24到48小时；更高的系统冗余性、安全性和认证的严密程度。似乎认识到新域带来的严峻挑战，.com域的运营商Verisign Global Registry Service（2000年兼并了NSI）在向ICANN提交的新合同中（新合同在2001年4月2日正式被ICANN批准），主动提出将在未来的几年中投资两亿美金，用于加强.COM域下的基础设施建设。 看了这些有关顶级域名及国内域名后缀的介绍之后，可以发现，很多域名资源可以利用，不过对于商业性公司来说，直到目前为止，最为通用的仍然是.com域名，国内企业或者在国内有经营机构的外国企业则一般同时注册.com.cn域名。自从.cn二级域名开发注册以来，国内网站似乎更青睐用.cn域名。 
+　　BJ-北京市； SH-上海市； TJ-天津市； CQ-重庆市； HE-河北省； SX-山西省； NM -内蒙古自治区； LN-辽宁省； JL-吉林省； HL-黑龙江省； JS-江苏省； ZJ-浙江省； AH-安徽省； FJ-福建省； JX-江西省； SD-山东省； HA-河南省； HB-湖北省； HN-湖南省； GD-广东省； GX-广西壮族自治区； HI-海南省； SC-四川省； GZ-贵州省； YN -云南省； XZ-西藏自治区； SN-陕西省； GS-甘肃省； QH-青海省； NX-宁夏回族自治区； XJ-新疆维吾尔自治区； TW-台湾； HK-香港； MO-澳门。此外，从2002年12月份开始，CNNIC开放了国内.cn域名下的二级域名注册，可以在.CN下直接注册域名，如Google所注册的国内域名为：Google.cn。 第三类顶级域名，也就是所谓的“新顶级域名”，是ICANN根据互联网发展需要，在2000年11月做出决议，从2001年开始使用的国际顶级域名，也包含7类：biz, info，name，pro，aero, coop, museum。 其中前4个是非限制性域，后3个是限制性域，如aero需是航空业公司注册，museum需是博物馆，coop需是集体企业（非投资人控制，无须利润最大化）注册。这7个顶级域名的含义和注册管理机构如下： .aero，航空运输业专用，由比利时国际航空通信技术协会（SITA）负责； .biz，可以替代.com的通用域名，监督机构是JVTeam； .coop，商业合作社专用，由位于华盛顿的美国全国合作商业协会（NCBA）负责管理； .info，可以替代.net的通用域名，由19个因特网域名注册公司联合成立的Afilias负责；　.museum，博物馆专用，由博物馆域名管理协会（MDMA）监督； .name，是个人网站的专用域名，由英国的“环球姓名注册”（GlobeNameRegistry）负责； .pro，医生和律师等职业专用，监督机构是爱尔兰都柏林的一家网络域名公司“职业注册”（RegistryPro）。 关于ICANN为什么要增加新的7个域的背景资料：　自80年代国际互联网出现以来，.com、.net、.org一直是商家和消费者最热衷的三个通用顶级域。特别是.com域名，更是占据了通用顶级域的80%以上。多年来NSI公司长期垄断对这三个域的注册和管理权。1999年，ICANN、美国商务部终止了这种垄断局面，在REGISTRAR这个层面引入了竞争机制。但是在REGISTRY这个层面上的竞争还是不够，造成了DNS体系多年来没有显著改善。新的7个顶级域的REGISTRY也于2000年11月选定，NSI除了在INFO域REGISTRY的中有少量股份外，与其它各主要新域REGISTRY没有干系。这样，新的顶级域的推出，将会在REGISTRY业内引进竞争机制。新的REGISTRY从技术到运营机制方面都有改进，如：一改今日WHOIS分散在各个REGISGTRAR的局面，实行同一的WHOIS；域名信息（zone file）和WHOIS查询全球范围5分钟更新，此前.COM域下需要24到48小时；更高的系统冗余性、安全性和认证的严密程度。似乎认识到新域带来的严峻挑战，.com域的运营商Verisign Global Registry Service（2000年兼并了NSI）在向ICANN提交的新合同中（新合同在2001年4月2日正式被ICANN批准），主动提出将在未来的几年中投资两亿美金，用于加强.COM域下的基础设施建设。 看了这些有关顶级域名及国内域名后缀的介绍之后，可以发现，很多域名资源可以利用，不过对于商业性公司来说，直到目前为止，最为通用的仍然是.com域名，国内企业或者在国内有经营机构的外国企业则一般同时注册.com.cn域名。自从.cn二级域名开发注册以来，国内网站似乎更青睐用.cn域名。
 
-国家地区标准代码(国际域名缩写)  
+国家地区标准代码(国际域名缩写)
 
-　　国际域名和国内域名两者之间在使用上是否有区别？ 
+　　国际域名和国内域名两者之间在使用上是否有区别？
 
 国际域名是用户可注册的通用顶级域名的俗称。它的后缀为.com、.net或.org。国内域名为后缀为.cn的域名。二者注册机构不同，在使用中基本没有区别。
 
@@ -6071,11 +6064,11 @@ zhaodaola.com,rongshu.com,paimai.com,zhaopin.com
 
 <div id="Parent" style="position:absolute; left:56px; top:54px; width:124px; height:158px; z-index:1;">
 
-Content inside the parent layer. 
+Content inside the parent layer.
 
 <div id="Nested" style="position:absolute; left:97px; top:114px; width:54px; height:69px; z-index:1;">
 
-Content inside the nested layer. 
+Content inside the nested layer.
 
 </div>
 
@@ -6123,7 +6116,7 @@ Expression Web作为微软的新一代网站开发工具，还是有很多人使
 
 解决方法：
 
-1、<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/> 
+1、<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
 
 2、IE要7以上版本才支持，低于7的，除非用Maxhon之类的壳才能出现该图标。
 
@@ -6135,11 +6128,11 @@ Struts作为MVC 2的Web框架，自推出以来不断受到开发者的追捧，
 
 struts2发布已经很久了，但关于如何使用它的教程及实例并不多。特别是与Spring及Hibernate等流行框架的集成，并不多见。现在就将笔者使用Myeclipse工具应用struts2 + spring2 + hibernate3 实现CRUD操作的步骤一一纪录下来，为初学者少走弯路略尽绵薄之力！在本文中，笔者将Struts2.0.6、Spring2.0.6和Hibernate3.1进行整合，希望通过这样的整合示例，让读者了解这些框架各自的特点，以便于在自己的项目中，根据实际情况，尽快的过渡到Struts2的时代。本文的内容基于Struts2.0.6。
 
- 
+
 
 ## 一、准备工作
 
- 
+
 
 spring2与1.x区别不大，可以平滑的过度，笔者也是把spring1.28换成了spring2.0.6，算是升级到spring 2.0了。struts2基本就是webwork2.2，与以前的struts1.x可以说没任何关系了。因为是第一次用struts2，也是第一次用webwork，所以有很多不完善，不规范的地方，还望大家来拍砖。
 
@@ -6163,7 +6156,7 @@ http://www.springframework.org
 
 创建数据表的sql语句为：
 
-create database game 
+create database game
 
 CREATE TABLE `books` (
 
@@ -6191,7 +6184,7 @@ PRIMARY KEY  (`book_id`)
 
 
 
-## 二、建立公共类 
+## 二、建立公共类
 
 1、AbstractAction类
 
@@ -6455,13 +6448,13 @@ return pager;
 
 
 
-com.sterning.commons.PagerService.java 
+com.sterning.commons.PagerService.java
 
 
 
 ## 三、 建立数据持久化层
 
- 
+
 
 1、编写实体类Books及books.hbm.xml映射文件。
 
@@ -6473,7 +6466,7 @@ import java.util.Date;
 
 public class Books {
 
-//    Fields 
+//    Fields
 
     private String bookId;//编号
 
@@ -6719,13 +6712,13 @@ com.sterning.books.model.books.hbm.xml
 
 
 
-Com.sterning.bean.hibernate.hibernate.cfg.xml 
+Com.sterning.bean.hibernate.hibernate.cfg.xml
 
 
 
 ## 四、 建立DAO层
 
- 
+
 
 DAO访问层负责封装底层的数据访问细节，不仅可以使概念清晰，而且可以提高开发效率。
 
@@ -6761,13 +6754,13 @@ List getAll();//获得所有记录
 
     void updateBook(Books book);//修改记录
 
-    void deleteBook(Books book);//删除记录    
+    void deleteBook(Books book);//删除记录
 
 }
 
 
 
-com.sterning.books.dao.iface.BooksDao.java 
+com.sterning.books.dao.iface.BooksDao.java
 
 
 
@@ -7067,7 +7060,7 @@ return list.size();
 
 */
 
- 
+
 
 public List getBooks(String fieldname,String value,int pageSize, int startRow) {
 
@@ -7115,7 +7108,7 @@ return query.list();
 
 ## 五、业务逻辑层
 
- 
+
 
 在业务逻辑层需要认真思考每个业务逻辑所能用到的持久层对象和DAO。DAO层之上是业务逻辑层，DAO类可以有很多个，但业务逻辑类应该只有一个，可以在业务逻辑类中调用各个DAO类进行操作。
 
@@ -7157,7 +7150,7 @@ public interface IBooksService ...{
 
     void updateBook(Books pd);//修改记录
 
-    void deleteBook(String bookId);//删除记录    
+    void deleteBook(String bookId);//删除记录
 
 }
 
@@ -7377,7 +7370,7 @@ this.booksDao = booksDao;
 
 
 
-## 六、 创建Action类：BookAction 
+## 六、 创建Action类：BookAction
 
 
 
@@ -7385,13 +7378,13 @@ this.booksDao = booksDao;
 
 
 
-  
+
 
  Struts 1.x
 
  Stuts 2.0
 
- 
+
 
 接口
 
@@ -7399,7 +7392,7 @@ this.booksDao = booksDao;
 
  无须继承任何类型或实现任何接口
 
- 
+
 
 表单数据
 
@@ -7433,7 +7426,7 @@ import com.sterning.commons.PagerService;
 
 public class BooksAction extends AbstractAction {
 
-    
+
 
     private IBooksService booksService;
 
@@ -7463,13 +7456,13 @@ public class BooksAction extends AbstractAction {
 
     protected String queryMap;
 
-    
+
 
     public String list() throws Exception {
 
         if(queryMap ==null||queryMap.equals("")){
 
-            
+
 
         }else{
 
@@ -7481,7 +7474,7 @@ public class BooksAction extends AbstractAction {
 
         }
 
-        
+
 
         System.out.println("asd"+this.getQueryValue());
 
@@ -7495,25 +7488,25 @@ public class BooksAction extends AbstractAction {
 
         availableItems=booksService.getBooks(this.getQueryName(),this.getQueryValue(),pager.getPageSize(), pager.getStartRow());
 
-        
+
 
         this.setQueryName(this.getQueryName());
 
         this.setQueryValue(this.getQueryValue());
 
-        
+
 
         this.setSearchName(this.getQueryName());
 
         this.setSearchValue(this.getQueryValue());
 
-        
 
-        return SUCCESS;         
+
+        return SUCCESS;
 
     }
 
-    
+
 
     public String load() throws Exception {
 
@@ -7529,7 +7522,7 @@ public class BooksAction extends AbstractAction {
 
     }
 
-    
+
 
     public String save() throws Exception {
 
@@ -7539,17 +7532,17 @@ public class BooksAction extends AbstractAction {
 
         }
 
-        
+
 
         String id=this.getBook().getBookId();
 
         Books book=booksService.getBook(id);
 
-        
 
-        
 
-        
+
+
+
 
         if(book == null)
 
@@ -7559,41 +7552,41 @@ public class BooksAction extends AbstractAction {
 
             booksService.updateBook(this.getBook());
 
-        
+
 
         this.setQueryName(this.getQueryName());
 
         this.setQueryValue(this.getQueryValue());
 
-        
+
 
         if(this.getQueryName()==null||this.getQueryValue()==null||this.getQueryName().equals("")||this.getQueryValue().equals("")){
 
-            
+
 
         }else{
 
             queryMap=this.getQueryName()+"~"+this.getQueryValue();
 
-        }        
+        }
 
-        
+
 
         return SUCCESS;
 
     }
 
-    
+
 
     public String delete() throws Exception {
 
         booksService.deleteBook(this.getBookId());
 
-        
+
 
         if(this.getQueryName()==null||this.getQueryValue()==null||this.getQueryName().equals("")||this.getQueryValue().equals("")){
 
-            
+
 
         }else{
 
@@ -7603,9 +7596,9 @@ public class BooksAction extends AbstractAction {
 
         return SUCCESS;
 
-    }    
+    }
 
-    
+
 
     public Books getBook() {
 
@@ -7709,7 +7702,7 @@ public class BooksAction extends AbstractAction {
 
     }
 
-        
+
 
     public String getBookId() {
 
@@ -7757,7 +7750,7 @@ public class BooksAction extends AbstractAction {
 
     }
 
-    
+
 
     public String getSearchName() {
 
@@ -7789,7 +7782,7 @@ public class BooksAction extends AbstractAction {
 
     }
 
-    
+
 
     public String getQueryMap() {
 
@@ -7805,7 +7798,7 @@ public class BooksAction extends AbstractAction {
 
     }
 
-    
+
 
     public PagerService getPagerService() {
 
@@ -7819,7 +7812,7 @@ public class BooksAction extends AbstractAction {
 
         this.pagerService = pagerService;
 
-    }    
+    }
 
 }
 
@@ -7869,11 +7862,11 @@ com.sterning.books.web.actions.BookAction.java
 
 
 
-HttpServletRequest request = ServletActionContext.getRequest(); 
+HttpServletRequest request = ServletActionContext.getRequest();
 
 
 
-HttpServletResponse response = ServletActionContext.getResponse(); 
+HttpServletResponse response = ServletActionContext.getResponse();
 
 
 
@@ -7953,7 +7946,7 @@ IoC方式
 
 </validators>
 
- com.sterning.books.web.actions.BooksAction-save-validation.xml 
+ com.sterning.books.web.actions.BooksAction-save-validation.xml
 
 1、对BookAction类的Save方法进行验证的资源文件
 
@@ -8027,11 +8020,11 @@ com.sterning.books.web.actions.BooksAction.properties
 
 
 
-在值栈（Value Stack）中，查找名为user的属性，转到user类型同名的资源文件，查找键为title的资源; 
+在值栈（Value Stack）中，查找名为user的属性，转到user类型同名的资源文件，查找键为title的资源;
 
 
 
-查找在struts.properties配置的默认的资源文件，参考例1; 
+查找在struts.properties配置的默认的资源文件，参考例1;
 
 
 
@@ -8051,7 +8044,7 @@ com.sterning.books.web.actions.BooksAction.properties
 
  Struts 2.0
 
- 
+
 
 分类
 
@@ -8059,7 +8052,7 @@ com.sterning.books.web.actions.BooksAction.properties
 
  严格上来说，没有分类，所有标志都在URI为“/struts-tags”命名空间下，不过，我们可以从功能上将其分为两大类：非UI标志和UI标志
 
- 
+
 
 表达式语言（expression languages）
 
@@ -8133,7 +8126,7 @@ WebRoot/index.jsp
 
         }
 
-        
+
 
         table thead tr th {
 
@@ -8147,7 +8140,7 @@ WebRoot/index.jsp
 
         }
 
-        
+
 
         table tbody tr td {
 
@@ -8167,13 +8160,13 @@ WebRoot/index.jsp
 
 
 
-    <script language="JavaScript">   
+    <script language="JavaScript">
 
         function doSearch(){
 
             if(document.all.searchValue.value=="")
 
-            {    
+            {
 
                 alert("请输入查询关键字!");
 
@@ -8221,7 +8214,7 @@ WebRoot/index.jsp
 
 </tr>
 
-<tr align="center">    
+<tr align="center">
 
     <td>
 
@@ -8285,7 +8278,7 @@ WebRoot/index.jsp
 
             <td><s:property value="bookPublish"/></td>
 
-            <td><s:text name="format.date"><s:param value="bookDate"/></s:text></td>     
+            <td><s:text name="format.date"><s:param value="bookDate"/></s:text></td>
 
             <td><s:property value="bookIsbn" /></td>
 
@@ -8295,7 +8288,7 @@ WebRoot/index.jsp
 
             <td><s:property value="bookContent"/></td>
 
-            
+
 
             <td><a href='<s:url action="delete"><s:param name="bookId" value="bookId" /></s:url>'>删除</a></td>
 
@@ -8319,7 +8312,7 @@ WebRoot/index.jsp
 
                 <s:param name="pagerMethod" value="'first'"/>
 
-                
+
 
             </s:url>">首页</a>
 
@@ -8349,7 +8342,7 @@ WebRoot/index.jsp
 
         </td>
 
-    </tr>    
+    </tr>
 
     </tbody>
 
@@ -8385,7 +8378,7 @@ WebRoot/index.jsp
 
  描述
 
- 
+
 
 default
 
@@ -8395,7 +8388,7 @@ default
 
  如果属性是null则显示的default值
 
- 
+
 
 escape
 
@@ -8407,7 +8400,7 @@ escape
 
  是否escape HTML
 
- 
+
 
 value
 
@@ -8419,7 +8412,7 @@ value
 
  要显示的值
 
- 
+
 
 id
 
@@ -8429,11 +8422,11 @@ id
 
  用来标识元素的id。在UI和表单中为HTML的id属性
 
- 
 
 
 
-(2)、<s:Iterator>：用于遍历集合（java.util.Collection）或枚举值（java.util.Iterator）。其相关的参数及使用如下表所示：  
+
+(2)、<s:Iterator>：用于遍历集合（java.util.Collection）或枚举值（java.util.Iterator）。其相关的参数及使用如下表所示：
 
 
 
@@ -8447,7 +8440,7 @@ id
 
  描述
 
- 
+
 
 status
 
@@ -8457,7 +8450,7 @@ status
 
  如果设置此参数，一个IteratorStatus的实例将会压入每个遍历的堆栈
 
- 
+
 
 value
 
@@ -8467,7 +8460,7 @@ value
 
  要遍历的可枚举的（iteratable）数据源，或者将放入新列表（List）的对象
 
- 
+
 
 id
 
@@ -8477,7 +8470,7 @@ id
 
  用来标识元素的id。在UI和表单中为HTML的id属性
 
- 
+
 
 
 
@@ -8491,7 +8484,7 @@ id
 
 <param name="color" value="blue"/><!-- (B) -->
 
-(A)参数值会以String的格式放入statck. 
+(A)参数值会以String的格式放入statck.
 
 (B)该值会以java.lang.Object的格式放入statck.
 
@@ -8511,7 +8504,7 @@ id
 
  描述
 
- 
+
 
 name
 
@@ -8521,7 +8514,7 @@ name
 
  参数名
 
- 
+
 
 value
 
@@ -8531,7 +8524,7 @@ value
 
  value表达式
 
- 
+
 
 id
 
@@ -8541,7 +8534,7 @@ id
 
  用来标识元素的id。在UI和表单中为HTML的id属性
 
- 
+
 
 
 
@@ -8577,7 +8570,7 @@ format.date={0,date,yyyy-MM-dd}
 
 
 
-3、增加/修改页面：editBook.jsp  
+3、增加/修改页面：editBook.jsp
 
 
 
@@ -8617,7 +8610,7 @@ format.date={0,date,yyyy-MM-dd}
 
     <s:form name="editForm" action="save" validate="true">
 
-    
+
 
          <s:textfield label="书名" name="book.bookName"/>
 
@@ -8639,7 +8632,7 @@ format.date={0,date,yyyy-MM-dd}
 
              <s:hidden name="book.bookId" value="%{bookId}"/>
 
-         </s:if>         
+         </s:if>
 
          <s:else>
 
@@ -8685,13 +8678,13 @@ WebRoot/editBook.jsp
 
  备注
 
- 
+
 
 test
 
  是
 
-  
+
 
  Boolean
 
@@ -8699,19 +8692,19 @@ test
 
  else标志没有这个参数
 
- 
+
 
 id
 
  否
 
-  
+
 
  Object/String
 
  用来标识元素的id。在UI和表单中为HTML的id属性
 
-  
+
 
 
 
@@ -8729,31 +8722,31 @@ id
 
  描述
 
- 
+
 
 name
 
  是
 
-  
+
 
  String
 
  资源属性的名字
 
- 
+
 
 id
 
  否
 
-  
+
 
  Object/String
 
- 用来标识元素的id。在UI和表单中为HTML的id属性 
+ 用来标识元素的id。在UI和表单中为HTML的id属性
 
- 
+
 
 ## 八、  配置Struts2
 
@@ -8785,7 +8778,7 @@ a)   Struts的配置文件如下：
 
     <constant name="struts.devMode" value="true" />
 
-    <constant name="struts.i18n.encoding" value="GBK" />   
+    <constant name="struts.i18n.encoding" value="GBK" />
 
 
 
@@ -8825,7 +8818,7 @@ b)   struts_book.xml配置文件如下：
 
          <!-- Add actions here -->
 
-        <action name="list" class="bookAction" method="list">            
+        <action name="list" class="bookAction" method="list">
 
             <result>/list.jsp</result>
 
@@ -8833,7 +8826,7 @@ b)   struts_book.xml配置文件如下：
 
 
 
-    <action name="delete" class="bookAction" method="delete">            
+    <action name="delete" class="bookAction" method="delete">
 
             <result type="redirect">list.action?queryMap=${queryMap}</result>
 
@@ -8847,7 +8840,7 @@ b)   struts_book.xml配置文件如下：
 
         </action>
 
-        
+
 
     <action name="edit" class="bookAction" method="load">
 
@@ -8855,7 +8848,7 @@ b)   struts_book.xml配置文件如下：
 
         </action>
 
-       
+
 
        <action name="save" class="bookAction" method="save">
 
@@ -8867,7 +8860,7 @@ b)   struts_book.xml配置文件如下：
 
             <result type="redirect">list.action?queryMap=${queryMap}</result>
 
-              
+
 
         </action>
 
@@ -8903,25 +8896,25 @@ Struts 2已经提供了丰富多样的，功能齐全的拦截器实现。大家
 
 <!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
 
- 
+
 
 <beans>
 
     <!-- dataSource config -->
 
-    <bean id ="dataSource" class ="org.apache.commons.dbcp.BasicDataSource" destroy-method="close"> 
+    <bean id ="dataSource" class ="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
 
-        <property name="driverClassName" value="com.mysql.jdbc.Driver" /> 
+        <property name="driverClassName" value="com.mysql.jdbc.Driver" />
 
-        <property name="url" value="jdbc:mysql://localhost:3306/game" /> 
+        <property name="url" value="jdbc:mysql://localhost:3306/game" />
 
-        <property name="username" value="root" /> 
+        <property name="username" value="root" />
 
-        <property name="password" value="root"/> 
+        <property name="password" value="root"/>
 
-    </bean> 
+    </bean>
 
-    
+
 
     <!-- SessionFactory -->
 
@@ -8941,11 +8934,11 @@ Struts 2已经提供了丰富多样的，功能齐全的拦截器实现。大家
 
             <value>classpath:com\sterning\bean\hibernate\hibernate.cfg.xml</value>
 
-        </property>        
+        </property>
 
     </bean>
 
-    
+
 
     <!-- TransactionManager  不过这里暂时没注入-->
 
@@ -8961,7 +8954,7 @@ Struts 2已经提供了丰富多样的，功能齐全的拦截器实现。大家
 
     </bean>
 
-    
+
 
     <!-- DAO -->
 
@@ -8975,7 +8968,7 @@ Struts 2已经提供了丰富多样的，功能齐全的拦截器实现。大家
 
     </bean>
 
-    
+
 
     <!-- Services -->
 
@@ -8989,11 +8982,11 @@ Struts 2已经提供了丰富多样的，功能齐全的拦截器实现。大家
 
     </bean>
 
-    
+
 
     <bean id="pagerService" class="com.sterning.commons.PagerService"/>
 
-    
+
 
     <!-- view -->
 
@@ -9011,15 +9004,15 @@ Struts 2已经提供了丰富多样的，功能齐全的拦截器实现。大家
 
         </property>
 
-    </bean>  
+    </bean>
 
-    
+
 
 </beans>
 
 
 
-  WebRoot/WEB-INF/srping-content/applicationContent.xml 
+  WebRoot/WEB-INF/srping-content/applicationContent.xml
 
 2、Struts.properties.xml
 
@@ -9029,7 +9022,7 @@ Struts 2已经提供了丰富多样的，功能齐全的拦截器实现。大家
 
 
 
-struts.objectFactory = spring  
+struts.objectFactory = spring
 
 struts.locale=zh_CN
 
@@ -9079,7 +9072,7 @@ struts.i18n.encoding：国际化信息内码。
 
       </context-param>
 
-    
+
 
     <filter>
 
@@ -9119,7 +9112,7 @@ struts.i18n.encoding：国际化信息内码。
 
         </init-param>
 
-    </filter>    
+    </filter>
 
 
 
@@ -9137,9 +9130,9 @@ struts.i18n.encoding：国际化信息内码。
 
         <url-pattern>/*</url-pattern>
 
-    </filter-mapping>        
+    </filter-mapping>
 
-    
+
 
     <!-- Listener contextConfigLocation -->
 
@@ -9157,7 +9150,7 @@ struts.i18n.encoding：国际化信息内码。
 
       </listener>
 
- 
+
 
     <!-- The Welcome File List -->
 
@@ -9287,9 +9280,9 @@ web.xml写成这样对吗？
 
 		<filter-class>org.apache.struts2.dispatcher.FilterDispatcher</filter-class>
 
-			<init-param>   
+			<init-param>
 
-				<param-name>config</param-name>   
+				<param-name>config</param-name>
 
 				<param-value>
 
@@ -9301,7 +9294,7 @@ web.xml写成这样对吗？
 
 				</param-value>
 
-			</init-param> 
+			</init-param>
 
 	</filter>
 
@@ -9329,7 +9322,7 @@ struts-plugin.xml,
 
 ../config/struts/struts2.xml
 
-</param-value>  
+</param-value>
 
 如果不对请把struts.xml路径改为：WebRoot/web-inf/config/struts/struts.xml
 
@@ -9347,7 +9340,7 @@ common为公共包，包下存放structs.xml 你需要写
 
                 <include file="struts-admin.xml" />
 
-</struts>	
+</struts>
 
 
 
@@ -9363,9 +9356,9 @@ admin  为管理员包，包下存放struts-admin.xml你需要写
 
 今天开始学习了struts2， 于是下了最新的版本struts2.2.3.1,在使用的过程中总是报错：A web application created a ThreadLocal with key of type ， 尽管出现了这个错误，但是并不妨碍程序正常运行， 虽然程序虽然能正常运行，但是看的这个错误很是别扭，所以网上搜了一下看看，也就有了下面这篇文章
 
-struts2关于A web application created a ThreadLocal with key of type 异常解决办法 
+struts2关于A web application created a ThreadLocal with key of type 异常解决办法
 
- 
+
 
 
 
@@ -9423,13 +9416,13 @@ created a ThreadLocal with key of type [com.opensymphony.xwork2.inject.Container
 
 之前一直都对配置文件里面的路径和通配符不是很熟悉，都是复制之前项目里面的，错了就试探性的微调一下，现在专门花点时间整理一下，梳理一下杂乱 无章的知识。
 
- 
+
 
 一、servlet容器对url的匹配过程：
 
 当一个请求发送到servlet容器的时候，容器先会将请求的url减去当前应用上下文的路径作为servlet的映射url，比如我访问的是http://localhost/test/aaa.html（我的应用上下文是test），容器会将http://localhost/tes去掉，将剩下的/aaa.html部分拿来做servlet的映射匹配，也就是拿这剩下的部分与web.xml中配置的servlet的url-pattern进行匹配。注意：这个映射匹配过程是有一定的规则的，而且每次匹配最终都只匹配一个 servlet。（这一点和filter不同）
 
- 
+
 
 匹配规则如下：（它的匹配原则就是：找到唯一一个最适合的Servlet）
 
@@ -9437,25 +9430,25 @@ created a ThreadLocal with key of type [com.opensymphony.xwork2.inject.Container
 
 例子：比如servletA的url-pattern为 /test，servletB的url-pattern为 /* ，这个时候，如果我访问的url为http://localhost/test ，这个时候容器就会先 进行精确路径匹配，发现/test正好被servletA精确匹配，那么就去调用servletA，也不会去理会其他的servlet了。
 
- 
+
 
 2. 最长路径匹配。
 
 例子：servletA的url-pattern为/test/*，而servletB的url-pattern为/test/a/*，此时访问http://localhost/test/a时，容器会选择路径最长的servlet来匹配，也就是这里的servletB。
 
- 
+
 
 3. 扩展匹配。
 
 如果url最后一段包含扩展，容器将会根据扩展选择合适的servlet。例子：servletA的url-pattern：*.action（/test/*.action为不合法的url-pattern）
 
- 
+
 
 4. 如果前面三条规则都没有找到一个servlet，容器会根据url选择对应的请求资源。如果应用定义了一个default servlet，则容器会将请求丢给default servlet（什么是defaultservlet？后面会讲）。
 
 对于filter，不会像servlet那样只匹配一个servlet，因为filter的集合是一个链，所以只会有处理的顺序不同，而不会出现只选择一个filter。Filter的处理顺序和filter-mapping在web.xml中定义的顺序相同。
 
- 
+
 
 二、url-pattern详解
 
@@ -9489,25 +9482,25 @@ JSP 里外部引用CSS样式的路径问题   .
 
 /WebRoot/manage/mian.jsp
 
- 
 
- 
+
+
 
 我之前在 mian.jsp 里引用方式是这样的，但发布的时候找不到样式：
 
-       <link rel="stylesheet" href="css/mian.css" type="text/css" />  
+       <link rel="stylesheet" href="css/mian.css" type="text/css" />
 
         <script language="javascript" src="js/main.js"> </script>
 
- 
 
-解决方案： 
 
-       <link rel="stylesheet" href="<%=request.getContextPath()%>/manage/css/mian.css" type="text/css" />  
+解决方案：
+
+       <link rel="stylesheet" href="<%=request.getContextPath()%>/manage/css/mian.css" type="text/css" />
 
         <script language="javascript" src="<%=request.getContextPath()%>/manage/js/main.js"> </script>
 
- 
+
 
 <%=request.getConetxtPath%>这句话的意思就是引入你当前的项目的名字 输出出来是“/当前项目的名字”
 
@@ -9619,7 +9612,7 @@ public class Coon {
 
 修改servlet需要重启tomcat，修改jsp不需要
 
-# Eclipse WebContent WebRoot 
+# Eclipse WebContent WebRoot
 
 最近在做Web 项目时，新建了一个WEB 项目，如webdemo,eclipse默认的build路径为build, WEB-INF存放于WebContent下面，今改了一个build路径和WebContent名字，发现项目不可用了，
 
@@ -9697,7 +9690,7 @@ Comparable & Comparator 都是用来实现集合中元素的比较、排序的�
 
 Comparator位于包java.util下，而Comparable位于包java.lang下
 
-Comparable 是一个对象本身就已经支持自比较所需要实现的接口（如 String、Integer 自己就可以完成比较大小操作，已经实现了Comparable接口）   
+Comparable 是一个对象本身就已经支持自比较所需要实现的接口（如 String、Integer 自己就可以完成比较大小操作，已经实现了Comparable接口）
 
 自定义的类要在加入list容器中后能够排序，可以实现Comparable接口，在用Collections类的sort方法排序时，如果不指定Comparator，那么就以自然顺序排序，如API所说：
 
@@ -9714,36 +9707,36 @@ Comparable 是一个对象本身就已经支持自比较所需要实现的接口
 比如：你想对整数采用绝对值大小来排序，Integer 是不符合要求的，你不需要去修改 Integer 类（实际上你也不能这么做）去改变它的排序行为，只要使用一个实现了 Comparator 接口的对象来实现控制它的排序就行了。
 
 ```java
-    // AbsComparator.java     
+    // AbsComparator.java
     import   java.util.*;
-    public   class   AbsComparator   implements   Comparator   {     
-        public   int   compare(Object   o1,   Object   o2)   {     
-          int   v1   =   Math.abs(((Integer)o1).intValue());     
-          int   v2   =   Math.abs(((Integer)o2).intValue());     
-          return   v1   >   v2   ?   1   :   (v1   ==   v2   ?   0   :   -1);     
-        }     
+    public   class   AbsComparator   implements   Comparator   {
+        public   int   compare(Object   o1,   Object   o2)   {
+          int   v1   =   Math.abs(((Integer)o1).intValue());
+          int   v2   =   Math.abs(((Integer)o2).intValue());
+          return   v1   >   v2   ?   1   :   (v1   ==   v2   ?   0   :   -1);
+        }
     }
 ```
 
-可以用下面这个类测试 AbsComparator：     
+可以用下面这个类测试 AbsComparator：
 
 ```java
-    import   java.util.*;     
-    public   class   Test   {     
-        public   static   void   main(String[]   args)   {     
-          //产生一个20个随机整数的数组（有正有负）     
-          Random   rnd   =   new   Random();     
-          Integer[]   integers   =   new   Integer[20];     
-          for(int   i   =   0;   i   <   integers.length;   i++)     
-          integers[i]   =   new   Integer(rnd.nextInt(100)   *   (rnd.nextBoolean()   ?   1   :   -1));     
-          System.out.println("用Integer内置方法排序：");     
-          Arrays.sort(integers);     
-          System.out.println(Arrays.asList(integers));     
+    import   java.util.*;
+    public   class   Test   {
+        public   static   void   main(String[]   args)   {
+          //产生一个20个随机整数的数组（有正有负）
+          Random   rnd   =   new   Random();
+          Integer[]   integers   =   new   Integer[20];
+          for(int   i   =   0;   i   <   integers.length;   i++)
+          integers[i]   =   new   Integer(rnd.nextInt(100)   *   (rnd.nextBoolean()   ?   1   :   -1));
+          System.out.println("用Integer内置方法排序：");
+          Arrays.sort(integers);
+          System.out.println(Arrays.asList(integers));
 
-          System.out.println("用AbsComparator排序：");     
-          Arrays.sort(integers,   new   AbsComparator());     
-          System.out.println(Arrays.asList(integers));     
-        }     
+          System.out.println("用AbsComparator排序：");
+          Arrays.sort(integers,   new   AbsComparator());
+          System.out.println(Arrays.asList(integers));
+        }
     }
 ```
 
@@ -9763,7 +9756,7 @@ true only if the specified object is also a comparator and it imposes the same o
 
 comparator.compare(person1,person2);。
 
-# 在多线程中创建单例模式的双重锁定(Double-Check Locking ) 
+# 在多线程中创建单例模式的双重锁定(Double-Check Locking )
 
 ```java
     public class SingleTon {
@@ -9803,38 +9796,38 @@ comparator.compare(person1,person2);。
 
 #  Class类
 
-Class类是为了保存JAVA虚拟机运行时(RTTI)对所有对象进行类型识别的信息而设立的。当然Class也是继承自Object类的,每个类都有Class对象,想得到一个类的Class对象共有三种方法.  
+Class类是为了保存JAVA虚拟机运行时(RTTI)对所有对象进行类型识别的信息而设立的。当然Class也是继承自Object类的,每个类都有Class对象,想得到一个类的Class对象共有三种方法.
 
-1:调用getClass()   
+1:调用getClass()
 
-    Employee emp;  
-    Class cls=emp.getClass();  
+    Employee emp;
+    Class cls=emp.getClass();
 
-2:静态方法forName(String  clsName)   
+2:静态方法forName(String  clsName)
 
-    String className="Employee";  
-    Class  cls=Class.forName(className);  
+    String className="Employee";
+    Class  cls=Class.forName(className);
 
-3:class成员变量法 
+3:class成员变量法
 
-    Class cls=Employee.class;   
+    Class cls=Employee.class;
 
 # myeclipse工程结构问题
 
-.myeclipse目录总体是安装了myeclipse插件的目录，而且这个大的myeclipse插件实际是由很多小的插件组成的，比如tomacat插件，spring插件等等。 
+.myeclipse目录总体是安装了myeclipse插件的目录，而且这个大的myeclipse插件实际是由很多小的插件组成的，比如tomacat插件，spring插件等等。
 
-    .classpath文件是用来描述程序模块编译的类路径的。 
-    .myhibernatedata文件里写了一些资源文件的信息。 
-    .myhibernatedata中是hibernate依赖目录描述。 
-    .mystrutsdata描述struts的数据信息。 
-    .project存储项目的一些基本配置信息的。 
+    .classpath文件是用来描述程序模块编译的类路径的。
+    .myhibernatedata文件里写了一些资源文件的信息。
+    .myhibernatedata中是hibernate依赖目录描述。
+    .mystrutsdata描述struts的数据信息。
+    .project存储项目的一些基本配置信息的。
     .springBeans是存储Spring工具的配置信息的，路径不对，工具有可能不能用的。
 
 新建WebRoot文件夹，然后在项目工程目录下找到.mymetadata文件，里面的
 
-    <attributes> 
-    <attribute name="<SPAN class=hilite1>webrootdir</SPAN>" value="WebRoot" /> 
-    </attributes> 
+    <attributes>
+    <attribute name="<SPAN class=hilite1>webrootdir</SPAN>" value="WebRoot" />
+    </attributes>
 
 这句话应该是来设置项目的根目录的
 
@@ -9854,21 +9847,21 @@ Class类是为了保存JAVA虚拟机运行时(RTTI)对所有对象进行类型�
 
 ## 撤消MyEclipse对Hibernate的支持
 
-我是通过菜单MyEclipse->Project Capabilities添加了对Hibernate的支持，添加容易，删除难，菜单里好像没有删除对Hibernate支持的功能，只能手工删除了： 
+我是通过菜单MyEclipse->Project Capabilities添加了对Hibernate的支持，添加容易，删除难，菜单里好像没有删除对Hibernate支持的功能，只能手工删除了：
 
-第一步把项目根目录下文件.myhibernatedata删除 
+第一步把项目根目录下文件.myhibernatedata删除
 
-第二步修改项目根目录下文件.project：删除其中两段内容： 
+第二步修改项目根目录下文件.project：删除其中两段内容：
 
     <buildCommand>
         <name>com.genuitec.eclipse.hibernate.HibernateBuilder</name>
         <arguments>
         </arguments>
-    </buildCommand> 
+    </buildCommand>
 
-    <nature>com.genuitec.eclipse.hibernate.hibernatenature</nature> 
+    <nature>com.genuitec.eclipse.hibernate.hibernatenature</nature>
 
-第三步删除Hibernate对应的mapping file,class 
+第三步删除Hibernate对应的mapping file,class
 
 ## 撤消MyEclipse对Spring的支持
 
@@ -9900,7 +9893,7 @@ Class类是为了保存JAVA虚拟机运行时(RTTI)对所有对象进行类型�
 
 最新版本的chrome（45.0.2454.85 m）在访问证书时，会报“服务器的瞬时 Diffie-Hellman 公共密钥过弱”。最开始以为是证书制作的问题，百度时看到一个解决方法是通过设置tomcat的机密级别：在<connector>中加入
 
-    ciphers="TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256,TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA,TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384,TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA256,TLS_RSA_WITH_AES_128_CBC_SHA,TLS_RSA_WITH_AES_256_CBC_SHA256,TLS_RSA_WITH_AES_256_CBC_SHA" 
+	ciphers="TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256,TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA,TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384,TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA256,TLS_RSA_WITH_AES_128_CBC_SHA,TLS_RSA_WITH_AES_256_CBC_SHA256,TLS_RSA_WITH_AES_256_CBC_SHA"
 
 但在本机测试可以，线上环境却会报："unsupported cipher suite XXX"。经过测试发现，JDK1.6和JDK1.7支持的加密算法是不一样的，测试升级JDK，问题解决。
 
@@ -9908,32 +9901,33 @@ Class类是为了保存JAVA虚拟机运行时(RTTI)对所有对象进行类型�
 
 # Tomcat启动报Error listenerStart错误
 
-今天启动Tomcat启动不了，报以下错： 
+今天启动Tomcat启动不了，报以下错：
 
-    org.apache.catalina.core.StandardContext startInternal 
-    SEVERE: Error listenerStart 
-    org.apache.catalina.core.StandardContext startInternal 
-    SEVERE: Context [/******] startup failed due to previous errors 
+    org.apache.catalina.core.StandardContext startInternal
+    SEVERE: Error listenerStart
+    org.apache.catalina.core.StandardContext startInternal
+    SEVERE: Context [/******] startup failed due to previous errors
 
-Tomcat报的错太含糊了，什么错都没报出来，只提示了Error listenerStart。为了调试，我们要获得更详细的日志。可以在WEB-INF/classes目录下新建一个文件叫logging.properties，内容如下 
+Tomcat报的错太含糊了，什么错都没报出来，只提示了Error listenerStart。为了调试，我们要获得更详细的日志。可以在WEB-INF/classes目录下新建一个文件叫logging.properties，内容如下
 
 ```properties
-    handlers = org.apache.juli.FileHandler, java.util.logging.ConsoleHandler  
-      
-    ############################################################  
-    # Handler specific properties.  
-    # Describes specific configuration info for Handlers.  
-    ############################################################  
-      
-    org.apache.juli.FileHandler.level = FINE  
-    org.apache.juli.FileHandler.directory = ${catalina.base}/logs  
-    org.apache.juli.FileHandler.prefix = error-debug.  
-      
-    java.util.logging.ConsoleHandler.level = FINE  
-    java.util.logging.ConsoleHandler.formatter = java.util.logging.SimpleFormatter  
+
+    handlers = org.apache.juli.FileHandler, java.util.logging.ConsoleHandler
+
+    ############################################################
+    # Handler specific properties.
+    # Describes specific configuration info for Handlers.
+    ############################################################
+
+    org.apache.juli.FileHandler.level = FINE
+    org.apache.juli.FileHandler.directory = ${catalina.base}/logs
+    org.apache.juli.FileHandler.prefix = error-debug.
+
+    java.util.logging.ConsoleHandler.level = FINE
+    java.util.logging.ConsoleHandler.formatter = java.util.logging.SimpleFormatter
 ```
 
-这样，我们再启动tomcat时，就会在logs目录下生成一个更详细的日志error-debug.2012-05-31.log。我碰到的错误是FileNotFoundException.大家碰到的错应该各式各样都有，所以就要具体问题具体分析了。 tomcat的logging文档具体可参考http://tomcat.apache.org/tomcat-7.0-doc/logging.html 
+这样，我们再启动tomcat时，就会在logs目录下生成一个更详细的日志error-debug.2012-05-31.log。我碰到的错误是FileNotFoundException.大家碰到的错应该各式各样都有，所以就要具体问题具体分析了。 tomcat的logging文档具体可参考http://tomcat.apache.org/tomcat-7.0-doc/logging.html
 
 # 比较好的文章
 
