@@ -52,6 +52,9 @@ Web Tools Platform(WTP): http://www.eclipse.org/webtools/
 * 官网：http://jquery.com/
 * jQuery API中文文档（适用jQuery1.9）: http://www.css88.com/jqapi-1.9/
 
+## EasyUI
+
+* http://www.jeasyui.com/
 
 ## Ajax
 

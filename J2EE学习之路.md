@@ -56,6 +56,7 @@
 * [改编]深入equals方法，讨论instanceof的使用！: http://www.blogjava.net/bacoo/archive/2007/12/20/169176.html
 * 如何查看class文件的jdk版本：http://jingyan.baidu.com/article/e6c8503c7001b8e54f1a1804.html
 * Lifetimes of cryptographic hash functions: http://valerieaurora.org/hash.html
+* Struts2、Spring和Hibernate应用实例: http://871421448.iteye.com/blog/1546058
 
 
 # Eclipse
@@ -66,6 +67,7 @@
 * 帮助地址：http://help.eclipse.org/
 * FAQ What is a Quick Fix?: http://wiki.eclipse.org/FAQ_What_is_a_Quick_Fix?
 * Eclipse插件: http://www.oschina.net/project/tag/148/eclipse-plugins
+* Eclipse相关问题：http://www.cnblogs.com/jiangxinnju/p/5205365.html
 
 
 # Eclipse GUI Plugin
@@ -862,7 +864,10 @@ JavaDoc: https://storm.apache.org/javadoc/apidocs/index.html
 
 # 分词
 
+* 中文分词器分词效果评估对比： https://github.com/ysc/cws_evaluation
+* 分词工具比较（转）：http://www.cnblogs.com/jiangxinnju/p/5205363.html
 * ik-analyze(java开源中文分词器): https://code.google.com/p/ik-analyzer/
+* ICTCLAS： http://www.ictclas.org/index.html
 
 
 # 规则引擎
@@ -910,8 +915,11 @@ JavaDoc: https://storm.apache.org/javadoc/apidocs/index.html
 
 * http://lucene.apache.org/solr/
 * solr教程，值得刚接触搜索开发人员一看: http://blog.csdn.net/awj3584/article/details/16963525
+* nutch1.8+solr 4 配置过程： http://blog.csdn.net/hmbig2/article/details/22572473
 
+# Commons DbUtils: JDBC Utility Component
 
+* http://commons.apache.org/proper/commons-dbutils/
 
 # Eclipse插件开发
 
