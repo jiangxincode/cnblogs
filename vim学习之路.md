@@ -1,6 +1,10 @@
-# VIM 
+# VIM
 
 * http://www.vim.org/
+* http://vim.sourceforge.net/
+* Vim documentation: usr_41: http://vimdoc.sourceforge.net/htmldoc/usr_41.html
+* map.txt: http://vimcdoc.sourceforge.net/doc/map.html
+* Vim FAQ: http://vimdoc.sourceforge.net/cgi-bin/vimfaq2html3.pl
 * Vim of AlloVince: http://avnpc.com/pages/vim-of-allovince
 * 奉献一个vim自动加载模板的插件: http://bbs.chinaunix.net/forum.php?mod=viewthread&tid=895258
 * vim安装YouCompleteMe 插件: http://www.cnblogs.com/junnyfeng/p/3633697.html
@@ -56,14 +60,14 @@
 
     "ap
 
-## 解决往vim里粘贴格式散乱的问题 
+## 解决往vim里粘贴格式散乱的问题
 
 有时候从编辑器里面复制粘贴代码到vim中，代码格式会完全乱套。其原因是vim开启了smartindent(智能缩减)或autoindent(自动对齐)模式。为了保持代码的格式，在粘贴前可以先停止上面的两种模式，命令为：
 
     :set nosmartindent
     :set noautoindent
 
-为了一个粘贴搞出这么多事来，确实是麻烦。不过还有一个更加简单的方法，用命令开始粘贴模式，即： 
+为了一个粘贴搞出这么多事来，确实是麻烦。不过还有一个更加简单的方法，用命令开始粘贴模式，即：
 
     :set paste
 
@@ -123,7 +127,7 @@ vim 在插入模式下<BS>有几种工作方式，默认是设置成vi兼容，�
 
 ## 同时打开、显示多个文件
 
-vim还没有启动的时候：在终端里输入 
+vim还没有启动的时候：在终端里输入
 
     vim file1 file2 ... filen
 
@@ -148,7 +152,7 @@ vim已经启动，输入
     Ctrl+w+h/j/k/l ——同上
     Ctrl+ww——依次向后切换到下一个窗格中
 
-## 用vim修改文件编码为utf-8 
+## 用vim修改文件编码为utf-8
 
 网页常常会出现乱码的情况，一般都是编码设置不对造成的。例如一个网页源文件的编码不是utf8的，但声明为utf8<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />网页就会出现乱码。可以用vim修改源文件编码为utf8，命令是
 
@@ -156,7 +160,7 @@ vim已经启动，输入
 
 如果用vim打开文件时里面有乱码，可能用上面的命令修改文件后无法保存。可以用其他软件打开文件，然后把内容拷贝到vim里再保存就行了。
 
-## gvim编码配置 
+## gvim编码配置
 
 Vim/Gvim 在中文 Windows 下的字符编码有两个问题：
 
@@ -173,8 +177,8 @@ Vim/Gvim 在中文 Windows 下的字符编码有两个问题：
 
 但是，把 Vim 的内部编码设为 UTF-8 会带来以下新问题
 
-* 使用非 GUI 界面的 vim 时会乱码 
-* 提示信息（比如E492: 不是编辑器的命令: foo）会乱码 
+* 使用非 GUI 界面的 vim 时会乱码
+* 提示信息（比如E492: 不是编辑器的命令: foo）会乱码
 
 要解决非 GUI 界面的 vim 的乱码问题，需要设置终端编码为系统默认编码：
 
@@ -288,7 +292,7 @@ For more information, read
      :help 'formatprg'
      :help C-indenting
 
-     
+
 ## VIM 编辑二进制文件 （vim手册载录）
 
 帮助文档：23.4
