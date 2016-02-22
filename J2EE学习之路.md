@@ -125,10 +125,6 @@
 * http://ant.apache.org/ivy/ivyde/index.html
 
 
-# EPIC
-
-* 项目地址：http://www.epic-ide.org/
-* 安装说明：http://www.cnblogs.com/itech/archive/2010/02/23/1671676.html
 
 
 # asmplugin
