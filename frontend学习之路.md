@@ -4,6 +4,7 @@
 * W3C QA: http://www.w3.org/QA/2002/04/valid-dtd-list
 * W3School: http://www.w3school.com.cn/index.html
 * 前端开发框架对比：http://www.ibm.com/developerworks/cn/web/1404_wangfx_jsframeworks/
+* 当我说前端基础时，我在说什么？ —— 最近几年在前端圈的观察和反思: http://weibo.com/p/1001603933000810243086
 
 ## Tools
 
