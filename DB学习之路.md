@@ -1,3 +1,5 @@
+# DB学习之路 [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
+
 # 通用：
 
 * http://db-engines.com
@@ -96,7 +98,7 @@ windows Server 2008 服务器上安装了Oracle 11g R2，在用Navicat去连接O
 ## Oracle 11g 默认用户名和密码
 
 安装ORACLE时，若没有为下列用户重设密码，则其默认密码如下：
- 
+
 用户名/密码                登录身份                说明
 
 sys/change_on_install      SYSDBA 或 SYSOPER       不能以 NORMAL 登录，可作为默认的系统管理员
@@ -110,8 +112,8 @@ scott/tiger                NORMAL                  普通用户
 aqadm/aqadm               SYSDBA 或 NORMAL        高级队列管理员
 
 Dbsnmp/dbsnmp              SYSDBA 或 NORMAL        复制管理员
- 
- 
+
+
 登录身份：指登录时的Role指定，oracle11g中分SYSDBA和default两种。在安装Oracle 10g的时候，提示创建数据库，在创建的同时提示你输入口令，若此时你输入了密码，在登录数据库的时候用户名sys 对应的密码就应该是你创建数据库时候输入的口令。而非默认的change_on_install.
 
 
@@ -120,33 +122,33 @@ Dbsnmp/dbsnmp              SYSDBA 或 NORMAL        复制管理员
 
 sid是数据库实例的名字，每个实例各不相同。
 
-service_name参数是由oracle8i引进的。在8i以前，使用SID来表示标识数据库的一个实例，但是在Oracle的并行环境中，一个数据库对应多个实例，这样就需要多个网络服务名，设置繁琐。为了方便并行环境中的设置，引进了service_name参数，该参数对应一个数据库，而不是一个实例，而且该参数有许多其它的好处。该参数的缺省值为Db_name.Db_domain，即等于Global_name。一个数据库可以对应多个service_name，以便实现更灵活的配置。该参数与SID没有直接关系，即不必service name 必须与SID一样 
+service_name参数是由oracle8i引进的。在8i以前，使用SID来表示标识数据库的一个实例，但是在Oracle的并行环境中，一个数据库对应多个实例，这样就需要多个网络服务名，设置繁琐。为了方便并行环境中的设置，引进了service_name参数，该参数对应一个数据库，而不是一个实例，而且该参数有许多其它的好处。该参数的缺省值为Db_name.Db_domain，即等于Global_name。一个数据库可以对应多个service_name，以便实现更灵活的配置。该参数与SID没有直接关系，即不必service name 必须与SID一样
 
 Java JDBC Thin Driver 连接 Oracle有三种方法，如下：
 
-格式一: Oracle JDBC Thin using a ServiceName: 
+格式一: Oracle JDBC Thin using a ServiceName:
 
-jdbc:oracle:thin:@//<host>:<port>/<service_name> 
+jdbc:oracle:thin:@//<host>:<port>/<service_name>
 
-Example: jdbc:oracle:thin:@//192.168.2.1:1521/XE 
+Example: jdbc:oracle:thin:@//192.168.2.1:1521/XE
 
-注意这里的格式，@后面有//, 这是与使用SID的主要区别。 这种格式是Oracle 推荐的格式，因为对于集群来说，每个节点的SID 是不一样的，但是SERVICE_NAME 确可以包含所有节点。 
+注意这里的格式，@后面有//, 这是与使用SID的主要区别。 这种格式是Oracle 推荐的格式，因为对于集群来说，每个节点的SID 是不一样的，但是SERVICE_NAME 确可以包含所有节点。
 
 格式二: Oracle JDBC Thin using an SID:
 
-jdbc:oracle:thin:@<host>:<port>:<SID> 
+jdbc:oracle:thin:@<host>:<port>:<SID>
 
-Example: jdbc:oracle:thin:@192.168.2.1:1521:X01A 
+Example: jdbc:oracle:thin:@192.168.2.1:1521:X01A
 
-Note: Support for SID is being phased out. Oracle recommends that users switch over to usingservice names. 
+Note: Support for SID is being phased out. Oracle recommends that users switch over to usingservice names.
 
-格式三：Oracle JDBC Thin using a TNSName: 
+格式三：Oracle JDBC Thin using a TNSName:
 
-jdbc:oracle:thin:@<TNSName> 
+jdbc:oracle:thin:@<TNSName>
 
-Example: jdbc:oracle:thin:@GL 
+Example: jdbc:oracle:thin:@GL
 
-Note:Support for TNSNames was added in the driver release 10.2.0.1 
+Note:Support for TNSNames was added in the driver release 10.2.0.1
 
 
 ## Oracle的thin与oci连接方式比较
@@ -172,7 +174,7 @@ Oracle客户端    需要安装配置             不用安装
     jdbc:oracle:oci:@(description=(address=(host=youroraclehost)(protocol=tcp)(port=1521))(connect_data=(SERVICE_NAME=yourservicename)))
 ```
 
-## 与 oracle 有关的几个端口：1158、1521、5500、5560 
+## 与 oracle 有关的几个端口：1158、1521、5500、5560
 
 * 1521端口：响应sqlplus
 * 1158端口：http://RemoteIP:1158/em，即通过网页方式访问em
@@ -204,7 +206,7 @@ Oracle临时表空间主要用来做查询和存放一些缓冲区数据。临�
 * Union 或 intersect 或 minus
 * Sort-merge joins
 * analyze
- 
+
 数据表空间：表空间的作用能帮助DBA用户完成以下工作:
 
 * 决定数据库实体的空间分配;
@@ -264,7 +266,7 @@ Oracle临时表空间主要用来做查询和存放一些缓冲区数据。临�
 
 安装Oracle 11g R2的过程中，在新建数据库实例时出现了该错误，如果选择"忽略"就会出现ora-28000错误。经网络查询验证，这是属于在前面配置管理员密码的时候，采用了数字开头的密码，Oracle貌似对此不支持，但当时不提示出错，晕倒！据说包含其他非法特殊字符也可能产生此问题。
 
-ORA-00922: 选项缺失或无效  
+ORA-00922: 选项缺失或无效
 
 错误原因：一般是语句的语法有问题。比如命名不对，关键字写错等等。对于非标准的命名，一般采用双引号来创建。
 
@@ -287,7 +289,7 @@ ORA-28000: 账户锁定
 
 ## oracle emca常用命令
 
-``` 
+```
     $ emctl stop dbconsole
     $emca -r 修复完毕，dbconsole 可以正常使用了
 
@@ -327,7 +329,7 @@ ORA-28000: 账户锁定
     -- linux下以sysdba用户登录，然后启动数据库
     sqlplus / as sysdba
     startup
-    
+
     -- sqlplus登陆方式
     sqlplus / as sysdba --以操作系统权限认证的oracle sys管理员登陆
 
@@ -346,8 +348,8 @@ ORA-28000: 账户锁定
     Enter password：password as sysdba --以sys用户登陆的话 必须要加上as sysdba子句
 
     sqlplus scott/tiger@orcl --非管理员用户登陆
-    
-    
+
+
     desc v$database; --查询v$database数据库的表结构
 
     show parameter name; -- 查看一些数据库的名字信息
@@ -362,8 +364,8 @@ ORA-28000: 账户锁定
 
     -- 数据库实例名对应着SID，查询SID还可以使用下面的方式：
     -- linux下在配置oracle环境变量的情况可以使用 echo $ORACLE_SID,如果没有可以使用ps -ef |grep oracle 来查询，结果中的xxxx就是对应的SID。
-    -- oracle    2548     1  0 Aug17 ?        00:00:00 ora_pmon_xxxx 
-    -- 在windows环境下,oracle是以后台服务的方式被管理的,所以看"控制面板->管理工具->服务 里面的名称:"OracleServiceORCL",则ORCL就是sid; 
+    -- oracle    2548     1  0 Aug17 ?        00:00:00 ora_pmon_xxxx
+    -- 在windows环境下,oracle是以后台服务的方式被管理的,所以看"控制面板->管理工具->服务 里面的名称:"OracleServiceORCL",则ORCL就是sid;
 
     select value from v$parameter where name='db_domin'; --查询数据库域名
     show parameter domain;
@@ -381,18 +383,18 @@ ORA-28000: 账户锁定
     --在sqlplus中执行sql脚本，下面两种方式都可以
     START file_name
     @file_name
-    
-    
+
+
     --判断表是否存在，如果存在则删除
-    declare 
-          num   number; 
-    begin 
-          select count(1) into num from all_tables where TABLE_NAME = 'EMP' and OWNER='SCOTT'; 
-          if   num=1   then 
-              execute immediate 'drop table EMP'; 
-          end   if; 
-    end; 
-    / 
+    declare
+          num   number;
+    begin
+          select count(1) into num from all_tables where TABLE_NAME = 'EMP' and OWNER='SCOTT';
+          if   num=1   then
+              execute immediate 'drop table EMP';
+          end   if;
+    end;
+    /
     --创建表
     CREATE TABLE EMP
            (EMPNO NUMBER(4) NOT NULL,
@@ -407,21 +409,21 @@ ORA-28000: 账户锁定
 
     --ORACLE 判断序列是否存在,如果存在就删除
 
-    declare   
+    declare
      V_NUM number;
 
-    BEGIN  
+    BEGIN
       ----多次删除时，每次都将v_num设置成为0
-        V_NUM := 0;  
+        V_NUM := 0;
         ----判断序列 seq_name_1 是否存在（区分大小写）
-        select count(0) into V_NUM from user_sequences where sequence_name = 'SEQ_BUSINESS_PROCESS_INDEX_ID'; 
-        ----如果存在立即删除  
-        if V_NUM > 0 then   
-        execute immediate 'DROP SEQUENCE  SEQ_BUSINESS_PROCESS_INDEX_ID';   
+        select count(0) into V_NUM from user_sequences where sequence_name = 'SEQ_BUSINESS_PROCESS_INDEX_ID';
+        ----如果存在立即删除
+        if V_NUM > 0 then
+        execute immediate 'DROP SEQUENCE  SEQ_BUSINESS_PROCESS_INDEX_ID';
         end if;
     END;
-   
-    
+
+
     -- 设置sqlplus模式显示总行数
     show pagesize; --查看当前的pagesize
     set pagesize 300;
@@ -433,148 +435,148 @@ ORA-28000: 账户锁定
     -- 修改安装目录glogin.sql文件才能保证之前的设置永久生效
     set pagesize 300;
     set linesize 300;
-    
-    
-    -- oracle常用系统表   
+
+
+    -- oracle常用系统表
     -- dba_开头
 
-    select * from dba_users; --数据库用户信息  
-    select * from dba_segments; --表段信息  
-    select * from dba_extents; --数据区信息  
-    select * from dba_objects; --数据库对象信息  
-    select * from dba_tablespaces; --数据库表空间信息  
-    select * from dba_data_files; --数据文件设置信息  
-    select * from dba_temp_files; --临时数据文件信息  
-    select * from dba_rollback_segs; --回滚段信息  
-    select * from dba_ts_quotas; --用户表空间配额信息  
-    select * from dba_free_space; --数据库空闲空间信息  
-    select * from dba_profiles; --数据库用户资源限制信息  
-    select * from dba_sys_privs; --用户的系统权限信息  
-    select * from dba_tab_privs; --用户具有的对象权限信息  
-    select * from dba_col_privs; --用户具有的列对象权限信息  
-    select * from dba_role_privs; --用户具有的角色信息  
-    select * from dba_audit_trail; --审计跟踪记录信息  
-    select * from dba_stmt_audit_opts; --审计设置信息  
-    select * from dba_audit_object; --对象审计结果信息  
-    select * from dba_audit_session; --会话审计结果信息  
-    select * from dba_indexes; --用户模式的索引信息  
+    select * from dba_users; --数据库用户信息
+    select * from dba_segments; --表段信息
+    select * from dba_extents; --数据区信息
+    select * from dba_objects; --数据库对象信息
+    select * from dba_tablespaces; --数据库表空间信息
+    select * from dba_data_files; --数据文件设置信息
+    select * from dba_temp_files; --临时数据文件信息
+    select * from dba_rollback_segs; --回滚段信息
+    select * from dba_ts_quotas; --用户表空间配额信息
+    select * from dba_free_space; --数据库空闲空间信息
+    select * from dba_profiles; --数据库用户资源限制信息
+    select * from dba_sys_privs; --用户的系统权限信息
+    select * from dba_tab_privs; --用户具有的对象权限信息
+    select * from dba_col_privs; --用户具有的列对象权限信息
+    select * from dba_role_privs; --用户具有的角色信息
+    select * from dba_audit_trail; --审计跟踪记录信息
+    select * from dba_stmt_audit_opts; --审计设置信息
+    select * from dba_audit_object; --对象审计结果信息
+    select * from dba_audit_session; --会话审计结果信息
+    select * from dba_indexes; --用户模式的索引信息
 
-    -- user_开头  
-    select * from user_objects; --用户对象信息  
-    select * from user_source; --数据库用户的所有资源对象信息  
-    select * from user_segments; --用户的表段信息  
-    select * from user_tables; --用户的表对象信息  
-    select * from user_tab_columns; --用户的表列信息  
-    select * from user_constraints; --用户的对象约束信息  
-    select * from user_sys_privs; --当前用户的系统权限信息  
-    select * from user_tab_privs; --当前用户的对象权限信息  
-    select * from user_col_privs; --当前用户的表列权限信息  
+    -- user_开头
+    select * from user_objects; --用户对象信息
+    select * from user_source; --数据库用户的所有资源对象信息
+    select * from user_segments; --用户的表段信息
+    select * from user_tables; --用户的表对象信息
+    select * from user_tab_columns; --用户的表列信息
+    select * from user_constraints; --用户的对象约束信息
+    select * from user_sys_privs; --当前用户的系统权限信息
+    select * from user_tab_privs; --当前用户的对象权限信息
+    select * from user_col_privs; --当前用户的表列权限信息
     select * from user_col_comments; -- 查询本用户的表的列名和注释
-    select * from user_role_privs; --当前用户的角色权限信息  
-    select * from user_indexes; --用户的索引信息  
-    select * from user_ind_columns; --用户的索引对应的表列信息  
-    select * from user_cons_columns; --用户的约束对应的表列信息  
-    select * from user_clusters; --用户的所有簇信息  
-    select * from user_clu_columns; --用户的簇所包含的内容信息  
-    select * from user_cluster_hash_expressions; --散列簇的信息  
+    select * from user_role_privs; --当前用户的角色权限信息
+    select * from user_indexes; --用户的索引信息
+    select * from user_ind_columns; --用户的索引对应的表列信息
+    select * from user_cons_columns; --用户的约束对应的表列信息
+    select * from user_clusters; --用户的所有簇信息
+    select * from user_clu_columns; --用户的簇所包含的内容信息
+    select * from user_cluster_hash_expressions; --散列簇的信息
 
 
-    -- all_开头  
-    select * from all_users; --数据库所有用户的信息  
-    select * from all_objects; --数据库所有的对象的信息  
-    select * from all_def_audit_opts; --所有默认的审计设置信息  
-    select * from all_tables; --所有的表对象信息  
-    select * from all_indexes; --所有的数据库对象索引的信息  
+    -- all_开头
+    select * from all_users; --数据库所有用户的信息
+    select * from all_objects; --数据库所有的对象的信息
+    select * from all_def_audit_opts; --所有默认的审计设置信息
+    select * from all_tables; --所有的表对象信息
+    select * from all_indexes; --所有的数据库对象索引的信息
     select * from all_tab_comments; --查询所有用户的表,视图等
     select * from all_col_comments; --查询所有用户的表的列名和注释.
     select * from all_tab_columns; --查询所有用户的表的列名等信息(详细但是没有备注)
 
 
-    -- v$开头  
-    select * from v$database; --数据库信息  
-    select * from v$datafile; --数据文件信息  
-    select * from v$controlfile; --控制文件信息  
-    select * from v$logfile; --重做日志信息  
-    select * from v$instance; --数据库实例信息  
-    select * from v$log; --日志组信息  
-    select * from v$loghist; --日志历史信息  
-    select * from v$sga; --数据库SGA信息  
-    select * from v$parameter; --初始化参数信息  
-    select * from v$process; --数据库服务器进程信息  
-    select * from v$bgprocess; --数据库后台进程信息  
-    select * from v$controlfile_record_section; --控制文件记载的各部分信息  
-    select * from v$thread; --线程信息  
-    select * from v$datafile_header; --数据文件头所记载的信息  
-    select * from v$archived_log; --归档日志信息  
-    select * from v$archive_dest; --归档日志的设置信息  
-    select * from v$logmnr_contents; --归档日志分析的DML DDL结果信息  
-    select * from v$logmnr_dictionary; --日志分析的字典文件信息  
-    select * from v$logmnr_logs; --日志分析的日志列表信息  
-    select * from v$tablespace; --表空间信息  
-    select * from v$tempfile; --临时文件信息  
-    select * from v$filestat; --数据文件的I/O统计信息  
-    select * from v$undostat; --Undo数据信息  
-    select * from v$rollname; --在线回滚段信息  
-    select * from v$session; --会话信息  
-    select * from v$transaction; --事务信息  
-    select * from v$rollstat; --回滚段统计信息  
-    select * from v$pwfile_users; --特权用户信息  
-    select * from v$sqlarea; --当前查询过的sql语句访问过的资源及相关的信息  
-    select * from v$sql; --与v$sqlarea基本相同的相关信息  
-    select * from v$sysstat; --数据库系统状态信息  
+    -- v$开头
+    select * from v$database; --数据库信息
+    select * from v$datafile; --数据文件信息
+    select * from v$controlfile; --控制文件信息
+    select * from v$logfile; --重做日志信息
+    select * from v$instance; --数据库实例信息
+    select * from v$log; --日志组信息
+    select * from v$loghist; --日志历史信息
+    select * from v$sga; --数据库SGA信息
+    select * from v$parameter; --初始化参数信息
+    select * from v$process; --数据库服务器进程信息
+    select * from v$bgprocess; --数据库后台进程信息
+    select * from v$controlfile_record_section; --控制文件记载的各部分信息
+    select * from v$thread; --线程信息
+    select * from v$datafile_header; --数据文件头所记载的信息
+    select * from v$archived_log; --归档日志信息
+    select * from v$archive_dest; --归档日志的设置信息
+    select * from v$logmnr_contents; --归档日志分析的DML DDL结果信息
+    select * from v$logmnr_dictionary; --日志分析的字典文件信息
+    select * from v$logmnr_logs; --日志分析的日志列表信息
+    select * from v$tablespace; --表空间信息
+    select * from v$tempfile; --临时文件信息
+    select * from v$filestat; --数据文件的I/O统计信息
+    select * from v$undostat; --Undo数据信息
+    select * from v$rollname; --在线回滚段信息
+    select * from v$session; --会话信息
+    select * from v$transaction; --事务信息
+    select * from v$rollstat; --回滚段统计信息
+    select * from v$pwfile_users; --特权用户信息
+    select * from v$sqlarea; --当前查询过的sql语句访问过的资源及相关的信息
+    select * from v$sql; --与v$sqlarea基本相同的相关信息
+    select * from v$sysstat; --数据库系统状态信息
 
-    -- session_开头  
-    select * from session_roles; --会话的角色信息  
-    select * from session_privs; --会话的权限信息  
+    -- session_开头
+    select * from session_roles; --会话的角色信息
+    select * from session_privs; --会话的权限信息
 
-    -- index_开头  
-    select * from index_stats; --索引的设置和存储信息  
+    -- index_开头
+    select * from index_stats; --索引的设置和存储信息
 
-    -- 伪表  
-    select * from dual; --系统伪列表信息  
-      
-    -- 删除表对象  
-    select 'drop table '||segment_name from dba_segments where owner='VPMUSER' and segment_type='TABLE';  
-    -- 创建表对象  
-    select  
-    'create table '||segment_name || ' as select * from '||segment_name ||'@DBLINK'  
-    from dba_segments where owner='VPMUSER' and segment_type='TABLE';  
-      
-    -- 检查表是否完整导入  
-    select segment_name from dba_segments@aaa where owner='VPMUSER' and segment_type='TABLE'   
-    and (segment_name not like 'BIN$%'  
-    and segment_name not like '%201%')  
-    minus  
-    select segment_name from dba_segments where owner='VPMUSER' and segment_type='TABLE'  and segment_name not like 'BIN$%' 
+    -- 伪表
+    select * from dual; --系统伪列表信息
+
+    -- 删除表对象
+    select 'drop table '||segment_name from dba_segments where owner='VPMUSER' and segment_type='TABLE';
+    -- 创建表对象
+    select
+    'create table '||segment_name || ' as select * from '||segment_name ||'@DBLINK'
+    from dba_segments where owner='VPMUSER' and segment_type='TABLE';
+
+    -- 检查表是否完整导入
+    select segment_name from dba_segments@aaa where owner='VPMUSER' and segment_type='TABLE'
+    and (segment_name not like 'BIN$%'
+    and segment_name not like '%201%')
+    minus
+    select segment_name from dba_segments where owner='VPMUSER' and segment_type='TABLE'  and segment_name not like 'BIN$%'
 
 
     --查询用户所有表的语句1
     select t.table_name,t.comments from user_tab_comments t
-     
+
     --查询用户所有表的语句2:
     select r1, r2, r3, r5
     from (select a.table_name r1, a.column_name r2, a.comments r3
               from user_col_comments a),
            (select t.table_name r4, t.comments r5 from user_tab_comments t)
     where r4 = r1
-     
+
 
     -- 查找表的所有索引（包括索引名，类型，构成列）：
-    select t.*,i.index_type from user_ind_columns t,user_indexes i where t.index_name = i.index_name and t.table_name = i.table_name and t.table_name = 要查询的表    
+    select t.*,i.index_type from user_ind_columns t,user_indexes i where t.index_name = i.index_name and t.table_name = i.table_name and t.table_name = 要查询的表
     -- 查找表的主键（包括名称，构成列）：
-    select cu.* from user_cons_columns cu, user_constraints au where cu.constraint_name = au.constraint_name and au.constraint_type = 'P' and au.table_name = 要查询的表     
-     
+    select cu.* from user_cons_columns cu, user_constraints au where cu.constraint_name = au.constraint_name and au.constraint_type = 'P' and au.table_name = 要查询的表
+
     -- 查找表的唯一性约束（包括名称，构成列）：
-    select column_name from user_cons_columns cu, user_constraints au where cu.constraint_name = au.constraint_name and au.constraint_type = 'U' and au.table_name = 要查询的表  
-      
-    -- 查找表的外键（包括名称，引用表的表名和对应的键名，下面是分成多步查询）：  
+    select column_name from user_cons_columns cu, user_constraints au where cu.constraint_name = au.constraint_name and au.constraint_type = 'U' and au.table_name = 要查询的表
+
+    -- 查找表的外键（包括名称，引用表的表名和对应的键名，下面是分成多步查询）：
     select * from user_constraints c where c.constraint_type = 'R' and c.table_name = 要查询的表
 
     -- 查询外键约束的列名：
     select * from user_cons_columns cl where cl.constraint_name = 外键名称
 
     -- 查询引用表的键的列名：
-    select * from user_cons_columns cl where cl.constraint_name = 外键引用表的键名     
+    select * from user_cons_columns cl where cl.constraint_name = 外键引用表的键名
 
     -- 查询表的所有列及其属性
     select t.*,c.COMMENTS from user_tab_columns t,user_col_comments c where t.table_name = c.table_name and t.column_name = c.column_name and t.table_name = 要查询的表
@@ -625,7 +627,7 @@ Oracle sqlplus在打错字符时我们可以使用ctrl+backspace组合键实现�
     SELECT * FROM dba_sys_privs WHERE grantee IN ('RESOURCE', 'CONNECT') ORDER BY 1;
 
 从查询结果可以看到：
- 
+
 CONNECT角色：仅具有创建SESSION的权限
 RESOURCE角色：仅具有创建CLUSTER,INDEXTYPE,OPERATOR,PROCEDEURE,SEQUENCE,TABLE,TRIGGER,TYPE的权限
 
@@ -636,12 +638,12 @@ RESOURCE角色：仅具有创建CLUSTER,INDEXTYPE,OPERATOR,PROCEDEURE,SEQUENCE,T
 同时，当把ORACLE resource角色授予一个user的时候，不但会授予ORACLE resource角色本身的权限，而且还有unlimited tablespace权限，但是，当把resource授予一个role时，就不会授予unlimited tablespace权限。
 
 那么，一个用户，如果查看他拥有什么权限呢？可以使用PLSQL Developer工具。在PLSQL Developer中可以很方便的查看用户的各种类型权限（包括对象权限，角色权限，系统权限），如果要使用SQL语句查询也可以：
- 
+
     SELECT * FROM dba_tab_privs a WHERE a.grantee = '用户名'; --对象权限
     SELECT * FROM dba_role_privs a WHERE a.GRANTEE = '用户名'; --角色权限
     SELECT * FROM dba_sys_privs a WHERE a.GRANTEE = '用户名'; --系统权限
 
-## oracle 的修改SID 
+## oracle 的修改SID
 
 1、检查原来的数据库实例名（sid）
 
@@ -662,7 +664,7 @@ RESOURCE角色：仅具有创建CLUSTER,INDEXTYPE,OPERATOR,PROCEDEURE,SEQUENCE,T
 
 注意不能用shutdown abort，只能是shutdown immediate或shutdown normal
 
-    sys@ORCL> shutdown immediate 
+    sys@ORCL> shutdown immediate
     Database closed.
     Database dismounted.
     ORACLE instance shut down.
@@ -676,7 +678,7 @@ RESOURCE角色：仅具有创建CLUSTER,INDEXTYPE,OPERATOR,PROCEDEURE,SEQUENCE,T
 
 5、进入到$ORACLE_HOME/dbs目录，将所有文件名中包含原来的sid的修改为对应的新sid的。如我对如下文件修改为其后对应的文件
 
-    hc_orcl.dat->hc_ybbe.dat 
+    hc_orcl.dat->hc_ybbe.dat
     lkORCL->lkYBBE
     orapworcl->orapwybbe
     snapcf_orcl.f->snapcf_cnhtm.f
@@ -688,7 +690,7 @@ RESOURCE角色：仅具有创建CLUSTER,INDEXTYPE,OPERATOR,PROCEDEURE,SEQUENCE,T
 
 6、使新修改的ORACLE_SID环境变量生效
 
-    oracle@oracle[/oracle/app/10.1/dbs]> . ~/.bash_profile 
+    oracle@oracle[/oracle/app/10.1/dbs]> . ~/.bash_profile
     oracle@oracle[/oracle/app/10.1/dbs]> echo $ORACLE_SID
     cnhtm
 
@@ -696,13 +698,13 @@ RESOURCE角色：仅具有创建CLUSTER,INDEXTYPE,OPERATOR,PROCEDEURE,SEQUENCE,T
 
 因为口令文件改名后不能在新实例中使用，所以重建
 
-    oracle@oracle[/oracle/app/10.1/dbs]> orapwd file=$ORACLE_HOME/dbs/orapw$ORACLE_SID password=oracle entries=5 force=y 
+    oracle@oracle[/oracle/app/10.1/dbs]> orapwd file=$ORACLE_HOME/dbs/orapw$ORACLE_SID password=oracle entries=5 force=y
     oracle@oracle[/oracle/app/10.1/dbs]> ls -lrt orapw*
     -rw-r----- 1 oracle oinstall 2048 Dec 20 11:27 orapwybbe
 
 8、启动数据库
 
-    oracle@oracle[/oracle/app/10.1/dbs]> sqlplus / as sysdba 
+    oracle@oracle[/oracle/app/10.1/dbs]> sqlplus / as sysdba
     SQL*Plus: Release 10.2.0.1.0 - Production on Sun Dec 20 11:29:53 2009
     Copyright (c) 1982, 2005, Oracle. All rights reserved.
     Connected to an idle instance.
@@ -718,7 +720,7 @@ RESOURCE角色：仅具有创建CLUSTER,INDEXTYPE,OPERATOR,PROCEDEURE,SEQUENCE,T
 
 9、检查数据库实例名。通过如下语句检查数据库实例名，发现实例名已经由orcl变成ybbe
 
-    select instance from v$thread; 
+    select instance from v$thread;
     INSTANCE
 
 ## ESCAPE关键字用法
@@ -753,7 +755,7 @@ RESOURCE角色：仅具有创建CLUSTER,INDEXTYPE,OPERATOR,PROCEDEURE,SEQUENCE,T
 和sessions是类似的是processes这个参数。processes参数指定了instance在OS层面所能同时运行的进程数。基于和sessions设定同样的考虑，我们在设定processes时，也应考虑我们可能会有多少个同时连接到数据库的并发用户，并加上后台进程的进程数。当然，在MTS(shared server)的配置下，这个值的确定会有所不同。应该是
 
     普通后台进程+最大共享服务器的进程数(max_shared_servers) + 最大Dispatcher进程数(max_dispatchers).
-    
+
 另外，由于在window平台中，Oracle是以单一一个进程的形式存在，processes 参数变成了限制Oracle进程里的线程数了。当Oracle需要启动新的process而又已经达到processes参数时，就会报错：
 
 ```shell
@@ -851,21 +853,21 @@ Oracle提供了两种验证方式，一种是OS验证，另一种密码文件验
 
 我们知道MongoDB是一个文档数据库，其每一条记录都是一个JSON格式的文档。比如像下面的例子，每一天会生成一条这样的统计数据：
 
-    { metric: "content_count", client: 5, value: 51, date: ISODate("2012-04-01 13:00") }{ metric: "content_count", client: 5, value: 49, date: ISODate("2012-04-02 13:00") } 
+    { metric: "content_count", client: 5, value: 51, date: ISODate("2012-04-01 13:00") }{ metric: "content_count", client: 5, value: 49, date: ISODate("2012-04-02 13:00") }
 
 而如果采用组合式大文档的话，就可以这样将一个月的数据全部存到一条记录里：
-    
-    { metric: "content_count", client: 5, month: "2012-04", 1: 51, 2: 49, ... } 
-    
+
+    { metric: "content_count", client: 5, month: "2012-04", 1: 51, 2: 49, ... }
+
 通过上面两种方式存储，预先一共存储大约7GB的数据（机器只有1.7GB的内存），测试读取一年信息，这二者的读性能差别很明显：第一种: 1.6秒；第二种: 0.3秒。那么问题在哪里呢？实际上原因是组合式的存储在读取数据的时候，可以读取更少的文档数量。而读取文档如果不能完全在内存中的话，其代价主要是被花在磁盘seek上，第一种存储方式在获取一年数据时，需要读取的文档数更多，所以磁盘seek的数量也越多。所以更慢。实际上MongoDB的知名使用者foursquare就大量采用这种方式来提升读性能。见此
 
-### 采用特殊的索引结构 
+### 采用特殊的索引结构
 
 我们知道，MongoDB和传统数据库一样，都是采用B树作为索引的数据结构。对于树形的索引来说，保存热数据使用到的索引在存储上越集中，索引浪费掉的内存也越小。所以我们对比下面两种索引结构：
 
-    db.metrics.ensureIndex({ metric: 1, client: 1, date: 1}) 
-    db.metrics.ensureIndex({ date: 1, metric: 1, client: 1 }) 
-    
+    db.metrics.ensureIndex({ metric: 1, client: 1, date: 1})
+    db.metrics.ensureIndex({ date: 1, metric: 1, client: 1 })
+
 采用这两种不同的结构，在插入性能上的差别也很明显。当采用第一种结构时，数据量在2千万以下时，能够基本保持10k/s 的插入速度，而当数据量再增大，其插入速度就会慢慢降低到2.5k/s，当数据量再增大时，其性能可能会更低。而采用第二种结构时，插入速度能够基本稳定在10k/s。其原因是第二种结构将date字段放在了索引的第一位，这样在构建索引时，新数据更新索引时，不是在中间去更新的，只是在索引的尾巴处进行修改。那些插入时间过早的索引在后续的插入操作中几乎不需要进行修改。而第一种情况下，由于date字段不在最前面，所以其索引更新经常是发生在树结构的中间，导致索引结构会经常进行大规模的变化。
 
 ###预留空间
@@ -873,17 +875,17 @@ Oracle提供了两种验证方式，一种是OS验证，另一种密码文件验
 与第1点相同，这一点同样是考虑到传统机械硬盘的主要操作时间是花在磁盘seek操作上。
 比如还是拿第1点中的例子来说，我们在插入数据的时候，预先将这一年的数据需要的空间都一次性插入。这能保证我们这一年12个月的数据是在一条记录中，是顺序存储在磁盘上的，那么在读取的时候，我们可能只需要一次对磁盘的顺序读操作就能够读到一年的数据，相比前面的12次读取来说，磁盘seek也只有一次。
 ```
-    db.metrics.insert([    { metric: 'content_count', client: 3, date: '2012-01', 0: 0, 1: 0, 2: 0, ... }  
-      { .................................., date: '2012-02', ... })   
-    { .................................., date: '2012-03', ... })   
-    { .................................., date: '2012-04', ... })   
-    { .................................., date: '2012-05', ... }) 
-    { .................................., date: '2012-06', ... })    
-    { .................................., date: '2012-07', ... })    
-    { .................................., date: '2012-08', ... })   
-    { .................................., date: '2012-09', ... })    
-    { .................................., date: '2012-10', ... })   
-    { .................................., date: '2012-11', ... })   
+    db.metrics.insert([    { metric: 'content_count', client: 3, date: '2012-01', 0: 0, 1: 0, 2: 0, ... }
+      { .................................., date: '2012-02', ... })
+    { .................................., date: '2012-03', ... })
+    { .................................., date: '2012-04', ... })
+    { .................................., date: '2012-05', ... })
+    { .................................., date: '2012-06', ... })
+    { .................................., date: '2012-07', ... })
+    { .................................., date: '2012-08', ... })
+    { .................................., date: '2012-09', ... })
+    { .................................., date: '2012-10', ... })
+    { .................................., date: '2012-11', ... })
     { .................................., date: '2012-12', ... })])
 ```
 
