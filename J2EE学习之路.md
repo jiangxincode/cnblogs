@@ -127,8 +127,6 @@
 * http://ant.apache.org/ivy/ivyde/index.html
 
 
-
-
 # asmplugin
 
 * 项目地址：http://sourceforge.net/projects/asmplugin/
@@ -268,19 +266,56 @@
 * 项目地址：https://github.com/google/guava
 
 
+# Java Class Dependency Analyzer
+
+* Class Dependency Analyzer (CDA): http://www.dependency-analyzer.org/
+* Classycle: Analysing Tools for Java Class and Package Dependencies: http://classycle.sourceforge.net/
+* STAN, the leading Eclipse-based structure analysis tool for Java: http://stan4j.com/
+* nWire, Code Exploration for Eclipse(not free): http://www.nwiresoftware.com/
+
+
 # Apache Commons
 
     Apache Commons is an Apache project focused on all aspects of reusable Java components.
 
 * 官网：http://commons.apache.org/
-* BeanUtils: http://commons.apache.org/proper/commons-beanutils/
-* DBCP: http://commons.apache.org/proper/commons-dbcp/
-* IO：http://commons.apache.org/proper/commons-io/
-* Lang：http://commons.apache.org/proper/commons-lang/
-* Logging: http://commons.apache.org/proper/commons-logging/
-* Math: http://commons.apache.org/proper/commons-math/
-* Net: http://commons.apache.org/proper/commons-net/
-* OGNL：http://commons.apache.org/proper/commons-ognl/
+
+sandbox中的项目无法直接通过maven进行依赖，必须通过svn下载源码，部署到本地maven仓库中。例如对于sandbox中的classscan项目(http://commons.apache.org/sandbox/commons-classscan/)：
+```shell
+    svn checkout http://svn.apache.org/repos/asf/commons/sandbox/classscan classscan
+    cd classscan
+    
+    # 当install带有parent的maven项目时，如果没有把parent一并install,其它项目引用时会出现
+    # mvn install--Failed to read artifact descriptor for org.apache.maven.plugins:maven-source-plugin:jar:2.1.2
+    cd parent (classscan/parent)
+    mvn clean package install -DskipTests
+    
+    
+    cd ../api (classscan/api)
+    mvn clean package install -DskipTests
+    
+    cd ../bcel (classscan/bcel)
+    mvn clean package install -DskipTests
+```
+  
+在pom.xml中添加依赖
+```xml
+    <dependency>
+			<groupId>org.apache.commons.classscan</groupId>
+			<artifactId>bcel</artifactId>
+			<version>0.2-SNAPSHOT</version>
+		</dependency>
+
+		<dependency>
+            <groupId>org.apache.commons.classscan</groupId>
+            <artifactId>api</artifactId>
+            <version>0.2-SNAPSHOT</version>
+    </dependency>
+```
+    
+Eclipse中`Update Project`，选择`Force Update of Snapshots/Releases`
+
+
 
 
 # Maven and M2Eclipse
@@ -341,7 +376,7 @@
 
 经常碰到这种事情:在一些非maven工程中(由于某种原因这种工程还是手工添加依赖的),需要用到某个新的类库(假设这个类库发布在maven库中),而这个类库又间接依赖很多其他类库,如果依赖路径非常复杂的话,一个个检查手动下载是很麻烦的事.下面给出一个便捷的办法，创建一个新目录里面建一个maven pom文件, 添加需要依赖的类库:
 
-```
+```xml
     <?xml version="1.0"?>
     <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
         <modelVersion>4.0.0</modelVersion>
@@ -361,7 +396,7 @@
 
 在这个目录下运行命令，所有跟这个类库相关的直接和间接依赖的jar包都会下载到 ./target/dependency/下
 
-    mvn -f download-dep-pom.xml dependency:copy-dependencies
+    `mvn -f download-dep-pom.xml dependency:copy-dependencies`
 
 
 ## 杂项
@@ -391,6 +426,8 @@ mvn deploy:deploy-file -DgroupId="edu.jiangxin" -DartifactId=”gcu” -Dversion
 maven中如何生成javadoc
 
 mvn javadoc:javadoc
+
+
 
 
 
