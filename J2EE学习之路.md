@@ -280,8 +280,10 @@
 
 * 官网：http://commons.apache.org/
 
-sandbox中的项目无法直接通过maven进行依赖，必须通过svn下载源码，部署到本地maven仓库中。例如对于sandbox中的classscan项目(http://commons.apache.org/sandbox/commons-classscan/)：
+sandbox中的项目无法直接通过maven进行依赖，必须通过svn下载源码，部署到本地maven仓库中。例如对于sandbox中的classscan项目：
 ```shell
+
+    # 项目地址：http://commons.apache.org/sandbox/commons-classscan/
     svn checkout http://svn.apache.org/repos/asf/commons/sandbox/classscan classscan
     cd classscan
     
