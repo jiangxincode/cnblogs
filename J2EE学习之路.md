@@ -94,6 +94,12 @@
 
 * http://marketplace.eclipse.org/content/anyedit-tools
 
+
+# StartExplorer
+
+* https://github.com/fabioz/startexplorer
+
+
 # EClim (不推荐)
 
 * http://eclim.org
@@ -934,6 +940,12 @@ JavaDoc: https://storm.apache.org/javadoc/apidocs/index.html
 # Commons DbUtils: JDBC Utility Component
 
 * http://commons.apache.org/proper/commons-dbutils/
+
+
+# Java Native Access (JNA)
+
+* https://github.com/java-native-access/jna
+
 
 # Eclipse插件开发
 
