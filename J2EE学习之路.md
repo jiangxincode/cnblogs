@@ -59,6 +59,9 @@
 * 如何查看class文件的jdk版本：http://jingyan.baidu.com/article/e6c8503c7001b8e54f1a1804.html
 * Lifetimes of cryptographic hash functions: http://valerieaurora.org/hash.html
 * Struts2、Spring和Hibernate应用实例: http://871421448.iteye.com/blog/1546058
+* Apache和IIS网站Web日志格式详解: http://www.ha97.com/4813.html
+* 领域驱动设计系列文章——浅析VO、DTO、DO、PO的概念、区别和用处: http://www.cnblogs.com/qixuejia/p/4390086.html
+* PO BO VO DTO POJO DAO DO这些Java中的概念分别指一些什么？: https://www.zhihu.com/question/39651928
 
 
 # Eclipse
@@ -490,6 +493,12 @@ mvn javadoc:javadoc
 
 * 项目地址：http://atlassian.botwave.com/products/clover/default.html
 * 安装说明：http://atlassian.botwave.com/products/clover/download.html
+
+# CAP (code analysis plugin)
+
+    CAP (code analysis plugin) is an eclipse plugin (written in Java) that analysis your java project. It checks dependencies between the classes and packages and gives you a hint about the architecture, reusability and maintainability. ("JDepend 2")
+
+* https://sourceforge.net/projects/cap4e/
 
 
 # JD(Java Decompiler)
@@ -945,6 +954,13 @@ JavaDoc: https://storm.apache.org/javadoc/apidocs/index.html
 # Java Native Access (JNA)
 
 * https://github.com/java-native-access/jna
+
+
+# 数据库连接池
+
+* c3p0: https://sourceforge.net/projects/c3p0/
+* DBCP: http://commons.apache.org/proper/commons-dbcp/index.html
+* Proxool: http://proxool.sourceforge.net/index.html
 
 
 # Eclipse插件开发
