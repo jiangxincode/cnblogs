@@ -342,6 +342,7 @@ Eclipse中`Update Project`，选择`Force Update of Snapshots/Releases`
 * 安装说明（Eclipse EE中自带）：http://www.eclipse.org/m2e/m2e-downloads.html
 * 如何用Maven创建web项目（具体步骤）：http://blog.csdn.net/chuyuqing/article/details/28879477
 * maven依赖总结: http://blog.csdn.net/lastsweetop/article/details/8493475
+* maven2 up to maven3的'version' contains an expression but should be a constant: http://www.cnblogs.com/beiyeren/p/4275032.html
 * 常见Maven仓库：
     * http://mvnrepository.com/    （搜索）
     * http://maven.oschina.net/home.html    （搜索）
@@ -499,6 +500,11 @@ mvn javadoc:javadoc
     CAP (code analysis plugin) is an eclipse plugin (written in Java) that analysis your java project. It checks dependencies between the classes and packages and gives you a hint about the architecture, reusability and maintainability. ("JDepend 2")
 
 * https://sourceforge.net/projects/cap4e/
+
+
+# Visual Performance Analyzer
+
+* 洞悉 Java 应用性能瓶颈的利器：Visual Performance Analyzer: http://www.ibm.com/developerworks/cn/java/j-lo-vpa/
 
 
 # JD(Java Decompiler)

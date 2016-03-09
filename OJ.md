@@ -1,9 +1,9 @@
 * codevs: http://codevs.cn/
-* �Ŷ�OJ: http://ac.jobdu.com/
+* 九度OJ: http://ac.jobdu.com/
 * hihocoder: http://hihocoder.com/
 * SPOJ (Sphere Online Judge): http://www.spoj.com/
 * OpenJudge: http://openjudge.cn/
-* ԳȦ: http://www.oxcoder.com/index.htm
+* 猿圈: http://www.oxcoder.com/index.htm
 * codechef: https://www.codechef.com/
 * topcoder: https://www.topcoder.com/
 * LeetCode Online Judge: https://leetcode.com/
