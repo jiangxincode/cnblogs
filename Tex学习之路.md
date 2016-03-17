@@ -8,4 +8,5 @@
 * TeXpen - Your LaTeX editor: http://www.journalhome.com/texpen/
 * The easy to use, online, collaborative LaTeX editor: https://www.sharelatex.com/
 * Texmaker - The universal LaTeX editor: http://www.xm1math.net/texmaker/
+* winedt: http://www.winedt.com/
 * TeXlipse： http://sourceforge.net/projects/texlipse/

@@ -62,7 +62,12 @@
 * Apache和IIS网站Web日志格式详解: http://www.ha97.com/4813.html
 * 领域驱动设计系列文章——浅析VO、DTO、DO、PO的概念、区别和用处: http://www.cnblogs.com/qixuejia/p/4390086.html
 * PO BO VO DTO POJO DAO DO这些Java中的概念分别指一些什么？: https://www.zhihu.com/question/39651928
+* Java bytecode instruction listings: https://en.wikipedia.org/wiki/Java_bytecode_instruction_listings
 
+# IDE
+
+* https://netbeans.org/
+* http://www.jetbrains.com/
 
 # Eclipse
 
@@ -564,6 +569,7 @@ mvn javadoc:javadoc
     PMD is a source code analyzer. It finds common programming flaws like unused variables, empty catch blocks, unnecessary object creation, and so forth. It supports Java, JavaScript, PLSQL, Apache Velocity, XML, XSL. Additionally it includes CPD, the copy-paste-detector. CPD finds duplicated code in Java, C, C++, C#, PHP, Ruby, Fortran, JavaScript, PLSQL, Apache Velocity, Ruby, Scala, Objective C, Matlab, Python, Go.
 
 * 项目地址：https://pmd.github.io/
+* https://pmd.github.io/pmd-5.3.6/pmd-java/rules/index.html
 
 
 # Metric
@@ -755,6 +761,7 @@ JavaDoc: https://storm.apache.org/javadoc/apidocs/index.html
 
 * 官网：http://spring.io/
 * 文档：http://docs.spring.io/spring/docs/current/spring-framework-reference/htmlsingle/
+* Spring Framework 开发参考手册: http://man.lupaworld.com/content/develop/spring_ref/2.0/html/
 * 源码：
     * Spring 3.0(deprecated) https://src.springframework.org/svn/spring-framework/
     * Spring 2.5及以下(deprecated) https://src.springframework.org/svn/spring-maintenance/
