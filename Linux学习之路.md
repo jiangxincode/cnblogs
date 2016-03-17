@@ -1,96 +1,55 @@
-Linux学习之路
-
 # Linux自身相关内容
 
 ## 快捷键
 
 添加快捷键：系统——首选项——键盘快捷键
 
-Shell 快捷键
+### Shell 快捷键
 
-<Ctrl k>：删除从光标到行尾的部分 
+* <Ctrl k>：删除从光标到行尾的部分 
+* <Ctrl u>：删除从光标到行首的部分
+* <Alt d>：删除从光标到当前单词结尾的部分 
+* <Ctrl w>：删除从光标到当前单词开头的部分 
+* <Ctrl a>：将光标移到行首 
+* <Ctrl e>：将光标移到行尾 
+* <Alt a>：将光标移到当前单词头部 
+* <Alt e>：将光标移到当前单词尾部 
+* <Ctrl y>：插入最近删除的单词         
+* <Ctrl a>：跳到行首
+* <Ctrl b>：左移一个字符
+* <Ctrl c>：终止终端进程
+* <Ctrl d>：从光标处向右删除
+* <Ctrl e>：跳到行尾
+* <Ctrl f>：右移一个字符
+* <Ctrl k>：从光标处删除到行尾
+* <Ctrl l>：清屏，类似 clear 命令
+* <Ctrl r>：查找历史命令
+* <Ctrl z>：Suspend/ Stop the command  、 暂停命令的执行
+* <Ctrl h>：删除当前字符
+* <Ctrl w>：删除最后输入的单词
+* <!$>：重复前一个命令最后的参数。
+* <SHIFT PageUp/PageDown>：终端上下翻页
 
-<Ctrl u>：删除从光标到行首的部分
+### 常用快捷键
 
-<Alt d>：删除从光标到当前单词结尾的部分 
-
-<Ctrl w>：删除从光标到当前单词开头的部分 
-
-<Ctrl a>：将光标移到行首 
-
-<Ctrl e>：将光标移到行尾 
-
-<Alt a>：将光标移到当前单词头部 
-
-<Alt e>：将光标移到当前单词尾部 
-
-<Ctrl y>：插入最近删除的单词         
-
-<Ctrl a>：跳到行首
-
-<Ctrl b>：左移一个字符
-
-<Ctrl c>：终止终端进程
-
-<Ctrl d>：从光标处向右删除
-
-<Ctrl e>：跳到行尾
-
-<Ctrl f>：右移一个字符
-
-<Ctrl k>：从光标处删除到行尾
-
-<Ctrl l>：清屏，类似 clear 命令
-
-<Ctrl r>：查找历史命令
-
-<Ctrl z>：Suspend/ Stop the command  、 暂停命令的执行
-
-<Ctrl h>：删除当前字符
-
-<Ctrl w>：删除最后输入的单词
-
-<!$>：重复前一个命令最后的参数。
-
-<SHIFT PageUp/PageDown>：终端上下翻页
-
-常用快捷键
-
-<Alt+Tab>：切换窗口(win)
-
-<Win+Tab>：若开3D效果了切换
-
-<Ctrl+Alt+Backspace>：相当于强制注销
-
-<Ctrl+Alt+Del>：调出关机菜单
-
-<Ctrl+Alt+l>：锁定桌面
-
-<Ctrl+Alt+d>：最小化gnome所有窗口
-
-<Ctrl+Alt+f2>：linux终端用户（Alt + f7返回xwindows，Alt+ <- 或-> 进行终端切换）
-
-<Ctrl+Alt+ <- 或-> >：切换桌面
-
-<Alt + F1>：打开主菜单
-
-<Alt + F2运行>：（重启x窗口：r 重启：reboot 关机：hAlt）
-
-<Ctrl + Alt + d>：显示桌面
-
-<Alt + F9>：最小化当前窗口
-
-<Alt + F10>：最大化当前窗口
-
-<Alt + F4>：关闭当前窗口
-
-Print Screen截取全屏
-
-Alt + Print Screen截取窗口
-
-<Ctrl+Alt+上下箭头>：切换工作区(Fedora)
-
-<Alt+F10>：调整窗口的默认大小(Fedora)
+* <Alt+Tab>：切换窗口(win)
+* <Win+Tab>：若开3D效果了切换
+* <Ctrl+Alt+Backspace>：相当于强制注销
+* <Ctrl+Alt+Del>：调出关机菜单
+* <Ctrl+Alt+l>：锁定桌面
+* <Ctrl+Alt+d>：最小化gnome所有窗口
+* <Ctrl+Alt+f2>：linux终端用户（Alt + f7返回xwindows，Alt+ <- 或-> 进行终端切换）
+* <Ctrl+Alt+ <- 或-> >：切换桌面
+* <Alt + F1>：打开主菜单
+* <Alt + F2运行>：（重启x窗口：r 重启：reboot 关机：hAlt）
+* <Ctrl + Alt + d>：显示桌面
+* <Alt + F9>：最小化当前窗口
+* <Alt + F10>：最大化当前窗口
+* <Alt + F4>：关闭当前窗口
+* Print Screen截取全屏
+* Alt + Print Screen截取窗口
+* <Ctrl+Alt+上下箭头>：切换工作区(Fedora)
+* <Alt+F10>：调整窗口的默认大小(Fedora)
 
 ## linux修改默认打开文件的程序
 
@@ -136,97 +95,49 @@ home/user/.font/
 
 # Linux重装系统指南(Ubuntu)
 
-连上网络(ubuntu暂时关闭wifi)
-
-安装chrome，同步书签
-
-安装vim，移入配置文件
-
-修改主文件夹文件名
-
-安装金山wps，解决字体问题
-
-fedora:/opt/kingsoft/wps-office/office6/wps: error while loading shared libraries: libstdc++.so.6: cannot open shared object file: No such file or directory
-
-yum install libstdc++-devel.i686
-
-安装Synaptic软件包管理器
-
-卸载libreoffice/firefox/thunderbird/youker-assistant/amazon
-
-重新启动计算机
-
-安装GLX-Dock并进行配置
-
-配置输入法（快捷键等）并重新登录
-
-安装clementine/osd-lyrics并进行配置，解决乱码问题，安装解码插件
-
-按装bluefish和geany
-
-安装快盘，进行配快盘和ubuntu one
-
-安装filezilla/okular/meld
-
-卸载Rhythmbox/empathy/account-plugin-*
-
-安装font-manager
-
-安装latex并进行配置
+* 连上网络(ubuntu暂时关闭wifi)
+* 安装chrome，同步书签
+* 安装vim，移入配置文件
+* 修改主文件夹文件名
+* 安装金山wps，解决字体问题
+``` 
+     fedora:/opt/kingsoft/wps-office/office6/wps: error while loading shared libraries: libstdc++.so.6: cannot open shared object file: No such file or directory
+     yum install libstdc++-devel.i686
+``` 
+* 安装Synaptic软件包管理器
+* 卸载libreoffice/firefox/thunderbird/youker-assistant/amazon
+* 重新启动计算机
+* 安装GLX-Dock并进行配置
+* 配置输入法（快捷键等）并重新登录
+* 安装clementine/osd-lyrics并进行配置，解决乱码问题，安装解码插件
+* 按装bluefish和geany
+* 安装快盘，进行配快盘和ubuntu one
+* 安装filezilla/okular/meld
+* 卸载Rhythmbox/empathy/account-plugin-*
+* 安装font-manager
+* 安装latex并进行配置
 
 # Linux重装系统指南(Fedora)
 
-安装gnome-tweak-tool设置工具
+* 安装gnome-tweak-tool设置工具
+* sudo yum install gnome-tweak-tool
+* 安装后在左上角【活动】里可以找到【优化工具】图标打开进行设置
+* 安装最快软件源插件：sudo yum install yum-plugin-fastestmirror
+* 安装下载加速插件：sudo yum install yum-presto -y
+* 安装鼠标右键【在终端中打开】：sudo yum install nautilus-open-terminal
+* 配置RPM Fusion
+* 卸载相关软件: firefox
+* 安装相关软件:gcc/Yumex/Compiz(ccsm)/Cariodock
+* 设置自动挂载文件系统fstab
+* 升级系统yum update
+* 安装vim
+* 删除旧内核
 
-sudo yum install gnome-tweak-tool
+    1. 查看当前系统中已安装的内核相关包：# rpm -qa | grep kernel
+    2. 查看当前使用的内核：# uname -r
+    3. 确定要删除的内核：
+    4. 删除内核：# yum remove kernel-...（内核版本名称）使用 yum remove 进行删除，会自动移除：/boot/grub/menu.lst 中的相关启动项
 
-安装后在左上角【活动】里可以找到【优化工具】图标打开进行设置
-
-安装最快软件源插件：sudo yum install yum-plugin-fastestmirror
-
-安装下载加速插件：sudo yum install yum-presto -y
-
-安装鼠标右键【在终端中打开】：sudo yum install nautilus-open-terminal
-
-配置RPM Fusion
-
-卸载相关软件
-
-firefox
-
-安装相关软件
-
-gcc
-
-Yumex
-
-Compiz(ccsm)
-
-Cariodock
-
-设置自动挂载文件系统fstab
-
-升级系统yum update
-
-删除旧内核
-
-1. 查看当前系统中已安装的内核相关包：
-
-# rpm -qa | grep kernel
-
-2. 查看当前使用的内核：
-
-# uname -r
-
-3. 确定要删除的内核：
-
-4. 删除内核：
-
-# yum remove kernel-...（内核版本名称）
-
-使用 yum remove 进行删除，会自动移除：/boot/grub/menu.lst 中的相关启动项
-
-安装vim
 
 # 软件源设置问题
 
@@ -263,8 +174,6 @@ sudo gedit /etc/apt/sources.list
 网易 Ubuntu 10.10 源（速度很快）
 
 代码:
-
-
 
 deb http://mirrors.163.com/ubuntu/ maverick main restricted universe multiverse
 
@@ -339,29 +248,19 @@ ATrpms官方网站:http://atrpms.net/
 Linux相关                                                
 
 ftp://ftp.tsinghua.edu.cn   各种镜像、Linux软件                
-
 ftp://mirror.pku.edu.cn/pub/linux/                                    
-
 ftp://219.238.157.219/pub/                                            
-
 ftp://eelinux.3322.org                                                
-
 ftp://166.111.72.5/Linux                                        
-
 ftp://166.111.121.3/Linux/                               
-
 ftp://166.111.68.183/pub/Linux/                                 
 
 Debian升级镜像
 
 ftp://debian.ustc.edu.cn/          这个比较全            
-
 ftp://ftp.tsinghua.edu.cn/mirror/debian 
-
 ftp://ftp.sjtu.edu.cn/mirror/sites/ftp.debian.org/
-
 ftp://mirror.dlut.edu.cn/ 
-
 ftp://debian.nctu.edu.tw/ 
 
 http://debian.cn99.com/   
@@ -592,33 +491,24 @@ mid3iconv -e gbk *.mp3(由于不能带-r参数，所以要依次进入每个文件夹)
 
 ##转换文件内容编码: 
 
-file -i <file name> 检测文件编码
-
-iconv --help 
+    file -i <file name> 检测文件编码
+    iconv --help 
 
 ##转换文件名编码
 
-sudo apt-get install convmv 
-
-convmv --help 
-
-convmv -f gbk -t utf8 -r --notest files 
-
-convmv -r -f utf8 -t iso88591 * --notest --nosmart && convmv -r -f gbk -t utf8 * --notest --nosmart 
+    sudo apt-get install convmv 
+    convmv --help 
+    convmv -f gbk -t utf8 -r --notest files 
+    convmv -r -f utf8 -t iso88591 * --notest --nosmart && convmv -r -f gbk -t utf8 * --notest --nosmart 
 
 ##解决gedit乱码问题： 
 
-终端输入： 
-
-gsettings set org.gnome.gedit.preferences.encodings auto-detected "['GB18030', 'GB2312', 'GBK', 'UTF-8', 'BIG5', 'CURRENT', 'UTF-16']" 
-
-gsettings set org.gnome.gedit.preferences.encodings shown-in-menu "['GB18030', 'GB2312', 'GBK', 'UTF-8', 'BIG5', 'CURRENT', 'UTF-16']" 
+    gsettings set org.gnome.gedit.preferences.encodings auto-detected "['GB18030', 'GB2312', 'GBK', 'UTF-8', 'BIG5', 'CURRENT', 'UTF-16']" 
+    gsettings set org.gnome.gedit.preferences.encodings shown-in-menu "['GB18030', 'GB2312', 'GBK', 'UTF-8', 'BIG5', 'CURRENT', 'UTF-16']" 
 
 ##解决PDF中文乱码： 
 
-安装poppler-data来解决： 
-
-sudo apt-get install poppler-data 
+安装poppler-data来解决： sudo apt-get install poppler-data 
 
 ##解决rar文件乱码
 
@@ -628,53 +518,29 @@ sudo apt-get install poppler-data
 
 最近碰到这个问题，网上搜了一圈，都是什么unzip -O，一点用都没有，这些哥们估计是直接复制，用都没用过。后来找了个终极方法，用python的脚本来解压，试了下，还真管用！！！以下为python脚本的代码，新建文件jieya.py，写入以下代码：
 
-=============================================================
+```python
+    #!/usr/bin/env python
+    # -*- coding: utf-8 -*-
 
-#!/usr/bin/env python
+    import os
+    import sys
+    import zipfile
 
-# -*- coding: utf-8 -*-
-
-
-
-import os
-
-import sys
-
-import zipfile
-
-
-
-print "Processing File " + sys.argv[1]
-
-
-
-file=zipfile.ZipFile(sys.argv[1],"r");
-
-for name in file.namelist():
-
-    utf8name=name.decode('gbk')
-
-    print "Extracting " + utf8name
-
-    pathname = os.path.dirname(utf8name)
-
-    if not os.path.exists(pathname) and pathname!= "":
-
-        os.makedirs(pathname)
-
-    data = file.read(name)
-
-    if not os.path.exists(utf8name):
-
-        fo = open(utf8name, "w")
-
-        fo.write(data)
-
-        fo.close
-
-file.close()
-
-=============================================================
+    print "Processing File " + sys.argv[1]
+    file=zipfile.ZipFile(sys.argv[1],"r");
+    for name in file.namelist():
+        utf8name=name.decode('gbk')
+        print "Extracting " + utf8name
+        pathname = os.path.dirname(utf8name)
+        if not os.path.exists(pathname) and pathname!= "":
+            os.makedirs(pathname)
+        data = file.read(name)
+        if not os.path.exists(utf8name):
+            fo = open(utf8name, "w")
+            fo.write(data)
+            fo.close
+    file.close()
+```
 
 然后zip文件跟jieya.py放在同一级目录，运行命令python  jieya.py file.zip，哦了！
 
@@ -787,15 +653,9 @@ yED Grahp Editor:http://www.yworks.com/en/index.html
 由于 Ubuntu 12.04 LTS 自带的 Fcitx 版本较旧，需要先通过 PPA 升级，才能安装下载的 deb 软件包。
 
 1. 点击左上角的图标打开Dash，输入update-manager，点击更新管理器。
-
-2. 在更新管理器中，选择菜单：编辑->软件源，点击添加...按钮，在弹出的窗口中输入ppa:fcitx-team/nightly， 
-
-点击添加源。
-
+2. 在更新管理器中，选择菜单：编辑->软件源，点击添加...按钮，在弹出的窗口中输入ppa:fcitx-team/nightly， 点击添加源。
 3. 然后点击重新载入。
-
 4. 打开Ubuntu软件中心，在搜索栏输入fcitx，将会搜出fcitx，然后按照一般软件安装步骤安装即可完成升级。
-
 5. 双击下载的 deb 软件包安装搜狗输入法。
 
 ##解决金山wps字体问题
@@ -848,11 +708,7 @@ export LANG=zh_CN.UTF-8
 
 http://www.iris.edu/pub/programs/rdseedv5.2.tar.gz
 
-
-
 2、解压: tar -xzvf rdseedv5.2.tar.gz
-
-
 
 3、编译：
 
@@ -2589,22 +2445,16 @@ gen，link，Alt，pri 分别是我们上面说过的。如果需要从的 Alternative，你可以用--sl
 update-Alternatives --remove name path
 
 # linux系统下无法访问电脑硬盘
+```
+    Error mounting /dev/sda6 at /media/qiaokaiming/20F47472F4744BD2: Command-line `mount -t "ntfs" -o "uhelper=udisks2,nodev,nosuid,uid=1000,gid=1000,dmask=0077,fmask=0177" "/dev/sda6" "/media/qiaokaiming/20F47472F4744BD2"' exited with non-zero exit status 14: The disk contains an unclean file system (0, 0).
+    Metadata kept in windows cache, refused to mount.
+    Failed to mount '/dev/sda6': Operation not permitted
+    The NTFS partition is in an unsafe state. Please resume and shutdown
+    windows fully (no hibernation or fast restarting), or mount the volume
+    read-only with the 'ro' mount option.
+```
 
-Error mounting /dev/sda6 at /media/qiaokaiming/20F47472F4744BD2: Command-line `mount -t "ntfs" -o "uhelper=udisks2,nodev,nosuid,uid=1000,gid=1000,dmask=0077,fmask=0177" "/dev/sda6" "/media/qiaokaiming/20F47472F4744BD2"' exited with non-zero exit status 14: The disk contains an unclean file system (0, 0).
-
-Metadata kept in windows cache, refused to mount.
-
-Failed to mount '/dev/sda6': Operation not permitted
-
-The NTFS partition is in an unsafe state. Please resume and shutdown
-
-windows fully (no hibernation or fast restarting), or mount the volume
-
-read-only with the 'ro' mount option.
-
-那个提示里有：Please resume and shutdown windows fully (no hibernation or fast restarting)。进win8把”快速启动“关掉就好了。
-
-控制面板》所有控制面板选项》电源选项》系统设置》关闭“启用快速启动”
+那个提示里有：Please resume and shutdown windows fully (no hibernation or fast restarting)。进win8把”快速启动“关掉就好了。控制面板》所有控制面板选项》电源选项》系统设置》关闭“启用快速启动”
 
 # /etc/profile和/etc/environment(Ubuntu)
 
@@ -2620,28 +2470,11 @@ read-only with the 'ro' mount option.
 
 Linux环境下的软件安装，并不是一件容易的事情；如果通过源代码编译后在安装，当然事情就更为复杂一些；现在安装各种软件的教程都非常普遍；但万变不离其中，对基础知识的扎实掌握，安装各种软件的问题就迎刃而解了。Configure脚本配置工具就是基础之一，它是autoconf的工具的基本应用。与一些技巧相比，Configure显得基础一些，当然使用和学习起来就显得枯燥乏味一些，当然要成为高手，对基础的熟悉不能忽略哦。为此我转载了一篇关于Configure选项配置的详细介绍。供大家参考
 
-
-
-
-
 'configure'脚本有大量的命令行选项。对不同的软件包来说，这些选项可能会有变化，但是许多基本的选项是不会改变的。带上'--help'选项执行'configure'脚本可以看到可用的所有选项。尽管许多选项是很少用到的，但是当你为了特殊的需求而configure一个包时，知道他们的存在是很有益处的。下面对每一个选项进行简略的介绍：
 
---cache-file=FILE
-
-'configure'会在你的系统上测试存在的特性(或者bug!)。为了加速随后进行的配置，测试的结果会存储在一个cache file里。当configure一个每个子树里都有'configure'脚本的复杂的源码树时，一个很好的cache file的存在会有很大帮助。
-
---help
-
-输出帮助信息。即使是有经验的用户也偶尔需要使用使用'--help'选项，因为一个复杂的项目会包含附加的选项。例如，GCC包里的'configure'脚本就包含了允许你控制是否生成和在GCC中使用GNU汇编器的选项。
-
-
-
---no-create
-
-'configure'中的一个主要函数会制作输出文件。此选项阻止'configure'生成这个文件。你可以认为这是一种演习(dry run)，尽管缓存(cache)仍然被改写了。
-
-
-
+--cache-file=FILE 'configure'会在你的系统上测试存在的特性(或者bug!)。为了加速随后进行的配置，测试的结果会存储在一个cache file里。当configure一个每个子树里都有'configure'脚本的复杂的源码树时，一个很好的cache file的存在会有很大帮助。
+--help 输出帮助信息。即使是有经验的用户也偶尔需要使用使用'--help'选项，因为一个复杂的项目会包含附加的选项。例如，GCC包里的'configure'脚本就包含了允许你控制是否生成和在GCC中使用GNU汇编器的选项。
+--no-create 'configure'中的一个主要函数会制作输出文件。此选项阻止'configure'生成这个文件。你可以认为这是一种演习(dry run)，尽管缓存(cache)仍然被改写了。
 --quiet
 
 --silent
@@ -9142,10 +8975,6 @@ fi
 附录：
 
 一个SHELL编制的人机交互界面，里面使用的SHELL语法比较深入。如果能读懂或者编制同样程序，则表明你的SHELL教本功底已经足够深厚。如果不能读懂，可以挑战一下自己。
-
-
-
- 
 
 # Linux下打包压缩war和解压war包
 
