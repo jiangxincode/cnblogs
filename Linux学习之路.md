@@ -6998,8 +6998,6 @@ DESCRIPTION/程序说明
 
 BODY/程序体
 
-
-
 扩展：
 
 1 ASSIGN SHELL/指定壳，如果不指定壳，默认使用Bourne SHELL，建议使用KSH
