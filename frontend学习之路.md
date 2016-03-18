@@ -41,13 +41,6 @@ Web Tools Platform(WTP): http://www.eclipse.org/webtools/
 * Javascript模块化编程（三）：require.js的用法: http://www.ruanyifeng.com/blog/2012/11/require_js.html
 
 
-
-## json
-
-* 官网：http://www.json.org/
-* json中文网：http://www.json.org.cn/index.htm
-
-
 ## jQuery
 
 * 官网：http://jquery.com/
