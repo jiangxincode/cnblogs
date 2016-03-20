@@ -4,6 +4,7 @@
 * The Comprehensive Perl Archive Network (CPAN): http://www.cpan.org/
 * http://search.cpan.org/
 * http://kobesearch.cpan.org/
+
 * Strawberry Perl: http://strawberryperl.com/
 * DWIM Perl: http://dwimperl.com/
 * ActivePerl: http://www.activestate.com/activeperl
@@ -17,4 +18,12 @@
 
 * 项目地址：http://www.epic-ide.org/
 * 安装说明：http://www.cnblogs.com/itech/archive/2010/02/23/1671676.html
+
+## PerlUnit
+
+* https://sourceforge.net/projects/perlunit/
+
+## Open Perl IDE
+
+* https://sourceforge.net/projects/open-perl-ide/
 

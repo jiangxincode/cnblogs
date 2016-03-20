@@ -830,6 +830,7 @@ Oracle提供了两种验证方式，一种是OS验证，另一种密码文件验
 
 * http://www.sqlite.org/
 * DB Browser for SQLite: http://sqlitebrowser.org/
+* SQLite Expert: http://www.sqliteexpert.com/index.html
 
 
 # nosql

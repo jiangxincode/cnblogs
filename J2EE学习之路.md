@@ -609,7 +609,7 @@ mvn javadoc:javadoc
 
 # SourceMonitor
 
-* 官网：http://www.campwoodsw.com/
+* 官网: http://www.campwoodsw.com/
 * 代码度量工具——SourceMonitor的学习和使用：http://www.cnblogs.com/bangerlee/archive/2011/09/18/2178172.html
 
 
@@ -789,6 +789,12 @@ JavaDoc: https://storm.apache.org/javadoc/apidocs/index.html
 * MyBatis官网：http://mybatis.github.io/
 
 
+## appfuse
+
+* http://www.appfuse.org/display/APF/Home
+
+
+
 ## TopLink
 
 * 官网：http://www.oracle.com/technetwork/cn/middleware/toplink/overview/index-097741-zhs.html
@@ -823,6 +829,11 @@ JavaDoc: https://storm.apache.org/javadoc/apidocs/index.html
 * 官网：http://dom4j.github.io/
 
 
+# XML Pull Parsing
+
+* http://www.xmlpull.org/index.shtml
+
+
 # JACOB
 
 * old：http://danadler.com/jacob/
@@ -832,6 +843,13 @@ JavaDoc: https://storm.apache.org/javadoc/apidocs/index.html
 * JACOB的语法: http://www.bitscn.com/pdb/java/200904/161117.html
 
 
+# HTML Parser
+
+* https://sourceforge.net/projects/htmlparser/
+
+# Java port of Mozilla charset detector(jchardet)
+
+* https://sourceforge.net/projects/jchardet/
 
 # httpclient
 
@@ -974,6 +992,15 @@ JavaDoc: https://storm.apache.org/javadoc/apidocs/index.html
 # Java Native Access (JNA)
 
 * https://github.com/java-native-access/jna
+
+
+# mpiJava
+
+* https://sourceforge.net/projects/mpijava/
+
+# eBus
+
+* https://sourceforge.net/projects/ebus/
 
 
 # 数据库连接池

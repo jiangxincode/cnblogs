@@ -25,6 +25,9 @@
 * Unofficial Windows Binaries for Python Extension Packages: http://www.lfd.uci.edu/~gohlke/pythonlibs/
 * SCons: A software construction tool: http://www.scons.org/
 
+* PyUnit testing framework: https://sourceforge.net/projects/pyunit/
+* PythonToolkit (PTK): https://sourceforge.net/projects/pythontoolkit/
+
 * http://effbot.org/
 * 啄木鸟Python社区: http://wiki.woodpecker.org.cn/moin/
 
