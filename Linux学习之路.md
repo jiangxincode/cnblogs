@@ -117,7 +117,6 @@ home/user/.font/
 * 安装filezilla/okular/meld
 * 卸载Rhythmbox/empathy/account-plugin-*
 * 安装font-manager
-* 安装latex并进行配置
 
 # Linux重装系统指南(Fedora)
 
