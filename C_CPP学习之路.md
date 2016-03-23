@@ -68,6 +68,35 @@
     
 * http://xapian.org/
 
+# GTK+
+
+* http://www.gtk.org/
+
+* GLib Reference Manual: https://developer.gnome.org/glib/stable/
+* Part II. GTK+ Widgets and Objects: https://developer.gnome.org/gtk3/stable/gtkobjects.html
+* GNOME 开发者中心: https://developer.gnome.org/
+* http://ftp.gnome.org/pub/gnome/
+
+* Cairo: http://www.cairographics.org/
+* GTK-Doc: http://www.gtk.org/gtk-doc/
+* http://www.gtkforums.com/
+* Glade: https://glade.gnome.org/
+
+* 用Glade和libGlade设计Gtk＋图形界面: http://blog.sina.com.cn/s/blog_606c49090100fa30.html
+* 《GTK+》编程基础: http://guoyinghui2012.blog.163.com/blog/static/20871720020126294943228/
+* 在gtk+程序中显示中文说明: http://blog.chinaunix.net/uid-222028-id-2658485.html
+* Gtk对于通常的gui程序，大家想做的事就是做一点事件处理(包括各种计算、文件操作等)，然后在界面上显示出来: http://www.cnblogs.com/cy163/archive/2007/06/16/785341.html
+* GTK+2.0 中的容器控件与布局技巧: http://www.ibm.com/developerworks/cn/linux/l-gtk/part1/
+
+
+# QT
+
+* http://www.qt.io/
+* Qter开源社区: http://www.qter.org/
+* qtcn: http://www.qtcn.org/bbs/i.php
+
+
+
 # wxWidgets
 
 * http://www.wxwidgets.org/
@@ -132,6 +161,13 @@
 * gcc和g++的区别: http://www.linuxsky.org/doc/dev/200804/298.html
 * VC 常用数据类型总结 俩篇: http://www.cnblogs.com/sadier/articles/102085.html
 * 使用 GLib 工具集管理 C 数据帖子发表于: http://forum.ubuntu.org.cn/viewtopic.php?p=2614850
+* undefined reference问题总结: http://ticktick.blog.51cto.com/823160/431329/
+* Enabling string conversion functions in MinGW: http://tehsausage.com/mingw-to-string
+* Doxygen + Graphviz + Htmlhelp, 成为文档好手: http://www.cnblogs.com/lidabo/archive/2012/12/24/2831518.html
+* C++ Rocks!: http://cpprocks.com/
+* VC知识库: http://www.vckbase.com/
+* 基于X的GNOME、GTK、GDK、XLib、GLib等之间的关系: http://socol.iteye.com/blog/579718
+* 减少C++代码编译时间的方法: http://www.cnblogs.com/misserwell/p/4343927.html
 
 
 
