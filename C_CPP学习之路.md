@@ -18,6 +18,8 @@
 * The International Obfuscated C Code Contest: http://www.ioccc.org/
 * The C++ Standard Library - A Tutorial and Reference: http://www.cppstdlib.com/
 
+* C 语言常见问题集: http://c-faq-chn.sourceforge.net/ccfaq/
+
 * http://www.boost.org/
 * Ncurses: http://invisible-island.net/ncurses/ncurses.html
 * GMP: https://gmplib.org/
@@ -35,13 +37,37 @@
 * EasyX Library for C++: http://www.easyx.cn/
 * EGE（Easy Graphics Engine）: http://xege.org/
 * PC-lint for C/C++: http://www.gimpel.com/html/pcl.htm
-
+* CLucene - a C++ search engine: https://sourceforge.net/projects/clucene/
+* C and C++ Code Counter(CCCC): https://sourceforge.net/projects/cccc/
+* Translate STL 2 C Language: https://sourceforge.net/projects/tstl2cl/
+* Dev-C++: https://sourceforge.net/projects/orwelldevcpp/
+* C Unit Testing Framework: https://sourceforge.net/projects/cunit/
+* CppUnit - C++ port of JUnit: https://sourceforge.net/projects/cppunit/
+* Log library for C++: https://sourceforge.net/projects/log4cpp/
+* log4cplus: https://sourceforge.net/projects/log4cplus/
+* TinyXML: https://sourceforge.net/projects/tinyxml/
+* Borland-style CONIO: https://sourceforge.net/projects/conio/
+* cppcheck: https://sourceforge.net/projects/cppcheck/
+* DISLIN: https://www.mps.mpg.de/dislin/
 
 # Eclipse CDT
 
 * 项目地址：http://www.eclipse.org/cdt/
 * 安装说明：http://www.eclipse.org/cdt/downloads.php
 * 也可以在Eclipse的MarketPlace中搜索CDT，但是需要注意搜到的CDT版本是否与Eclipse版本匹配。
+
+
+# CodeBlocks
+
+* http://www.codeblocks.org/
+* cbp2make: http://forums.codeblocks.org/index.php/topic,13675.msg92163.html#msg92163
+* cbMakefileGen plugin: http://forums.codeblocks.org/index.php/topic,6241.0.html
+* CodeBlocks插件开发指南(一): http://www.cppblog.com/lymons/archive/2010/04/17/112850.html
+
+# Other IDEs
+
+* http://www.codelite.org/
+* http://anjuta.org/
 
 
 # CMake
@@ -76,6 +102,7 @@
 * Part II. GTK+ Widgets and Objects: https://developer.gnome.org/gtk3/stable/gtkobjects.html
 * GNOME 开发者中心: https://developer.gnome.org/
 * http://ftp.gnome.org/pub/gnome/
+* Vala - Compiler for the GObject type system: https://wiki.gnome.org/Projects/Vala
 
 * Cairo: http://www.cairographics.org/
 * GTK-Doc: http://www.gtk.org/gtk-doc/
@@ -87,6 +114,7 @@
 * 在gtk+程序中显示中文说明: http://blog.chinaunix.net/uid-222028-id-2658485.html
 * Gtk对于通常的gui程序，大家想做的事就是做一点事件处理(包括各种计算、文件操作等)，然后在界面上显示出来: http://www.cnblogs.com/cy163/archive/2007/06/16/785341.html
 * GTK+2.0 中的容器控件与布局技巧: http://www.ibm.com/developerworks/cn/linux/l-gtk/part1/
+* GTK编程: http://jianlee.ylinux.org/Computer/C/gtk%E7%BC%96%E7%A8%8B.html
 
 
 # QT
@@ -143,7 +171,6 @@
 * C++ 工程实践(7)：iostream 的用途与局限: http://blog.csdn.net/solstice/article/details/6612179
 * 指针的大小: http://shansun123.iteye.com/blog/398601
 * 使用doxygen为C/C++程序生成中文文档（上）: http://blog.csdn.net/fmddlmyy/article/details/1663898
-* CodeBlocks插件开发指南(一): http://www.cppblog.com/lymons/archive/2010/04/17/112850.html
 * C/C++指针原理: http://blog.csdn.net/column/details/c-pointer.html
 * C++ STL轻松导学: http://morningspace.51.net/resource/stlintro/stlintro.html?s=85fee499fe8534afc1f76ceceb0d41ff
 * Linux 桌面应用技术专题: http://www.ibm.com/developerworks/cn/linux/theme/desktop/index.html
