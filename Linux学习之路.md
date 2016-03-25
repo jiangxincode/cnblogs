@@ -55,23 +55,15 @@
 
 ## linux修改默认打开文件的程序
 
-linux 下全局的文件与程序的关联是通过
+linux 下全局的文件与程序的关联是通过`/usr/share/applications/defaults.list`文件来设置，该文件保存了个人文件与程序的关联的打开方式。安装了nero之后文件iso的文件默认使用archive manager打开，在`~/.local/share/applications/mimeapps.list`添加一行：
 
-  /usr/share/applications/defaults.list文件来设置
+    `application/x-cd-image=nerolinux.desktop;`
 
-~/.local/share/applications/mimeapps.list 保存了个人文件与程序的关联的打开方式
+在`/usr/share/applications/defaults.list`中添加一行：
 
- 安装了nero之后文件iso的文件默认使用archive manager打开，在
+    `application/x-cd-image=nerolinux.desktop;`
 
-~/.local/share/applications/mimeapps.list添加一行：
-
-application/x-cd-image=nerolinux.desktop;
-
-/usr/share/applications/defaults.list中添加一行：
-
-application/x-cd-image=nerolinux.desktop;
-
-图形界面下双击iso文件就使用nero打开了
+图形界面下双击iso文件就使用nero打开了。
 
 
 
@@ -79,13 +71,8 @@ application/x-cd-image=nerolinux.desktop;
 
 12.10以及之前的版本很好使，但是13.04之后，不仅校园网老是掉线，解决方法是在panel的网络菜单里面把“启用wifi”关掉。
 
-##星级译王词典安装目录: 
-
-/usr/share/stardict/dic 
-
-##字体目录
-
-home/user/.font/
+* 星级译王词典安装目录: /usr/share/stardict/dic 
+* 字体目录: home/user/.font/
 
 ##关闭盖子时的命令：
 
@@ -2446,8 +2433,9 @@ gen，link，Alt，pri 分别是我们上面说过的。如果需要从的 Alternative，你可以用--sl
 update-Alternatives --remove name path
 
 # linux系统下无法访问电脑硬盘
+
 ```
-    Error mounting /dev/sda6 at /media/qiaokaiming/20F47472F4744BD2: Command-line `mount -t "ntfs" -o "uhelper=udisks2,nodev,nosuid,uid=1000,gid=1000,dmask=0077,fmask=0177" "/dev/sda6" "/media/qiaokaiming/20F47472F4744BD2"' exited with non-zero exit status 14: The disk contains an unclean file system (0, 0).
+    Error mounting /dev/sda6 at /media/qiaokaiming/20F47472F4744BD2: Command-line 'mount -t "ntfs" -o "uhelper=udisks2,nodev,nosuid,uid=1000,gid=1000,dmask=0077,fmask=0177" "/dev/sda6" "/media/qiaokaiming/20F47472F4744BD2"' exited with non-zero exit status 14: The disk contains an unclean file system (0, 0).
     Metadata kept in windows cache, refused to mount.
     Failed to mount '/dev/sda6': Operation not permitted
     The NTFS partition is in an unsafe state. Please resume and shutdown
@@ -3658,79 +3646,45 @@ mplayer -vo caca MovieName.avi
 
 ##信息命令查看大全
 
-# uname -a               # 查看内核/操作系统/CPU信息
-
-# head -n 1 /etc/issue   # 查看操作系统版本
-
-# cat /proc/cpuinfo      # 查看CPU信息
-
-# hostname               # 查看计算机名
-
-# lspci -tv              # 列出所有PCI设备
-
-# lsusb -tv              # 列出所有USB设备
-
-# lsmod                  # 列出加载的内核模块
-
-# env                    # 查看环境变量资源
-
-# free -m                # 查看内存使用量和交换区使用量
-
-# df -h                  # 查看各分区使用情况
-
-# du -sh <目录名>        # 查看指定目录的大小
-
-# grep MemTotal /proc/meminfo   # 查看内存总量
-
-# grep MemFree /proc/meminfo    # 查看空闲内存量
-
-# uptime                 # 查看系统运行时间、用户数、负载
-
-# cat /proc/loadavg      # 查看系统负载磁盘和分区
-
-# mount | column -t      # 查看挂接的分区状态
-
-# fdisk -l               # 查看所有分区
-
-# swapon -s              # 查看所有交换分区
-
-# hdparm -i /dev/hda     # 查看磁盘参数(仅适用于IDE设备)
-
-# dmesg | grep IDE       # 查看启动时IDE设备检测状况网络
-
-# ifconfig               # 查看所有网络接口的属性
-
-# iptables -L            # 查看防火墙设置
-
-# route -n               # 查看路由表
-
-# netstat -lntp          # 查看所有监听端口
-
-# netstat -antp          # 查看所有已经建立的连接
-
-# netstat -s             # 查看网络统计信息进程
-
-# ps -ef                 # 查看所有进程
-
-# top                    # 实时显示进程状态用户
-
-# w                      # 查看活动用户
-
-# id <用户名>            # 查看指定用户信息
-
-# last                   # 查看用户登录日志
-
-# cut -d: -f1 /etc/passwd   # 查看系统所有用户
-
-# cut -d: -f1 /etc/group    # 查看系统所有组
-
-# crontab -l             # 查看当前用户的计划任务服务
-
-# chkconfig --list       # 列出所有系统服务
-
-# chkconfig --list | grep on    # 列出所有启动的系统服务程序
-
-# rpm -qa                # 查看所有安装的软件包 
+```
+    # uname -a               # 查看内核/操作系统/CPU信息
+    # head -n 1 /etc/issue   # 查看操作系统版本
+    # cat /proc/cpuinfo      # 查看CPU信息
+    # hostname               # 查看计算机名
+    # lspci -tv              # 列出所有PCI设备
+    # lsusb -tv              # 列出所有USB设备
+    # lsmod                  # 列出加载的内核模块
+    # env                    # 查看环境变量资源
+    # free -m                # 查看内存使用量和交换区使用量
+    # df -h                  # 查看各分区使用情况
+    # du -sh <目录名>        # 查看指定目录的大小
+    # grep MemTotal /proc/meminfo   # 查看内存总量
+    # grep MemFree /proc/meminfo    # 查看空闲内存量
+    # uptime                 # 查看系统运行时间、用户数、负载
+    # cat /proc/loadavg      # 查看系统负载磁盘和分区
+    # mount | column -t      # 查看挂接的分区状态
+    # fdisk -l               # 查看所有分区
+    # swapon -s              # 查看所有交换分区
+    # hdparm -i /dev/hda     # 查看磁盘参数(仅适用于IDE设备)
+    # dmesg | grep IDE       # 查看启动时IDE设备检测状况网络
+    # ifconfig               # 查看所有网络接口的属性
+    # iptables -L            # 查看防火墙设置
+    # route -n               # 查看路由表
+    # netstat -lntp          # 查看所有监听端口
+    # netstat -antp          # 查看所有已经建立的连接
+    # netstat -s             # 查看网络统计信息进程
+    # ps -ef                 # 查看所有进程
+    # top                    # 实时显示进程状态用户
+    # w                      # 查看活动用户
+    # id <用户名>            # 查看指定用户信息
+    # last                   # 查看用户登录日志
+    # cut -d: -f1 /etc/passwd   # 查看系统所有用户
+    # cut -d: -f1 /etc/group    # 查看系统所有组
+    # crontab -l             # 查看当前用户的计划任务服务
+    # chkconfig --list       # 列出所有系统服务
+    # chkconfig --list | grep on    # 列出所有启动的系统服务程序
+    # rpm -qa                # 查看所有安装的软件包 
+```
 
 ## Linux下查看某个端口下运行的是什么程序
 
@@ -9003,14 +8957,10 @@ jar -xvf game.war
 
 # Ubuntu开机直接进入控制台
 
-只需编辑文件”/etc/default/grub”，把 GRUB_CMDLINE_LINUX_DEFAULT=”quiet splash”改成GRUB_CMDLINE_LINUX_DEFAULT=”quiet splash text”（即在GRUB_CMDLINE_LINUX_DEFAULT项的后面加上” text”），然后再运行”sudo update-grub”即可。
+只需编辑文件`/etc/default/grub`，把 `GRUB_CMDLINE_LINUX_DEFAULT=”quiet splash”`改成`GRUB_CMDLINE_LINUX_DEFAULT=”quiet splash text”`，然后再运行`sudo update-grub`即可。
 
-在控制台下想进入x-window，可以在root用户下输入：
+在控制台下想进入x-window，可以在root用户下输入：`gdm`或者`startx`
 
-gdm或者startx
-
-注意：修改Ubuntu默认启动进入文本模式后，重新启动后停在Checking battery state问题
-
-没关系，实际系统已经启动，按键 ALT+F1 即可进入输入用户名登录得字符提示界面
+修改Ubuntu默认启动进入文本模式后，重新启动后停在Checking battery state问题。没关系，实际系统已经启动，按键 ALT+F1 即可进入输入用户名登录得字符提示界面。
 
 
