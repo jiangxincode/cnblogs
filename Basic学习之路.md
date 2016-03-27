@@ -1,6 +1,7 @@
 * FreeBASIC: http://www.freebasic.net/
 * BASIC-256: http://www.basic256.org/index_en
 * FBIde - editor for FreeBASIC: http://fbide.freebasic.net/
+* FbEdit FreeBASIC code editor: https://sourceforge.net/projects/fbedit/
 * PowerBASIC: http://www.powerbasic.com/
 * FBWiki: http://www.freebasic.net/wiki/wikka.php?wakka=CatPgProgrammer
 

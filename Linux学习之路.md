@@ -1,510 +1,357 @@
-# Linux×ÔÉíÏà¹ØÄÚÈÝ
+# Linuxå­¦ä¹ ä¹‹è·¯
 
-## ¿ì½Ý¼ü
+## Websit List
 
-Ìí¼Ó¿ì½Ý¼ü£ºÏµÍ³¡ª¡ªÊ×Ñ¡Ïî¡ª¡ª¼üÅÌ¿ì½Ý¼ü
+* shunit2: https://github.com/zandev/shunit2
+* RPM Fusion: http://rpmfusion.org/
+* ATrpms: http://atrpms.net/
+* æœç‹—è¾“å…¥æ³•: http://pinyin.sogou.com/linux/
+* IHMC CmapTools:http://cmap.ihmc.us/
+* yED Grahp Editor:http://www.yworks.com/en/index.html
+* SEISMIC UNIX å®‰è£…å®žä¾‹ï¼ˆFedora Core /Ubuntu ç³»ç»Ÿ ï¼‰: http://bdh915.blog.163.com/blog/static/293674922012018114016500/
+* winetricks ç”¨WineTricksä»¤ä½ çš„Wineæ›´å®Œæ•´: http://blog.csdn.net/arthur_yang/article/details/6365445
+* PDFtk: https://www.pdflabs.com/
+* File system: https://en.wikipedia.org/wiki/File_system
 
-### Shell ¿ì½Ý¼ü
+## Shell å¿«æ·é”®
+
 ```
-    <Ctrl k>£ºÉ¾³ý´Ó¹â±êµ½ÐÐÎ²µÄ²¿·Ö 
-    <Ctrl u>£ºÉ¾³ý´Ó¹â±êµ½ÐÐÊ×µÄ²¿·Ö
-    <Alt d>£ºÉ¾³ý´Ó¹â±êµ½µ±Ç°µ¥´Ê½áÎ²µÄ²¿·Ö 
-    <Ctrl w>£ºÉ¾³ý´Ó¹â±êµ½µ±Ç°µ¥´Ê¿ªÍ·µÄ²¿·Ö 
-    <Ctrl a>£º½«¹â±êÒÆµ½ÐÐÊ× 
-    <Ctrl e>£º½«¹â±êÒÆµ½ÐÐÎ² 
-    <Alt a>£º½«¹â±êÒÆµ½µ±Ç°µ¥´ÊÍ·²¿ 
-    <Alt e>£º½«¹â±êÒÆµ½µ±Ç°µ¥´ÊÎ²²¿ 
-    <Ctrl y>£º²åÈë×î½üÉ¾³ýµÄµ¥´Ê         
-    <Ctrl a>£ºÌøµ½ÐÐÊ×
-    <Ctrl b>£º×óÒÆÒ»¸ö×Ö·û
-    <Ctrl c>£ºÖÕÖ¹ÖÕ¶Ë½ø³Ì
-    <Ctrl d>£º´Ó¹â±ê´¦ÏòÓÒÉ¾³ý
-    <Ctrl e>£ºÌøµ½ÐÐÎ²
-    <Ctrl f>£ºÓÒÒÆÒ»¸ö×Ö·û
-    <Ctrl k>£º´Ó¹â±ê´¦É¾³ýµ½ÐÐÎ²
-    <Ctrl l>£ºÇåÆÁ£¬ÀàËÆ clear ÃüÁî
-    <Ctrl r>£º²éÕÒÀúÊ·ÃüÁî
-    <Ctrl z>£ºSuspend/ Stop the command  ¡¢ ÔÝÍ£ÃüÁîµÄÖ´ÐÐ
-    <Ctrl h>£ºÉ¾³ýµ±Ç°×Ö·û
-    <Ctrl w>£ºÉ¾³ý×îºóÊäÈëµÄµ¥´Ê
-    <!$>£ºÖØ¸´Ç°Ò»¸öÃüÁî×îºóµÄ²ÎÊý¡£
-    <SHIFT PageUp/PageDown>£ºÖÕ¶ËÉÏÏÂ·­Ò³
-```
-
-### ³£ÓÃ¿ì½Ý¼ü
-```
-    <Alt+Tab>£ºÇÐ»»´°¿Ú(win)
-    <Win+Tab>£ºÈô¿ª3DÐ§¹ûÁËÇÐ»»
-    <Ctrl+Alt+Backspace>£ºÏàµ±ÓÚÇ¿ÖÆ×¢Ïú
-    <Ctrl+Alt+Del>£ºµ÷³ö¹Ø»ú²Ëµ¥
-    <Ctrl+Alt+l>£ºËø¶¨×ÀÃæ
-    <Ctrl+Alt+d>£º×îÐ¡»¯gnomeËùÓÐ´°¿Ú
-    <Ctrl+Alt+f2>£ºlinuxÖÕ¶ËÓÃ»§£¨Alt + f7·µ»Øxwindows£¬Alt+ <- »ò-> ½øÐÐÖÕ¶ËÇÐ»»£©
-    <Ctrl+Alt+ <- »ò-> >£ºÇÐ»»×ÀÃæ
-    <Alt + F1>£º´ò¿ªÖ÷²Ëµ¥
-    <Alt + F2ÔËÐÐ>£º£¨ÖØÆôx´°¿Ú£ºr ÖØÆô£ºreboot ¹Ø»ú£ºhAlt£©
-    <Ctrl + Alt + d>£ºÏÔÊ¾×ÀÃæ
-    <Alt + F9>£º×îÐ¡»¯µ±Ç°´°¿Ú
-    <Alt + F10>£º×î´ó»¯µ±Ç°´°¿Ú
-    <Alt + F4>£º¹Ø±Õµ±Ç°´°¿Ú
-    Print Screen½ØÈ¡È«ÆÁ
-    Alt + Print Screen½ØÈ¡´°¿Ú
-    <Ctrl+Alt+ÉÏÏÂ¼ýÍ·>£ºÇÐ»»¹¤×÷Çø(Fedora)
-    <Alt+F10>£ºµ÷Õû´°¿ÚµÄÄ¬ÈÏ´óÐ¡(Fedora)
+    <Ctrl k>ï¼šåˆ é™¤ä»Žå…‰æ ‡åˆ°è¡Œå°¾çš„éƒ¨åˆ†
+    <Ctrl u>ï¼šåˆ é™¤ä»Žå…‰æ ‡åˆ°è¡Œé¦–çš„éƒ¨åˆ†
+    <Alt d>ï¼šåˆ é™¤ä»Žå…‰æ ‡åˆ°å½“å‰å•è¯ç»“å°¾çš„éƒ¨åˆ†
+    <Ctrl w>ï¼šåˆ é™¤ä»Žå…‰æ ‡åˆ°å½“å‰å•è¯å¼€å¤´çš„éƒ¨åˆ†
+    <Ctrl a>ï¼šå°†å…‰æ ‡ç§»åˆ°è¡Œé¦–
+    <Ctrl e>ï¼šå°†å…‰æ ‡ç§»åˆ°è¡Œå°¾
+    <Alt a>ï¼šå°†å…‰æ ‡ç§»åˆ°å½“å‰å•è¯å¤´éƒ¨
+    <Alt e>ï¼šå°†å…‰æ ‡ç§»åˆ°å½“å‰å•è¯å°¾éƒ¨
+    <Ctrl y>ï¼šæ’å…¥æœ€è¿‘åˆ é™¤çš„å•è¯
+    <Ctrl a>ï¼šè·³åˆ°è¡Œé¦–
+    <Ctrl b>ï¼šå·¦ç§»ä¸€ä¸ªå­—ç¬¦
+    <Ctrl c>ï¼šç»ˆæ­¢ç»ˆç«¯è¿›ç¨‹
+    <Ctrl d>ï¼šä»Žå…‰æ ‡å¤„å‘å³åˆ é™¤
+    <Ctrl e>ï¼šè·³åˆ°è¡Œå°¾
+    <Ctrl f>ï¼šå³ç§»ä¸€ä¸ªå­—ç¬¦
+    <Ctrl k>ï¼šä»Žå…‰æ ‡å¤„åˆ é™¤åˆ°è¡Œå°¾
+    <Ctrl l>ï¼šæ¸…å±ï¼Œç±»ä¼¼ clear å‘½ä»¤
+    <Ctrl r>ï¼šæŸ¥æ‰¾åŽ†å²å‘½ä»¤
+    <Ctrl z>ï¼šSuspend/ Stop the command  ã€ æš‚åœå‘½ä»¤çš„æ‰§è¡Œ
+    <Ctrl h>ï¼šåˆ é™¤å½“å‰å­—ç¬¦
+    <Ctrl w>ï¼šåˆ é™¤æœ€åŽè¾“å…¥çš„å•è¯
+    <!$>ï¼šé‡å¤å‰ä¸€ä¸ªå‘½ä»¤æœ€åŽçš„å‚æ•°ã€‚
+    <SHIFT PageUp/PageDown>ï¼šç»ˆç«¯ä¸Šä¸‹ç¿»é¡µ
 ```
 
-## linuxÐÞ¸ÄÄ¬ÈÏ´ò¿ªÎÄ¼þµÄ³ÌÐò
+## å¸¸ç”¨å¿«æ·é”®
 
-linux ÏÂÈ«¾ÖµÄÎÄ¼þÓë³ÌÐòµÄ¹ØÁªÊÇÍ¨¹ý`/usr/share/applications/defaults.list`ÎÄ¼þÀ´ÉèÖÃ£¬¸ÃÎÄ¼þ±£´æÁË¸öÈËÎÄ¼þÓë³ÌÐòµÄ¹ØÁªµÄ´ò¿ª·½Ê½¡£°²×°ÁËneroÖ®ºóÎÄ¼þisoµÄÎÄ¼þÄ¬ÈÏÊ¹ÓÃarchive manager´ò¿ª£¬ÔÚ`~/.local/share/applications/mimeapps.list`Ìí¼ÓÒ»ÐÐ£º
+```
+    <Alt+Tab>ï¼šåˆ‡æ¢çª—å£(win)
+    <Win+Tab>ï¼šè‹¥å¼€3Dæ•ˆæžœäº†åˆ‡æ¢
+    <Ctrl+Alt+Backspace>ï¼šç›¸å½“äºŽå¼ºåˆ¶æ³¨é”€
+    <Ctrl+Alt+Del>ï¼šè°ƒå‡ºå…³æœºèœå•
+    <Ctrl+Alt+l>ï¼šé”å®šæ¡Œé¢
+    <Ctrl+Alt+d>ï¼šæœ€å°åŒ–gnomeæ‰€æœ‰çª—å£
+    <Ctrl+Alt+f2>ï¼šlinuxç»ˆç«¯ç”¨æˆ·ï¼ˆAlt + f7è¿”å›žxwindowsï¼ŒAlt+ <- æˆ–-> è¿›è¡Œç»ˆç«¯åˆ‡æ¢ï¼‰
+    <Ctrl+Alt+ <- æˆ–-> >ï¼šåˆ‡æ¢æ¡Œé¢
+    <Alt + F1>ï¼šæ‰“å¼€ä¸»èœå•
+    <Alt + F2è¿è¡Œ>ï¼šï¼ˆé‡å¯xçª—å£ï¼šr é‡å¯ï¼šreboot å…³æœºï¼šhAltï¼‰
+    <Ctrl + Alt + d>ï¼šæ˜¾ç¤ºæ¡Œé¢
+    <Alt + F9>ï¼šæœ€å°åŒ–å½“å‰çª—å£
+    <Alt + F10>ï¼šæœ€å¤§åŒ–å½“å‰çª—å£
+    <Alt + F4>ï¼šå…³é—­å½“å‰çª—å£
+    Print Screenæˆªå–å…¨å±
+    Alt + Print Screenæˆªå–çª—å£
+    <Ctrl+Alt+ä¸Šä¸‹ç®­å¤´>ï¼šåˆ‡æ¢å·¥ä½œåŒº(Fedora)
+    <Alt+F10>ï¼šè°ƒæ•´çª—å£çš„é»˜è®¤å¤§å°(Fedora)
+```
+
+## ä¿®æ”¹é»˜è®¤æ‰“å¼€æ–‡ä»¶çš„ç¨‹åº
+
+linux ä¸‹å…¨å±€çš„æ–‡ä»¶ä¸Žç¨‹åºçš„å…³è”æ˜¯é€šè¿‡`/usr/share/applications/defaults.list`æ–‡ä»¶æ¥è®¾ç½®ï¼Œè¯¥æ–‡ä»¶ä¿å­˜äº†ä¸ªäººæ–‡ä»¶ä¸Žç¨‹åºçš„å…³è”çš„æ‰“å¼€æ–¹å¼ã€‚å®‰è£…äº†neroä¹‹åŽæ–‡ä»¶isoçš„æ–‡ä»¶é»˜è®¤ä½¿ç”¨archive manageræ‰“å¼€ï¼Œåœ¨`~/.local/share/applications/mimeapps.list`æ·»åŠ ä¸€è¡Œï¼š
 
     `application/x-cd-image=nerolinux.desktop;`
 
-ÔÚ`/usr/share/applications/defaults.list`ÖÐÌí¼ÓÒ»ÐÐ£º
+åœ¨`/usr/share/applications/defaults.list`ä¸­æ·»åŠ ä¸€è¡Œï¼š
 
     `application/x-cd-image=nerolinux.desktop;`
 
-Í¼ÐÎ½çÃæÏÂË«»÷isoÎÄ¼þ¾ÍÊ¹ÓÃnero´ò¿ªÁË¡£
+å›¾å½¢ç•Œé¢ä¸‹åŒå‡»isoæ–‡ä»¶å°±ä½¿ç”¨neroæ‰“å¼€äº†ã€‚
 
 
+## é›¶ç¢Žé—®é¢˜
 
-##ÁªÍøÎÊÌâ
+* è”ç½‘é—®é¢˜ï¼š12.10ä»¥åŠä¹‹å‰çš„ç‰ˆæœ¬å¾ˆå¥½ä½¿ï¼Œä½†æ˜¯13.04ä¹‹åŽï¼Œä¸ä»…æ ¡å›­ç½‘è€æ˜¯æŽ‰çº¿ï¼Œè§£å†³æ–¹æ³•æ˜¯åœ¨panelçš„ç½‘ç»œèœå•é‡Œé¢æŠŠâ€œå¯ç”¨wifiâ€å…³æŽ‰ã€‚
+* æ˜Ÿçº§è¯‘çŽ‹è¯å…¸å®‰è£…ç›®å½•: /usr/share/stardict/dic
+* å­—ä½“ç›®å½•: home/user/.font/
+* æŸ¥çœ‹å¿«æ·é”®ï¼šç³»ç»Ÿâ€”â€”é¦–é€‰é¡¹â€”â€”é”®ç›˜å¿«æ·é”®
+* å…³é—­ç›–å­æ—¶çš„å‘½ä»¤ï¼šåœ¨ç³»ç»Ÿè®¾ç½®/ç”µæºä¸­
+* åˆ‡æ¢åˆ°Ubuntu gnome ç»å…¸æ¡Œé¢ï¼šæ³¨é”€unityæ¡Œé¢çŽ¯å¢ƒï¼Œç„¶åŽé€‰æ‹©ç™»å½•çŽ¯å¢ƒä¸ºâ€œç»å…¸æ¡Œé¢â€å³å¯è¿›å…¥ã€‚
 
-12.10ÒÔ¼°Ö®Ç°µÄ°æ±¾ºÜºÃÊ¹£¬µ«ÊÇ13.04Ö®ºó£¬²»½öÐ£Ô°ÍøÀÏÊÇµôÏß£¬½â¾ö·½·¨ÊÇÔÚpanelµÄÍøÂç²Ëµ¥ÀïÃæ°Ñ¡°ÆôÓÃwifi¡±¹Øµô¡£
+## Linuxé‡è£…ç³»ç»ŸæŒ‡å—(Ubuntu)
 
-* ÐÇ¼¶ÒëÍõ´Êµä°²×°Ä¿Â¼: /usr/share/stardict/dic 
-* ×ÖÌåÄ¿Â¼: home/user/.font/
+* è¿žä¸Šç½‘ç»œ(ubuntuæš‚æ—¶å…³é—­wifi)
+* å®‰è£…chromeï¼ŒåŒæ­¥ä¹¦ç­¾
+* å®‰è£…vimï¼Œç§»å…¥é…ç½®æ–‡ä»¶
+* ä¿®æ”¹ä¸»æ–‡ä»¶å¤¹æ–‡ä»¶å
+* å®‰è£…é‡‘å±±wpsï¼Œè§£å†³å­—ä½“é—®é¢˜
 
-##¹Ø±Õ¸Ç×ÓÊ±µÄÃüÁî£º
-
-ÔÚÏµÍ³ÉèÖÃ/µçÔ´ÖÐ
-
-##ÇÐ»»µ½Ubuntu gnome ¾­µä×ÀÃæ
-
-×¢Ïúunity×ÀÃæ»·¾³£¬È»ºóÑ¡ÔñµÇÂ¼»·¾³Îª¡°¾­µä×ÀÃæ¡±¼´¿É½øÈë¡£
-
-# LinuxÖØ×°ÏµÍ³Ö¸ÄÏ(Ubuntu)
-
-* Á¬ÉÏÍøÂç(ubuntuÔÝÊ±¹Ø±Õwifi)
-* °²×°chrome£¬Í¬²½ÊéÇ©
-* °²×°vim£¬ÒÆÈëÅäÖÃÎÄ¼þ
-* ÐÞ¸ÄÖ÷ÎÄ¼þ¼ÐÎÄ¼þÃû
-* °²×°½ðÉ½wps£¬½â¾ö×ÖÌåÎÊÌâ
-``` 
+```
      fedora:/opt/kingsoft/wps-office/office6/wps: error while loading shared libraries: libstdc++.so.6: cannot open shared object file: No such file or directory
      yum install libstdc++-devel.i686
-``` 
-* °²×°SynapticÈí¼þ°ü¹ÜÀíÆ÷
-* Ð¶ÔØlibreoffice/firefox/thunderbird/youker-assistant/amazon
-* ÖØÐÂÆô¶¯¼ÆËã»ú
-* °²×°GLX-Dock²¢½øÐÐÅäÖÃ
-* ÅäÖÃÊäÈë·¨£¨¿ì½Ý¼üµÈ£©²¢ÖØÐÂµÇÂ¼
-* °²×°clementine/osd-lyrics²¢½øÐÐÅäÖÃ£¬½â¾öÂÒÂëÎÊÌâ£¬°²×°½âÂë²å¼þ
-* °´×°bluefishºÍgeany
-* °²×°¿ìÅÌ£¬½øÐÐÅä¿ìÅÌºÍubuntu one
-* °²×°filezilla/okular/meld
-* Ð¶ÔØRhythmbox/empathy/account-plugin-*
-* °²×°font-manager
+```
 
-# LinuxÖØ×°ÏµÍ³Ö¸ÄÏ(Fedora)
+* å®‰è£…Synapticè½¯ä»¶åŒ…ç®¡ç†å™¨
+* å¸è½½libreoffice/firefox/thunderbird/youker-assistant/amazon
+* é‡æ–°å¯åŠ¨è®¡ç®—æœº
+* å®‰è£…GLX-Dockå¹¶è¿›è¡Œé…ç½®
+* é…ç½®è¾“å…¥æ³•ï¼ˆå¿«æ·é”®ç­‰ï¼‰å¹¶é‡æ–°ç™»å½•
+* å®‰è£…clementine/osd-lyricså¹¶è¿›è¡Œé…ç½®ï¼Œè§£å†³ä¹±ç é—®é¢˜ï¼Œå®‰è£…è§£ç æ’ä»¶
+* æŒ‰è£…bluefishå’Œgeany
+* å®‰è£…å¿«ç›˜ï¼Œè¿›è¡Œé…å¿«ç›˜å’Œubuntu one
+* å®‰è£…filezilla/okular/meld
+* å¸è½½Rhythmbox/empathy/account-plugin-*
+* å®‰è£…font-manager
 
-* °²×°gnome-tweak-toolÉèÖÃ¹¤¾ß
+## Linuxé‡è£…ç³»ç»ŸæŒ‡å—(Fedora)
+
+* å®‰è£…gnome-tweak-toolè®¾ç½®å·¥å…·
 * sudo yum install gnome-tweak-tool
-* °²×°ºóÔÚ×óÉÏ½Ç¡¾»î¶¯¡¿Àï¿ÉÒÔÕÒµ½¡¾ÓÅ»¯¹¤¾ß¡¿Í¼±ê´ò¿ª½øÐÐÉèÖÃ
-* °²×°×î¿ìÈí¼þÔ´²å¼þ£ºsudo yum install yum-plugin-fastestmirror
-* °²×°ÏÂÔØ¼ÓËÙ²å¼þ£ºsudo yum install yum-presto -y
-* °²×°Êó±êÓÒ¼ü¡¾ÔÚÖÕ¶ËÖÐ´ò¿ª¡¿£ºsudo yum install nautilus-open-terminal
-* ÅäÖÃRPM Fusion
-* Ð¶ÔØÏà¹ØÈí¼þ: firefox
-* °²×°Ïà¹ØÈí¼þ:gcc/Yumex/Compiz(ccsm)/Cariodock
-* ÉèÖÃ×Ô¶¯¹ÒÔØÎÄ¼þÏµÍ³fstab
-* Éý¼¶ÏµÍ³yum update
-* °²×°vim
-* É¾³ý¾ÉÄÚºË
+* å®‰è£…åŽåœ¨å·¦ä¸Šè§’ã€æ´»åŠ¨ã€‘é‡Œå¯ä»¥æ‰¾åˆ°ã€ä¼˜åŒ–å·¥å…·ã€‘å›¾æ ‡æ‰“å¼€è¿›è¡Œè®¾ç½®
+* å®‰è£…æœ€å¿«è½¯ä»¶æºæ’ä»¶ï¼šsudo yum install yum-plugin-fastestmirror
+* å®‰è£…ä¸‹è½½åŠ é€Ÿæ’ä»¶ï¼šsudo yum install yum-presto -y
+* å®‰è£…é¼ æ ‡å³é”®ã€åœ¨ç»ˆç«¯ä¸­æ‰“å¼€ã€‘ï¼šsudo yum install nautilus-open-terminal
+* é…ç½®RPM Fusion
+* å¸è½½ç›¸å…³è½¯ä»¶: firefox
+* å®‰è£…ç›¸å…³è½¯ä»¶:gcc/Yumex/Compiz(ccsm)/Cariodock
+* è®¾ç½®è‡ªåŠ¨æŒ‚è½½æ–‡ä»¶ç³»ç»Ÿfstab
+* å‡çº§ç³»ç»Ÿyum update
+* å®‰è£…vim
+* åˆ é™¤æ—§å†…æ ¸
+
+    1. æŸ¥çœ‹å½“å‰ç³»ç»Ÿä¸­å·²å®‰è£…çš„å†…æ ¸ç›¸å…³åŒ…ï¼š# rpm -qa | grep kernel
+    2. æŸ¥çœ‹å½“å‰ä½¿ç”¨çš„å†…æ ¸ï¼š# uname -r
+    3. ç¡®å®šè¦åˆ é™¤çš„å†…æ ¸ï¼š
+    4. åˆ é™¤å†…æ ¸ï¼š# yum remove kernel-...ï¼ˆå†…æ ¸ç‰ˆæœ¬åç§°ï¼‰ä½¿ç”¨ yum remove è¿›è¡Œåˆ é™¤ï¼Œä¼šè‡ªåŠ¨ç§»é™¤ï¼š/boot/grub/menu.lst ä¸­çš„ç›¸å…³å¯åŠ¨é¡¹
 
-    1. ²é¿´µ±Ç°ÏµÍ³ÖÐÒÑ°²×°µÄÄÚºËÏà¹Ø°ü£º# rpm -qa | grep kernel
-    2. ²é¿´µ±Ç°Ê¹ÓÃµÄÄÚºË£º# uname -r
-    3. È·¶¨ÒªÉ¾³ýµÄÄÚºË£º
-    4. É¾³ýÄÚºË£º# yum remove kernel-...£¨ÄÚºË°æ±¾Ãû³Æ£©Ê¹ÓÃ yum remove ½øÐÐÉ¾³ý£¬»á×Ô¶¯ÒÆ³ý£º/boot/grub/menu.lst ÖÐµÄÏà¹ØÆô¶¯Ïî
+
+## ubuntuæ›´æ–°é—®é¢˜
 
+æ›´æ–°ç®¡ç†å™¨åœ¨æ£€æŸ¥è½¯ä»¶åŒ…çš„æ—¶å€™æ€»æ˜¯æœ‰å¦‚ä¸‹é—®é¢˜
 
-# Èí¼þÔ´ÉèÖÃÎÊÌâ
+    æ— æ³•ä¸‹è½½ cdrom://Ubuntu 8.10 _Intrepid Ibex_ - Release i386 (20081029.5)/dists/intrepid/main/binary-i386/Packages  è¯·ä½¿ç”¨ apt-cdromï¼Œé€šè¿‡å®ƒå°±å¯ä»¥è®© APT èƒ½è¯†åˆ«è¯¥å…‰ç›˜ã€‚apt-get upgdate ä¸èƒ½è¢«ç”¨æ¥åŠ å…¥æ–°çš„å…‰ç›˜ã€‚
+    æ— æ³•ä¸‹è½½ cdrom://Ubuntu 8.10 _Intrepid Ibex_ - Release i386 (20081029.5)/dists/intrepid/restricted/binary-i386/Packages  è¯·ä½¿ç”¨ apt-cdromï¼Œé€šè¿‡å®ƒå°±å¯ä»¥è®© APT èƒ½è¯†åˆ«è¯¥å…‰ç›˜ã€‚apt-get upgdate ä¸èƒ½è¢«ç”¨æ¥åŠ å…¥æ–°çš„å…‰ç›˜ã€‚
+    æ— æ³•ä¸‹è½½ http://cn.archive.ubuntu.com/ubuntu/dists/intrepid-backports/main/binary-i386/Packages.bz2  Hash æ ¡éªŒå’Œä¸ç¬¦
+    æœ‰ä¸€äº›ç´¢å¼•æ–‡ä»¶ä¸èƒ½ä¸‹è½½ï¼Œå®ƒä»¬å¯èƒ½è¢«å¿½ç•¥äº†ï¼Œä¹Ÿå¯èƒ½è½¬è€Œä½¿ç”¨äº†æ—§çš„ç´¢å¼•æ–‡ä»¶ã€‚
 
-## ubuntu¸üÐÂÎÊÌâ
+è§£å†³æ–¹æ³•ï¼šæŠŠ /etc/apt/sources.listé‡Œé¢æœ‰cdromçš„å‡ è¡Œåˆ æŽ‰ï¼Œæˆ–è€…åˆ©ç”¨è½¯ä»¶ä¸­å¿ƒæˆ–æ–°ç«‹å¾·åŒ…ç®¡ç†å™¨æŠŠè½¯ä»¶æºç»ˆä¸­çš„cdromåŽ»æŽ‰ã€‚
 
-¸üÐÂ¹ÜÀíÆ÷ÔÚ¼ì²éÈí¼þ°üµÄÊ±ºò×ÜÊÇÓÐÈçÏÂÎÊÌâ
+## Ubuntuæ›´æ–°å®‰è£…æº
 
-ÎÞ·¨ÏÂÔØ cdrom://Ubuntu 8.10 _Intrepid Ibex_ - Release i386 (20081029.5)/dists/intrepid/main/binary-i386/Packages  ÇëÊ¹ÓÃ apt-cdrom£¬Í¨¹ýËü¾Í¿ÉÒÔÈÃ APT ÄÜÊ¶±ð¸Ã¹âÅÌ¡£apt-get upgdate ²»ÄÜ±»ÓÃÀ´¼ÓÈëÐÂµÄ¹âÅÌ¡£
+    sudo cp /etc/apt/sources.list /etc/apt/sources.list.bk
+    sudo gedit /etc/apt/sources.list # ç¼–è¾‘ä½ çš„æºåˆ—è¡¨ï¼Œå°†åŽŸæ¥çš„å†…å®¹å…¨éƒ¨åˆ é™¤ï¼Œæ·»åŠ ä¸‹é¢åˆ—è¡¨ä¸­æœ€é€‚åˆä½ çš„æºï¼ˆæ³¨æ„ä¸è¦å…¨éƒ¨æ·»åŠ ï¼‰ï¼Œé€‰æ‹©ä¸€ä¸ªæœ€åˆé€‚ä½ çš„å³å¯ï¼Œå¤åˆ¶åˆ°ä½ çš„åˆ—è¡¨ä¸­ï¼Œç„¶åŽä¿å­˜åˆ—è¡¨ã€‚
+    sudo apt-get update æ›´æ–°æºåˆ—è¡¨ä¿¡æ¯ # å¯ä»¥åœ¨è¿è¡Œâ€œsudo apt-get update â€æ—¶æŸ¥çœ‹ä¸€ä¸‹é”™è¯¯ä¿¡æ¯ï¼ŒæŠŠä¸èƒ½è¿žæŽ¥çš„æºåˆ é™¤å†é‡æ–°è¿è¡Œâ€œsudo apt-get update â€ã€‚
+    sudo apt-get upgrade # å‡çº§æˆ–è€…ç”¨ubuntuè‡ªå¸¦çš„æ›´æ–°ç®¡ç†å™¨å‡çº§ä¹Ÿå¯ã€‚
 
-ÎÞ·¨ÏÂÔØ cdrom://Ubuntu 8.10 _Intrepid Ibex_ - Release i386 (20081029.5)/dists/intrepid/restricted/binary-i386/Packages  ÇëÊ¹ÓÃ apt-cdrom£¬Í¨¹ýËü¾Í¿ÉÒÔÈÃ APT ÄÜÊ¶±ð¸Ã¹âÅÌ¡£apt-get upgdate ²»ÄÜ±»ÓÃÀ´¼ÓÈëÐÂµÄ¹âÅÌ¡£
+ç½‘æ˜“ Ubuntu 10.10 æºï¼ˆé€Ÿåº¦å¾ˆå¿«ï¼‰
 
-ÎÞ·¨ÏÂÔØ http://cn.archive.ubuntu.com/ubuntu/dists/intrepid-backports/main/binary-i386/Packages.bz2  Hash Ð£ÑéºÍ²»·û
+    deb http://mirrors.163.com/ubuntu/ maverick main restricted universe multiverse
+    deb http://mirrors.163.com/ubuntu/ maverick-security main restricted universe multiverse
+    deb http://mirrors.163.com/ubuntu/ maverick-updates main restricted universe multiverse
+    deb http://mirrors.163.com/ubuntu/ maverick-proposed main restricted universe multiverse
+    deb http://mirrors.163.com/ubuntu/ maverick-backports main restricted universe multiverse
+    deb-src http://mirrors.163.com/ubuntu/ maverick main restricted universe multiverse
+    deb-src http://mirrors.163.com/ubuntu/ maverick-security main restricted universe multiverse
+    deb-src http://mirrors.163.com/ubuntu/ maverick-updates main restricted universe multiverse
+    deb-src http://mirrors.163.com/ubuntu/ maverick-proposed main restricted universe multiverse
+    deb-src http://mirrors.163.com/ubuntu/ maverick-backports main restricted universe multiverse
 
-ÓÐÒ»Ð©Ë÷ÒýÎÄ¼þ²»ÄÜÏÂÔØ£¬ËüÃÇ¿ÉÄÜ±»ºöÂÔÁË£¬Ò²¿ÉÄÜ×ª¶øÊ¹ÓÃÁË¾ÉµÄË÷ÒýÎÄ¼þ¡£
 
-½â¾ö·½·¨
+## FTPèµ„æº
 
-°Ñ /etc/apt/sources.listÀïÃæÓÐcdromµÄ¼¸ÐÐÉ¾µô£¬»òÕßÀûÓÃÈí¼þÖÐÐÄ»òÐÂÁ¢µÂ°ü¹ÜÀíÆ÷°ÑÈí¼þÔ´ÖÕÖÐµÄcdromÈ¥µô¡£
+    ftp://ftp.tsinghua.edu.cn # å„ç§é•œåƒã€Linuxè½¯ä»¶
+    ftp://mirror.pku.edu.cn/pub/linux/
+    ftp://219.238.157.219/pub/
+    ftp://eelinux.3322.org
+    ftp://166.111.72.5/Linux
+    ftp://166.111.121.3/Linux/
+    ftp://166.111.68.183/pub/Linux/
+    
+    # Debianå‡çº§é•œåƒ
+    ftp://debian.ustc.edu.cn/          è¿™ä¸ªæ¯”è¾ƒå…¨
+    ftp://ftp.tsinghua.edu.cn/mirror/debian
+    ftp://ftp.sjtu.edu.cn/mirror/sites/ftp.debian.org/
+    ftp://mirror.dlut.edu.cn/
+    ftp://debian.nctu.edu.tw/
+    http://debian.cn99.com/
+    http://debian.okey.net/
+    ftp://deb.distro.cn
+    
+    # Gentooå‡çº§é•œåƒ
+    ftp://ftp.sjtu.edu.cn/mirror/sites/gentoo
+    ftp://ftp.tsinghua.edu.cn/mirror/gentoo
+    ftp://166.111.172.55/pub/mirror/gentoo
+    rsync://gentoo.net9.org/gentoo-portage
+    
+    # Fedora:apt-rpm
+    ftp://ftp.tsinghua.edu.cn/mirror/ayo.freshrpms.net/pub/freshrpms/ayo/fedora/linux/2/i386/
+    ftp://ftp.sjtu.edu.cn apt/fedora/2/i386 os updates freshrpms
+    ftp://ftp.ctex.org/?
+    ftp://ftp.kernel.org/pub/
+    ftp://ftp.gnu.org
 
-## Ubuntu¸üÐÂ°²×°Ô´  
+## ä¹±ç åŠç¼–ç é—®é¢˜
 
-1.sudo cp /etc/apt/sources.list /etc/apt/sources.list.bk
+* åŸºæœ¬ç ï¼šascii
+* ä¸­å›½åˆ¶å®šçš„ç¼–ç ï¼šï¼ˆgbä»£è¡¨å›½å®¶æ ‡å‡†ï¼Œå…¶ä¸­gbkä¸æ˜¯å›½å®¶æ ‡å‡†ï¼Œä½†å…¶å…¼å®¹gb2312.å¹¶æ‰©å……äº†è®¸å¤šå­—ç¬¦ï¼‰:gb2312/gbk/gb18030
+* ä¸–ç•Œç»Ÿä¸€ç¼–ç ï¼šutf
 
-sudo gedit /etc/apt/sources.list
+linuxç³»ç»Ÿä¸­æ–‡ä»¶åå†…å®¹ä¸ºurf8ç¼–ç , windowsç³»ç»Ÿä¸­æ–‡ä»¶åé»˜è®¤ä¸ºgbkç¼–ç , å¤šæ•°æ–‡æ¡£ä½¿ç”¨gbkç¼–ç ï¼Œç³»ç»Ÿé‡‡ç”¨utf8ç¼–ç 
 
-±à¼­ÄãµÄÔ´ÁÐ±í£¬½«Ô­À´µÄÄÚÈÝÈ«²¿É¾³ý£¬Ìí¼ÓÏÂÃæÁÐ±íÖÐ×îÊÊºÏÄãµÄÔ´£¨×¢Òâ²»ÒªÈ«²¿Ìí¼Ó£©£¬Ñ¡ÔñÒ»¸ö×îºÏÊÊÄãµÄ¼´¿É£¬¸´ÖÆµ½ÄãµÄÁÐ±íÖÐ£¬È»ºó±£´æÁÐ±í¡£
+## æ— ä¸­æ–‡è¾“å…¥æ³•å¯¼è‡´çš„ä¹±ç 
 
-2.sudo apt-get update ¸üÐÂÔ´ÁÐ±íÐÅÏ¢
+1ã€ibusè¾“å…¥æ³•
 
-¿ÉÒÔÔÚÔËÐÐ¡°sudo apt-get update ¡±Ê±²é¿´Ò»ÏÂ´íÎóÐÅÏ¢£¬°Ñ²»ÄÜÁ¬½ÓµÄÔ´É¾³ýÔÙÖØÐÂÔËÐÐ¡°sudo apt-get update ¡±¡£
+Ubuntu ç³»ç»Ÿå®‰è£…åŽå·²ç»è‡ªå¸¦äº†ibusè¾“å…¥æ³•ï¼Œåœ¨è‹±è¯­çŽ¯å¢ƒä¸‹é»˜è®¤ä¸å¯åŠ¨ã€‚é…ç½®ibusè‡ªåŠ¨å¯åŠ¨å¯ä»¥åœ¨ubuntuç³»ç»Ÿèœå•ä¸Šé€‰æ‹©System --- Preferences --- Startup Applicationsï¼Œåœ¨è¯¥çª—å£ä¸­å¢žåŠ ä¸€ä¸ªç¨‹åºï¼š
 
-3.sudo apt-get upgrade Éý¼¶»òÕßÓÃubuntu×Ô´øµÄ¸üÐÂ¹ÜÀíÆ÷Éý¼¶Ò²¿É¡£
+    Name: ibus-daemon
+    Command: ibus-daemon -d -x -r
 
-ÍøÒ× Ubuntu 10.10 Ô´£¨ËÙ¶ÈºÜ¿ì£©
+ibusé»˜è®¤æä¾›çš„ä¸­æ–‡è¾“å…¥æ³•æ¯”è¾ƒå¼±æ™ºï¼Œéœ€è¦é¢å¤–å®‰è£…ibus-pinyinï¼Œå‘½ä»¤å¦‚ä¸‹ï¼š
 
-´úÂë:
+    sudo apt-get install ibus-pinyin
 
-deb http://mirrors.163.com/ubuntu/ maverick main restricted universe multiverse
+è¿™æ—¶ï¼Œè¿˜éœ€è¦å°†ibus-pinyinè¾“å…¥æ³•å¯åŠ¨ã€‚åœ¨ubuntuç³»ç»Ÿèœå•ä¸Šé€‰æ‹©System --- Preferences --- IBus Preferencesï¼Œåœ¨Input Methodé¡µä¸­çš„â€œSelect an input methodâ€ä¸‹æ‹‰æ¡†ä¸­é€‰æ‹©å¢žåŠ Chinese â€“ Pinyinï¼Œå°±æ˜¯å›¾æ ‡ä¸­æœ‰ä¸ªä¸€ä¸ªå¤§å¤§çš„â€œæ‹¼â€å­—çš„é‚£ä¸€ä¸ªï¼Œç„¶åŽç‚¹å‡»AddæŒ‰é’®ï¼Œæœ€åŽé€šè¿‡UpæŒ‰é’®å°†è¯¥è¾“å…¥æ³•ç§»åŠ¨åˆ°æœ€ä¸Šé¢ã€‚ç³»ç»Ÿé‡å¯åŽï¼Œé€šè¿‡Ctrl + ç©ºæ ¼å³å¯è°ƒå‡ºibusè¾“å…¥æ³•ã€‚ibusè¾“å…¥æ³•æ€»ä½“æ¥è¯´ä¸é”™ï¼Œä½†æ˜¯åœ¨æˆ‘çš„çŽ¯å¢ƒä¸‹å‘çŽ°æ— æ³•åœ¨éƒ¨åˆ†Javaç¨‹åºä¸­è°ƒå‡ºæ¥ï¼Œä¾‹å¦‚Netbeansã€OpenProjã€‚
 
-deb http://mirrors.163.com/ubuntu/ maverick-security main restricted universe multiverse
+2ã€fcitxè¾“å…¥æ³•
 
-deb http://mirrors.163.com/ubuntu/ maverick-updates main restricted universe multiverse
+ç”±äºŽibusçš„ç¼ºé™·ï¼Œæ‰€ä»¥æˆ‘å°è¯•äº†fcitxï¼Œä½¿ç”¨ä¸‹æ¥ä¹Ÿéžå¸¸ä¸é”™ï¼Œè€Œä¸”å¯ä»¥åœ¨Javaç¨‹åºä¸­æ­£å¸¸ä½¿ç”¨ï¼Œåªæ˜¯åœ¨è¿™ç§æƒ…å†µä¸‹å…‰æ ‡è·Ÿéšæœ‰äº›é—®é¢˜ï¼Œè¾“å…¥ç•Œé¢ä¼šåœ ç•™åœ¨å±å¹•æœ€ä¸‹ç«¯ï¼Œä½†æ˜¯å¯ä»¥æŽ¥å—ï¼Œæ¯”èµ·ibusä¸èƒ½ä½¿ç”¨è¦å¥½å¤šäº†ã€‚
 
-deb http://mirrors.163.com/ubuntu/ maverick-proposed main restricted universe multiverse
+å®‰è£…fcitxï¼š
 
-deb http://mirrors.163.com/ubuntu/ maverick-backports main restricted universe multiverse
+    sudo apt-get install fcitx
 
-deb-src http://mirrors.163.com/ubuntu/ maverick main restricted universe multiverse
+å¯åŠ¨fcitxï¼š
 
-deb-src http://mirrors.163.com/ubuntu/ maverick-security main restricted universe multiverse
+    im-switch -s fcitx
 
-deb-src http://mirrors.163.com/ubuntu/ maverick-updates main restricted universe multiverse
+æ³¨é”€åŽé‡æ–°ç™»å½•ï¼Œfcitxå°±ä¼šç”Ÿæ•ˆã€‚å¦‚æžœéœ€è¦åˆ‡æ¢å›žibusï¼Œå¯ä»¥è¿è¡Œim-switch -s ibusï¼Œç„¶åŽæ³¨é”€ï¼Œé‡æ–°ç™»å½•ã€‚fcitxåŒæ ·å¯ä»¥é€šè¿‡Ctrl + ç©ºæ ¼è°ƒå‡ºï¼Œè¿™æ—¶ä¼šå‘çŽ°fcitxæ˜¾ç¤ºçš„ä¸­æ–‡æ˜¯æ–¹æ¡†ï¼Œå› æ­¤éœ€è¦ä¿®æ”¹fcitxçš„é…ç½®ã€‚Fcitxçš„é…ç½®æ–‡ä»¶åœ¨~/.fcitx/configï¼Œè¯¥æ–‡ä»¶ä¸º GBKç¼–ç ï¼Œåœ¨Ubuntuä¸‹æ˜¾ç¤ºä¸æ­£å¸¸ï¼Œå¯ä»¥é€šè¿‡å¦‚ä¸‹æ–¹å¼æ“ä½œï¼š
 
-deb-src http://mirrors.163.com/ubuntu/ maverick-proposed main restricted universe multiverse
+    cd ~/.fcitx
+    iconv -f gbk -t utf8 config > config.tmp
 
-deb-src http://mirrors.163.com/ubuntu/ maverick-backports main restricted universe multiverse
+ç¼–è¾‘config.tmpæ–‡ä»¶ï¼š
 
-ÕâÀïÇ¿ÁÒÍÆ¼öÓÃ163µÄËÙ¶È¼«¿ì£¬µÈÎÒÃÇ¸ü¸ÄÍê±ÏÒÔºóÇ§Íò±ðÍüÁËapt-get updateÒ»ÏÂßº£¡
+    æ˜¾ç¤ºå­—ä½“(ä¸­)=WenQuanYi Micro Hei
+    æ˜¾ç¤ºå­—ä½“å¤§å°=10
+    ä½¿ç”¨ç²—ä½“=0
 
-deb http://tw.archive.ubuntu.com/ubuntu/ karmic main universe restricted multiverse
+ä¿å­˜é€€å‡ºï¼Œç„¶åŽè¿è¡Œå‘½ä»¤ï¼š
 
-deb http://tw.archive.ubuntu.com/ubuntu/ karmic-security universe main multiverse restricted
+    iconv -f utf8 -t gbk config.tmp > config
 
-deb http://tw.archive.ubuntu.com/ubuntu/ karmic-updates universe main multiverse restricted
+æ³¨é”€åŽé‡æ–°ç™»å½•ï¼Œfcitxæ˜¾ç¤ºæ­£å¸¸ã€‚
 
-deb http://tw.archive.ubuntu.com/ubuntu/ karmic-proposed universe main multiverse restricted
+å¯¹äºŽæœç‹—è¾“å…¥å€™é€‰å­—ä¹±ç é—®é¢˜ï¼Œå…ˆè¿è¡Œ
 
-deb http://tw.archive.ubuntu.com/ubuntu/ karmic-backports universe main multiverse restricted
+    sudo apt-get install fcitx-module-kimpanel
 
-## RPM FusionÔ´
+ç„¶åŽæ³¨é”€æˆ–è€…é‡å¯ï¼Œä¸€èˆ¬å°±å¯ä»¥äº†
 
-Fedora°²×°PackageÈí¼þ°üÄ¿Ç°ÒÑ¾­ÓÉÔ­ÏÈµÄµ¥´¿RPM°ü·½Ê½ÂýÂý½ø»¯Îªyum·½Ê½ÁË, ÆäÏà±ÈÔ­·½Ê½¶øÑÔ,²»ÊÇ¼òµ¥µÄ°²×°Ä³¸öRPM°ü, ¶øÊÇ±È½ÏÖÇÄÜ»¯µØÕÒµ½Ïà¶ÔÓ¦°üµÄÁªÏµ,Èç¹ûÐèÒª×°ÈëÄ³¸ö°ü,ÆäËùÒÀÀµµÄÆäËû¸÷¸ö°üÒ²¿ÉÒÔ±»°²×°,Ïà±ÈÔ­ÏÈµÄ·½Ê½ÓÐÁËÏàµ±´óµÄ½ø²½. µ«Fedora×Ô´øµÄÈí¼þ¿â²»ÊÇºÜ·á¸»,Òò´ËRPM fusion¾Í²úÉúÁË,ÆäÖ÷ÒªÄ¿µÄÊÇÎªFedora/RedHatµÈLinux·¢ÐÐ°üÌá¹©Èí¼þ°üÖ§³Ö,ÆäºÏ²¢ÁË Dribble/ FreshrpmsºÍrpm.livna.orgÈý´óÈí¼þ°ü²Ö¿â,ºÜ¶àÔ­ÏÈ²»Ö§³ÖµÄÈí¼þ°ü,ÎÒÃÇ¶¼¿ÉÒÔÍ¨¹ýRPM FusionºÜÈÝÒ×µÄÕÒµ½,ÀýÈçFedora 10ÏÂµÄmplayerµÈµÈ.     RPM FusionµÄ¹Ù·½Õ¾µã: http://rpmfusion.org/ 
 
-RPM FusionµÄ°²×°·½·¨: 
+## utf8 å’Œ UTF-8 æœ‰ä»€ä¹ˆåŒºåˆ«
 
-1. Ê×ÏÈ´ÓRPM FusionÍøÕ¾ÏÂÔØÏàÓ¦µÄRPM Fusion°ü,»òÕß´Ó±¾µØÏÂÔØ.
-2. 
-Ô­ÍøÕ¾:    
+â€œUTF-8â€æ˜¯æ ‡å‡†å†™æ³•ï¼Œåœ¨windowsä¸‹è¾¹è‹±æ–‡ä¸åŒºåˆ†å¤§å°å†™ï¼Œæ‰€ä»¥ä¹Ÿå¯ä»¥å†™æˆâ€œutf-8â€ã€‚â€œUTF-8â€ä¹Ÿå¯ä»¥æŠŠä¸­é—´çš„â€œ-â€çœç•¥ï¼Œå†™æˆâ€œUTF8â€ã€‚ä¸€èˆ¬ç¨‹åºéƒ½èƒ½è¯†åˆ«ï¼Œä½†ä¹Ÿæœ‰ä¾‹å¤–ï¼ˆå¦‚ä¸‹æ–‡ï¼‰ï¼Œä¸ºäº†ä¸¥æ ¼ä¸€ç‚¹ï¼Œæœ€å¥½ç”¨æ ‡å‡†çš„å¤§å†™â€œUTF-8â€ã€‚åªæœ‰åœ¨MySQLä¸­å¯ä»¥ä½¿ç”¨â€œutf-8â€çš„åˆ«åâ€œutf8â€ï¼Œä½†æ˜¯åœ¨å…¶ä»–åœ°æ–¹ä¸€å¾‹ä½¿ç”¨å¤§å†™â€œUTF-8â€ã€‚
 
-http://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-stable.noarch.rpm        http://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-stable.noarch.rpm         ±¾µØÁ´½Ó:
 
-rpmfusion-free-release-stable.noarch.rpm
+##ç½‘é¡µä¸ŠFlashä¸­çš„ä¸­æ–‡æ˜¾ç¤ºä¸ºæ–¹æ¡†çš„è§£å†³åŠžæ³•
 
-rpmfusion-nonfree-release-stable.noarch.rpm
+ç¼–è¾‘/etc/fonts/conf.d/49-sansserif.confæ–‡ä»¶ï¼Œä½œå¦‚ä¸‹ä¿®æ”¹ï¼š
 
-2. ÇÐ»»ÎªrootÓÃ»§
+    <edit name="family" mode="append_last">
+    <string>WenQuanYi Micro Hei</string>
+    </edit>
 
-3. °²×°rpm fusion
+## Javaç¨‹åºéƒ¨åˆ†ä¸­æ–‡æ˜¾ç¤ºä¸ºæ–¹æ¡†çš„è§£å†³åŠžæ³•
 
-rpm -ivh rpmfusion-free-release-stable.noarch.rpm
+åœ¨$JAVA_HOME/jre /lib/fontsç›®å½•ä¸‹å»ºç«‹fallbackç›®å½•ï¼Œå°†ä¸­æ–‡å­—ä½“æ–‡ä»¶å¤åˆ¶ï¼ˆæˆ–linkï¼‰åˆ°fallbackç›®å½•ã€‚
 
-rpm -ivh rpmfusion-nonfree-release-stable.noarch.rpm
+    sudo mkdir $JAVA_HOME/jre/lib/fonts/fallback
+    sudo ln /usr/share/fonts/truetype/wqy/wqy-microhei.ttc $JAVA_HOME/jre/lib/fonts/fallback/
 
-4. ´ËÊ±ÔËÐÐyumÊ±,¾ÍÒÑ¾­¿ÉÒÔÀûÓÃµ½rpm fusionËù¶ÔÓ¦µÄÈí¼þ¿âÁË.  
-5. 
+## â€œGBKä¹±ç â€ï¼Œå‚è€ƒ
 
+ä¹±ç çš„æ ·å­ç±»ä¼¼ï¼š
 
-## ATrpmsÔ´
+    Ã ??Ã¼ Ã²Ã¡??Ã 3?ï¿¡???1,Â°2Ã ??Ã¼ Ã²Ã¡??Ã 3?ï¿¡???1
 
-ÒòÎªrpmfusion²¢²»°üº¬ATrpmsÈí¼þ¿â,Òò´Ë½¨ÒéÖ´ÐÐÏÂÃæµÄ²½ÖèÔö¼ÓATrpmsÔ´.
+è§£å†³æ–¹æ³•ï¼š
 
-ATrpms¹Ù·½ÍøÕ¾:http://atrpms.net/
+    convmv -r -f utf8 -t iso88591 --notest --nosmart * && convmv -r -f gbk -t utf8 --notest --nosmart * # æŠŠä¹±ç æ–‡ä»¶åæ–‡ä»¶å¤åˆ¶åœ¨ä¸€ä¸ªç©ºç›®å½•é‡Œè¿è¡Œï¼ˆè¿™æ ·é”™äº†ä¹Ÿä¸æ€•ï¼‰ï¼š
 
-°²×°·½·¨¼û¹Ù·½ÍøÕ¾¡£
+## â€œasciiä¹±ç â€å‚è€ƒ
 
-# FTP×ÊÔ´
+ä¹±ç çš„æ ·å­ç±»ä¼¼ï¼š
 
-LinuxÏà¹Ø                                                
+    %E5%8C%BB%E4%BF%9D
 
-ftp://ftp.tsinghua.edu.cn   ¸÷ÖÖ¾µÏñ¡¢LinuxÈí¼þ                
-ftp://mirror.pku.edu.cn/pub/linux/                                    
-ftp://219.238.157.219/pub/                                            
-ftp://eelinux.3322.org                                                
-ftp://166.111.72.5/Linux                                        
-ftp://166.111.121.3/Linux/                               
-ftp://166.111.68.183/pub/Linux/                                 
+è§£å†³æ–¹æ³•ï¼š
 
-DebianÉý¼¶¾µÏñ
+1.ä½¿ç”¨uni2ascii ä»£ç :`echo ä¹±ç åŽŸæ–‡ | ascii2uni -a J`
+2.å®‰è£…nautilus-filename-repairer0.06ï¼ˆå®˜æ–¹æœ‰æºç ï¼Œä½†æ˜¯ä¾èµ–é—®é¢˜ï¼Œæˆ‘è¿˜æ²¡å®‰è£…æˆåŠŸï¼Œè€Œ0.05ç‰ˆä¸ŽçŽ°åœ¨çš„nautilusæœ‰ç‚¹å°å°çš„åˆä½œéšœç¢ï¼Œåªèƒ½çœ‹ä¸èƒ½æ”¹å)
+3.ç”¨chromeplus-1.3.3.1ä¸‹è½½ï¼ˆå› ä¸ºè¿™ç±»ä¹±ç ä¸»è¦åœ¨ç”¨ffï¼ˆé»˜è®¤utf8ï¼‰ä¸‹è½½qqç¾¤é‡Œçš„æ–‡ä»¶ä¹‹åŽäº§ç”Ÿï¼Œç”¨chromeplus(é»˜è®¤GBK)ä¸‹å°±æ²¡é—®é¢˜äº†ï¼‰
 
-ftp://debian.ustc.edu.cn/          Õâ¸ö±È½ÏÈ«            
-ftp://ftp.tsinghua.edu.cn/mirror/debian 
-ftp://ftp.sjtu.edu.cn/mirror/sites/ftp.debian.org/
-ftp://mirror.dlut.edu.cn/ 
-ftp://debian.nctu.edu.tw/ 
+å¦å¤–ï¼Œè‡³äºŽæ–‡ä»¶é‡Œé¢å†…å®¹çš„ä¹±ç é—®é¢˜å¯ä»¥æœç´¢enca.
 
-http://debian.cn99.com/   
+## è§£å†³Rhythmoxä¹±ç é—®é¢˜ï¼š
 
-http://debian.okey.net/   
+    å®‰è£…Rhythmoxï¼šsudo apt-get install rhythmbox
+    å®‰è£…mid3iconvï¼šsudo apt-get install python-mutagen
+    mid3iconv -h
 
-ftp://deb.distro.cn       
+## Clementineä¹±ç é—®é¢˜
 
-GentooÉý¼¶¾µÏñ                      
+    å®‰è£…mid3iconvï¼šsudo apt-get install python-mutagen
+    mid3iconv -h
 
-ftp://ftp.sjtu.edu.cn/mirror/sites/gentoo 
+Clementineä¸æ”¯æŒutf8ï¼Œéœ€è¦å§æ‰€æœ‰çš„mp3æ­Œæ›²è½¬æ¢ä¸ºgbkæ ¼å¼ï¼Œwmaå¥½åƒä¸ç”¨è½¬å°±å¯ä»¥
 
-ftp://ftp.tsinghua.edu.cn/mirror/gentoo   
+    mid3iconv -e gbk *.mp3(ç”±äºŽä¸èƒ½å¸¦-rå‚æ•°ï¼Œæ‰€ä»¥è¦ä¾æ¬¡è¿›å…¥æ¯ä¸ªæ–‡ä»¶å¤¹)
 
-ftp://166.111.172.55/pub/mirror/gentoo   
+å¦å¤–clementineé‡‡ç”¨gstreamerä½œä¸ºåŽç«¯ï¼Œéœ€è¦å®‰è£…gstreameræ’ä»¶ï¼š
 
-rsync://gentoo.net9.org/gentoo-portage  
+1 å¦‚æžœæƒ³æ”¯æŒmp3ï¼Œéœ€è¦å®‰è£…gstreamer-0.10-plugins-badå’Œgstreamer-0.10-plugins-ugly
+2 å¦‚æžœæƒ³æ”¯æŒwmaï¼Œéœ€è¦å®‰è£…gstreamer-0.10-ffmpeg
+3 å¦‚æžœæƒ³æ”¯æŒmmsæµåª’ä½“ï¼Œéœ€è¦å®‰è£…gstreamer plugins for mms
 
-Fedora:apt-rpm
+å¦å¤–ClementineåŸºäºŽAmarokï¼Œæ‰€ä»¥æ”¯æŒAmarokçš„æ’ä»¶ä¸€èˆ¬éƒ½æ”¯æŒClementineï¼Œæ¯”å¦‚osdlyricsã€‚
 
-ftp://ftp.tsinghua.edu.cn/mirror/ayo.freshrpms.net/pub/freshrpms/ayo/fedora/linux/2/i386/ 
+## è½¬æ¢æ–‡ä»¶å†…å®¹ç¼–ç :
 
-rpm ftp://ftp.sjtu.edu.cn apt/fedora/2/i386 os updates freshrpms 
+    file -i <file name> æ£€æµ‹æ–‡ä»¶ç¼–ç 
+    iconv --help
 
-ftp://ftp.ctex.org/?
+## è½¬æ¢æ–‡ä»¶åç¼–ç 
 
-ftp://ftp.kernel.org/pub/
+    sudo apt-get install convmv
+    convmv --help
+    convmv -f gbk -t utf8 -r --notest files
+    convmv -r -f utf8 -t iso88591 * --notest --nosmart && convmv -r -f gbk -t utf8 * --notest --nosmart
 
-ftp://ftp.gnu.org
+## è§£å†³geditä¹±ç é—®é¢˜ï¼š
 
-# ÂÒÂë¼°±àÂëÎÊÌâ
+    gsettings set org.gnome.gedit.preferences.encodings auto-detected "['GB18030', 'GB2312', 'GBK', 'UTF-8', 'BIG5', 'CURRENT', 'UTF-16']"
+    gsettings set org.gnome.gedit.preferences.encodings shown-in-menu "['GB18030', 'GB2312', 'GBK', 'UTF-8', 'BIG5', 'CURRENT', 'UTF-16']"
 
-##×ÜÂÛ
+## è§£å†³PDFä¸­æ–‡ä¹±ç ï¼š
 
-»ù±¾Âë£º
+    sudo apt-get install poppler-data
 
-ascii
+## è§£å†³raræ–‡ä»¶ä¹±ç 
 
-ÖÐ¹úÖÆ¶¨µÄ±àÂë£º£¨gb´ú±í¹ú¼Ò±ê×¼£¬ÆäÖÐgbk²»ÊÇ¹ú¼Ò±ê×¼£¬µ«Æä¼æÈÝgb2312.²¢À©³äÁËÐí¶à×Ö·û£©
+ä½¿ç”¨rar
 
-gb2312
+## è§£åŽ‹zipæ–‡ä»¶ä¹±ç 
 
-gbk
-
-gb18030
-
-ÊÀ½çÍ³Ò»±àÂë£º
-
-utf
-
-linuxÏµÍ³ÖÐÎÄ¼þÃûÄÚÈÝÎªurf8±àÂë
-
-windowsÏµÍ³ÖÐÎÄ¼þÃûÄ¬ÈÏÎªgbk±àÂë
-
-¶àÊýÎÄµµÊ¹ÓÃgbk±àÂë£¬ÏµÍ³²ÉÓÃutf8±àÂë
-
-##ÎÞÖÐÎÄÊäÈë·¨µ¼ÖÂµÄÂÒÂë
-
-1¡¢ibusÊäÈë·¨
-
-Ubuntu ÏµÍ³°²×°ºóÒÑ¾­×Ô´øÁËibusÊäÈë·¨£¬ÔÚÓ¢Óï»·¾³ÏÂÄ¬ÈÏ²»Æô¶¯¡£
-
-ÅäÖÃibus×Ô¶¯Æô¶¯¿ÉÒÔÔÚubuntuÏµÍ³²Ëµ¥ÉÏÑ¡ÔñSystem --- Preferences --- Startup Applications£¬ÔÚ¸Ã´°¿ÚÖÐÔö¼ÓÒ»¸ö³ÌÐò£º
-
-Name: ibus-daemon
-
-Command: ibus-daemon -d -x -r
-
-ibusÄ¬ÈÏÌá¹©µÄÖÐÎÄÊäÈë·¨±È½ÏÈõÖÇ£¬ÐèÒª¶îÍâ°²×°ibus-pinyin£¬ÃüÁîÈçÏÂ£º
-
-sudo apt-get install ibus-pinyin
-
-Õâ Ê±£¬»¹ÐèÒª½«ibus-pinyinÊäÈë·¨Æô¶¯¡£ÔÚubuntuÏµÍ³²Ëµ¥ÉÏÑ¡ÔñSystem --- Preferences --- IBus Preferences£¬ÔÚInput MethodÒ³ÖÐµÄ¡°Select an input method¡±ÏÂÀ­¿òÖÐÑ¡ÔñÔö¼ÓChinese ¨C Pinyin£¬¾ÍÊÇÍ¼±êÖÐÓÐ¸öÒ»¸ö´ó´óµÄ¡°Æ´¡±×ÖµÄÄÇÒ»¸ö£¬È»ºóµã»÷Add°´Å¥£¬×îºóÍ¨¹ýUp°´Å¥½«¸ÃÊäÈë·¨ÒÆ¶¯µ½×îÉÏÃæ¡£
-
-ÏµÍ³ÖØÆôºó£¬Í¨¹ýCtrl + ¿Õ¸ñ¼´¿Éµ÷³öibusÊäÈë·¨¡£
-
-ibusÊäÈë·¨×ÜÌåÀ´Ëµ²»´í£¬µ«ÊÇÔÚÎÒµÄ»·¾³ÏÂ·¢ÏÖÎÞ·¨ÔÚ²¿·ÖJava³ÌÐòÖÐµ÷³öÀ´£¬ÀýÈçNetbeans¡¢OpenProj¡£
-
-2¡¢fcitxÊäÈë·¨
-
-ÓÉÓÚibusµÄÈ±ÏÝ£¬ËùÒÔÎÒ³¢ÊÔÁËfcitx£¬Ê¹ÓÃÏÂÀ´Ò²·Ç³£²»´í£¬¶øÇÒ¿ÉÒÔÔÚJava³ÌÐòÖÐÕý³£Ê¹ÓÃ£¬Ö»ÊÇÔÚÕâÖÖÇé¿öÏÂ¹â±ê¸úËæÓÐÐ©ÎÊÌâ£¬ÊäÈë½çÃæ»áÍ£ ÁôÔÚÆÁÄ»×îÏÂ¶Ë£¬µ«ÊÇ¿ÉÒÔ½ÓÊÜ£¬±ÈÆðibus²»ÄÜÊ¹ÓÃÒªºÃ¶àÁË¡£
-
-°²×°fcitx£º
-
-sudo apt-get install fcitx
-
-Æô¶¯fcitx£º
-
-im-switch -s fcitx
-
-×¢ÏúºóÖØÐÂµÇÂ¼£¬fcitx¾Í»áÉúÐ§¡£
-
-Èç¹ûÐèÒªÇÐ»»»Øibus£¬¿ÉÒÔÔËÐÐim-switch -s ibus£¬È»ºó×¢Ïú£¬ÖØÐÂµÇÂ¼¡£
-
-fcitxÍ¬Ñù¿ÉÒÔÍ¨¹ýCtrl + ¿Õ¸ñµ÷³ö£¬ÕâÊ±»á·¢ÏÖfcitxÏÔÊ¾µÄÖÐÎÄÊÇ·½¿ò£¬Òò´ËÐèÒªÐÞ¸ÄfcitxµÄÅäÖÃ¡£FcitxµÄÅäÖÃÎÄ¼þÔÚ~/.fcitx/config£¬¸ÃÎÄ¼þÎª GBK±àÂë£¬ÔÚUbuntuÏÂÏÔÊ¾²»Õý³££¬¿ÉÒÔÍ¨¹ýÈçÏÂ·½Ê½²Ù×÷£º
-
-cd ~/.fcitx
-
-iconv -f gbk -t utf8 config > config.tmp
-
-±à¼­config.tmpÎÄ¼þ£º
-
-ÏÔÊ¾×ÖÌå(ÖÐ)=WenQuanYi Micro Hei
-
-ÏÔÊ¾×ÖÌå´óÐ¡=10
-
-Ê¹ÓÃ´ÖÌå=0
-
-±£´æÍË³ö£¬È»ºóÔËÐÐÃüÁî£º
-
-iconv -f utf8 -t gbk config.tmp > config
-
-×¢ÏúºóÖØÐÂµÇÂ¼£¬fcitxÏÔÊ¾Õý³£¡£
-
-¶ÔÓÚËÑ¹·ÊäÈëºòÑ¡×ÖÂÒÂëÎÊÌâ£¬ÏÈÔËÐÐ
-
-sudo apt-get install fcitx-module-kimpanel
-
-È»ºó×¢Ïú»òÕßÖØÆô£¬Ò»°ã¾Í¿ÉÒÔÁË
-
-
-
-## utf8 ºÍ UTF-8 ÓÐÊ²Ã´Çø±ð
-
-¡°UTF-8¡±ÊÇ±ê×¼Ð´·¨£¬ÔÚwindowsÏÂ±ßÓ¢ÎÄ²»Çø·Ö´óÐ¡Ð´£¬ËùÒÔÒ²¿ÉÒÔÐ´³É¡°utf-8¡±¡£¡°UTF-8¡±Ò²¿ÉÒÔ°ÑÖÐ¼äµÄ¡°-¡±Ê¡ÂÔ£¬Ð´³É¡°UTF8¡±¡£Ò»°ã³ÌÐò¶¼ÄÜÊ¶±ð£¬µ«Ò²ÓÐÀýÍâ£¨ÈçÏÂÎÄ£©£¬ÎªÁËÑÏ¸ñÒ»µã£¬×îºÃÓÃ±ê×¼µÄ´óÐ´¡°UTF-8¡±¡£
-
-ÔÚMySQLÊý¾Ý¿âÖÐÖ»ÄÜÊ¹ÓÃ¡°utf8¡±
-
-¡¡¡¡ÔÚMySQLµÄÃüÁîÄ£Ê½ÖÐÖ»ÄÜÊ¹ÓÃ¡°utf8¡±£¬²»ÄÜÊ¹ÓÃ¡°utf-8¡±£¬Ò²¾ÍÊÇËµÔÚPHP³ÌÐòÖÐÖ»ÄÜÊ¹ÓÃ¡°set names utf8(²»¼ÓÐ¡ºá¸Ü)¡±£¬Èç¹ûÄã¼ÓÁË¡°-¡±´ËÐÐÃüÁî½«²»»áÉúÐ§£¬µ«ÊÇÔÚPHPÖÐheaderÊ±È´Òª¼ÓÉÏ¡°-¡±£¬ÒòÎªIE²»ÈÏÊ¶Ã»¸ÜµÄ¡°utf8¡±£¬Ô­Òò ¼ûÏÂÎÄ¡£
-
-ÔÚIEä¯ÀÀÆ÷ÖÐÖ»ÄÜÊ¹ÓÃ¡°utf-8¡±
-
-¡¡¡¡IEÖÐÈç¹ûÊ¹ÓÃÁË¡°utf8¡±£¬Ò³Ãæ¿ÉÄÜ»á ¿Õ°× »ò ÏÔÊ¾ÎªÂÒÂë¡£
-
-¡¡¡¡µ«ÊÇÔÚÆäËüä¯ÀÀÆ÷È´ÊÇÕý³£µÄ£¬Ô­ÒòÊÇÒòÎª£ºÆäËüä¯ÀÀÆ÷Ä¬ÈÏÊ¹ÓÃµÄÊÇUTF-8µÄ±àÂë£¬Èç¹ûÎÞ·¨Ê¶±ðÒ³ÃæµÄ±àÂë¾Í»áÓÃÄ¬ÈÏµÄUTF-8À´½âÂë£¬µ« ÊÇIEµÄÄ¬ÈÏ±àÂëÊÇGB2312£¬ËùÒÔÄ¬ÈÏµÄ»°¾Í¡£¡£¡£¡£¡££¨ÆäËüä¯ÀÀÆ÷Ö¸¡°FireFox¡±¡¢¡°Chrome¡±¡¢¡°Opera¡±£©
-
-×Ü½á¡¡¡¡
-
-¡¡¡¡¡¾Ö»ÓÐÔÚMySQLÖÐ¿ÉÒÔÊ¹ÓÃ¡°utf-8¡±µÄ±ðÃû¡°utf8¡±£¬µ«ÊÇÔÚÆäËûµØ·½Ò»ÂÉÊ¹ÓÃ´óÐ´¡°UTF-8¡±¡£¡¿
-
-¡¡¡¡¾ßÌåÎª£º
-
-¡¡¡¡¡¡¡¡ÔÚÃüÁî¡°mysql_query(set names utf8)¡±ÍâÒ»ÂÉÓÃ´óÐ´¡°UTF-8¡±¡£
-
-
-
-##ÍøÒ³ÉÏFlashÖÐµÄÖÐÎÄÏÔÊ¾Îª·½¿òµÄ½â¾ö°ì·¨
-
-±à¼­/etc/fonts/conf.d/49-sansserif.confÎÄ¼þ£¬×÷ÈçÏÂÐÞ¸Ä£º
-
-<edit name="family" mode="append_last">
-
-<string>WenQuanYi Micro Hei</string>
-
-</edit>
-
-## Java³ÌÐò²¿·ÖÖÐÎÄÏÔÊ¾Îª·½¿òµÄ½â¾ö°ì·¨
-
-ÔÚ$JAVA_HOME/jre /lib/fontsÄ¿Â¼ÏÂ½¨Á¢fallbackÄ¿Â¼£¬½«ÖÐÎÄ×ÖÌåÎÄ¼þ¸´ÖÆ£¨»òlink£©µ½fallbackÄ¿Â¼¡£
-
-sudo mkdir $JAVA_HOME/jre/lib/fonts/fallback
-
-sudo ln /usr/share/fonts/truetype/wqy/wqy-microhei.ttc $JAVA_HOME/jre/lib/fonts/fallback/
-
-## ¡°GBKÂÒÂë¡±£¬²Î¿¼
-
-ÂÒÂëµÄÑù×ÓÀàËÆ£º  
-
-¨¤??¨¹ ¨°¨¢??¨¤3?¡ê???1,¡ã2¨¤??¨¹ ¨°¨¢??¨¤3?¡ê???1 
-
-½â¾ö·½·¨£º 
-
-Ê¹ÓÃconvmv 
-
-°ÑÂÒÂëÎÄ¼þÃûÎÄ¼þ¸´ÖÆÔÚÒ»¸ö¿ÕÄ¿Â¼ÀïÔËÐÐ£¨ÕâÑù´íÁËÒ²²»ÅÂ£©£º 
-
-´úÂë: 
-
-convmv -r -f utf8 -t iso88591 --notest --nosmart * && convmv -r -f gbk -t utf8 --notest --nosmart *       
-
-## ¡°asciiÂÒÂë¡±²Î¿¼ 
-
-ÂÒÂëµÄÑù×ÓÀàËÆ£º 
-
-%E5%8C%BB%E4%BF%9D 
-
-½â¾ö·½·¨£º 
-
-1.Ê¹ÓÃuni2ascii ´úÂë: 
-
-echo ÂÒÂëÔ­ÎÄ | ascii2uni -a J 
-
-2.°²×°nautilus-filename-repairer0.06£¨¹Ù·½ÓÐÔ´Âë£¬µ«ÊÇÒÀÀµÎÊÌâ£¬ÎÒ»¹Ã»°²×°³É¹¦£¬¶ø0.05°æÓëÏÖÔÚµÄnautilusÓÐµãÐ¡Ð¡µÄºÏ×÷ÕÏ°­£¬Ö»ÄÜ¿´²»ÄÜ¸ÄÃû) 
-
-3.ÓÃchromeplus-1.3.3.1ÏÂÔØ£¨ÒòÎªÕâÀàÂÒÂëÖ÷ÒªÔÚÓÃff£¨Ä¬ÈÏutf8£©ÏÂÔØqqÈºÀïµÄÎÄ¼þÖ®ºó²úÉú£¬ÓÃchromeplus(Ä¬ÈÏGBK)ÏÂ¾ÍÃ»ÎÊÌâÁË£©      
-
-ÁíÍâ£¬ÖÁÓÚÎÄ¼þÀïÃæÄÚÈÝµÄÂÒÂëÎÊÌâ¿ÉÒÔËÑË÷enca.
-
-##½â¾öRhythmoxÂÒÂëÎÊÌâ£º 
-
-°²×°Rhythmox£ºsudo apt-get install rhythmbox 
-
-°²×°mid3iconv£ºsudo apt-get install python-mutagen 
-
-mid3iconv -h 
-
-
-
-## ClementineÂÒÂëÎÊÌâ
-
-°²×°mid3iconv£ºsudo apt-get install python-mutagen 
-
-mid3iconv -h
-
-Clementine²»Ö§³Öutf8£¬ÐèÒª°ÉËùÓÐµÄmp3¸èÇú×ª»»Îªgbk¸ñÊ½£¬wmaºÃÏñ²»ÓÃ×ª¾Í¿ÉÒÔ
-
-mid3iconv -e gbk *.mp3(ÓÉÓÚ²»ÄÜ´ø-r²ÎÊý£¬ËùÒÔÒªÒÀ´Î½øÈëÃ¿¸öÎÄ¼þ¼Ð)
-
-ÁíÍâclementine²ÉÓÃgstreamer×÷Îªºó¶Ë£¬ÐèÒª°²×°gstreamer²å¼þ£º
-
-1 Èç¹ûÏëÖ§³Ömp3£¬ÐèÒª°²×°gstreamer-0.10-plugins-badºÍgstreamer-0.10-plugins-ugly
-
-2 Èç¹ûÏëÖ§³Öwma£¬ÐèÒª°²×°gstreamer-0.10-ffmpeg
-
-3 Èç¹ûÏëÖ§³ÖmmsÁ÷Ã½Ìå£¬ÐèÒª°²×°gstreamer plugins for mms
-
-ÁíÍâClementine»ùÓÚAmarok£¬ËùÒÔÖ§³ÖAmarokµÄ²å¼þÒ»°ã¶¼Ö§³ÖClementine£¬±ÈÈçosdlyrics¡£
-
-##×ª»»ÎÄ¼þÄÚÈÝ±àÂë: 
-
-    file -i <file name> ¼ì²âÎÄ¼þ±àÂë
-    iconv --help 
-
-##×ª»»ÎÄ¼þÃû±àÂë
-
-    sudo apt-get install convmv 
-    convmv --help 
-    convmv -f gbk -t utf8 -r --notest files 
-    convmv -r -f utf8 -t iso88591 * --notest --nosmart && convmv -r -f gbk -t utf8 * --notest --nosmart 
-
-##½â¾ögeditÂÒÂëÎÊÌâ£º 
-
-    gsettings set org.gnome.gedit.preferences.encodings auto-detected "['GB18030', 'GB2312', 'GBK', 'UTF-8', 'BIG5', 'CURRENT', 'UTF-16']" 
-    gsettings set org.gnome.gedit.preferences.encodings shown-in-menu "['GB18030', 'GB2312', 'GBK', 'UTF-8', 'BIG5', 'CURRENT', 'UTF-16']" 
-
-##½â¾öPDFÖÐÎÄÂÒÂë£º 
-
-°²×°poppler-dataÀ´½â¾ö£º sudo apt-get install poppler-data 
-
-##½â¾örarÎÄ¼þÂÒÂë
-
-Ê¹ÓÃrar 
-
-##½âÑ¹zipÎÄ¼þÂÒÂë
-
-×î½üÅöµ½Õâ¸öÎÊÌâ£¬ÍøÉÏËÑÁËÒ»È¦£¬¶¼ÊÇÊ²Ã´unzip -O£¬Ò»µãÓÃ¶¼Ã»ÓÐ£¬ÕâÐ©¸çÃÇ¹À¼ÆÊÇÖ±½Ó¸´ÖÆ£¬ÓÃ¶¼Ã»ÓÃ¹ý¡£ºóÀ´ÕÒÁË¸öÖÕ¼«·½·¨£¬ÓÃpythonµÄ½Å±¾À´½âÑ¹£¬ÊÔÁËÏÂ£¬»¹Õæ¹ÜÓÃ£¡£¡£¡ÒÔÏÂÎªpython½Å±¾µÄ´úÂë£¬ÐÂ½¨ÎÄ¼þjieya.py£¬Ð´ÈëÒÔÏÂ´úÂë£º
+æœ€è¿‘ç¢°åˆ°è¿™ä¸ªé—®é¢˜ï¼Œç½‘ä¸Šæœäº†ä¸€åœˆï¼Œéƒ½æ˜¯ä»€ä¹ˆunzip -Oï¼Œä¸€ç‚¹ç”¨éƒ½æ²¡æœ‰ï¼Œè¿™äº›å“¥ä»¬ä¼°è®¡æ˜¯ç›´æŽ¥å¤åˆ¶ï¼Œç”¨éƒ½æ²¡ç”¨è¿‡ã€‚åŽæ¥æ‰¾äº†ä¸ªç»ˆæžæ–¹æ³•ï¼Œç”¨pythonçš„è„šæœ¬æ¥è§£åŽ‹ï¼Œè¯•äº†ä¸‹ï¼Œè¿˜çœŸç®¡ç”¨ï¼ï¼ï¼ä»¥ä¸‹ä¸ºpythonè„šæœ¬çš„ä»£ç ï¼Œæ–°å»ºæ–‡ä»¶jieya.pyï¼Œå†™å…¥ä»¥ä¸‹ä»£ç ï¼š
 
 ```python
     #!/usr/bin/env python
@@ -530,1353 +377,361 @@ mid3iconv -e gbk *.mp3(ÓÉÓÚ²»ÄÜ´ø-r²ÎÊý£¬ËùÒÔÒªÒÀ´Î½øÈëÃ¿¸öÎÄ¼þ¼Ð)
     file.close()
 ```
 
-È»ºózipÎÄ¼þ¸újieya.py·ÅÔÚÍ¬Ò»¼¶Ä¿Â¼£¬ÔËÐÐÃüÁîpython  jieya.py file.zip£¬Å¶ÁË£¡
+ç„¶åŽzipæ–‡ä»¶è·Ÿjieya.pyæ”¾åœ¨åŒä¸€çº§ç›®å½•ï¼Œè¿è¡Œå‘½ä»¤python  jieya.py file.zipï¼Œå“¦äº†ï¼
+
+## smplayer ä¸­æ–‡å­—å¹•ä¹±ç è§£å†³æ–¹æ³•
+
+1. æ‰“å¼€é€‰é¡¹ï¼ã€‹é¦–é€‰çŽ°ï¼šé€‰æ‹©å­—å¹•é€‰é¡¹å¡ã€‚
+2. æ‰¾åˆ°â€œé»˜è®¤å­—ç¬¦ç¼–ç â€é€‰é¡¹ï¼Œåœ¨ä¸‹æ‹‰æ¡†ä¸­é€‰æ‹©â€œç®€ä½“ä¸­æ–‡ï¼ˆcp936ï¼‰â€
+3. å†æ‰“å¼€â€œå­—ä½“â€é¡µå¡ï¼ˆä¸Šè¾¹ï¼‰ï¼Œé€‰æ‹©â€œç³»ç»Ÿå­—ä½“â€åœ¨ä¸‹æ‹‰é€‰æ¡†ä¸­é€‰æ‹©ä¸€ç§ç®€ä½“ä¸­æ–‡å­—ä½“ï¼Œå¦‚ Weu Quanyi Zen Hei ç­‰ã€‚
+
+## VLCæ’­æ”¾å™¨æ˜¾ç¤ºæ–‡ä»¶åä¹±ç 
+
+åˆé€‰é¡¹ä¸­ä¿®æ”¹ä¸€ç§æ”¯æŒä¸­æ–‡çš„å­—ä½“
 
-## smplayer ÖÐÎÄ×ÖÄ»ÂÒÂë½â¾ö·½·¨ 
 
-1¡£´ò¿ªÑ¡Ïî£­¡·Ê×Ñ¡ÏÖ£ºÑ¡Ôñ×ÖÄ»Ñ¡Ïî¿¨¡£ 
 
-2¡£ÕÒµ½¡°Ä¬ÈÏ×Ö·û±àÂë¡±Ñ¡Ïî£¬ÔÚÏÂÀ­¿òÖÐÑ¡Ôñ¡°¼òÌåÖÐÎÄ£¨cp936£©¡± 
+## å¸¸ç”¨è½¯ä»¶åŠç›¸å…³é…ç½®é—®é¢˜
 
-3¡£ÔÙ´ò¿ª¡°×ÖÌå¡±Ò³¿¨£¨ÉÏ±ß£©£¬Ñ¡Ôñ¡°ÏµÍ³×ÖÌå¡±ÔÚÏÂÀ­Ñ¡¿òÖÐÑ¡ÔñÒ»ÖÖ¼òÌåÖÐÎÄ×ÖÌå£¬Èç Weu Quanyi Zen Hei µÈ¡£ 
+* pdfé˜…è¯»å™¨:okular evince
+* æ–‡æœ¬ç¼–è¾‘å™¨ï¼švimï¼Œemacsï¼Œgedit
+* éŸ³ä¹æ’­æ”¾è½¯ä»¶ï¼šclementine
+* rhythmboxæ­Œè¯æ˜¾ç¤ºå·¥å…·ï¼šosd-lyrics
+* æ¡Œé¢ç¾ŽåŒ–å·¥å…·ï¼šcompiz
+* è§†é¢‘æ’­æ”¾å™¨ï¼šKMPlayer
+* eD2kä¸‹è½½:aMule
+* ç¼–ç¨‹å·¥å…·:bluefish
+* pdfåˆå¹¶å·¥å…·â€”â€”pdftk
+* è¾“å…¥æ³•ï¼šibus+fcitx  é‡æ–°å¯åŠ¨Xwindowå®Œæˆï¼ŒæŒ‰ Ctrl + ç©ºæ ¼é”®æ¿€æ´»è¾“å…¥æ³•ã€‚å½“ä¸èƒ½åˆ‡æ¢è¾“å…¥æ³•æ—¶ï¼ŒæŠŠé”®ç›˜-æ‹¼éŸ³è¾“å…¥æ³•è°ƒåˆ°é¡¶éƒ¨ã€‚
+* å¾®è½¯å­—ä½“åŒ…ï¼šsudo apt-get install msttcorefonts
+* å­—ä½“ç®¡ç†å™¨:font manager
+* ç¬”è®°è½¯ä»¶:ä¸ºçŸ¥ç¬”è®°ï¼šç›´æŽ¥ç”¨tar.gzåŒ…
+* ç½‘ç›˜:äº‘è¯ºç½‘ç›˜(èœå•ä¼šæœ‰éƒ¨åˆ†å˜æˆè‹±æ–‡,ä¸å®œä½¿ç”¨,å¯ä»¥æ›¿æ¢ä¸ºåšæžœäº‘) /Dropbox
+* è½¯ä»¶åŒ…å·¥å…·:æ–°ç«‹å¾—(Synaptic)
+* ç£ç›˜ç®¡ç†å™¨ï¼šLVM/GParted
+* æµè§ˆå™¨ï¼šChrome
+* è¯å…¸ï¼šgoldendict
+* 3Då»ºæ¨¡å·¥å…·ï¼šblender
+* å›¾ç‰‡å¤„ç†å·¥å…·ï¼šGIMP
+* Dock:GLX-Dock
+* è§†é¢‘ç¼–è¾‘â€“Openshot
+* BTä¸‹è½½ï¼šTransimssion
+* ftpå®¢æˆ·ç«¯Filezilla
+* é‚®ä»¶å®¢æˆ·ç«¯ï¼šthunderbird
+* è™šæ‹Ÿå…‰é©±è½¯ä»¶ï¼šFurius ISO Mount
+* æ–‡ä»¶å¯¹æ¯”è½¯ä»¶ï¼šmeld
+* è„‘å›¾è½¯ä»¶ï¼šxmind
+* è¿œç¨‹æŽ§åˆ¶ï¼švncview
+* æ•°æ®å¤„ç†è½¯ä»¶ï¼šoctaveï¼ˆéƒ¨åˆ†å…¼å®¹matlabï¼‰
+* è®°å½•ã€ä¿å­˜å’Œæ’­æ”¾ç»ˆç«¯ä¼šè¯è½¯ä»¶: ttyrec å’Œ ttyplay
+* åžƒåœ¾æ¸…ç†è½¯ä»¶ï¼šBleachBit
+* Audio CD Extractorï¼ˆéŸ³é¢‘CDæå–å™¨ï¼‰:åˆåâ€œéŸ³ä¹æ¦¨æ±æœºâ€ã€â€œSound Juicerâ€ã€‚èƒ½æŠŠCDè½¬æˆflacã€oggã€mp3ç­‰æ ¼å¼ã€‚å®˜æ–¹ä¸»é¡µï¼šhttp://www.burtonini.com/blog/computers/sound-juicer
+* Sound Converterï¼ˆå£°éŸ³è½¬æ¢ç¨‹åºï¼‰: æ”¯æŒflacã€oggã€mp3ã€wavã€m4aç­‰æ ¼å¼é—´æ‰¹é‡äº’è½¬ã€‚å®˜æ–¹ä¸»é¡µï¼šhttp://soundconverter.berlios.de
+* curlæ˜¯åˆ©ç”¨URLè¯­æ³•åœ¨å‘½ä»¤è¡Œæ–¹å¼ä¸‹å·¥ä½œçš„æ–‡ä»¶ä¼ è¾“å·¥å…·ã€‚
 
-¾­¹ýÒÔÉÏÉèÖÃ£¬smplayerÒÑ¾­¿ÉÒÔÕý³£ÏÔÊ¾ÖÐÎÄ×ÖÄ»ÁË£¬Äã»¹¿ÉÒÔÔÚ¸Õ²ÅµÄÎ»ÖÃ×÷Ò»ÏÂÀ©Õ¹ÉèÖÃ£¬Èç¡°ÎÄ±¾ÑÕÉ«¡±¡°ÏÔÊ¾Î»ÖÃ¡±µÄ£¬Õâ¸ö¶ÁÕß°´×Ô¼ºÏ²ºÃÈ¥×÷°Õ¡£
 
-## VLC²¥·ÅÆ÷ÏÔÊ¾ÎÄ¼þÃûÂÒÂë
+##è§£å†³é‡‘å±±wpså­—ä½“é—®é¢˜
 
-³õÑ¡ÏîÖÐÐÞ¸ÄÒ»ÖÖÖ§³ÖÖÐÎÄµÄ×ÖÌå
+å°†å­—ä½“è§£åŽ‹åˆ°~/.fontsç›®å½•ï¼Œç„¶åŽé‡å¯wpså³å¯ã€‚è¿™äº›æ–‡ä»¶ä¸ºå¾®è½¯ç‰ˆæƒæ‰€æœ‰ï¼Œä½¿ç”¨è¿™äº›å­—ä½“è¯·è‡ªè¡Œç¡®å®šæ‹¥æœ‰è¿™äº›å­—ä½“çš„ä½¿ç”¨æŽˆæƒï¼ˆæ¯”å¦‚è¯´æœ‰æŸç‰ˆæœ¬windowsæŽˆæƒå³å¯ï¼‰ã€‚å¦å¤–æ®ä¸€éƒ¨åˆ†ç”¨æˆ·åæ˜ ï¼Œå¦‚æžœç³»ç»Ÿå®‰è£…äº†xfonts-mathmlå¯èƒ½å¯¼è‡´ç¬¦å·æ— æ³•æ˜¾ç¤ºã€‚ç»è¿‡æŸ¥è¯ï¼Œå‘çŽ°æ˜¯å› ä¸ºxfonts-mathmlä¸­ä¹Ÿå­˜åœ¨ä¸€ä¸ªå­—ä½“å«Symbolå¯¼è‡´çš„ã€‚å¦‚æžœå®‰è£…ä¸Šè¿°å­—ä½“åŽä»å­˜åœ¨ä¹±ç çŽ°è±¡ï¼Œè¯·å°è¯•ç§»é™¤xfonts-mathmlåŒ…ã€‚
 
+## libreofficeä¸­PPTå­—ä½“ä¾¿ç²—é—®é¢˜
 
+Tools â†’ Options... â†’ LibreOffice â†’ View â†’ Graphics output (å–æ¶ˆé’©é€‰Use hardware acceleration)
 
-# ³£ÓÃÈí¼þ¼°Ïà¹ØÅäÖÃÎÊÌâ
+##å°ä¼é¹…è¾“å…¥æ³•çªç„¶æ— æ³•ä½¿ç”¨
 
-pdfÔÄ¶ÁÆ÷:okular evince
+æŸ¥çœ‹ä¸€ä¸‹æ˜¯å¦å®‰è£…äº†ibusï¼Œå¯åœ¨ç³»ç»Ÿè®¾ç½®ä¸­çš„è¯­è¨€æ”¯æŒä¸­é‡æ–°æŠŠè¾“å…¥æ³•æ”¹ä¸ºibus
 
-ÎÄ±¾±à¼­Æ÷£ºvim£¬emacs£¬gedit
+# ä¸»æ–‡ä»¶å¤¹é‡Œçš„ä¸­æ–‡æ–‡ä»¶å¤¹æ”¹æˆè‹±æ–‡æ–‡ä»¶å¤¹
 
-ÒôÀÖ²¥·ÅÈí¼þ£ºclementine
+æ‰“å¼€ç»ˆç«¯ï¼Œåœ¨ç»ˆç«¯ä¸‹è¾“å…¥å‘½ä»¤ï¼š
 
-rhythmbox¸è´ÊÏÔÊ¾¹¤¾ß£ºosd-lyrics
+    export LANG=en_US
+    xdg-user-dirs-gtk-update
 
-×ÀÃæÃÀ»¯¹¤¾ß£ºcompiz
+è¿™ä¸ªæ—¶å€™ä¼šå¼¹å‡ºä¸€ä¸ªé…ç½®ç•Œé¢ï¼Œæç¤ºæ˜¯å¦å°†ä¸­æ–‡ç›®å½•åˆ‡æ¢ä¸ºè‹±æ–‡ç›®å½•ã€‚é€‰ä¸­ä¸å†æç¤ºï¼Œç¡®å®šã€‚ç³»ç»Ÿä¼šåˆ é™¤æ²¡æœ‰å†…å®¹çš„ä¸­æ–‡ç›®å½•ï¼Œè€Œæœ‰å†…å®¹çš„ç›®å½•ä¼šä¿æŒã€‚å¹¶åˆ›å»º8ä¸ªç›¸åº”çš„è‹±æ–‡ç›®å½•å¦‚ä¸‹ï¼šâ€œDesktopâ€ã€â€œDownloadâ€ã€â€œTemplatesâ€ã€â€œPublicâ€ã€â€œDocumentsâ€ã€â€œMusicâ€ã€â€œPicturesâ€ã€â€œVideosâ€ã€‚æ­¤æ—¶ï¼Œæ‚¨åœ¨â€œä½ç½®â€é‡Œçœ‹åˆ°çš„å¸¸ç”¨ä¸­æ–‡ç›®å½•å·²ç»å˜æˆè‹±æ–‡ç›®å½•ï¼›
 
-ÊÓÆµ²¥·ÅÆ÷£ºKMPlayer
+å†æ‰§è¡Œï¼š
 
-eD2kÏÂÔØ:aMule
+    export LANG=zh_CN.UTF-8
 
-±à³Ì¹¤¾ß:bluefish
 
-pdfºÏ²¢¹¤¾ß¡ª¡ªpdftk
+## Rdseedçš„å®‰è£…
 
-ÊäÈë·¨£ºibus+fcitx  ÖØÐÂÆô¶¯XwindowÍê³É£¬°´ Ctrl + ¿Õ¸ñ¼ü¼¤»îÊäÈë·¨¡£µ±²»ÄÜÇÐ»»ÊäÈë·¨Ê±£¬°Ñ¼üÅÌ-Æ´ÒôÊäÈë·¨µ÷µ½¶¥²¿¡£
+1. ä¸‹è½½: http://www.iris.edu/pub/programs/rdseedv5.2.tar.gz
+2. è§£åŽ‹: tar -xzvf rdseedv5.2.tar.gz
+3. ç¼–è¯‘ï¼š
 
-Î¢Èí×ÖÌå°ü£ºsudo apt-get install msttcorefonts 
+    # åœ¨makefileä¸­æ‰¾åˆ°è¿™å‡ å¥
+    CC = cc
+    # for cygwin add the -D_CYGwin flag, for users of windows pcs
+    CFLAGS     = -O -m32 -g -D_CYGwin
+    
+    # to compile rdseed as a 32-bit application
+    #CFLAGS     = -O -m32 -g
+    
+    # å°†CYGwinè¡Œæ³¨é‡ŠæŽ‰ï¼Œå–æ¶ˆæœ€ä¸‹é¢ä¸€è¡Œçš„æ³¨é‡Šï¼š
+    CC = cc
+    # for cygwin add the -D_CYGwin flag, for users of windows pcs
+    #CFLAGS     = -O -m32 -g -D_CYGwin
+    
+    # to compile rdseed as a 32-bit application
+    CFLAGS     = -O -m32 -g
+    
+    # ç„¶åŽ
+    make clean
+    make
 
-×ÖÌå¹ÜÀíÆ÷:font manager 
+4. å°†ç¼–è¯‘å¥½çš„rdseedæ–‡ä»¶æ‹·è´é binç›®å½•ä¸‹ï¼šsudo cp rdseed /usr/bin/
+5. è¾“å…¥rdseedå³å¯è¿›å…¥ã€‚
 
-±Ê¼ÇÈí¼þ:ÎªÖª±Ê¼Ç£ºÖ±½ÓÓÃtar.gz°ü
+æ³¨ï¼š64ä½ç³»ç»Ÿä¸‹å¯ä»¥ç›´æŽ¥ä½¿ç”¨å·²ç¼–è¯‘å¥½çš„æ–‡ä»¶:cp -p rdseed.rh6.linux_64 /usr/local/bin/rdseed
 
-ÍøÅÌ:ÔÆÅµÍøÅÌ(²Ëµ¥»áÓÐ²¿·Ö±ä³ÉÓ¢ÎÄ,²»ÒËÊ¹ÓÃ,¿ÉÒÔÌæ»»Îª¼á¹ûÔÆ) /Dropbox
+## SACå®‰è£…
 
-Èí¼þ°ü¹¤¾ß:ÐÂÁ¢µÃ(Synaptic) 
+1. è½¯ä»¶åŒ…å¯ä»¥åœ¨ä¸‹é¢ç»™å‡ºçš„ç½‘ç«™ä¸Šç”³è¯·ï¼Œè®¤çœŸå¡«å†™ï¼Œåœ¨å¹³å°é€‰æ‹©å¤„é€‰æ‹©Linux 32 ä½æˆ–64ä½ï¼ˆå¦‚æžœæœ‰å…´è¶£ä¹Ÿå¯ä»¥é€‰æ‹©ä¸€ä¸ªsource codeï¼‰ã€‚æ³¨æ„ä¸è¦å›¾çœäº‹ä¸€æ¬¡æŠŠæ‰€æœ‰åŒ…éƒ½ç”³è¯·äº†ï¼Œé‚£æ ·ç®¡ç†å‘˜ä¼šä¸“é—¨ç»™ä½ å‘é‚®ä»¶è¦ä½ è§£é‡Šçš„ã€‚æœ€å¥½ä½¿ç”¨å­¦æ ¡é‚®ç®±æˆ–è€…è¾ƒæ­£è§„çš„é‚®ç®±ï¼Œå¦åˆ™æœ‰è¢«æ‹’çš„å¯èƒ½ã€‚è‹¥éªŒè¯é€šè¿‡ï¼Œä¸‰ä¸ªå·¥ä½œæ—¥å†…å³å¯æ”¶åˆ°é‚®ä»¶ã€‚ç”³è¯·ç½‘å€ï¼šhttp://www.iris.edu/forms/sac_request.htm
 
-´ÅÅÌ¹ÜÀíÆ÷£ºLVM/GParted 
+2. å¯¹sac æ–‡ä»¶åŽ‹ç¼©åŒ…ç›´æŽ¥è§£åŽ‹ï¼Œä¼šå‡ºçŽ°sacæ–‡ä»¶å¤¹ï¼Œé‡Œé¢åŒ…å«äº†å¤šä¸ªæ–‡ä»¶å¤¹ï¼š
 
-ä¯ÀÀÆ÷£ºChrome 
+    tar xvfz netcdf-3.6.3.tar.gz
+    for i in *.bz2;do tar jxvf $i;done
 
-´Êµä£ºgoldendict 
+3. å°†æ•´ä¸ªsac æ–‡ä»¶å¤¹æ‹·åˆ°æŸç›®å½•ä¸‹ï¼ˆSAC æŽ¨èå®‰è£…ç›®å½•ä¸º/usr/localï¼‰ï¼š
 
-3D½¨Ä£¹¤¾ß£ºblender 
+    sudo cp -r sac /usr/local
 
-Í¼Æ¬´¦Àí¹¤¾ß£ºGIMP 
+4. ç¼–è¾‘.bashrc è®¾ç½®çŽ¯å¢ƒå˜é‡
 
-Dock:GLX-Dock 
+    gedit ~/.bashrc
 
-ÊÓÆµ±à¼­¨COpenshot
+åœ¨.bashrc çš„æœ€åŽæ·»åŠ å¦‚ä¸‹è¯­å¥
 
-BTÏÂÔØ£ºTransimssion
+    export SACHOME=/usr/local/sac
+    export SACAUX=$SACHOME/aux
+    export PATH=$SACHOME/bin:$PATH
 
-ftp¿Í»§¶ËFilezilla
-
-ÓÊ¼þ¿Í»§¶Ë£ºthunderbird 
-
-ÐéÄâ¹âÇýÈí¼þ£ºFurius ISO Mount
-
-ÎÄ¼þ¶Ô±ÈÈí¼þ£ºmeld
-
-ÄÔÍ¼Èí¼þ£ºxmind
-
-Ô¶³Ì¿ØÖÆ£ºvncview
-
-Êý¾Ý´¦ÀíÈí¼þ£ºoctave£¨²¿·Ö¼æÈÝmatlab£©
-
-¼ÇÂ¼¡¢±£´æºÍ²¥·ÅÖÕ¶Ë»á»°Èí¼þ: ttyrec ºÍ ttyplay
-
-À¬»øÇåÀíÈí¼þ£ºBleachBit
-
-Audio CD Extractor£¨ÒôÆµCDÌáÈ¡Æ÷£©
-
-ÓÖÃû¡°ÒôÀÖÕ¥Ö­»ú¡±¡¢¡°Sound Juicer¡±¡£
-
-ÄÜ°ÑCD×ª³Éflac¡¢ogg¡¢mp3µÈ¸ñÊ½¡£
-
-¹Ù·½Ö÷Ò³£ºhttp://www.burtonini.com/blog/computers/sound-juicer 
-
-Sound Converter£¨ÉùÒô×ª»»³ÌÐò£©
-
-Ö§³Öflac¡¢ogg¡¢mp3¡¢wav¡¢m4aµÈ¸ñÊ½¼äÅúÁ¿»¥×ª¡£
-
-¹Ù·½Ö÷Ò³£ºhttp://soundconverter.berlios.de 
-
-curlÊÇÀûÓÃURLÓï·¨ÔÚÃüÁîÐÐ·½Ê½ÏÂ¹¤×÷µÄÎÄ¼þ´«Êä¹¤¾ß¡£
-
-Á÷³ÌÍ¼¡¢UML¡¢ÄÔÍ¼¹¤¾ß
-
-IHMC CmapTools:http://cmap.ihmc.us/
-
-yED Grahp Editor:http://www.yworks.com/en/index.html
-
-##ËÑ¹·ÊäÈë·¨°²×°Ö¸ÄÏ
-
-ÓÉÓÚ Ubuntu 12.04 LTS ×Ô´øµÄ Fcitx °æ±¾½Ï¾É£¬ÐèÒªÏÈÍ¨¹ý PPA Éý¼¶£¬²ÅÄÜ°²×°ÏÂÔØµÄ deb Èí¼þ°ü¡£
-
-1. µã»÷×óÉÏ½ÇµÄÍ¼±ê´ò¿ªDash£¬ÊäÈëupdate-manager£¬µã»÷¸üÐÂ¹ÜÀíÆ÷¡£
-2. ÔÚ¸üÐÂ¹ÜÀíÆ÷ÖÐ£¬Ñ¡Ôñ²Ëµ¥£º±à¼­->Èí¼þÔ´£¬µã»÷Ìí¼Ó...°´Å¥£¬ÔÚµ¯³öµÄ´°¿ÚÖÐÊäÈëppa:fcitx-team/nightly£¬ µã»÷Ìí¼ÓÔ´¡£
-3. È»ºóµã»÷ÖØÐÂÔØÈë¡£
-4. ´ò¿ªUbuntuÈí¼þÖÐÐÄ£¬ÔÚËÑË÷À¸ÊäÈëfcitx£¬½«»áËÑ³öfcitx£¬È»ºó°´ÕÕÒ»°ãÈí¼þ°²×°²½Öè°²×°¼´¿ÉÍê³ÉÉý¼¶¡£
-5. Ë«»÷ÏÂÔØµÄ deb Èí¼þ°ü°²×°ËÑ¹·ÊäÈë·¨¡£
-
-##½â¾ö½ðÉ½wps×ÖÌåÎÊÌâ
-
-½«×ÖÌå½âÑ¹µ½~/.fontsÄ¿Â¼£¬È»ºóÖØÆôwps¼´¿É¡£
-
-ËµÃ÷£ºÕâÐ©ÎÄ¼þÎªÎ¢Èí°æÈ¨ËùÓÐ£¬Ê¹ÓÃÕâÐ©×ÖÌåÇë×ÔÐÐÈ·¶¨ÓµÓÐÕâÐ©×ÖÌåµÄÊ¹ÓÃÊÚÈ¨£¨±ÈÈçËµÓÐÄ³°æ±¾windowsÊÚÈ¨¼´¿É£©
-
-ÁíÍâ¾ÝÒ»²¿·ÖÓÃ»§·´Ó³£¬Èç¹ûÏµÍ³°²×°ÁËxfonts-mathml¿ÉÄÜµ¼ÖÂ·ûºÅÎÞ·¨ÏÔÊ¾¡£
-
-¾­¹ý²éÖ¤£¬·¢ÏÖÊÇÒòÎªxfonts-mathmlÖÐÒ²´æÔÚÒ»¸ö×ÖÌå½ÐSymbolµ¼ÖÂµÄ¡£
-
-Èç¹û°²×°ÉÏÊö×ÖÌåºóÈÔ´æÔÚÂÒÂëÏÖÏó£¬Çë³¢ÊÔÒÆ³ýxfonts-mathml°ü¡£
-
-## libreofficeÖÐPPT×ÖÌå±ã´ÖÎÊÌâ
-
-Tools ¡ú Options... ¡ú LibreOffice ¡ú View ¡ú Graphics output (È¡Ïû¹³Ñ¡Use hardware acceleration)  
-
-##Ð¡Æó¶ìÊäÈë·¨Í»È»ÎÞ·¨Ê¹ÓÃ
-
-²é¿´Ò»ÏÂÊÇ·ñ°²×°ÁËibus£¬¿ÉÔÚÏµÍ³ÉèÖÃÖÐµÄÓïÑÔÖ§³ÖÖÐÖØÐÂ°ÑÊäÈë·¨¸ÄÎªibus
-
-
-
-# Ö÷ÎÄ¼þ¼ÐÀïµÄÖÐÎÄÎÄ¼þ¼Ð¸Ä³ÉÓ¢ÎÄÎÄ¼þ¼Ð
-
-´ò¿ªÖÕ¶Ë£¬ÔÚÖÕ¶ËÏÂÊäÈëÃüÁî£º
-
- 
-
-export LANG=en_US
-
-xdg-user-dirs-gtk-update
-
- 
-
-Õâ¸öÊ±ºò»áµ¯³öÒ»¸öÅäÖÃ½çÃæ£¬ÌáÊ¾ÊÇ·ñ½«ÖÐÎÄÄ¿Â¼ÇÐ»»ÎªÓ¢ÎÄÄ¿Â¼¡£Ñ¡ÖÐ²»ÔÙÌáÊ¾£¬È·¶¨¡£ÏµÍ³»áÉ¾³ýÃ»ÓÐÄÚÈÝµÄÖÐÎÄÄ¿Â¼£¬¶øÓÐÄÚÈÝµÄÄ¿Â¼»á±£³Ö¡£²¢´´½¨8¸öÏàÓ¦µÄÓ¢ÎÄÄ¿Â¼ÈçÏÂ£º¡°Desktop¡±¡¢¡°Download¡±¡¢¡°Templates¡±¡¢¡°Public¡±¡¢¡°Documents¡±¡¢¡°Music¡±¡¢¡°Pictures¡±¡¢¡°Videos¡±¡£´ËÊ±£¬ÄúÔÚ¡°Î»ÖÃ¡±Àï¿´µ½µÄ³£ÓÃÖÐÎÄÄ¿Â¼ÒÑ¾­±ä³ÉÓ¢ÎÄÄ¿Â¼£»
-
-ÔÙÖ´ÐÐ£º
-
-export LANG=zh_CN.UTF-8     
-
-ÒÔÏÔÊ¾ÖÐÎÄ
-
-#Èí¼þ°²×°Ê¹ÓÃÎÊÌâ
-
-## RdseedµÄ°²×°
-
-1¡¢ÏÂÔØ: 
-
-http://www.iris.edu/pub/programs/rdseedv5.2.tar.gz
-
-2¡¢½âÑ¹: tar -xzvf rdseedv5.2.tar.gz
-
-3¡¢±àÒë£º
-
-1£©ÔÚmakefileÖÐÕÒµ½Õâ¼¸¾ä
-
-CC = cc 
-
-# for cygwin add the -D_CYGwin flag, for users of windows pcs
-
-CFLAGS     = -O -m32 -g -D_CYGwin
-
-
-
-# to compile rdseed as a 32-bit application
-
-#CFLAGS     = -O -m32 -g 
-
-
-
-2£©½«CYGwinÐÐ×¢ÊÍµô£¬È¡Ïû×îÏÂÃæÒ»ÐÐµÄ×¢ÊÍ£º
-
-CC = cc 
-
-# for cygwin add the -D_CYGwin flag, for users of windows pcs
-
-#CFLAGS     = -O -m32 -g -D_CYGwin
-
-
-
-# to compile rdseed as a 32-bit application
-
-CFLAGS     = -O -m32 -g 
-
-
-
-3£©ÊäÈëmake clean
-
-
-
-4£©ÊäÈëmake
-
-
-
-4¡¢½«±àÒëºÃµÄrdseedÎÄ¼þ¿½±´¿¿binÄ¿Â¼ÏÂ£ºsudo cp rdseed /usr/bin/
-
-
-
-5¡¢ÊäÈërdseed¼´¿É½øÈë¡£
-
-
-
-×¢£º64Î»ÏµÍ³ÏÂ¿ÉÒÔÖ±½ÓÊ¹ÓÃÒÑ±àÒëºÃµÄÎÄ¼þ:cp -p rdseed.rh6.linux_64 /usr/local/bin/rdseed 
-
-## SAC°²×°
-
-1¡¢Èí¼þ°ü¿ÉÒÔÔÚÏÂÃæ¸ø³öµÄÍøÕ¾ÉÏÉêÇë£¬ÈÏÕæÌîÐ´£¬ÔÚÆ½Ì¨Ñ¡Ôñ´¦Ñ¡ÔñLinux 32 Î»»ò64Î»£¨Èç¹ûÓÐÐËÈ¤Ò²¿ÉÒÔÑ¡ÔñÒ»¸ösource code£©¡£×¢Òâ²»ÒªÍ¼Ê¡ÊÂÒ»´Î°ÑËùÓÐ°ü¶¼ÉêÇëÁË£¬ÄÇÑù¹ÜÀíÔ±»á×¨ÃÅ¸øÄã·¢ÓÊ¼þÒªÄã½âÊÍµÄ¡£×îºÃÊ¹ÓÃÑ§Ð£ÓÊÏä»òÕß½ÏÕý¹æµÄÓÊÏä£¬·ñÔòÓÐ±»¾ÜµÄ¿ÉÄÜ¡£ÈôÑéÖ¤Í¨¹ý£¬Èý¸ö¹¤×÷ÈÕÄÚ¼´¿ÉÊÕµ½ÓÊ¼þ¡£
-
-ÉêÇëÍøÖ·£ºhttp://www.iris.edu/forms/sac_request.htm
-
-2¡¢¶Ôsac ÎÄ¼þÑ¹Ëõ°üÖ±½Ó½âÑ¹£¬»á³öÏÖsacÎÄ¼þ¼Ð£¬ÀïÃæ°üº¬ÁË¶à¸öÎÄ¼þ¼Ð£º
-
-tar xvfz netcdf-3.6.3.tar.gz
-
-for i in *.bz2;do tar jxvf $i;done
-
-
-
-3¡¢½«Õû¸ösac ÎÄ¼þ¼Ð¿½µ½Ä³Ä¿Â¼ÏÂ£¨SAC ÍÆ¼ö°²×°Ä¿Â¼Îª/usr/local£©£º
-
-sudo cp -r sac /usr/local
-
-4¡¢±à¼­.bashrc ÉèÖÃ»·¾³±äÁ¿
-
-gedit ~/.bashrc
-
-ÔÚ.bashrc µÄ×îºóÌí¼ÓÈçÏÂÓï¾ä
-
-
-
-export SACHOME=/usr/local/sac
-
-export SACAUX=$SACHOME/aux
-
-export PATH=$SACHOME/bin:$PATH
-
-
-
-5¡¢ÖÕ¶ËÊäÈësource ~/.bashrc 6¡¢ÖÕ¶ËÊäÈësac£¨×¢ÒâÒªÐ¡Ð´£©£¬¿´µ½°æ±¾ºÅµÈÐÅÏ¢¼´°²×°³É¹¦¡£
-6¡¢
-## SEISMIC UNIX °²×°ÊµÀý£¨Fedora Core /Ubuntu ÏµÍ³ £©
-
-Ç°Ìá £º1 ÓÉÓÚ fedora core ÏµÍ³ÔÚ°²×°¹ý³ÌÖÐ ÊÇÒÀ¾Ý¸öÈËµÄÑ¡Ôñ¶øÖ¸¶¨°²×°Èí¼þ°üµÄ£¬ÔÚSUµÄ°²×° ¹ý³ÌÖÐÈç¹ûÓöµ½Ä³Ïî°²×°ÎÞ·¨½øÐÐ£¬ÔòºÜ¿ÉÄÜÊÇÄ³¸ö°üÃ»ÓÐ±»°²×°µ½ÏµÍ³ÊÇ£¬ÌØ±ðÊÇÔÚ°²×°Ê± £¬Ò»¶¨ÒªÑ¡ÉÏ MESA£­LibGLU£¬ºÍ MESA£­LibGLÕâ Á½¸ö°ü £¬ÕâÁ½¸ö °ü ÔÚ ¡°xÏµÍ³¿ª·¢ "ÖÐ ¿ÉÒÔÕÒµ½ ¡£
-
-2 ´ËÍâ£¬SU µÄ°²×°¹ý³ÌÖÐ»¹ÐèÒª GLUT°ü £¬ÕâÐèÒªÔÚÍøÉÏÏÂÔØ¡£ÏÂÔØ·½·¨ £º ÔÚGOOGLEÉÏ ÊäÈë FREEGLUT £¬¼´¿É¿´µ½Ïà¹ØÁ´½Ó ¡£ 
-
-°²×°¾ßÌå¹ý³Ì £º
-
-1 SU °²×°»·¾³µÄ½¨Á¢Ö®Ò»
-
-Ö÷ÒªÓÐÁ½µã¡£1£¬ÔÚÖÕ¶Ë ÖÐÊäÈë££export CWPROOT£½£¯home/yourname/su ËµÃ÷£¬Â·¾¶ £¯home/yourname/su Îª×Ô¼ºÈÎÒâÖ¸¶¨µÄÂ·¾¶ £¬ÒÔºóSU½«ÔÚÕâ¸öÂ·¾¶ÏÂ½øÐÐ°²×°£¬ÀýÈç £¬ÎÒµÄÂ·¾¶ÊÇ £¯home/wh/su.
-
-2 ÔÚÖÕ¶Ë ÖÐ ÊäÈë ££export PATH=$PATH£º/home/yourname/su/bin ËµÃ÷£¬ÈçÉÏ£¬±¾²¿·ÖÂ·¾¶Îª×Ô¼ºÈÎÒâÖ¸¶¨µÄÂ·¾¶£¨Ç°Ò»²¿·ÖÒªºÍÉÏÃæÒ»ÖÂ£©£¬¶ø±¾¾äµÄÒâË¼ÊÇ½«/home/yourname/su/binÖÐµÄÃüÁî¼ÓÈëµÄLINUXÏµÍ³µÄËÑË÷Â·¾¶¡£
-
-2 SUÔÚ±¾ÏµÍ³ÖÐ°²×°»·¾³µÄ½¨Á¢¼°°²×°
-
-ÕâÀïµÄÄÚÈÝ¸ù¾ÝÏµÍ³µÄ²»Í¬¶ø²»Í¬£¬µ«´óÌåÊÇÒ»ÖÂµÄ¡£ÕâÀï½«·Ö²¿·Ö½øÐÐËµÃ÷¡£
-
-£¨1£©½«CWP£­SU¿½±´µ½£¯home/yourname/su£¬È»ºó ½âÑ¹ ££tar zxvf cwp-su.xx,½âÑ¹ºó½«»á¿´µ½³öÏÖÁËÒ»¸öÐÂ Ä¿Â¼ src,½øÈë´ËÄ¿Â¼¡£
-
-£¨2£©ÔÄ¶ÁÎÄ¼þreadme-to-install,¿ÉÒÔ¿´µ½°²×°SUµÄ´óÌå²½Öè¡£
-
-£¨3)ÔÄ¶ÁÎÄ¼þmakefile.config,ÕâÊÇ³É¹¦°²×°SUµÄ¹Ø¼ü¡£ÀïÃæ¶ÔÈçºÎ°²×°SUËµÃ÷µÄºÜÇå³þ ¡£±¾ÎÄ½«½éÉÜÀïÃæµÄ¹Ø¼ü¼¸µã¡£
-
-2£­1 Ö´ÐÐmake installµÄ×¼±¸¹¤×÷
-
-Ö÷ÒªÊÇÐèÒªÐÞ¸Ämakefile.configÖÐµÄÁ½Ïî¡£
-
-1£¬½« ENDIANFLAG = -DCWP_LITTLE_ENDIAN ¾ä¼¤»î¡£
-
-2£¬½« include $(CWPROOT)/src/Rules/gnumake.rules ¾ä¼¤»î£¬²¢ÆÁ±Îµô #include $(CWPROOT)/src/Rules/oldmake.rules ¾ä,ÐÞ¸Äºó ±£´æ£¬È»ºóÔËÐÐ make install¾Í¿ÉÒÔ³É¹¦°²×°¡£
-
-2£­2 Ö´ÐÐmake xtinstall, ²»ÐèÒªÐÞ¸Ä£¬Ö±½ÓÔËÐÐmake xtinstall
-
-2£­3 Ö´ÐÐmake finstall µÄ×¼±¸¹¤×÷
-
-ÕâÀïÐèÒªÖ¸¶¨fortran±àÒëÆ÷£¬ÔÚfedora core 6ÏµÍ³ÖÐ£¬GCCµÄ°æ±¾ÊÇ4¡£1¡£1£¬Òò´Ë¿ÉÒÔÖ±½ÓÀûÓÃGCCÖÐµÄ±àÒëÆ÷gfortran,¼´ÔÚmakefile.configÖÐµÄÏà¹Ø¾ä¸ÄÎªFC = gfortran,ÆäËûµÄÏµÍ³¸ÄÎªÏàÓ¦µÄfortran±àÒëÆ÷¼´¿É¡£
-
-2£­4 Ö´ÐÐmake mglinstall µÄ×¼±¸¹¤×÷
-
-ÕâÀï¾ÍÐèÒª×îÏÈÌáµ½µÄLIBGLU£¬ºÍ GLUTÕâÁ½¸öÏà¹Ø¿âÁË ¡£LIBGLUÔÚ°²×°FC6Ê±ºò¾Í¿ÉÒÔ°²×°ÈëÏµÍ³¡£ÆäÄ¬ÈÏ°²×°Â·¾¶Îª£ºusr/lib,ºÍ usr/include. ¶øGLUTÐèÒª´ÓÍøÉÏÏÂÔØ¡£ÖµµÃ ×¢ÒâµÄÊÇ£¬ÒªÏÂÔØ½ÏÐÂµÄFREEGLUT¡£ÏÂÔØºó½âÑ¹°²×°¡£FREEGLUTµÄ°²×°Îª³£¹æ°²×° £¬×°ºÃºó¿ÉÒÔ·¢ÏÖÆä°²×°Â·¾¶Îª£ºusr/local/lib,ºÍ usr/local/include, Òò´Ë£¬¾Í²»ÐèÒª¶Ômakefile.configÖÐÏà¹Ø²¿·Ö×÷ÈÎºÎ¸Ä¶¯¡£
-
-ÖÁ´Ë£¬SUµÄÖ÷Ìå²¿·Ö°²×°Íê±Ï£¬ÆäÓàÁ½µãÎª¿ÉÑ¡Ïî¡£ÆäµÀÀíÊÇÀàËÆ£¬¼´¶Ô makefile.config                                ÖÐµÄÏà¹Ø¾ä×÷ÊÊµ±µÄ¸Ä¶¯¡£
-
-²¹³äËµÃ÷£º1 ÔÚÒÔºóÃ¿´ÎÔËÐÐSUµÄÊ±ºò£¬¶¼ÐèÒªÊäÈëexportÄÇÁ½¸öÓï¾ä¡£Èç¹û²»ÏëÃ¿´Î¶¼ÊäÈë£¬¿ÉÒÔÐÞ¸Ä.bashrcÎÄ¼þ(ÔÚÎÒµÄÏµÍ³ÖÐÕâ¸öÎÄ¼þÔÚ/home/wh/.bashrc)½«exportÄÇÁ½¾äÌí¼Ó½øÈë¼´¿É¡£
-
-2 Èç¹û°´ÕÕ±¾ÎÄËùËµµÄ¹ý³Ì½øÐÐ°²×°£¬µ«·¢ÏÖÆäÖÐÄ³Ò»²½³öÏÖ´íÎó£¬ÄÇºÜ¿ÉÄÜÊÇÏµÍ³ÔÚ °²×°µÄ¹ý³ÌÖÐÃ»ÓÐ°²×°ÏàÓ¦µÄ¿â£¬ÕâÊ±£¬×ÐÏ¸·ÖÎö´íÎóÃèÊö£¬¾Í¿ÉÒÔ·¢ÏÖµ½µ×ÊÇÄÇÐ©¿âÃ»ÓÐ°²×°£¬È»ºóÔÚGOOGLEÖÐÕÒµ½ÏàÓ¦µÄ¿âÏÂÔØ°²×°¼´¿É£¨»òÓÃ YUMÃüÁî£©¡£
-
-×îºó£¬ÉÏ´«Ò»ÕÅSUÔÚDEMOµÄÀý×Ó½á¹ûÕ¹Ê¾Í¼Æ¬¡£
-
-
-
-$(CWPROOT)/src/Rules/oldmake.rules ¾ä,ÐÞ¸Äºó ±£´æ£¬È»ºóÔËÐÐ make install¾Í¿ÉÒÔ³É¹¦°²×°¡£²¹³äËµÃ÷£º1 ÔÚÒÔºóÃ¿´ÎÔËÐÐSUµÄÊ±ºò£¬¶¼ÐèÒªÊäÈëexportÄÇÁ½¸öÓï¾ä¡£Èç¹û²»ÏëÃ¿´Î¶¼ÊäÈë£¬¿ÉÒÔÐÞ¸Ä.bashrcÎÄ¼þ(ÔÚÎÒµÄÏµÍ³ÖÐÕâ¸öÎÄ¼þÔÚ/home/wh/.bashrc)½«exportÄÇÁ½¾äÌí¼Ó½øÈë¼´¿É¡£
-
-
-
-
-
-¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á¡Á
-
-1 ¸Õ×°ÉÏubuntuºó£¬Ê×ÏÈÐèÒª½«ÍøÂçÉèÖÃºÃ£¬²¢Ñ¡ÔñºÏÊÊµÄÈí¼þÔ´¡£¶ÔÓÚ½ÌÓýÍøÓÃ»§£¬ÍÆ¼öÖÐ¹ú¿Æ´óµÄÈí¼þÔ´£¬Çë²Î¿¼ÏÂÃæblogÖÐµÄÉèÖÃ·½·¨£ºhttp://hi.baidu.com/from/blog/item/30db2e734f516e1f8701b0a4.html
-
-
-
-2 Ô¤×°7¸öÈí¼þ°ü£¬¼´ÔÚÖÕ¶ËÖÐÊäÈëÈçÏÂÃüÁî£º
-
-sudo apt-get install build-essential
-
-sudo apt-get install libx11-dev
-
-sudo apt-get install libxt-dev
-
-sudo apt-get install libglut3-dev
-
-sudo apt-get install libxmu-dev
-
-sudo apt-get install libxi-dev
-
-sudo apt-get install gfortran
-
-
-
-3 su°²×°µÄ×¼±¸¹¤×÷£¬Ò»¹²ÓÐ3²½£º
-
-
-
-1£©ÊäÈë£º export CWPROOT=/home/yourname/su   ×¢£ºÕâÀïµÄ/home/yourname/suÎªÄãÏÂÔØ²¢½âÑ¹suËùÔÚµÄÄ¿Â¼
-
-2£©ÊäÈë£ºexport PATH=$PATH:/home/yourname/su/bin ×¢£º/home/yourname/su µÄÒâÒåÍ¬ÉÏ£¬binÎª½âÑ¹suºóËùÉú³ÉµÄÄ¿Â¼¡£
-
-3£©½øÈë/home/yourname/su/src Õâ¸öÄ¿Â¼£¬¿ÉÒÔ¿´µ½makefile.config Õâ¸öÎÄ¼þ£¬ÒªÐÞ¸ÄÀïÃæµÄÈýÏî,ÊäÈëÃüÁî£ºgedit makefile.config , È»ºóÐÞ¸ÄËù´ò¿ªµÄÎÄ¼þ£º
-
-
-
-1£¬½« ENDIANFLAG = -DCWP_LITTLE_ENDIAN ¾ä¼¤»î£¨¼´È¥µô#£©¡£
-
-2£¬½« include $(CWPROOT)/src/Rules/gnumake.rules ¾ä¼¤»î£¬²¢ÆÁ±Îµô include$(CWPROOT)/src/Rules/oldmake.rules ¾ä,ÐÞ¸Äºó ±£´æ¡£
-
-3, ½«FC=g77, FC=f77,FC=ifort ÆÁ±Îµô£¬¼¤»îFC=gfortran
-
-4£¬½«OPTF = -O -static -mcpu=i686 -fno-globals -fno-automatic -fno-second-underscore ÆÁ±Î£¬¼¤»îOPTF = -O -static -march=i686 -fno-automatic -fno-second-underscore
-
-
-
-4 ÕýÊ½°²×°,·Ö±ðÊäÈë£º
-
-1£©make install
-
-2) make xtinstall
-
-3£©make finstall
-
-4) make mglinstall
-
-ÖÁ´ËsuÖ÷ÌåÒÑ¾­³É¹¦£¬²Î¼ûÏÂÍ¼£º
-
-
-
-²¹³äËµÃ÷£º1 ÔÚÒÔºóÃ¿´ÎÔËÐÐSUµÄÊ±ºò£¬¶¼ÐèÒªÊäÈëexportÄÇÁ½¸öÓï¾ä¡£Èç¹û²»ÏëÃ¿´Î¶¼ÊäÈë£¬¿ÉÒÔÐÞ¸Ä.bashrcÎÄ¼þ(ÔÚÎÒµÄÏµÍ³ÖÐÕâ¸öÎÄ¼þÔÚ/home/wh/.bashrc)½«exportÄÇÁ½¾äÌí¼Ó½øÈë¼´¿É¡£
-
-
-
-2   £¨2011.11£©libglut3-devÒÑ¾­±»freeglut3-devÌæ»»¡£¼´:  sudo apt-get install freeglut3-dev
-
-
-
-3  ÔÚ×îÐÂ°æ±¾suÏÂ £¬ÐèÌí¼Ó OPTF = -O -static -march=i686 -fno-automatic -fno-second-underscore ÖÁmakefile.configÎÄ¼þÖÐ¡£
-
-## wine
-
-winetricks ÓÃwineTricksÁîÄãµÄwine¸üÍêÕû
-
-·ÖÀà£º LinuxÏµÍ³Ñ§Ï°¼ÇÂ¼ 2011-04-26 22:11 4493ÈËÔÄ¶Á ÆÀÂÛ(0) ÊÕ²Ø ¾Ù±¨
-
-Î¢Èíwindowsscriptingmfcvbbasic
-
-
-
-LinuxÏÂ×îÓÐÃûµÄwindows»·¾³Ä£ÄâÆ÷¾ÍÊÇWINEÁË¡£ËüÌá¹©ÁËÒ»¸ö¿ÉÒÔÄ£ÄâWINDOWS»·¾³µÄ»ù±¾Æ½Ì¨£¬ÔÚÕâÉÏÃæÄã¼¸ºõ¿ÉÒÔÔËÐÐÈÎºÎÄãÏëÔËÐÐµÄwindows³ÌÐò¡£
-
-
-
-Ê²Ã´£¿Äã²»ÏàÐÅ£¿²»Òª¸æËßÎÒÄãµÄ³ÌÐòÔËÐÐÊ±×ÜÊÇÌáÊ¾È±ÉÙmfc42.dll¡£¡£¡£
-
-
-
-Ä¬ÈÏµÄwine»·¾³È±ÉÙºÜ¶àwinÆ½Ì¨µÄ¿â£¬¶øÇÒ×î¿ÉºÞµÄÊÇ£¬system32Ä¿Â¼ÏÂ¾¹È»Ã»ÓÐregedit³ÌÐò¡£
-
-
-
- 
-
-
-
-ÏÂÃæÎÒÀ´½éÉÜÒ»ÏÂ£¬ÈçºÎÈÃÄãµÄwinE»·¾³¸üÎªÍêÕû¡£
-
-
-
-ÎÒÊ¾·¶µÄlinux·¢ÐÐ°æÊÇubuntu 9.04£¬ wineµÄ°æ±¾ºÅÊÇ1.1.26
-
-
-
- 
-
-
-
-1.×¼±¸ÕýÈ·µÄ×¢²á±í±à¼­Æ÷
-
-
-
-Ê×ÏÈ½«/home/ÄãµÄÓÃ»§Ãû/.wine/dosdevices/c:/windowsÏÂµÄregedit.exe³ÌÐò¸´ÖÆµ½system32Ä¿Â¼ÏÂ¡£
-
-
-
-ÃüÁî£º
-
-
-
-sudo cp /home/ÄãµÄÓÃ»§Ãû/.wine/dosdevices/c:/windows/regedit.exe /home/ÄãµÄÓÃ»§Ãû/.wine/dosdevices/c:/windows/system32/
-
-
-
-2.ÏÂÔØ²¢°²×°winetricks
-
-
-
-wget http://www.kegel.com/wine/winetricks
-
-
-
-chmod +x winetricks
-
-
-
-sudo mv winetricks /usr/local/bin
-
-
-
-3¡£ÓÃwinetricks°²×°±ØÐëµÄwinÖ§³Ö¿â¡£ÕâÒ»²½ºÜ¹Ø¼ü¡£
-
-
-
-ÃüÁîÐÐÖÐÊäÈëwinetricks
-
-
-
-È»ºó¹´Ñ¡colorprofile¡¢corefonts¡¢d3dx9¡¢fontfix¡¢fontsmooth-gray¡¢fontsmooth-rgb¡¢fontsmooth-bgr¡¢gdiplus¡¢mfc40¡¢mfc42¡¢
-
-
-
-msxml3¡¢msxml4¡¢msxml6¡¢riched20¡¢riched30¡¢tahoma¡¢urlmon¡¢vb6run¡¢vcrun6¡¢vcrun2003¡¢vcrun2005¡¢vcrun2008¡¢ie6¡¢allfonts
-
-
-
-È»ºóÑ¡Ôñ°²×°¡£
-
-
-
-4¡£ÏÂÃæÊäÈëwinetricksºó£¬¹´Ñ¡dotnet11¡¢dotnet20¡¢vjrun20²¢°²×°¡£
-
-
-
-¶¼°²×°Íê±ÏÒÔºó£¬ÓÐÐËÈ¤µÄÅóÓÑ¿ÉÒÔ³¢ÊÔ°²×°Ò»ÏÂpowerdesigner¿´¿´ÄÜ²»ÄÜÓÃ¡£¹þ¹þ¡£
-
-
-
-¸ü¶àÐÅÏ¢Çë²Î¼ûhttp://wiki.winehq.org/winetricks
-
-
-
- 
-
-
-
- 
-
-
-
-wineµÄÆäÖÐÒ»¸ö¿ª·¢ÕßDanKegelÐ´µÄÒ»¸ö°²×°windowsÓÐ¹Ø¿âºÍÈí¼þµÄÐ¡³ÌÐò£¬·Ç³£ÓÐÓÃ£¡
-
-
-
-½éÉÜÒ»ÏÂÊ¹ÓÃ·½·¨£º
-
-
-
-1¡¢´ò¿ªÖÕ¶Ë£¬ÊäÈë
-
-wget
-
-
-
-http://www.kegel.com/wine/winetricks
-
-
-
-2¡¢ÔÙÊäÈë
-
-sudo apt-get install cabextract
-
-
-
-3¡¢ÔÙÊäÈë
-
-chmod +x winetricks
-
-
-
-4¡¢×îºó
-
-./winetricks
-
-
-
-ÔÚ´ò¿ªµÄ´°¿ÚÖÐ£¬¿ÉÒÔ¿´µ½³ÌÐòËùÖ§³ÖµÄÒ»¸öÈí¼þÁÐ±í
-
-´úÂë:
-
-art2kmin Î¢Èí Access 2000 ÔËÐÐÊ±.
-
-colorprofile ±ê×¼ RGB ÑÕÉ«ÅäÖÃÎÄ¼þ
-
-comctl32 Î¢Èí common controls 5.80
-
-comctl32.ocx Î¢ÈíµÄcomctl32.ocx ºÍcomctl.ocx,VB6µÄcomctl32Íâ¿Ç
-
-corefonts Î¢Èí Arial, Courier, Times ×ÖÌå
-
-dcom98 Î¢Èí DCOM, Ìæ»»wineËù×Ô´øµÄ
-
-dirac0.8 the obsolete Dirac 0.8 directshow filter
-
-directx9 Î¢Èí DirectX 9
-
-divx divx ÊÓÆµ±àÂë
-
-dotnet11 Î¢Èí .NET 1.1
-
-dotnet20 Î¢Èí .NET 2.0
-
-ffdshow ffdshow ÊÓÆµ±àÂë
-
-flash Adobe Flash Player ActiveX Óë firefox ²å¼þ
-
-fontfix Fix bad fonts which cause crash in some apps (e.g. .net).
-
-gdiplus Î¢Èí gdiplus.dll (Ðë°²×°powerpoint)
-
-gecko HTML äÖÈ¾ÒýÇæ(Mozilla)
-
-icodecs Intel Ã½Ìå±àÂë (Indeo)
-
-jet40 Î¢Èí Jet 4.0 Service Pack 8
-
-liberation Red Hat Liberation ×ÖÌå (Sans, Serif, Mono)
-
-mdac25 Î¢Èí MDAC 2.5: Î¢Èí ODBC Çý¶¯, etc.
-
-mdac27 Î¢Èí MDAC 2.7
-
-mdac28 Î¢Èí MDAC 2.8
-
-mfc40 Î¢Èí mfc40 (Microsoft Foundation Classes from Visual C++ 4)
-
-mfc42 Î¢Èí mfc42 (°üº¬ÓÚÏÂÃæµÄvcrun6)
-
-mono19 mono-1.9.1-gtksharp-2.10.4-win32-2
-
-msi2 Î¢Èí Installer 2.0
-
-msls31 Î¢Èí Line Services 3.1 (needed by native riched?)
-
-msxml3 Î¢Èí XML version 3
-
-msxml4 Î¢Èí XML version 4
-
-msxml6 Î¢Èí XML version 6
-
-ogg ogg ¹ýÂËÆ÷ºÍ±àÂëÆ÷: flac, theora, speex, vorbis,
-
-
-
-pdh Î¢Èí pdh.dll (Performance Data Helper)
-
-quicktime72 Æ»¹û Quicktime 7.2
-
-riched20 Î¢Èí riched20 and riched32
-
-riched30 Î¢Èí riched30
-
-tahoma Î¢Èí Tahoma ×ÖÌå (not part of corefonts)
-
-vb3run Î¢Èí Visual Basic 3 ÔËÐÐÊ±
-
-vb4run Î¢Èí Visual Basic 4 ÔËÐÐÊ±
-
-vb5run Î¢Èí Visual Basic 5 ÔËÐÐÊ±
-
-vb6run Î¢Èí Visual Basic 6 ÔËÐÐÊ±
-
-vcrun6 Î¢Èí Visual C++ 6 sp4 ÔËÐÐ¿â (°üÀ¨mfc42.dll, msvcp60.dll, msvcrt.dll)
-
-vcrun2003 Î¢Èí Visual C++ 2003 ÔËÐÐ¿â (°üÀ¨mfc71.dll,msvcp71.dll,msvcr71.dll)
-
-vcrun2005 Î¢Èí Visual C++ 2005 ÔËÐÐ¿â (°üÀ¨mfc80.dll,msvcp80.dll,msvcr80.dll)
-
-vcrun2005sp1 Î¢Èí Visual C++ 2005 sp1 ÔËÐÐ¿â
-
-vcrun2008 Î¢Èí Visual C++ 2008 ÔËÐÐ¿â (°üÀ¨mfc90.dll,msvcp90.dll,msvcr90.dll)
-
-vjrun20 Î¢Èí Visual J# 2.0 ÔËÐÐ¿â (ÐèÒª°²×° dotnet20)
-
-wmp9 Î¢Èí windows Media Player 9
-
-wmp10 Î¢Èí windows Media Player 10
-
-wsh51 Î¢Èí windows Scripting Host 5.1
-
-wsh56 Î¢Èí windows Scripting Host 5.6
-
-wsh56js Î¢Èí windows scripting 5.6, Ö»ÓÐjscript,Ã»ÓÐcscript
-
-wsh56vb Î¢Èí windows scripting 5.6, Ö»ÓÐvbscript,Ã»ÓÐcscript
-
-xvid xvid ÊÓÆµ±àÂë
-
-
-
-autohotkey Autohotkey (open source gui scripting language)
-
-firefox3 Firefox 3
-
-kde KDE for windows installer
-
-mpc Media Player Classic
-
-vlc VLC media player
-
-
-
-allfonts ÒÔÉÏËùÓÐ×ÖÌå (corefonts, tahoma, liberation)
-
-allcodecs ÒÔÉÏËùÓÐÃ½Ìå±àÂë (xvid, ffdshow, icodecs)
-
-fakeie6 ÔÚ×¢²á±íÖÐÐ´ÈëIE6ÒÑ°²×°ÐÅÏ¢
-
-native_mdac Override odbc32 and odbccp32
-
-nt40 Set windows version to nt40
-
-win98 Set windows version to windows 98
-
-win2k Set windows version to windows 2000
-
-winxp Set windows version to windows XP
-
-vista Set windows version to windows Vista
-
-winver= Set windows version to default (winxp)
-
-volnum Rename drive_c to harddiskvolume0 (needed by some installers)
-
-
-
-ÆäÖÐ£¬Òª°²×°QQ2008µÄ»°£¬Ö»Ðè°²×°flash gecko msls31 riched20 vcrun6¼´¿É¡£
-
+5. ç»ˆç«¯è¾“å…¥source ~/.bashrc 
+6. ç»ˆç«¯è¾“å…¥sacï¼ˆæ³¨æ„è¦å°å†™ï¼‰ï¼Œçœ‹åˆ°ç‰ˆæœ¬å·ç­‰ä¿¡æ¯å³å®‰è£…æˆåŠŸã€‚
 
 
 ## GTK
 
-ÎÒÀûÓÃ´Ë·½·¨³É¹¦ÔÚUbuntu?12.04ÏÂ°²×°GTK 2.24.10  ¼ÇÂ¼Ò»ÏÂ
+æˆ‘åˆ©ç”¨æ­¤æ–¹æ³•æˆåŠŸåœ¨Ubuntu?12.04ä¸‹å®‰è£…GTK 2.24.10  è®°å½•ä¸€ä¸‹
 
-1¡¢°²×°gcc/g++/gdb/make µÈ»ù±¾±à³Ì¹¤¾ß
+    sudo apt-get install build-essential # å®‰è£…gcc/g++/gdb/make ç­‰åŸºæœ¬ç¼–ç¨‹å·¥å…·
+    sudo apt-get install gnome-core-devel # å®‰è£… libgtk2.0-dev libglib2.0-dev ç­‰å¼€å‘ç›¸å…³çš„åº“æ–‡ä»¶
+    sudo apt-get install pkg-config # ç”¨äºŽåœ¨ç¼–è¯‘GTKç¨‹åºæ—¶è‡ªåŠ¨æ‰¾å‡ºå¤´æ–‡ä»¶åŠåº“æ–‡ä»¶ä½ç½®
+    sudo apt-get install devhelp # å®‰è£… devhelp GTKæ–‡æ¡£æŸ¥çœ‹ç¨‹åº
+    sudo apt-get install libglib2.0-doc libgtk2.0-doc # å®‰è£… gtk/glib çš„APIå‚è€ƒæ‰‹å†ŒåŠå…¶å®ƒå¸®åŠ©æ–‡æ¡£
+    sudo apt-get install glade libglade2-dev # å®‰è£…åŸºäºŽGTKçš„ç•Œé¢GTKæ˜¯å¼€å‘Gnomeçª—å£çš„c/c++è¯­è¨€å›¾å½¢åº“
+    sudo apt-get install libgtk2.0-dev # å®‰è£…gtk2.0 æˆ–è€… å°†gtk+2.0æ‰€éœ€çš„æ‰€æœ‰æ–‡ä»¶ç»Ÿé€šä¸‹è½½å®‰è£…å®Œæ¯•
+    pkg-config --modversion gtk+-2.0 # æŸ¥çœ‹ 2.x ç‰ˆæœ¬
+    pkg-config --version # æŸ¥çœ‹pkg-configçš„ç‰ˆæœ¬
+    pkg-config --list-all grep gtk # æŸ¥çœ‹æ˜¯å¦å®‰è£…äº†gtk
 
-sudo apt-get install build-essential
+æµ‹è¯•ç¨‹åº
 
-2¡¢°²×° libgtk2.0-dev libglib2.0-dev µÈ¿ª·¢Ïà¹ØµÄ¿âÎÄ¼þ
-
-sudo apt-get install gnome-core-devel
-
-3¡¢ÓÃÓÚÔÚ±àÒëGTK³ÌÐòÊ±×Ô¶¯ÕÒ³öÍ·ÎÄ¼þ¼°¿âÎÄ¼þÎ»ÖÃ
-
-sudo apt-get install pkg-config
-
-4¡¢°²×° devhelp GTKÎÄµµ²é¿´³ÌÐò
-
-sudo apt-get install devhelp
-
-5¡¢°²×° gtk/glib µÄAPI²Î¿¼ÊÖ²á¼°ÆäËü°ïÖúÎÄµµ
-
-sudo apt-get install libglib2.0-doc libgtk2.0-doc
-
-6¡¢°²×°»ùÓÚGTKµÄ½çÃæGTKÊÇ¿ª·¢Gnome´°¿ÚµÄc/c++ÓïÑÔÍ¼ÐÎ¿â
-
-sudo apt-get install glade libglade2-dev
-
-7¡¢°²×°gtk2.0 »òÕß ½«gtk+2.0ËùÐèµÄËùÓÐÎÄ¼þÍ³Í¨ÏÂÔØ°²×°Íê±Ï
-
-sudo apt-get install libgtk2.0-dev
-
-²é¿´GTK¿â°æ±¾
-
-1.²é¿´ 2.x °æ±¾
-
-pkg-config --modversion gtk+-2.0
-
-2.²é¿´pkg-configµÄ°æ±¾
-
-pkg-config --version
-
-3.²é¿´ÊÇ·ñ°²×°ÁËgtk
-
-pkg-config --list-all grep gtk
-
-²âÊÔ³ÌÐò
-
-´úÂëÈçÏÂ£º
-
-//Helloworld.c
-
-#include <gtk/gtk.h>
-
-int main(int argc,char *argv[])
-
-{
-
-    GtkWidget    *window;
-
-    GtkWidget    *label;
-
+```C
+    //Helloworld.c
+    #include <gtk/gtk.h>
+    int main(int argc,char *argv[])
+    {
+        GtkWidget    *window;
+        GtkWidget    *label;
     
-
-    gtk_init(&argc,&argv);
-
+        gtk_init(&argc,&argv);
     
-
-    /* create the main, top level, window */
-
-    window = gtk_window_new(GTK_winDOW_TOPLEVEL);
-
+        /* create the main, top level, window */
+        window = gtk_window_new(GTK_winDOW_TOPLEVEL);
     
-
-    /* give it the title */
-
-    gtk_window_set_title(GTK_winDOW(window),"Hello World");
-
+        /* give it the title */
+        gtk_window_set_title(GTK_winDOW(window),"Hello World");
     
-
-    /* connect the destroy signal of the window to gtk_main_quit
-
-    * when the window is about to be destroyed we get a notification and
-
-    * stop the main GTK+ loop
-
-    */
-
-    g_signal_connect(window,"destroy",G_CALLBACK(gtk_main_quit),NULL);
-
+        /* connect the destroy signal of the window to gtk_main_quit
+        * when the window is about to be destroyed we get a notification and
+        * stop the main GTK+ loop
+        */
+        g_signal_connect(window,"destroy",G_CALLBACK(gtk_main_quit),NULL);
     
-
-    /* create the "Hello, World" label */
-
-    label = gtk_label_new("Hello, World");
-
+        /* create the "Hello, World" label */
+        label = gtk_label_new("Hello, World");
     
-
-    /* and insert it into the main window */
-
-    gtk_container_add(GTK_CONTAINER(window),label);
-
+        /* and insert it into the main window */
+        gtk_container_add(GTK_CONTAINER(window),label);
     
-
-    /* make sure that everything, window and label, are visible */
-
-    gtk_widget_show_all(window);
-
+        /* make sure that everything, window and label, are visible */
+        gtk_widget_show_all(window);
     
-
-    /* start the main loop, and let it rest until the application is closed */
-
-    gtk_main();
-
+        /* start the main loop, and let it rest until the application is closed */
+        gtk_main();
     
+        return 0;
+    }
+```
 
-    return 0;
+ç¼–è¯‘è¿è¡Œ
 
-}
-
-±àÒëÔËÐÐ
-
-1¡¢±àÒë
-
-gcc -o Helloworld Helloworld.c `pkg-config --cflags --libs gtk+-2.0`
-
-2¡¢ÔËÐÐ
-
-./Helloworld
-
-## wubi
-
-Ê×ÏÈ£¬¿Õ³öÒ»¸öÅÌ·û£¨ÈçFÅÌ£©£¬½«ÏÂÔØµÄubuntu-12.04-desktop-i386.isoµ¥¶À·ÅÔÚÁíÒ»¸öÅÌÈç£¨DÅÌ£©£¬´ÓDÅÌÀïµÄ¾µÏñÖÐ½âÑ¹³ö wubi.exe£¬²¢½«ubuntu-12.04-desktop-i386.isoºÍ wubi.exe·ÅÔÚÍ¬Ò»¸öÎÄ¼þ¼ÐÏÂÓÃÓ¢ÎÄÃüÃû£¨Èçubuntu-12.04£©£¬È»ºóË«»÷ wubi.exe»á°²×°¶ø²»»áÔÙÈ¥ÏÂÔØ¾µÏñ£¬°²×°¹ý³ÌÖÐÈÃÄãÑ¡ÔñÅÌ·ûÊ±Ñ¡ÔñÏëÒª°²×°ÅÌÈçFÅÌ¡£×£ÄãºÃÔË£¡
-
-
-
-ÄãÖ±½Ó½âÑ¹¾µÏñÎÄ¼þ£¬È»ºó°Ñ½âÑ¹³öÀ´µÄwubi.exe¸úÔ­ÏÈÏÂÔØºÃµÄubuntu-12.04-desktop-i386.iso·ÅÔÚÍ¬Ò»¸öÎÄ¼þ¼ÐÖÐ£¬Ë«»÷ÔËÐÐwubi£¬È»ºó°´ÕÕÌáÊ¾Ò»²½²½°²×°¼´¿É¡£ÐèÒª×¢ÒâµÄÊÇ£¬×îºÃ¶Ï¿ªÍøÂçÔÙ°²×°£¬²»È»µÄ»°°²×°³öÀ´ÓÐ¿ÉÄÜ»á±ä³É64Î»µÄ£¬ÎÒÔø¾­·¢Éú¹ýÕâÑùµÄ±¯¾ç¡£
-
-## pdftk´¦ÀíPDFÎÄ¼þ
-
-
-
-PdftkÊÇÓÉSid StewardÐ´µÄÒ»¸öPDFÔöÇ¿Èí¼þ£¬Ëü¿ÉÒÔºÏ²¢/·Ö¸îPDFÎÄµµ¡¢½â¿ª±ØÒªµÄÊäÈëÃÜÂë¡¢Êä³ö¼ÓÃÜ¡¢¸øPDFÎÄµµ¼ÓË®Ó¡¡¢´ÓPDFÎÄµµÖÐ½â³ö¸½¼þ¡¢½«PDFÎÄµµ±ä³ÉÒ»Ò³µÈµÈ£¬ÄÜ¹»×öµ½²Ù×÷PDFÎÄµµµÄËùÓÐÊÂÇé¡£ 
-
-
-
-ºÏ²¢
-
-pdftk 1.pdf 2.pdf 3.pdf cat output 123.pdf
-
-»ò
-
-pdftk A=1.pdf B=2.pdf cat A B output 12.pdf
-
-»ò
-
-pdftk *.pdf cat output combined.pdf
-
-
-
-
-
-¶à¸öpdfÖÐ³é³ö²¿·ÖÒ³ºÏ³ÉÐÂpdf
-
-pdftk A=one.pdf B=two.pdf cat A1-7 B1-5 A8 output combined.pdf
-
-
-
-
-
-128Î»¼ÓÃÜ£¬ÏÞÖÆÒ»ÇÐÈ¨ÏÞ
-
-pdftk mydoc.pdf output mydoc.128.pdf owner_pw foopass
-
-
-
-
-
-Í¬ÉÏ£¬µ«´ò¿ª²»ÐèÃÜÂë
-
-pdftk mydoc.pdf output mydoc.128.pdf owner_pw foo user_pw baz
-
-
-
-
-
-Í¬ÉÏ£¬¿É´òÓ¡
-
-pdftk mydoc.pdf output mydoc.128.pdf owner_pw foo user_pw baz allow printing
-
-
-
-
-
-½âÃÜ
-
-pdftk secured.pdf input_pw foopass output unsecured.pdf
-
-
-
-
-
-ºÏ²¢£¬ÆäÖÐÒ»¸ö¼ÓÃÜ£¬ºÏ²¢ºóÎÄ¼þ²»¼ÓÃÜ
-
-pdftk A=secured.pdf mydoc.pdf input_pw A=foopass cat output combined.pdf
-
-
-
-
-
-Uncompress PDF Page Streams for Editing the PDF Code in a Text Editor
-
-pdftk mydoc.pdf output mydoc.clear.pdf uncompress
-
-
-
-
-
-ÐÞ¸´ Repair a PDF's Corrupted XREF Table and Stream Lengths (If Possible)
-
-pdftk broken.pdf output fixed.pdf
-
-
-
-
-
-Burst a Single PDF Document into Single Pages and Report its Data to doc_data.txt
-
-pdftk mydoc.pdf burst
-
-
-
-
-
-Report on PDF Document Metadata, Bookmarks and Page Labels
-
-pdftk mydoc.pdf dump_data output report.txt
+    gcc -o Helloworld Helloworld.c `pkg-config --cflags --libs gtk+-2.0`
+    ./Helloworld
 
 ## Wireshark
 
-WiresharkÊÇÒ»¿î·Ç³£Á÷ÐÐµÄÐ­Òé·ÖÎöÈí¼þ¡£×ÔÈ»¿ÉÒÔÍøÂç×¥°üµÄÐèÇó¡£
+    sudo apt-get install wireshark
 
- sudo apt-get install wireshark 
+å‡ºäºŽå®‰å…¨æ–¹é¢çš„è€ƒè™‘ï¼Œæ™®é€šç”¨æˆ·ä¸èƒ½å¤Ÿæ‰“å¼€ç½‘å¡è®¾å¤‡è¿›è¡ŒæŠ“åŒ…ï¼Œwiresharkä¸å»ºè®®ç”¨æˆ·é€šè¿‡sudoåœ¨rootæƒé™ä¸‹è¿è¡Œï¼Œwiresharkä¸ºubuntuï¼ˆDebianï¼‰ç”¨æˆ·æä¾›äº†ä¸€ç§åœ¨éžrootä¸‹çš„è§£å†³æ–¹æ³•ã€‚è¯¦ç»†è§£é‡Šå¯ä»¥å‚è€ƒï¼š
 
-³öÓÚ°²È«·½ÃæµÄ¿¼ÂÇ£¬ÆÕÍ¨ÓÃ»§²»ÄÜ¹»´ò¿ªÍø¿¨Éè±¸½øÐÐ×¥°ü£¬wireshark²»½¨ÒéÓÃ»§Í¨¹ýsudoÔÚrootÈ¨ÏÞÏÂÔËÐÐ£¬
+    /usr/share/doc/wireshark-common/README.Debian  http://nariver.com/usr/share/doc/wireshark-common/README.Debianï¼‰
 
-wiresharkÎªubuntu£¨Debian£©ÓÃ»§Ìá¹©ÁËÒ»ÖÖÔÚ·ÇrootÏÂµÄ½â¾ö·½·¨¡£
+å…·ä½“æ­¥éª¤ï¼š
 
-ÏêÏ¸½âÊÍ¿ÉÒÔ²Î¿¼£º
+    sudo dpkg-reconfigure wireshark-common
+    press the right arrow and enter for yes
+    sudo chmod +x /usr/bin/dumpcap
 
-/usr/share/doc/wireshark-common/README.Debian  http://nariver.com/usr/share/doc/wireshark-common/README.Debian£©
+## Vimiumã€Vimperator æµè§ˆå™¨æ’ä»¶
 
-¾ßÌå²½Öè£º
+ä»Šå¤©çš„ä¸»è§’æ˜¯ Vimium å’Œ Vimperatorï¼Œç›¸ä¿¡å¾ˆå¤šäººä¸€çœ‹åˆ°ä¸Šé¢çš„ä¸¤ä¸ªåå­—å°±å·²ç»è”æƒ³åˆ°äº†ç»å…¸çš„ Vim ç¼–è¾‘å™¨ â€”â€” è¿™æ˜¯ä¸€æ¬¾è¢«æ— æ•°äººèª‰ä¸ºç¼–è¾‘å™¨ä¸­çš„ç¥žå™¨ã€‚å®ƒå®Œå…¨åªä½¿ç”¨é”®ç›˜æ“ä½œï¼Œè™½ç„¶ Vim çš„å…¥é—¨å­¦ä¹ æ›²çº¿æ¯”è¾ƒé™¡å³­ï¼Œä½†ä¸€æ—¦ç†Ÿæ‚‰ä¹‹åŽï¼Œä½ å°†ä¼šè¢«å…¶æžä¹‹é«˜æ•ˆä¸”æ— æ¯”å¼ºå¤§çš„é”®ç›˜æµæ“ä½œæ·±æ·±æŠ˜æœï¼Œè€Œä¸”ä¸€ç‚¹éƒ½ä¸ä¼šæ¯”ä½¿ç”¨é¼ æ ‡çš„ç¼–è¾‘å™¨æ…¢ï¼Œç›¸åï¼Œç”¨å¾—å¥½çš„é«˜æ‰‹å¾€å¾€æ•ˆçŽ‡æ¯”ä½¿ç”¨ä¸€èˆ¬winä¸‹çš„ç¼–è¾‘å™¨æ•ˆçŽ‡è¦é«˜å¾—å¤šã€‚
 
-sudo dpkg-reconfigure wireshark-common
-
-press the right arrow and enter for yes
-
-sudo chmod +x /usr/bin/dumpcap
-
-## Vimium¡¢Vimperator ä¯ÀÀÆ÷²å¼þ
-
-½ñÌìµÄÖ÷½ÇÊÇ Vimium ºÍ Vimperator£¬ÏàÐÅºÜ¶àÈËÒ»¿´µ½ÉÏÃæµÄÁ½¸öÃû×Ö¾ÍÒÑ¾­ÁªÏëµ½ÁË¾­µäµÄ Vim ±à¼­Æ÷ ¡ª¡ª ÕâÊÇÒ»¿î±»ÎÞÊýÈËÓþÎª±à¼­Æ÷ÖÐµÄÉñÆ÷¡£ËüÍêÈ«Ö»Ê¹ÓÃ¼üÅÌ²Ù×÷£¬ËäÈ» Vim µÄÈëÃÅÑ§Ï°ÇúÏß±È½Ï¶¸ÇÍ£¬µ«Ò»µ©ÊìÏ¤Ö®ºó£¬Äã½«»á±»Æä¼«Ö®¸ßÐ§ÇÒÎÞ±ÈÇ¿´óµÄ¼üÅÌÁ÷²Ù×÷ÉîÉîÕÛ·þ£¬¶øÇÒÒ»µã¶¼²»»á±ÈÊ¹ÓÃÊó±êµÄ±à¼­Æ÷Âý£¬Ïà·´£¬ÓÃµÃºÃµÄ¸ßÊÖÍùÍùÐ§ÂÊ±ÈÊ¹ÓÃÒ»°ãwinÏÂµÄ±à¼­Æ÷Ð§ÂÊÒª¸ßµÃ¶à¡£
-
-Vimium ºÍ Vimperator ¾ÍÊÇÁ½¿î²Î¿¼ÁË Vim °´¼ü²Ù×÷·½Ê½ºÍÀíÄî¶øÀ´µÄä¯ÀÀÆ÷²å¼þ£¬¿ÉÒÔÈÃÄã¼¸ºõÈ«³ÌÊ¹ÓÃ¼üÅÌ¿ì½Ý¼üÀ´ÉÏÍø£¬´ó´óÌá¸ßä¯ÀÀÐ§ÂÊ¡£Èç¹ûÄã±¾ÉíÊÇÒ»Î» Vim ÓÃ»§µÄ»°£¬Äã¼¸ºõÃ»ÓÐÑ§Ï°µÄÃÅ¼÷£¬ºÜ¿ì¾ÍÄÜÕÒµ½Ê¹ÓÃ Vim ±à¼­Æ÷ÄÇÖÖÁ÷³©²Ù×÷µÄ¡°ÊìÏ¤¸Ð¡±£¡²»¹ý£¬Èç¹ûÄãÖ®Ç°ÍêÈ«Ã»ÓÐ½Ó´¥¹ý Vim£¬ÄÇÃ´¾ÍµÃÉÔÎ¢ÁË½âÑ§Ï°Ò»ÏÂÁË¡£µ±È»£¬ÄãÒ²¿ÉÒÔ½«Æä¿´×÷ÊÇÍøÒ³ä¯ÀÀÆ÷µÄ¿ì½Ý¼ü¹¤¾ß£¬¼Ç×¡Ò»Ð©³£ÓÃ²Ù×÷¾ÍÄÜÌåÑéÒ»·¬¸ßÊÖÃÇÐÐÔÆÁ÷Ë®µØÓÃ¼üÅÌ¹¤×÷Ê±µÄ³©¿ì¸ÐÁË¡£Vimium ÊÇÒ»¿î Chrome ä¯ÀÀÆ÷ÖÐµÄ²å¼þ£¬¶ø Vimperator ÔòÊÇ FireFox »ðºüä¯ÀÀÆ÷µÄ²å¼þ£¬ËäÈ»Ãû×Ö²»Í¬£¬µ«ÊÇËûÃÇµÄ²Ù×÷»ù±¾ÉÏÃ»ÓÐÊ²Ã´Çø±ð£¬ËùÒÔÏÂÃæÎÒ¾ÍÒÔ½éÉÜ Vimium ÎªÖ÷°É¡£Vimperator µÄÍ¬Ñ§¿ÉÒÔ×÷Îª²Î¿¼Ò»ÏÂ.°´ shift+/ £¨chrome£©»òÕßÊÇ½øÈëÉèÖÃÒ³Ãæ£¨firefox+chrome£©£¬¿ÉÒÔÕÒµ½¸üÏêÏ¸µÄµÄ°ïÖú¡£ÉõÖÁ£¬Äã»¹¿ÉÒÔÔÚÉèÖÃÖÐ°´ÕÕÄã×Ô¼ºµÄÏ°¹ßÌæ»»µôÒ»Ð©¼ü¡£Èç¹ûÓÐÐ©ÍøÕ¾Äã²»ÏëËüÕ¼ÓÃÄãµÄ°´¼üµÄ»°£¬¿ÉÒÔÔÚÉèÖÃÖÐ¼ÓÈëÀýÍâ£¬±È·½Ëµ¶¹°êµçÌ¨£¨Ð¡ÎÊÌâ£ºÄãÖªµÀ¶¹°êµçÌ¨µÄ¿ì½Ý¼üÂð£¿£©
+Vimium å’Œ Vimperator å°±æ˜¯ä¸¤æ¬¾å‚è€ƒäº† Vim æŒ‰é”®æ“ä½œæ–¹å¼å’Œç†å¿µè€Œæ¥çš„æµè§ˆå™¨æ’ä»¶ï¼Œå¯ä»¥è®©ä½ å‡ ä¹Žå…¨ç¨‹ä½¿ç”¨é”®ç›˜å¿«æ·é”®æ¥ä¸Šç½‘ï¼Œå¤§å¤§æé«˜æµè§ˆæ•ˆçŽ‡ã€‚å¦‚æžœä½ æœ¬èº«æ˜¯ä¸€ä½ Vim ç”¨æˆ·çš„è¯ï¼Œä½ å‡ ä¹Žæ²¡æœ‰å­¦ä¹ çš„é—¨æ§›ï¼Œå¾ˆå¿«å°±èƒ½æ‰¾åˆ°ä½¿ç”¨ Vim ç¼–è¾‘å™¨é‚£ç§æµç•…æ“ä½œçš„â€œç†Ÿæ‚‰æ„Ÿâ€ï¼ä¸è¿‡ï¼Œå¦‚æžœä½ ä¹‹å‰å®Œå…¨æ²¡æœ‰æŽ¥è§¦è¿‡ Vimï¼Œé‚£ä¹ˆå°±å¾—ç¨å¾®äº†è§£å­¦ä¹ ä¸€ä¸‹äº†ã€‚å½“ç„¶ï¼Œä½ ä¹Ÿå¯ä»¥å°†å…¶çœ‹ä½œæ˜¯ç½‘é¡µæµè§ˆå™¨çš„å¿«æ·é”®å·¥å…·ï¼Œè®°ä½ä¸€äº›å¸¸ç”¨æ“ä½œå°±èƒ½ä½“éªŒä¸€ç•ªé«˜æ‰‹ä»¬è¡Œäº‘æµæ°´åœ°ç”¨é”®ç›˜å·¥ä½œæ—¶çš„ç•…å¿«æ„Ÿäº†ã€‚Vimium æ˜¯ä¸€æ¬¾ Chrome æµè§ˆå™¨ä¸­çš„æ’ä»¶ï¼Œè€Œ Vimperator åˆ™æ˜¯ FireFox ç«ç‹æµè§ˆå™¨çš„æ’ä»¶ï¼Œè™½ç„¶åå­—ä¸åŒï¼Œä½†æ˜¯ä»–ä»¬çš„æ“ä½œåŸºæœ¬ä¸Šæ²¡æœ‰ä»€ä¹ˆåŒºåˆ«ï¼Œæ‰€ä»¥ä¸‹é¢æˆ‘å°±ä»¥ä»‹ç» Vimium ä¸ºä¸»å§ã€‚Vimperator çš„åŒå­¦å¯ä»¥ä½œä¸ºå‚è€ƒä¸€ä¸‹.æŒ‰ shift+/ ï¼ˆchromeï¼‰æˆ–è€…æ˜¯è¿›å…¥è®¾ç½®é¡µé¢ï¼ˆfirefox+chromeï¼‰ï¼Œå¯ä»¥æ‰¾åˆ°æ›´è¯¦ç»†çš„çš„å¸®åŠ©ã€‚ç”šè‡³ï¼Œä½ è¿˜å¯ä»¥åœ¨è®¾ç½®ä¸­æŒ‰ç…§ä½ è‡ªå·±çš„ä¹ æƒ¯æ›¿æ¢æŽ‰ä¸€äº›é”®ã€‚å¦‚æžœæœ‰äº›ç½‘ç«™ä½ ä¸æƒ³å®ƒå ç”¨ä½ çš„æŒ‰é”®çš„è¯ï¼Œå¯ä»¥åœ¨è®¾ç½®ä¸­åŠ å…¥ä¾‹å¤–ï¼Œæ¯”æ–¹è¯´è±†ç“£ç”µå°ï¼ˆå°é—®é¢˜ï¼šä½ çŸ¥é“è±†ç“£ç”µå°çš„å¿«æ·é”®å—ï¼Ÿï¼‰
 
 ## glxgears
 
-glxgearsÊÇÒ»¸ö²âÊÔÄãµÄLinuxÊÇ·ñ¿ÉÒÔË³ÀûÔËÐÐ2D¡¢3DµÄ²âÊÔÈí¼þ¡£Õâ¸ö³ÌÐòµ¯³öÒ»¸ö´°¿Ú£¬ÀïÃæÓÐÈý¸ö×ª¶¯µÄ³ÝÂÖ£¬ÆÁÄ»½«ÏÔÊ¾³öÃ¿ÎåÃëÖÓ×ª¶¯¶àÉÙÕ¤£¬ËùÒÔÕâÊÇÒ»¸öºÏÀíµÄÐÔÄÜ²âÊÔ¡£
+glxgearsæ˜¯ä¸€ä¸ªæµ‹è¯•ä½ çš„Linuxæ˜¯å¦å¯ä»¥é¡ºåˆ©è¿è¡Œ2Dã€3Dçš„æµ‹è¯•è½¯ä»¶ã€‚è¿™ä¸ªç¨‹åºå¼¹å‡ºä¸€ä¸ªçª—å£ï¼Œé‡Œé¢æœ‰ä¸‰ä¸ªè½¬åŠ¨çš„é½¿è½®ï¼Œå±å¹•å°†æ˜¾ç¤ºå‡ºæ¯äº”ç§’é’Ÿè½¬åŠ¨å¤šå°‘æ …ï¼Œæ‰€ä»¥è¿™æ˜¯ä¸€ä¸ªåˆç†çš„æ€§èƒ½æµ‹è¯•ã€‚çª—æˆ·æ˜¯å¯ä»¥ç¼©æ”¾çš„ï¼Œæ …æ•°å¤šå°‘æžå¤§ç¨‹åº¦ä¸Šä¾èµ–äºŽçª—å£çš„å¤§å°ã€‚å¦‚æžœä½ çš„æ˜¾ç¤ºå¡å¤Ÿå¥½ï¼Œè€Œä¸”ä½ çš„é©±åŠ¨ç¨‹åºä¹Ÿé…åˆå¾—å¾ˆå¥½ï¼Œé‚£é½¿è½®å°±è·‘å¾—è¶Šå¿«ã€‚è¿™é‡Œè¯·è®°å½•ä¸‹FPSæ•°å­—ï¼ˆæ¯ç§’çš„å¸§é€Ÿåº¦ï¼‰ä»¥é‰´åˆ«3DåŠ é€Ÿæ•ˆæžœã€‚
 
-´°»§ÊÇ¿ÉÒÔËõ·ÅµÄ£¬Õ¤Êý¶àÉÙ¼«´ó³Ì¶ÈÉÏÒÀÀµÓÚ´°¿ÚµÄ´óÐ¡¡£Èç¹ûÄãµÄÏÔÊ¾¿¨¹»ºÃ£¬¶øÇÒÄãµÄÇý¶¯³ÌÐòÒ²ÅäºÏµÃºÜºÃ£¬ÄÇ³ÝÂÖ¾ÍÅÜµÃÔ½¿ì¡£ÕâÀïÇë¼ÇÂ¼ÏÂFPSÊý×Ö£¨Ã¿ÃëµÄÖ¡ËÙ¶È£©ÒÔ¼ø±ð3D¼ÓËÙÐ§¹û¡£
 
-²éÑ¯OpenGLÊÇ·ñ´ò¿ª£º
 
-#glxinfo | grep rendering
 
-ÌáÊ¾£ºdirect rendering: Yes ±íÃ÷Æô¶¯Õý³£
+## é‡è£…Ubuntuå¦‚ä½•ä¿ç•™/homeåˆ†åŒºä¸­çš„æ•°æ®
 
-#ÎÄ¼þÏµÍ³Óë´ÅÅÌ·ÖÇøÏà¹ØÎÊÌâ
+windowsç³»ç»Ÿå¯ä»¥åœ¨é‡è£…æ—¶åªæ ¼å¼åŒ–Cç›˜ï¼Œä»Žè€Œä¿ç•™å…¶ä»–åˆ†åŒºçš„æ•°æ®ã€‚ Ubuntuç³»ç»Ÿä¹Ÿå¯ä»¥ï¼Œåªè¦åœ¨å®‰è£…ç³»ç»Ÿæ—¶åˆ†å‡ºä¸€ä¸ª/homeåˆ†åŒºã€‚ä½ å¯ä»¥æŠŠUbuntuçš„â€œ/â€åˆ†åŒºçœ‹ä¸ºwindowsçš„Cç›˜ï¼Œé‡è£…Ubuntuæ—¶åªæ ¼å¼åŒ–â€œ/â€åˆ†åŒºï¼Œä¸æ ¼å¼åŒ–â€œ/homeâ€ï¼Œè¿™æ ·å°±å¯ä»¥ä¿ç•™â€œ/homeâ€ä¸­çš„æ•°æ®
 
-##ÖØ×°UbuntuÈçºÎ±£Áô/home·ÖÇøÖÐµÄÊý¾Ý
 
-windowsÏµÍ³¿ÉÒÔÔÚÖØ×°Ê±Ö»¸ñÊ½»¯CÅÌ£¬´Ó¶ø±£ÁôÆäËû·ÖÇøµÄÊý¾Ý¡£ UbuntuÏµÍ³Ò²¿ÉÒÔ£¬Ö»ÒªÔÚ°²×°ÏµÍ³Ê±·Ö³öÒ»¸ö/home·ÖÇø¡£Äã¿ÉÒÔ°ÑUbuntuµÄ¡°/¡±·ÖÇø¿´ÎªwindowsµÄCÅÌ£¬ÖØ×°UbuntuÊ±Ö»¸ñÊ½»¯¡°/¡±·ÖÇø£¬²»¸ñÊ½»¯¡°/home¡±£¬ÕâÑù¾Í¿ÉÒÔ±£Áô¡°/home¡±ÖÐµÄÊý¾Ý
+## ä¿®æ”¹åˆ†åŒºçš„å·æ ‡
 
-## FATÓëNTFS²î±ð
+Fat16/Fat32æ ¼å¼
 
-FAT²ÉÓÃ32Î»µÄÎÄ¼þ·ÖÅä±í£¬ÄÜÓÐÐ§µØ¹ÜÀí2GBÒÔÉÏµÄÓ²ÅÌ£¬×î¶à¿ÉÒÔÖ§³Ö2TBµÄ´ÅÅÌÈÝÁ¿¡£ 
+    #å®‰è£…
+    sudo apt-get install mtools
+    
+    #æ–°å»ºé…ç½®æ–‡ä»¶
+    cp /etc/mtools.conf ~/.mtoolsrc
+    
+    #ç¼–è¾‘åˆšå¤åˆ¶çš„â€~/.mtoolsrcâ€æ–‡ä»¶,åœ¨æœ€å¾Œä¸€è¡ŒåŠ å…¥å¦‚ä¸‹å‘½ä»¤è¡Œï¼š
+    drive i: file="/dev/sda2"    //é‡Œé¢çš„â€/devsda2â€åº”æ ¹æ®å®žé™…æƒ…å†µæ›´æ”¹ä¸ºä½ è¦æ”¹çš„ç›˜
+    
+    #æ›´æ”¹å‘½ä»¤æç¤ºç¬¦è·¯å¾„åˆ°â€i:â€ç›˜ï¼š
+    mcd i:
+    
+    #æŸ¥çœ‹â€i:â€å½“å‰çš„å·æ ‡
+    sudo mlabel -s i:
+    
+    #æ›´æ”¹â€i:â€ç›˜åŽŸå§‹å·æ ‡ä¸ºä½ å–œæ¬¢çš„æ–°å·æ ‡åï¼š
+    sudo mlabel i: newLabelName
 
-ÔÚNTFSÎÄ¼þÏµÍ³ÖÐ£¬¶ÔÓÚ²»Í¬ÅäÖÃµÄÓ²¼þ£¬Êµ¼ÊµÄÎÄ¼þ´óÐ¡´Ó4GBµ½64GB¡£ÓÉÓÚNTFSÎÄ¼þÏµÍ³µÄ¿ªÏú½Ï´ó£¬Ê¹ÓÃµÄ×îÐ¡·ÖÇøÓ¦Îª50MB¡£ 
+NTFSæ ¼å¼
 
-NTFSÎÄ¼þÏµÍ³ÓëFATÎÄ¼þÏµÍ³Ïà±È×î´óµÄÌØµãÊÇ°²È«ÐÔ£¬NTFSÌá¹©ÁË·þÎñÆ÷»ò¹¤×÷Õ¾ËùÐèµÄ°²È«±£ÕÏ¡£ÔÚNTFS·ÖÇøÉÏ£¬Ö§³ÖËæ»ú·ÃÎÊ¿ØÖÆºÍÓµÓÐÈ¨£¬¶Ô¹²ÏíÎÄ¼þ¼ÐÎÞÂÛ²ÉÓÃFAT»¹ÊÇNTFSÎÄ¼þÏµÍ³¶¼¿ÉÒÔÖ¸¶¨È¨ÏÞ£¬ÒÔÃâÊÜµ½±¾µØ·ÃÎÊ»òÔ¶³Ì·ÃÎÊµÄÓ°Ïì 
+    #å®‰è£…
+    sudo apt-get install ntfsprogs # æ³¨ï¼šå®‰è£…åŒ…å·²ä¸‹
+    
+    #ä¿®æ”¹
+    sudo ntfslabel /dev/sda1 newLabelName //é‡Œé¢çš„"/dev/sda1"åº”æ ¹æ®å®žé™…æƒ…å†µä¿®æ”¹
 
-¾ÍÖªµÀÕâÐ©ÁË£¬²»¹ýÎÄ¼þÔÚÍøÂçÉÏ²»±£ÃÜÐÔ¸úNTFS¸ñÊ½Ò²ÊÇÓÐ¹ØÏµµÄ£¡ 
+ext2/ext3æ ¼å¼
 
+    sudo e2label /dev/sda1 newLabelName
 
+## å¦‚ä½•å¯ç”¨ Ubuntu ä¸­çš„ root å¸å·
 
-±È½Ï´óµÄ²»Í¬¾ÍÊÇ´Ø²»Ò»Ñù,´ØÓ°Ïìµ½Ó²ÅÌµÄ¿Õ¼ä·ÖÅäºÍ²Ù×÷ÏµÍ³ËùÖ§³ÖµÄÓ²ÅÌ·ÖÇø´óÐ¡. 
+å’Œå…¶å®ƒå‘è¡Œç‰ˆæœ¬çš„Linuxä¸åŒï¼ŒUbuntu Linuxæœ‰ä¸€ä¸ªä¸Žä¼—ä¸åŒçš„ç‰¹ç‚¹ï¼Œé‚£å°±æ˜¯åˆæ¬¡ä½¿ç”¨æ—¶ï¼Œä½ æ— æ³•ä½œä¸ºrootæ¥ç™»å½•ç³»ç»Ÿï¼Œä¸ºä»€ä¹ˆä¼šè¿™æ ·ï¼Ÿè¿™å°±è¦ä»Žç³»ç»Ÿçš„å®‰è£…è¯´èµ·ã€‚å¯¹äºŽå…¶ä»–Linuxç³»ç»Ÿæ¥è¯´ï¼Œä¸€èˆ¬åœ¨å®‰è£…è¿‡ç¨‹å°±è®¾å®šrootå¯†ç ï¼Œè¿™æ ·ç”¨æˆ·å°±èƒ½ç”¨å®ƒç™»å½•rootå¸æˆ·æˆ–ä½¿ç”¨suå‘½ä»¤è½¬æ¢åˆ°è¶…çº§ç”¨æˆ·èº«ä»½ã€‚ä¸Žä¹‹ç›¸åï¼ŒUbuntué»˜è®¤å®‰è£…æ—¶ï¼Œå¹¶æ²¡æœ‰ç»™rootç”¨æˆ·è®¾ç½®å£ä»¤ï¼Œä¹Ÿæ²¡æœ‰å¯ç”¨rootå¸æˆ·ã€‚é—®é¢˜æ˜¯è¦æƒ³ä½œä¸ºrootç”¨æˆ·æ¥è¿è¡Œå‘½ä»¤è¯¥æ€Žä¹ˆåŠžå‘¢ï¼Ÿæ²¡å…³ç³»ï¼Œæˆ‘ä»¬å¯ä»¥ä½¿ç”¨sudoå‘½ä»¤è¾¾æ­¤ç›®çš„ã€‚sudoæ˜¯linuxä¸‹å¸¸ç”¨çš„å…è®¸æ™®é€šç”¨æˆ·ä½¿ç”¨è¶…çº§ç”¨æˆ·æƒé™çš„å·¥å…·ï¼Œè¯¥å‘½ä»¤ä¸ºç®¡ç†å‘˜æä¾›äº†ä¸€ç§ç»†é¢—ç²’åº¦çš„è®¿é—®æŽ§åˆ¶æ–¹æ³•ï¼Œé€šè¿‡å®ƒäººä»¬æ—¢å¯ä»¥ä½œä¸ºè¶…çº§ç”¨æˆ·åˆå¯ä»¥ä½œä¸ºå…¶å®ƒç±»åž‹çš„ç”¨æˆ·æ¥è®¿é—®ç³»ç»Ÿã€‚è¿™æ ·åšçš„å¥½å¤„æ˜¯ï¼Œç®¡ç†å‘˜èƒ½å¤Ÿåœ¨ä¸å‘Šè¯‰ç”¨æˆ·rootå¯†ç çš„å‰æä¸‹ï¼ŒæŽˆäºˆä»–ä»¬æŸäº›ç‰¹å®šç±»åž‹çš„è¶…çº§ç”¨æˆ·æƒé™ï¼Œè¿™æ­£æ˜¯è®¸å¤šç³»ç»Ÿç®¡ç†å‘˜æ‰€æ¢¦å¯ä»¥æ±‚çš„ã€‚è¿™é‡Œæœ‰å¿…è¦è¯´å…ˆç®€å•ä¸€ä¸‹sudoå’Œsuå‘½ä»¤çš„åŒºåˆ«ï¼šsuå‘½ä»¤æ˜¯åœ¨ä¸é€€å‡ºå½“å‰ç”¨æˆ·çš„æƒ…å†µä¸‹åˆ‡æ¢ç”¨æˆ·çš„å·¥å…·ï¼Œé€šè¿‡suå¯ä»¥åœ¨ç”¨æˆ·ä¹‹é—´åˆ‡æ¢ï¼Œå¦‚æžœè¶…çº§æƒé™ç”¨æˆ·rootå‘æ™®é€šæˆ–è™šæ‹Ÿç”¨æˆ·åˆ‡æ¢ä¸éœ€è¦å¯†ç ï¼Œè€Œæ™®é€šç”¨æˆ·åˆ‡æ¢åˆ°å…¶å®ƒä»»ä½•ç”¨æˆ·éƒ½éœ€è¦å¯†ç éªŒè¯ã€‚sudoæ˜¯Unix/Linuxå¹³å°ä¸Šçš„ä¸€ä¸ªéžå¸¸æœ‰ç”¨çš„å·¥å…·ï¼Œå®ƒå…è®¸ç³»ç»Ÿç®¡ç†å‘˜åˆ†é…ç»™æ™®é€šç”¨æˆ·ä¸€äº›åˆç†çš„â€œæƒåˆ©â€ï¼Œè®©ä»–ä»¬æ‰§è¡Œä¸€äº›åªæœ‰è¶…çº§ç”¨æˆ·æˆ–å…¶ä»–ç‰¹è®¸ç”¨æˆ·æ‰èƒ½å®Œæˆçš„ä»»åŠ¡è¿™æ ·ä¸€æ¥ï¼Œå°±ä¸ä»…å‡å°‘äº†rootç”¨æˆ·çš„ç™»é™†æ¬¡æ•°å’Œç®¡ç†æ—¶é—´ï¼Œä¹Ÿæé«˜äº†ç³»ç»Ÿå®‰å…¨æ€§ã€‚sudoè®¾è®¡è€…çš„å®—æ—¨æ˜¯ï¼šç»™ç”¨æˆ·å°½å¯èƒ½å°‘çš„æƒé™ä½†ä»å…è®¸å®Œæˆä»–ä»¬çš„å·¥ä½œã€‚æˆ‘ä»¬å¯ä»¥ç®€å•çš„ç†è§£æˆï¼šsuèŽ·å¾—ç¨³å®šçš„è¶…çº§ç”¨æˆ·ï¼ˆæˆ–å…¶ä»–ç”¨æˆ·æƒé™ï¼‰ï¼ŒsudoèŽ·å¾—æš‚æ—¶æ€§çš„é™åˆ¶äº†çš„è¶…çº§ç”¨æˆ·æƒé™ï¼Œä¸€æ®µæ—¶é—´ä¹‹åŽä¼šå¤±æ•ˆã€‚
 
-FAT16µÄ´ØÎª16K»ò32K,²»Ö§³Ö´óÓÚ2GB(win9XÏÂ)»ò4GB(win2KÏÂ)µÄÓ²ÅÌ·ÖÇø. 
+å¥½ï¼Œä¸‹é¢è®²ä¸€ä¸‹å…·ä½“çš„è®¾ç½®æ–¹æ³•ï¼š
 
-FAT32µÄ´ØÎª4KBÖÁ16K,²»Ö§³Ö´óÓÚ32GBµÄÓ²ÅÌ·ÖÇø. 
+1.ä¸ºrootè®¾ç½®ä¸€ä¸ªrootå¯†ç ï¼š$ sudo passwd root
 
-NTFSµÄ´ØÎª0.5KÖÁ4K,¿ÉÒÔÖ§³Öµ½2TB(2048GB)µÄ·ÖÇø. 
+ä¹‹åŽä¼šæç¤ºè¦è¾“å…¥rootç”¨æˆ·çš„å¯†ç ï¼Œè¿žç»­è¾“å…¥rootå¯†ç 
 
-ÁíÍâ,NTFSµÄ·ÖÇø¿ÉÒÔÖÆ¶¨°²È«·ÃÎÊÈ¨ÏÞºÍ¶ÔÓÃ»§Ê¹ÓÃ¿Õ¼äµÄÅä¶î. 
+2.ä½¿ç”¨ï¼š$ su,å¹¶æŒ‰ç…§æç¤ºè¾“å…¥rootå¯†ç ï¼Œå°±å¯ä»¥åœ¨ç»ˆç«¯ä¸­åˆ‡æ¢æˆè¶…çº§ç®¡ç†å‘˜ç”¨æˆ·èº«ä»½äº†ï¼
 
+## Linuxç”¨æˆ·æ·»åŠ sudoer
 
+ä½¿ç”¨sudoå¯ä»¥åœ¨ä»¥éžrootç”¨æˆ·ç™»å½•æ—¶ä¸´æ—¶èŽ·å¾—rootæƒé™ï¼Œå¹¶æ‰§è¡Œéœ€è¦çš„å‘½ä»¤ã€‚å¯ä»¥ä½¿ç”¨sudoçš„ç”¨æˆ·å¯ä»¥å«åšsudoerã€‚
 
-Ë³±ãÔÙ½éÉÜÒ»ÏÂ´ØÕâ¸ö¸ÅÄî°É,ºÃÏñÊÇ¼ÆËãÓ²ÅÌÊ¹ÓÃ¿Õ¼äµÄ×îÐ¡µ¥Î».´ØÔ½Ð¡Ó²ÅÌÔÚ´¢´æÎÄ¼þÊ±ÀË·ÑµÄ¿Õ¼ä¾ÍÔ½Ð¡. 
+æ·»åŠ sudoerçš„æ–¹æ³•ï¼ˆå‡è®¾æ‚¨å·²ç»å®‰è£…sudoï¼‰ï¼šæ‰§è¡Œ
 
-±ÈÈçÄ³¸öÎÄ¼þµÄ´óÐ¡ÊÇ20K,Èç¹û´ØÊÇ16K,Ôò´¢´æÕâ¸öÎÄ¼þ¾ÍÒªÓÃ2¸ö´Ø(32K),¶à³öµÄ²¿·Ö32-20=12K,±ðµÄÎÄ¼þÒ²Ã»°ì·¨ÔÙÓÃÁË(ÀË·ÑµôÁË).¶øÈç¹û´ØÊÇ4K,Ôò´¢´æÕâ¸öÎÄ¼þÒª5¸ö´Ø(20K),¸Õ¸ÕºÃ,¾ÍÃ»ÓÐÀË·ÑµÄ¿Õ¼äÁË~ 
+    visudo or sudoedit
 
-ÆäÊµÐ¡ÎÄ¼þ(ÀýÈçÓÃwindows¼ÇÊÂ±¾Ð´¼¸¸ö×Ö´æÆðÀ´),Ò²¾ÍÓÐ¼¸bytes,Ò»ÏÂ×Ó¾ÍÒªÀË·ÑÒ»¸ö´ØµÄ¿Õ¼ä,ÕâÖÖÎÊÌâ¶àÁË,Ó²ÅÌµ±È»¾ÍÑÏÖØÀË·ÑÀ²~  
+æç¤ºï¼šæœ‰äº›å‘è¡Œç‰ˆçš„sudoæä¾›äº†sudoeditï¼Œæœ‰çš„åˆ™æä¾›äº†visudoï¼ŒåŠŸèƒ½ä¸ŠåŸºæœ¬æ˜¯ä¸€æ ·çš„ã€‚ä½ ä¹Ÿå¯ä»¥ä½¿ç”¨å…¶ä»–ç¼–è¾‘å™¨å¦‚viè¿›è¡Œç¼–è¾‘/etc/sudoersï¼Œä½†ç”±äºŽæ–‡ä»¶æ˜¯åªè¯»çš„ï¼Œè¯·å¼ºåˆ¶ä¿å­˜ï¼ˆå¦‚w!ï¼‰æˆ–åŽ»é™¤åªè¯»å±žæ€§å†ä¿å­˜ã€‚æŸ¥æ‰¾
 
+    root ALL=(ALL) ALL
 
+åœ¨ä¸‹é¢åŠ å…¥
 
-NTFSÎÄ¼þÏµÍ³ 
+    %adm ALL=(ALL) ALL
 
+å¦‚æžœsudoæ—¶ä¸æƒ³è¾“å…¥å¯†ç ï¼Œå¯ä»¥æŠŠä¸Šå¥æ”¹æˆï¼š
 
+    %adm ALL=(ALL) NOPASSWD: ALL
 
-NTFSÊÇ¡°ÐÂ¼¼ÊõÎÄ¼þÏµÍ³¡±µÄËõÐ´,ÊÇÎ¢ÈíÎªwindows NT¿ª·¢µÄÒ»ÖÖÎÄ¼þÏµÍ³£¬ËüÔÚÒÔÇ°FATÎÄ¼þÏµÍ³µÄ»ù´¡ÉÏ×÷ÁËÒ»¶¨µÄ¸Ä½ø£¬Ìá¸ßÁËÐÔÄÜ¡£ËüÊÇ½¨Á¢ÔÚ±£»¤ÎÄ¼þºÍÄ¿Â¼Êý¾Ý»ù´¡ÉÏ£¬Í¬Ê±½ÚÊ¡´æ´¢×ÊÔ´¡¢¼õÉÙ´ÅÅÌÕ¼ÓÃÁ¿µÄÒ»ÖÖÏÈ½øµÄÎÄ¼þÏµÍ³¡£windows XP²ÉÓÃµÄNTFSÎÄ¼þÏµÍ³£¬¿ÉÒÔÊ¹ÓÃ»§²»µ«¿ÉÒÔÏñwin 9XÄÇÑù·½±ã¿ì½ÝµØ²Ù×÷ºÍ¹ÜÀí¼ÆËã»ú£¬Í¬Ê±Ò²¿ÉÏíÊÜµ½NTFSËù´øÀ´µÄÏµÍ³°²È«ÐÔ¡£ NTFSÖ§³Ö»ùÓÚNT²Ù×÷ÏµÍ³µÄ°²È«ÐÔ¹ÜÀí£¬µ±È»ÌìÏÂÃ»ÓÐÃâ·ÑµÄÎç²Í£¬ÐèÒª½øÐÐÕâÖÖ¹ÜÀíµÄÊ±ºò¾ÍÐèÒª¸¶³ö¶îÍâµÄ¿Õ¼ä¡£Ò»°ãÔÚÔËÐÐNT²Ù×÷ÏµÍ³µÄÊ±ºò£¬×îºÃ½«Ó²ÅÌ¿Õ¼äµÄ10-15%¿Õ³ö£¬ÒÔ±£Ö¤NT²Ù×÷ÏµÍ³µÄÕý³£ÔËÐÐ¡£ 
+ä¿å­˜æ–‡ä»¶ï¼Œç„¶åŽæ‰§è¡Œ
 
+    gpasswd -a ç”¨æˆ·å adm
 
+ç„¶åŽè¿™ä¸ªç”¨æˆ·å°±å¯ä»¥ç”¨sudoäº†ã€‚
 
-NTFSÎÄ¼þÏµÍ³ÓÐÒÔÏÂ¼¸¸öÌØµã£º 
+## linuxæ— rootæƒé™å®‰è£…è½¯ä»¶
 
+åœ¨æœ‰äº›å…¬å¸æ˜¯ä¸ä¼šç»™å¼€å‘äººå‘˜rootæƒé™çš„ï¼Œä½†æ˜¯å¼€å‘äººå‘˜æœ‰æ—¶å€™ä¹Ÿéœ€è¦è£…ä¸€äº›è½¯ä»¶ã€‚æ²¡æœ‰rootæƒé™æ˜¯å¦å¯ä»¥æˆåŠŸå®‰è£…è½¯ä»¶å‘¢ï¼Ÿç­”æ¡ˆæ˜¯yesã€‚æœ¬æ–‡ä»¥å®‰è£…nginxä¸ºä¾‹è¯´æ˜Žä¸‹å¦‚ä½•æ“ä½œã€‚
 
+æ²¡æœ‰rootæƒé™æ—¶å¾€å¾€ä¹Ÿå°±æ²¡æœ‰æƒé™æ“ä½œä¸€äº›ç³»ç»Ÿç›®å½•ï¼Œä¾‹å¦‚binï¼Œusrç­‰ã€‚æ‰€ä»¥åœ¨å®‰è£…æ—¶éœ€è¦é…ç½®å°†å®‰è£…æ–‡ä»¶è£…åœ¨å½“å‰ç”¨æˆ·æœ‰æƒé™æ“ä½œçš„ç›®å½•ã€‚
 
-1.NTFS¿ÉÒÔÖ§³ÖµÄ·ÖÇø´óÐ¡¿ÉÒÔ´ïµ½2TB£¨2048GB£©,¶øFAT32Ö§³Ö·ÖÇøµÄ´óÐ¡×î´óÎª32GB¡£  
+å®‰è£…nginxé¦–å…ˆè¦ä¸‹è½½å®‰è£…æ–‡ä»¶ï¼Œå…·ä½“çš„å®‰è£…æ­¥éª¤å¦‚ä¸‹ï¼š
 
+```shell
+    tar-zvxf nginx-1.2.3.tar.gz # è§£åŽ‹ç¼©æ–‡ä»¶ï¼š
+    cd ~
+    mkdir nginx
+    cd xxx
+    ./configureâ€”prefix=/xxx/yy/nginx
+    make
+    make install
+```
 
+æ­£å¸¸æƒ…å†µä¸‹è¿™æ ·å°±æˆåŠŸå®‰è£…äº†ã€‚å’Œæœ‰rootæƒé™å®‰è£…çš„åŒºåˆ«åœ¨äºŽ./configure éœ€è¦æŒ‡å®šå®‰è£…æ–‡ä»¶çš„ç›®å½•ã€‚
 
-2.NTFS²ÉÓÃÁË¸üÐ¡µÄ´Ø×é£¬¿ÉÒÔ¸üÓÐÐ§ÂÊµØ¹ÜÀí´ÅÅÌ¿Õ¼ä¡£NTFSÎÄ¼þÏµÍ³£¬µ±·ÖÇøµÄ´óÐ¡ÔÚ2GBÒÔÏÂÊ±£¬´ØµÄ´óÐ¡¶¼±ÈÏàÓ¦µÄFAT32´ØÐ¡£¬µ±·ÖÇøµÄ´óÐ¡ÔÚ2GBÒÔÉÏÊ±£¬´ØµÄ´óÐ¡¶¼Îª4KB¡£ÔÚFAT32ÎÄ¼þÏµÍ³µÄÇé¿öÏÂ£¬·ÖÇø´óÐ¡ÔÚ2GB¡«8GBÊ±´ØµÄ´óÐ¡Îª4KB£¬·ÖÇø´óÐ¡ÔÚ8GB¡«16GBÊ±´ØµÄ´óÐ¡Îª8KB£¬·ÖÇø´óÐ¡ÔÚ16GB¡«32GBÊ±´ØµÄ´óÐ¡Îª16KB¡£Ïà±È½Ï¶øÑÔ£¬NTFS¿ÉÒÔ¸üÓÐÐ§µØ¹ÜÀí´ÅÅÌ¿Õ¼ä£¬×î´óÏÞ¶ÈµØ±ÜÃâÁË´ÅÅÌ¿Õ¼äµÄÀË·Ñ¡£  
 
 
+#å¸è½½LNMP
 
-3.NTFS¿ÉÒÔ×Ô¶¯µØÐÞ¸´´ÅÅÌ´íÎó¶ø²»»áÏÔÊ¾³ö´íÐÅÏ¢¡£windows XPÏòNTFS·ÖÇøÖÐÐ´ÎÄ¼þÊ±£¬»á±£ÁôÎÄ¼þµÄÒ»·Ý¿½±´£¬È»ºó¼ì²éÏò´ÅÅÌÖÐËùÐ´µÄÎÄ¼þÊÇ·ñÓëÄÚ´æÖÐµÄÒ»ÖÂ¡£Èç¹ûÁ½Õß²»Ò»ÖÂ£¬windows¾Í°ÑÏàÓ¦µÄÉÈÇø±êÎª»µÉÈÇø¶ø²»ÔÙÊ¹ÓÃËü£¨´ØÖØÓ³Éä£©£¬È»ºóÓÃÄÚ´æÖÐ±£ÁôµÄÎÄ¼þ¿½±´ÖØÐÂÏò´ÅÅÌÉÏÐ´ÎÄ¼þ¡£Èç¹ûÔÚ¶ÁÎÄ¼þÊ±³öÏÖ´íÎó£¬NTFSÔò·µ»ØÒ»¸ö¶Á´íÎóÐÅÏ¢£¬²¢¸æÖªÏàÓ¦µÄÓ¦ÓÃ³ÌÐòÊý¾ÝÒÑ¾­¶ªÊ§¡£ 
+    killall nginx *//ç»ˆæ­¢nginxè¿›ç¨‹
+    /etc/init.d/mysql stop *//å…³é—­mysql
+    killall mysqld *//ç»ˆæ­¢mysqlè¿›ç¨‹
+    /usr/local/php/sbin/php-fpm stop *//å…³é—­php
+    killall php-cgi *//ç»ˆæ­¢php-cgiè¿›ç¨‹
+    rm -rf /usr/local/php *//åˆ é™¤phpæ–‡ä»¶
+    rm -rf /usr/local/nginx *//åˆ é™¤nginxæ–‡ä»¶
+    rm -rf /usr/local/mysql *//åˆ é™¤mysqlæ–‡ä»¶
+    rm -rf /usr/local/zend *//åˆ é™¤zendæ–‡ä»¶
+    rm /etc/my.cnf *//åˆ é™¤é…ç½®æ–‡ä»¶
+    rm /etc/init.d/mysql *//åˆ é™¤mysqlæ–‡ä»¶
+    rm /root/vhost.sh *//åˆ é™¤é…ç½®è™šæ‹Ÿä¸»æœºè„šæœ¬
+    rm /root/lnmp *//åˆ é™¤lnmpæ–‡ä»¶å¤¹
 
+æˆ–è€…å®‰è£…æ–‡ä»¶ä¸­æ‰§è¡Œ.unistall.sh
 
+## Could not get lock /var/lib/apt/lists/lock - open
 
-4.NTFSÓÐÐí¶à°²È«ÐÔÄÜ·½ÃæµÄÑ¡Ïî£¬¿ÉÒÔÔÚ±¾»úÉÏºÍÍ¨¹ýÔ¶³ÌµÄ·½·¨±£»¤ÎÄ¼þ¡¢Ä¿Â¼¡£NTFS»¹Ö§³Ö¼ÓÃÜÎÄ¼þÏµÍ³£¨EFS£©£¬¿ÉÒÔ×èÖ¹Ã»ÓÐÊÚÈ¨µÄÓÃ»§·ÃÎÊÎÄ¼þ¡£ 
+    Could not get lock /var/lib/apt/lists/lock - open(11:Resource temporarily unavailable)
 
+ubuntukilllistç»ˆç«¯å·¥ä½œ
 
+å‡ºçŽ°è¿™ä¸ªé—®é¢˜çš„åŽŸå› å¯èƒ½æ˜¯æœ‰å¦å¤–ä¸€ä¸ªç¨‹åºæ­£åœ¨è¿è¡Œï¼Œå¯¼è‡´èµ„æºè¢«é”ä¸å¯ç”¨ã€‚è€Œå¯¼è‡´èµ„æºè¢«é”çš„åŽŸå› ï¼Œå¯èƒ½æ˜¯ä¸Šæ¬¡å®‰è£…æ—¶æ²¡æ­£å¸¸å®Œæˆï¼Œè€Œå¯¼è‡´å‡ºçŽ°æ­¤çŠ¶å†µã€‚
 
-5.NTFSÎÄ¼þÏµÍ³´øÀ´µÄÁíÒ»¸öºÃ´¦ÊÇÖ§³ÖÎÄ¼þÑ¹Ëõ¹¦ÄÜ£¬ÓÃ»§¿ÉÒÔÑ¡ÔñÑ¹Ëõµ¥¸öÎÄ¼þ»òÕû¸öÎÄ¼þ¼Ð¡£ÈÎºÎ»ùÓÚwindowsµÄÓ¦ÓÃ³ÌÐò¶ÔNTFS·ÖÇøÉÏµÄÑ¹ËõÎÄ¼þ½øÐÐ¶ÁÐ´Ê±²»ÐèÒªÊÂÏÈÓÉÆäËû³ÌÐò½øÐÐ½âÑ¹Ëõ£¬µ±¶ÔÎÄ¼þ½øÐÐ¶ÁÈ¡Ê±,ÎÄ¼þ½«×Ô¶¯½øÐÐ½âÑ¹Ëõ£»ÎÄ¼þ¹Ø±Õ»ò±£´æÊ±»á×Ô¶¯¶ÔÎÄ¼þ½øÐÐÑ¹Ëõ¡£  
+è§£å†³æ–¹æ³•ï¼šè¾“å…¥ä»¥ä¸‹å‘½ä»¤ï¼Œä¹‹åŽå†å®‰è£…æƒ³è£…çš„åŒ…ï¼Œå³å¯è§£å†³
 
+    sudo rm /var/cache/apt/archives/lock
+    sudo rm /var/lib/dpkg/lock
 
-
-6.´ÅÅÌÏÞ¶î¹¦ÄÜÔÊÐíÏµÍ³¹ÜÀíÔ±¹ÜÀí·ÖÅä¸ø¸÷¸öÓÃ»§µÄ´ÅÅÌ¿Õ¼ä£¬ºÏ·¨ÓÃ»§Ö»ÄÜ·ÃÎÊÊôÓÚ×Ô¼ºµÄÎÄ¼þ£¬windows 2000ÖÐµÄ´ÅÅÌÏÞ¶î¹¦ÄÜÊÇ»ùÓÚÓÃ»§ºÍ¾íµÄ¡£ 
-
-
-
-FAT32ÎÄ¼þÏµÍ³  
-
-
-
-ÔÚFAT32ÎÄ¼þÏµÍ³Ö®Ç°£¬PC»úÍ¨³£Ê¹ÓÃµÄÎÄ¼þÏµÍ³ÊÇFAT16¡£ÏñMS-DOS£¬winows95µÈÏµÍ³²É¶¼ÓÃÁËFAT16ÎÄ¼þÏµÍ³¡£ÔÚwin 9XÏµÍ³ÏÂ£¬FAT16×î´óÖ§³ÖµÄ·ÖÇø´óÐ¡Îª2GB¡£ÔÚFAT16Çé¿öÏÂ´Ø±È½Ï´ó£¬´æ´¢Ð§ÂÊÔ½µÍ£¬Ôì³ÉÁË´æ´¢¿Õ¼äµÄÀË·Ñ¡£ÔÚÕâÖÖÇé¿öÏÂ£¬ÍÆ³öÁËÔöÇ¿µÄÎÄ¼þÏµÍ³FAT32¡£FAT32Ê¹ÓÃÁË32Î»µÄ¿Õ¼äÀ´±íÊ¾Ã¿¸öÉÈÇø(Sector)ÅäÖÃÎÄ¼þµÄÇéÐÎ¡£ÀûÓÃFAT32ËùÄÜÊ¹ÓÃµÄµ¥¸ö·ÖÇø£¬×î´ó¿É´ïµ½2TB(2048GB)£¬¶øÇÒ¸÷ÖÖ´óÐ¡µÄ·ÖÇøËùÄÜÓÃµ½µÄ´ØµÄ´óÐ¡£¬Ò²ÊÇÇ¡ÈçÆä·Ö£¬ÉÏÊöÁ½´óÓÅµã£¬Ôì¾ÍÁËÓ²ÅÌÊ¹ÓÃÉÏ¸üÓÐÐ§ÂÊ¡£ 
-
-
-
-Í¬FAT16Ïà±È£¬FAT32Ö÷Òª¾ßÓÐÒÔÏÂÌØµã£º 
-
-
-
-1. FAT32¿ÉÒÔÖ§³ÖµÄ´ÅÅÌ´óÐ¡´ïµ½2TB£¬windows XPÏÂ¿ÉÒÔÖ§³Ö·ÖÇø×î´óÎª32GB¡£¶øFAT16×î´óÖ»Ö§³Ö4GBµÄ·ÖÇø¡£ 
-
-
-
-2. ÓÉÓÚ²ÉÓÃµÄ´Ø¸üÐ¡£¬Òò´ËFAT32ÎÄ¼þÏµÍ³¿ÉÒÔ¸üÓÐÐ§ÂÊµØ½øÐÐÐÅÏ¢µÄ±£´æ£¬Í¨³£Çé¿öÏÂ¿ÉÒÔÌá¸ß15%¡£  
-
-
-
-Èý¡¢½áÎ² 
-
-
-
-ÎÒÃÇ¾ÍÁ½¸öÎÄ¼þÏµÍ³µÄÇø±ð¼ÓÒÔËµÃ÷£ºNTFSÏà¶ÔÓÚFATÎÄ¼þÏµÍ³µÄÇø±ðÔÚÓÚNTFS²»µ«ÊÇÒ»¸ö¿É»Ö¸´µÄ£¬°²È«¸ßÐ§µÄÎÄ¼þÏµÍ³£¬NTFSÔÚÉè¼ÆÊ±»¹¿¼ÂÇµ½ÁËÖ§³Ö¶àÊý¾ÝÁ÷£¬Î÷Å·×Ö·û¼¯Ãû³ÆºÍ»µ´ØÖØ¶¨Ïò¹¦ÄÜ¡£¶àÊý¾ÝÁ÷Ê¹µÃ¿ÉÒÔÔÚ¶ÔÎÄ¼þÌí¼ÓÐÂÊôÐÔ»òÐÅÏ¢Ê±²»ÓÃÖØÐÂ½¨Á¢ÎÄ¼þÏµÍ³¡£Î÷Å·×Ö·û¼¯¿ÉÒÔÖ§³ÖÊÀ½çÉÏÈÎºÎÒ»ÖÖÓïÑÔ£¬¶øÎÒÃÇÖªµÀASCIIÂëÖ»ÓÐ7Î»£¬Ö§³ÖµÄÓïÑÔÖÖÀàÒ²¾ÍÊÇÓ¢Óï¡£×îºó£¬»µ´ØµÄÖØ¶¨Ïò¹¦ÄÜ¿ÉÒÔÊ¹NTFSÊ¶±ð»µ´Ø£¬ÕâÑù¿ÉÒÔÊ¹Ð´ÈëµÄÊý¾Ý²»Ð´ÈëÕâÐ©×åÖÐ£¬±£Ö¤ÁËÊý¾ÝµÄ°²È«ÐÔ¡£ 
-
-
-
-Èç¹ûÔÚwindows XPÖÐÊ¹ÓÃ´óÓÚ32GBµÄ·ÖÇø£¬Î¨Ò»¿ÉÒÔÑ¡ÔñµÄÊÇNTFS¸ñÊ½¡£Èç¹û¼ÆËã»ú²»¿¼ÂÇ°²È«ÐÔÎÊÌâ£¬¸ü×¢ÖØÓëwin 9XµÄ¼æÈÝÐÔ£¬ÄÇÃ´FAT32¸ñÊ½ÊÇ×îºÃµÄÑ¡Ôñ¡£Èç¹û×¢ÖØ¼ÆËã»úÏµÍ³µÄ°²È«ÐÔµÄ»°£¬½¨ÒéÓÃ»§²ÉÓÃNTFS¸ñÊ½¡£Èç¹ûÒªÊ¹ÓÃ¶à¸ö²Ù×÷ÏµÍ³£¬ÐèÒª°²×°win 9X»òÆäËü²Ù×÷ÏµÍ³£¬½¨ÒéÓÃ»§×ö³É¶àÆô¶¯ÏµÍ³£¬Ò»¸ö·ÖÇø²ÉÓÃFAT32¸ñÊ½£¬ÁíÍâµÄ·ÖÇø²ÉÓÃNTFS¸ñÊ½£¬²¢ÇÒ½«windowds XP°²×°ÔÚNTFS¸ñÊ½·ÖÇøÏÂ£¬ÆäËü²Ù×÷ÏµÍ³°²×°ÔÚFAT32¸ñÊ½ÏÂ¡£   Èç¹ûÄãÊ¹ÓÃÏÂÃæµÄÃüÁîÈ´Ã»ÓÐ³É¹¦£¬¿ÉÒÔ³¢ÊÔÓÃrootÈ¨ÏÞÖ´ÐÐ£¬ÒòÎªÉè¼ÆÎÄ¼þÏµÍ³Óë´ÅÅÌ·ÖÇøµÈÃüÁî¶¼ÓÐÒ»¶¨µÈ·çÏÕ£¬ËùÒÔ¿ÉÄÜÐèÒª½Ï¸ßµÈÖ´ÐÐÈ¨ÏÞ¡£
-
-##Ò»Ð©Ð¡¹¤¾ß
-
-cfdisk -Ps
-
-cfdisk Ò²ÊÇÒ»¿î²»´íµÄ·ÖÇø¹¤¾ß£»ÔÚÓÐÐ©·¢ÐÐ°æÖÐ£¬´Ë¹¤¾ßÒÑ¾­´Óutil-linux°üÖÐÌÞ³ý£»cfdisk ¼òµ¥Ò×ÓÃÊÇËûµÄÌØµã¡£²é¿´´ÅÅÌ·ÖÇøµÄÓÃ·¨   cfdisk   -Ps ´ÅÅÌÉè±¸Ãû Ö»ÓÐÒ»¸öÓ²ÅÌÒ²¿ÉÒÔÓÃ cfdisk -Ps
-
-
-
-[root@localhost ~]# cfdisk -Ps
-
-Partition Table for /dev/sda
-
-
-
-                First         Last
-
-# Type        Sector      Sector       Offset     Length      Filesystem Type         (ID) Flag
-
--- -------   ----------- -----------    ------   ----------- --------------------      £­£­£­----
-
-1 Primary           0     10233404     63      10233405         Linux (83)             Boot
-
-2 Primary    10233405    14313914      0       4080510       Linux swap / So (82)    None
-
-3 Primary    14313915    24547319      0      10233405         Linux (83)             None
-
-4 Primary    24547320    44082359      0      19535040       Extended (05)           None
-
-5 Logical    24547320     34314839     63       9767520        Linux (83)             None
-
-6 Logical    34314840    44082359     63       9767520         Linux (83)             None
-
-   Logical    44082360    78124094      0      34041735         Free Space            None
-
-
-
-[root@localhost ~]# cfdisk -Ps /dev/sda
-
-Partition Table for /dev/sda
-
-
-
-               First       Last
-
-# Type       Sector      Sector   Offset    Length   Filesystem Type (ID) Flag
-
--- ------- ----------- ----------- ------ ----------- -------------------- ----
-
-1 Primary           0    10233404     63    10233405 Linux (83)           Boot
-
-2 Primary    10233405    14313914      0     4080510 Linux swap / So (82) None
-
-3 Primary    14313915    24547319      0    10233405 Linux (83)           None
-
-4 Primary    24547320    44082359      0    19535040 Extended (05)        None
-
-5 Logical    24547320    34314839     63     9767520 Linux (83)           None
-
-6 Logical    34314840    44082359     63     9767520 Linux (83)           None
-
-   Logical    44082360    78124094      0    34041735 Free Space           None
-
-sfdisk -l
-
-[root@localhost ~]# sfdisk -l
-
-
-
-Disk /dev/sda: 4863 cylinders, 255 heads, 63 sectors/track
-
-Units = cylinders of 8225280 bytes, blocks of 1024 bytes, counting from 0
-
-
-
-   Device Boot Start     End   #cyls    #blocks   Id System
-
-/dev/sda1   *      0+    636     637-   5116671   83 Linux
-
-/dev/sda2        637     890     254    2040255   82 Linux swap / Solaris
-
-/dev/sda3        891    1527     637    5116702+ 83 Linux
-
-/dev/sda4       1528    2743    1216    9767520    5 Extended
-
-/dev/sda5       1528+   2135     608-   4883728+ 83 Linux
-
-/dev/sda6       2136+   2743     608-   4883728+ 83 Linux
-
-Testdisk
-
-½Ì³Ì²Î¿¼¡¶TestDiskÊ¹ÓÃ½Ì³Ì¡·
-
-##ÐÞ¸Ä·ÖÇøµÄ¾í±ê
-
-Fat16/Fat32¸ñÊ½:
-
-#°²×° 
-
-$ sudo apt-get install mtools 
-
-#ÐÂ½¨ÅäÖÃÎÄ¼þ 
-
-$ cp /etc/mtools.conf ~/.mtoolsrc
-
-#±à¼­¸Õ¸´ÖÆµÄ¡±~/.mtoolsrc¡±ÎÄ¼þ,ÔÚ×îááÒ»ÐÐ¼ÓÈëÈçÏÂÃüÁîÐÐ£º 
-
-drive i: file="/dev/sda2"    //ÀïÃæµÄ¡±/devsda2¡±Ó¦¸ù¾ÝÊµ¼ÊÇé¿ö¸ü¸ÄÎªÄãÒª¸ÄµÄÅÌ 
-
-#¸ü¸ÄÃüÁîÌáÊ¾·ûÂ·¾¶µ½¡±i:¡±ÅÌ£º 
-
-$ mcd i: 
-
-#²é¿´¡±i:¡±µ±Ç°µÄ¾í±ê 
-
-$ sudo mlabel -s i:
-
-#¸ü¸Ä¡±i:¡±ÅÌÔ­Ê¼¾í±êÎªÄãÏ²»¶µÄÐÂ¾í±êÃû£º 
-
-$ sudo mlabel i: newLabelName
-
-NTFS¸ñÊ½ 
-
-#°²×° 
-
-$ sudo apt-get install ntfsprogs
-
-×¢£º°²×°°üÒÑÏÂ 
-
-#ÐÞ¸Ä 
-
-$ sudo ntfslabel /dev/sda1 newLabelName //ÀïÃæµÄ"/dev/sda1"Ó¦¸ù¾ÝÊµ¼ÊÇé¿öÐÞ¸Ä
-
-
-
-ext2/ext3¸ñÊ½
-
-Ê¹ÓÃÄÚÖÃÃüÁî 
-
-$ sudo e2label /dev/sda1 newLabelName
-
-#È¨ÏÞÕË»§ÉèÖÃÎÊÌâ
-
-##ÈçºÎÆôÓÃ Ubuntu ÖÐµÄ root ÕÊºÅ
-
-ºÍÆäËü·¢ÐÐ°æ±¾µÄLinux²»Í¬£¬Ubuntu LinuxÓÐÒ»¸öÓëÖÚ²»Í¬µÄÌØµã£¬ÄÇ¾ÍÊÇ³õ´ÎÊ¹ÓÃÊ±£¬ÄãÎÞ·¨×÷ÎªrootÀ´µÇÂ¼ÏµÍ³£¬ÎªÊ²Ã´»áÕâÑù£¿Õâ¾ÍÒª´ÓÏµÍ³µÄ°²×°ËµÆð¡£¶ÔÓÚÆäËûLinuxÏµÍ³À´Ëµ£¬Ò»°ãÔÚ°²×°¹ý³Ì¾ÍÉè¶¨rootÃÜÂë£¬ÕâÑùÓÃ»§¾ÍÄÜÓÃËüµÇÂ¼rootÕÊ»§»òÊ¹ÓÃsuÃüÁî×ª»»µ½³¬¼¶ÓÃ»§Éí·Ý¡£ÓëÖ®Ïà·´£¬UbuntuÄ¬ÈÏ°²×°Ê±£¬²¢Ã»ÓÐ¸ørootÓÃ»§ÉèÖÃ¿ÚÁî£¬Ò²Ã»ÓÐÆôÓÃrootÕÊ»§¡£ÎÊÌâÊÇÒªÏë×÷ÎªrootÓÃ»§À´ÔËÐÐÃüÁî¸ÃÔõÃ´°ìÄØ£¿Ã»¹ØÏµ£¬ÎÒÃÇ¿ÉÒÔÊ¹ÓÃsudoÃüÁî´ï´ËÄ¿µÄ¡£sudoÊÇlinuxÏÂ³£ÓÃµÄÔÊÐíÆÕÍ¨ÓÃ»§Ê¹ÓÃ³¬¼¶ÓÃ»§È¨ÏÞµÄ¹¤¾ß£¬¸ÃÃüÁîÎª¹ÜÀíÔ±Ìá¹©ÁËÒ»ÖÖÏ¸¿ÅÁ£¶ÈµÄ·ÃÎÊ¿ØÖÆ·½·¨£¬Í¨¹ýËüÈËÃÇ¼È¿ÉÒÔ×÷Îª³¬¼¶ÓÃ»§ÓÖ¿ÉÒÔ×÷ÎªÆäËüÀàÐÍµÄÓÃ»§À´·ÃÎÊÏµÍ³¡£ÕâÑù×öµÄºÃ´¦ÊÇ£¬¹ÜÀíÔ±ÄÜ¹»ÔÚ²»¸æËßÓÃ»§rootÃÜÂëµÄÇ°ÌáÏÂ£¬ÊÚÓèËûÃÇÄ³Ð©ÌØ¶¨ÀàÐÍµÄ³¬¼¶ÓÃ»§È¨ÏÞ£¬ÕâÕýÊÇÐí¶àÏµÍ³¹ÜÀíÔ±ËùÃÎÃÂÒÔÇóµÄ¡£
-
-ÕâÀïÓÐ±ØÒªËµÏÈ¼òµ¥Ò»ÏÂsudoºÍsuÃüÁîµÄÇø±ð£º
-
-suÃüÁîÊÇÔÚ²»ÍË³öµ±Ç°ÓÃ»§µÄÇé¿öÏÂÇÐ»»ÓÃ»§µÄ¹¤¾ß£¬Í¨¹ýsu¿ÉÒÔÔÚÓÃ»§Ö®¼äÇÐ»»£¬Èç¹û³¬¼¶È¨ÏÞÓÃ»§rootÏòÆÕÍ¨»òÐéÄâÓÃ»§ÇÐ»»²»ÐèÒªÃÜÂë£¬¶øÆÕÍ¨ÓÃ»§ÇÐ»»µ½ÆäËüÈÎºÎÓÃ»§¶¼ÐèÒªÃÜÂëÑéÖ¤¡£
-
-sudoÊÇUnix/LinuxÆ½Ì¨ÉÏµÄÒ»¸ö·Ç³£ÓÐÓÃµÄ¹¤¾ß£¬ËüÔÊÐíÏµÍ³¹ÜÀíÔ±·ÖÅä¸øÆÕÍ¨ÓÃ»§Ò»Ð©ºÏÀíµÄ¡°È¨Àû¡±£¬ÈÃËûÃÇÖ´ÐÐÒ»Ð©Ö»ÓÐ³¬¼¶ÓÃ»§»òÆäËûÌØÐíÓÃ»§²ÅÄÜÍê³ÉµÄÈÎÎñÕâÑùÒ»À´£¬¾Í²»½ö¼õÉÙÁËrootÓÃ»§µÄµÇÂ½´ÎÊýºÍ¹ÜÀíÊ±¼ä£¬Ò²Ìá¸ßÁËÏµÍ³°²È«ÐÔ¡£sudoÉè¼ÆÕßµÄ×ÚÖ¼ÊÇ£º¸øÓÃ»§¾¡¿ÉÄÜÉÙµÄÈ¨ÏÞµ«ÈÔÔÊÐíÍê³ÉËûÃÇµÄ¹¤×÷¡£ÎÒÃÇ¿ÉÒÔ¼òµ¥µÄÀí½â³É£ºsu»ñµÃÎÈ¶¨µÄ³¬¼¶ÓÃ»§£¨»òÆäËûÓÃ»§È¨ÏÞ£©£¬sudo»ñµÃÔÝÊ±ÐÔµÄÏÞÖÆÁËµÄ³¬¼¶ÓÃ»§È¨ÏÞ£¬Ò»¶ÎÊ±¼äÖ®ºó»áÊ§Ð§¡£
-
-ºÃ£¬ÏÂÃæ½²Ò»ÏÂ¾ßÌåµÄÉèÖÃ·½·¨£º·½·¨Ò»£º
-
-1.ÎªrootÉèÖÃÒ»¸örootÃÜÂë£º$ sudo passwd root
-
-Ö®ºó»áÌáÊ¾ÒªÊäÈërootÓÃ»§µÄÃÜÂë£¬Á¬ÐøÊäÈërootÃÜÂë
-
-2.Ê¹ÓÃ£º$ su,²¢°´ÕÕÌáÊ¾ÊäÈërootÃÜÂë£¬¾Í¿ÉÒÔÔÚÖÕ¶ËÖÐÇÐ»»³É³¬¼¶¹ÜÀíÔ±ÓÃ»§Éí·ÝÁË£¡
-
-## LinuxÓÃ»§Ìí¼Ósudoer
-
-Ê¹ÓÃsudo¿ÉÒÔÔÚÒÔ·ÇrootÓÃ»§µÇÂ¼Ê±ÁÙÊ±»ñµÃrootÈ¨ÏÞ£¬²¢Ö´ÐÐÐèÒªµÄÃüÁî¡£¿ÉÒÔÊ¹ÓÃsudoµÄÓÃ»§¿ÉÒÔ½Ð×ösudoer¡£
-
-Ìí¼ÓsudoerµÄ·½·¨£¨¼ÙÉèÄúÒÑ¾­°²×°sudo£©£ºÖ´ÐÐ
-
-# visudo
-
-»ò
-
-# sudoedit
-
-ÌáÊ¾£º
-
-ÓÐÐ©·¢ÐÐ°æµÄsudoÌá¹©ÁËsudoedit£¬ÓÐµÄÔòÌá¹©ÁËvisudo£¬¹¦ÄÜÉÏ»ù±¾ÊÇÒ»ÑùµÄ¡£ÄãÒ²¿ÉÒÔÊ¹ÓÃÆäËû±à¼­Æ÷Èçvi½øÐÐ±à¼­/etc/sudoers£¬µ«ÓÉÓÚÎÄ¼þÊÇÖ»¶ÁµÄ£¬ÇëÇ¿ÖÆ±£´æ£¨Èçw!£©»òÈ¥³ýÖ»¶ÁÊôÐÔÔÙ±£´æ¡£²éÕÒ
-
-root ALL=(ALL) ALL
-
-ÔÚÏÂÃæ¼ÓÈë
-
-%adm ALL=(ALL) ALL
-
-Èç¹ûsudoÊ±²»ÏëÊäÈëÃÜÂë£¬¿ÉÒÔ°ÑÉÏ¾ä¸Ä³É£º
-
-%adm ALL=(ALL) NOPASSWD: ALL
-
-±£´æÎÄ¼þ£¬È»ºóÖ´ÐÐ
-
-#gpasswd -a ÓÃ»§Ãû adm
-
-È»ºóÕâ¸öÓÃ»§¾Í¿ÉÒÔÓÃsudoÁË¡£ 
-
-## linuxÎÞrootÈ¨ÏÞ°²×°Èí¼þ
-
-ÔÚÓÐÐ©¹«Ë¾ÊÇ²»»á¸ø¿ª·¢ÈËÔ±rootÈ¨ÏÞµÄ£¬µ«ÊÇ¿ª·¢ÈËÔ±ÓÐÊ±ºòÒ²ÐèÒª×°Ò»Ð©Èí¼þ¡£Ã»ÓÐrootÈ¨ÏÞÊÇ·ñ¿ÉÒÔ³É¹¦°²×°Èí¼þÄØ£¿´ð°¸ÊÇyes¡£±¾ÎÄÒÔ°²×°nginxÎªÀýËµÃ÷ÏÂÈçºÎ²Ù×÷¡£
-
-Ã»ÓÐrootÈ¨ÏÞÊ±ÍùÍùÒ²¾ÍÃ»ÓÐÈ¨ÏÞ²Ù×÷Ò»Ð©ÏµÍ³Ä¿Â¼£¬ÀýÈçbin£¬usrµÈ¡£ËùÒÔÔÚ°²×°Ê±ÐèÒªÅäÖÃ½«°²×°ÎÄ¼þ×°ÔÚµ±Ç°ÓÃ»§ÓÐÈ¨ÏÞ²Ù×÷µÄÄ¿Â¼¡£
-
-°²×°nginxÊ×ÏÈÒªÏÂÔØ°²×°ÎÄ¼þ£¬¾ßÌåµÄ°²×°²½ÖèÈçÏÂ£º
-
-1. ÏÂÔØÎÄ¼þÖ®ºóÐèÒª½âÑ¹ËõÎÄ¼þ£º
-
-tar-zvxf nginx-1.2.3.tar.gz
-
-2. ´´½¨°²×°ÎÄ¼þÄ¿Â¼£¬ÀýÈç£º
-
-cd ~
-
-mkdir nginx
-
-3. ×ªµ½½âÑ¹ºó°²×°ÎÄ¼þµÄ´æ·ÅÄ¿Â¼£¬È»ºóÅäÖÃ
-
-cd xxx
-
-./configure¡ªprefix=/xxx/yy/nginx
-
-4. ±àÒë
-
-make
-
-5. °²×°
-
-make install
-
-Õý³£Çé¿öÏÂÕâÑù¾Í³É¹¦°²×°ÁË¡£
-
-ºÍÓÐrootÈ¨ÏÞ°²×°µÄÇø±ðÔÚÓÚ./configure ÐèÒªÖ¸¶¨°²×°ÎÄ¼þµÄÄ¿Â¼¡£
-
-
-
-#Ð¶ÔØLNMP
-
-killall nginx *//ÖÕÖ¹nginx½ø³Ì
-
-/etc/init.d/mysql stop *//¹Ø±Õmysql
-
-killall mysqld *//ÖÕÖ¹mysql½ø³Ì
-
-/usr/local/php/sbin/php-fpm stop *//¹Ø±Õphp
-
-killall php-cgi *//ÖÕÖ¹php-cgi½ø³Ì
-
-rm -rf /usr/local/php *//É¾³ýphpÎÄ¼þ
-
-rm -rf /usr/local/nginx *//É¾³ýnginxÎÄ¼þ
-
-rm -rf /usr/local/mysql *//É¾³ýmysqlÎÄ¼þ
-
-rm -rf /usr/local/zend *//É¾³ýzendÎÄ¼þ
-
-rm /etc/my.cnf *//É¾³ýÅäÖÃÎÄ¼þ
-
-rm /etc/init.d/mysql *//É¾³ýmysqlÎÄ¼þ
-
-rm /root/vhost.sh *//É¾³ýÅäÖÃÐéÄâÖ÷»ú½Å±¾
-
-rm /root/lnmp *//É¾³ýlnmpÎÄ¼þ¼Ð
-
-»òÕß°²×°ÎÄ¼þÖÐÖ´ÐÐ.unistall.sh
-
-# Could not get lock /var/lib/apt/lists/lock - open
-
-Could not get lock /var/lib/apt/lists/lock - open(11:Resource temporarily unavailable)
-
-ubuntukilllistÖÕ¶Ë¹¤×÷
-
-³öÏÖÕâ¸öÎÊÌâµÄÔ­Òò¿ÉÄÜÊÇÓÐÁíÍâÒ»¸ö³ÌÐòÕýÔÚÔËÐÐ£¬µ¼ÖÂ×ÊÔ´±»Ëø²»¿ÉÓÃ¡£¶øµ¼ÖÂ×ÊÔ´±»ËøµÄÔ­Òò£¬¿ÉÄÜÊÇÉÏ´Î°²×°Ê±Ã»Õý³£Íê³É£¬¶øµ¼ÖÂ³öÏÖ´Ë×´¿ö¡£
-
-½â¾ö·½·¨£ºÊäÈëÒÔÏÂÃüÁî
-
-sudo rm /var/cache/apt/archives/lock
-
-sudo rm /var/lib/dpkg/lock
-
-Ö®ºóÔÙ°²×°Ïë×°µÄ°ü£¬¼´¿É½â¾ö
-
- 
-
- 
-
-½ñÌìÍæubuntuµÄÊ±ºò£¬ÔÚÅª¸üÐÂÔ´µÄÊ±ºò£¬Í»È»³öÏÖÒÔÏÂ´íÎó£º
+ä»Šå¤©çŽ©ubuntuçš„æ—¶å€™ï¼Œåœ¨å¼„æ›´æ–°æºçš„æ—¶å€™ï¼Œçªç„¶å‡ºçŽ°ä»¥ä¸‹é”™è¯¯ï¼š
 
 [1]+ Stopped                 sudo apt-get update
 
@@ -1886,285 +741,242 @@ E: Could not get lock /var/lib/apt/lists/lock - open (11: Resource temporarily u
 
 E: Unable to lock the list directory
 
-¿ªÊ¼ÒÔÎªÊÇÈ¨ÏÞ²»¹»£¬¾ÍÊÇÓÃ sudo apt-get update,·¢ÏÖ»¹ÊÇ±¨´í£¬ÎÊÌâÃ»ÓÐ½â¾ö¡£ÓÚÊÇÉÏÍøËÑË÷ÁËÒ»ÏÂ£¬´ð°¸ÈçÏÂ£º
+å¼€å§‹ä»¥ä¸ºæ˜¯æƒé™ä¸å¤Ÿï¼Œå°±æ˜¯ç”¨ sudo apt-get update,å‘çŽ°è¿˜æ˜¯æŠ¥é”™ï¼Œé—®é¢˜æ²¡æœ‰è§£å†³ã€‚äºŽæ˜¯ä¸Šç½‘æœç´¢äº†ä¸€ä¸‹ï¼Œç­”æ¡ˆå¦‚ä¸‹ï¼š
 
-ÎÊÌâÓ¦¸ÃÊÇÖ®Ç°ÄÇ¸ö¸üÐÂ±»Ç¿ÖÆÈ¡ÏûµÄÎÊÌâ£¬½ø³ÌÈÔÈ»»¹ÔÚ¡£ÓÃÕâ¸öÃüÁî²é¿´Ò»ÏÂ£º
+é—®é¢˜åº”è¯¥æ˜¯ä¹‹å‰é‚£ä¸ªæ›´æ–°è¢«å¼ºåˆ¶å–æ¶ˆçš„é—®é¢˜ï¼Œè¿›ç¨‹ä»ç„¶è¿˜åœ¨ã€‚ç”¨è¿™ä¸ªå‘½ä»¤æŸ¥çœ‹ä¸€ä¸‹ï¼š
 
-ps -e | grep apt
+    ps -e | grep apt
 
-ÏÔÊ¾½á¹ûÈçÏÂ£º
+æ˜¾ç¤ºç»“æžœå¦‚ä¸‹ï¼š
 
-6362 ? 00:00:00 apt
+    6362 ? 00:00:00 apt
+    6934 ? 00:00:00 apt-get
+    7368 ? 00:00:00 synaptic
 
-6934 ? 00:00:00 apt-get
+ç„¶åŽå°±æ‰§è¡Œ
 
-7368 ? 00:00:00 synaptic
+    sudo killall apt
+    sudo killall apt-get
+    sudo killall synaptic
 
-È»ºó¾ÍÖ´ÐÐ
+å†æ¬¡åœ¨ç»ˆç«¯é‡ŒæŸ¥çœ‹ps -e | grep apt æ²¡æœ‰ä»»ä½•ç»“æžœäº†ã€‚ç»§ç»­æ‰§è¡Œsudo apt-get updateã€‚å¦‚æžœæç¤ºé”™è¯¯:E: Could not get lock /var/lib/dpkg/lock - open (11 Resource temporarily unavailable)
 
-sudo killall apt
+    sudo rm /var/lib/apt/lists/lock
 
-sudo killall apt-get
+# Ubuntu Linuxä¸‹å¦‚ä½•ç”¨æºç æ–‡ä»¶å®‰è£…è½¯ä»¶
 
-sudo killall synaptic
+ã€€ã€€åœ¨é™„å¸¦äº†ä¸°å¯Œçš„è½¯ä»¶ï¼Œè¿™äº›è½¯ä»¶ä¸€èˆ¬ä½¿ç”¨å›¾å½¢åŒ–çš„è‡ªåŠ¨æ–¹å¼ï¼ˆâ€œæ·»åŠ ï¼åˆ é™¤â€æˆ–â€œæ–°ç«‹å¾—â€ï¼‰å³å¯è½»æ¾å®‰è£…ï¼Œä½†æ˜¯å¯¹äºŽé‚£äº›åˆšåˆšé—®ä¸–çš„æ–°è½¯ä»¶ï¼ŒUbuntuçš„æºä¸­è¿˜æœªæ”¶å½•å…¶ä¸­ï¼Œè¿™æ—¶æˆ‘ä»¬å°±éœ€è¦ç”¨åˆ°ä¸€ç§æ›´é€šç”¨çš„å®‰è£…æ–¹å¼ï¼šé€šè¿‡æ‰‹å·¥æ–¹å¼ä»Žæºæ–‡ä»¶æ¥å®‰è£…è¿™äº›è½¯ä»¶ã€‚ä¸‹é¢å°±ä»‹ç»è¿™ç§æ‰‹å·¥å®‰è£…æ–¹å¼çš„è¯¦ç»†æ­¥éª¤ã€‚ã€€ã€€
 
-ÔÙ´ÎÔÚÖÕ¶ËÀï²é¿´ps -e | grep apt Ã»ÓÐÈÎºÎ½á¹ûÁË
+ä¸€ã€ å®‰è£…ç¼–è¯‘ç¨‹åº
 
-¼ÌÐøÖ´ÐÐsudo apt-get update
+å› ä¸ºè¦ç¼–è¯‘æºä»£ç ï¼Œæ‰€ä»¥ç¬¬ä¸€æ­¥å°±æ˜¯å®‰è£…ç¼–è¯‘å’Œæž„å»ºä¹‹ç±»çš„ç¨‹åºã€‚å¦‚æžœä½ å·²ç»å®‰è£…è¿‡äº†ï¼Œå¯ä»¥è·³è¿‡æ­¤æ­¥ã€‚åœ¨Ubuntuç³»ç»Ÿä¸­éžå¸¸ç®€å•ï¼Œåªè¦æ‰§è¡Œä¸‹é¢å‘½ä»¤å°±è¡Œäº†ï¼š
 
- 
+    $ sudo apt-get install build-essential
 
-Ô­Òò£º¸Õ×°ºÃµÄUbantuÏµÍ³£¬ÄÚ²¿È±ÉÙºÜ¶àÈí¼þÔ´£¬ÕâÊ±£¬ÏµÍ³»á×Ô¶¯Æô¶¯Èí¼þÔ´¸üÐÂ½ø³Ì¡°apt-get¡±£¬²¢ÇÒËü»áÒ»Ö±´æ»î¡£ÓÉÓÚËüÔÚÔËÐÐÊ±£¬»áÕ¼ÓÃÈí¼þÔ´¸üÐÂÊ±µÄÏµÍ³Ëø£¨ÒÔÏÂ³Æ¡°ÏµÍ³¸üÐÂËø¡±£¬´ËËøÎÄ¼þÔÚ¡°/var/lib/apt/lists/¡±Ä¿Â¼ÏÂ£©£¬¶øµ±ÓÐÐÂµÄapt-get½ø³ÌÉú³ÉÊ±£¬¾Í»áÒòÎªµÃ²»µ½ÏµÍ³¸üÐÂËø¶ø³öÏÖ"E: ÎÞ·¨»ñµÃËø /var/lib/apt/lists/lock - open (11: Resource temporarily unavailable)"´íÎóÌáÊ¾£¡Òò´Ë£¬ÎÒÃÇÖ»Òª½«Ô­ÏÈµÄapt-get½ø³ÌÉ±ËÀ£¬´ÓÐÂ¼¤»îÐÂµÄapt-get½ø³Ì£¬¾Í¿ÉÒÔÈÃÐÂÁ¢µÂÈí¼þ¹ÜÀíÆ÷Õý³£¹¤×÷ÁË£¡
+è¯¥å‘½ä»¤æ‰§è¡ŒåŽï¼Œä»Žæºæ–‡ä»¶å®‰è£…è½¯ä»¶æ‰€éœ€çš„å·¥å…·ï¼Œå¦‚gccã€makeã€g++åŠå…¶ä»–æ‰€éœ€è½¯ä»¶å°±å®‰è£…å¥½äº†ã€‚
 
+äºŒã€ä¸‹è½½å¹¶ç¼–è¯‘è½¯ä»¶çš„æºä»£ç 
 
+å½“æˆ‘ä»¬ä¸‹è½½æºæ–‡ä»¶æ—¶ï¼Œä¸€å®šè¦å¼„æ¸…è¯¥è½¯ä»¶æ‰€ä¾èµ–çš„åº“æ–‡ä»¶å’Œå…¶ä»–ç¨‹åºï¼Œå¹¶ä¸”é¦–å…ˆå°†å®ƒä»¬è£…å¥½ã€‚è¿™äº›ä¿¡æ¯ï¼Œé€šå¸¸éƒ½èƒ½åœ¨è¯¥å¼€æºé¡¹ç›®çš„ä¸»é¡µä¸ŠæŸ¥æ‰¾åˆ°ã€‚åšå¥½è¿™äº›å‡†å¤‡å·¥ä½œåŽï¼Œæˆ‘ä»¬å°±å¯ä»¥è¿›è¡Œä¸‹é¢çš„å·¥ä½œäº†ã€‚å› ä¸ºï¼Œè½¯ä»¶çš„æºä»£ç é€šå¸¸ä»¥åŽ‹ç¼©æ–‡ä»¶å½¢å¼å‘å¸ƒï¼Œæ‰€ä»¥éœ€è¦å°†å…¶è§£åŽ‹åˆ°æŒ‡å®šç›®å½•ã€‚å‘½ä»¤å¦‚ä¸‹æ‰€ç¤ºï¼š
 
-ÕâÊ±£¬Äã¿ÉÒÔ°´Ò»ÏÂ²½ÖèÀ´½â¾ö£º
+    OwnLinux@ubuntu:~$ tar xvzf program.tar.gz
+    OwnLinux@ubuntu:~$ cd program/
 
-1¡¢ÊäÈëÒÔÏÂÃüÁî£º¡°ps -aux  > temp.txt¡±.ÇÃ»Ø³µÈ·¶¨¡£ÕâÊ±»áÓÐ¡°warning¡±³öÏÖ£¬µ«²»ÓèÀí»á¡£
+ã€€ã€€åœ¨Linuxä¸‹ä»Žæºæ–‡ä»¶å®‰è£…ç¨‹åºæ—¶ï¼Œæœ‰ä¸€ä¸ªé€šç”¨æ¨¡å¼ï¼Œå³é…ç½®ï¼ˆ./configureï¼‰â€“ï¼ž ç¼–è¯‘ï¼ˆmakeï¼‰ â€“ï¼ž å®‰è£…ï¼ˆsudo make installï¼‰ã€‚ä½†æ˜¯ï¼Œæ­¤å‰ä½ æœ€å¥½è¿˜æ˜¯é˜…è¯»æºæ–‡ä»¶ä¸­é™„å¸¦çš„å®‰è£…è¯´æ˜Žï¼Œå› ä¸ºå¯¹äºŽæ¯ä¸ªç¨‹åºï¼Œå…¶å¼€å‘è€…çš„æŒ‡ç¤ºæ‰æ˜¯æœ€å…·æƒå¨æ€§çš„ã€‚ç¨‹åºå¼€å‘è€…é€šå¸¸å°†å®‰è£…è¯´æ˜Žå­˜æ”¾åœ¨åä¸ºINSTALLæˆ–READMEã€‚åˆ°å“ªé‡Œæ‰¾è¿™äº›æ–‡ä»¶å‘¢ï¼Ÿå®ƒä»¬åœ¨é¡¹ç›®ä¸»é¡µæˆ–æºä»£ç ä¸»ç›®å½•ä¸­éƒ½èƒ½æ‰¾åˆ°ã€‚
 
-2¡¢ÊäÈëÒÔÏÂÃüÁî£º¡°grep -n apt-get temp.txt¡±¼üÈë»Ø³µÈ·¶¨¡£¶øºó´ÓÃüÁîÊä³öÖÐÕÒµ½ apt-get ½ø³ÌµÄPID¡£
+ã€€ã€€1.é…ç½®
 
-3¡¢ÊäÈëÒÔÏÂÃüÁî£º¡°sudo kill <PID>¡±¡£
+ã€€ã€€æž„å»ºåº”ç”¨çš„ç¬¬ä¸€æ­¥å°±æ˜¯æ‰§è¡Œconfigureè„šæœ¬,è¯¥è„šæœ¬ä½äºŽç¨‹åºæºæ–‡ä»¶çš„ä¸»ç›®å½•ä¸‹ï¼š
 
-4¡¢Íê³É¡£
+    OwnLinux@ubuntu:~/program$ ./configure
 
+ã€€ã€€è¯¥è„šæœ¬å°†æ‰«æç³»ç»Ÿï¼Œä»¥ç¡®ä¿ç¨‹åºæ‰€éœ€çš„æ‰€æœ‰åº“æ–‡ä»¶ä¸šå·²å­˜åœ¨ï¼Œå¹¶åšå¥½æ–‡ä»¶è·¯å¾„åŠå…¶ä»–æ‰€éœ€çš„è®¾ç½®å·¥ä½œã€‚å¦‚æžœç¨‹åºæ‰€éœ€çš„åº“æ–‡ä»¶ä¸å®Œå…¨ï¼Œè¯¥é…ç½®è„šæœ¬å°±ä¼šé€€å‡ºï¼Œå¹¶å‘Šè¯‰æ‚¨è¿˜éœ€è¦å“ªäº›åº“æ–‡ä»¶æˆ–è€…æ˜¯å“ªäº›ç‰ˆæœ¬å¤ªæ—§éœ€è¦æ›´æ–°ã€‚å¦‚æžœé‡åˆ°è¿™ç§æƒ…å†µï¼Œä»…å¼„åˆ°å«æœ‰è¯¥åº“æ–‡ä»¶çš„è½¯ä»¶åŒ…è¿˜æ˜¯ä¸å¤Ÿçš„ï¼ŒåŒæ—¶è¿˜è¦æ‰¾åˆ°å…·æœ‰è¯¥åº“æ–‡ä»¶æ‰€æœ‰å¤´æ–‡ä»¶çš„å¼€å‘åŒ…ï¼Œåœ¨ï¼Œè¿™æ ·çš„åŒ…ä¸€èˆ¬ä»¥-devä½œä¸ºæ–‡ä»¶åçš„ç»“å°¾ã€‚å®‰è£…å¥½æ‰€æœ‰éœ€è¦çš„åº“æ–‡ä»¶åŽï¼Œé‡æ–°è¿è¡Œé…ç½®è„šæœ¬ï¼Œç›´åˆ°æ²¡æœ‰é”™è¯¯æç¤ºä¸ºæ­¢ï¼Œè¿™è¯´æ˜Žéœ€è¦çš„åº“æ–‡ä»¶å·²ç»å…¨éƒ¨å®‰è£…å¦¥å½“äº†å³æ»¡è¶³äº†ä¾èµ–å…³ç³»ã€‚
 
+ã€€ã€€2.ç¼–è¯‘
 
-or
+ã€€ã€€å½“é…ç½®è„šæœ¬æˆåŠŸé€€å‡ºåŽï¼ŒæŽ¥ä¸‹æ¥è¦åšçš„å°±æ˜¯ç¼–è¯‘ä»£ç äº†ã€‚å…·ä½“æ“ä½œä¸ºåœ¨æºæ–‡ä»¶çš„ä¸»ç›®å½•ä¸­è¿è¡Œmakeå‘½ä»¤ï¼š
 
+    OwnLinux@ubuntu:~/program$ make
 
+ã€€ã€€è¿™æ—¶ï¼Œæ‚¨ä¼šçœ‹åˆ°ä¸€ä¸²ç¼–è¯‘è¾“å‡ºæ•°æ®è¿…é€Ÿä»Žå±å¹•ä¸Šæ»šè¿‡ï¼Œå¦‚æžœæ­£å¸¸çš„è¯ï¼Œç³»ç»Ÿä¼šè¿”å›žçš„æç¤ºç¬¦çŠ¶æ€ã€‚ç„¶è€Œï¼Œå¦‚æžœç¼–è¯‘è¿‡ç¨‹ä¸­å‡ºçŽ°é”™è¯¯çš„è¯ï¼ŒæŽ’é”™çš„è¿‡ç¨‹å¯å°±ä¸åƒé…ç½®æ­¥éª¤é‚£ä¹ˆç®€å•äº†ã€‚å› ä¸ºï¼Œè¿™é€šå¸¸è¦æ¶‰åŠåˆ°æºä»£ç çš„è°ƒè¯•ï¼Œå¯èƒ½æºä»£ç æœ‰è¯­æ³•é”™è¯¯ï¼Œæˆ–å…¶ä»–é”™è¯¯ç­‰ç­‰ã€‚æ€Žä¹ˆåŠžï¼Ÿå¦‚æžœæ‚¨æ˜¯ç¼–ç¨‹é«˜æ‰‹ï¼Œé‚£å°±è‡ªå·±è°ƒè¯•å§ï¼å¦åˆ™ï¼Œæ£€æŸ¥è¯¥è½¯ä»¶çš„é‚®ä»¶åˆ—è¡¨ç­‰æ”¯æŒæ¸ é“ï¼Œçœ‹çœ‹æ˜¯ä¸æ˜¯å·²çŸ¥çš„bugï¼Œå¦‚æžœæ˜¯å°±çœ‹çœ‹åˆ«äººæ˜¯æ€Žä¹ˆè§£å†³çš„ï¼Œä¸æ˜¯å°±æäº¤ä¸€ä»½bugæŠ¥å‘Šå§ï¼Œä¹Ÿè®¸ä¸ä¹…å°±ä¼šæœ‰è§£å†³åŠžæ³•ã€‚
 
-Èç¹ûÌáÊ¾´íÎó:E: Could not get lock /var/lib/dpkg/lock - open (11 Resource temporarily unavailable) 
+ã€€ã€€3.å®‰è£…
 
-ÊäÈë
+ã€€ã€€å½“è½¯ä»¶æˆåŠŸç¼–è¯‘åŽï¼Œæœ€åŽä¸€æ­¥å°±æ˜¯å°†å®ƒä»¬å®‰è£…åˆ°ç³»ç»Ÿä¸Šã€‚å¤§éƒ¨åˆ†ç¨‹åºçš„makefileæ–‡ä»¶ä¸­éƒ½ä¼šæœ‰ä¸€ä¸ªç”¨äºŽå®‰è£…çš„å‡½æ•°ã€‚éœ€è¦æ³¨æ„çš„æ˜¯ï¼Œå¤§å¤šæ—¶å€™æˆ‘ä»¬å¿…é¡»ä½œä¸ºrootç”¨æˆ·æ¥å®‰è£…ç¨‹åºï¼Œè¿™æ ·ç¨‹åºå°±æŠŠæ–‡ä»¶å®‰è£…åˆ°/usræˆ–å…¶ä»–åªæœ‰è¶…çº§ç”¨æˆ·æ‰æœ‰å†™æƒé™çš„ç›®å½•ä¸­ã€‚ä¾æ—§æ˜¯åœ¨æºæ–‡ä»¶çš„ä¸»ç›®å½•ä¸‹ï¼Œæ‰§è¡Œå¦‚ä¸‹å‘½ä»¤ï¼š
 
-sudo rm /var/lib/apt/lists/lock
+    OwnLinux@ubuntu:~/program$ sudo make install
 
-¼´¿É
+ã€€ã€€å¥½äº†ï¼Œè¿™æ ·ç¨‹åºå°±ä¼šå®‰è£…åˆ°æ‚¨çš„è®¡ç®—æœºä¸Šäº†ã€‚å¦å¤–ï¼Œå½“æ‚¨ä¸å†ä½¿ç”¨è¯¥ç¨‹åºæ—¶ï¼Œå¯ä»¥ä½¿ç”¨è½¯ä»¶æ‰€å¸¦çš„å¸è½½åŠŸèƒ½ï¼Œä¸€èˆ¬ç¨‹åºéƒ½ä¼šå…·å¤‡æ­¤åŠŸèƒ½ã€‚åˆ‡æ¢è‡³æºæ–‡ä»¶çš„ä¸»ç›®å½•ä¸‹ï¼Œæ‰§è¡Œä»¥ä¸‹å‘½ä»¤å³å¯ï¼š
 
+    OwnLinux@ubuntu:~/program$ sudo make uninstall
 
+ã€€ã€€å¤šæ•°æƒ…å†µä¸‹ï¼Œåˆ©ç”¨ä¸Šé¢ä»‹ç»çš„æ–¹æ³•å®‰è£…çš„ç¨‹åºï¼Œéƒ½ä½äºŽ/usr/localä¸‹é¢ã€‚è‹¥æƒ³è®©å®‰è£…çš„ç¨‹åºæ–‡ä»¶ä¸ŽUbuntuå·¡è§†çš„æ–‡ä»¶ç³»ç»Ÿéš”ç¦»å¼€çš„è¯ï¼Œå¯ä»¥ä¸ºå‘½ä»¤æ·»åŠ é¡¹ï¼Œå¦‚ä¸‹æ‰€ç¤ºï¼š
 
+    OwnLinux@ubuntu:~/program$ ./configure â€“prefix=/opt
 
+ã€€ã€€å°½ç®¡è¿™æ ·åšä¸€èˆ¬éƒ½æ˜¯æœ‰æ•ˆçš„ï¼Œä½†æ˜¯ä¹Ÿæœ‰ä¾‹å¤–ï¼Œæœ‰äº›ç¨‹åºæ ¹æœ¬ä¸ç†ä¼šé¡¹ï¼›æœ‰äº›ç¨‹åºå¦‚å«æœ‰å†…æ ¸æ¨¡å—çš„ç¨‹åºï¼Œä¼šæŠŠå®ƒä»¬è‡ªå·±å…¨éƒ¨æ”¾è¿›æ‚¨çš„æ–‡ä»¶ç³»ç»Ÿã€‚
 
-# Ubuntu LinuxÏÂÈçºÎÓÃÔ´ÂëÎÄ¼þ°²×°Èí¼þ
+ã€€ã€€ä¸Šé¢ä»‹ç»çš„æ‰‹å·¥å®‰è£…è½¯ä»¶çš„æ–¹æ³•è™½ç„¶æ˜¯é’ˆå¯¹UbuntuçŽ¯å¢ƒæ¥ä»‹ç»çš„ï¼Œä½†æ˜¯å„ç§Linuxç³»ç»Ÿä¸‹çš„ä»Žæºæ–‡ä»¶å®‰è£…åº”ç”¨çš„æ–¹æ³•åŸºæœ¬ä¸Šéƒ½å¤§åŒå°å¼‚ã€‚
 
-¡¡¡¡ÔÚ¸½´øÁË·á¸»µÄÈí¼þ£¬ÕâÐ©Èí¼þÒ»°ãÊ¹ÓÃÍ¼ÐÎ»¯µÄ×Ô¶¯·½Ê½£¨¡°Ìí¼Ó£¯É¾³ý¡±»ò¡°ÐÂÁ¢µÃ¡±£©¼´¿ÉÇáËÉ°²×°£¬µ«ÊÇ¶ÔÓÚÄÇÐ©¸Õ¸ÕÎÊÊÀµÄÐÂÈí¼þ£¬UbuntuµÄÔ´ÖÐ»¹Î´ÊÕÂ¼ÆäÖÐ£¬ÕâÊ±ÎÒÃÇ¾ÍÐèÒªÓÃµ½Ò»ÖÖ¸üÍ¨ÓÃµÄ°²×°·½Ê½£ºÍ¨¹ýÊÖ¹¤·½Ê½´ÓÔ´ÎÄ¼þÀ´°²×°ÕâÐ©Èí¼þ¡£ÏÂÃæ¾Í½éÉÜÕâÖÖÊÖ¹¤°²×°·½Ê½µÄÏêÏ¸²½Öè¡£¡¡¡¡
-
-¡¡¡¡Ò»¡¢ °²×°±àÒë³ÌÐò
-
-¡¡¡¡ÒòÎªÒª±àÒëÔ´´úÂë£¬ËùÒÔµÚÒ»²½¾ÍÊÇ°²×°±àÒëºÍ¹¹½¨Ö®ÀàµÄ³ÌÐò¡£Èç¹ûÄãÒÑ¾­°²×°¹ýÁË£¬¿ÉÒÔÌø¹ý´Ë²½¡£ÔÚUbuntuÏµÍ³ÖÐ·Ç³£¼òµ¥£¬Ö»ÒªÖ´ÐÐÏÂÃæÃüÁî¾ÍÐÐÁË£º
-
-¡¡¡¡$ sudo apt-get install build-essential
-
-¡¡¡¡¸ÃÃüÁîÖ´ÐÐºó£¬´ÓÔ´ÎÄ¼þ°²×°Èí¼þËùÐèµÄ¹¤¾ß£¬Èçgcc¡¢make¡¢g++¼°ÆäËûËùÐèÈí¼þ¾Í°²×°ºÃÁË¡£
-
-¡¡¡¡¶þ¡¢ÏÂÔØ²¢±àÒëÈí¼þµÄÔ´´úÂë
-
-¡¡¡¡µ±ÎÒÃÇÏÂÔØÔ´ÎÄ¼þÊ±£¬Ò»¶¨ÒªÅªÇå¸ÃÈí¼þËùÒÀÀµµÄ¿âÎÄ¼þºÍÆäËû³ÌÐò£¬²¢ÇÒÊ×ÏÈ½«ËüÃÇ×°ºÃ¡£ÕâÐ©ÐÅÏ¢£¬Í¨³£¶¼ÄÜÔÚ¸Ã¿ªÔ´ÏîÄ¿µÄÖ÷Ò³ÉÏ²éÕÒµ½¡£×öºÃÕâÐ©×¼±¸¹¤×÷ºó£¬ÎÒÃÇ¾Í¿ÉÒÔ½øÐÐÏÂÃæµÄ¹¤×÷ÁË¡£ÒòÎª£¬Èí¼þµÄÔ´´úÂëÍ¨³£ÒÔÑ¹ËõÎÄ¼þÐÎÊ½·¢²¼£¬ËùÒÔÐèÒª½«Æä½âÑ¹µ½Ö¸¶¨Ä¿Â¼¡£ÃüÁîÈçÏÂËùÊ¾£º
-
-¡¡¡¡OwnLinux@ubuntu:~$ tar xvzf
-
-¡¡¡¡program.tar.gz
-
-¡¡¡¡OwnLinux@ubuntu:~$ cd
-
-¡¡¡¡program/
-
-¡¡¡¡ÔÚLinuxÏÂ´ÓÔ´ÎÄ¼þ°²×°³ÌÐòÊ±£¬ÓÐÒ»¸öÍ¨ÓÃÄ£Ê½£¬¼´ÅäÖÃ£¨./configure£©¨C£¾ ±àÒë£¨make£© ¨C£¾ °²×°£¨sudo make install£©¡£µ«ÊÇ£¬´ËÇ°Äã×îºÃ»¹ÊÇÔÄ¶ÁÔ´ÎÄ¼þÖÐ¸½´øµÄ°²×°ËµÃ÷£¬ÒòÎª¶ÔÓÚÃ¿¸ö³ÌÐò£¬Æä¿ª·¢ÕßµÄÖ¸Ê¾²ÅÊÇ×î¾ßÈ¨ÍþÐÔµÄ¡£³ÌÐò¿ª·¢ÕßÍ¨³£½«°²×°ËµÃ÷´æ·ÅÔÚÃûÎªINSTALL»òREADME¡£µ½ÄÄÀïÕÒÕâÐ©ÎÄ¼þÄØ£¿ËüÃÇÔÚÏîÄ¿Ö÷Ò³»òÔ´´úÂëÖ÷Ä¿Â¼ÖÐ¶¼ÄÜÕÒµ½¡£
-
-¡¡¡¡1.ÅäÖÃ
-
-¡¡¡¡¹¹½¨Ó¦ÓÃµÄµÚÒ»²½¾ÍÊÇÖ´ÐÐconfigure½Å±¾,¸Ã½Å±¾Î»ÓÚ³ÌÐòÔ´ÎÄ¼þµÄÖ÷Ä¿Â¼ÏÂ£º
-
-¡¡¡¡OwnLinux@ubuntu:~/program$ ./configure
-
-¡¡¡¡¸Ã½Å±¾½«É¨ÃèÏµÍ³£¬ÒÔÈ·±£³ÌÐòËùÐèµÄËùÓÐ¿âÎÄ¼þÒµÒÑ´æÔÚ£¬²¢×öºÃÎÄ¼þÂ·¾¶¼°ÆäËûËùÐèµÄÉèÖÃ¹¤×÷¡£Èç¹û³ÌÐòËùÐèµÄ¿âÎÄ¼þ²»ÍêÈ«£¬¸ÃÅäÖÃ½Å±¾¾Í»áÍË³ö£¬²¢¸æËßÄú»¹ÐèÒªÄÄÐ©¿âÎÄ¼þ»òÕßÊÇÄÄÐ©°æ±¾Ì«¾ÉÐèÒª¸üÐÂ¡£Èç¹ûÓöµ½ÕâÖÖÇé¿ö£¬½öÅªµ½º¬ÓÐ¸Ã¿âÎÄ¼þµÄÈí¼þ°ü»¹ÊÇ²»¹»µÄ£¬Í¬Ê±»¹ÒªÕÒµ½¾ßÓÐ¸Ã¿âÎÄ¼þËùÓÐÍ·ÎÄ¼þµÄ¿ª·¢°ü£¬ÔÚ£¬ÕâÑùµÄ°üÒ»°ãÒÔ-dev×÷ÎªÎÄ¼þÃûµÄ½áÎ²¡£°²×°ºÃËùÓÐÐèÒªµÄ¿âÎÄ¼þºó£¬ÖØÐÂÔËÐÐÅäÖÃ½Å±¾£¬Ö±µ½Ã»ÓÐ´íÎóÌáÊ¾ÎªÖ¹£¬ÕâËµÃ÷ÐèÒªµÄ¿âÎÄ¼þÒÑ¾­È«²¿°²×°Í×µ±ÁË¼´Âú×ãÁËÒÀÀµ¹ØÏµ¡£
-
-¡¡¡¡2.±àÒë
-
-¡¡¡¡µ±ÅäÖÃ½Å±¾³É¹¦ÍË³öºó£¬½ÓÏÂÀ´Òª×öµÄ¾ÍÊÇ±àÒë´úÂëÁË¡£¾ßÌå²Ù×÷ÎªÔÚÔ´ÎÄ¼þµÄÖ÷Ä¿Â¼ÖÐÔËÐÐmakeÃüÁî£º
-
-¡¡¡¡OwnLinux@ubuntu:~/program$ make
-
-¡¡¡¡ÕâÊ±£¬Äú»á¿´µ½Ò»´®±àÒëÊä³öÊý¾ÝÑ¸ËÙ´ÓÆÁÄ»ÉÏ¹ö¹ý£¬Èç¹ûÕý³£µÄ»°£¬ÏµÍ³»á·µ»ØµÄÌáÊ¾·û×´Ì¬¡£È»¶ø£¬Èç¹û±àÒë¹ý³ÌÖÐ³öÏÖ´íÎóµÄ»°£¬ÅÅ´íµÄ¹ý³Ì¿É¾Í²»ÏñÅäÖÃ²½ÖèÄÇÃ´¼òµ¥ÁË¡£ÒòÎª£¬ÕâÍ¨³£ÒªÉæ¼°µ½Ô´´úÂëµÄµ÷ÊÔ£¬¿ÉÄÜÔ´´úÂëÓÐÓï·¨´íÎó£¬»òÆäËû´íÎóµÈµÈ¡£ÔõÃ´°ì£¿Èç¹ûÄúÊÇ±à³Ì¸ßÊÖ£¬ÄÇ¾Í×Ô¼ºµ÷ÊÔ°É£¡·ñÔò£¬¼ì²é¸ÃÈí¼þµÄÓÊ¼þÁÐ±íµÈÖ§³ÖÇþµÀ£¬¿´¿´ÊÇ²»ÊÇÒÑÖªµÄbug£¬Èç¹ûÊÇ¾Í¿´¿´±ðÈËÊÇÔõÃ´½â¾öµÄ£¬²»ÊÇ¾ÍÌá½»Ò»·Ýbug±¨¸æ°É£¬Ò²Ðí²»¾Ã¾Í»áÓÐ½â¾ö°ì·¨¡£
-
-¡¡¡¡3.°²×°
-
-¡¡¡¡µ±Èí¼þ³É¹¦±àÒëºó£¬×îºóÒ»²½¾ÍÊÇ½«ËüÃÇ°²×°µ½ÏµÍ³ÉÏ¡£´ó²¿·Ö³ÌÐòµÄmakefileÎÄ¼þÖÐ¶¼»áÓÐÒ»¸öÓÃÓÚ°²×°µÄº¯Êý¡£ÐèÒª×¢ÒâµÄÊÇ£¬´ó¶àÊ±ºòÎÒÃÇ±ØÐë×÷ÎªrootÓÃ»§À´°²×°³ÌÐò£¬ÕâÑù³ÌÐò¾Í°ÑÎÄ¼þ°²×°µ½/usr»òÆäËûÖ»ÓÐ³¬¼¶ÓÃ»§²ÅÓÐÐ´È¨ÏÞµÄÄ¿Â¼ÖÐ¡£ÒÀ¾ÉÊÇÔÚÔ´ÎÄ¼þµÄÖ÷Ä¿Â¼ÏÂ£¬Ö´ÐÐÈçÏÂÃüÁî£º
-
-¡¡¡¡OwnLinux@ubuntu:~/program$ sudo make install
-
-¡¡¡¡ºÃÁË£¬ÕâÑù³ÌÐò¾Í»á°²×°µ½ÄúµÄ¼ÆËã»úÉÏÁË¡£ÁíÍâ£¬µ±Äú²»ÔÙÊ¹ÓÃ¸Ã³ÌÐòÊ±£¬¿ÉÒÔÊ¹ÓÃÈí¼þËù´øµÄÐ¶ÔØ¹¦ÄÜ£¬Ò»°ã³ÌÐò¶¼»á¾ß±¸´Ë¹¦ÄÜ¡£ÇÐ»»ÖÁÔ´ÎÄ¼þµÄÖ÷Ä¿Â¼ÏÂ£¬Ö´ÐÐÒÔÏÂÃüÁî¼´¿É£º
-
-¡¡¡¡OwnLinux@ubuntu:~/program$ sudo make uninstall
-
-¡¡¡¡¶àÊýÇé¿öÏÂ£¬ÀûÓÃÉÏÃæ½éÉÜµÄ·½·¨°²×°µÄ³ÌÐò£¬¶¼Î»ÓÚ/usr/localÏÂÃæ¡£ÈôÏëÈÃ°²×°µÄ³ÌÐòÎÄ¼þÓëUbuntuÑ²ÊÓµÄÎÄ¼þÏµÍ³¸ôÀë¿ªµÄ»°£¬¿ÉÒÔÎªÃüÁîÌí¼ÓÏî£¬ÈçÏÂËùÊ¾£º
-
-¡¡¡¡OwnLinux@ubuntu:~/program$ ./configure ¨Cprefix=/opt
-
-¡¡¡¡¾¡¹ÜÕâÑù×öÒ»°ã¶¼ÊÇÓÐÐ§µÄ£¬µ«ÊÇÒ²ÓÐÀýÍâ£¬ÓÐÐ©³ÌÐò¸ù±¾²»Àí»áÏî£»ÓÐÐ©³ÌÐòÈçº¬ÓÐÄÚºËÄ£¿éµÄ³ÌÐò£¬»á°ÑËüÃÇ×Ô¼ºÈ«²¿·Å½øÄúµÄÎÄ¼þÏµÍ³¡£
-
-¡¡¡¡ÉÏÃæ½éÉÜµÄÊÖ¹¤°²×°Èí¼þµÄ·½·¨ËäÈ»ÊÇÕë¶ÔUbuntu»·¾³À´½éÉÜµÄ£¬µ«ÊÇ¸÷ÖÖLinuxÏµÍ³ÏÂµÄ´ÓÔ´ÎÄ¼þ°²×°Ó¦ÓÃµÄ·½·¨»ù±¾ÉÏ¶¼´óÍ¬Ð¡Òì¡£
-
-#½âÑ¹Ëõ Ñ¹ËõÃüÁî
+#è§£åŽ‹ç¼© åŽ‹ç¼©å‘½ä»¤
 
 tar
 
--c: ½¨Á¢Ñ¹Ëõµµ°¸
+-c: å»ºç«‹åŽ‹ç¼©æ¡£æ¡ˆ
 
--x£º½âÑ¹
+-xï¼šè§£åŽ‹
 
--t£º²é¿´ÄÚÈÝ
+-tï¼šæŸ¥çœ‹å†…å®¹
 
--r£ºÏòÑ¹Ëõ¹éµµÎÄ¼þÄ©Î²×·¼ÓÎÄ¼þ
+-rï¼šå‘åŽ‹ç¼©å½’æ¡£æ–‡ä»¶æœ«å°¾è¿½åŠ æ–‡ä»¶
 
--u£º¸üÐÂÔ­Ñ¹Ëõ°üÖÐµÄÎÄ¼þ
+-uï¼šæ›´æ–°åŽŸåŽ‹ç¼©åŒ…ä¸­çš„æ–‡ä»¶
 
 
 
-ÕâÎå¸öÊÇ¶ÀÁ¢µÄÃüÁî£¬Ñ¹Ëõ½âÑ¹¶¼ÒªÓÃµ½ÆäÖÐÒ»¸ö£¬¿ÉÒÔºÍ±ðµÄÃüÁîÁ¬ÓÃµ«Ö»ÄÜÓÃÆäÖÐÒ»¸ö¡£ÏÂÃæµÄ²ÎÊýÊÇ¸ù¾ÝÐèÒªÔÚÑ¹Ëõ»ò½âÑ¹µµ°¸Ê±¿ÉÑ¡µÄ¡£
+è¿™äº”ä¸ªæ˜¯ç‹¬ç«‹çš„å‘½ä»¤ï¼ŒåŽ‹ç¼©è§£åŽ‹éƒ½è¦ç”¨åˆ°å…¶ä¸­ä¸€ä¸ªï¼Œå¯ä»¥å’Œåˆ«çš„å‘½ä»¤è¿žç”¨ä½†åªèƒ½ç”¨å…¶ä¸­ä¸€ä¸ªã€‚ä¸‹é¢çš„å‚æ•°æ˜¯æ ¹æ®éœ€è¦åœ¨åŽ‹ç¼©æˆ–è§£åŽ‹æ¡£æ¡ˆæ—¶å¯é€‰çš„ã€‚
 
 
 
--z£ºÓÐgzipÊôÐÔµÄ
+-zï¼šæœ‰gzipå±žæ€§çš„
 
--j£ºÓÐbz2ÊôÐÔµÄ
+-jï¼šæœ‰bz2å±žæ€§çš„
 
--Z£ºÓÐcompressÊôÐÔµÄ
+-Zï¼šæœ‰compresså±žæ€§çš„
 
--v£ºÏÔÊ¾ËùÓÐ¹ý³Ì
+-vï¼šæ˜¾ç¤ºæ‰€æœ‰è¿‡ç¨‹
 
--O£º½«ÎÄ¼þ½â¿ªµ½±ê×¼Êä³ö
+-Oï¼šå°†æ–‡ä»¶è§£å¼€åˆ°æ ‡å‡†è¾“å‡º
 
 
 
-ÏÂÃæµÄ²ÎÊý-fÊÇ±ØÐëµÄ
+ä¸‹é¢çš„å‚æ•°-fæ˜¯å¿…é¡»çš„
 
 
 
--f: Ê¹ÓÃµµ°¸Ãû×Ö£¬ÇÐ¼Ç£¬Õâ¸ö²ÎÊýÊÇ×îºóÒ»¸ö²ÎÊý£¬ºóÃæÖ»ÄÜ½Óµµ°¸Ãû¡£
+-f: ä½¿ç”¨æ¡£æ¡ˆåå­—ï¼Œåˆ‡è®°ï¼Œè¿™ä¸ªå‚æ•°æ˜¯æœ€åŽä¸€ä¸ªå‚æ•°ï¼ŒåŽé¢åªèƒ½æŽ¥æ¡£æ¡ˆåã€‚
 
 
 
-# tar -cf all.tar *.jpg 
+# tar -cf all.tar *.jpg
 
-ÕâÌõÃüÁîÊÇ½«ËùÓÐ.jpgµÄÎÄ¼þ´ò³ÉÒ»¸öÃûÎªall.tarµÄ°ü¡£-cÊÇ±íÊ¾²úÉúÐÂµÄ°ü£¬-fÖ¸¶¨°üµÄÎÄ¼þÃû¡£ 
+è¿™æ¡å‘½ä»¤æ˜¯å°†æ‰€æœ‰.jpgçš„æ–‡ä»¶æ‰“æˆä¸€ä¸ªåä¸ºall.tarçš„åŒ…ã€‚-cæ˜¯è¡¨ç¤ºäº§ç”Ÿæ–°çš„åŒ…ï¼Œ-fæŒ‡å®šåŒ…çš„æ–‡ä»¶åã€‚
 
 
 
-# tar -rf all.tar *.gif 
+# tar -rf all.tar *.gif
 
-ÕâÌõÃüÁîÊÇ½«ËùÓÐ.gifµÄÎÄ¼þÔö¼Óµ½all.tarµÄ°üÀïÃæÈ¥¡£-rÊÇ±íÊ¾Ôö¼ÓÎÄ¼þµÄÒâË¼¡£ 
+è¿™æ¡å‘½ä»¤æ˜¯å°†æ‰€æœ‰.gifçš„æ–‡ä»¶å¢žåŠ åˆ°all.tarçš„åŒ…é‡Œé¢åŽ»ã€‚-ræ˜¯è¡¨ç¤ºå¢žåŠ æ–‡ä»¶çš„æ„æ€ã€‚
 
 
 
-# tar -uf all.tar logo.gif 
+# tar -uf all.tar logo.gif
 
-ÕâÌõÃüÁîÊÇ¸üÐÂÔ­À´tar°üall.tarÖÐlogo.gifÎÄ¼þ£¬-uÊÇ±íÊ¾¸üÐÂÎÄ¼þµÄÒâË¼¡£ 
+è¿™æ¡å‘½ä»¤æ˜¯æ›´æ–°åŽŸæ¥taråŒ…all.tarä¸­logo.gifæ–‡ä»¶ï¼Œ-uæ˜¯è¡¨ç¤ºæ›´æ–°æ–‡ä»¶çš„æ„æ€ã€‚
 
 
 
-# tar -tf all.tar 
+# tar -tf all.tar
 
-ÕâÌõÃüÁîÊÇÁÐ³öall.tar°üÖÐËùÓÐÎÄ¼þ£¬-tÊÇÁÐ³öÎÄ¼þµÄÒâË¼ 
+è¿™æ¡å‘½ä»¤æ˜¯åˆ—å‡ºall.taråŒ…ä¸­æ‰€æœ‰æ–‡ä»¶ï¼Œ-tæ˜¯åˆ—å‡ºæ–‡ä»¶çš„æ„æ€
 
 
 
-# tar -xf all.tar 
+# tar -xf all.tar
 
-ÕâÌõÃüÁîÊÇ½â³öall.tar°üÖÐËùÓÐÎÄ¼þ£¬-xÊÇ½â¿ªµÄÒâË¼ 
+è¿™æ¡å‘½ä»¤æ˜¯è§£å‡ºall.taråŒ…ä¸­æ‰€æœ‰æ–‡ä»¶ï¼Œ-xæ˜¯è§£å¼€çš„æ„æ€
 
 
 
-Ñ¹Ëõ
+åŽ‹ç¼©
 
-tar ¨Ccvf jpg.tar *.jpg //½«Ä¿Â¼ÀïËùÓÐjpgÎÄ¼þ´ò°ü³Étar.jpg
+tar â€“cvf jpg.tar *.jpg //å°†ç›®å½•é‡Œæ‰€æœ‰jpgæ–‡ä»¶æ‰“åŒ…æˆtar.jpg
 
-tar ¨Cczf jpg.tar.gz *.jpg   //½«Ä¿Â¼ÀïËùÓÐjpgÎÄ¼þ´ò°ü³Éjpg.tarºó£¬²¢ÇÒ½«ÆäÓÃgzipÑ¹Ëõ£¬Éú³ÉÒ»¸ögzipÑ¹Ëõ¹ýµÄ°ü£¬ÃüÃûÎªjpg.tar.gz
+tar â€“czf jpg.tar.gz *.jpg   //å°†ç›®å½•é‡Œæ‰€æœ‰jpgæ–‡ä»¶æ‰“åŒ…æˆjpg.taråŽï¼Œå¹¶ä¸”å°†å…¶ç”¨gzipåŽ‹ç¼©ï¼Œç”Ÿæˆä¸€ä¸ªgzipåŽ‹ç¼©è¿‡çš„åŒ…ï¼Œå‘½åä¸ºjpg.tar.gz
 
-tar ¨Ccjf jpg.tar.bz2 *.jpg //½«Ä¿Â¼ÀïËùÓÐjpgÎÄ¼þ´ò°ü³Éjpg.tarºó£¬²¢ÇÒ½«ÆäÓÃbzip2Ñ¹Ëõ£¬Éú³ÉÒ»¸öbzip2Ñ¹Ëõ¹ýµÄ°ü£¬ÃüÃûÎªjpg.tar.bz2
+tar â€“cjf jpg.tar.bz2 *.jpg //å°†ç›®å½•é‡Œæ‰€æœ‰jpgæ–‡ä»¶æ‰“åŒ…æˆjpg.taråŽï¼Œå¹¶ä¸”å°†å…¶ç”¨bzip2åŽ‹ç¼©ï¼Œç”Ÿæˆä¸€ä¸ªbzip2åŽ‹ç¼©è¿‡çš„åŒ…ï¼Œå‘½åä¸ºjpg.tar.bz2
 
-tar ¨CcZf jpg.tar.Z *.jpg   //½«Ä¿Â¼ÀïËùÓÐjpgÎÄ¼þ´ò°ü³Éjpg.tarºó£¬²¢ÇÒ½«ÆäÓÃcompressÑ¹Ëõ£¬Éú³ÉÒ»¸öumcompressÑ¹Ëõ¹ýµÄ°ü£¬ÃüÃûÎªjpg.tar.Z
+tar â€“cZf jpg.tar.Z *.jpg   //å°†ç›®å½•é‡Œæ‰€æœ‰jpgæ–‡ä»¶æ‰“åŒ…æˆjpg.taråŽï¼Œå¹¶ä¸”å°†å…¶ç”¨compressåŽ‹ç¼©ï¼Œç”Ÿæˆä¸€ä¸ªumcompressåŽ‹ç¼©è¿‡çš„åŒ…ï¼Œå‘½åä¸ºjpg.tar.Z
 
-rar a jpg.rar *.jpg //rar¸ñÊ½µÄÑ¹Ëõ£¬ÐèÒªÏÈÏÂÔØrar for linux
+rar a jpg.rar *.jpg //raræ ¼å¼çš„åŽ‹ç¼©ï¼Œéœ€è¦å…ˆä¸‹è½½rar for linux
 
-zip jpg.zip *.jpg //zip¸ñÊ½µÄÑ¹Ëõ£¬ÐèÒªÏÈÏÂÔØzip for linux
+zip jpg.zip *.jpg //zipæ ¼å¼çš„åŽ‹ç¼©ï¼Œéœ€è¦å…ˆä¸‹è½½zip for linux
 
 
 
-½âÑ¹
+è§£åŽ‹
 
-tar ¨Cxvf file.tar //½âÑ¹ tar°ü
+tar â€“xvf file.tar //è§£åŽ‹ taråŒ…
 
-tar -xzvf file.tar.gz //½âÑ¹tar.gz
+tar -xzvf file.tar.gz //è§£åŽ‹tar.gz
 
-tar -xjvf file.tar.bz2   //½âÑ¹ tar.bz2
+tar -xjvf file.tar.bz2   //è§£åŽ‹ tar.bz2
 
-tar ¨CxZvf file.tar.Z   //½âÑ¹tar.Z
+tar â€“xZvf file.tar.Z   //è§£åŽ‹tar.Z
 
-unrar e file.rar //½âÑ¹rar
+unrar e file.rar //è§£åŽ‹rar
 
-unzip file.zip //½âÑ¹zip
+unzip file.zip //è§£åŽ‹zip
 
 
 
-×Ü½á
+æ€»ç»“
 
-1¡¢*.tar ÓÃ tar ¨Cxvf ½âÑ¹
+1ã€*.tar ç”¨ tar â€“xvf è§£åŽ‹
 
-2¡¢*.gz ÓÃ gzip -d»òÕßgunzip ½âÑ¹
+2ã€*.gz ç”¨ gzip -dæˆ–è€…gunzip è§£åŽ‹
 
-3¡¢*.tar.gzºÍ*.tgz ÓÃ tar ¨Cxzf ½âÑ¹
+3ã€*.tar.gzå’Œ*.tgz ç”¨ tar â€“xzf è§£åŽ‹
 
-4¡¢*.bz2 ÓÃ bzip2 -d»òÕßÓÃbunzip2 ½âÑ¹
+4ã€*.bz2 ç”¨ bzip2 -dæˆ–è€…ç”¨bunzip2 è§£åŽ‹
 
-5¡¢*.tar.bz2ÓÃtar ¨Cxjf ½âÑ¹
+5ã€*.tar.bz2ç”¨tar â€“xjf è§£åŽ‹
 
-6¡¢*.Z ÓÃ uncompress ½âÑ¹
+6ã€*.Z ç”¨ uncompress è§£åŽ‹
 
-7¡¢*.tar.Z ÓÃtar ¨CxZf ½âÑ¹
+7ã€*.tar.Z ç”¨tar â€“xZf è§£åŽ‹
 
-8¡¢*.rar ÓÃ unrar e½âÑ¹
+8ã€*.rar ç”¨ unrar eè§£åŽ‹
 
-9¡¢*.zip ÓÃ unzip ½âÑ¹
+9ã€*.zip ç”¨ unzip è§£åŽ‹
 
-# Virtual BoxÏà¹Ø
+# Virtual Boxç›¸å…³
 
-×¢£ºÔöÇ¿°üÒÑÏÂÔØ´æÔÚDocuments
+æ³¨ï¼šå¢žå¼ºåŒ…å·²ä¸‹è½½å­˜åœ¨Documents
 
-Í¨¹ýÉè±¸¡ª¡ª·ÖÅä¹âÇý¼´¿É·ÖÅä
+é€šè¿‡è®¾å¤‡â€”â€”åˆ†é…å…‰é©±å³å¯åˆ†é…
 
-##·ÃÎÊUSB×ÓÏµÍ³Ê§°Ü
+##è®¿é—®USBå­ç³»ç»Ÿå¤±è´¥
 
-½â¾öubuntuÏÂvirtualbox·ÃÎÊusb×ÓÏµÍ³Ê§°Ü
+è§£å†³ubuntuä¸‹virtualboxè®¿é—®usbå­ç³»ç»Ÿå¤±è´¥
 
 http://blog.coltcn.com/2012/03/13/virtualbox-error-failed-to-access-usb-subsystem/
 
-## ubuntuÓÃ»§²»ÔÚsudoersÎÄ¼þÖÐÎÊÌâ
+## ubuntuç”¨æˆ·ä¸åœ¨sudoersæ–‡ä»¶ä¸­é—®é¢˜
 
 http://blog.csdn.net/killzero/article/details/10298845
 
-##°²×°CentOSºó°²×°ÔöÇ¿¹¦ÄÜ
+##å®‰è£…CentOSåŽå®‰è£…å¢žå¼ºåŠŸèƒ½
 
-1.Æô¶¯CentOS£¬ÒÔrootÉí·ÝµÇÂ¼£¬½øÈë×ÀÃæ»·¾³¡£
+1.å¯åŠ¨CentOSï¼Œä»¥rootèº«ä»½ç™»å½•ï¼Œè¿›å…¥æ¡Œé¢çŽ¯å¢ƒã€‚
 
-2.Ö´ÐÐÈçÏÂÃüÁî£º
+2.æ‰§è¡Œå¦‚ä¸‹å‘½ä»¤ï¼š
 
 #yum upadate
 
-#yum install kernel-devel ¡¡
+#yum install kernel-devel ã€€
 
 #yum install gcc
 
-3.ÖØÆôÏµÍ³
+3.é‡å¯ç³»ç»Ÿ
 
-4.°²×°ÔöÇ¿¹¦ÄÜ
+4.å®‰è£…å¢žå¼ºåŠŸèƒ½
 
-5.ÖØÐÂÆô¶¯
+5.é‡æ–°å¯åŠ¨
 
-## Cannot register the hard disk´íÎó½â¾ö°ì·¨
+## Cannot register the hard diské”™è¯¯è§£å†³åŠžæ³•
 
-virtualboxÖÐ¼ÓÔØÒÑÓÐµÄÐéÄâÓ²ÅÌÊ±³öÏÖCannot register the hard disk´íÎó£¬ÃèÊöÀàËÆÏÂÃæµÄ¡£
+virtualboxä¸­åŠ è½½å·²æœ‰çš„è™šæ‹Ÿç¡¬ç›˜æ—¶å‡ºçŽ°Cannot register the hard diské”™è¯¯ï¼Œæè¿°ç±»ä¼¼ä¸‹é¢çš„ã€‚
 
 
 
@@ -2176,159 +988,159 @@ Context: "OpenHardDisk(Bstr(szFilenameAbs), AccessMode_ReadWrite, srcDisk.asOutP
 
 
 
-½â¾ö·½·¨ÈçÏÂ£º
+è§£å†³æ–¹æ³•å¦‚ä¸‹ï¼š
 
-¹Ø±Õvirtualbox£¬ÖØÐÂÆô¶¯Ëü£¬Ëü»á¼ì²âÐéÄâÓ²ÅÌ£¬¿ÉÄÜ»á¼ì²â³öÀ´Ò»Ð©ÐéÄâÓ²ÅÌ£¬Çë½«ÆäÉ¾³ý£¬È»ºó¾Í²»»á³öÏÖÕâ¸öÎÊÌâÁË¡£
+å…³é—­virtualboxï¼Œé‡æ–°å¯åŠ¨å®ƒï¼Œå®ƒä¼šæ£€æµ‹è™šæ‹Ÿç¡¬ç›˜ï¼Œå¯èƒ½ä¼šæ£€æµ‹å‡ºæ¥ä¸€äº›è™šæ‹Ÿç¡¬ç›˜ï¼Œè¯·å°†å…¶åˆ é™¤ï¼Œç„¶åŽå°±ä¸ä¼šå‡ºçŽ°è¿™ä¸ªé—®é¢˜äº†ã€‚
 
-## VirtualBoxÐéÄâ»úÍøÂçÁ¬½ÓÉèÖÃ
+## VirtualBoxè™šæ‹Ÿæœºç½‘ç»œè¿žæŽ¥è®¾ç½®
 
-VirtualBoxµÄÌá¹©ÁËËÄÖÖÍøÂç½ÓÈëÄ£Ê½£¬ËüÃÇ·Ö±ðÊÇ£º
+VirtualBoxçš„æä¾›äº†å››ç§ç½‘ç»œæŽ¥å…¥æ¨¡å¼ï¼Œå®ƒä»¬åˆ†åˆ«æ˜¯ï¼š
 
-1¡¢NAT    ÍøÂçµØÖ·×ª»»Ä£Ê½(NAT,Network Address Translation)
+1ã€NAT    ç½‘ç»œåœ°å€è½¬æ¢æ¨¡å¼(NAT,Network Address Translation)
 
-2¡¢Bridged Adapter    ÇÅ½ÓÄ£Ê½
+2ã€Bridged Adapter    æ¡¥æŽ¥æ¨¡å¼
 
-3¡¢Internal    ÄÚ²¿ÍøÂçÄ£Ê½
+3ã€Internal    å†…éƒ¨ç½‘ç»œæ¨¡å¼
 
-4¡¢Host-only Adapter  Ö÷»úÄ£Ê½
+4ã€Host-only Adapter  ä¸»æœºæ¨¡å¼
 
-ÏÂÃæÎÒÃÇ·Ö±ð¶ÔÕâËÄÖÖÍøÂçÄ£Ê½½øÐÐ·ÖÎö½âÊÍ£º
+ä¸‹é¢æˆ‘ä»¬åˆ†åˆ«å¯¹è¿™å››ç§ç½‘ç»œæ¨¡å¼è¿›è¡Œåˆ†æžè§£é‡Šï¼š
 
 
 
-µÚÒ»ÖÖ NATÄ£Ê½
+ç¬¬ä¸€ç§ NATæ¨¡å¼
 
-½âÊÍ£º
+è§£é‡Šï¼š
 
-NATÄ£Ê½ÊÇ×î¼òµ¥µÄÊµÏÖÐéÄâ»úÉÏÍøµÄ·½Ê½£¬Äã¿ÉÒÔÕâÑùÀí½â£ºVhost·ÃÎÊÍøÂçµÄËùÓÐÊý¾Ý¶¼ÊÇÓÉÖ÷»úÌá¹©µÄ£¬vhost²¢²»ÕæÊµ´æÔÚÓÚÍøÂçÖÐ£¬Ö÷»úÓëÍøÂçÖÐµÄÈÎºÎ»úÆ÷¶¼²»ÄÜ²é¿´ºÍ·ÃÎÊµ½VhostµÄ´æÔÚ¡£
+NATæ¨¡å¼æ˜¯æœ€ç®€å•çš„å®žçŽ°è™šæ‹Ÿæœºä¸Šç½‘çš„æ–¹å¼ï¼Œä½ å¯ä»¥è¿™æ ·ç†è§£ï¼šVhostè®¿é—®ç½‘ç»œçš„æ‰€æœ‰æ•°æ®éƒ½æ˜¯ç”±ä¸»æœºæä¾›çš„ï¼Œvhostå¹¶ä¸çœŸå®žå­˜åœ¨äºŽç½‘ç»œä¸­ï¼Œä¸»æœºä¸Žç½‘ç»œä¸­çš„ä»»ä½•æœºå™¨éƒ½ä¸èƒ½æŸ¥çœ‹å’Œè®¿é—®åˆ°Vhostçš„å­˜åœ¨ã€‚
 
-ÐéÄâ»úÓëÖ÷»ú¹ØÏµ£º
+è™šæ‹Ÿæœºä¸Žä¸»æœºå…³ç³»ï¼š
 
-Ö»ÄÜµ¥Ïò·ÃÎÊ£¬ÐéÄâ»ú¿ÉÒÔÍ¨¹ýÍøÂç·ÃÎÊµ½Ö÷»ú£¬Ö÷»úÎÞ·¨Í¨¹ýÍøÂç·ÃÎÊµ½ÐéÄâ»ú¡£
+åªèƒ½å•å‘è®¿é—®ï¼Œè™šæ‹Ÿæœºå¯ä»¥é€šè¿‡ç½‘ç»œè®¿é—®åˆ°ä¸»æœºï¼Œä¸»æœºæ— æ³•é€šè¿‡ç½‘ç»œè®¿é—®åˆ°è™šæ‹Ÿæœºã€‚
 
-ÐéÄâ»úÓëÍøÂçÖÐÆäËûÖ÷»úµÄ¹ØÏµ£º
+è™šæ‹Ÿæœºä¸Žç½‘ç»œä¸­å…¶ä»–ä¸»æœºçš„å…³ç³»ï¼š
 
-Ö»ÄÜµ¥Ïò·ÃÎÊ£¬ÐéÄâ»ú¿ÉÒÔ·ÃÎÊµ½ÍøÂçÖÐÆäËûÖ÷»ú£¬ÆäËûÖ÷»ú²»ÄÜÍ¨¹ýÍøÂç·ÃÎÊµ½ÐéÄâ»ú¡£
+åªèƒ½å•å‘è®¿é—®ï¼Œè™šæ‹Ÿæœºå¯ä»¥è®¿é—®åˆ°ç½‘ç»œä¸­å…¶ä»–ä¸»æœºï¼Œå…¶ä»–ä¸»æœºä¸èƒ½é€šè¿‡ç½‘ç»œè®¿é—®åˆ°è™šæ‹Ÿæœºã€‚
 
-ÐéÄâ»úÓëÐéÄâ»úÖ®¼äµÄ¹ØÏµ£º
+è™šæ‹Ÿæœºä¸Žè™šæ‹Ÿæœºä¹‹é—´çš„å…³ç³»ï¼š
 
-Ïà»¥²»ÄÜ·ÃÎÊ£¬ÐéÄâ»úÓëÐéÄâ»ú¸÷×ÔÍêÈ«¶ÀÁ¢£¬Ïà»¥¼äÎÞ·¨Í¨¹ýÍøÂç·ÃÎÊ±Ë´Ë¡£
+ç›¸äº’ä¸èƒ½è®¿é—®ï¼Œè™šæ‹Ÿæœºä¸Žè™šæ‹Ÿæœºå„è‡ªå®Œå…¨ç‹¬ç«‹ï¼Œç›¸äº’é—´æ— æ³•é€šè¿‡ç½‘ç»œè®¿é—®å½¼æ­¤ã€‚
 
 IP:10.0.2.15
 
-Íø¹Ø£º10.0.2.2
+ç½‘å…³ï¼š10.0.2.2
 
-DNS£º10.0.2.3
+DNSï¼š10.0.2.3
 
-Ò»Ì¨ÐéÄâ»úµÄ¶à¸öÍø¿¨¿ÉÒÔ±»Éè¶¨Ê¹ÓÃ NAT£¬ µÚÒ»¸öÍø¿¨Á¬½ÓÁËµ½×¨ÓÃÍø 10.0.2.0£¬µÚ¶þ¸öÍø¿¨Á¬½Óµ½×¨ÓÃÍøÂç 10.0.3.0£¬µÈµÈ¡£Ä¬ÈÏµÃµ½µÄ¿Í»§¶Ëip£¨IP Address£©ÊÇ10.0.2.15£¬Íø¹Ø£¨Gateway£©ÊÇ10.0.2.2£¬ÓòÃû·þÎñÆ÷£¨DNS£©ÊÇ10.0.2.3£¬¿ÉÒÔÊÖ¶¯²Î¿¼Õâ¸ö½øÐÐÐÞ¸Ä¡£
+ä¸€å°è™šæ‹Ÿæœºçš„å¤šä¸ªç½‘å¡å¯ä»¥è¢«è®¾å®šä½¿ç”¨ NATï¼Œ ç¬¬ä¸€ä¸ªç½‘å¡è¿žæŽ¥äº†åˆ°ä¸“ç”¨ç½‘ 10.0.2.0ï¼Œç¬¬äºŒä¸ªç½‘å¡è¿žæŽ¥åˆ°ä¸“ç”¨ç½‘ç»œ 10.0.3.0ï¼Œç­‰ç­‰ã€‚é»˜è®¤å¾—åˆ°çš„å®¢æˆ·ç«¯ipï¼ˆIP Addressï¼‰æ˜¯10.0.2.15ï¼Œç½‘å…³ï¼ˆGatewayï¼‰æ˜¯10.0.2.2ï¼ŒåŸŸåæœåŠ¡å™¨ï¼ˆDNSï¼‰æ˜¯10.0.2.3ï¼Œå¯ä»¥æ‰‹åŠ¨å‚è€ƒè¿™ä¸ªè¿›è¡Œä¿®æ”¹ã€‚
 
-NAT·½°¸ÓÅÈ±µã£º
+NATæ–¹æ¡ˆä¼˜ç¼ºç‚¹ï¼š
 
-±Ê¼Ç±¾ÒÑ²åÍøÏßÊ±£º ÐéÄâ»ú¿ÉÒÔ·ÃÎÊÖ÷»ú£¬ÐéÄâ»ú¿ÉÒÔ·ÃÎÊ»¥ÁªÍø£¬ÔÚ×öÁË¶Ë¿ÚÓ³Éäºó£¨×îºóÓÐËµÃ÷£©£¬Ö÷»ú¿ÉÒÔ·ÃÎÊÐéÄâ»úÉÏµÄ·þÎñ£¨ÈçÊý¾Ý¿â£©¡£
+ç¬”è®°æœ¬å·²æ’ç½‘çº¿æ—¶ï¼š è™šæ‹Ÿæœºå¯ä»¥è®¿é—®ä¸»æœºï¼Œè™šæ‹Ÿæœºå¯ä»¥è®¿é—®äº’è”ç½‘ï¼Œåœ¨åšäº†ç«¯å£æ˜ å°„åŽï¼ˆæœ€åŽæœ‰è¯´æ˜Žï¼‰ï¼Œä¸»æœºå¯ä»¥è®¿é—®è™šæ‹Ÿæœºä¸Šçš„æœåŠ¡ï¼ˆå¦‚æ•°æ®åº“ï¼‰ã€‚
 
-±Ê¼Ç±¾Ã»²åÍøÏßÊ±£º Ö÷»úµÄ¡°±¾µØÁ¬½Ó¡±ÓÐºì²æµÄ£¬ÐéÄâ»ú¿ÉÒÔ·ÃÎÊÖ÷»ú£¬ÐéÄâ»ú²»¿ÉÒÔ·ÃÎÊ»¥ÁªÍø£¬ÔÚ×öÁË¶Ë¿ÚÓ³Éäºó£¬Ö÷»ú¿ÉÒÔ·ÃÎÊÐéÄâ»úÉÏµÄ·þÎñ£¨ÈçÊý¾Ý¿â£©¡£
-
-
-
-µÚ¶þÖÖ Bridged AdapterÄ£Ê½
-
-½âÊÍ£º
-
-ÍøÇÅÄ£Ê½ÊÇÎÒ×îÏ²»¶µÄÓÃµÄÒ»ÖÖÄ£Ê½£¬Í¬Ê±£¬Ä£Äâ¶ÈÒ²ÊÇÏàµ±ÍêÃÀ¡£Äã¿ÉÒÔÕâÑùÀí½â£¬ËüÊÇÍ¨¹ýÖ÷»úÍø¿¨£¬¼ÜÉèÁËÒ»ÌõÇÅ£¬Ö±½ÓÁ¬Èëµ½ÍøÂçÖÐÁË¡£Òò´Ë£¬ËüÊ¹µÃÐéÄâ»úÄÜ±»·ÖÅäµ½Ò»¸öÍøÂçÖÐ¶ÀÁ¢µÄIP£¬ËùÓÐÍøÂç¹¦ÄÜÍêÈ«ºÍÔÚÍøÂçÖÐµÄÕæÊµ»úÆ÷Ò»Ñù¡£
-
-ÐéÄâ»úÓëÖ÷»ú¹ØÏµ£º
-
-¿ÉÒÔÏà»¥·ÃÎÊ£¬ÒòÎªÐéÄâ»úÔÚÕæÊµÍøÂç¶ÎÖÐÓÐ¶ÀÁ¢IP£¬Ö÷»úÓëÐéÄâ»ú´¦ÓÚÍ¬Ò»ÍøÂç¶ÎÖÐ£¬±Ë´Ë¿ÉÒÔÍ¨¹ý¸÷×ÔIPÏà»¥·ÃÎÊ¡£
-
-ÐéÄâ»úÓÚÍøÂçÖÐÆäËûÖ÷»ú¹ØÏµ£º
-
-¿ÉÒÔÏà»¥·ÃÎÊ£¬Í¬ÑùÒòÎªÐéÄâ»úÔÚÕæÊµÍøÂç¶ÎÖÐÓÐ¶ÀÁ¢IP£¬ÐéÄâ»úÓëËùÓÐÍøÂçÆäËûÖ÷»ú´¦ÓÚÍ¬Ò»ÍøÂç¶ÎÖÐ£¬±Ë´Ë¿ÉÒÔÍ¨¹ý¸÷×ÔIPÏà»¥·ÃÎÊ¡£
-
-ÐéÄâ»úÓÚÐéÄâ»ú¹ØÏµ£º
-
-¿ÉÒÔÏà»¥·ÃÎÊ£¬Ô­ÒòÍ¬ÉÏ¡£
-
-IP£ºÒ»°ãÊÇDHCP·ÖÅäµÄ£¬ÓëÖ÷»úµÄ¡°±¾µØÁ¬½Ó¡±µÄIP ÊÇÍ¬Ò»Íø¶ÎµÄ¡£ÐéÄâ»ú¾ÍÄÜÓëÖ÷»ú»¥ÏàÍ¨ÐÅ¡£
-
-±Ê¼Ç±¾ÒÑ²åÍøÏßÊ±£º£¨ÈôÍøÂçÖÐÓÐDHCP·þÎñÆ÷£©Ö÷»úÓëÐéÄâ»ú»áÍ¨¹ýDHCP·Ö±ðµÃµ½Ò»¸öIP£¬ÕâÁ½¸öIPÔÚÍ¬Ò»Íø¶Î¡£ Ö÷»úÓëÐéÄâ»ú¿ÉÒÔpingÍ¨£¬ÐéÄâ»ú¿ÉÒÔÉÏ»¥ÁªÍø¡£
-
-±Ê¼Ç±¾Ã»²åÍøÏßÊ±£ºÖ÷»úÓëÐéÄâ»ú²»ÄÜÍ¨ÐÅ¡£Ö÷»úµÄ¡°±¾µØÁ¬½Ó¡±ÓÐºì²æ£¬¾Í²»ÄÜÊÖ¹¤Ö¸¶¨IP¡£ÐéÄâ»úÒ²²»ÄÜÍ¨¹ýDHCPµÃµ½IPµØÖ·£¬ÊÖ¹¤Ö¸¶¨IPºó£¬Ò²ÎÞ·¨ÓëÖ÷»úÍ¨ÐÅ£¬ÒòÎªÖ÷»úÎÞIP¡£
-
-ÕâÊ±Ö÷»úµÄVirtualBox Host-Only Network Íø¿¨ÊÇÓÐipµÄ£¬192.168.56.1¡£ÐéÄâ»ú¾ÍËãÊÖ¹¤Ö¸¶¨ÁËIP 192.168.56.*£¬Ò²ping²»ÄÜÖ÷»ú¡£
+ç¬”è®°æœ¬æ²¡æ’ç½‘çº¿æ—¶ï¼š ä¸»æœºçš„â€œæœ¬åœ°è¿žæŽ¥â€æœ‰çº¢å‰çš„ï¼Œè™šæ‹Ÿæœºå¯ä»¥è®¿é—®ä¸»æœºï¼Œè™šæ‹Ÿæœºä¸å¯ä»¥è®¿é—®äº’è”ç½‘ï¼Œåœ¨åšäº†ç«¯å£æ˜ å°„åŽï¼Œä¸»æœºå¯ä»¥è®¿é—®è™šæ‹Ÿæœºä¸Šçš„æœåŠ¡ï¼ˆå¦‚æ•°æ®åº“ï¼‰ã€‚
 
 
 
-µÚÈýÖÖ InternalÄ£Ê½
+ç¬¬äºŒç§ Bridged Adapteræ¨¡å¼
 
-½âÊÍ£º
+è§£é‡Šï¼š
 
-ÄÚÍøÄ£Ê½£¬¹ËÃûË¼Òå¾ÍÊÇÄÚ²¿ÍøÂçÄ£Ê½£¬ÐéÄâ»úÓëÍâÍøÍêÈ«¶Ï¿ª£¬Ö»ÊµÏÖÐéÄâ»úÓëÐéÄâ»úÖ®¼äµÄÄÚ²¿ÍøÂçÄ£Ê½¡£
+ç½‘æ¡¥æ¨¡å¼æ˜¯æˆ‘æœ€å–œæ¬¢çš„ç”¨çš„ä¸€ç§æ¨¡å¼ï¼ŒåŒæ—¶ï¼Œæ¨¡æ‹Ÿåº¦ä¹Ÿæ˜¯ç›¸å½“å®Œç¾Žã€‚ä½ å¯ä»¥è¿™æ ·ç†è§£ï¼Œå®ƒæ˜¯é€šè¿‡ä¸»æœºç½‘å¡ï¼Œæž¶è®¾äº†ä¸€æ¡æ¡¥ï¼Œç›´æŽ¥è¿žå…¥åˆ°ç½‘ç»œä¸­äº†ã€‚å› æ­¤ï¼Œå®ƒä½¿å¾—è™šæ‹Ÿæœºèƒ½è¢«åˆ†é…åˆ°ä¸€ä¸ªç½‘ç»œä¸­ç‹¬ç«‹çš„IPï¼Œæ‰€æœ‰ç½‘ç»œåŠŸèƒ½å®Œå…¨å’Œåœ¨ç½‘ç»œä¸­çš„çœŸå®žæœºå™¨ä¸€æ ·ã€‚
 
-ÐéÄâ»úÓëÖ÷»ú¹ØÏµ£º
+è™šæ‹Ÿæœºä¸Žä¸»æœºå…³ç³»ï¼š
 
-²»ÄÜÏà»¥·ÃÎÊ£¬±Ë´Ë²»ÊôÓÚÍ¬Ò»¸öÍøÂç£¬ÎÞ·¨Ïà»¥·ÃÎÊ¡£
+å¯ä»¥ç›¸äº’è®¿é—®ï¼Œå› ä¸ºè™šæ‹Ÿæœºåœ¨çœŸå®žç½‘ç»œæ®µä¸­æœ‰ç‹¬ç«‹IPï¼Œä¸»æœºä¸Žè™šæ‹Ÿæœºå¤„äºŽåŒä¸€ç½‘ç»œæ®µä¸­ï¼Œå½¼æ­¤å¯ä»¥é€šè¿‡å„è‡ªIPç›¸äº’è®¿é—®ã€‚
 
-ÐéÄâ»úÓëÍøÂçÖÐÆäËûÖ÷»ú¹ØÏµ£º
+è™šæ‹ŸæœºäºŽç½‘ç»œä¸­å…¶ä»–ä¸»æœºå…³ç³»ï¼š
 
-²»ÄÜÏà»¥·ÃÎÊ£¬ÀíÓÉÍ¬ÉÏ¡£
+å¯ä»¥ç›¸äº’è®¿é—®ï¼ŒåŒæ ·å› ä¸ºè™šæ‹Ÿæœºåœ¨çœŸå®žç½‘ç»œæ®µä¸­æœ‰ç‹¬ç«‹IPï¼Œè™šæ‹Ÿæœºä¸Žæ‰€æœ‰ç½‘ç»œå…¶ä»–ä¸»æœºå¤„äºŽåŒä¸€ç½‘ç»œæ®µä¸­ï¼Œå½¼æ­¤å¯ä»¥é€šè¿‡å„è‡ªIPç›¸äº’è®¿é—®ã€‚
 
-ÐéÄâ»úÓëÐéÄâ»ú¹ØÏµ£º
+è™šæ‹ŸæœºäºŽè™šæ‹Ÿæœºå…³ç³»ï¼š
 
-¿ÉÒÔÏà»¥·ÃÎÊ£¬Ç°ÌáÊÇÔÚÉèÖÃÍøÂçÊ±£¬Á½Ì¨ÐéÄâ»úÉèÖÃÍ¬Ò»ÍøÂçÃû³Æ¡£ÈçÉÏÅäÖÃÍ¼ÖÐ£¬Ãû³ÆÎªintnet¡£
+å¯ä»¥ç›¸äº’è®¿é—®ï¼ŒåŽŸå› åŒä¸Šã€‚
 
-IP: VirtualBoxµÄDHCP·þÎñÆ÷»áÎªËü·ÖÅäIP £¬Ò»°ãµÃµ½µÄÊÇ192.168.56.101£¬ÒòÎªÊÇ´Ó101Æð·ÖµÄ£¬Ò²¿ÉÊÖ¹¤Ö¸¶¨192.168.56.*¡£
+IPï¼šä¸€èˆ¬æ˜¯DHCPåˆ†é…çš„ï¼Œä¸Žä¸»æœºçš„â€œæœ¬åœ°è¿žæŽ¥â€çš„IP æ˜¯åŒä¸€ç½‘æ®µçš„ã€‚è™šæ‹Ÿæœºå°±èƒ½ä¸Žä¸»æœºäº’ç›¸é€šä¿¡ã€‚
 
-±Ê¼Ç±¾ÒÑ²åÍøÏßÊ±£ºÐéÄâ»ú¿ÉÒÔÓëÖ÷»úµÄVirtualBox Host-Only Network Íø¿¨Í¨ÐÅ
+ç¬”è®°æœ¬å·²æ’ç½‘çº¿æ—¶ï¼šï¼ˆè‹¥ç½‘ç»œä¸­æœ‰DHCPæœåŠ¡å™¨ï¼‰ä¸»æœºä¸Žè™šæ‹Ÿæœºä¼šé€šè¿‡DHCPåˆ†åˆ«å¾—åˆ°ä¸€ä¸ªIPï¼Œè¿™ä¸¤ä¸ªIPåœ¨åŒä¸€ç½‘æ®µã€‚ ä¸»æœºä¸Žè™šæ‹Ÿæœºå¯ä»¥pingé€šï¼Œè™šæ‹Ÿæœºå¯ä»¥ä¸Šäº’è”ç½‘ã€‚
 
-ÕâÖÖ·½°¸²»ÊÜÖ÷»ú±¾µØÁ¬½Ó£¨Íø¿¨£©ÊÇ·ñÓÐºì²æµÄÓ°Ïì¡£
+ç¬”è®°æœ¬æ²¡æ’ç½‘çº¿æ—¶ï¼šä¸»æœºä¸Žè™šæ‹Ÿæœºä¸èƒ½é€šä¿¡ã€‚ä¸»æœºçš„â€œæœ¬åœ°è¿žæŽ¥â€æœ‰çº¢å‰ï¼Œå°±ä¸èƒ½æ‰‹å·¥æŒ‡å®šIPã€‚è™šæ‹Ÿæœºä¹Ÿä¸èƒ½é€šè¿‡DHCPå¾—åˆ°IPåœ°å€ï¼Œæ‰‹å·¥æŒ‡å®šIPåŽï¼Œä¹Ÿæ— æ³•ä¸Žä¸»æœºé€šä¿¡ï¼Œå› ä¸ºä¸»æœºæ— IPã€‚
 
-
-
-µÚËÄÖÖ Host-only AdapterÄ£Ê½
-
-½âÊÍ£º
-
-Ö÷»úÄ£Ê½£¬ÕâÊÇÒ»ÖÖ±È½Ï¸´ÔÓµÄÄ£Ê½£¬ÐèÒªÓÐ±È½ÏÔúÊµµÄÍøÂç»ù´¡ÖªÊ¶²ÅÄÜÍæ×ª¡£¿ÉÒÔËµÇ°Ãæ¼¸ÖÖÄ£Ê½ËùÊµÏÖµÄ¹¦ÄÜ£¬ÔÚÕâÖÖÄ£Ê½ÏÂ£¬Í¨¹ýÐéÄâ»ú¼°Íø¿¨µÄÉèÖÃ¶¼¿ÉÒÔ±»ÊµÏÖ¡£
-
-ÎÒÃÇ¿ÉÒÔÀí½âÎªVboxÔÚÖ÷»úÖÐÄ£Äâ³öÒ»ÕÅ×¨¹©ÐéÄâ»úÊ¹ÓÃµÄÍø¿¨£¬ËùÓÐÐéÄâ»ú¶¼ÊÇÁ¬½Óµ½¸ÃÍø¿¨ÉÏµÄ£¬ÎÒÃÇ¿ÉÒÔÍ¨¹ýÉèÖÃÕâÕÅÍø¿¨À´ÊµÏÖÉÏÍø¼°ÆäËûºÜ¶à¹¦ÄÜ£¬±ÈÈç£¨Íø¿¨¹²Ïí¡¢Íø¿¨ÇÅ½ÓµÈ£©¡£
-
-ÐéÄâ»úÓëÖ÷»ú¹ØÏµ
-
-Ä¬ÈÏ²»ÄÜÏà»¥·ÃÎÊ£¬Ë«·½²»ÊôÓÚÍ¬Ò»IP¶Î£¬host-onlyÍø¿¨Ä¬ÈÏIP¶ÎÎª192.168.56.X ×ÓÍøÑÚÂëÎª255.255.255.0£¬ºóÃæµÄÐéÄâ»ú±»·ÖÅäµ½µÄÒ²¶¼ÊÇÕâ¸öÍø¶Î¡£Í¨¹ýÍø¿¨¹²Ïí¡¢Íø¿¨ÇÅ½ÓµÈ£¬¿ÉÒÔÊµÏÖÐéÄâ»úÓÚÖ÷»úÏà»¥·ÃÎÊ¡£
-
-ÐéÄâ»úÓëÍøÂçÖ÷»ú¹ØÏµ
-
-Ä¬ÈÏ²»ÄÜÏà»¥·ÃÎÊ£¬Ô­ÒòÍ¬ÉÏ£¬Í¨¹ýÉèÖÃ£¬¿ÉÒÔÊµÏÖÏà»¥·ÃÎÊ¡£
-
-ÐéÄâ»úÓëÐéÄâ»ú¹ØÏµ
-
-Ä¬ÈÏ¿ÉÒÔÏà»¥·ÃÎÊ£¬¶¼ÊÇÍ¬´¦ÓÚÒ»¸öÍø¶Î¡£
-
-ÐéÄâ»ú·ÃÎÊÖ÷»ú ÓÃµÄÊÇÖ÷»úµÄVirtualBox Host-Only NetworkÍø¿¨µÄIP£º192.168.56.1  £¬²»¹ÜÖ÷»ú¡°±¾µØÁ¬½Ó¡±ÓÐÎÞºì²æ£¬ÓÀÔ¶Í¨¡£
-
-Ö÷»ú·ÃÎÊÐéÄâ»ú£¬ÓÃÊÇµÄÐéÄâ»úµÄÍø¿¨3µÄIP£º 192.168.56.101  £¬²»¹ÜÖ÷»ú¡°±¾µØÁ¬½Ó¡±ÓÐÎÞºì²æ£¬ÓÀÔ¶Í¨¡£
-
-ÐéÄâ»ú·ÃÎÊ»¥ÁªÍø£¬ÓÃµÄÊÇ×Ô¼ºµÄÍø¿¨2£¬ ÕâÊ±Ö÷»úÒªÄÜÍ¨¹ý¡°±¾µØÁ¬½Ó¡±ÓÐÏßÉÏÍø£¬£¨ÎÞÏßÍø¿¨²»ÐÐ£©
+è¿™æ—¶ä¸»æœºçš„VirtualBox Host-Only Network ç½‘å¡æ˜¯æœ‰ipçš„ï¼Œ192.168.56.1ã€‚è™šæ‹Ÿæœºå°±ç®—æ‰‹å·¥æŒ‡å®šäº†IP 192.168.56.*ï¼Œä¹Ÿpingä¸èƒ½ä¸»æœºã€‚
 
 
 
-Í¨¹ý¶ÔÒÔÉÏ¼¸ÖÖÍøÂçÄ£Ê½µÄÁË½â£¬ÎÒÃÇ¾Í¿ÉÒÔÁé»îÔËÓÃ£¬Ä£Äâ×é½¨³öÎÒÃÇËùÏëÒªµÄÈÎºÎÒ»ÖÖÍøÂç»·¾³ÁË¡£
+ç¬¬ä¸‰ç§ Internalæ¨¡å¼
 
-±ÈÈçÎÒÏëÄ£Äâ³öÀ´Ò»¸öÒ»Ì¨Ö÷»ú£¬¼à¿ØÒ»¸ö¾ÖÓòÍøÉÏÍøÇé¿öµÄÍøÂç»·¾³¡£
+è§£é‡Šï¼š
 
-Ê×ÏÈÎÒ¿ªÆôÁËÁ½Ì¨ÐéÄâ»úvhost1Óëvhost2£¬µ±È»Èç¹ûÓ²¼þÔÊÐí£¬ÎÒÍ¬Ñù¿ÉÒÔÔÙÔö¼Óvhost3¡¢vhost4¡­
+å†…ç½‘æ¨¡å¼ï¼Œé¡¾åæ€ä¹‰å°±æ˜¯å†…éƒ¨ç½‘ç»œæ¨¡å¼ï¼Œè™šæ‹Ÿæœºä¸Žå¤–ç½‘å®Œå…¨æ–­å¼€ï¼Œåªå®žçŽ°è™šæ‹Ÿæœºä¸Žè™šæ‹Ÿæœºä¹‹é—´çš„å†…éƒ¨ç½‘ç»œæ¨¡å¼ã€‚
 
-ËùÓÐµÄvhostÎÒ¶¼ÉèÖÃ³ÉinternatÄÚÍøÄ£Ê½£¬ÍøÂçÃû³ÆÎªintnal£¬Íø¹ØÎª192.168.56.100£¬ÒâË¼¾ÍÊÇÍ¨¹ý 192.168.56.100Íø¿¨ÉÏÍø¡£ÆäÖÐÓÐÒ»Ì¨vhost1ÎÒÉèÖÃÎªË«Íø¿¨£¬Ò»ÕÅÎªÄÚÍøÄ£Ê½£¨192.168.56.100£©£¬Ò»ÕÅÎªÍøÇÅÄ£Ê½£¨192.168.1.101£©¡£Á½ÕÅÍø¿¨ÉèÖÃË«Íø¿¨¹²ÏíÉÏÍø
+è™šæ‹Ÿæœºä¸Žä¸»æœºå…³ç³»ï¼š
 
-ÐéÄâ»úÖ®¼äÎª¾ÖÓòÍø£¬ÆäÖÐÓÐÒ»Ì¨ÐéÄâ»úvhost1Í¨¹ýÓëÍâÍøÏàÁ¬£¬ËùÓÐ¾ÖÓòÍøÖÐµÄÐéÄâ»úÓÖÍ¨¹ývhost1À´ÊµÏÖÉÏÍâÍø¡£ÕâÑùvhost1¾Í¿ÉÒÔ¼à¿ØÕû¸öÐéÄâ»ú¾ÖÓòÍøÉÏÍøÇé¿öÁË¡£
+ä¸èƒ½ç›¸äº’è®¿é—®ï¼Œå½¼æ­¤ä¸å±žäºŽåŒä¸€ä¸ªç½‘ç»œï¼Œæ— æ³•ç›¸äº’è®¿é—®ã€‚
+
+è™šæ‹Ÿæœºä¸Žç½‘ç»œä¸­å…¶ä»–ä¸»æœºå…³ç³»ï¼š
+
+ä¸èƒ½ç›¸äº’è®¿é—®ï¼Œç†ç”±åŒä¸Šã€‚
+
+è™šæ‹Ÿæœºä¸Žè™šæ‹Ÿæœºå…³ç³»ï¼š
+
+å¯ä»¥ç›¸äº’è®¿é—®ï¼Œå‰ææ˜¯åœ¨è®¾ç½®ç½‘ç»œæ—¶ï¼Œä¸¤å°è™šæ‹Ÿæœºè®¾ç½®åŒä¸€ç½‘ç»œåç§°ã€‚å¦‚ä¸Šé…ç½®å›¾ä¸­ï¼Œåç§°ä¸ºintnetã€‚
+
+IP: VirtualBoxçš„DHCPæœåŠ¡å™¨ä¼šä¸ºå®ƒåˆ†é…IP ï¼Œä¸€èˆ¬å¾—åˆ°çš„æ˜¯192.168.56.101ï¼Œå› ä¸ºæ˜¯ä»Ž101èµ·åˆ†çš„ï¼Œä¹Ÿå¯æ‰‹å·¥æŒ‡å®š192.168.56.*ã€‚
+
+ç¬”è®°æœ¬å·²æ’ç½‘çº¿æ—¶ï¼šè™šæ‹Ÿæœºå¯ä»¥ä¸Žä¸»æœºçš„VirtualBox Host-Only Network ç½‘å¡é€šä¿¡
+
+è¿™ç§æ–¹æ¡ˆä¸å—ä¸»æœºæœ¬åœ°è¿žæŽ¥ï¼ˆç½‘å¡ï¼‰æ˜¯å¦æœ‰çº¢å‰çš„å½±å“ã€‚
 
 
 
-NAT ÉèÖÃ¶Ë¿ÚÓ³Éä
+ç¬¬å››ç§ Host-only Adapteræ¨¡å¼
+
+è§£é‡Šï¼š
+
+ä¸»æœºæ¨¡å¼ï¼Œè¿™æ˜¯ä¸€ç§æ¯”è¾ƒå¤æ‚çš„æ¨¡å¼ï¼Œéœ€è¦æœ‰æ¯”è¾ƒæ‰Žå®žçš„ç½‘ç»œåŸºç¡€çŸ¥è¯†æ‰èƒ½çŽ©è½¬ã€‚å¯ä»¥è¯´å‰é¢å‡ ç§æ¨¡å¼æ‰€å®žçŽ°çš„åŠŸèƒ½ï¼Œåœ¨è¿™ç§æ¨¡å¼ä¸‹ï¼Œé€šè¿‡è™šæ‹ŸæœºåŠç½‘å¡çš„è®¾ç½®éƒ½å¯ä»¥è¢«å®žçŽ°ã€‚
+
+æˆ‘ä»¬å¯ä»¥ç†è§£ä¸ºVboxåœ¨ä¸»æœºä¸­æ¨¡æ‹Ÿå‡ºä¸€å¼ ä¸“ä¾›è™šæ‹Ÿæœºä½¿ç”¨çš„ç½‘å¡ï¼Œæ‰€æœ‰è™šæ‹Ÿæœºéƒ½æ˜¯è¿žæŽ¥åˆ°è¯¥ç½‘å¡ä¸Šçš„ï¼Œæˆ‘ä»¬å¯ä»¥é€šè¿‡è®¾ç½®è¿™å¼ ç½‘å¡æ¥å®žçŽ°ä¸Šç½‘åŠå…¶ä»–å¾ˆå¤šåŠŸèƒ½ï¼Œæ¯”å¦‚ï¼ˆç½‘å¡å…±äº«ã€ç½‘å¡æ¡¥æŽ¥ç­‰ï¼‰ã€‚
+
+è™šæ‹Ÿæœºä¸Žä¸»æœºå…³ç³»
+
+é»˜è®¤ä¸èƒ½ç›¸äº’è®¿é—®ï¼ŒåŒæ–¹ä¸å±žäºŽåŒä¸€IPæ®µï¼Œhost-onlyç½‘å¡é»˜è®¤IPæ®µä¸º192.168.56.X å­ç½‘æŽ©ç ä¸º255.255.255.0ï¼ŒåŽé¢çš„è™šæ‹Ÿæœºè¢«åˆ†é…åˆ°çš„ä¹Ÿéƒ½æ˜¯è¿™ä¸ªç½‘æ®µã€‚é€šè¿‡ç½‘å¡å…±äº«ã€ç½‘å¡æ¡¥æŽ¥ç­‰ï¼Œå¯ä»¥å®žçŽ°è™šæ‹ŸæœºäºŽä¸»æœºç›¸äº’è®¿é—®ã€‚
+
+è™šæ‹Ÿæœºä¸Žç½‘ç»œä¸»æœºå…³ç³»
+
+é»˜è®¤ä¸èƒ½ç›¸äº’è®¿é—®ï¼ŒåŽŸå› åŒä¸Šï¼Œé€šè¿‡è®¾ç½®ï¼Œå¯ä»¥å®žçŽ°ç›¸äº’è®¿é—®ã€‚
+
+è™šæ‹Ÿæœºä¸Žè™šæ‹Ÿæœºå…³ç³»
+
+é»˜è®¤å¯ä»¥ç›¸äº’è®¿é—®ï¼Œéƒ½æ˜¯åŒå¤„äºŽä¸€ä¸ªç½‘æ®µã€‚
+
+è™šæ‹Ÿæœºè®¿é—®ä¸»æœº ç”¨çš„æ˜¯ä¸»æœºçš„VirtualBox Host-Only Networkç½‘å¡çš„IPï¼š192.168.56.1  ï¼Œä¸ç®¡ä¸»æœºâ€œæœ¬åœ°è¿žæŽ¥â€æœ‰æ— çº¢å‰ï¼Œæ°¸è¿œé€šã€‚
+
+ä¸»æœºè®¿é—®è™šæ‹Ÿæœºï¼Œç”¨æ˜¯çš„è™šæ‹Ÿæœºçš„ç½‘å¡3çš„IPï¼š 192.168.56.101  ï¼Œä¸ç®¡ä¸»æœºâ€œæœ¬åœ°è¿žæŽ¥â€æœ‰æ— çº¢å‰ï¼Œæ°¸è¿œé€šã€‚
+
+è™šæ‹Ÿæœºè®¿é—®äº’è”ç½‘ï¼Œç”¨çš„æ˜¯è‡ªå·±çš„ç½‘å¡2ï¼Œ è¿™æ—¶ä¸»æœºè¦èƒ½é€šè¿‡â€œæœ¬åœ°è¿žæŽ¥â€æœ‰çº¿ä¸Šç½‘ï¼Œï¼ˆæ— çº¿ç½‘å¡ä¸è¡Œï¼‰
+
+
+
+é€šè¿‡å¯¹ä»¥ä¸Šå‡ ç§ç½‘ç»œæ¨¡å¼çš„äº†è§£ï¼Œæˆ‘ä»¬å°±å¯ä»¥çµæ´»è¿ç”¨ï¼Œæ¨¡æ‹Ÿç»„å»ºå‡ºæˆ‘ä»¬æ‰€æƒ³è¦çš„ä»»ä½•ä¸€ç§ç½‘ç»œçŽ¯å¢ƒäº†ã€‚
+
+æ¯”å¦‚æˆ‘æƒ³æ¨¡æ‹Ÿå‡ºæ¥ä¸€ä¸ªä¸€å°ä¸»æœºï¼Œç›‘æŽ§ä¸€ä¸ªå±€åŸŸç½‘ä¸Šç½‘æƒ…å†µçš„ç½‘ç»œçŽ¯å¢ƒã€‚
+
+é¦–å…ˆæˆ‘å¼€å¯äº†ä¸¤å°è™šæ‹Ÿæœºvhost1ä¸Žvhost2ï¼Œå½“ç„¶å¦‚æžœç¡¬ä»¶å…è®¸ï¼Œæˆ‘åŒæ ·å¯ä»¥å†å¢žåŠ vhost3ã€vhost4â€¦
+
+æ‰€æœ‰çš„vhostæˆ‘éƒ½è®¾ç½®æˆinternatå†…ç½‘æ¨¡å¼ï¼Œç½‘ç»œåç§°ä¸ºintnalï¼Œç½‘å…³ä¸º192.168.56.100ï¼Œæ„æ€å°±æ˜¯é€šè¿‡ 192.168.56.100ç½‘å¡ä¸Šç½‘ã€‚å…¶ä¸­æœ‰ä¸€å°vhost1æˆ‘è®¾ç½®ä¸ºåŒç½‘å¡ï¼Œä¸€å¼ ä¸ºå†…ç½‘æ¨¡å¼ï¼ˆ192.168.56.100ï¼‰ï¼Œä¸€å¼ ä¸ºç½‘æ¡¥æ¨¡å¼ï¼ˆ192.168.1.101ï¼‰ã€‚ä¸¤å¼ ç½‘å¡è®¾ç½®åŒç½‘å¡å…±äº«ä¸Šç½‘
+
+è™šæ‹Ÿæœºä¹‹é—´ä¸ºå±€åŸŸç½‘ï¼Œå…¶ä¸­æœ‰ä¸€å°è™šæ‹Ÿæœºvhost1é€šè¿‡ä¸Žå¤–ç½‘ç›¸è¿žï¼Œæ‰€æœ‰å±€åŸŸç½‘ä¸­çš„è™šæ‹Ÿæœºåˆé€šè¿‡vhost1æ¥å®žçŽ°ä¸Šå¤–ç½‘ã€‚è¿™æ ·vhost1å°±å¯ä»¥ç›‘æŽ§æ•´ä¸ªè™šæ‹Ÿæœºå±€åŸŸç½‘ä¸Šç½‘æƒ…å†µäº†ã€‚
+
+
+
+NAT è®¾ç½®ç«¯å£æ˜ å°„
 
 http://huzhangsheng.blog.163.com/blog/static/34787784200802801435931/
 
-Äã¿ÉÒÔÉèÖÃÒ»¸öÐéÄâ»úµÄ·þÎñ£¨±ÈÈç WEB  ·þÎñ£©£¬Í¨¹ýÊ¹ÓÃÃüÁîÐÐ¹¤¾ß VboxManage ´úÀí¡£ÄãÐèÒªÖªµÀÐéÄâ»úµÄ·þÎñÊ¹ÓÃÄÄ¸ö¶Ë¿Ú£¬È»ºó¾ö¶¨ÔÚÖ÷»úÉÏÊ¹ÓÃÄÄ¸ö¶Ë¿Ú£¨Í¨³£µ«²»×ÜÊÇÏëÒªÊ¹ÐéÄâ»úºÍÖ÷»úÊ¹ÓÃÍ¬Ò»¸ö¶Ë¿Ú£©¡£ÔÚÖ÷»úÉÏÌá¹©Ò»¸ö·þÎñÐèÒªÊ¹ÓÃÒ»¸ö¶Ë¿Ú£¬ÄãÄÜÊ¹ÓÃÔÚÖ÷»úÉÏÃ»ÓÐ×¼±¸ÓÃÀ´Ìá¹©·þÎñµÄÈÎºÎ¶Ë¿Ú¡£Ò»¸öÔõÑùÉèÖÃÐÂµÄ NAT Àý×Ó£¬ÔÚÐéÄâ»úÉÏÁ¬½Óµ½Ò»¸ö ssh ·þÎñÆ÷£¬ÐèÒªÏÂÃæµÄÈý¸öÃüÁî£º
+ä½ å¯ä»¥è®¾ç½®ä¸€ä¸ªè™šæ‹Ÿæœºçš„æœåŠ¡ï¼ˆæ¯”å¦‚ WEB  æœåŠ¡ï¼‰ï¼Œé€šè¿‡ä½¿ç”¨å‘½ä»¤è¡Œå·¥å…· VboxManage ä»£ç†ã€‚ä½ éœ€è¦çŸ¥é“è™šæ‹Ÿæœºçš„æœåŠ¡ä½¿ç”¨å“ªä¸ªç«¯å£ï¼Œç„¶åŽå†³å®šåœ¨ä¸»æœºä¸Šä½¿ç”¨å“ªä¸ªç«¯å£ï¼ˆé€šå¸¸ä½†ä¸æ€»æ˜¯æƒ³è¦ä½¿è™šæ‹Ÿæœºå’Œä¸»æœºä½¿ç”¨åŒä¸€ä¸ªç«¯å£ï¼‰ã€‚åœ¨ä¸»æœºä¸Šæä¾›ä¸€ä¸ªæœåŠ¡éœ€è¦ä½¿ç”¨ä¸€ä¸ªç«¯å£ï¼Œä½ èƒ½ä½¿ç”¨åœ¨ä¸»æœºä¸Šæ²¡æœ‰å‡†å¤‡ç”¨æ¥æä¾›æœåŠ¡çš„ä»»ä½•ç«¯å£ã€‚ä¸€ä¸ªæ€Žæ ·è®¾ç½®æ–°çš„ NAT ä¾‹å­ï¼Œåœ¨è™šæ‹Ÿæœºä¸Šè¿žæŽ¥åˆ°ä¸€ä¸ª ssh æœåŠ¡å™¨ï¼Œéœ€è¦ä¸‹é¢çš„ä¸‰ä¸ªå‘½ä»¤ï¼š
 
 VBoxManage setextradata 'Linux Guest' 'VBoxInternal/Devices/pcnet/0/LUN#0/Config/guestssh/Protocol' TCP
 
@@ -2336,9 +1148,9 @@ VBoxManage setextradata 'Linux Guest' 'VBoxInternal/Devices/pcnet/0/LUN#0/Config
 
 VBoxManage setextradata 'Linux Guest' 'VBoxInternal/Devices/pcnet/0/LUN#0/Config/guestssh/HostPort' 2222
 
-ËµÃ÷£ºVboxManage ÊÇÒ»¸öÃüÁîÐÐ³ÌÐò£¬Çë²éÑ¯ÄãµÄ VirtualBox °²×°Ä¿Â¼£¬'Linux Guest' ÊÇÐéÄâÖ÷»úÃû¡£guestssh ÊÇÒ»¸ö×Ô¶¨ÒåµÄÃû³Æ£¬Äã¿ÉÒÔÈÎÒâÉèÖÃ£¬Í¨¹ýÉÏÃæµÄÈý¸öÃüÁî£¬°ÑÐéÄâ»úµÄ 22 ¶Ë¿Ú ×ª·¢µ½Ö÷»úµÄ 2222 ¶Ë¿Ú¡£
+è¯´æ˜Žï¼šVboxManage æ˜¯ä¸€ä¸ªå‘½ä»¤è¡Œç¨‹åºï¼Œè¯·æŸ¥è¯¢ä½ çš„ VirtualBox å®‰è£…ç›®å½•ï¼Œ'Linux Guest' æ˜¯è™šæ‹Ÿä¸»æœºåã€‚guestssh æ˜¯ä¸€ä¸ªè‡ªå®šä¹‰çš„åç§°ï¼Œä½ å¯ä»¥ä»»æ„è®¾ç½®ï¼Œé€šè¿‡ä¸Šé¢çš„ä¸‰ä¸ªå‘½ä»¤ï¼ŒæŠŠè™šæ‹Ÿæœºçš„ 22 ç«¯å£ è½¬å‘åˆ°ä¸»æœºçš„ 2222 ç«¯å£ã€‚
 
-ÓÖ±ÈÈç£¬ÎÒÔÚÐéÄâ»ú debian ÉÏ°²×°ÁË apache2 ·þÎñÆ÷£¬Ê¹ÓÃ 80 ¶Ë¿Ú£¬Ó³Éäµ½Ö÷»úµÄ 80 ¶Ë¿Ú¡£Ê¹ÓÃÏÂÃæµÄÃüÁî¡£
+åˆæ¯”å¦‚ï¼Œæˆ‘åœ¨è™šæ‹Ÿæœº debian ä¸Šå®‰è£…äº† apache2 æœåŠ¡å™¨ï¼Œä½¿ç”¨ 80 ç«¯å£ï¼Œæ˜ å°„åˆ°ä¸»æœºçš„ 80 ç«¯å£ã€‚ä½¿ç”¨ä¸‹é¢çš„å‘½ä»¤ã€‚
 
 'C:\Program Files\innotek VirtualBox\VBoxManage.exe' setextradata 'debian' 'VBoxInternal/Devices/pcnet/0/LUN#0/Config/huzhangsheng/Protocol' TCP
 
@@ -2346,93 +1158,93 @@ VBoxManage setextradata 'Linux Guest' 'VBoxInternal/Devices/pcnet/0/LUN#0/Config
 
 'C:\Program Files\innotek VirtualBox\VBoxManage.exe' setextradata 'debian' 'VBoxInternal/Devices/pcnet/0/LUN#0/Config/huzhangsheng/HostPort' 80
 
-×¢Òâ£ºÒªÊ¹ÉèÖÃÉúÐ§£¬Çë¹Øµô VirtualBox ÔÙÔËÐÐÐéÄâ»ú£¬ÎÒ°Ñ VirtualBox °²×°ÔÚ winxp ÉÏ£¬ÔÚÐéÄâ»úÖÐ°²×° debian 4.02r £¬ÐéÄâ»úÃûÊÇ debian £¬²¢°²×°ÁË apache2 php5 mysql-server £¬ÔÚÖ÷»úÉÏÓÃIEä¯ÀÀ http://localhost£¬³É¹¦×ª·¢µ½ÐéÄâ»ú debian µÄ apache2 web ·þÎñÆ÷ÉÏ
+æ³¨æ„ï¼šè¦ä½¿è®¾ç½®ç”Ÿæ•ˆï¼Œè¯·å…³æŽ‰ VirtualBox å†è¿è¡Œè™šæ‹Ÿæœºï¼Œæˆ‘æŠŠ VirtualBox å®‰è£…åœ¨ winxp ä¸Šï¼Œåœ¨è™šæ‹Ÿæœºä¸­å®‰è£… debian 4.02r ï¼Œè™šæ‹Ÿæœºåæ˜¯ debian ï¼Œå¹¶å®‰è£…äº† apache2 php5 mysql-server ï¼Œåœ¨ä¸»æœºä¸Šç”¨IEæµè§ˆ http://localhostï¼ŒæˆåŠŸè½¬å‘åˆ°è™šæ‹Ÿæœº debian çš„ apache2 web æœåŠ¡å™¨ä¸Š
 
-## virtualboxÃüÁîÐÐ¹²ÏíCentOSÄ¿Â¼
+## virtualboxå‘½ä»¤è¡Œå…±äº«CentOSç›®å½•
 
-1. °²×°virtualboxÔöÇ¿¹¤¾ß
+1. å®‰è£…virtualboxå¢žå¼ºå·¥å…·
 
-2. ÉèÖÃ¹²ÏíÎÄ¼þ¼Ð
+2. è®¾ç½®å…±äº«æ–‡ä»¶å¤¹
 
-Íê³Éºóµã»÷"Éè±¸(Devices)" -> ¹²ÏíÎÄ¼þ¼Ð(Shared Folders)²Ëµ¥£¬Ìí¼ÓÒ»¸ö¹²ÏíÎÄ¼þ¼Ð£¬Ñ¡Ïî¹Ì¶¨ºÍÁÙÊ±ÊÇÖ¸¸ÃÎÄ¼þ¼ÐÊÇ·ñÊÇ³Ö¾ÃµÄ¡£¹²ÏíÃû¿ÉÒÔËæÒâÈ¡£¬Èç"yongfu"£¬¾¡Á¿Ê¹ÓÃÓ¢ÎÄÃû³Æ£¬²»ÒªÓÐ¿Õ¸ñ¡£
+å®ŒæˆåŽç‚¹å‡»"è®¾å¤‡(Devices)" -> å…±äº«æ–‡ä»¶å¤¹(Shared Folders)èœå•ï¼Œæ·»åŠ ä¸€ä¸ªå…±äº«æ–‡ä»¶å¤¹ï¼Œé€‰é¡¹å›ºå®šå’Œä¸´æ—¶æ˜¯æŒ‡è¯¥æ–‡ä»¶å¤¹æ˜¯å¦æ˜¯æŒä¹…çš„ã€‚å…±äº«åå¯ä»¥éšæ„å–ï¼Œå¦‚"yongfu"ï¼Œå°½é‡ä½¿ç”¨è‹±æ–‡åç§°ï¼Œä¸è¦æœ‰ç©ºæ ¼ã€‚
 
-3. ¹ÒÔØ¹²ÏíÎÄ¼þ¼Ð
+3. æŒ‚è½½å…±äº«æ–‡ä»¶å¤¹
 
-ÔÚÃüÁîÐÐÖÕ¶ËÏÂÊäÈë£º
+åœ¨å‘½ä»¤è¡Œç»ˆç«¯ä¸‹è¾“å…¥ï¼š
 
 mkdir /mnt/yongfu
 
 mount -t vboxsf yongfu /mnt/yongfu
 
-ÆäÖÐ"yongfu"ÊÇÖ®Ç°´´½¨µÄ¹²ÏíÎÄ¼þ¼ÐµÄÃû×Ö¡£ÏÖÔÚÐéÄâ»úºÍÖ÷»ú¿ÉÒÔ»¥´«ÎÄ¼þÁË¡£
+å…¶ä¸­"yongfu"æ˜¯ä¹‹å‰åˆ›å»ºçš„å…±äº«æ–‡ä»¶å¤¹çš„åå­—ã€‚çŽ°åœ¨è™šæ‹Ÿæœºå’Œä¸»æœºå¯ä»¥äº’ä¼ æ–‡ä»¶äº†ã€‚
 
-Èç²»ÏëÃ¿´Î¶¼ÊÖ¶¯¹ÒÔØ£¬¿ÉÒÔÔÚ/etc/fstabÖÐÌí¼ÓÒ»Ïî
+å¦‚ä¸æƒ³æ¯æ¬¡éƒ½æ‰‹åŠ¨æŒ‚è½½ï¼Œå¯ä»¥åœ¨/etc/fstabä¸­æ·»åŠ ä¸€é¡¹
 
 yongfu /mnt/yongfu vboxsf rw,gid=100,uid=1000,auto 0 0
 
-ÕâÑù¾ÍÄÜ¹»×Ô¶¯¹ÒÔØÁË¡£
+è¿™æ ·å°±èƒ½å¤Ÿè‡ªåŠ¨æŒ‚è½½äº†ã€‚
 
-4. Ð¶ÔØµÄ»°Ê¹ÓÃÏÂÃæµÄÃüÁî£º
+4. å¸è½½çš„è¯ä½¿ç”¨ä¸‹é¢çš„å‘½ä»¤ï¼š
 
 umount -f /mnt/yongfu
 
-linuxÁ¬½ÓÍ¶Ó°»ú
+linuxè¿žæŽ¥æŠ•å½±æœº
 
 
 
-# update-AlternativesÑ§Ï°±Ê¼Ç
+# update-Alternativeså­¦ä¹ ç¬”è®°
 
-Linux ·¢Õ¹µ½½ñÌì£¬¿ÉÓÃµÄÈí¼þÒÑ¾­·Ç³£¶àÁË¡£ÕâÑù×ÔÈ»»áÓÐÒ»Ð©Èí¼þµÄ¹¦ÄÜ´óÖÂÉÏÏàÍ¬¡£ÀýÈç£¬Í¬ÑùÊÇ±à¼­Æ÷£¬¾ÍÓÐ nvi¡¢vim¡¢emacs¡¢nano£¬¶øÇÒÎÒËµµÄÕâÐ©»¹Ö»ÊÇÒ»²¿·Ö¡£´ó¶àÊýÇé¿öÏÂ£¬ÕâÑùµÄ¹¦ÄÜÏàËÆµÄÈí¼þ¶¼ÊÇÍ¬Ê±°²×°ÔÚÏµÍ³ÀïµÄ£¬¿ÉÒÔÓÃËüÃÇµÄÃû³ÆÀ´Ö´ÐÐ¡£ÀýÈç£¬ÒªÖ´ÐÐ vim£¬Ö»ÒªÔÚÖÕ¶ËÏÂÊäÈë vim ²¢°´»Ø³µ¾Í¿ÉÒÔÁË¡£²»¹ý£¬ÓÐÐ©Çé¿öÏÂÎÒÃÇÐèÒªÓÃÒ»¸öÏà¶Ô¹Ì¶¨µÄÃüÁîµ÷ÓÃÕâÐ©³ÌÐòÖÐµÄÒ»¸ö¡£ÀýÈç£¬µ±ÎÒÃÇÐ´Ò»¸ö½Å±¾³ÌÐòÊ±£¬Ö»ÒªÐ´ÏÂ editor£¬¶ø²»Ï£ÍûÒªÎª¡°±à¼­Æ÷ÊÇÄÄ¸ö¡±¶ø²ÙÐÄ¡£Debian Ìá¹©ÁËÒ»ÖÖ»úÖÆÀ´½â¾öÕâ¸öÎÊÌâ£¬¶ø update-Alternatives ¾ÍÊÇÓÃÀ´ÊµÏÖÕâÖÖ»úÖÆµÄ¡£
+Linux å‘å±•åˆ°ä»Šå¤©ï¼Œå¯ç”¨çš„è½¯ä»¶å·²ç»éžå¸¸å¤šäº†ã€‚è¿™æ ·è‡ªç„¶ä¼šæœ‰ä¸€äº›è½¯ä»¶çš„åŠŸèƒ½å¤§è‡´ä¸Šç›¸åŒã€‚ä¾‹å¦‚ï¼ŒåŒæ ·æ˜¯ç¼–è¾‘å™¨ï¼Œå°±æœ‰ nviã€vimã€emacsã€nanoï¼Œè€Œä¸”æˆ‘è¯´çš„è¿™äº›è¿˜åªæ˜¯ä¸€éƒ¨åˆ†ã€‚å¤§å¤šæ•°æƒ…å†µä¸‹ï¼Œè¿™æ ·çš„åŠŸèƒ½ç›¸ä¼¼çš„è½¯ä»¶éƒ½æ˜¯åŒæ—¶å®‰è£…åœ¨ç³»ç»Ÿé‡Œçš„ï¼Œå¯ä»¥ç”¨å®ƒä»¬çš„åç§°æ¥æ‰§è¡Œã€‚ä¾‹å¦‚ï¼Œè¦æ‰§è¡Œ vimï¼Œåªè¦åœ¨ç»ˆç«¯ä¸‹è¾“å…¥ vim å¹¶æŒ‰å›žè½¦å°±å¯ä»¥äº†ã€‚ä¸è¿‡ï¼Œæœ‰äº›æƒ…å†µä¸‹æˆ‘ä»¬éœ€è¦ç”¨ä¸€ä¸ªç›¸å¯¹å›ºå®šçš„å‘½ä»¤è°ƒç”¨è¿™äº›ç¨‹åºä¸­çš„ä¸€ä¸ªã€‚ä¾‹å¦‚ï¼Œå½“æˆ‘ä»¬å†™ä¸€ä¸ªè„šæœ¬ç¨‹åºæ—¶ï¼Œåªè¦å†™ä¸‹ editorï¼Œè€Œä¸å¸Œæœ›è¦ä¸ºâ€œç¼–è¾‘å™¨æ˜¯å“ªä¸ªâ€è€Œæ“å¿ƒã€‚Debian æä¾›äº†ä¸€ç§æœºåˆ¶æ¥è§£å†³è¿™ä¸ªé—®é¢˜ï¼Œè€Œ update-Alternatives å°±æ˜¯ç”¨æ¥å®žçŽ°è¿™ç§æœºåˆ¶çš„ã€‚
 
 
 
-1)Ê×ÏÈÒª½éÉÜµÄ²ÎÊýÊÇ --display¡£ËüÊ¹ÎÒÃÇ¿ÉÒÔ¿´µ½Ò»¸öÃüÁîµÄËùÓÐ¿ÉÑ¡ÃüÁî¡£Ö´ÐÐ£º
+1)é¦–å…ˆè¦ä»‹ç»çš„å‚æ•°æ˜¯ --displayã€‚å®ƒä½¿æˆ‘ä»¬å¯ä»¥çœ‹åˆ°ä¸€ä¸ªå‘½ä»¤çš„æ‰€æœ‰å¯é€‰å‘½ä»¤ã€‚æ‰§è¡Œï¼š
 
 update-Alternatives --display editor
 
-¿ÉÒÔ¿´µ½ÎÒµÄ»úÆ÷ÉÏµÄËùÓÐ¿ÉÒÔÓÃÀ´±» editor Á´½ÓµÄÃüÁî¡£
+å¯ä»¥çœ‹åˆ°æˆ‘çš„æœºå™¨ä¸Šçš„æ‰€æœ‰å¯ä»¥ç”¨æ¥è¢« editor é“¾æŽ¥çš„å‘½ä»¤ã€‚
 
 
 
-2)--config¡£Õâ¸öÑ¡ÏîÊ¹ÎÒÃÇ¿ÉÒÔÑ¡ÔñÆäÖÐÒ»¸öÃüÁî³ÌÐòÀ´×÷Îªeditor,Ö´ÐÐ£º
+2)--configã€‚è¿™ä¸ªé€‰é¡¹ä½¿æˆ‘ä»¬å¯ä»¥é€‰æ‹©å…¶ä¸­ä¸€ä¸ªå‘½ä»¤ç¨‹åºæ¥ä½œä¸ºeditor,æ‰§è¡Œï¼š
 
 update-Alternatives --config editor
 
 
 
-Ê×ÏÈ£¬update-Alternatives ÔÚÒ»°ãÇé¿öÏÂÊÇÓÉpostinst ºÍ prerm ÕâÑùµÄ°²×°½Å±¾×Ô¶¯µ÷ÓÃµÄ£¬ËùÒÔÒ»¸ö Alternative µÄ×´Ì¬ÓÐÁ½ÖÖ£º×Ô¶¯ºÍÊÖ¶¯¡£Ã¿¸ö Alternative µÄ³õÊ¼×´Ì¬¶¼ÊÇ×Ô¶¯¡£Èç¹ûÏµÍ³·¢ÏÖ¹ÜÀíÔ±ÊÖ¶¯ÐÞ¸ÄÁËÒ»¸ö Alternative£¬ËüµÄ×´Ì¬¾Í´Ó×Ô¶¯±ä³ÉÁËÊÖ¶¯£¬ÕâÑù°²×°½Å±¾¾Í²»»á¸üÐÂËüÁË¡£Èç¹ûÄãÏ£Íû½«Ò»¸ö Alternative ±ä»Ø×Ô¶¯£¬Ö»ÒªÖ´ÐÐ´úÂë:
+é¦–å…ˆï¼Œupdate-Alternatives åœ¨ä¸€èˆ¬æƒ…å†µä¸‹æ˜¯ç”±postinst å’Œ prerm è¿™æ ·çš„å®‰è£…è„šæœ¬è‡ªåŠ¨è°ƒç”¨çš„ï¼Œæ‰€ä»¥ä¸€ä¸ª Alternative çš„çŠ¶æ€æœ‰ä¸¤ç§ï¼šè‡ªåŠ¨å’Œæ‰‹åŠ¨ã€‚æ¯ä¸ª Alternative çš„åˆå§‹çŠ¶æ€éƒ½æ˜¯è‡ªåŠ¨ã€‚å¦‚æžœç³»ç»Ÿå‘çŽ°ç®¡ç†å‘˜æ‰‹åŠ¨ä¿®æ”¹äº†ä¸€ä¸ª Alternativeï¼Œå®ƒçš„çŠ¶æ€å°±ä»Žè‡ªåŠ¨å˜æˆäº†æ‰‹åŠ¨ï¼Œè¿™æ ·å®‰è£…è„šæœ¬å°±ä¸ä¼šæ›´æ–°å®ƒäº†ã€‚å¦‚æžœä½ å¸Œæœ›å°†ä¸€ä¸ª Alternative å˜å›žè‡ªåŠ¨ï¼Œåªè¦æ‰§è¡Œä»£ç :
 
 update-Alternatives --auto editor
 
 
 
-general name -- ÕâÊÇÖ¸Ò»ÏµÁÐ¹¦ÄÜÏàËÆµÄ³ÌÐòµÄ¡°¹«ÓÃ¡±Ãû×Ö£¨°üÀ¨¾ø¶ÔÂ·¾¶£©£¬±ÈÈç /usr/bin/editor¡£
+general name -- è¿™æ˜¯æŒ‡ä¸€ç³»åˆ—åŠŸèƒ½ç›¸ä¼¼çš„ç¨‹åºçš„â€œå…¬ç”¨â€åå­—ï¼ˆåŒ…æ‹¬ç»å¯¹è·¯å¾„ï¼‰ï¼Œæ¯”å¦‚ /usr/bin/editorã€‚
 
-link -- ÕâÊÇÖ¸Ò»¸ö Alternative ÔÚ /etc/Alternative ÖÐµÄÃû×Ö£¬±ÈÈç editor¡£
+link -- è¿™æ˜¯æŒ‡ä¸€ä¸ª Alternative åœ¨ /etc/Alternative ä¸­çš„åå­—ï¼Œæ¯”å¦‚ editorã€‚
 
-Alternative -- ¹ËÃûË¼Òå£¬ÕâÊÇÖ¸Ò»¸ö¿ÉÑ¡µÄ³ÌÐòËùÔÚµÄÂ·¾¶£¨°üÀ¨¾ø¶ÔÂ·¾¶£©£¬±ÈÈç /usr/bin/vim¡£
-
-
-
--auto£¬--display ºÍ --config ¸úµÄ¶¼ÊÇ link¡£ÎÒÃÇÒªËµµÄµÚÈý¸ö¸ÅÄîÊÇÓÅÏÈ¼¶¡£Õâ¸ö±È½Ï¼òµ¥£¬µ±È»ÓÅÏÈ¼¶Ô½¸ßµÄ³ÌÐòÔ½ºÃÀ²¡£×îºóÒ»¸ö¸ÅÄîÊÇÖ÷ºÍ´ÓµÄ Alternative¡£ÏëÏë¿´£¬Äã½« /usr/bin/editor Á´½Óµ½ÁË vim£¬¿ÉÊÇµ±ÄãÖ´ÐÐ man editor Ê±¿´µ½µÄÈ´ÊÇ emacs µÄ manpage£¬Äã»á×öºÎ¸ÐÏëÄØ£¿Õâ¾ÍÒý³öÁËÖ÷ºÍ´Ó Alternative µÄ¸ÅÄîÁË£ºµ±¸üÐÂÖ÷µÄ Alternative Ê±£¬´ÓµÄ Alternative Ò²»á±»¸üÐÂ¡£
+Alternative -- é¡¾åæ€ä¹‰ï¼Œè¿™æ˜¯æŒ‡ä¸€ä¸ªå¯é€‰çš„ç¨‹åºæ‰€åœ¨çš„è·¯å¾„ï¼ˆåŒ…æ‹¬ç»å¯¹è·¯å¾„ï¼‰ï¼Œæ¯”å¦‚ /usr/bin/vimã€‚
 
 
 
-ÁíÍâÁ½¸öÑ¡Ïî£ºµÚÒ»¸öÊÇ --install¡£ËüµÄ¸ñÊ½ÊÇ£º
+-autoï¼Œ--display å’Œ --config è·Ÿçš„éƒ½æ˜¯ linkã€‚æˆ‘ä»¬è¦è¯´çš„ç¬¬ä¸‰ä¸ªæ¦‚å¿µæ˜¯ä¼˜å…ˆçº§ã€‚è¿™ä¸ªæ¯”è¾ƒç®€å•ï¼Œå½“ç„¶ä¼˜å…ˆçº§è¶Šé«˜çš„ç¨‹åºè¶Šå¥½å•¦ã€‚æœ€åŽä¸€ä¸ªæ¦‚å¿µæ˜¯ä¸»å’Œä»Žçš„ Alternativeã€‚æƒ³æƒ³çœ‹ï¼Œä½ å°† /usr/bin/editor é“¾æŽ¥åˆ°äº† vimï¼Œå¯æ˜¯å½“ä½ æ‰§è¡Œ man editor æ—¶çœ‹åˆ°çš„å´æ˜¯ emacs çš„ manpageï¼Œä½ ä¼šåšä½•æ„Ÿæƒ³å‘¢ï¼Ÿè¿™å°±å¼•å‡ºäº†ä¸»å’Œä»Ž Alternative çš„æ¦‚å¿µäº†ï¼šå½“æ›´æ–°ä¸»çš„ Alternative æ—¶ï¼Œä»Žçš„ Alternative ä¹Ÿä¼šè¢«æ›´æ–°ã€‚
+
+
+
+å¦å¤–ä¸¤ä¸ªé€‰é¡¹ï¼šç¬¬ä¸€ä¸ªæ˜¯ --installã€‚å®ƒçš„æ ¼å¼æ˜¯ï¼š
 
 update-Alternatives --install gen link Alt pri [--slave sgen slink sAlt] ...
 
 
 
-gen£¬link£¬Alt£¬pri ·Ö±ðÊÇÎÒÃÇÉÏÃæËµ¹ýµÄ¡£Èç¹ûÐèÒª´ÓµÄ Alternative£¬Äã¿ÉÒÔÓÃ--slave ¼ÓÔÚºóÃæ¡£Èç¹ûÄãÔÚÏòÒ»¸öÒÑ¾­´æÔÚµÄ Alternative ×éÖÐÌí¼ÓÐÂµÄ Alternatives£¬¸ÃÃüÁî»á°ÑÕâÐ© Alternatives ¼ÓÈëµ½Õâ¸öÒÑ¾­´æÔÚµÄ Alternative ×éµÄÁÐ±íÖÐ£¬²¢ÓÃÐÂµÄ¿ÉÑ¡ÃüÁî×÷ÎªÐÂµÄÃüÁî£»·ñÔò£¬½«»á½¨Á¢Ò»¸öÐÂµÄ×Ô¶¯µÄ Alternative×é¡£
+genï¼Œlinkï¼ŒAltï¼Œpri åˆ†åˆ«æ˜¯æˆ‘ä»¬ä¸Šé¢è¯´è¿‡çš„ã€‚å¦‚æžœéœ€è¦ä»Žçš„ Alternativeï¼Œä½ å¯ä»¥ç”¨--slave åŠ åœ¨åŽé¢ã€‚å¦‚æžœä½ åœ¨å‘ä¸€ä¸ªå·²ç»å­˜åœ¨çš„ Alternative ç»„ä¸­æ·»åŠ æ–°çš„ Alternativesï¼Œè¯¥å‘½ä»¤ä¼šæŠŠè¿™äº› Alternatives åŠ å…¥åˆ°è¿™ä¸ªå·²ç»å­˜åœ¨çš„ Alternative ç»„çš„åˆ—è¡¨ä¸­ï¼Œå¹¶ç”¨æ–°çš„å¯é€‰å‘½ä»¤ä½œä¸ºæ–°çš„å‘½ä»¤ï¼›å¦åˆ™ï¼Œå°†ä¼šå»ºç«‹ä¸€ä¸ªæ–°çš„è‡ªåŠ¨çš„ Alternativeç»„ã€‚
 
-ÎØºô£¡ÎÒ¼ÓÈëÁËÒ»¸ö´íÎóµÄ Alternative¡£ÎÒ²»ÏëÒªÕâ¸ö Alternative ÁË¡£ÔÚÕâÖÖÇé¿ö
+å‘œå‘¼ï¼æˆ‘åŠ å…¥äº†ä¸€ä¸ªé”™è¯¯çš„ Alternativeã€‚æˆ‘ä¸æƒ³è¦è¿™ä¸ª Alternative äº†ã€‚åœ¨è¿™ç§æƒ…å†µ
 
-ÏÂ£¬¿ÉÒÔÖ´ÐÐÏÂÃæµÄÃüÁî£º
+ä¸‹ï¼Œå¯ä»¥æ‰§è¡Œä¸‹é¢çš„å‘½ä»¤ï¼š
 
 update-Alternatives --remove name path
 
-# linuxÏµÍ³ÏÂÎÞ·¨·ÃÎÊµçÄÔÓ²ÅÌ
+# linuxç³»ç»Ÿä¸‹æ— æ³•è®¿é—®ç”µè„‘ç¡¬ç›˜
 
 ```
     Error mounting /dev/sda6 at /media/qiaokaiming/20F47472F4744BD2: Command-line 'mount -t "ntfs" -o "uhelper=udisks2,nodev,nosuid,uid=1000,gid=1000,dmask=0077,fmask=0177" "/dev/sda6" "/media/qiaokaiming/20F47472F4744BD2"' exited with non-zero exit status 14: The disk contains an unclean file system (0, 0).
@@ -2443,44 +1255,57 @@ update-Alternatives --remove name path
     read-only with the 'ro' mount option.
 ```
 
-ÄÇ¸öÌáÊ¾ÀïÓÐ£ºPlease resume and shutdown windows fully (no hibernation or fast restarting)¡£½øwin8°Ñ¡±¿ìËÙÆô¶¯¡°¹Øµô¾ÍºÃÁË¡£¿ØÖÆÃæ°å¡·ËùÓÐ¿ØÖÆÃæ°åÑ¡Ïî¡·µçÔ´Ñ¡Ïî¡·ÏµÍ³ÉèÖÃ¡·¹Ø±Õ¡°ÆôÓÃ¿ìËÙÆô¶¯¡±
+é‚£ä¸ªæç¤ºé‡Œæœ‰ï¼šPlease resume and shutdown windows fully (no hibernation or fast restarting)ã€‚è¿›win8æŠŠâ€å¿«é€Ÿå¯åŠ¨â€œå…³æŽ‰å°±å¥½äº†ã€‚æŽ§åˆ¶é¢æ¿ã€‹æ‰€æœ‰æŽ§åˆ¶é¢æ¿é€‰é¡¹ã€‹ç”µæºé€‰é¡¹ã€‹ç³»ç»Ÿè®¾ç½®ã€‹å…³é—­â€œå¯ç”¨å¿«é€Ÿå¯åŠ¨â€
 
-# /etc/profileºÍ/etc/environment(Ubuntu)
+# /etc/profileå’Œ/etc/environment(Ubuntu)
 
-ÏÈ½«export LANG=zh_CN¼ÓÈë/etc/profile ,ÍË³öÏµÍ³ÖØÐÂµÇÂ¼£¬µÇÂ¼ÌáÊ¾ÏÔÊ¾Ó¢ÎÄ¡£½«/etc/profile ÖÐµÄexport LANG=zh_CNÉ¾³ý£¬½«LNAG=zh_CN¼ÓÈë/etc/environment£¬ÍË³öÏµÍ³ÖØÐÂµÇÂ¼£¬µÇÂ¼ÌáÊ¾ÏÔÊ¾ÖÐÎÄ¡£
+å…ˆå°†export LANG=zh_CNåŠ å…¥/etc/profile ,é€€å‡ºç³»ç»Ÿé‡æ–°ç™»å½•ï¼Œç™»å½•æç¤ºæ˜¾ç¤ºè‹±æ–‡ã€‚å°†/etc/profile ä¸­çš„export LANG=zh_CNåˆ é™¤ï¼Œå°†LNAG=zh_CNåŠ å…¥/etc/environmentï¼Œé€€å‡ºç³»ç»Ÿé‡æ–°ç™»å½•ï¼Œç™»å½•æç¤ºæ˜¾ç¤ºä¸­æ–‡ã€‚
 
-Ô­ÒòÊÇÏµÍ³ÊÇÏÈÖ´ÐÐ/etc/environment£¬ºóÖ´ÐÐ/etc/profile¡£/etc/environmentÊÇÉèÖÃÕû¸öÏµÍ³µÄ»·¾³£¬¶ø/etc/profileÊÇÉèÖÃËùÓÐÓÃ»§µÄ»·¾³£¬Ç°ÕßÓëµÇÂ¼ÓÃ»§ÎÞ¹Ø£¬ºóÕßÓëµÇÂ¼ÓÃ»§ÓÐ¹Ø¡£ÏµÍ³Ó¦ÓÃ³ÌÐòµÄÖ´ÐÐÓëÓÃ»§»·¾³¿ÉÒÔÊÇÎÞ¹ØµÄ£¬µ«ÓëÏµÍ³»·¾³ÊÇÏà¹ØµÄ£¬ËùÒÔµ±ÄãµÇÂ¼Ê±£¬Äã¿´µ½µÄÌáÊ¾ÐÅÏ¢£¬ÏóÈÕÆÚ¡¢Ê±¼äÐÅÏ¢µÄÏÔÊ¾¸ñÊ½ÓëÏµÍ³»·¾³µÄLANGÊÇÏà¹ØµÄ£¬È±Ê¡LANG=en_US£¬Èç¹ûÏµÍ³»·¾³LANG=zh_CN£¬ÔòÌáÊ¾ÐÅÏ¢ÊÇÖÐÎÄµÄ£¬·ñÔòÊÇÓ¢ÎÄµÄ¡£µÇÂ½ÏµÍ³Ê±shell¶ÁÈ¡µÄË³ÐòÓ¦¸ÃÊÇ £º
+åŽŸå› æ˜¯ç³»ç»Ÿæ˜¯å…ˆæ‰§è¡Œ/etc/environmentï¼ŒåŽæ‰§è¡Œ/etc/profileã€‚/etc/environmentæ˜¯è®¾ç½®æ•´ä¸ªç³»ç»Ÿçš„çŽ¯å¢ƒï¼Œè€Œ/etc/profileæ˜¯è®¾ç½®æ‰€æœ‰ç”¨æˆ·çš„çŽ¯å¢ƒï¼Œå‰è€…ä¸Žç™»å½•ç”¨æˆ·æ— å…³ï¼ŒåŽè€…ä¸Žç™»å½•ç”¨æˆ·æœ‰å…³ã€‚ç³»ç»Ÿåº”ç”¨ç¨‹åºçš„æ‰§è¡Œä¸Žç”¨æˆ·çŽ¯å¢ƒå¯ä»¥æ˜¯æ— å…³çš„ï¼Œä½†ä¸Žç³»ç»ŸçŽ¯å¢ƒæ˜¯ç›¸å…³çš„ï¼Œæ‰€ä»¥å½“ä½ ç™»å½•æ—¶ï¼Œä½ çœ‹åˆ°çš„æç¤ºä¿¡æ¯ï¼Œè±¡æ—¥æœŸã€æ—¶é—´ä¿¡æ¯çš„æ˜¾ç¤ºæ ¼å¼ä¸Žç³»ç»ŸçŽ¯å¢ƒçš„LANGæ˜¯ç›¸å…³çš„ï¼Œç¼ºçœLANG=en_USï¼Œå¦‚æžœç³»ç»ŸçŽ¯å¢ƒLANG=zh_CNï¼Œåˆ™æç¤ºä¿¡æ¯æ˜¯ä¸­æ–‡çš„ï¼Œå¦åˆ™æ˜¯è‹±æ–‡çš„ã€‚ç™»é™†ç³»ç»Ÿæ—¶shellè¯»å–çš„é¡ºåºåº”è¯¥æ˜¯ ï¼š
 
-/etc/enviroment->/etc/profile-->$HOME/.profile-->$HOME/.env(Èç¹û´æÔÚ)
+/etc/enviroment->/etc/profile-->$HOME/.profile-->$HOME/.env(å¦‚æžœå­˜åœ¨)
 
-Èç¹ûÍ¬Ò»¸ö±äÁ¿ÔÚÓÃ»§»·¾³(/etc/profile)ºÍÏµÍ³»·¾³(/etc/environment)ÓÐ²»Í¬µÄÖµÄÇÓ¦¸ÃÊÇÒÔÓÃ»§»·¾³Îª×¼ÁË¡£ÐÞ¸Äenvironment Ö®ºó£¬Ö´ÐÐ source /etc/environment ¿ÉÒÔÁ¢¼´ÉúÐ§¡£
+å¦‚æžœåŒä¸€ä¸ªå˜é‡åœ¨ç”¨æˆ·çŽ¯å¢ƒ(/etc/profile)å’Œç³»ç»ŸçŽ¯å¢ƒ(/etc/environment)æœ‰ä¸åŒçš„å€¼é‚£åº”è¯¥æ˜¯ä»¥ç”¨æˆ·çŽ¯å¢ƒä¸ºå‡†äº†ã€‚ä¿®æ”¹environment ä¹‹åŽï¼Œæ‰§è¡Œ source /etc/environment å¯ä»¥ç«‹å³ç”Ÿæ•ˆã€‚
 
-# Configure²ÎÊý½âÊÍËµÃ÷
+# Linuxå¸¸ç”¨å‘½ä»¤
 
-Linux»·¾³ÏÂµÄÈí¼þ°²×°£¬²¢²»ÊÇÒ»¼þÈÝÒ×µÄÊÂÇé£»Èç¹ûÍ¨¹ýÔ´´úÂë±àÒëºóÔÚ°²×°£¬µ±È»ÊÂÇé¾Í¸üÎª¸´ÔÓÒ»Ð©£»ÏÖÔÚ°²×°¸÷ÖÖÈí¼þµÄ½Ì³Ì¶¼·Ç³£ÆÕ±é£»µ«Íò±ä²»ÀëÆäÖÐ£¬¶Ô»ù´¡ÖªÊ¶µÄÔúÊµÕÆÎÕ£¬°²×°¸÷ÖÖÈí¼þµÄÎÊÌâ¾ÍÓ­ÈÐ¶ø½âÁË¡£Configure½Å±¾ÅäÖÃ¹¤¾ß¾ÍÊÇ»ù´¡Ö®Ò»£¬ËüÊÇautoconfµÄ¹¤¾ßµÄ»ù±¾Ó¦ÓÃ¡£ÓëÒ»Ð©¼¼ÇÉÏà±È£¬ConfigureÏÔµÃ»ù´¡Ò»Ð©£¬µ±È»Ê¹ÓÃºÍÑ§Ï°ÆðÀ´¾ÍÏÔµÃ¿ÝÔï·¦Î¶Ò»Ð©£¬µ±È»Òª³ÉÎª¸ßÊÖ£¬¶Ô»ù´¡µÄÊìÏ¤²»ÄÜºöÂÔÅ¶¡£Îª´ËÎÒ×ªÔØÁËÒ»Æª¹ØÓÚConfigureÑ¡ÏîÅäÖÃµÄÏêÏ¸½éÉÜ¡£¹©´ó¼Ò²Î¿¼
+```shell
+	rdate # set the system's date from a remote host. (sudo apt-get install rdate)
+	ps â€“fu $USER | grep java # æ˜¾ç¤ºå½“å‰ç”¨æˆ·çš„æ‰€æœ‰çº¿ç¨‹
+	find . â€“name "*.log" | xargs grep error # åœ¨å½“å‰ç›®å½•çš„æ‰€æœ‰æ—¥å¿—æ–‡ä»¶ä¸­æŸ¥æ‰¾å…³é”®è¯"error"
+    glxinfo | grep rendering # æŸ¥è¯¢OpenGLæ˜¯å¦æ‰“å¼€ã€‚æç¤ºï¼šdirect rendering: Yes è¡¨æ˜Žå¯åŠ¨æ­£å¸¸
+    cfdisk -Ps # æŸ¥çœ‹ç£ç›˜åˆ†åŒºçš„ç”¨æ³•   cfdisk   -Ps ç£ç›˜è®¾å¤‡å åªæœ‰ä¸€ä¸ªç¡¬ç›˜ä¹Ÿå¯ä»¥ç”¨ cfdisk -Ps
+    cfdisk -Ps /dev/sda
+    sfdisk -l
+```
 
-'configure'½Å±¾ÓÐ´óÁ¿µÄÃüÁîÐÐÑ¡Ïî¡£¶Ô²»Í¬µÄÈí¼þ°üÀ´Ëµ£¬ÕâÐ©Ñ¡Ïî¿ÉÄÜ»áÓÐ±ä»¯£¬µ«ÊÇÐí¶à»ù±¾µÄÑ¡ÏîÊÇ²»»á¸Ä±äµÄ¡£´øÉÏ'--help'Ñ¡ÏîÖ´ÐÐ'configure'½Å±¾¿ÉÒÔ¿´µ½¿ÉÓÃµÄËùÓÐÑ¡Ïî¡£¾¡¹ÜÐí¶àÑ¡ÏîÊÇºÜÉÙÓÃµ½µÄ£¬µ«ÊÇµ±ÄãÎªÁËÌØÊâµÄÐèÇó¶øconfigureÒ»¸ö°üÊ±£¬ÖªµÀËûÃÇµÄ´æÔÚÊÇºÜÓÐÒæ´¦µÄ¡£ÏÂÃæ¶ÔÃ¿Ò»¸öÑ¡Ïî½øÐÐ¼òÂÔµÄ½éÉÜ£º
 
---cache-file=FILE 'configure'»áÔÚÄãµÄÏµÍ³ÉÏ²âÊÔ´æÔÚµÄÌØÐÔ(»òÕßbug!)¡£ÎªÁË¼ÓËÙËæºó½øÐÐµÄÅäÖÃ£¬²âÊÔµÄ½á¹û»á´æ´¢ÔÚÒ»¸öcache fileÀï¡£µ±configureÒ»¸öÃ¿¸ö×ÓÊ÷Àï¶¼ÓÐ'configure'½Å±¾µÄ¸´ÔÓµÄÔ´ÂëÊ÷Ê±£¬Ò»¸öºÜºÃµÄcache fileµÄ´æÔÚ»áÓÐºÜ´ó°ïÖú¡£
---help Êä³ö°ïÖúÐÅÏ¢¡£¼´Ê¹ÊÇÓÐ¾­ÑéµÄÓÃ»§Ò²Å¼¶ûÐèÒªÊ¹ÓÃÊ¹ÓÃ'--help'Ñ¡Ïî£¬ÒòÎªÒ»¸ö¸´ÔÓµÄÏîÄ¿»á°üº¬¸½¼ÓµÄÑ¡Ïî¡£ÀýÈç£¬GCC°üÀïµÄ'configure'½Å±¾¾Í°üº¬ÁËÔÊÐíÄã¿ØÖÆÊÇ·ñÉú³ÉºÍÔÚGCCÖÐÊ¹ÓÃGNU»ã±àÆ÷µÄÑ¡Ïî¡£
---no-create 'configure'ÖÐµÄÒ»¸öÖ÷Òªº¯Êý»áÖÆ×÷Êä³öÎÄ¼þ¡£´ËÑ¡Ïî×èÖ¹'configure'Éú³ÉÕâ¸öÎÄ¼þ¡£Äã¿ÉÒÔÈÏÎªÕâÊÇÒ»ÖÖÑÝÏ°(dry run)£¬¾¡¹Ü»º´æ(cache)ÈÔÈ»±»¸ÄÐ´ÁË¡£
+# Configureå‚æ•°è§£é‡Šè¯´æ˜Ž
+
+LinuxçŽ¯å¢ƒä¸‹çš„è½¯ä»¶å®‰è£…ï¼Œå¹¶ä¸æ˜¯ä¸€ä»¶å®¹æ˜“çš„äº‹æƒ…ï¼›å¦‚æžœé€šè¿‡æºä»£ç ç¼–è¯‘åŽåœ¨å®‰è£…ï¼Œå½“ç„¶äº‹æƒ…å°±æ›´ä¸ºå¤æ‚ä¸€äº›ï¼›çŽ°åœ¨å®‰è£…å„ç§è½¯ä»¶çš„æ•™ç¨‹éƒ½éžå¸¸æ™®éï¼›ä½†ä¸‡å˜ä¸ç¦»å…¶ä¸­ï¼Œå¯¹åŸºç¡€çŸ¥è¯†çš„æ‰Žå®žæŽŒæ¡ï¼Œå®‰è£…å„ç§è½¯ä»¶çš„é—®é¢˜å°±è¿Žåˆƒè€Œè§£äº†ã€‚Configureè„šæœ¬é…ç½®å·¥å…·å°±æ˜¯åŸºç¡€ä¹‹ä¸€ï¼Œå®ƒæ˜¯autoconfçš„å·¥å…·çš„åŸºæœ¬åº”ç”¨ã€‚ä¸Žä¸€äº›æŠ€å·§ç›¸æ¯”ï¼ŒConfigureæ˜¾å¾—åŸºç¡€ä¸€äº›ï¼Œå½“ç„¶ä½¿ç”¨å’Œå­¦ä¹ èµ·æ¥å°±æ˜¾å¾—æž¯ç‡¥ä¹å‘³ä¸€äº›ï¼Œå½“ç„¶è¦æˆä¸ºé«˜æ‰‹ï¼Œå¯¹åŸºç¡€çš„ç†Ÿæ‚‰ä¸èƒ½å¿½ç•¥å“¦ã€‚ä¸ºæ­¤æˆ‘è½¬è½½äº†ä¸€ç¯‡å…³äºŽConfigureé€‰é¡¹é…ç½®çš„è¯¦ç»†ä»‹ç»ã€‚ä¾›å¤§å®¶å‚è€ƒ
+
+'configure'è„šæœ¬æœ‰å¤§é‡çš„å‘½ä»¤è¡Œé€‰é¡¹ã€‚å¯¹ä¸åŒçš„è½¯ä»¶åŒ…æ¥è¯´ï¼Œè¿™äº›é€‰é¡¹å¯èƒ½ä¼šæœ‰å˜åŒ–ï¼Œä½†æ˜¯è®¸å¤šåŸºæœ¬çš„é€‰é¡¹æ˜¯ä¸ä¼šæ”¹å˜çš„ã€‚å¸¦ä¸Š'--help'é€‰é¡¹æ‰§è¡Œ'configure'è„šæœ¬å¯ä»¥çœ‹åˆ°å¯ç”¨çš„æ‰€æœ‰é€‰é¡¹ã€‚å°½ç®¡è®¸å¤šé€‰é¡¹æ˜¯å¾ˆå°‘ç”¨åˆ°çš„ï¼Œä½†æ˜¯å½“ä½ ä¸ºäº†ç‰¹æ®Šçš„éœ€æ±‚è€Œconfigureä¸€ä¸ªåŒ…æ—¶ï¼ŒçŸ¥é“ä»–ä»¬çš„å­˜åœ¨æ˜¯å¾ˆæœ‰ç›Šå¤„çš„ã€‚ä¸‹é¢å¯¹æ¯ä¸€ä¸ªé€‰é¡¹è¿›è¡Œç®€ç•¥çš„ä»‹ç»ï¼š
+
+--cache-file=FILE 'configure'ä¼šåœ¨ä½ çš„ç³»ç»Ÿä¸Šæµ‹è¯•å­˜åœ¨çš„ç‰¹æ€§(æˆ–è€…bug!)ã€‚ä¸ºäº†åŠ é€ŸéšåŽè¿›è¡Œçš„é…ç½®ï¼Œæµ‹è¯•çš„ç»“æžœä¼šå­˜å‚¨åœ¨ä¸€ä¸ªcache fileé‡Œã€‚å½“configureä¸€ä¸ªæ¯ä¸ªå­æ ‘é‡Œéƒ½æœ‰'configure'è„šæœ¬çš„å¤æ‚çš„æºç æ ‘æ—¶ï¼Œä¸€ä¸ªå¾ˆå¥½çš„cache fileçš„å­˜åœ¨ä¼šæœ‰å¾ˆå¤§å¸®åŠ©ã€‚
+--help è¾“å‡ºå¸®åŠ©ä¿¡æ¯ã€‚å³ä½¿æ˜¯æœ‰ç»éªŒçš„ç”¨æˆ·ä¹Ÿå¶å°”éœ€è¦ä½¿ç”¨ä½¿ç”¨'--help'é€‰é¡¹ï¼Œå› ä¸ºä¸€ä¸ªå¤æ‚çš„é¡¹ç›®ä¼šåŒ…å«é™„åŠ çš„é€‰é¡¹ã€‚ä¾‹å¦‚ï¼ŒGCCåŒ…é‡Œçš„'configure'è„šæœ¬å°±åŒ…å«äº†å…è®¸ä½ æŽ§åˆ¶æ˜¯å¦ç”Ÿæˆå’Œåœ¨GCCä¸­ä½¿ç”¨GNUæ±‡ç¼–å™¨çš„é€‰é¡¹ã€‚
+--no-create 'configure'ä¸­çš„ä¸€ä¸ªä¸»è¦å‡½æ•°ä¼šåˆ¶ä½œè¾“å‡ºæ–‡ä»¶ã€‚æ­¤é€‰é¡¹é˜»æ­¢'configure'ç”Ÿæˆè¿™ä¸ªæ–‡ä»¶ã€‚ä½ å¯ä»¥è®¤ä¸ºè¿™æ˜¯ä¸€ç§æ¼”ä¹ (dry run)ï¼Œå°½ç®¡ç¼“å­˜(cache)ä»ç„¶è¢«æ”¹å†™äº†ã€‚
 --quiet
 
 --silent
 
-µ±'configure'½øÐÐËûµÄ²âÊÔÊ±£¬»áÊä³ö¼òÒªµÄÐÅÏ¢À´¸æËßÓÃ»§ÕýÔÚ×÷Ê²Ã´¡£ÕâÑù×÷ÊÇÒòÎª'configure'¿ÉÄÜ»á±È½ÏÂý£¬Ã»ÓÐÕâÖÖÊä³öµÄ»°ÓÃ»§½«»á±»ÈÓÔÚÒ»ÅÔÒÉ»óÕýÔÚ·¢ÉúÊ²Ã´£¬Ê¹ÓÃÕâÁ½¸öÑ¡ÏîÖÐµÄÈÎºÎÒ»¸ö¶¼»á°ÑÄãÈÓµ½Ò»ÅÔ¡£(Òë×¢£ºÕâÁ½¾ä»°±È½ÏÓÐÒâË¼£¬Ô­ÎÄÊÇÕâÑùµÄ£ºIf there was no such output, the user would be left wondering what is happening. By using this option, you too can be left wondering!)
+å½“'configure'è¿›è¡Œä»–çš„æµ‹è¯•æ—¶ï¼Œä¼šè¾“å‡ºç®€è¦çš„ä¿¡æ¯æ¥å‘Šè¯‰ç”¨æˆ·æ­£åœ¨ä½œä»€ä¹ˆã€‚è¿™æ ·ä½œæ˜¯å› ä¸º'configure'å¯èƒ½ä¼šæ¯”è¾ƒæ…¢ï¼Œæ²¡æœ‰è¿™ç§è¾“å‡ºçš„è¯ç”¨æˆ·å°†ä¼šè¢«æ‰”åœ¨ä¸€æ—ç–‘æƒ‘æ­£åœ¨å‘ç”Ÿä»€ä¹ˆï¼Œä½¿ç”¨è¿™ä¸¤ä¸ªé€‰é¡¹ä¸­çš„ä»»ä½•ä¸€ä¸ªéƒ½ä¼šæŠŠä½ æ‰”åˆ°ä¸€æ—ã€‚(è¯‘æ³¨ï¼šè¿™ä¸¤å¥è¯æ¯”è¾ƒæœ‰æ„æ€ï¼ŒåŽŸæ–‡æ˜¯è¿™æ ·çš„ï¼šIf there was no such output, the user would be left wondering what is happening. By using this option, you too can be left wondering!)
 
 
 
 --version
 
-´òÓ¡ÓÃÀ´²úÉú'configure'½Å±¾µÄAutoconfµÄ°æ±¾ºÅ¡£
+æ‰“å°ç”¨æ¥äº§ç”Ÿ'configure'è„šæœ¬çš„Autoconfçš„ç‰ˆæœ¬å·ã€‚
 
 
 
 --prefix=PEWFIX
 
-'--prefix'ÊÇ×î³£ÓÃµÄÑ¡Ïî¡£ÖÆ×÷³öµÄ'Makefile'»á²é¿´Ëæ´ËÑ¡Ïî´«µÝµÄ²ÎÊý£¬µ±Ò»¸ö°üÔÚ°²×°Ê±¿ÉÒÔ³¹µ×µÄÖØÐÂ°²ÖÃËûµÄ½á¹¹¶ÀÁ¢²¿·Ö¡£¾ÙÒ»¸öÀý×Ó£¬µ±°²×°Ò»¸ö°ü£¬ÀýÈçËµEmacs£¬ÏÂÃæµÄÃüÁî½«»áÊ¹Emacs Lisp file±»°²×°µ½"/opt/gnu/share"£º
+'--prefix'æ˜¯æœ€å¸¸ç”¨çš„é€‰é¡¹ã€‚åˆ¶ä½œå‡ºçš„'Makefile'ä¼šæŸ¥çœ‹éšæ­¤é€‰é¡¹ä¼ é€’çš„å‚æ•°ï¼Œå½“ä¸€ä¸ªåŒ…åœ¨å®‰è£…æ—¶å¯ä»¥å½»åº•çš„é‡æ–°å®‰ç½®ä»–çš„ç»“æž„ç‹¬ç«‹éƒ¨åˆ†ã€‚ä¸¾ä¸€ä¸ªä¾‹å­ï¼Œå½“å®‰è£…ä¸€ä¸ªåŒ…ï¼Œä¾‹å¦‚è¯´Emacsï¼Œä¸‹é¢çš„å‘½ä»¤å°†ä¼šä½¿Emacs Lisp fileè¢«å®‰è£…åˆ°"/opt/gnu/share"ï¼š
 
 $ ./configure --prefix=/opt/gnu
 
@@ -2488,37 +1313,37 @@ $ ./configure --prefix=/opt/gnu
 
 --exec-prefix=EPREFIX
 
-Óë'--prefix'Ñ¡ÏîÀàËÆ£¬µ«ÊÇËûÊÇÓÃÀ´ÉèÖÃ½á¹¹ÒÐÀµµÄÎÄ¼þµÄ°²×°Î»ÖÃ£¬±àÒëºÃµÄ'emacs'¶þ½øÖÆÎÄ¼þ¾ÍÊÇÕâÑùÒ»¸öÎÊ¼þ¡£Èç¹ûÃ»ÓÐÉèÖÃÕâ¸öÑ¡ÏîµÄ»°£¬Ä¬ÈÏÊ¹ÓÃµÄÑ¡ÏîÖµ½«±»ÉèÎªºÍ'--prefix'Ñ¡ÏîÖµÒ»Ñù¡£
+ä¸Ž'--prefix'é€‰é¡¹ç±»ä¼¼ï¼Œä½†æ˜¯ä»–æ˜¯ç”¨æ¥è®¾ç½®ç»“æž„å€šèµ–çš„æ–‡ä»¶çš„å®‰è£…ä½ç½®ï¼Œç¼–è¯‘å¥½çš„'emacs'äºŒè¿›åˆ¶æ–‡ä»¶å°±æ˜¯è¿™æ ·ä¸€ä¸ªé—®ä»¶ã€‚å¦‚æžœæ²¡æœ‰è®¾ç½®è¿™ä¸ªé€‰é¡¹çš„è¯ï¼Œé»˜è®¤ä½¿ç”¨çš„é€‰é¡¹å€¼å°†è¢«è®¾ä¸ºå’Œ'--prefix'é€‰é¡¹å€¼ä¸€æ ·ã€‚
 
 
 
 --bindir=DIR
 
-Ö¸¶¨¶þ½øÖÆÎÄ¼þµÄ°²×°Î»ÖÃ£¬ÕâÀïµÄ¶þ½øÖÆÎÄ¼þ¶¨ÒåÎª¿ÉÒÔ±»ÓÃ»§Ö±½ÓÖ´ÐÐµÄ³ÌÐò¡£
+æŒ‡å®šäºŒè¿›åˆ¶æ–‡ä»¶çš„å®‰è£…ä½ç½®ï¼Œè¿™é‡Œçš„äºŒè¿›åˆ¶æ–‡ä»¶å®šä¹‰ä¸ºå¯ä»¥è¢«ç”¨æˆ·ç›´æŽ¥æ‰§è¡Œçš„ç¨‹åºã€‚
 
 
 
 --sbindir=DIR
 
-Ö¸¶¨³¬¼¶¶þ½øÖÆÎÄ¼þµÄ°²×°Î»ÖÃ¡£ÕâÊÇÒ»Ð©Í¨³£Ö»ÄÜÓÉ³¬¼¶ÓÃ»§Ö´ÐÐµÄ³ÌÐò¡£
+æŒ‡å®šè¶…çº§äºŒè¿›åˆ¶æ–‡ä»¶çš„å®‰è£…ä½ç½®ã€‚è¿™æ˜¯ä¸€äº›é€šå¸¸åªèƒ½ç”±è¶…çº§ç”¨æˆ·æ‰§è¡Œçš„ç¨‹åºã€‚
 
 
 
 --libexecdir=DIR
 
-Ö¸¶¨¿ÉÖ´ÐÐÖ§³ÖÎÄ¼þµÄ°²×°Î»ÖÃ¡£Óë¶þ½øÖÆÎÄ¼þÏà·´£¬ÕâÐ©ÎÄ¼þ´ÓÀ´²»Ö±½ÓÓÉÓÃ»§Ö´ÐÐ£¬µ«ÊÇ¿ÉÒÔ±»ÉÏÃæÌáµ½µÄ¶þ½øÖÆÎÄ¼þËùÖ´ÐÐ¡£
+æŒ‡å®šå¯æ‰§è¡Œæ”¯æŒæ–‡ä»¶çš„å®‰è£…ä½ç½®ã€‚ä¸ŽäºŒè¿›åˆ¶æ–‡ä»¶ç›¸åï¼Œè¿™äº›æ–‡ä»¶ä»Žæ¥ä¸ç›´æŽ¥ç”±ç”¨æˆ·æ‰§è¡Œï¼Œä½†æ˜¯å¯ä»¥è¢«ä¸Šé¢æåˆ°çš„äºŒè¿›åˆ¶æ–‡ä»¶æ‰€æ‰§è¡Œã€‚
 
 
 
 --datadir=DIR
 
-Ö¸¶¨Í¨ÓÃÊý¾ÝÎÄ¼þµÄ°²×°Î»ÖÃ¡£
+æŒ‡å®šé€šç”¨æ•°æ®æ–‡ä»¶çš„å®‰è£…ä½ç½®ã€‚
 
 
 
 --sysconfdir=DIR
 
-Ö¸¶¨ÔÚµ¥¸ö»úÆ÷ÉÏÊ¹ÓÃµÄÖ»¶ÁÊý¾ÝµÄ°²×°Î»ÖÃ¡£
+æŒ‡å®šåœ¨å•ä¸ªæœºå™¨ä¸Šä½¿ç”¨çš„åªè¯»æ•°æ®çš„å®‰è£…ä½ç½®ã€‚
 
 
 
@@ -2528,7 +1353,7 @@ $ ./configure --prefix=/opt/gnu
 
 
 
-Ö¸¶¨¿ÉÒÔÔÚ¶à¸ö»úÆ÷ÉÏ¹²ÏíµÄ¿ÉÐ´Êý¾ÝµÄ°²×°Î»ÖÃ¡£
+æŒ‡å®šå¯ä»¥åœ¨å¤šä¸ªæœºå™¨ä¸Šå…±äº«çš„å¯å†™æ•°æ®çš„å®‰è£…ä½ç½®ã€‚
 
 
 
@@ -2538,7 +1363,7 @@ $ ./configure --prefix=/opt/gnu
 
 
 
-Ö¸¶¨Ö»ÄÜµ¥»úÊ¹ÓÃµÄ¿ÉÐ´Êý¾ÝµÄ°²×°Î»ÖÃ¡£
+æŒ‡å®šåªèƒ½å•æœºä½¿ç”¨çš„å¯å†™æ•°æ®çš„å®‰è£…ä½ç½®ã€‚
 
 
 
@@ -2546,7 +1371,7 @@ $ ./configure --prefix=/opt/gnu
 
 
 
-Ö¸¶¨¿âÎÄ¼þµÄ°²×°Î»ÖÃ¡£
+æŒ‡å®šåº“æ–‡ä»¶çš„å®‰è£…ä½ç½®ã€‚
 
 
 
@@ -2556,7 +1381,7 @@ $ ./configure --prefix=/opt/gnu
 
 
 
-Ö¸¶¨CÍ·ÎÄ¼þµÄ°²×°Î»ÖÃ¡£ÆäËûÓïÑÔÈçC++µÄÍ·ÎÄ¼þÒ²¿ÉÒÔÊ¹ÓÃ´ËÑ¡Ïî¡£
+æŒ‡å®šCå¤´æ–‡ä»¶çš„å®‰è£…ä½ç½®ã€‚å…¶ä»–è¯­è¨€å¦‚C++çš„å¤´æ–‡ä»¶ä¹Ÿå¯ä»¥ä½¿ç”¨æ­¤é€‰é¡¹ã€‚
 
 
 
@@ -2566,7 +1391,7 @@ $ ./configure --prefix=/opt/gnu
 
 
 
-Ö¸¶¨Îª³ýGCCÍâ±àÒëÆ÷°²×°µÄCÍ·ÎÄ¼þµÄ°²×°Î»ÖÃ¡£
+æŒ‡å®šä¸ºé™¤GCCå¤–ç¼–è¯‘å™¨å®‰è£…çš„Cå¤´æ–‡ä»¶çš„å®‰è£…ä½ç½®ã€‚
 
 
 
@@ -2576,7 +1401,7 @@ $ ./configure --prefix=/opt/gnu
 
 
 
-Ö¸¶¨Info¸ñÊ½ÎÄµµµÄ°²×°Î»ÖÃ.InfoÊÇ±»GNU¹¤³ÌËùÊ¹ÓÃµÄÎÄµµ¸ñÊ½¡£
+æŒ‡å®šInfoæ ¼å¼æ–‡æ¡£çš„å®‰è£…ä½ç½®.Infoæ˜¯è¢«GNUå·¥ç¨‹æ‰€ä½¿ç”¨çš„æ–‡æ¡£æ ¼å¼ã€‚
 
 
 
@@ -2586,7 +1411,7 @@ $ ./configure --prefix=/opt/gnu
 
 
 
-Ö¸¶¨ÊÖ²áÒ³µÄ°²×°Î»ÖÃ¡£
+æŒ‡å®šæ‰‹å†Œé¡µçš„å®‰è£…ä½ç½®ã€‚
 
 
 
@@ -2596,7 +1421,7 @@ $ ./configure --prefix=/opt/gnu
 
 
 
-Õâ¸öÑ¡Ïî¶Ô°²×°Ã»ÓÐ×÷ÓÃ£¬Ëû»á¸æËß'configure'Ô´ÂëµÄÎ»ÖÃ¡£Ò»°ãÀ´Ëµ²»ÓÃÖ¸¶¨´ËÑ¡Ïî£¬ÒòÎª'configure'½Å±¾Ò»°ãºÍÔ´ÂëÎÄ¼þÔÚÍ¬Ò»¸öÄ¿Â¼ÏÂ¡£
+è¿™ä¸ªé€‰é¡¹å¯¹å®‰è£…æ²¡æœ‰ä½œç”¨ï¼Œä»–ä¼šå‘Šè¯‰'configure'æºç çš„ä½ç½®ã€‚ä¸€èˆ¬æ¥è¯´ä¸ç”¨æŒ‡å®šæ­¤é€‰é¡¹ï¼Œå› ä¸º'configure'è„šæœ¬ä¸€èˆ¬å’Œæºç æ–‡ä»¶åœ¨åŒä¸€ä¸ªç›®å½•ä¸‹ã€‚
 
 
 
@@ -2606,7 +1431,7 @@ $ ./configure --prefix=/opt/gnu
 
 
 
-Ö¸¶¨½«±»¼Óµ½Ëù°²×°³ÌÐòµÄÃû×ÖÉÏµÄÇ°×º¡£ÀýÈç£¬Ê¹ÓÃ'--program-prefix=g'À´configureÒ»¸öÃûÎª'tar'µÄ³ÌÐò½«»áÊ¹°²×°µÄ³ÌÐò±»ÃüÃûÎª'gtar'¡£µ±ºÍÆäËûµÄ°²×°Ñ¡ÏîÒ»ÆðÊ¹ÓÃÊ±£¬Õâ¸öÑ¡ÏîÖ»ÓÐµ±Ëû±»`Makefile.in'ÎÄ¼þÊ¹ÓÃÊ±²Å»á¹¤×÷¡£
+æŒ‡å®šå°†è¢«åŠ åˆ°æ‰€å®‰è£…ç¨‹åºçš„åå­—ä¸Šçš„å‰ç¼€ã€‚ä¾‹å¦‚ï¼Œä½¿ç”¨'--program-prefix=g'æ¥configureä¸€ä¸ªåä¸º'tar'çš„ç¨‹åºå°†ä¼šä½¿å®‰è£…çš„ç¨‹åºè¢«å‘½åä¸º'gtar'ã€‚å½“å’Œå…¶ä»–çš„å®‰è£…é€‰é¡¹ä¸€èµ·ä½¿ç”¨æ—¶ï¼Œè¿™ä¸ªé€‰é¡¹åªæœ‰å½“ä»–è¢«`Makefile.in'æ–‡ä»¶ä½¿ç”¨æ—¶æ‰ä¼šå·¥ä½œã€‚
 
 
 
@@ -2616,7 +1441,7 @@ $ ./configure --prefix=/opt/gnu
 
 
 
-Ö¸¶¨½«±»¼Óµ½Ëù°²×°³ÌÐòµÄÃû×ÖÉÏµÄºó×º¡£
+æŒ‡å®šå°†è¢«åŠ åˆ°æ‰€å®‰è£…ç¨‹åºçš„åå­—ä¸Šçš„åŽç¼€ã€‚
 
 
 
@@ -2626,7 +1451,7 @@ $ ./configure --prefix=/opt/gnu
 
 
 
-ÕâÀïµÄPROGRAMÊÇÒ»¸ösed½Å±¾¡£µ±Ò»¸ö³ÌÐò±»°²×°Ê±£¬ËûµÄÃû×Ö½«¾­¹ý`sed -e PROGRAM'À´²úÉú°²×°µÄÃû×Ö¡£
+è¿™é‡Œçš„PROGRAMæ˜¯ä¸€ä¸ªsedè„šæœ¬ã€‚å½“ä¸€ä¸ªç¨‹åºè¢«å®‰è£…æ—¶ï¼Œä»–çš„åå­—å°†ç»è¿‡`sed -e PROGRAM'æ¥äº§ç”Ÿå®‰è£…çš„åå­—ã€‚
 
 
 
@@ -2636,7 +1461,7 @@ $ ./configure --prefix=/opt/gnu
 
 
 
-Ö¸¶¨Èí¼þ°ü°²×°µÄÏµÍ³Æ½Ì¨¡£Èç¹ûÃ»ÓÐÖ¸¶¨£¬Ä¬ÈÏÖµ½«ÊÇ'--host'Ñ¡ÏîµÄÖµ¡£
+æŒ‡å®šè½¯ä»¶åŒ…å®‰è£…çš„ç³»ç»Ÿå¹³å°ã€‚å¦‚æžœæ²¡æœ‰æŒ‡å®šï¼Œé»˜è®¤å€¼å°†æ˜¯'--host'é€‰é¡¹çš„å€¼ã€‚
 
 
 
@@ -2646,7 +1471,7 @@ $ ./configure --prefix=/opt/gnu
 
 
 
-Ö¸¶¨Èí¼þÔËÐÐµÄÏµÍ³Æ½Ì¨¡£Èç¹ûÃ»ÓÐÖ¸¶¨¡£½«»áÔËÐÐ`config.guess'À´¼ì²â¡£
+æŒ‡å®šè½¯ä»¶è¿è¡Œçš„ç³»ç»Ÿå¹³å°ã€‚å¦‚æžœæ²¡æœ‰æŒ‡å®šã€‚å°†ä¼šè¿è¡Œ`config.guess'æ¥æ£€æµ‹ã€‚
 
 
 
@@ -2656,7 +1481,7 @@ $ ./configure --prefix=/opt/gnu
 
 
 
-Ö¸¶¨Èí¼þÃæÏò(target to)µÄÏµÍ³Æ½Ì¨¡£ÕâÖ÷ÒªÔÚ³ÌÐòÓïÑÔ¹¤¾ßÈç±àÒëÆ÷ºÍ»ã±àÆ÷ÉÏÏÂÎÄÖÐÆð×÷ÓÃ¡£Èç¹ûÃ»ÓÐÖ¸¶¨£¬Ä¬ÈÏ½«Ê¹ÓÃ'--host'Ñ¡ÏîµÄÖµ¡£
+æŒ‡å®šè½¯ä»¶é¢å‘(target to)çš„ç³»ç»Ÿå¹³å°ã€‚è¿™ä¸»è¦åœ¨ç¨‹åºè¯­è¨€å·¥å…·å¦‚ç¼–è¯‘å™¨å’Œæ±‡ç¼–å™¨ä¸Šä¸‹æ–‡ä¸­èµ·ä½œç”¨ã€‚å¦‚æžœæ²¡æœ‰æŒ‡å®šï¼Œé»˜è®¤å°†ä½¿ç”¨'--host'é€‰é¡¹çš„å€¼ã€‚
 
 
 
@@ -2666,7 +1491,7 @@ $ ./configure --prefix=/opt/gnu
 
 
 
-Ò»Ð©Èí¼þ°ü¿ÉÒÔÑ¡ÔñÕâ¸öÑ¡ÏîÀ´Ìá¹©Îª´óÐÍÑ¡ÏîµÄ±àÒëÊ±ÅäÖÃ£¬ÀýÈçÊ¹ÓÃKerberosÈÏÖ¤ÏµÍ³»òÕßÒ»¸öÊµÑéÐÔµÄ±àÒëÆ÷×îÓÅÅäÖÃ¡£Èç¹ûÄ¬ÈÏÊÇÌá¹©ÕâÐ©ÌØÐÔ£¬¿ÉÒÔÊ¹ÓÃ'--disable-FEATURE'À´½ûÓÃËü£¬ÕâÀï'FEATURE'ÊÇÌØÐÔµÄÃû×Ö£¬ÀýÈç£º
+ä¸€äº›è½¯ä»¶åŒ…å¯ä»¥é€‰æ‹©è¿™ä¸ªé€‰é¡¹æ¥æä¾›ä¸ºå¤§åž‹é€‰é¡¹çš„ç¼–è¯‘æ—¶é…ç½®ï¼Œä¾‹å¦‚ä½¿ç”¨Kerberosè®¤è¯ç³»ç»Ÿæˆ–è€…ä¸€ä¸ªå®žéªŒæ€§çš„ç¼–è¯‘å™¨æœ€ä¼˜é…ç½®ã€‚å¦‚æžœé»˜è®¤æ˜¯æä¾›è¿™äº›ç‰¹æ€§ï¼Œå¯ä»¥ä½¿ç”¨'--disable-FEATURE'æ¥ç¦ç”¨å®ƒï¼Œè¿™é‡Œ'FEATURE'æ˜¯ç‰¹æ€§çš„åå­—ï¼Œä¾‹å¦‚ï¼š
 
 
 
@@ -2680,7 +1505,7 @@ $ ./configure --disable-gui
 
 
 
-Ïà·´µÄ£¬Ò»Ð©Èí¼þ°ü¿ÉÄÜÌá¹©ÁËÒ»Ð©Ä¬ÈÏ±»½ûÖ¹µÄÌØÐÔ,¿ÉÒÔÊ¹ÓÃ'--enable-FEATURE'À´ÆðÓÃËü¡£ÕâÀï'FEATURE'ÊÇÌØÐÔµÄÃû×Ö¡£Ò»¸öÌØÐÔ¿ÉÄÜ»á½ÓÊÜÒ»¸ö¿ÉÑ¡µÄ²ÎÊý¡£ÀýÈç£º
+ç›¸åçš„ï¼Œä¸€äº›è½¯ä»¶åŒ…å¯èƒ½æä¾›äº†ä¸€äº›é»˜è®¤è¢«ç¦æ­¢çš„ç‰¹æ€§,å¯ä»¥ä½¿ç”¨'--enable-FEATURE'æ¥èµ·ç”¨å®ƒã€‚è¿™é‡Œ'FEATURE'æ˜¯ç‰¹æ€§çš„åå­—ã€‚ä¸€ä¸ªç‰¹æ€§å¯èƒ½ä¼šæŽ¥å—ä¸€ä¸ªå¯é€‰çš„å‚æ•°ã€‚ä¾‹å¦‚ï¼š
 
 
 
@@ -2688,7 +1513,7 @@ $ ./configure --enable-buffers=128
 
 
 
-`--enable-FEATURE=no'ÓëÉÏÃæÌáµ½µÄ'--disable-FEATURE'ÊÇÍ¬ÒåµÄ¡£
+`--enable-FEATURE=no'ä¸Žä¸Šé¢æåˆ°çš„'--disable-FEATURE'æ˜¯åŒä¹‰çš„ã€‚
 
 
 
@@ -2698,7 +1523,7 @@ $ ./configure --enable-buffers=128
 
 
 
-ÔÚ×ÔÓÉÈí¼þÉçÇøÀï£¬ÓÐÊ¹ÓÃÒÑÓÐÈí¼þ°üºÍ¿âµÄÓÅÐã´«Í³¡£µ±ÓÃ'configure'À´ÅäÖÃÒ»¸öÔ´ÂëÊ÷Ê±£¬¿ÉÒÔÌá¹©ÆäËûÒÑ¾­°²×°µÄÈí¼þ°üµÄÐÅÏ¢¡£ÀýÈç£¬ÒÐÀµÓÚTclºÍTkµÄBLTÆ÷¼þ¹¤¾ß°ü¡£ÒªÅäÖÃBLT£¬¿ÉÄÜÐèÒª¸ø'configure'Ìá¹©Ò»Ð©¹ØÓÚÎÒÃÇ°ÑTclºÍTk×°µÄºÎ´¦µÄÐÅÏ¢£º
+åœ¨è‡ªç”±è½¯ä»¶ç¤¾åŒºé‡Œï¼Œæœ‰ä½¿ç”¨å·²æœ‰è½¯ä»¶åŒ…å’Œåº“çš„ä¼˜ç§€ä¼ ç»Ÿã€‚å½“ç”¨'configure'æ¥é…ç½®ä¸€ä¸ªæºç æ ‘æ—¶ï¼Œå¯ä»¥æä¾›å…¶ä»–å·²ç»å®‰è£…çš„è½¯ä»¶åŒ…çš„ä¿¡æ¯ã€‚ä¾‹å¦‚ï¼Œå€šèµ–äºŽTclå’ŒTkçš„BLTå™¨ä»¶å·¥å…·åŒ…ã€‚è¦é…ç½®BLTï¼Œå¯èƒ½éœ€è¦ç»™'configure'æä¾›ä¸€äº›å…³äºŽæˆ‘ä»¬æŠŠTclå’ŒTkè£…çš„ä½•å¤„çš„ä¿¡æ¯ï¼š
 
 
 
@@ -2706,7 +1531,7 @@ $ ./configure --with-tcl=/usr/local --with-tk=/usr/local
 
 
 
-'--with-PACKAGE=no'ÓëÏÂÃæ½«Ìáµ½µÄ'--without-PACKAGE'ÊÇÍ¬ÒåµÄ¡£
+'--with-PACKAGE=no'ä¸Žä¸‹é¢å°†æåˆ°çš„'--without-PACKAGE'æ˜¯åŒä¹‰çš„ã€‚
 
 
 
@@ -2716,7 +1541,7 @@ $ ./configure --with-tcl=/usr/local --with-tk=/usr/local
 
 
 
-ÓÐÊ±ºòÄã¿ÉÄÜ²»ÏëÈÃÄãµÄÈí¼þ°üÓëÏµÍ³ÒÑÓÐµÄÈí¼þ°ü½»»¥¡£ÀýÈç£¬Äã¿ÉÄÜ²»ÏëÈÃÄãµÄÐÂ±àÒëÆ÷Ê¹ÓÃGNU ld¡£Í¨¹ýÊ¹ÓÃÕâ¸öÑ¡Ïî¿ÉÒÔ×öµ½ÕâÒ»µã£º
+æœ‰æ—¶å€™ä½ å¯èƒ½ä¸æƒ³è®©ä½ çš„è½¯ä»¶åŒ…ä¸Žç³»ç»Ÿå·²æœ‰çš„è½¯ä»¶åŒ…äº¤äº’ã€‚ä¾‹å¦‚ï¼Œä½ å¯èƒ½ä¸æƒ³è®©ä½ çš„æ–°ç¼–è¯‘å™¨ä½¿ç”¨GNU ldã€‚é€šè¿‡ä½¿ç”¨è¿™ä¸ªé€‰é¡¹å¯ä»¥åšåˆ°è¿™ä¸€ç‚¹ï¼š
 
 
 
@@ -2730,7 +1555,7 @@ $ ./configure --without-gnu-ld
 
 
 
-Õâ¸öÑ¡ÏîÊÇ'--with-PACKAGE'Ñ¡ÏîµÄÒ»¸öÌØÀý¡£ÔÚAutoconf×î³õ±»¿ª·¢³öÀ´Ê±£¬Á÷ÐÐÊ¹ÓÃ'configure'À´×÷ÎªImakeµÄÒ»¸ö±äÍ¨·½·¨À´ÖÆ×÷ÔËÐÐÓÚXµÄÈí¼þ¡£'--x-includes'Ñ¡ÏîÌá¹©ÁËÏò'configure'½Å±¾Ö¸Ã÷°üº¬X11Í·ÎÄ¼þµÄÄ¿Â¼µÄ·½·¨¡£
+è¿™ä¸ªé€‰é¡¹æ˜¯'--with-PACKAGE'é€‰é¡¹çš„ä¸€ä¸ªç‰¹ä¾‹ã€‚åœ¨Autoconfæœ€åˆè¢«å¼€å‘å‡ºæ¥æ—¶ï¼Œæµè¡Œä½¿ç”¨'configure'æ¥ä½œä¸ºImakeçš„ä¸€ä¸ªå˜é€šæ–¹æ³•æ¥åˆ¶ä½œè¿è¡ŒäºŽXçš„è½¯ä»¶ã€‚'--x-includes'é€‰é¡¹æä¾›äº†å‘'configure'è„šæœ¬æŒ‡æ˜ŽåŒ…å«X11å¤´æ–‡ä»¶çš„ç›®å½•çš„æ–¹æ³•ã€‚
 
 
 
@@ -2740,13 +1565,13 @@ $ ./configure --without-gnu-ld
 
 
 
-ÀàËÆµÄ£¬'--x-libraries'Ñ¡ÏîÌá¹©ÁËÏò'configure'½Å±¾Ö¸Ã÷°üº¬X11¿âµÄÄ¿Â¼µÄ·½·¨¡£
+ç±»ä¼¼çš„ï¼Œ'--x-libraries'é€‰é¡¹æä¾›äº†å‘'configure'è„šæœ¬æŒ‡æ˜ŽåŒ…å«X11åº“çš„ç›®å½•çš„æ–¹æ³•ã€‚
 
 
 
 
 
-ÔÚÔ´ÂëÊ÷ÖÐÔËÐÐ'configure'ÊÇ²»±ØÒªµÄÍ¬Ê±Ò²ÊÇ²»ºÃµÄ¡£Ò»¸öÓÉ'configure'²úÉúµÄÁ¼ºÃµÄ'Makefile'¿ÉÒÔ¹¹ÖþÔ´ÂëÊôÓÚÁíÒ»¿ÃÊ÷µÄÈí¼þ°ü¡£ÔÚÒ»¸ö¶ÀÁ¢ÓÚÔ´ÂëµÄÊ÷ÖÐ¹¹ÖþÅÉÉúµÄÎÄ¼þµÄºÃ´¦ÊÇºÜÃ÷ÏÔµÄ£ºÅÉÉúµÄÎÄ¼þ£¬ÈçÄ¿±êÎÄ¼þ£¬»áÁèÂÒµÄÉ¢²¼ÓÚÔ´ÂëÊ÷¡£ÕâÒ²Ê¹ÔÚÁíÒ»¸ö²»Í¬µÄÏµÍ³»òÓÃ²»Í¬µÄÅäÖÃÑ¡Ïî¹¹ÖþÍ¬ÑùµÄÄ¿±êÎÄ¼þ·Ç³£À§ÄÑ¡£½¨ÒéÊ¹ÓÃÈý¿ÃÊ÷£ºÒ»¿ÃÔ´ÂëÊ÷(source tree)£¬Ò»¿Ã¹¹ÖþÊ÷(build tree)£¬Ò»¿Ã°²×°Ê÷(install tree)¡£ÕâÀïÓÐÒ»¸öºÜ½Ó½üµÄÀý×Ó£¬ÊÇÊ¹ÓÃÕâÖÖ·½·¨À´¹¹ÖþGNU malloc°ü£º
+åœ¨æºç æ ‘ä¸­è¿è¡Œ'configure'æ˜¯ä¸å¿…è¦çš„åŒæ—¶ä¹Ÿæ˜¯ä¸å¥½çš„ã€‚ä¸€ä¸ªç”±'configure'äº§ç”Ÿçš„è‰¯å¥½çš„'Makefile'å¯ä»¥æž„ç­‘æºç å±žäºŽå¦ä¸€æ£µæ ‘çš„è½¯ä»¶åŒ…ã€‚åœ¨ä¸€ä¸ªç‹¬ç«‹äºŽæºç çš„æ ‘ä¸­æž„ç­‘æ´¾ç”Ÿçš„æ–‡ä»¶çš„å¥½å¤„æ˜¯å¾ˆæ˜Žæ˜¾çš„ï¼šæ´¾ç”Ÿçš„æ–‡ä»¶ï¼Œå¦‚ç›®æ ‡æ–‡ä»¶ï¼Œä¼šå‡Œä¹±çš„æ•£å¸ƒäºŽæºç æ ‘ã€‚è¿™ä¹Ÿä½¿åœ¨å¦ä¸€ä¸ªä¸åŒçš„ç³»ç»Ÿæˆ–ç”¨ä¸åŒçš„é…ç½®é€‰é¡¹æž„ç­‘åŒæ ·çš„ç›®æ ‡æ–‡ä»¶éžå¸¸å›°éš¾ã€‚å»ºè®®ä½¿ç”¨ä¸‰æ£µæ ‘ï¼šä¸€æ£µæºç æ ‘(source tree)ï¼Œä¸€æ£µæž„ç­‘æ ‘(build tree)ï¼Œä¸€æ£µå®‰è£…æ ‘(install tree)ã€‚è¿™é‡Œæœ‰ä¸€ä¸ªå¾ˆæŽ¥è¿‘çš„ä¾‹å­ï¼Œæ˜¯ä½¿ç”¨è¿™ç§æ–¹æ³•æ¥æž„ç­‘GNU mallocåŒ…ï¼š
 
 
 
@@ -2838,91 +1663,89 @@ creating ./config.status
 
 
 
-ÕâÑùÕâ¿Ã¹¹ÖþÊ÷¾Í±»ÅäÖÃÁË£¬ÏÂÃæ¿ÉÒÔ¼ÌÐø¹¹ÖþºÍ°²×°Õâ¸ö°üµ½Ä¬ÈÏµÄÎ»ÖÃ'/usr/local'£º
+è¿™æ ·è¿™æ£µæž„ç­‘æ ‘å°±è¢«é…ç½®äº†ï¼Œä¸‹é¢å¯ä»¥ç»§ç»­æž„ç­‘å’Œå®‰è£…è¿™ä¸ªåŒ…åˆ°é»˜è®¤çš„ä½ç½®'/usr/local'ï¼š
 
 
 
 $ make all && make install
 
-# fedoraÈçºÎÓÃyumÇå³ýÎÞÓÃµÄÈí¼þ°ü
+# fedoraå¦‚ä½•ç”¨yumæ¸…é™¤æ— ç”¨çš„è½¯ä»¶åŒ…
 
-yum history [undo|redo|info|...]: yumµÄ×ÓÃüÁî£¬ÏÔÊ¾ÄãyumµÄÀúÊ·¼ÇÂ¼£¬²¢ÇÒ¿ÉÒÔ³·ÏúÖ¸¶¨µÄ¼ÇÂ¼(undo)£¬ÖØ×öÖ¸¶¨¼ÇÂ¼(redo)µÈµÈ£¬¸ü¶àµÄ¹¦ÄÜ¿´man yum
+yum history [undo|redo|info|...]: yumçš„å­å‘½ä»¤ï¼Œæ˜¾ç¤ºä½ yumçš„åŽ†å²è®°å½•ï¼Œå¹¶ä¸”å¯ä»¥æ’¤é”€æŒ‡å®šçš„è®°å½•(undo)ï¼Œé‡åšæŒ‡å®šè®°å½•(redo)ç­‰ç­‰ï¼Œæ›´å¤šçš„åŠŸèƒ½çœ‹man yum
 
-yum-plugin-remove-with-leaves£ºÐ¶ÔØÈí¼þ°üÊ±°ÑÒò´Ë²úÉúµÄÒ¶×ÓÒ»ÆðÐ¶ÔØµô£¬ÓÃµÄÊ±ºò±ð¼Ó-yÑ¡Ïî£¬¿´Çå³þÁËÔÙÈ·ÈÏ£¬ÓÐÐ©·Ç³£´óµÄÒÀÀµÊ÷»á°ÑÖ÷ÒªµÄÏµÍ³×é¼þÐ¶ÔØµô£¬¾ßÌåÓÃ·¨°²×°Íê¸Ã²å¼þÒÔºó¿´°ïÖú:yum --help£¬Õâ¸öyum²å¼þÓ¦¸Ã¾ÍÊÇ×îÌù½üÄãÐèÇóµÄ£¬²»¹ý¼Ç×¡£¬É÷ÓÃ£¬Èç¹ûÄÜ´Óyum historyÀï²éµ½¼ÇÂ¼µÄ»°£¬»¹ÊÇÓÃyum history undoÀ´²Ù×÷±È½Ï°²È«¡£
+yum-plugin-remove-with-leavesï¼šå¸è½½è½¯ä»¶åŒ…æ—¶æŠŠå› æ­¤äº§ç”Ÿçš„å¶å­ä¸€èµ·å¸è½½æŽ‰ï¼Œç”¨çš„æ—¶å€™åˆ«åŠ -yé€‰é¡¹ï¼Œçœ‹æ¸…æ¥šäº†å†ç¡®è®¤ï¼Œæœ‰äº›éžå¸¸å¤§çš„ä¾èµ–æ ‘ä¼šæŠŠä¸»è¦çš„ç³»ç»Ÿç»„ä»¶å¸è½½æŽ‰ï¼Œå…·ä½“ç”¨æ³•å®‰è£…å®Œè¯¥æ’ä»¶ä»¥åŽçœ‹å¸®åŠ©:yum --helpï¼Œè¿™ä¸ªyumæ’ä»¶åº”è¯¥å°±æ˜¯æœ€è´´è¿‘ä½ éœ€æ±‚çš„ï¼Œä¸è¿‡è®°ä½ï¼Œæ…Žç”¨ï¼Œå¦‚æžœèƒ½ä»Žyum historyé‡ŒæŸ¥åˆ°è®°å½•çš„è¯ï¼Œè¿˜æ˜¯ç”¨yum history undoæ¥æ“ä½œæ¯”è¾ƒå®‰å…¨ã€‚
 
-yum-plugin-show-leaves£º Ö´ÐÐ°²×°/Ð¶ÔØÒÔºó£¬ÏÔÊ¾´Ë´Î²Ù×÷Ëù²úÉúµÄÒ¶×Ó£¬×Ô¶¯ÔËÐÐ£¬ÎÞÐèÒª²Ù×÷¡£
+yum-plugin-show-leavesï¼š æ‰§è¡Œå®‰è£…/å¸è½½ä»¥åŽï¼Œæ˜¾ç¤ºæ­¤æ¬¡æ“ä½œæ‰€äº§ç”Ÿçš„å¶å­ï¼Œè‡ªåŠ¨è¿è¡Œï¼Œæ— éœ€è¦æ“ä½œã€‚
 
-rpmreaper: »ùÓÚncurses¿âµÄ³ÌÐò£¬Í¨¹ý»ùÓÚÎÄ±¾µÄgui½çÃæÏÔÊ¾ÏµÍ³ÖÐµÄrpmÒÀÀµÊ÷£¬Ìá¹©¸÷ÖÖ²Ù×÷£¬¾ßÌåµÄ¿´man¡£
+rpmreaper: åŸºäºŽncursesåº“çš„ç¨‹åºï¼Œé€šè¿‡åŸºäºŽæ–‡æœ¬çš„guiç•Œé¢æ˜¾ç¤ºç³»ç»Ÿä¸­çš„rpmä¾èµ–æ ‘ï¼Œæä¾›å„ç§æ“ä½œï¼Œå…·ä½“çš„çœ‹manã€‚
 
 
 
-#ÈçºÎÔÚUbuntuÖÐÆÁ±ÎÒ»¸öÍøÕ¾
+#å¦‚ä½•åœ¨Ubuntuä¸­å±è”½ä¸€ä¸ªç½‘ç«™
 
-´ò¿ª/etc/hostsÎÄ¼þ£¬Ìí¼ÓÏÂÃæÕâÐÐ
+æ‰“å¼€/etc/hostsæ–‡ä»¶ï¼Œæ·»åŠ ä¸‹é¢è¿™è¡Œ
 
 127.0.0.1 domain.com
 
-¸ü»»domain.comÎªÄãÒªÆÁ±ÎµÄÍøÕ¾£¬ÄãÍê³ÉÁË±à¼­´¦Àíºó£¬±£´æ¸ÃÎÄ¼þ²¢ÍË³ö¡£
+æ›´æ¢domain.comä¸ºä½ è¦å±è”½çš„ç½‘ç«™ï¼Œä½ å®Œæˆäº†ç¼–è¾‘å¤„ç†åŽï¼Œä¿å­˜è¯¥æ–‡ä»¶å¹¶é€€å‡ºã€‚
 
-#½«½Å±¾ÖÐµÄÐÅÏ¢Êä³öµ½ÎÄ¼þÖÐ
+#å°†è„šæœ¬ä¸­çš„ä¿¡æ¯è¾“å‡ºåˆ°æ–‡ä»¶ä¸­
 
-LinuxÖÐ£¬½Å±¾ÓïÑÔ»·¾³ÖÐ£¬¼´ÄãÓÃmake xxx¼°ÆäËûÒ»Ð©ÆÕÍ¨linuxÃüÁî£¬±ÈÈçls£¬findµÈ£¬²»Í¬µÄÊý×Ö£¬´ú±í²»Í¬µÄº¬Òå£º 
+Linuxä¸­ï¼Œè„šæœ¬è¯­è¨€çŽ¯å¢ƒä¸­ï¼Œå³ä½ ç”¨make xxxåŠå…¶ä»–ä¸€äº›æ™®é€šlinuxå‘½ä»¤ï¼Œæ¯”å¦‚lsï¼Œfindç­‰ï¼Œä¸åŒçš„æ•°å­—ï¼Œä»£è¡¨ä¸åŒçš„å«ä¹‰ï¼š
 
-0´ú±í±ê×¼ÊäÈë
+0ä»£è¡¨æ ‡å‡†è¾“å…¥
 
-1´ú±í±ê×¼Êä³ö
+1ä»£è¡¨æ ‡å‡†è¾“å‡º
 
-2´ú±í´íÎóÊä³ö
+2ä»£è¡¨é”™è¯¯è¾“å‡º
 
-¶øÏµÍ³Ä¬ÈÏµÄstdinÊÇ¼üÅÌ£¬stdout£¬stderr¶¼ÊÇÆÁÄ»£¬ËùÒÔµ±ÄãÖ´ÐÐÃüÁî£¬±ÈÈçmakeºó£¬ËùÊä³öµÄÐÅÏ¢£¬¶¼ÊÇ¿ÉÒÔÔÚÆÁÄ»ÉÏ¿´µ½µÄ¡£ËùÒÔÏëÒª½«¶ÔÓ¦ÐÅÏ¢Êä³öµ½Ä³¸öÎÄ¼þÖÐ£¬¾ÍÓÃ¶ÔÓ¦µÄÊý×Ö¼ÓÉÏÖØ¶¨Ïò·ûºÅ'>'£¬ÊµÏÖ½«ÕâÐ©ÐÅÏ¢ÖØÐÂ¶¨Ïòµ½¶ÔÓ¦µÄÎÄ¼þÖÐ¼´¿É¡£ÏÂÃæÒÔmakeÃüÁîÎªÀýÀ´ËµÃ÷£¬ÈçºÎ°Ñ¶ÔÓ¦µÄÐÅÏ¢£¬Êä³öµ½¶ÔÓ¦µÄÎÄ¼þÖÐ£º
+è€Œç³»ç»Ÿé»˜è®¤çš„stdinæ˜¯é”®ç›˜ï¼Œstdoutï¼Œstderréƒ½æ˜¯å±å¹•ï¼Œæ‰€ä»¥å½“ä½ æ‰§è¡Œå‘½ä»¤ï¼Œæ¯”å¦‚makeåŽï¼Œæ‰€è¾“å‡ºçš„ä¿¡æ¯ï¼Œéƒ½æ˜¯å¯ä»¥åœ¨å±å¹•ä¸Šçœ‹åˆ°çš„ã€‚æ‰€ä»¥æƒ³è¦å°†å¯¹åº”ä¿¡æ¯è¾“å‡ºåˆ°æŸä¸ªæ–‡ä»¶ä¸­ï¼Œå°±ç”¨å¯¹åº”çš„æ•°å­—åŠ ä¸Šé‡å®šå‘ç¬¦å·'>'ï¼Œå®žçŽ°å°†è¿™äº›ä¿¡æ¯é‡æ–°å®šå‘åˆ°å¯¹åº”çš„æ–‡ä»¶ä¸­å³å¯ã€‚ä¸‹é¢ä»¥makeå‘½ä»¤ä¸ºä¾‹æ¥è¯´æ˜Žï¼Œå¦‚ä½•æŠŠå¯¹åº”çš„ä¿¡æ¯ï¼Œè¾“å‡ºåˆ°å¯¹åº”çš„æ–‡ä»¶ä¸­ï¼š
 
-1.ÏëÒª°ÑmakeÊä³öµÄÈ«²¿ÐÅÏ¢£¬Êä³öµ½Ä³¸öÎÄ¼þÖÐ£¬×î³£¼ûµÄ°ì·¨¾ÍÊÇ£º
+1.æƒ³è¦æŠŠmakeè¾“å‡ºçš„å…¨éƒ¨ä¿¡æ¯ï¼Œè¾“å‡ºåˆ°æŸä¸ªæ–‡ä»¶ä¸­ï¼Œæœ€å¸¸è§çš„åŠžæ³•å°±æ˜¯ï¼š
 2.
 3.make xxx > build_output.txt
 4.
-5.´ËÊ±Ä¬ÈÏÇé¿öÊÇÃ»ÓÐ¸Ä±ä2=stderrµÄÊä³ö·½Ê½£¬»¹ÊÇÆÁÄ»£¬ËùÒÔ£¬Èç¹ûÓÐ´íÎóÐÅÏ¢£¬»¹ÊÇ¿ÉÒÔÔÚÆÁÄ»ÉÏ¿´µ½µÄ¡£
+5.æ­¤æ—¶é»˜è®¤æƒ…å†µæ˜¯æ²¡æœ‰æ”¹å˜2=stderrçš„è¾“å‡ºæ–¹å¼ï¼Œè¿˜æ˜¯å±å¹•ï¼Œæ‰€ä»¥ï¼Œå¦‚æžœæœ‰é”™è¯¯ä¿¡æ¯ï¼Œè¿˜æ˜¯å¯ä»¥åœ¨å±å¹•ä¸Šçœ‹åˆ°çš„ã€‚
 6.
-7.2.Ö»ÐèÒª°ÑmakeÊä³öÖÐµÄ´íÎó£¨¼°¾¯¸æ£©ÐÅÏ¢Êä³öµ½ÎÄ¼þÖÐing£¬¿ÉÒÔÓÃ£º
+7.2.åªéœ€è¦æŠŠmakeè¾“å‡ºä¸­çš„é”™è¯¯ï¼ˆåŠè­¦å‘Šï¼‰ä¿¡æ¯è¾“å‡ºåˆ°æ–‡ä»¶ä¸­ingï¼Œå¯ä»¥ç”¨ï¼š
 8.
 9.make xxx 2> build_output.txt
 10.
-11.ÏàÓ¦µØ£¬ÓÉÓÚ1=stdoutÃ»ÓÐ±ä£¬»¹ÊÇÆÁÄ»£¬ËùÒÔ£¬ÄÇÐ©ÃüÁîÖ´ÐÐÊ±ºòÊä³öµÄÕý³£ÐÅÏ¢£¬»¹ÊÇ»áÊä³öµ½ÆÁÄ»ÉÏ£¬Äã»¹ÊÇ¿ÉÒÔÔÚÆÁÄ»ÉÏ¿´µ½µÄ¡£
+11.ç›¸åº”åœ°ï¼Œç”±äºŽ1=stdoutæ²¡æœ‰å˜ï¼Œè¿˜æ˜¯å±å¹•ï¼Œæ‰€ä»¥ï¼Œé‚£äº›å‘½ä»¤æ‰§è¡Œæ—¶å€™è¾“å‡ºçš„æ­£å¸¸ä¿¡æ¯ï¼Œè¿˜æ˜¯ä¼šè¾“å‡ºåˆ°å±å¹•ä¸Šï¼Œä½ è¿˜æ˜¯å¯ä»¥åœ¨å±å¹•ä¸Šçœ‹åˆ°çš„ã€‚
 12.
-13.3.Ö»ÐèÒª°ÑmakeÊä³öÖÐµÄÕý³££¨·Ç´íÎó£¬·Ç¾¯¸æ£©µÄÐÅÏ¢Êä³öµ½ÎÄ¼þÖÐ£¬¿ÉÒÔÓÃ£º
+13.3.åªéœ€è¦æŠŠmakeè¾“å‡ºä¸­çš„æ­£å¸¸ï¼ˆéžé”™è¯¯ï¼Œéžè­¦å‘Šï¼‰çš„ä¿¡æ¯è¾“å‡ºåˆ°æ–‡ä»¶ä¸­ï¼Œå¯ä»¥ç”¨ï¼š
 14.
 15.make xxx 1> build_output.txt
 16.
-17.ÏàÓ¦µØ£¬ÓÉÓÚ2=stderrÃ»ÓÐ±ä£¬»¹ÊÇÆÁÄ»£¬ËùÒÔ£¬ÄÇÐ©ÃüÁîÖ´ÐÐÊ±ºòÊä³öµÄ´íÎóÐÅÏ¢£¬»¹ÊÇ»áÊä³öµ½ÆÁÄ»ÉÏ£¬Äã»¹ÊÇ¿ÉÒÔÔÚÆÁÄ»ÉÏ¿´µ½µÄ¡£
+17.ç›¸åº”åœ°ï¼Œç”±äºŽ2=stderræ²¡æœ‰å˜ï¼Œè¿˜æ˜¯å±å¹•ï¼Œæ‰€ä»¥ï¼Œé‚£äº›å‘½ä»¤æ‰§è¡Œæ—¶å€™è¾“å‡ºçš„é”™è¯¯ä¿¡æ¯ï¼Œè¿˜æ˜¯ä¼šè¾“å‡ºåˆ°å±å¹•ä¸Šï¼Œä½ è¿˜æ˜¯å¯ä»¥åœ¨å±å¹•ä¸Šçœ‹åˆ°çš„ã€‚
 18.
-19.4.ÏëÒª°ÑÕý³£Êä³öÐÅÏ¢ºÍ´íÎóÐÅÏ¢Êä³öµ½·Ö±ðµÄÎÄ¼þÖÐ£¬¿ÉÒÔÓÃ£º
+19.4.æƒ³è¦æŠŠæ­£å¸¸è¾“å‡ºä¿¡æ¯å’Œé”™è¯¯ä¿¡æ¯è¾“å‡ºåˆ°åˆ†åˆ«çš„æ–‡ä»¶ä¸­ï¼Œå¯ä»¥ç”¨ï¼š
 20.
 21.make xxx 1> build_output_normal.txt 2>build_output_error.txt
 22.
-23.¼´ÁªºÏÊ¹ÓÃÁË1ºÍ2£¬Õý³£ÐÅÏ¢ºÍ´íÎóÐÅÏ¢£¬¶¼Êä³öµ½¶ÔÓ¦ÎÄ¼þÖÐÁË¡£
+23.å³è”åˆä½¿ç”¨äº†1å’Œ2ï¼Œæ­£å¸¸ä¿¡æ¯å’Œé”™è¯¯ä¿¡æ¯ï¼Œéƒ½è¾“å‡ºåˆ°å¯¹åº”æ–‡ä»¶ä¸­äº†ã€‚
 24.
-25.5. ËùÓÐµÄÐÅÏ¢¶¼Êä³öµ½Í¬Ò»¸öÎÄ¼þÖÐ£º
+25.5. æ‰€æœ‰çš„ä¿¡æ¯éƒ½è¾“å‡ºåˆ°åŒä¸€ä¸ªæ–‡ä»¶ä¸­ï¼š
 26.
 27.make xxx > build_output_all.txt 2>&1
 28.
-29.ÆäÖÐµÄ2>&1±íÊ¾´íÎóÐÅÏ¢Êä³öµ½&1ÖÐ£¬¶ø&1£¬Ö¸µÄÊÇÇ°ÃæµÄÄÇ¸öÎÄ¼þ£ºbuild_output_all.txt ¡£
+29.å…¶ä¸­çš„2>&1è¡¨ç¤ºé”™è¯¯ä¿¡æ¯è¾“å‡ºåˆ°&1ä¸­ï¼Œè€Œ&1ï¼ŒæŒ‡çš„æ˜¯å‰é¢çš„é‚£ä¸ªæ–‡ä»¶ï¼šbuild_output_all.txt ã€‚
 30.
-31.×¢Òâ£ºÉÏÃæËùÓÐµÄ1,2µÈÊý×Ö£¬ºóÃæ½ô¸ú×Å´óÓÚºÅ'>' £¬ÖÐ¼ä²»ÄÜÓÐ¿Õ¸ñ¡£
+31.æ³¨æ„ï¼šä¸Šé¢æ‰€æœ‰çš„1,2ç­‰æ•°å­—ï¼ŒåŽé¢ç´§è·Ÿç€å¤§äºŽå·'>' ï¼Œä¸­é—´ä¸èƒ½æœ‰ç©ºæ ¼ã€‚
 32.
 6.make xxx > build_output_all.txt 2>&1
 7.
-Ò²¿ÉÒÔÐ´³É£º
+ä¹Ÿå¯ä»¥å†™æˆï¼š
 
 make xxx 2>&1 | tee build_output_all.txt
 
-Î¨Ò»µÄÇø±ð¾ÍÊÇ£¬stdoutºÍstderr±»µ¼ÈëÎÄ¼þµÄÍ¬Ê±£¬»¹¿ÉÒÔ¿´µ½ÆÁÄ»Êä³ö¡£
+å”¯ä¸€çš„åŒºåˆ«å°±æ˜¯ï¼Œstdoutå’Œstderrè¢«å¯¼å…¥æ–‡ä»¶çš„åŒæ—¶ï¼Œè¿˜å¯ä»¥çœ‹åˆ°å±å¹•è¾“å‡ºã€‚
 
-#³£ÓÃÃüÁî
+#å¸¸ç”¨å‘½ä»¤
 
-## ps ¨Cfu $USER | grep java
 
-## find . ¨Cname ¡°*.log¡± | xargs grep ¡­
 
-ÏÔÊ¾µ±Ç°ÓÃ»§µÄËùÓÐÏß³Ì
+
 
 ## ack
 
@@ -2930,57 +1753,43 @@ http://beyondgrep.com/
 
 ## Glances
 
-top ÃüÁîÊÇ Linux ÏÂµÄÒ»¸öÊµÊ±ÈÎÎñ¹ÜÀíÆ÷£¬ Í¬Ê±Ò²ÊÇÓÃÓÚÔÚ GNU/Linux ·¢ÐÐ°æÖÐÑ°ÕÒÏµÍ³ÐÔÄÜ·½ÃæµÄÆ¿¾±£¬²¢°ïÖúÎÒÃÇ×÷³öÕýÈ·²Ù×÷µÄ³£ÓÃÏµÍ³¼àÊÓ¹¤¾ß¡£ ËýÓÐ×ÅÒ»¸ö¼«Îª¼ò½àµÄ½çÃæ£¬²¢×Ô´øÉÙÁ¿µÄ¿ÉÒÔ°ïÖúÎÒÃÇ¿ìËÙÁË½âÏµÍ³ÐÔÄÜµÄÊµÓÃÑ¡Ïî¡£µ«ÊÇ£¬ÓÐÐ©Ê±ºòÏëÒªÍ¨¹ýËýÑ°ÕÒÒ»¸öÕ¼ÓÃÏµÍ³×ÊÔ´±È½Ï´óµÄÓ¦ÓÃ»ò½ø³Ì¿ÉÄÜ»á±È½ÏÀ§ÄÑ¡£ ÒòÎª top ÃüÁî±¾Éí²¢²»»á°ïÖúÎÒÃÇ¸ßÁÁÄÇÐ©³ÔÌ«¶à CPU£¬ÄÚ´æ£¬»òÕßÆäËû×ÊÔ´µÄ³ÌÐò¡£ÎªÁË´ïµ½Õâ¸öÄ¿±ê£¬ÕâÀïÎÒÃÇ½«½éÉÜÒ»¿î³¬Å£±ÆµÄÏµÍ³¼àÊÓ³ÌÐò ¡ª¡ª Glances¡£ Ëý¿ÉÒÔ×Ô¶¯¸ßÁÁÀûÓÃ×î¸ßÏµÍ³×ÊÔ´µÄ³ÌÐò£¬²¢Îª Linux/Unix ·þÎñÆ÷Ìá¹©¾¡¿ÉÄÜ¶àµÄÐÅÏ¢¡£
+top å‘½ä»¤æ˜¯ Linux ä¸‹çš„ä¸€ä¸ªå®žæ—¶ä»»åŠ¡ç®¡ç†å™¨ï¼Œ åŒæ—¶ä¹Ÿæ˜¯ç”¨äºŽåœ¨ GNU/Linux å‘è¡Œç‰ˆä¸­å¯»æ‰¾ç³»ç»Ÿæ€§èƒ½æ–¹é¢çš„ç“¶é¢ˆï¼Œå¹¶å¸®åŠ©æˆ‘ä»¬ä½œå‡ºæ­£ç¡®æ“ä½œçš„å¸¸ç”¨ç³»ç»Ÿç›‘è§†å·¥å…·ã€‚ å¥¹æœ‰ç€ä¸€ä¸ªæžä¸ºç®€æ´çš„ç•Œé¢ï¼Œå¹¶è‡ªå¸¦å°‘é‡çš„å¯ä»¥å¸®åŠ©æˆ‘ä»¬å¿«é€Ÿäº†è§£ç³»ç»Ÿæ€§èƒ½çš„å®žç”¨é€‰é¡¹ã€‚ä½†æ˜¯ï¼Œæœ‰äº›æ—¶å€™æƒ³è¦é€šè¿‡å¥¹å¯»æ‰¾ä¸€ä¸ªå ç”¨ç³»ç»Ÿèµ„æºæ¯”è¾ƒå¤§çš„åº”ç”¨æˆ–è¿›ç¨‹å¯èƒ½ä¼šæ¯”è¾ƒå›°éš¾ã€‚ å› ä¸º top å‘½ä»¤æœ¬èº«å¹¶ä¸ä¼šå¸®åŠ©æˆ‘ä»¬é«˜äº®é‚£äº›åƒå¤ªå¤š CPUï¼Œå†…å­˜ï¼Œæˆ–è€…å…¶ä»–èµ„æºçš„ç¨‹åºã€‚ä¸ºäº†è¾¾åˆ°è¿™ä¸ªç›®æ ‡ï¼Œè¿™é‡Œæˆ‘ä»¬å°†ä»‹ç»ä¸€æ¬¾è¶…ç‰›é€¼çš„ç³»ç»Ÿç›‘è§†ç¨‹åº â€”â€” Glancesã€‚ å¥¹å¯ä»¥è‡ªåŠ¨é«˜äº®åˆ©ç”¨æœ€é«˜ç³»ç»Ÿèµ„æºçš„ç¨‹åºï¼Œå¹¶ä¸º Linux/Unix æœåŠ¡å™¨æä¾›å°½å¯èƒ½å¤šçš„ä¿¡æ¯ã€‚
 
 https://github.com/nicolargo/glances/
 
 
 
-##»ñÈ¡Ä³³ÌÐòµÄÍêÕûÂ·¾¶Ãû
+##èŽ·å–æŸç¨‹åºçš„å®Œæ•´è·¯å¾„å
 
-µ±ÎÒÃÇÔÚLinuxÏÂÓÃps aux ¿´µ½ÓÐÈçÏÂÒ»¸ö½ø³ÌÊ±£º
+å½“æˆ‘ä»¬åœ¨Linuxä¸‹ç”¨ps aux çœ‹åˆ°æœ‰å¦‚ä¸‹ä¸€ä¸ªè¿›ç¨‹æ—¶ï¼š
 
 root     19463  0.0  0.0   1508   272 pts/0    S    16:43   0:00 ./server-a
 
-×÷ÎªÏµÍ³¹ÜÀíÔ±µÄÄã£¬ÈçºÎ»ñµÃ³ÌÐòserver-aËùÔÚµÄÍêÕûÂ·¾¶ÄØ£¿ÔÚ´Ë¸æËß´ó¼ÒÒ»¸ö¼òµ¥µÄ½â¾ö°ì·¨£º´ÓÉÏÃæps µÄÊä³öÖÐ¿ÉÒÔ¿´³ö19463ÊÇserver-aµÄPIDºÅ£¬ÄÇÃ´ÔËÐÐÈçÏÂÃüÁî£ºcat /proc/19463/environ ,Êä³öÈçÏÂ£º
+ä½œä¸ºç³»ç»Ÿç®¡ç†å‘˜çš„ä½ ï¼Œå¦‚ä½•èŽ·å¾—ç¨‹åºserver-aæ‰€åœ¨çš„å®Œæ•´è·¯å¾„å‘¢ï¼Ÿåœ¨æ­¤å‘Šè¯‰å¤§å®¶ä¸€ä¸ªç®€å•çš„è§£å†³åŠžæ³•ï¼šä»Žä¸Šé¢ps çš„è¾“å‡ºä¸­å¯ä»¥çœ‹å‡º19463æ˜¯server-açš„PIDå·ï¼Œé‚£ä¹ˆè¿è¡Œå¦‚ä¸‹å‘½ä»¤ï¼šcat /proc/19463/environ ,è¾“å‡ºå¦‚ä¸‹ï¼š
 
 PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/gamesGNOME_KEYRING_PID=2269USER=jiangxinLANGUAGE=zh_CN:XDG_SEAT=seat0TEXTDOMAIN=im-configCOMPIZ_CONFIG_PROFILE=ubuntuHOME=/home/jiangxinQT4_IM_MODULE=fcitxDESKTOP_SESSION=ubuntuXDG_SEAT_PATH=/org/freedesktop/DisplayManager/Seat0GTK_MODULES=overlay-scrollbar:unity-gtk-moduleGNOME_KEYRING_CONTROL=/run/user/1000/keyring-wrFl7VQT_QPA_PLATFORMTHEME=appmenu-qt5MANDATORY_PATH=/usr/share/gconf/ubuntu.mandatory.pathIM_CONFIG_PHASE=1SESSIONTYPE=gnome-sessionLOGNAME=jiangxinGTK_IM_MODULE=fcitxDEFAULTS_PATH=/usr/share/gconf/ubuntu.default.pathXDG_SESSION_ID=c3GDM_LANG=zh_CNXDG_SESSION_PATH=/org/freedesktop/DisplayManager/Session0XDG_RUNTIME_DIR=/run/user/1000DISPLAY=:0XDG_CURRENT_DESKTOP=UnityLANG=zh_CN.UTF-8XAUTHORITY=/home/jiangxin/.XauthorityXMODIFIERS=@im=fcitxXDG_GREETER_DATA_DIR=/var/lib/lightdm-data/jiangxinSHELL=/bin/bashGDMSESSION=ubuntuTEXTDOMAINDIR=/usr/share/locale/XDG_VTNR=7QT_IM_MODULE=ximPWD=/home/jiangxinXDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntu:/usr/share/upstart/xdg:/etc/xdgXDG_DATA_DIRS=/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/CLUTTER_IM_MODULE=ximSELINUX_INIT=YESUBUNTU_MENUPROXY=1DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-BqwNaGt8wESSH_AUTH_SOCK=/run/user/1000/keyring-wrFl7V/sshSSH_AGENT_PID=2383SSH_AGENT_LAUNCHER=upstartGNOME_DESKTOP_SESSION_ID=this-is-deprecatedJOB=gnome-sessionINSTANCE=UnityUPSTART_EVENTS=started startingUPSTART_JOB=unity-settings-daemonUPSTART_INSTANCE=UPSTART_SESSION=unix:abstract=/com/ubuntu/upstart-session/1000/2299GPG_AGENT_INFO=/run/user/1000/keyring-wrFl7V/gpg:0:1
 
-×¢ÒâÊä³öÖÐµÄ£ºPWD=/data1/1230
+æ³¨æ„è¾“å‡ºä¸­çš„ï¼šPWD=/data1/1230
 
-ÓÉ´Ë¿ÉÒÔÅÐ¶Ï³ö³ÌÐòserver-aËùÔÚÍê³ÉÂ·¾¶Îª£º /data1/1230/server-a
+ç”±æ­¤å¯ä»¥åˆ¤æ–­å‡ºç¨‹åºserver-aæ‰€åœ¨å®Œæˆè·¯å¾„ä¸ºï¼š /data1/1230/server-a
 
-À´£¬ÑéÖ¤Ò»ÏÂ°É£º
+æ¥ï¼ŒéªŒè¯ä¸€ä¸‹å§ï¼š
 
 bash-3.2# ls -l /data1/1230/server-a
 
 -rwxr-xr-x 1 root root 5842 Feb 25 16:42 /data1/1230/server-a
 
-¹ûÈ»Èç´Ë£¡
+æžœç„¶å¦‚æ­¤ï¼
 
-##Ê±ÖÓÐ£×¼:rdate
 
-rdate(receive date)
 
-¹¦ÄÜËµÃ÷£ºÏÔÊ¾ÆäËûÖ÷»úµÄÈÕÆÚÓëÊ±¼ä¡£
+##æ‰“å°æŸä¸€æ–‡ä»¶å¤¹ä¸‹çš„æ‰€æœ‰æ–‡ä»¶ååŠå…¶è¡Œæ•°
 
-Óï·¨£ºrdate [-ps][Ö÷»úÃû³Æ»òIPµØÖ·...]
+è¿™é‡Œåˆ†åˆ«è¦è€ƒè™‘åˆ°è¯¥æ–‡ä»¶å¤¹æœ‰æˆ–æ²¡æœ‰å­æ–‡ä»¶å¤¹çš„æƒ…å†µï¼Œç”¨shellå®žçŽ°æ‰“å°æŸä¸€æ–‡ä»¶å¤¹ä¸‹çš„æ‰€æœ‰æ–‡ä»¶ï¼ˆå¦‚æžœæ˜¯å­æ–‡ä»¶å¤¹ä¸‹çš„æ–‡ä»¶ï¼Œéœ€è¦æ‰“å°ç›¸å¯¹ç›®å½•ï¼‰åŠè¯¥æ–‡ä»¶çš„è¡Œæ•°æ¸…å•ã€‚åˆ—è¡¨ç±»ä¼¼è¿™æ ·ï¼š
 
-²¹³äËµÃ÷£ºÖ´ÐÐrdateÖ¸Áî£¬ÏòÆäËûÖ÷»úÑ¯ÎÊÏµÍ³Ê±¼ä²¢ÏÔÊ¾³öÀ´¡£
+filename1 100è¡Œ
 
-²ÎÊý£º
-
-  -p ¡¡ÏÔÊ¾Ô¶¶ËÖ÷»úµÄÈÕÆÚÓëÊ±¼ä¡£ 
-
-  -s ¡¡°Ñ´ÓÔ¶¶ËÖ÷»úÊÕµ½µÄÈÕÆÚºÍÊ±¼ä£¬»Ø´æµ½±¾µØÖ÷»úµÄÏµÍ³Ê±¼ä¡£
-
-##´òÓ¡Ä³Ò»ÎÄ¼þ¼ÐÏÂµÄËùÓÐÎÄ¼þÃû¼°ÆäÐÐÊý
-
-ÕâÀï·Ö±ðÒª¿¼ÂÇµ½¸ÃÎÄ¼þ¼ÐÓÐ»òÃ»ÓÐ×ÓÎÄ¼þ¼ÐµÄÇé¿ö£¬ÓÃshellÊµÏÖ´òÓ¡Ä³Ò»ÎÄ¼þ¼ÐÏÂµÄËùÓÐÎÄ¼þ£¨Èç¹ûÊÇ×ÓÎÄ¼þ¼ÐÏÂµÄÎÄ¼þ£¬ÐèÒª´òÓ¡Ïà¶ÔÄ¿Â¼£©¼°¸ÃÎÄ¼þµÄÐÐÊýÇåµ¥¡£ÁÐ±íÀàËÆÕâÑù£º
-
-filename1 100ÐÐ
-
-file/filename2 200ÐÐ
+file/filename2 200è¡Œ
 
 .......
 
@@ -2990,61 +1799,61 @@ find -name "*" | xargs wc -l
 
 
 
-¼Ó -type f ²ÎÊý£¬¹ýÂËµô¶ÔÄ¿Â¼µÄwc
+åŠ  -type f å‚æ•°ï¼Œè¿‡æ»¤æŽ‰å¯¹ç›®å½•çš„wc
 
 find -name "*" -type f | xargs wc -l
 
 
 
-ÏëÒªµÃµ½Ö¸¶¨µÄ¸ñÊ½£¬ÓÃÍòÄÜµÄawk£º
+æƒ³è¦å¾—åˆ°æŒ‡å®šçš„æ ¼å¼ï¼Œç”¨ä¸‡èƒ½çš„awkï¼š
 
-find -name "*" -type f| xargs wc -l | awk '{print $2" "$1"ÐÐ"}'
+find -name "*" -type f| xargs wc -l | awk '{print $2" "$1"è¡Œ"}'
 
 
 
-find ºóÃæ¿É¼ÓÖ¸¶¨Ä¿Â¼£¬Èç"/etc/"
+find åŽé¢å¯åŠ æŒ‡å®šç›®å½•ï¼Œå¦‚"/etc/"
 
-find "/etc/" -name "*" -type f| xargs wc -l | awk '{print $2" "$1"ÐÐ"}'
+find "/etc/" -name "*" -type f| xargs wc -l | awk '{print $2" "$1"è¡Œ"}'
 
-##²é¿´cpuÊÇ·ñÖ§³Ö64Î»
+##æŸ¥çœ‹cpuæ˜¯å¦æ”¯æŒ64ä½
 
-²é¿´cpuinfoÖÐÊÇ·ñÓÐlm£¬Èç¹ûÓÐlm±íÊ¾Ö§³Ö64Î»£¬lmµÄÒâË¼ÊÇlong mode£¬¾ßÌåÃüÁîÈçÏÂ£º
+æŸ¥çœ‹cpuinfoä¸­æ˜¯å¦æœ‰lmï¼Œå¦‚æžœæœ‰lmè¡¨ç¤ºæ”¯æŒ64ä½ï¼Œlmçš„æ„æ€æ˜¯long modeï¼Œå…·ä½“å‘½ä»¤å¦‚ä¸‹ï¼š
 
-cat /proc/cpuinfo | grep flags ¼ì²éÊä³öÀïÃæÊÇ·ñÓÐ lm ×Ö·û »ò cat /proc/cpuinfo | grep flags | grep lm | wc -l Êä³ö½á¹û´óÓÚ 0 ±íÊ¾Ö§³Ö64Î»
+cat /proc/cpuinfo | grep flags æ£€æŸ¥è¾“å‡ºé‡Œé¢æ˜¯å¦æœ‰ lm å­—ç¬¦ æˆ– cat /proc/cpuinfo | grep flags | grep lm | wc -l è¾“å‡ºç»“æžœå¤§äºŽ 0 è¡¨ç¤ºæ”¯æŒ64ä½
 
- 
 
-²é¿´»úÆ÷ÓÐ¼¸¸öcpu£¬ÊÇ·ñÖ§³Ö64Î»
 
-1. ²é¿´ÎïÀíCPUµÄ¸öÊý
+æŸ¥çœ‹æœºå™¨æœ‰å‡ ä¸ªcpuï¼Œæ˜¯å¦æ”¯æŒ64ä½
+
+1. æŸ¥çœ‹ç‰©ç†CPUçš„ä¸ªæ•°
 
 #cat /proc/cpuinfo |grep "physical id"|sort |uniq|wc -l
 
- 
 
-2. ²é¿´Âß¼­CPUµÄ¸öÊý
+
+2. æŸ¥çœ‹é€»è¾‘CPUçš„ä¸ªæ•°
 
 #cat /proc/cpuinfo |grep "processor"|wc -l
 
- 
 
-3. ²é¿´CPUÊÇ¼¸ºË
+
+3. æŸ¥çœ‹CPUæ˜¯å‡ æ ¸
 
 #cat /proc/cpuinfo |grep "cores"|uniq
 
- 
 
-4. ²é¿´CPUµÄÖ÷Æµ
+
+4. æŸ¥çœ‹CPUçš„ä¸»é¢‘
 
 #cat /proc/cpuinfo |grep MHz|uniq
 
- 
+
 
 # uname -a
 
 Linux euis1 2.6.9-55.ELsmp #1 SMP Fri Apr 20 17:03:35 EDT 2007 i686 i686 i386 GNU/Linux
 
-(²é¿´µ±Ç°²Ù×÷ÏµÍ³ÄÚºËÐÅÏ¢)
+(æŸ¥çœ‹å½“å‰æ“ä½œç³»ç»Ÿå†…æ ¸ä¿¡æ¯)
 
 
 
@@ -3052,7 +1861,7 @@ Linux euis1 2.6.9-55.ELsmp #1 SMP Fri Apr 20 17:03:35 EDT 2007 i686 i686 i386 GN
 
 Red Hat Enterprise Linux AS release 4 (Nahant Update 5)
 
-(²é¿´µ±Ç°²Ù×÷ÏµÍ³·¢ÐÐ°æÐÅÏ¢)
+(æŸ¥çœ‹å½“å‰æ“ä½œç³»ç»Ÿå‘è¡Œç‰ˆä¿¡æ¯)
 
 
 
@@ -3060,7 +1869,7 @@ Red Hat Enterprise Linux AS release 4 (Nahant Update 5)
 
       8  Intel(R) Xeon(R) CPU            E5410   @ 2.33GHz
 
-(¿´µ½ÓÐ8¸öÂß¼­CPU, Ò²ÖªµÀÁËCPUÐÍºÅ)
+(çœ‹åˆ°æœ‰8ä¸ªé€»è¾‘CPU, ä¹ŸçŸ¥é“äº†CPUåž‹å·)
 
 
 
@@ -3070,7 +1879,7 @@ Red Hat Enterprise Linux AS release 4 (Nahant Update 5)
 
       4 physical id      : 1
 
-(ËµÃ÷Êµ¼ÊÉÏÊÇÁ½¿Å4ºËµÄCPU)
+(è¯´æ˜Žå®žé™…ä¸Šæ˜¯ä¸¤é¢—4æ ¸çš„CPU)
 
 
 
@@ -3078,7 +1887,7 @@ Red Hat Enterprise Linux AS release 4 (Nahant Update 5)
 
 32
 
-(ËµÃ÷µ±Ç°CPUÔËÐÐÔÚ32bitÄ£Ê½ÏÂ, µ«²»´ú±íCPU²»Ö§³Ö64bit)
+(è¯´æ˜Žå½“å‰CPUè¿è¡Œåœ¨32bitæ¨¡å¼ä¸‹, ä½†ä¸ä»£è¡¨CPUä¸æ”¯æŒ64bit)
 
 
 
@@ -3086,11 +1895,11 @@ Red Hat Enterprise Linux AS release 4 (Nahant Update 5)
 
 8
 
-(½á¹û´óÓÚ0, ËµÃ÷Ö§³Ö64bit¼ÆËã. lmÖ¸long mode, Ö§³ÖlmÔòÊÇ64bit)
+(ç»“æžœå¤§äºŽ0, è¯´æ˜Žæ”¯æŒ64bitè®¡ç®—. lmæŒ‡long mode, æ”¯æŒlmåˆ™æ˜¯64bit)
 
 ## apt-cache
 
-apt 0.9.7.7ubuntu4£¬ÓÃÓÚ i386 ¹¹¼Ü£¬±àÒëÓÚ Apr 12 2013 23:49:20
+apt 0.9.7.7ubuntu4ï¼Œç”¨äºŽ i386 æž„æž¶ï¼Œç¼–è¯‘äºŽ Apr 12 2013 23:49:20
 
 Usage: apt-cache [options] command
 
@@ -3122,13 +1931,13 @@ Commands:
 
    unmet - Show unmet dependencies
 
-   search - Search the package list for a regex pattern	²éÕÒ°üº¬²¿·Ö¹Ø¼ü×ÖµÄÈí¼þ°ü
+   search - Search the package list for a regex pattern	æŸ¥æ‰¾åŒ…å«éƒ¨åˆ†å…³é”®å­—çš„è½¯ä»¶åŒ…
 
-   show - Show a readable record for the package	»ñÈ¡°üµÄÏà¹ØÐÅÏ¢£¬ÈçËµÃ÷¡¢´óÐ¡¡¢°æ±¾µÈ
+   show - Show a readable record for the package	èŽ·å–åŒ…çš„ç›¸å…³ä¿¡æ¯ï¼Œå¦‚è¯´æ˜Žã€å¤§å°ã€ç‰ˆæœ¬ç­‰
 
-   depends - Show raw dependency information for a package	ÁË½âÊ¹ÓÃÒÀÀµ
+   depends - Show raw dependency information for a package	äº†è§£ä½¿ç”¨ä¾èµ–
 
-   rdepends - Show reverse dependency information for a package	ÁË½âÄ³¸ö¾ßÌåµÄÒÀÀµ
+   rdepends - Show reverse dependency information for a package	äº†è§£æŸä¸ªå…·ä½“çš„ä¾èµ–
 
    pkgnames - List the names of all packages in the system
 
@@ -3162,7 +1971,7 @@ See the apt-cache(8) and apt.conf(5) manual pages for more information.
 
 ## apt-file
 
-ÊÇÒ»¸öÈí¼þ°ü²éÕÒ¹¤¾ß£¬¿ÉÒÔ²éµ½Èí¼þ°üËùº¬µÄÎÄ¼þºÍ°²×°µÄÎ»ÖÃ¡£
+æ˜¯ä¸€ä¸ªè½¯ä»¶åŒ…æŸ¥æ‰¾å·¥å…·ï¼Œå¯ä»¥æŸ¥åˆ°è½¯ä»¶åŒ…æ‰€å«çš„æ–‡ä»¶å’Œå®‰è£…çš„ä½ç½®ã€‚
 
 apt-file [options] action [pattern]
 
@@ -3218,23 +2027,23 @@ Action:
 
 update                              Fetch Contents files from apt-sources.
 
-¸üÐÂÈí¼þ°üµÄÎÄ¼þ¿â£¬µÚÒ»´ÎÊ¹ÓÃ»òapt-get updateºó¶¼ÐèÔËÐÐÒ»´Î¡£
+æ›´æ–°è½¯ä»¶åŒ…çš„æ–‡ä»¶åº“ï¼Œç¬¬ä¸€æ¬¡ä½¿ç”¨æˆ–apt-get updateåŽéƒ½éœ€è¿è¡Œä¸€æ¬¡ã€‚
 
 search|find        <pattern>        Search files in packages
 
-²éÕÒ¸ÃÎÄ¼þ´æÔÚÓÚÄÄÐ©Èí¼þ°üÖÐ¡£
+æŸ¥æ‰¾è¯¥æ–‡ä»¶å­˜åœ¨äºŽå“ªäº›è½¯ä»¶åŒ…ä¸­ã€‚
 
 
 
 list|show          <pattern>        List files in packages
 
-ÏÔÊ¾¸ÃÈí¼þ°üµÄÎÄ¼þ
+æ˜¾ç¤ºè¯¥è½¯ä»¶åŒ…çš„æ–‡ä»¶
 
     purge                               Remove cache files
 
 ## apt-get
 
-apt 0.9.7.7ubuntu4£¬ÓÃÓÚ i386 ¹¹¼Ü£¬±àÒëÓÚ Apr 12 2013 23:49:24
+apt 0.9.7.7ubuntu4ï¼Œç”¨äºŽ i386 æž„æž¶ï¼Œç¼–è¯‘äºŽ Apr 12 2013 23:49:24
 
 Usage: apt-get [options] command
 
@@ -3254,33 +2063,33 @@ and install.
 
 Commands:
 
-   update - Retrieve new lists of packages	¸üÐÂÔ´¡£×îºÃ¶¨ÆÚ¸üÐÂÒ»ÏÂÊ¹Äã×Ô¼º»úÆ÷ÉÏÃæµÄÊý¾ÝºÍ·þÎñÆ÷(/etc/apt/sources.listÁÐ³ö)ÉÏÃæµÄÐÅÏ¢±£³ÖÒ»ÖÂ,ÔÚ°²×°Èí¼þÖ®Ç°¿ÉÒÔÔËÐÐÒ»ÏÂÕâ¸öÃüÁî±£Ö¤³É¹¦ÐÔ¡£
+   update - Retrieve new lists of packages	æ›´æ–°æºã€‚æœ€å¥½å®šæœŸæ›´æ–°ä¸€ä¸‹ä½¿ä½ è‡ªå·±æœºå™¨ä¸Šé¢çš„æ•°æ®å’ŒæœåŠ¡å™¨(/etc/apt/sources.liståˆ—å‡º)ä¸Šé¢çš„ä¿¡æ¯ä¿æŒä¸€è‡´,åœ¨å®‰è£…è½¯ä»¶ä¹‹å‰å¯ä»¥è¿è¡Œä¸€ä¸‹è¿™ä¸ªå‘½ä»¤ä¿è¯æˆåŠŸæ€§ã€‚
 
-   upgrade - Perform an upgrade	¸üÐÂÒÑ°²×°µÄ°ü¡£ÕâÀï¼ÓÉÏ-uÑ¡ÏîÁÐ³ö½«ÒªÉý¼¶µÄÈí¼þ£¬¿ÉÄÜ»áÌáÊ¾ÓÐÐ©Èí¼þ²»»áÉý¼¶£¬ÒòÎª¿ÉÄÜ»áÆÆ»µÒÀÀµ¹ØÏµ£¬¸üºÃµÄ·½·¨ÊÇÀûÓÃapt-get dist-upgrade
+   upgrade - Perform an upgrade	æ›´æ–°å·²å®‰è£…çš„åŒ…ã€‚è¿™é‡ŒåŠ ä¸Š-ué€‰é¡¹åˆ—å‡ºå°†è¦å‡çº§çš„è½¯ä»¶ï¼Œå¯èƒ½ä¼šæç¤ºæœ‰äº›è½¯ä»¶ä¸ä¼šå‡çº§ï¼Œå› ä¸ºå¯èƒ½ä¼šç ´åä¾èµ–å…³ç³»ï¼Œæ›´å¥½çš„æ–¹æ³•æ˜¯åˆ©ç”¨apt-get dist-upgrade
 
-Äã ¿ÉÒÔÍ¨¹ýcd»òÕßÌí¼ÓÔ´µØÖ·À´¸üÐÂ£¬Èç¹ûÄãÏë´ÓcdÀ´Éý¼¶£¬Ê×ÏÈÔËÐÐapt-cdrom°ÑcdÖÐµÄÈí¼þÌí¼Óµ½/etc/apt/sourcesÔ´ÖÐ£¬È»ºó ÔËÐÐapt-get dist-upgradeÀ´Éý¼¶£¬µ«ÊÇÒòÎªapt-get×ÜÊÇÊ¹ÓÃ×îÐÂ°æ±¾£¬Èç¹ûcdÖÐµÄ²»ÊÇ×îÐÂµÄ°æ±¾£¬ÄÇÃ´Ò²²»»áÓÃµ½cd¡£
+ä½  å¯ä»¥é€šè¿‡cdæˆ–è€…æ·»åŠ æºåœ°å€æ¥æ›´æ–°ï¼Œå¦‚æžœä½ æƒ³ä»Žcdæ¥å‡çº§ï¼Œé¦–å…ˆè¿è¡Œapt-cdromæŠŠcdä¸­çš„è½¯ä»¶æ·»åŠ åˆ°/etc/apt/sourcesæºä¸­ï¼Œç„¶åŽ è¿è¡Œapt-get dist-upgradeæ¥å‡çº§ï¼Œä½†æ˜¯å› ä¸ºapt-getæ€»æ˜¯ä½¿ç”¨æœ€æ–°ç‰ˆæœ¬ï¼Œå¦‚æžœcdä¸­çš„ä¸æ˜¯æœ€æ–°çš„ç‰ˆæœ¬ï¼Œé‚£ä¹ˆä¹Ÿä¸ä¼šç”¨åˆ°cdã€‚
 
-   install - Install new packages (pkg is libc6 not libc6.deb)	
+   install - Install new packages (pkg is libc6 not libc6.deb)
 
-   remove - Remove packages		É¾³ý°ü
+   remove - Remove packages		åˆ é™¤åŒ…
 
-   autoremove - Remove automatically all unused packages	É¾³ýËùÓÐÎÞÓÃ°ü
+   autoremove - Remove automatically all unused packages	åˆ é™¤æ‰€æœ‰æ— ç”¨åŒ…
 
-   purge - Remove packages and config files	É¾³ý°ü¼°ÆäÒÀÀµµÄÈí¼þ°üÅäÖÃÎÄ¼þµÈ
+   purge - Remove packages and config files	åˆ é™¤åŒ…åŠå…¶ä¾èµ–çš„è½¯ä»¶åŒ…é…ç½®æ–‡ä»¶ç­‰
 
-   source - Download source archives	ÏÂÔØ¸Ã°üµÄÔ´´úÂë
+   source - Download source archives	ä¸‹è½½è¯¥åŒ…çš„æºä»£ç 
 
-   build-dep - Configure build-dependencies for source packages	°²×°Ïà¹ØµÄ±àÒë»·¾³
+   build-dep - Configure build-dependencies for source packages	å®‰è£…ç›¸å…³çš„ç¼–è¯‘çŽ¯å¢ƒ
 
-   dist-upgrade - Distribution upgrade, see apt-get(8)	Éý¼¶ÏµÍ³¡£ÕâÑù°²×°µÄÈí¼þÇ°Ãæapt-get -u upgrade°²²»ÁËµÄÒ²»á°²×°ÁË£¬µ«¸ö±ðµÄÈÔÈ»²»ÄÜ°²×°£¬ÀýÈç£ºÉý¼¶»áµ¼ÖÂÐèÒªÐ¶ÔØÒ»Ð©°ü£¬Ð¶ÔØÕâÐ©°ü»áµ¼ÖÂÁíÍâµÄÈí¼þ²»ÄÜÓÃ£¬ËùÒÔ¾Í²»Éý¼¶ÁË¡£
+   dist-upgrade - Distribution upgrade, see apt-get(8)	å‡çº§ç³»ç»Ÿã€‚è¿™æ ·å®‰è£…çš„è½¯ä»¶å‰é¢apt-get -u upgradeå®‰ä¸äº†çš„ä¹Ÿä¼šå®‰è£…äº†ï¼Œä½†ä¸ªåˆ«çš„ä»ç„¶ä¸èƒ½å®‰è£…ï¼Œä¾‹å¦‚ï¼šå‡çº§ä¼šå¯¼è‡´éœ€è¦å¸è½½ä¸€äº›åŒ…ï¼Œå¸è½½è¿™äº›åŒ…ä¼šå¯¼è‡´å¦å¤–çš„è½¯ä»¶ä¸èƒ½ç”¨ï¼Œæ‰€ä»¥å°±ä¸å‡çº§äº†ã€‚
 
-   dselect-upgrade - Follow dselect selections	Ê¹ÓÃ dselect Éý¼¶
+   dselect-upgrade - Follow dselect selections	ä½¿ç”¨ dselect å‡çº§
 
-   clean - Erase downloaded archive files	ÇåÀíÏÂÔØÎÄ¼þµÄ´æµµ
+   clean - Erase downloaded archive files	æ¸…ç†ä¸‹è½½æ–‡ä»¶çš„å­˜æ¡£
 
-   autoclean - Erase old downloaded archive files	Ö»ÇåÀí¹ýÊ±µÄ°ü
+   autoclean - Erase old downloaded archive files	åªæ¸…ç†è¿‡æ—¶çš„åŒ…
 
-   check - Verify that there are no broken dependencies	¼ì²éÊÇ·ñÓÐËð»µµÄÒÀÀµ
+   check - Verify that there are no broken dependencies	æ£€æŸ¥æ˜¯å¦æœ‰æŸåçš„ä¾èµ–
 
    changelog - Download and display the changelog for the given package
 
@@ -3366,447 +2175,447 @@ See fstab(5)
 
 ## apititude
 
-aptitude update ¸üÐÂ¿ÉÓÃµÄ°üÁÐ±í
+aptitude update æ›´æ–°å¯ç”¨çš„åŒ…åˆ—è¡¨
 
-aptitude upgrade Éý¼¶¿ÉÓÃµÄ°ü
+aptitude upgrade å‡çº§å¯ç”¨çš„åŒ…
 
-aptitude dist-upgrade ½«ÏµÍ³Éý¼¶µ½ÐÂµÄ·¢ÐÐ°æ
+aptitude dist-upgrade å°†ç³»ç»Ÿå‡çº§åˆ°æ–°çš„å‘è¡Œç‰ˆ
 
-aptitude install pkgname °²×°°ü
+aptitude install pkgname å®‰è£…åŒ…
 
-aptitude remove pkgname É¾³ý°ü
+aptitude remove pkgname åˆ é™¤åŒ…
 
-aptitude purge pkgname É¾³ý°ü¼°ÆäÅäÖÃÎÄ¼þ
+aptitude purge pkgname åˆ é™¤åŒ…åŠå…¶é…ç½®æ–‡ä»¶
 
-aptitude search string ËÑË÷°ü
+aptitude search string æœç´¢åŒ…
 
-aptitude show pkgname ÏÔÊ¾°üµÄÏêÏ¸ÐÅÏ¢
+aptitude show pkgname æ˜¾ç¤ºåŒ…çš„è¯¦ç»†ä¿¡æ¯
 
-aptitude clean É¾³ýÏÂÔØµÄ°üÎÄ¼þ
+aptitude clean åˆ é™¤ä¸‹è½½çš„åŒ…æ–‡ä»¶
 
-aptitude autoclean ½öÉ¾³ý¹ýÆÚµÄ°üÎÄ¼þ
+aptitude autoclean ä»…åˆ é™¤è¿‡æœŸçš„åŒ…æ–‡ä»¶
 
 ## dpkg
 
-dpkg -L  Èí¼þÃû  ²é¿´Èí¼þ°²×°µÄÎ»ÖÃ
+dpkg -L  è½¯ä»¶å  æŸ¥çœ‹è½¯ä»¶å®‰è£…çš„ä½ç½®
 
 
 
-##´ò¿ª.shÎÄ¼þ
+##æ‰“å¼€.shæ–‡ä»¶
 
 sudo sh *.sh
 
-##´ò¿ªÆäËü¿ÉÖ´ÐÐÎÄ¼þ£º
+##æ‰“å¼€å…¶å®ƒå¯æ‰§è¡Œæ–‡ä»¶ï¼š
 
-./***(Èç¹ûÃ»ÓÐ¿ÉÖ´ÐÐÈ¨ÏÞ£¬ÐèÒªchmod)
+./***(å¦‚æžœæ²¡æœ‰å¯æ‰§è¡Œæƒé™ï¼Œéœ€è¦chmod)
 
-## nautilusÃüÁî
+## nautiluså‘½ä»¤
 
 file explore
 
 
 
-## ÃüÁîÐÐ¿ìËÙ´ò¿ª¸÷ÀàÐÍÎÄ¼þ
+## å‘½ä»¤è¡Œå¿«é€Ÿæ‰“å¼€å„ç±»åž‹æ–‡ä»¶
 
 xdg-open (opens a file or URL in the user's preferred application)
 
-»òÕß£º mplayer xxx.mp3
+æˆ–è€…ï¼š mplayer xxx.mp3
 
-## ED±à¼­Æ÷µÄÊ¹ÓÃ
+## EDç¼–è¾‘å™¨çš„ä½¿ç”¨
 
-ed ±à¼­Æ÷ÊÇ Linux ²Ù×÷ÏµÍ³ÏÂ×î¼òµ¥µÄÎÄ±¾±à¼­Æ÷¡£ËüÊÇÒÔÐÐÎªµ¥Î»¶ÔÎÄ¼þ½øÐÐ±à¼­µÄ±à¼­Æ÷£¬¶ø²»Ïñ MS-DOS ÏµÍ³ÏÂµÄ edit ÄÇÑùÊÇÒÔÕû¸öÆÁÄ»¿ò¼ÜÎªµ¥Î»¶ÔÎÄ¼þ½øÐÐ±à¼­µÄ¡£Òò´Ë£¬Èç¹ûÄãÒÑ¾­Ï°¹ßÁËÊ¹ÓÃ edit ÕâÖÖ·ç¸ñµÄ±à¼­Æ÷£¬ÄÇÃ´Äã¿ÉÄÜÐèÒªÒ»¶ÎÊ±¼ä²ÅÄÜÏ°¹ß ed µÄ·ç¸ñ¡£µ«ÊÇÕâ²¢²»ÖØÒª£¬ÒòÎª ed µÄ¼ò±ãÐÔ¿ÉÒÔÊ¹ÄãºÜ¿ìÉÏÊÖµÄ¡£ 
+ed ç¼–è¾‘å™¨æ˜¯ Linux æ“ä½œç³»ç»Ÿä¸‹æœ€ç®€å•çš„æ–‡æœ¬ç¼–è¾‘å™¨ã€‚å®ƒæ˜¯ä»¥è¡Œä¸ºå•ä½å¯¹æ–‡ä»¶è¿›è¡Œç¼–è¾‘çš„ç¼–è¾‘å™¨ï¼Œè€Œä¸åƒ MS-DOS ç³»ç»Ÿä¸‹çš„ edit é‚£æ ·æ˜¯ä»¥æ•´ä¸ªå±å¹•æ¡†æž¶ä¸ºå•ä½å¯¹æ–‡ä»¶è¿›è¡Œç¼–è¾‘çš„ã€‚å› æ­¤ï¼Œå¦‚æžœä½ å·²ç»ä¹ æƒ¯äº†ä½¿ç”¨ edit è¿™ç§é£Žæ ¼çš„ç¼–è¾‘å™¨ï¼Œé‚£ä¹ˆä½ å¯èƒ½éœ€è¦ä¸€æ®µæ—¶é—´æ‰èƒ½ä¹ æƒ¯ ed çš„é£Žæ ¼ã€‚ä½†æ˜¯è¿™å¹¶ä¸é‡è¦ï¼Œå› ä¸º ed çš„ç®€ä¾¿æ€§å¯ä»¥ä½¿ä½ å¾ˆå¿«ä¸Šæ‰‹çš„ã€‚
 
-ed ±à¼­Æ÷µÄµ÷ÓÃºÜ¼òµ¥£¬Èç¹ûÄãÏëÐÂ½¨Ò»¸öÎÄ¼þ£¬ÄÇÃ´Ö»ÐèÒªÔÚÃüÁîÐÐ´°¿ÚÖÐÇÃÈë ed È»ºó°´ÏÂ»Ø³µ¼ü¼´¿É£º 
+ed ç¼–è¾‘å™¨çš„è°ƒç”¨å¾ˆç®€å•ï¼Œå¦‚æžœä½ æƒ³æ–°å»ºä¸€ä¸ªæ–‡ä»¶ï¼Œé‚£ä¹ˆåªéœ€è¦åœ¨å‘½ä»¤è¡Œçª—å£ä¸­æ•²å…¥ ed ç„¶åŽæŒ‰ä¸‹å›žè½¦é”®å³å¯ï¼š
 
-[titan@localhost titan]$ ed <- 
+[titan@localhost titan]$ ed <-
 
-Èç¹ûÄãÏë±à¼­Ò»¸öÒÑ¾­´æÔÚµÄÎÄ¼þ£¬ÄÇÃ´ÄãÖ»ÒªÔÚ ed µÄºóÃæ¿ÕÒ»¸ö£¬È»ºóÇÃÈëÎÄ¼þÃû¼´¿É£º 
+å¦‚æžœä½ æƒ³ç¼–è¾‘ä¸€ä¸ªå·²ç»å­˜åœ¨çš„æ–‡ä»¶ï¼Œé‚£ä¹ˆä½ åªè¦åœ¨ ed çš„åŽé¢ç©ºä¸€ä¸ªï¼Œç„¶åŽæ•²å…¥æ–‡ä»¶åå³å¯ï¼š
 
-[titan@localhost titan]$ ed filename <- 
+[titan@localhost titan]$ ed filename <-
 
-¼¤»î ed ÃüÁîºó½øÈëµÄÊÇ ed ±à¼­Æ÷µÄÃüÁîÐÐ×´Ì¬£¬Õâ¿ÉÄÜÊ¹Ò»Ð©³õÑ§ÕßÓÐÐ©²»Ï°¹ß£¬Èç¹ûÄãÕâÊ±ºòËæ±ãÇÃÈëÒ»Ð©ÄÚÈÝ£¬ÏµÍ³»á·µ»ØÒ»¸ö ?£¬±íÊ¾²»ÖªµÀÄãÒªÖ´ÐÐÊ²Ã´ÈÎÎñ£º 
+æ¿€æ´» ed å‘½ä»¤åŽè¿›å…¥çš„æ˜¯ ed ç¼–è¾‘å™¨çš„å‘½ä»¤è¡ŒçŠ¶æ€ï¼Œè¿™å¯èƒ½ä½¿ä¸€äº›åˆå­¦è€…æœ‰äº›ä¸ä¹ æƒ¯ï¼Œå¦‚æžœä½ è¿™æ—¶å€™éšä¾¿æ•²å…¥ä¸€äº›å†…å®¹ï¼Œç³»ç»Ÿä¼šè¿”å›žä¸€ä¸ª ?ï¼Œè¡¨ç¤ºä¸çŸ¥é“ä½ è¦æ‰§è¡Œä»€ä¹ˆä»»åŠ¡ï¼š
 
-[titan@localhost titan]$ ed <- 
+[titan@localhost titan]$ ed <-
 
-abcde <- 
+abcde <-
 
-? 
-
-
-
-ÕâÊ±ºòÄãÒªÃ÷È·¼¸¸ö±à¼­Æ÷ÃüÁî£¬ËüÃÇÊÇ£º 
-
-a - ÔÚÎÄ¼þµÄÄ©Î²Ìí¼ÓÐÂÄÚÈÝ 
-
-i - ÔÚÎÄ¼þµÄ×îºóÒ»ÐÐÖ®Ç°²åÈëÐÂÄÚÈÝ 
-
-o - °ÑÎÄ¼þÊäÈëµÄ×îºóÒ»ÐÐ£¨²»ÂÛÊÇÔ­À´´æÔÚµÄ»òÕß²åÈëµÄ£©Ìæ»»³ÉÐÂÄÚÈÝ 
-
-. - ÍË³ö±à¼­ÎÄ¼þÄ£Ê½½øÈëÃüÁîÐÐÄ£Ê½£¨×¢Òâ£º´ËÊ±²¢Ã»ÓÐÍË³ö ed ±à¼­Æ÷£© 
-
-w - ±£´æÎÄ¼þ 
-
-q - ÕæÕýÍË³ö ed ±à¼­Æ÷ 
+?
 
 
 
-ÏÂÃæÎÒ½«¾Í×Å¼¸¸öÃüÁî¾ÙÀýËµÃ÷Ò»ÏÂ¡£ 
+è¿™æ—¶å€™ä½ è¦æ˜Žç¡®å‡ ä¸ªç¼–è¾‘å™¨å‘½ä»¤ï¼Œå®ƒä»¬æ˜¯ï¼š
 
-[titan@localhost titan]$ ed <- ¼¤»î ed ÃüÁî 
+a - åœ¨æ–‡ä»¶çš„æœ«å°¾æ·»åŠ æ–°å†…å®¹
 
-a <- ¸æËß ed ÎÒÒª±à¼­ÐÂÎÄ¼þ 
+i - åœ¨æ–‡ä»¶çš„æœ€åŽä¸€è¡Œä¹‹å‰æ’å…¥æ–°å†…å®¹
 
-My name is Titan. <- ÊäÈëµÚÒ»ÐÐÄÚÈÝ 
+o - æŠŠæ–‡ä»¶è¾“å…¥çš„æœ€åŽä¸€è¡Œï¼ˆä¸è®ºæ˜¯åŽŸæ¥å­˜åœ¨çš„æˆ–è€…æ’å…¥çš„ï¼‰æ›¿æ¢æˆæ–°å†…å®¹
 
-And I love Perl very much. <- ÊäÈëµÚ¶þÐÐÄÚÈÝ 
+. - é€€å‡ºç¼–è¾‘æ–‡ä»¶æ¨¡å¼è¿›å…¥å‘½ä»¤è¡Œæ¨¡å¼ï¼ˆæ³¨æ„ï¼šæ­¤æ—¶å¹¶æ²¡æœ‰é€€å‡º ed ç¼–è¾‘å™¨ï¼‰
 
-. <- ·µ»Ø ed µÄÃüÁîÐÐ×´Ì¬ 
+w - ä¿å­˜æ–‡ä»¶
 
-i <- ¸æËß ed ÎÒÒªÔÚ×îºóÒ»ÐÐÖ®Ç°²åÈëÄÚÈÝ 
-
-I am 24. <- ½«¡°I am 24.¡±²åÈë¡°My name is Titan.¡±ºÍ¡°And I love Perl very much.¡±Ö®¼ä 
-
-. <- ·µ»Ø ed µÄÃüÁîÐÐ×´Ì¬ 
-
-c <- ¸æËß ed ÎÒÒªÌæ»»×îºóÒ»ÐÐÊäÈëÄÚÈÝ 
-
-I am 24 years old. <- ½«¡°I am 24.¡±Ìæ»»³É¡°I am 24 years old.¡±£¨×¢Òâ£ºÕâÀïÌæ»»µÄÊÇ×îºóÊäµÄÄÚÈÝ£© 
-
-. <- ·µ»Ø ed µÄÃüÁîÐÐ×´Ì¬ 
-
-w readme.text <- ½«ÎÄ¼þÃüÃûÎª¡°readme.text¡±²¢±£´æ£¨×¢Òâ£ºÈç¹ûÊÇ±à¼­ÒÑ¾­´æÔÚµÄÎÄ¼þ£¬Ö»ÐèÒªÇÃÈë w ¼´¿É£©
-
-q <- ÍêÈ«ÍË³ö ed ±à¼­Æ÷ 
-
-[titan@localhost titan]$ ·µ»Øµ½ Linux ÏµÍ³µÄÃüÁîÐÐ×´Ì¬ 
-
-ÕâÊÇÎÄ¼þµÄÄÚÈÝÊÇ£º 
-
-[titan@localhost titan]$ cat readme.text <- 
-
-My name is Titan. 
-
-I am 24 years old. 
-
-And I love Perl vrey much. 
-
-[titan@localhost titan]$ 
+q - çœŸæ­£é€€å‡º ed ç¼–è¾‘å™¨
 
 
 
-ÒòÎªÊ¹ÓÃ ed ±à¼­ÎÄ¼þÊ±Ê±¿´²»µ½ÎÄ¼þÄÚÈÝµÄ£¬¶øÇÒËü²»Ïñ MS-DOS ÏÂµÄ edit ÄÇÃ´Áé»î£¬ÇëÄãÔÚ±à¼­ÎÄ¼þÊÇÒ»¶¨Òª×ÐÏ¸¼ì²éÊäÈëµÄÄÚÈÝÒÔ±£Ö¤ÆäÕýÈ·ÐÔ£¬±ÜÃâ·´¸´Íù·µÓÚ±à¼­×´Ì¬ºÍÃüÁîÐÐ×´Ì¬Ö®¼ä£¬ÄÇÑù»áÀË·Ñ´óÁ¿µÄÊ±¼ä¡£
+ä¸‹é¢æˆ‘å°†å°±ç€å‡ ä¸ªå‘½ä»¤ä¸¾ä¾‹è¯´æ˜Žä¸€ä¸‹ã€‚
 
-##ÔÚshellÖÐÊ¹ÓÃchromeÃüÁî
+[titan@localhost titan]$ ed <- æ¿€æ´» ed å‘½ä»¤
 
-ÒÔlinuxµÄbash shellÎªÀýËµÃ÷ google-chromeÕâ¸öÃüÁîµÄÊ¹ÓÃ·½·¨
+a <- å‘Šè¯‰ ed æˆ‘è¦ç¼–è¾‘æ–°æ–‡ä»¶
 
-linuxÖÐ´ò¿ªchromeä¯ÀÀÆ÷µÄÃüÁîÎª:"google-chrome"(´ò¿ªchromiumä¯ÀÀÆ÷µÄÃüÁîÎª:"chromium-browser",chromeä¯ÀÀÆ÷ÊÇ»ùÓÚ¿ªÔ´µÄchromiumä¯ÀÀÆ÷¿ª·¢µÄ)
+My name is Titan. <- è¾“å…¥ç¬¬ä¸€è¡Œå†…å®¹
 
-ÔÚbasnÖÐÊäÈë¡°google-chrome¡± Ö´ÐÐÃüÁîºó¼´¿Éµ¯³öchromeä¯ÀÀÆ÷µÄ´°¿Ú,ÍøÖ·ÎªÉèÖÃµÄÄ¬ÈÏµÄÍøÖ·
+And I love Perl very much. <- è¾“å…¥ç¬¬äºŒè¡Œå†…å®¹
 
-ÔÚbanÖÐÊäÈë"google-chrome --help"»òÕß"google-chrome -h"¼´¿Éµ¯³ö¹ØÓÚgoogle-chromeÕâ¸öÃüÁîµÄÒ»Ð©ÓÃ·¨ÐÅÏ¢
+. <- è¿”å›ž ed çš„å‘½ä»¤è¡ŒçŠ¶æ€
 
-ÔÚbashÖÐÊäÈë"google-chrome  ÍøÖ·"¼´¿É´ò¿ªÖ¸¶¨µÄÍøÖ·
+i <- å‘Šè¯‰ ed æˆ‘è¦åœ¨æœ€åŽä¸€è¡Œä¹‹å‰æ’å…¥å†…å®¹
 
-ÔÚbashÖÐÊäÈë"google-chrome --app="http://www.baidu.com"" ¾Í¿ÉÒÔÒÔÓ¦ÓÃ³ÌÐòµÄ·½Ê½´ò¿ªÍøÖ·
+I am 24. <- å°†â€œI am 24.â€æ’å…¥â€œMy name is Titan.â€å’Œâ€œAnd I love Perl very much.â€ä¹‹é—´
 
-ÆäËûÃüÁîµÄÊ¹ÓÃ·½Ê½Í¬ÉÏ
+. <- è¿”å›ž ed çš„å‘½ä»¤è¡ŒçŠ¶æ€
+
+c <- å‘Šè¯‰ ed æˆ‘è¦æ›¿æ¢æœ€åŽä¸€è¡Œè¾“å…¥å†…å®¹
+
+I am 24 years old. <- å°†â€œI am 24.â€æ›¿æ¢æˆâ€œI am 24 years old.â€ï¼ˆæ³¨æ„ï¼šè¿™é‡Œæ›¿æ¢çš„æ˜¯æœ€åŽè¾“çš„å†…å®¹ï¼‰
+
+. <- è¿”å›ž ed çš„å‘½ä»¤è¡ŒçŠ¶æ€
+
+w readme.text <- å°†æ–‡ä»¶å‘½åä¸ºâ€œreadme.textâ€å¹¶ä¿å­˜ï¼ˆæ³¨æ„ï¼šå¦‚æžœæ˜¯ç¼–è¾‘å·²ç»å­˜åœ¨çš„æ–‡ä»¶ï¼Œåªéœ€è¦æ•²å…¥ w å³å¯ï¼‰
+
+q <- å®Œå…¨é€€å‡º ed ç¼–è¾‘å™¨
+
+[titan@localhost titan]$ è¿”å›žåˆ° Linux ç³»ç»Ÿçš„å‘½ä»¤è¡ŒçŠ¶æ€
+
+è¿™æ˜¯æ–‡ä»¶çš„å†…å®¹æ˜¯ï¼š
+
+[titan@localhost titan]$ cat readme.text <-
+
+My name is Titan.
+
+I am 24 years old.
+
+And I love Perl vrey much.
+
+[titan@localhost titan]$
 
 
 
-##²é¿´×ÖÌå
+å› ä¸ºä½¿ç”¨ ed ç¼–è¾‘æ–‡ä»¶æ—¶æ—¶çœ‹ä¸åˆ°æ–‡ä»¶å†…å®¹çš„ï¼Œè€Œä¸”å®ƒä¸åƒ MS-DOS ä¸‹çš„ edit é‚£ä¹ˆçµæ´»ï¼Œè¯·ä½ åœ¨ç¼–è¾‘æ–‡ä»¶æ˜¯ä¸€å®šè¦ä»”ç»†æ£€æŸ¥è¾“å…¥çš„å†…å®¹ä»¥ä¿è¯å…¶æ­£ç¡®æ€§ï¼Œé¿å…åå¤å¾€è¿”äºŽç¼–è¾‘çŠ¶æ€å’Œå‘½ä»¤è¡ŒçŠ¶æ€ä¹‹é—´ï¼Œé‚£æ ·ä¼šæµªè´¹å¤§é‡çš„æ—¶é—´ã€‚
+
+##åœ¨shellä¸­ä½¿ç”¨chromeå‘½ä»¤
+
+ä»¥linuxçš„bash shellä¸ºä¾‹è¯´æ˜Ž google-chromeè¿™ä¸ªå‘½ä»¤çš„ä½¿ç”¨æ–¹æ³•
+
+linuxä¸­æ‰“å¼€chromeæµè§ˆå™¨çš„å‘½ä»¤ä¸º:"google-chrome"(æ‰“å¼€chromiumæµè§ˆå™¨çš„å‘½ä»¤ä¸º:"chromium-browser",chromeæµè§ˆå™¨æ˜¯åŸºäºŽå¼€æºçš„chromiumæµè§ˆå™¨å¼€å‘çš„)
+
+åœ¨basnä¸­è¾“å…¥â€œgoogle-chromeâ€ æ‰§è¡Œå‘½ä»¤åŽå³å¯å¼¹å‡ºchromeæµè§ˆå™¨çš„çª—å£,ç½‘å€ä¸ºè®¾ç½®çš„é»˜è®¤çš„ç½‘å€
+
+åœ¨banä¸­è¾“å…¥"google-chrome --help"æˆ–è€…"google-chrome -h"å³å¯å¼¹å‡ºå…³äºŽgoogle-chromeè¿™ä¸ªå‘½ä»¤çš„ä¸€äº›ç”¨æ³•ä¿¡æ¯
+
+åœ¨bashä¸­è¾“å…¥"google-chrome  ç½‘å€"å³å¯æ‰“å¼€æŒ‡å®šçš„ç½‘å€
+
+åœ¨bashä¸­è¾“å…¥"google-chrome --app="http://www.baidu.com"" å°±å¯ä»¥ä»¥åº”ç”¨ç¨‹åºçš„æ–¹å¼æ‰“å¼€ç½‘å€
+
+å…¶ä»–å‘½ä»¤çš„ä½¿ç”¨æ–¹å¼åŒä¸Š
+
+
+
+##æŸ¥çœ‹å­—ä½“
 
 fc-list :lang=zh-cn
 
-## mkisofsÓÃ·¨Ïê½â
+## mkisofsç”¨æ³•è¯¦è§£
 
 
 
-¹¦ÄÜËµÃ÷£º½¨Á¢ISO 9660Ó³ÏñÎÄ¼þ¡£
+åŠŸèƒ½è¯´æ˜Žï¼šå»ºç«‹ISO 9660æ˜ åƒæ–‡ä»¶ã€‚
 
-Óï·¨£ºmkisofs [-adDfhJlLNrRTvz][-print-size][-quiet][-A <Ó¦ÓÃ³ÌÐòID>][-abstract <ÕªÒªÎÄ¼þ>][-b <¿ª»úÓ³ÏñÎÄ¼þ>][-biblio <ISBNÎÄ¼þ>][-c <¿ª»úÎÄ¼þÃû³Æ>][-C <ÅÌÇø±àºÅ£¬´ÅÇø±àºÅ>][-copyright <°æÈ¨ÐÅÏ¢ÎÄ¼þ>][-hide <Ä¿Â¼»òÎÄ¼þÃû>][-hide-joliet <ÎÄ¼þ»òÄ¿Â¼Ãû>][-log-file <¼ÇÂ¼ÎÄ¼þ>][-m <Ä¿Â¼»òÎÄ¼þÃû>][-M <¿ª»úÓ³ÏñÎÄ¼þ>][-o <Ó³ÏñÎÄ¼þ>][-p <Êý¾Ý´¦ÀíÈË>][-P <¹âÅÌ·¢ÐÐÈË>][-sysid <ÏµÍ³ID >][-V <¹âÅÌID >][-volset <¾í²á¼¯ID>][-volset-size <¹âÅÌ×ÜÊý>][-volset-seqno <¾í²áÐòºÅ>][-x <Ä¿Â¼>][Ä¿Â¼»òÎÄ¼þ]
+è¯­æ³•ï¼šmkisofs [-adDfhJlLNrRTvz][-print-size][-quiet][-A <åº”ç”¨ç¨‹åºID>][-abstract <æ‘˜è¦æ–‡ä»¶>][-b <å¼€æœºæ˜ åƒæ–‡ä»¶>][-biblio <ISBNæ–‡ä»¶>][-c <å¼€æœºæ–‡ä»¶åç§°>][-C <ç›˜åŒºç¼–å·ï¼Œç£åŒºç¼–å·>][-copyright <ç‰ˆæƒä¿¡æ¯æ–‡ä»¶>][-hide <ç›®å½•æˆ–æ–‡ä»¶å>][-hide-joliet <æ–‡ä»¶æˆ–ç›®å½•å>][-log-file <è®°å½•æ–‡ä»¶>][-m <ç›®å½•æˆ–æ–‡ä»¶å>][-M <å¼€æœºæ˜ åƒæ–‡ä»¶>][-o <æ˜ åƒæ–‡ä»¶>][-p <æ•°æ®å¤„ç†äºº>][-P <å…‰ç›˜å‘è¡Œäºº>][-sysid <ç³»ç»ŸID >][-V <å…‰ç›˜ID >][-volset <å·å†Œé›†ID>][-volset-size <å…‰ç›˜æ€»æ•°>][-volset-seqno <å·å†Œåºå·>][-x <ç›®å½•>][ç›®å½•æˆ–æ–‡ä»¶]
 
-²¹³äËµÃ÷£ºmkisofs¿É½«Ö¸¶¨µÄÄ¿Â¼ÓëÎÄ¼þ×ö³ÉISO 9660¸ñÊ½µÄÓ³ÏñÎÄ¼þ£¬ÒÔ¹©¿ÌÂ¼¹âÅÌ¡£
+è¡¥å……è¯´æ˜Žï¼šmkisofså¯å°†æŒ‡å®šçš„ç›®å½•ä¸Žæ–‡ä»¶åšæˆISO 9660æ ¼å¼çš„æ˜ åƒæ–‡ä»¶ï¼Œä»¥ä¾›åˆ»å½•å…‰ç›˜ã€‚
 
-²ÎÊý£º
+å‚æ•°ï¼š
 
--a»ò--all   mkisofsÍ¨³£²»´¦Àí±¸·ÝÎÄ¼þ¡£Ê¹ÓÃ´Ë²ÎÊý¿ÉÒÔ°Ñ±¸·ÝÎÄ¼þ¼Óµ½Ó³ÏñÎÄ¼þÖÐ¡£ 
+-aæˆ–--all   mkisofsé€šå¸¸ä¸å¤„ç†å¤‡ä»½æ–‡ä»¶ã€‚ä½¿ç”¨æ­¤å‚æ•°å¯ä»¥æŠŠå¤‡ä»½æ–‡ä»¶åŠ åˆ°æ˜ åƒæ–‡ä»¶ä¸­ã€‚
 
--A<Ó¦ÓÃ³ÌÐòID>»ò-appid<Ó¦ÓÃ³ÌÐòID>   Ö¸¶¨¹âÅÌµÄÓ¦ÓÃ³ÌÐòID¡£ 
+-A<åº”ç”¨ç¨‹åºID>æˆ–-appid<åº”ç”¨ç¨‹åºID>   æŒ‡å®šå…‰ç›˜çš„åº”ç”¨ç¨‹åºIDã€‚
 
--abstract<ÕªÒªÎÄ¼þ>   Ö¸¶¨ÕªÒªÎÄ¼þµÄÎÄ¼þÃû¡£
+-abstract<æ‘˜è¦æ–‡ä»¶>   æŒ‡å®šæ‘˜è¦æ–‡ä»¶çš„æ–‡ä»¶åã€‚
 
--b<¿ª»úÓ³ÏñÎÄ¼þ>»ò-eltorito-boot<¿ª»úÓ³ÏñÎÄ¼þ>   Ö¸¶¨ÔÚÖÆ×÷¿É¿ª»ú¹âÅÌÊ±ËùÐèµÄ¿ª»úÓ³ÏñÎÄ¼þ¡£
+-b<å¼€æœºæ˜ åƒæ–‡ä»¶>æˆ–-eltorito-boot<å¼€æœºæ˜ åƒæ–‡ä»¶>   æŒ‡å®šåœ¨åˆ¶ä½œå¯å¼€æœºå…‰ç›˜æ—¶æ‰€éœ€çš„å¼€æœºæ˜ åƒæ–‡ä»¶ã€‚
 
--biblio<ISBNÎÄ¼þ>   Ö¸¶¨ISBNÎÄ¼þµÄÎÄ¼þÃû£¬ISBNÎÄ¼þÎ»ÓÚ¹âÅÌ¸ùÄ¿Â¼ÏÂ£¬¼ÇÂ¼¹âÅÌµÄISBN¡£
+-biblio<ISBNæ–‡ä»¶>   æŒ‡å®šISBNæ–‡ä»¶çš„æ–‡ä»¶åï¼ŒISBNæ–‡ä»¶ä½äºŽå…‰ç›˜æ ¹ç›®å½•ä¸‹ï¼Œè®°å½•å…‰ç›˜çš„ISBNã€‚
 
--c<¿ª»úÎÄ¼þÃû³Æ>   ÖÆ×÷¿É¿ª»ú¹âÅÌÊ±£¬mkisofs»á½«¿ª»úÓ³ÏñÎÄ¼þÖÐµÄÈ«-eltorito-catalog<¿ª»úÎÄ¼þÃû³Æ>È«²¿ÄÚÈÝ×÷³ÉÒ»¸öÎÄ¼þ¡£
+-c<å¼€æœºæ–‡ä»¶åç§°>   åˆ¶ä½œå¯å¼€æœºå…‰ç›˜æ—¶ï¼Œmkisofsä¼šå°†å¼€æœºæ˜ åƒæ–‡ä»¶ä¸­çš„å…¨-eltorito-catalog<å¼€æœºæ–‡ä»¶åç§°>å…¨éƒ¨å†…å®¹ä½œæˆä¸€ä¸ªæ–‡ä»¶ã€‚
 
--C<ÅÌÇø±àºÅ£¬ÅÌÇø±àºÅ>   ½«Ðí¶à½ÚÇøºÏ³ÉÒ»¸öÓ³ÏñÎÄ¼þÊ±£¬±ØÐëÊ¹ÓÃ´Ë²ÎÊý¡£
+-C<ç›˜åŒºç¼–å·ï¼Œç›˜åŒºç¼–å·>   å°†è®¸å¤šèŠ‚åŒºåˆæˆä¸€ä¸ªæ˜ åƒæ–‡ä»¶æ—¶ï¼Œå¿…é¡»ä½¿ç”¨æ­¤å‚æ•°ã€‚
 
--copyright<°æÈ¨ÐÅÏ¢ÎÄ¼þ>   Ö¸¶¨°æÈ¨ÐÅÏ¢ÎÄ¼þµÄÎÄ¼þÃû¡£
+-copyright<ç‰ˆæƒä¿¡æ¯æ–‡ä»¶>   æŒ‡å®šç‰ˆæƒä¿¡æ¯æ–‡ä»¶çš„æ–‡ä»¶åã€‚
 
--d»ò-omit-period   Ê¡ÂÔÎÄ¼þºóµÄ¾äºÅ¡£
+-dæˆ–-omit-period   çœç•¥æ–‡ä»¶åŽçš„å¥å·ã€‚
 
--D»ò-disable-deep-relocation   ISO 9660×î¶àÖ»ÄÜ´¦Àí8²ãµÄÄ¿Â¼£¬³¬¹ý8²ãµÄ²¿·Ö£¬RRIP»á×Ô¶¯½«ËüÃÇÉèÖÃ³ÉISO 9660¼æÈÝµÄ¸ñÊ½¡£Ê¹ÓÃ-D²ÎÊý¿É¹Ø±Õ´Ë¹¦ÄÜ¡£
+-Dæˆ–-disable-deep-relocation   ISO 9660æœ€å¤šåªèƒ½å¤„ç†8å±‚çš„ç›®å½•ï¼Œè¶…è¿‡8å±‚çš„éƒ¨åˆ†ï¼ŒRRIPä¼šè‡ªåŠ¨å°†å®ƒä»¬è®¾ç½®æˆISO 9660å…¼å®¹çš„æ ¼å¼ã€‚ä½¿ç”¨-Då‚æ•°å¯å…³é—­æ­¤åŠŸèƒ½ã€‚
 
--f»ò-follow-links   ºöÂÔ·ûºÅÁ¬½Ó¡£
+-fæˆ–-follow-links   å¿½ç•¥ç¬¦å·è¿žæŽ¥ã€‚
 
--h   ÏÔÊ¾°ïÖú¡£
+-h   æ˜¾ç¤ºå¸®åŠ©ã€‚
 
--hide<Ä¿Â¼»òÎÄ¼þÃû>   Ê¹Ö¸¶¨µÄÄ¿Â¼»òÎÄ¼þÔÚISO 9660»òRock RidgeExtensionsµÄÏµÍ³ÖÐÒþ²Ø¡£
+-hide<ç›®å½•æˆ–æ–‡ä»¶å>   ä½¿æŒ‡å®šçš„ç›®å½•æˆ–æ–‡ä»¶åœ¨ISO 9660æˆ–Rock RidgeExtensionsçš„ç³»ç»Ÿä¸­éšè—ã€‚
 
--hide-joliet<Ä¿Â¼»òÎÄ¼þÃû>   Ê¹Ö¸¶¨µÄÄ¿Â¼»òÎÄ¼þÔÚJolietÏµÍ³ÖÐÒþ²Ø¡£
+-hide-joliet<ç›®å½•æˆ–æ–‡ä»¶å>   ä½¿æŒ‡å®šçš„ç›®å½•æˆ–æ–‡ä»¶åœ¨Jolietç³»ç»Ÿä¸­éšè—ã€‚
 
--J»ò-joliet   Ê¹ÓÃJoliet¸ñÊ½µÄÄ¿Â¼ÓëÎÄ¼þÃû³Æ¡£
+-Jæˆ–-joliet   ä½¿ç”¨Jolietæ ¼å¼çš„ç›®å½•ä¸Žæ–‡ä»¶åç§°ã€‚
 
--l»ò-full-iso9660-filenames   Ê¹ÓÃISO 9660 32×Ö·û³¤¶ÈµÄÎÄ¼þÃû¡£
+-læˆ–-full-iso9660-filenames   ä½¿ç”¨ISO 9660 32å­—ç¬¦é•¿åº¦çš„æ–‡ä»¶åã€‚
 
--L»ò-allow-leading-dots   ÔÊÐíÎÄ¼þÃûµÄµÚÒ»¸ö×Ö·ûÎª¾äºÅ¡£
+-Læˆ–-allow-leading-dots   å…è®¸æ–‡ä»¶åçš„ç¬¬ä¸€ä¸ªå­—ç¬¦ä¸ºå¥å·ã€‚
 
--log-file<¼ÇÂ¼ÎÄ¼þ>   ÔÚÖ´ÐÐ¹ý³ÌÖÐÈôÓÐ´íÎóÐÅÏ¢£¬Ô¤Éè»áÏÔÊ¾ÔÚÆÁÄ»ÉÏ¡£
+-log-file<è®°å½•æ–‡ä»¶>   åœ¨æ‰§è¡Œè¿‡ç¨‹ä¸­è‹¥æœ‰é”™è¯¯ä¿¡æ¯ï¼Œé¢„è®¾ä¼šæ˜¾ç¤ºåœ¨å±å¹•ä¸Šã€‚
 
--m<Ä¿Â¼»òÎÄ¼þÃû>»ò-exclude<Ä¿Â¼»òÎÄ¼þÃû>   Ö¸¶¨µÄÄ¿Â¼»òÎÄ¼þÃû½«²»»á·¿ÈëÓ³ÏñÎÄ¼þÖÐ¡£
+-m<ç›®å½•æˆ–æ–‡ä»¶å>æˆ–-exclude<ç›®å½•æˆ–æ–‡ä»¶å>   æŒ‡å®šçš„ç›®å½•æˆ–æ–‡ä»¶åå°†ä¸ä¼šæˆ¿å…¥æ˜ åƒæ–‡ä»¶ä¸­ã€‚
 
--M<Ó³ÏñÎÄ¼þ>»ò-prev-session<Ó³ÏñÎÄ¼þ>   ÓëÖ¸¶¨µÄÓ³ÏñÎÄ¼þºÏ²¢¡£
+-M<æ˜ åƒæ–‡ä»¶>æˆ–-prev-session<æ˜ åƒæ–‡ä»¶>   ä¸ŽæŒ‡å®šçš„æ˜ åƒæ–‡ä»¶åˆå¹¶ã€‚
 
--N»ò-omit-version-number   Ê¡ÂÔISO 9660ÎÄ¼þÖÐµÄ°æ±¾ÐÅÏ¢¡£
+-Næˆ–-omit-version-number   çœç•¥ISO 9660æ–‡ä»¶ä¸­çš„ç‰ˆæœ¬ä¿¡æ¯ã€‚
 
--o<Ó³ÏñÎÄ¼þ>»ò-output<Ó³ÏñÎÄ¼þ>   Ö¸¶¨Ó³ÏñÎÄ¼þµÄÃû³Æ¡£
+-o<æ˜ åƒæ–‡ä»¶>æˆ–-output<æ˜ åƒæ–‡ä»¶>   æŒ‡å®šæ˜ åƒæ–‡ä»¶çš„åç§°ã€‚
 
--p<Êý¾Ý´¦ÀíÈË>»ò-preparer<Êý¾Ý´¦ÀíÈË>   ¼ÇÂ¼¹âÅÌµÄÊý¾Ý´¦ÀíÈË¡£
+-p<æ•°æ®å¤„ç†äºº>æˆ–-preparer<æ•°æ®å¤„ç†äºº>   è®°å½•å…‰ç›˜çš„æ•°æ®å¤„ç†äººã€‚
 
--print-size   ÏÔÊ¾Ô¤¹ÀµÄÎÄ¼þÏµÍ³´óÐ¡¡£
+-print-size   æ˜¾ç¤ºé¢„ä¼°çš„æ–‡ä»¶ç³»ç»Ÿå¤§å°ã€‚
 
--quiet   Ö´ÐÐÊ±²»ÏÔÊ¾ÈÎºÎÐÅÏ¢¡£
+-quiet   æ‰§è¡Œæ—¶ä¸æ˜¾ç¤ºä»»ä½•ä¿¡æ¯ã€‚
 
--r»ò-rational-rock   Ê¹ÓÃRock Ridge Extensions£¬²¢¿ª·ÅÈ«²¿ÎÄ¼þµÄ¶ÁÈ¡È¨ÏÞ¡£
+-ræˆ–-rational-rock   ä½¿ç”¨Rock Ridge Extensionsï¼Œå¹¶å¼€æ”¾å…¨éƒ¨æ–‡ä»¶çš„è¯»å–æƒé™ã€‚
 
--R»ò-rock   Ê¹ÓÃRock Ridge Extensions¡£
+-Ræˆ–-rock   ä½¿ç”¨Rock Ridge Extensionsã€‚
 
--sysid<ÏµÍ³ID>   Ö¸¶¨¹âÅÌµÄÏµÍ³ID¡£
+-sysid<ç³»ç»ŸID>   æŒ‡å®šå…‰ç›˜çš„ç³»ç»ŸIDã€‚
 
--T»ò-translation-table   ½¨Á¢ÎÄ¼þÃûµÄ×ª»»±í£¬ÊÊÓÃÓÚ²»Ö§³ÖRock Ridge ExtensionsµÄÏµÍ³ÉÏ¡£
+-Tæˆ–-translation-table   å»ºç«‹æ–‡ä»¶åçš„è½¬æ¢è¡¨ï¼Œé€‚ç”¨äºŽä¸æ”¯æŒRock Ridge Extensionsçš„ç³»ç»Ÿä¸Šã€‚
 
--v»ò-verbose   Ö´ÐÐÊ±ÏÔÊ¾ÏêÏ¸µÄÐÅÏ¢¡£
+-væˆ–-verbose   æ‰§è¡Œæ—¶æ˜¾ç¤ºè¯¦ç»†çš„ä¿¡æ¯ã€‚
 
--V<¹âÅÌID>»ò-volid<¹âÅÌID>   Ö¸¶¨¹âÅÌµÄ¾í²á¼¯ID¡£
+-V<å…‰ç›˜ID>æˆ–-volid<å…‰ç›˜ID>   æŒ‡å®šå…‰ç›˜çš„å·å†Œé›†IDã€‚
 
--volset-size<¹âÅÌ×ÜÊý>   Ö¸¶¨¾í²á¼¯Ëù°üº¬µÄ¹âÅÌÕÅÊý¡£
+-volset-size<å…‰ç›˜æ€»æ•°>   æŒ‡å®šå·å†Œé›†æ‰€åŒ…å«çš„å…‰ç›˜å¼ æ•°ã€‚
 
--volset-seqno<¾í²áÐòºÅ>   Ö¸¶¨¹âÅÌÆ¬ÔÚ¾í²á¼¯ÖÐµÄ±àºÅ¡£
+-volset-seqno<å·å†Œåºå·>   æŒ‡å®šå…‰ç›˜ç‰‡åœ¨å·å†Œé›†ä¸­çš„ç¼–å·ã€‚
 
--x<Ä¿Â¼>   Ö¸¶¨µÄÄ¿Â¼½«²»»á·ÅÈëÓ³ÏñÎÄ¼þÖÐ¡£
+-x<ç›®å½•>   æŒ‡å®šçš„ç›®å½•å°†ä¸ä¼šæ”¾å…¥æ˜ åƒæ–‡ä»¶ä¸­ã€‚
 
--z   ½¨Á¢Í¨Í¸ÐÔÑ¹ËõÎÄ¼þµÄSUSP¼ÇÂ¼£¬´Ë¼ÇÂ¼Ä¿Ç°Ö»ÔÚAlpha»úÆ÷ÉÏµÄLinuxÓÐÐ§¡£
+-z   å»ºç«‹é€šé€æ€§åŽ‹ç¼©æ–‡ä»¶çš„SUSPè®°å½•ï¼Œæ­¤è®°å½•ç›®å‰åªåœ¨Alphaæœºå™¨ä¸Šçš„Linuxæœ‰æ•ˆã€‚
 
-## linuxÃüÁîÖÆ×÷iso¾µÏñ
+## linuxå‘½ä»¤åˆ¶ä½œisoé•œåƒ
 
-ÀýÈç£º°Ñ/dev/cdromÄ¿Â¼ÖÆ×÷Îª¾µÏñ£¬Ãû×ÖÎª/root/rh1.iso
+ä¾‹å¦‚ï¼šæŠŠ/dev/cdromç›®å½•åˆ¶ä½œä¸ºé•œåƒï¼Œåå­—ä¸º/root/rh1.iso
 
-·½·¨1£ºdd if=/dev/cdrom of=/root/rh1.iso
+æ–¹æ³•1ï¼šdd if=/dev/cdrom of=/root/rh1.iso
 
-·½·¨2£º#cat /dev/cdrom >;/root/1.iso
+æ–¹æ³•2ï¼š#cat /dev/cdrom >;/root/1.iso
 
-·½·¨3£ºmkisofs -r -o myiso.iso /dev/cdrom
+æ–¹æ³•3ï¼šmkisofs -r -o myiso.iso /dev/cdrom
 
-·½·¨4£ºcp -r /home/user name.iso
+æ–¹æ³•4ï¼šcp -r /home/user name.iso
 
-## lspciµÄÊ¹ÓÃ  
+## lspciçš„ä½¿ç”¨
 
-PCIºÍPCI Express£¬ÊÇ¼ÆËã»ú³£Ê¹ÓÃµÄÒ»ÖÖ¸ßËÙ×ÜÏß¡£²Ù×÷ÏµÍ³ÖÐµÄPCI/PCI-EÉè±¸Çý¶¯ÒÔ¼°²Ù×÷ÏµÍ³ÄÚºË£¬¶¼ÐèÒª·ÃÎÊPCI¼°PCI-EÅäÖÃ¿Õ¼ä¡£PCI/PCI-EÉè±¸µÄÕý³£ÔËÐÐ£¬Àë²»¿ªPCI/PCI-EÅäÖÃ¿Õ¼ä¡£Í¨¹ý¶ÁÐ´PCI/PCI-EÅäÖÃ¿Õ¼ä£¬¿ÉÒÔ¸ü¸ÄÉè±¸ÔËÐÐ²ÎÊý£¬ÓÅ»¯Éè±¸ÔËÐÐ¡£±¾ÎÄ½éÉÜÓÃ»§¿Õ¼ä¿ÉÒÔ¶ÁÈ¡¡¢ÐÞ¸Ä¡¢É¨ÃèPCI/PCIEÉè±¸µÄÓÃ»§ÃüÁî¼°Ê¹ÓÃ¡£ÔÚLinuxÄÚºËÖÐ£¬ÎªPCIºÍPCI-EÖ»ÊÊÓÃÁËÒ»ÖÖ×ÜÏßPCI£¨ÄÚºËÌá¹©µÄ×ÜÏßÏµÍ³£©£¬¹Ê·ÃÎÊPCI-EÅäÖÃ¿Õ¼ä£¬Ò²°üÀ¨ÁËPCIÉè±¸ÅäÖÃ¿Õ¼ä¡£¶ÁÈ¡PCI-EÉè±¸ÅäÖÃ¿Õ¼äµÄÃüÁîÊÇlspci¡£ÏêÏ¸ÃüÁî²ÎÊý£¬¿ÉÒÔÊ¹ÓÃman lspciÀ´²é¿´£¬ÕâÀïÎÒÃÇÖ»½éÉÜ³£ÓÃ²ÎÊý¡£ÃüÁîÄ¬ÈÏÊä³ö½á¹ûÊÇ£¬µ±Ç°ÏµÍ³µÄËùÓÐPCI/PCI-EÉè±¸¡£
+PCIå’ŒPCI Expressï¼Œæ˜¯è®¡ç®—æœºå¸¸ä½¿ç”¨çš„ä¸€ç§é«˜é€Ÿæ€»çº¿ã€‚æ“ä½œç³»ç»Ÿä¸­çš„PCI/PCI-Eè®¾å¤‡é©±åŠ¨ä»¥åŠæ“ä½œç³»ç»Ÿå†…æ ¸ï¼Œéƒ½éœ€è¦è®¿é—®PCIåŠPCI-Eé…ç½®ç©ºé—´ã€‚PCI/PCI-Eè®¾å¤‡çš„æ­£å¸¸è¿è¡Œï¼Œç¦»ä¸å¼€PCI/PCI-Eé…ç½®ç©ºé—´ã€‚é€šè¿‡è¯»å†™PCI/PCI-Eé…ç½®ç©ºé—´ï¼Œå¯ä»¥æ›´æ”¹è®¾å¤‡è¿è¡Œå‚æ•°ï¼Œä¼˜åŒ–è®¾å¤‡è¿è¡Œã€‚æœ¬æ–‡ä»‹ç»ç”¨æˆ·ç©ºé—´å¯ä»¥è¯»å–ã€ä¿®æ”¹ã€æ‰«æPCI/PCIEè®¾å¤‡çš„ç”¨æˆ·å‘½ä»¤åŠä½¿ç”¨ã€‚åœ¨Linuxå†…æ ¸ä¸­ï¼Œä¸ºPCIå’ŒPCI-Eåªé€‚ç”¨äº†ä¸€ç§æ€»çº¿PCIï¼ˆå†…æ ¸æä¾›çš„æ€»çº¿ç³»ç»Ÿï¼‰ï¼Œæ•…è®¿é—®PCI-Eé…ç½®ç©ºé—´ï¼Œä¹ŸåŒ…æ‹¬äº†PCIè®¾å¤‡é…ç½®ç©ºé—´ã€‚è¯»å–PCI-Eè®¾å¤‡é…ç½®ç©ºé—´çš„å‘½ä»¤æ˜¯lspciã€‚è¯¦ç»†å‘½ä»¤å‚æ•°ï¼Œå¯ä»¥ä½¿ç”¨man lspciæ¥æŸ¥çœ‹ï¼Œè¿™é‡Œæˆ‘ä»¬åªä»‹ç»å¸¸ç”¨å‚æ•°ã€‚å‘½ä»¤é»˜è®¤è¾“å‡ºç»“æžœæ˜¯ï¼Œå½“å‰ç³»ç»Ÿçš„æ‰€æœ‰PCI/PCI-Eè®¾å¤‡ã€‚
 
-³£ÓÃ²ÎÊý£º
+å¸¸ç”¨å‚æ•°ï¼š
 
--v ÏÔÊ¾Éè±¸µÄÏêÏ¸ÐÅÏ¢¡£
+-v æ˜¾ç¤ºè®¾å¤‡çš„è¯¦ç»†ä¿¡æ¯ã€‚
 
--vv ÏÔÊ¾Éè±¸¸üÏêÏ¸µÄÐÅÏ¢¡£
+-vv æ˜¾ç¤ºè®¾å¤‡æ›´è¯¦ç»†çš„ä¿¡æ¯ã€‚
 
--vvv ÏÔÊ¾Éè±¸ËùÓÐ¿É½âÎöµÄÐÅÏ¢¡£
+-vvv æ˜¾ç¤ºè®¾å¤‡æ‰€æœ‰å¯è§£æžçš„ä¿¡æ¯ã€‚
 
--x ÒÔ16½øÖÆÏÔÊ¾ÅäÖÃ¿Õ¼äµÄÇ°64×Ö½Ú£¬»òÕßCardBusÇÅµÄÇ°128×Ö½Ú¡£
+-x ä»¥16è¿›åˆ¶æ˜¾ç¤ºé…ç½®ç©ºé—´çš„å‰64å­—èŠ‚ï¼Œæˆ–è€…CardBusæ¡¥çš„å‰128å­—èŠ‚ã€‚
 
--xxx ÒÔ16½øÖÆÏÔÊ¾Õû¸öPCIÅäÖÃ¿Õ¼ä£¨256×Ö½Ú£©¡£
+-xxx ä»¥16è¿›åˆ¶æ˜¾ç¤ºæ•´ä¸ªPCIé…ç½®ç©ºé—´ï¼ˆ256å­—èŠ‚ï¼‰ã€‚
 
--xxxx ÒÔ16½øÖÆÏÔÊ¾Õû¸öPCI-EÅäÖÃ¿Õ¼ä£¨4096×Ö½Ú£©¡£
+-xxxx ä»¥16è¿›åˆ¶æ˜¾ç¤ºæ•´ä¸ªPCI-Eé…ç½®ç©ºé—´ï¼ˆ4096å­—èŠ‚ï¼‰ã€‚
 
--s [[[[<domain>]:]<bus>]:][<slot>][.[<func>]]£º
+-s [[[[<domain>]:]<bus>]:][<slot>][.[<func>]]ï¼š
 
-## mplayerÊ¹ÓÃasciiÎÄ±¾²¥·ÅµçÓ°
+## mplayerä½¿ç”¨asciiæ–‡æœ¬æ’­æ”¾ç”µå½±
 
-Ê×ÏÈ£¬ÄãÒªÈ·ÈÏmplayerÒÑ¾­×°ºÃ£¬ÄãÖ»ÐèÖ´ÐÐÏÂÃæÕâÌõÃüÁî£º
+é¦–å…ˆï¼Œä½ è¦ç¡®è®¤mplayerå·²ç»è£…å¥½ï¼Œä½ åªéœ€æ‰§è¡Œä¸‹é¢è¿™æ¡å‘½ä»¤ï¼š
 
 sudo apt-get install mplayer
 
-½ÓÏÂÀ´£¬ÎªÁË²¥·ÅµçÓ°£¬ÄãÐèÒªÖ´ÐÐÏÂÃæµÄÃüÁî£¬¼ÇµÃ°ÑMovieName.avi¸Ä³ÉÄãµçÄÔÀïÃæµçÓ°ÎÄ¼þµÄÃû×Ö£º
+æŽ¥ä¸‹æ¥ï¼Œä¸ºäº†æ’­æ”¾ç”µå½±ï¼Œä½ éœ€è¦æ‰§è¡Œä¸‹é¢çš„å‘½ä»¤ï¼Œè®°å¾—æŠŠMovieName.aviæ”¹æˆä½ ç”µè„‘é‡Œé¢ç”µå½±æ–‡ä»¶çš„åå­—ï¼š
 
 mplayer -vo caca MovieName.avi
 
-¡°caca¡±ÃüÁî´ú±í×Å²ÊÉ«ÎÄ±¾²¥·ÅÒýÇæ£¬ÄãÒ²¿ÉÒÔÊ¹ÓÃ¡°-vo aa¡±ÃüÁîÀ´Ìæ´úËü£¬ÕâÑùÄã¾Í¿ÉÒÔ°Ñ²ÊÉ«µÄÎÄ±¾±ä³ÉºÚ°×Á½É«¡£
+â€œcacaâ€å‘½ä»¤ä»£è¡¨ç€å½©è‰²æ–‡æœ¬æ’­æ”¾å¼•æ“Žï¼Œä½ ä¹Ÿå¯ä»¥ä½¿ç”¨â€œ-vo aaâ€å‘½ä»¤æ¥æ›¿ä»£å®ƒï¼Œè¿™æ ·ä½ å°±å¯ä»¥æŠŠå½©è‰²çš„æ–‡æœ¬å˜æˆé»‘ç™½ä¸¤è‰²ã€‚
 
-##ÐÅÏ¢ÃüÁî²é¿´´óÈ«
+##ä¿¡æ¯å‘½ä»¤æŸ¥çœ‹å¤§å…¨
 
 ```
-    # uname -a               # ²é¿´ÄÚºË/²Ù×÷ÏµÍ³/CPUÐÅÏ¢
-    # head -n 1 /etc/issue   # ²é¿´²Ù×÷ÏµÍ³°æ±¾
-    # cat /proc/cpuinfo      # ²é¿´CPUÐÅÏ¢
-    # hostname               # ²é¿´¼ÆËã»úÃû
-    # lspci -tv              # ÁÐ³öËùÓÐPCIÉè±¸
-    # lsusb -tv              # ÁÐ³öËùÓÐUSBÉè±¸
-    # lsmod                  # ÁÐ³ö¼ÓÔØµÄÄÚºËÄ£¿é
-    # env                    # ²é¿´»·¾³±äÁ¿×ÊÔ´
-    # free -m                # ²é¿´ÄÚ´æÊ¹ÓÃÁ¿ºÍ½»»»ÇøÊ¹ÓÃÁ¿
-    # df -h                  # ²é¿´¸÷·ÖÇøÊ¹ÓÃÇé¿ö
-    # du -sh <Ä¿Â¼Ãû>        # ²é¿´Ö¸¶¨Ä¿Â¼µÄ´óÐ¡
-    # grep MemTotal /proc/meminfo   # ²é¿´ÄÚ´æ×ÜÁ¿
-    # grep MemFree /proc/meminfo    # ²é¿´¿ÕÏÐÄÚ´æÁ¿
-    # uptime                 # ²é¿´ÏµÍ³ÔËÐÐÊ±¼ä¡¢ÓÃ»§Êý¡¢¸ºÔØ
-    # cat /proc/loadavg      # ²é¿´ÏµÍ³¸ºÔØ´ÅÅÌºÍ·ÖÇø
-    # mount | column -t      # ²é¿´¹Ò½ÓµÄ·ÖÇø×´Ì¬
-    # fdisk -l               # ²é¿´ËùÓÐ·ÖÇø
-    # swapon -s              # ²é¿´ËùÓÐ½»»»·ÖÇø
-    # hdparm -i /dev/hda     # ²é¿´´ÅÅÌ²ÎÊý(½öÊÊÓÃÓÚIDEÉè±¸)
-    # dmesg | grep IDE       # ²é¿´Æô¶¯Ê±IDEÉè±¸¼ì²â×´¿öÍøÂç
-    # ifconfig               # ²é¿´ËùÓÐÍøÂç½Ó¿ÚµÄÊôÐÔ
-    # iptables -L            # ²é¿´·À»ðÇ½ÉèÖÃ
-    # route -n               # ²é¿´Â·ÓÉ±í
-    # netstat -lntp          # ²é¿´ËùÓÐ¼àÌý¶Ë¿Ú
-    # netstat -antp          # ²é¿´ËùÓÐÒÑ¾­½¨Á¢µÄÁ¬½Ó
-    # netstat -s             # ²é¿´ÍøÂçÍ³¼ÆÐÅÏ¢½ø³Ì
-    # ps -ef                 # ²é¿´ËùÓÐ½ø³Ì
-    # top                    # ÊµÊ±ÏÔÊ¾½ø³Ì×´Ì¬ÓÃ»§
-    # w                      # ²é¿´»î¶¯ÓÃ»§
-    # id <ÓÃ»§Ãû>            # ²é¿´Ö¸¶¨ÓÃ»§ÐÅÏ¢
-    # last                   # ²é¿´ÓÃ»§µÇÂ¼ÈÕÖ¾
-    # cut -d: -f1 /etc/passwd   # ²é¿´ÏµÍ³ËùÓÐÓÃ»§
-    # cut -d: -f1 /etc/group    # ²é¿´ÏµÍ³ËùÓÐ×é
-    # crontab -l             # ²é¿´µ±Ç°ÓÃ»§µÄ¼Æ»®ÈÎÎñ·þÎñ
-    # chkconfig --list       # ÁÐ³öËùÓÐÏµÍ³·þÎñ
-    # chkconfig --list | grep on    # ÁÐ³öËùÓÐÆô¶¯µÄÏµÍ³·þÎñ³ÌÐò
-    # rpm -qa                # ²é¿´ËùÓÐ°²×°µÄÈí¼þ°ü 
+    # uname -a               # æŸ¥çœ‹å†…æ ¸/æ“ä½œç³»ç»Ÿ/CPUä¿¡æ¯
+    # head -n 1 /etc/issue   # æŸ¥çœ‹æ“ä½œç³»ç»Ÿç‰ˆæœ¬
+    # cat /proc/cpuinfo      # æŸ¥çœ‹CPUä¿¡æ¯
+    # hostname               # æŸ¥çœ‹è®¡ç®—æœºå
+    # lspci -tv              # åˆ—å‡ºæ‰€æœ‰PCIè®¾å¤‡
+    # lsusb -tv              # åˆ—å‡ºæ‰€æœ‰USBè®¾å¤‡
+    # lsmod                  # åˆ—å‡ºåŠ è½½çš„å†…æ ¸æ¨¡å—
+    # env                    # æŸ¥çœ‹çŽ¯å¢ƒå˜é‡èµ„æº
+    # free -m                # æŸ¥çœ‹å†…å­˜ä½¿ç”¨é‡å’Œäº¤æ¢åŒºä½¿ç”¨é‡
+    # df -h                  # æŸ¥çœ‹å„åˆ†åŒºä½¿ç”¨æƒ…å†µ
+    # du -sh <ç›®å½•å>        # æŸ¥çœ‹æŒ‡å®šç›®å½•çš„å¤§å°
+    # grep MemTotal /proc/meminfo   # æŸ¥çœ‹å†…å­˜æ€»é‡
+    # grep MemFree /proc/meminfo    # æŸ¥çœ‹ç©ºé—²å†…å­˜é‡
+    # uptime                 # æŸ¥çœ‹ç³»ç»Ÿè¿è¡Œæ—¶é—´ã€ç”¨æˆ·æ•°ã€è´Ÿè½½
+    # cat /proc/loadavg      # æŸ¥çœ‹ç³»ç»Ÿè´Ÿè½½ç£ç›˜å’Œåˆ†åŒº
+    # mount | column -t      # æŸ¥çœ‹æŒ‚æŽ¥çš„åˆ†åŒºçŠ¶æ€
+    # fdisk -l               # æŸ¥çœ‹æ‰€æœ‰åˆ†åŒº
+    # swapon -s              # æŸ¥çœ‹æ‰€æœ‰äº¤æ¢åˆ†åŒº
+    # hdparm -i /dev/hda     # æŸ¥çœ‹ç£ç›˜å‚æ•°(ä»…é€‚ç”¨äºŽIDEè®¾å¤‡)
+    # dmesg | grep IDE       # æŸ¥çœ‹å¯åŠ¨æ—¶IDEè®¾å¤‡æ£€æµ‹çŠ¶å†µç½‘ç»œ
+    # ifconfig               # æŸ¥çœ‹æ‰€æœ‰ç½‘ç»œæŽ¥å£çš„å±žæ€§
+    # iptables -L            # æŸ¥çœ‹é˜²ç«å¢™è®¾ç½®
+    # route -n               # æŸ¥çœ‹è·¯ç”±è¡¨
+    # netstat -lntp          # æŸ¥çœ‹æ‰€æœ‰ç›‘å¬ç«¯å£
+    # netstat -antp          # æŸ¥çœ‹æ‰€æœ‰å·²ç»å»ºç«‹çš„è¿žæŽ¥
+    # netstat -s             # æŸ¥çœ‹ç½‘ç»œç»Ÿè®¡ä¿¡æ¯è¿›ç¨‹
+    # ps -ef                 # æŸ¥çœ‹æ‰€æœ‰è¿›ç¨‹
+    # top                    # å®žæ—¶æ˜¾ç¤ºè¿›ç¨‹çŠ¶æ€ç”¨æˆ·
+    # w                      # æŸ¥çœ‹æ´»åŠ¨ç”¨æˆ·
+    # id <ç”¨æˆ·å>            # æŸ¥çœ‹æŒ‡å®šç”¨æˆ·ä¿¡æ¯
+    # last                   # æŸ¥çœ‹ç”¨æˆ·ç™»å½•æ—¥å¿—
+    # cut -d: -f1 /etc/passwd   # æŸ¥çœ‹ç³»ç»Ÿæ‰€æœ‰ç”¨æˆ·
+    # cut -d: -f1 /etc/group    # æŸ¥çœ‹ç³»ç»Ÿæ‰€æœ‰ç»„
+    # crontab -l             # æŸ¥çœ‹å½“å‰ç”¨æˆ·çš„è®¡åˆ’ä»»åŠ¡æœåŠ¡
+    # chkconfig --list       # åˆ—å‡ºæ‰€æœ‰ç³»ç»ŸæœåŠ¡
+    # chkconfig --list | grep on    # åˆ—å‡ºæ‰€æœ‰å¯åŠ¨çš„ç³»ç»ŸæœåŠ¡ç¨‹åº
+    # rpm -qa                # æŸ¥çœ‹æ‰€æœ‰å®‰è£…çš„è½¯ä»¶åŒ…
 ```
 
-## LinuxÏÂ²é¿´Ä³¸ö¶Ë¿ÚÏÂÔËÐÐµÄÊÇÊ²Ã´³ÌÐò
+## Linuxä¸‹æŸ¥çœ‹æŸä¸ªç«¯å£ä¸‹è¿è¡Œçš„æ˜¯ä»€ä¹ˆç¨‹åº
 
-netstat -anp | grep xxxx   #xxxxÎª¶Ë¿ÚºÅ
+netstat -anp | grep xxxx   #xxxxä¸ºç«¯å£å·
 
-»òÕß
+æˆ–è€…
 
-lsof -i :xxxx    #xxxxÎª¶Ë¿ÚºÅ
+lsof -i :xxxx    #xxxxä¸ºç«¯å£å·
 
-## Windows/LinuxÎÄ±¾ÎÄ¼þ¸ñÊ½×ª»»
+## Windows/Linuxæ–‡æœ¬æ–‡ä»¶æ ¼å¼è½¬æ¢
 
-DOS/WindowsºÍLinux/UnixµÄÎÄ±¾ÎÄ¼þ»»ÐÐ¸ñÊ½²»Í¬£¬»ùÓÚ DOS/Windows µÄÎÄ±¾ÎÄ¼þÔÚÃ¿Ò»ÐÐÄ©Î²ÓÐÒ»¸ö CR£¨»Ø³µ£©ºÍ LF£¨»»ÐÐ£©£¬¶ø UNIX ÎÄ±¾Ö»ÓÐÒ»¸öLF£¨»»ÐÐ£©¡£
+DOS/Windowså’ŒLinux/Unixçš„æ–‡æœ¬æ–‡ä»¶æ¢è¡Œæ ¼å¼ä¸åŒï¼ŒåŸºäºŽ DOS/Windows çš„æ–‡æœ¬æ–‡ä»¶åœ¨æ¯ä¸€è¡Œæœ«å°¾æœ‰ä¸€ä¸ª CRï¼ˆå›žè½¦ï¼‰å’Œ LFï¼ˆæ¢è¡Œï¼‰ï¼Œè€Œ UNIX æ–‡æœ¬åªæœ‰ä¸€ä¸ªLFï¼ˆæ¢è¡Œï¼‰ã€‚
 
-DOS/WindowsÎÄ±¾ÎÄ¼þ¸ñÊ½×ª»»³ÉLinux/UnixÎÄ±¾ÎÄ¼þ¸ñÊ½
+DOS/Windowsæ–‡æœ¬æ–‡ä»¶æ ¼å¼è½¬æ¢æˆLinux/Unixæ–‡æœ¬æ–‡ä»¶æ ¼å¼
 
 sed -e 's/.$//' mydos.txt > myunix.txt
 
-ËµÃ÷£ºÌæ´úÕýÔò±í´ïÊ½ÓëÒ»ÐÐµÄ×îÄ©×Ö·ûÆ¥Åä£¬¶ø¸Ã×Ö·ûÇ¡ºÃ¾ÍÊÇ»Ø³µ¡£ÎÒÃÇÓÃ¿Õ×Ö·ûÌæ»»Ëü£¬´Ó¶ø½«Æä´ÓÊä³öÖÐ³¹µ×É¾³ý¡£
+è¯´æ˜Žï¼šæ›¿ä»£æ­£åˆ™è¡¨è¾¾å¼ä¸Žä¸€è¡Œçš„æœ€æœ«å­—ç¬¦åŒ¹é…ï¼Œè€Œè¯¥å­—ç¬¦æ°å¥½å°±æ˜¯å›žè½¦ã€‚æˆ‘ä»¬ç”¨ç©ºå­—ç¬¦æ›¿æ¢å®ƒï¼Œä»Žè€Œå°†å…¶ä»Žè¾“å‡ºä¸­å½»åº•åˆ é™¤ã€‚
 
-°ÑLinux/Unix ÎÄ±¾ÎÄ¼þ¸ñÊ½×ª»»³É DOS/WindowsÎÄ±¾ÎÄ¼þ¸ñÊ½
+æŠŠLinux/Unix æ–‡æœ¬æ–‡ä»¶æ ¼å¼è½¬æ¢æˆ DOS/Windowsæ–‡æœ¬æ–‡ä»¶æ ¼å¼
 
 sed -e 's/$/\r/' myunix.txt > mydos.txt
 
-ËµÃ÷£º'$' ÕýÔò±í´ïÊ½½«ÓëÐÐµÄÄ©Î²Æ¥Åä£¬¶ø '\r' ¸æËß sed ÔÚÆäÖ®Ç°²åÈëÒ»¸ö»Ø³µ¡£ÔÚ»»ÐÐÖ®Ç°²åÈë»Ø³µ£¬Ã¿Ò»ÐÐ¾ÍÒÔ CR/LF ½áÊø¡£
+è¯´æ˜Žï¼š'$' æ­£åˆ™è¡¨è¾¾å¼å°†ä¸Žè¡Œçš„æœ«å°¾åŒ¹é…ï¼Œè€Œ '\r' å‘Šè¯‰ sed åœ¨å…¶ä¹‹å‰æ’å…¥ä¸€ä¸ªå›žè½¦ã€‚åœ¨æ¢è¡Œä¹‹å‰æ’å…¥å›žè½¦ï¼Œæ¯ä¸€è¡Œå°±ä»¥ CR/LF ç»“æŸã€‚
 
-ÁíÍâ»¹ÓÐ¸ö·½·¨£¬Ê¹ÓÃÃüÁî £º
+å¦å¤–è¿˜æœ‰ä¸ªæ–¹æ³•ï¼Œä½¿ç”¨å‘½ä»¤ ï¼š
 
 unix2dos filename
 
 dos2unix filename
 
-## LinuxµÄrenameÃüÁî
+## Linuxçš„renameå‘½ä»¤
 
-²»Í¬ÓÚDosÏÂµÄrenameÃüÁî£¬linuxÏÂµÄrenameÃüÁî¹¦ÄÜ·Ç³£Ç¿´ó¡£ renameÃüÁîµÄ¸ñÊ½£º
+ä¸åŒäºŽDosä¸‹çš„renameå‘½ä»¤ï¼Œlinuxä¸‹çš„renameå‘½ä»¤åŠŸèƒ½éžå¸¸å¼ºå¤§ã€‚ renameå‘½ä»¤çš„æ ¼å¼ï¼š
 
 rename [ -v ] [ -n ] [ -f ] perlexpr [ files ]
 
-µÚÒ»¸ö²ÎÊý£º±»Ìæ»»µôµÄ×Ö·û´®
+ç¬¬ä¸€ä¸ªå‚æ•°ï¼šè¢«æ›¿æ¢æŽ‰çš„å­—ç¬¦ä¸²
 
-µÚ¶þ¸ö²ÎÊý£ºÌæ»»³ÉµÄ×Ö·û´®
+ç¬¬äºŒä¸ªå‚æ•°ï¼šæ›¿æ¢æˆçš„å­—ç¬¦ä¸²
 
-µÚÈý¸ö²ÎÊý£ºÆ¥ÅäÒªÌæ»»µÄÎÄ¼þÄ£Ê½
+ç¬¬ä¸‰ä¸ªå‚æ•°ï¼šåŒ¹é…è¦æ›¿æ¢çš„æ–‡ä»¶æ¨¡å¼
 
-Àý£ºrename  main1.c main.c main1.c  ½«main1.cÖØÃüÃûÎªmain.c
+ä¾‹ï¼šrename  main1.c main.c main1.c  å°†main1.cé‡å‘½åä¸ºmain.c
 
-renameÖ§³ÖÍ¨Åä·û
+renameæ”¯æŒé€šé…ç¬¦
 
-?    ¿ÉÌæ´úµ¥¸ö×Ö·û
+?    å¯æ›¿ä»£å•ä¸ªå­—ç¬¦
 
-*    ¿ÉÌæ´ú¶à¸ö×Ö·û
+*    å¯æ›¿ä»£å¤šä¸ªå­—ç¬¦
 
-[charset]  ¿ÉÌæ´úcharset¼¯ÖÐµÄÈÎÒâµ¥¸ö×Ö·û
+[charset]  å¯æ›¿ä»£charseté›†ä¸­çš„ä»»æ„å•ä¸ªå­—ç¬¦
 
- 
 
-eg£ºÎÄ¼þ¼ÐÖÐÓÐÕâÐ©ÎÄ¼þfoo1, ..., foo9, foo10, ..., foo278£¬Èç¹ûÊ¹ÓÃ
+
+egï¼šæ–‡ä»¶å¤¹ä¸­æœ‰è¿™äº›æ–‡ä»¶foo1, ..., foo9, foo10, ..., foo278ï¼Œå¦‚æžœä½¿ç”¨
 
 rename foo foo0 foo?
 
-»á°Ñfoo1µ½foo9µÄÎÄ¼þÖØÃüÃûÎªfoo01µ½foo09£¬ÖØÃüÃûµÄÎÄ¼þÖ»ÊÇÓÐ4¸ö×Ö·û³¤¶ÈÃû³ÆµÄÎÄ¼þ£¬ÎÄ¼þÃûÖÐµÄfoo±»Ìæ»»Îªfoo0¡£Èç¹ûÊ¹ÓÃ
+ä¼šæŠŠfoo1åˆ°foo9çš„æ–‡ä»¶é‡å‘½åä¸ºfoo01åˆ°foo09ï¼Œé‡å‘½åçš„æ–‡ä»¶åªæ˜¯æœ‰4ä¸ªå­—ç¬¦é•¿åº¦åç§°çš„æ–‡ä»¶ï¼Œæ–‡ä»¶åä¸­çš„fooè¢«æ›¿æ¢ä¸ºfoo0ã€‚å¦‚æžœä½¿ç”¨
 
 rename foo foo0 foo??
 
-foo01µ½foo99µÄËùÓÐÎÄ¼þ¶¼±»ÖØÃüÃûÎªfoo001µ½foo099£¬Ö»ÖØÃüÃû5¸ö×Ö·û³¤¶ÈÃû³ÆµÄÎÄ¼þ£¬ÎÄ¼þÃûÖÐµÄfoo±»Ìæ»»Îªfoo0¡£Èç¹ûÊ¹ÓÃ
+foo01åˆ°foo99çš„æ‰€æœ‰æ–‡ä»¶éƒ½è¢«é‡å‘½åä¸ºfoo001åˆ°foo099ï¼Œåªé‡å‘½å5ä¸ªå­—ç¬¦é•¿åº¦åç§°çš„æ–‡ä»¶ï¼Œæ–‡ä»¶åä¸­çš„fooè¢«æ›¿æ¢ä¸ºfoo0ã€‚å¦‚æžœä½¿ç”¨
 
 rename foo foo0 foo*
 
-foo001µ½foo278µÄËùÓÐÎÄ¼þ¶¼±»ÖØÃüÃûÎªfoo0001µ½foo0278£¬ËùÓÐÒÔfoo¿ªÍ·µÄÎÄ¼þ¶¼±»ÖØÃüÃû¡£Èç¹ûÊ¹ÓÃ
+foo001åˆ°foo278çš„æ‰€æœ‰æ–‡ä»¶éƒ½è¢«é‡å‘½åä¸ºfoo0001åˆ°foo0278ï¼Œæ‰€æœ‰ä»¥fooå¼€å¤´çš„æ–‡ä»¶éƒ½è¢«é‡å‘½åã€‚å¦‚æžœä½¿ç”¨
 
 ename foo0 foo foo0[2]*
 
-´Ófoo0200µ½foo0278µÄËùÓÐÎÄ¼þ¶¼±»ÖØÃüÃûÎªfoo200µ½foo278£¬ÎÄ¼þÃûÖÐµÄfoo0±»Ìæ»»Îªfoo¡£
+ä»Žfoo0200åˆ°foo0278çš„æ‰€æœ‰æ–‡ä»¶éƒ½è¢«é‡å‘½åä¸ºfoo200åˆ°foo278ï¼Œæ–‡ä»¶åä¸­çš„foo0è¢«æ›¿æ¢ä¸ºfooã€‚
 
-renameÖ§³ÖÕýÔò±í´ïÊ½
+renameæ”¯æŒæ­£åˆ™è¡¨è¾¾å¼
 
-×ÖÄ¸µÄÌæ»»rename "s/AA/aa/" *             //°ÑÎÄ¼þÃûÖÐµÄAAÌæ»»³Éaa
+å­—æ¯çš„æ›¿æ¢rename "s/AA/aa/" *             //æŠŠæ–‡ä»¶åä¸­çš„AAæ›¿æ¢æˆaa
 
-ÐÞ¸ÄÎÄ¼þµÄºó×ºrename "s/.html/.php/" *     //°Ñ.html ºó×ºµÄ¸Ä³É .phpºó×º
+ä¿®æ”¹æ–‡ä»¶çš„åŽç¼€rename "s/.html/.php/" *     //æŠŠ.html åŽç¼€çš„æ”¹æˆ .phpåŽç¼€
 
-ÅúÁ¿Ìí¼ÓÎÄ¼þºó×ºrename "s/$//.txt/" *             //°ÑËùÓÐµÄÎÄ¼þÃû¶¼ÒÔtxt½áÎ²
+æ‰¹é‡æ·»åŠ æ–‡ä»¶åŽç¼€rename "s/$//.txt/" *             //æŠŠæ‰€æœ‰çš„æ–‡ä»¶åéƒ½ä»¥txtç»“å°¾
 
-ÅúÁ¿É¾³ýÎÄ¼þÃûrename "s//.txt//" *               //°ÑËùÓÐÒÔ.txt½áÎ²µÄÎÄ¼þÃûµÄ.txtÉ¾µô
+æ‰¹é‡åˆ é™¤æ–‡ä»¶årename "s//.txt//" *               //æŠŠæ‰€æœ‰ä»¥.txtç»“å°¾çš„æ–‡ä»¶åçš„.txtåˆ æŽ‰
 
-##Ê¹ÓÃscript¼ÇÂ¼LinuxÖÕ¶Ë»á»°
+##ä½¿ç”¨scriptè®°å½•Linuxç»ˆç«¯ä¼šè¯
 
-Ðí¶àÏµÍ³¹ÜÀíÔ±¶¼ÖªµÀ±£ÁôÒ»¸ö°üº¬¸÷ÖÖÈÎÎñ¡¢ÅäÖÃ¸Ä±äµÈ»î¶¯ÈÕÖ¾µÄÖØÒªÐÔ¡£¶ÔÒ»Ð©×éÖ¯¶øÑÔ£¬±£Áô¡°ÎÒ×öÁËÕâ¼þÊÂ¡±»ò¡°Ô¼º²×öÁËÄÇ¼þÊÂ¡±µÄ¼òµ¥ÈÕÖ¾¾ÍÒÑ×ã¹»£»µ«ÁíÒ»Ð©×éÖ¯ÔòÐèÒª¼ÇÂ¼ËùÓÐ¸Ä±ä¡£¶ÔÖÕ¶ËÊä³ö½øÐÐ¸´ÖÆÕ³Ìù¿ÉÄÜ·Ç³£·¦Î¶£¬ÎÒÃÇÊ¹ÓÃÒ»¸ö½Ð×öscriptµÄÏÊÎªÈËÖªµÄ³ÌÐòÀ´½â¾öÕâ¸öÎÊÌâ£¬ËüÊÇ´ó¶àÊýLinux²úÆ·util-linuxÈí¼þ°üµÄÒ»²¿·Ö¡£script¼ÇÂ¼»á»°µÄÒ»ÇÐÄÚÈÝ£ºÄãÊäÈëµÄÄÚÈÝºÍÄã¿´µ½µÄÄÚÈÝ¡£ËüÉõÖÁ¼ÇÂ¼ÑÕÉ«£»Òò´ËÈç¹ûÄãµÄÃüÁîÌáÊ¾·û»ò³ÌÐòÊä³öÖÐ°üº¬ÑÕÉ«£¬script½«¼ÇÂ¼Ëü¡£ÒªÊ¹ÓÃscript£¬¼òµ¥Ö´ÐÐÒÔÏÂÃüÁî£º
+è®¸å¤šç³»ç»Ÿç®¡ç†å‘˜éƒ½çŸ¥é“ä¿ç•™ä¸€ä¸ªåŒ…å«å„ç§ä»»åŠ¡ã€é…ç½®æ”¹å˜ç­‰æ´»åŠ¨æ—¥å¿—çš„é‡è¦æ€§ã€‚å¯¹ä¸€äº›ç»„ç»‡è€Œè¨€ï¼Œä¿ç•™â€œæˆ‘åšäº†è¿™ä»¶äº‹â€æˆ–â€œçº¦ç¿°åšäº†é‚£ä»¶äº‹â€çš„ç®€å•æ—¥å¿—å°±å·²è¶³å¤Ÿï¼›ä½†å¦ä¸€äº›ç»„ç»‡åˆ™éœ€è¦è®°å½•æ‰€æœ‰æ”¹å˜ã€‚å¯¹ç»ˆç«¯è¾“å‡ºè¿›è¡Œå¤åˆ¶ç²˜è´´å¯èƒ½éžå¸¸ä¹å‘³ï¼Œæˆ‘ä»¬ä½¿ç”¨ä¸€ä¸ªå«åšscriptçš„é²œä¸ºäººçŸ¥çš„ç¨‹åºæ¥è§£å†³è¿™ä¸ªé—®é¢˜ï¼Œå®ƒæ˜¯å¤§å¤šæ•°Linuxäº§å“util-linuxè½¯ä»¶åŒ…çš„ä¸€éƒ¨åˆ†ã€‚scriptè®°å½•ä¼šè¯çš„ä¸€åˆ‡å†…å®¹ï¼šä½ è¾“å…¥çš„å†…å®¹å’Œä½ çœ‹åˆ°çš„å†…å®¹ã€‚å®ƒç”šè‡³è®°å½•é¢œè‰²ï¼›å› æ­¤å¦‚æžœä½ çš„å‘½ä»¤æç¤ºç¬¦æˆ–ç¨‹åºè¾“å‡ºä¸­åŒ…å«é¢œè‰²ï¼Œscriptå°†è®°å½•å®ƒã€‚è¦ä½¿ç”¨scriptï¼Œç®€å•æ‰§è¡Œä»¥ä¸‹å‘½ä»¤ï¼š
 
 $ script
 
-Ä¬ÈÏÇé¿öÏÂ£¬ËüÏòµ±Ç°Ä¿Â¼µÄtypescriptÎÄ¼þÖÐÐ´ÈëÄÚÈÝ¡£È»ºó£¬ÄãÊäÈëµÄÒ»ÇÐÄÚÈÝ¶¼±»¼ÇÂ¼µ½ÄÇ¸öÎÄ¼þÖÐ¡£ÒªÍùÁíÒ»¸öÎÄ¼þÖÐ¼ÇÂ¼ÈÕÖ¾£¬Ö»ÐèÊ¹ÓÃÃüÁî£º
+é»˜è®¤æƒ…å†µä¸‹ï¼Œå®ƒå‘å½“å‰ç›®å½•çš„typescriptæ–‡ä»¶ä¸­å†™å…¥å†…å®¹ã€‚ç„¶åŽï¼Œä½ è¾“å…¥çš„ä¸€åˆ‡å†…å®¹éƒ½è¢«è®°å½•åˆ°é‚£ä¸ªæ–‡ä»¶ä¸­ã€‚è¦å¾€å¦ä¸€ä¸ªæ–‡ä»¶ä¸­è®°å½•æ—¥å¿—ï¼Œåªéœ€ä½¿ç”¨å‘½ä»¤ï¼š
 
 script /path/to/file
 
-(ÀýÈçscript screen.log)
+(ä¾‹å¦‚script screen.log)
 
-Íê³É¼ÇÂ¼ºó£¬ÊäÈëexitÍË³ö¡£Õâ¸öÃüÁî½«¹Ø±Õscript»á»°²¢±£´æÎÄ¼þ¡£ÏÖÔÚÄã¿ÉÒÔÊ¹ÓÃcat»òÆäËüÈÎºÎ³ÌÐòÀ´¼ì²éÈÕÖ¾ÎÄ¼þ¡£Òì³£ÍË³öÒ²Ã»ÓÐÎÊÌâ,ÈÔÈ»¼ÇÂ¼log,Ö»²»¹ýÐèÒª¼ÓÉÏ²ÎÊý£º
+å®Œæˆè®°å½•åŽï¼Œè¾“å…¥exité€€å‡ºã€‚è¿™ä¸ªå‘½ä»¤å°†å…³é—­scriptä¼šè¯å¹¶ä¿å­˜æ–‡ä»¶ã€‚çŽ°åœ¨ä½ å¯ä»¥ä½¿ç”¨catæˆ–å…¶å®ƒä»»ä½•ç¨‹åºæ¥æ£€æŸ¥æ—¥å¿—æ–‡ä»¶ã€‚å¼‚å¸¸é€€å‡ºä¹Ÿæ²¡æœ‰é—®é¢˜,ä»ç„¶è®°å½•log,åªä¸è¿‡éœ€è¦åŠ ä¸Šå‚æ•°ï¼š
 
 script -f ido.log
 
-Èç¹ûÔÚÒ»¸öÖÕ¶ËÉÏÊ¹ÓÃ£º
+å¦‚æžœåœ¨ä¸€ä¸ªç»ˆç«¯ä¸Šä½¿ç”¨ï¼š
 
-mkfifo ido.log;script -f ido.log 
+mkfifo ido.log;script -f ido.log
 
-È»ºóÔÚÁíÒ»¸öÖÕ¶ËµÇÂ¼,ÕÒµ½Õâ¸öido.logÎÄ¼þ,Äãtail -f ¾Í»á¹ö¶¯Êä³öÄã²Ù×÷µÄÄÚÈÝ¡£
+ç„¶åŽåœ¨å¦ä¸€ä¸ªç»ˆç«¯ç™»å½•,æ‰¾åˆ°è¿™ä¸ªido.logæ–‡ä»¶,ä½ tail -f å°±ä¼šæ»šåŠ¨è¾“å‡ºä½ æ“ä½œçš„å†…å®¹ã€‚
 
-2.Ê¹ÓÃscriptµÄÈ±µãÔÚÓÚ£¬Ëü¼ÇÂ¼ËùÓÐÌØÊâµÄ×Ö·û£»Òò´ËÄãÊäÈëµÄÎÄ¼þÖÐ½«³äÂú¿ØÖÆ×Ö·ûºÍANSI×ªÒåÐòÁÐ¡£Äã¿ÉÒÔÔÚscriptÖÐÊ¹ÓÃÒ»¸ö·Ç³£¼òµ¥µÄshellÀ´½â¾öÕâ¸öÎÊÌâ£º
+2.ä½¿ç”¨scriptçš„ç¼ºç‚¹åœ¨äºŽï¼Œå®ƒè®°å½•æ‰€æœ‰ç‰¹æ®Šçš„å­—ç¬¦ï¼›å› æ­¤ä½ è¾“å…¥çš„æ–‡ä»¶ä¸­å°†å……æ»¡æŽ§åˆ¶å­—ç¬¦å’ŒANSIè½¬ä¹‰åºåˆ—ã€‚ä½ å¯ä»¥åœ¨scriptä¸­ä½¿ç”¨ä¸€ä¸ªéžå¸¸ç®€å•çš„shellæ¥è§£å†³è¿™ä¸ªé—®é¢˜ï¼š
 
-SHELL=/bin/bash PS1=¡±$ ¡± script
+SHELL=/bin/bash PS1=â€$ â€ script
 
-Ê¹ÓÃscriptÊ±£¬²»ÒªÊ¹ÓÃ½»»¥Ê½³ÌÐò»ò´¦Àí´°¿ÚµÄ³ÌÐò£¬Èçvior top¡£ËüÃÇ»áÆÆ»µ»á»°µÄÊä³ö½á¹û¡£ÁíÍâ£¬ÈÕÖ¾ÎÄ¼þ»á¼ÇÂ¼ÄãÊ¹ÓÃµÄÈÎºÎÃüÁîÐÐ³ÌÐòºÍÄãÍê³ÉÒ»ÏîÈÎÎñËù²ÉÈ¡µÄ²½Öè¡£Èç¹ûÄãÐèÒªÔÚ½Å±¾ÖÐ±à¼­Ò»¸öÎÄ¼þ£¬¿¼ÂÇÍË³öscript»á»°£¬È»ºóÓÃscript ¨Ca£¨ËüÔÚ¾É»á»°ºóÌí¼ÓÐÂ»á»°£©¶ÔÎÄ¼þ½øÐÐ±à¼­ºóÔÙÖØÐÂÆô¶¯»á»°¡£
+ä½¿ç”¨scriptæ—¶ï¼Œä¸è¦ä½¿ç”¨äº¤äº’å¼ç¨‹åºæˆ–å¤„ç†çª—å£çš„ç¨‹åºï¼Œå¦‚vior topã€‚å®ƒä»¬ä¼šç ´åä¼šè¯çš„è¾“å‡ºç»“æžœã€‚å¦å¤–ï¼Œæ—¥å¿—æ–‡ä»¶ä¼šè®°å½•ä½ ä½¿ç”¨çš„ä»»ä½•å‘½ä»¤è¡Œç¨‹åºå’Œä½ å®Œæˆä¸€é¡¹ä»»åŠ¡æ‰€é‡‡å–çš„æ­¥éª¤ã€‚å¦‚æžœä½ éœ€è¦åœ¨è„šæœ¬ä¸­ç¼–è¾‘ä¸€ä¸ªæ–‡ä»¶ï¼Œè€ƒè™‘é€€å‡ºscriptä¼šè¯ï¼Œç„¶åŽç”¨script â€“aï¼ˆå®ƒåœ¨æ—§ä¼šè¯åŽæ·»åŠ æ–°ä¼šè¯ï¼‰å¯¹æ–‡ä»¶è¿›è¡Œç¼–è¾‘åŽå†é‡æ–°å¯åŠ¨ä¼šè¯ã€‚
 
-## teeÃüÁî
+## teeå‘½ä»¤
 
 tee--  read from standard input and write to standard output and files
 
-Õâ¸öÃüÁî¿ÉÒÔ¶ÁÈ¡ÖÕ¶ËÊäÈëÊä³öµ½ÖÕ¶Ë»òÕßÎÄ¼þÖÐ£¬ÓÐÊ±ºò¿ÉÒÔÓÃÀ´¼ÇÂ¼makeµÈÃüÁî¿ÉÄÜ²úÉúµÄÊä³öµ½ÖÕ¶ËµÄ´óÁ¿ÄÚÈÝÊä³öµ½ÎÄ¼þÖÐÈ¥¡£ÕâÑù¿ÉÒÔ·½±ã¼ÇÂ¼ÕâÐ©ÃüÁîµÄÈÕÖ¾¡£
+è¿™ä¸ªå‘½ä»¤å¯ä»¥è¯»å–ç»ˆç«¯è¾“å…¥è¾“å‡ºåˆ°ç»ˆç«¯æˆ–è€…æ–‡ä»¶ä¸­ï¼Œæœ‰æ—¶å€™å¯ä»¥ç”¨æ¥è®°å½•makeç­‰å‘½ä»¤å¯èƒ½äº§ç”Ÿçš„è¾“å‡ºåˆ°ç»ˆç«¯çš„å¤§é‡å†…å®¹è¾“å‡ºåˆ°æ–‡ä»¶ä¸­åŽ»ã€‚è¿™æ ·å¯ä»¥æ–¹ä¾¿è®°å½•è¿™äº›å‘½ä»¤çš„æ—¥å¿—ã€‚
 
 cmd | tee -a file.txt
 
-> make 2>&1 | tee make.logµ±È»£¬ÎÒÃÇÒ²¿ÉÒÔÖ±½ÓÖØ¶¨Ïòµ½Ò»¸öÎÄ¼þÖÐ> make > make.log
+> make 2>&1 | tee make.logå½“ç„¶ï¼Œæˆ‘ä»¬ä¹Ÿå¯ä»¥ç›´æŽ¥é‡å®šå‘åˆ°ä¸€ä¸ªæ–‡ä»¶ä¸­> make > make.log
 
-PS: 2>&1ÊÇÎªÁË¼ÇÂ¼´íÎóÈÕÖ¾if you want to filter the control symbols, try to use the "col" command like this:
+PS: 2>&1æ˜¯ä¸ºäº†è®°å½•é”™è¯¯æ—¥å¿—if you want to filter the control symbols, try to use the "col" command like this:
 
 $ cat screenlog.0 | col -b > screenlog
 
@@ -3814,19 +2623,19 @@ or
 
 $ cat typescript | col -b > scriptlog
 
- Ö´ÐÐscript -q tty.logºó,¾Í¿ªÊ¼¼ÇÂ¼ÖÕ¶ËµÄÊäÈëÊä³öÐÅÏ¢,½áÊøµÄÊ±ºò°´Ctrl+D¼´¿ÉµÃµ½ÖÕ¶ËµÄÄÚÈÝÎÄ¼þtty.log
+ æ‰§è¡Œscript -q tty.logåŽ,å°±å¼€å§‹è®°å½•ç»ˆç«¯çš„è¾“å…¥è¾“å‡ºä¿¡æ¯,ç»“æŸçš„æ—¶å€™æŒ‰Ctrl+Då³å¯å¾—åˆ°ç»ˆç«¯çš„å†…å®¹æ–‡ä»¶tty.log
 
-## screenÃüÁî
+## screenå‘½ä»¤
 
-ScreenÊÇÒ»¸ö¿ÉÒÔÔÚ¶à¸ö½ø³ÌÖ®¼ä¶àÂ·¸´ÓÃÒ»¸öÎïÀíÖÕ¶ËµÄ´°¿Ú¹ÜÀíÆ÷,ÕâÒâÎ¶×ÅÄãÄÜ¹»Ê¹ÓÃÒ»¸öµ¥Ò»µÄÖÕ¶Ë´°¿ÚÔËÐÐ¶àÖÕ¶ËµÄÓ¦ÓÃ¡£ScreenÖÐÓÐ»á»°µÄ¸ÅÄî£¬ÓÃ»§¿ÉÒÔÔÚÒ»¸öscreen»á»°ÖÐ´´½¨¶à¸öscreen´°¿Ú£¬ÔÚÃ¿Ò»¸öscreen´°¿ÚÖÐ¾ÍÏñ²Ù×÷Ò»¸öÕæÊµµÄ telnet/SSHÁ¬½Ó´°¿ÚÄÇÑù¡£
+Screenæ˜¯ä¸€ä¸ªå¯ä»¥åœ¨å¤šä¸ªè¿›ç¨‹ä¹‹é—´å¤šè·¯å¤ç”¨ä¸€ä¸ªç‰©ç†ç»ˆç«¯çš„çª—å£ç®¡ç†å™¨,è¿™æ„å‘³ç€ä½ èƒ½å¤Ÿä½¿ç”¨ä¸€ä¸ªå•ä¸€çš„ç»ˆç«¯çª—å£è¿è¡Œå¤šç»ˆç«¯çš„åº”ç”¨ã€‚Screenä¸­æœ‰ä¼šè¯çš„æ¦‚å¿µï¼Œç”¨æˆ·å¯ä»¥åœ¨ä¸€ä¸ªscreenä¼šè¯ä¸­åˆ›å»ºå¤šä¸ªscreençª—å£ï¼Œåœ¨æ¯ä¸€ä¸ªscreençª—å£ä¸­å°±åƒæ“ä½œä¸€ä¸ªçœŸå®žçš„ telnet/SSHè¿žæŽ¥çª—å£é‚£æ ·ã€‚
 
-°²×°£º
+å®‰è£…ï¼š
 
-CentOS/Red Hat£ºyum install screen
+CentOS/Red Hatï¼šyum install screen
 
-Debian/Ubuntu£ºapt-get install screen
+Debian/Ubuntuï¼šapt-get install screen
 
-Ô´Âë±àÒë°²×°:
+æºç ç¼–è¯‘å®‰è£…:
 
 [root@host1 src]# wget ftp://ftp.gnu.org/pub/gnu/screen/screen-4.0.3.tar.gz
 
@@ -3844,161 +2653,161 @@ Debian/Ubuntu£ºapt-get install screen
 
 [root@host1 screen-4.0.2]# cp ./screen /bin
 
-×¢ÒâºÍÒ»°ã³ÌÐòµÄ°²×°¹ý³ÌÓÐËù²»Í¬£¬ºóÃæÕâÁ½ÌõÖ¸ÁîÒ»¶¨ÒªÖ´ÐÐ¡£ 
+æ³¨æ„å’Œä¸€èˆ¬ç¨‹åºçš„å®‰è£…è¿‡ç¨‹æœ‰æ‰€ä¸åŒï¼ŒåŽé¢è¿™ä¸¤æ¡æŒ‡ä»¤ä¸€å®šè¦æ‰§è¡Œã€‚
 
-screenµÄÅäÖÃÎÄ¼þ£¬Ò»°ãÔÚ /etc/screenrc »òÕß ~/.screenrc£¬¿ÉÒÔÔÚÎÄ¼þÀï¸ü¸Ä²ÎÊýÉè¶¨£¬Ò²¿ÉÒÔÍ¨¹ý²ÎÊý´«µÝ»òÕßÃüÁîÀ´¶¯Ì¬Ö¸¶¨¡£
+screençš„é…ç½®æ–‡ä»¶ï¼Œä¸€èˆ¬åœ¨ /etc/screenrc æˆ–è€… ~/.screenrcï¼Œå¯ä»¥åœ¨æ–‡ä»¶é‡Œæ›´æ”¹å‚æ•°è®¾å®šï¼Œä¹Ÿå¯ä»¥é€šè¿‡å‚æ•°ä¼ é€’æˆ–è€…å‘½ä»¤æ¥åŠ¨æ€æŒ‡å®šã€‚
 
-Óï·¨£º
+è¯­æ³•ï¼š
 
-screen [-AmRvx -ls -wipe][-d <×÷ÒµÃû³Æ>][-h <ÐÐÊý>][-r <×÷ÒµÃû³Æ>][-s ][-S <×÷ÒµÃû³Æ>]
+screen [-AmRvx -ls -wipe][-d <ä½œä¸šåç§°>][-h <è¡Œæ•°>][-r <ä½œä¸šåç§°>][-s ][-S <ä½œä¸šåç§°>]
 
-²¹³äËµÃ÷£º
+è¡¥å……è¯´æ˜Žï¼š
 
-screenÎª¶àÖØÊÓ´°¹ÜÀí³ÌÐò¡£´Ë´¦ËùÎ½µÄÊÓ´°£¬ÊÇÖ¸Ò»¸öÈ«ÆÁÄ»µÄÎÄ×ÖÄ£Ê½»­Ãæ¡£Í¨³£Ö»ÓÐÔÚÊ¹ÓÃtelnetµÇÈëÖ÷»ú»òÊÇÊ¹ÓÃÀÏÊ½µÄÖÕ¶Ë»úÊ±£¬²ÅÓÐ¿ÉÄÜÓÃµ½screen³ÌÐò¡£
+screenä¸ºå¤šé‡è§†çª—ç®¡ç†ç¨‹åºã€‚æ­¤å¤„æ‰€è°“çš„è§†çª—ï¼Œæ˜¯æŒ‡ä¸€ä¸ªå…¨å±å¹•çš„æ–‡å­—æ¨¡å¼ç”»é¢ã€‚é€šå¸¸åªæœ‰åœ¨ä½¿ç”¨telnetç™»å…¥ä¸»æœºæˆ–æ˜¯ä½¿ç”¨è€å¼çš„ç»ˆç«¯æœºæ—¶ï¼Œæ‰æœ‰å¯èƒ½ç”¨åˆ°screenç¨‹åºã€‚
 
-²ÎÊý£º
+å‚æ•°ï¼š
 
--A ¡¡½«ËùÓÐµÄÊÓ´°¶¼µ÷ÕûÎªÄ¿Ç°ÖÕ¶Ë»úµÄ´óÐ¡¡£
+-A ã€€å°†æ‰€æœ‰çš„è§†çª—éƒ½è°ƒæ•´ä¸ºç›®å‰ç»ˆç«¯æœºçš„å¤§å°ã€‚
 
--d <×÷ÒµÃû³Æ> ¡¡½«Ö¸¶¨µÄscreen×÷ÒµÀëÏß¡£
+-d <ä½œä¸šåç§°> ã€€å°†æŒ‡å®šçš„screenä½œä¸šç¦»çº¿ã€‚
 
--h <ÐÐÊý> ¡¡Ö¸¶¨ÊÓ´°µÄ»º³åÇøÐÐÊý¡£
+-h <è¡Œæ•°> ã€€æŒ‡å®šè§†çª—çš„ç¼“å†²åŒºè¡Œæ•°ã€‚
 
--m ¡¡¼´Ê¹Ä¿Ç°ÒÑÔÚ×÷ÒµÖÐµÄscreen×÷Òµ£¬ÈÔÇ¿ÖÆ½¨Á¢ÐÂµÄscreen×÷Òµ¡£
+-m ã€€å³ä½¿ç›®å‰å·²åœ¨ä½œä¸šä¸­çš„screenä½œä¸šï¼Œä»å¼ºåˆ¶å»ºç«‹æ–°çš„screenä½œä¸šã€‚
 
--r <×÷ÒµÃû³Æ> ¡¡»Ö¸´ÀëÏßµÄscreen×÷Òµ¡£
+-r <ä½œä¸šåç§°> ã€€æ¢å¤ç¦»çº¿çš„screenä½œä¸šã€‚
 
--R ¡¡ÏÈÊÔÍ¼»Ö¸´ÀëÏßµÄ×÷Òµ¡£ÈôÕÒ²»µ½ÀëÏßµÄ×÷Òµ£¬¼´½¨Á¢ÐÂµÄscreen×÷Òµ¡£
+-R ã€€å…ˆè¯•å›¾æ¢å¤ç¦»çº¿çš„ä½œä¸šã€‚è‹¥æ‰¾ä¸åˆ°ç¦»çº¿çš„ä½œä¸šï¼Œå³å»ºç«‹æ–°çš„screenä½œä¸šã€‚
 
--s ¡¡Ö¸¶¨½¨Á¢ÐÂÊÓ´°Ê±£¬ËùÒªÖ´ÐÐµÄshell¡£
+-s ã€€æŒ‡å®šå»ºç«‹æ–°è§†çª—æ—¶ï¼Œæ‰€è¦æ‰§è¡Œçš„shellã€‚
 
--S <×÷ÒµÃû³Æ> ¡¡Ö¸¶¨screen×÷ÒµµÄÃû³Æ¡£
+-S <ä½œä¸šåç§°> ã€€æŒ‡å®šscreenä½œä¸šçš„åç§°ã€‚
 
--v ¡¡ÏÔÊ¾°æ±¾ÐÅÏ¢¡£
+-v ã€€æ˜¾ç¤ºç‰ˆæœ¬ä¿¡æ¯ã€‚
 
--x ¡¡»Ö¸´Ö®Ç°ÀëÏßµÄscreen×÷Òµ¡£
+-x ã€€æ¢å¤ä¹‹å‰ç¦»çº¿çš„screenä½œä¸šã€‚
 
--ls»ò--list ¡¡ÏÔÊ¾Ä¿Ç°ËùÓÐµÄscreen×÷Òµ¡£
+-lsæˆ–--list ã€€æ˜¾ç¤ºç›®å‰æ‰€æœ‰çš„screenä½œä¸šã€‚
 
--wipe ¡¡¼ì²éÄ¿Ç°ËùÓÐµÄscreen×÷Òµ£¬²¢É¾³ýÒÑ¾­ÎÞ·¨Ê¹ÓÃµÄscreen×÷Òµ¡£
+-wipe ã€€æ£€æŸ¥ç›®å‰æ‰€æœ‰çš„screenä½œä¸šï¼Œå¹¶åˆ é™¤å·²ç»æ— æ³•ä½¿ç”¨çš„screenä½œä¸šã€‚
 
-³£ÓÃscreen²ÎÊý£º
+å¸¸ç”¨screenå‚æ•°ï¼š
 
-screen -S yourname -> ÐÂ½¨Ò»¸ö½ÐyournameµÄsession
+screen -S yourname -> æ–°å»ºä¸€ä¸ªå«yournameçš„session
 
-screen -ls -> ÁÐ³öµ±Ç°ËùÓÐµÄsession
+screen -ls -> åˆ—å‡ºå½“å‰æ‰€æœ‰çš„session
 
-screen -r yourname -> »Øµ½yournameÕâ¸ösession
+screen -r yourname -> å›žåˆ°yournameè¿™ä¸ªsession
 
-screen -d yourname -> Ô¶³ÌdetachÄ³¸ösession
+screen -d yourname -> è¿œç¨‹detachæŸä¸ªsession
 
-screen -d -r yourname -> ½áÊøµ±Ç°session²¢»Øµ½yournameÕâ¸ösession
+screen -d -r yourname -> ç»“æŸå½“å‰sessionå¹¶å›žåˆ°yournameè¿™ä¸ªsession
 
-ÔÚÃ¿¸öscreen session ÏÂ£¬ËùÓÐÃüÁî¶¼ÒÔ Ctrl+a(C-a) ¿ªÊ¼¡£ÍË³öscreenÊ¹ÓÃ exit
+åœ¨æ¯ä¸ªscreen session ä¸‹ï¼Œæ‰€æœ‰å‘½ä»¤éƒ½ä»¥ Ctrl+a(C-a) å¼€å§‹ã€‚é€€å‡ºscreenä½¿ç”¨ exit
 
-Àý£ºCtrl+a,d(°´×¡Ctrl¡¡È»ºó°´a¡¡·Å¿ªa¡¡°´d)
+ä¾‹ï¼šCtrl+a,d(æŒ‰ä½Ctrlã€€ç„¶åŽæŒ‰aã€€æ”¾å¼€aã€€æŒ‰d)
 
-C-a ? -> Help£¬ÏÔÊ¾¼òµ¥ËµÃ÷
+C-a ? -> Helpï¼Œæ˜¾ç¤ºç®€å•è¯´æ˜Ž
 
-C-a c -> Create£¬¿ªÆôÐÂµÄ window
+C-a c -> Createï¼Œå¼€å¯æ–°çš„ window
 
-C-a n -> Next£¬ÇÐ»»µ½ÏÂ¸ö window 
+C-a n -> Nextï¼Œåˆ‡æ¢åˆ°ä¸‹ä¸ª window
 
-C-a p -> Previous£¬Ç°Ò»¸ö window 
+C-a p -> Previousï¼Œå‰ä¸€ä¸ª window
 
-C-a 0..9 -> ÇÐ»»µ½µÚ 0..9 ¸öwindow
+C-a 0..9 -> åˆ‡æ¢åˆ°ç¬¬ 0..9 ä¸ªwindow
 
-Ctrl+a [Space] -> ÓÉÒ•´°0Ñ­Ðò“Qµ½Ò•´°9
+Ctrl+a [Space] -> ç”±è¦–çª—0å¾ªåºæ›åˆ°è¦–çª—9
 
-C-a C-a -> ÔÚÁ½¸ö×î½üÊ¹ÓÃµÄ window ¼äÇÐ»» 
+C-a C-a -> åœ¨ä¸¤ä¸ªæœ€è¿‘ä½¿ç”¨çš„ window é—´åˆ‡æ¢
 
-C-a x -> Ëø×¡µ±Ç°µÄ window£¬ÐèÓÃÓÃ»§ÃÜÂë½âËø
+C-a x -> é”ä½å½“å‰çš„ windowï¼Œéœ€ç”¨ç”¨æˆ·å¯†ç è§£é”
 
-C-a d -> detach£¬ÔÝÊ±Àë¿ªµ±Ç°session£¬½«Ä¿Ç°µÄ screen session (¿ÉÄÜº¬ÓÐ¶à¸ö windows) ¶ªµ½ºóÌ¨Ö´ÐÐ£¬²¢»á»Øµ½»¹Ã»½ø screen Ê±µÄ×´Ì¬£¬´ËÊ±ÔÚ screen session Àï    Ã¿¸ö window ÄÚÔËÐÐµÄ process (ÎÞÂÛÊÇÇ°Ì¨/ºóÌ¨)¶¼ÔÚ¼ÌÐøÖ´ÐÐ£¬¼´Ê¹ logout Ò²²»Ó°Ïì¡£ 
+C-a d -> detachï¼Œæš‚æ—¶ç¦»å¼€å½“å‰sessionï¼Œå°†ç›®å‰çš„ screen session (å¯èƒ½å«æœ‰å¤šä¸ª windows) ä¸¢åˆ°åŽå°æ‰§è¡Œï¼Œå¹¶ä¼šå›žåˆ°è¿˜æ²¡è¿› screen æ—¶çš„çŠ¶æ€ï¼Œæ­¤æ—¶åœ¨ screen session é‡Œ    æ¯ä¸ª window å†…è¿è¡Œçš„ process (æ— è®ºæ˜¯å‰å°/åŽå°)éƒ½åœ¨ç»§ç»­æ‰§è¡Œï¼Œå³ä½¿ logout ä¹Ÿä¸å½±å“ã€‚
 
-C-a z -> °Ñµ±Ç°session·Åµ½ºóÌ¨Ö´ÐÐ£¬ÓÃ shell µÄ fg ÃüÁî„t¿É»ØÈ¥¡£
+C-a z -> æŠŠå½“å‰sessionæ”¾åˆ°åŽå°æ‰§è¡Œï¼Œç”¨ shell çš„ fg å‘½ä»¤å‰‡å¯å›žåŽ»ã€‚
 
-C-a w -> windows£¬ÁÐ³öÒÑ¿ªÆôµÄ windows ÓÐÄÇÐ© 
+C-a w -> windowsï¼Œåˆ—å‡ºå·²å¼€å¯çš„ windows æœ‰é‚£äº›
 
-C-a t -> Time£¬ÏÔÊ¾µ±Ç°Ê±¼ä£¬ºÍÏµÍ³µÄ load 
+C-a t -> Timeï¼Œæ˜¾ç¤ºå½“å‰æ—¶é—´ï¼Œå’Œç³»ç»Ÿçš„ load
 
-C-a K -> kill window£¬Ç¿ÐÐ¹Ø±Õµ±Ç°µÄ window
+C-a K -> kill windowï¼Œå¼ºè¡Œå…³é—­å½“å‰çš„ window
 
-screen¿ÉÒÔÍ¬²½ÏÔÊ¾ÄãµÄÆÁÄ»¸øÁíÒ»¸ö»á»°¡£ÕâÔÚ¸ø±ðÈË´¦ÀíÎÊÌâÊÇÓÈÎªºÃÓÃ£¬¿ÉÒÔÈÃ¶Ô·½Í¬²½¿´µ½ÄãµÄ²Ù×÷¡£Ë«·½Í¬Ê±µÇÂ½Ò»Ì¨Ö÷»ú£¬ÑÝÊ¾·½ÊäÈë  screen -S example£¬¹Û¿´·½ÊäÈë screen -x example£¬¼´¿ÉÍ¬²½ÏÔÊ¾ÑÝÊ¾·½ÊäÈëµÄÄÚÈÝ
+screenå¯ä»¥åŒæ­¥æ˜¾ç¤ºä½ çš„å±å¹•ç»™å¦ä¸€ä¸ªä¼šè¯ã€‚è¿™åœ¨ç»™åˆ«äººå¤„ç†é—®é¢˜æ˜¯å°¤ä¸ºå¥½ç”¨ï¼Œå¯ä»¥è®©å¯¹æ–¹åŒæ­¥çœ‹åˆ°ä½ çš„æ“ä½œã€‚åŒæ–¹åŒæ—¶ç™»é™†ä¸€å°ä¸»æœºï¼Œæ¼”ç¤ºæ–¹è¾“å…¥  screen -S exampleï¼Œè§‚çœ‹æ–¹è¾“å…¥ screen -x exampleï¼Œå³å¯åŒæ­¥æ˜¾ç¤ºæ¼”ç¤ºæ–¹è¾“å…¥çš„å†…å®¹
 
-## treeÃüÁî
+## treeå‘½ä»¤
 
-ÓÐÊ±ÎÒÃÇÐèÒªÉú³ÉÄ¿Â¼Ê÷½á¹¹:
+æœ‰æ—¶æˆ‘ä»¬éœ€è¦ç”Ÿæˆç›®å½•æ ‘ç»“æž„:
 
-ÕâÊ±ÐèÒªÓÃµ½TREEÃüÁî:
+è¿™æ—¶éœ€è¦ç”¨åˆ°TREEå‘½ä»¤:
 
-¹ØÓÚTREEÃüÁîµÄÒ»Ð©²ÎÊý:
+å…³äºŽTREEå‘½ä»¤çš„ä¸€äº›å‚æ•°:
 
-³£¼ûµÄÓÃ·¨:
+å¸¸è§çš„ç”¨æ³•:
 
-tree -a ÏÔÊ¾ËùÓÐ
+tree -a æ˜¾ç¤ºæ‰€æœ‰
 
-tree -d ½öÏÔÊ¾Ä¿Â¼
+tree -d ä»…æ˜¾ç¤ºç›®å½•
 
-tree -L n n´ú±íÊý×Ö..±íÊ¾ÒªÏÔÊ¾¼¸²ã...
+tree -L n nä»£è¡¨æ•°å­—..è¡¨ç¤ºè¦æ˜¾ç¤ºå‡ å±‚...
 
-tree -f ÏÔÊ¾ÍêÕûÂ·¾¶..
+tree -f æ˜¾ç¤ºå®Œæ•´è·¯å¾„..
 
-µ±È»treeÖ§³ÖÖØ¶¨ÏòÖÁÎÄ¼þ...
+å½“ç„¶treeæ”¯æŒé‡å®šå‘è‡³æ–‡ä»¶...
 
-tree -L 4 >dirce.doc¼´¿ÉÉú³ÉUTF8¸ñÊ½µÄÎÄµµ..ÎÒÃÇÒ²¿ÉÒÔÔÚwindows ÏÂ²é¿´..
+tree -L 4 >dirce.docå³å¯ç”ŸæˆUTF8æ ¼å¼çš„æ–‡æ¡£..æˆ‘ä»¬ä¹Ÿå¯ä»¥åœ¨windows ä¸‹æŸ¥çœ‹..
 
-×¢Òâ:Éú³ÉµÄTXT»òÆäËûÎÄ¼þÔÚwinÏÂÃæ´ò¿ªÊ±Ò²ÎªÂÒÂë...ÕâÊ±ÎÒÃÇÒªÑ¡Ôñ×Ö·û±àÂëÎªUTF-8..µ±È»..UTF-8ÊÇÄãlinuxÏÂµÄÄ¬ÈÏ×Ö·û¼¯²Å¿ÉÒÔ......
+æ³¨æ„:ç”Ÿæˆçš„TXTæˆ–å…¶ä»–æ–‡ä»¶åœ¨winä¸‹é¢æ‰“å¼€æ—¶ä¹Ÿä¸ºä¹±ç ...è¿™æ—¶æˆ‘ä»¬è¦é€‰æ‹©å­—ç¬¦ç¼–ç ä¸ºUTF-8..å½“ç„¶..UTF-8æ˜¯ä½ linuxä¸‹çš„é»˜è®¤å­—ç¬¦é›†æ‰å¯ä»¥......
 
-## LinuxÏÂ´´½¨Ä¿Â¼ºÍÎÄ¼þ 
+## Linuxä¸‹åˆ›å»ºç›®å½•å’Œæ–‡ä»¶
 
-´´½¨ÎÄ¼þ¼Ð£º
+åˆ›å»ºæ–‡ä»¶å¤¹ï¼š
 
-Óï·¨£ºmkdir [-p][--help][--version][-m <Ä¿Â¼ÊôÐÔ>][Ä¿Â¼Ãû³Æ]
+è¯­æ³•ï¼šmkdir [-p][--help][--version][-m <ç›®å½•å±žæ€§>][ç›®å½•åç§°]
 
-ËµÃ÷£ºmkdir¿É½¨Á¢Ä¿Â¼²¢Í¬Ê±ÉèÖÃÄ¿Â¼µÄÈ¨ÏÞ¡£
+è¯´æ˜Žï¼šmkdirå¯å»ºç«‹ç›®å½•å¹¶åŒæ—¶è®¾ç½®ç›®å½•çš„æƒé™ã€‚
 
-²ÎÊý£º
+å‚æ•°ï¼š
 
-  -m<Ä¿Â¼ÊôÐÔ>»ò--mode<Ä¿Â¼ÊôÐÔ>   ½¨Á¢Ä¿Â¼Ê±Í¬Ê±ÉèÖÃÄ¿Â¼µÄÈ¨ÏÞ¡£
+  -m<ç›®å½•å±žæ€§>æˆ–--mode<ç›®å½•å±žæ€§>   å»ºç«‹ç›®å½•æ—¶åŒæ—¶è®¾ç½®ç›®å½•çš„æƒé™ã€‚
 
-  -p»ò--parents   ÈôËùÒª½¨Á¢Ä¿Â¼µÄÉÏ²ãÄ¿Â¼Ä¿Ç°ÉÐÎ´½¨Á¢£¬Ôò»áÒ»²¢½¨Á¢ÉÏ²ãÄ¿Â¼
+  -pæˆ–--parents   è‹¥æ‰€è¦å»ºç«‹ç›®å½•çš„ä¸Šå±‚ç›®å½•ç›®å‰å°šæœªå»ºç«‹ï¼Œåˆ™ä¼šä¸€å¹¶å»ºç«‹ä¸Šå±‚ç›®å½•
 
-Àý£º
+ä¾‹ï¼š
 
 mkdir aaa
 
 mkdir -p aaa
 
-mkdir -m 777 aaa   (´´½¨Ò»¸öÃû×ÖÎªaaaµÄ¿ÉÐ´¿É¶ÁÎÄ¼þ¼Ð)
+mkdir -m 777 aaa   (åˆ›å»ºä¸€ä¸ªåå­—ä¸ºaaaçš„å¯å†™å¯è¯»æ–‡ä»¶å¤¹)
 
-´´½¨ÎÄ¼þ£º
+åˆ›å»ºæ–‡ä»¶ï¼š
 
 vi a.php
 
-echo ¡°abfdsfdsf¡± > b.txt
+echo â€œabfdsfdsfâ€ > b.txt
 
 cat > c.txt
 
-¾ßÌå²½Öè:
+å…·ä½“æ­¥éª¤:
 
-1¡¢¼üÈëcat > filename.txt ºó»Ø³µ 
+1ã€é”®å…¥cat > filename.txt åŽå›žè½¦
 
-2¡¢Â¼ÈëÎÄ±¾ÄÚÈÝ£» 
+2ã€å½•å…¥æ–‡æœ¬å†…å®¹ï¼›
 
-3¡¢¼üÈë»Ø³µ£» 
+3ã€é”®å…¥å›žè½¦ï¼›
 
-4¡¢ÔÚ¼üÅÌÉÏ°´ÏÂCtrl+D (»òÕß¼üÈëControl£­D)¡£
+4ã€åœ¨é”®ç›˜ä¸ŠæŒ‰ä¸‹Ctrl+D (æˆ–è€…é”®å…¥Controlï¼D)ã€‚
 
-## linuxÁ¬½ÓÍ¶Ó°»ú
+## linuxè¿žæŽ¥æŠ•å½±æœº
 
-·½°¸Ò»£º
+æ–¹æ¡ˆä¸€ï¼š
 
-Ò»°ãÀ´Ëµ£¬ÐèÒª±Ê¼Ç±¾µ±Ç°Ê¹ÓÃµÄ·Ö±æÂÊºÍÍ¶Ó°ÒÇµÄ·Ö±æÂÊÏàÍ¬£¬²ÅÄÜÔÚÍ¶Ó°ÒÇÉÏÏÔÊ¾±Ê¼Ç±¾µÄX¡£ÄÇÃ´£¬¿ÉÒÔÏÈÔËÐÐÕâ¸öÃüÁî£º 
+ä¸€èˆ¬æ¥è¯´ï¼Œéœ€è¦ç¬”è®°æœ¬å½“å‰ä½¿ç”¨çš„åˆ†è¾¨çŽ‡å’ŒæŠ•å½±ä»ªçš„åˆ†è¾¨çŽ‡ç›¸åŒï¼Œæ‰èƒ½åœ¨æŠ•å½±ä»ªä¸Šæ˜¾ç¤ºç¬”è®°æœ¬çš„Xã€‚é‚£ä¹ˆï¼Œå¯ä»¥å…ˆè¿è¡Œè¿™ä¸ªå‘½ä»¤ï¼š
 
 $xrandr
 
-±ÈÈçÔÚÎÒµÄµçÄÔÉÏ£¬½á¹ûÈçÏÂ£º
+æ¯”å¦‚åœ¨æˆ‘çš„ç”µè„‘ä¸Šï¼Œç»“æžœå¦‚ä¸‹ï¼š
 
 $xrandr
 
@@ -4058,67 +2867,67 @@ Rotations possible - normal
 
 Reflections possible - none
 
- 
 
-µÚ0Ìõ¼ÓÁË*ºÅ£¬ËµÃ÷ÕâÊÇ±Ê¼Ç±¾µçÄÔµ±Ç°Ê¹ÓÃµÄ·Ö±æÂÊ¡£Èç¹ûÍ¶Ó°ÒÇµÄ·Ö±æÂÊÊÇ1024x768£¬ÄÇÃ´¾ÍÐèÒª¸Ä±ä±Ê¼Ç±¾µçÄÔµÄ·Ö±æÂÊ¡£ÒòÎªÔÚÉÏÃæµÄ½á¹ûÖÐ£¬1024x768¶ÔÓ¦µÚ1Ìõ£¬ËùÒÔÔËÐÐÕâ¸öÃüÁîÀ´¸Ä±ä·Ö±æÂÊ£º
+
+ç¬¬0æ¡åŠ äº†*å·ï¼Œè¯´æ˜Žè¿™æ˜¯ç¬”è®°æœ¬ç”µè„‘å½“å‰ä½¿ç”¨çš„åˆ†è¾¨çŽ‡ã€‚å¦‚æžœæŠ•å½±ä»ªçš„åˆ†è¾¨çŽ‡æ˜¯1024x768ï¼Œé‚£ä¹ˆå°±éœ€è¦æ”¹å˜ç¬”è®°æœ¬ç”µè„‘çš„åˆ†è¾¨çŽ‡ã€‚å› ä¸ºåœ¨ä¸Šé¢çš„ç»“æžœä¸­ï¼Œ1024x768å¯¹åº”ç¬¬1æ¡ï¼Œæ‰€ä»¥è¿è¡Œè¿™ä¸ªå‘½ä»¤æ¥æ”¹å˜åˆ†è¾¨çŽ‡ï¼š
 
 $xrandr -s 1
 
-ÕâÑù¾ÍÇÐ»»ÁË·Ö±æÂÊ¡£µÈ´ýÍ¶Ó°ÒÇµÄËÑË÷°É¡£
+è¿™æ ·å°±åˆ‡æ¢äº†åˆ†è¾¨çŽ‡ã€‚ç­‰å¾…æŠ•å½±ä»ªçš„æœç´¢å§ã€‚
 
-Ê×ÏÈ½ÓÉÏVGA£¬Ö´ÐÐÃüÁî(VGA´ú±íÏÔÊ¾Æ÷£¬LVDS´ú±í±Ê¼Ç±¾Òº¾§ÆÁ):
+é¦–å…ˆæŽ¥ä¸ŠVGAï¼Œæ‰§è¡Œå‘½ä»¤(VGAä»£è¡¨æ˜¾ç¤ºå™¨ï¼ŒLVDSä»£è¡¨ç¬”è®°æœ¬æ¶²æ™¶å±):
 
 $ xrandr --output VGA --auto
 
-µ±Ç°×ÀÃæ»á¸´ÖÆµ½VGAÉÏÃæ£¬´ËÊ±Ö´ÐÐxrandr»á¿´µ½ÓÐÁËVGA-0
+å½“å‰æ¡Œé¢ä¼šå¤åˆ¶åˆ°VGAä¸Šé¢ï¼Œæ­¤æ—¶æ‰§è¡Œxrandrä¼šçœ‹åˆ°æœ‰äº†VGA-0
 
-¶Ï¿ªVGA-0:
+æ–­å¼€VGA-0:
 
 $ xrandr --output VGA-0 --auto
 
-°´ÕÕµ±Ç°µÄÅäÖÃÀ©Õ¹×ÀÃæ:
+æŒ‰ç…§å½“å‰çš„é…ç½®æ‰©å±•æ¡Œé¢:
 
 $xrandr --output VGA-0 --auto --left-of LVDS
 
-ÕâÊÇÐèÐÞ¸Äxorg.conf£¬ÏÈÓÃ²»´ø²ÎÊýÖ´ÐÐxrandrÄÜ¹»ÁÐ³öµ±Ç°µÄÏÔÊ¾Éè±¸ºÍÃ¿¸öÉè±¸Ö§³ÖµÄÄ£Ê½¡£Screen´ú±íÁË×ÜÏÔÊ¾ÇøÓò£¬VGA´ú±íÏÔÊ¾Æ÷£¬LVDS´ú±í±Ê¼Ç±¾Òº¾§ÆÁ¡£
+è¿™æ˜¯éœ€ä¿®æ”¹xorg.confï¼Œå…ˆç”¨ä¸å¸¦å‚æ•°æ‰§è¡Œxrandrèƒ½å¤Ÿåˆ—å‡ºå½“å‰çš„æ˜¾ç¤ºè®¾å¤‡å’Œæ¯ä¸ªè®¾å¤‡æ”¯æŒçš„æ¨¡å¼ã€‚Screenä»£è¡¨äº†æ€»æ˜¾ç¤ºåŒºåŸŸï¼ŒVGAä»£è¡¨æ˜¾ç¤ºå™¨ï¼ŒLVDSä»£è¡¨ç¬”è®°æœ¬æ¶²æ™¶å±ã€‚
 
- 
 
-Screen 0: minimum 320 x 200, current 1280 x 768, maximum 1280 x 1280 
+
+Screen 0: minimum 320 x 200, current 1280 x 768, maximum 1280 x 1280
 
 VGA connected (normal left inverted right x axis y axis)
 
-   1280x1024      75.0 +   69.8     59.9  
+   1280x1024      75.0 +   69.8     59.9
 
-   1024x768       75.1     70.1     60.0  
+   1024x768       75.1     70.1     60.0
 
-   800x600        72.2     75.0     60.3  
+   800x600        72.2     75.0     60.3
 
-   640x480        75.0     72.8     65.4     60.0  
+   640x480        75.0     72.8     65.4     60.0
 
-   720x400        70.1  
+   720x400        70.1
 
 LVDS connected 1024x768+0+0 (normal left inverted right x axis y axis) 246mm x 184mm
 
-   1024x768       50.0*+   60.0     40.0  
+   1024x768       50.0*+   60.0     40.0
 
-   800x600        60.3  
+   800x600        60.3
 
-   640x480        60.0     59.9 
+   640x480        60.0     59.9
 
- 
 
-ÐÞ¸Ä£º
 
- 
+ä¿®æ”¹ï¼š
+
+
 
 gksudo gedit /etc/X11/xorg.conf
 
- 
 
-ÐÞ¸ÄºóÈçÏÂ£º
 
- 
+ä¿®æ”¹åŽå¦‚ä¸‹ï¼š
+
+
 
 Section "Screen"
 
@@ -4128,673 +2937,673 @@ Section "Screen"
 
    Device "Configured Video Device"
 
-   SubSection "Display" 
+   SubSection "Display"
 
-      Virtual 2304 1024 #×óÓÒÀ©Õ¹Ë«ÆÁ,2304=1280+1024,1024=max(1024,768)
+      Virtual 2304 1024 #å·¦å³æ‰©å±•åŒå±,2304=1280+1024,1024=max(1024,768)
 
-   EndSubSection 
+   EndSubSection
 
 EndSection
 
- 
 
-×¢Òâ£ºUbuntu 8.04ÖÐµÄxorg.confÒÑ¾­·Ç³£¾«¼ò£¬Subsection "Display" ¿ÉÄÜÒª×Ô¼ºÌí¼Ó£¬±ðÍü¼Ç EndSubSection
 
- 
+æ³¨æ„ï¼šUbuntu 8.04ä¸­çš„xorg.confå·²ç»éžå¸¸ç²¾ç®€ï¼ŒSubsection "Display" å¯èƒ½è¦è‡ªå·±æ·»åŠ ï¼Œåˆ«å¿˜è®° EndSubSection
 
- 
 
-xrandr ÃüÁîÐÐ¿ÉÒÔºÜ·½±ãµØÇÐ»»Ë«ÆÁ£¬³£ÓÃ·½Ê½ÈçÏÂ£¬ÆäËûµÄ¿ÉÒÔ×Ô¼ºÌ½Ë÷£º
 
- 
+
+
+xrandr å‘½ä»¤è¡Œå¯ä»¥å¾ˆæ–¹ä¾¿åœ°åˆ‡æ¢åŒå±ï¼Œå¸¸ç”¨æ–¹å¼å¦‚ä¸‹ï¼Œå…¶ä»–çš„å¯ä»¥è‡ªå·±æŽ¢ç´¢ï¼š
+
+
 
 xrandr --output VGA --same-as LVDS --auto
 
- 
 
-         ´ò¿ªÍâ½ÓÏÔÊ¾Æ÷(×î¸ß·Ö±æÂÊ)£¬Óë±Ê¼Ç±¾Òº¾§ÆÁÄ»ÏÔÊ¾Í¬ÑùÄÚÈÝ£¨¿ËÂ¡£©
 
- 
+         æ‰“å¼€å¤–æŽ¥æ˜¾ç¤ºå™¨(æœ€é«˜åˆ†è¾¨çŽ‡)ï¼Œä¸Žç¬”è®°æœ¬æ¶²æ™¶å±å¹•æ˜¾ç¤ºåŒæ ·å†…å®¹ï¼ˆå…‹éš†ï¼‰
+
+
 
 xrandr --output VGA --same-as LVDS --mode 1024x768
 
- 
 
-         ´ò¿ªÍâ½ÓÏÔÊ¾Æ÷(·Ö±æÂÊÎª1024x768)£¬Óë±Ê¼Ç±¾Òº¾§ÆÁÄ»ÏÔÊ¾Í¬ÑùÄÚÈÝ£¨¿ËÂ¡£©
 
- 
+         æ‰“å¼€å¤–æŽ¥æ˜¾ç¤ºå™¨(åˆ†è¾¨çŽ‡ä¸º1024x768)ï¼Œä¸Žç¬”è®°æœ¬æ¶²æ™¶å±å¹•æ˜¾ç¤ºåŒæ ·å†…å®¹ï¼ˆå…‹éš†ï¼‰
+
+
 
 xrandr --output VGA --right-of LVDS --auto
 
- 
 
-         ´ò¿ªÍâ½ÓÏÔÊ¾Æ÷(×î¸ß·Ö±æÂÊ)£¬ÉèÖÃÎªÓÒ²àÀ©Õ¹ÆÁÄ»
 
- 
+         æ‰“å¼€å¤–æŽ¥æ˜¾ç¤ºå™¨(æœ€é«˜åˆ†è¾¨çŽ‡)ï¼Œè®¾ç½®ä¸ºå³ä¾§æ‰©å±•å±å¹•
+
+
 
 xrandr --output VGA --off
 
- 
 
-          ¹Ø±ÕÍâ½ÓÏÔÊ¾Æ÷
 
- 
+          å…³é—­å¤–æŽ¥æ˜¾ç¤ºå™¨
+
+
 
 xrandr --output VGA --auto --output LVDS --off
 
- 
 
-        ´ò¿ªÍâ½ÓÏÔÊ¾Æ÷£¬Í¬Ê±¹Ø±Õ±Ê¼Ç±¾Òº¾§ÆÁÄ»£¨Ö»ÓÃÍâ½ÓÏÔÊ¾Æ÷¹¤×÷£©
 
- 
+        æ‰“å¼€å¤–æŽ¥æ˜¾ç¤ºå™¨ï¼ŒåŒæ—¶å…³é—­ç¬”è®°æœ¬æ¶²æ™¶å±å¹•ï¼ˆåªç”¨å¤–æŽ¥æ˜¾ç¤ºå™¨å·¥ä½œï¼‰
+
+
 
 xrandr --output VGA --off --output LVDS --auto
 
- 
 
-        ¹Ø±ÕÍâ½ÓÏÔÊ¾Æ÷£¬Í¬Ê±´ò¿ª±Ê¼Ç±¾Òº¾§ÆÁÄ» (Ö»ÓÃ±Ê¼Ç±¾Òº¾§ÆÁ)
 
- 
+        å…³é—­å¤–æŽ¥æ˜¾ç¤ºå™¨ï¼ŒåŒæ—¶æ‰“å¼€ç¬”è®°æœ¬æ¶²æ™¶å±å¹• (åªç”¨ç¬”è®°æœ¬æ¶²æ™¶å±)
 
-·½°¸¶þ£º
 
- 
 
-´ò¿ªxorg.conf
+æ–¹æ¡ˆäºŒï¼š
 
- 
+
+
+æ‰“å¼€xorg.conf
+
+
 
 gksudo gedit /etc/X11/xorg.conf
 
- 
 
-ÐÞ¸ÄSection ¡°Device¡±ÈçÏÂ£º
 
- 
+ä¿®æ”¹Section â€œDeviceâ€å¦‚ä¸‹ï¼š
+
+
 
 Section "Device"
 
- 
+
 
 Identifier "Configured Video Device"
 
- 
 
-Option "TwinView" "True" #´ò¿ªË«ÏÔÖ§³Ö
 
- 
+Option "TwinView" "True" #æ‰“å¼€åŒæ˜¾æ”¯æŒ
 
-Option "TwinViewOrientation" "Clone" #¸´ÖÆÄ£Ê½£¬RelativeÎªÀ©Õ¹Ä£Ê½
 
- 
 
-Option "UseEdidFreqs" "True" #´ò¿ªË¢ÐÂÆµÂÊÉèÖÃ
+Option "TwinViewOrientation" "Clone" #å¤åˆ¶æ¨¡å¼ï¼ŒRelativeä¸ºæ‰©å±•æ¨¡å¼
 
- 
 
-Option "Metamodes" "1024x768_60, 1024x768; 1024x768_60,800x600" #Ë¢ÐÂÆµÂÊÄ£Ê½£¬Ö¸Ã÷ÕâÁ½¸öÉè±¸µÄ·Ö±æÂÊ£¬¶ººÅÇ°µÄµÚÒ»¸öÊÇ±¾»úÏÔÊ¾Éè±¸£¬¶ººÅºóµÄµÚ¶þ¸öÊÇÍâ²¿Éè±¸£¬·ÖºÅ·Ö¸ô¿ª¶àÌ×Ä£Ê½£¬¿ÉÒÔÉèÁ½Ì×·½°¸»ò¸ü¶à¡£
 
- 
+Option "UseEdidFreqs" "True" #æ‰“å¼€åˆ·æ–°é¢‘çŽ‡è®¾ç½®
+
+
+
+Option "Metamodes" "1024x768_60, 1024x768; 1024x768_60,800x600" #åˆ·æ–°é¢‘çŽ‡æ¨¡å¼ï¼ŒæŒ‡æ˜Žè¿™ä¸¤ä¸ªè®¾å¤‡çš„åˆ†è¾¨çŽ‡ï¼Œé€—å·å‰çš„ç¬¬ä¸€ä¸ªæ˜¯æœ¬æœºæ˜¾ç¤ºè®¾å¤‡ï¼Œé€—å·åŽçš„ç¬¬äºŒä¸ªæ˜¯å¤–éƒ¨è®¾å¤‡ï¼Œåˆ†å·åˆ†éš”å¼€å¤šå¥—æ¨¡å¼ï¼Œå¯ä»¥è®¾ä¸¤å¥—æ–¹æ¡ˆæˆ–æ›´å¤šã€‚
+
+
 
 EndSection
 
- 
 
-±£´æ¡£Á¬½ÓºÃÍ¶Ó°ÒÇ£¬ÖØÐÂÆô¶¯Xwindows(Ctrl+Alt+Backspace)¾ÍOKÁË¡£
 
-#Äñ¸çµÄlinuxË½·¿²Ë¿±Îó±í
+ä¿å­˜ã€‚è¿žæŽ¥å¥½æŠ•å½±ä»ªï¼Œé‡æ–°å¯åŠ¨Xwindows(Ctrl+Alt+Backspace)å°±OKäº†ã€‚
 
-Äñ¸çµÄLinuxË½·¿²Ë»ù´¡Ñ§Ï°Æª(µÚÈý°æ)¼òÌåÖÐÎÄ¿±Îó±í(ÈËÃñÓÊµç³ö°æÉç)
+#é¸Ÿå“¥çš„linuxç§æˆ¿èœå‹˜è¯¯è¡¨
 
+é¸Ÿå“¥çš„Linuxç§æˆ¿èœåŸºç¡€å­¦ä¹ ç¯‡(ç¬¬ä¸‰ç‰ˆ)ç®€ä½“ä¸­æ–‡å‹˜è¯¯è¡¨(äººæ°‘é‚®ç”µå‡ºç‰ˆç¤¾)
 
 
-¼òÌåÖÐÎÄ°æÊé¼®×ÊÁÏ£º
 
+ç®€ä½“ä¸­æ–‡ç‰ˆä¹¦ç±èµ„æ–™ï¼š
 
 
-³ö°æÈÕÆÚ£º2010Äê7ÔÂµÚ3°æ
 
+å‡ºç‰ˆæ—¥æœŸï¼š2010å¹´7æœˆç¬¬3ç‰ˆ
 
 
-Êé¼®ISBN£º978-7-115-22626-6
 
+ä¹¦ç±ISBNï¼š978-7-115-22626-6
 
 
-³ö°æÉç£ºÈËÃñÓÊµç³ö°æÉç
 
+å‡ºç‰ˆç¤¾ï¼šäººæ°‘é‚®ç”µå‡ºç‰ˆç¤¾
 
 
 
 
 
 
-ÕýÎÄP10£¬0.2.2 ÄÚ´æ£¬±í0-2
 
+æ­£æ–‡P10ï¼Œ0.2.2 å†…å­˜ï¼Œè¡¨0-2
 
 
-¡°DDR DDRII800 64 400 800 6.4GB/s¡±
 
+â€œDDR DDRII800 64 400 800 6.4GB/sâ€
 
 
-Ó¦¸ÄÎª£º¡°DDR DDRII800 64 200 800 6.4GB/s¡±
 
+åº”æ”¹ä¸ºï¼šâ€œDDR DDRII800 64 200 800 6.4GB/sâ€
 
 
 
 
 
 
-P19£¬0.4.1 »úÆ÷³ÌÐòÓë±àÒë³ÌÐò£¬Í¼0-17ÏÂÃæµÚÒ»ÐÐ
 
+P19ï¼Œ0.4.1 æœºå™¨ç¨‹åºä¸Žç¼–è¯‘ç¨‹åºï¼Œå›¾0-17ä¸‹é¢ç¬¬ä¸€è¡Œ
 
 
-¡°´ÓÉÏÃæµÄÍ¼Ê¾ÎÒÃÇ......¡£Äñ¸çÒÑ½«¾­³ÌÐò´úÂë(Ó¢ÎÄ)Ð´³ÉÖÐÎÄ£¬¡±
 
+â€œä»Žä¸Šé¢çš„å›¾ç¤ºæˆ‘ä»¬......ã€‚é¸Ÿå“¥å·²å°†ç»ç¨‹åºä»£ç (è‹±æ–‡)å†™æˆä¸­æ–‡ï¼Œâ€
 
 
-Ó¦¸ÄÎª£º¡°´ÓÉÏÃæµÄÍ¼Ê¾ÎÒÃÇ......¡£Äñ¸çÒÑ¾­½«³ÌÐò´úÂë(Ó¢ÎÄ)Ð´³ÉÖÐÎÄ£¬¡±
 
+åº”æ”¹ä¸ºï¼šâ€œä»Žä¸Šé¢çš„å›¾ç¤ºæˆ‘ä»¬......ã€‚é¸Ÿå“¥å·²ç»å°†ç¨‹åºä»£ç (è‹±æ–‡)å†™æˆä¸­æ–‡ï¼Œâ€
 
 
 
 
 
 
-P30£¬1.1.2 LinuxÖ®Ç°UNIXµÄÀúÊ·£¬×îºóÒ»ÐÐ
 
+P30ï¼Œ1.1.2 Linuxä¹‹å‰UNIXçš„åŽ†å²ï¼Œæœ€åŽä¸€è¡Œ
 
 
-¡°´ËÍâ£¬Minux²Ù×÷ÏµÍ³µÄ¿ª·¢Õß½öÓÐÌ·Äþ°î½ÌÊÚ¡±
 
+â€œæ­¤å¤–ï¼ŒMinuxæ“ä½œç³»ç»Ÿçš„å¼€å‘è€…ä»…æœ‰è°­å®é‚¦æ•™æŽˆâ€
 
 
-Ó¦¸ÄÎª£º¡°´ËÍâ£¬Minix²Ù×÷ÏµÍ³µÄ¿ª·¢Õß½öÓÐÌ·Äþ°î½ÌÊÚ¡±
 
+åº”æ”¹ä¸ºï¼šâ€œæ­¤å¤–ï¼ŒMinixæ“ä½œç³»ç»Ÿçš„å¼€å‘è€…ä»…æœ‰è°­å®é‚¦æ•™æŽˆâ€
 
 
 
 
 
 
-P46£¬1.4 ÖØµã»Ø¹Ë
 
+P46ï¼Œ1.4 é‡ç‚¹å›žé¡¾
 
 
-¡°1984ÄêÓÉAndrew TannenbaumÖÆ×÷³öMinix²Ù×÷ÏµÍ³£¬¡±
 
+â€œ1984å¹´ç”±Andrew Tannenbaumåˆ¶ä½œå‡ºMinixæ“ä½œç³»ç»Ÿï¼Œâ€
 
 
-Ó¦¸ÄÎª£º¡°1984ÄêÓÉAndrew TanenbaumÖÆ×÷³öMinix²Ù×÷ÏµÍ³£¬¡±
 
+åº”æ”¹ä¸ºï¼šâ€œ1984å¹´ç”±Andrew Tanenbaumåˆ¶ä½œå‡ºMinixæ“ä½œç³»ç»Ÿï¼Œâ€
 
 
 
 
 
 
-P46£¬1.4 ÖØµã»Ø¹Ë
 
+P46ï¼Œ1.4 é‡ç‚¹å›žé¡¾
 
 
-¡°Ä¿Ç°LinuxÄÚºËµÄ¿ª·¢·ÖÎªÁ½ÖÖ°æ±¾......£»Ò»ÖÖÊÇ¿ª·¢ÖÐ°æ±¾£¬Èç2.5.x°æ¡±
 
+â€œç›®å‰Linuxå†…æ ¸çš„å¼€å‘åˆ†ä¸ºä¸¤ç§ç‰ˆæœ¬......ï¼›ä¸€ç§æ˜¯å¼€å‘ä¸­ç‰ˆæœ¬ï¼Œå¦‚2.5.xç‰ˆâ€
 
 
-Ó¦¸ÄÎª£º¡°Ä¿Ç°LinuxÄÚºËµÄ¿ª·¢·ÖÎªÁ½ÖÖ°æ±¾......£»Ò»ÖÖÊÇ¿ª·¢ÖÐ°æ±¾µÄÆæÊý°æ£¬Èç2.5.x°æ¡±
 
+åº”æ”¹ä¸ºï¼šâ€œç›®å‰Linuxå†…æ ¸çš„å¼€å‘åˆ†ä¸ºä¸¤ç§ç‰ˆæœ¬......ï¼›ä¸€ç§æ˜¯å¼€å‘ä¸­ç‰ˆæœ¬çš„å¥‡æ•°ç‰ˆï¼Œå¦‚2.5.xç‰ˆâ€
 
 
 
 
 
 
-P55£¬2.2.3 X WindowµÄÑ§Ï°
 
+P55ï¼Œ2.2.3 X Windowçš„å­¦ä¹ 
 
 
-¡°Open Office(http://www.latex-project.org/)¡±
 
+â€œOpen Office(http://www.latex-project.org/)â€
 
 
-Ó¦¸ÄÎª£º¡°Open Office(http://www.openoffice.org/)¡±
 
+åº”æ”¹ä¸ºï¼šâ€œOpen Office(http://www.openoffice.org/)â€
 
 
 
 
 
 
-P160£¬6.5 ±¾ÕÂÁ·Ï°£¬ÇëÎÊÏÂÃæµÄÄ¿Â¼Ö÷Òª·ÅÖÃÊ²Ã´Êý¾Ý£¿
 
+P160ï¼Œ6.5 æœ¬ç« ç»ƒä¹ ï¼Œè¯·é—®ä¸‹é¢çš„ç›®å½•ä¸»è¦æ”¾ç½®ä»€ä¹ˆæ•°æ®ï¼Ÿ
 
 
-¡°/etc/¡¢/etc/initd¡¢/boot¡¢/usr/bin¡¢/bin¡¢/usr/sbin¡¢/sbin¡¢/dev¡¢/var/log¡£¡±
 
+â€œ/etc/ã€/etc/initdã€/bootã€/usr/binã€/binã€/usr/sbinã€/sbinã€/devã€/var/logã€‚â€
 
 
-Ó¦¸ÄÎª¡°/etc/¡¢/etc/init.d¡¢/boot¡¢/usr/bin¡¢/bin¡¢/usr/sbin¡¢/sbin¡¢/dev¡¢/var/log¡£¡±£¬²¢È¥µôÇ°ÃæµÄÐ¡·½µã
 
+åº”æ”¹ä¸ºâ€œ/etc/ã€/etc/init.dã€/bootã€/usr/binã€/binã€/usr/sbinã€/sbinã€/devã€/var/logã€‚â€ï¼Œå¹¶åŽ»æŽ‰å‰é¢çš„å°æ–¹ç‚¹
 
 
 
 
 
 
-P200£¬8.1.3 LinuxµÄExt2ÎÄ¼þÏµÍ³(inode)£¬ÀýÌâ
 
+P200ï¼Œ8.1.3 Linuxçš„Ext2æ–‡ä»¶ç³»ç»Ÿ(inode)ï¼Œä¾‹é¢˜
 
 
-¡°ËùÓÐÎÄ¼þÈÝÁ¿Îª£º50 x 10000(bytes)= 488.3KB£¬µ«´ËÊ±ÀË·ÑµÄÈÝÁ¿Îª£º 4046 x 10000(bytes) = 38.6MB¡±
 
+â€œæ‰€æœ‰æ–‡ä»¶å®¹é‡ä¸ºï¼š50 x 10000(bytes)= 488.3KBï¼Œä½†æ­¤æ—¶æµªè´¹çš„å®¹é‡ä¸ºï¼š 4046 x 10000(bytes) = 38.6MBâ€
 
 
-Ó¦¸ÄÎª¡°ËùÓÐÎÄ¼þÈÝÁ¿Îª£º50 (bytes)x 10000 = 488.3KB£¬µ«´ËÊ±ÀË·ÑµÄÈÝÁ¿Îª£º 4046 (bytes) x 10000 = 38.6MB¡±
 
+åº”æ”¹ä¸ºâ€œæ‰€æœ‰æ–‡ä»¶å®¹é‡ä¸ºï¼š50 (bytes)x 10000 = 488.3KBï¼Œä½†æ­¤æ—¶æµªè´¹çš„å®¹é‡ä¸ºï¼š 4046 (bytes) x 10000 = 38.6MBâ€
 
 
 
 
 
 
-P203£¬8.1.3 LinuxµÄExt2ÎÄ¼þÏµÍ³(inode)£¬block bitmap
 
+P203ï¼Œ8.1.3 Linuxçš„Ext2æ–‡ä»¶ç³»ç»Ÿ(inode)ï¼Œblock bitmap
 
 
-¡°Í¬Ñù......£¬´ËÊ±ÔÚblock bitmpapµ±ÖÐÏà¶ÔÓ¦µ½¸ÃblockºÅÂëµÄ±êÖ¾¾ÍÒªÐÞ¸Ä¡±
 
+â€œåŒæ ·......ï¼Œæ­¤æ—¶åœ¨block bitmpapå½“ä¸­ç›¸å¯¹åº”åˆ°è¯¥blockå·ç çš„æ ‡å¿—å°±è¦ä¿®æ”¹â€
 
 
-Ó¦¸ÄÎª£º¡°Í¬Ñù......£¬´ËÊ±ÔÚblock bitmapµ±ÖÐÏà¶ÔÓ¦µ½¸ÃblockºÅÂëµÄ±êÖ¾¾ÍÒªÐÞ¸Ä¡±
 
+åº”æ”¹ä¸ºï¼šâ€œåŒæ ·......ï¼Œæ­¤æ—¶åœ¨block bitmapå½“ä¸­ç›¸å¯¹åº”åˆ°è¯¥blockå·ç çš„æ ‡å¿—å°±è¦ä¿®æ”¹â€
 
 
 
 
 
 
-P243£¬8.6.2 ´ÅÅÌ¿Õ¼äµÄÀË·ÑÎÊÌâ£¬µÚ¶þ¸ö»ÒÉ«¿ò
 
+P243ï¼Œ8.6.2 ç£ç›˜ç©ºé—´çš„æµªè´¹é—®é¢˜ï¼Œç¬¬äºŒä¸ªç°è‰²æ¡†
 
 
-¡°118  /etc   <==µ¥Î»ÊÇKB¡±
 
+â€œ118  /etc   <==å•ä½æ˜¯KBâ€
 
 
-Ó¦¸ÄÎª¡°118  /etc   <==µ¥Î»ÊÇMB¡±
 
+åº”æ”¹ä¸ºâ€œ118  /etc   <==å•ä½æ˜¯MBâ€
 
 
 
 
 
 
-·±ÌåÖÐÎÄ¡°Èç¹ûÔÚÎÄÕÂƒÈÓÐŒ¦ýRµÄ…^‰K£¬¿ÉÒÔÊ¹ÓÃ [ctrl]-v ßMÐÐÑ}Ñu/ÙNÉÏ/„h³ýµÄÐÐžé¡±
 
+ç¹ä½“ä¸­æ–‡â€œå¦‚æžœåœ¨æ–‡ç« å…§æœ‰å°é½Šçš„å€å¡Šï¼Œå¯ä»¥ä½¿ç”¨ [ctrl]-v é€²è¡Œè¤‡è£½/è²¼ä¸Š/åˆªé™¤çš„è¡Œç‚ºâ€
 
 
-P291£¬10.5 ÖØµã»Ø¹Ë£¬µ¹ÊýµÚÎåµã
 
+P291ï¼Œ10.5 é‡ç‚¹å›žé¡¾ï¼Œå€’æ•°ç¬¬äº”ç‚¹
 
 
-¡°¿ÉÒÔÊ¹ÓÃ[ctrl]-v½øÐÐ¸´ÖÆ/Õ³Ìû/É¾³ýµÄÐÐÎª¡£¡±
 
+â€œå¯ä»¥ä½¿ç”¨[ctrl]-vè¿›è¡Œå¤åˆ¶/ç²˜å¸–/åˆ é™¤çš„è¡Œä¸ºã€‚â€
 
 
 
 
 
 
-P301£¬11.2.2 ±äÁ¿µÄÏÔÊ¾ÓëÉèÖÃ£¬µÚÈýÐÐ
 
+P301ï¼Œ11.2.2 å˜é‡çš„æ˜¾ç¤ºä¸Žè®¾ç½®ï¼Œç¬¬ä¸‰è¡Œ
 
 
-¡°±äÁ¿µÄÏÔÊ¾¾ÍÈçÍ¬ÉÏÃæµÄ·¶Àý£¬ÀûÓÃehco¾ÍÄÜ¹»¶Á³ö£¬¡±
 
+â€œå˜é‡çš„æ˜¾ç¤ºå°±å¦‚åŒä¸Šé¢çš„èŒƒä¾‹ï¼Œåˆ©ç”¨ehcoå°±èƒ½å¤Ÿè¯»å‡ºï¼Œâ€
 
 
-Ó¦¸ÄÎª£º¡°±äÁ¿µÄÏÔÊ¾¾ÍÈçÍ¬ÉÏÃæµÄ·¶Àý£¬ÀûÓÃecho¾ÍÄÜ¹»¶Á³ö£¬¡±
 
+åº”æ”¹ä¸ºï¼šâ€œå˜é‡çš„æ˜¾ç¤ºå°±å¦‚åŒä¸Šé¢çš„èŒƒä¾‹ï¼Œåˆ©ç”¨echoå°±èƒ½å¤Ÿè¯»å‡ºï¼Œâ€
 
 
 
 
 
 
-P316£¬11.2.8 ±äÁ¿ÄÚÈÝµÄÉ¾³ý¡¢Ìæ´úÓëÌæ»»£¬µÚÒ»¸ö»ÒÉ«¿ò
 
+P316ï¼Œ11.2.8 å˜é‡å†…å®¹çš„åˆ é™¤ã€æ›¿ä»£ä¸Žæ›¿æ¢ï¼Œç¬¬ä¸€ä¸ªç°è‰²æ¡†
 
 
-¡°È»ºó²âÊÔÒ»ÏÂµÈºÅ£¨-£©µÄÓÃ·¨¡±
 
+â€œç„¶åŽæµ‹è¯•ä¸€ä¸‹ç­‰å·ï¼ˆ-ï¼‰çš„ç”¨æ³•â€
 
 
-Ó¦¸ÄÎª£º¡°È»ºó²âÊÔÒ»ÏÂ¼õºÅ£¨-£©µÄÓÃ·¨¡±
 
+åº”æ”¹ä¸ºï¼šâ€œç„¶åŽæµ‹è¯•ä¸€ä¸‹å‡å·ï¼ˆ-ï¼‰çš„ç”¨æ³•â€
 
 
 
 
 
 
-P338£¬11.6.2 ÅÅÐòÃüÁî£¬±¾½Ú×îºóÒ»ÐÐ
 
+P338ï¼Œ11.6.2 æŽ’åºå‘½ä»¤ï¼Œæœ¬èŠ‚æœ€åŽä¸€è¡Œ
 
 
-¡°¾ÍÊ¹ÓÃwc-cÕâ¸ö²ÎÊý¡±
 
+â€œå°±ä½¿ç”¨wc-cè¿™ä¸ªå‚æ•°â€
 
 
-Ó¦¸ÄÎª£º¡°¾ÍÊ¹ÓÃwc-mÕâ¸ö²ÎÊý¡±
 
+åº”æ”¹ä¸ºï¼šâ€œå°±ä½¿ç”¨wc-mè¿™ä¸ªå‚æ•°â€
 
 
 
 
 
 
-P354£¬12.2.3 »ù´¡ÕýÔò±í´ïÊ½Á·Ï°£¬ÀýÌâËÄ
 
+P354ï¼Œ12.2.3 åŸºç¡€æ­£åˆ™è¡¨è¾¾å¼ç»ƒä¹ ï¼Œä¾‹é¢˜å››
 
 
-¡°*(ÐÇºÅ)£º´ú±íÖØ¸´Ç°Ò»¸ö0µ½ÎÞÇî¶à´ÎµÄÒâË¼£¬Îª×éºÏÐÎÌ¬¡±
 
+â€œ*(æ˜Ÿå·)ï¼šä»£è¡¨é‡å¤å‰ä¸€ä¸ª0åˆ°æ— ç©·å¤šæ¬¡çš„æ„æ€ï¼Œä¸ºç»„åˆå½¢æ€â€
 
 
-Ó¦¸ÄÎª£º¡°*(ÐÇºÅ)£º´ú±íÖØ¸´Ç°Ò»¸ö×ÖÔª£¬0µ½ÎÞÇî¶à´ÎµÄÒâË¼£¬Îª×éºÏÐÎÌ¬¡±
 
+åº”æ”¹ä¸ºï¼šâ€œ*(æ˜Ÿå·)ï¼šä»£è¡¨é‡å¤å‰ä¸€ä¸ªå­—å…ƒï¼Œ0åˆ°æ— ç©·å¤šæ¬¡çš„æ„æ€ï¼Œä¸ºç»„åˆå½¢æ€â€
 
 
 
 
 
 
-P356£¬12.2.4 »ù´¡ÕýÔò±í´ïÊ½×Ö·û(characters)£¬±í12-2£¬[n1-n2]
 
+P356ï¼Œ12.2.4 åŸºç¡€æ­£åˆ™è¡¨è¾¾å¼å­—ç¬¦(characters)ï¼Œè¡¨12-2ï¼Œ[n1-n2]
 
 
-¡°grep -n '[0-9]' regular_express.txt¡±
 
+â€œgrep -n '[0-9]' regular_express.txtâ€
 
 
-Ó¦¸ÄÎª£ºgrep -n '[A-Z]' regular_express.txt
 
+åº”æ”¹ä¸ºï¼šgrep -n '[A-Z]' regular_express.txt
 
 
 
 
 
 
-P379£¬13.2.2 scriptµÄÖ´ÐÐ·½Ê½Çø±ð£¬Í¼13-2 sh02.shÔÚ¸¸½ø³ÌÖÐÔËÐÐ
 
+P379ï¼Œ13.2.2 scriptçš„æ‰§è¡Œæ–¹å¼åŒºåˆ«ï¼Œå›¾13-2 sh02.shåœ¨çˆ¶è¿›ç¨‹ä¸­è¿è¡Œ
 
 
-¡°sh sh02.shÔÚ´ËÖ´ÐÐ¡±
 
+â€œsh sh02.shåœ¨æ­¤æ‰§è¡Œâ€
 
 
-Ó¦¸ÄÎª£º¡°source sh02.shÔÚ´ËÖ´ÐÐ¡±
 
+åº”æ”¹ä¸ºï¼šâ€œsource sh02.shåœ¨æ­¤æ‰§è¡Œâ€
 
 
 
 
 
 
-P430£¬14.4.2 sudo£¬visudoÓë/etc/sudoers
 
+P430ï¼Œ14.4.2 sudoï¼Œvisudoä¸Ž/etc/sudoers
 
 
-¡°ÓÐÈ¤°É¡­¡­£¬ËùÒÔÕâ¸öÎÄ¼þ¾ÍÊÇ/etc/sudoerds¡±
 
+â€œæœ‰è¶£å§â€¦â€¦ï¼Œæ‰€ä»¥è¿™ä¸ªæ–‡ä»¶å°±æ˜¯/etc/sudoerdsâ€
 
 
-Ó¦¸ÄÎª¡°ÓÐÈ¤°É¡­¡­£¬ËùÒÔÕâ¸öÎÄ¼þ¾ÍÊÇ/etc/sudoers¡±
 
+åº”æ”¹ä¸ºâ€œæœ‰è¶£å§â€¦â€¦ï¼Œæ‰€ä»¥è¿™ä¸ªæ–‡ä»¶å°±æ˜¯/etc/sudoersâ€
 
 
 
 
 
 
-P449£¬14.9 ±¾ÕÂÏ°Ìâ£¬µÚÈý¸ö»ÒÉ«¿ò
 
+P449ï¼Œ14.9 æœ¬ç« ä¹ é¢˜ï¼Œç¬¬ä¸‰ä¸ªç°è‰²æ¡†
 
 
-¡°useradd -G youcan -s -m $username¡±
 
+â€œuseradd -G youcan -s -m $usernameâ€
 
 
-Ó¦¸ÄÎª£º¡°useradd -G youcan -s /bin/bash -m $username¡±
 
+åº”æ”¹ä¸ºï¼šâ€œuseradd -G youcan -s /bin/bash -m $usernameâ€
 
 
 
 
 
 
-P500£¬16.3.2 ÏµÍ³µÄÅäÖÃÎÄ¼þ£º/etc/crontab£¬Tips
 
+P500ï¼Œ16.3.2 ç³»ç»Ÿçš„é…ç½®æ–‡ä»¶ï¼š/etc/crontabï¼ŒTips
 
 
-¡°/etc/init.d/crondrestart¡±
 
+â€œ/etc/init.d/crondrestartâ€
 
 
-Ó¦¸ÄÎª£º¡°/etc/init.d/crond restart¡±
 
+åº”æ”¹ä¸ºï¼šâ€œ/etc/init.d/crond restartâ€
 
 
 
 
 
 
-P515£¬17.2.3 ÍÑ»ú¹ÜÀíÎÊÌâ£¬µÚ¶þ¸ö»ÒÉ«¿ò
 
+P515ï¼Œ17.2.3 è„±æœºç®¡ç†é—®é¢˜ï¼Œç¬¬äºŒä¸ªç°è‰²æ¡†
 
 
-¡°[root@www ~]#exit¡±Ó¦ÔÚ»ÒÉ«¿òÖÐ
 
+â€œ[root@www ~]#exitâ€åº”åœ¨ç°è‰²æ¡†ä¸­
 
 
-¡°Èç¹ûÄãÔÙ´ÎµÇÂ¼µÄ»°£¬ÔÙÊ¹ÓÃps -lÈ¥²é¿´ÄãµÄ½ø³Ì£¬¡±
 
+â€œå¦‚æžœä½ å†æ¬¡ç™»å½•çš„è¯ï¼Œå†ä½¿ç”¨ps -låŽ»æŸ¥çœ‹ä½ çš„è¿›ç¨‹ï¼Œâ€
 
 
-Ó¦¸ÄÎª£º¡°Èç¹ûÄãÔÙ´ÎµÇÂ¼µÄ»°£¬ÔÙÊ¹ÓÃpstreeÈ¥²é¿´ÄãµÄ½ø³Ì£¬¡±
 
+åº”æ”¹ä¸ºï¼šâ€œå¦‚æžœä½ å†æ¬¡ç™»å½•çš„è¯ï¼Œå†ä½¿ç”¨pstreeåŽ»æŸ¥çœ‹ä½ çš„è¿›ç¨‹ï¼Œâ€
 
 
 
 
 
 
-P560£¬18.2.1 Ä¬ÈÏÖµÅäÖÃÎÄ¼þ£¬±í18-1£¬per_source
 
+P560ï¼Œ18.2.1 é»˜è®¤å€¼é…ç½®æ–‡ä»¶ï¼Œè¡¨18-1ï¼Œper_source
 
 
-¡°ÉèÖÃÖµ£º[Ò»¸öÊý×Ö»òNULIMITED]¡±
 
+â€œè®¾ç½®å€¼ï¼š[ä¸€ä¸ªæ•°å­—æˆ–NULIMITED]â€
 
 
-Ó¦¸ÄÎª£º¡°ÉèÖÃÖµ£º[Ò»¸öÊý×Ö»òUNLIMITED]¡±
 
+åº”æ”¹ä¸ºï¼šâ€œè®¾ç½®å€¼ï¼š[ä¸€ä¸ªæ•°å­—æˆ–UNLIMITED]â€
 
 
 
 
 
 
-P572£¬18.4.3 CentOS 5.x Ä¬ÈÏÆô¶¯µÄ·þÎñ¼òÒ×ËµÃ÷£¬±í18-2£¬xfs
 
+P572ï¼Œ18.4.3 CentOS 5.x é»˜è®¤å¯åŠ¨çš„æœåŠ¡ç®€æ˜“è¯´æ˜Žï¼Œè¡¨18-2ï¼Œxfs
 
 
-¡°Èç¹ûÄã²»Æô¶¯X´°¿ÚµÄ»°£¬ÄÇÃ´Õâ¸ö·þÎñ¿ÉÒÔÆô¶¯¡£¡±
 
+â€œå¦‚æžœä½ ä¸å¯åŠ¨Xçª—å£çš„è¯ï¼Œé‚£ä¹ˆè¿™ä¸ªæœåŠ¡å¯ä»¥å¯åŠ¨ã€‚â€
 
 
-Ó¦¸ÄÎª£º¡°Èç¹ûÄã²»Æô¶¯X´°¿ÚµÄ»°£¬ÄÇÃ´Õâ¸ö·þÎñ¿ÉÒÔ²»Æô¶¯¡£¡±
 
+åº”æ”¹ä¸ºï¼šâ€œå¦‚æžœä½ ä¸å¯åŠ¨Xçª—å£çš„è¯ï¼Œé‚£ä¹ˆè¿™ä¸ªæœåŠ¡å¯ä»¥ä¸å¯åŠ¨ã€‚â€
 
 
 
 
 
 
-P572£¬18.5 ÖØµã»Ø¹Ë£¬µ¹ÊýµÚÈýÐÐ
 
+P572ï¼Œ18.5 é‡ç‚¹å›žé¡¾ï¼Œå€’æ•°ç¬¬ä¸‰è¡Œ
 
 
-¡°¶øÆô¶¯µÄ·½Ê½ÔòÎª/etc/init.d/xientd restart¡£¡±
 
+â€œè€Œå¯åŠ¨çš„æ–¹å¼åˆ™ä¸º/etc/init.d/xientd restartã€‚â€
 
 
-Ó¦¸ÄÎª£º¡°¶øÆô¶¯µÄ·½Ê½ÔòÎª/etc/init.d/xinetd restart¡£¡±
 
+åº”æ”¹ä¸ºï¼šâ€œè€Œå¯åŠ¨çš„æ–¹å¼åˆ™ä¸º/etc/init.d/xinetd restartã€‚â€
 
 
 
 
 
 
-P579£¬19.2.1 ÈÕÖ¾ÎÄ¼þÄÚÈÝµÄÒ»°ã¸ñÊ½£¬µÚËÄÐÐ
 
+P579ï¼Œ19.2.1 æ—¥å¿—æ–‡ä»¶å†…å®¹çš„ä¸€èˆ¬æ ¼å¼ï¼Œç¬¬å››è¡Œ
 
 
-¡°Ä³¸ödemonÖ´ÐÐ¹ý³ÌÀÏÊÇ²»Ë³³©Ê±£»¡±
 
+â€œæŸä¸ªdemonæ‰§è¡Œè¿‡ç¨‹è€æ˜¯ä¸é¡ºç•…æ—¶ï¼›â€
 
 
-Ó¦¸ÄÎª£º¡°ÉèÖÃÖµ£ºÄ³¸ödaemonÖ´ÐÐ¹ý³ÌÀÏÊÇ²»Ë³³©Ê±£»¡±
 
+åº”æ”¹ä¸ºï¼šâ€œè®¾ç½®å€¼ï¼šæŸä¸ªdaemonæ‰§è¡Œè¿‡ç¨‹è€æ˜¯ä¸é¡ºç•…æ—¶ï¼›â€
 
 
 
 
 
 
-P627£¬20.5 ÖØµã»Ø¹Ë£¬µÚÁùµã
 
+P627ï¼Œ20.5 é‡ç‚¹å›žé¡¾ï¼Œç¬¬å…­ç‚¹
 
 
-¡°initµÄÅäÖÃÎÄ¼þÎª/etc/initab£¬¡±
 
+â€œinitçš„é…ç½®æ–‡ä»¶ä¸º/etc/initabï¼Œâ€
 
 
-Ó¦¸ÄÎª£º¡°initµÄÅäÖÃÎÄ¼þÎª/etc/inittab£¬¡±
 
+åº”æ”¹ä¸ºï¼šâ€œinitçš„é…ç½®æ–‡ä»¶ä¸º/etc/inittabï¼Œâ€
 
 
 
 
 
 
-P652£¬21.3.2 Çý¶¯USBÉè±¸£¬µÚ¶þµã
 
+P652ï¼Œ21.3.2 é©±åŠ¨USBè®¾å¤‡ï¼Œç¬¬äºŒç‚¹
 
 
-¡°ÖÁÓÚUSB2.0ÔÚLinuxÉÏ¶¼ÒÔEnahnced Host Controller Interface (EHCI)À´Çý¶¯µÄ¡£¡±
 
+â€œè‡³äºŽUSB2.0åœ¨Linuxä¸Šéƒ½ä»¥Enahnced Host Controller Interface (EHCI)æ¥é©±åŠ¨çš„ã€‚â€
 
 
-Ó¦¸ÄÎª£º¡°ÖÁÓÚUSB2.0ÔÚLinuxÉÏ¶¼ÒÔEnhanced Host Controller Interface (EHCI)À´Çý¶¯µÄ¡£¡±
 
+åº”æ”¹ä¸ºï¼šâ€œè‡³äºŽUSB2.0åœ¨Linuxä¸Šéƒ½ä»¥Enhanced Host Controller Interface (EHCI)æ¥é©±åŠ¨çš„ã€‚â€
 
 
 
 
 
 
-P740£¬25.1.3 Ñ¡Ôñ±¸·ÝÉè±¸£¬´æ´¢Éè±¸µÄ¿¼ÂÇ
 
+P740ï¼Œ25.1.3 é€‰æ‹©å¤‡ä»½è®¾å¤‡ï¼Œå­˜å‚¨è®¾å¤‡çš„è€ƒè™‘
 
 
-¡°Ó²ÅÌ£º/dev/hd[a-d][1-16] (IDE), /dev/sd[a-p][1-16] (SCSI/SATA)¡±
 
+â€œç¡¬ç›˜ï¼š/dev/hd[a-d][1-16] (IDE), /dev/sd[a-p][1-16] (SCSI/SATA)â€
 
 
-Ó¦¸ÄÎª£º¡°Ó²ÅÌ£º/dev/hd[a-d][1-63] (IDE), /dev/sd[a-p][1-16] (SCSI/SATA)¡±
 
+åº”æ”¹ä¸ºï¼šâ€œç¡¬ç›˜ï¼š/dev/hd[a-d][1-63] (IDE), /dev/sd[a-p][1-16] (SCSI/SATA)â€
 
 
- 
 
 
 
-                                                                                     2011Äê9ÔÂ16ÈÕ 
-# sshÏà¹Ø
 
-## Agent admitted failure to sign using the key 
-ssh-keygen ²úÉú³ö id_rsa, id_rsa.pub, ÒÑ¾­¶¼·Åµ½ÕýÈ·Î»ÖÃ(.ssh), µ«ÊÇÁª»úÊ±È´³öÏÖÏÂÊöÑ¶Ï¢:
+
+                                                                                     2011å¹´9æœˆ16æ—¥
+# sshç›¸å…³
+
+## Agent admitted failure to sign using the key
+ssh-keygen äº§ç”Ÿå‡º id_rsa, id_rsa.pub, å·²ç»éƒ½æ”¾åˆ°æ­£ç¡®ä½ç½®(.ssh), ä½†æ˜¯è”æœºæ—¶å´å‡ºçŽ°ä¸‹è¿°è®¯æ¯:
 
 Agent admitted failure to sign using the key
 
-½â·¨
+è§£æ³•
 
-ÓÚ×Ô¼ºµÄ»úÆ÷ÉÏ, Ö´ÐÐ ssh-add, »á³öÏÖÏÂÊöÑ¶Ï¢.
+äºŽè‡ªå·±çš„æœºå™¨ä¸Š, æ‰§è¡Œ ssh-add, ä¼šå‡ºçŽ°ä¸‹è¿°è®¯æ¯.
 
 Identity added: /home/user/.ssh/id_rsa (/home/user/.ssh/id_rsa)
 
 ## connect to host localhost port 22: Connection refused
 
-´íÎóÔ­Òò£º
+é”™è¯¯åŽŸå› ï¼š
 
-1.sshd Î´°²×°
+1.sshd æœªå®‰è£…
 
-2.sshd Î´Æô¶¯ 
+2.sshd æœªå¯åŠ¨
 
-3.·À»ðÇ½
+3.é˜²ç«å¢™
 
-4ÐèÖØÐÂÆô¶¯ssh ·þÎñ
+4éœ€é‡æ–°å¯åŠ¨ssh æœåŠ¡
 
 
 
-½â¾ö·½·¨£º
+è§£å†³æ–¹æ³•ï¼š
 
-1.È·¶¨°²×°sshd: 
+1.ç¡®å®šå®‰è£…sshd:
 
-$ sudo apt-get install openssh-server 
+$ sudo apt-get install openssh-server
 
-2.Æô¶¯sshd: 
+2.å¯åŠ¨sshd:
 
-$ sudo net start sshd 
+$ sudo net start sshd
 
-3.¼ì²é·À»ðÇ½ÉèÖÃ,¹Ø±Õ·À»ðÇ½£º 
+3.æ£€æŸ¥é˜²ç«å¢™è®¾ç½®,å…³é—­é˜²ç«å¢™ï¼š
 
 $ sudo ufw disable
 
-¼ìÑé·½·¨£º
+æ£€éªŒæ–¹æ³•ï¼š
 
-ÊäÈëÃüÁî£º
+è¾“å…¥å‘½ä»¤ï¼š
 
-$ ssh localhost  
+$ ssh localhost
 
-Èô³É¹¦£¬Ôò±íÊ¾°²×°³É¹¦£¬ÇÒÁ¬½ÓÍ¨¹ý£»
+è‹¥æˆåŠŸï¼Œåˆ™è¡¨ç¤ºå®‰è£…æˆåŠŸï¼Œä¸”è¿žæŽ¥é€šè¿‡ï¼›
 
-µ«ÊÇÓÐµÄÊ±ºòËäÈ»³É¹¦ÁËµ«ÊÇ»¹ÊÇ»á³öÏÖConnection refused ÎÊÌâ¡£
+ä½†æ˜¯æœ‰çš„æ—¶å€™è™½ç„¶æˆåŠŸäº†ä½†æ˜¯è¿˜æ˜¯ä¼šå‡ºçŽ°Connection refused é—®é¢˜ã€‚
 
-ÔËÐÐ ps -e | grep ssh£¬²é¿´ÊÇ·ñÓÐsshd½ø³Ì£º
+è¿è¡Œ ps -e | grep sshï¼ŒæŸ¥çœ‹æ˜¯å¦æœ‰sshdè¿›ç¨‹ï¼š
 
- 
 
-ÓÐÊ±ºòËäÈ»¿ÉÒÔ¿´µ½sshd µ«ÊÇ»¹ÊÇ²»ÄÜÁ¬½Ó³É¹¦
 
-ÕâÊ±ºò¾ÍÒªÏëµ½ÖØÐÂÆô¶¯Ò»ÏÂ£ºsudo service ssh restart
+æœ‰æ—¶å€™è™½ç„¶å¯ä»¥çœ‹åˆ°sshd ä½†æ˜¯è¿˜æ˜¯ä¸èƒ½è¿žæŽ¥æˆåŠŸ
 
-È»ºóÔÚÁ¬½Ó 
-#²é¿´linux½ø³ÌµÄÖ´ÐÐÎÄ¼þÂ·¾¶ 
-¾ßÌå×ö·¨¾ÍÊÇ£º
+è¿™æ—¶å€™å°±è¦æƒ³åˆ°é‡æ–°å¯åŠ¨ä¸€ä¸‹ï¼šsudo service ssh restart
 
-           1¡¢ÒÔ³¬¼¶ÓÃ»§µÇÂ½
+ç„¶åŽåœ¨è¿žæŽ¥
+#æŸ¥çœ‹linuxè¿›ç¨‹çš„æ‰§è¡Œæ–‡ä»¶è·¯å¾„
+å…·ä½“åšæ³•å°±æ˜¯ï¼š
 
-           2¡¢½øÈë/procÄ¿Â¼
+           1ã€ä»¥è¶…çº§ç”¨æˆ·ç™»é™†
 
-           3¡¢ps²é¿´ËùÓÐ·ûºÏ./cmdµÄ½ø³Ì£¬ÕÒ³öÆä¶ÔÓ¦µÄPID½ø³ÌºÅ
+           2ã€è¿›å…¥/procç›®å½•
 
-           4¡¢ÓÃllÃüÁî£º ll ½ø³ÌºÅ 
+           3ã€psæŸ¥çœ‹æ‰€æœ‰ç¬¦åˆ./cmdçš„è¿›ç¨‹ï¼Œæ‰¾å‡ºå…¶å¯¹åº”çš„PIDè¿›ç¨‹å·
 
-              ÈçÏÂÏÔÊ¾Ò»¸öÊ¾Àý£º
+           4ã€ç”¨llå‘½ä»¤ï¼š ll è¿›ç¨‹å·
 
-              [root@Cluster1 proc]# ll 22401 (procÎÄ¼þ¼ÐÖÐÓÐ¶ÔÓ¦PIDÂëµÄÎÄ¼þÃû,½øÈë¼´¿É)
+              å¦‚ä¸‹æ˜¾ç¤ºä¸€ä¸ªç¤ºä¾‹ï¼š
+
+              [root@Cluster1 proc]# ll 22401 (procæ–‡ä»¶å¤¹ä¸­æœ‰å¯¹åº”PIDç çš„æ–‡ä»¶å,è¿›å…¥å³å¯)
 
        total 0
 
@@ -4824,139 +3633,139 @@ $ ssh localhost
 
        -r--r--r--    1 zhouys    zhouys     0 Dec 11 11:10 status
 
-              /procÎÄ¼þÏµÍ³ÏÂµÄ ½ø³ÌºÅÄ¿Â¼ ÏÂÃæµÄÎÄ¼þ¾µÏñÁË½ø³ÌµÄµ±Ç°ÔËÐÐÐÅÏ¢£¬
+              /procæ–‡ä»¶ç³»ç»Ÿä¸‹çš„ è¿›ç¨‹å·ç›®å½• ä¸‹é¢çš„æ–‡ä»¶é•œåƒäº†è¿›ç¨‹çš„å½“å‰è¿è¡Œä¿¡æ¯ï¼Œ
 
-              ´ÓÖÐ¿ÉÒÔ¿´µ½£º
+              ä»Žä¸­å¯ä»¥çœ‹åˆ°ï¼š
 
-              cwd·ûºÅÁ´½ÓµÄ¾ÍÊÇ½ø³Ì22401µÄÔËÐÐÄ¿Â¼£»
+              cwdç¬¦å·é“¾æŽ¥çš„å°±æ˜¯è¿›ç¨‹22401çš„è¿è¡Œç›®å½•ï¼›
 
-              exe·ûºÅÁ¬½Ó¾ÍÊÇÖ´ÐÐ³ÌÐòµÄ¾ø¶ÔÂ·¾¶£»
+              exeç¬¦å·è¿žæŽ¥å°±æ˜¯æ‰§è¡Œç¨‹åºçš„ç»å¯¹è·¯å¾„ï¼›
 
-              cmdline¾ÍÊÇ³ÌÐòÔËÐÐÊ±ÊäÈëµÄÃüÁîÐÐÃüÁî£»±¾ÀýÎª£º./cbs
+              cmdlineå°±æ˜¯ç¨‹åºè¿è¡Œæ—¶è¾“å…¥çš„å‘½ä»¤è¡Œå‘½ä»¤ï¼›æœ¬ä¾‹ä¸ºï¼š./cbs
 
-              cpu¼ÇÂ¼ÁË½ø³Ì¿ÉÄÜÔËÐÐÔÚÆäÉÏµÄcpu£»ÏÔÊ¾ÐéÄâµÄcpuÐÅÏ¢
+              cpuè®°å½•äº†è¿›ç¨‹å¯èƒ½è¿è¡Œåœ¨å…¶ä¸Šçš„cpuï¼›æ˜¾ç¤ºè™šæ‹Ÿçš„cpuä¿¡æ¯
 
-              environ¼ÇÂ¼ÁË½ø³ÌÔËÐÐÊ±µÄ»·¾³±äÁ¿
+              environè®°å½•äº†è¿›ç¨‹è¿è¡Œæ—¶çš„çŽ¯å¢ƒå˜é‡
 
-              fdÄ¿Â¼ÏÂÊÇ½ø³Ì´ò¿ª»òÊ¹ÓÃµÄÎÄ¼þµÄ·ûºÅÁ¬½Ó
+              fdç›®å½•ä¸‹æ˜¯è¿›ç¨‹æ‰“å¼€æˆ–ä½¿ç”¨çš„æ–‡ä»¶çš„ç¬¦å·è¿žæŽ¥
 
               ...
 
-                  
-
-        Í¨¹ýcwdÖ±½Ó½øÈë½ø³ÌÔËÐÐÄ¿Â¼£¬Í¨¹ý²é¿´Ïà¹ØÐÅÏ¢¾Í¿ÉÒÔ¶¨Î»´ËÄ¿Â¼¶ÔÓ¦ÄÇ¸ö¶Ë¿ÚºÅ£¬ÒÔ¼°
-
-    ¶¨Î»ÊÇÄÇ¸öÓ¦ÓÃ²ÅÊ¹ÓÃ´Ë·þÎñ³ÌÐò¡£       
 
 
+        é€šè¿‡cwdç›´æŽ¥è¿›å…¥è¿›ç¨‹è¿è¡Œç›®å½•ï¼Œé€šè¿‡æŸ¥çœ‹ç›¸å…³ä¿¡æ¯å°±å¯ä»¥å®šä½æ­¤ç›®å½•å¯¹åº”é‚£ä¸ªç«¯å£å·ï¼Œä»¥åŠ
 
-3. ps -aux ÃüÁî
+    å®šä½æ˜¯é‚£ä¸ªåº”ç”¨æ‰ä½¿ç”¨æ­¤æœåŠ¡ç¨‹åºã€‚
 
 
 
-¡¡¡¡psÒ²¿É´òÓ¡ÆäÂ·¾¶,µ«²»ÊÇÍòÄÜµÄ,ÓÐÐ©Â·¾¶Ö»ÄÜÊ¹ÓÃÒÔÉÏÁ½ÖÖ·½·¨È¡µÃ.
+3. ps -aux å‘½ä»¤
 
-#Ò»Ð©ÍøÂçÎÄÕÂ
 
-12¿î×î¼ÑLinuxÃüÁîÐÐÖÕ¶Ë¹¤¾ß
+
+ã€€ã€€psä¹Ÿå¯æ‰“å°å…¶è·¯å¾„,ä½†ä¸æ˜¯ä¸‡èƒ½çš„,æœ‰äº›è·¯å¾„åªèƒ½ä½¿ç”¨ä»¥ä¸Šä¸¤ç§æ–¹æ³•å–å¾—.
+
+#ä¸€äº›ç½‘ç»œæ–‡ç« 
+
+12æ¬¾æœ€ä½³Linuxå‘½ä»¤è¡Œç»ˆç«¯å·¥å…·
 
 http://www.vaikan.com/best-terminal-alternatives-for-linux-systems/
 
-LinuxÏÂºÃÍæµÄÃüÁî
+Linuxä¸‹å¥½çŽ©çš„å‘½ä»¤
 
 http://www.cnblogs.com/joeyupdo/articles/2768113.html
 
-¶¯»­ÑÝÊ¾Ò»Ð©ÎÞÓÃµ«ÓÐÈ¤µÄLinuxÃüÁî
+åŠ¨ç”»æ¼”ç¤ºä¸€äº›æ— ç”¨ä½†æœ‰è¶£çš„Linuxå‘½ä»¤
 
 http://www.vaikan.com/10-funny-liunx-command/
 
-LinuxÖÐ10¸öÓÐÓÃµÄÃüÁîÐÐ²¹ÆëÃüÁî
+Linuxä¸­10ä¸ªæœ‰ç”¨çš„å‘½ä»¤è¡Œè¡¥é½å‘½ä»¤
 
 http://www.geekfan.net/8169/
 
-LinuxÖÐµÄ10¸öÁ´½Ó²Ù×÷·û
+Linuxä¸­çš„10ä¸ªé“¾æŽ¥æ“ä½œç¬¦
 
 http://linux.cn/thread/12205/1/1/
 
-7 ¸öÖÂÃüµÄ Linux ÃüÁî
+7 ä¸ªè‡´å‘½çš„ Linux å‘½ä»¤
 
 http://linux.cn/thread/10246/1/1/
 
-·­Ç½£¡£¨Chrome+´úÀí¹¤¾ßGoAgent+SwitchySharp²å¼þ/»ðºüFirefox+AutoProxy£©
+ç¿»å¢™ï¼ï¼ˆChrome+ä»£ç†å·¥å…·GoAgent+SwitchySharpæ’ä»¶/ç«ç‹Firefox+AutoProxyï¼‰
 
 http://blog.chinaunix.net/uid-24250828-id-3788304.html
 
-Í¨¹ýÃüÁîÐÐ²éÕÒÒ»¸öIPµÄµØÀíÎ»ÖÃÐÅÏ¢
+é€šè¿‡å‘½ä»¤è¡ŒæŸ¥æ‰¾ä¸€ä¸ªIPçš„åœ°ç†ä½ç½®ä¿¡æ¯
 
 http://www.geekfan.net/7863/
 
-¶àÖÕ¶Ë¹ÜÀíÆ÷tmuxÊ¹ÓÃÏê½â
+å¤šç»ˆç«¯ç®¡ç†å™¨tmuxä½¿ç”¨è¯¦è§£
 
 http://blog.csdn.net/stelalala/article/details/9025691
 
-LinuxÏµÍ³ÀïÈçºÎ³¹µ×µÄÇå¿ÕÆÁÄ»£¿
+Linuxç³»ç»Ÿé‡Œå¦‚ä½•å½»åº•çš„æ¸…ç©ºå±å¹•ï¼Ÿ
 
 http://www.vaikan.com/how-to-clear-the-terminal-screen-for-real-in-case-of-linux/
 
-ÈçºÎÔÚLinuxÉÏ½«HTMLÒ³Ãæ×ª»¯³ÉpngÍ¼Æ¬
+å¦‚ä½•åœ¨Linuxä¸Šå°†HTMLé¡µé¢è½¬åŒ–æˆpngå›¾ç‰‡
 
 http://linux.cn/article-2708-1.html
 
-SSHÔ­ÀíÓëÔËÓÃ£¨Ò»£©£ºÔ¶³ÌµÇÂ¼
+SSHåŽŸç†ä¸Žè¿ç”¨ï¼ˆä¸€ï¼‰ï¼šè¿œç¨‹ç™»å½•
 
 http://www.ruanyifeng.com/blog/2011/12/ssh_remote_login.html
 
-SSHÔ­ÀíÓëÔËÓÃ£¨¶þ£©£ºÔ¶³Ì²Ù×÷Óë¶Ë¿Ú×ª·¢
+SSHåŽŸç†ä¸Žè¿ç”¨ï¼ˆäºŒï¼‰ï¼šè¿œç¨‹æ“ä½œä¸Žç«¯å£è½¬å‘
 
 http://www.ruanyifeng.com/blog/2011/12/ssh_port_forwarding.html
 
-LNMP°²×°¿ìËÙµ¼º½£¨¹ÙÍø½Ì³Ì£©
+LNMPå®‰è£…å¿«é€Ÿå¯¼èˆªï¼ˆå®˜ç½‘æ•™ç¨‹ï¼‰
 
 http://lnmp.org/install.html
 
-ubuntuÉ¾³ý¾ÉÄÚºËºÍ¶àÓàÆô¶¯Ïî 
+ubuntuåˆ é™¤æ—§å†…æ ¸å’Œå¤šä½™å¯åŠ¨é¡¹
 
 http://pppboy.blog.163.com/blog/static/3020379620113173147935/
 
-¸÷¸öLinux°æ±¾µÄ±¾µØrootÃÜÂëÆÆ½â·½·¨
+å„ä¸ªLinuxç‰ˆæœ¬çš„æœ¬åœ°rootå¯†ç ç ´è§£æ–¹æ³•
 
 http://os.51cto.com/art/200910/159523.htm
 
-apt-get remove, apt-get autoremoveºÍaptitude removeµÄÇø±ð
+apt-get remove, apt-get autoremoveå’Œaptitude removeçš„åŒºåˆ«
 
 http://blog.csdn.net/jiangxinnju/article/details/38341283
 
-# Linux±à³ÌÑ§Ï°Ö®Â·
+# Linuxç¼–ç¨‹å­¦ä¹ ä¹‹è·¯
 
-# GTK+Ïà¹Ø
+# GTK+ç›¸å…³
 
-##ÔÚWindowsÏÂÊ¹ÓÃGTK+
+##åœ¨Windowsä¸‹ä½¿ç”¨GTK+
 
-ÓÉÓÚGTK+µÄ¿çÆ½Ì¨ÌØÐÔ, ÎÒÃÇ¿ÉÒÔÔÚWindowsÏÂÊ¹ÓÃDevCppÀ´¿ª·¢Ê¹ÓÃGTK+Í¼ÐÎ¿âµÄGUI³ÌÐò.
+ç”±äºŽGTK+çš„è·¨å¹³å°ç‰¹æ€§, æˆ‘ä»¬å¯ä»¥åœ¨Windowsä¸‹ä½¿ç”¨DevCppæ¥å¼€å‘ä½¿ç”¨GTK+å›¾å½¢åº“çš„GUIç¨‹åº.
 
-  ²½ÖèÈçÏÂ:
-
-
-
-1. ÏÂÔØDevCPP, Ò²½ÐDev-C++, ÎÒÊ¹ÓÃµÄ°æ±¾ÊÇ4.9.9.2, ²¢°²×°
+  æ­¥éª¤å¦‚ä¸‹:
 
 
 
-2. ÏÂÔØgtk+ for win32¹¤¾ß°ü¼¯ºÏ, Õâ¸öÀïÃæº¬ÓÐ±àÒëÔËÐÐGTK+³ÌÐòËùÐèµÄËùÓÐ¶«Î÷, ²»ÐèÒªÒ»¸öÒ»¸ö°üÏÂÔØ°²×°ÁË. µØÖ· : http://ftp.gnome.org/pub/gnome/binaries/win32/gtk+/2.14/gtk+-bundle_2.14.4-20081108_win32.zip, ÕÕÌáÊ¾°²×°, ÎÒµÄ°²×°Ä¿Â¼Îª D:/dev/GTK
+1. ä¸‹è½½DevCPP, ä¹Ÿå«Dev-C++, æˆ‘ä½¿ç”¨çš„ç‰ˆæœ¬æ˜¯4.9.9.2, å¹¶å®‰è£…
 
 
 
-3. ½«D:/dev/GTK/bin¼ÓÈë»·¾³±äÁ¿PATH
+2. ä¸‹è½½gtk+ for win32å·¥å…·åŒ…é›†åˆ, è¿™ä¸ªé‡Œé¢å«æœ‰ç¼–è¯‘è¿è¡ŒGTK+ç¨‹åºæ‰€éœ€çš„æ‰€æœ‰ä¸œè¥¿, ä¸éœ€è¦ä¸€ä¸ªä¸€ä¸ªåŒ…ä¸‹è½½å®‰è£…äº†. åœ°å€ : http://ftp.gnome.org/pub/gnome/binaries/win32/gtk+/2.14/gtk+-bundle_2.14.4-20081108_win32.zip, ç…§æç¤ºå®‰è£…, æˆ‘çš„å®‰è£…ç›®å½•ä¸º D:/dev/GTK
 
 
 
-4. ÔËÐÐcmd, ÊäÈë " pkg-config --cflags --libs gtk+-2.0 > d:/a.txt", ÒâË¼ÊÇ°Ñ±àÒëGTK+³ÌÐòËùÐèÒªµÄ²ÎÊý¶¼ÖØ¶¨Ïòµ½DÅÌµÄa.txtÎÄ±¾ÎÄ¼þÖÐ
+3. å°†D:/dev/GTK/binåŠ å…¥çŽ¯å¢ƒå˜é‡PATH
 
 
 
-5. ´ò¿ªDevCpp, ÐÂ½¨Ò»¸ö¹¤³Ì, ×¢Òâ¹¤³ÌÀàÐÍÎª Windows Application, C¹¤³Ì.
+4. è¿è¡Œcmd, è¾“å…¥ " pkg-config --cflags --libs gtk+-2.0 > d:/a.txt", æ„æ€æ˜¯æŠŠç¼–è¯‘GTK+ç¨‹åºæ‰€éœ€è¦çš„å‚æ•°éƒ½é‡å®šå‘åˆ°Dç›˜çš„a.txtæ–‡æœ¬æ–‡ä»¶ä¸­
 
-   DevCpp¿ÉÄÜ»á¸øÄãÉú³ÉÒ»¸öÔ´ÎÄ¼þ, ½«Õâ¸öÔ´ÎÄ¼þµÄËùÓÐÄÚÈÝÌæ»»ÎªÒ»¸ö¼òµ¥µÄGTK+´úÂë, ÒÔÏÂÊÇÒ»¸öÀý×Ó:
+
+
+5. æ‰“å¼€DevCpp, æ–°å»ºä¸€ä¸ªå·¥ç¨‹, æ³¨æ„å·¥ç¨‹ç±»åž‹ä¸º Windows Application, Cå·¥ç¨‹.
+
+   DevCppå¯èƒ½ä¼šç»™ä½ ç”Ÿæˆä¸€ä¸ªæºæ–‡ä»¶, å°†è¿™ä¸ªæºæ–‡ä»¶çš„æ‰€æœ‰å†…å®¹æ›¿æ¢ä¸ºä¸€ä¸ªç®€å•çš„GTK+ä»£ç , ä»¥ä¸‹æ˜¯ä¸€ä¸ªä¾‹å­:
 
 #include <gtk/gtk.h>
 
@@ -4970,7 +3779,7 @@ int  main( int  argc, char  *argv[])
 
     window=gtk_window_new(GTK_WINDOW_TOPLEVEL);
 
-    gtk_window_set_title(GTK_WINDOW(window),g_locale_to_utf8("ÖÐÎÄ" ,-1,NULL,NULL,NULL));
+    gtk_window_set_title(GTK_WINDOW(window),g_locale_to_utf8("ä¸­æ–‡" ,-1,NULL,NULL,NULL));
 
     g_signal_connect(window,  "destroy", G_CALLBACK(gtk_main_quit), &window);
 
@@ -4982,85 +3791,85 @@ int  main( int  argc, char  *argv[])
 
 }
 
-6.µã»÷ ¹¤³Ì > ¹¤³ÌÊôÐÔ > "²ÎÊý"Ñ¡Ïî¿¨, ÔÚ"±àÒëÆ÷"¿òÖÐÊäÈëa.txtµÄÇ°°ë²¿·ÖÄÚÈÝ,ÎÒ»úÆ÷ÉÏÊÇÕâÑùµÄ:
+6.ç‚¹å‡» å·¥ç¨‹ > å·¥ç¨‹å±žæ€§ > "å‚æ•°"é€‰é¡¹å¡, åœ¨"ç¼–è¯‘å™¨"æ¡†ä¸­è¾“å…¥a.txtçš„å‰åŠéƒ¨åˆ†å†…å®¹,æˆ‘æœºå™¨ä¸Šæ˜¯è¿™æ ·çš„:
 
- -mms-bitfields -ID:/dev/GTK/include/gtk-2.0 -ID:/dev/GTK/lib/gtk-2.0/include -ID:/dev/GTK/include/atk-1.0 -ID:/dev/GTK/include/cairo -ID:/dev/GTK/include/pango-1.0 -ID:/dev/GTK/include/glib-2.0 -ID:/dev/GTK/lib/glib-2.0/include -ID:/dev/GTK/include/libpng13 
+ -mms-bitfields -ID:/dev/GTK/include/gtk-2.0 -ID:/dev/GTK/lib/gtk-2.0/include -ID:/dev/GTK/include/atk-1.0 -ID:/dev/GTK/include/cairo -ID:/dev/GTK/include/pango-1.0 -ID:/dev/GTK/include/glib-2.0 -ID:/dev/GTK/lib/glib-2.0/include -ID:/dev/GTK/include/libpng13
 
-  ÔÚ"Á¬½ÓÆ÷"¿òÖÐÊäÈëa.txtµÄºó°ë²¿·ÖÄÚÈÝ, ÎÒ»úÆ÷ÉÏÊÇÕâÑùµÄ:
+  åœ¨"è¿žæŽ¥å™¨"æ¡†ä¸­è¾“å…¥a.txtçš„åŽåŠéƒ¨åˆ†å†…å®¹, æˆ‘æœºå™¨ä¸Šæ˜¯è¿™æ ·çš„:
 
  -LD:/dev/GTK/lib -lgtk-win32-2.0 -lgdk-win32-2.0 -latk-1.0 -lgdk_pixbuf-2.0 -lpangowin32-1.0 -lgdi32 -lpangocairo-1.0 -lpango-1.0 -lcairo -lgobject-2.0 -lgmodule-2.0 -lglib-2.0 -lintl
 
-  ×¢ÒâÕâÐ©ÄÚÈÝ»á¸ù¾ÝGTK+°²×°Ä¿Â¼µÄ²»Í¬¶øÓÐËù²î±ð, ÔÙËµÒ»±é, ÎÒ»úÆ÷ÉÏÊÇD:/dev/GTK. ÉèÖÃÍêºóµã"È·¶¨".
+  æ³¨æ„è¿™äº›å†…å®¹ä¼šæ ¹æ®GTK+å®‰è£…ç›®å½•çš„ä¸åŒè€Œæœ‰æ‰€å·®åˆ«, å†è¯´ä¸€é, æˆ‘æœºå™¨ä¸Šæ˜¯D:/dev/GTK. è®¾ç½®å®ŒåŽç‚¹"ç¡®å®š".
 
 
 
-7. ±àÒëÔËÐÐ.
+7. ç¼–è¯‘è¿è¡Œ.
 
-Èç¹û³öÏÖÒ»¸ö¼òµ¥µÄ¿Õ°×´°¿Ú, ¹§Ï²Äã³É¹¦ÁË. [Íê]
+å¦‚æžœå‡ºçŽ°ä¸€ä¸ªç®€å•çš„ç©ºç™½çª—å£, æ­å–œä½ æˆåŠŸäº†. [å®Œ]
 
-# GTKÖÐµÄdelete_eventºÍdestroy 
-delete_event ÊÂ¼þÒ»°ãÓÉÓÃ»§»òÕßËµÓÃ»§Í¨¹ý´°¿Ú¹ÜÀíÆ÷²úÉú£¬¼´µã»÷´°¿ÚÓÒÉÏ½ÇµÄÍË³ö°´Å¥¡£¼ÙÈç²»×öÈÎºÎÌØÊâ´¦Àí£¬´°¿Ú¹ÜÀíÆ÷»á×Ô¶¯²úÉúdestroyÐÅºÅ£»Èç¹ûÎÒÃÇ×Ô ¶¨ÒåÁË´¦Àídelete_eventÊÂ¼þµÄ»Øµ÷º¯Êý£¬ÊÇ·ñ²úÉúdestroyÐÅºÅ¾ÍºÍº¯ÊýµÄ·µ»ØÖµÓÐ¹Ø£¬Èç¹ûÊÇFALSE¾Í²úÉú£¬·´Ö®ÔòÃ»ÓÐÐ§¹û¡£
+# GTKä¸­çš„delete_eventå’Œdestroy
+delete_event äº‹ä»¶ä¸€èˆ¬ç”±ç”¨æˆ·æˆ–è€…è¯´ç”¨æˆ·é€šè¿‡çª—å£ç®¡ç†å™¨äº§ç”Ÿï¼Œå³ç‚¹å‡»çª—å£å³ä¸Šè§’çš„é€€å‡ºæŒ‰é’®ã€‚å‡å¦‚ä¸åšä»»ä½•ç‰¹æ®Šå¤„ç†ï¼Œçª—å£ç®¡ç†å™¨ä¼šè‡ªåŠ¨äº§ç”Ÿdestroyä¿¡å·ï¼›å¦‚æžœæˆ‘ä»¬è‡ª å®šä¹‰äº†å¤„ç†delete_eventäº‹ä»¶çš„å›žè°ƒå‡½æ•°ï¼Œæ˜¯å¦äº§ç”Ÿdestroyä¿¡å·å°±å’Œå‡½æ•°çš„è¿”å›žå€¼æœ‰å…³ï¼Œå¦‚æžœæ˜¯FALSEå°±äº§ç”Ÿï¼Œåä¹‹åˆ™æ²¡æœ‰æ•ˆæžœã€‚
 
-ÖÁ ÓÚdestroy£¬³ýÁË¿ÉÒÔÓÉdelete_eventÊÂ¼þ²úÉúÖ®Íâ£¬»¹¿ÉÒÔÍ¨¹ýgtk_widget_destroyº¯ÊýÓëÆäËüÐÅºÅ·¢Éú½»»»¡£Í¬Ñù£¬Èç¹û²»¼ÓÖ¸¶¨£¬Ä¬ÈÏ½á¹ûÊÇ¹Ø±ÕËùÖ¸ÏòµÄ´°¿Úµ«²¢²»½áÊø½ø³Ì¡£Èç¹ûÎÒÃÇÏ£ÍûÖ÷´°¿ÚºÍ½ø³ÌÒ»Æð¹Ø±Õ£¬±ØÐëÊ¹ÓÃgtk_main_quit()¡£
+è‡³ äºŽdestroyï¼Œé™¤äº†å¯ä»¥ç”±delete_eventäº‹ä»¶äº§ç”Ÿä¹‹å¤–ï¼Œè¿˜å¯ä»¥é€šè¿‡gtk_widget_destroyå‡½æ•°ä¸Žå…¶å®ƒä¿¡å·å‘ç”Ÿäº¤æ¢ã€‚åŒæ ·ï¼Œå¦‚æžœä¸åŠ æŒ‡å®šï¼Œé»˜è®¤ç»“æžœæ˜¯å…³é—­æ‰€æŒ‡å‘çš„çª—å£ä½†å¹¶ä¸ç»“æŸè¿›ç¨‹ã€‚å¦‚æžœæˆ‘ä»¬å¸Œæœ›ä¸»çª—å£å’Œè¿›ç¨‹ä¸€èµ·å…³é—­ï¼Œå¿…é¡»ä½¿ç”¨gtk_main_quit()ã€‚
 
-# g_signal_connect Óë g_signal_connect_swapped
+# g_signal_connect ä¸Ž g_signal_connect_swapped
 
-ÔÚ 2.0 °æ£¬ÐÅºÅÏµÍ³ÒÑ´Ó GTK ÒÆµ½ GLib£¬Òò´ËÔÚº¯ÊýºÍÀàÐÍµÄËµÃ÷ÖÐÓÐÇ°×º "g_" ¶ø²»ÊÇ "gtk_"¡£ÎÒÃÇ²»´òËã½éÉÜ GLib 2.0 ÐÅºÅÏµÍ³Ïà¶Ô GTK 1.2 ÐÅºÅÏµÍ³À©Õ¹µÄÏ¸½Ú¡£
+åœ¨ 2.0 ç‰ˆï¼Œä¿¡å·ç³»ç»Ÿå·²ä»Ž GTK ç§»åˆ° GLibï¼Œå› æ­¤åœ¨å‡½æ•°å’Œç±»åž‹çš„è¯´æ˜Žä¸­æœ‰å‰ç¼€ "g_" è€Œä¸æ˜¯ "gtk_"ã€‚æˆ‘ä»¬ä¸æ‰“ç®—ä»‹ç» GLib 2.0 ä¿¡å·ç³»ç»Ÿç›¸å¯¹ GTK 1.2 ä¿¡å·ç³»ç»Ÿæ‰©å±•çš„ç»†èŠ‚ã€‚
 
-ÔÚÎÒÃÇÏêÏ¸·ÖÎö helloworld ³ÌÐòÖ®Ç°£¬ÎÒÃÇ»áÌÖÂÛÐÅºÅºÍ»Øµ÷º¯Êý¡£GTK ÊÇÒ»¸öÊÂ¼þÇý¶¯µÄ¹¤¾ß°ü£¬ÒâÎ¶×ÅËü»áµÈÔÚ gtk_main() ÄÇÀï£¬Ö±µ½ÏÂÒ»¸öÊÂ¼þ·¢Éú£¬²Å°Ñ¿ØÖÆÈ¨´«¸øÊÊµ±µÄº¯Êý¡£
+åœ¨æˆ‘ä»¬è¯¦ç»†åˆ†æž helloworld ç¨‹åºä¹‹å‰ï¼Œæˆ‘ä»¬ä¼šè®¨è®ºä¿¡å·å’Œå›žè°ƒå‡½æ•°ã€‚GTK æ˜¯ä¸€ä¸ªäº‹ä»¶é©±åŠ¨çš„å·¥å…·åŒ…ï¼Œæ„å‘³ç€å®ƒä¼šç­‰åœ¨ gtk_main() é‚£é‡Œï¼Œç›´åˆ°ä¸‹ä¸€ä¸ªäº‹ä»¶å‘ç”Ÿï¼Œæ‰æŠŠæŽ§åˆ¶æƒä¼ ç»™é€‚å½“çš„å‡½æ•°ã€‚
 
-¿ØÖÆÈ¨µÄ´«µÝÊÇÊ¹ÓÃ¡°ÐÅºÅ¡±µÄ°ì·¨À´Íê³ÉµÄ¡£(×¢ÒâÕâÀïµÄÐÅºÅ²¢²»µÈÍ¬ÓÚ Unix ÏµÍ³ÀïµÄÐÅºÅ£¬²¢ÇÒÒ²²»ÊÇÓÃËüÃÇÊµÏÖµÄ£¬ËäÈ»Ê¹ÓÃµÄÊõÓïÊÇÒ»ÑùµÄ¡£) µ±Ò»¸öÊÂ¼þ·¢ÉúÊ±£¬Èç°´Ò»ÏÂÊó±ê¼ü£¬Ëù°´µÄ¹¹¼þ»á¡°·¢³ö¡±ÊÊµ±µÄÐÅºÅ¡£Õâ¾ÍÊÇ GTK µÄ¹¤×÷»úÖÆ¡£ÓÐËùÓÐ¹¹¼þ¶¼¼Ì³ÐµÄÐÅºÅ£¬Èç "destroy"£¬ÓÐ¹¹¼þ×¨ÓÐµÄÐÅºÅ£¬Èç¿ª¹Ø (toggle) °´Å¥·¢³öµÄ "toggled" ÐÅºÅ¡£
+æŽ§åˆ¶æƒçš„ä¼ é€’æ˜¯ä½¿ç”¨â€œä¿¡å·â€çš„åŠžæ³•æ¥å®Œæˆçš„ã€‚(æ³¨æ„è¿™é‡Œçš„ä¿¡å·å¹¶ä¸ç­‰åŒäºŽ Unix ç³»ç»Ÿé‡Œçš„ä¿¡å·ï¼Œå¹¶ä¸”ä¹Ÿä¸æ˜¯ç”¨å®ƒä»¬å®žçŽ°çš„ï¼Œè™½ç„¶ä½¿ç”¨çš„æœ¯è¯­æ˜¯ä¸€æ ·çš„ã€‚) å½“ä¸€ä¸ªäº‹ä»¶å‘ç”Ÿæ—¶ï¼Œå¦‚æŒ‰ä¸€ä¸‹é¼ æ ‡é”®ï¼Œæ‰€æŒ‰çš„æž„ä»¶ä¼šâ€œå‘å‡ºâ€é€‚å½“çš„ä¿¡å·ã€‚è¿™å°±æ˜¯ GTK çš„å·¥ä½œæœºåˆ¶ã€‚æœ‰æ‰€æœ‰æž„ä»¶éƒ½ç»§æ‰¿çš„ä¿¡å·ï¼Œå¦‚ "destroy"ï¼Œæœ‰æž„ä»¶ä¸“æœ‰çš„ä¿¡å·ï¼Œå¦‚å¼€å…³ (toggle) æŒ‰é’®å‘å‡ºçš„ "toggled" ä¿¡å·ã€‚
 
-ÒªÊ¹Ò»¸ö°´Å¥Ö´ÐÐÒ»¸ö¶¯×÷£¬ÎÒÃÇÐèÉèÖÃÐÅºÅºÍÐÅºÅ´¦Àíº¯ÊýÖ®¼äµÄÁ¬½Ó¡£¿ÉÒÔÕâÑùÊ¹ÓÃº¯ÊýÀ´ÉèÖÃÁ¬½Ó£º
+è¦ä½¿ä¸€ä¸ªæŒ‰é’®æ‰§è¡Œä¸€ä¸ªåŠ¨ä½œï¼Œæˆ‘ä»¬éœ€è®¾ç½®ä¿¡å·å’Œä¿¡å·å¤„ç†å‡½æ•°ä¹‹é—´çš„è¿žæŽ¥ã€‚å¯ä»¥è¿™æ ·ä½¿ç”¨å‡½æ•°æ¥è®¾ç½®è¿žæŽ¥ï¼š
 
 gulong g_signal_connect( gpointer *object,const gchar *name,GCallback func,gpointer func_data );
 
-µÚÒ»¸ö²ÎÊýÊÇÒª·¢³öÐÅºÅµÄ¹¹¼þ£¬µÚ¶þ¸ö²ÎÊýÊÇÄãÏëÒªÁ¬½ÓµÄÐÅºÅµÄÃû³Æ£¬µÚÈý¸ö²ÎÊýÊÇÐÅºÅ±»²¶»ñÊ±ËùÒªµ÷ÓÃµÄº¯Êý£¬µÚËÄ¸ö²ÎÊýÊÇÄãÏë´«µÝ¸øÕâ¸öº¯ÊýµÄÊý¾Ý¡£
+ç¬¬ä¸€ä¸ªå‚æ•°æ˜¯è¦å‘å‡ºä¿¡å·çš„æž„ä»¶ï¼Œç¬¬äºŒä¸ªå‚æ•°æ˜¯ä½ æƒ³è¦è¿žæŽ¥çš„ä¿¡å·çš„åç§°ï¼Œç¬¬ä¸‰ä¸ªå‚æ•°æ˜¯ä¿¡å·è¢«æ•èŽ·æ—¶æ‰€è¦è°ƒç”¨çš„å‡½æ•°ï¼Œç¬¬å››ä¸ªå‚æ•°æ˜¯ä½ æƒ³ä¼ é€’ç»™è¿™ä¸ªå‡½æ•°çš„æ•°æ®ã€‚
 
-µÚÈý¸ö²ÎÊýÖ¸¶¨µÄº¯Êý½Ð×ö»Øµ÷º¯Êý£¬Ò»°ãÎªÏÂÃæµÄÐÎÊ½£º
+ç¬¬ä¸‰ä¸ªå‚æ•°æŒ‡å®šçš„å‡½æ•°å«åšå›žè°ƒå‡½æ•°ï¼Œä¸€èˆ¬ä¸ºä¸‹é¢çš„å½¢å¼ï¼š
 
 void callback_func( GtkWidget *widget,gpointer callback_data );
 
-µÚÒ»¸ö²ÎÊýÊÇÒ»¸öÖ¸Ïò·¢³öÐÅºÅµÄ¹¹¼þµÄÖ¸Õë£¬µÚ¶þ¸ö²ÎÊýÊÇÒ»¸öÖ¸ÏòÊý¾ÝµÄÖ¸Õë£¬¾ÍÊÇÉÏÃæ g_signal_connect() º¯ÊýµÄ×îºóÒ»¸ö²ÎÊý´«½øÀ´µÄÊý¾Ý¡£
+ç¬¬ä¸€ä¸ªå‚æ•°æ˜¯ä¸€ä¸ªæŒ‡å‘å‘å‡ºä¿¡å·çš„æž„ä»¶çš„æŒ‡é’ˆï¼Œç¬¬äºŒä¸ªå‚æ•°æ˜¯ä¸€ä¸ªæŒ‡å‘æ•°æ®çš„æŒ‡é’ˆï¼Œå°±æ˜¯ä¸Šé¢ g_signal_connect() å‡½æ•°çš„æœ€åŽä¸€ä¸ªå‚æ•°ä¼ è¿›æ¥çš„æ•°æ®ã€‚
 
-×¢ÒâÉÏÃæ»Øµ÷º¯ÊýµÄÉùÃ÷Ö»ÊÇÒ»°ãµÄÐÎÊ½£¬ÓÐÐ©¹¹¼þµÄÌØÊâÐÅºÅ»áÓÃ²»Í¬µÄµ÷ÓÃ²ÎÊý¡£
+æ³¨æ„ä¸Šé¢å›žè°ƒå‡½æ•°çš„å£°æ˜Žåªæ˜¯ä¸€èˆ¬çš„å½¢å¼ï¼Œæœ‰äº›æž„ä»¶çš„ç‰¹æ®Šä¿¡å·ä¼šç”¨ä¸åŒçš„è°ƒç”¨å‚æ•°ã€‚
 
-ÁíÒ»¸öÔÚ helloworld Ê¾ÀýÖÐÊ¹ÓÃµÄµ÷ÓÃ£¬ÊÇ£º
+å¦ä¸€ä¸ªåœ¨ helloworld ç¤ºä¾‹ä¸­ä½¿ç”¨çš„è°ƒç”¨ï¼Œæ˜¯ï¼š
 
 gulong g_signal_connect_swapped( gpointer *object,const gchar *name,GCallback func,gpointer *slot_object );
 
-g_signal_connect_swapped() ºÍ g_signal_connect() ÏàÍ¬£¬Ö»ÊÇ»Øµ÷º¯ÊýÖ»ÓÃÒ»¸ö²ÎÊý£¬Ò»¸öÖ¸Ïò GTK ¶ÔÏóµÄÖ¸Õë¡£ËùÒÔµ±Ê¹ÓÃÕâ¸öº¯ÊýÁ¬½ÓÐÅºÅÊ±£¬»Øµ÷º¯ÊýÓ¦¸ÃÊÇÕâÑùµÄÐÎÊ½
+g_signal_connect_swapped() å’Œ g_signal_connect() ç›¸åŒï¼Œåªæ˜¯å›žè°ƒå‡½æ•°åªç”¨ä¸€ä¸ªå‚æ•°ï¼Œä¸€ä¸ªæŒ‡å‘ GTK å¯¹è±¡çš„æŒ‡é’ˆã€‚æ‰€ä»¥å½“ä½¿ç”¨è¿™ä¸ªå‡½æ•°è¿žæŽ¥ä¿¡å·æ—¶ï¼Œå›žè°ƒå‡½æ•°åº”è¯¥æ˜¯è¿™æ ·çš„å½¢å¼
 
 void callback_func( GtkObject *object );
 
 
 
-Õâ¸ö¶ÔÏóÍ¨³£ÊÇÒ»¸ö¹¹¼þ¡£È»¶øÎÒÃÇÒ»°ã²»ÓÃº¯Êý g_signal_connect_swapped() ÉèÖÃ»Øµ÷¡£ËüÃÇ³£ÓÃÀ´µ÷ÓÃÒ»¸öÖ»½ÓÊÜÒ»¸öµ¥¶ÀµÄ¹¹¼þ»òÕß¶ÔÏó×÷Îª²ÎÊýµÄ GTK º¯Êý£¬ÈçÍ¬ÎÒÃÇµÄ helloworld Ê¾ÀýÖÐÄÇÑù¡£
+è¿™ä¸ªå¯¹è±¡é€šå¸¸æ˜¯ä¸€ä¸ªæž„ä»¶ã€‚ç„¶è€Œæˆ‘ä»¬ä¸€èˆ¬ä¸ç”¨å‡½æ•° g_signal_connect_swapped() è®¾ç½®å›žè°ƒã€‚å®ƒä»¬å¸¸ç”¨æ¥è°ƒç”¨ä¸€ä¸ªåªæŽ¥å—ä¸€ä¸ªå•ç‹¬çš„æž„ä»¶æˆ–è€…å¯¹è±¡ä½œä¸ºå‚æ•°çš„ GTK å‡½æ•°ï¼Œå¦‚åŒæˆ‘ä»¬çš„ helloworld ç¤ºä¾‹ä¸­é‚£æ ·ã€‚
 
 
 
-ÓµÓÐÁ½¸öº¯ÊýÀ´ÉèÖÃÐÅºÅÁ¬½ÓµÄÄ¿µÄÖ»ÊÇÎªÁËÔÊÐí»Øµ÷º¯ÊýÓÐ²»Í¬ÊýÄ¿µÄ²ÎÊý¡£GTK ¿âÖÐÐí¶àº¯Êý½ö½ÓÊÜÒ»¸öµ¥¶ÀµÄ¹¹¼þÖ¸Õë×÷ÎªÆä²ÎÊý£¬ËùÒÔ¶ÔÓÚÕâÐ©º¯ÊýÄãÒªÓÃ g_signal_connect_swapped()£¬È»¶ø¶ÔÄã×Ô¼º¶¨ÒåµÄº¯Êý£¬Äã¿ÉÄÜÐèÒª¸½¼ÓµÄÊý¾ÝÌá¹©¸øÄãµÄ»Øµ÷º¯Êý¡£
+æ‹¥æœ‰ä¸¤ä¸ªå‡½æ•°æ¥è®¾ç½®ä¿¡å·è¿žæŽ¥çš„ç›®çš„åªæ˜¯ä¸ºäº†å…è®¸å›žè°ƒå‡½æ•°æœ‰ä¸åŒæ•°ç›®çš„å‚æ•°ã€‚GTK åº“ä¸­è®¸å¤šå‡½æ•°ä»…æŽ¥å—ä¸€ä¸ªå•ç‹¬çš„æž„ä»¶æŒ‡é’ˆä½œä¸ºå…¶å‚æ•°ï¼Œæ‰€ä»¥å¯¹äºŽè¿™äº›å‡½æ•°ä½ è¦ç”¨ g_signal_connect_swapped()ï¼Œç„¶è€Œå¯¹ä½ è‡ªå·±å®šä¹‰çš„å‡½æ•°ï¼Œä½ å¯èƒ½éœ€è¦é™„åŠ çš„æ•°æ®æä¾›ç»™ä½ çš„å›žè°ƒå‡½æ•°ã€‚
 
-# CodeBlocks Ê¹ÓÃ¾­ÑéÌ¸  
+# CodeBlocks ä½¿ç”¨ç»éªŒè°ˆ
 
-ÒÔ×îÐÂµÄCodeBlocks 10.05ÎªÀý¡£
+ä»¥æœ€æ–°çš„CodeBlocks 10.05ä¸ºä¾‹ã€‚
 
-Ò»¡¢×Ô¶¨Òå×Ô¶¯²¹È«
+ä¸€ã€è‡ªå®šä¹‰è‡ªåŠ¨è¡¥å…¨
 
-1¡¢ÒÀ´Î´ò¿ª Project -> Properties -> C/C++ parser options À´µ½ Additional search paths;
+1ã€ä¾æ¬¡æ‰“å¼€ Project -> Properties -> C/C++ parser options æ¥åˆ° Additional search paths;
 
-2¡¢µã  Add Ñ¡ÔñÍ·ÎÄ¼þµÄÂ·¾¶ºóµãÈ·¶¨;
+2ã€ç‚¹  Add é€‰æ‹©å¤´æ–‡ä»¶çš„è·¯å¾„åŽç‚¹ç¡®å®š;
 
-3¡¢ÔÚÔ´ÎÄ¼þÖÐÌí¼ÓÏàÓ¦µÄÍ·ÎÄ¼þºó¼´¿ÉÊµÏÖ×Ô¶¯²¹È«¡£
+3ã€åœ¨æºæ–‡ä»¶ä¸­æ·»åŠ ç›¸åº”çš„å¤´æ–‡ä»¶åŽå³å¯å®žçŽ°è‡ªåŠ¨è¡¥å…¨ã€‚
 
-»òÕßÔÚµÚ2²½£¬¸Ä³É¡°¹¤×÷¿Õ¼ä¡±ÖÐ°üº¬ÏàÓ¦µÄÍ·ÎÄ¼þÒ²ÐÐ¡£
+æˆ–è€…åœ¨ç¬¬2æ­¥ï¼Œæ”¹æˆâ€œå·¥ä½œç©ºé—´â€ä¸­åŒ…å«ç›¸åº”çš„å¤´æ–‡ä»¶ä¹Ÿè¡Œã€‚
 
 apt-get install codeblocks-contrib
 
-# ubuntu ÎÞ·¨Ê¹ÓÃgnome¿â,¸ÃÈçºÎ´¦Àí
+# ubuntu æ— æ³•ä½¿ç”¨gnomeåº“,è¯¥å¦‚ä½•å¤„ç†
 
-gcc: 
-gcc -o gnome1 gnome1.c `pkg-config ¨Clibs ¨Ccflags libgnome-2.0 libgnomeui-2.0`
+gcc:
+gcc -o gnome1 gnome1.c `pkg-config â€“libs â€“cflags libgnome-2.0 libgnomeui-2.0`
 
 codebocks:
 
@@ -5070,35 +3879,35 @@ codebocks:
 
 `pkg-config gtk+-2.0 --cflags --libs`
 
-#Ïß³Ìµ÷ÓÃ
+#çº¿ç¨‹è°ƒç”¨
 
 -lpthread
 
-#³£ÓÃº¯Êý
+#å¸¸ç”¨å‡½æ•°
 
 herror(3)
 
-# Linux ÖÐCÓïÑÔÈçºÎÇå¿Õ±ê×¼ÊäÈëÁ÷
+# Linux ä¸­Cè¯­è¨€å¦‚ä½•æ¸…ç©ºæ ‡å‡†è¾“å…¥æµ
 
-½ñÌìÔÚLinux³ÌÐòÉè¼ÆµÄÊ±ºòÐèÒªÇå¿Õ±ê×¼ÊäÈë»º³åÇø£¬ÓÚÊÇÊ¹ÓÃÁËÈçÏÂWindows³ÌÐòÉè¼ÆÖÐµÄ·½·¨£ºfflush(stdin)£¬Õâ¸öfflush()º¯Êý¸ù±¾²»ÊÇ±ê×¼CÖÐµÄº¯Êý£¬Ö»ÊÇ±ê×¼CµÄÀ©Õ¹£¬ËùÒÔÔÚLinuxÖÐÊ¹ÓÃ¸ù±¾²»ÐÐ£»ÔÚÍøÉÏËÑË÷ÁËÏÂ£¬·¢ÏÖÓÐÍøÓÑ½¨ÒéÊ¹ÓÃrewind(stdin)£»Õâ¸öº¯ÊýÆäÊµÊÇ½«Ö¸ÕëÖ¸ÏòÁ÷µÄ¿ªÊ¼´¦¡£µ«ÊÇËüÊÇÎÄ¼þ²Ù×÷ÖÐµÄÒ»¸öº¯Êý£¬²Ù×÷µÄÊÇFILEÐÍÁ÷£¬ÔÚWindows³ÌÐòÉè¼ÆÖÐÊÇ¿ÉÒÔÇå¿Õ±ê×¼ÊäÈë»º³åÇøµÄ£¬µ«ÊÇÔÚLinuxÖÐ²»ÐÐ¡£
+ä»Šå¤©åœ¨Linuxç¨‹åºè®¾è®¡çš„æ—¶å€™éœ€è¦æ¸…ç©ºæ ‡å‡†è¾“å…¥ç¼“å†²åŒºï¼ŒäºŽæ˜¯ä½¿ç”¨äº†å¦‚ä¸‹Windowsç¨‹åºè®¾è®¡ä¸­çš„æ–¹æ³•ï¼šfflush(stdin)ï¼Œè¿™ä¸ªfflush()å‡½æ•°æ ¹æœ¬ä¸æ˜¯æ ‡å‡†Cä¸­çš„å‡½æ•°ï¼Œåªæ˜¯æ ‡å‡†Cçš„æ‰©å±•ï¼Œæ‰€ä»¥åœ¨Linuxä¸­ä½¿ç”¨æ ¹æœ¬ä¸è¡Œï¼›åœ¨ç½‘ä¸Šæœç´¢äº†ä¸‹ï¼Œå‘çŽ°æœ‰ç½‘å‹å»ºè®®ä½¿ç”¨rewind(stdin)ï¼›è¿™ä¸ªå‡½æ•°å…¶å®žæ˜¯å°†æŒ‡é’ˆæŒ‡å‘æµçš„å¼€å§‹å¤„ã€‚ä½†æ˜¯å®ƒæ˜¯æ–‡ä»¶æ“ä½œä¸­çš„ä¸€ä¸ªå‡½æ•°ï¼Œæ“ä½œçš„æ˜¯FILEåž‹æµï¼Œåœ¨Windowsç¨‹åºè®¾è®¡ä¸­æ˜¯å¯ä»¥æ¸…ç©ºæ ‡å‡†è¾“å…¥ç¼“å†²åŒºçš„ï¼Œä½†æ˜¯åœ¨Linuxä¸­ä¸è¡Œã€‚
 
-×¢£ºÉÏÊöÄÚÈÝÓÐ¼¸´¦´íÎó£¬Ïê¼û¡¶The Standart Library¡·
+æ³¨ï¼šä¸Šè¿°å†…å®¹æœ‰å‡ å¤„é”™è¯¯ï¼Œè¯¦è§ã€ŠThe Standart Libraryã€‹
 
-Í¨¹ý¶ÁÍê±ê×¼»º³åÇøÖÐµÄÊ£Óà×Ö·û²¢¶ªÆúµôÀ´Çå¿Õ±ê×¼»º³åÇø£¬Ê¹ÓÃµÄº¯ÊýÊÇgetchar()£¬´Ëº¯ÊýµÄ×÷ÓÃÊÇ´Ó±ê×¼ÊäÈë»º³åÇøÖÐ¶Á³öÒ»¸ö×Ö·û£¬´Ë·½·¨ÖÐLinuxÖÐ¿ÉÐÐ¡£Èç¹ûÐèÒªÇå³ýstdin¿ÉÒÔÍ¨¹ýÈçÏÂÑ­»·ÊµÏÖ£º
+é€šè¿‡è¯»å®Œæ ‡å‡†ç¼“å†²åŒºä¸­çš„å‰©ä½™å­—ç¬¦å¹¶ä¸¢å¼ƒæŽ‰æ¥æ¸…ç©ºæ ‡å‡†ç¼“å†²åŒºï¼Œä½¿ç”¨çš„å‡½æ•°æ˜¯getchar()ï¼Œæ­¤å‡½æ•°çš„ä½œç”¨æ˜¯ä»Žæ ‡å‡†è¾“å…¥ç¼“å†²åŒºä¸­è¯»å‡ºä¸€ä¸ªå­—ç¬¦ï¼Œæ­¤æ–¹æ³•ä¸­Linuxä¸­å¯è¡Œã€‚å¦‚æžœéœ€è¦æ¸…é™¤stdinå¯ä»¥é€šè¿‡å¦‚ä¸‹å¾ªçŽ¯å®žçŽ°ï¼š
 
 char ch;
 
 while((ch=getchar())!='/n'&&ch!=EOF);
 
-ÒÔÉÏÓï¾ä½«Çå³ýstdinÖÐµÄ×Ö·û£¬ÖªµÀÓöµ½»»ÐÐ·û»òÕßÊÇ¶ÁÍê»º³åÇø¡£
+ä»¥ä¸Šè¯­å¥å°†æ¸…é™¤stdinä¸­çš„å­—ç¬¦ï¼ŒçŸ¥é“é‡åˆ°æ¢è¡Œç¬¦æˆ–è€…æ˜¯è¯»å®Œç¼“å†²åŒºã€‚
 
-# linuxÖÐÎÞ conio.hµÄ½â¾ö°ì·¨£¨Ô­´´£©
+# linuxä¸­æ—  conio.hçš„è§£å†³åŠžæ³•ï¼ˆåŽŸåˆ›ï¼‰
 
-conio.h²»ÊÇC±ê×¼¿âÖÐµÄÍ·ÎÄ¼þ£¬ÔÚISOºÍPOSIX±ê×¼ÖÐ¾ùÃ»ÓÐ¶¨Òå¡£conioÊÇConsole Input/Output£¨¿ØÖÆÌ¨ÊäÈëÊä³ö£©µÄ¼òÐ´£¬ÆäÖÐ¶¨ÒåÁËÍ¨¹ý¿ØÖÆÌ¨½øÐÐÊý¾ÝÊäÈëºÍÊý¾ÝÊä³öµÄº¯Êý£¬Ö÷ÒªÊÇÒ»Ð©ÓÃ»§Í¨¹ý°´¼üÅÌ²úÉúµÄ¶ÔÓ¦²Ù×÷£¬±ÈÈçgetch()º¯ÊýµÈµÈ¡£´ó²¿·ÖDOS£¬Windows£¬Phar Lap£¬DOSX£¬OS/2 µÈÆ½Ì¨ÉÏµÄC±àÒëÆ÷Ìá¹©´ËÎÄ¼þ£¬UNIX ºÍLinuxÆ½Ì¨µÄC±àÒëÆ÷±¾ÉíÍ¨³£²»°üº¬´ËÍ·ÎÄ¼þ£¬µ«ÒÑ¾­ÓÐÆä¼æÈÝ°ü£¬¿É²Î¿¼£º
+conio.hä¸æ˜¯Cæ ‡å‡†åº“ä¸­çš„å¤´æ–‡ä»¶ï¼Œåœ¨ISOå’ŒPOSIXæ ‡å‡†ä¸­å‡æ²¡æœ‰å®šä¹‰ã€‚conioæ˜¯Console Input/Outputï¼ˆæŽ§åˆ¶å°è¾“å…¥è¾“å‡ºï¼‰çš„ç®€å†™ï¼Œå…¶ä¸­å®šä¹‰äº†é€šè¿‡æŽ§åˆ¶å°è¿›è¡Œæ•°æ®è¾“å…¥å’Œæ•°æ®è¾“å‡ºçš„å‡½æ•°ï¼Œä¸»è¦æ˜¯ä¸€äº›ç”¨æˆ·é€šè¿‡æŒ‰é”®ç›˜äº§ç”Ÿçš„å¯¹åº”æ“ä½œï¼Œæ¯”å¦‚getch()å‡½æ•°ç­‰ç­‰ã€‚å¤§éƒ¨åˆ†DOSï¼ŒWindowsï¼ŒPhar Lapï¼ŒDOSXï¼ŒOS/2 ç­‰å¹³å°ä¸Šçš„Cç¼–è¯‘å™¨æä¾›æ­¤æ–‡ä»¶ï¼ŒUNIX å’ŒLinuxå¹³å°çš„Cç¼–è¯‘å™¨æœ¬èº«é€šå¸¸ä¸åŒ…å«æ­¤å¤´æ–‡ä»¶ï¼Œä½†å·²ç»æœ‰å…¶å…¼å®¹åŒ…ï¼Œå¯å‚è€ƒï¼š
 
 http://conio.sourceforge.net/
 
-ÁíÍâ´ó¼ÒÆ½Ê±Ö÷ÒªÊÇÀûÓÃconio.hÕâ¸öÍ·ÎÄ¼þÖÐµÄgetch()º¯Êý£¬¼´¶ÁÈ¡¼üÅÌ×Ö·ûµ«ÊÇ²»ÏÔÊ¾³öÀ´£¨without echo)£¬µ«ÊÇº¬ÓÐconio.hµÄ³ÌÐòÔÚlinuxÎÞ·¨Ö±½Ó±àÒëÍ¨¹ý£¬ÒòÎªlinuxÃ»ÓÐÕâ¸öÍ·ÎÄ¼þ£¬³ýÁËÀûÓÃÉÏÊöµÄ¼æÈÝ°üÍâ»¹¿ÉÒÔÔÚlinux²ÉÓÃÔ­ÉúµÄ·½·¨´ïµ½Í¬ÑùµÄÐ§¹û£¬ÄÇ¾ÍÊÇÀûÓÃlinuxÏµÍ³µÄÃüÁîstty ¨Cecho£¬Ëü´ú±í²»ÏÔÊ¾ÊäÈëÄÚÈÝ£¬Ô´´úÂëÈçÏÂ¡£
+å¦å¤–å¤§å®¶å¹³æ—¶ä¸»è¦æ˜¯åˆ©ç”¨conio.hè¿™ä¸ªå¤´æ–‡ä»¶ä¸­çš„getch()å‡½æ•°ï¼Œå³è¯»å–é”®ç›˜å­—ç¬¦ä½†æ˜¯ä¸æ˜¾ç¤ºå‡ºæ¥ï¼ˆwithout echo)ï¼Œä½†æ˜¯å«æœ‰conio.hçš„ç¨‹åºåœ¨linuxæ— æ³•ç›´æŽ¥ç¼–è¯‘é€šè¿‡ï¼Œå› ä¸ºlinuxæ²¡æœ‰è¿™ä¸ªå¤´æ–‡ä»¶ï¼Œé™¤äº†åˆ©ç”¨ä¸Šè¿°çš„å…¼å®¹åŒ…å¤–è¿˜å¯ä»¥åœ¨linuxé‡‡ç”¨åŽŸç”Ÿçš„æ–¹æ³•è¾¾åˆ°åŒæ ·çš„æ•ˆæžœï¼Œé‚£å°±æ˜¯åˆ©ç”¨linuxç³»ç»Ÿçš„å‘½ä»¤stty â€“echoï¼Œå®ƒä»£è¡¨ä¸æ˜¾ç¤ºè¾“å…¥å†…å®¹ï¼Œæºä»£ç å¦‚ä¸‹ã€‚
 
 //in windows
 
@@ -5142,205 +3951,205 @@ return 0;
 
 }
 
-#¸Ä±älinuxÖÕ¶ËÑÕÉ«
+#æ”¹å˜linuxç»ˆç«¯é¢œè‰²
 
-ÎÄ±¾ÖÕ¶ËµÄÑÕÉ«¿ÉÒÔÊ¹ÓÃ¡°ANSI·Ç³£¹æ×Ö·ûÐòÁÐ¡±À´Éú³É£¬¡°ANSI·Ç³£¹æ×Ö·ûÐòÁÐ¡±¾ùÒÔ Esc[ ×÷Îª¿ØÖÆÂëµÄ¿ªÊ¼±êÖ¾£¬ÆäÖÐ£¬Esc µÄansiÂëÎª 27-Ê®½øÖÆ£¬33-°Ë½øÖÆ£¬ËùÒÔÔÚcÖÐ£¬¿ÉÒÔÊ¹ÓÃ \033 ±íÊ¾¡£
-
-
-
-echo -e "\033[Ç°¾°;±³¾°;¹â±êm ME \033[0m"
-
- 
-
-¾ÙÀý£ºecho -e "\033[44;37;5m ME \033[0m COOL"
-
- 
-
-ÒÔÉÏÃüÁîÉèÖÃ±³¾°³ÉÎªÀ¶É«£¬Ç°¾°°×É«£¬ÉÁË¸¹â±ê£¬Êä³ö×Ö·û¡°ME¡±£¬È»ºóÖØÐÂÉèÖÃÆÁÄ»µ½È±Ê¡ÉèÖÃ£¬Êä³ö×Ö·û ¡°COOL¡±¡£¡°e¡±ÊÇÃüÁî echo µÄÒ»¸ö¿ÉÑ¡Ïî£¬ËüÓÃÓÚ¼¤»îÌØÊâ×Ö·ûµÄ½âÎöÆ÷¡£¡°\033¡±Òýµ¼·Ç³£¹æ×Ö·ûÐòÁÐ¡£¡°m¡±ÒâÎ¶×ÅÉèÖÃÊôÐÔÈ»ºó½áÊø·Ç³£¹æ×Ö·ûÐòÁÐ£¬Õâ¸öÀý×ÓÀïÕæÕýÓÐÐ§µÄ×Ö·ûÊÇ ¡°44;37;5¡± ºÍ¡°0¡±¡£ÐÞ¸Ä¡°44;37;5¡±¿ÉÒÔÉú³É²»Í¬ÑÕÉ«µÄ×éºÏ£¬ÊýÖµºÍ±àÂëµÄÇ°ºóË³ÐòÃ»ÓÐ¹ØÏµ¡£¿ÉÒÔÑ¡ÔñµÄ±àÂëÈçÏÂËùÊ¾£º
+æ–‡æœ¬ç»ˆç«¯çš„é¢œè‰²å¯ä»¥ä½¿ç”¨â€œANSIéžå¸¸è§„å­—ç¬¦åºåˆ—â€æ¥ç”Ÿæˆï¼Œâ€œANSIéžå¸¸è§„å­—ç¬¦åºåˆ—â€å‡ä»¥ Esc[ ä½œä¸ºæŽ§åˆ¶ç çš„å¼€å§‹æ ‡å¿—ï¼Œå…¶ä¸­ï¼ŒEsc çš„ansiç ä¸º 27-åè¿›åˆ¶ï¼Œ33-å…«è¿›åˆ¶ï¼Œæ‰€ä»¥åœ¨cä¸­ï¼Œå¯ä»¥ä½¿ç”¨ \033 è¡¨ç¤ºã€‚
 
 
 
-Ç°¾°      ±³¾°       ÑÕÉ«
+echo -e "\033[å‰æ™¯;èƒŒæ™¯;å…‰æ ‡m ME \033[0m"
+
+
+
+ä¸¾ä¾‹ï¼šecho -e "\033[44;37;5m ME \033[0m COOL"
+
+
+
+ä»¥ä¸Šå‘½ä»¤è®¾ç½®èƒŒæ™¯æˆä¸ºè“è‰²ï¼Œå‰æ™¯ç™½è‰²ï¼Œé—ªçƒå…‰æ ‡ï¼Œè¾“å‡ºå­—ç¬¦â€œMEâ€ï¼Œç„¶åŽé‡æ–°è®¾ç½®å±å¹•åˆ°ç¼ºçœè®¾ç½®ï¼Œè¾“å‡ºå­—ç¬¦ â€œCOOLâ€ã€‚â€œeâ€æ˜¯å‘½ä»¤ echo çš„ä¸€ä¸ªå¯é€‰é¡¹ï¼Œå®ƒç”¨äºŽæ¿€æ´»ç‰¹æ®Šå­—ç¬¦çš„è§£æžå™¨ã€‚â€œ\033â€å¼•å¯¼éžå¸¸è§„å­—ç¬¦åºåˆ—ã€‚â€œmâ€æ„å‘³ç€è®¾ç½®å±žæ€§ç„¶åŽç»“æŸéžå¸¸è§„å­—ç¬¦åºåˆ—ï¼Œè¿™ä¸ªä¾‹å­é‡ŒçœŸæ­£æœ‰æ•ˆçš„å­—ç¬¦æ˜¯ â€œ44;37;5â€ å’Œâ€œ0â€ã€‚ä¿®æ”¹â€œ44;37;5â€å¯ä»¥ç”Ÿæˆä¸åŒé¢œè‰²çš„ç»„åˆï¼Œæ•°å€¼å’Œç¼–ç çš„å‰åŽé¡ºåºæ²¡æœ‰å…³ç³»ã€‚å¯ä»¥é€‰æ‹©çš„ç¼–ç å¦‚ä¸‹æ‰€ç¤ºï¼š
+
+
+
+å‰æ™¯      èƒŒæ™¯       é¢œè‰²
 
 ---------------------------------------
 
-30          40          ºÚÉ«
+30          40          é»‘è‰²
 
-31          41          ºìÉ«
+31          41          çº¢è‰²
 
-32          42          ÂÌÉ«
+32          42          ç»¿è‰²
 
-33          43          »ÆÉ«
+33          43          é»„è‰²
 
-34          44          À¶É«
+34          44          è“è‰²
 
-35          45          ×ÏºìÉ«
+35          45          ç´«çº¢è‰²
 
-36          46          ÇàÀ¶É«
+36          46          é’è“è‰²
 
-37          47          °×É«
-
-
+37          47          ç™½è‰²
 
 
 
-\33[0m ¹Ø±ÕËùÓÐÊôÐÔ 
 
-\33[1m ÉèÖÃ´ÖÌå 
 
-\33[2m ÉèÖÃÒ»°ëÁÁ¶È£¨Ä£Äâ²ÊÉ«ÏÔÊ¾Æ÷µÄÑÕÉ«£© 
+\33[0m å…³é—­æ‰€æœ‰å±žæ€§
 
-\33[4m ÏÂ»®Ïß 
+\33[1m è®¾ç½®ç²—ä½“
 
-\33[5m ÉÁË¸ 
+\33[2m è®¾ç½®ä¸€åŠäº®åº¦ï¼ˆæ¨¡æ‹Ÿå½©è‰²æ˜¾ç¤ºå™¨çš„é¢œè‰²ï¼‰
 
-\33[7m ·´ÏÔ 
+\33[4m ä¸‹åˆ’çº¿
 
-\33[8m ÏûÒþ 
+\33[5m é—ªçƒ
 
-\33[30m -- \33[37m ÉèÖÃÇ°¾°É« 
+\33[7m åæ˜¾
 
-\33[38mÔÚÈ±Ê¡µÄÇ°¾°ÑÕÉ«ÉÏÉèÖÃÏÂ»®Ïß
+\33[8m æ¶ˆéš
 
-\33[39mÔÚÈ±Ê¡µÄÇ°¾°ÑÕÉ«ÉÏ¹Ø±ÕÏÂ»®Ïß 
+\33[30m -- \33[37m è®¾ç½®å‰æ™¯è‰²
 
-\33[40m -- \33[47m ÉèÖÃ±³¾°É« 
+\33[38måœ¨ç¼ºçœçš„å‰æ™¯é¢œè‰²ä¸Šè®¾ç½®ä¸‹åˆ’çº¿
 
-\33[nA ¹â±êÉÏÒÆnÐÐ 
+\33[39måœ¨ç¼ºçœçš„å‰æ™¯é¢œè‰²ä¸Šå…³é—­ä¸‹åˆ’çº¿
 
-\33[nB ¹â±êÏÂÒÆnÐÐ 
+\33[40m -- \33[47m è®¾ç½®èƒŒæ™¯è‰²
 
-\33[nC ¹â±êÓÒÒÆnÐÐ 
+\33[nA å…‰æ ‡ä¸Šç§»nè¡Œ
 
-\33[nD ¹â±ê×óÒÆnÐÐ 
+\33[nB å…‰æ ‡ä¸‹ç§»nè¡Œ
 
-\33[y;xHÉèÖÃ¹â±êÎ»ÖÃ 
+\33[nC å…‰æ ‡å³ç§»nè¡Œ
 
-\33[2J ÇåÆÁ 
+\33[nD å…‰æ ‡å·¦ç§»nè¡Œ
 
-\33[K Çå³ý´Ó¹â±êµ½ÐÐÎ²µÄÄÚÈÝ 
+\33[y;xHè®¾ç½®å…‰æ ‡ä½ç½®
 
-\33[s ±£´æ¹â±êÎ»ÖÃ 
+\33[2J æ¸…å±
 
-\33[u »Ö¸´¹â±êÎ»ÖÃ 
+\33[K æ¸…é™¤ä»Žå…‰æ ‡åˆ°è¡Œå°¾çš„å†…å®¹
 
-\33[?25l Òþ²Ø¹â±ê 
+\33[s ä¿å­˜å…‰æ ‡ä½ç½®
 
-\33[?25h ÏÔÊ¾¹â±ê
+\33[u æ¢å¤å…‰æ ‡ä½ç½®
 
-\033[0q         ¡¡	¹Ø±ÕËùÓÐµÄ¼üÅÌÖ¸Ê¾µÆ 
+\33[?25l éšè—å…‰æ ‡
 
-\033[1q         ¡¡	ÉèÖÃ¡°¹ö¶¯Ëø¶¨¡±Ö¸Ê¾µÆ (Scroll Lock) 
+\33[?25h æ˜¾ç¤ºå…‰æ ‡
 
-\033[2q         ¡¡	ÉèÖÃ¡°ÊýÖµËø¶¨¡±Ö¸Ê¾µÆ (Num Lock) 
+\033[0q         ã€€	å…³é—­æ‰€æœ‰çš„é”®ç›˜æŒ‡ç¤ºç¯
 
-\033[3q         ¡¡	ÉèÖÃ¡°´óÐ´Ëø¶¨¡±Ö¸Ê¾µÆ (Caps Lock) 
+\033[1q         ã€€	è®¾ç½®â€œæ»šåŠ¨é”å®šâ€æŒ‡ç¤ºç¯ (Scroll Lock)
 
-\033[15:40H     		°Ñ¹Ø±ÕÒÆ¶¯µ½µÚ15ÐÐ£¬40ÁÐ 
+\033[2q         ã€€	è®¾ç½®â€œæ•°å€¼é”å®šâ€æŒ‡ç¤ºç¯ (Num Lock)
 
-\007            ¡¡¡¡	·¢·äÃùÉúbeep
+\033[3q         ã€€	è®¾ç½®â€œå¤§å†™é”å®šâ€æŒ‡ç¤ºç¯ (Caps Lock)
 
-# linuxÏÂÈçºÎÓÃcÓïÑÔµ÷ÓÃshellÃüÁî
+\033[15:40H     		æŠŠå…³é—­ç§»åŠ¨åˆ°ç¬¬15è¡Œï¼Œ40åˆ—
+
+\007            ã€€ã€€	å‘èœ‚é¸£ç”Ÿbeep
+
+# linuxä¸‹å¦‚ä½•ç”¨cè¯­è¨€è°ƒç”¨shellå‘½ä»¤
 
 #include <stdlib.h>
 
 int system(const char *string);
 
-Àý£ºÔÚ~/myprogram/Ä¿Â¼ÏÂÓÐshell½Å±¾test.sh£¬ÄÚÈÝÎª
+ä¾‹ï¼šåœ¨~/myprogram/ç›®å½•ä¸‹æœ‰shellè„šæœ¬test.shï¼Œå†…å®¹ä¸º
 
-¡¡¡¡#!bin/bash
+ã€€ã€€#!bin/bash
 
-¡¡¡¡#test.sh
+ã€€ã€€#test.sh
 
-¡¡¡¡echo $HOME
+ã€€ã€€echo $HOME
 
-¡¡¡¡ÔÚ¸ÃÄ¿Â¼ÏÂÐÂ½¨Ò»¸öcÎÄ¼þsystemtest.c£¬ÄÚÈÝÎª£º
+ã€€ã€€åœ¨è¯¥ç›®å½•ä¸‹æ–°å»ºä¸€ä¸ªcæ–‡ä»¶systemtest.cï¼Œå†…å®¹ä¸ºï¼š
 
-¡¡¡¡#include<stdlib.h>
+ã€€ã€€#include<stdlib.h>
 
-¡¡¡¡
+ã€€ã€€
 
-¡¡¡¡main()
+ã€€ã€€main()
 
-¡¡¡¡{
+ã€€ã€€{
 
-¡¡¡¡system("~/myprogram/test.sh");
+ã€€ã€€system("~/myprogram/test.sh");
 
-¡¡¡¡}
+ã€€ã€€}
 
-¡¡¡¡Ö´ÐÐ½á¹ûÈçÏÂ£º
+ã€€ã€€æ‰§è¡Œç»“æžœå¦‚ä¸‹ï¼š
 
-¡¡¡¡xiakeyou@ubuntu:~/myprogram$ gcc systemtest.c -o systemtest
+ã€€ã€€xiakeyou@ubuntu:~/myprogram$ gcc systemtest.c -o systemtest
 
-¡¡¡¡xiakeyou@ubuntu:~/myprogram$ ./systemtest
+ã€€ã€€xiakeyou@ubuntu:~/myprogram$ ./systemtest
 
-¡¡¡¡/home/d/e/xiakeyou
+ã€€ã€€/home/d/e/xiakeyou
 
-¡¡¡¡xiakeyou@ubuntu:~/myprogram$
+ã€€ã€€xiakeyou@ubuntu:~/myprogram$
 
-¡¡¡¡2£©popen(char *command,char *type)
+ã€€ã€€2ï¼‰popen(char *command,char *type)
 
-¡¡¡¡Ö´ÐÐ¹ý³Ì£ºpopen()»áµ÷ÓÃfork()²úÉú×Ó½ø³Ì£¬È»ºó´Ó×Ó½ø³ÌÖÐµ÷ÓÃ/bin/sh -cÀ´Ö´ÐÐ²ÎÊýcommandµÄÖ¸Áî¡£²ÎÊýtype¿ÉÊ¹ÓÃ¡°r¡±´ú±í¶ÁÈ¡£¬¡°w¡±´ú±íÐ´Èë¡£ÒÀÕÕ´ËtypeÖµ£¬popen()»á½¨Á¢¹ÜµÀÁ¬µ½×Ó½ø³ÌµÄ±ê×¼Êä³öÉè±¸»ò±ê×¼ÊäÈëÉè±¸£¬È»ºó·µ»ØÒ»¸öÎÄ¼þÖ¸Õë¡£Ëæºó½ø³Ì±ã¿ÉÀûÓÃ´ËÎÄ¼þÖ¸ÕëÀ´¶ÁÈ¡×Ó½ø³ÌµÄÊä³öÉè±¸»òÊÇÐ´Èëµ½×Ó½ø³ÌµÄ±ê×¼ÊäÈëÉè±¸ÖÐ¡£´ËÍâ£¬ËùÓÐÊ¹ÓÃÎÄ¼þÖ¸Õë(FILE*)²Ù×÷µÄº¯ÊýÒ²¶¼¿ÉÒÔÊ¹ÓÃ£¬³ýÁËfclose()ÒÔÍâ¡£
+ã€€ã€€æ‰§è¡Œè¿‡ç¨‹ï¼špopen()ä¼šè°ƒç”¨fork()äº§ç”Ÿå­è¿›ç¨‹ï¼Œç„¶åŽä»Žå­è¿›ç¨‹ä¸­è°ƒç”¨/bin/sh -cæ¥æ‰§è¡Œå‚æ•°commandçš„æŒ‡ä»¤ã€‚å‚æ•°typeå¯ä½¿ç”¨â€œrâ€ä»£è¡¨è¯»å–ï¼Œâ€œwâ€ä»£è¡¨å†™å…¥ã€‚ä¾ç…§æ­¤typeå€¼ï¼Œpopen()ä¼šå»ºç«‹ç®¡é“è¿žåˆ°å­è¿›ç¨‹çš„æ ‡å‡†è¾“å‡ºè®¾å¤‡æˆ–æ ‡å‡†è¾“å…¥è®¾å¤‡ï¼Œç„¶åŽè¿”å›žä¸€ä¸ªæ–‡ä»¶æŒ‡é’ˆã€‚éšåŽè¿›ç¨‹ä¾¿å¯åˆ©ç”¨æ­¤æ–‡ä»¶æŒ‡é’ˆæ¥è¯»å–å­è¿›ç¨‹çš„è¾“å‡ºè®¾å¤‡æˆ–æ˜¯å†™å…¥åˆ°å­è¿›ç¨‹çš„æ ‡å‡†è¾“å…¥è®¾å¤‡ä¸­ã€‚æ­¤å¤–ï¼Œæ‰€æœ‰ä½¿ç”¨æ–‡ä»¶æŒ‡é’ˆ(FILE*)æ“ä½œçš„å‡½æ•°ä¹Ÿéƒ½å¯ä»¥ä½¿ç”¨ï¼Œé™¤äº†fclose()ä»¥å¤–ã€‚
 
-¡¡¡¡·µ»ØÖµ£ºÈô³É¹¦Ôò·µ»ØÎÄ¼þÖ¸Õë£¬·ñÔò·µ»ØNULL£¬´íÎóÔ­Òò´æÓÚerrnoÖÐ¡£
+ã€€ã€€è¿”å›žå€¼ï¼šè‹¥æˆåŠŸåˆ™è¿”å›žæ–‡ä»¶æŒ‡é’ˆï¼Œå¦åˆ™è¿”å›žNULLï¼Œé”™è¯¯åŽŸå› å­˜äºŽerrnoä¸­ã€‚
 
-¡¡¡¡×¢Òâ£ºÔÚ±àÐ´¾ßSUID/SGIDÈ¨ÏÞµÄ³ÌÐòÊ±Çë¾¡Á¿±ÜÃâÊ¹ÓÃpopen()£¬popen()»á¼Ì³Ð»·¾³±äÁ¿£¬Í¨¹ý»·¾³±äÁ¿¿ÉÄÜ»áÔì³ÉÏµÍ³°²È«µÄÎÊÌâ¡£
+ã€€ã€€æ³¨æ„ï¼šåœ¨ç¼–å†™å…·SUID/SGIDæƒé™çš„ç¨‹åºæ—¶è¯·å°½é‡é¿å…ä½¿ç”¨popen()ï¼Œpopen()ä¼šç»§æ‰¿çŽ¯å¢ƒå˜é‡ï¼Œé€šè¿‡çŽ¯å¢ƒå˜é‡å¯èƒ½ä¼šé€ æˆç³»ç»Ÿå®‰å…¨çš„é—®é¢˜ã€‚
 
-¡¡¡¡Àý£ºC³ÌÐòpopentest.cÄÚÈÝÈçÏÂ£º
+ã€€ã€€ä¾‹ï¼šCç¨‹åºpopentest.cå†…å®¹å¦‚ä¸‹ï¼š
 
-¡¡¡¡#include<stdio.h>
+ã€€ã€€#include<stdio.h>
 
-¡¡¡¡main()
+ã€€ã€€main()
 
-¡¡¡¡{
+ã€€ã€€{
 
-¡¡¡¡FILE * fp;
+ã€€ã€€FILE * fp;
 
-¡¡¡¡charbuffer[80];
+ã€€ã€€charbuffer[80];
 
-¡¡¡¡fp=popen(¡°~/myprogram/test.sh¡±,¡±r¡±);
+ã€€ã€€fp=popen(â€œ~/myprogram/test.shâ€,â€râ€);
 
-¡¡¡¡fgets(buffer,sizeof(buffer),fp);
+ã€€ã€€fgets(buffer,sizeof(buffer),fp);
 
-¡¡¡¡printf(¡°%s¡±,buffer);
+ã€€ã€€printf(â€œ%sâ€,buffer);
 
-¡¡¡¡pclose(fp);
+ã€€ã€€pclose(fp);
 
-¡¡¡¡}
+ã€€ã€€}
 
-¡¡¡¡Ö´ÐÐ½á¹ûÈçÏÂ£º
+ã€€ã€€æ‰§è¡Œç»“æžœå¦‚ä¸‹ï¼š
 
-¡¡¡¡xiakeyou@ubuntu:~/myprogram$ vim popentest.c
+ã€€ã€€xiakeyou@ubuntu:~/myprogram$ vim popentest.c
 
-¡¡¡¡xiakeyou@ubuntu:~/myprogram$ gcc popentest.c -o popentest
+ã€€ã€€xiakeyou@ubuntu:~/myprogram$ gcc popentest.c -o popentest
 
-¡¡¡¡xiakeyou@ubuntu:~/myprogram$ ./popentest
+ã€€ã€€xiakeyou@ubuntu:~/myprogram$ ./popentest
 
-¡¡¡¡/home/d/e/xiakeyou
+ã€€ã€€/home/d/e/xiakeyou
 
-¡¡¡¡xiakeyou@ubuntu:~/myprogram$
+ã€€ã€€xiakeyou@ubuntu:~/myprogram$
 
-¡¡¡¡Ö»ÊÇÅ¼ÄÜÁ¦¿ÉÄÜÓÐµãÓÐÏÞ£¬Ã»ÓÐÌ«¿´¶®¡£Ö±½ÓÓÃsystem()µ¹ÊÇ½Å±¾¿ÉÊÇÖ´ÐÐ£¬Ö»ÊÇ·µ»ØÖµÈ´ÊÇÒ»ËúºýÍ¿£¬ÊÔÁË¶à´ÎÒ²Ã»ÓÐÕÒµ½Ê²Ã´¹æÂÉ¡£²»ÃâÓÖ¿´ÁËÒ»ÏÂÉÏÃæµÄÄÇÆª²©ÎÄ£¬µÃµ½Ò»Ð©Æô·¢£¬¿ÉÒÔÕâÑùÀ´ÊµÏÖ£º
+ã€€ã€€åªæ˜¯å¶èƒ½åŠ›å¯èƒ½æœ‰ç‚¹æœ‰é™ï¼Œæ²¡æœ‰å¤ªçœ‹æ‡‚ã€‚ç›´æŽ¥ç”¨system()å€’æ˜¯è„šæœ¬å¯æ˜¯æ‰§è¡Œï¼Œåªæ˜¯è¿”å›žå€¼å´æ˜¯ä¸€å¡Œç³Šæ¶‚ï¼Œè¯•äº†å¤šæ¬¡ä¹Ÿæ²¡æœ‰æ‰¾åˆ°ä»€ä¹ˆè§„å¾‹ã€‚ä¸å…åˆçœ‹äº†ä¸€ä¸‹ä¸Šé¢çš„é‚£ç¯‡åšæ–‡ï¼Œå¾—åˆ°ä¸€äº›å¯å‘ï¼Œå¯ä»¥è¿™æ ·æ¥å®žçŽ°ï¼š
 
-¡¡¡¡ÏÈ½«½Å±¾µÄ·µ»ØÖµÀûÓÃ echo > XXXXX Êä³öµ½Ò»¸ö±¾µØÎÄ¼þÖÐ
+ã€€ã€€å…ˆå°†è„šæœ¬çš„è¿”å›žå€¼åˆ©ç”¨ echo > XXXXX è¾“å‡ºåˆ°ä¸€ä¸ªæœ¬åœ°æ–‡ä»¶ä¸­
 
-¡¡¡¡µ±ÐèÒªÕâ¸ö·µ»ØÖµÊÇ£¬¿ÉÊÇÍ¨¹ýCÓïÑÔµÄÎÄ¼þ²Ù×÷º¯ÊýÀ´Ö±½Ó´ÓÎÄ¼þÖÐ¶ÁÈ¡
+ã€€ã€€å½“éœ€è¦è¿™ä¸ªè¿”å›žå€¼æ˜¯ï¼Œå¯æ˜¯é€šè¿‡Cè¯­è¨€çš„æ–‡ä»¶æ“ä½œå‡½æ•°æ¥ç›´æŽ¥ä»Žæ–‡ä»¶ä¸­è¯»å–
 
-¡¡¡¡ºóÀ´Ò»Ïë£¬ÕâÓ¦¸Ã¾ÍÊÇÉÏÎÄÖÐPOPENµÄÊµÏÖ·½·¨£¡
+ã€€ã€€åŽæ¥ä¸€æƒ³ï¼Œè¿™åº”è¯¥å°±æ˜¯ä¸Šæ–‡ä¸­POPENçš„å®žçŽ°æ–¹æ³•ï¼
 
-C³ÌÐòµ÷ÓÃshell½Å±¾¹²ÓÐÈýÖÖ·¨×Ó £ºsystem()¡¢popen()¡¢execÏµÁÐº¯Êý system() ²»ÓÃÄã×Ô¼ºÈ¥²úÉú½ø³Ì£¬ËüÒÑ¾­·â×°ÁË£¬Ö±½Ó¼ÓÈë×Ô¼ºµÄÃüÁîexec ÐèÒªÄã×Ô¼º fork ½ø³Ì£¬È»ºóexec ×Ô¼ºµÄÃüÁî
+Cç¨‹åºè°ƒç”¨shellè„šæœ¬å…±æœ‰ä¸‰ç§æ³•å­ ï¼šsystem()ã€popen()ã€execç³»åˆ—å‡½æ•° system() ä¸ç”¨ä½ è‡ªå·±åŽ»äº§ç”Ÿè¿›ç¨‹ï¼Œå®ƒå·²ç»å°è£…äº†ï¼Œç›´æŽ¥åŠ å…¥è‡ªå·±çš„å‘½ä»¤exec éœ€è¦ä½ è‡ªå·± fork è¿›ç¨‹ï¼Œç„¶åŽexec è‡ªå·±çš„å‘½ä»¤
 
-popen() Ò²¿ÉÒÔÊµÏÖÖ´ÐÐÄãµÄÃüÁî£¬±Èsystem ¿ªÏúÐ¡
+popen() ä¹Ÿå¯ä»¥å®žçŽ°æ‰§è¡Œä½ çš„å‘½ä»¤ï¼Œæ¯”system å¼€é”€å°
 
-1£©system(shellÃüÁî»òshell½Å±¾Â·¾¶);
+1ï¼‰system(shellå‘½ä»¤æˆ–shellè„šæœ¬è·¯å¾„);
 
-system()»áµ÷ÓÃfork()²úÉú ×ÓÀú³Ì£¬ÓÉ×ÓÀú³ÌÀ´µ÷ÓÃ/bin/sh-c stringÀ´ÂÄÐÐ ²ÎÊýstring×Ö·û´®Ëù´ú±íµÄÃüÁî£¬´ËÃüÁîÂÄÐÐ ÍêºóËæ¼´·µ»ØÔ­µ÷ÓÃµÄÀú³Ì¡£ÔÚµ÷ÓÃsystem()ÆÚ¼äSIGCHLD ÐÅºÅ»á±»ÔÝÊ±¸éÖÃ£¬SIGINTºÍSIGQUIT ÐÅºÅÔò»á±»Ä®ÊÓ ¡£
+system()ä¼šè°ƒç”¨fork()äº§ç”Ÿ å­åŽ†ç¨‹ï¼Œç”±å­åŽ†ç¨‹æ¥è°ƒç”¨/bin/sh-c stringæ¥å±¥è¡Œ å‚æ•°stringå­—ç¬¦ä¸²æ‰€ä»£è¡¨çš„å‘½ä»¤ï¼Œæ­¤å‘½ä»¤å±¥è¡Œ å®ŒåŽéšå³è¿”å›žåŽŸè°ƒç”¨çš„åŽ†ç¨‹ã€‚åœ¨è°ƒç”¨system()æœŸé—´SIGCHLD ä¿¡å·ä¼šè¢«æš‚æ—¶æç½®ï¼ŒSIGINTå’ŒSIGQUIT ä¿¡å·åˆ™ä¼šè¢«æ¼ è§† ã€‚
 
-·µ»ØÖµ£ºÈç¹ûsystem()ÔÚµ÷ÓÃ/bin/shÊ±Ê§°ÜÔò·µ»Ø127£¬ÆäËûÊ§°ÜÔ­Òò·µ»Ø-1¡£Èô²ÎÊýstringÎª¿ÕÖ¸Õë(NULL)£¬Ôò·µ»Ø·ÇÁãÖµ¡£ Èç¹û system()µ÷ÓÃ³É¹¦ Ôò×îºó»á·µ»ØÂÄÐÐ shellÃüÁîºóµÄ·µ»ØÖµ£¬µ«ÊÇ´Ë·µ»ØÖµÒ²ÓÐ¿ÉÄÜÎªsystem()µ÷ÓÃ/bin/shÊ§°ÜËù·µ»ØµÄ127£¬Òò ´Ë×îºÃÄÜÔÙ·´Ê¡ errno À´È·ÈÏÂÄÐÐ ³É¹¦ ¡£
+è¿”å›žå€¼ï¼šå¦‚æžœsystem()åœ¨è°ƒç”¨/bin/shæ—¶å¤±è´¥åˆ™è¿”å›ž127ï¼Œå…¶ä»–å¤±è´¥åŽŸå› è¿”å›ž-1ã€‚è‹¥å‚æ•°stringä¸ºç©ºæŒ‡é’ˆ(NULL)ï¼Œåˆ™è¿”å›žéžé›¶å€¼ã€‚ å¦‚æžœ system()è°ƒç”¨æˆåŠŸ åˆ™æœ€åŽä¼šè¿”å›žå±¥è¡Œ shellå‘½ä»¤åŽçš„è¿”å›žå€¼ï¼Œä½†æ˜¯æ­¤è¿”å›žå€¼ä¹Ÿæœ‰å¯èƒ½ä¸ºsystem()è°ƒç”¨/bin/shå¤±è´¥æ‰€è¿”å›žçš„127ï¼Œå›  æ­¤æœ€å¥½èƒ½å†åçœ errno æ¥ç¡®è®¤å±¥è¡Œ æˆåŠŸ ã€‚
 
-systemÃüÁîÒÔÆä¼òÂÔ ¸ßÐ§µÄ×÷ÓÃµÃµ½ºÜºÜ¹ã·º µÄÀûÓÃ £¬ÏÂÃæÊÇÒ»¸öÀý×Ó
+systemå‘½ä»¤ä»¥å…¶ç®€ç•¥ é«˜æ•ˆçš„ä½œç”¨å¾—åˆ°å¾ˆå¾ˆå¹¿æ³› çš„åˆ©ç”¨ ï¼Œä¸‹é¢æ˜¯ä¸€ä¸ªä¾‹å­
 
-Àý£ºÔÚ~/test/Ä¿Â¼ÏÂÓÐshell½Å±¾test.sh£¬ÄÚÈÝÎª
+ä¾‹ï¼šåœ¨~/test/ç›®å½•ä¸‹æœ‰shellè„šæœ¬test.shï¼Œå†…å®¹ä¸º
 
 #!bin/bash
 
@@ -5348,7 +4157,7 @@ systemÃüÁîÒÔÆä¼òÂÔ ¸ßÐ§µÄ×÷ÓÃµÃµ½ºÜºÜ¹ã·º µÄÀûÓÃ £¬ÏÂÃæÊÇÒ»¸öÀý×Ó
 
 echo hello
 
-ÔÚÍ¬²ãÄ¿Â¼ÏÂÐÂ½¨Ò»¸öcÎÄ¼þsystem_test.c£¬ÄÚÈÝÎª£º
+åœ¨åŒå±‚ç›®å½•ä¸‹æ–°å»ºä¸€ä¸ªcæ–‡ä»¶system_test.cï¼Œå†…å®¹ä¸ºï¼š
 
 #include<stdlib.h>
 
@@ -5360,7 +4169,7 @@ system("~/test/test.sh");
 
 }
 
-ÂÄÐÐ Ð§¹û ÈçÏÂ£º
+å±¥è¡Œ æ•ˆæžœ å¦‚ä¸‹ï¼š
 
 [root@localhost test]$gcc system_test.c -o system_test
 
@@ -5370,13 +4179,13 @@ hello
 
 [root@localhost test]$
 
-2£©popen(char *command,char *type)
+2ï¼‰popen(char *command,char *type)
 
-popen()»áµ÷ÓÃfork()²úÉú ×ÓÀú³Ì£¬È»ºó´Ó×ÓÀú³ÌÖÐµ÷ÓÃ/bin/sh -cÀ´ÂÄÐÐ ²ÎÊýcommandµÄÖ¸Áî¡£²ÎÊýtype¿ÉÓ¦ÓÃ ¡°r¡±´ú±í¶ÁÈ¡£¬¡°w¡±´ú±íÐ´Èë¡£×ñÑ­´ËtypeÖµ£¬popen()»á½¨Á¢ ¹ÜµÀÁ¬µ½×ÓÀú³ÌµÄ±ê×¼ Êä³öÉè±¸ »ò±ê×¼ ÊäÈëÉè±¸ £¬È»ºó·µ»ØÒ»¸öÎÄ¼þÖ¸Õë¡£ËæºóÀú³Ì±ã¿ÉÀûÓÃ ´ËÎÄ¼þÖ¸ÕëÀ´¶ÁÈ¡×ÓÀú³ÌµÄÊä³öÉè±¸ »òÊÇÐ´Èëµ½×ÓÀú³ÌµÄ±ê×¼ ÊäÈëÉè±¸ ÖÐ¡£´ËÍâ£¬ËùÓÐÓ¦ÓÃ ÎÄ ¼þÖ¸Õë(FILE*)²Ù×÷µÄº¯ÊýÒ²¶¼¿ÉÒÔÓ¦ÓÃ £¬³ýÁËfclose()ÒÔÍâ¡£
+popen()ä¼šè°ƒç”¨fork()äº§ç”Ÿ å­åŽ†ç¨‹ï¼Œç„¶åŽä»Žå­åŽ†ç¨‹ä¸­è°ƒç”¨/bin/sh -cæ¥å±¥è¡Œ å‚æ•°commandçš„æŒ‡ä»¤ã€‚å‚æ•°typeå¯åº”ç”¨ â€œrâ€ä»£è¡¨è¯»å–ï¼Œâ€œwâ€ä»£è¡¨å†™å…¥ã€‚éµå¾ªæ­¤typeå€¼ï¼Œpopen()ä¼šå»ºç«‹ ç®¡é“è¿žåˆ°å­åŽ†ç¨‹çš„æ ‡å‡† è¾“å‡ºè®¾å¤‡ æˆ–æ ‡å‡† è¾“å…¥è®¾å¤‡ ï¼Œç„¶åŽè¿”å›žä¸€ä¸ªæ–‡ä»¶æŒ‡é’ˆã€‚éšåŽåŽ†ç¨‹ä¾¿å¯åˆ©ç”¨ æ­¤æ–‡ä»¶æŒ‡é’ˆæ¥è¯»å–å­åŽ†ç¨‹çš„è¾“å‡ºè®¾å¤‡ æˆ–æ˜¯å†™å…¥åˆ°å­åŽ†ç¨‹çš„æ ‡å‡† è¾“å…¥è®¾å¤‡ ä¸­ã€‚æ­¤å¤–ï¼Œæ‰€æœ‰åº”ç”¨ æ–‡ ä»¶æŒ‡é’ˆ(FILE*)æ“ä½œçš„å‡½æ•°ä¹Ÿéƒ½å¯ä»¥åº”ç”¨ ï¼Œé™¤äº†fclose()ä»¥å¤–ã€‚
 
-·µ»ØÖµ£ºÈô³É¹¦ Ôò·µ»ØÎÄ¼þÖ¸Õë£¬·ñÔò·µ»ØNULL£¬²î´í Ô­Òò´æÓÚerrnoÖÐ¡£×¢Òâ£ºÔÚ±àÐ´¾ßSUID/SGIDÈ¨ÏÞµÄ³ÌÐòÊ±Çë¾¡Á¿±ÜÃâÓ¦ÓÃ popen()£¬popen()»á¼Ì³Ð»·¾³±äÁ¿£¬Í¨¹ý»·¾³±äÁ¿¿ÉÄÜ»áÔì³ÉÏµÍ³°²È«µÄÎÊÌâ¡£
+è¿”å›žå€¼ï¼šè‹¥æˆåŠŸ åˆ™è¿”å›žæ–‡ä»¶æŒ‡é’ˆï¼Œå¦åˆ™è¿”å›žNULLï¼Œå·®é”™ åŽŸå› å­˜äºŽerrnoä¸­ã€‚æ³¨æ„ï¼šåœ¨ç¼–å†™å…·SUID/SGIDæƒé™çš„ç¨‹åºæ—¶è¯·å°½é‡é¿å…åº”ç”¨ popen()ï¼Œpopen()ä¼šç»§æ‰¿çŽ¯å¢ƒå˜é‡ï¼Œé€šè¿‡çŽ¯å¢ƒå˜é‡å¯èƒ½ä¼šé€ æˆç³»ç»Ÿå®‰å…¨çš„é—®é¢˜ã€‚
 
-Àý£ºC³ÌÐòpopentest.cÄÚÈÝÈçÏÂ£º
+ä¾‹ï¼šCç¨‹åºpopentest.cå†…å®¹å¦‚ä¸‹ï¼š
 
 #include<stdio.h>
 
@@ -5388,17 +4197,17 @@ FILE * fp;
 
 charbuffer[80];
 
-fp=popen(¡°~/myprogram/test.sh¡±,¡±r¡±);
+fp=popen(â€œ~/myprogram/test.shâ€,â€râ€);
 
 fgets(buffer,sizeof(buffer),fp);
 
-printf(¡°%s¡±,buffer);
+printf(â€œ%sâ€,buffer);
 
 pclose(fp);
 
 }
 
-ÂÄÐÐ Ð§¹û ÈçÏÂ£º
+å±¥è¡Œ æ•ˆæžœ å¦‚ä¸‹ï¼š
 
 [root@localhost test]$ vim popentest.c
 
@@ -5406,167 +4215,167 @@ pclose(fp);
 
 [root@localhost test]$ ./popentest
 
-# ftok()º¯Êý(linux)
+# ftok()å‡½æ•°(linux)
 
-ÏµÍ³½¨Á¢IPCÍ¨Ñ¶£¨ÈçÏûÏ¢¶ÓÁÐ¡¢¹²ÏíÄÚ´æÊ±£©±ØÐëÖ¸¶¨Ò»¸öIDÖµ¡£Í¨³£Çé¿öÏÂ£¬¸ÃidÖµÍ¨¹ýftokº¯ÊýµÃµ½¡£ftokÔ­ÐÍÈçÏÂ£º
+ç³»ç»Ÿå»ºç«‹IPCé€šè®¯ï¼ˆå¦‚æ¶ˆæ¯é˜Ÿåˆ—ã€å…±äº«å†…å­˜æ—¶ï¼‰å¿…é¡»æŒ‡å®šä¸€ä¸ªIDå€¼ã€‚é€šå¸¸æƒ…å†µä¸‹ï¼Œè¯¥idå€¼é€šè¿‡ftokå‡½æ•°å¾—åˆ°ã€‚ftokåŽŸåž‹å¦‚ä¸‹ï¼š
 
 key_t ftok( char * fname, int id )
 
-fname¾ÍÊ±ÄãÖ¸¶¨µÄÎÄ¼þÃû(¸ÃÎÄ¼þ±ØÐëÊÇ´æÔÚ¶øÇÒ¿ÉÒÔ·ÃÎÊµÄ)£¬Ò»°ãÊ¹ÓÃµ±Ç°Ä¿Â¼£¬Èç£ºkey = ftok(".", 1); ÕâÑù¾ÍÊÇ½«fnameÉèÎªµ±Ç°Ä¿Â¼¡£idÊÇ×ÓÐòºÅ£¬ËäÈ»Îªint£¬µ«ÊÇÖ»ÓÐ8¸ö±ÈÌØ±»Ê¹ÓÃ(0-255)¡£µ±³É¹¦Ö´ÐÐµÄÊ±ºò£¬Ò»¸ökey_tÖµ½«»á±»·µ»Ø£¬·ñÔò -1 ±»·µ»Ø¡£ÔÚÒ»°ãµÄUNIXÊµÏÖÖÐ£¬ÊÇ½«ÎÄ¼þµÄË÷Òý½ÚµãºÅÈ¡³ö£¬Ç°Ãæ¼ÓÉÏ×ÓÐòºÅµÃµ½key_tµÄ·µ»ØÖµ¡£ÈçÖ¸¶¨ÎÄ¼þµÄË÷Òý½ÚµãºÅÎª65538£¬»»Ëã³É16½øÖÆÎª 0x010002£¬¶øÄãÖ¸¶¨µÄIDÖµÎª38£¬»»Ëã³É16½øÖÆÎª0x26£¬Ôò×îºóµÄkey_t·µ»ØÖµÎª0x26010002¡£²éÑ¯ÎÄ¼þË÷Òý½ÚµãºÅµÄ·½·¨ÊÇ£ºls -i¡£ÔÚ³É¹¦»ñÈ¡µ½keyÖ®ºó£¬¾Í¿ÉÒÔÊ¹ÓÃ¸Ãkey×÷ÎªÄ³ÖÖ·½·¨µÄ½ø³Ì¼äÍ¨ÐÅµÄkeyÖµ£¬ÀýÈçshmget¹²ÏíÄÚ´æµÄ·½Ê½¡£shmgetµÄº¯ÊýÔ­ÐÍÎª£ºint shmget( key_t, size_t, flag)¡£ÔÚ´´½¨³É¹¦ºó£¬¾Í·µ»Ø¹²ÏíÄÚ´æµÄÃèÊö·û¡£ÔÚshmgetÖÐÊ¹ÓÃµ½µÄkey_t¾ÍÊÇÍ¨¹ýftokµÄ·½Ê½Éú³ÉµÄ¡£
+fnameå°±æ—¶ä½ æŒ‡å®šçš„æ–‡ä»¶å(è¯¥æ–‡ä»¶å¿…é¡»æ˜¯å­˜åœ¨è€Œä¸”å¯ä»¥è®¿é—®çš„)ï¼Œä¸€èˆ¬ä½¿ç”¨å½“å‰ç›®å½•ï¼Œå¦‚ï¼škey = ftok(".", 1); è¿™æ ·å°±æ˜¯å°†fnameè®¾ä¸ºå½“å‰ç›®å½•ã€‚idæ˜¯å­åºå·ï¼Œè™½ç„¶ä¸ºintï¼Œä½†æ˜¯åªæœ‰8ä¸ªæ¯”ç‰¹è¢«ä½¿ç”¨(0-255)ã€‚å½“æˆåŠŸæ‰§è¡Œçš„æ—¶å€™ï¼Œä¸€ä¸ªkey_tå€¼å°†ä¼šè¢«è¿”å›žï¼Œå¦åˆ™ -1 è¢«è¿”å›žã€‚åœ¨ä¸€èˆ¬çš„UNIXå®žçŽ°ä¸­ï¼Œæ˜¯å°†æ–‡ä»¶çš„ç´¢å¼•èŠ‚ç‚¹å·å–å‡ºï¼Œå‰é¢åŠ ä¸Šå­åºå·å¾—åˆ°key_tçš„è¿”å›žå€¼ã€‚å¦‚æŒ‡å®šæ–‡ä»¶çš„ç´¢å¼•èŠ‚ç‚¹å·ä¸º65538ï¼Œæ¢ç®—æˆ16è¿›åˆ¶ä¸º 0x010002ï¼Œè€Œä½ æŒ‡å®šçš„IDå€¼ä¸º38ï¼Œæ¢ç®—æˆ16è¿›åˆ¶ä¸º0x26ï¼Œåˆ™æœ€åŽçš„key_tè¿”å›žå€¼ä¸º0x26010002ã€‚æŸ¥è¯¢æ–‡ä»¶ç´¢å¼•èŠ‚ç‚¹å·çš„æ–¹æ³•æ˜¯ï¼šls -iã€‚åœ¨æˆåŠŸèŽ·å–åˆ°keyä¹‹åŽï¼Œå°±å¯ä»¥ä½¿ç”¨è¯¥keyä½œä¸ºæŸç§æ–¹æ³•çš„è¿›ç¨‹é—´é€šä¿¡çš„keyå€¼ï¼Œä¾‹å¦‚shmgetå…±äº«å†…å­˜çš„æ–¹å¼ã€‚shmgetçš„å‡½æ•°åŽŸåž‹ä¸ºï¼šint shmget( key_t, size_t, flag)ã€‚åœ¨åˆ›å»ºæˆåŠŸåŽï¼Œå°±è¿”å›žå…±äº«å†…å­˜çš„æè¿°ç¬¦ã€‚åœ¨shmgetä¸­ä½¿ç”¨åˆ°çš„key_tå°±æ˜¯é€šè¿‡ftokçš„æ–¹å¼ç”Ÿæˆçš„ã€‚
 
-shmctl(shmid, IPC_RMID, 0)µÄ×÷ÓÃÊÇ´ÓÏµÍ³ÖÐÉ¾³ý¸Ã¹²Ïí´æ´¢¶Î¡£ÒòÎªÃ¿¸ö¹²Ïí´æ´¢¶ÎÓÐÒ»¸öÁ¬½Ó¼ÆÊý(shmid_ds½á¹¹ÖÐµÄshm_nattch)£¬ËùÒÔ³ý·ÇÊ¹ÓÃ¸Ã¶ÎµÄ×îºóÒ»¸ö½ø³ÌÖÕÖ¹Óë¸Ã¶ÎÍÑ½Ó£¬·ñÔò²»»áÊµ¼ÊÉÏÉ¾³ý¸Ã´æ´¢¶Î
+shmctl(shmid, IPC_RMID, 0)çš„ä½œç”¨æ˜¯ä»Žç³»ç»Ÿä¸­åˆ é™¤è¯¥å…±äº«å­˜å‚¨æ®µã€‚å› ä¸ºæ¯ä¸ªå…±äº«å­˜å‚¨æ®µæœ‰ä¸€ä¸ªè¿žæŽ¥è®¡æ•°(shmid_dsç»“æž„ä¸­çš„shm_nattch)ï¼Œæ‰€ä»¥é™¤éžä½¿ç”¨è¯¥æ®µçš„æœ€åŽä¸€ä¸ªè¿›ç¨‹ç»ˆæ­¢ä¸Žè¯¥æ®µè„±æŽ¥ï¼Œå¦åˆ™ä¸ä¼šå®žé™…ä¸Šåˆ é™¤è¯¥å­˜å‚¨æ®µ
 
-#¹²ÏíÄÚ´æÓëÐÅºÅÁ¿
+#å…±äº«å†…å­˜ä¸Žä¿¡å·é‡
 
-##¹²ÏíÄÚ´æ
+##å…±äº«å†…å­˜
 
-¹²ÏíÄÚ´æÊÇÁ½¸ö»ò¶à¸ö½ø³Ì¹²ÏíÍ¬Ò»¿éÄÚ´æÇøÓò£¬²¢Í¨¹ý¸ÃÄÚ´æÇøÓòÊµÏÖÊý¾Ý½»»»µÄ½ø³Ì¼äÍ¨ÐÅ¡£ËäÈ»¹²ÏíÄÚ´æÊÇ½ø³Ì¼äÍ¨ÐÅµÄ×î¿ìËÙµÄ»úÖÆ£¬µ«ÊÇ½ø³Ì¼äµÄÍ¬²½ÎÊÌâ¿¿×ÔÉíÄÑÒÔ½â¾ö£¬ÓÚÊÇ¾ÍÐèÒªÐÅºÅÁ¿»úÖÆ£¬ÐÅºÅÁ¿ÄÜºÜºÃµÄ½â¾ö»¥³â×ÊÔ´µÄÍ¬²½ÎÊÌâ¡£ÕâÐ©Ç£Éæµ½²Ù×÷ÏµÍ³ÀïµÄÖªÊ¶£¬ÒªºÃºÃÑÐ¾¿Ò»·¬Í¬²½»¥³âÎÊÌâ²ÅÄÜ¼ÌÐø¡£
+å…±äº«å†…å­˜æ˜¯ä¸¤ä¸ªæˆ–å¤šä¸ªè¿›ç¨‹å…±äº«åŒä¸€å—å†…å­˜åŒºåŸŸï¼Œå¹¶é€šè¿‡è¯¥å†…å­˜åŒºåŸŸå®žçŽ°æ•°æ®äº¤æ¢çš„è¿›ç¨‹é—´é€šä¿¡ã€‚è™½ç„¶å…±äº«å†…å­˜æ˜¯è¿›ç¨‹é—´é€šä¿¡çš„æœ€å¿«é€Ÿçš„æœºåˆ¶ï¼Œä½†æ˜¯è¿›ç¨‹é—´çš„åŒæ­¥é—®é¢˜é è‡ªèº«éš¾ä»¥è§£å†³ï¼ŒäºŽæ˜¯å°±éœ€è¦ä¿¡å·é‡æœºåˆ¶ï¼Œä¿¡å·é‡èƒ½å¾ˆå¥½çš„è§£å†³äº’æ–¥èµ„æºçš„åŒæ­¥é—®é¢˜ã€‚è¿™äº›ç‰µæ¶‰åˆ°æ“ä½œç³»ç»Ÿé‡Œçš„çŸ¥è¯†ï¼Œè¦å¥½å¥½ç ”ç©¶ä¸€ç•ªåŒæ­¥äº’æ–¥é—®é¢˜æ‰èƒ½ç»§ç»­ã€‚
 
-¹²ÏíÄÚ´æµÄ¹¤×÷Ä£Ê½Ò»°ãÊÇ£º
+å…±äº«å†…å­˜çš„å·¥ä½œæ¨¡å¼ä¸€èˆ¬æ˜¯ï¼š
 
-´´½¨»òÈ¡µÃÒ»¿é¹²ÏíÄÚ´æ
+åˆ›å»ºæˆ–å–å¾—ä¸€å—å…±äº«å†…å­˜
 
-1£©²»Ö¸¶¨ KEY
+1ï¼‰ä¸æŒ‡å®š KEY
 
-// IPC_PRIVATEÖ¸³öÐèÒª´´½¨ÄÚ´æ; 
+// IPC_PRIVATEæŒ‡å‡ºéœ€è¦åˆ›å»ºå†…å­˜;
 
-//SHM_SIZE Ö¸³ö×Ö½Ú´óÐ¡; 
+//SHM_SIZE æŒ‡å‡ºå­—èŠ‚å¤§å°;
 
-//SHM_MODE Ö¸³ö·ÃÎÊÈ¨ÏÞ×ÖÈç 0600±íÊ¾£¬ÓÃ»§¿ÉÒÔ¶ÁÐ´¸ÃÄÚ´æ
+//SHM_MODE æŒ‡å‡ºè®¿é—®æƒé™å­—å¦‚ 0600è¡¨ç¤ºï¼Œç”¨æˆ·å¯ä»¥è¯»å†™è¯¥å†…å­˜
 
 int shmget(key_t IPC_PRIVATE,size_t SHM_SIZE,int SHM_MODE);
 
-2£©Ö¸¶¨KEY
+2ï¼‰æŒ‡å®šKEY
 
-//Èç¹ûSHM_KEYÖ¸ÏòµÄ¹²Ïí´æ´¢ÒÑ¾­´æÔÚ£¬Ôò·µ»Ø¹²Ïí´æ´¢µÄID; 
+//å¦‚æžœSHM_KEYæŒ‡å‘çš„å…±äº«å­˜å‚¨å·²ç»å­˜åœ¨ï¼Œåˆ™è¿”å›žå…±äº«å­˜å‚¨çš„ID;
 
-//·ñÔò£¬´´½¨¹²Ïí´æ´¢²¢·µ»ØÆäID
+//å¦åˆ™ï¼Œåˆ›å»ºå…±äº«å­˜å‚¨å¹¶è¿”å›žå…¶ID
 
 int  shmget(key_t SHM_KEY,size_t SHM_SIZE,int SHM_MODE);
 
 2.	void *shmat(int shmid, const void *shmaddr, int shmflg);
 
-	½«shmidËùÖ¸¹²ÏíÄÚ´æºÍµ±Ç°½ø³ÌÁ¬½Ó(attach)
+	å°†shmidæ‰€æŒ‡å…±äº«å†…å­˜å’Œå½“å‰è¿›ç¨‹è¿žæŽ¥(attach)
 
-3.	Òª×öµÄÊÂ
+3.	è¦åšçš„äº‹
 
 4.	int shmdt(const void *shmaddr);
 
-	½«ÏÈÇ°ÓÃshmatÁ¬½ÓºÃµÄ¹²ÏíÄÚ´æ·ÖÀë(detach)µ±Ç°µÄ½ø³Ì
+	å°†å…ˆå‰ç”¨shmatè¿žæŽ¥å¥½çš„å…±äº«å†…å­˜åˆ†ç¦»(detach)å½“å‰çš„è¿›ç¨‹
 
 5.	int shmctl(int shmid ,int cmd, struct shmid_ds *buf)
 
-	°ÑcmdÉè³ÉIPC_RMIDÉ¾³ý¹²ÏíÄÚ´æ¼°ÆäÊý¾Ý½á¹¹
+	æŠŠcmdè®¾æˆIPC_RMIDåˆ é™¤å…±äº«å†…å­˜åŠå…¶æ•°æ®ç»“æž„
 
-¸½¼ÓËµÃ÷£º
+é™„åŠ è¯´æ˜Žï¼š
 
-1.     ÔÚ¾­¹ýfork()ºó£¬×Ó½ø³Ì½«¼Ì³ÐÒÑÁ¬½ÓµÄ¹²ÏíÄÚ´æµØÖ·
+1.     åœ¨ç»è¿‡fork()åŽï¼Œå­è¿›ç¨‹å°†ç»§æ‰¿å·²è¿žæŽ¥çš„å…±äº«å†…å­˜åœ°å€
 
-2.     ÔÚ¾­¹ýexec()ºó£¬ÒÑÁ¬½ÓµÄ¹²ÏíÄÚ´æµØÖ·»á×Ô¶¯detach
+2.     åœ¨ç»è¿‡exec()åŽï¼Œå·²è¿žæŽ¥çš„å…±äº«å†…å­˜åœ°å€ä¼šè‡ªåŠ¨detach
 
-3.     ÔÚ½áÊø½ø³Ìºó£¬ÒÑÁ¬½ÓµÄ¹²ÏíÄÚ´æµØÖ·»á×Ô¶¯detach
+3.     åœ¨ç»“æŸè¿›ç¨‹åŽï¼Œå·²è¿žæŽ¥çš„å…±äº«å†…å­˜åœ°å€ä¼šè‡ªåŠ¨detach
 
-##ÐÅºÅÁ¿
+##ä¿¡å·é‡
 
-ÐÅºÅÁ¿¶ÔÓ¦ÓÚÄ³Ò»ÖÖ×ÊÔ´£¬È¡Ò»¸ö·Ç¸ºµÄÕûÐÍÖµ
+ä¿¡å·é‡å¯¹åº”äºŽæŸä¸€ç§èµ„æºï¼Œå–ä¸€ä¸ªéžè´Ÿçš„æ•´åž‹å€¼
 
-ÐÅºÅÁ¿ÖµÖ¸µÄÊÇµ±Ç°¿ÉÓÃµÄ¸Ã×ÊÔ´µÄÊýÁ¿£¬ÈôËüµÈÓÚ0ÔòÒâÎ¶×ÅÄ¿Ç°Ã»ÓÐ¿ÉÓÃµÄ×ÊÔ´
+ä¿¡å·é‡å€¼æŒ‡çš„æ˜¯å½“å‰å¯ç”¨çš„è¯¥èµ„æºçš„æ•°é‡ï¼Œè‹¥å®ƒç­‰äºŽ0åˆ™æ„å‘³ç€ç›®å‰æ²¡æœ‰å¯ç”¨çš„èµ„æº
 
-ÔÚ¸ÃÐÅºÅÁ¿ÏÂµÈ´ý×ÊÔ´µÄ½ø³ÌµÈ´ý¶ÓÁÐ
+åœ¨è¯¥ä¿¡å·é‡ä¸‹ç­‰å¾…èµ„æºçš„è¿›ç¨‹ç­‰å¾…é˜Ÿåˆ—
 
-¶ÔÐÅºÅÁ¿½øÐÐµÄÁ½¸öÔ­×Ó²Ù×÷£ºP²Ù×÷ºÍV²Ù×÷¡£×î¼òµ¥µÄÐÅºÅÁ¿ÊÇÖ»ÄÜÈ¡0 ºÍ1 Á½ÖÖÖµ£¬½Ð×ö¶þÎ¬ÐÅºÅÁ¿
+å¯¹ä¿¡å·é‡è¿›è¡Œçš„ä¸¤ä¸ªåŽŸå­æ“ä½œï¼šPæ“ä½œå’ŒVæ“ä½œã€‚æœ€ç®€å•çš„ä¿¡å·é‡æ˜¯åªèƒ½å–0 å’Œ1 ä¸¤ç§å€¼ï¼Œå«åšäºŒç»´ä¿¡å·é‡
 
-±à³Ì²½Öè£º
+ç¼–ç¨‹æ­¥éª¤ï¼š
 
-´´½¨ÐÅºÅÁ¿»ò»ñµÃÔÚÏµÍ³ÒÑ´æÔÚµÄÐÅºÅÁ¿
+åˆ›å»ºä¿¡å·é‡æˆ–èŽ·å¾—åœ¨ç³»ç»Ÿå·²å­˜åœ¨çš„ä¿¡å·é‡
 
-µ÷ÓÃsemget()º¯Êý£¬²»Í¬½ø³ÌÊ¹ÓÃÍ¬Ò»¸öÐÅºÅÁ¿¼üÖµÀ´»ñµÃÍ¬Ò»¸öÐÅºÅÁ¿
+è°ƒç”¨semget()å‡½æ•°ï¼Œä¸åŒè¿›ç¨‹ä½¿ç”¨åŒä¸€ä¸ªä¿¡å·é‡é”®å€¼æ¥èŽ·å¾—åŒä¸€ä¸ªä¿¡å·é‡
 
 int semget(key_t key, int nsems, int semflg);
 
-¿ØÖÆÐÅºÅÁ¿
+æŽ§åˆ¶ä¿¡å·é‡
 
-Ê¹ÓÃsemctl()º¯ÊýµÄSETVAL²Ù×÷£¬µ±Ê¹ÓÃ¶þÎ¬ÐÅºÅÁ¿Ê±£¬Í¨³£½«ÐÅºÅÁ¿³õÊ¼»¯Îª1£¬Èçcmd=SETVALÉèÖÃÐÅºÅÁ¿µÄÖµ£» »òÕßcmd=IPC_STAT»ñµÃsemid_ds½á¹¹
+ä½¿ç”¨semctl()å‡½æ•°çš„SETVALæ“ä½œï¼Œå½“ä½¿ç”¨äºŒç»´ä¿¡å·é‡æ—¶ï¼Œé€šå¸¸å°†ä¿¡å·é‡åˆå§‹åŒ–ä¸º1ï¼Œå¦‚cmd=SETVALè®¾ç½®ä¿¡å·é‡çš„å€¼ï¼› æˆ–è€…cmd=IPC_STATèŽ·å¾—semid_dsç»“æž„
 
  int semctl(int semid, int semnum, int cmd, union semun arg);
 
-½øÐÐÐÅºÅÁ¿µÄPV²Ù×÷
+è¿›è¡Œä¿¡å·é‡çš„PVæ“ä½œ
 
-µ÷ÓÃsemop()º¯Êý£¬ÊµÏÖ½ø³ÌÖ®¼äµÄÍ¬²½ºÍ»¥³âµÄºËÐÄ²¿·Ö
+è°ƒç”¨semop()å‡½æ•°ï¼Œå®žçŽ°è¿›ç¨‹ä¹‹é—´çš„åŒæ­¥å’Œäº’æ–¥çš„æ ¸å¿ƒéƒ¨åˆ†
 
-Èç¹û²»ÐèÒªÐÅºÅÁ¿£¬Ôò´ÓÏµÍ³ÖÐÉ¾³ýËü
+å¦‚æžœä¸éœ€è¦ä¿¡å·é‡ï¼Œåˆ™ä»Žç³»ç»Ÿä¸­åˆ é™¤å®ƒ
 
-Ê¹ÓÃsemclt()º¯ÊýµÄIPC_RMID²Ù×÷£¬ÔÚ³ÌÐòÖÐ²»Ó¦¸Ã³öÏÖ¶ÔÒÑ±»É¾³ýµÄÐÅºÅÁ¿µÄ²Ù×÷
+ä½¿ç”¨semclt()å‡½æ•°çš„IPC_RMIDæ“ä½œï¼Œåœ¨ç¨‹åºä¸­ä¸åº”è¯¥å‡ºçŽ°å¯¹å·²è¢«åˆ é™¤çš„ä¿¡å·é‡çš„æ“ä½œ
 
-Ò»¸öÀý×Ó³ÌÐò¡±sem_shm_1.c¡±£¬ÓÐÐ¡¸Ä¶¯£º¼òµ¥µÄ·þÎñÆ÷ºÍ¿Í»§¶Ë³ÌÐò£¬Æô¶¯²»´ø²ÎÊýÔËÐÐ·þÎñÆ÷£¬´ø²ÎÊýÔòÊÇ¿Í»§¶Ë¡£·þÎñÆ÷Æô¶¯ºó´´½¨ÐÅºÅÁ¿ºÍ¹²ÏíÄÚ´æ£¬²¢½«¹²ÏíÄÚ´æµÄÒýÓÃIDÏÔÊ¾³öÀ´£¬½«ÐÅºÅÁ¿µÄÒýÓÃID·ÅÔÚ¹²ÏíÄÚ´æÖÐ£¬ÀûÓÃ·þÎñÆ÷¶ËÌá¹©µÄ¹²ÏíÄÚ´æÒýÓÃID½«¹²ÏíÄÚ´æ¸½¼Óµ½µØÖ·¶Î,¶ÁÈ¡ÐÅºÅÁ¿ÒÔÊµÏÖÁ½¸ö½ø³ÌÖ®¼äµÄÍ¬²½,Ö®ºóÕâÁ½¸ö½ø³Ì¾Í¿ÉÀûÓÃ¹²ÏíÄÚ´æ½øÐÐ½ø³Ì¼äÍ¨ÐÅ,¿Í»§¶ËÊäÈëµÄÐÅÏ¢½«ÔÚ·þÎñÆ÷¶ËÏÔÊ¾³öÀ´¡£
+ä¸€ä¸ªä¾‹å­ç¨‹åºâ€sem_shm_1.câ€ï¼Œæœ‰å°æ”¹åŠ¨ï¼šç®€å•çš„æœåŠ¡å™¨å’Œå®¢æˆ·ç«¯ç¨‹åºï¼Œå¯åŠ¨ä¸å¸¦å‚æ•°è¿è¡ŒæœåŠ¡å™¨ï¼Œå¸¦å‚æ•°åˆ™æ˜¯å®¢æˆ·ç«¯ã€‚æœåŠ¡å™¨å¯åŠ¨åŽåˆ›å»ºä¿¡å·é‡å’Œå…±äº«å†…å­˜ï¼Œå¹¶å°†å…±äº«å†…å­˜çš„å¼•ç”¨IDæ˜¾ç¤ºå‡ºæ¥ï¼Œå°†ä¿¡å·é‡çš„å¼•ç”¨IDæ”¾åœ¨å…±äº«å†…å­˜ä¸­ï¼Œåˆ©ç”¨æœåŠ¡å™¨ç«¯æä¾›çš„å…±äº«å†…å­˜å¼•ç”¨IDå°†å…±äº«å†…å­˜é™„åŠ åˆ°åœ°å€æ®µ,è¯»å–ä¿¡å·é‡ä»¥å®žçŽ°ä¸¤ä¸ªè¿›ç¨‹ä¹‹é—´çš„åŒæ­¥,ä¹‹åŽè¿™ä¸¤ä¸ªè¿›ç¨‹å°±å¯åˆ©ç”¨å…±äº«å†…å­˜è¿›è¡Œè¿›ç¨‹é—´é€šä¿¡,å®¢æˆ·ç«¯è¾“å…¥çš„ä¿¡æ¯å°†åœ¨æœåŠ¡å™¨ç«¯æ˜¾ç¤ºå‡ºæ¥ã€‚
 
-# LinuxÏÂ¿ª·¢¹¤¾ß½éÉÜ
+# Linuxä¸‹å¼€å‘å·¥å…·ä»‹ç»
 
 ## indent
 
-indent ÊµÓÃ³ÌÐòÊÇ Linux Àï°üº¬µÄÁíÒ»¸ö±à³ÌÊµÓÃ¹¤¾ß. Õâ¸ö¹¤¾ß¼òµ¥µÄËµ¾ÍÎªÄãµÄ´úÂë²úÉúÃÀ¹ÛµÄËõ½øµÄ¸ñÊ½. indent Ò²ÓÐºÜ¶àÑ¡ÏîÀ´Ö¸¶¨ÈçºÎ¸ñÊ½»¯ÄãµÄÔ´´úÂë.ÕâÐ©Ñ¡ÏîµÄ¸ü¶àÐÅÏ¢Çë¿´ indent µÄÖ¸ÄÏÒ³ .indent ²¢²»¸Ä±ä´úÂëµÄÊµÖÊÄÚÈÝ, ¶øÖ»ÊÇ¸Ä±ä´úÂëµÄÍâ¹Û. Ê¹Ëü±äµÃ¸ü¿É¶Á, ÕâÓÀÔ¶ÊÇÒ»¼þºÃÊÂ.
+indent å®žç”¨ç¨‹åºæ˜¯ Linux é‡ŒåŒ…å«çš„å¦ä¸€ä¸ªç¼–ç¨‹å®žç”¨å·¥å…·. è¿™ä¸ªå·¥å…·ç®€å•çš„è¯´å°±ä¸ºä½ çš„ä»£ç äº§ç”Ÿç¾Žè§‚çš„ç¼©è¿›çš„æ ¼å¼. indent ä¹Ÿæœ‰å¾ˆå¤šé€‰é¡¹æ¥æŒ‡å®šå¦‚ä½•æ ¼å¼åŒ–ä½ çš„æºä»£ç .è¿™äº›é€‰é¡¹çš„æ›´å¤šä¿¡æ¯è¯·çœ‹ indent çš„æŒ‡å—é¡µ .indent å¹¶ä¸æ”¹å˜ä»£ç çš„å®žè´¨å†…å®¹, è€Œåªæ˜¯æ”¹å˜ä»£ç çš„å¤–è§‚. ä½¿å®ƒå˜å¾—æ›´å¯è¯», è¿™æ°¸è¿œæ˜¯ä¸€ä»¶å¥½äº‹.
 
-indentÊÇÒ»¸öºÜÓÐÓÃµÄcÔ´´úÂë¶ÔÆë¹¤¾ß¡£Ò»°ã´ó¼ÒÓÐ×Ô¼ºÏ²»¶µÄ·ç¸ñ£¬¿ÉÒÔ¸ù¾ÝÐèÒªÀ´Éè¶¨indentµÄ·ç¸ñ¡£
+indentæ˜¯ä¸€ä¸ªå¾ˆæœ‰ç”¨çš„cæºä»£ç å¯¹é½å·¥å…·ã€‚ä¸€èˆ¬å¤§å®¶æœ‰è‡ªå·±å–œæ¬¢çš„é£Žæ ¼ï¼Œå¯ä»¥æ ¹æ®éœ€è¦æ¥è®¾å®šindentçš„é£Žæ ¼ã€‚
 
-indent -kr -cli4 -nut -bl4 -bli0 <filename> 
+indent -kr -cli4 -nut -bl4 -bli0 <filename>
 
 ## cproto
 
-cproto ¶ÁÈë C Ô´³ÌÐòÎÄ¼þ²¢×Ô¶¯ÎªÃ¿¸öº¯Êý²úÉúÔ­ÐÍÉêÃ÷. ÓÃ cproto ¿ÉÒÔÔÚÐ´³ÌÐòÊ±ÎªÄã½ÚÊ¡´óÁ¿ÓÃÀ´¶¨Òåº¯ÊýÔ­ÐÍµÄÊ±¼ä.
+cproto è¯»å…¥ C æºç¨‹åºæ–‡ä»¶å¹¶è‡ªåŠ¨ä¸ºæ¯ä¸ªå‡½æ•°äº§ç”ŸåŽŸåž‹ç”³æ˜Ž. ç”¨ cproto å¯ä»¥åœ¨å†™ç¨‹åºæ—¶ä¸ºä½ èŠ‚çœå¤§é‡ç”¨æ¥å®šä¹‰å‡½æ•°åŽŸåž‹çš„æ—¶é—´.
 
 ## gprof
 
-gprof ÊÇ°²×°ÔÚÄãµÄ Linux ÏµÍ³µÄ /usr/bin Ä¿Â¼ÏÂµÄÒ»¸ö³ÌÐò. ËüÊ¹ÄãÄÜÆÊÎöÄãµÄ³ÌÐò´Ó¶øÖªµÀ³ÌÐòµÄÄÄÒ»¸ö²¿·ÖÔÚÖ´ÐÐÊ±×î·ÑÊ±¼ä.gprof ½«¸æËßÄã³ÌÐòÀïÃ¿¸öº¯Êý±»µ÷ÓÃµÄ´ÎÊýºÍÃ¿¸öº¯ÊýÖ´ÐÐÊ±ËùÕ¼Ê±¼äµÄ°Ù·Ö±È. ÄãÈç¹ûÏëÌá¸ßÄãµÄ³ÌÐòÐÔÄÜµÄ»°ÕâÐ©ÐÅÏ¢·Ç³£ÓÐÓÃ.ÎªÁËÔÚÄãµÄ³ÌÐòÉÏÊ¹ÓÃ gprof, Äã±ØÐëÔÚ±àÒë³ÌÐòÊ±¼ÓÉÏ -pg Ñ¡Ïî. Õâ½«Ê¹³ÌÐòÔÚÃ¿´ÎÖ´ÐÐÊ±²úÉúÒ»¸ö½Ð gmon.out µÄÎÄ¼þ. gprof ÓÃÕâ¸öÎÄ¼þ²úÉúÆÊÎöÐÅÏ¢.ÔÚÄãÔËÐÐÁËÄãµÄ³ÌÐò²¢²úÉúÁË gmon.out ÎÄ¼þºóÄãÄÜÓÃÏÂÃæµÄÃüÁî»ñµÃÆÊÎöÐÅÏ¢:
+gprof æ˜¯å®‰è£…åœ¨ä½ çš„ Linux ç³»ç»Ÿçš„ /usr/bin ç›®å½•ä¸‹çš„ä¸€ä¸ªç¨‹åº. å®ƒä½¿ä½ èƒ½å‰–æžä½ çš„ç¨‹åºä»Žè€ŒçŸ¥é“ç¨‹åºçš„å“ªä¸€ä¸ªéƒ¨åˆ†åœ¨æ‰§è¡Œæ—¶æœ€è´¹æ—¶é—´.gprof å°†å‘Šè¯‰ä½ ç¨‹åºé‡Œæ¯ä¸ªå‡½æ•°è¢«è°ƒç”¨çš„æ¬¡æ•°å’Œæ¯ä¸ªå‡½æ•°æ‰§è¡Œæ—¶æ‰€å æ—¶é—´çš„ç™¾åˆ†æ¯”. ä½ å¦‚æžœæƒ³æé«˜ä½ çš„ç¨‹åºæ€§èƒ½çš„è¯è¿™äº›ä¿¡æ¯éžå¸¸æœ‰ç”¨.ä¸ºäº†åœ¨ä½ çš„ç¨‹åºä¸Šä½¿ç”¨ gprof, ä½ å¿…é¡»åœ¨ç¼–è¯‘ç¨‹åºæ—¶åŠ ä¸Š -pg é€‰é¡¹. è¿™å°†ä½¿ç¨‹åºåœ¨æ¯æ¬¡æ‰§è¡Œæ—¶äº§ç”Ÿä¸€ä¸ªå« gmon.out çš„æ–‡ä»¶. gprof ç”¨è¿™ä¸ªæ–‡ä»¶äº§ç”Ÿå‰–æžä¿¡æ¯.åœ¨ä½ è¿è¡Œäº†ä½ çš„ç¨‹åºå¹¶äº§ç”Ÿäº† gmon.out æ–‡ä»¶åŽä½ èƒ½ç”¨ä¸‹é¢çš„å‘½ä»¤èŽ·å¾—å‰–æžä¿¡æ¯:
 
 gprof <program_name>
 
 ## hexdump
 
-¿ÉÓÃ²ÎÊý
+å¯ç”¨å‚æ•°
 
 	[-bcCdovx] [-e format_string] [-f format_file] [-n length] [-s skip] file ...
 
-	
 
-²ÎÊýº¬Òå
 
-	-b	µ¥×Ö½Ú°Ë½øÖÆÏÔÊ¾£¬Ê®Áù½øÖÆÏÔÊ¾Æ«ÒÆÁ¿£¬Ã¿ÐÐÏÔÊ¾16¸ö×Ö·û£¬Ã¿×Ö·ûÓÃÈýÎ»ÏÔÊ¾£¬²»×ã²¹Áã£¬ÁÐ¼äÒÔ¿Õ¸ñ·Ö¸ô
+å‚æ•°å«ä¹‰
 
-	-c	µ¥×Ö½Ú×Ö·ûÏÔÊ¾£¬Ê®Áù½øÖÆÏÔÊ¾Æ«ÒÆÁ¿£¬Ã¿ÐÐÏÔÊ¾16¸ö×Ö·û£¬Ã¿×Ö·ûÈýÎ»ÏÔÊ¾£¬²»×ã²¹¿Õ¸ñ£¬ÁÐ¼äÒÔ¿Õ¸ñ·Ö¸ô
+	-b	å•å­—èŠ‚å…«è¿›åˆ¶æ˜¾ç¤ºï¼Œåå…­è¿›åˆ¶æ˜¾ç¤ºåç§»é‡ï¼Œæ¯è¡Œæ˜¾ç¤º16ä¸ªå­—ç¬¦ï¼Œæ¯å­—ç¬¦ç”¨ä¸‰ä½æ˜¾ç¤ºï¼Œä¸è¶³è¡¥é›¶ï¼Œåˆ—é—´ä»¥ç©ºæ ¼åˆ†éš”
 
-	-C	±ê×¼Ê®Áù½øÖÆ+asciiÂëÏÔÊ¾£¬Ê®Áù½øÖÆÏÔÊ¾Æ«ÒÆÁ¿£¬Ã¿ÐÐ16¸ö×Ö·û£¬Ã¿×Ö·ûÁ½Î»ÏÔÊ¾£¬²»×ã²¹0£¬½áÎ²ÏÔÊ¾µ±Ç°16Î»Êý¾ÝµÄasciiÂëÖµ£¬ÒÔ|¿ò×¡
+	-c	å•å­—èŠ‚å­—ç¬¦æ˜¾ç¤ºï¼Œåå…­è¿›åˆ¶æ˜¾ç¤ºåç§»é‡ï¼Œæ¯è¡Œæ˜¾ç¤º16ä¸ªå­—ç¬¦ï¼Œæ¯å­—ç¬¦ä¸‰ä½æ˜¾ç¤ºï¼Œä¸è¶³è¡¥ç©ºæ ¼ï¼Œåˆ—é—´ä»¥ç©ºæ ¼åˆ†éš”
 
-	-d	Ë«×Ö½ÚÊ®½øÖÆÏÔÊ¾£¬Ê®Áù½øÖÆÏÔÊ¾Æ«ÒÆÁ¿£¬Ã¿ÐÐ8×é£¨16×Ö½Ú£©Ã¿×é5Î»£¬²»×ã²¹Áã£¬ÁÐ¼äÒÔ¿Õ¸ñ·Ö¸ô£¬ÒÔÎÞ·ûºÅ10½øÖÆÊýÖµÏÔÊ¾
+	-C	æ ‡å‡†åå…­è¿›åˆ¶+asciiç æ˜¾ç¤ºï¼Œåå…­è¿›åˆ¶æ˜¾ç¤ºåç§»é‡ï¼Œæ¯è¡Œ16ä¸ªå­—ç¬¦ï¼Œæ¯å­—ç¬¦ä¸¤ä½æ˜¾ç¤ºï¼Œä¸è¶³è¡¥0ï¼Œç»“å°¾æ˜¾ç¤ºå½“å‰16ä½æ•°æ®çš„asciiç å€¼ï¼Œä»¥|æ¡†ä½
+
+	-d	åŒå­—èŠ‚åè¿›åˆ¶æ˜¾ç¤ºï¼Œåå…­è¿›åˆ¶æ˜¾ç¤ºåç§»é‡ï¼Œæ¯è¡Œ8ç»„ï¼ˆ16å­—èŠ‚ï¼‰æ¯ç»„5ä½ï¼Œä¸è¶³è¡¥é›¶ï¼Œåˆ—é—´ä»¥ç©ºæ ¼åˆ†éš”ï¼Œä»¥æ— ç¬¦å·10è¿›åˆ¶æ•°å€¼æ˜¾ç¤º
 
 	-e format_string
 
-		ÒÔÖ¸¶¨µÄ¸ñÊ½ÏÔÊ¾
+		ä»¥æŒ‡å®šçš„æ ¼å¼æ˜¾ç¤º
 
 	-f format_file
 
-		¸ù¾Ýformat fileÖÐµÄ¸ñÊ½½øÐÐÊä³ö£¬ºöÂÔformatfileÖÐ¿ÕÐÐ¼°ÒÔ#¿ªÊ¼µÄÐÐ»á
+		æ ¹æ®format fileä¸­çš„æ ¼å¼è¿›è¡Œè¾“å‡ºï¼Œå¿½ç•¥formatfileä¸­ç©ºè¡ŒåŠä»¥#å¼€å§‹çš„è¡Œä¼š
 
 	-n length
 
-		Ö»ÏÔÊ¾length¸ö×Ö½ÚµÄÊý¾Ý
+		åªæ˜¾ç¤ºlengthä¸ªå­—èŠ‚çš„æ•°æ®
 
-	-o	Ë«×Ö½Ú°Ë½øÖÆÏÔÊ¾¡£Ê®Áù½øÖÆÏÔÊ¾Æ«ÒÆÁ¿£¬Ã¿ÐÐ8×éÊý¾Ý£¬Ã¿Êý¾ÝÕ¼Á½×Ö½Ú£¬6ÁÐ£¬²»×ã²¹Áã£¬ÒÔ¿Õ¸ñ·Ö¸ô
+	-o	åŒå­—èŠ‚å…«è¿›åˆ¶æ˜¾ç¤ºã€‚åå…­è¿›åˆ¶æ˜¾ç¤ºåç§»é‡ï¼Œæ¯è¡Œ8ç»„æ•°æ®ï¼Œæ¯æ•°æ®å ä¸¤å­—èŠ‚ï¼Œ6åˆ—ï¼Œä¸è¶³è¡¥é›¶ï¼Œä»¥ç©ºæ ¼åˆ†éš”
 
 	-s offset
 
-		Ìø¹ý´Ó¿ªÊ¼µÄoffset¸ö×Ö½Ú£¬Ä¬ÈÏÊäÈëÊ®½øÖÆ£¬ÒÔ0x»ò0X¿ªÊ¼°´16½øÖÆ´¦Àí£¬·ñÔòÈçÒÔ0¿ªÊ¼°´°Ë½øÖÆ´¦Àí£¬Èç¹ûÒÔb/k/m½áÎ²£¬ÔòÔ­ÊýÖµ³ËÒÔ512/1024/1048576
+		è·³è¿‡ä»Žå¼€å§‹çš„offsetä¸ªå­—èŠ‚ï¼Œé»˜è®¤è¾“å…¥åè¿›åˆ¶ï¼Œä»¥0xæˆ–0Xå¼€å§‹æŒ‰16è¿›åˆ¶å¤„ç†ï¼Œå¦åˆ™å¦‚ä»¥0å¼€å§‹æŒ‰å…«è¿›åˆ¶å¤„ç†ï¼Œå¦‚æžœä»¥b/k/mç»“å°¾ï¼Œåˆ™åŽŸæ•°å€¼ä¹˜ä»¥512/1024/1048576
 
-	-v	ÏÔÊ¾ËùÓÐÊý¾Ý£¬Èç¹û²»°üº¬ÕâÒ»Ñ¡Ïî£¬¶ÔÓÚÍ¬ÉÏÒ»ÐÐÍêÈ«ÏàÍ¬µÄÊý¾Ý£¬hexdump»áÒÔ*´úÌæÏÔÊ¾
+	-v	æ˜¾ç¤ºæ‰€æœ‰æ•°æ®ï¼Œå¦‚æžœä¸åŒ…å«è¿™ä¸€é€‰é¡¹ï¼Œå¯¹äºŽåŒä¸Šä¸€è¡Œå®Œå…¨ç›¸åŒçš„æ•°æ®ï¼Œhexdumpä¼šä»¥*ä»£æ›¿æ˜¾ç¤º
 
-	-x	Á½Î»Ê®Áù½øÖÆÏÔÊ¾.Ê®Áù½øÖÆÏÔÊ¾Æ«ÒÆÁ¿£¬Ã¿ÐÐ8×éÊý¾Ý£¬Ã¿Êý¾ÝÕ¼Á½×Ö½Ú£¬4ÁÐ£¬²»×ã²¹Áã£¬ÒÔ¿Õ¸ñ·Ö¸ô
-
-	
+	-x	ä¸¤ä½åå…­è¿›åˆ¶æ˜¾ç¤º.åå…­è¿›åˆ¶æ˜¾ç¤ºåç§»é‡ï¼Œæ¯è¡Œ8ç»„æ•°æ®ï¼Œæ¯æ•°æ®å ä¸¤å­—èŠ‚ï¼Œ4åˆ—ï¼Œä¸è¶³è¡¥é›¶ï¼Œä»¥ç©ºæ ¼åˆ†éš”
 
 
 
 
 
--e Ö¸¶¨¸ñÊ½×Ö·û´®£¬¸ñÊ½×Ö·û´®°üº¬ÔÚÒ»¶Ôµ¥ÒýºÅÖÐ£¬¸ñÊ½×Ö·û´®ÐÎÈç£º
+
+
+-e æŒ‡å®šæ ¼å¼å­—ç¬¦ä¸²ï¼Œæ ¼å¼å­—ç¬¦ä¸²åŒ…å«åœ¨ä¸€å¯¹å•å¼•å·ä¸­ï¼Œæ ¼å¼å­—ç¬¦ä¸²å½¢å¦‚ï¼š
 
 'a/b "format1" "format2"'
 
@@ -5574,37 +4383,35 @@ gprof <program_name>
 
 
 
-Ã¿¸ö¸ñÊ½×Ö·û´®ÓÉÈý²¿·Ö×é³É£¬Ã¿¸öÓÉ¿Õ¸ñ·Ö¸ô£¬µÚÒ»¸öÐÎÈça/b£¬b±íÊ¾¶ÔÃ¿b¸öÊäÈë×Ö½ÚÓ¦ÓÃformat1¸ñÊ½£¬a±íÊ¾¶ÔÃ¿a¸öÊäÈë×Ö½ÚÓ¦ÓÃformat2¸ñÊ½£¬Ò»°ãa>b£¬ÇÒbÖ»ÄÜÎª1£¬2£¬4£¬ÁíÍâa¿ÉÒÔÊ¡ÂÔ£¬Ê¡ÂÔÔòa=1¡£format1ºÍformat2ÖÐ¿ÉÒÔÊ¹ÓÃÀàËÆprintfµÄ¸ñÊ½×Ö·û´®£¬Èç£º
+æ¯ä¸ªæ ¼å¼å­—ç¬¦ä¸²ç”±ä¸‰éƒ¨åˆ†ç»„æˆï¼Œæ¯ä¸ªç”±ç©ºæ ¼åˆ†éš”ï¼Œç¬¬ä¸€ä¸ªå½¢å¦‚a/bï¼Œbè¡¨ç¤ºå¯¹æ¯bä¸ªè¾“å…¥å­—èŠ‚åº”ç”¨format1æ ¼å¼ï¼Œaè¡¨ç¤ºå¯¹æ¯aä¸ªè¾“å…¥å­—èŠ‚åº”ç”¨format2æ ¼å¼ï¼Œä¸€èˆ¬a>bï¼Œä¸”båªèƒ½ä¸º1ï¼Œ2ï¼Œ4ï¼Œå¦å¤–aå¯ä»¥çœç•¥ï¼Œçœç•¥åˆ™a=1ã€‚format1å’Œformat2ä¸­å¯ä»¥ä½¿ç”¨ç±»ä¼¼printfçš„æ ¼å¼å­—ç¬¦ä¸²ï¼Œå¦‚ï¼š
 
-%02d£ºÁ½Î»Ê®½øÖÆ
+%02dï¼šä¸¤ä½åè¿›åˆ¶
 
-%03x£ºÈýÎ»Ê®Áù½øÖÆ
+%03xï¼šä¸‰ä½åå…­è¿›åˆ¶
 
-%02o£ºÁ½Î»°Ë½øÖÆ
+%02oï¼šä¸¤ä½å…«è¿›åˆ¶
 
-%c£ºµ¥¸ö×Ö·ûµÈ
-
-
+%cï¼šå•ä¸ªå­—ç¬¦ç­‰
 
 
 
-»¹ÓÐÒ»Ð©ÌØÊâµÄÓÃ·¨£º
-
-%_ad£º±ê¼ÇÏÂÒ»¸öÊä³ö×Ö½ÚµÄÐòºÅ£¬ÓÃÊ®½øÖÆ±íÊ¾
-
-%_ax£º±ê¼ÇÏÂÒ»¸öÊä³ö×Ö½ÚµÄÐòºÅ£¬ÓÃÊ®Áù½øÖÆ±íÊ¾
 
 
+è¿˜æœ‰ä¸€äº›ç‰¹æ®Šçš„ç”¨æ³•ï¼š
 
-%_ao£º±ê¼ÇÏÂÒ»¸öÊä³ö×Ö½ÚµÄÐòºÅ£¬ÓÃ°Ë½øÖÆ±íÊ¾
+%_adï¼šæ ‡è®°ä¸‹ä¸€ä¸ªè¾“å‡ºå­—èŠ‚çš„åºå·ï¼Œç”¨åè¿›åˆ¶è¡¨ç¤º
+
+%_axï¼šæ ‡è®°ä¸‹ä¸€ä¸ªè¾“å‡ºå­—èŠ‚çš„åºå·ï¼Œç”¨åå…­è¿›åˆ¶è¡¨ç¤º
 
 
 
-%_p£º¶Ô²»ÄÜÒÔ³£¹æ×Ö·ûÏÔÊ¾µÄÓÃ.´úÌæ
-
-Í¬Ò»ÐÐÈç¹ûÒªÏÔÊ¾¶à¸ö¸ñÊ½×Ö·û´®£¬Ôò¿ÉÒÔ¸ú¶à¸ö-eÑ¡Ïî
+%_aoï¼šæ ‡è®°ä¸‹ä¸€ä¸ªè¾“å‡ºå­—èŠ‚çš„åºå·ï¼Œç”¨å…«è¿›åˆ¶è¡¨ç¤º
 
 
+
+%_pï¼šå¯¹ä¸èƒ½ä»¥å¸¸è§„å­—ç¬¦æ˜¾ç¤ºçš„ç”¨.ä»£æ›¿
+
+åŒä¸€è¡Œå¦‚æžœè¦æ˜¾ç¤ºå¤šä¸ªæ ¼å¼å­—ç¬¦ä¸²ï¼Œåˆ™å¯ä»¥è·Ÿå¤šä¸ª-eé€‰é¡¹
 
 
 
@@ -5612,21 +4419,23 @@ gprof <program_name>
 
 
 
-Àý1£º
-
-ÊäÈë£º
-
-hexdump -e '16/1 "%02X " "  |  "' -e '16/1 "%_p" "\n"' test  
 
 
+ä¾‹1ï¼š
 
-Êä³ö£º
+è¾“å…¥ï¼š
 
-00 01 02 03 04 05 06 07 08 09 0A 0B 0C 0D 0E 0F  |  ................  
+hexdump -e '16/1 "%02X " "  |  "' -e '16/1 "%_p" "\n"' test
 
-10 11 12 13 14 15 16 17 18 19 1A 1B 1C 1D 1E 1F  |  ................  
 
-20 21 22 23 24 25 26 27 28 29 2A 2B 2C 2D 2E 2F  |   !"#$%&'()*+,-./  
+
+è¾“å‡ºï¼š
+
+00 01 02 03 04 05 06 07 08 09 0A 0B 0C 0D 0E 0F  |  ................
+
+10 11 12 13 14 15 16 17 18 19 1A 1B 1C 1D 1E 1F  |  ................
+
+20 21 22 23 24 25 26 27 28 29 2A 2B 2C 2D 2E 2F  |   !"#$%&'()*+,-./
 
 
 
@@ -5644,27 +4453,27 @@ hexdump -e '16/1 "%02X " "  |  "' -e '16/1 "%_p" "\n"' test
 
 
 
-Àý2£º
+ä¾‹2ï¼š
 
-ÊäÈë£º
+è¾“å…¥ï¼š
 
-hexdump -e '1/1 "0x%08_ax "' -e '8/1 "%02X " " *  "' -e '8/1 "%_p" "\n"' test  
+hexdump -e '1/1 "0x%08_ax "' -e '8/1 "%02X " " *  "' -e '8/1 "%_p" "\n"' test
 
 
 
-Êä³ö£º
+è¾“å‡ºï¼š
 
-0x00000000 00 01 02 03 04 05 06 07 *  ........  
+0x00000000 00 01 02 03 04 05 06 07 *  ........
 
-0x00000008 08 09 0A 0B 0C 0D 0E 0F *  ........  
+0x00000008 08 09 0A 0B 0C 0D 0E 0F *  ........
 
-0x00000010 10 11 12 13 14 15 16 17 *  ........  
+0x00000010 10 11 12 13 14 15 16 17 *  ........
 
-0x00000018 18 19 1A 1B 1C 1D 1E 1F *  ........  
+0x00000018 18 19 1A 1B 1C 1D 1E 1F *  ........
 
-0x00000020 20 21 22 23 24 25 26 27 *   !"#$%&'  
+0x00000020 20 21 22 23 24 25 26 27 *   !"#$%&'
 
-0x00000028 28 29 2A 2B 2C 2D 2E 2F *  ()*+,-./  
+0x00000028 28 29 2A 2B 2C 2D 2E 2F *  ()*+,-./
 
 
 
@@ -5686,57 +4495,57 @@ hexdump -e '1/1 "0x%08_ax "' -e '8/1 "%02X " " *  "' -e '8/1 "%_p" "\n"' test
 
 
 
-Àý3£º
+ä¾‹3ï¼š
 
-ÊäÈë£º
-
-
-
-hexdump -e '1/1 "%02_ad#    "' -e '/1 "hex = %02X * "' -e '/1 "dec = %03d | "' -e '/1 "oct = %03o"' -e '/1 " \_\n"' -n 20 test  
+è¾“å…¥ï¼š
 
 
 
-Êä³ö£º
+hexdump -e '1/1 "%02_ad#    "' -e '/1 "hex = %02X * "' -e '/1 "dec = %03d | "' -e '/1 "oct = %03o"' -e '/1 " \_\n"' -n 20 test
 
-00#    hex = 00 * dec = 000 | oct = 000 _  
 
-01#    hex = 01 * dec = 001 | oct = 001 _  
 
-02#    hex = 02 * dec = 002 | oct = 002 _  
+è¾“å‡ºï¼š
 
-03#    hex = 03 * dec = 003 | oct = 003 _  
+00#    hex = 00 * dec = 000 | oct = 000 _
 
-04#    hex = 04 * dec = 004 | oct = 004 _  
+01#    hex = 01 * dec = 001 | oct = 001 _
 
-05#    hex = 05 * dec = 005 | oct = 005 _  
+02#    hex = 02 * dec = 002 | oct = 002 _
 
-06#    hex = 06 * dec = 006 | oct = 006 _  
+03#    hex = 03 * dec = 003 | oct = 003 _
 
-07#    hex = 07 * dec = 007 | oct = 007 _  
+04#    hex = 04 * dec = 004 | oct = 004 _
 
-08#    hex = 08 * dec = 008 | oct = 010 _  
+05#    hex = 05 * dec = 005 | oct = 005 _
 
-09#    hex = 09 * dec = 009 | oct = 011 _  
+06#    hex = 06 * dec = 006 | oct = 006 _
 
-10#    hex = 0A * dec = 010 | oct = 012 _  
+07#    hex = 07 * dec = 007 | oct = 007 _
 
-11#    hex = 0B * dec = 011 | oct = 013 _  
+08#    hex = 08 * dec = 008 | oct = 010 _
 
-12#    hex = 0C * dec = 012 | oct = 014 _  
+09#    hex = 09 * dec = 009 | oct = 011 _
 
-13#    hex = 0D * dec = 013 | oct = 015 _  
+10#    hex = 0A * dec = 010 | oct = 012 _
 
-14#    hex = 0E * dec = 014 | oct = 016 _  
+11#    hex = 0B * dec = 011 | oct = 013 _
 
-15#    hex = 0F * dec = 015 | oct = 017 _  
+12#    hex = 0C * dec = 012 | oct = 014 _
 
-16#    hex = 10 * dec = 016 | oct = 020 _  
+13#    hex = 0D * dec = 013 | oct = 015 _
 
-17#    hex = 11 * dec = 017 | oct = 021 _  
+14#    hex = 0E * dec = 014 | oct = 016 _
 
-18#    hex = 12 * dec = 018 | oct = 022 _  
+15#    hex = 0F * dec = 015 | oct = 017 _
 
-19#    hex = 13 * dec = 019 | oct = 023 _  
+16#    hex = 10 * dec = 016 | oct = 020 _
+
+17#    hex = 11 * dec = 017 | oct = 021 _
+
+18#    hex = 12 * dec = 018 | oct = 022 _
+
+19#    hex = 13 * dec = 019 | oct = 023 _
 
 
 
@@ -5780,25 +4589,25 @@ hexdump -e '1/1 "%02_ad#    "' -e '/1 "hex = %02X * "' -e '/1 "dec = %03d | "' -
 
 19#    hex = 13 * dec = 019 | oct = 023 _
 
-## GDB½Ì³Ì
+## GDBæ•™ç¨‹
 
 
 
-LINUXÏÂGDBµ÷ÊÔ 
+LINUXä¸‹GDBè°ƒè¯•
 
 http://blog.csdn.net/sco_field/article/details/4310987
 
-## objdump£¨·´»ã±à¹¤¾ß£©
+## objdumpï¼ˆåæ±‡ç¼–å·¥å…·ï¼‰
 
-objdump ¨Ct
+objdump â€“t
 
-Õâ¸öÃüÁî¿ÉÒÔ´òÓ¡³öbomb µÄ·ûºÅ±í¡£·ûºÅ±í°üº¬ÁËbombÖÐËùÓÐº¯ÊýµÄÃû³ÆºÍ´æ´¢µØÖ·ÒÔ¼°È«¾Ö±äÁ¿µÄÃû³Æ¡£Äã¿ÉÒÔÍ¨¹ý²é¿´º¯ÊýÃûµÃµ½Ò»Ð©ÐÅÏ¢¡£
+è¿™ä¸ªå‘½ä»¤å¯ä»¥æ‰“å°å‡ºbomb çš„ç¬¦å·è¡¨ã€‚ç¬¦å·è¡¨åŒ…å«äº†bombä¸­æ‰€æœ‰å‡½æ•°çš„åç§°å’Œå­˜å‚¨åœ°å€ä»¥åŠå…¨å±€å˜é‡çš„åç§°ã€‚ä½ å¯ä»¥é€šè¿‡æŸ¥çœ‹å‡½æ•°åå¾—åˆ°ä¸€äº›ä¿¡æ¯ã€‚
 
-objdump ¨Cd
+objdump â€“d
 
-ÔËÓÃÕâ¸öÃüÁîÎÒÃÇ¿ÉÒÔ¶Ôbomb ÖÐµÄ´úÂë½øÐÐ·´»ã±à¡£Í¨¹ýÔÄ¶Á»ã±à´úÂë¿ÉÒÔ¸æËßÄãbomb ÊÇÈçºÎÔËÐÐµÄ¡£ËäÈ»objdump ¨Cd ¸øÁËÄãºÜ¶àµÄÐÅÏ¢£¬µ«ÊÇËü²¢²»ÄÜ¸æËßÄãËùÓÐµÄÐÅÏ¢¡£ÀýÈç£ºÒ»¸öµ÷ÓÃsscanf º¯ÊýµÄÓï¾ä¿ÉÄÜÏÔÊ¾Îª£º8048c36: e8 99 fc ff ff call 80488d4 <_init+0x1a0>£¬Äã»¹ÐèÒªgdb À´°ïÖúÄãÈ·¶¨Õâ¸öÓï¾äµÄ¾ßÌå¹¦ÄÜ¡£
+è¿ç”¨è¿™ä¸ªå‘½ä»¤æˆ‘ä»¬å¯ä»¥å¯¹bomb ä¸­çš„ä»£ç è¿›è¡Œåæ±‡ç¼–ã€‚é€šè¿‡é˜…è¯»æ±‡ç¼–ä»£ç å¯ä»¥å‘Šè¯‰ä½ bomb æ˜¯å¦‚ä½•è¿è¡Œçš„ã€‚è™½ç„¶objdump â€“d ç»™äº†ä½ å¾ˆå¤šçš„ä¿¡æ¯ï¼Œä½†æ˜¯å®ƒå¹¶ä¸èƒ½å‘Šè¯‰ä½ æ‰€æœ‰çš„ä¿¡æ¯ã€‚ä¾‹å¦‚ï¼šä¸€ä¸ªè°ƒç”¨sscanf å‡½æ•°çš„è¯­å¥å¯èƒ½æ˜¾ç¤ºä¸ºï¼š8048c36: e8 99 fc ff ff call 80488d4 <_init+0x1a0>ï¼Œä½ è¿˜éœ€è¦gdb æ¥å¸®åŠ©ä½ ç¡®å®šè¿™ä¸ªè¯­å¥çš„å…·ä½“åŠŸèƒ½ã€‚
 
-objdump´òÓ¡·ûºÅ±íµÄ¸ñÊ½£º
+objdumpæ‰“å°ç¬¦å·è¡¨çš„æ ¼å¼ï¼š
 
 shenyan@ubuntu:~/Temp$ objdump -t a.o
 
@@ -5828,21 +4637,21 @@ SYMBOL TABLE:
 
 
 
-1.¶ÎÄÚÆ«ÒÆ
+1.æ®µå†…åç§»
 
-2.·ûºÅ×÷ÓÃÓò
+2.ç¬¦å·ä½œç”¨åŸŸ
 
-3.·ûºÅÀàÐÍ£ºd ??£»df Ô´ÎÄ¼þÃû£»F º¯ÊýÃû
+3.ç¬¦å·ç±»åž‹ï¼šd ??ï¼›df æºæ–‡ä»¶åï¼›F å‡½æ•°å
 
-4.·ûºÅËùÔÚ¶Î£º *UND*Íâ²¿Á´½Ó·ûºÅ£¬Î´ÔÚ±¾Ä¿±êÎÄ¼þ¶¨Òå
+4.ç¬¦å·æ‰€åœ¨æ®µï¼š *UND*å¤–éƒ¨é“¾æŽ¥ç¬¦å·ï¼Œæœªåœ¨æœ¬ç›®æ ‡æ–‡ä»¶å®šä¹‰
 
-5.·ûºÅ¶ÔÓ¦µÄ¶ÔÏóÕ¼¾ÝµÄÄÚ´æ¿Õ¼ä´óÐ¡£¬Ã»ÓÐÊµÌå¶ÔÏó´óÐ¡Îª0£¬Î´¶¨ÒåµÄÎª0
+5.ç¬¦å·å¯¹åº”çš„å¯¹è±¡å æ®çš„å†…å­˜ç©ºé—´å¤§å°ï¼Œæ²¡æœ‰å®žä½“å¯¹è±¡å¤§å°ä¸º0ï¼Œæœªå®šä¹‰çš„ä¸º0
 
-6. ·ûºÅÃû
+6. ç¬¦å·å
 
-linuxµÄstringsÃüÁî
+linuxçš„stringså‘½ä»¤
 
-strings - ÏÔÊ¾ÎÄ¼þÖÐµÄ¿É´òÓ¡×Ö·û£¬Ò»°ãÓÃÀ´²é¿´·ÇÎÄ±¾ÎÄ¼þµÄÄÚÈÝ.
+strings - æ˜¾ç¤ºæ–‡ä»¶ä¸­çš„å¯æ‰“å°å­—ç¬¦ï¼Œä¸€èˆ¬ç”¨æ¥æŸ¥çœ‹éžæ–‡æœ¬æ–‡ä»¶çš„å†…å®¹.
 
 man strings
 
@@ -5882,20 +4691,20 @@ GLIBC_PRIVATE
 
 
 
-ÕâÑù¾ÍÄÜ¿´µ½glibcÖ§³ÖµÄ°æ±¾¡£
+è¿™æ ·å°±èƒ½çœ‹åˆ°glibcæ”¯æŒçš„ç‰ˆæœ¬ã€‚
 
-## DevHelp 
-# shell±à³ÌÑ§Ï°Ö®Â·
+## DevHelp
+# shellç¼–ç¨‹å­¦ä¹ ä¹‹è·¯
 
-3¡¢ÓÃShell±à³Ì£¬ÅÐ¶ÏÒ»ÎÄ¼þÊÇ²»ÊÇ×Ö·ûÉè±¸ÎÄ¼þ£¬Èç¹ûÊÇ½«Æä¿½±´µ½ /dev Ä¿Â¼ÏÂ¡£
+3ã€ç”¨Shellç¼–ç¨‹ï¼Œåˆ¤æ–­ä¸€æ–‡ä»¶æ˜¯ä¸æ˜¯å­—ç¬¦è®¾å¤‡æ–‡ä»¶ï¼Œå¦‚æžœæ˜¯å°†å…¶æ‹·è´åˆ° /dev ç›®å½•ä¸‹ã€‚
 
-²Î¿¼³ÌÐò£º
+å‚è€ƒç¨‹åºï¼š
 
 #!/bin/sh
 
 FILENAME=
 
-echo ¡°Input file name£º¡±
+echo â€œInput file nameï¼šâ€
 
 read FILENAME
 
@@ -5911,49 +4720,49 @@ fi
 
 
 
-7£®Ä³ÏµÍ³¹ÜÀíÔ±ÐèÃ¿Ìì×öÒ»¶¨µÄÖØ¸´¹¤×÷£¬Çë°´ÕÕÏÂÁÐÒªÇó£¬±àÖÆÒ»¸ö½â¾ö ·½°¸ £º
+7ï¼ŽæŸç³»ç»Ÿç®¡ç†å‘˜éœ€æ¯å¤©åšä¸€å®šçš„é‡å¤å·¥ä½œï¼Œè¯·æŒ‰ç…§ä¸‹åˆ—è¦æ±‚ï¼Œç¼–åˆ¶ä¸€ä¸ªè§£å†³ æ–¹æ¡ˆ ï¼š
 
-£¨1£©ÔÚÏÂÎç4 :50É¾³ý/abcÄ¿Â¼ÏÂµÄÈ«²¿×ÓÄ¿Â¼ºÍÈ«²¿ÎÄ¼þ£»
+ï¼ˆ1ï¼‰åœ¨ä¸‹åˆ4 :50åˆ é™¤/abcç›®å½•ä¸‹çš„å…¨éƒ¨å­ç›®å½•å’Œå…¨éƒ¨æ–‡ä»¶ï¼›
 
-£¨2£©´ÓÔç8:00¡«ÏÂÎç6:00Ã¿Ð¡Ê±¶ÁÈ¡/xyzÄ¿Â¼ÏÂx1ÎÄ¼þÖÐÃ¿ÐÐµÚÒ»¸öÓòµÄÈ«²¿Êý¾Ý¼ÓÈëµ½/backupÄ¿Â¼ÏÂµÄbak01.txtÎÄ¼þÄÚ£»
+ï¼ˆ2ï¼‰ä»Žæ—©8:00ï½žä¸‹åˆ6:00æ¯å°æ—¶è¯»å–/xyzç›®å½•ä¸‹x1æ–‡ä»¶ä¸­æ¯è¡Œç¬¬ä¸€ä¸ªåŸŸçš„å…¨éƒ¨æ•°æ®åŠ å…¥åˆ°/backupç›®å½•ä¸‹çš„bak01.txtæ–‡ä»¶å†…ï¼›
 
-£¨3£©Ã¿·êÐÇÆÚÒ»ÏÂÎç5:50½«/dataÄ¿Â¼ÏÂµÄËùÓÐÄ¿Â¼ºÍÎÄ¼þ¹éµµ²¢Ñ¹ËõÎªÎÄ¼þ£ºbackup.tar.gz£»
+ï¼ˆ3ï¼‰æ¯é€¢æ˜ŸæœŸä¸€ä¸‹åˆ5:50å°†/dataç›®å½•ä¸‹çš„æ‰€æœ‰ç›®å½•å’Œæ–‡ä»¶å½’æ¡£å¹¶åŽ‹ç¼©ä¸ºæ–‡ä»¶ï¼šbackup.tar.gzï¼›
 
-£¨4£©ÔÚÏÂÎç5:55½«IDE½Ó¿ÚµÄCD-ROMÐ¶ÔØ£¨¼ÙÉè£ºCD-ROMµÄÉè±¸ÃûÎªhdc£©£»
+ï¼ˆ4ï¼‰åœ¨ä¸‹åˆ5:55å°†IDEæŽ¥å£çš„CD-ROMå¸è½½ï¼ˆå‡è®¾ï¼šCD-ROMçš„è®¾å¤‡åä¸ºhdcï¼‰ï¼›
 
-£¨5£©ÔÚÔç³¿8:00Ç°¿ª»úºóÆô¶¯¡£
+ï¼ˆ5ï¼‰åœ¨æ—©æ™¨8:00å‰å¼€æœºåŽå¯åŠ¨ã€‚
 
 
 
-²Î¿¼´ð°¸:
+å‚è€ƒç­”æ¡ˆ:
 
-½â¾ö·½°¸£º
+è§£å†³æ–¹æ¡ˆï¼š
 
-£¨1£©ÓÃvi´´½¨±à¼­Ò»¸öÃûÎªprgxµÄcrontabÎÄ¼þ£»
+ï¼ˆ1ï¼‰ç”¨viåˆ›å»ºç¼–è¾‘ä¸€ä¸ªåä¸ºprgxçš„crontabæ–‡ä»¶ï¼›
 
-	prgxÎÄ¼þµÄÄÚÈÝ£º
+	prgxæ–‡ä»¶çš„å†…å®¹ï¼š
 
 50 16 * * * rm -r /abc/*
 
 
 
-£¨2£©¡¢0 8-18/1 * * * cut -f1 /xyz/x1 >;>; /backup/bak01.txt
+ï¼ˆ2ï¼‰ã€0 8-18/1 * * * cut -f1 /xyz/x1 >;>; /backup/bak01.txt
 
-£¨3£©¡¢50 17 * * * tar zcvf backup.tar.gz /data
+ï¼ˆ3ï¼‰ã€50 17 * * * tar zcvf backup.tar.gz /data
 
-£¨4£©¡¢55 17 * * * umount /dev/hdc
+ï¼ˆ4ï¼‰ã€55 17 * * * umount /dev/hdc
 
-£¨5£©¡¢ÓÉ³¬¼¶ÓÃ»§µÇÂ¼£¬ÓÃcrontabÖ´ÐÐ prgxÎÄ¼þÖÐµÄÄÚÈÝ£º
+ï¼ˆ5ï¼‰ã€ç”±è¶…çº§ç”¨æˆ·ç™»å½•ï¼Œç”¨crontabæ‰§è¡Œ prgxæ–‡ä»¶ä¸­çš„å†…å®¹ï¼š
 
-root@xxx:#crontab prgx£»ÔÚÃ¿ÈÕÔç³¿8:00Ö®Ç°¿ª»úºó¼´¿É×Ô¶¯Æô¶¯crontab¡£
+root@xxx:#crontab prgxï¼›åœ¨æ¯æ—¥æ—©æ™¨8:00ä¹‹å‰å¼€æœºåŽå³å¯è‡ªåŠ¨å¯åŠ¨crontabã€‚
 
-£­£­£­£­£­£­£­£­£­£­£­£­£­£­£­£­£­£­£­£­£­£­£­£­£­£­£­£­£­£­£­£­£­£­£­£­£­£­£­£­£­£­£­£­£­£­
+ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼
 
-8£®Éè¼ÆÒ»¸öshell³ÌÐò£¬ÔÚÃ¿ÔÂµÚÒ»Ìì±¸·Ý²¢Ñ¹Ëõ/etcÄ¿Â¼µÄËùÓÐÄÚÈÝ£¬´æ·ÅÔÚ/root/bakÄ¿Â¼Àï£¬ÇÒÎÄ¼þÃûÎªÈçÏÂÐÎÊ½yymmdd_etc£¬yyÎªÄê£¬mmÎªÔÂ£¬ddÎªÈÕ¡£Shell³ÌÐòfileback´æ·ÅÔÚ/usr/binÄ¿Â¼ÏÂ¡£
+8ï¼Žè®¾è®¡ä¸€ä¸ªshellç¨‹åºï¼Œåœ¨æ¯æœˆç¬¬ä¸€å¤©å¤‡ä»½å¹¶åŽ‹ç¼©/etcç›®å½•çš„æ‰€æœ‰å†…å®¹ï¼Œå­˜æ”¾åœ¨/root/bakç›®å½•é‡Œï¼Œä¸”æ–‡ä»¶åä¸ºå¦‚ä¸‹å½¢å¼yymmdd_etcï¼Œyyä¸ºå¹´ï¼Œmmä¸ºæœˆï¼Œddä¸ºæ—¥ã€‚Shellç¨‹åºfilebackå­˜æ”¾åœ¨/usr/binç›®å½•ä¸‹ã€‚
 
-²Î¿¼´ð°¸£º
+å‚è€ƒç­”æ¡ˆï¼š
 
-£¨1£©±àÐ´shell³ÌÐòfileback£º
+ï¼ˆ1ï¼‰ç¼–å†™shellç¨‹åºfilebackï¼š
 
 #!/bin/sh
 
@@ -5979,47 +4788,47 @@ tar zcvf $BACKETC /etc
 
 echo "fileback finished!"
 
-£¨2£©±àÐ´ÈÎÎñ¶¨Ê±Æ÷£º
+ï¼ˆ2ï¼‰ç¼–å†™ä»»åŠ¡å®šæ—¶å™¨ï¼š
 
 echo "0 0 1 * * /bin/sh /usr/bin/fileback" >; /root/etcbakcron
 
 crontab /root/etcbakcron
 
-»òÊ¹ÓÃcrontab -e ÃüÁîÌí¼Ó¶¨Ê±ÈÎÎñ£º
+æˆ–ä½¿ç”¨crontab -e å‘½ä»¤æ·»åŠ å®šæ—¶ä»»åŠ¡ï¼š
 
 0 1 * * * /bin/sh /usr/bin/fileback
 
 
 
-9£®ÓÐÒ»ÆÕÍ¨ÓÃ»§ÏëÔÚÃ¿ÖÜÈÕÁè³¿ÁãµãÁã·Ö¶¨ÆÚ±¸·Ý/user/backupµ½/tmpÄ¿Â¼ÏÂ£¬¸ÃÓÃ»§Ó¦ÈçºÎ×ö£¿
+9ï¼Žæœ‰ä¸€æ™®é€šç”¨æˆ·æƒ³åœ¨æ¯å‘¨æ—¥å‡Œæ™¨é›¶ç‚¹é›¶åˆ†å®šæœŸå¤‡ä»½/user/backupåˆ°/tmpç›®å½•ä¸‹ï¼Œè¯¥ç”¨æˆ·åº”å¦‚ä½•åšï¼Ÿ
 
-²Î¿¼´ð°¸£º£¨1£©µÚÒ»ÖÖ·½·¨£º
+å‚è€ƒç­”æ¡ˆï¼šï¼ˆ1ï¼‰ç¬¬ä¸€ç§æ–¹æ³•ï¼š
 
-ÓÃ»§Ó¦Ê¹ÓÃcrontab ¨Ce ÃüÁî´´½¨crontabÎÄ¼þ¡£¸ñÊ½ÈçÏÂ£º
+ç”¨æˆ·åº”ä½¿ç”¨crontab â€“e å‘½ä»¤åˆ›å»ºcrontabæ–‡ä»¶ã€‚æ ¼å¼å¦‚ä¸‹ï¼š
 
-0 0 * * sun cp ¨Cr /user/backup /tmp
+0 0 * * sun cp â€“r /user/backup /tmp
 
-£¨2£©µÚ¶þÖÖ·½·¨£º
+ï¼ˆ2ï¼‰ç¬¬äºŒç§æ–¹æ³•ï¼š
 
-ÓÃ»§ÏÈÔÚ×Ô¼ºÄ¿Â¼ÏÂÐÂ½¨ÎÄ¼þfile£¬ÎÄ¼þÄÚÈÝÈçÏÂ£º
+ç”¨æˆ·å…ˆåœ¨è‡ªå·±ç›®å½•ä¸‹æ–°å»ºæ–‡ä»¶fileï¼Œæ–‡ä»¶å†…å®¹å¦‚ä¸‹ï¼š
 
-0 * * sun cp ¨Cr /user/backup /tmp
+0 * * sun cp â€“r /user/backup /tmp
 
-È»ºóÖ´ÐÐ crontab file Ê¹ÉúÐ§¡£
+ç„¶åŽæ‰§è¡Œ crontab file ä½¿ç”Ÿæ•ˆã€‚
 
-#Îå¸ö³£ÓÃµÄLinux¼à¿Ø½Å±¾´úÂë
-
-
-
-Îª´ó¼ÒÌá¹©Îå¸ö³£ÓÃlinux¼à¿Ø½Å±¾(²é¿´Ö÷»úÍø¿¨Á÷Á¿¡¢ÏµÍ³×´¿ö¼à¿Ø¡¢¼à¿ØÖ÷»úµÄ´ÅÅÌ¿Õ¼ä,µ±Ê¹ÓÃ¿Õ¼ä³¬¹ý90£¥¾ÍÍ¨¹ý·¢mailÀ´·¢¾¯¸æ¡¢¼à¿ØCPUºÍÄÚ´æµÄÊ¹ÓÃÇé¿ö¡¢È«·½Î»¼à¿ØÖ÷»ú)£¬ÓÐÐèÒªµÄÅóÓÑ²»·Á¿´¿´Å¶
+#äº”ä¸ªå¸¸ç”¨çš„Linuxç›‘æŽ§è„šæœ¬ä»£ç 
 
 
+
+ä¸ºå¤§å®¶æä¾›äº”ä¸ªå¸¸ç”¨linuxç›‘æŽ§è„šæœ¬(æŸ¥çœ‹ä¸»æœºç½‘å¡æµé‡ã€ç³»ç»ŸçŠ¶å†µç›‘æŽ§ã€ç›‘æŽ§ä¸»æœºçš„ç£ç›˜ç©ºé—´,å½“ä½¿ç”¨ç©ºé—´è¶…è¿‡90ï¼…å°±é€šè¿‡å‘mailæ¥å‘è­¦å‘Šã€ç›‘æŽ§CPUå’Œå†…å­˜çš„ä½¿ç”¨æƒ…å†µã€å…¨æ–¹ä½ç›‘æŽ§ä¸»æœº)ï¼Œæœ‰éœ€è¦çš„æœ‹å‹ä¸å¦¨çœ‹çœ‹å“¦
 
 
 
 
 
-1¡¢²é¿´Ö÷»úÍø¿¨Á÷Á¿
+
+
+1ã€æŸ¥çœ‹ä¸»æœºç½‘å¡æµé‡
 
 
 
@@ -6055,7 +4864,7 @@ while : ; do
 
 done
 
-2¡¢ÏµÍ³×´¿ö¼à¿Ø
+2ã€ç³»ç»ŸçŠ¶å†µç›‘æŽ§
 
 
 
@@ -6085,7 +4894,7 @@ connect=`netstat -na | grep "219.238.148.30:80" | wc -l`
 
 echo "$time  $connect" >> ./temp/connect_count.txt
 
-3¡¢¼à¿ØÖ÷»úµÄ´ÅÅÌ¿Õ¼ä,µ±Ê¹ÓÃ¿Õ¼ä³¬¹ý90£¥¾ÍÍ¨¹ý·¢mailÀ´·¢¾¯¸æ
+3ã€ç›‘æŽ§ä¸»æœºçš„ç£ç›˜ç©ºé—´,å½“ä½¿ç”¨ç©ºé—´è¶…è¿‡90ï¼…å°±é€šè¿‡å‘mailæ¥å‘è­¦å‘Š
 
 
 
@@ -6103,7 +4912,7 @@ jbxue123@163.com
 
 fi
 
-4¡¢ ¼à¿ØCPUºÍÄÚ´æµÄÊ¹ÓÃÇé¿ö
+4ã€ ç›‘æŽ§CPUå’Œå†…å­˜çš„ä½¿ç”¨æƒ…å†µ
 
 
 
@@ -6131,7 +4940,7 @@ IDLE='echo  $VMOUT | sed -n '/[0-9]/p' | sed -n '2p' |gawk '{print $15}' '
 
 echo "$DATE,$TIME,$USERS,$LOAD,$FREE,$IDLE" >> $OUTFILE
 
-5¡¢È«·½Î»¼à¿ØÖ÷»ú
+5ã€å…¨æ–¹ä½ç›‘æŽ§ä¸»æœº
 
 
 
@@ -6191,29 +5000,29 @@ export TERM=linux
 
 #/usr/bin/sar -n EDEV ${DELAY} ${COUNT} > ${DIR}/net_edev_${DAT}.log 2>&1 &
 
-·ÅÔÚcrontabÀïÃ¿Ð¡Ê±×Ô¶¯Ö´ÐÐ£º
+æ”¾åœ¨crontabé‡Œæ¯å°æ—¶è‡ªåŠ¨æ‰§è¡Œï¼š
 
 0 * * * * /home/check_xu.sh
 
-ÕâÑù±ã»áÔÚ/home/oslog/host_yyyymmdd/hhÄ¿Â¼ÏÂÉú³É¸÷Ð¡Ê±cpu¡¢ÄÚ´æ¡¢ÍøÂç£¬IOµÄÍ³¼ÆÊý¾Ý¡£
+è¿™æ ·ä¾¿ä¼šåœ¨/home/oslog/host_yyyymmdd/hhç›®å½•ä¸‹ç”Ÿæˆå„å°æ—¶cpuã€å†…å­˜ã€ç½‘ç»œï¼ŒIOçš„ç»Ÿè®¡æ•°æ®ã€‚
 
-Èç¹ûÄ³¸öÊ±¼ä¶Î²úÉúÎÊÌâÁË£¬¾Í¿ÉÒÔÈ¥¿´¶ÔÓ¦µÄÈÕÖ¾ÐÅÏ¢£¬¿´¿´µ±Ê±µÄÖ÷»úÐÔÄÜÈçºÎ¡£
+å¦‚æžœæŸä¸ªæ—¶é—´æ®µäº§ç”Ÿé—®é¢˜äº†ï¼Œå°±å¯ä»¥åŽ»çœ‹å¯¹åº”çš„æ—¥å¿—ä¿¡æ¯ï¼Œçœ‹çœ‹å½“æ—¶çš„ä¸»æœºæ€§èƒ½å¦‚ä½•ã€‚
 
-# shell ¡°syntax error:unexpected end of file¡±
+# shell â€œsyntax error:unexpected end of fileâ€
 
-½ñÌìÔÚÐ´ShellÊ±£¬ÔËÐÐÊ±³öÏÖÁËÕâÑùµÄ´íÎó¡£
+ä»Šå¤©åœ¨å†™Shellæ—¶ï¼Œè¿è¡Œæ—¶å‡ºçŽ°äº†è¿™æ ·çš„é”™è¯¯ã€‚
 
 git-sync-tree.sh_temp: line 111: syntax error: unexpected end of file
 
-ÍøÉÏGoogleÁËÒ»ÏÂ£¬ÍøÉÏ¶¼ÊÇËµ´ÓwindowsÏÂ½Å±¾´«µ½LinuxÉÏ¿ÉÄÜ»á³öÏÖÕâÑùµÄÎÊÌâ£¬ÊÇÒòÎªWindowsºÍLinuxÏÂµÄÐÐÄ©½áÊø·ûÊÇ²»Ò»ÑùµÄ£¬Ôø¾­Ð´¹ýÒ»Æª²©¿Í£º»Ø³µÓë»»ÐÐµÄÇø±ð    µ±È»£¬ÎÒ½ñÌìÓöµ½µÄ²»ÊÇÕâÖÖÇé¿öµ¼ÖÂµÄ¡£
+ç½‘ä¸ŠGoogleäº†ä¸€ä¸‹ï¼Œç½‘ä¸Šéƒ½æ˜¯è¯´ä»Žwindowsä¸‹è„šæœ¬ä¼ åˆ°Linuxä¸Šå¯èƒ½ä¼šå‡ºçŽ°è¿™æ ·çš„é—®é¢˜ï¼Œæ˜¯å› ä¸ºWindowså’ŒLinuxä¸‹çš„è¡Œæœ«ç»“æŸç¬¦æ˜¯ä¸ä¸€æ ·çš„ï¼Œæ›¾ç»å†™è¿‡ä¸€ç¯‡åšå®¢ï¼šå›žè½¦ä¸Žæ¢è¡Œçš„åŒºåˆ«    å½“ç„¶ï¼Œæˆ‘ä»Šå¤©é‡åˆ°çš„ä¸æ˜¯è¿™ç§æƒ…å†µå¯¼è‡´çš„ã€‚
 
-1. Èç¹ûÈ·ÊµÊÇÕâÖÖÇé¿ö£¬ÔÚwindowsÏÂÐ´ºÃÁËShell µ«ÊÇÔÚlinuxÏÂÓÃ£º
+1. å¦‚æžœç¡®å®žæ˜¯è¿™ç§æƒ…å†µï¼Œåœ¨windowsä¸‹å†™å¥½äº†Shell ä½†æ˜¯åœ¨linuxä¸‹ç”¨ï¼š
 
-sh -n [filesName]  ¼ì²éÓï·¨×ÜÊÇ³öÒ»¸ö´íÎó syntax error:unexpected end of file
+sh -n [filesName]  æ£€æŸ¥è¯­æ³•æ€»æ˜¯å‡ºä¸€ä¸ªé”™è¯¯ syntax error:unexpected end of file
 
-Ô­ÒòÈçÏÂ:
+åŽŸå› å¦‚ä¸‹:
 
-dosÎÄ¼þ´«Êäµ½unixÏµÍ³Ê±,»áÔÚÃ¿ÐÐµÄ½áÎ²¶àÒ»¸ö^M,ÔÚviµÄÊ±ºò,µ±ÄãÓÃÈçÏÂÃüÁî£º
+dosæ–‡ä»¶ä¼ è¾“åˆ°unixç³»ç»Ÿæ—¶,ä¼šåœ¨æ¯è¡Œçš„ç»“å°¾å¤šä¸€ä¸ª^M,åœ¨viçš„æ—¶å€™,å½“ä½ ç”¨å¦‚ä¸‹å‘½ä»¤ï¼š
 
 vi dos.txt
 
@@ -6221,35 +5030,35 @@ vi dos.txt
 
 :w
 
-¾Í»á¿´µ½ÕâÐ©´æÔÚÓÚÃ¿ÐÐ½áÎ²µÄ^M·ûºÅ£¬Õâ¸ö¾ÍÊÇ²úÉúsyntax error:unexpected end of fileµÄÔ­Òò
+å°±ä¼šçœ‹åˆ°è¿™äº›å­˜åœ¨äºŽæ¯è¡Œç»“å°¾çš„^Mç¬¦å·ï¼Œè¿™ä¸ªå°±æ˜¯äº§ç”Ÿsyntax error:unexpected end of fileçš„åŽŸå› 
 
-½â¾ö·½°¸£º
+è§£å†³æ–¹æ¡ˆï¼š
 
-ÔÚviÏÂ°ÑÕâÐ©^M¶¼É¾³ýºó¼´¿É¡£
+åœ¨viä¸‹æŠŠè¿™äº›^Méƒ½åˆ é™¤åŽå³å¯ã€‚
 
-Ò²¿ÉÒÔÊ¹ÓÃLinuxÏÂµÄ¹¤¾ß£ºdos2unixÒ²¿ÉÇáËÉ½«Ò»¸öwindowsÏÂµÄÎÄ±¾ÎÄ¼þ×ª»¯ÎªUnix¼æÈÝµÄ¸ñÊ½¡£
+ä¹Ÿå¯ä»¥ä½¿ç”¨Linuxä¸‹çš„å·¥å…·ï¼šdos2unixä¹Ÿå¯è½»æ¾å°†ä¸€ä¸ªwindowsä¸‹çš„æ–‡æœ¬æ–‡ä»¶è½¬åŒ–ä¸ºUnixå…¼å®¹çš„æ ¼å¼ã€‚
 
-2.ÎÒÓöµ½µÄ²»ÊÇÕâÑùÓÉÓÚwindowsºÍLinuxÏà»¥¿½±´ÎÄ¼þ¶øµ¼ÖÂµÄ¡£Õâ¸öÊÇÓï·¨´íÎóÂï£¬ÓÉÓÚÎÒÕâ¸öshell½Å±¾ÓÐµã´ó£¬¿´ÁËÒ»Õó×ÓÒ²Ã»·¢ÏÖÊÇÄÇ¾ä»°Óï·¨´íÎóÁË£¬ËùÒÔ²»µÃ²»ÓÃ¶þ·Ö·¨À´²éÕÒÔ­Òò£¬²»¶Ï×¢ÊÍÒ»Ð©´úÂë£¬È»ºóÓÃsh -n test.shÀ´×öÓï·¨¼ì²é£¬Ö±µ½×îºóÕÒµ½ÄÇÒ»¶Î»òÕßÄÄÒ»ÐÐ´úÂëÒýÆðµÄ´íÎó¡£ÎÒ·¢ÏÖÊÇÏÂÃæÕâÐÐ´úÂëÒýÆðµÄ£¬ÄãÄÜ¿´³öÆäÖÐµÄÎÊÌâÂð£¿^_^
+2.æˆ‘é‡åˆ°çš„ä¸æ˜¯è¿™æ ·ç”±äºŽwindowså’ŒLinuxç›¸äº’æ‹·è´æ–‡ä»¶è€Œå¯¼è‡´çš„ã€‚è¿™ä¸ªæ˜¯è¯­æ³•é”™è¯¯å˜›ï¼Œç”±äºŽæˆ‘è¿™ä¸ªshellè„šæœ¬æœ‰ç‚¹å¤§ï¼Œçœ‹äº†ä¸€é˜µå­ä¹Ÿæ²¡å‘çŽ°æ˜¯é‚£å¥è¯è¯­æ³•é”™è¯¯äº†ï¼Œæ‰€ä»¥ä¸å¾—ä¸ç”¨äºŒåˆ†æ³•æ¥æŸ¥æ‰¾åŽŸå› ï¼Œä¸æ–­æ³¨é‡Šä¸€äº›ä»£ç ï¼Œç„¶åŽç”¨sh -n test.shæ¥åšè¯­æ³•æ£€æŸ¥ï¼Œç›´åˆ°æœ€åŽæ‰¾åˆ°é‚£ä¸€æ®µæˆ–è€…å“ªä¸€è¡Œä»£ç å¼•èµ·çš„é”™è¯¯ã€‚æˆ‘å‘çŽ°æ˜¯ä¸‹é¢è¿™è¡Œä»£ç å¼•èµ·çš„ï¼Œä½ èƒ½çœ‹å‡ºå…¶ä¸­çš„é—®é¢˜å—ï¼Ÿ^_^
 
 [ -d /home/repo/${SPPATH} ] || { mkdir -p /home/repo/${SPPATH}; cd /home/repo/${SPPATH}; git init >> $GITLOG 2>&1 }
 
-àÅ£¬ÆäÊµÎÒÓÃ»¨À¨ºÅ{}ÊÇÏë°Ñ¼¸¸öÃüÁî×éºÏÆðÀ´ÔÚµ±Ç°shellÖÐÖ´ÐÐ£¬È»ºóÎÒ·¸ÁËÒ»¸öÓï·¨´íÎó£¬ÔÚ×îºóµÄÒ»¸öÃüÁîºóÃ»ÓÐ¼Ó·ÖºÅ£¨;£©¡£½«ÕâÐÐ¸ÄÎªÈçÏÂ¼´¿É£¨Ìí¼ÓÒ»¸ö×îºóµÄ·ÖºÅ£©£º
+å—¯ï¼Œå…¶å®žæˆ‘ç”¨èŠ±æ‹¬å·{}æ˜¯æƒ³æŠŠå‡ ä¸ªå‘½ä»¤ç»„åˆèµ·æ¥åœ¨å½“å‰shellä¸­æ‰§è¡Œï¼Œç„¶åŽæˆ‘çŠ¯äº†ä¸€ä¸ªè¯­æ³•é”™è¯¯ï¼Œåœ¨æœ€åŽçš„ä¸€ä¸ªå‘½ä»¤åŽæ²¡æœ‰åŠ åˆ†å·ï¼ˆ;ï¼‰ã€‚å°†è¿™è¡Œæ”¹ä¸ºå¦‚ä¸‹å³å¯ï¼ˆæ·»åŠ ä¸€ä¸ªæœ€åŽçš„åˆ†å·ï¼‰ï¼š
 
 [ -d /home/repo/${SPPATH} ] || { mkdir -p /home/repo/${SPPATH}; cd /home/repo/${SPPATH}; git init >> $GITLOG 2>&1; }
 
-¹ØÓÚµ±Ç°shellÖÐÖ´ÐÐÒ»×éÃüÁî£¬ÌØ±ðÒª×¢ÒâµÄÊÇ£¬ÔÚ¡±{¡°µÄÓÒ±ß ºÍ¡±}¡°µÄ×ó±ß£¬ÖÁÉÙÒª¼ä¸ôÒ»¸öÒÔÉÏµÄ¿Õ¸ñ£¬¶øÇÒÃ¿¸öÃüÁî¶¼ÒªÒÔ·ÖºÅ(;)×÷Îª½áÎ²¡£
+å…³äºŽå½“å‰shellä¸­æ‰§è¡Œä¸€ç»„å‘½ä»¤ï¼Œç‰¹åˆ«è¦æ³¨æ„çš„æ˜¯ï¼Œåœ¨â€{â€œçš„å³è¾¹ å’Œâ€}â€œçš„å·¦è¾¹ï¼Œè‡³å°‘è¦é—´éš”ä¸€ä¸ªä»¥ä¸Šçš„ç©ºæ ¼ï¼Œè€Œä¸”æ¯ä¸ªå‘½ä»¤éƒ½è¦ä»¥åˆ†å·(;)ä½œä¸ºç»“å°¾ã€‚
 
-#ÔõÑù¸ø±äÁ¿´«µÝÖ´ÐÐÃüÁî½á¹û
+#æ€Žæ ·ç»™å˜é‡ä¼ é€’æ‰§è¡Œå‘½ä»¤ç»“æžœ
 
-ÔÚlinux shell½Å±¾Àï£¬ÉèÖÃÒ»¸ö±äÁ¿£¬µ«ÊÇ±äÁ¿ÊÇÒ»¸öÃüÁî£¬ÐèÒª½«Ö´ÐÐ½á¹û·Åµ½±äÁ¿Àï£¬²¢Êä³ö£¬ÀýÈç£ºip='ifconfig eth0'  echo $ip£¬ÔõÑù¿ÉÒÔ½ÐÒ³ÃæÏÔÊ¾µÄÊÇeth0µÄÍøÂç×´¿ö£¿¾ÍÊÇifconfig eth0µÄ½á¹û£¿
+åœ¨linux shellè„šæœ¬é‡Œï¼Œè®¾ç½®ä¸€ä¸ªå˜é‡ï¼Œä½†æ˜¯å˜é‡æ˜¯ä¸€ä¸ªå‘½ä»¤ï¼Œéœ€è¦å°†æ‰§è¡Œç»“æžœæ”¾åˆ°å˜é‡é‡Œï¼Œå¹¶è¾“å‡ºï¼Œä¾‹å¦‚ï¼šip='ifconfig eth0'  echo $ipï¼Œæ€Žæ ·å¯ä»¥å«é¡µé¢æ˜¾ç¤ºçš„æ˜¯eth0çš„ç½‘ç»œçŠ¶å†µï¼Ÿå°±æ˜¯ifconfig eth0çš„ç»“æžœï¼Ÿ
 
 ip=`ifconfig eth0`
 
 echo $ip
 
-Ê¹ÓÃ·´ÒýºÅ¿ÉÒÔ°ÑÒ»¸öÃüÁîµÄÊä³ö²åµ½ÁíÒ»¸öÃüÁîÖÐÈ¥¡£ÏàÍ¬¹¦ÄÜµÄÐ´·¨»¹ÓÐ$()£¬¹¦ÄÜÍ¬` ` Ð§¹ûÊÇÒ»ÑùµÄ¡£²»¹ýÄ³Ð©unixÏµÍ³²»Ö§³Ö$()ÕâÖÖÐ´·¨¡£µ«ÊÇ` `ÔÚÈÎºÎunix»òlinuxÏµÍ³ÏÂ¶¼¿ÉÒÔÊ¹ÓÃ¡£
+ä½¿ç”¨åå¼•å·å¯ä»¥æŠŠä¸€ä¸ªå‘½ä»¤çš„è¾“å‡ºæ’åˆ°å¦ä¸€ä¸ªå‘½ä»¤ä¸­åŽ»ã€‚ç›¸åŒåŠŸèƒ½çš„å†™æ³•è¿˜æœ‰$()ï¼ŒåŠŸèƒ½åŒ` ` æ•ˆæžœæ˜¯ä¸€æ ·çš„ã€‚ä¸è¿‡æŸäº›unixç³»ç»Ÿä¸æ”¯æŒ$()è¿™ç§å†™æ³•ã€‚ä½†æ˜¯` `åœ¨ä»»ä½•unixæˆ–linuxç³»ç»Ÿä¸‹éƒ½å¯ä»¥ä½¿ç”¨ã€‚
 
-# shell ÅÐ¶Ï×Ö·û´®ÊÇ·ñ´æÔÚ°üº¬¹ØÏµ
+# shell åˆ¤æ–­å­—ç¬¦ä¸²æ˜¯å¦å­˜åœ¨åŒ…å«å…³ç³»
 
 #! /bin/bash
 
@@ -6261,7 +5070,7 @@ var2="he"
 
 
 
-#·½·¨1
+#æ–¹æ³•1
 
 if [ ${var1:0:2} = $var2 ]
 
@@ -6273,7 +5082,7 @@ fi
 
 
 
-#·½·¨2
+#æ–¹æ³•2
 
 echo "$var1" |grep -q "$var2"
 
@@ -6287,33 +5096,33 @@ fi
 
 
 
-#·½·¨3
+#æ–¹æ³•3
 
 echo "$var1" |grep -q "$var2" && echo "include" ||echo "not"
 
 
 
-#·½·¨4
+#æ–¹æ³•4
 
 [[ "${var1/$var2/}" != "$var2" ]] && echo "include" || echo "not"
 
 
 
-ÆäËû·½·¨£º
+å…¶ä»–æ–¹æ³•ï¼š
 
 
 
-expr»òawkµÄindexº¯Êý
+expræˆ–awkçš„indexå‡½æ•°
 
-${var#...}                  
+${var#...}
 
 ${var%...}
 
 ${var/.../...}
 
-#²é¿´linux²Ù×÷ÏµÍ³°æ±¾
+#æŸ¥çœ‹linuxæ“ä½œç³»ç»Ÿç‰ˆæœ¬
 
-##²é¿´ÄÚºË°æ±¾ÃüÁî
+##æŸ¥çœ‹å†…æ ¸ç‰ˆæœ¬å‘½ä»¤
 
 jiangxin@Ubuntu:~$ cat /proc/version
 
@@ -6327,7 +5136,7 @@ jiangxin@Ubuntu:~$ uname -a
 
 Linux Ubuntu 3.13.0-30-generic #54-Ubuntu SMP Mon Jun 9 22:45:01 UTC 2014 x86_64 x86_64 x86_64 GNU/Linux
 
-##²é¿´linux°æ±¾
+##æŸ¥çœ‹linuxç‰ˆæœ¬
 
 jiangxin@Ubuntu:~$ lsb_release -a
 
@@ -6341,7 +5150,7 @@ Release:	14.04
 
 Codename:	trusty
 
-jiangxin@Ubuntu:~$ cat /etc/debian_version 
+jiangxin@Ubuntu:~$ cat /etc/debian_version
 
 jessie/sid
 
@@ -6353,11 +5162,11 @@ jiangxin@Ubuntu:~$ cat /etc/issue
 
 Ubuntu 14.04 LTS \n \l
 
-jiangxin@Ubuntu:~$ file /bin/bash 
+jiangxin@Ubuntu:~$ file /bin/bash
 
 /bin/bash: ELF 64-bit LSB  executable, x86-64, version 1 (SYSV), dynamically linked (uses shared libs), for GNU/Linux 2.6.24, BuildID[sha1]=796da7aa73903b1e5608a8ff8433669b7e00e980, stripped
 
-jiangxin@Ubuntu:~$ file /bin/cat 
+jiangxin@Ubuntu:~$ file /bin/cat
 
 /bin/cat: ELF 64-bit LSB  executable, x86-64, version 1 (SYSV), dynamically linked (uses shared libs), for GNU/Linux 2.6.24, BuildID[sha1]=950f866ca2bc042f9ca643e1af0fde0e0c029dc3, stripped
 
@@ -6369,7 +5178,7 @@ Red Hat Enterprise Linux AS release 4 (Nahant Update 4)
 
 redhat-release-5Server-5.6.0.3
 
-×¢:ÕâÖÖ·½Ê½ÏÂ¿É¿´µ½Ò»¸öËùÎ½µÄreleaseºÅ£¬±ÈÈçÉÏ±ßµÄÀý×ÓÊÇ5£¬Õâ¸öreleaseºÅºÍÊµ¼ÊµÄ°æ±¾Ö®¼ä´æÔÚÒ»¶¨µÄ¶ÔÓ¦¹ØÏµ£¬ÈçÏÂ£º
+æ³¨:è¿™ç§æ–¹å¼ä¸‹å¯çœ‹åˆ°ä¸€ä¸ªæ‰€è°“çš„releaseå·ï¼Œæ¯”å¦‚ä¸Šè¾¹çš„ä¾‹å­æ˜¯5ï¼Œè¿™ä¸ªreleaseå·å’Œå®žé™…çš„ç‰ˆæœ¬ä¹‹é—´å­˜åœ¨ä¸€å®šçš„å¯¹åº”å…³ç³»ï¼Œå¦‚ä¸‹ï¼š
 
 redhat-release-3AS-1 -> Redhat Enterprise Linux AS 3
 
@@ -6389,21 +5198,21 @@ jiangxin@Ubuntu:~$ cat /etc/debian_version //Only for Debian
 
 jessie/sid
 
-# CÓïÑÔµ÷ÊÔÊÖ¶Î:Ëø¶¨´íÎóµÄÊµÏÖ·½·¨
+# Cè¯­è¨€è°ƒè¯•æ‰‹æ®µ:é”å®šé”™è¯¯çš„å®žçŽ°æ–¹æ³•
 
-ÔÚÏîÄ¿¿ª·¢¹¤³ÌÖÐ£¬Èç¹ûÄÜÈ·¶¨ÄÄ¸öÎÄ¼þÏÂµÄÄÄ¸öº¯ÊýÏÂµÄÄÄÐÐ³ö´í--¼´Ëø¶¨´íÎó£¬ÄÇ¸Ã¶àºÃ°¡£¬¸ÃÎÄÕÂ¾ÍÊÇÎª´Ë¶ø×÷µÄ¡£Ê×ÏÈÀ´ÁË½âÒ»ÏÂÎÄ¼þÄ¬ÈÏµÄÊä³öÐÅÏ¢µÄº¯Êý°É£º
+åœ¨é¡¹ç›®å¼€å‘å·¥ç¨‹ä¸­ï¼Œå¦‚æžœèƒ½ç¡®å®šå“ªä¸ªæ–‡ä»¶ä¸‹çš„å“ªä¸ªå‡½æ•°ä¸‹çš„å“ªè¡Œå‡ºé”™--å³é”å®šé”™è¯¯ï¼Œé‚£è¯¥å¤šå¥½å•Šï¼Œè¯¥æ–‡ç« å°±æ˜¯ä¸ºæ­¤è€Œä½œçš„ã€‚é¦–å…ˆæ¥äº†è§£ä¸€ä¸‹æ–‡ä»¶é»˜è®¤çš„è¾“å‡ºä¿¡æ¯çš„å‡½æ•°å§ï¼š
 
 
 
-printf("line : %d\n", __LINE__);                   //µ±Ç°ÐÐÊý
+printf("line : %d\n", __LINE__);                   //å½“å‰è¡Œæ•°
 
-printf("filename : %s\n", __FILE__);             //µ±Ç°ÎÄ¼þÃû
+printf("filename : %s\n", __FILE__);             //å½“å‰æ–‡ä»¶å
 
-printf("function : %s\n", __FUNCTION__);  //µ±Ç°º¯Êý
+printf("function : %s\n", __FUNCTION__);  //å½“å‰å‡½æ•°
 
-printf("time : %s\n", __TIME__);                  //µ±Ç°Ê±¼ä
+printf("time : %s\n", __TIME__);                  //å½“å‰æ—¶é—´
 
-printf ("date : %s\n",  __DATE__);              //µ±Ç°ÈÕÆÚ
+printf ("date : %s\n",  __DATE__);              //å½“å‰æ—¥æœŸ
 
 
 
@@ -6419,9 +5228,9 @@ date : Oct 13 2012
 
 
 
-ÀíÂÛÒÑ×ã£¬ÄÇ¾ÍÀ´¿´¿´ÈçºÎËø¶¨´íÎó°É£º
+ç†è®ºå·²è¶³ï¼Œé‚£å°±æ¥çœ‹çœ‹å¦‚ä½•é”å®šé”™è¯¯å§ï¼š
 
-Ò»¡¢Ô´ÎÄ¼þ£º
+ä¸€ã€æºæ–‡ä»¶ï¼š
 
 
 
@@ -6467,7 +5276,7 @@ int main(void)
 
 
 
-¶þ¡¢Êä³ö£º
+äºŒã€è¾“å‡ºï¼š
 
 
 
@@ -6483,15 +5292,15 @@ int main(void)
 
 a.out: erroutput.c:19: main: Assertion `((void *)0) != p' failed.
 
-ÒÑ·ÅÆú
+å·²æ”¾å¼ƒ
 
 
 
-TI´¦Àí£º
+TIå¤„ç†ï¼š
 
 #ifdef DEBUG
 
-    #define DBG(fmt, args...)  printf("Debug " fmt, ##args)// ##ÔËËã·ûÓÃÓÚ°Ñ²ÎÊýÁ¬½Óµ½Ò»Æð¡£Ô¤´¦Àí³ÌÐò°Ñ³öÏÖÔÚ##Á½²àµÄ²ÎÊýºÏ²¢³ÉÒ»¸ö·ûºÅ¡£
+    #define DBG(fmt, args...)  printf("Debug " fmt, ##args)// ##è¿ç®—ç¬¦ç”¨äºŽæŠŠå‚æ•°è¿žæŽ¥åˆ°ä¸€èµ·ã€‚é¢„å¤„ç†ç¨‹åºæŠŠå‡ºçŽ°åœ¨##ä¸¤ä¾§çš„å‚æ•°åˆå¹¶æˆä¸€ä¸ªç¬¦å·ã€‚
 
 #else
 
@@ -6537,9 +5346,9 @@ Error xxxx
 
 #define ERR(fmt, args...) fprintf(stderr,"Encode Error: " fmt, ## args)
 
-#½â¾öubuntuÏÂÕÒ²»µ½libgtk-x11-2.0.so.0
+#è§£å†³ubuntuä¸‹æ‰¾ä¸åˆ°libgtk-x11-2.0.so.0
 
-The following error came up when I tried to run Adobe Acrobat Reader on ubuntu 12.10 
+The following error came up when I tried to run Adobe Acrobat Reader on ubuntu 12.10
 
 error while loading shared libraries: libgtk-x11-2.0.so.0: cannot open shared object file: No such file or directory
 
@@ -6549,133 +5358,133 @@ $ sudo apt-get install ia32-libs-gtk
 
 Now run the application again and the error should go away.
 
-²¹³ä£º
+è¡¥å……ï¼š
 
-Èç¹ûÊÇubuntu 14.04£¬ÔòÇëÏÈÖ´ÐÐ£º
+å¦‚æžœæ˜¯ubuntu 14.04ï¼Œåˆ™è¯·å…ˆæ‰§è¡Œï¼š
 
-·½·¨1£º
+æ–¹æ³•1ï¼š
 
 sudo gedit /etc/apt/sources.list
 
-È»ºóÔÚ×îºóÌí¼ÓÉÏ£º deb http://archive.ubuntu.com/ubuntu/ raring main restricted universe multiverse
+ç„¶åŽåœ¨æœ€åŽæ·»åŠ ä¸Šï¼š deb http://archive.ubuntu.com/ubuntu/ raring main restricted universe multiverse
 
-·½·¨2£º 
+æ–¹æ³•2ï¼š
 
-echo "deb http://archive.ubuntu.com/ubuntu/ raring main restricted universe multiverse"  >>  sudo gedit /etc/apt/sources.list 
+echo "deb http://archive.ubuntu.com/ubuntu/ raring main restricted universe multiverse"  >>  sudo gedit /etc/apt/sources.list
 
-Ìí¼ÓÍêÔ´Ö®ºó
+æ·»åŠ å®Œæºä¹‹åŽ
 
 sudo apt-get update
 
 sudo apt-get install ia32-libs ia32-libs-gtk
 
-ÕâÑù¾ÍÓ¦¸Ã¿ÉÒÔÁË¡£
+è¿™æ ·å°±åº”è¯¥å¯ä»¥äº†ã€‚
 
-# debian hostsÎÄ¼þÖÐµÄ 127.0.1.1 Ö÷»úµØÖ·
+# debian hostsæ–‡ä»¶ä¸­çš„ 127.0.1.1 ä¸»æœºåœ°å€
 
-ÓÐÊ±ºò/etc/hostsÎÄ¼þ»á¿´µ½127.0.1.1Õâ¸öµØÖ·,ÕâÊÇÊ²Ã´ÄØ?
+æœ‰æ—¶å€™/etc/hostsæ–‡ä»¶ä¼šçœ‹åˆ°127.0.1.1è¿™ä¸ªåœ°å€,è¿™æ˜¯ä»€ä¹ˆå‘¢?
 
-127.0.0.1Õâ¸öloopbackµØÖ·ºÜ³£¼û£¬¾ÍÊÇ±¾µØ½Ó¿ÚµÄ»ØÂ·/»Ø»·µØÖ·¡£µ«ÓÐÊ±ºò/etc/hostsÎÄ¼þÖÐ»¹»á³öÏÖ127.0.1.1,ÕâÓÖÊÇÊ²Ã´µØÖ·ÄØ£¿ÕâÒ²ÊÇ¸ö±¾µØ»ØÂ·/»Ø»·µØÖ·¡£
+127.0.0.1è¿™ä¸ªloopbackåœ°å€å¾ˆå¸¸è§ï¼Œå°±æ˜¯æœ¬åœ°æŽ¥å£çš„å›žè·¯/å›žçŽ¯åœ°å€ã€‚ä½†æœ‰æ—¶å€™/etc/hostsæ–‡ä»¶ä¸­è¿˜ä¼šå‡ºçŽ°127.0.1.1,è¿™åˆæ˜¯ä»€ä¹ˆåœ°å€å‘¢ï¼Ÿè¿™ä¹Ÿæ˜¯ä¸ªæœ¬åœ°å›žè·¯/å›žçŽ¯åœ°å€ã€‚
 
-³öÏÖÕâ¸öµØÖ·µÄÔ­ÒòÊÇÒòÎªÓÐÐ©Ó¦ÓÃ³ÌÐòÐèÒª¹æ·¶µÄÈ«ÏÞ¶¨ÓòÃûFQDN(Fully Qualified Domain Name)£¬FQDN²»Ö»ÐèÒªÖ÷»úÃû»¹ÐèÒªÖ÷»úÓòÃû£¬Æä±í´ïÐÎÊ½Îªhostname.domainname
+å‡ºçŽ°è¿™ä¸ªåœ°å€çš„åŽŸå› æ˜¯å› ä¸ºæœ‰äº›åº”ç”¨ç¨‹åºéœ€è¦è§„èŒƒçš„å…¨é™å®šåŸŸåFQDN(Fully Qualified Domain Name)ï¼ŒFQDNä¸åªéœ€è¦ä¸»æœºåè¿˜éœ€è¦ä¸»æœºåŸŸåï¼Œå…¶è¡¨è¾¾å½¢å¼ä¸ºhostname.domainname
 
-Èç¹ûÄãµÄÖ÷»úÓÐÒ»¸ö¾²Ì¬IPµØÖ·£¬ÔòFQDNÃû×Ö½âÎöµ½Õâ¸ö¾²Ì¬µØÖ·£¬·ñÔò½âÎöµ½127.0.1.1Õâ¸ö±¾µØ»ØÂ·µØÖ·¡£ËùÒÔÒ»°ãÇé¿öÏÂ²»»á¿´µ½127.0.1.1Õâ¸öµØÖ·¡£
+å¦‚æžœä½ çš„ä¸»æœºæœ‰ä¸€ä¸ªé™æ€IPåœ°å€ï¼Œåˆ™FQDNåå­—è§£æžåˆ°è¿™ä¸ªé™æ€åœ°å€ï¼Œå¦åˆ™è§£æžåˆ°127.0.1.1è¿™ä¸ªæœ¬åœ°å›žè·¯åœ°å€ã€‚æ‰€ä»¥ä¸€èˆ¬æƒ…å†µä¸‹ä¸ä¼šçœ‹åˆ°127.0.1.1è¿™ä¸ªåœ°å€ã€‚
 
-127.0.0.1Ò»°ãÖ»¶ÔÓ¦hostname£¬ÕâÒ²ÊÇ¶þÕßµÄÖ÷ÒªÇø±ð£¬ÈçÏÂ
+127.0.0.1ä¸€èˆ¬åªå¯¹åº”hostnameï¼Œè¿™ä¹Ÿæ˜¯äºŒè€…çš„ä¸»è¦åŒºåˆ«ï¼Œå¦‚ä¸‹
 
 127.0.0.1 hostname
 
 127.0.1.1 hostname.domainname
 
-µ±È»²¢Ò»¶¨·ÇÒªÓÃ127.0.1.1Õâ¸öIP,RFC¹æ¶¨µÄ127.0.0.0/8Õâ¸öIP¶ÎÄÚµÄÈÎÒâIP¶¼¿ÉÒÔ£¬Ö»ÒªÃ»ÓÐ³åÍ»£¬debianÑ¡ÔñÁË127.0.1.1
+å½“ç„¶å¹¶ä¸€å®šéžè¦ç”¨127.0.1.1è¿™ä¸ªIP,RFCè§„å®šçš„127.0.0.0/8è¿™ä¸ªIPæ®µå†…çš„ä»»æ„IPéƒ½å¯ä»¥ï¼Œåªè¦æ²¡æœ‰å†²çªï¼Œdebiané€‰æ‹©äº†127.0.1.1
 
-²é¿´Ö÷»úÃû
+æŸ¥çœ‹ä¸»æœºå
 
 # hostname
 
  hostname
 
-²é¿´FQDNÃû×Ö
+æŸ¥çœ‹FQDNåå­—
 
 # hostname --fqdn
 
  hostname.domainname
 
-# LinuxÏÂ·Ö¸îºÏ²¢ÎÄ 
+# Linuxä¸‹åˆ†å‰²åˆå¹¶æ–‡
 
-ÇÐ¸îºÏ²¢ÎÄ¼þÔÚlinuxÏÂÓÃsplitºÍcat¾Í¿ÉÒÔÍê³É¡£ÏÂÃæ¾ÙÐ©ÊµÀý½øÐÐËµÃ÷¡£
+åˆ‡å‰²åˆå¹¶æ–‡ä»¶åœ¨linuxä¸‹ç”¨splitå’Œcatå°±å¯ä»¥å®Œæˆã€‚ä¸‹é¢ä¸¾äº›å®žä¾‹è¿›è¡Œè¯´æ˜Žã€‚
 
-1.ÎÄ¼þÇÐ¸î
+1.æ–‡ä»¶åˆ‡å‰²
 
-ÎÄ¼þÇÐ¸îÄ£Ê½·ÖÎªÁ½ÖÖ£ºÎÄ±¾ÎÄ¼þ¡¢¶þ½øÖÆÄ£Ê½¡£
+æ–‡ä»¶åˆ‡å‰²æ¨¡å¼åˆ†ä¸ºä¸¤ç§ï¼šæ–‡æœ¬æ–‡ä»¶ã€äºŒè¿›åˆ¶æ¨¡å¼ã€‚
 
-1.1ÎÄ±¾Ä£Ê½
+1.1æ–‡æœ¬æ¨¡å¼
 
-ÎÄ±¾Ä£Ê½Ö»ÊÊÓÃÓÚÎÄ±¾ÎÄ¼þ£¬ÓÃÕâÖÖÄ£Ê½ÇÐ¸îºóµÄÃ¿¸öÎÄ¼þ¶¼ÊÇ¿É¶ÁµÄ¡£ÎÄ±¾Ä£Ê½ÓÖ·ÖÎªÁ½ÖÖ£º
+æ–‡æœ¬æ¨¡å¼åªé€‚ç”¨äºŽæ–‡æœ¬æ–‡ä»¶ï¼Œç”¨è¿™ç§æ¨¡å¼åˆ‡å‰²åŽçš„æ¯ä¸ªæ–‡ä»¶éƒ½æ˜¯å¯è¯»çš„ã€‚æ–‡æœ¬æ¨¡å¼åˆåˆ†ä¸ºä¸¤ç§ï¼š
 
-°´×î´óÎÄ¼þ´óÐ¡ÇÐ¸î£»
+æŒ‰æœ€å¤§æ–‡ä»¶å¤§å°åˆ‡å‰²ï¼›
 
-°´ÎÄ±¾ÐÐÊýÇÐ¸î¡£
+æŒ‰æ–‡æœ¬è¡Œæ•°åˆ‡å‰²ã€‚
 
-1.1.1×î´óÎÄ¼þ´óÐ¡ÇÐ¸î
+1.1.1æœ€å¤§æ–‡ä»¶å¤§å°åˆ‡å‰²
 
 split -C 5k duanxin split
 
-½«ÎÄ±¾ÎÄ¼þduanxin°´Ã¿¿é×î´ó5kµÄ´óÐ¡½øÐÐÇÐ¸î£¬²»´òËéÐÐ¡£Êä³öÎÄ¼þÃûÀàËÆsplitaa, splitab¡­¡­
+å°†æ–‡æœ¬æ–‡ä»¶duanxinæŒ‰æ¯å—æœ€å¤§5kçš„å¤§å°è¿›è¡Œåˆ‡å‰²ï¼Œä¸æ‰“ç¢Žè¡Œã€‚è¾“å‡ºæ–‡ä»¶åç±»ä¼¼splitaa, splitabâ€¦â€¦
 
 split -b 5k duanxin split
 
-Ã¿¸ö·Ö¿é£¨µ±È»£¬×îºóÒ»¸ö²»±£Ö¤£©´óÐ¡¶¼ÊÇ5k£¬¿ÉÄÜ»á´òËéÐÐ¡£
+æ¯ä¸ªåˆ†å—ï¼ˆå½“ç„¶ï¼Œæœ€åŽä¸€ä¸ªä¸ä¿è¯ï¼‰å¤§å°éƒ½æ˜¯5kï¼Œå¯èƒ½ä¼šæ‰“ç¢Žè¡Œã€‚
 
-1.1.2 °´ÎÄ±¾ÐÐÊýÇÐ¸î
+1.1.2 æŒ‰æ–‡æœ¬è¡Œæ•°åˆ‡å‰²
 
 split -l 100 duanxin split
 
-Ã¿¸ö·Ö¿é100ÐÐ£¬²»¿¼ÂÇ´óÐ¡¡£ÈÕÖ¾·ÖÎöÊ±Ó¦¸ÃÓÐÓÃ¡£
+æ¯ä¸ªåˆ†å—100è¡Œï¼Œä¸è€ƒè™‘å¤§å°ã€‚æ—¥å¿—åˆ†æžæ—¶åº”è¯¥æœ‰ç”¨ã€‚
 
-1.2 ¶þ½øÖÆÄ£Ê½
+1.2 äºŒè¿›åˆ¶æ¨¡å¼
 
 split -b 5k duanxin split
 
-Ã¿¸ö·Ö¿é£¨µ±È»£¬×îºóÒ»¸ö²»±£Ö¤£©´óÐ¡¶¼ÊÇ5k£¬»ù±¾²»¿É¶Á¡£ÈÎºÎÀàÐÍÎÄ¼þ¶¼¿ÉÒÔÓÃÕâÖÖÇÐ¸îÄ£Ê½¡£
+æ¯ä¸ªåˆ†å—ï¼ˆå½“ç„¶ï¼Œæœ€åŽä¸€ä¸ªä¸ä¿è¯ï¼‰å¤§å°éƒ½æ˜¯5kï¼ŒåŸºæœ¬ä¸å¯è¯»ã€‚ä»»ä½•ç±»åž‹æ–‡ä»¶éƒ½å¯ä»¥ç”¨è¿™ç§åˆ‡å‰²æ¨¡å¼ã€‚
 
-2.ÎÄ¼þºÏ²¢
+2.æ–‡ä»¶åˆå¹¶
 
 cat split* >newduanxin
 
-²»¹ÜÓÃÊ²Ã´·½Ê½ÇÐ¸î£¬ºÏ²¢·½·¨²»±ä¡£
+ä¸ç®¡ç”¨ä»€ä¹ˆæ–¹å¼åˆ‡å‰²ï¼Œåˆå¹¶æ–¹æ³•ä¸å˜ã€‚
 
-3.ÆäËü
+3.å…¶å®ƒ
 
-split¿ÉÒÔÓÃ-aÑ¡ÏîÖ¸¶¨Êä³öÎÄ¼þÃûµÄ³¤¶È¡£Èç
+splitå¯ä»¥ç”¨-aé€‰é¡¹æŒ‡å®šè¾“å‡ºæ–‡ä»¶åçš„é•¿åº¦ã€‚å¦‚
 
 split -l 100 -a 3 duanxin split
 
-ÔòÊä³öÎÄ¼þ³öÀàËÆÓÚsplitaaa,splitaab¡£²»Ö¸¶¨Ê±Ä¬ÈÏÎª2¡£
+åˆ™è¾“å‡ºæ–‡ä»¶å‡ºç±»ä¼¼äºŽsplitaaa,splitaabã€‚ä¸æŒ‡å®šæ—¶é»˜è®¤ä¸º2ã€‚
 
-ÓÃ-b»ò-CÖ¸¶¨·Ö¿é´óÐ¡Ê±£¬¿ÉÓÃµÄµ¥Î»ÓÐ£¬b for 512bytes, k for 1Kbytes, m for 1 Megbytes.
+ç”¨-bæˆ–-CæŒ‡å®šåˆ†å—å¤§å°æ—¶ï¼Œå¯ç”¨çš„å•ä½æœ‰ï¼Œb for 512bytes, k for 1Kbytes, m for 1 Megbytes.
 
-split ²ÎÊý£º
+split å‚æ•°ï¼š
 
--a, --suffix-length=N   Ö¸¶¨Êä³öÎÄ¼þÃûµÄºó×º£¬Ä¬ÈÏÎª2¸ö
+-a, --suffix-length=N   æŒ‡å®šè¾“å‡ºæ–‡ä»¶åçš„åŽç¼€ï¼Œé»˜è®¤ä¸º2ä¸ª
 
--b, --bytes=SIZE        Ö¸¶¨Êä³öÎÄ¼þµÄ×Ö½ÚÊý
+-b, --bytes=SIZE        æŒ‡å®šè¾“å‡ºæ–‡ä»¶çš„å­—èŠ‚æ•°
 
--C, --line-bytes=SIZE  Ã¿Ò»Êä³öµµÖÐ£¬µ¥ÐÐµÄ×î´ó byte Êý
+-C, --line-bytes=SIZE  æ¯ä¸€è¾“å‡ºæ¡£ä¸­ï¼Œå•è¡Œçš„æœ€å¤§ byte æ•°
 
--d, --numeric-suffixes  Ê¹ÓÃÊý×Ö´úÌæ×ÖÄ¸×öºó×º
+-d, --numeric-suffixes  ä½¿ç”¨æ•°å­—ä»£æ›¿å­—æ¯åšåŽç¼€
 
--l, --lines=NUMBER    NUMBER ÖµÎªÃ¿Ò»Êä³öµµµÄÁÐÊý´óÐ¡
+-l, --lines=NUMBER    NUMBER å€¼ä¸ºæ¯ä¸€è¾“å‡ºæ¡£çš„åˆ—æ•°å¤§å°
 
-# ubuntuÏÂÖÕ¶ËÂ·¾¶Ö»ÏÔÊ¾µ±Ç°Ä¿Â¼
+# ubuntuä¸‹ç»ˆç«¯è·¯å¾„åªæ˜¾ç¤ºå½“å‰ç›®å½•
 
-×î½üÒ»Ö±ÔÚÓÃÖÕ¶Ë²Ù×÷£¬¿´×ÅËû³¤³¤µÄÂ·¾¶ÃûÊµÔÚ²»Ë¬£¬ ¶¯ÊÖÀ´¸Ä¸Ä¿©¡«
+æœ€è¿‘ä¸€ç›´åœ¨ç”¨ç»ˆç«¯æ“ä½œï¼Œçœ‹ç€ä»–é•¿é•¿çš„è·¯å¾„åå®žåœ¨ä¸çˆ½ï¼Œ åŠ¨æ‰‹æ¥æ”¹æ”¹å’¯ï½ž
 
 $: sudo vim ~/.bashrc
 
-Õâ¸öÎÄ¼þ¼ÇÂ¼ÁËÓÃ»§ÖÕ¶ËÅäÖÃ
+è¿™ä¸ªæ–‡ä»¶è®°å½•äº†ç”¨æˆ·ç»ˆç«¯é…ç½®
 
-ÕÒµ½
+æ‰¾åˆ°
 
 if [ "$color_prompt " = yes ]; then
 
@@ -6691,7 +5500,7 @@ if [ "$color_prompt " = yes ]; then
 
 \033[01;34m
 
-\W 
+\W
 
 \033[00m
 
@@ -6701,119 +5510,119 @@ else
 
     PS1 ='{debian_chroot:+(debian_chroot)}\u@\h:\W \$ '
 
- ½«À¶É«µÄwÓÉÐ¡Ð´¸Ä³É´óÐ´£¬¿ÉÒÔ±íÊ¾Ö»ÏÔÊ¾µ±Ç°Ä¿Â¼Ãû³Æ.
+ å°†è“è‰²çš„wç”±å°å†™æ”¹æˆå¤§å†™ï¼Œå¯ä»¥è¡¨ç¤ºåªæ˜¾ç¤ºå½“å‰ç›®å½•åç§°.
 
-# ubuntuÖÕ¶ËÑÕÉ«ÏûÊ§µÄÎÊÌâ
+# ubuntuç»ˆç«¯é¢œè‰²æ¶ˆå¤±çš„é—®é¢˜
 
-ubuntukylin 13.10    lsºóÖÕ¶ËÏÔÊ¾µÄËùÓÐÊä³ö¶¼ÊÇºÚµ×°××Ö£¬Ã»ÓÐ²ÊÉ«£¬ÓÃsuºólsÈ´ÓÐ²ÊÉ« 
+ubuntukylin 13.10    lsåŽç»ˆç«¯æ˜¾ç¤ºçš„æ‰€æœ‰è¾“å‡ºéƒ½æ˜¯é»‘åº•ç™½å­—ï¼Œæ²¡æœ‰å½©è‰²ï¼Œç”¨suåŽlså´æœ‰å½©è‰²
 
-echo $PS1  Êä³ö¶þÕßÒ²ÓÐ²îÒì£¬Ò»¿´·¢ÏÖÓÃ»§Ä¿Â¼ÏÂ.bashrcÃ»ÓÐ£¬  
+echo $PS1  è¾“å‡ºäºŒè€…ä¹Ÿæœ‰å·®å¼‚ï¼Œä¸€çœ‹å‘çŽ°ç”¨æˆ·ç›®å½•ä¸‹.bashrcæ²¡æœ‰ï¼Œ
 
-cp /etc/skel/.bashrc  ~/ 
+cp /etc/skel/.bashrc  ~/
 
-ºóÎÊÌâ½â¾ö£¬Èç¹ûÒª¸ÄÑÕÉ«ÅäÖÃ£¬¿ÉÒÔÐÞ¸ÄPS1µÄÖµ¡£ 
+åŽé—®é¢˜è§£å†³ï¼Œå¦‚æžœè¦æ”¹é¢œè‰²é…ç½®ï¼Œå¯ä»¥ä¿®æ”¹PS1çš„å€¼ã€‚
 
-#Í¨¹ýfindÃüÁîÑ°ÕÒÎÄ¼þ²¢¿½±´µ½Ö¸¶¨Ä¿Â¼
+#é€šè¿‡findå‘½ä»¤å¯»æ‰¾æ–‡ä»¶å¹¶æ‹·è´åˆ°æŒ‡å®šç›®å½•
 
-ÓÐÕâÑùµÄÒ»¸öÐèÇó£¬ÐèÒª½«Ò»²¿·Ö·ûºÏÌõ¼þµÄÎÄ¼þ´ÓÒ»¸öÄ¿Â¼¿½±´µ½ÁíÒ»¸öÄ¿Â¼ÖÐ£¬¿ÉÒÔÍ¨¹ýÊ¹ÓÃfindÃüÁî´ÓÔ´Ä¿Â¼²éÕÒµ½·ûºÏÌõ¼þµÄÎÄ¼þÈ»ºóÊ¹ÓÃcpÃüÁî¿½±´µ½Ä¿±êÄ¿Â¼
+æœ‰è¿™æ ·çš„ä¸€ä¸ªéœ€æ±‚ï¼Œéœ€è¦å°†ä¸€éƒ¨åˆ†ç¬¦åˆæ¡ä»¶çš„æ–‡ä»¶ä»Žä¸€ä¸ªç›®å½•æ‹·è´åˆ°å¦ä¸€ä¸ªç›®å½•ä¸­ï¼Œå¯ä»¥é€šè¿‡ä½¿ç”¨findå‘½ä»¤ä»Žæºç›®å½•æŸ¥æ‰¾åˆ°ç¬¦åˆæ¡ä»¶çš„æ–‡ä»¶ç„¶åŽä½¿ç”¨cpå‘½ä»¤æ‹·è´åˆ°ç›®æ ‡ç›®å½•
 
-·½·¨Ò» 
+æ–¹æ³•ä¸€
 
-ÃüÁîÈçÏÂ£º 
+å‘½ä»¤å¦‚ä¸‹ï¼š
 
-find src_dir -name "access.log.2011102[2-6]*" -exec cp {} dst_dir \; 
+find src_dir -name "access.log.2011102[2-6]*" -exec cp {} dst_dir \;
 
-¿½±´ÎÄ¼þµ½Ô¶³ÌÖ÷»úÉÏµÄÄ¿±êÄ¿Â¼µÄÃüÁî£º 
+æ‹·è´æ–‡ä»¶åˆ°è¿œç¨‹ä¸»æœºä¸Šçš„ç›®æ ‡ç›®å½•çš„å‘½ä»¤ï¼š
 
-find src_dir -name "access.log.2011102[2-6]*" -exec scp {} ÓÃ»§Ãû@Ö÷»úip:dst_dir \; 
+find src_dir -name "access.log.2011102[2-6]*" -exec scp {} ç”¨æˆ·å@ä¸»æœºip:dst_dir \;
 
-·½·¨¶þ 
+æ–¹æ³•äºŒ
 
-find src_dir -name "access.log.2011102[2-6]*" |xargs -i cp {} dst_dir 
+find src_dir -name "access.log.2011102[2-6]*" |xargs -i cp {} dst_dir
 
-»ò 
+æˆ–
 
-find src_dir -name "access.log.2011102[2-6]*" |xargs -I {} cp {} dst_dir 
+find src_dir -name "access.log.2011102[2-6]*" |xargs -I {} cp {} dst_dir
 
-¿½±´ÎÄ¼þµ½Ô¶³ÌÖ÷»úÉÏµÄÄ¿±êÄ¿Â¼µÄÃüÁî£º 
+æ‹·è´æ–‡ä»¶åˆ°è¿œç¨‹ä¸»æœºä¸Šçš„ç›®æ ‡ç›®å½•çš„å‘½ä»¤ï¼š
 
-find src_dir -name "access.log.2011102[2-6]*" |xargs -i scp {} ÓÃ»§Ãû@Ö÷»úip:dst_dir 
+find src_dir -name "access.log.2011102[2-6]*" |xargs -i scp {} ç”¨æˆ·å@ä¸»æœºip:dst_dir
 
-»ò 
+æˆ–
 
-find src_dir -name "access.log.2011102[2-6]*" |xargs -I {} scp {} ÓÃ»§Ãû@Ö÷»úip:dst_dir 
+find src_dir -name "access.log.2011102[2-6]*" |xargs -I {} scp {} ç”¨æˆ·å@ä¸»æœºip:dst_dir
 
-src_dir Ô´Ä¿Â¼ 
+src_dir æºç›®å½•
 
-dst_dir Ä¿±êÄ¿Â¼ 
+dst_dir ç›®æ ‡ç›®å½•
 
-access.log.2011102[2-6]* ÎÄ¼þÃûµÄÕýÔò±í´ïÊ½£¬»ñÈ¡ÎÄ¼þµÄÌõ¼þ 
+access.log.2011102[2-6]* æ–‡ä»¶åçš„æ­£åˆ™è¡¨è¾¾å¼ï¼ŒèŽ·å–æ–‡ä»¶çš„æ¡ä»¶
 
-·½·¨Èý 
+æ–¹æ³•ä¸‰
 
-findÃüÁî½áºÏcpÃüÁî£¬¿½±´Ä³¸öÄ¿Â¼ÏÂËùÓÐÎÄ¼þµ½ÁíÒ»¸öÄ¿Â¼ÖÐ 
-
-
-
-ÒªÇóÕû¸öÄ¿Â¼ÍêÈ«¿½±´µ½ÁíÒ»¸öÄ¿Â¼£¬²¢ÇÒºöÂÔ¸ö±ðÄ¿Â¼£¬½Å±¾ÈçÏÂ£º 
-
-find ./ -path '/tmp/mnt/disk1/ignore' -prune -o \( -name '*' ! -name "*.tmp" \) | xargs cp "Ä¿µÄÄ¿Â¼" "{}" \;
+findå‘½ä»¤ç»“åˆcpå‘½ä»¤ï¼Œæ‹·è´æŸä¸ªç›®å½•ä¸‹æ‰€æœ‰æ–‡ä»¶åˆ°å¦ä¸€ä¸ªç›®å½•ä¸­
 
 
 
-ÔÚÉÏÃæÕâ¸ö½Å±¾ÖÐ£¬µ±Ö´ÐÐµ½¡°| xargs cp¡±Ê±£¬¼ÙÉèÊäÈëµÄ×Ö·û´®ÀàËÆÈçÏÂ£º 
+è¦æ±‚æ•´ä¸ªç›®å½•å®Œå…¨æ‹·è´åˆ°å¦ä¸€ä¸ªç›®å½•ï¼Œå¹¶ä¸”å¿½ç•¥ä¸ªåˆ«ç›®å½•ï¼Œè„šæœ¬å¦‚ä¸‹ï¼š
 
-/tmp/mnt/disk1/tt.txt 
-
-/tmp/mnt/disk1/test/dd.txt 
+find ./ -path '/tmp/mnt/disk1/ignore' -prune -o \( -name '*' ! -name "*.tmp" \) | xargs cp "ç›®çš„ç›®å½•" "{}" \;
 
 
 
-ÒªÇóÖ´ÐÐ¡°xargs cp¡±ºó£¬ÏàÓ¦¿½±´³ÉÈçÏÂµÄÄ¿Â¼½á¹¹ 
+åœ¨ä¸Šé¢è¿™ä¸ªè„šæœ¬ä¸­ï¼Œå½“æ‰§è¡Œåˆ°â€œ| xargs cpâ€æ—¶ï¼Œå‡è®¾è¾“å…¥çš„å­—ç¬¦ä¸²ç±»ä¼¼å¦‚ä¸‹ï¼š
 
-(¼´£ºÔ­À´disk1Ä¿Â¼ÏÂËùÓÐÎÄ¼þ¶¼¿½±´µ½srcÄ¿Â¼ÏÂ£¬Ä¿Â¼½á¹¹²»±ä)£º 
+/tmp/mnt/disk1/tt.txt
 
-/tmp/mnt/src/tt.txt 
+/tmp/mnt/disk1/test/dd.txt
+
+
+
+è¦æ±‚æ‰§è¡Œâ€œxargs cpâ€åŽï¼Œç›¸åº”æ‹·è´æˆå¦‚ä¸‹çš„ç›®å½•ç»“æž„
+
+(å³ï¼šåŽŸæ¥disk1ç›®å½•ä¸‹æ‰€æœ‰æ–‡ä»¶éƒ½æ‹·è´åˆ°srcç›®å½•ä¸‹ï¼Œç›®å½•ç»“æž„ä¸å˜)ï¼š
+
+/tmp/mnt/src/tt.txt
 
 /tmp/mnt/src/test/dd.txt
 
-# ubuntuµÇÂ¼ÊäÈëÓÃ»§ÃûÃÜÂëºóÖØÐÂÌø»ØµÇÂ¼½çÃæ
+# ubuntuç™»å½•è¾“å…¥ç”¨æˆ·åå¯†ç åŽé‡æ–°è·³å›žç™»å½•ç•Œé¢
 
-ÏÖÏó£ºÔÚUbuntu 14.04µÇÂ½½çÃæÊäÈëÃÜÂëÖ®ºó£¬ºÚÆÁÒ»ÉÁºó£¬ÓÖÌø×ªµ½µÇÂ¼½çÃæ¡£
+çŽ°è±¡ï¼šåœ¨Ubuntu 14.04ç™»é™†ç•Œé¢è¾“å…¥å¯†ç ä¹‹åŽï¼Œé»‘å±ä¸€é—ªåŽï¼Œåˆè·³è½¬åˆ°ç™»å½•ç•Œé¢ã€‚
 
-Ô­Òò£ºÖ÷Ä¿Â¼ÏÂµÄ.XauthorityÎÄ¼þÓµÓÐÕß±ä³ÉÁËroot£¬´Ó¶øÒÔÓÃ»§µÇÂ½µÄÊ±ºòÎÞ·¨¶¼È¡.XauthorityÎÄ¼þ¡£
+åŽŸå› ï¼šä¸»ç›®å½•ä¸‹çš„.Xauthorityæ–‡ä»¶æ‹¥æœ‰è€…å˜æˆäº†rootï¼Œä»Žè€Œä»¥ç”¨æˆ·ç™»é™†çš„æ—¶å€™æ— æ³•éƒ½å–.Xauthorityæ–‡ä»¶ã€‚
 
-ËµÃ÷£ºXauthority£¬ÊÇstartx½Å±¾¼ÇÂ¼ÎÄ¼þ¡£XserverÆô¶¯Ê±£¬¶ÁÎÄ¼þ~/.Xauthority,¶ÁÈë¶ÔÓ¦ÆädisplayµÄ¼ÇÂ¼¡£µ±Ò»¸öÐèÒªÏÔÊ¾µÄ¿Í»§³ÌÐòÆô¶¯µ÷ÓÃXOpenDisplay()Ò²¶ÁÕâ¸öÎÄ ¼þ£¬²¢°ÑÕÒµ½µÄmagic code ·¢ËÍ¸øXserver¡£
+è¯´æ˜Žï¼šXauthorityï¼Œæ˜¯startxè„šæœ¬è®°å½•æ–‡ä»¶ã€‚Xserverå¯åŠ¨æ—¶ï¼Œè¯»æ–‡ä»¶~/.Xauthority,è¯»å…¥å¯¹åº”å…¶displayçš„è®°å½•ã€‚å½“ä¸€ä¸ªéœ€è¦æ˜¾ç¤ºçš„å®¢æˆ·ç¨‹åºå¯åŠ¨è°ƒç”¨XOpenDisplay()ä¹Ÿè¯»è¿™ä¸ªæ–‡ ä»¶ï¼Œå¹¶æŠŠæ‰¾åˆ°çš„magic code å‘é€ç»™Xserverã€‚
 
-µ±XserverÑéÖ¤Õâ¸ömagic codeÕýÈ·ÒÔºó£¬¾ÍÍ¬ÒâÁ¬½ÓÀ²¡£¹Û²ìstartx½Å±¾Ò²¿ÉÒÔ¿´µ½£¬Ã¿´ÎstartxÔËÐÐ£¬¶¼ÔÚµ÷ÓÃxinitÒÔÇ°Ê¹ÓÃÁËxauthµÄaddÃüÁîÌí¼ÓÁËÒ»¸öÐÂµÄ¼ÇÂ¼µ½~/.Xauthority£¬ÓÃÀ´Õâ´ÎÔËÐÐXÊ¹ÓÃÈÏÖ¤
+å½“XserveréªŒè¯è¿™ä¸ªmagic codeæ­£ç¡®ä»¥åŽï¼Œå°±åŒæ„è¿žæŽ¥å•¦ã€‚è§‚å¯Ÿstartxè„šæœ¬ä¹Ÿå¯ä»¥çœ‹åˆ°ï¼Œæ¯æ¬¡startxè¿è¡Œï¼Œéƒ½åœ¨è°ƒç”¨xinitä»¥å‰ä½¿ç”¨äº†xauthçš„addå‘½ä»¤æ·»åŠ äº†ä¸€ä¸ªæ–°çš„è®°å½•åˆ°~/.Xauthorityï¼Œç”¨æ¥è¿™æ¬¡è¿è¡ŒXä½¿ç”¨è®¤è¯
 
-½â¾ö·½·¨£ºÎÒÃÇÐèÒª½«.XauthorityµÄÓµÓÐÕß¸ÄÎªµÇÂ½ÓÃ»§£¨»òÕß¸É´à½«.XauthorityÉ¾³ý£¬´Ë·¨×ª×ÔÍøÉÏ£¬±¾ÈËÎ´ÑéÖ¤£©
+è§£å†³æ–¹æ³•ï¼šæˆ‘ä»¬éœ€è¦å°†.Xauthorityçš„æ‹¥æœ‰è€…æ”¹ä¸ºç™»é™†ç”¨æˆ·ï¼ˆæˆ–è€…å¹²è„†å°†.Xauthorityåˆ é™¤ï¼Œæ­¤æ³•è½¬è‡ªç½‘ä¸Šï¼Œæœ¬äººæœªéªŒè¯ï¼‰
 
-¿ª»úºóÔÚµÇÂ½½çÃæ°´ÏÂshift + ctrl + F1½øÈëttyÃüÁîÐÐÖÕ¶ËµÇÂ½ºóÊäÈë£º 
+å¼€æœºåŽåœ¨ç™»é™†ç•Œé¢æŒ‰ä¸‹shift + ctrl + F1è¿›å…¥ttyå‘½ä»¤è¡Œç»ˆç«¯ç™»é™†åŽè¾“å…¥ï¼š
 
 $ cd ~
 
 $ sudo chown groupname:username .Xauthority
 
-È»ºóÔÙ´ÎÊäÈë£º
+ç„¶åŽå†æ¬¡è¾“å…¥ï¼š
 
 ls .Xauthority -l
 
-³É¹¦ºóÏÔÊ¾ÈçÏÂ£º
+æˆåŠŸåŽæ˜¾ç¤ºå¦‚ä¸‹ï¼š
 
--rw------- 1 hp hp 80 1ÔÂ 27 10:41 .Xauthority
+-rw------- 1 hp hp 80 1æœˆ 27 10:41 .Xauthority
 
-´ËÊ±ÓµÓÐÕßÒÑ¾­±äÎªÓÃ»§¡£°´ÏÂshift + ctrl + F7ÇÐ»»»ØÍ¼ÐÎµÇÂ½½çÃæµÇÂ½¼´¿É¡£
+æ­¤æ—¶æ‹¥æœ‰è€…å·²ç»å˜ä¸ºç”¨æˆ·ã€‚æŒ‰ä¸‹shift + ctrl + F7åˆ‡æ¢å›žå›¾å½¢ç™»é™†ç•Œé¢ç™»é™†å³å¯ã€‚
 
 # watchdog
 
-Linux ×Ô´øÁËÒ»¸ö watchdog µÄÊµÏÖ£¬ÓÃÓÚ¼àÊÓÏµÍ³µÄÔËÐÐ£¬°üÀ¨Ò»¸öÄÚºË watchdog module ºÍÒ»¸öÓÃ»§¿Õ¼äµÄ watchdog ³ÌÐò¡£ÄÚºË watchdog Ä£¿éÍ¨¹ý /dev/watchdog Õâ¸ö×Ö·ûÉè±¸ÓëÓÃ»§¿Õ¼äÍ¨ÐÅ¡£ÓÃ»§¿Õ¼ä³ÌÐòÒ»µ©´ò¿ª /dev/watchdog Éè±¸£¨Ë×³Æ¡°¿ªÃÅ·Å¹·¡±£©£¬¾Í»áµ¼ÖÂÔÚÄÚºËÖÐÆô¶¯Ò»¸ö1·ÖÖÓµÄ¶¨Ê±Æ÷£¨ÏµÍ³Ä¬ÈÏÊ±¼ä£©£¬´Ëºó£¬ÓÃ»§¿Õ¼ä³ÌÐòÐèÒª±£Ö¤ÔÚ1·ÖÖÓÖ®ÄÚÏòÕâ¸öÉè±¸Ð´ÈëÊý¾Ý£¨Ë×³Æ¡°¶¨ÆÚÎ¹¹·¡±£©£¬Ã¿´ÎÐ´²Ù×÷»áµ¼ÖÂÖØÐÂÉè¶¨¶¨Ê±Æ÷¡£Èç¹ûÓÃ»§¿Õ¼ä³ÌÐòÔÚ1·ÖÖÓÖ®ÄÚÃ»ÓÐÐ´²Ù×÷£¬¶¨Ê±Æ÷µ½ÆÚ»áµ¼ÖÂÒ»´ÎÏµÍ³
+Linux è‡ªå¸¦äº†ä¸€ä¸ª watchdog çš„å®žçŽ°ï¼Œç”¨äºŽç›‘è§†ç³»ç»Ÿçš„è¿è¡Œï¼ŒåŒ…æ‹¬ä¸€ä¸ªå†…æ ¸ watchdog module å’Œä¸€ä¸ªç”¨æˆ·ç©ºé—´çš„ watchdog ç¨‹åºã€‚å†…æ ¸ watchdog æ¨¡å—é€šè¿‡ /dev/watchdog è¿™ä¸ªå­—ç¬¦è®¾å¤‡ä¸Žç”¨æˆ·ç©ºé—´é€šä¿¡ã€‚ç”¨æˆ·ç©ºé—´ç¨‹åºä¸€æ—¦æ‰“å¼€ /dev/watchdog è®¾å¤‡ï¼ˆä¿—ç§°â€œå¼€é—¨æ”¾ç‹—â€ï¼‰ï¼Œå°±ä¼šå¯¼è‡´åœ¨å†…æ ¸ä¸­å¯åŠ¨ä¸€ä¸ª1åˆ†é’Ÿçš„å®šæ—¶å™¨ï¼ˆç³»ç»Ÿé»˜è®¤æ—¶é—´ï¼‰ï¼Œæ­¤åŽï¼Œç”¨æˆ·ç©ºé—´ç¨‹åºéœ€è¦ä¿è¯åœ¨1åˆ†é’Ÿä¹‹å†…å‘è¿™ä¸ªè®¾å¤‡å†™å…¥æ•°æ®ï¼ˆä¿—ç§°â€œå®šæœŸå–‚ç‹—â€ï¼‰ï¼Œæ¯æ¬¡å†™æ“ä½œä¼šå¯¼è‡´é‡æ–°è®¾å®šå®šæ—¶å™¨ã€‚å¦‚æžœç”¨æˆ·ç©ºé—´ç¨‹åºåœ¨1åˆ†é’Ÿä¹‹å†…æ²¡æœ‰å†™æ“ä½œï¼Œå®šæ—¶å™¨åˆ°æœŸä¼šå¯¼è‡´ä¸€æ¬¡ç³»ç»Ÿ
 
-reboot ²Ù×÷£¨¡°¹·Ò§ÈËÁË¡±ºÇºÇ£©¡£Í¨¹ýÕâÖÖ»úÖÆ£¬ÎÒÃÇ¿ÉÒÔ±£Ö¤ÏµÍ³ºËÐÄ½ø³Ì´ó²¿·ÖÊ±¼ä¶¼´¦ÓÚÔËÐÐ×´Ì¬£¬¼´Ê¹ÌØ¶¨ÇéÐÎÏÂ½ø³Ì±ÀÀ££¬ÒòÎÞ·¨Õý³£¶¨Ê±¡°Î¹¹·¡±£¬LinuxÏµÍ³ÔÚ¿´ÃÅ¹·×÷ÓÃÏÂÖØÐÂÆô¶¯£¨reboot£©£¬ºËÐÄ½ø³ÌÓÖÔËÐÐÆðÀ´ÁË¡£¶àÓÃÓÚÇ¶ÈëÊ½ÏµÍ³¡£
+reboot æ“ä½œï¼ˆâ€œç‹—å’¬äººäº†â€å‘µå‘µï¼‰ã€‚é€šè¿‡è¿™ç§æœºåˆ¶ï¼Œæˆ‘ä»¬å¯ä»¥ä¿è¯ç³»ç»Ÿæ ¸å¿ƒè¿›ç¨‹å¤§éƒ¨åˆ†æ—¶é—´éƒ½å¤„äºŽè¿è¡ŒçŠ¶æ€ï¼Œå³ä½¿ç‰¹å®šæƒ…å½¢ä¸‹è¿›ç¨‹å´©æºƒï¼Œå› æ— æ³•æ­£å¸¸å®šæ—¶â€œå–‚ç‹—â€ï¼ŒLinuxç³»ç»Ÿåœ¨çœ‹é—¨ç‹—ä½œç”¨ä¸‹é‡æ–°å¯åŠ¨ï¼ˆrebootï¼‰ï¼Œæ ¸å¿ƒè¿›ç¨‹åˆè¿è¡Œèµ·æ¥äº†ã€‚å¤šç”¨äºŽåµŒå…¥å¼ç³»ç»Ÿã€‚
 
 
 
-´ò¿ª /dev/watchdog Éè±¸£¨¡°¿ªÃÅ·Å¹·¡±£©£º
+æ‰“å¼€ /dev/watchdog è®¾å¤‡ï¼ˆâ€œå¼€é—¨æ”¾ç‹—â€ï¼‰ï¼š
 
 
 
@@ -6829,7 +5638,7 @@ if(fd_watchdog == -1) {
 
 }
 
-Ã¿¸ôÒ»¶ÎÊ±¼äÏò /dev/watchdog Éè±¸Ð´ÈëÊý¾Ý£¨¡°¶¨ÆÚÎ¹¹·¡±£©£º
+æ¯éš”ä¸€æ®µæ—¶é—´å‘ /dev/watchdog è®¾å¤‡å†™å…¥æ•°æ®ï¼ˆâ€œå®šæœŸå–‚ç‹—â€ï¼‰ï¼š
 
 
 
@@ -6851,13 +5660,13 @@ if(fd_watchdog >= 0) {
 
 }
 
-¹Ø±Õ /dev/watchdog Éè±¸£¬Í¨³£²»ÐèÒªÕâ¸ö²½Öè£º
+å…³é—­ /dev/watchdog è®¾å¤‡ï¼Œé€šå¸¸ä¸éœ€è¦è¿™ä¸ªæ­¥éª¤ï¼š
 
 
 
 close(fd_watchdog);
 
-ËùÐèÍ·ÎÄ¼þ£º
+æ‰€éœ€å¤´æ–‡ä»¶ï¼š
 
 
 
@@ -6871,2096 +5680,103 @@ close(fd_watchdog);
 
 # tailf
 
-tailfÃüÁî¼¸ºõµÈÍ¬ÓÚtail -f£¬ÑÏ¸ñËµÀ´Ó¦¸ÃÓëtail --follow=name¸üÏàËÆÐ©¡£µ±ÎÄ¼þ¸ÄÃûÖ®ºóËüÒ²ÄÜ¼ÌÐø¸ú×Ù£¬ÌØ±ðÊÊºÏÓÚÈÕÖ¾ÎÄ¼þµÄ¸ú×Ù¡£Óëtail -f²»Í¬µÄÊÇ£¬Èç¹ûÎÄ¼þ²»Ôö³¤£¬Ëü²»»áÈ¥·ÃÎÊ´ÅÅÌÎÄ¼þ£¬ÕâÑù´øÀ´µÄºÃ´¦ÊÇÈç¹ûÃ»ÓÐÐÂµÄÈÕÖ¾²úÉú£¬ÈÕÖ¾ÎÄ¼þµÄÊ±¼ä´Á(access time)¾Í²»»á¸Ä±ä¡£tailfÌØ±ðÊÊºÏÄÇÐ©±ãÐ¯»úÉÏ¸ú×ÙÈÕÖ¾ÎÄ¼þ£¬ÒòÎªËüÄÜÊ¡µç£¬ÒòÎª¼õÉÙÁË´ÅÅÌ·ÃÎÊÂï¡£
+tailfå‘½ä»¤å‡ ä¹Žç­‰åŒäºŽtail -fï¼Œä¸¥æ ¼è¯´æ¥åº”è¯¥ä¸Žtail --follow=nameæ›´ç›¸ä¼¼äº›ã€‚å½“æ–‡ä»¶æ”¹åä¹‹åŽå®ƒä¹Ÿèƒ½ç»§ç»­è·Ÿè¸ªï¼Œç‰¹åˆ«é€‚åˆäºŽæ—¥å¿—æ–‡ä»¶çš„è·Ÿè¸ªã€‚ä¸Žtail -fä¸åŒçš„æ˜¯ï¼Œå¦‚æžœæ–‡ä»¶ä¸å¢žé•¿ï¼Œå®ƒä¸ä¼šåŽ»è®¿é—®ç£ç›˜æ–‡ä»¶ï¼Œè¿™æ ·å¸¦æ¥çš„å¥½å¤„æ˜¯å¦‚æžœæ²¡æœ‰æ–°çš„æ—¥å¿—äº§ç”Ÿï¼Œæ—¥å¿—æ–‡ä»¶çš„æ—¶é—´æˆ³(access time)å°±ä¸ä¼šæ”¹å˜ã€‚tailfç‰¹åˆ«é€‚åˆé‚£äº›ä¾¿æºæœºä¸Šè·Ÿè¸ªæ—¥å¿—æ–‡ä»¶ï¼Œå› ä¸ºå®ƒèƒ½çœç”µï¼Œå› ä¸ºå‡å°‘äº†ç£ç›˜è®¿é—®å˜›ã€‚
 
-¸ñÊ½£ºtailf logfile
+æ ¼å¼ï¼štailf logfile
 
-¶¯Ì¬¸ú×ÙÈÕÖ¾ÎÄ¼þlogfile£¬×î³õµÄÊ±ºò´òÓ¡ÎÄ¼þµÄ×îºó10ÐÐÄÚÈÝ¡£
+åŠ¨æ€è·Ÿè¸ªæ—¥å¿—æ–‡ä»¶logfileï¼Œæœ€åˆçš„æ—¶å€™æ‰“å°æ–‡ä»¶çš„æœ€åŽ10è¡Œå†…å®¹ã€‚
 
-Ctrl+C Í£Ö¹
+Ctrl+C åœæ­¢
 
-# vimrc£¬bashrcÖÐrcµÄº¬Òå
+# vimrcï¼Œbashrcä¸­rcçš„å«ä¹‰
 
-rc (ÏñÊÇ ".cshrc" »ò "/etc/rc" ÖÐµÄ rc ÕâÁ½¸ö×ÖÄ¸) = "RunCom" 
+rc (åƒæ˜¯ ".cshrc" æˆ– "/etc/rc" ä¸­çš„ rc è¿™ä¸¤ä¸ªå­—æ¯) = "RunCom"
 
-"rc" ÊÇÈ¡×Ô "runcom", À´×ÔÂéÊ¡Àí¹¤Ñ§ÔºÔÚ 1965 Äê·¢Õ¹µÄ CTSSÏµÍ³¡£Ïà¹ØÎÄÏ×Ôø¼ÇÔØÕâÒ»¶Î»°: '¾ßÓÐ´Óµµ°¸ÖÐÈ¡³öÒ»ÏµÁÐÃüÁîÀ´Ö´ÐÐµÄ¹¦ÄÜ£»Õâ³ÆÎª "run commands" ÓÖ³ÆÎª "runcom"£¬¶øÕâÖÖµµ°¸ÓÖ³ÆÎªÒ»¸ö runcom (a runcom)¡£' 
+"rc" æ˜¯å–è‡ª "runcom", æ¥è‡ªéº»çœç†å·¥å­¦é™¢åœ¨ 1965 å¹´å‘å±•çš„ CTSSç³»ç»Ÿã€‚ç›¸å…³æ–‡çŒ®æ›¾è®°è½½è¿™ä¸€æ®µè¯: 'å…·æœ‰ä»Žæ¡£æ¡ˆä¸­å–å‡ºä¸€ç³»åˆ—å‘½ä»¤æ¥æ‰§è¡Œçš„åŠŸèƒ½ï¼›è¿™ç§°ä¸º "run commands" åˆç§°ä¸º "runcom"ï¼Œè€Œè¿™ç§æ¡£æ¡ˆåˆç§°ä¸ºä¸€ä¸ª runcom (a runcom)ã€‚'
 
-Brian Kernighan Óë Dennis Ritchie ¸æËß Vicki Brown Ëµ: "rc" Ò²ÊÇPlan 9 ×÷ÒµÏµÍ³ shell µÄÃû×Ö¡£
+Brian Kernighan ä¸Ž Dennis Ritchie å‘Šè¯‰ Vicki Brown è¯´: "rc" ä¹Ÿæ˜¯Plan 9 ä½œä¸šç³»ç»Ÿ shell çš„åå­—ã€‚
 
-#.cshrcÎÄ¼þÊÇ¸ÉÊ²Ã´ÓÃµÄ?
+#.cshrcæ–‡ä»¶æ˜¯å¹²ä»€ä¹ˆç”¨çš„?
 
-Õâ¸öÊÇ¸öÒþ²ØÎÄ¼þ  £¬ÔÚÄãÊ¹ÓÃµÄÓÃ»§¼ÒÄ¿Â¼ÏÂµÄ
+è¿™ä¸ªæ˜¯ä¸ªéšè—æ–‡ä»¶  ï¼Œåœ¨ä½ ä½¿ç”¨çš„ç”¨æˆ·å®¶ç›®å½•ä¸‹çš„
 
-ÊÇcsh Õâ¸öshell(csh)µÄÅäÖÃÎÄ¼þ£¬Äã¶ÔcshµÄ¸ü¸Ä¶¼»á¼ÇÂ¼ÔÚÕâ¸öÎÄ¼þÖÐ£¬ÏÂ´ÎÄãÔÙÆô¶¯cshµÄÊ±ºò»á¶ÁÈ¡Õâ¸öÎÄ¼þ¡£
+æ˜¯csh è¿™ä¸ªshell(csh)çš„é…ç½®æ–‡ä»¶ï¼Œä½ å¯¹cshçš„æ›´æ”¹éƒ½ä¼šè®°å½•åœ¨è¿™ä¸ªæ–‡ä»¶ä¸­ï¼Œä¸‹æ¬¡ä½ å†å¯åŠ¨cshçš„æ—¶å€™ä¼šè¯»å–è¿™ä¸ªæ–‡ä»¶ã€‚
 
 # There are unfinished transactions remaining
 
-½ñÌìÔÚ·þÎñÆ÷ÓÃyum°²×°¶«Î÷µÄÊ±ºò,ÀÏÊÇ±¨:There are unfinished transactions remaining. You might consider running yum-complete-transaction first to finish them.ÒâË¼ÊÇ:ÓÐÎ´Íê³ÉµÄyumÊÂÎñ,½¨ÒéÏÈÔËÐÐyum-complete-transactionÃüÁîÇå³ý.ÎÊÁËÏÂ¿ª·¢,Ô­À´ÓÐÇ¿ÖÆ½áÊøyum¹ý,ºÃ°É,¶ÔÓÚÎÒÕâÑùÓÐµãÇáÎ¢Ç¿ÆÈÖ¢µÄÈËÀ´Ëµ,²»ÔÊÐí·þÎñÆ÷³öÏÖÕâÐ©ÐÅÏ¢µÄ.
+ä»Šå¤©åœ¨æœåŠ¡å™¨ç”¨yumå®‰è£…ä¸œè¥¿çš„æ—¶å€™,è€æ˜¯æŠ¥:There are unfinished transactions remaining. You might consider running yum-complete-transaction first to finish them.æ„æ€æ˜¯:æœ‰æœªå®Œæˆçš„yumäº‹åŠ¡,å»ºè®®å…ˆè¿è¡Œyum-complete-transactionå‘½ä»¤æ¸…é™¤.é—®äº†ä¸‹å¼€å‘,åŽŸæ¥æœ‰å¼ºåˆ¶ç»“æŸyumè¿‡,å¥½å§,å¯¹äºŽæˆ‘è¿™æ ·æœ‰ç‚¹è½»å¾®å¼ºè¿«ç—‡çš„äººæ¥è¯´,ä¸å…è®¸æœåŠ¡å™¨å‡ºçŽ°è¿™äº›ä¿¡æ¯çš„.
 
-½â¾ö°ì·¨:
+è§£å†³åŠžæ³•:
 
-´úÂëÈçÏÂ:
+ä»£ç å¦‚ä¸‹:
 
-# °²×° yum-complete-transaction£¨ÕâÊÇÒ»¸öÄÜ·¢ÏÖÎ´Íê³É»ò±»ÖÐ¶ÏµÄyumÊÂÎñµÄ³ÌÐò£©
+# å®‰è£… yum-complete-transactionï¼ˆè¿™æ˜¯ä¸€ä¸ªèƒ½å‘çŽ°æœªå®Œæˆæˆ–è¢«ä¸­æ–­çš„yumäº‹åŠ¡çš„ç¨‹åºï¼‰
 
 yum -y install yum-utils
 
-# Çå³ýyum»º´æ
+# æ¸…é™¤yumç¼“å­˜
 
 yum clean all
 
-# ÔËÐÐ yum-complete-transaction,ÇåÀíÎ´Íê³ÉÊÂÎñ
+# è¿è¡Œ yum-complete-transaction,æ¸…ç†æœªå®Œæˆäº‹åŠ¡
 
 yum-complete-transaction --cleanup-only
 
 ps:
 
-yum»á°ÑÏÂÔØµÄÈí¼þ°üºÍheader´æ´¢ÔÚcacheÖÐ,¶ø²»»á×Ô¶¯É¾³ý.¿ÉÓÃyum clean headersÇå³ýheader,yum clean packagesÇå³ýÏÂÔØµÄrpm°ü,yum clean allÈ«Çå.
+yumä¼šæŠŠä¸‹è½½çš„è½¯ä»¶åŒ…å’Œheaderå­˜å‚¨åœ¨cacheä¸­,è€Œä¸ä¼šè‡ªåŠ¨åˆ é™¤.å¯ç”¨yum clean headersæ¸…é™¤header,yum clean packagesæ¸…é™¤ä¸‹è½½çš„rpmåŒ…,yum clean allå…¨æ¸….
 
-# yumÌáÊ¾another app is currently holding the yum lock;waiting for it to exit
+# yumæç¤ºanother app is currently holding the yum lock;waiting for it to exit
 
-¿ÉÄÜÊÇÏµÍ³×Ô¶¯Éý¼¶ÕýÔÚÔËÐÐ£¬yumÔÚËø¶¨×´Ì¬ÖÐ¡£
+å¯èƒ½æ˜¯ç³»ç»Ÿè‡ªåŠ¨å‡çº§æ­£åœ¨è¿è¡Œï¼Œyumåœ¨é”å®šçŠ¶æ€ä¸­ã€‚
 
-¿ÉÒÔÍ¨¹ýÇ¿ÖÆ¹Øµôyum½ø³Ì£º
+å¯ä»¥é€šè¿‡å¼ºåˆ¶å…³æŽ‰yumè¿›ç¨‹ï¼š
 
 #rm -f /var/run/yum.pid
 
-È»ºó¾Í¿ÉÒÔÊ¹ÓÃyumÁË¡£
+ç„¶åŽå°±å¯ä»¥ä½¿ç”¨yumäº†ã€‚
 
-#ÔÓÏî
+#æ‚é¡¹
 
-GTK+2.0±à³Ì·¶Àý×÷ÕßËÎ¹úÎ°ÓÊÏä£º
+GTK+2.0ç¼–ç¨‹èŒƒä¾‹ä½œè€…å®‹å›½ä¼Ÿé‚®ç®±ï¼š
 
 gwsong52@sohu.com
 
-´ý½â¾öÎÊÌâ£º
+å¾…è§£å†³é—®é¢˜ï¼š
 
-G_CALLBACK()Óë  GTK_SIGNAL_FUNC()Çø±ð
+G_CALLBACK()ä¸Ž  GTK_SIGNAL_FUNC()åŒºåˆ«
 
-# shell±à³Ì½²Òå
 
-## ¡¾1¡¿SHELL·¶Ê½
+# Linuxä¸‹æ‰“åŒ…åŽ‹ç¼©warå’Œè§£åŽ‹waråŒ…
 
-¹æ¶¨Ò»¸ö·¶Ê½£¬ÓÐÀûÓÚÍ³Ò»³ÌÐò·ç¸ñ£¬Ôö¼Ó¿É¶ÁÐÔ¡£¶ÔÓÚ±àÐ´SHELL£¬¿½±´ÐÞ¸Ä¼´¿É¡£
-
-·¶Ê½:
-
-ASSIGN SHELL/Ö¸¶¨¿Ç
-
-DESCRIPTION/³ÌÐòËµÃ÷
-
-BODY/³ÌÐòÌå
-
-À©Õ¹£º
-
-1 ASSIGN SHELL/Ö¸¶¨¿Ç£¬Èç¹û²»Ö¸¶¨¿Ç£¬Ä¬ÈÏÊ¹ÓÃBourne SHELL£¬½¨ÒéÊ¹ÓÃKSH
-
-#!SHELLÂ·¾¶
-
-1.1	 CSH
-1.2	
-#!/bin/csh
-
-1.3	 BSH
-1.4	
-#!/bin/sh
-
-1.5	 KSH
-1.6	
-#!/bin/ksh
-
-
-
-2 DESCRIPTION/³ÌÐòËµÃ÷
-
-#PROCEDURE NAME/³ÌÐòÃû³Æ
-
-#PROCEDURE FUNCTION/³ÌÐò¹¦ÄÜËµÃ÷
-
-#AUTHOR/×÷Õß
-
-#DATE/¿ª·¢Ê±¼ä
-
-#INPUT/ÊäÈë
-
-#OUTPUT/Êä³ö
-
-#CALL/µ÷ÓÃº¯ÊýËµÃ÷
-
-#HISTORY/±ä¸üÀúÊ·
-
-
-
-3 BODY/³ÌÐòÌå
-
-INCLUDE LIBRARY /°üº¬¿âÎÄ¼þ
-
-VARIABLE DEFINE/±äÁ¿¶¨Òå
-
-FUNCTION DEFINE/º¯Êý¶¨Òå
-
-MAIN/³ÌÐòÈë¿Ú
-
-3.1 INCLUDE LIBRARY /°üº¬¿âÎÄ¼þ
-
-. LIBRARY FILE/¿âÎÄ¼þÃû³Æ
-
-3.2 FUNCTION DEFINE/º¯Êý¶¨Òå
-
-#FUNCRION: FUNCTION NAME
-
-#DESC    : FUNCTION DESC
-
-#INPUT   : INPUT DESC
-
-#OUTPUT  : OUTPUT DESC
-
-FUNCTION()
-
-{
-
-
-
-}
-
-3.3 MAIN/³ÌÐòÈë¿Ú(½¨ÒéÎª)
-
-³ÌÐòÆô¶¯ËµÃ÷
-
-³ÌÐòÖ´ÐÐ²½Öè
-
-³ÌÐò½áÊø
-
-exit 0
-
-
-
-·¶Ê½ÑùÀý£º
-
-#!/bin/ksh
-
- 
-
-#################################################################################
-
-# ³ÌÐòÃû  £º update.sh							        					#
-
-# ¹¦ÄÜ¼ò½é£º ±¾³ÌÐòÍê³É********Éý¼¶								#
-
-# ×÷Õß    :  *********0                                                     #
-
-# ¿ª·¢Ê±¼ä£º 2002-05-05   												#
-
-#	     															#
-
-# º¯ÊýËµÃ÷£º º¯Êý¶¨Òå													#
-
-#	        CheckBackupDir()	¼ì²é±¸·ÖÄ¿Â¼£¬²»Íê±ÏÔò´´½¨					#
-
-#	        CheckDbinstallDir()	¼ì²éSMPµÄÊý¾Ý¿â°²×°½Å±¾Ä¿Â¼					#
-
-#            CheckIfUpgraded()	¼ì²éÊÇ·ñÒÑ¾­Éý¼¶							#
-
-#	        UpdateSMPDir()		Éý¼¶SMPµÄÄ¿Â¼½á¹¹							#
-
-#            BackupDb()			±¸·ÖÊý¾Ý¿âµÄ½Å±¾¡¢Êý¾Ý						#
-
-#            BackupFile()		±¸·ÖSMPÄ¿Â¼µÄÎÄ¼þ							#
-
-#            UpdateDb()			Éý¼¶Êý¾Ý¿â                         		     #
-
-#            UpdateFile()		Éý¼¶ÎÄ¼þ 	                	    		 	     #
-
-#																	#
-
-# ÐÞ¸ÄÀúÊ·£º First Programming			   								#
-
-# ÈÕÆÚ    £º															#
-
-# ×÷Õß	  £º															#
-
-# ÐÞ¸ÄËµÃ÷£º															#
-
-#################################################################################
-
-
-
-#Ó¦ÓÃ¿âº¯Êý£¬ÒªÇó¿âº¯ÊýÎÄ¼þÓëµ±Ç°SHELLÍ¬Ò»Ä¿Â¼
-
-. ./comm_func.sh.rc
-
-
-
-#¶¨Òå±äÁ¿
-
-#³ÌÐòÃû³Æ
-
-ProgName="SMP Platform Upgrade"
-
-
-
-#±êÌâ
-
-Title="WINV200R002 D039P2"
-
-
-
-#Ä¿Â¼ºÍÎÄ¼þ¶¨Òå
-
-WorkDir=`pwd`
-
-LogDir=$WorkDir/log
-
-TempDir=$WorkDir/temp
-
-
-
-#ÈÕÖ¾Óë±êÖ¾ÎÄ¼þ
-
-ErrFile=$LogDir/update.err
-
-LogFile=$LogDir/update.log
-
-FlagFile=$LogDir/flag.flg
-
-
-
-########################º¯Êý¶¨Òå####################################
-
-
-
-####################################################################
-
-# º¯Êý£ºPrintUsage
-
-# Ä¿µÄ£º¶¨Òå´òÓ¡ÓÃ·¨º¯Êý¡£
-
-# ÊäÈë£º
-
-# Êä³ö£ºÆÁÄ»
-
-####################################################################
-
-PrintUsage()
-
-{
-
-    echo "***************************************************************"
-
-    echo "      NAME : ${ProgName}                                     "
-
-    echo "   VERSION : ${Title}                                        "
-
-    echo "    SYSTEM : WIN SMP                                         "
-
-    echo "      DESC : SMP platform or service upgrade                 "
-
-    echo "    NOTICE :                                                 "
-
-    echo " COPYRIGHT : 2002, HUAWEI Tech. Co. Ltd.                     "
-
-    echo "***************************************************************"
-
-    echo " 1. Execute backup operation"
-
-    echo " 2. Execute upgrade operation"
-
-    echo " 3. Execute rollback operation"    
-
-    echo " 0. Exit"
-
-    echo "Please input operation choice [0-3]:"
-
-}
-
-¡­
-
-###########               Main            ##############
-
-¡­
-
-exit 0
-
-#####################  END OF PROCEDURE  ###############
-
-
-
-##¡¾2¡¿SHELL±à³ÌÓï·¨
-
-ScriptÊÇÒÔÐÐÎªµ¥Î»£¬ÎÒÃÇËùÐ´µÄScript»á±»·Ö½â³ÉÒ»ÐÐÒ»ÐÐÀ´Ö´ÐÐ¡£¶øÃ¿Ò»ÐÐ¿ÉÒÔÊÇÃüÁî¡¢×¢½â¡¢»òÊÇÁ÷³Ì¿ØÖÆÖ¸ÁîµÈ¡£Èç¹ûÄ³Ò»ÐÐÉÐÎ´Íê³É£¬ÔÚÐÐÄ©¼ÓÉÏ"\" £¬Õâ¸öÊ±ºòÏÂÒ»ÐÐµÄÄÚÈÝ¾Í»á½Óµ½ÕâÒ»ÐÐµÄááÃæ£¬³ÉÎªÍ¬Ò»ÐÐ¡£
-
-
-
-µ±ScriptÖÐ³öÏÖ"#"Ê±£¬ÔÙËüááÃæµÄÍ¬Ò»ÐÐÎÄ×Ö¼´Îª×¢½â£¬Shell»á¶ÔÆä·­Òë¡£ ÔÚScriptÖÐÒªÖ´ÐÐÒ»¸öÃüÁîµÄ·½·¨ºÍÔÚÃüÁîÁÐÖÐÒ»Ñù£¬Äã¿ÉÒÔÇ°Ì¨»òºóÌ¨Ö´ÐÐ£¬Ö´ÐÐÃüÁîÊ±Ò²»áÐèÒªÉè¶¨Ò»Ð©»·¾³±äÁ¿¡£ 
-
-
-
-ScriptµÄÁ÷³Ì¿ØÖÆºÍÒ»°ã¸ß¼¶ÓïÑÔµÄÁ÷³Ì¿ØÖÆÃ»ÓÐÊ²÷áÁ½Ñù£¬Ò²ºÍ¸ß¼¶ÓïÑÔÒ»ÑùÓÐ¸±³ÌÊ½¡£ÕâÐ©Ê¹µÃScriptµÄ¹¦ÄÜ¸ü¼ÓÇ¿´ó¡£ 
-
-
-
-1 SHELL»ù±¾ÊõÓïÓë¹Ø¼ü×Ö
-
-.            	µ±Ç°shell³ÌÐòÏàÍ¬Ä¿Â¼
-
-..            	µ±Ç°shell³ÌÐòµÄÉÏÒ»¼¶Ä¿Â¼
-
-break    		ÍË³öfor¡¢while¡¢until»òcaseÓï¾ä
-
-cd          		¸Ä±äµ½µ±Ç°Ä¿Â¼
-
-continue 		Ö´ÐÐÑ­»·µÄÏÂÒ»²½
-
-echo       		·´À¡ÐÅÏ¢µ½±ê×¼Êä³ö
-
-eval        		¶ÁÈ¡²ÎÊý£¬Ö´ÐÐ½á¹ûÃüÁî
-
-exec       		Ö´ÐÐÃüÁî£¬µ«²»ÔÚµ±Ç°shell
-
-exit         	ÍË³öµ±Ç°shell
-
-export    		µ¼³ö±äÁ¿£¬Ê¹µ±Ç°shell¿ÉÀûÓÃËü
-
-pwd        		ÏÔÊ¾µ±Ç°Ä¿Â¼
-
-read       		´Ó±ê×¼ÊäÈë¶ÁÈ¡Ò»ÐÐÎÄ±¾
-
-readonly 		Ê¹±äÁ¿Ö»¶Á
-
-return     		ÍË³öº¯Êý²¢´øÓÐ·µ»ØÖµ
-
-set         		¿ØÖÆ¸÷ÖÖ²ÎÊýµ½±ê×¼Êä³öµÄÏÔÊ¾
-
-shift       		ÃüÁîÐÐ²ÎÊýÏò×óÆ«ÒÆÒ»¸ö
-
-test         	ÆÀ¹ÀÌõ¼þ±í´ïÊ½
-
-times      		ÏÔÊ¾shellÔËÐÐ¹ý³ÌµÄÓÃ»§ºÍÏµÍ³Ê±¼ä
-
-trap       		µ±²¶»ñÐÅºÅÊ±ÔËÐÐÖ¸¶¨ÃüÁî
-
-ulimit    		ÏÔÊ¾»òÉèÖÃshell×ÊÔ´
-
-umask     		ÏÔÊ¾»òÉèÖÃÈ±Ê¡ÎÄ¼þ´´½¨Ä£Ê½
-
-unset  			´ÓshellÄÚ´æÖÐÉ¾³ý±äÁ¿»òº¯Êý
-
-wait       		µÈ´ýÖ±µ½×Ó½ø³ÌÔËÐÐÍê±Ï£¬±¨¸æÖÕÖ¹
-
-
-
-2±äÁ¿
-
-ShellµÄÀàÐÍÖ»ÓÐ×Ö´®±äÁ¿£¬ËùÒÔÒªÊ¹ÓÃÊýÖµÔËËãÔò±ØÐë¿¿Íâ²¿ÃüÁî´ï³ÉÄ¿µÄ¡£¶øÆä±äÁ¿ÖÖÀàÓÐÏÂÁÐ¼¸ÖÖ£º 
-
-2.1 ÆÕÍ¨±äÁ¿ 
-
-ÕâÊÇ×î³£Ê¹ÓÃµÄ±äÁ¿£¬ÎÒÃÇ¿ÉÒÔÈÎºÎ²»°üº¬¿Õ°××ÖÔªµÄ×Ö´®À´µ±×ö±äÁ¿Ãû³Æ¡£ Éè¶¨±äÁ¿ÖµÊ±ÔòÓÃÏÂÁÐ·½Ê½£º 
-
-var=string   #²»ÄÜÊÇvar = string£¬¼´µÈºÅÁ½±ß²»ÄÜÓÐ¿Õ¸ñ¡£ÓëÅÐ¶ÏÓï¾äÕýºÃÏà·´£¬ÅÐ¶ÏÓï¾ä±íµÄ=»òÕßÆäËû·ûºÅÁ½±ß±ØÐëÓÐ¿Õ¸ñ£¬·ñÔòÎª¸³ÖµÔËËã
-
-È¡ÓÃ±äÁ¿Ê±ÔòÔÚ±äÁ¿Ãû³ÆÇ°¼ÓÉÏÒ»"$" ºÅ£¬»òÕß${name}¡£ 
-
-name=Tom 
-
-echo name
-
-echo $name 
-
-½á¹ûÈçÏÂ£º
-
-name
-
-Tom
-
-
-
-2.2»·¾³±äÁ¿
-
-ºÍÊ¹ÆÕÍ¨±äÁ¿ÏàËÆ£¬Ö»²»¹ý´ËÖÖ±äÁ¿»á½«ÆäÖµ´«¸øÆäËùÖ´ÐÐµÄÃüÁî¡£Òª½«Ò»Ê¹ ÓÃÕß±äÁ¿Éè¶¨ÎªÏµÍ³±äÁ¿£¬Ö»Òª¼ÓÉÏ£º 
-
-export var»òÕßexport var=var_value »òÕßsetenv var var_valued
-
-name=Tom
-
-export name
-
-
-
-ÒÔÏÂÊÇÊ¹ÓÃÕßÒ»½øÈëÏµÍ³Ö®áá¾ÍÒÑÉè¶¨ºÃµÄÏµÍ³±äÁ¿£º 
-
-$HOME Ê¹ÓÃÕß×Ô¼ºµÄÄ¿Â¼ 
-
-$PATH Ö´ÐÐÃüÁîÊ±ËùËÑÑ°µÄÄ¿Â¼ 
-
-$TZ Ê±Çø 
-
-$MAILCHECK Ã¿¸ô¶àÉÙÃë¼ì²éÊÇ·ñÓÐÐÂµÄÐÅ¼þ 
-
-$PS1 ÔÚÃüÁîÁÐÊ±µÄÌáÊ¾ºÅ 
-
-$PS2 µ±ÃüÁîÉÐÎ´´òÍêÊ±£¬ShellÒªÇóÔÙÊäÈëÊ±µÄÌáÊ¾ºÅ 
-
-$MANPATH man Ö¸ÁîµÄËÑÑ°Â·¾¶ 
-
-
-
-2.3 Ö»¶ÁµÄÊ¹ÓÃÕß±äÁ¿ 
-
-ºÍÊ¹ÓÃÕß±äÁ¿ÏàËÆ£¬Ö»²»¹ýÕâÐ©±äÁ¿²»ÄÜ±»¸Ä±ä¡£Òª½«±äÁ¿Éè³ÉÖ»¶ÁµÄ £¬Ö»Òª¼ÓÉÏ£º 
-
-readonly var 
-
-
-
-¶øÈôÖ»´òreadonlyÔò»áÁÐ³öËùÓÐÖ»¶ÁµÄ±äÁ¿£¨kshÖ§³ÖreadonlyÃüÁî¡£csh²»Ö§³Ö£¬µ«ÊÇÔÚshell³ÌÐòÖÐ¿ÉÒÔÊ¹ÓÃreadonlyÐÞÊÎÄ³¸ö±äÁ¿£©¡£»¹ÓÐÒ»µã£¬ÏµÍ³±äÁ¿²»¿ÉÒÔÉè¶¨³ÉÖ»¶ÁµÄ¡£ 
-
-name=Tom 
-
-readonly name
-
-echo $name
-
-name=John
-
-echo $name
-
-(¼ÙÉèÎÄ¼þ±£´æÎªaa)
-
-½á¹ûÈçÏÂ£º
-
-aaa
-
-aa[4]: name: This variable is read only
-
-
-
-2.4 ÌØÊâ±äÁ¿ 
-
-ÓÐÐ©±äÁ¿ÊÇÒ»¿ªÊ¼Ö´ÐÐScriptÊ±¾Í»áÉè¶¨£¬²¢ÇÒ²»ÒÔ¼ÓÒÔÐÞ¸Ä£¬µ«ÎÒÃÇ²»½ÐËüÖ»¶ÁµÄÏµÍ³±äÁ¿£¬¶ø½ÐËüÌØÊâ±äÁ¿£¬ÒòÎªÕâÐ©±äÁ¿ÊÇÒ»Ö´ÐÐ³ÌÊ½Ê±¾ÍÓÐÁË£¬¿öÇÒÊ¹ÓÃÕßÎÞ·¨½«Ò»°ãµÄÏµÍ³±äÁ¿Éè¶¨³ÉÖ»¶ÁµÄ¡£ÒÔÏÂÊÇÒ»Ð©µÈÊâ±äÁ¿£º
-
-$0 Õâ¸ö³ÌÊ½µÄÖ´ÐÐÃû×Ö 
-
-$n Õâ¸ö³ÌÊ½µÄµÚn¸ö²ÎÊýÖµ£¬n=1..9 
-
-$* Õâ¸ö³ÌÊ½µÄËùÓÐ²ÎÊý 
-
-$# Õâ¸ö³ÌÊ½µÄ²ÎÊý¸öÊý 
-
-$$ Õâ¸ö³ÌÊ½µÄPID 
-
-$! Ö´ÐÐÉÏÒ»¸ö±³¾°Ö¸ÁîµÄPID 
-
-$? Ö´ÐÐÉÏÒ»¸öÖ¸ÁîµÄ·µ»ØÖµ 
-
-
-
-$n£¬nÖ»ÄÜÎª0-9µÄÔ­Òò£¬ÊÇBourne ShellµÄÎ»ÖÃ²ÎÊý±äÁ¿Îª$1~$9, Òò´ËÍ¨¹ýÎ»ÖÃ±äÁ¿$nÖ»ÄÜ·ÃÎÊÇ°9¸ö²ÎÊý¡£µ±ÄãÖ´ÐÐÕâ¸ö³ÌÊ½Ê±µÄ²ÎÊýÊýÄ¿³¬¹ý9 Ê±£¬ÎÒÃÇ¿ÉÒÔÊ¹ÓÃshift ÃüÁî½«²ÎÊýÍùÇ°ÒÆÒ»¸ñ£¬Èç´Ë¼´¿ÉÊ¹ÓÃµÚ10¸öÒÔááµÄ²ÎÊý¡£³ý´ËÖ®Íâ£¬¿ÉÒÔÓÃset ÃüÁî¸Ä±ä$n¼°$*£¬·½·¨ÈçÏÂ£º 
-
-set string 
-
-
-
-Èç´Ë$*µÄÖµ¼´Îªstring£¬¶ø·Ö½âááÔò»á·ÅÈë$n¡£Èç¹ûsetÃüÁîááÃæÃ»ÓÐ²ÎÊý£¬ Ôò»áÁÐ³öËùÓÐÒÑ¾­Éè¶¨µÄ±äÁ¿ÒÔ¼°ÆäÖµ¡£ 
-
-echo Filename: $0
-
-echo Arguments: $*
-
-echo No. of args.: $# 
-
-echo 2nd arg.: $2 
-
-shift 
-
-echo No. of args.: $#
-
-echo 2nd arg.: $2 
-
-set hello, everyone 
-
-echo Arguments: $* 
-
-echo 2nd arg.: $2 
-
-
-
-½á¹ûÈçÏÂ£º
-
-Filename: ex1
-
-Arguments: this is a test
-
-No. of args.: 4
-
-2nd arg.: is
-
-No. of args.: 3
-
-2nd arg.: a
-
-Arguments: hello, everyone
-
-2nd arg.: everyone
-
-
-
-2.5 Êý×é±äÁ¿ £¨kshÖ§³Ö£©
-
-name[index]=value
-
-ÆäÖÐnameÎªÊý×éÃû³Æ,indexÎªÊý×éÏÂ±ê£¬ÔÚkshÖÐÊý×é×î´óÖ§³Ö1024,¼´indexÎª0~1023.
-
-»òÕß
-
-set ¨CA name value1 value2¡­valuen
-
-ÒýÓÃÊý×é±äÁ¿
-
-${name[index]}
-
-Ó¦ÓÃËùÓÐÏî£º
-
-${name[*]}    #»òÕß
-
-${name[@]}
-
-
-
-Èç£º
-
-set ¨CA ser pps ppip mvpn
-
-echo ${ser[2]}
-
-echo ${ser[*]}
-
-´òÓ¡Îª£º
-
-mvpn
-
-pps ppip mvpn
-
-
-
-Èç£º
-
-set ¨CA ser pps ppip mvpn
-
-echo $ser[2]
-
-echo $ser[*]
-
-´òÓ¡Îª£º
-
-pps[2]
-
-pps[*]
-
-
-
-2.6 SHELL±äÁ¿ 
-
-SHELL³ÌÐòÖÐ¿ÉÒÔÖ±½ÓÊ¹ÓÃÒ»Ð©±äÁ¿¡£³£ÓÃÓÐ£º
-
-SECONDS			#ftp³ÌÐòÖÐÅÐ¶Ï³¬Ê±¾­³£Ê¹ÓÃÕâ¸ö±äÁ¿
-
-IFS				#Óò·Ö¸î·û£¬È±Ê¡Îª¿Õ¸ñ»òÕßTAB¼ü£¬¿ÉÒÔÓÉÓÃ»§Ö¸¶¨
-
-
-
-3ÒýÓÃ
-
-Ä³Ð©×Ö·ûÔÚSHELLÖÐ¾ß±¸ÌØÊâµÄº¬Òå£º
-
-Èç£º& * + ^ $ ` " | ? [ ] ; ^ < >
-
-¿ÉÒÔÊ¹ÓÃË«ÒýºÅ»òÕßµ¥ÒýºÅ»òÕß\È¥µôÌØÊâ×Ö·ûµÄº¬Òå£¬Ê¹³ÉÎªÒ»¸öÆÕÍ¨×Ö·û.
-
-3.1	 ¡±¡±¿ÉÒÔÈ¥µô³ý$, \, ``Ö®ÍâµÄËùÓÐÌØÊâ×Ö·ûµÄº¬Òå¡£
-3.2	
-±ÈÈç£º
-
->echo *    		#Êä³öµ±Ç°Ä³¸öµÄËùÓÐÄ¿Â¼ÓëÎÄ¼þ
-
->echo ¡°*¡±		#Êä³ö*×Ö·û
-
->echo ¡°`date`¡±	#Êä³öÎªdateÃüÁî´òÓ¡µÄÊ±¼ä¡°Tue Sep 17 11:31:58 MDT 2002¡±
-
->echo ¡°$PATH¡±	#Êä³öµ±Ç°ÓÃ»§µÄËÑË÷Â·¾¶
-
->echo ¡°a\na¡±		#Êä³öÎª2ÐÐ£¬Ò»ÐÐÒ»¸öa£¬´ËÊ±\ÎªÌØÊâ×Ö·û
-
-3.3	 ¡®¡¯µ¥ÒýºÅ¿ÉÒÔÈ¥µô\È¥µôÒýºÅÒÔÄÚ°üº¬µÄÈÎºÎÌØÊâ×Ö·ûµÄº¬Òå£¬Ê¹³ÉÎªÒ»¸öÆÕÍ¨×Ö·û.
-3.4	
-±ÈÈç£º
-
->echo ¡®*¡¯		#Êä³ö*×Ö·û
-
->echo ¡®`date`¡¯	#Êä³ö`date`
-
->echo ¡®$PATH¡¯	#Êä³ö$PATH
-
->echo ¡®a\na¡¯		#Êä³öÎª2ÐÐ£¬Ò»ÐÐÒ»¸öa£¬´ËÊ±\ÎªÌØÊâ×Ö·û
-
-
-
-3.5	 \¿ÉÒÔÈ¥µô& * + ^ $ ` " | ?µÄÌØÊâº¬Òå£¬\±¾ÉíµÄÌØÊâº¬Òå¿ÉÒÔÓÃ\È¥µô£¬±ÈÈç\\ºóÃæÒ»¸ö\¾ÍÊÇÆÕÍ¨×Ö·û
-3.6	
-Èç£º
-
->echo \*			#Êä³ö*
-
-
-
-4±ê×¼ÊäÈëÓëÊä³ö
-
-µ±ÎÒÃÇÔÚshellÖÐÖ´ÐÐÃüÁîµÄÊ±ºò£¬Ã¿¸ö½ø³Ì¶¼ºÍÈý¸ö´ò¿ªµÄÎÄ¼þÏàÁªÏµ£¬²¢Ê¹ÓÃÎÄ¼þÃèÊö·ûÀ´ÒýÓÃÕâÐ©ÎÄ¼þ¡£ÓÉÓÚÎÄ¼þÃèÊö·û²»ÈÝÒ×¼ÇÒä£¬ shellÍ¬Ê±Ò²¸ø³öÁËÏàÓ¦µÄÎÄ¼þÃû¡£ÏÂÃæ¾ÍÊÇÕâÐ©ÎÄ¼þÃèÊö·û¼°ËüÃÇÍ¨³£Ëù¶ÔÓ¦µÄÎÄ¼þÃû£º
-
-ÎÄ¼þÎÄ¼þÃèÊö·û
-
-ÊäÈëÎÄ¼þ¡ª±ê×¼ÊäÈë0
-
-Êä³öÎÄ¼þ¡ª±ê×¼Êä³ö1
-
-´íÎóÊä³öÎÄ¼þ¡ª±ê×¼´íÎó2
-
-ÏµÍ³ÖÐÊµ¼ÊÉÏÓÐ1 2¸öÎÄ¼þÃèÊö·û£¬µ«ÊÇÕýÈçÎÒÃÇÔÚÉÏ±íÖÐËù¿´µ½µÄ£¬ 0¡¢1¡¢2ÊÇ±ê×¼ÊäÈë¡¢Êä³öºÍ´íÎó
-
-
-
-command > filename °Ñ°Ñ±ê×¼Êä³öÖØ¶¨Ïòµ½Ò»¸öÐÂÎÄ¼þÖÐ
-
-command >> filename °Ñ°Ñ±ê×¼Êä³öÖØ¶¨Ïòµ½Ò»¸öÎÄ¼þÖÐ(×·¼Ó)
-
-command 1 > fielname °Ñ°Ñ±ê×¼Êä³öÖØ¶¨Ïòµ½Ò»¸öÎÄ¼þÖÐ
-
-command > filename 2>&1 °Ñ°Ñ±ê×¼Êä³öºÍ±ê×¼´íÎóÒ»ÆðÖØ¶¨Ïòµ½Ò»¸öÎÄ¼þÖÐ
-
-command 2 > filename °Ñ°Ñ±ê×¼´íÎóÖØ¶¨Ïòµ½Ò»¸öÎÄ¼þÖÐ
-
-command 2 >> filename °Ñ°Ñ±ê×¼Êä³öÖØ¶¨Ïòµ½Ò»¸öÎÄ¼þÖÐ(×·¼Ó)
-
-command >> filename 2>&1 °Ñ°Ñ±ê×¼Êä³öºÍ±ê×¼´íÎóÒ»ÆðÖØ¶¨Ïòµ½Ò»¸öÎÄ¼þÖÐ(×·¼Ó)
-
-command < filename >filename2 °ÑcommandÃüÁîÒÔfilenameÎÄ¼þ×÷Îª±ê×¼ÊäÈë£¬ÒÔfilename2ÎÄ¼þ×÷Îª±ê×¼Êä³ö
-
-command < filename °Ñc o m m a n dÃüÁîÒÔf i l e n a m eÎÄ¼þ×÷Îª±ê×¼ÊäÈë
-
-command << delimiter °Ñ´Ó±ê×¼ÊäÈëÖÐ¶ÁÈë£¬Ö±ÖÁÓöµ½d e l i m i t e r·Ö½ç·û
-
-command <&m °Ñ°ÑÎÄ¼þÃèÊö·ûm×÷Îª±ê×¼ÊäÈë
-
-command >&m °Ñ°Ñ±ê×¼Êä³öÖØ¶¨Ïòµ½ÎÄ¼þÃèÊö·ûmÖÐ
-
-command <&- °Ñ¹Ø±Õ±ê×¼ÊäÈë
-
-
-
-±ÈÈç³£ÓÃdbaccessÖ´ÐÐÒ»¸öSQL´®£º
-
->dbaccess $TELLIN_DBNAME <<EOF >$errorfile 2>&1
-
-delete from basetab_pps where msisdn=¡¯13000000000¡¯
-
-EOF
-
-
-
-5ÖØÐÂ¶¨Ïò
-
-ÊäÈë¶¨Ïò£º¿ÉÒÔ´ÓÎÄ¼þ»òÕß±ê×¼ÊäÈëÉè±¸µÃµ½ÊäÈë
-
-<
-
-Êä³ö¶¨Ïò£º
-
->	#½«ÃüÁîµÄÆÁÄ»Êä³ö¶¨Ïòµ½ÎÄ¼þ
-
->>  #½«ÃüÁîµÄÆÁÄ»Êä³ö¶¨Ïòµ½ÎÄ¼þ£¬²ÉÓÃAppend·½Ê½
-
-¹ÜµÀ¶¨Ïò£º
-
-| 	#½«Ò»¸öÃüÁîµÄÊä³ö¶¨Ïòµ½ÁíÍâÒ»¸öÃüÁîµÄÊä³ö£¨Ä³Ð©ÃüÁî²»Ö§³ÖÖ±½Ó|¶¨Ïò£©
-
-Èç£º½«Ò»ÌõSQLÊä³öµ½dbaccessÖ´ÐÐ
-
->echo ¡°update basetab_pps set multiserviceflag=¡¯00000000000¡± where msisdn=¡¯13501300000¡±|dbaccess $TELLIN_DBNAME
-
->ps ¨Cef |grep ¡°manager¡± |grep ¨Cv ¡°grep¡± | wc ¨Cl   #¶à´Î¹ÜµÀ¶¨Ïò
-
-
-
-µÃµ½ÃüÁî·µ»ØÖµ£¬Êä³öµ½±äÁ¿£º
-
-var=`command`
-
-Èç£º
-
->echo Time=`date "+%y-%m-%d %H:%M:%S"`		#Êä³öTime=02-09-17 18:30:06
-
-
-
-6»ù±¾Á÷³ÌÓï¾ä
-
-6.1 Ë³Ðò
-
-6.2 Ìõ¼þÓï¾äif-then-fi
-
-if  condition 
-
-then
-
-   ...
-
-fi
-
-
-
-ÎÒÃÇ¾­³£Ê¹ÓÃµÄÊéÐ´·½Ê½£ºÊ¹ÓÃ;·ûºÅ£¬ÔÚÒ»ÐÐÖÐ°üº¬¶àÌõÃüÁîÓëÓï¾ä
-
-if  condition  £»then
-
-   ...
-
-fi
-
-
-
-6.3 Ìõ¼þÓï¾äif-then-else-fi
-
-If  condition 
-
-then
-
-   ...
-
-else
-
-   ...
-
-fi
-
-        
-
-if condition1
-
-then
-
-   ...
-
-elif condition2
-
-then
-
-   ...
-
-else
-
-   ...
-
-fi
-
-      
-
-6.4 whileÌõ¼þÑ­»·
-
-while express
-
-do
-
-   ...
-
-done 
-
-#´ÓÑ­»·ÖÐÍË³öÊ¹ÓÃ breakºÍcontinueÃüÁî
-
-      
-
-6.5 forÑ­»·
-
-for var in arg1 arg2 ... argn
-
-do 
-
-  ...
-
-done
-
-#´ÓÑ­»·ÖÐÍË³öÊ¹ÓÃ breakºÍcontinueÃüÁî
-
-
-
-6.6 untilÑ­»·
-
-until express
-
-do
-
-...
-
-
-
-done
-
-#´ÓÑ­»·ÖÐÍË³öÊ¹ÓÃ breakºÍcontinueÃüÁî
-
-      
-
-6.7 caseÑ¡ÔñÓï¾ä
-
-case var in
-
-var1) 
-
-    ...
-
-    ;;
-
-var2|var3) 
-
-    ...
-
-    ;;
-
-*)
-
-    ;;
-
-esac
-
-             
-
-ÈçÉý¼¶³ÌÐòÑ¡Ôñ²Ëµ¥¾ÍÊÇÀûÓÃcase½¨Á¢µÄ£º
-
-while true
-
-do
-
-     #Ö´ÐÐ
-
-     echo ""
-
-     if [ "-${OprChc}" = "-1" ]; then
-
-               Backup   #±¸·Ý
-
-     elif [ "-${OprChc}" = "-2" ]; then
-
-               Upgrade  #Éý¼¶
-
-     elif [ "-${OprChc}" = "-3" ]; then
-
-               Rollback #»Ø¹ö       
-
-     elif [ "-${OprChc}" = "-0" ]; then
-
-               Log "Goodbye!"
-
-               Log ""
-
-               break        
-
-     else
-
-               echo "Invalid input , please input again!"
-
-     fi
-
-            
-
-      echo ""
-
-      PrintUsage  
-
-      read OprChc
-
-done  
-
-
-
-6.8 selectÑ¡ÔñÓï¾ä(kshÖ§³Ö)
-
-selectÑ¡ÔñÓï¾äÒ»°ãÓëcaseÓï¾äÁªºÏÊ¹ÓÃ£¬ÓÃ»§Éú³ÉÓÃ»§½»»¥²Ëµ¥¡£Óï·¨Îª£º
-
-select var in value1 value2 value3 ¡­ valuen
-
-do
-
-   ¡­
-
-done
-
-selectÖ´ÐÐÊ±»á¸ù¾ÝvalueÏîÉú³ÉÒ»¸öÁÐ±í£¬²¢ÇÒÃ¿Ò»ÏîÖ®Ç°¸øÒ»¸ö´Ó1¿ªÊ¼µÝÔöµÄÊý×Ö¡£ÓÃ»§Ñ¡ÔñÄ³¸öÊý×Ö£¬Ïàµ±ÓÚÑ¡Ôñvalue¶ÔÓ¦Ïî£¬¸³Öµ¸øvar±äÁ¿¡£Èç£º
-
-1)	value1
-2)	
-3)	value2
-4)	
-5)	value3
-6)	
-¡­
-
-n)	valuen
-o)	
-#?
-
-
-
-Ò»°ãdo doneÖ®¼äÊ¹ÓÃcaseÓï¾ä¡£Óï·¨À©Õ¹Îª£º
-
-select var in value1 value2 value3 ¡­ valuen
-
-do
-
-   case $var in
-
-      value1)
-
-         ¡­
-
-         ;;
-
-      value2)
-
-         ¡­
-
-         ;;
-
-      value3)
-
-         ¡­
-
-         ;;
-
-      ¡­
-
-      valuen)
-
-         ¡­
-
-         ;;
-
-      *)
-
-   esac
-
-done
-
-
-
-7 ±È½Ï²Ù×÷
-
-±È½Ï²Ù×÷Ò»°ãÓÃÔÚÌõ¼þÅÐ¶ÏÖÐ£¬ÒÔÏÂÓï·¨Ê¹ÓÃÌõ¼þÅÐ¶ÏÎªÀý£º
-
-7.1 ×Ö·û´®±È½Ï
-
-1£©×Ö·û´®ÏàµÈ±È½Ï
-
-if [ $str = ¡°value¡± ]; then        #×¢ÒâµÈºÅÁ½±ß±È½ÏÓÐ¿Õ¸ñ£¬·ñÔòÎª¸³ÖµÔËËã
-
-¡­
-
-fi
-
-
-
-2£©×Ö·û´®ÊÇ·ñÎª¿Õ
-
-if [ ¡°-$str¡± = ¡°-¡± ]; then         #-Ã»ÓÐÈÎºÎº¬Òå£¬Ö»ÊÇÎªÁËÔö¼Ó¿É¶ÁÐÔ
-
-¡­
-
-fi
-
-
-
-if [ ¡°X$str¡± = ¡°X¡± ]; then         #XÃ»ÓÐÈÎºÎº¬Òå£¬Ö»ÊÇÎªÁËÔö¼Ó¿É¶ÁÐÔ
-
-¡­
-
-fi
-
-
-
-3£©×Ö·û´®²»ÏàµÈ±È½Ï
-
-if [ $str != ¡°value¡± ]; then       #×¢ÒâµÈºÅÁ½±ß±È½ÏÓÐ¿Õ¸ñ£¬·ñÔòÎª¸³ÖµÔËËã
-
-¡­
-
-fi
-
-
-
-if [ ! $str = ¡°value¡± ]; then      #£¡ÎªnotµÄº¬Òå£¬¼´È¡·´
-
-¡­
-
-fi
-
-
-
-7.2 Êý×Ö±È½Ï
-
-1£©´óÓÚ¡¢´óÓÚµÈÓÚ
-
-if [ $str -gt 100 ]; then        #-gt±íÊ¾´óÓÚ
-
-¡­
-
-fi
-
-
-
-if [ $str -ge 100 ]; then        #-ge±íÊ¾´óÓÚµÈÓÚ
-
-¡­
-
-fi
-
-
-
-2£©Ð¡ÓÚ¡¢Ð¡ÓÚµÈÓÚ
-
-if [ $str -lt 100 ]; then        #-lt±íÊ¾Ð¡ÓÚ
-
-¡­
-
-fi
-
-
-
-if [ $str -le 100 ]; then        #-le±íÊ¾Ð¡ÓÚµÈÓÚ
-
-¡­
-
-fi
-
-
-
-2£©µÈÓÚ¡¢²»µÈÓÚ
-
-if [ $str ¨Ceq 100 ]; then        #-eq±íÊ¾µÈÓÚ
-
-¡­
-
-fi
-
-
-
-if [ $str -ne 100 ]; then        #-ne±íÊ¾²»µÈÓÚ
-
-¡­
-
-fi
-
-
-
-if [ ! $str -eq 100 ]; then        #!±íÊ¾È¡·ñ£¬-eq±íÊ¾µÈÓÚ
-
-¡­
-
-fi
-
-
-
-7.3 ÅÐ¶ÏÌõ¼þÁ¬½Ó
-
-1£©Óë/and£¬¼´ÒªÇó±í´ïÊ½1Óë±í´ïÊ½2Í¬Ê±ÎªÕæ
-
-if express1 && express 2 ;           #&&±íÊ¾Óë/andº¬Òå -a
-
-then
-
-¡­
-
-fi
-
-
-
-if [ str1 = ¡°aa¡± ] && [ str2 = ¡°bb¡± ] ;     
-
-then
-
-¡­
-
-fi
-
-
-
-
-
-2£©»ò/or£¬¼´ÒªÇó±í´ïÊ½1»òÕß±í´ïÊ½2Ö®Ò»ÎªÕæ
-
-if express1 || express 2 ;             #||±íÊ¾»ò/orº¬Òå -o
-
-then
-
-¡­
-
-fi
-
-
-
-if [ str1 = ¡°aa¡± ] || [ str2 = ¡°bb¡± ] ;     
-
-then
-
-¡­
-
-fi
-
-
-
-3£©È¡·´£¬
-
-if ! express1 ;                    #£¡±íÊ¾È¥·´
-
-then
-
-¡­
-
-fi
-
-
-
-if [ ! $? ¨Ceq 0 ]; 
-
-then
-
-¡­
-
-fi
-
-
-
-
-
-8 SHELLº¯Êý
-
-
-
-¿ÉÒÔ½«SHELLÖÐÐèÒªÖØ¸´Ö´ÐÐµÄ´úÂëÐ´³Éº¯Êý£¬ÓëC±à³ÌµÄº¯ÊýÒ»ÖÂ¡£
-
-8.1 º¯Êý¸ñÊ½
-
-¶¨Òåº¯ÊýµÄ¸ñÊ½Îª£º
-
-º¯ÊýÃû£¨£©
-
-{
-
-   ...
-
-}
-
-»òÕß
-
-º¯ÊýÃû£¨£©{
-
-   ...
-
-}
-
-Á½Õß·½Ê½¶¼¿ÉÐÐ¡£Èç¹ûÔ¸Òâ£¬¿ÉÔÚº¯ÊýÃûÇ°¼ÓÉÏ¹Ø¼ü×Öfunction£¬½¨ÒéÔö¼Ó¡£
-
-function º¯ÊýÃû£¨£©
-
-{
-
- ...
-
-}
-
-
-
-8.2 Ïòº¯Êý´«Èë²ÎÊý
-
-º¯Êý¿ÉÒÔ´ø²ÎÊýµ÷ÓÃ£¬µ÷ÓÃ·½Ê½Îª
-
-º¯ÊýÃû³Æ  ²ÎÊýÁÐ±í
-
-
-
-º¯ÊýÈ¡µÃ´«ÈëµÄ²ÎÊý£¬ÓëSHELLµÃµ½µ÷ÓÃµÄ²ÎÊýÍêÈ«Ò»ÖÂ£º
-
-ÅÐ¶Ï²ÎÊý¸öÊý£º
-
-$#
-
-È¡²ÎÊý£º
-
-$1  $2 ¡­
-
-
-
-8.3	 º¯Êý·µ»Ø²ÎÊý
-8.4	
-º¯Êý¿ÉÒÔÊ¹ÓÃreturn ·µ»Øµ÷ÓÃ²ÎÒ»¸öÖµ¡£µ÷ÓÃÕß¿ÉÒÔÔÚµ÷ÓÃº¯ÊýºóµÃµ½º¯ÊýµÄ·µ»ØÖµ£º
-
-$?µÃµ½,Èç£º
-
-#µ÷ÓÃ¸ñÊ½£ºaaa  parameter
-
-aaa()
-
-{
-
-   return 1
-
-}
-
-
-
-#´íÎóÓÃ·¨
-
-a=`aaa para`   #ÎÞ·¨µÃµ½·µ»ØÖµ1
-
-
-
-#ÕýÈ·ÓÃ·¨
-
-aaa para
-
-ret=$?
-
-
-
-Èç¹ûÊ¹ÓÃexit£¬½«ÍË³öSHELL³ÌÐò
-
-
-
-8.5	 ½«³£ÓÃº¯ÊýÐ´³É¿âº¯Êý
-8.6	
-ÎªÁËÖØ¸´ÀûÓÃ´úÂë£¬¿ÉÒÔ½«º¯ÊýÐ´³É¿âº¯ÊýµÄ·½Ê½£¬È»ºóÔÚSHELLÖÐ°üº¬½øÐÐ¼´¿ÉÊ¹ÓÃ£º
-
-. libraryfile
-
-
-
-9ÆäËû»ù±¾Óï·¨
-
-9.1 Ìõ¼þÁ¬½Ó·û
-
-andÓë 
-
-ÃüÁîÐÐ£ºcommand1 && command2   #Èç¹ûcommand1Ö´ÐÐ³É¹¦£¬Ö´ÐÐcommnad2
-
-Èç£ºrm * && echo "File successfully removed"
-
-(½¨Òé²»ÒªÊ¹ÓÃÒÔÉÏÓï·¨£¬ÒòÎªÓï·¨²»³£ÓÃ£¬¿É¶ÁÐÔ²»Ç¿)
-
-±í´ïÊ½£ºexpress1 && express2
-
-Èç£ºif [ $1 -eq 1 ] && [ $1 -eq 1 ]
-
-    then
-
-       ...
-
-    fi
-
-
-
-or»ò
-
-ÃüÁîÐÐ£ºcommand1 || command2    #½öµ±Ç°Ò»¸öÃüÁîÖ´ÐÐ³ö´íÊ±²ÅÖ´ÐÐºóÒ»ÌõÃüÁî
-
-Èç£ºrm * || echo "File removed failed"
-
-(½¨Òé²»ÒªÊ¹ÓÃÒÔÉÏÓï·¨£¬ÒòÎªÓï·¨²»³£ÓÃ£¬¿É¶ÁÐÔ²»Ç¿)
-
-±í´ïÊ½£ºexpress1 || express2
-
-Èç£ºif [ $1 -eq 1 ] || [ $1 -eq 1 ]
-
-    then
-
-       ...
-
-    fi
-
-
-
-9.2 °üº¬¿âº¯Êý
-
-#. ¿Õ¸ñÖ®ºó½«ÎÄ¼þµÄÂ·¾¶£¬ Ò»°ã·ÅÔÚ³ÌÐòµÄÆðÊ¼²¿·Ö
-
-. ./comm_func.sh.rc
-
-
-
-9.3 ÐÅºÅ´¦Àí
-
-trap "echo ___ $0 interrupted ___; exit 1" 2
-
-
-
-9.4 ·Ö¸î·û
-
-SHELLÄ¬ÈÏµÄ·Ö¸î·ûIFSÎª¿Õ¸ñÓëTAB¼ü¡£³ÌÐòÖÐ¿ÉÒÔÊ¹ÓÃ¶¨ÖÆµÄ·Ö¸î·û
-
-Èç£º´ÓdbaccessÏÂÔØÊý¾ÝÃ»ÓÐÖ¸¶¨delimiterÊ±£¬×Ö¶Î·Ö¸îÎª¡±|¡±
-
-OLD_IFS=$IFS
-
-IFS=¡±|¡±
-
-Read col1 col2 col3 < datafile
-
-¡­
-
-IFS=$OLD_IFS
-
-
-
-9.5ÖÕ¶ËµÄÒ»Ð©ÖªÊ¶
-
-1£© Ê¹×Ö·ûÏÔÊ¾·½Ê½Õý³£»òÕß·´×ªÏÔÊ¾
-
-echo ¡°\033[m\c¡±    #Õý³£ÏÔÊ¾
-
-echo ¡°\033[7m\c¡±   #·´×ªÏÔÊ¾
-
-
-
-2£©ÉèÖÃÍ¼ÐÎÄ£Ê½»òÕß×Ö·ûÄ£Ê½
-
-echo ¡°\033(B\c¡±    #×Ö·ûÄ£Ê½
-
-echo ¡°\033(0\c¡±    #Í¼ÐÎÄ£Ê½
-
-
-
-3£©´ÓÖÕ¶ËµÃµ½Ò»¸ö×Ö·û
-
-TTY=`tty`
-
-$1='`dd if=$TTY bs=1 count=1 2>/dev/null`'
-
-
-
-4£©¶¨Î»¹â±êÎ»ÖÃ
-
-echo "\033[$1;$2H\c"   #ÆäÖÐ$1±íÊ¾ÐÐ£¬$2±íÊ¾ÁÐ
-
-
-
-5) ÉèÖÃÖÕ¶Ë²ÎÊý
-
-stty¿ÉÒÔÓÃÀ´ÉèÖÃÓëÏÞÖÆÖÕ¶ËÊôÐÔ£¬Èç£ºÖÕ¶ËÓë¼ÆËã»úÖ®¼äµÄ´«ÊäÂÊ¡¢ÍË¸ñ¡¢ÖÐ¶ÏµÈ¡£
-
-echo[-echo]   	ÊÇ·ñ»ØÏÔ
-
-intr				Éú³ÉÖÐ¶ÏÐÅºÅ£¬Ä¬ÈÏÊ¹ÓÃdel°´¼üÉú³É
-
-erase			ÍË¸ñ¼ü£¬¼´²Á³ýÇ°ÃæÒ»¸ö×Ö·û
-
-##¡¾3¡¿³£ÓÃ¸ÅÄîÃüÁîÓë²Ù×÷
-
-1ÎÄ¼þ
-
-1.1 ÎÄ¼þÀàÐÍ£¬ls ¨Cal ÖÐµÚÒ»ÁÐµÄµÚÒ»¸ö×Ö·û£º
-
-drwxr-xr-x  12 smp20      sms           1024 Aug 13 15:36 .dt
-
-d Ä¿Â¼¡£
-
-l ·ûºÅÁ´½Ó(Ö¸ÏòÁíÒ»¸öÎÄ¼þ)¡£
-
-s Ì×½Ó×ÖÎÄ¼þ¡£
-
-b ¿éÉè±¸ÎÄ¼þ¡£±ÈÈçinformix²Ù×÷µÄ´æ´¢ÎÄ¼þÎª¿éÉè±¸
-
-c ×Ö·ûÉè±¸ÎÄ¼þ¡£±ÈÈç/dev/null¿ÕÉè±¸
-
-p ÃüÃû¹ÜµÀÎÄ¼þ¡£¼´½ø³ÌÍ¨ÐÅÊ¹ÓÃµÄPIPEÎÄ¼þ
-
-- ÆÕÍ¨ÎÄ¼þ£¬»òÕß¸ü×¼È·µØËµ£¬²»ÊôÓÚÒÔÉÏ¼¸ÖÖÀàÐÍµÄÎÄ¼þ
-
-
-
-1.2 ÎÄ¼þÈ¨ÏÞ£¬ls ¨Cal ÖÐµÚÒ»ÁÐµÄµÚ2-10¸ö×Ö·û
-
-(2-4×Ö·û)	ÎÄ¼þÊôÖ÷µÄÈ¨ÏÞ
-
-(5-7×Ö·û) 	Í¬×éÓÃ»§µÄÈ¨ÏÞ
-
-(8-10×Ö·û) 	ÆäËûÓÃ»§µÄÈ¨ÏÞ
-
-
-
-1.3 ¸Ä±äÈ¨ÏÞÎ»
-
-chmodÃüÁîµÄÒ»°ã¸ñÊ½Îª£º
-
-chmod [who] operator [permission] filename
-
-whoµÄº¬ÒåÊÇ£º
-
-u ÎÄ¼þÊôÖ÷È¨ÏÞ¡£
-
-g Í¬×éÓÃ»§È¨ÏÞ¡£
-
-o ÆäËûÓÃ»§È¨ÏÞ¡£
-
-a ËùÓÐÓÃ»§(ÎÄ¼þÊôÖ÷¡¢Í¬×éÓÃ»§¼°ÆäËûÓÃ»§)¡£
-
-operatorµÄº¬Òå£º
-
-+ Ôö¼ÓÈ¨ÏÞ¡£
-
-- È¡ÏûÈ¨ÏÞ¡£
-
-= Éè¶¨È¨ÏÞ¡£
-
-permissionµÄº¬Òå£º
-
-r ¶ÁÈ¨ÏÞ¡£
-
-w Ð´È¨ÏÞ¡£
-
-x Ö´ÐÐÈ¨ÏÞ¡£
-
-s ÎÄ¼þÊôÖ÷ºÍ×éset-ID¡£
-
-t Õ³ÐÔÎ»*¡£
-
-l ¸øÎÄ¼þ¼ÓËø£¬Ê¹ÆäËûÓÃ»§ÎÞ·¨·ÃÎÊ¡£
-
-»òÕß£º
-
-chmod È¨ÏÞÖµ filename
-
-ÎÄ¼þÊôÖ÷		Í¬×éÓÃ»§		ÆäËûÓÃ»§
-
-rwx			rwx			rwx
-
-4+2+1 		4+2+1 		4+2+1
-
-
-
-1.4 Ä¿Â¼È¨ÏÞÎ»
-
-Ä¿Â¼µÄ¶ÁÈ¨ÏÞÎ»ÒâÎ¶×Å¿ÉÒÔÁÐ³öÆäÖÐµÄÄÚÈÝ¡£Ð´È¨ÏÞÎ»ÒâÎ¶×Å¿ÉÒÔÔÚ¸ÃÄ¿Â¼ÖÐ´´½¨ÎÄ¼þ£¬Èç¹û²»Ï£ÍûÆäËûÓÃ»§ÔÚÄãµÄÄ¿Â¼ÖÐ´´½¨ÎÄ¼þ£¬¿ÉÒÔÈ¡ÏûÏàÓ¦µÄÐ´È¨ÏÞÎ»¡£Ö´ÐÐÈ¨ÏÞÎ»ÔòÒâÎ¶×ÅËÑË÷ºÍ·ÃÎÊ¸ÃÄ¿Â¼
-
-
-
-1.5 ¸Ä±äÎÄ¼þµÄÊôÖ÷
-
-chownÃüÁîµÄÒ»°ãÐÎÊ½Îª£º
-
-chown -R -h owner file
-
--	RÑ¡ÏîÒâÎ¶×Å¶ÔËùÓÐ×ÓÄ¿Â¼ÏÂµÄÎÄ¼þÒ²¶¼½øÐÐÍ¬ÑùµÄ²Ù×÷¡£- hÑ¡ÏîÒâÎ¶×ÅÔÚ¸Ä±ä·ûºÅÁ´½ÓÎÄ¼þµÄÊôÖ÷Ê±²»Ó°Ïì¸ÃÁ´½ÓËùÖ¸ÏòµÄÄ¿±êÎÄ¼þ¡£Ò»µ©½«ÎÄ¼þµÄËùÓÐÈ¨½»¸øÁíÍâÒ»¸öÓÃ»§£¬¾ÍÎÞ·¨ÔÙÖØÐÂÊÕ»ØËüµÄËùÓÐÈ¨
--	
-
-
-1.6 umask
-
-umaskÃüÁîÈ·¶¨ÁËÄã´´½¨ÎÄ¼þµÄÈ±Ê¡Ä£Ê½¡£ÕâÒ»ÃüÁîÊµ¼ÊÉÏºÍchmodÃüÁîÕýºÃÏà·´
-
-umaskÃüÁîÊÇÔÚ/etc/profileÎÄ¼þÖÐÉèÖÃµÄ£¬Ã¿¸öÓÃ»§ÔÚµÇÂ¼Ê±¶¼»áÒýÓÃÕâ¸öÎÄ¼þ£¬ËùÒÔÈç¹ûÏ£Íû¸Ä±äËùÓÐÓÃ»§µÄumask£¬¿ÉÒÔÔÚ¸ÃÎÄ¼þÖÐ¼ÓÈëÏàÓ¦µÄÌõÄ¿¡£Èç¹ûÏ£ÍûÓÀ¾ÃÐÔµØÉèÖÃ×Ô¼ºµÄumaskÖµ£¬ÄÇÃ´¾Í°ÑËü·ÅÔÚ×Ô¼º$HOMEÄ¿Â¼ÏÂµÄ. profile»ò.bash_profileÎÄ¼þÖÐ¡£
-
-¶ÔÓÚSMP»òÕßSCP£¬ÎÒÃÇ¶¨ÒåÔÚ.cshrcÖÐ£¬ÕâÑùµÇÂ½¼´ÉúÐ§¡£Èç£ºumask 002£¬ÕâÑù´´½¨µÄÎÄ¼þµÄÈ¨ÏÞÎª777-002=775
-
-
-
-1.7 ÅÐ¶ÏÎÄ¼þÄ³Ð©ÌØÐÔ
-
--r file   #ÊÇ·ñ´æÔÚ²¢ÇÒ¿É¶Á
-
--w file   #ÊÇ·ñ´æÔÚ²¢ÇÒ¿ÉÐ´
-
--s file   #ÊÇ·ñ´æÔÚ²¢ÇÒÎÄ¼þ´óÐ¡´óÓÚ0
-
--f file   #ÊÇ·ñ´æÔÚ²¢ÇÒÊÇ¹æÔòÎÄ¼þ
-
--d file   #ÊÇ·ñ´æÔÚ²¢ÇÒÎªÄ¿Â¼
-
--x file   #ÊÇ·ñ´æÔÚ²¢ÇÒ¿ÉÒÔÖ´ÐÐ
-
--p file   #ÊÇ·ñ´æÔÚ²¢ÇÒÎª¹ÜµÀÎÄ¼þ
-
-
-
-1.8 ÎÄ¼þ¼ÇÂ¼Ñ­»·´¦Àí
-
-Ê¹ÓÃwhileÑ­»·¶ÁÈ¡ÎÄ¼þ¼ÇÂ¼½øÐÐ´¦Àí¡£ÆäÖÐÎÄ¼þÊäÈë²ÉÓÃ < ¶¨Ïò·û¡£Ñ­»·±í´ïÊ½ÎªreadÃüÁî£¬Óï·¨ÈçÏÂ£º
-
-while read var1 var2 ¡­
-
-do
-
-    #´¦Àí´úÂë
-
-done < filename
-
-
-
-ÆäÖÐ£º
-
-1Ò»´Î¶ÁÈ¡Ò»ÐÐÊý¾Ý¡£
-
-2 ¿ÉÒÔ½«ÎÄ¼þÖÐÒ»ÐÐÊý¾ÝÒÔ¿Õ¸ñ»òÕßTAB¼ü¸ñ¿ªµÄÓò£¨×Ö¶Î£©ÄÚÈÝ¶ÁÈë±äÁ¿¡£Èç¹û±äÁ¿ÊýÁ¿Ð¡ÓÚÓò£¨×Ö¶Î£©ÊýÁ¿£¬Ôò½«Ç°Ãæ²¿·ÖÒ»Ò»¶ÔÓ¦£¬×îºóÊ£ÓàÓòµÄËùÓÐÄÚÈÝ¶ÁÈë×îºóÒ»¸ö±äÁ¿¡£±ÈÈç£º
-
-ÐÐ£ºAAA BBB CCC
-
-while read var1 var2 
-
-do
-
-done
-
-Ôòvar1=¡¯AAA¡¯, var2=¡¯BBB CCC¡¯
-
-2	Èç¹ûÏëÊ¹ÓÃÆäËû×Ö·û¼ä¸ôÓò£¨×Ö¶Î£©£¬¿ÉÒÔÐÞ¸ÄIFSµÃµ½£¬±ÈÈç£ºÐÞ¸ÄÎª|
-3	
-OLD_IFS=$IFS
-
-IFS=|
-
-while read var1 var2..
-
-do 
-
-done
-
-
-
-#»Ö¸´IFSÔ­ÄÚÈÝ
-
-IFS=$OLD_IFS
-
-
-
-
-
-2ÊýÖµ²Ù×÷
-
-¿ÉÒÔÊ¹ÓÃ:expr»òÕßbcÃüÁî£¬KSH¿ÉÒÔÊ¹ÓÃlet
-
-Ê¹ÓÃ expr Ó¦ÓÃ³ÌÐò
-
-2.1	expr
-2.2	
-n1=3
-
-n2=5
-
-n=`expr $n1 + $n2 `  
-
-×¢Òâ£º+µÈ²Ù×÷·û2²àÐèÒªÊ¹ÓÃ¿Õ¸ñ¸ñ¿ª
-
-
-
-Èç£º
-
->expr 10000 + 1111    #Ïà¼Ó
-
->expr 10000 \* 1111   #Ïà³Ë
-
-
-
-ksh ÖÐ¿ÉÊ¹ÓÃ let
-
-n1=3
-
-n2=5
-
-let n=n1+n2
-
-
-
-2.2 bc
-
-Ê¹ÓÃbc¿ÉÒÔ¼ÆËãÈÎÒâ³¤¶ÈµÄ¼ÆËã£¬²»»áÒç³ö
-
->echo "1000000000000000000000000000000*1111" | bc
-
-111100000000000000000000000000000
-
-
-
-2.3 ½øÖÆ×ª»»
-
-¿ÉÊ¹ÓÃprintfÃüÁî×ª»»
-
-±ÈÈç£º16 to 10
-
-     Ê®Áù½øÖÆÊýÇ°¼Ó¡°0x"
-
-     test1=`printf "%d" 0x9d83000`
-
-
-
- ±ÈÈç£º10 to 16
-
-     test2=`printf "%x" 83000
-
-
-
-3ºÏ²¢Óë·Ö¸î
-
-³£ÓÃµÄºÏ²¢Óë·Ö¸îÃüÁîÓÐ£º
-
-? sort
-
-? cut
-
-? split
-
-
-
-3.1	 sortÅÅÐò
-3.2	
-sort -cmur -o Êä³öÎÄ¼þ ¨Ct ·Ö¸î·û +n ÊäÈëÎÄ¼þ
-
-ÏÂÃæ¼òÒª½éÉÜÒ»ÏÂs o r tµÄ²ÎÊý£º
-
--c ²âÊÔÎÄ¼þÊÇ·ñÒÑ¾­·ÖÀà¡£
-
--m ºÏ²¢Á½¸ö·ÖÀàÎÄ¼þ¡£
-
--u É¾³ýËùÓÐ¸´ÖÆÐÐ¡£
-
--r ÄæÏòÅÅÐòDESC£¬Ä¬ÈÏÎªÕýÏòASC
-
-
-
-Èç£º½«basetab_ppsÎÄ¼þ°´µÚ4¸ö×Ö¶ÎÄæÏòÅÅÐò
-
-sort ¨Ct\| -r +3 basetab_pps.unl > basetab_pps.unl.sort
-
-×¢Òâ£º²»ÄÜÊ¹ÓÃ-t|£¬ÒòÎª|ÔÚSHELLÖÐÊôÓÚ¹ÜµÀ·ûºÅ£¬ÐèÒªÊ¹ÓÃ\|
-
-
-
-3.3	 cutÇÐ¸î
-3.4	
-cutÓÃÀ´´Ó±ê×¼ÊäÈë»òÎÄ±¾ÎÄ¼þÖÐ¼ôÇÐÁÐ»òÓò¡£¼ôÇÐÎÄ±¾¿ÉÒÔ½«Ö®Õ³Ìùµ½Ò»¸öÎÄ±¾ÎÄ¼þ¡£
-
-ÏÂÒ»½Ú½«½éÉÜÕ³ÌùÓÃ·¨¡£
-
-cutÒ»°ã¸ñÊ½Îª£º
-
-cut [options] file1 file2
-
-ÏÂÃæ½éÉÜÆä¿ÉÓÃÑ¡Ïî£º
-
--c list Ö¸¶¨¼ôÇÐ×Ö·ûÊý¡£
-
--f field Ö¸¶¨¼ôÇÐÓòÊý¡£
-
--d Ö¸¶¨Óë¿Õ¸ñºÍtab¼ü²»Í¬µÄÓò·Ö¸ô·û¡£
-
--cÓÃÀ´Ö¸¶¨¼ôÇÐ·¶Î§£¬ÈçÏÂËùÊ¾£º
-
--c1£¬5-7 ¼ôÇÐµÚ1¸ö×Ö·û£¬È»ºóÊÇµÚ5µ½µÚ7¸ö×Ö·û¡£
-
--c1-50 ¼ôÇÐÇ°50¸ö×Ö·û¡£
-
--f ¸ñÊ½Óë-cÏàÍ¬¡£
-
--f1£¬5 ¼ôÇÐµÚ1Óò£¬µÚ5Óò¡£
-
--f1£¬10-12 ¼ôÇÐµÚ1Óò£¬µÚ1 0Óòµ½µÚ1 2Óò¡£
-
-
-
-Èç£º´Ó×Ö·û´®ÖÐ¡±aaabb:aaaaa:bbb¡±½«¡±aaaaa¡±ÇÐ¸î³öÀ´
-
->echo ¡±aaabb:aaaaa:bbb¡± | cut ¨Cd ¡°:¡± ¨Cf2
-
-
-
-3.5	 split
-3.6	
-splitÓÃÀ´½«´óÎÄ¼þ·Ö¸î³ÉÐ¡ÎÄ¼þ¡£ÓÐÊ±ÎÄ¼þÔ½À´Ô½´ó£¬´«ËÍÕâÐ©ÎÄ¼þÊ±£¬Ê×ÏÈ½«Æä·Ö¸î¿ÉÄÜ¸üÈÝÒ×¡£Ê¹ÓÃvi»òÆäËû¹¤¾ßÖîÈçsortÊ±£¬Èç¹ûÎÄ¼þ¶ÔÓÚ¹¤×÷»º³åÇøÌ«´ó£¬Ò²»á´æÔÚÒ»Ð©ÎÊÌâ¡£Òò´ËÓÐÊ±Ã»ÓÐÑ¡ÔñÓàµØ£¬±ØÐë½«ÎÄ¼þ·Ö¸î³ÉÐ¡µÄËéÆ¬¡£
-
-SplitÃüÁîÒ»°ã¸ñÊ½£º
-
-split ¨Coutput-file-line input-filename output-filename
-
-ÕâÀïoutput-file-sizeÖ¸µÄÊÇÎÄ±¾ÎÄ¼þ±»·Ö¸îµÄÐÐÊý¡£Split²é¿´ÎÄ¼þÊ±£¬output-file-lineÑ¡Ïî
-
-Ö¸¶¨½«ÎÄ¼þ°´Ã¿¸ö×î¶à1000ÐÐ·Ö¸î¡£Èç¹ûÓÐ¸öÎÄ¼þÓÐ2800ÐÐ£¬ÄÇÃ´½«·Ö¸î³É3¸öÎÄ¼þ£¬·Ö±ðÓÐ1000¡¢1000¡¢800ÐÐ¡£Ã¿¸öÎÄ¼þ¸ñÊ½Îªx[aa]µ½x[zz]£¬xÎªÎÄ¼þÃûÊ××ÖÄ¸£¬ [aa]¡¢[zz]ÎªÎÄ¼þÃûÊ£Óà²¿·ÖË³Ðò×Ö·û×éºÏ£¬
-
-
-
-4Æ¥Åä»òÕß¹ýÂË²Ù×÷
-
-4.1 grepµÄÊ¹ÓÃ
-
-grep¿ÉÒÔ´ÓÊäÈëµÄ×Ö·ûÖÐ£¬¹ýÂËÄ³Ð©»òÕß¹ýÂËµôÄ³¸öÌØ¶¨×Ö·ûµÄÃüÁî¡£
-
-Ò»°ãÊ¹ÓÃÎª£º
-
-grep ¡°ÌØÕ÷×Ö·û´®¡±  inputFile
-
-grep ¨Cv ¡°ÌØÕ÷×Ö·û´®¡±  inputFile
-
-
-
-4.2  awkÃüÁîµÄÊ¹ÓÃ
-
-awkÊÇ¿ÉÒÔÊ¹ÓÃºÜ¸´ÔÓ£¬µ«ÊÇÄÜÍê³ÉÄ³Ð©ÌØ¶¨¹¦ÄÜ£¬²¢ÇÒ³£Ê¹ÓÃµÄÒ»¸öÃüÁî¡£Ê¹ÓÃÓÃ·¨£º
-
-awk [¨CF ·Ö¸ô·û] ¡®Ä£Ê½¡¯ inputfile
-
--F¿ÉÒÔÖ¸¶¨Óò»òÕßÁÐÖ®¼äµÄ·Ö¸î·û£¬Èç¹û²»Ö¸¶¨£¬Ê¹ÓÃÄ¬ÈÏµÄ·Ö¸î·û£¨¿Õ¸ñ»òÕßTAB£©¡£±ÈÈç¶ÔÓÚ·Ö¸îunloadÃüÁîÏÂÔØµÄÎÄ¼þ£¬ ¿ÉÒÔÖ¸¶¨ ¨CF |
-
-¶ÔÓÚÄ£Ê½ÖÐµÄÊ¹ÓÃ·Ö¸î·û·Ö¸îºóµÄÓò£¬±ê¼Ç$1£¬$2 . . . $n£¬$0±êÊ¶ËùÓÐµÄÓò¡£
-
-Îª´òÓ¡Ò»¸öÓò»òËùÓÐÓò£¬Ê¹ÓÃp r i n tÃüÁî
-
-±ÈÈç´òÓ¡µ±Ç°Ä¿Â¼µÄËùÓÐÎÄ¼þµÄ´óÐ¡Ãû³Æ:
-
->ls ¨Cal | awk ¡®{ print $5, $9}¡¯   #´óÐ¡ÓëÎÄ¼þÃû³ÆÊ¹ÓÃ¿Õ¸ñ¸ñ¿ª£¬¼´$5,$9Ê¹ÓÃ¿Õ¸ñÁ¬½Ó
-
->ls ¨Cal | awk ¡®{ print $5¡±|¡±$9}¡¯  #´óÐ¡ÓëÎÄ¼þÃû³ÆÊ¹ÓÃ|¸ñ¿ª,¼´$5,$9Ê¹ÓÃ|Á¬½Ó
-
-Ê¹ÓÃBEGINÄ£Ê½´òÓ¡Í·²¿ÐÅÏ¢£º
-
->ls ¨Cal | awk ¡®BEGIN {print ¡°size  filename¡±} { print $5¡±\t¡±$9}¡¯  #Ïàµ±ÓÚ´òÓ¡ÁÐµÄ±êÌâ
-
-Ê¹ÓÃENDÄ£Ê½´òÓ¡Î²²¿ÐÅÏ¢£º
-
->ls ¨Cal | awk ¡®{print $5¡±\t¡±$9} END{print ¡°finished¡±}¡¯  #ÔÚÁÐ³öÎÄ¼þºó£¬¼ÓÉÏfinished×Ö·û
-
-
-
-awkÖÐÊ¹ÓÃÕýÔò±í´ïÊ½
-
-awkÖÐÕýÔò±í´ïÊ½Æ¥Åä²Ù×÷ÓÃµ½µÄ×Ö·ûÓÐ£º
-
-\ ^ $ . [] | () * + ?
-
-ÓÃ·¨£º
-
-awk [-F ·Ö¸î·û] ¡®{if (express) ²Ù×÷}¡¯
-
-¼´Ö¸¶¨ÓòÂú×ãexpress±í´ïÊ½µÄÐÐ£¬²Å´òÓ¡³öÀ´.
-
-Èç´òÓ¡Ä¿Â¼ÎÄ¼þÖÐ°üº¬smsµÄÎÄ¼þ£º
-
->ls ¨Cal | awk ¡®{if ( $9~/sms/) print $0}¡¯
-
-Èç´òÓ¡Ä¿Â¼ÎÄ¼þ´óÐ¡´óÓÚ100000×Ö½ÚµÄÎÄ¼þ£º
-
->ls ¨Cal | awk ¡®{if ( $5>100000) print $0}¡¯
-
-
-
-awkÖÐ»¹ÓÐºÜ¶àÓÃ·¨£¬ÔÚ´Ë²»ÁÐ³öÀ´
-
-
-
-4.3 sedÃüÁî
-
-
-
-5ÐÅºÅ´¦Àí
-
-ÐÅºÅ¾ÍÊÇÏµÍ³Ïò½Å±¾»òÃüÁî·¢³öµÄÏûÏ¢£¬¸æÖªËüÃÇÄ³¸öÊÂ¼þµÄ·¢Éú¡£ÕâÐ©ÊÂ¼þÍ¨³£ÊÇÄÚ´æ´íÎó£¬·ÃÎÊÈ¨ÏÞÎÊÌâ»òÄ³¸öÓÃ»§ÊÔÍ¼Í£Ö¹ÄãµÄ½ø³Ì¡£ÐÅºÅÊµ¼ÊÉÏÊÇÒ»Ð©Êý×Ö¡£ÏÂ±íÁÐ³öÁË×î³£ÓÃµÄÐÅºÅ¼°ËüÃÇµÄº¬ÒåÁÐ³öËùÓÐÐÅºÅ£º
-
->kill ¨Cl
-
-HUP INT QUIT ILL TRAP IOT EMT FPE KILL BUS SEGV SYS PIPE ALRM TERM USR1
-
-USR2 CLD PWR VTALRM PROF IO WINCH STOP TSTP CONT TTIN TTOU
-
-
-
-Ò»Ð©ÐÅºÅµÄº¬Òå£º
-
-1 SIGHUP 	¹ÒÆð»ò¸¸½ø³Ì±»É±ËÀ
-
-2 SIGINT 	À´×Ô¼üÅÌµÄÖÐ¶ÏÐÅºÅ£¬Í¨³£ÊÇ< C T R L - C >
-
-3 SIGQUIT 	´Ó¼üÅÌÍË³ö
-
-9 SIGKILL 	ÎÞÌõ¼þÖÕÖ¹
-
-11 SIGSEGV 	¶Î£¨ÄÚ´æ£©³åÍ»
-
-15 SIGTERM 	Èí¼þÖÕÖ¹£¨È±Ê¡É±½ø³ÌÐÅºÅ£©
-
-
-
-5.1 ·¢³öÐÅºÅ£º
-
-kill ¨CÐÅºÅ  ½ø³ÌºÅ
-
-×¢Ã÷£ºkill ¨C9 ½ø³ÌºÅ  É±ËÀ½ø³ÌÊ±£¬²Ù×÷ÏµÍ³Ö±½Ó½«½ø³Ì´ÓÄÚºËÇå³ý£¬²»×÷ÍË³öµÄ´¦Àí
-
-
-
-5.2 ¼ì²âÐÅºÅ»òÕß²¶×½ÐÅºÅ
-
-ÓÐÐ©ÐÅºÅ¿ÉÒÔ±»Ó¦ÓÃ³ÌÐò»ò½Å±¾²¶»ñ£¬²¢ÒÀ¾Ý¸ÃÐÅºÅ²ÉÈ¡ÏàÓ¦µÄÐÐ¶¯¡£ÁíÍâÒ»Ð©ÐÅºÅ²»
-
-ÄÜ±»²¶»ñ¡£ÀýÈç£¬Èç¹ûÒ»¸öÃüÁîÊÕµ½ÁËÐÅºÅ9£¬¾ÍÎÞ·¨ÔÙ²¶×½ÆäËûÐÅºÅ¡£
-
-µ±½Å±¾²¶×½µ½Ò»¸öÐÅºÅºó£¬Ëü¿ÉÄÜ»á²ÉÈ¡ÏÂÃæÈýÖÖ²Ù×÷Ö®Ò»£º
-
-1) ²»²ÉÈ¡ÈÎºÎÐÐ¶¯£¬ÓÉÏµÍ³À´½øÐÐ´¦Àí¡£
-
-2) ²¶»ñ¸ÃÐÅºÅ£¬µ«ºöÂÔËü¡£
-
-3) ²¶»ñ¸ÃÐÅºÅ£¬²¢²ÉÈ¡ÏàÓ¦µÄÐÐ¶¯
-
-
-
-Èç¹ûÐèÒª²¶×½ÐÅºÅºó£¬²ÉÓÃ×Ô¶¨ÒåµÄ²Ù×÷£¬¿ÉÒÔÊ¹ÓÃtrapÃüÁî£º
-
-trap name signal(s)
-
-ÆäÖÐ£¬nameÊÇ²¶×½µ½ÐÅºÅÒÔºóËù²ÉÈ¡µÄÒ»ÏµÁÐ²Ù×÷¡£Êµ¼ÊÉú»îÖÐ£¬ nameÒ»°ãÊÇÒ»¸ö×¨ÃÅÓÃÀ´´¦ÀíËù²¶×½ÐÅºÅµÄº¯Êý¡£NameÐèÒªÓÃË«ÒýºÅ£¨¡° ¡±£©ÒýÆðÀ´¡£Signal¾ÍÊÇ´ý²¶×½µÄÐÅºÅ¡£
-
-ÏÂ±íÁÐ³öÁËÒ»Ð©×î³£¼ûµÄtrapÃüÁîÓÃ·¨£º
-
-trap "" 2 3 			ºöÂÔÐÅºÅ2ºÍÐÅºÅ3£¬ÓÃ»§²»ÄÜÖÕÖ¹¸Ã½Å±¾
-
-trap"commands" 2 3 	Èç¹û²¶×½µ½ÐÅºÅ2»ò3£¬¾ÍÖ´ÐÐÏàÓ¦µÄcommandsÃüÁî
-
-trap 2 3 			¸´Î»ÐÅºÅ2ºÍ3£¬ÓÃ»§¿ÉÒÔÖÕÖ¹¸Ã½Å±¾
-
-
-
-Èç£ºÊÕµ½3( SIGQUIT 	´Ó¼üÅÌÍË³ö),´òÓ¡Ò»ÐÐ¡°proc received SIGQUIT and exit¡±
-
-#!/bin/ksh
-
-
-
-trap ¡°fun_exit¡± 3
-
-
-
-fun_exit()
-
-{
-
-   echo ¡°proc received SIGQUIT and exit¡±
-
-   exit 1
-
-}
-
-
-
-echo ¡°start running¡±
-
-
-
-exit 0
-
-
-
-6 evalÃüÁî
-
-evalÃüÃû¿ÉÒÔÖ´ÐÐÖ®ºó¸úËæµÄÃüÁî»òÕß±äÁ¿Ëù¸³µÄÖµ»òÕß±í´ïÊ½¡£±ÈÈç£º
-
-ÓÃ·¨1£º
-
-eval echo ¡°aaa¡±
-
-ÓÃ·¨2£º
-
-command=env
-
-eval $env
-
-command=¡±echo aaa¡±
-
-eval $command
-
-ÓÃ·¨3:
-
-value=0
-
-eval [ $? -gt $value ]&&j=1
-
-eval [ $? -gt $value ]&& echo ¡°successfully¡±
-
-eval var=$#
-
-evalÃüÁîÔÚÖ´ÐÐ³ÌÐòÔËÐÐ¹ý³ÌÖÐ¸³ÖµÃüÁîµÄ±äÁ¿·Ç³£ÓÐÓÃ¡£±ÈÈçÔÚSHELL±àÖÆµÄÈË»ú½»»¥½çÃæÖÐ£¬Ñ¡ÖÐÄ³¸ö²Ëµ¥ÏîºóÖ´ÐÐÃ»¸öÃüÁî»òÕßº¯Êý£¬½Å±¾±¾Éí²»¿ÉÄÜÎªÃ¿¸ö²Ëµ¥ÏîcaseÒ»±é¡£
-
-
-
-##¡¾4¡¿ÆäËû
-
-4.1 Ê¹ÓÃ²»Í¬µÄ¿ÇÖ´ÐÐÃüÁîÎÄ¼þ
-
-1) Èç¹ûScriptµÄµÚÒ»¸ö·Ç¿Õ°××ÖÔª²»ÊÇ"#"£¬ÔòËü»áÊ¹ÓÃBourne Shell¡£ 
-
-2) Èç¹ûScriptµÄµÚÒ»¸ö·Ç¿Õ°××ÖÔªÊÇ"#"Ê±£¬µ«²»ÒÔ"#!"¿ªÍ·Ê±£¬ÔòËü»áÊ¹ÓÃC Shell¡£ 
-
-3) Èç¹ûScriptÒÔ"#!"¿ªÍ·£¬Ôò"#!"ááÃæËùÐ´µÄ¾ÍÊÇËùÊ¹ÓÃµÄShell£¬¶øÇÒÒª½«Õû¸öÂ·¾¶Ãû³ÆÖ¸³öÀ´£¬ÕâÀï½¨ÒéÊ¹ÓÃµÚÈýÖÖ·½Ê½Ö¸¶¨Shell £¬ÒÔÈ·±£ËùÖ´ÐÐµÄ¾ÍÊÇËùÒªµÄ¡£Bourne ShellµÄÂ·¾¶Ãû³ÆÎª/bin/sh £¬¶øC Shell ÔòÎª/bin/csh¡£ ÎÒÃÇÒ»°ãÊ¹ÓÃksh£¬ Â·¾¶Îª/bin/ksh
-
-
-
-4.2 Ê¹ÓÃ²»Í¬SHELLµÄÇø±ð
-
-  BSH: 
-
-      ÉèÖÃ»·¾³±äÁ¿Ê¹ÓÃexport var=var_value; var=var_valu; export var
-
-  CSH/KSH:
-
-      ÉèÖÃ»·¾³±äÁ¿Ê¹ÓÃsetenv var var_value
-
-
-
-Ò»Ð©KSH¶ÀÓÐµÄÌØÕ÷£º
-
-1)KSH»·¾³±äÁ¿
-
-HISTSIZE:ÀúÊ·ÃüÁîÊýÁ¿£¬Ä¬ÈÏÎª128,¿ÉÒÔÔÚ.chsrcÖÐ½«ÆäÉèÖÃÎªÆäËûÖµ
-
-TMOUT   :³¬Ê±×Ô¶¯ÍË³ö£¬ÓÃÓÚÒ»¶ÎÊ±¼äÃ»ÓÐ¼üÈëÃüÁî£¬Ç¿ÖÆÍË³ö    
-
-1)	±ðÃû
-2)	
-¿ÉÒÔ¶¨Òå×Ô¼ºµÄ±êÊ¶£¬±êÊ¶¶¨ÒåµÄÃüÁî¡£±ÈÈç£º
-
-alias dba dbaccess $TELLIN_DBNAME
-
-3)	Ö§³ÖÊý×é±äÁ¿
-4)	
-
-
-4.3 SHELL³ÌÐòµÄ·µ»ØÖµ²»ÄÜ³¬³ö255£¬·ñÔò·µ»ØÖµ½«²»È·¶¨
-
-  
-
-4.4  readÃüÁî½«ÊäÈëµÄ¶àÓàµÄpart¸ø×îºóÒ»¸ö±äÁ¿
-
->read var1 var2
-
-aa bb cc
-
->echo $var1
-
-aa
-
->echo $var2
-
-bb cc
-
-
-
-4.5 µ÷ÊÔ
-
-Ê¹ÓÃ-x
-
-1) ÔÚSHELL³ÌÐòÖ¸¶¨Ö´ÐÐÎªµ÷ÊÔÄ£Ê½
-
-#!/bin/sh ¨Cx
-
-
-
-2) ÔÚÃüÁîÐÐÖÐÖ¸¶¨µ÷ÊÔÄ£Ê½Ö´ÐÐ
-
-Ö¸¶¨SHELL ¨Cx ³ÌÐòÃû³Æ£¬Èç£º
-
-sh ¨Cx update_iuser214.sh
-
-
-
-4.6 Ö´ÐÐSHELL
-
-Ç°Ì¨Ö´ÐÐ£º
-
->sh ³ÌÐòÃû³Æ
-
->³ÌÐòÃû³Æ
-
-ºóÌ¨Ö´ÐÐ£º
-
->sh ³ÌÐòÃû³Æ  &
-
->³ÌÐòÃû³Æ     &
-
-
-
-4.7 ÒÆÖ²ÐÔ
-
-Ä¿Ç°ÖÇÄÜÒµÎñ²¿µÄÉè±¸Ñ¡ÐÍÖÐ£¬Ð¡ÐÍ»ú´ÓIBM/HP/SUN 3¼ÒÖÐÑ¡Ôñ¡£ÏàÓ¦ÎÒÃÇµÄSHELLÒ»°ãÐèÒªÔÚAIX,HP-UX,SunOSÉÏÓ¦µ±±£³ÖÒ»ÖÂ¡£¼´SHELL³ÌÐòÒ»°ãÐèÒªÔÚ3ÖÐ²Ù×÷ÏµÍ³ÉÏ½øÐÐÒÆÖ²¡£
-
-¿ÉÒÔÊ¹ÓÃuname ¨CsÈ·¶¨»úÆ÷µÄ²Ù×÷ÏµÍ³£¬±ÈÈç£º
-
-#»úÆ÷ÀàÐÍ
-
-OsType=`uname -s`
-
-if [ "-$OsType" = "-SunOS" ]; then
-
-    ¡­
-
-elif [ "-$OsType" = "-HP-UX" ]; then
-
-    ¡­
-
-elif [ "-$OsType" = "-AIX" ]; then
-
-    ¡­
-
-else
-
-   echo "ERROR: system not support this machine type $OsType"
-
-   eixt 1
-
-fi
-
-
-
-´ó²¿·Ö³£¼ûµÄUNIXÃüÁîÔÚÒÔÉÏ3ÖÐ²Ù×÷ÊÇÒ»ÖÂµÄ£¬µ«ÊÇÄ³Ð©ÃüÁîÔò¾ßÓÐ²îÒì(ÈçftpµÄlsÔÚHP-UXÎªnlist)¡£Èç¹ûÅöµ½Óë²Ù×÷ÏµÍ³Ïà¹ØµÄµØ·½£¬ÔòÐèÒª¸ù¾Ý²Ù×÷ÏµÍ³×÷ÏàÓ¦´¦Àí¡£
-
-
-
-
-
-¸½Â¼£º
-
-Ò»¸öSHELL±àÖÆµÄÈË»ú½»»¥½çÃæ£¬ÀïÃæÊ¹ÓÃµÄSHELLÓï·¨±È½ÏÉîÈë¡£Èç¹ûÄÜ¶Á¶®»òÕß±àÖÆÍ¬Ñù³ÌÐò£¬Ôò±íÃ÷ÄãµÄSHELL½Ì±¾¹¦µ×ÒÑ¾­×ã¹»Éîºñ¡£Èç¹û²»ÄÜ¶Á¶®£¬¿ÉÒÔÌôÕ½Ò»ÏÂ×Ô¼º¡£
-
-# LinuxÏÂ´ò°üÑ¹ËõwarºÍ½âÑ¹war°ü
-
-°Ñµ±Ç°Ä¿Â¼ÏÂµÄËùÓÐÎÄ¼þ´ò°ü³Égame.war
+æŠŠå½“å‰ç›®å½•ä¸‹çš„æ‰€æœ‰æ–‡ä»¶æ‰“åŒ…æˆgame.war
 
 jar -cvfM0 game.war ./
 
--c   ´´½¨war°ü
+-c   åˆ›å»ºwaråŒ…
 
--v   ÏÔÊ¾¹ý³ÌÐÅÏ¢
+-v   æ˜¾ç¤ºè¿‡ç¨‹ä¿¡æ¯
 
--f    
+-f
 
 -M
 
--0   Õâ¸öÊÇ°¢À­²®Êý×Ö£¬Ö»´ò°ü²»Ñ¹ËõµÄÒâË¼
+-0   è¿™ä¸ªæ˜¯é˜¿æ‹‰ä¼¯æ•°å­—ï¼Œåªæ‰“åŒ…ä¸åŽ‹ç¼©çš„æ„æ€
 
 
 
 
 
-½âÑ¹game.warµ½µ±Ç°Ä¿Â¼
+è§£åŽ‹game.waråˆ°å½“å‰ç›®å½•
 
 jar -xvf game.war
 
 
 
-# Ubuntu¿ª»úÖ±½Ó½øÈë¿ØÖÆÌ¨
+# Ubuntuå¼€æœºç›´æŽ¥è¿›å…¥æŽ§åˆ¶å°
 
-Ö»Ðè±à¼­ÎÄ¼þ`/etc/default/grub`£¬°Ñ `GRUB_CMDLINE_LINUX_DEFAULT=¡±quiet splash¡±`¸Ä³É`GRUB_CMDLINE_LINUX_DEFAULT=¡±quiet splash text¡±`£¬È»ºóÔÙÔËÐÐ`sudo update-grub`¼´¿É¡£
+åªéœ€ç¼–è¾‘æ–‡ä»¶`/etc/default/grub`ï¼ŒæŠŠ `GRUB_CMDLINE_LINUX_DEFAULT=â€quiet splashâ€`æ”¹æˆ`GRUB_CMDLINE_LINUX_DEFAULT=â€quiet splash textâ€`ï¼Œç„¶åŽå†è¿è¡Œ`sudo update-grub`å³å¯ã€‚
 
-ÔÚ¿ØÖÆÌ¨ÏÂÏë½øÈëx-window£¬¿ÉÒÔÔÚrootÓÃ»§ÏÂÊäÈë£º`gdm`»òÕß`startx`
+åœ¨æŽ§åˆ¶å°ä¸‹æƒ³è¿›å…¥x-windowï¼Œå¯ä»¥åœ¨rootç”¨æˆ·ä¸‹è¾“å…¥ï¼š`gdm`æˆ–è€…`startx`
 
-ÐÞ¸ÄUbuntuÄ¬ÈÏÆô¶¯½øÈëÎÄ±¾Ä£Ê½ºó£¬ÖØÐÂÆô¶¯ºóÍ£ÔÚChecking battery stateÎÊÌâ¡£Ã»¹ØÏµ£¬Êµ¼ÊÏµÍ³ÒÑ¾­Æô¶¯£¬°´¼ü ALT+F1 ¼´¿É½øÈëÊäÈëÓÃ»§ÃûµÇÂ¼µÃ×Ö·ûÌáÊ¾½çÃæ¡£
-
-
+ä¿®æ”¹Ubuntué»˜è®¤å¯åŠ¨è¿›å…¥æ–‡æœ¬æ¨¡å¼åŽï¼Œé‡æ–°å¯åŠ¨åŽåœåœ¨Checking battery stateé—®é¢˜ã€‚æ²¡å…³ç³»ï¼Œå®žé™…ç³»ç»Ÿå·²ç»å¯åŠ¨ï¼ŒæŒ‰é”® ALT+F1 å³å¯è¿›å…¥è¾“å…¥ç”¨æˆ·åç™»å½•å¾—å­—ç¬¦æç¤ºç•Œé¢ã€‚
