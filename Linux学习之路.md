@@ -462,6 +462,7 @@ Tools → Options... → LibreOffice → View → Graphics output (取消钩选U
 2. 解压: tar -xzvf rdseedv5.2.tar.gz
 3. 编译：
 
+```shell
     # 在makefile中找到这几句
     CC = cc
     # for cygwin add the -D_CYGwin flag, for users of windows pcs
@@ -481,6 +482,7 @@ Tools → Options... → LibreOffice → View → Graphics output (取消钩选U
     # 然后
     make clean
     make
+```
 
 4. 将编译好的rdseed文件拷贝靠bin目录下：sudo cp rdseed /usr/bin/
 5. 输入rdseed即可进入。
@@ -818,127 +820,64 @@ E: Unable to lock the list directory
 
 　　上面介绍的手工安装软件的方法虽然是针对Ubuntu环境来介绍的，但是各种Linux系统下的从源文件安装应用的方法基本上都大同小异。
 
-#解压缩 压缩命令
+## tar/zip/
 
-tar
-
--c: 建立压缩档案
-
--x：解压
-
--t：查看内容
-
--r：向压缩归档文件末尾追加文件
-
--u：更新原压缩包中的文件
-
-
+* -c: 建立压缩档案
+* -x：解压
+* -t：查看内容
+* -r：向压缩归档文件末尾追加文件
+* -u：更新原压缩包中的文件
 
 这五个是独立的命令，压缩解压都要用到其中一个，可以和别的命令连用但只能用其中一个。下面的参数是根据需要在压缩或解压档案时可选的。
 
-
-
--z：有gzip属性的
-
--j：有bz2属性的
-
--Z：有compress属性的
-
--v：显示所有过程
-
--O：将文件解开到标准输出
-
-
+* -z：有gzip属性的
+* -j：有bz2属性的
+* -Z：有compress属性的
+* -v：显示所有过程
+* -O：将文件解开到标准输出
 
 下面的参数-f是必须的
 
-
-
 -f: 使用档案名字，切记，这个参数是最后一个参数，后面只能接档案名。
 
-
-
-# tar -cf all.tar *.jpg
-
-这条命令是将所有.jpg的文件打成一个名为all.tar的包。-c是表示产生新的包，-f指定包的文件名。
-
-
-
-# tar -rf all.tar *.gif
-
-这条命令是将所有.gif的文件增加到all.tar的包里面去。-r是表示增加文件的意思。
-
-
-
-# tar -uf all.tar logo.gif
-
-这条命令是更新原来tar包all.tar中logo.gif文件，-u是表示更新文件的意思。
-
-
-
-# tar -tf all.tar
-
-这条命令是列出all.tar包中所有文件，-t是列出文件的意思
-
-
-
-# tar -xf all.tar
-
-这条命令是解出all.tar包中所有文件，-x是解开的意思
-
-
+```shell
+    tar -cf all.tar *.jpg # 这条命令是将所有.jpg的文件打成一个名为all.tar的包。-c是表示产生新的包，-f指定包的文件名。
+    tar -rf all.tar *.gif # 这条命令是将所有.gif的文件增加到all.tar的包里面去。-r是表示增加文件的意思。
+    tar -uf all.tar logo.gif # 这条命令是更新原来tar包all.tar中logo.gif文件，-u是表示更新文件的意思。
+    tar -tf all.tar # 这条命令是列出all.tar包中所有文件，-t是列出文件的意思
+    tar -xf all.tar # 这条命令是解出all.tar包中所有文件，-x是解开的意思
+```
 
 压缩
 
-tar –cvf jpg.tar *.jpg //将目录里所有jpg文件打包成tar.jpg
-
-tar –czf jpg.tar.gz *.jpg   //将目录里所有jpg文件打包成jpg.tar后，并且将其用gzip压缩，生成一个gzip压缩过的包，命名为jpg.tar.gz
-
-tar –cjf jpg.tar.bz2 *.jpg //将目录里所有jpg文件打包成jpg.tar后，并且将其用bzip2压缩，生成一个bzip2压缩过的包，命名为jpg.tar.bz2
-
-tar –cZf jpg.tar.Z *.jpg   //将目录里所有jpg文件打包成jpg.tar后，并且将其用compress压缩，生成一个umcompress压缩过的包，命名为jpg.tar.Z
-
-rar a jpg.rar *.jpg //rar格式的压缩，需要先下载rar for linux
-
-zip jpg.zip *.jpg //zip格式的压缩，需要先下载zip for linux
-
-
+    tar –cvf jpg.tar *.jpg //将目录里所有jpg文件打包成tar.jpg
+    tar –czf jpg.tar.gz *.jpg   //将目录里所有jpg文件打包成jpg.tar后，并且将其用gzip压缩，生成一个gzip压缩过的包，命名为jpg.tar.gz
+    tar –cjf jpg.tar.bz2 *.jpg //将目录里所有jpg文件打包成jpg.tar后，并且将其用bzip2压缩，生成一个bzip2压缩过的包，命名为jpg.tar.bz2
+    tar –cZf jpg.tar.Z *.jpg   //将目录里所有jpg文件打包成jpg.tar后，并且将其用compress压缩，生成一个umcompress压缩过的包，命名为jpg.tar.Z
+    rar a jpg.rar *.jpg //rar格式的压缩，需要先下载rar for linux
+    zip jpg.zip *.jpg //zip格式的压缩，需要先下载zip for linux
 
 解压
 
-tar –xvf file.tar //解压 tar包
-
-tar -xzvf file.tar.gz //解压tar.gz
-
-tar -xjvf file.tar.bz2   //解压 tar.bz2
-
-tar –xZvf file.tar.Z   //解压tar.Z
-
-unrar e file.rar //解压rar
-
-unzip file.zip //解压zip
-
+    tar –xvf file.tar //解压 tar包
+    tar -xzvf file.tar.gz //解压tar.gz
+    tar -xjvf file.tar.bz2   //解压 tar.bz2
+    tar –xZvf file.tar.Z   //解压tar.Z
+    unrar e file.rar //解压rar
+    unzip file.zip //解压zip
 
 
 总结
 
-1、*.tar 用 tar –xvf 解压
-
-2、*.gz 用 gzip -d或者gunzip 解压
-
-3、*.tar.gz和*.tgz 用 tar –xzf 解压
-
-4、*.bz2 用 bzip2 -d或者用bunzip2 解压
-
-5、*.tar.bz2用tar –xjf 解压
-
-6、*.Z 用 uncompress 解压
-
-7、*.tar.Z 用tar –xZf 解压
-
-8、*.rar 用 unrar e解压
-
-9、*.zip 用 unzip 解压
+    *.tar 用 tar –xvf 解压
+    *.gz 用 gzip -d或者gunzip 解压
+    *.tar.gz和*.tgz 用 tar –xzf 解压
+    *.bz2 用 bzip2 -d或者用bunzip2 解压
+    *.tar.bz2用tar –xjf 解压
+    *.Z 用 uncompress 解压
+    *.tar.Z 用tar –xZf 解压
+    *.rar 用 unrar e解压
+    *.zip 用 unzip 解压
 
 # Virtual Box相关
 
@@ -962,11 +901,9 @@ http://blog.csdn.net/killzero/article/details/10298845
 
 2.执行如下命令：
 
-#yum upadate
-
-#yum install kernel-devel 　
-
-#yum install gcc
+    yum upadate
+    yum install kernel-devel 　
+    yum install gcc
 
 3.重启系统
 
@@ -1815,495 +1752,107 @@ find 后面可加指定目录，如"/etc/"
 
 find "/etc/" -name "*" -type f| xargs wc -l | awk '{print $2" "$1"行"}'
 
-##查看cpu是否支持64位
-
-查看cpuinfo中是否有lm，如果有lm表示支持64位，lm的意思是long mode，具体命令如下：
-
-cat /proc/cpuinfo | grep flags 检查输出里面是否有 lm 字符 或 cat /proc/cpuinfo | grep flags | grep lm | wc -l 输出结果大于 0 表示支持64位
-
-
-
-查看机器有几个cpu，是否支持64位
-
-1. 查看物理CPU的个数
-
-#cat /proc/cpuinfo |grep "physical id"|sort |uniq|wc -l
-
-
-
-2. 查看逻辑CPU的个数
-
-#cat /proc/cpuinfo |grep "processor"|wc -l
-
-
-
-3. 查看CPU是几核
-
-#cat /proc/cpuinfo |grep "cores"|uniq
-
-
-
-4. 查看CPU的主频
-
-#cat /proc/cpuinfo |grep MHz|uniq
-
-
-
-# uname -a
-
-Linux euis1 2.6.9-55.ELsmp #1 SMP Fri Apr 20 17:03:35 EDT 2007 i686 i686 i386 GNU/Linux
-
-(查看当前操作系统内核信息)
-
-
-
-# cat /etc/issue | grep Linux
-
-Red Hat Enterprise Linux AS release 4 (Nahant Update 5)
-
-(查看当前操作系统发行版信息)
-
-
-
-# cat /proc/cpuinfo | grep name | cut -f2 -d: | uniq -c
-
-      8  Intel(R) Xeon(R) CPU            E5410   @ 2.33GHz
-
-(看到有8个逻辑CPU, 也知道了CPU型号)
-
-
-
-# cat /proc/cpuinfo | grep physical | uniq -c
-
-      4 physical id      : 0
-
-      4 physical id      : 1
-
-(说明实际上是两颗4核的CPU)
-
-
-
-# getconf LONG_BIT
-
-32
-
-(说明当前CPU运行在32bit模式下, 但不代表CPU不支持64bit)
-
-
-
-# cat /proc/cpuinfo | grep flags | grep ' lm ' | wc -l
-
-8
-
-(结果大于0, 说明支持64bit计算. lm指long mode, 支持lm则是64bit)
-
-## apt-cache
-
-apt 0.9.7.7ubuntu4，用于 i386 构架，编译于 Apr 12 2013 23:49:20
-
-Usage: apt-cache [options] command
-
-       apt-cache [options] showpkg pkg1 [pkg2 ...]
-
-       apt-cache [options] showsrc pkg1 [pkg2 ...]
-
-
-
-apt-cache is a low-level tool used to query information
-
-from APT's binary cache files
-
-
-
-Commands:
-
-   gencaches - Build both the package and source cache
-
-   showpkg - Show some general information for a single package
-
-   showsrc - Show source records
-
-   stats - Show some basic statistics
-
-   dump - Show the entire file in a terse form
-
-   dumpavail - Print an available file to stdout
-
-   unmet - Show unmet dependencies
-
-   search - Search the package list for a regex pattern	查找包含部分关键字的软件包
-
-   show - Show a readable record for the package	获取包的相关信息，如说明、大小、版本等
-
-   depends - Show raw dependency information for a package	了解使用依赖
-
-   rdepends - Show reverse dependency information for a package	了解某个具体的依赖
-
-   pkgnames - List the names of all packages in the system
-
-   dotty - Generate package graphs for GraphViz
-
-   xvcg - Generate package graphs for xvcg
-
-   policy - Show policy settings
-
-
-
-Options:
-
-  -h   This help text.
-
-  -p=? The package cache.
-
-  -s=? The source cache.
-
-  -q   Disable progress indicator.
-
-  -i   Show only important deps for the unmet command.
-
-  -c=? Read this configuration file
-
-  -o=? Set an arbitrary configuration option, eg -o dir::cache=/tmp
-
-See the apt-cache(8) and apt.conf(5) manual pages for more information.
-
-
-
-## apt-file
-
-是一个软件包查找工具，可以查到软件包所含的文件和安装的位置。
-
-apt-file [options] action [pattern]
-
-apt-file [options] -f action <file>
-
-apt-file [options] -D action <debfile>
-
-
-
-Configuration options:
-
-    --architecture		-a  <arch>       Use specific architecture
-
-    --cache			-c  <dir>        Cache directory
-
-    --cdrom-mount		-d  <cdrom>      Use specific cdrom mountpoint
-
-    --dummy			-y               run in dummy mode (no action)
-
-    --fixed-string		-F               Do not expand pattern
-
-    --from-deb		-D               Use file list of .deb package(s) as
-
-                                        patterns; implies -F
-
-    --from-file			-f               Read patterns from file(s), one per line
-
-                                        (use '-' for stdin)
-
-    --ignore-case		-i               Ignore case distinctions
-
-    --non-interactive	-N               Skip schemes requiring user input
-
-                                        (useful in cron jobs)
-
-    --package-only     -l               Only display packages name
-
-    --regexp          -x               pattern is a regular expression
-
-    --sources-list     	-s  <file>       sources.list location
-
-    --verbose         -v               run in verbose mode
-
-    --help            -h               Show this help.
-
-                     --               End of options (neccessary if pattern
-
-                                        starts with a '-')
-
-
-
-Action:
-
-update                              Fetch Contents files from apt-sources.
-
-更新软件包的文件库，第一次使用或apt-get update后都需运行一次。
-
-search|find        <pattern>        Search files in packages
-
-查找该文件存在于哪些软件包中。
-
-
-
-list|show          <pattern>        List files in packages
-
-显示该软件包的文件
-
-    purge                               Remove cache files
-
-## apt-get
-
-apt 0.9.7.7ubuntu4，用于 i386 构架，编译于 Apr 12 2013 23:49:24
-
-Usage: apt-get [options] command
-
-       apt-get [options] install|remove pkg1 [pkg2 ...]
-
-       apt-get [options] source pkg1 [pkg2 ...]
-
-
-
-apt-get is a simple command line interface for downloading and
-
-installing packages. The most frequently used commands are update
-
-and install.
-
-
-
-Commands:
-
-   update - Retrieve new lists of packages	更新源。最好定期更新一下使你自己机器上面的数据和服务器(/etc/apt/sources.list列出)上面的信息保持一致,在安装软件之前可以运行一下这个命令保证成功性。
-
-   upgrade - Perform an upgrade	更新已安装的包。这里加上-u选项列出将要升级的软件，可能会提示有些软件不会升级，因为可能会破坏依赖关系，更好的方法是利用apt-get dist-upgrade
-
-你 可以通过cd或者添加源地址来更新，如果你想从cd来升级，首先运行apt-cdrom把cd中的软件添加到/etc/apt/sources源中，然后 运行apt-get dist-upgrade来升级，但是因为apt-get总是使用最新版本，如果cd中的不是最新的版本，那么也不会用到cd。
-
-   install - Install new packages (pkg is libc6 not libc6.deb)
-
-   remove - Remove packages		删除包
-
-   autoremove - Remove automatically all unused packages	删除所有无用包
-
-   purge - Remove packages and config files	删除包及其依赖的软件包配置文件等
-
-   source - Download source archives	下载该包的源代码
-
-   build-dep - Configure build-dependencies for source packages	安装相关的编译环境
-
-   dist-upgrade - Distribution upgrade, see apt-get(8)	升级系统。这样安装的软件前面apt-get -u upgrade安不了的也会安装了，但个别的仍然不能安装，例如：升级会导致需要卸载一些包，卸载这些包会导致另外的软件不能用，所以就不升级了。
-
-   dselect-upgrade - Follow dselect selections	使用 dselect 升级
-
-   clean - Erase downloaded archive files	清理下载文件的存档
-
-   autoclean - Erase old downloaded archive files	只清理过时的包
-
-   check - Verify that there are no broken dependencies	检查是否有损坏的依赖
-
-   changelog - Download and display the changelog for the given package
-
-   download - Download the binary package into the current directory
-
-
-
-Options:
-
-  -h  This help text.
-
-  -q  Loggable output - no progress indicator
-
-  -qq No output except for errors
-
-  -d  Download only - do NOT install or unpack archives
-
-  -s  No-act. Perform ordering simulation
-
-  -y  Assume Yes to all queries and do not prompt
-
-  -f  Attempt to correct a system with broken dependencies in place
-
-  -m  Attempt to continue if archives are unlocatable
-
-  -u  Show a list of upgraded packages as well
-
-  -b  Build the source package after fetching it
-
-  -V  Show verbose version numbers
-
-  -c=? Read this configuration file
-
-  -o=? Set an arbitrary configuration option, eg -o dir::cache=/tmp
-
-See the apt-get(8), sources.list(5) and apt.conf(5) manual
-
-pages for more information and options.
-
-                       This APT has win Cow Powers.
-
-## apt-cdrom
-
-apt-cdrom is a tool to add CDROM's to APT's source list. The
-
-CDROM mount point and device information is taken from apt.conf
-
-and /etc/fstab.
-
-
-
-Commands:
-
-   add - Add a CDROM
-
-   ident - Report the identity of a CDROM
-
-
-
-Options:
-
-  -h   This help text
-
-  -d   CD-ROM mount point
-
-  -r   Rename a recognized CD-ROM
-
-  -m   No mounting
-
-  -f   Fast mode, don't check package files
-
-  -a   Thorough scan mode
-
-  --auto-detect Auto detect drive and mount point
-
-  -c=? Read this configuration file
-
-  -o=? Set an arbitrary configuration option, eg -o dir::cache=/tmp
-
-See fstab(5)
-
-
-
-## apititude
-
-aptitude update 更新可用的包列表
-
-aptitude upgrade 升级可用的包
-
-aptitude dist-upgrade 将系统升级到新的发行版
-
-aptitude install pkgname 安装包
-
-aptitude remove pkgname 删除包
-
-aptitude purge pkgname 删除包及其配置文件
-
-aptitude search string 搜索包
-
-aptitude show pkgname 显示包的详细信息
-
-aptitude clean 删除下载的包文件
-
-aptitude autoclean 仅删除过期的包文件
-
-## dpkg
-
-dpkg -L  软件名  查看软件安装的位置
-
-
-
-##打开.sh文件
-
-sudo sh *.sh
-
-##打开其它可执行文件：
-
-./***(如果没有可执行权限，需要chmod)
-
-## nautilus命令
-
-file explore
-
-
-
-## 命令行快速打开各类型文件
-
-xdg-open (opens a file or URL in the user's preferred application)
-
-或者： mplayer xxx.mp3
-
-## ED编辑器的使用
-
-ed 编辑器是 Linux 操作系统下最简单的文本编辑器。它是以行为单位对文件进行编辑的编辑器，而不像 MS-DOS 系统下的 edit 那样是以整个屏幕框架为单位对文件进行编辑的。因此，如果你已经习惯了使用 edit 这种风格的编辑器，那么你可能需要一段时间才能习惯 ed 的风格。但是这并不重要，因为 ed 的简便性可以使你很快上手的。
-
-ed 编辑器的调用很简单，如果你想新建一个文件，那么只需要在命令行窗口中敲入 ed 然后按下回车键即可：
-
-[titan@localhost titan]$ ed <-
-
-如果你想编辑一个已经存在的文件，那么你只要在 ed 的后面空一个，然后敲入文件名即可：
-
-[titan@localhost titan]$ ed filename <-
-
-激活 ed 命令后进入的是 ed 编辑器的命令行状态，这可能使一些初学者有些不习惯，如果你这时候随便敲入一些内容，系统会返回一个 ?，表示不知道你要执行什么任务：
-
-[titan@localhost titan]$ ed <-
-
-abcde <-
-
-?
-
-
-
-这时候你要明确几个编辑器命令，它们是：
-
-a - 在文件的末尾添加新内容
-
-i - 在文件的最后一行之前插入新内容
-
-o - 把文件输入的最后一行（不论是原来存在的或者插入的）替换成新内容
-
-. - 退出编辑文件模式进入命令行模式（注意：此时并没有退出 ed 编辑器）
-
-w - 保存文件
-
-q - 真正退出 ed 编辑器
-
-
-
-下面我将就着几个命令举例说明一下。
-
-[titan@localhost titan]$ ed <- 激活 ed 命令
-
-a <- 告诉 ed 我要编辑新文件
-
-My name is Titan. <- 输入第一行内容
-
-And I love Perl very much. <- 输入第二行内容
-
-. <- 返回 ed 的命令行状态
-
-i <- 告诉 ed 我要在最后一行之前插入内容
-
-I am 24. <- 将“I am 24.”插入“My name is Titan.”和“And I love Perl very much.”之间
-
-. <- 返回 ed 的命令行状态
-
-c <- 告诉 ed 我要替换最后一行输入内容
-
-I am 24 years old. <- 将“I am 24.”替换成“I am 24 years old.”（注意：这里替换的是最后输的内容）
-
-. <- 返回 ed 的命令行状态
-
-w readme.text <- 将文件命名为“readme.text”并保存（注意：如果是编辑已经存在的文件，只需要敲入 w 即可）
-
-q <- 完全退出 ed 编辑器
-
-[titan@localhost titan]$ 返回到 Linux 系统的命令行状态
-
-这是文件的内容是：
-
-[titan@localhost titan]$ cat readme.text <-
-
-My name is Titan.
-
-I am 24 years old.
-
-And I love Perl vrey much.
-
-[titan@localhost titan]$
-
-
-
-因为使用 ed 编辑文件时时看不到文件内容的，而且它不像 MS-DOS 下的 edit 那么灵活，请你在编辑文件是一定要仔细检查输入的内容以保证其正确性，避免反复往返于编辑状态和命令行状态之间，那样会浪费大量的时间。
+```shell
+    cat /proc/cpuinfo | grep flags # 查看cpuinfo中是否有lm，如果有lm表示支持64位，lm的意思是long mod
+    cat /proc/cpuinfo | grep flags | grep lm | wc -l # 输出结果大于 0 表示支持64位
+    cat /proc/cpuinfo |grep "physical id"|sort |uniq|wc -l # 查看物理CPU的个数
+    cat /proc/cpuinfo |grep "processor"|wc -l # 查看逻辑CPU的个数
+    cat /proc/cpuinfo |grep "cores"|uniq # 查看CPU是几核
+    cat /proc/cpuinfo |grep MHz|uniq # 查看CPU的主频
+    cat /proc/cpuinfo | grep name | cut -f2 -d: | uniq -c # 看到有8个逻辑CPU, 也知道了CPU型号
+    # 8  Intel(R) Xeon(R) CPU            E5410   @ 2.33GHz
+    
+    cat /proc/cpuinfo | grep physical | uniq -c # 说明实际上是两颗4核的CPU
+    # 4 physical id      : 0
+    # 4 physical id      : 1
+
+    getconf LONG_BIT # 说明当前CPU运行在32bit模式下, 但不代表CPU不支持64bit
+    # 32
+
+    cat /etc/issue | grep Linux # 查看当前操作系统发行版信息
+
+    apt-cache # query the APT cache
+    apt-file # APT package searching utility
+    apt-get
+    apt-cdrom # apt-cdrom is a tool to add CDROM's to APT's source list. 
+    apititude
+    dpkg
+
+    sudo sh *.sh # 打开.sh文件
+
+    ./*** # 打开其它可执行文件,如果没有可执行权限，需要chmod
+
+    man nautilus
+    man ed
+
+    file explore
+
+    xdg-open # 命令行快速打开各类型文件
+    mplayer xxx.mp3 # 使用mplayer打开
+
+    fc-list :lang=zh-cn # 查看字体
+
+    uname -a               # 查看内核/操作系统/CPU信息
+    head -n 1 /etc/issue   # 查看操作系统版本
+    cat /proc/cpuinfo      # 查看CPU信息
+    hostname               # 查看计算机名
+    lspci -tv              # 列出所有PCI设备
+    lsusb -tv              # 列出所有USB设备
+    lsmod                  # 列出加载的内核模块
+    env                    # 查看环境变量资源
+    free -m                # 查看内存使用量和交换区使用量
+    df -h                  # 查看各分区使用情况
+    du -sh <目录名>        # 查看指定目录的大小
+    grep MemTotal /proc/meminfo   # 查看内存总量
+    grep MemFree /proc/meminfo    # 查看空闲内存量
+    uptime                 # 查看系统运行时间、用户数、负载
+    cat /proc/loadavg      # 查看系统负载磁盘和分区
+    mount | column -t      # 查看挂接的分区状态
+    fdisk -l               # 查看所有分区
+    swapon -s              # 查看所有交换分区
+    hdparm -i /dev/hda     # 查看磁盘参数(仅适用于IDE设备)
+    dmesg | grep IDE       # 查看启动时IDE设备检测状况网络
+    ifconfig               # 查看所有网络接口的属性
+    iptables -L            # 查看防火墙设置
+    route -n               # 查看路由表
+    netstat -lntp          # 查看所有监听端口
+    netstat -antp          # 查看所有已经建立的连接
+    netstat -s             # 查看网络统计信息进程
+    ps -ef                 # 查看所有进程
+    top                    # 实时显示进程状态用户
+    w                      # 查看活动用户
+    id <用户名>            # 查看指定用户信息
+    last                   # 查看用户登录日志
+    cut -d: -f1 /etc/passwd   # 查看系统所有用户
+    cut -d: -f1 /etc/group    # 查看系统所有组
+    crontab -l             # 查看当前用户的计划任务服务
+    chkconfig --list       # 列出所有系统服务
+    chkconfig --list | grep on    # 列出所有启动的系统服务程序
+    rpm -qa                # 查看所有安装的软件包
+
+    netstat -anp | grep xxxx   #xxxx为端口号 Linux下查看某个端口下运行的是什么程序
+    lsof -i :xxxx    #xxxx为端口号
+
+    cat /proc/version # 查看内核版本命令
+    lsb_release -a ##查看linux版本
+    cat /etc/debian_version
+    cat /etc/issue
+    file /bin/bash
+    file /bin/cat
+    cat /etc/debian_version //Only for Debian
+    cat /etc/redhat-release //Only for Redhat
+    rpm -q redhat-release //Only for Redhat
+    redhat-release-5Server-5.6.0.3
+    
+    # 注:这种方式下可看到一个所谓的release号，比如上边的例子是5，这个release号和实际的版本之间存在一定的对应关系，如下：
+    # redhat-release-3AS-1 -> Redhat Enterprise Linux AS 3
+    # redhat-release-3AS-7.4 -> Redhat Enterprise Linux AS 3 Update 4
+    # redhat-release-4AS-2 -> Redhat Enterprise Linux AS 4
+    # redhat-release-4AS-2.4 -> Redhat Enterprise Linux AS 4 Update 1
+    # redhat-release-4AS-3 -> Redhat Enterprise Linux AS 4 Update 2
+    # redhat-release-4AS-4.1 -> Redhat Enterprise Linux AS 4 Update 3
+    # redhat-release-4AS-5.5 -> Redhat Enterprise Linux AS 4 Update 4
+```
 
 ##在shell中使用chrome命令
 
@@ -2321,11 +1870,6 @@ linux中打开chrome浏览器的命令为:"google-chrome"(打开chromium浏览�
 
 其他命令的使用方式同上
 
-
-
-##查看字体
-
-fc-list :lang=zh-cn
 
 ## mkisofs用法详解
 
@@ -2453,55 +1997,8 @@ mplayer -vo caca MovieName.avi
 
 “caca”命令代表着彩色文本播放引擎，你也可以使用“-vo aa”命令来替代它，这样你就可以把彩色的文本变成黑白两色。
 
-##信息命令查看大全
 
-```
-    # uname -a               # 查看内核/操作系统/CPU信息
-    # head -n 1 /etc/issue   # 查看操作系统版本
-    # cat /proc/cpuinfo      # 查看CPU信息
-    # hostname               # 查看计算机名
-    # lspci -tv              # 列出所有PCI设备
-    # lsusb -tv              # 列出所有USB设备
-    # lsmod                  # 列出加载的内核模块
-    # env                    # 查看环境变量资源
-    # free -m                # 查看内存使用量和交换区使用量
-    # df -h                  # 查看各分区使用情况
-    # du -sh <目录名>        # 查看指定目录的大小
-    # grep MemTotal /proc/meminfo   # 查看内存总量
-    # grep MemFree /proc/meminfo    # 查看空闲内存量
-    # uptime                 # 查看系统运行时间、用户数、负载
-    # cat /proc/loadavg      # 查看系统负载磁盘和分区
-    # mount | column -t      # 查看挂接的分区状态
-    # fdisk -l               # 查看所有分区
-    # swapon -s              # 查看所有交换分区
-    # hdparm -i /dev/hda     # 查看磁盘参数(仅适用于IDE设备)
-    # dmesg | grep IDE       # 查看启动时IDE设备检测状况网络
-    # ifconfig               # 查看所有网络接口的属性
-    # iptables -L            # 查看防火墙设置
-    # route -n               # 查看路由表
-    # netstat -lntp          # 查看所有监听端口
-    # netstat -antp          # 查看所有已经建立的连接
-    # netstat -s             # 查看网络统计信息进程
-    # ps -ef                 # 查看所有进程
-    # top                    # 实时显示进程状态用户
-    # w                      # 查看活动用户
-    # id <用户名>            # 查看指定用户信息
-    # last                   # 查看用户登录日志
-    # cut -d: -f1 /etc/passwd   # 查看系统所有用户
-    # cut -d: -f1 /etc/group    # 查看系统所有组
-    # crontab -l             # 查看当前用户的计划任务服务
-    # chkconfig --list       # 列出所有系统服务
-    # chkconfig --list | grep on    # 列出所有启动的系统服务程序
-    # rpm -qa                # 查看所有安装的软件包
-```
 
-## Linux下查看某个端口下运行的是什么程序
-
-netstat -anp | grep xxxx   #xxxx为端口号
-
-或者
-
-lsof -i :xxxx    #xxxx为端口号
 
 ## Windows/Linux文本文件格式转换
 
@@ -5120,83 +4617,6 @@ ${var%...}
 
 ${var/.../...}
 
-#查看linux操作系统版本
-
-##查看内核版本命令
-
-jiangxin@Ubuntu:~$ cat /proc/version
-
-Linux version 3.13.0-30-generic (buildd@allspice) (gcc version 4.8.2 (Ubuntu 4.8.2-19ubuntu1) ) #54-Ubuntu SMP Mon Jun 9 22:45:01 UTC 2014
-
-jiangxin@Ubuntu:~$ uname -r
-
-3.13.0-30-generic
-
-jiangxin@Ubuntu:~$ uname -a
-
-Linux Ubuntu 3.13.0-30-generic #54-Ubuntu SMP Mon Jun 9 22:45:01 UTC 2014 x86_64 x86_64 x86_64 GNU/Linux
-
-##查看linux版本
-
-jiangxin@Ubuntu:~$ lsb_release -a
-
-No LSB modules are available.
-
-Distributor ID:	Ubuntu
-
-Description:	Ubuntu 14.04 LTS
-
-Release:	14.04
-
-Codename:	trusty
-
-jiangxin@Ubuntu:~$ cat /etc/debian_version
-
-jessie/sid
-
-jiangxin@Ubuntu:~$ cat /etc/issue
-
-Ubuntu 14.04 LTS \n \l
-
-jiangxin@Ubuntu:~$ cat /etc/issue
-
-Ubuntu 14.04 LTS \n \l
-
-jiangxin@Ubuntu:~$ file /bin/bash
-
-/bin/bash: ELF 64-bit LSB  executable, x86-64, version 1 (SYSV), dynamically linked (uses shared libs), for GNU/Linux 2.6.24, BuildID[sha1]=796da7aa73903b1e5608a8ff8433669b7e00e980, stripped
-
-jiangxin@Ubuntu:~$ file /bin/cat
-
-/bin/cat: ELF 64-bit LSB  executable, x86-64, version 1 (SYSV), dynamically linked (uses shared libs), for GNU/Linux 2.6.24, BuildID[sha1]=950f866ca2bc042f9ca643e1af0fde0e0c029dc3, stripped
-
-[root@SOR_SYS ~]# cat /etc/redhat-release //Only for Redhat
-
-Red Hat Enterprise Linux AS release 4 (Nahant Update 4)
-
-[root@SOR_SYS ~]# rpm -q redhat-release //Only for Redhat
-
-redhat-release-5Server-5.6.0.3
-
-注:这种方式下可看到一个所谓的release号，比如上边的例子是5，这个release号和实际的版本之间存在一定的对应关系，如下：
-
-redhat-release-3AS-1 -> Redhat Enterprise Linux AS 3
-
-redhat-release-3AS-7.4 -> Redhat Enterprise Linux AS 3 Update 4
-
-redhat-release-4AS-2 -> Redhat Enterprise Linux AS 4
-
-redhat-release-4AS-2.4 -> Redhat Enterprise Linux AS 4 Update 1
-
-redhat-release-4AS-3 -> Redhat Enterprise Linux AS 4 Update 2
-
-redhat-release-4AS-4.1 -> Redhat Enterprise Linux AS 4 Update 3
-
-redhat-release-4AS-5.5 -> Redhat Enterprise Linux AS 4 Update 4
-
-jiangxin@Ubuntu:~$ cat /etc/debian_version //Only for Debian
-
-jessie/sid
 
 # C语言调试手段:锁定错误的实现方法
 

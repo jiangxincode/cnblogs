@@ -20,6 +20,9 @@
 * Vim 复制粘贴探秘: http://www.cnblogs.com/jianyungsun/archive/2011/03/19/1988855.html
 * VIMAdventures: http://vim-adventures.com/
 
+## vim中光标如何回到上一次位置
+
+ctrl + o
 
 ## vim如何删除某行至某行之间的内容？
 
