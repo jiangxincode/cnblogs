@@ -63,6 +63,7 @@
 * 领域驱动设计系列文章——浅析VO、DTO、DO、PO的概念、区别和用处: http://www.cnblogs.com/qixuejia/p/4390086.html
 * PO BO VO DTO POJO DAO DO这些Java中的概念分别指一些什么？: https://www.zhihu.com/question/39651928
 * Java bytecode instruction listings: https://en.wikipedia.org/wiki/Java_bytecode_instruction_listings
+* Java自动装箱与拆箱及其陷阱: http://blog.csdn.net/jairuschan/article/details/7513045
 
 # IDE
 
@@ -141,16 +142,12 @@
 * http://ant.apache.org/ivy/ivyde/index.html
 
 
-# asmplugin
+# ASM
 
-* 项目地址：http://sourceforge.net/projects/asmplugin/
-
-
-# Bytecode Outline plugin for Eclipse
-
-    Bytecode Outline plugin shows disassembled bytecode of current Java editor or class file, allows bytecode compare for Java/class files and shows ASMifier code for current bytecode.
-
-* http://asm.ow2.org/eclipse/index.html
+    ASM is an all purpose Java bytecode manipulation and analysis framework. It can be used to modify existing classes or dynamically generate classes, directly in binary form. Provided common transformations and analysis algorithms allow to easily assemble custom complex transformations and code analysis tools.
+    
+* http://asm.ow2.org/index.html
+* Bytecode Outline plugin for Eclipse: http://asm.ow2.org/eclipse/index.html
 
 # Spket IDE（提供Eclipse的插件）
 
@@ -348,6 +345,7 @@ Eclipse中`Update Project`，选择`Force Update of Snapshots/Releases`
 * 如何用Maven创建web项目（具体步骤）：http://blog.csdn.net/chuyuqing/article/details/28879477
 * maven依赖总结: http://blog.csdn.net/lastsweetop/article/details/8493475
 * maven2 up to maven3的'version' contains an expression but should be a constant: http://www.cnblogs.com/beiyeren/p/4275032.html
+* 解决Maven报Plugin execution not covered by lifecycle configuration: http://blog.csdn.net/xxd851116/article/details/25197373
 * 常见Maven仓库：
     * http://mvnrepository.com/    （搜索）
     * http://maven.oschina.net/home.html    （搜索）
@@ -836,6 +834,12 @@ JavaDoc: https://storm.apache.org/javadoc/apidocs/index.html
 # XML Pull Parsing
 
 * http://www.xmlpull.org/index.shtml
+
+# SAXON
+
+    The XSLT and XQuery Processor
+
+* http://saxon.sourceforge.net/
 
 
 # JACOB

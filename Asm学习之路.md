@@ -14,3 +14,7 @@
 * flat assembler: http://www.flatassembler.net/
 * IDA: https://www.hex-rays.com/products/ida/index.shtml
 * 鱼C工作室: http://www.fishc.com/
+
+# asmplugin
+
+* 项目地址：http://sourceforge.net/projects/asmplugin/
