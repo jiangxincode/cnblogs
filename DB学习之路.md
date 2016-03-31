@@ -69,6 +69,7 @@
 * oracle数据导入与导出: http://blog.csdn.net/loadrunn/article/details/7283441
 * EXECUTE IMMEDIATE 常见使用方法: http://blog.itpub.net/27042095/viewspace-739404/
 * Oracle11g自带的SQL developer无法打开解决方案(百度文库)： http://wenku.baidu.com/link?url=scHbokjqF7nK8kca00Pxrm8uaUmm7HNkgXLGaq0tNU-9T2zOrc08oZ7YJkXagD-QbQUmQl7c1wiZNigvIZ9YNVwMU9qIgxBI34HfkM8kWdO
+* 【Foreign Key】Oracle外键约束三种删除行为 : http://blog.itpub.net/519536/viewspace-630034/
 
 
 ## PL/SQL Developer

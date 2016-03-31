@@ -300,9 +300,24 @@ For more information, read
 
 帮助文档：23.4
 
+## vim 将文件所有行合并到一行
+
+在 Normal Mode下执行：
+
+    ggvGJ
+
+gg 用于跳到行首
+
+v 转换成 visual 模式
+
+G 跳到最后一行
+
+J 合并行
+
 
 # Emacs
 
 * emacswiki: http://www.emacswiki.org/emacs/
 * GNU Emacs Manuals Online: http://www.gnu.org/software/emacs/manual/
+
 
