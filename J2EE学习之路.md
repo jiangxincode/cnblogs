@@ -57,7 +57,6 @@
 * 如何使用eclipse生成javadoc帮助文档？:http://jingyan.baidu.com/article/dca1fa6f4d3d7ff1a4405239.html
 * [改编]深入equals方法，讨论instanceof的使用！: http://www.blogjava.net/bacoo/archive/2007/12/20/169176.html
 * 如何查看class文件的jdk版本：http://jingyan.baidu.com/article/e6c8503c7001b8e54f1a1804.html
-* Lifetimes of cryptographic hash functions: http://valerieaurora.org/hash.html
 * Struts2、Spring和Hibernate应用实例: http://871421448.iteye.com/blog/1546058
 * Apache和IIS网站Web日志格式详解: http://www.ha97.com/4813.html
 * 领域驱动设计系列文章——浅析VO、DTO、DO、PO的概念、区别和用处: http://www.cnblogs.com/qixuejia/p/4390086.html
@@ -148,6 +147,16 @@
     
 * http://asm.ow2.org/index.html
 * Bytecode Outline plugin for Eclipse: http://asm.ow2.org/eclipse/index.html
+
+# Javassist
+
+* http://jboss-javassist.github.io/javassist/
+
+
+# jclasslib
+
+* https://github.com/ingokegel/jclasslib
+
 
 # Spket IDE（提供Eclipse的插件）
 
@@ -346,6 +355,7 @@ Eclipse中`Update Project`，选择`Force Update of Snapshots/Releases`
 * maven依赖总结: http://blog.csdn.net/lastsweetop/article/details/8493475
 * maven2 up to maven3的'version' contains an expression but should be a constant: http://www.cnblogs.com/beiyeren/p/4275032.html
 * 解决Maven报Plugin execution not covered by lifecycle configuration: http://blog.csdn.net/xxd851116/article/details/25197373
+* Maven编译jar出现：无法确定 T 的类型参数的异常的原因和处理方案: http://www.cnblogs.com/peida/p/4218210.html
 * 常见Maven仓库：
     * http://mvnrepository.com/    （搜索）
     * http://maven.oschina.net/home.html    （搜索）

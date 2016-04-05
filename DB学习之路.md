@@ -776,6 +776,9 @@ sessions是个派生值,由processes的值决定,公式sessions=1.1*process + 5�
     --重启数据库
     shutdown immediate;
     startup
+    
+    --重启监听
+    lsnrctl stop/start/status
 
     show parameter processes; --显示：processes integer 400
     show parameter session; --显示：sessions integer 445
