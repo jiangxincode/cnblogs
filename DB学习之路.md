@@ -581,6 +581,36 @@ ORA-28000: 账户锁定
 
     -- 查询表的所有列及其属性
     select t.*,c.COMMENTS from user_tab_columns t,user_col_comments c where t.table_name = c.table_name and t.column_name = c.column_name and t.table_name = 要查询的表
+    
+    --创建永久表空间
+    create tablespace userSpace  --表空间名称
+    datafile 'C:\app\yeduanqiao\oradata\dbname\useSpacer.dbf'    --文件路径及文件名
+    size 50M   --表空间大小
+    AUTOEXTEND ON NEXT 50M   --每次自动扩展50M
+
+    --创建临时表空间
+    create temporary tablespace userTemp
+    tempfile  'C:\app\yeduanqiao\oradata\dbname\userTemp.dbf'
+    size 50M
+
+    ---查看表空间名称、id，文件存储位置,初始大小
+    select tablespace_name,file_id,file_name,bytes
+    from dba_data_files
+    order by file_id
+
+    --修改表空间大小
+    alter database
+    datafile 'C:\app\yeduanqiao\oradata\dbname\useSpacer.dbf'  
+    resize 1000M
+    
+    --修改表空间大小:增加数据文件
+    alter tablespace USERSPACE
+    add datafile 'C:\app\yeduanqiao\oradata\dbname\USERSPACE2.dbf' 
+    size 500M
+
+    --删除表空间
+    drop tablespace USERSPACE
+
 
 ```
 
