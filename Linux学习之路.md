@@ -12,6 +12,8 @@
 * winetricks 用WineTricks令你的Wine更完整: http://blog.csdn.net/arthur_yang/article/details/6365445
 * PDFtk: https://www.pdflabs.com/
 * File system: https://en.wikipedia.org/wiki/File_system
+* ack: http://beyondgrep.com/
+* Glances: https://github.com/nicolargo/glances/
 
 ## Shell 快捷键
 
@@ -318,9 +320,9 @@ Clementine不支持utf8，需要吧所有的mp3歌曲转换为gbk格式，wma好
 
 另外clementine采用gstreamer作为后端，需要安装gstreamer插件：
 
-1 如果想支持mp3，需要安装gstreamer-0.10-plugins-bad和gstreamer-0.10-plugins-ugly
-2 如果想支持wma，需要安装gstreamer-0.10-ffmpeg
-3 如果想支持mms流媒体，需要安装gstreamer plugins for mms
+* 如果想支持mp3，需要安装gstreamer-0.10-plugins-bad和gstreamer-0.10-plugins-ugly
+* 如果想支持wma，需要安装gstreamer-0.10-ffmpeg
+* 如果想支持mms流媒体，需要安装gstreamer plugins for mms
 
 另外Clementine基于Amarok，所以支持Amarok的插件一般都支持Clementine，比如osdlyrics。
 
@@ -495,22 +497,30 @@ Tools → Options... → LibreOffice → View → Graphics output (取消钩选U
 
 2. 对sac 文件压缩包直接解压，会出现sac文件夹，里面包含了多个文件夹：
 
+```shell
     tar xvfz netcdf-3.6.3.tar.gz
     for i in *.bz2;do tar jxvf $i;done
+```
 
 3. 将整个sac 文件夹拷到某目录下（SAC 推荐安装目录为/usr/local）：
 
+```shell
     sudo cp -r sac /usr/local
+```
 
 4. 编辑.bashrc 设置环境变量
 
+```shell
     gedit ~/.bashrc
+```
 
 在.bashrc 的最后添加如下语句
 
+```shell
     export SACHOME=/usr/local/sac
     export SACAUX=$SACHOME/aux
     export PATH=$SACHOME/bin:$PATH
+```
 
 5. 终端输入source ~/.bashrc 
 6. 终端输入sac（注意要小写），看到版本号等信息即安装成功。
@@ -599,8 +609,6 @@ Vimium 和 Vimperator 就是两款参考了 Vim 按键操作方式和理念而�
 ## glxgears
 
 glxgears是一个测试你的Linux是否可以顺利运行2D、3D的测试软件。这个程序弹出一个窗口，里面有三个转动的齿轮，屏幕将显示出每五秒钟转动多少栅，所以这是一个合理的性能测试。窗户是可以缩放的，栅数多少极大程度上依赖于窗口的大小。如果你的显示卡够好，而且你的驱动程序也配合得很好，那齿轮就跑得越快。这里请记录下FPS数字（每秒的帧速度）以鉴别3D加速效果。
-
-
 
 
 ## 重装Ubuntu如何保留/home分区中的数据
@@ -702,7 +710,7 @@ ext2/ext3格式
 
 
 
-#卸载LNMP
+## 卸载LNMP
 
     killall nginx *//终止nginx进程
     /etc/init.d/mysql stop *//关闭mysql
@@ -765,7 +773,7 @@ E: Unable to lock the list directory
 
     sudo rm /var/lib/apt/lists/lock
 
-# Ubuntu Linux下如何用源码文件安装软件
+## Ubuntu Linux下如何用源码文件安装软件
 
 　　在附带了丰富的软件，这些软件一般使用图形化的自动方式（“添加／删除”或“新立得”）即可轻松安装，但是对于那些刚刚问世的新软件，Ubuntu的源中还未收录其中，这时我们就需要用到一种更通用的安装方式：通过手工方式从源文件来安装这些软件。下面就介绍这种手工安装方式的详细步骤。　　
 
@@ -879,13 +887,15 @@ E: Unable to lock the list directory
     *.rar 用 unrar e解压
     *.zip 用 unzip 解压
 
-# Virtual Box相关
+## Virtual Box相关
+
+* https://www.virtualbox.org/manual/ch06.html#network_nat
 
 注：增强包已下载存在Documents
 
 通过设备——分配光驱即可分配
 
-##访问USB子系统失败
+## 访问USB子系统失败
 
 解决ubuntu下virtualbox访问usb子系统失败
 
@@ -895,7 +905,7 @@ http://blog.coltcn.com/2012/03/13/virtualbox-error-failed-to-access-usb-subsyste
 
 http://blog.csdn.net/killzero/article/details/10298845
 
-##安装CentOS后安装增强功能
+## 安装CentOS后安装增强功能
 
 1.启动CentOS，以root身份登录，进入桌面环境。
 
@@ -915,187 +925,14 @@ http://blog.csdn.net/killzero/article/details/10298845
 
 virtualbox中加载已有的虚拟硬盘时出现Cannot register the hard disk错误，描述类似下面的。
 
-
-
-ERROR: Cannot register the hard disk '/mnt/ee/winxp/xp.vdi' with UUID {395ae4ae-8bf9-42e5-b82a-61af9f95fbf0} because a hard disk '/mnt/ee/winxp/xp.vdi' with UUID {395ae4ae-8bf9-42e5-b82a-61af9f95fbf0} already exists in the media registry ('/home/pzye/.VirtualBox/VirtualBox.xml')
-
-Details: code NS_ERROR_INVALID_ARG (0x80070057), component VirtualBox, interface IVirtualBox, callee nsISupports
-
-Context: "OpenHardDisk(Bstr(szFilenameAbs), AccessMode_ReadWrite, srcDisk.asOutParam())" at line 603 of file VBoxManageDisk.cpp
-
-
+    ERROR: Cannot register the hard disk '/mnt/ee/winxp/xp.vdi' with UUID {395ae4ae-8bf9-42e5-b82a-61af9f95fbf0} because a hard disk '/mnt/ee/winxp/xp.vdi' with UUID {395ae4ae-8bf9-42e5-b82a-61af9f95fbf0} already exists in the media registry ('/home/pzye/.VirtualBox/VirtualBox.xml')
+    Details: code NS_ERROR_INVALID_ARG (0x80070057), component VirtualBox, interface IVirtualBox, callee nsISupports
+    Context: "OpenHardDisk(Bstr(szFilenameAbs), AccessMode_ReadWrite, srcDisk.asOutParam())" at line 603 of file VBoxManageDisk.cpp
 
 解决方法如下：
 
 关闭virtualbox，重新启动它，它会检测虚拟硬盘，可能会检测出来一些虚拟硬盘，请将其删除，然后就不会出现这个问题了。
 
-## VirtualBox虚拟机网络连接设置
-
-VirtualBox的提供了四种网络接入模式，它们分别是：
-
-1、NAT    网络地址转换模式(NAT,Network Address Translation)
-
-2、Bridged Adapter    桥接模式
-
-3、Internal    内部网络模式
-
-4、Host-only Adapter  主机模式
-
-下面我们分别对这四种网络模式进行分析解释：
-
-
-
-第一种 NAT模式
-
-解释：
-
-NAT模式是最简单的实现虚拟机上网的方式，你可以这样理解：Vhost访问网络的所有数据都是由主机提供的，vhost并不真实存在于网络中，主机与网络中的任何机器都不能查看和访问到Vhost的存在。
-
-虚拟机与主机关系：
-
-只能单向访问，虚拟机可以通过网络访问到主机，主机无法通过网络访问到虚拟机。
-
-虚拟机与网络中其他主机的关系：
-
-只能单向访问，虚拟机可以访问到网络中其他主机，其他主机不能通过网络访问到虚拟机。
-
-虚拟机与虚拟机之间的关系：
-
-相互不能访问，虚拟机与虚拟机各自完全独立，相互间无法通过网络访问彼此。
-
-IP:10.0.2.15
-
-网关：10.0.2.2
-
-DNS：10.0.2.3
-
-一台虚拟机的多个网卡可以被设定使用 NAT， 第一个网卡连接了到专用网 10.0.2.0，第二个网卡连接到专用网络 10.0.3.0，等等。默认得到的客户端ip（IP Address）是10.0.2.15，网关（Gateway）是10.0.2.2，域名服务器（DNS）是10.0.2.3，可以手动参考这个进行修改。
-
-NAT方案优缺点：
-
-笔记本已插网线时： 虚拟机可以访问主机，虚拟机可以访问互联网，在做了端口映射后（最后有说明），主机可以访问虚拟机上的服务（如数据库）。
-
-笔记本没插网线时： 主机的“本地连接”有红叉的，虚拟机可以访问主机，虚拟机不可以访问互联网，在做了端口映射后，主机可以访问虚拟机上的服务（如数据库）。
-
-
-
-第二种 Bridged Adapter模式
-
-解释：
-
-网桥模式是我最喜欢的用的一种模式，同时，模拟度也是相当完美。你可以这样理解，它是通过主机网卡，架设了一条桥，直接连入到网络中了。因此，它使得虚拟机能被分配到一个网络中独立的IP，所有网络功能完全和在网络中的真实机器一样。
-
-虚拟机与主机关系：
-
-可以相互访问，因为虚拟机在真实网络段中有独立IP，主机与虚拟机处于同一网络段中，彼此可以通过各自IP相互访问。
-
-虚拟机于网络中其他主机关系：
-
-可以相互访问，同样因为虚拟机在真实网络段中有独立IP，虚拟机与所有网络其他主机处于同一网络段中，彼此可以通过各自IP相互访问。
-
-虚拟机于虚拟机关系：
-
-可以相互访问，原因同上。
-
-IP：一般是DHCP分配的，与主机的“本地连接”的IP 是同一网段的。虚拟机就能与主机互相通信。
-
-笔记本已插网线时：（若网络中有DHCP服务器）主机与虚拟机会通过DHCP分别得到一个IP，这两个IP在同一网段。 主机与虚拟机可以ping通，虚拟机可以上互联网。
-
-笔记本没插网线时：主机与虚拟机不能通信。主机的“本地连接”有红叉，就不能手工指定IP。虚拟机也不能通过DHCP得到IP地址，手工指定IP后，也无法与主机通信，因为主机无IP。
-
-这时主机的VirtualBox Host-Only Network 网卡是有ip的，192.168.56.1。虚拟机就算手工指定了IP 192.168.56.*，也ping不能主机。
-
-
-
-第三种 Internal模式
-
-解释：
-
-内网模式，顾名思义就是内部网络模式，虚拟机与外网完全断开，只实现虚拟机与虚拟机之间的内部网络模式。
-
-虚拟机与主机关系：
-
-不能相互访问，彼此不属于同一个网络，无法相互访问。
-
-虚拟机与网络中其他主机关系：
-
-不能相互访问，理由同上。
-
-虚拟机与虚拟机关系：
-
-可以相互访问，前提是在设置网络时，两台虚拟机设置同一网络名称。如上配置图中，名称为intnet。
-
-IP: VirtualBox的DHCP服务器会为它分配IP ，一般得到的是192.168.56.101，因为是从101起分的，也可手工指定192.168.56.*。
-
-笔记本已插网线时：虚拟机可以与主机的VirtualBox Host-Only Network 网卡通信
-
-这种方案不受主机本地连接（网卡）是否有红叉的影响。
-
-
-
-第四种 Host-only Adapter模式
-
-解释：
-
-主机模式，这是一种比较复杂的模式，需要有比较扎实的网络基础知识才能玩转。可以说前面几种模式所实现的功能，在这种模式下，通过虚拟机及网卡的设置都可以被实现。
-
-我们可以理解为Vbox在主机中模拟出一张专供虚拟机使用的网卡，所有虚拟机都是连接到该网卡上的，我们可以通过设置这张网卡来实现上网及其他很多功能，比如（网卡共享、网卡桥接等）。
-
-虚拟机与主机关系
-
-默认不能相互访问，双方不属于同一IP段，host-only网卡默认IP段为192.168.56.X 子网掩码为255.255.255.0，后面的虚拟机被分配到的也都是这个网段。通过网卡共享、网卡桥接等，可以实现虚拟机于主机相互访问。
-
-虚拟机与网络主机关系
-
-默认不能相互访问，原因同上，通过设置，可以实现相互访问。
-
-虚拟机与虚拟机关系
-
-默认可以相互访问，都是同处于一个网段。
-
-虚拟机访问主机 用的是主机的VirtualBox Host-Only Network网卡的IP：192.168.56.1  ，不管主机“本地连接”有无红叉，永远通。
-
-主机访问虚拟机，用是的虚拟机的网卡3的IP： 192.168.56.101  ，不管主机“本地连接”有无红叉，永远通。
-
-虚拟机访问互联网，用的是自己的网卡2， 这时主机要能通过“本地连接”有线上网，（无线网卡不行）
-
-
-
-通过对以上几种网络模式的了解，我们就可以灵活运用，模拟组建出我们所想要的任何一种网络环境了。
-
-比如我想模拟出来一个一台主机，监控一个局域网上网情况的网络环境。
-
-首先我开启了两台虚拟机vhost1与vhost2，当然如果硬件允许，我同样可以再增加vhost3、vhost4…
-
-所有的vhost我都设置成internat内网模式，网络名称为intnal，网关为192.168.56.100，意思就是通过 192.168.56.100网卡上网。其中有一台vhost1我设置为双网卡，一张为内网模式（192.168.56.100），一张为网桥模式（192.168.1.101）。两张网卡设置双网卡共享上网
-
-虚拟机之间为局域网，其中有一台虚拟机vhost1通过与外网相连，所有局域网中的虚拟机又通过vhost1来实现上外网。这样vhost1就可以监控整个虚拟机局域网上网情况了。
-
-
-
-NAT 设置端口映射
-
-http://huzhangsheng.blog.163.com/blog/static/34787784200802801435931/
-
-你可以设置一个虚拟机的服务（比如 WEB  服务），通过使用命令行工具 VboxManage 代理。你需要知道虚拟机的服务使用哪个端口，然后决定在主机上使用哪个端口（通常但不总是想要使虚拟机和主机使用同一个端口）。在主机上提供一个服务需要使用一个端口，你能使用在主机上没有准备用来提供服务的任何端口。一个怎样设置新的 NAT 例子，在虚拟机上连接到一个 ssh 服务器，需要下面的三个命令：
-
-VBoxManage setextradata 'Linux Guest' 'VBoxInternal/Devices/pcnet/0/LUN#0/Config/guestssh/Protocol' TCP
-
-VBoxManage setextradata 'Linux Guest' 'VBoxInternal/Devices/pcnet/0/LUN#0/Config/guestssh/GuestPort' 22
-
-VBoxManage setextradata 'Linux Guest' 'VBoxInternal/Devices/pcnet/0/LUN#0/Config/guestssh/HostPort' 2222
-
-说明：VboxManage 是一个命令行程序，请查询你的 VirtualBox 安装目录，'Linux Guest' 是虚拟主机名。guestssh 是一个自定义的名称，你可以任意设置，通过上面的三个命令，把虚拟机的 22 端口 转发到主机的 2222 端口。
-
-又比如，我在虚拟机 debian 上安装了 apache2 服务器，使用 80 端口，映射到主机的 80 端口。使用下面的命令。
-
-'C:\Program Files\innotek VirtualBox\VBoxManage.exe' setextradata 'debian' 'VBoxInternal/Devices/pcnet/0/LUN#0/Config/huzhangsheng/Protocol' TCP
-
-'C:\Program Files\innotek VirtualBox\VBoxManage.exe' setextradata 'debian' 'VBoxInternal/Devices/pcnet/0/LUN#0/Config/huzhangsheng/GuestPort' 80
-
-'C:\Program Files\innotek VirtualBox\VBoxManage.exe' setextradata 'debian' 'VBoxInternal/Devices/pcnet/0/LUN#0/Config/huzhangsheng/HostPort' 80
-
-注意：要使设置生效，请关掉 VirtualBox 再运行虚拟机，我把 VirtualBox 安装在 winxp 上，在虚拟机中安装 debian 4.02r ，虚拟机名是 debian ，并安装了 apache2 php5 mysql-server ，在主机上用IE浏览 http://localhost，成功转发到虚拟机 debian 的 apache2 web 服务器上
 
 ## virtualbox命令行共享CentOS目录
 
@@ -1109,79 +946,20 @@ VBoxManage setextradata 'Linux Guest' 'VBoxInternal/Devices/pcnet/0/LUN#0/Config
 
 在命令行终端下输入：
 
-mkdir /mnt/yongfu
+    mkdir /mnt/yongfu
+    mount -t vboxsf yongfu /mnt/yongfu
 
-mount -t vboxsf yongfu /mnt/yongfu
+其中"yongfu"是之前创建的共享文件夹的名字。现在虚拟机和主机可以互传文件了。如不想每次都手动挂载，可以在/etc/fstab中添加一项
 
-其中"yongfu"是之前创建的共享文件夹的名字。现在虚拟机和主机可以互传文件了。
-
-如不想每次都手动挂载，可以在/etc/fstab中添加一项
-
-yongfu /mnt/yongfu vboxsf rw,gid=100,uid=1000,auto 0 0
+    yongfu /mnt/yongfu vboxsf rw,gid=100,uid=1000,auto 0 0
 
 这样就能够自动挂载了。
 
-4. 卸载的话使用下面的命令：
+4. 卸载的话使用下面的命令
 
-umount -f /mnt/yongfu
+    umount -f /mnt/yongfu
 
-linux连接投影机
-
-
-
-# update-Alternatives学习笔记
-
-Linux 发展到今天，可用的软件已经非常多了。这样自然会有一些软件的功能大致上相同。例如，同样是编辑器，就有 nvi、vim、emacs、nano，而且我说的这些还只是一部分。大多数情况下，这样的功能相似的软件都是同时安装在系统里的，可以用它们的名称来执行。例如，要执行 vim，只要在终端下输入 vim 并按回车就可以了。不过，有些情况下我们需要用一个相对固定的命令调用这些程序中的一个。例如，当我们写一个脚本程序时，只要写下 editor，而不希望要为“编辑器是哪个”而操心。Debian 提供了一种机制来解决这个问题，而 update-Alternatives 就是用来实现这种机制的。
-
-
-
-1)首先要介绍的参数是 --display。它使我们可以看到一个命令的所有可选命令。执行：
-
-update-Alternatives --display editor
-
-可以看到我的机器上的所有可以用来被 editor 链接的命令。
-
-
-
-2)--config。这个选项使我们可以选择其中一个命令程序来作为editor,执行：
-
-update-Alternatives --config editor
-
-
-
-首先，update-Alternatives 在一般情况下是由postinst 和 prerm 这样的安装脚本自动调用的，所以一个 Alternative 的状态有两种：自动和手动。每个 Alternative 的初始状态都是自动。如果系统发现管理员手动修改了一个 Alternative，它的状态就从自动变成了手动，这样安装脚本就不会更新它了。如果你希望将一个 Alternative 变回自动，只要执行代码:
-
-update-Alternatives --auto editor
-
-
-
-general name -- 这是指一系列功能相似的程序的“公用”名字（包括绝对路径），比如 /usr/bin/editor。
-
-link -- 这是指一个 Alternative 在 /etc/Alternative 中的名字，比如 editor。
-
-Alternative -- 顾名思义，这是指一个可选的程序所在的路径（包括绝对路径），比如 /usr/bin/vim。
-
-
-
--auto，--display 和 --config 跟的都是 link。我们要说的第三个概念是优先级。这个比较简单，当然优先级越高的程序越好啦。最后一个概念是主和从的 Alternative。想想看，你将 /usr/bin/editor 链接到了 vim，可是当你执行 man editor 时看到的却是 emacs 的 manpage，你会做何感想呢？这就引出了主和从 Alternative 的概念了：当更新主的 Alternative 时，从的 Alternative 也会被更新。
-
-
-
-另外两个选项：第一个是 --install。它的格式是：
-
-update-Alternatives --install gen link Alt pri [--slave sgen slink sAlt] ...
-
-
-
-gen，link，Alt，pri 分别是我们上面说过的。如果需要从的 Alternative，你可以用--slave 加在后面。如果你在向一个已经存在的 Alternative 组中添加新的 Alternatives，该命令会把这些 Alternatives 加入到这个已经存在的 Alternative 组的列表中，并用新的可选命令作为新的命令；否则，将会建立一个新的自动的 Alternative组。
-
-呜呼！我加入了一个错误的 Alternative。我不想要这个 Alternative 了。在这种情况
-
-下，可以执行下面的命令：
-
-update-Alternatives --remove name path
-
-# linux系统下无法访问电脑硬盘
+## linux系统下无法访问电脑硬盘
 
 ```
     Error mounting /dev/sda6 at /media/qiaokaiming/20F47472F4744BD2: Command-line 'mount -t "ntfs" -o "uhelper=udisks2,nodev,nosuid,uid=1000,gid=1000,dmask=0077,fmask=0177" "/dev/sda6" "/media/qiaokaiming/20F47472F4744BD2"' exited with non-zero exit status 14: The disk contains an unclean file system (0, 0).
@@ -1194,7 +972,7 @@ update-Alternatives --remove name path
 
 那个提示里有：Please resume and shutdown windows fully (no hibernation or fast restarting)。进win8把”快速启动“关掉就好了。控制面板》所有控制面板选项》电源选项》系统设置》关闭“启用快速启动”
 
-# /etc/profile和/etc/environment(Ubuntu)
+## /etc/profile和/etc/environment(Ubuntu)
 
 先将export LANG=zh_CN加入/etc/profile ,退出系统重新登录，登录提示显示英文。将/etc/profile 中的export LANG=zh_CN删除，将LNAG=zh_CN加入/etc/environment，退出系统重新登录，登录提示显示中文。
 
@@ -1204,7 +982,113 @@ update-Alternatives --remove name path
 
 如果同一个变量在用户环境(/etc/profile)和系统环境(/etc/environment)有不同的值那应该是以用户环境为准了。修改environment 之后，执行 source /etc/environment 可以立即生效。
 
-# Linux常用命令
+
+## fedora如何用yum清除无用的软件包
+
+* yum history [undo|redo|info|...]: yum的子命令，显示你yum的历史记录，并且可以撤销指定的记录(undo)，重做指定记录(redo)等等，更多的功能看man yum
+* yum-plugin-remove-with-leaves：卸载软件包时把因此产生的叶子一起卸载掉，用的时候别加-y选项，看清楚了再确认，有些非常大的依赖树会把主要的系统组件卸载掉，具体用法安装完该插件以后看帮助:yum --help，这个yum插件应该就是最贴近你需求的，不过记住，慎用，如果能从yum history里查到记录的话，还是用yum history undo来操作比较安全。
+* yum-plugin-show-leaves： 执行安装/卸载以后，显示此次操作所产生的叶子，自动运行，无需要操作。
+* rpmreaper: 基于ncurses库的程序，通过基于文本的gui界面显示系统中的rpm依赖树，提供各种操作，具体的看man。
+
+
+## 如何在Ubuntu中屏蔽一个网站
+
+打开/etc/hosts文件，添加下面这行
+
+    127.0.0.1 domain.com
+
+更换domain.com为你要屏蔽的网站，你完成了编辑处理后，保存该文件并退出。
+
+## 将脚本中的信息输出到文件中
+
+Linux中，脚本语言环境中，即你用make xxx及其他一些普通linux命令，比如ls，find等，不同的数字，代表不同的含义：
+
+* 0代表标准输入
+* 1代表标准输出
+* 2代表错误输出
+
+而系统默认的stdin是键盘，stdout，stderr都是屏幕，所以当你执行命令，比如make后，所输出的信息，都是可以在屏幕上看到的。所以想要将对应信息输出到某个文件中，就用对应的数字加上重定向符号'>'，实现将这些信息重新定向到对应的文件中即可。下面以make命令为例来说明，如何把对应的信息，输出到对应的文件中：
+
+1.想要把make输出的全部信息，输出到某个文件中，最常见的办法就是：
+
+    make xxx > build_output.txt
+
+此时默认情况是没有改变2=stderr的输出方式，还是屏幕，所以，如果有错误信息，还是可以在屏幕上看到的。
+
+2.只需要把make输出中的错误（及警告）信息输出到文件中ing，可以用：
+
+    make xxx 2> build_output.txt
+
+相应地，由于1=stdout没有变，还是屏幕，所以，那些命令执行时候输出的正常信息，还是会输出到屏幕上，你还是可以在屏幕上看到的。
+
+3.只需要把make输出中的正常（非错误，非警告）的信息输出到文件中，可以用：
+
+    make xxx 1> build_output.txt
+
+相应地，由于2=stderr没有变，还是屏幕，所以，那些命令执行时候输出的错误信息，还是会输出到屏幕上，你还是可以在屏幕上看到的。
+
+4.想要把正常输出信息和错误信息输出到分别的文件中，可以用：
+
+    make xxx 1> build_output_normal.txt 2>build_output_error.txt
+
+即联合使用了1和2，正常信息和错误信息，都输出到对应文件中了。
+
+5. 所有的信息都输出到同一个文件中：
+
+    make xxx > build_output_all.txt 2>&1
+
+其中的2>&1表示错误信息输出到&1中，而&1，指的是前面的那个文件：build_output_all.txt 。
+
+注意：上面所有的1,2等数字，后面紧跟着大于号'>' ，中间不能有空格。
+
+    make xxx > build_output_all.txt 2>&1
+
+也可以写成：
+
+    make xxx 2>&1 | tee build_output_all.txt
+
+唯一的区别就是，stdout和stderr被导入文件的同时，还可以看到屏幕输出。
+
+
+## 获取某程序的完整路径名
+
+当我们在Linux下用ps aux 看到有如下一个进程时：
+
+    root     19463  0.0  0.0   1508   272 pts/0    S    16:43   0:00 ./server-a
+
+作为系统管理员的你，如何获得程序server-a所在的完整路径呢？从上面ps 的输出中可以看出19463是server-a的PID号，那么运行如下命令：`cat /proc/19463/environ` ,输出如下：
+
+    PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/gamesGNOME_KEYRING_PID=2269USER=jiangxinLANGUAGE=zh_CN:XDG_SEAT=seat0TEXTDOMAIN=im-configCOMPIZ_CONFIG_PROFILE=ubuntuHOME=/home/jiangxinQT4_IM_MODULE=fcitxDESKTOP_SESSION=ubuntuXDG_SEAT_PATH=/org/freedesktop/DisplayManager/Seat0GTK_MODULES=overlay-scrollbar:unity-gtk-moduleGNOME_KEYRING_CONTROL=/run/user/1000/keyring-wrFl7VQT_QPA_PLATFORMTHEME=appmenu-qt5MANDATORY_PATH=/usr/share/gconf/ubuntu.mandatory.pathIM_CONFIG_PHASE=1SESSIONTYPE=gnome-sessionLOGNAME=jiangxinGTK_IM_MODULE=fcitxDEFAULTS_PATH=/usr/share/gconf/ubuntu.default.pathXDG_SESSION_ID=c3GDM_LANG=zh_CNXDG_SESSION_PATH=/org/freedesktop/DisplayManager/Session0XDG_RUNTIME_DIR=/run/user/1000DISPLAY=:0XDG_CURRENT_DESKTOP=UnityLANG=zh_CN.UTF-8XAUTHORITY=/home/jiangxin/.XauthorityXMODIFIERS=@im=fcitxXDG_GREETER_DATA_DIR=/var/lib/lightdm-data/jiangxinSHELL=/bin/bashGDMSESSION=ubuntuTEXTDOMAINDIR=/usr/share/locale/XDG_VTNR=7QT_IM_MODULE=ximPWD=/home/jiangxinXDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntu:/usr/share/upstart/xdg:/etc/xdgXDG_DATA_DIRS=/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/CLUTTER_IM_MODULE=ximSELINUX_INIT=YESUBUNTU_MENUPROXY=1DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-BqwNaGt8wESSH_AUTH_SOCK=/run/user/1000/keyring-wrFl7V/sshSSH_AGENT_PID=2383SSH_AGENT_LAUNCHER=upstartGNOME_DESKTOP_SESSION_ID=this-is-deprecatedJOB=gnome-sessionINSTANCE=UnityUPSTART_EVENTS=started startingUPSTART_JOB=unity-settings-daemonUPSTART_INSTANCE=UPSTART_SESSION=unix:abstract=/com/ubuntu/upstart-session/1000/2299GPG_AGENT_INFO=/run/user/1000/keyring-wrFl7V/gpg:0:1
+
+注意输出中的：`PWD=/data1/1230`。由此可以判断出程序`server-a`所在完成路径为：`/data1/1230/server-a`。来，验证一下吧：
+
+    bash-3.2# ls -l /data1/1230/server-a
+    -rwxr-xr-x 1 root root 5842 Feb 25 16:42 /data1/1230/server-a
+
+
+## 打印某一文件夹下的所有文件名及其行数
+
+这里分别要考虑到该文件夹有或没有子文件夹的情况，用shell实现打印某一文件夹下的所有文件（如果是子文件夹下的文件，需要打印相对目录）及该文件的行数清单。列表类似这样：
+
+    filename1 100行
+    file/filename2 200行
+    .......
+
+    find -name "*" | xargs wc -l
+
+加 -type f 参数，过滤掉对目录的wc
+
+    find -name "*" -type f | xargs wc -l
+
+想要得到指定的格式，用万能的awk：
+
+    find -name "*" -type f| xargs wc -l | awk '{print $2" "$1"行"}'
+
+find 后面可加指定目录，如"/etc/"
+
+    find "/etc/" -name "*" -type f| xargs wc -l | awk '{print $2" "$1"行"}'
+
+## Linux常用命令
 
 ```shell
 	rdate # set the system's date from a remote host. (sudo apt-get install rdate)
@@ -1214,545 +1098,7 @@ update-Alternatives --remove name path
     cfdisk -Ps # 查看磁盘分区的用法   cfdisk   -Ps 磁盘设备名 只有一个硬盘也可以用 cfdisk -Ps
     cfdisk -Ps /dev/sda
     sfdisk -l
-```
 
-
-# Configure参数解释说明
-
-Linux环境下的软件安装，并不是一件容易的事情；如果通过源代码编译后在安装，当然事情就更为复杂一些；现在安装各种软件的教程都非常普遍；但万变不离其中，对基础知识的扎实掌握，安装各种软件的问题就迎刃而解了。Configure脚本配置工具就是基础之一，它是autoconf的工具的基本应用。与一些技巧相比，Configure显得基础一些，当然使用和学习起来就显得枯燥乏味一些，当然要成为高手，对基础的熟悉不能忽略哦。为此我转载了一篇关于Configure选项配置的详细介绍。供大家参考
-
-'configure'脚本有大量的命令行选项。对不同的软件包来说，这些选项可能会有变化，但是许多基本的选项是不会改变的。带上'--help'选项执行'configure'脚本可以看到可用的所有选项。尽管许多选项是很少用到的，但是当你为了特殊的需求而configure一个包时，知道他们的存在是很有益处的。下面对每一个选项进行简略的介绍：
-
---cache-file=FILE 'configure'会在你的系统上测试存在的特性(或者bug!)。为了加速随后进行的配置，测试的结果会存储在一个cache file里。当configure一个每个子树里都有'configure'脚本的复杂的源码树时，一个很好的cache file的存在会有很大帮助。
---help 输出帮助信息。即使是有经验的用户也偶尔需要使用使用'--help'选项，因为一个复杂的项目会包含附加的选项。例如，GCC包里的'configure'脚本就包含了允许你控制是否生成和在GCC中使用GNU汇编器的选项。
---no-create 'configure'中的一个主要函数会制作输出文件。此选项阻止'configure'生成这个文件。你可以认为这是一种演习(dry run)，尽管缓存(cache)仍然被改写了。
---quiet
-
---silent
-
-当'configure'进行他的测试时，会输出简要的信息来告诉用户正在作什么。这样作是因为'configure'可能会比较慢，没有这种输出的话用户将会被扔在一旁疑惑正在发生什么，使用这两个选项中的任何一个都会把你扔到一旁。(译注：这两句话比较有意思，原文是这样的：If there was no such output, the user would be left wondering what is happening. By using this option, you too can be left wondering!)
-
-
-
---version
-
-打印用来产生'configure'脚本的Autoconf的版本号。
-
-
-
---prefix=PEWFIX
-
-'--prefix'是最常用的选项。制作出的'Makefile'会查看随此选项传递的参数，当一个包在安装时可以彻底的重新安置他的结构独立部分。举一个例子，当安装一个包，例如说Emacs，下面的命令将会使Emacs Lisp file被安装到"/opt/gnu/share"：
-
-$ ./configure --prefix=/opt/gnu
-
-
-
---exec-prefix=EPREFIX
-
-与'--prefix'选项类似，但是他是用来设置结构倚赖的文件的安装位置，编译好的'emacs'二进制文件就是这样一个问件。如果没有设置这个选项的话，默认使用的选项值将被设为和'--prefix'选项值一样。
-
-
-
---bindir=DIR
-
-指定二进制文件的安装位置，这里的二进制文件定义为可以被用户直接执行的程序。
-
-
-
---sbindir=DIR
-
-指定超级二进制文件的安装位置。这是一些通常只能由超级用户执行的程序。
-
-
-
---libexecdir=DIR
-
-指定可执行支持文件的安装位置。与二进制文件相反，这些文件从来不直接由用户执行，但是可以被上面提到的二进制文件所执行。
-
-
-
---datadir=DIR
-
-指定通用数据文件的安装位置。
-
-
-
---sysconfdir=DIR
-
-指定在单个机器上使用的只读数据的安装位置。
-
-
-
-
-
---sharedstatedir=DIR
-
-
-
-指定可以在多个机器上共享的可写数据的安装位置。
-
-
-
-
-
---localstatedir=DIR
-
-
-
-指定只能单机使用的可写数据的安装位置。
-
-
-
---libdir=DIR
-
-
-
-指定库文件的安装位置。
-
-
-
-
-
---includedir=DIR
-
-
-
-指定C头文件的安装位置。其他语言如C++的头文件也可以使用此选项。
-
-
-
-
-
---oldincludedir=DIR
-
-
-
-指定为除GCC外编译器安装的C头文件的安装位置。
-
-
-
-
-
---infodir=DIR
-
-
-
-指定Info格式文档的安装位置.Info是被GNU工程所使用的文档格式。
-
-
-
-
-
---mandir=DIR
-
-
-
-指定手册页的安装位置。
-
-
-
-
-
---srcdir=DIR
-
-
-
-这个选项对安装没有作用，他会告诉'configure'源码的位置。一般来说不用指定此选项，因为'configure'脚本一般和源码文件在同一个目录下。
-
-
-
-
-
---program-prefix=PREFIX
-
-
-
-指定将被加到所安装程序的名字上的前缀。例如，使用'--program-prefix=g'来configure一个名为'tar'的程序将会使安装的程序被命名为'gtar'。当和其他的安装选项一起使用时，这个选项只有当他被`Makefile.in'文件使用时才会工作。
-
-
-
-
-
---program-suffix=SUFFIX
-
-
-
-指定将被加到所安装程序的名字上的后缀。
-
-
-
-
-
---program-transform-name=PROGRAM
-
-
-
-这里的PROGRAM是一个sed脚本。当一个程序被安装时，他的名字将经过`sed -e PROGRAM'来产生安装的名字。
-
-
-
-
-
---build=BUILD
-
-
-
-指定软件包安装的系统平台。如果没有指定，默认值将是'--host'选项的值。
-
-
-
-
-
---host=HOST
-
-
-
-指定软件运行的系统平台。如果没有指定。将会运行`config.guess'来检测。
-
-
-
-
-
---target=GARGET
-
-
-
-指定软件面向(target to)的系统平台。这主要在程序语言工具如编译器和汇编器上下文中起作用。如果没有指定，默认将使用'--host'选项的值。
-
-
-
-
-
---disable-FEATURE
-
-
-
-一些软件包可以选择这个选项来提供为大型选项的编译时配置，例如使用Kerberos认证系统或者一个实验性的编译器最优配置。如果默认是提供这些特性，可以使用'--disable-FEATURE'来禁用它，这里'FEATURE'是特性的名字，例如：
-
-
-
-$ ./configure --disable-gui
-
-
-
-
-
--enable-FEATURE[=ARG]
-
-
-
-相反的，一些软件包可能提供了一些默认被禁止的特性,可以使用'--enable-FEATURE'来起用它。这里'FEATURE'是特性的名字。一个特性可能会接受一个可选的参数。例如：
-
-
-
-$ ./configure --enable-buffers=128
-
-
-
-`--enable-FEATURE=no'与上面提到的'--disable-FEATURE'是同义的。
-
-
-
-
-
---with-PACKAGE[=ARG]
-
-
-
-在自由软件社区里，有使用已有软件包和库的优秀传统。当用'configure'来配置一个源码树时，可以提供其他已经安装的软件包的信息。例如，倚赖于Tcl和Tk的BLT器件工具包。要配置BLT，可能需要给'configure'提供一些关于我们把Tcl和Tk装的何处的信息：
-
-
-
-$ ./configure --with-tcl=/usr/local --with-tk=/usr/local
-
-
-
-'--with-PACKAGE=no'与下面将提到的'--without-PACKAGE'是同义的。
-
-
-
-
-
---without-PACKAGE
-
-
-
-有时候你可能不想让你的软件包与系统已有的软件包交互。例如，你可能不想让你的新编译器使用GNU ld。通过使用这个选项可以做到这一点：
-
-
-
-$ ./configure --without-gnu-ld
-
-
-
-
-
---x-includes=DIR
-
-
-
-这个选项是'--with-PACKAGE'选项的一个特例。在Autoconf最初被开发出来时，流行使用'configure'来作为Imake的一个变通方法来制作运行于X的软件。'--x-includes'选项提供了向'configure'脚本指明包含X11头文件的目录的方法。
-
-
-
-
-
---x-libraries=DIR
-
-
-
-类似的，'--x-libraries'选项提供了向'configure'脚本指明包含X11库的目录的方法。
-
-
-
-
-
-在源码树中运行'configure'是不必要的同时也是不好的。一个由'configure'产生的良好的'Makefile'可以构筑源码属于另一棵树的软件包。在一个独立于源码的树中构筑派生的文件的好处是很明显的：派生的文件，如目标文件，会凌乱的散布于源码树。这也使在另一个不同的系统或用不同的配置选项构筑同样的目标文件非常困难。建议使用三棵树：一棵源码树(source tree)，一棵构筑树(build tree)，一棵安装树(install tree)。这里有一个很接近的例子，是使用这种方法来构筑GNU malloc包：
-
-
-
-$ gtar zxf mmalloc-1.0.tar.gz
-
-
-
-$ mkdir build && cd build
-
-
-
-$ ../mmalloc-1.0/configure
-
-
-
-creating cache ./config.cache
-
-
-
-checking for gcc... gcc
-
-
-
-checking whether the C compiler (gcc ) works... yes
-
-
-
-checking whether the C compiler (gcc ) is a cross-compiler... no
-
-
-
-checking whether we are using GNU C... yes
-
-
-
-checking whether gcc accepts -g... yes
-
-
-
-checking for a BSD compatible install... /usr/bin/install -c
-
-
-
-checking host system type... i586-pc-linux-gnu
-
-
-
-checking build system type... i586-pc-linux-gnu
-
-
-
-checking for ar... ar
-
-
-
-checking for ranlib... ranlib
-
-
-
-checking how to run the C preprocessor... gcc -E
-
-
-
-checking for unistd.h... yes
-
-
-
-checking for getpagesize... yes
-
-
-
-checking for working mmap... yes
-
-
-
-checking for limits.h... yes
-
-
-
-checking for stddef.h... yes
-
-
-
-updating cache ../config.cache
-
-
-
-creating ./config.status
-
-
-
-这样这棵构筑树就被配置了，下面可以继续构筑和安装这个包到默认的位置'/usr/local'：
-
-
-
-$ make all && make install
-
-# fedora如何用yum清除无用的软件包
-
-yum history [undo|redo|info|...]: yum的子命令，显示你yum的历史记录，并且可以撤销指定的记录(undo)，重做指定记录(redo)等等，更多的功能看man yum
-
-yum-plugin-remove-with-leaves：卸载软件包时把因此产生的叶子一起卸载掉，用的时候别加-y选项，看清楚了再确认，有些非常大的依赖树会把主要的系统组件卸载掉，具体用法安装完该插件以后看帮助:yum --help，这个yum插件应该就是最贴近你需求的，不过记住，慎用，如果能从yum history里查到记录的话，还是用yum history undo来操作比较安全。
-
-yum-plugin-show-leaves： 执行安装/卸载以后，显示此次操作所产生的叶子，自动运行，无需要操作。
-
-rpmreaper: 基于ncurses库的程序，通过基于文本的gui界面显示系统中的rpm依赖树，提供各种操作，具体的看man。
-
-
-
-#如何在Ubuntu中屏蔽一个网站
-
-打开/etc/hosts文件，添加下面这行
-
-127.0.0.1 domain.com
-
-更换domain.com为你要屏蔽的网站，你完成了编辑处理后，保存该文件并退出。
-
-#将脚本中的信息输出到文件中
-
-Linux中，脚本语言环境中，即你用make xxx及其他一些普通linux命令，比如ls，find等，不同的数字，代表不同的含义：
-
-0代表标准输入
-
-1代表标准输出
-
-2代表错误输出
-
-而系统默认的stdin是键盘，stdout，stderr都是屏幕，所以当你执行命令，比如make后，所输出的信息，都是可以在屏幕上看到的。所以想要将对应信息输出到某个文件中，就用对应的数字加上重定向符号'>'，实现将这些信息重新定向到对应的文件中即可。下面以make命令为例来说明，如何把对应的信息，输出到对应的文件中：
-
-1.想要把make输出的全部信息，输出到某个文件中，最常见的办法就是：
-2.
-3.make xxx > build_output.txt
-4.
-5.此时默认情况是没有改变2=stderr的输出方式，还是屏幕，所以，如果有错误信息，还是可以在屏幕上看到的。
-6.
-7.2.只需要把make输出中的错误（及警告）信息输出到文件中ing，可以用：
-8.
-9.make xxx 2> build_output.txt
-10.
-11.相应地，由于1=stdout没有变，还是屏幕，所以，那些命令执行时候输出的正常信息，还是会输出到屏幕上，你还是可以在屏幕上看到的。
-12.
-13.3.只需要把make输出中的正常（非错误，非警告）的信息输出到文件中，可以用：
-14.
-15.make xxx 1> build_output.txt
-16.
-17.相应地，由于2=stderr没有变，还是屏幕，所以，那些命令执行时候输出的错误信息，还是会输出到屏幕上，你还是可以在屏幕上看到的。
-18.
-19.4.想要把正常输出信息和错误信息输出到分别的文件中，可以用：
-20.
-21.make xxx 1> build_output_normal.txt 2>build_output_error.txt
-22.
-23.即联合使用了1和2，正常信息和错误信息，都输出到对应文件中了。
-24.
-25.5. 所有的信息都输出到同一个文件中：
-26.
-27.make xxx > build_output_all.txt 2>&1
-28.
-29.其中的2>&1表示错误信息输出到&1中，而&1，指的是前面的那个文件：build_output_all.txt 。
-30.
-31.注意：上面所有的1,2等数字，后面紧跟着大于号'>' ，中间不能有空格。
-32.
-6.make xxx > build_output_all.txt 2>&1
-7.
-也可以写成：
-
-make xxx 2>&1 | tee build_output_all.txt
-
-唯一的区别就是，stdout和stderr被导入文件的同时，还可以看到屏幕输出。
-
-#常用命令
-
-
-
-
-
-## ack
-
-http://beyondgrep.com/
-
-## Glances
-
-top 命令是 Linux 下的一个实时任务管理器， 同时也是用于在 GNU/Linux 发行版中寻找系统性能方面的瓶颈，并帮助我们作出正确操作的常用系统监视工具。 她有着一个极为简洁的界面，并自带少量的可以帮助我们快速了解系统性能的实用选项。但是，有些时候想要通过她寻找一个占用系统资源比较大的应用或进程可能会比较困难。 因为 top 命令本身并不会帮助我们高亮那些吃太多 CPU，内存，或者其他资源的程序。为了达到这个目标，这里我们将介绍一款超牛逼的系统监视程序 —— Glances。 她可以自动高亮利用最高系统资源的程序，并为 Linux/Unix 服务器提供尽可能多的信息。
-
-https://github.com/nicolargo/glances/
-
-
-
-##获取某程序的完整路径名
-
-当我们在Linux下用ps aux 看到有如下一个进程时：
-
-root     19463  0.0  0.0   1508   272 pts/0    S    16:43   0:00 ./server-a
-
-作为系统管理员的你，如何获得程序server-a所在的完整路径呢？在此告诉大家一个简单的解决办法：从上面ps 的输出中可以看出19463是server-a的PID号，那么运行如下命令：cat /proc/19463/environ ,输出如下：
-
-PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/gamesGNOME_KEYRING_PID=2269USER=jiangxinLANGUAGE=zh_CN:XDG_SEAT=seat0TEXTDOMAIN=im-configCOMPIZ_CONFIG_PROFILE=ubuntuHOME=/home/jiangxinQT4_IM_MODULE=fcitxDESKTOP_SESSION=ubuntuXDG_SEAT_PATH=/org/freedesktop/DisplayManager/Seat0GTK_MODULES=overlay-scrollbar:unity-gtk-moduleGNOME_KEYRING_CONTROL=/run/user/1000/keyring-wrFl7VQT_QPA_PLATFORMTHEME=appmenu-qt5MANDATORY_PATH=/usr/share/gconf/ubuntu.mandatory.pathIM_CONFIG_PHASE=1SESSIONTYPE=gnome-sessionLOGNAME=jiangxinGTK_IM_MODULE=fcitxDEFAULTS_PATH=/usr/share/gconf/ubuntu.default.pathXDG_SESSION_ID=c3GDM_LANG=zh_CNXDG_SESSION_PATH=/org/freedesktop/DisplayManager/Session0XDG_RUNTIME_DIR=/run/user/1000DISPLAY=:0XDG_CURRENT_DESKTOP=UnityLANG=zh_CN.UTF-8XAUTHORITY=/home/jiangxin/.XauthorityXMODIFIERS=@im=fcitxXDG_GREETER_DATA_DIR=/var/lib/lightdm-data/jiangxinSHELL=/bin/bashGDMSESSION=ubuntuTEXTDOMAINDIR=/usr/share/locale/XDG_VTNR=7QT_IM_MODULE=ximPWD=/home/jiangxinXDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntu:/usr/share/upstart/xdg:/etc/xdgXDG_DATA_DIRS=/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/CLUTTER_IM_MODULE=ximSELINUX_INIT=YESUBUNTU_MENUPROXY=1DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-BqwNaGt8wESSH_AUTH_SOCK=/run/user/1000/keyring-wrFl7V/sshSSH_AGENT_PID=2383SSH_AGENT_LAUNCHER=upstartGNOME_DESKTOP_SESSION_ID=this-is-deprecatedJOB=gnome-sessionINSTANCE=UnityUPSTART_EVENTS=started startingUPSTART_JOB=unity-settings-daemonUPSTART_INSTANCE=UPSTART_SESSION=unix:abstract=/com/ubuntu/upstart-session/1000/2299GPG_AGENT_INFO=/run/user/1000/keyring-wrFl7V/gpg:0:1
-
-注意输出中的：PWD=/data1/1230
-
-由此可以判断出程序server-a所在完成路径为： /data1/1230/server-a
-
-来，验证一下吧：
-
-bash-3.2# ls -l /data1/1230/server-a
-
--rwxr-xr-x 1 root root 5842 Feb 25 16:42 /data1/1230/server-a
-
-果然如此！
-
-
-
-##打印某一文件夹下的所有文件名及其行数
-
-这里分别要考虑到该文件夹有或没有子文件夹的情况，用shell实现打印某一文件夹下的所有文件（如果是子文件夹下的文件，需要打印相对目录）及该文件的行数清单。列表类似这样：
-
-filename1 100行
-
-file/filename2 200行
-
-.......
-
-
-
-find -name "*" | xargs wc -l
-
-
-
-加 -type f 参数，过滤掉对目录的wc
-
-find -name "*" -type f | xargs wc -l
-
-
-
-想要得到指定的格式，用万能的awk：
-
-find -name "*" -type f| xargs wc -l | awk '{print $2" "$1"行"}'
-
-
-
-find 后面可加指定目录，如"/etc/"
-
-find "/etc/" -name "*" -type f| xargs wc -l | awk '{print $2" "$1"行"}'
-
-```shell
     cat /proc/cpuinfo | grep flags # 查看cpuinfo中是否有lm，如果有lm表示支持64位，lm的意思是long mod
     cat /proc/cpuinfo | grep flags | grep lm | wc -l # 输出结果大于 0 表示支持64位
     cat /proc/cpuinfo |grep "physical id"|sort |uniq|wc -l # 查看物理CPU的个数
@@ -1852,9 +1198,19 @@ find "/etc/" -name "*" -type f| xargs wc -l | awk '{print $2" "$1"行"}'
     # redhat-release-4AS-3 -> Redhat Enterprise Linux AS 4 Update 2
     # redhat-release-4AS-4.1 -> Redhat Enterprise Linux AS 4 Update 3
     # redhat-release-4AS-5.5 -> Redhat Enterprise Linux AS 4 Update 4
+
+    # man update-alternatives
+
+    # Configure参数解释说明: autoconf: 16 Running configure Scripts
+
+    # 把/dev/cdrom目录制作为镜像，名字为/root/rh1.iso，可以使用下面命令中的任意一条
+    dd if=/dev/cdrom of=/root/rh1.iso
+    #cat /dev/cdrom >;/root/1.iso
+    mkisofs -r -o myiso.iso /dev/cdrom
+    cp -r /home/user name.iso
 ```
 
-##在shell中使用chrome命令
+## 在shell中使用chrome命令
 
 以linux的bash shell为例说明 google-chrome这个命令的使用方法
 
@@ -1871,162 +1227,47 @@ linux中打开chrome浏览器的命令为:"google-chrome"(打开chromium浏览�
 其他命令的使用方式同上
 
 
-## mkisofs用法详解
-
-
-
-功能说明：建立ISO 9660映像文件。
-
-语法：mkisofs [-adDfhJlLNrRTvz][-print-size][-quiet][-A <应用程序ID>][-abstract <摘要文件>][-b <开机映像文件>][-biblio <ISBN文件>][-c <开机文件名称>][-C <盘区编号，磁区编号>][-copyright <版权信息文件>][-hide <目录或文件名>][-hide-joliet <文件或目录名>][-log-file <记录文件>][-m <目录或文件名>][-M <开机映像文件>][-o <映像文件>][-p <数据处理人>][-P <光盘发行人>][-sysid <系统ID >][-V <光盘ID >][-volset <卷册集ID>][-volset-size <光盘总数>][-volset-seqno <卷册序号>][-x <目录>][目录或文件]
-
-补充说明：mkisofs可将指定的目录与文件做成ISO 9660格式的映像文件，以供刻录光盘。
-
-参数：
-
--a或--all   mkisofs通常不处理备份文件。使用此参数可以把备份文件加到映像文件中。
-
--A<应用程序ID>或-appid<应用程序ID>   指定光盘的应用程序ID。
-
--abstract<摘要文件>   指定摘要文件的文件名。
-
--b<开机映像文件>或-eltorito-boot<开机映像文件>   指定在制作可开机光盘时所需的开机映像文件。
-
--biblio<ISBN文件>   指定ISBN文件的文件名，ISBN文件位于光盘根目录下，记录光盘的ISBN。
-
--c<开机文件名称>   制作可开机光盘时，mkisofs会将开机映像文件中的全-eltorito-catalog<开机文件名称>全部内容作成一个文件。
-
--C<盘区编号，盘区编号>   将许多节区合成一个映像文件时，必须使用此参数。
-
--copyright<版权信息文件>   指定版权信息文件的文件名。
-
--d或-omit-period   省略文件后的句号。
-
--D或-disable-deep-relocation   ISO 9660最多只能处理8层的目录，超过8层的部分，RRIP会自动将它们设置成ISO 9660兼容的格式。使用-D参数可关闭此功能。
-
--f或-follow-links   忽略符号连接。
-
--h   显示帮助。
-
--hide<目录或文件名>   使指定的目录或文件在ISO 9660或Rock RidgeExtensions的系统中隐藏。
-
--hide-joliet<目录或文件名>   使指定的目录或文件在Joliet系统中隐藏。
-
--J或-joliet   使用Joliet格式的目录与文件名称。
-
--l或-full-iso9660-filenames   使用ISO 9660 32字符长度的文件名。
-
--L或-allow-leading-dots   允许文件名的第一个字符为句号。
-
--log-file<记录文件>   在执行过程中若有错误信息，预设会显示在屏幕上。
-
--m<目录或文件名>或-exclude<目录或文件名>   指定的目录或文件名将不会房入映像文件中。
-
--M<映像文件>或-prev-session<映像文件>   与指定的映像文件合并。
-
--N或-omit-version-number   省略ISO 9660文件中的版本信息。
-
--o<映像文件>或-output<映像文件>   指定映像文件的名称。
-
--p<数据处理人>或-preparer<数据处理人>   记录光盘的数据处理人。
-
--print-size   显示预估的文件系统大小。
-
--quiet   执行时不显示任何信息。
-
--r或-rational-rock   使用Rock Ridge Extensions，并开放全部文件的读取权限。
-
--R或-rock   使用Rock Ridge Extensions。
-
--sysid<系统ID>   指定光盘的系统ID。
-
--T或-translation-table   建立文件名的转换表，适用于不支持Rock Ridge Extensions的系统上。
-
--v或-verbose   执行时显示详细的信息。
-
--V<光盘ID>或-volid<光盘ID>   指定光盘的卷册集ID。
-
--volset-size<光盘总数>   指定卷册集所包含的光盘张数。
-
--volset-seqno<卷册序号>   指定光盘片在卷册集中的编号。
-
--x<目录>   指定的目录将不会放入映像文件中。
-
--z   建立通透性压缩文件的SUSP记录，此记录目前只在Alpha机器上的Linux有效。
-
-## linux命令制作iso镜像
-
-例如：把/dev/cdrom目录制作为镜像，名字为/root/rh1.iso
-
-方法1：dd if=/dev/cdrom of=/root/rh1.iso
-
-方法2：#cat /dev/cdrom >;/root/1.iso
-
-方法3：mkisofs -r -o myiso.iso /dev/cdrom
-
-方法4：cp -r /home/user name.iso
-
 ## lspci的使用
 
-PCI和PCI Express，是计算机常使用的一种高速总线。操作系统中的PCI/PCI-E设备驱动以及操作系统内核，都需要访问PCI及PCI-E配置空间。PCI/PCI-E设备的正常运行，离不开PCI/PCI-E配置空间。通过读写PCI/PCI-E配置空间，可以更改设备运行参数，优化设备运行。本文介绍用户空间可以读取、修改、扫描PCI/PCIE设备的用户命令及使用。在Linux内核中，为PCI和PCI-E只适用了一种总线PCI（内核提供的总线系统），故访问PCI-E配置空间，也包括了PCI设备配置空间。读取PCI-E设备配置空间的命令是lspci。详细命令参数，可以使用man lspci来查看，这里我们只介绍常用参数。命令默认输出结果是，当前系统的所有PCI/PCI-E设备。
+PCI和PCI Express，是计算机常使用的一种高速总线。操作系统中的PCI/PCI-E设备驱动以及操作系统内核，都需要访问PCI及PCI-E配置空间。PCI/PCI-E设备的正常运行，离不开PCI/PCI-E配置空间。通过读写PCI/PCI-E配置空间，可以更改设备运行参数，优化设备运行。本文介绍用户空间可以读取、修改、扫描PCI/PCIE设备的用户命令及使用。在Linux内核中，为PCI和PCI-E只适用了一种总线PCI（内核提供的总线系统），故访问PCI-E配置空间，也包括了PCI设备配置空间。读取PCI-E设备配置空间的命令是`lspci`。详细命令参数，可以使用man lspci来查看。命令默认输出结果是，当前系统的所有PCI/PCI-E设备。
 
-常用参数：
-
--v 显示设备的详细信息。
-
--vv 显示设备更详细的信息。
-
--vvv 显示设备所有可解析的信息。
-
--x 以16进制显示配置空间的前64字节，或者CardBus桥的前128字节。
-
--xxx 以16进制显示整个PCI配置空间（256字节）。
-
--xxxx 以16进制显示整个PCI-E配置空间（4096字节）。
-
--s [[[[<domain>]:]<bus>]:][<slot>][.[<func>]]：
 
 ## mplayer使用ascii文本播放电影
 
 首先，你要确认mplayer已经装好，你只需执行下面这条命令：
 
-sudo apt-get install mplayer
+    sudo apt-get install mplayer
 
 接下来，为了播放电影，你需要执行下面的命令，记得把MovieName.avi改成你电脑里面电影文件的名字：
 
-mplayer -vo caca MovieName.avi
+    mplayer -vo caca MovieName.avi
 
 “caca”命令代表着彩色文本播放引擎，你也可以使用“-vo aa”命令来替代它，这样你就可以把彩色的文本变成黑白两色。
-
-
 
 
 ## Windows/Linux文本文件格式转换
 
 DOS/Windows和Linux/Unix的文本文件换行格式不同，基于 DOS/Windows 的文本文件在每一行末尾有一个 CR（回车）和 LF（换行），而 UNIX 文本只有一个LF（换行）。
 
-DOS/Windows文本文件格式转换成Linux/Unix文本文件格式
-
-sed -e 's/.$//' mydos.txt > myunix.txt
+DOS/Windows文本文件格式转换成Linux/Unix文本文件格式: `sed -e 's/.$//' mydos.txt > myunix.txt`
 
 说明：替代正则表达式与一行的最末字符匹配，而该字符恰好就是回车。我们用空字符替换它，从而将其从输出中彻底删除。
 
-把Linux/Unix 文本文件格式转换成 DOS/Windows文本文件格式
-
-sed -e 's/$/\r/' myunix.txt > mydos.txt
+把Linux/Unix 文本文件格式转换成 DOS/Windows文本文件格式: `sed -e 's/$/\r/' myunix.txt > mydos.txt`
 
 说明：'$' 正则表达式将与行的末尾匹配，而 '\r' 告诉 sed 在其之前插入一个回车。在换行之前插入回车，每一行就以 CR/LF 结束。
 
 另外还有个方法，使用命令 ：
 
-unix2dos filename
+    unix2dos filename
+    dos2unix filename
 
-dos2unix filename
 
 ## Linux的rename命令
 
 不同于Dos下的rename命令，linux下的rename命令功能非常强大。 rename命令的格式：
 
-rename [ -v ] [ -n ] [ -f ] perlexpr [ files ]
+    rename [ -v ] [ -n ] [ -f ] perlexpr [ files ]
 
 第一个参数：被替换掉的字符串
 
@@ -2034,83 +1275,75 @@ rename [ -v ] [ -n ] [ -f ] perlexpr [ files ]
 
 第三个参数：匹配要替换的文件模式
 
-例：rename  main1.c main.c main1.c  将main1.c重命名为main.c
+    rename  main1.c main.c main1.c  # 将main1.c重命名为main.c
 
 rename支持通配符
 
-?    可替代单个字符
-
-*    可替代多个字符
-
-[charset]  可替代charset集中的任意单个字符
-
-
+    ?    可替代单个字符
+    *    可替代多个字符
+    [charset]  可替代charset集中的任意单个字符
 
 eg：文件夹中有这些文件foo1, ..., foo9, foo10, ..., foo278，如果使用
 
-rename foo foo0 foo?
+    rename foo foo0 foo?
 
 会把foo1到foo9的文件重命名为foo01到foo09，重命名的文件只是有4个字符长度名称的文件，文件名中的foo被替换为foo0。如果使用
 
-rename foo foo0 foo??
+    rename foo foo0 foo??
 
 foo01到foo99的所有文件都被重命名为foo001到foo099，只重命名5个字符长度名称的文件，文件名中的foo被替换为foo0。如果使用
 
-rename foo foo0 foo*
+    rename foo foo0 foo*
 
 foo001到foo278的所有文件都被重命名为foo0001到foo0278，所有以foo开头的文件都被重命名。如果使用
 
-ename foo0 foo foo0[2]*
+    ename foo0 foo foo0[2]*
 
 从foo0200到foo0278的所有文件都被重命名为foo200到foo278，文件名中的foo0被替换为foo。
 
 rename支持正则表达式
 
-字母的替换rename "s/AA/aa/" *             //把文件名中的AA替换成aa
-
-修改文件的后缀rename "s/.html/.php/" *     //把.html 后缀的改成 .php后缀
-
-批量添加文件后缀rename "s/$//.txt/" *             //把所有的文件名都以txt结尾
-
-批量删除文件名rename "s//.txt//" *               //把所有以.txt结尾的文件名的.txt删掉
+    rename "s/AA/aa/" *             //把文件名中的AA替换成aa
+    rename "s/.html/.php/" *     //把.html 后缀的改成 .php后缀
+    rename "s/$//.txt/" *             //把所有的文件名都以txt结尾
+    rename "s//.txt//" *               //把所有以.txt结尾的文件名的.txt删掉
 
 ##使用script记录Linux终端会话
 
 许多系统管理员都知道保留一个包含各种任务、配置改变等活动日志的重要性。对一些组织而言，保留“我做了这件事”或“约翰做了那件事”的简单日志就已足够；但另一些组织则需要记录所有改变。对终端输出进行复制粘贴可能非常乏味，我们使用一个叫做script的鲜为人知的程序来解决这个问题，它是大多数Linux产品util-linux软件包的一部分。script记录会话的一切内容：你输入的内容和你看到的内容。它甚至记录颜色；因此如果你的命令提示符或程序输出中包含颜色，script将记录它。要使用script，简单执行以下命令：
 
-$ script
+    $ script
 
 默认情况下，它向当前目录的typescript文件中写入内容。然后，你输入的一切内容都被记录到那个文件中。要往另一个文件中记录日志，只需使用命令：
 
-script /path/to/file
+    script /path/to/file
 
 (例如script screen.log)
 
 完成记录后，输入exit退出。这个命令将关闭script会话并保存文件。现在你可以使用cat或其它任何程序来检查日志文件。异常退出也没有问题,仍然记录log,只不过需要加上参数：
 
-script -f ido.log
+    script -f ido.log
 
 如果在一个终端上使用：
 
-mkfifo ido.log;script -f ido.log
+    mkfifo ido.log;script -f ido.log
 
 然后在另一个终端登录,找到这个ido.log文件,你tail -f 就会滚动输出你操作的内容。
 
 2.使用script的缺点在于，它记录所有特殊的字符；因此你输入的文件中将充满控制字符和ANSI转义序列。你可以在script中使用一个非常简单的shell来解决这个问题：
 
-SHELL=/bin/bash PS1=”$ ” script
+    SHELL=/bin/bash PS1=”$ ” script
 
 使用script时，不要使用交互式程序或处理窗口的程序，如vior top。它们会破坏会话的输出结果。另外，日志文件会记录你使用的任何命令行程序和你完成一项任务所采取的步骤。如果你需要在脚本中编辑一个文件，考虑退出script会话，然后用script –a（它在旧会话后添加新会话）对文件进行编辑后再重新启动会话。
 
 ## tee命令
 
-tee--  read from standard input and write to standard output and files
+    tee--  read from standard input and write to standard output and files
 
 这个命令可以读取终端输入输出到终端或者文件中，有时候可以用来记录make等命令可能产生的输出到终端的大量内容输出到文件中去。这样可以方便记录这些命令的日志。
 
-cmd | tee -a file.txt
-
-> make 2>&1 | tee make.log当然，我们也可以直接重定向到一个文件中> make > make.log
+    cmd | tee -a file.txt
+    > make 2>&1 | tee make.log当然，我们也可以直接重定向到一个文件中> make > make.log
 
 PS: 2>&1是为了记录错误日志if you want to filter the control symbols, try to use the "col" command like this:
 
@@ -2128,129 +1361,50 @@ Screen是一个可以在多个进程之间多路复用一个物理终端的窗�
 
 安装：
 
-CentOS/Red Hat：yum install screen
-
-Debian/Ubuntu：apt-get install screen
-
-源码编译安装:
-
-[root@host1 src]# wget ftp://ftp.gnu.org/pub/gnu/screen/screen-4.0.3.tar.gz
-
-[root@host1 src]# tar -zxvf screen-4.0.3.tar.gz
-
-[root@host1 src]# cd screen-4.0.3
-
-[root@host1 screen-4.0.2]# ./configure
-
-[root@host1 screen-4.0.2]# make
-
-[root@host1 screen-4.0.2]# make install
-
-[root@host1 screen-4.0.2]# install -m 644 etc/etcscreenrc /etc/screenrc
-
-[root@host1 screen-4.0.2]# cp ./screen /bin
-
-注意和一般程序的安装过程有所不同，后面这两条指令一定要执行。
+    CentOS/Red Hat：yum install screen
+    Debian/Ubuntu：apt-get install screen
 
 screen的配置文件，一般在 /etc/screenrc 或者 ~/.screenrc，可以在文件里更改参数设定，也可以通过参数传递或者命令来动态指定。
 
 语法：
 
-screen [-AmRvx -ls -wipe][-d <作业名称>][-h <行数>][-r <作业名称>][-s ][-S <作业名称>]
+    screen [-AmRvx -ls -wipe][-d <作业名称>][-h <行数>][-r <作业名称>][-s ][-S <作业名称>]
 
 补充说明：
 
 screen为多重视窗管理程序。此处所谓的视窗，是指一个全屏幕的文字模式画面。通常只有在使用telnet登入主机或是使用老式的终端机时，才有可能用到screen程序。
 
-参数：
-
--A 　将所有的视窗都调整为目前终端机的大小。
-
--d <作业名称> 　将指定的screen作业离线。
-
--h <行数> 　指定视窗的缓冲区行数。
-
--m 　即使目前已在作业中的screen作业，仍强制建立新的screen作业。
-
--r <作业名称> 　恢复离线的screen作业。
-
--R 　先试图恢复离线的作业。若找不到离线的作业，即建立新的screen作业。
-
--s 　指定建立新视窗时，所要执行的shell。
-
--S <作业名称> 　指定screen作业的名称。
-
--v 　显示版本信息。
-
--x 　恢复之前离线的screen作业。
-
--ls或--list 　显示目前所有的screen作业。
-
--wipe 　检查目前所有的screen作业，并删除已经无法使用的screen作业。
-
 常用screen参数：
 
-screen -S yourname -> 新建一个叫yourname的session
-
-screen -ls -> 列出当前所有的session
-
-screen -r yourname -> 回到yourname这个session
-
-screen -d yourname -> 远程detach某个session
-
-screen -d -r yourname -> 结束当前session并回到yourname这个session
+    screen -S yourname -> 新建一个叫yourname的session
+    screen -ls -> 列出当前所有的session
+    screen -r yourname -> 回到yourname这个session
+    screen -d yourname -> 远程detach某个session
+    screen -d -r yourname -> 结束当前session并回到yourname这个session
 
 在每个screen session 下，所有命令都以 Ctrl+a(C-a) 开始。退出screen使用 exit
 
 例：Ctrl+a,d(按住Ctrl　然后按a　放开a　按d)
 
-C-a ? -> Help，显示简单说明
-
-C-a c -> Create，开启新的 window
-
-C-a n -> Next，切换到下个 window
-
-C-a p -> Previous，前一个 window
-
-C-a 0..9 -> 切换到第 0..9 个window
-
-Ctrl+a [Space] -> 由視窗0循序換到視窗9
-
-C-a C-a -> 在两个最近使用的 window 间切换
-
-C-a x -> 锁住当前的 window，需用用户密码解锁
-
-C-a d -> detach，暂时离开当前session，将目前的 screen session (可能含有多个 windows) 丢到后台执行，并会回到还没进 screen 时的状态，此时在 screen session 里    每个 window 内运行的 process (无论是前台/后台)都在继续执行，即使 logout 也不影响。
-
-C-a z -> 把当前session放到后台执行，用 shell 的 fg 命令則可回去。
-
-C-a w -> windows，列出已开启的 windows 有那些
-
-C-a t -> Time，显示当前时间，和系统的 load
-
-C-a K -> kill window，强行关闭当前的 window
+    C-a ? -> Help，显示简单说明
+    C-a c -> Create，开启新的 window
+    C-a n -> Next，切换到下个 window
+    C-a p -> Previous，前一个 window
+    C-a 0..9 -> 切换到第 0..9 个window
+    Ctrl+a [Space] -> 由視窗0循序換到視窗9
+    C-a C-a -> 在两个最近使用的 window 间切换
+    C-a x -> 锁住当前的 window，需用用户密码解锁
+    C-a d -> detach，暂时离开当前session，将目前的 screen session (可能含有多个 windows) 丢到后台执行，并会回到还没进 screen 时的状态，此时在 screen session 里    每个 window 内运行的 process (无论是前台/后台)都在继续执行，即使 logout 也不影响。
+    C-a z -> 把当前session放到后台执行，用 shell 的 fg 命令則可回去。
+    C-a w -> windows，列出已开启的 windows 有那些
+    C-a t -> Time，显示当前时间，和系统的 load
+    C-a K -> kill window，强行关闭当前的 window
 
 screen可以同步显示你的屏幕给另一个会话。这在给别人处理问题是尤为好用，可以让对方同步看到你的操作。双方同时登陆一台主机，演示方输入  screen -S example，观看方输入 screen -x example，即可同步显示演示方输入的内容
 
 ## tree命令
 
-有时我们需要生成目录树结构:
-
-这时需要用到TREE命令:
-
-关于TREE命令的一些参数:
-
-常见的用法:
-
-tree -a 显示所有
-
-tree -d 仅显示目录
-
-tree -L n n代表数字..表示要显示几层...
-
-tree -f 显示完整路径..
-
-当然tree支持重定向至文件...
+有时我们需要生成目录树结构。这时需要用到TREE命令。当然tree支持重定向至文件...
 
 tree -L 4 >dirce.doc即可生成UTF8格式的文档..我们也可以在windows 下查看..
 
@@ -2260,41 +1414,14 @@ tree -L 4 >dirce.doc即可生成UTF8格式的文档..我们也可以在windows �
 
 创建文件夹：
 
-语法：mkdir [-p][--help][--version][-m <目录属性>][目录名称]
-
-说明：mkdir可建立目录并同时设置目录的权限。
-
-参数：
-
-  -m<目录属性>或--mode<目录属性>   建立目录时同时设置目录的权限。
-
-  -p或--parents   若所要建立目录的上层目录目前尚未建立，则会一并建立上层目录
-
-例：
-
-mkdir aaa
-
-mkdir -p aaa
-
-mkdir -m 777 aaa   (创建一个名字为aaa的可写可读文件夹)
+    mkdir [-p][--help][--version][-m <目录属性>][目录名称]
 
 创建文件：
 
-vi a.php
+    vi a.php
+    echo “abfdsfdsf” > b.txt
+    cat > c.txt
 
-echo “abfdsfdsf” > b.txt
-
-cat > c.txt
-
-具体步骤:
-
-1、键入cat > filename.txt 后回车
-
-2、录入文本内容；
-
-3、键入回车；
-
-4、在键盘上按下Ctrl+D (或者键入Control－D)。
 
 ## linux连接投影机
 
@@ -2306,201 +1433,97 @@ $xrandr
 
 比如在我的电脑上，结果如下：
 
-$xrandr
+    $xrandr
 
- SZ:    Pixels          Physical       Refresh
-
-*0   1280 x 1024   ( 433mm x 346mm )  *50   54
-
- 1   1024 x 768    ( 346mm x 260mm )   51   60   61
-
- 2    800 x 600    ( 270mm x 203mm )   52   65   66   67   68
-
- 3    640 x 480    ( 216mm x 162mm )   53   73   74   75
-
- 4   1280 x 960    ( 433mm x 325mm )   55
-
- 5   1280 x 800    ( 433mm x 270mm )   56
-
- 6   1280 x 768    ( 433mm x 260mm )   57
-
- 7   1152 x 864    ( 390mm x 292mm )   58
-
- 8   1152 x 768    ( 390mm x 260mm )   59
-
- 9    960 x 600    ( 325mm x 203mm )   62
-
- 10   840 x 525    ( 284mm x 177mm )   63
-
- 11   832 x 624    ( 281mm x 211mm )   64
-
- 12   800 x 512    ( 270mm x 173mm )   69
-
- 13   720 x 450    ( 243mm x 152mm )   70
-
- 14   640 x 512    ( 216mm x 173mm )   71   72
-
- 15   640 x 400    ( 216mm x 135mm )   76
-
- 16   640 x 384    ( 216mm x 130mm )   77
-
- 17   576 x 432    ( 195mm x 146mm )   78
-
- 18   576 x 384    ( 195mm x 130mm )   79
-
- 19   512 x 384    ( 173mm x 130mm )   80   81   82
-
- 20   416 x 312    ( 140mm x 105mm )   83
-
- 21   400 x 300    ( 135mm x 101mm )   84   85   86   87
-
- 22   320 x 240    ( 108mm x  81mm )   88   89   90
-
-Current rotation - normal
-
-Current reflection - none
-
-Rotations possible - normal
-
-Reflections possible - none
-
+     SZ:    Pixels          Physical       Refresh
+    *0   1280 x 1024   ( 433mm x 346mm )  *50   54
+     1   1024 x 768    ( 346mm x 260mm )   51   60   61
+     2    800 x 600    ( 270mm x 203mm )   52   65   66   67   68
+     3    640 x 480    ( 216mm x 162mm )   53   73   74   75
+     4   1280 x 960    ( 433mm x 325mm )   55
+     5   1280 x 800    ( 433mm x 270mm )   56
+     6   1280 x 768    ( 433mm x 260mm )   57
+     7   1152 x 864    ( 390mm x 292mm )   58
+     8   1152 x 768    ( 390mm x 260mm )   59
+     9    960 x 600    ( 325mm x 203mm )   62
+     10   840 x 525    ( 284mm x 177mm )   63
+     11   832 x 624    ( 281mm x 211mm )   64
+     12   800 x 512    ( 270mm x 173mm )   69
+     13   720 x 450    ( 243mm x 152mm )   70
+     14   640 x 512    ( 216mm x 173mm )   71   72
+     15   640 x 400    ( 216mm x 135mm )   76
+     16   640 x 384    ( 216mm x 130mm )   77
+     17   576 x 432    ( 195mm x 146mm )   78
+     18   576 x 384    ( 195mm x 130mm )   79
+     19   512 x 384    ( 173mm x 130mm )   80   81   82
+     20   416 x 312    ( 140mm x 105mm )   83
+     21   400 x 300    ( 135mm x 101mm )   84   85   86   87
+     22   320 x 240    ( 108mm x  81mm )   88   89   90
+    Current rotation - normal
+    Current reflection - none
+    Rotations possible - normal
+    Reflections possible - none
 
 
 第0条加了*号，说明这是笔记本电脑当前使用的分辨率。如果投影仪的分辨率是1024x768，那么就需要改变笔记本电脑的分辨率。因为在上面的结果中，1024x768对应第1条，所以运行这个命令来改变分辨率：
 
-$xrandr -s 1
+    $xrandr -s 1
 
 这样就切换了分辨率。等待投影仪的搜索吧。
 
 首先接上VGA，执行命令(VGA代表显示器，LVDS代表笔记本液晶屏):
 
-$ xrandr --output VGA --auto
+    $ xrandr --output VGA --auto
 
 当前桌面会复制到VGA上面，此时执行xrandr会看到有了VGA-0
 
 断开VGA-0:
 
-$ xrandr --output VGA-0 --auto
+    $ xrandr --output VGA-0 --auto
 
 按照当前的配置扩展桌面:
 
-$xrandr --output VGA-0 --auto --left-of LVDS
+    $xrandr --output VGA-0 --auto --left-of LVDS
 
 这是需修改xorg.conf，先用不带参数执行xrandr能够列出当前的显示设备和每个设备支持的模式。Screen代表了总显示区域，VGA代表显示器，LVDS代表笔记本液晶屏。
 
-
-
-Screen 0: minimum 320 x 200, current 1280 x 768, maximum 1280 x 1280
-
-VGA connected (normal left inverted right x axis y axis)
-
-   1280x1024      75.0 +   69.8     59.9
-
-   1024x768       75.1     70.1     60.0
-
-   800x600        72.2     75.0     60.3
-
-   640x480        75.0     72.8     65.4     60.0
-
-   720x400        70.1
-
-LVDS connected 1024x768+0+0 (normal left inverted right x axis y axis) 246mm x 184mm
-
-   1024x768       50.0*+   60.0     40.0
-
-   800x600        60.3
-
-   640x480        60.0     59.9
-
-
+    Screen 0: minimum 320 x 200, current 1280 x 768, maximum 1280 x 1280
+    VGA connected (normal left inverted right x axis y axis)
+       1280x1024      75.0 +   69.8     59.9
+       1024x768       75.1     70.1     60.0
+       800x600        72.2     75.0     60.3
+       640x480        75.0     72.8     65.4     60.0
+       720x400        70.1
+    LVDS connected 1024x768+0+0 (normal left inverted right x axis y axis) 246mm x 184mm
+       1024x768       50.0*+   60.0     40.0
+       800x600        60.3
+       640x480        60.0     59.9
 
 修改：
 
-
-
-gksudo gedit /etc/X11/xorg.conf
-
-
+    gksudo gedit /etc/X11/xorg.conf
 
 修改后如下：
 
-
-
-Section "Screen"
-
-   Identifier "Default Screen"
-
-   Monitor "Configured Monitor"
-
-   Device "Configured Video Device"
-
-   SubSection "Display"
-
-      Virtual 2304 1024 #左右扩展双屏,2304=1280+1024,1024=max(1024,768)
-
-   EndSubSection
-
-EndSection
-
-
+    Section "Screen"
+       Identifier "Default Screen"
+       Monitor "Configured Monitor"
+       Device "Configured Video Device"
+       SubSection "Display"
+          Virtual 2304 1024 #左右扩展双屏,2304=1280+1024,1024=max(1024,768)
+       EndSubSection
+    EndSection
 
 注意：Ubuntu 8.04中的xorg.conf已经非常精简，Subsection "Display" 可能要自己添加，别忘记 EndSubSection
 
-
-
-
-
 xrandr 命令行可以很方便地切换双屏，常用方式如下，其他的可以自己探索：
 
-
-
-xrandr --output VGA --same-as LVDS --auto
-
-
-
-         打开外接显示器(最高分辨率)，与笔记本液晶屏幕显示同样内容（克隆）
-
-
-
-xrandr --output VGA --same-as LVDS --mode 1024x768
-
-
-
-         打开外接显示器(分辨率为1024x768)，与笔记本液晶屏幕显示同样内容（克隆）
-
-
-
-xrandr --output VGA --right-of LVDS --auto
-
-
-
-         打开外接显示器(最高分辨率)，设置为右侧扩展屏幕
-
-
-
-xrandr --output VGA --off
-
-
-
-          关闭外接显示器
-
-
-
-xrandr --output VGA --auto --output LVDS --off
-
-
-
-        打开外接显示器，同时关闭笔记本液晶屏幕（只用外接显示器工作）
-
-
-
-xrandr --output VGA --off --output LVDS --auto
-
-
-
-        关闭外接显示器，同时打开笔记本液晶屏幕 (只用笔记本液晶屏)
-
-
+    xrandr --output VGA --same-as LVDS --auto # 打开外接显示器(最高分辨率)，与笔记本液晶屏幕显示同样内容（克隆）
+    xrandr --output VGA --same-as LVDS --mode 1024x768 # 打开外接显示器(分辨率为1024x768)，与笔记本液晶屏幕显示同样内容（克隆）
+    xrandr --output VGA --right-of LVDS --auto # 打开外接显示器(最高分辨率)，设置为右侧扩展屏幕
+    xrandr --output VGA --off # 关闭外接显示器
+    xrandr --output VGA --auto --output LVDS --off # 打开外接显示器，同时关闭笔记本液晶屏幕（只用外接显示器工作）
+    xrandr --output VGA --off --output LVDS --auto # 关闭外接显示器，同时打开笔记本液晶屏幕 (只用笔记本液晶屏)
 
 方案二：
 
@@ -2508,43 +1531,23 @@ xrandr --output VGA --off --output LVDS --auto
 
 打开xorg.conf
 
-
-
-gksudo gedit /etc/X11/xorg.conf
-
-
+    gksudo gedit /etc/X11/xorg.conf
 
 修改Section “Device”如下：
 
+    Section "Device"
 
+    Identifier "Configured Video Device"
 
-Section "Device"
+    Option "TwinView" "True" #打开双显支持
 
+    Option "TwinViewOrientation" "Clone" #复制模式，Relative为扩展模式
 
+    Option "UseEdidFreqs" "True" #打开刷新频率设置
 
-Identifier "Configured Video Device"
+    Option "Metamodes" "1024x768_60, 1024x768; 1024x768_60,800x600" #刷新频率模式，指明这两个设备的分辨率，逗号前的第一个是本机显示设备，逗号后的第二个是外部设备，分号分隔开多套模式，可以设两套方案或更多。
 
-
-
-Option "TwinView" "True" #打开双显支持
-
-
-
-Option "TwinViewOrientation" "Clone" #复制模式，Relative为扩展模式
-
-
-
-Option "UseEdidFreqs" "True" #打开刷新频率设置
-
-
-
-Option "Metamodes" "1024x768_60, 1024x768; 1024x768_60,800x600" #刷新频率模式，指明这两个设备的分辨率，逗号前的第一个是本机显示设备，逗号后的第二个是外部设备，分号分隔开多套模式，可以设两套方案或更多。
-
-
-
-EndSection
-
-
+    EndSection
 
 保存。连接好投影仪，重新启动Xwindows(Ctrl+Alt+Backspace)就OK了。
 
@@ -2608,8 +1611,8 @@ $ ssh localhost
 这时候就要想到重新启动一下：sudo service ssh restart
 
 然后在连接
-#查看linux进程的执行文件路径
-具体做法就是：
+
+## 查看linux进程的执行文件路径
 
            1、以超级用户登陆
 
