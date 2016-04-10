@@ -2,12 +2,9 @@
 
 [![Code Climate](https://codeclimate.com/github/jiangxincode/cnblogs/badges/gpa.svg)](https://codeclimate.com/github/jiangxincode/cnblogs)
 [![Issue Count](https://codeclimate.com/github/jiangxincode/cnblogs/badges/issue_count.svg)](https://codeclimate.com/github/jiangxincode/cnblogs)
+[![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 
-一些我平时会发表到cnblogs的文章，由于我的很多文章都是需要不断修改的，而cnblogs不具备历史内容查看以及备份功能，所以我需要借助github。平时会在github上写新文章或者修改原来的文章，每隔一段时间会同步到cnblogs上。之后我可能会写一个自动同步工具，但是现在还是依靠手动同步。
-
-欢迎来到我的博客：
-
-http://www.cnblogs.com/jiangxinnju/
+一些我在平时工作和学习中积累的编程相关的资源。如果大家有兴趣可以一起增加，修改。
 
 
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/jiangxincode/cnblogs/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
