@@ -14,6 +14,7 @@
 * File system: https://en.wikipedia.org/wiki/File_system
 * ack: http://beyondgrep.com/
 * Glances: https://github.com/nicolargo/glances/
+* Unix Shells: Bash, Fish, Ksh, Tcsh, Zsh: http://hyperpolyglot.org/unix-shells
 
 ## Shell 快捷键
 

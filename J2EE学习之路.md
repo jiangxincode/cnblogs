@@ -63,6 +63,7 @@
 * PO BO VO DTO POJO DAO DO这些Java中的概念分别指一些什么？: https://www.zhihu.com/question/39651928
 * Java bytecode instruction listings: https://en.wikipedia.org/wiki/Java_bytecode_instruction_listings
 * Java自动装箱与拆箱及其陷阱: http://blog.csdn.net/jairuschan/article/details/7513045
+* Web安全漏洞之：JDK1.5环境下扫描远程调试端口导致JVM崩溃【JDWP exit error JVMTI_ERROR_NONE(0)】: http://blog.csdn.net/sfdev/article/details/5828509
 
 # IDE
 
