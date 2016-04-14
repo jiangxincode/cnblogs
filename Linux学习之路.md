@@ -3162,7 +3162,7 @@ cp /etc/skel/.bashrc  ~/
 
 后问题解决，如果要改颜色配置，可以修改PS1的值。
 
-#通过find命令寻找文件并拷贝到指定目录
+## 通过find命令寻找文件并拷贝到指定目录
 
 有这样的一个需求，需要将一部分符合条件的文件从一个目录拷贝到另一个目录中，可以通过使用find命令从源目录查找到符合条件的文件然后使用cp命令拷贝到目标目录
 
@@ -3337,37 +3337,26 @@ Brian Kernighan 与 Dennis Ritchie 告诉 Vicki Brown 说: "rc" 也是Plan 9 作
 
 # There are unfinished transactions remaining
 
-今天在服务器用yum安装东西的时候,老是报:There are unfinished transactions remaining. You might consider running yum-complete-transaction first to finish them.意思是:有未完成的yum事务,建议先运行yum-complete-transaction命令清除.问了下开发,原来有强制结束yum过,好吧,对于我这样有点轻微强迫症的人来说,不允许服务器出现这些信息的.
+今天在服务器用yum安装东西的时候,老是报:`There are unfinished transactions remaining. You might consider running yum-complete-transaction first to finish them.`问了下开发,原来有强制结束yum过,好吧,对于我这样有点轻微强迫症的人来说,不允许服务器出现这些信息的.
 
 解决办法:
 
-代码如下:
-
-# 安装 yum-complete-transaction（这是一个能发现未完成或被中断的yum事务的程序）
-
-yum -y install yum-utils
-
-# 清除yum缓存
-
-yum clean all
-
-# 运行 yum-complete-transaction,清理未完成事务
-
-yum-complete-transaction --cleanup-only
+    # 安装 yum-complete-transaction（这是一个能发现未完成或被中断的yum事务的程序）
+    yum -y install yum-utils
+    # 清除yum缓存
+    yum clean all
+    # 运行 yum-complete-transaction,清理未完成事务
+    yum-complete-transaction --cleanup-only
 
 ps:
 
 yum会把下载的软件包和header存储在cache中,而不会自动删除.可用yum clean headers清除header,yum clean packages清除下载的rpm包,yum clean all全清.
 
-# yum提示another app is currently holding the yum lock;waiting for it to exit
+## yum提示another app is currently holding the yum lock;waiting for it to exit
 
 可能是系统自动升级正在运行，yum在锁定状态中。
 
-可以通过强制关掉yum进程：
-
-#rm -f /var/run/yum.pid
-
-然后就可以使用yum了。
+可以通过强制关掉yum进程：`rm -f /var/run/yum.pid`
 
 #杂项
 
