@@ -1209,6 +1209,11 @@ find 后面可加指定目录，如"/etc/"
     #cat /dev/cdrom >;/root/1.iso
     mkisofs -r -o myiso.iso /dev/cdrom
     cp -r /home/user name.iso
+
+    ## Linux下打包压缩war和解压war包
+    jar -cvfM0 game.war ./ # 把当前目录下的所有文件打包成game.war
+    jar -xvf game.war # 解压game.war到当前目录
+
 ```
 
 ## 在shell中使用chrome命令
@@ -3143,219 +3148,129 @@ ${var%...}
 ${var/.../...}
 
 
-# C语言调试手段:锁定错误的实现方法
+## C语言调试手段:锁定错误的实现方法
 
 在项目开发工程中，如果能确定哪个文件下的哪个函数下的哪行出错--即锁定错误，那该多好啊，该文章就是为此而作的。首先来了解一下文件默认的输出信息的函数吧：
 
+```C
+    printf("line : %d\n", __LINE__);                   //当前行数
+    printf("filename : %s\n", __FILE__);             //当前文件名
+    printf("function : %s\n", __FUNCTION__);  //当前函数
+    printf("time : %s\n", __TIME__);                  //当前时间
+    printf ("date : %s\n",  __DATE__);              //当前日期
 
-
-printf("line : %d\n", __LINE__);                   //当前行数
-
-printf("filename : %s\n", __FILE__);             //当前文件名
-
-printf("function : %s\n", __FUNCTION__);  //当前函数
-
-printf("time : %s\n", __TIME__);                  //当前时间
-
-printf ("date : %s\n",  __DATE__);              //当前日期
-
-
-
-line : 10
-
-filename : test.c
-
-function : main.c
-
-time : 14:13:51
-
-date : Oct 13 2012
-
-
+    line : 10
+    filename : test.c
+    function : main.c
+    time : 14:13:51
+    date : Oct 13 2012
+```
 
 理论已足，那就来看看如何锁定错误吧：
 
-一、源文件：
+一、源文件(erroutput.c)
 
-
-
-erroutput.c
-
+```C
 #include <stdio.h>
-
 #include <assert.h>
-
 #define _DEBUG(msg...)    printf("[ %s,%s, %d ]=>",__FILE__, __FUNCTION__, __LINE__);  printf(msg);printf("\r\n")
-
 #define _ERROR(msg...)    printf("[ error: %s, %d]=>", __FILE__,  __LINE__);printf(msg); printf("\r\n")
-
 #define _ASSERT(exp)      \
-
                         do {\
-
                                 if (!(exp)) {\
-
                                 printf( "[ %s ]  ",#exp);printf("\r\n");\
-
                                 assert(exp);\
-
                                 }\
-
                         } while (0)
 
 int main(void)
-
 {
-
         char *p = NULL;
-
         _DEBUG("DEBUG!");
-
         _ERROR("ERROR!");
-
         _ASSERT(NULL != p);
-
         return 0;
-
 }
-
-
+```
 
 二、输出：
 
-
-
-[root@localhost for_test]# gcc erroutput.c
-
-[root@localhost for_test]# ./a.out
-
-[ erroutput.c,main, 17 ]=>DEBUG!
-
-[ error: erroutput.c, 18]=>ERROR!
-
-[ NULL != p ]
-
-a.out: erroutput.c:19: main: Assertion `((void *)0) != p' failed.
-
-已放弃
-
-
+    [root@localhost for_test]# gcc erroutput.c
+    [root@localhost for_test]# ./a.out
+    [ erroutput.c,main, 17 ]=>DEBUG!
+    [ error: erroutput.c, 18]=>ERROR!
+    [ NULL != p ]
+    a.out: erroutput.c:19: main: Assertion `((void *)0) != p' failed.
+    已放弃
 
 TI处理：
 
-#ifdef DEBUG
+```
+    #ifdef DEBUG
+        #define DBG(fmt, args...)  printf("Debug " fmt, ##args)// ##运算符用于把参数连接到一起。预处理程序把出现在##两侧的参数合并成一个符号。
+    #else
+        #define DBG(fmt, args...)
+    #endif
+    #define ERR(fmt, args...)  printf("Error " fmt, ##args)
+    
+    [root@localhost for_test]# cat debug_err.c
+    
+    #include <stdio.h>
+    //#define DEBUG
+    int main(void)
+    {
+           DBG("xxxx\n");
+           ERR("xxxx\n");
+           return 0;
+    }
+    
+    [root@localhost for_test]# ./a.out
+    
+    Error xxxx
+    
+    #ifdef __DEBUG
+    
+        #define DBG(fmt, args...) fprintf(stderr,"Encode Debug: " fmt, ## args)
+    
+    #else
+    
+        #define DBG(fmt, args...)
+    
+    #endif
+    
+    #define ERR(fmt, args...) fprintf(stderr,"Encode Error: " fmt, ## args)
+```
 
-    #define DBG(fmt, args...)  printf("Debug " fmt, ##args)// ##运算符用于把参数连接到一起。预处理程序把出现在##两侧的参数合并成一个符号。
-
-#else
-
-    #define DBG(fmt, args...)
-
-#endif
-
-#define ERR(fmt, args...)  printf("Error " fmt, ##args)
-
-[root@localhost for_test]# cat debug_err.c
-
-#include <stdio.h>
-
-//#define DEBUG
-
-int main(void)
-
-{
-
-       DBG("xxxx\n");
-
-       ERR("xxxx\n");
-
-       return 0;
-
-}
-
-[root@localhost for_test]# ./a.out
-
-Error xxxx
-
-
-
-#ifdef __DEBUG
-
-    #define DBG(fmt, args...) fprintf(stderr,"Encode Debug: " fmt, ## args)
-
-#else
-
-    #define DBG(fmt, args...)
-
-#endif
-
-#define ERR(fmt, args...) fprintf(stderr,"Encode Error: " fmt, ## args)
-
-#解决ubuntu下找不到libgtk-x11-2.0.so.0
+## 解决ubuntu下找不到libgtk-x11-2.0.so.0
 
 The following error came up when I tried to run Adobe Acrobat Reader on ubuntu 12.10
-
 error while loading shared libraries: libgtk-x11-2.0.so.0: cannot open shared object file: No such file or directory
-
 To fix this, simple install the package ia32-libs-gtk
 
-$ sudo apt-get install ia32-libs-gtk
+    sudo apt-get install ia32-libs-gtk
 
 Now run the application again and the error should go away.
 
-补充：
+If you os is ubuntu 14.04, do this before:
 
-如果是ubuntu 14.04，则请先执行：
+    echo "deb http://archive.ubuntu.com/ubuntu/ raring main restricted universe multiverse"  >>  sudo gedit /etc/apt/sources.list
+    sudo apt-get update
+    sudo apt-get install ia32-libs ia32-libs-gtk
 
-方法1：
 
-sudo gedit /etc/apt/sources.list
+## debian hosts文件中的 127.0.1.1 主机地址
 
-然后在最后添加上： deb http://archive.ubuntu.com/ubuntu/ raring main restricted universe multiverse
+有时候/etc/hosts文件会看到127.0.1.1这个地址,这是什么呢? 127.0.0.1这个loopback地址很常见，就是本地接口的回路/回环地址。但有时候/etc/hosts文件中还会出现127.0.1.1,这又是什么地址呢？这也是个本地回路/回环地址。出现这个地址的原因是因为有些应用程序需要规范的全限定域名FQDN(Fully Qualified Domain Name)，FQDN不只需要主机名还需要主机域名，其表达形式为hostname.domainname。如果你的主机有一个静态IP地址，则FQDN名字解析到这个静态地址，否则解析到127.0.1.1这个本地回路地址。所以一般情况下不会看到127.0.1.1这个地址。127.0.0.1一般只对应hostname，这也是二者的主要区别，如下
 
-方法2：
-
-echo "deb http://archive.ubuntu.com/ubuntu/ raring main restricted universe multiverse"  >>  sudo gedit /etc/apt/sources.list
-
-添加完源之后
-
-sudo apt-get update
-
-sudo apt-get install ia32-libs ia32-libs-gtk
-
-这样就应该可以了。
-
-# debian hosts文件中的 127.0.1.1 主机地址
-
-有时候/etc/hosts文件会看到127.0.1.1这个地址,这是什么呢?
-
-127.0.0.1这个loopback地址很常见，就是本地接口的回路/回环地址。但有时候/etc/hosts文件中还会出现127.0.1.1,这又是什么地址呢？这也是个本地回路/回环地址。
-
-出现这个地址的原因是因为有些应用程序需要规范的全限定域名FQDN(Fully Qualified Domain Name)，FQDN不只需要主机名还需要主机域名，其表达形式为hostname.domainname
-
-如果你的主机有一个静态IP地址，则FQDN名字解析到这个静态地址，否则解析到127.0.1.1这个本地回路地址。所以一般情况下不会看到127.0.1.1这个地址。
-
-127.0.0.1一般只对应hostname，这也是二者的主要区别，如下
-
-127.0.0.1 hostname
-
-127.0.1.1 hostname.domainname
+    127.0.0.1 hostname
+    127.0.1.1 hostname.domainname
 
 当然并一定非要用127.0.1.1这个IP,RFC规定的127.0.0.0/8这个IP段内的任意IP都可以，只要没有冲突，debian选择了127.0.1.1
 
-查看主机名
+    hostname # 查看主机名
+    hostname --fqdn # 查看FQDN名字
 
-# hostname
-
- hostname
-
-查看FQDN名字
-
-# hostname --fqdn
-
- hostname.domainname
-
-# Linux下分割合并文
+## Linux下分割合并文
 
 切割合并文件在linux下用split和cat就可以完成。下面举些实例进行说明。
 
@@ -3421,7 +3336,7 @@ split 参数：
 
 -l, --lines=NUMBER    NUMBER 值为每一输出档的列数大小
 
-# ubuntu下终端路径只显示当前目录
+## ubuntu下终端路径只显示当前目录
 
 最近一直在用终端操作，看着他长长的路径名实在不爽， 动手来改改咯～
 
@@ -3508,11 +3423,9 @@ access.log.2011102[2-6]* 文件名的正则表达式，获取文件的条件
 find命令结合cp命令，拷贝某个目录下所有文件到另一个目录中
 
 
-
 要求整个目录完全拷贝到另一个目录，并且忽略个别目录，脚本如下：
 
 find ./ -path '/tmp/mnt/disk1/ignore' -prune -o \( -name '*' ! -name "*.tmp" \) | xargs cp "目的目录" "{}" \;
-
 
 
 在上面这个脚本中，当执行到“| xargs cp”时，假设输入的字符串类似如下：
@@ -3613,15 +3526,10 @@ close(fd_watchdog);
 
 所需头文件：
 
-
-
-#include <unistd.h>
-
-#include <sys/stat.h>
-
-#include <syslog.h>
-
-#include <errno.h>
+    #include <unistd.h>
+    #include <sys/stat.h>
+    #include <syslog.h>
+    #include <errno.h>
 
 # tailf
 
@@ -3691,34 +3599,7 @@ gwsong52@sohu.com
 
 G_CALLBACK()与  GTK_SIGNAL_FUNC()区别
 
-
-# Linux下打包压缩war和解压war包
-
-把当前目录下的所有文件打包成game.war
-
-jar -cvfM0 game.war ./
-
--c   创建war包
-
--v   显示过程信息
-
--f
-
--M
-
--0   这个是阿拉伯数字，只打包不压缩的意思
-
-
-
-
-
-解压game.war到当前目录
-
-jar -xvf game.war
-
-
-
-# Ubuntu开机直接进入控制台
+## Ubuntu开机直接进入控制台
 
 只需编辑文件`/etc/default/grub`，把 `GRUB_CMDLINE_LINUX_DEFAULT=”quiet splash”`改成`GRUB_CMDLINE_LINUX_DEFAULT=”quiet splash text”`，然后再运行`sudo update-grub`即可。
 
