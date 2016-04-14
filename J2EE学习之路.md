@@ -75,6 +75,7 @@
 * Eclipse MarketPlace地址：http://marketplace.eclipse.org/
 * 各个版本的下载地址(我一般下载JavaEE)：http://www.eclipse.org/downloads/
 * 帮助地址：http://help.eclipse.org/
+* 源码：http://git.eclipse.org/
 * FAQ What is a Quick Fix?: http://wiki.eclipse.org/FAQ_What_is_a_Quick_Fix?
 * Eclipse插件: http://www.oschina.net/project/tag/148/eclipse-plugins
 * Eclipse相关问题：http://www.cnblogs.com/jiangxinnju/p/5205365.html
@@ -1033,5 +1034,7 @@ JavaDoc: https://storm.apache.org/javadoc/apidocs/index.html
 * Eclipse Plug-in & OSGI：http://www.blogjava.net/zhuxing/category/33273.html
 * Eclipse插件开发打包为Update Site：http://forchenyun.iteye.com/blog/664241
 * 插件开发总览：http://www.cnblogs.com/xing901022/p/4115610.html
+* Tycho - Building Eclipse plug-ins with maven: http://www.eclipse.org/tycho/
+* 使用Tycho来构建你的RCP程序: http://chnic.iteye.com/category/337072
 
 
