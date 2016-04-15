@@ -295,6 +295,11 @@
 * STAN, the leading Eclipse-based structure analysis tool for Java: http://stan4j.com/
 * nWire, Code Exploration for Eclipse(not free): http://www.nwiresoftware.com/
 
+#  apache
+
+* http://www.apache.org/
+* Apache Software Foundation Distribution Directory: http://www.apache.org/dist/
+* The Apache Attic: http://attic.apache.org/
 
 # Apache Commons
 
@@ -677,6 +682,7 @@ mvn javadoc:javadoc
 # Hadoop
 
 * http://hadoop.apache.org/
+* http://hadoop.apache.org/docs/current/hadoop-project-dist/hadoop-common/ClusterSetup.html#Web_Interfaces
 * Eclipse下搭建Hadoop2.4.0开发环境：http://www.cnblogs.com/kinglau/p/3802705.html
 * 使用eclipse连接hadoop失败情况：http://blog.csdn.net/yunlong34574/article/details/21331927
 
@@ -714,7 +720,6 @@ JavaDoc: https://storm.apache.org/javadoc/apidocs/index.html
 * Graphviz项目地址：http://www.graphviz.org/
 * 程序员的绘图利器 — Graphviz：http://blog.csdn.net/zhangskd/article/details/8250470
 * Graphviz Eclipse plug-in：https://github.com/abstratt/eclipsegraphviz
-
 
 # JBoss
 
@@ -997,6 +1002,10 @@ JavaDoc: https://storm.apache.org/javadoc/apidocs/index.html
 * http://lucene.apache.org/
 * Lucene原理与代码分析: http://www.cnblogs.com/forfuture1978/category/300665.html
 
+# Apache Flume
+
+* http://flume.apache.org/
+
 
 # Solr
 
@@ -1021,6 +1030,11 @@ JavaDoc: https://storm.apache.org/javadoc/apidocs/index.html
 # eBus
 
 * https://sourceforge.net/projects/ebus/
+
+
+# Apache POI - the Java API for Microsoft Documents
+
+* http://poi.apache.org/
 
 
 # 数据库连接池
