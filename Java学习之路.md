@@ -251,7 +251,7 @@ test/Test.class
 
 使用 unzip 来解压 JAR 文件：在介绍 JAR 文件的时候就已经说过了，JAR 文件实际上就是 ZIP 文件，所以可以使用常见的一些解压 ZIP 文件的工具来解压 JAR 文件，如 Windows 下的 WinZip、WinRAR 等和 Linux 下的 unzip 等。使用 WinZip 和 WinRAR 等来解压是因为它们解压比较直观，方便。而使用 unzip，则是因为它解压时可以使用 -d 参数指定目标目录。在解压一个 JAR 文件的时候是不能使用 jar 的 -C 参数来指定解压的目标的，因为 -C 参数只在创建或者更新包的时候可用。那么需要将文件解压到某个指定目录下的时候就需要先将这具 JAR 文件拷贝到目标目录下，再进行解压，比较麻烦。如果使用 unzip，就不需要这么麻烦了，只需要指定一个 -d 参数即可。如：
 
-unzip test.jar -d dest/
+    unzip test.jar -d dest/
 
 使用 WinZip 或者 WinRAR 等工具创建 JAR 文件：上面提到 JAR 文件就是包含了 META-INF/MANIFEST 的 ZIP 文件，所以，只需要使用 WinZip、WinRAR 等工具创建所需要 ZIP 压缩包，再往这个 ZIP 压缩包中添加一个包含 MANIFEST 文件的 META-INF 目录即可。对于使用 jar 命令的 -m 参数指定清单文件的情况，只需要将这个 MANIFEST 按需要修改即可。
 
@@ -387,33 +387,19 @@ File.getCanonicalPath()和File.getAbsolutePath()大约只是对于new File(".")�
 比如当前的路径为 C:\test ：
 
 File directory = new File("abc");
-
 directory.getCanonicalPath(); //得到的是C:\test\abc
-
 directory.getAbsolutePath();    //得到的是C:\test\abc
-
 direcotry.getPath();                    //得到的是abc
 
-
-
 File directory = new File(".");
-
 directory.getCanonicalPath(); //得到的是C:\test
-
 directory.getAbsolutePath();    //得到的是C:\test\.
-
 direcotry.getPath();                    //得到的是.
 
-
-
 File directory = new File("..");
-
 directory.getCanonicalPath(); //得到的是C:\
-
 directory.getAbsolutePath();    //得到的是C:\test\..
-
 direcotry.getPath();                    //得到的是..
-
 
 
 ## System.getenv()
