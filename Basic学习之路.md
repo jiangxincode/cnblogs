@@ -6,6 +6,8 @@
 * FBWiki: http://www.freebasic.net/wiki/wikka.php?wakka=CatPgProgrammer
 
 * freebasic.vim: http://cubaxd.net/?p=syntaxfile 
+* Freebasic-vim-syntax-file: https://github.com/vim-scripts/Freebasic-vim-syntax-file
+* fbc.vim: https://github.com/caglartoklu/fbc.vim
 
 * QBasic讨论区: http://bbs.pfan.cn/forum/12.html
 
@@ -21,3 +23,5 @@
 * Differences between VB.NET and VB: http://stackoverflow.com/questions/23603569/differences-between-vb-net-and-vb
 * Comparison of Visual Basic and Visual Basic .NET: https://en.wikipedia.org/wiki/Comparison_of_Visual_Basic_and_Visual_Basic_.NET
 * QBasic: https://en.wikipedia.org/wiki/QBasic
+
+* All about QBasic and QuickBasic: http://www.qbasic.net/
