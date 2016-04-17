@@ -1,6 +1,6 @@
 # C_CPP学习之路 [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 
-# Reference
+## Reference
 
 * http://www.cplusplus.com/
 * http://en.cppreference.com/
@@ -50,51 +50,45 @@
 * cppcheck: https://sourceforge.net/projects/cppcheck/
 * DISLIN: https://www.mps.mpg.de/dislin/
 
-# Eclipse CDT
+## Eclipse CDT
 
 * 项目地址：http://www.eclipse.org/cdt/
 * 安装说明：http://www.eclipse.org/cdt/downloads.php
 * 也可以在Eclipse的MarketPlace中搜索CDT，但是需要注意搜到的CDT版本是否与Eclipse版本匹配。
 
-
-# CodeBlocks
+## CodeBlocks
 
 * http://www.codeblocks.org/
 * cbp2make: http://forums.codeblocks.org/index.php/topic,13675.msg92163.html#msg92163
 * cbMakefileGen plugin: http://forums.codeblocks.org/index.php/topic,6241.0.html
 * CodeBlocks插件开发指南(一): http://www.cppblog.com/lymons/archive/2010/04/17/112850.html
 
-# Other IDEs
+## Other IDEs
 
 * http://www.codelite.org/
 * http://anjuta.org/
 
-
-# CMake
+## CMake
 
 * https://cmake.org/
 
-
-# Ctags
+## Ctags
 
 * https://sourceforge.net/projects/ctags/
 
-
-
-# CLIPS
+## CLIPS
 
     CLIPS is a productive development and delivery expert system tool which provides a complete environment for the construction of rule and/or object based expert systems.
 
 * http://clipsrules.sourceforge.net/WhatIsCLIPS.html
 
-
-# Xapian
-    
+## Xapian
+  
     Xapian is an Open Source Search Engine Library, released under the GPL v2+. It's written in C++, with bindings to allow use from Perl, Python, PHP, Java, Tcl, C#, Ruby, Lua, Erlang and Node.js (so far!)
-    
+
 * http://xapian.org/
 
-# GTK+
+## GTK+
 
 * http://www.gtk.org/
 
@@ -116,34 +110,28 @@
 * GTK+2.0 中的容器控件与布局技巧: http://www.ibm.com/developerworks/cn/linux/l-gtk/part1/
 * GTK编程: http://jianlee.ylinux.org/Computer/C/gtk%E7%BC%96%E7%A8%8B.html
 
-
-# QT
+## QT
 
 * http://www.qt.io/
 * Qter开源社区: http://www.qter.org/
 * qtcn: http://www.qtcn.org/bbs/i.php
 
-
-
-# wxWidgets
+## wxWidgets
 
 * http://www.wxwidgets.org/
 
-
-# Doxygen
+## Doxygen
 
 * http://www.stack.nl/~dimitri/doxygen/index.html
 * 学习用 doxygen 生成源码文档: http://www.ibm.com/developerworks/cn/aix/library/au-learningdoxygen/
 
-
-# Unit Test
+## Unit Test
 
 * Google Test: https://github.com/google/googletest
 * Parasoft C/C++test: https://www.parasoft.com/product/cpptest/
 * 开放源码 C/C++ 单元测试工具，第 3 部分: 了解 CppTest: http://www.ibm.com/developerworks/cn/aix/library/au-ctools3_ccptest/
 
-
-# Articles
+## Articles
 
 * Comparison of Diagnostics between GCC and Clang: https://gcc.gnu.org/wiki/ClangDiagnosticsComparison
 * C++ unit test start guide, how to set up Google Test (gtest) in Eclipse?：http://www.codeproject.com/Articles/811934/Cplusplus-unit-test-start-guide-how-to-set-up-Goog
@@ -195,7 +183,3 @@
 * VC知识库: http://www.vckbase.com/
 * 基于X的GNOME、GTK、GDK、XLib、GLib等之间的关系: http://socol.iteye.com/blog/579718
 * 减少C++代码编译时间的方法: http://www.cnblogs.com/misserwell/p/4343927.html
-
-
-
-

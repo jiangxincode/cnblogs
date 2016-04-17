@@ -5,7 +5,7 @@
 * PowerBASIC: http://www.powerbasic.com/
 * FBWiki: http://www.freebasic.net/wiki/wikka.php?wakka=CatPgProgrammer
 
-* freebasic.vim: http://cubaxd.net/?p=syntaxfile 
+* freebasic.vim: http://cubaxd.net/?p=syntaxfile
 * Freebasic-vim-syntax-file: https://github.com/vim-scripts/Freebasic-vim-syntax-file
 * fbc.vim: https://github.com/caglartoklu/fbc.vim
 
