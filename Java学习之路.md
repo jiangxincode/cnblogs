@@ -49,8 +49,6 @@ OpenIDK只包含最精简的JDK：OpenJDK不包含其他的软件包，比如Rhi
 
 总之，在Java体系中，还是有很多不自由的成分，源代码的开发不够彻底，希望Oracle能够让JCP更自由开放一些，这也是所有Java社区所希望的。
 
-
-
 ## 怎样在Linux系统中下载和安装OpenJDK包
 
 Debian, Ubuntu等系统：在命令行中，键入：
@@ -259,8 +257,7 @@ test/Test.class
 
 jar cvfM test.zip test
 
-
-# javadoc注意点（原创）
+## javadoc注意点（原创）
 
 javadoc生成文档时总是报java.lang.IllegalArgumentException错
 
@@ -269,7 +266,6 @@ JavamavenEXTSUNJDK .
 javadoc生成文档时总是报java.lang.IllegalArgumentException错误,是classpath里面字符冲突引起的。我在classpath中包含了%JAVA_HOME%\lib;解决方法是重新设置classpath或者删除classpath.要注意设置完成后重启下cmd或者editplus，重启后生效！
 
 见官方参考文档 http://maven.apache.org/plugins/maven-javadoc-plugin/faq.html
-
 
 
 javadoc生成时出错：编码GBK的不可映射字符
@@ -326,38 +322,6 @@ byte[] bytes = str.getBytes(); //我想不明白，为什么这里要占用3个b
 
 首先，要搞清楚 code point 和 encoding 的区别。Java 是遵循 unicode 4.0 标准的，而内部的 character 以 utf-16 作为 encoding。unicode 4.0 标准包含从 U+0000-U+FFFF 的基本多语言平面和 U+10000-U+10FFFF 的扩展平面的文字，这是 code point。Java 的 char 类型是 16 bit 的，所以单个 char 只支持基本平面内的文字，而扩展平面的文字是由一对 char 来表示的。 而 String.getBytes() 这个方法是按照指定的 encoding 返回字符串，一般中文系统的默认编码是 utf-8 (linux, mac) 或者 gbk/gb18030 (windows)。只要是基本平面内的文字，utf-8码的中文都是3字节的，而 gbk/gbk18030 是2字节的。
 
-# 常用Java API
-
-## 计算Java程序运行时间
-
-第一种是以毫秒为单位计算的。
-
-　　//伪代码
-
-　　long startTime=System.currentTimeMillis();   //获取开始时间
-
-　　doSomeThing();  //测试的代码段
-
-　　long endTime=System.currentTimeMillis(); //获取结束时间
-
-　　System.out.println("程序运行时间： "+(end-start)+"ms");
-
-第二种是以纳秒为单位计算的。
-
-//伪代码
-
-　　long startTime=System.nanoTime();   //获取开始时间
-
-　　doSomeThing();  //测试的代码段
-
-　　long endTime=System.nanoTime(); //获取结束时间
-
-System.out.println("程序运行时间： "+(end-start)+"ns");
-
-## 获得系统换行符
-
-System.getProperty("line.separator");
-
 ## Java获取当前路径
 
 利用System.getProperty()函数获取当前路径：
@@ -400,13 +364,6 @@ File directory = new File("..");
 directory.getCanonicalPath(); //得到的是C:\
 directory.getAbsolutePath();    //得到的是C:\test\..
 direcotry.getPath();                    //得到的是..
-
-
-## System.getenv()
-
-getenv是获取系统的环境变更，对于windows对在系统属性-->高级-->环境变量中设置的变量将显示在此(对于linux,通过export设置的变量将显示在此)
-
-System.out.println(System.getenv());
 
 ## java中的URL类
 
@@ -1359,57 +1316,31 @@ static{}(即static块)，会在类被加载的时候执行且仅会被执行一�
 看下面的示例:
 
 class Test{
-
         public static int X=100;
-
 		public final static int Y;=200
-
 		public Test(){
-
 		System.out.println("Test构造函数执行");
-
 	}
-
 	static{
-
 		System.out.println("static语句块执行");
-
 	}
-
 	public static void display(){
-
 		System.out.println("静态方法被执行");
-
 	}
-
 	public void display_1(){
-
 		System.out.println("实例方法被执行");
-
 	}
-
 }
 
 public class StaticBlockTest{
-
 	public static void main(String args[]){
-
 		try{
-
 		        Class.forName("Test");
-
     		    Class.forName("Test");
-
 		} catch(ClassNotFoundException e) {
-
 			e.printStackTrace();
-
 		}
-
-
-
 	}
-
 }
 
 结果：你会发现虽然执行了两条Class.forName("Test")语句，但是，只输出了一条"静态方法被执行"语句；其实第二条Class.forName()语句已经无效了，因为在虚拟机的生命周期中一个类只被加载一次；又因为static{}是伴随类加载执行的，所以，不管你new多少次对象实例，static{}都只执行一次。
@@ -5787,7 +5718,7 @@ true only if the specified object is also a comparator and it imposes the same o
 
 comparator.compare(person1,person2);。
 
-# 在多线程中创建单例模式的双重锁定(Double-Check Locking )
+## 在多线程中创建单例模式的双重锁定(Double-Check Locking )
 
 ```java
     public class SingleTon {
@@ -5825,25 +5756,25 @@ comparator.compare(person1,person2);。
     }
 ```
 
-#  Class类
+##  Class类
 
 Class类是为了保存JAVA虚拟机运行时(RTTI)对所有对象进行类型识别的信息而设立的。当然Class也是继承自Object类的,每个类都有Class对象,想得到一个类的Class对象共有三种方法.
 
-1:调用getClass()
+```java
 
+    //调用getClass()
     Employee emp;
     Class cls=emp.getClass();
 
-2:静态方法forName(String  clsName)
-
+    //静态方法forName(String  clsName)
     String className="Employee";
     Class  cls=Class.forName(className);
 
-3:class成员变量法
-
+    //class成员变量法
     Class cls=Employee.class;
+```
 
-# myeclipse工程结构问题
+## myeclipse工程结构问题
 
 .myeclipse目录总体是安装了myeclipse插件的目录，而且这个大的myeclipse插件实际是由很多小的插件组成的，比如tomacat插件，spring插件等等。
 
@@ -5862,11 +5793,11 @@ Class类是为了保存JAVA虚拟机运行时(RTTI)对所有对象进行类型�
 
 这句话应该是来设置项目的根目录的
 
-# MyEclipse删除对Struts、Hibernate、Spring的支持
+## MyEclipse删除对Struts、Hibernate、Spring的支持
 
 最近碰到添加了SSH的支持，但又发现有些包或配置文件不正确，想重新添加，但MyEclipse没有自动重新加载功能，于是到网上搜索了相关内容，总结如下：
 
-## 撤消MyEclipse对Struts的支持
+### 撤消MyEclipse对Struts的支持
 
 第一步删除struts-config.xml文件。删除config文件是主要的，否则重新部署struts时MyEclipse会瘫痪。其他由MyEclipse自动生成的struts相关文件可以不去理会，等重新部署的时候如有重名他们将会被自动覆盖。
 
@@ -5876,7 +5807,7 @@ Class类是为了保存JAVA虚拟机运行时(RTTI)对所有对象进行类型�
 
 保存退出。右键单击项目，选择Refresh让新改的.project文件生效。这时候struts功能又可以使用了，再重新部署struts功能即可。
 
-## 撤消MyEclipse对Hibernate的支持
+### 撤消MyEclipse对Hibernate的支持
 
 我是通过菜单MyEclipse->Project Capabilities添加了对Hibernate的支持，添加容易，删除难，菜单里好像没有删除对Hibernate支持的功能，只能手工删除了：
 
@@ -5894,7 +5825,7 @@ Class类是为了保存JAVA虚拟机运行时(RTTI)对所有对象进行类型�
 
 第三步删除Hibernate对应的mapping file,class
 
-## 撤消MyEclipse对Spring的支持
+### 撤消MyEclipse对Spring的支持
 
 1. 从build path中删除spring libs
 2. 手工修改工程目录下的.project文件中相关的内容
@@ -5902,17 +5833,13 @@ Class类是为了保存JAVA虚拟机运行时(RTTI)对所有对象进行类型�
 
 刷新工程，在工程右键菜单的myeclipse下面add spring capacity项就又回来了
 
-# 异常：created a ThreadLocal with key of type
+## 异常：created a ThreadLocal with key of type
 
 异常信息:
 
     created a ThreadLocal with key of type [com.opensymphony.xwork2.inject.ContainerImpl$10] (value [com.opensymphony.xwork2.inject.ContainerImpl$10@12c74b9]) and a value of type [java.lang.Object[]] (value [[Ljava.lang.Object;@1a34544]) but failed to remove it.
 
-原因大概是说tomcat 6.025之后引入了一种内存泄露的检查机制，会把不能垃圾收集的对像做日志。
-
-第一种解决办法：使用低于6版本的tomcat。
-
-第二种解决办法：在tomcat的server.xml文件（在tomcat的安装路径下的conf文件夹里）中把监听关掉：就是把下面三句话括起来就可以啦。
+原因大概是说tomcat 6.025之后引入了一种内存泄露的检查机制，会把不能垃圾收集的对像做日志。第一种解决办法：使用低于6版本的tomcat。第二种解决办法：在tomcat的server.xml文件（在tomcat的安装路径下的conf文件夹里）中把监听关掉：就是把下面三句话括起来就可以啦。
 
 ```xml
     <Listener className="org.apache.catalina.core.JreMemoryLeakPreventionListener" />
@@ -5920,7 +5847,7 @@ Class类是为了保存JAVA虚拟机运行时(RTTI)对所有对象进行类型�
     <Listener className="org.apache.catalina.core.ThreadLocalLeakPreventionListener" />
 ```
 
-# 服务器的瞬时 Diffie-Hellman 公共密钥过弱
+## 服务器的瞬时 Diffie-Hellman 公共密钥过弱
 
 最新版本的chrome（45.0.2454.85 m）在访问证书时，会报“服务器的瞬时 Diffie-Hellman 公共密钥过弱”。最开始以为是证书制作的问题，百度时看到一个解决方法是通过设置tomcat的机密级别：在<connector>中加入
 
@@ -5930,7 +5857,7 @@ Class类是为了保存JAVA虚拟机运行时(RTTI)对所有对象进行类型�
 
 补充：tomcat最好也换也tomcat7
 
-# Tomcat启动报Error listenerStart错误
+## Tomcat启动报Error listenerStart错误
 
 今天启动Tomcat启动不了，报以下错：
 
@@ -5960,7 +5887,7 @@ Tomcat报的错太含糊了，什么错都没报出来，只提示了Error liste
 
 这样，我们再启动tomcat时，就会在logs目录下生成一个更详细的日志error-debug.2012-05-31.log。我碰到的错误是FileNotFoundException.大家碰到的错应该各式各样都有，所以就要具体问题具体分析了。 tomcat的logging文档具体可参考http://tomcat.apache.org/tomcat-7.0-doc/logging.html
 
-# 比较好的文章
+## 比较好的文章
 
 * 浅析Web工程目录和tomcat目录: http://blog.csdn.net/ystyaoshengting/article/details/6204886
 * web.xml配置详解: http://twb.iteye.com/blog/196733

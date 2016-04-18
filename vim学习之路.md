@@ -314,6 +314,10 @@ G 跳到最后一行
 
 J 合并行
 
+## VIM 如何查看动态增长的log文件
+
+	:set autoread
+
 
 # Emacs
 
