@@ -121,6 +121,7 @@ Web Tools Platform(WTP): http://www.eclipse.org/webtools/
 ## angularjs
 
 * https://angularjs.org/
+* AngularJS中文社区: http://www.angularjs.cn/
 * http://marketplace.eclipse.org/content/angularjs-eclipse
 
 

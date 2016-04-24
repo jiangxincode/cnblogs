@@ -610,6 +610,12 @@ ORA-28000: 账户锁定
 
     --删除表空间
     drop tablespace USERSPACE
+	
+	--备份表数据
+	create table emp as select * from scott.emp
+
+	--还原表数据
+	insert into emp select * from scott.emp
 
 
 ```
