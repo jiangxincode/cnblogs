@@ -15,6 +15,8 @@
 * ack: http://beyondgrep.com/
 * Glances: https://github.com/nicolargo/glances/
 * Unix Shells: Bash, Fish, Ksh, Tcsh, Zsh: http://hyperpolyglot.org/unix-shells
+* Shell 编程：Bash空格的那点事: http://justcoding.iteye.com/blog/1944238
+* Shell编程：Bash引号的那点事: http://justcoding.iteye.com/blog/1944239
 
 ## Shell 快捷键
 

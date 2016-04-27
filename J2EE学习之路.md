@@ -355,6 +355,7 @@ Eclipse中`Update Project`，选择`Force Update of Snapshots/Releases`
 * Introduction to Repositories: http://maven.apache.org/guides/introduction/introduction-to-repositories.html
 * Using Mirrors for Repositories: http://maven.apache.org/guides/mini/guide-mirror-settings.html
 * Core Plug-ins List: http://maven.apache.org/plugins/index.html
+* http://www.mojohaus.org/
 * Maven Ant Tasks: http://maven.apache.org/ant-tasks/
 * M2Eclipse项目地址：http://www.eclipse.org/m2e/
 * 安装说明（Eclipse EE中自带）：http://www.eclipse.org/m2e/m2e-downloads.html
