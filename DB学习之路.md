@@ -616,7 +616,9 @@ ORA-28000: 账户锁定
 
 	--还原表数据
 	insert into emp select * from scott.emp
-
+	
+	--查看已经执行过的sql这些是存在共享池中的，用户名需要大写，必须具有DBA 的权限
+	select * from v$sqlarea t where t.PARSING_SCHEMA_NAME in ('用户名') order by t.LAST_ACTIVE_TIME desc
 
 ```
 
