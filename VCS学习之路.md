@@ -288,6 +288,8 @@ SVN本身并不提供这种强制写log的功能，而是通过一系列的钩�
 * github创建tag: http://caibaojian.com/github-create-tag.html
 * Commit message 和 Change log 编写指南：http://www.ruanyifeng.com/blog/2016/01/commit_message_change_log.html
 * Writing a Friendly README: http://rowanmanning.com/posts/writing-a-friendly-readme/
+* GitHub Pages + Hexo搭建博客: http://crazymilk.github.io/2015/12/28/GitHub-Pages-Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/
+* Hexo+Next搭建Github个人静态博客: 	http://www.cnblogs.com/cnfanhua/p/5167191.html
 
 ## install
 

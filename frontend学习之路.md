@@ -10,6 +10,7 @@
 
 * firebug: http://getfirebug.com/
 * Brackets: http://brackets.io/
+* Tridiv is a web-based editor for creating 3D shapes in CSS: http://tridiv.com/
 
 ## WTP
 
@@ -43,7 +44,8 @@ Web Tools Platform(WTP): http://www.eclipse.org/webtools/
 
 ## jQuery
 
-* 官网：http://jquery.com/
+* http://jquery.com/
+* https://jqueryvalidation.org/
 * jQuery API中文文档（适用jQuery1.9）: http://www.css88.com/jqapi-1.9/
 
 ## EasyUI
@@ -165,3 +167,5 @@ Web Tools Platform(WTP): http://www.eclipse.org/webtools/
 
 
 ## Chrome调试
+
+* 最全面的JavaScript调试技巧总结: http://www.codeceo.com/article/javascript-debug-skills.html

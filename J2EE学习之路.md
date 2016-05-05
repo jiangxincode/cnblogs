@@ -56,7 +56,6 @@
 * 如何使用Eclipse将Java项目打成jar包？:http://jingyan.baidu.com/article/4dc40848b5a8c9c8d946f139.html
 * 如何使用eclipse生成javadoc帮助文档？:http://jingyan.baidu.com/article/dca1fa6f4d3d7ff1a4405239.html
 * [改编]深入equals方法，讨论instanceof的使用！: http://www.blogjava.net/bacoo/archive/2007/12/20/169176.html
-* 如何查看class文件的jdk版本：http://jingyan.baidu.com/article/e6c8503c7001b8e54f1a1804.html
 * Struts2、Spring和Hibernate应用实例: http://871421448.iteye.com/blog/1546058
 * Apache和IIS网站Web日志格式详解: http://www.ha97.com/4813.html
 * 领域驱动设计系列文章——浅析VO、DTO、DO、PO的概念、区别和用处: http://www.cnblogs.com/qixuejia/p/4390086.html
@@ -1051,6 +1050,8 @@ JavaDoc: https://storm.apache.org/javadoc/apidocs/index.html
 * Eclipse插件开发打包为Update Site：http://forchenyun.iteye.com/blog/664241
 * 插件开发总览：http://www.cnblogs.com/xing901022/p/4115610.html
 * Tycho - Building Eclipse plug-ins with maven: http://www.eclipse.org/tycho/
+* http://wiki.eclipse.org/Tycho
 * 使用Tycho来构建你的RCP程序: http://chnic.iteye.com/category/337072
+* Dependencies from pom.xml not considered by Eclipse in Tycho Project: http://stackoverflow.com/questions/12476451/dependencies-from-pom-xml-not-considered-by-eclipse-in-tycho-project
 
 
