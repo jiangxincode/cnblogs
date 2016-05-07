@@ -19,9 +19,14 @@
 
 * 文章分类 - Quick Basic: http://www.cnblogs.com/djcsch2001/category/284667.html
 * Quick Basic 常用的语句: http://blog.pfan.cn/hange/1422.html
+* Free BASIC 试用: http://blog.sina.com.cn/s/blog_54dc74aa010002z0.html
 * Developing Automated Tests Using NUnit and VB.NET: http://www.byte-vision.com/NUnitAndVBArticle.aspx
 * Differences between VB.NET and VB: http://stackoverflow.com/questions/23603569/differences-between-vb-net-and-vb
 * Comparison of Visual Basic and Visual Basic .NET: https://en.wikipedia.org/wiki/Comparison_of_Visual_Basic_and_Visual_Basic_.NET
 * QBasic: https://en.wikipedia.org/wiki/QBasic
 
 * All about QBasic and QuickBasic: http://www.qbasic.net/
+
+* QuickBASIC: https://en.wikipedia.org/wiki/QuickBASIC
+
+

@@ -151,7 +151,7 @@
 
 ## Javassist
 
-* http://jboss-javassist.github.io/javassist/
+* https://github.com/jboss-javassist/javassist
 
 
 ## jclasslib
@@ -1035,6 +1035,12 @@ JavaDoc: https://storm.apache.org/javadoc/apidocs/index.html
 ## Apache POI - the Java API for Microsoft Documents
 
 * http://poi.apache.org/
+
+## 文件类型检测
+
+* Apache Tika - a content analysis toolkit: http://tika.apache.org/
+* Mime Type Detection Utility: https://sourceforge.net/projects/mime-util/
+* jmimemagic: https://github.com/arimus/jmimemagic
 
 
 ## 数据库连接池
