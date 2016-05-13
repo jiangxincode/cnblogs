@@ -17,6 +17,8 @@
 * Unix Shells: Bash, Fish, Ksh, Tcsh, Zsh: http://hyperpolyglot.org/unix-shells
 * Shell 编程：Bash空格的那点事: http://justcoding.iteye.com/blog/1944238
 * Shell编程：Bash引号的那点事: http://justcoding.iteye.com/blog/1944239
+* Find a class somewhere inside dozens of JAR files?: http://stackoverflow.com/questions/1342894/find-a-class-somewhere-inside-dozens-of-jar-files
+* http://www.linux-ha.org
 
 ## Shell 快捷键
 
