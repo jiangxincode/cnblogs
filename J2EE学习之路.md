@@ -142,13 +142,6 @@
 * http://ant.apache.org/ivy/ivyde/index.html
 
 
-## ASM
-
-    ASM is an all purpose Java bytecode manipulation and analysis framework. It can be used to modify existing classes or dynamically generate classes, directly in binary form. Provided common transformations and analysis algorithms allow to easily assemble custom complex transformations and code analysis tools.
-
-* http://asm.ow2.org/index.html
-* Bytecode Outline plugin for Eclipse: http://asm.ow2.org/eclipse/index.html
-
 ## Javassist
 
 * https://github.com/jboss-javassist/javassist
@@ -295,6 +288,18 @@
 * Classycle: Analysing Tools for Java Class and Package Dependencies: http://classycle.sourceforge.net/
 * STAN, the leading Eclipse-based structure analysis tool for Java: http://stan4j.com/
 * nWire, Code Exploration for Eclipse(not free): http://www.nwiresoftware.com/
+
+
+
+## OW2
+
+	OW2 is an independent, global, open-source software community. The mission of OW2 is to a) promote the development of open-source middleware, generic business applications, cloud computing platforms and b) foster a vibrant community and business ecosystem.
+	
+* ASM: http://asm.ow2.org/index.html
+* Bytecode Outline plugin for Eclipse: http://asm.ow2.org/eclipse/index.html
+* JOTM: http://jotm.ow2.org/xwiki/bin/view/Main/WebHome
+* XAPool: http://xapool.ow2.org/
+
 
 ## apache
 
@@ -459,9 +464,6 @@ mvn deploy:deploy-file -DgroupId="edu.jiangxin" -DartifactId=”gcu” -Dversion
 maven中如何生成javadoc
 
 mvn javadoc:javadoc
-
-
-
 
 
 ## Gradle
@@ -858,15 +860,6 @@ JavaDoc: https://storm.apache.org/javadoc/apidocs/index.html
 * http://saxon.sourceforge.net/
 
 
-## JACOB
-
-* old：http://danadler.com/jacob/
-* new：https://sourceforge.net/projects/jacob-project/
-* Java操作Microsoft Word之jacob: http://xiaoduan.blog.51cto.com/502137/136692/
-* 浅析JACOB: http://www.blogjava.net/lusm/archive/2008/11/22/jacob.html
-* JACOB的语法: http://www.bitscn.com/pdb/java/200904/161117.html
-
-
 ## HTML Parser
 
 * https://sourceforge.net/projects/htmlparser/
@@ -1032,9 +1025,29 @@ JavaDoc: https://storm.apache.org/javadoc/apidocs/index.html
 * https://sourceforge.net/projects/ebus/
 
 
+## JACOB
+
+* old：http://danadler.com/jacob/
+* new：https://sourceforge.net/projects/jacob-project/
+* Java操作Microsoft Word之jacob: http://xiaoduan.blog.51cto.com/502137/136692/
+* 浅析JACOB: http://www.blogjava.net/lusm/archive/2008/11/22/jacob.html
+* JACOB的语法: http://www.bitscn.com/pdb/java/200904/161117.html
+
+
 ## Apache POI - the Java API for Microsoft Documents
 
 * http://poi.apache.org/
+
+## iText(AGPL)
+
+* http://itextpdf.com/
+* https://github.com/itext/itextpdf
+
+
+## aspose
+
+* http://www.aspose.com/
+
 
 ## 文件类型检测
 

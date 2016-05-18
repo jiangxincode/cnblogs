@@ -25,6 +25,8 @@
 * Quick Basic 常用的语句: http://blog.pfan.cn/hange/1422.html
 * All about QBasic and QuickBasic: http://www.qbasic.net/
 
+* http://www.qb64.net/
+
 ## Other
 
 * BASIC-256: http://www.basic256.org/index_en
