@@ -19,6 +19,10 @@
 * Shell编程：Bash引号的那点事: http://justcoding.iteye.com/blog/1944239
 * Find a class somewhere inside dozens of JAR files?: http://stackoverflow.com/questions/1342894/find-a-class-somewhere-inside-dozens-of-jar-files
 * http://www.linux-ha.org
+* Atop: http://www.atoptool.nl/index.php
+* htop: https://sourceforge.net/projects/htop/
+* iftop: http://www.ex-parrot.com/~pdw/iftop/
+* Iotop: http://guichaz.free.fr/iotop/
 
 ## Shell 快捷键
 
