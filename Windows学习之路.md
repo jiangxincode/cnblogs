@@ -82,26 +82,8 @@ PowerShell的默认启动路径其实就是执行PowerShell时指定的默认工
 同理，也可以修改xftp的编码为utf-8以正常显示中文。
 
 
-# VirtualBox
-
-## Windows 8.1+VirtualBox较新版本打开虚拟机时报错
-
-报错信息：
-```
-    Unable to load R3 module D:\Program Files\Oracle\VirtualBox/VBoxDD.dll
-    (VBoxDD):GetLastError=1790
-    (VERR_UNRESOLVED_ERROR)
-```
-解决办法是在Windows/system32下：
-
-* themeui.dll.old.tweakcube替换themeui.dll
-* uxtheme.dll.old.tweakcube替换uxtheme.dll
-
-如果是Windows 7中遇到类似问题，参考：
-http://jingyan.baidu.com/article/ab69b270bb7b2a2ca6189f6d.html
-
-
 # 文章
 
 * Powershell 错误记录:详细错误：http://www.pstips.net/powershell-error-record-details.html
+* pstips.net: http://www.pstips.net/
 

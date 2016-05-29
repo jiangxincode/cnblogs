@@ -2,6 +2,32 @@
 
 ## Websit List
 
+* The Linux Kernel Archives: https://www.kernel.org/
+* VGER.KERNEL.ORG: http://vger.kernel.org/
+* The Open Group(Unix): http://opengroup.org/subjectareas/platform/unix
+* GNU Operating System: http://www.gnu.org/
+
+* Ubuntu: http://www.ubuntu.org.cn/
+* Ubuntu Wiki: https://wiki.ubuntu.com/
+* Ubuntu Kylin: http://www.ubuntukylin.com/
+* deepin: https://www.deepin.org/
+* Debian: http://www.debian.org/
+* Fedora: http://fedoraproject.org/
+* CentOS: https://www.centos.org/
+* cncentos中文论坛: http://www.cncentos.com/forum.php
+* rethat: https://www.redhat.com
+* openSUSE: https://www.opensuse.org/
+* openSUSE 中文: https://forum.suse.org.cn/index.php
+* opensuse-guide: https://lug.ustc.edu.cn/sites/opensuse-guide/
+* Linux From Scratch: http://www.linuxfromscratch.org/
+* AppImage: http://appimage.org/
+* MenuetOS: http://www.menuetos.net/index.htm
+
+* 鳥哥的 Linux 私房菜: http://linux.vbird.org/
+* Linux Professional Institute: http://www.lpi.org/
+* Linux命令大全: http://man.linuxde.net/
+* Linux man pages: http://linux.die.net/man/
+
 * shunit2: https://github.com/zandev/shunit2
 * RPM Fusion: http://rpmfusion.org/
 * ATrpms: http://atrpms.net/
@@ -23,6 +49,7 @@
 * htop: https://sourceforge.net/projects/htop/
 * iftop: http://www.ex-parrot.com/~pdw/iftop/
 * Iotop: http://guichaz.free.fr/iotop/
+* 基于CentOS的Linux基本网络配置,包括网卡eth0、DNS、Host等: http://www.cnblogs.com/rooney/archive/2012/03/24/2415144.html
 
 ## Shell 快捷键
 
@@ -896,77 +923,6 @@ E: Unable to lock the list directory
     *.rar 用 unrar e解压
     *.zip 用 unzip 解压
 
-## Virtual Box相关
-
-* https://www.virtualbox.org/manual/ch06.html#network_nat
-
-注：增强包已下载存在Documents
-
-通过设备——分配光驱即可分配
-
-## 访问USB子系统失败
-
-解决ubuntu下virtualbox访问usb子系统失败
-
-http://blog.coltcn.com/2012/03/13/virtualbox-error-failed-to-access-usb-subsystem/
-
-## ubuntu用户不在sudoers文件中问题
-
-http://blog.csdn.net/killzero/article/details/10298845
-
-## 安装CentOS后安装增强功能
-
-1.启动CentOS，以root身份登录，进入桌面环境。
-
-2.执行如下命令：
-
-    yum upadate
-    yum install kernel-devel 　
-    yum install gcc
-
-3.重启系统
-
-4.安装增强功能
-
-5.重新启动
-
-## Cannot register the hard disk错误解决办法
-
-virtualbox中加载已有的虚拟硬盘时出现Cannot register the hard disk错误，描述类似下面的。
-
-    ERROR: Cannot register the hard disk '/mnt/ee/winxp/xp.vdi' with UUID {395ae4ae-8bf9-42e5-b82a-61af9f95fbf0} because a hard disk '/mnt/ee/winxp/xp.vdi' with UUID {395ae4ae-8bf9-42e5-b82a-61af9f95fbf0} already exists in the media registry ('/home/pzye/.VirtualBox/VirtualBox.xml')
-    Details: code NS_ERROR_INVALID_ARG (0x80070057), component VirtualBox, interface IVirtualBox, callee nsISupports
-    Context: "OpenHardDisk(Bstr(szFilenameAbs), AccessMode_ReadWrite, srcDisk.asOutParam())" at line 603 of file VBoxManageDisk.cpp
-
-解决方法如下：
-
-关闭virtualbox，重新启动它，它会检测虚拟硬盘，可能会检测出来一些虚拟硬盘，请将其删除，然后就不会出现这个问题了。
-
-
-## virtualbox命令行共享CentOS目录
-
-1. 安装virtualbox增强工具
-
-2. 设置共享文件夹
-
-完成后点击"设备(Devices)" -> 共享文件夹(Shared Folders)菜单，添加一个共享文件夹，选项固定和临时是指该文件夹是否是持久的。共享名可以随意取，如"yongfu"，尽量使用英文名称，不要有空格。
-
-3. 挂载共享文件夹
-
-在命令行终端下输入：
-
-    mkdir /mnt/yongfu
-    mount -t vboxsf yongfu /mnt/yongfu
-
-其中"yongfu"是之前创建的共享文件夹的名字。现在虚拟机和主机可以互传文件了。如不想每次都手动挂载，可以在/etc/fstab中添加一项
-
-    yongfu /mnt/yongfu vboxsf rw,gid=100,uid=1000,auto 0 0
-
-这样就能够自动挂载了。
-
-4. 卸载的话使用下面的命令
-
-    umount -f /mnt/yongfu
 
 ## linux系统下无法访问电脑硬盘
 

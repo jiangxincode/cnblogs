@@ -10,6 +10,7 @@
 * JDK Tools and Utilities: http://docs.oracle.com/javase/6/docs/technotes/tools/
 * Setting Project Facets: http://docs.oracle.com/cd/E13224_01/wlw/docs103/guide/ideuserguide/projects/conFacets.html
 * Overriding and Hiding Methods: http://docs.oracle.com/javase/tutorial/java/IandI/override.html
+* List of HTTP status codes: https://en.wikipedia.org/wiki/List_of_HTTP_status_codes
 
 * Java开源大全: http://www.open-open.com/
 * importnew: http://www.importnew.com/
@@ -57,12 +58,15 @@
 * 如何使用eclipse生成javadoc帮助文档？:http://jingyan.baidu.com/article/dca1fa6f4d3d7ff1a4405239.html
 * [改编]深入equals方法，讨论instanceof的使用！: http://www.blogjava.net/bacoo/archive/2007/12/20/169176.html
 * Struts2、Spring和Hibernate应用实例: http://871421448.iteye.com/blog/1546058
+* spring中注册bean(通过代码动态注册): http://blog.csdn.net/buyaore_wo/article/details/8119577
 * Apache和IIS网站Web日志格式详解: http://www.ha97.com/4813.html
 * 领域驱动设计系列文章——浅析VO、DTO、DO、PO的概念、区别和用处: http://www.cnblogs.com/qixuejia/p/4390086.html
 * PO BO VO DTO POJO DAO DO这些Java中的概念分别指一些什么？: https://www.zhihu.com/question/39651928
 * Java bytecode instruction listings: https://en.wikipedia.org/wiki/Java_bytecode_instruction_listings
 * Java自动装箱与拆箱及其陷阱: http://blog.csdn.net/jairuschan/article/details/7513045
 * Web安全漏洞之：JDK1.5环境下扫描远程调试端口导致JVM崩溃【JDWP exit error JVMTI_ERROR_NONE(0)】: http://blog.csdn.net/sfdev/article/details/5828509
+* java byte与char互转原理: http://www.cnblogs.com/bluespot/archive/2008/10/23/1318155.html
+* Java永久代去哪儿了: http://www.infoq.com/cn/articles/Java-PERMGEN-Removed?utm_campaign=infoq_content&
 
 ## IDE
 
@@ -466,6 +470,11 @@ maven中如何生成javadoc
 mvn javadoc:javadoc
 
 
+## bintray
+
+https://bintray.com/
+
+
 ## Gradle
 
     一个开源的自动化构建系统，建立在Apache Ant和Maven Apache概念的基础上，并引入了基于Groovy的特定领域语言（DSL），而不是使用Apache Maven宣布的项目配置XML形式。
@@ -528,6 +537,11 @@ mvn javadoc:javadoc
 ## Visual Performance Analyzer
 
 * 洞悉 Java 应用性能瓶颈的利器：Visual Performance Analyzer: http://www.ibm.com/developerworks/cn/java/j-lo-vpa/
+
+
+## VisualVM
+
+* VisualVM: http://visualvm.java.net/
 
 
 ## JD(Java Decompiler)
