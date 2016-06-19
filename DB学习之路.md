@@ -619,6 +619,26 @@ ORA-28000: 账户锁定
 	
 	--查看已经执行过的sql这些是存在共享池中的，用户名需要大写，必须具有DBA 的权限
 	select * from v$sqlarea t where t.PARSING_SCHEMA_NAME in ('用户名') order by t.LAST_ACTIVE_TIME desc
+	
+	
+	--ORACLE11G 字符集更改（这里更改为AL32UTF8）
+	sqlplus sys as sysdba
+
+	--执行下面命令，有可能造成数据库中已有数据混乱的情况，所以在进行操作前，要进行数据库的备份操作
+    shutdown immediate;
+    STARTUP MOUNT;
+    ALTER SESSION SET SQL_TRACE=TRUE;
+    ALTER SYSTEM ENABLE RESTRICTED SESSION;
+    ALTER SYSTEM SET JOB_QUEUE_PROCESSES=0;
+    ALTER SYSTEM SET AQ_TM_PROCESSES=0;
+    ALTER DATABASE OPEN;
+    ALTER DATABASE character set INTERNAL_USE AL32UTF8;
+    ALTER SESSION SET SQL_TRACE=FALSE;
+    shutdown immediate;
+    startup;
+
+	--察看 NLS_LANG 信息：
+    SELECT parameter, value FROM v$nls_parameters WHERE parameter LIKE '%CHARACTERSET';
 
 ```
 
