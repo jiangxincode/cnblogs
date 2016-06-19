@@ -286,6 +286,12 @@
 
 * 项目地址：https://github.com/google/guava
 
+## jga
+
+	jga is a functors library: the intent is to explore and exploit functors as a design and implementation tool to reduce boilerplate coding. A functor is an object that encapsulates a function or expression: it can take arguments and produce results, as can any method, expression, or function (in other languages that support functions). Unlike an expression, as an object it can be passed as an argument without being executed; it can be persisted to a database or file; it can be serialized and passed from client to server (and back); and it can be instantiated at runtime based on information unavailable at compile-time.
+	
+* http://jga.sourceforge.net/index.shtml
+
 
 ## Java Class Dependency Analyzer
 
