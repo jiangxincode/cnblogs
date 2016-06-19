@@ -67,6 +67,7 @@
 * Web安全漏洞之：JDK1.5环境下扫描远程调试端口导致JVM崩溃【JDWP exit error JVMTI_ERROR_NONE(0)】: http://blog.csdn.net/sfdev/article/details/5828509
 * java byte与char互转原理: http://www.cnblogs.com/bluespot/archive/2008/10/23/1318155.html
 * Java永久代去哪儿了: http://www.infoq.com/cn/articles/Java-PERMGEN-Removed?utm_campaign=infoq_content&
+* Web Service描述语言 WSDL 详解: http://www.blogjava.net/libin2722/articles/159469.html
 
 ## IDE
 
@@ -854,13 +855,14 @@ JavaDoc: https://storm.apache.org/javadoc/apidocs/index.html
 
 ## JDOM
 
-* 官网：http://www.jdom.org/
+* http://www.jdom.org/
+* https://github.com/hunterhacker/jdom/
 * Javadoc: http://www.jdom.org/downloads/docs.html
 
 
 ## Dom4j
 
-* 官网：http://dom4j.github.io/
+* http://dom4j.github.io/
 
 
 ## XML Pull Parsing
@@ -874,6 +876,11 @@ JavaDoc: https://storm.apache.org/javadoc/apidocs/index.html
 * http://saxon.sourceforge.net/
 
 
+## jsoup
+
+* https://jsoup.org/
+
+
 ## HTML Parser
 
 * https://sourceforge.net/projects/htmlparser/
@@ -881,10 +888,6 @@ JavaDoc: https://storm.apache.org/javadoc/apidocs/index.html
 ## Java port of Mozilla charset detector(jchardet)
 
 * https://sourceforge.net/projects/jchardet/
-
-## httpclient
-
-* 官网：http://hc.apache.org/
 
 
 ## Restlet
