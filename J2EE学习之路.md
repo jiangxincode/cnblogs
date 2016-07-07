@@ -8,6 +8,8 @@
 * The Java® Language Specification: https://docs.oracle.com/javase/specs/jls/se7/html/index.html
 * The Java® Virtual Machine Specification: https://docs.oracle.com/javase/specs/jvms/se7/html/
 * JDK Tools and Utilities: http://docs.oracle.com/javase/6/docs/technotes/tools/
+* VirtualMachine：http://docs.oracle.com/javase/7/docs/jdk/api/attach/spec/com/sun/tools/attach/VirtualMachine.html
+* Java HotSpot VM Options： http://www.oracle.com/technetwork/java/javase/tech/vmoptions-jsp-140102.html
 * Setting Project Facets: http://docs.oracle.com/cd/E13224_01/wlw/docs103/guide/ideuserguide/projects/conFacets.html
 * Overriding and Hiding Methods: http://docs.oracle.com/javase/tutorial/java/IandI/override.html
 * List of HTTP status codes: https://en.wikipedia.org/wiki/List_of_HTTP_status_codes
@@ -68,6 +70,10 @@
 * java byte与char互转原理: http://www.cnblogs.com/bluespot/archive/2008/10/23/1318155.html
 * Java永久代去哪儿了: http://www.infoq.com/cn/articles/Java-PERMGEN-Removed?utm_campaign=infoq_content&
 * Web Service描述语言 WSDL 详解: http://www.blogjava.net/libin2722/articles/159469.html
+* Virtual Memory Usage from Java under Linux, too much memory used: http://stackoverflow.com/questions/561245/virtual-memory-usage-from-java-under-linux-too-much-memory-used/561450#561450
+* Java直接内存与非直接内存性能测试: http://www.cnblogs.com/xing901022/p/5243657.html
+* Java直接（堆外）内存使用详解: http://www.cnblogs.com/xing901022/p/5248934.html
+
 
 ## IDE
 
@@ -779,11 +785,20 @@ JavaDoc: https://storm.apache.org/javadoc/apidocs/index.html
     Apache Axis2™ is a Web Services / SOAP / WSDL engine, the successor to the widely used Apache Axis SOAP stack. There are two implementations of the Apache Axis2 Web services engine - Apache Axis2/Java and Apache Axis2/C
 
 * http://axis.apache.org/axis2/java/core/
+* Axis2创建WebService实例: http://clq9761.iteye.com/blog/976029/
+* Axis2中使用模块: http://zhangjunhd.blog.51cto.com/113473/25593/
 
 
 ## cpDetector
 
 * https://sourceforge.net/projects/cpdetector/
+
+## EZMorph
+
+	EZMorph is simple java library for transforming an Object to another Object.
+
+* http://ezmorph.sourceforge.net/index.html
+
 
 ## SSH相关
 
