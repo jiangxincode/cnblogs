@@ -73,6 +73,7 @@
 * Virtual Memory Usage from Java under Linux, too much memory used: http://stackoverflow.com/questions/561245/virtual-memory-usage-from-java-under-linux-too-much-memory-used/561450#561450
 * Java直接内存与非直接内存性能测试: http://www.cnblogs.com/xing901022/p/5243657.html
 * Java直接（堆外）内存使用详解: http://www.cnblogs.com/xing901022/p/5248934.html
+* JVM调优总结（转）: http://www.cnblogs.com/jiangxinnju/p/5655535.html
 
 
 ## IDE
