@@ -698,6 +698,8 @@ https://bintray.com/
 * The Open Web Application Security Project：https://www.owasp.org
 * WooYun知识库：http://drops.wooyun.org/
 * HP Security Research：http://hpsr1.libsyn.com/
+* CVE: http://cve.mitre.org/
+* acunetix: http://www.acunetix.com/
 
 
 ## coverity（收费）

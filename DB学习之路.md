@@ -292,7 +292,7 @@ ORA-28000: 账户锁定
 ## oracle emca常用命令
 
 ```
-    $ emctl stop dbconsole
+    $emctl stop dbconsole
     $emca -r 修复完毕，dbconsole 可以正常使用了
 
     创建一个EM资料库
