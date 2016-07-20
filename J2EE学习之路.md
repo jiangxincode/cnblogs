@@ -74,6 +74,7 @@
 * Java直接内存与非直接内存性能测试: http://www.cnblogs.com/xing901022/p/5243657.html
 * Java直接（堆外）内存使用详解: http://www.cnblogs.com/xing901022/p/5248934.html
 * JVM调优总结（转）: http://www.cnblogs.com/jiangxinnju/p/5655535.html
+* 理解OAuth 2.0: http://www.ruanyifeng.com/blog/2014/05/oauth_2_0.html
 
 
 ## IDE
@@ -700,6 +701,7 @@ https://bintray.com/
 * HP Security Research：http://hpsr1.libsyn.com/
 * CVE: http://cve.mitre.org/
 * acunetix: http://www.acunetix.com/
+* xfocus: http://www.xfocus.net/index.html
 
 
 ## coverity（收费）
@@ -1088,6 +1090,37 @@ JavaDoc: https://storm.apache.org/javadoc/apidocs/index.html
 ## aspose
 
 * http://www.aspose.com/
+
+
+## MVEL(Drools)
+
+* https://github.com/mvel/mvel
+* https://en.wikisource.org/wiki/MVEL_Language_Guide
+
+
+## OGNL(Struts)
+
+* http://commons.apache.org/proper/commons-ognl/
+
+
+## SPEL(Spring)
+
+* See Spring
+
+
+## JSP EL
+
+* http://commons.apache.org/proper/commons-el/
+
+
+## freemarker
+
+* http://freemarker.org/
+
+
+## Velocity
+
+* http://velocity.apache.org/engine/devel/
 
 
 ## 文件类型检测

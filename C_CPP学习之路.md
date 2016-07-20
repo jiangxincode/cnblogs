@@ -37,7 +37,7 @@
 * EasyX Library for C++: http://www.easyx.cn/
 * EGE（Easy Graphics Engine）: http://xege.org/
 * PC-lint for C/C++: http://www.gimpel.com/html/pcl.htm
-* CLucene - a C++ search engine: https://sourceforge.net/projects/clucene/
+* CLucene - a C++ search engine: https://sourceforge.net/projects/clucene/
 * C and C++ Code Counter(CCCC): https://sourceforge.net/projects/cccc/
 * Translate STL 2 C Language: https://sourceforge.net/projects/tstl2cl/
 * Dev-C++: https://sourceforge.net/projects/orwelldevcpp/
