@@ -49,6 +49,7 @@
 * htop: https://sourceforge.net/projects/htop/
 * iftop: http://www.ex-parrot.com/~pdw/iftop/
 * Iotop: http://guichaz.free.fr/iotop/
+* 串口传输文件 lrzsz: http://www.cnblogs.com/lidabo/p/4780866.html
 * 基于CentOS的Linux基本网络配置,包括网卡eth0、DNS、Host等: http://www.cnblogs.com/rooney/archive/2012/03/24/2415144.html
 
 ## Shell 快捷键

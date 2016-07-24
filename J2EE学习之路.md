@@ -70,11 +70,16 @@
 * java byte与char互转原理: http://www.cnblogs.com/bluespot/archive/2008/10/23/1318155.html
 * Java永久代去哪儿了: http://www.infoq.com/cn/articles/Java-PERMGEN-Removed?utm_campaign=infoq_content&
 * Web Service描述语言 WSDL 详解: http://www.blogjava.net/libin2722/articles/159469.html
+* WebService之WSDL和SOAP实例(基于JAVA): http://di201yao.iteye.com/blog/310292
 * Virtual Memory Usage from Java under Linux, too much memory used: http://stackoverflow.com/questions/561245/virtual-memory-usage-from-java-under-linux-too-much-memory-used/561450#561450
 * Java直接内存与非直接内存性能测试: http://www.cnblogs.com/xing901022/p/5243657.html
 * Java直接（堆外）内存使用详解: http://www.cnblogs.com/xing901022/p/5248934.html
 * JVM调优总结（转）: http://www.cnblogs.com/jiangxinnju/p/5655535.html
 * 理解OAuth 2.0: http://www.ruanyifeng.com/blog/2014/05/oauth_2_0.html
+* Spring框架的反序列化远程代码执行漏洞分析（转）: http://www.cnblogs.com/jiangxinnju/p/5697050.html
+* 用 Java 技术创建 RESTful Web 服务: http://www.ibm.com/developerworks/cn/web/wa-jaxrs/index.html
+* Need to suppress “Warning: running an XSLT 1.0 stylesheet with an XSLT 2.0 processor” in Tomcat std out log file: http://stackoverflow.com/questions/4445481/need-to-suppress-warning-running-an-xslt-1-0-stylesheet-with-an-xslt-2-0-proce
+* Java 授权内幕: http://www.ibm.com/developerworks/cn/java/j-javaauth/
 
 
 ## IDE
