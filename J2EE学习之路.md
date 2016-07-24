@@ -575,7 +575,9 @@ https://bintray.com/
 
 * jad: http://varaneckas.com/jad/
 * jadclipse: https://sourceforge.net/projects/jadclipse/
-* Eclipse Class Decompiler——Java反编译插件: http://www.blogjava.net/cnfree/archive/2012/10/30/390457.html
+* Eclipse Class Decompiler——Java反编译插件: 
+	* http://www.blogjava.net/cnfree/archive/2012/10/30/390457.html
+	* http://marketplace.eclipse.org/content/eclipse-class-decompiler
 
 注：jad支持命令行方式使用，最新版本为1.5.8g，支持的class版本过低。经常出现问题：The class file version is 48.0 (only 45.3, 46.0 and 47.0 are supported)。还有一个工具uuDeJava，也是基于jad，所以估计也难以避免这个问题。
 

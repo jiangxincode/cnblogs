@@ -1,8 +1,10 @@
 * https://golang.org/
+* https://golang.org/doc/
 * Go (programming language): https://en.wikipedia.org/wiki/Go_%28programming_language%29
 * Go语言圣经（中文版）: http://shinley.com/
 * Go 学习笔记: https://github.com/qyuhen/book
 * the-way-to-go_ZH_CN: https://github.com/Unknwon/the-way-to-go_ZH_CN
+* 深入解析Go: https://github.com/tiancaiamao/go-internals
 * The-Golang-Standard-Library-by-Example: https://github.com/polaris1119/The-Golang-Standard-Library-by-Example
 * Go 标准库 中文参考: http://www.kancloud.cn/wizardforcel/golang-stdlib-ref/121475
 * GoClipse: https://github.com/GoClipse/goclipse
