@@ -77,6 +77,7 @@
 * JVM调优总结（转）: http://www.cnblogs.com/jiangxinnju/p/5655535.html
 * 理解OAuth 2.0: http://www.ruanyifeng.com/blog/2014/05/oauth_2_0.html
 * Spring框架的反序列化远程代码执行漏洞分析（转）: http://www.cnblogs.com/jiangxinnju/p/5697050.html
+* Spring “redirect:” EL vulnerability?: http://stackoverflow.com/questions/22917760/spring-redirect-el-vulnerability
 * 用 Java 技术创建 RESTful Web 服务: http://www.ibm.com/developerworks/cn/web/wa-jaxrs/index.html
 * Need to suppress “Warning: running an XSLT 1.0 stylesheet with an XSLT 2.0 processor” in Tomcat std out log file: http://stackoverflow.com/questions/4445481/need-to-suppress-warning-running-an-xslt-1-0-stylesheet-with-an-xslt-2-0-proce
 * Java 授权内幕: http://www.ibm.com/developerworks/cn/java/j-javaauth/

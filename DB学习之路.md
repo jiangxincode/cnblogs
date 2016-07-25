@@ -71,6 +71,7 @@
 * Oracle11g自带的SQL developer无法打开解决方案(百度文库)： http://wenku.baidu.com/link?url=scHbokjqF7nK8kca00Pxrm8uaUmm7HNkgXLGaq0tNU-9T2zOrc08oZ7YJkXagD-QbQUmQl7c1wiZNigvIZ9YNVwMU9qIgxBI34HfkM8kWdO
 * 【Foreign Key】Oracle外键约束三种删除行为 : http://blog.itpub.net/519536/viewspace-630034/
 * Oracle导入JAR包并调用Java: http://www.jianshu.com/p/4280ac298ded
+* Reclaiming Unused LOB Space: http://www.idevelopment.info/data/Oracle/DBA_tips/LOBs/LOBS_85.shtml
 
 
 ## PL/SQL Developer
