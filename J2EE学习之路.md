@@ -81,6 +81,8 @@
 * 用 Java 技术创建 RESTful Web 服务: http://www.ibm.com/developerworks/cn/web/wa-jaxrs/index.html
 * Need to suppress “Warning: running an XSLT 1.0 stylesheet with an XSLT 2.0 processor” in Tomcat std out log file: http://stackoverflow.com/questions/4445481/need-to-suppress-warning-running-an-xslt-1-0-stylesheet-with-an-xslt-2-0-proce
 * Java 授权内幕: http://www.ibm.com/developerworks/cn/java/j-javaauth/
+* ServletInputStream的重复读取（多次读取）（转）: http://www.cnblogs.com/jiangxinnju/p/5709378.html
+* JAX-RS HTTP Headers: https://cwiki.apache.org/confluence/display/WINK/JAX-RS+HTTP+Headers
 
 
 ## IDE
