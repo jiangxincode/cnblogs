@@ -8,6 +8,3 @@
 
 一些我在平时工作和学习中积累的编程相关的资源。如果大家有兴趣可以一起增加，修改。
 
-
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/jiangxincode/cnblogs/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
-
