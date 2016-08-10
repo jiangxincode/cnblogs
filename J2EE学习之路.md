@@ -69,8 +69,6 @@
 * Web安全漏洞之：JDK1.5环境下扫描远程调试端口导致JVM崩溃【JDWP exit error JVMTI_ERROR_NONE(0)】: http://blog.csdn.net/sfdev/article/details/5828509
 * java byte与char互转原理: http://www.cnblogs.com/bluespot/archive/2008/10/23/1318155.html
 * Java永久代去哪儿了: http://www.infoq.com/cn/articles/Java-PERMGEN-Removed?utm_campaign=infoq_content&
-* Web Service描述语言 WSDL 详解: http://www.blogjava.net/libin2722/articles/159469.html
-* WebService之WSDL和SOAP实例(基于JAVA): http://di201yao.iteye.com/blog/310292
 * Virtual Memory Usage from Java under Linux, too much memory used: http://stackoverflow.com/questions/561245/virtual-memory-usage-from-java-under-linux-too-much-memory-used/561450#561450
 * Java直接内存与非直接内存性能测试: http://www.cnblogs.com/xing901022/p/5243657.html
 * Java直接（堆外）内存使用详解: http://www.cnblogs.com/xing901022/p/5248934.html
@@ -78,11 +76,32 @@
 * 理解OAuth 2.0: http://www.ruanyifeng.com/blog/2014/05/oauth_2_0.html
 * Spring框架的反序列化远程代码执行漏洞分析（转）: http://www.cnblogs.com/jiangxinnju/p/5697050.html
 * Spring “redirect:” EL vulnerability?: http://stackoverflow.com/questions/22917760/spring-redirect-el-vulnerability
-* 用 Java 技术创建 RESTful Web 服务: http://www.ibm.com/developerworks/cn/web/wa-jaxrs/index.html
 * Need to suppress “Warning: running an XSLT 1.0 stylesheet with an XSLT 2.0 processor” in Tomcat std out log file: http://stackoverflow.com/questions/4445481/need-to-suppress-warning-running-an-xslt-1-0-stylesheet-with-an-xslt-2-0-proce
 * Java 授权内幕: http://www.ibm.com/developerworks/cn/java/j-javaauth/
 * ServletInputStream的重复读取（多次读取）（转）: http://www.cnblogs.com/jiangxinnju/p/5709378.html
+
+
+
+
+## WebService
+
+* Style of WebService: REST vs. SOAP: http://cenwenchu.iteye.com/blog/316717
+* 用 Java 技术创建 RESTful Web 服务: http://www.ibm.com/developerworks/cn/web/wa-jaxrs/index.html
+* REST, Web services, REST-ful services: http://www.ibm.com/developerworks/webservices/library/ws-RESTservices/index.html
 * JAX-RS HTTP Headers: https://cwiki.apache.org/confluence/display/WINK/JAX-RS+HTTP+Headers
+* Web Service描述语言 WSDL 详解: http://www.blogjava.net/libin2722/articles/159469.html
+* WebService之WSDL和SOAP实例(基于JAVA): http://di201yao.iteye.com/blog/310292
+* java 利用JAX-RS快速开发RESTful 服务(以JBoss为容器)：http://www.cnblogs.com/yjmyzz/p/javaee-jax-rs-tutorial.html
+* 使用 Jersey 和 Apache Tomcat 构建 RESTful Web 服务: http://www.ibm.com/developerworks/cn/web/wa-aj-tomcat/
+* 改写Restful2ActionMapper让Struts2支持REST风格的URL映射: http://andlu.iteye.com/blog/110934
+* Jersey: https://jersey.java.net/
+* Restlet：http://restlet.com/
+* Apache CXF: http://cxf.apache.org/
+* axis2: http://axis.apache.org/axis2/java/core/
+* Axis2创建WebService实例: http://clq9761.iteye.com/blog/976029/
+* Axis2中使用模块: http://zhangjunhd.blog.51cto.com/113473/25593/
+* SOAPUI: https://www.soapui.org/
+* tcpmon: https://github.com/robertbachmann/tcpmon
 
 
 ## IDE
@@ -148,6 +167,11 @@
     Eclipse plugin for editing Java resource bundles. Lets you manage all localized .properties files in one screen. Some features: sorted keys, warning icons on missing keys/values, conversion to/from Unicode, hierarchical view of keys, and more.
 
 * https://github.com/essiembre/eclipse-rbe
+
+
+## MouseFeed
+
+* http://marketplace.eclipse.org/content/mousefeed
 
 
 ## FileSync
@@ -770,8 +794,6 @@ JavaDoc: https://storm.apache.org/javadoc/apidocs/index.html
 
     The JBoss AS community project has been renamed to the WildFly community project, which has a new home at wildfly.org. The JBoss name now only applies to the commercially supported product, called JBoss EAP, which is derived from the WildFly community project and is available at http://www.jboss.org/products/eap/overview/.
 
-* java 利用JAX-RS快速开发RESTful 服务(以JBoss为容器)：http://www.cnblogs.com/yjmyzz/p/javaee-jax-rs-tutorial.html
-
 * JbossTools：http://download.jboss.org/jbosstools/updates/JBossTools-2.1.2.GA
 
 ## GlassFish
@@ -793,15 +815,6 @@ JavaDoc: https://storm.apache.org/javadoc/apidocs/index.html
     Jetty provides a Web server and javax.servlet container, plus support for SPDY, WebSocket, OSGi, JMX, JNDI, JAAS and many other integrations. These components are open source and available for commercial use and distribution.
 
 * 官网：http://www.eclipse.org/jetty/
-
-
-## axis2
-
-    Apache Axis2™ is a Web Services / SOAP / WSDL engine, the successor to the widely used Apache Axis SOAP stack. There are two implementations of the Apache Axis2 Web services engine - Apache Axis2/Java and Apache Axis2/C
-
-* http://axis.apache.org/axis2/java/core/
-* Axis2创建WebService实例: http://clq9761.iteye.com/blog/976029/
-* Axis2中使用模块: http://zhangjunhd.blog.51cto.com/113473/25593/
 
 
 ## cpDetector
@@ -827,7 +840,6 @@ JavaDoc: https://storm.apache.org/javadoc/apidocs/index.html
     * Struts 2.0系列: http://www.blogjava.net/max/category/16130.html?Show=All
     * Struts2中的零配置与CoC（Convention over Configration）: http://andlu.iteye.com/blog/112675
     * struts2采用convention-plugin实现零配置: http://javeye.iteye.com/blog/358744
-    * 改写Restful2ActionMapper让Struts2支持REST风格的URL映射: http://andlu.iteye.com/blog/110934
 
 
 ## Spring
@@ -926,20 +938,6 @@ JavaDoc: https://storm.apache.org/javadoc/apidocs/index.html
 * https://sourceforge.net/projects/jchardet/
 
 
-## Restlet
-
-* 官网：http://restlet.com/
-
-
-## Jersey
-
-    Developing RESTful Web services that seamlessly support exposing your data in a variety of representation media types and abstract away the low-level details of the client-server communication is not an easy task without a good toolkit. In order to simplify development of RESTful Web services and their clients in Java, a standard and portable JAX-RS API has been designed. Jersey RESTful Web Services framework is open source, production quality, framework for developing RESTful Web Services in Java that provides support for JAX-RS APIs and serves as a JAX-RS (JSR 311 & JSR 339) Reference Implementation.
-
-    Jersey framework is more than the JAX-RS Reference Implementation. Jersey provides it’s own API that extend the JAX-RS toolkit with additional features and utilities to further simplify RESTful service and client development. Jersey also exposes numerous extension SPIs so that developers may extend Jersey to best suit their needs.
-
-* https://jersey.java.net/
-* 使用 Jersey 和 Apache Tomcat 构建 RESTful Web 服务: http://www.ibm.com/developerworks/cn/web/wa-aj-tomcat/
-
 ## JMX
 
 * JMX Technology Home Page: http://www.oracle.com/technetwork/java/javase/tech/javamanagement-140525.html
@@ -957,13 +955,6 @@ JavaDoc: https://storm.apache.org/javadoc/apidocs/index.html
     OpenLDAP Software is an open source implementation of the Lightweight Directory Access Protocol.
 
 * 官网：http://www.openldap.org/
-
-
-## Apache CXF
-
-    Apache CXF is an open source services framework. CXF helps you build and develop services using frontend programming APIs, like JAX-WS and JAX-RS. These services can speak a variety of protocols such as SOAP, XML/HTTP, RESTful HTTP, or CORBA and work over a variety of transports such as HTTP, JMS or JBI.
-
-官网: http://cxf.apache.org/
 
 
 
