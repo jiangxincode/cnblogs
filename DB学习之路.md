@@ -11,8 +11,10 @@
 * erwin: http://erwin.com/
 * DBeaver: http://dbeaver.jkiss.org/
 * Navicat: http://www.navicat.com.cn/
-* Navicat Premium: http://www.navicat.com.cn/products/navicat-premium
 * 0xDBE: https://www.jetbrains.com/dbe/
+* 数据库比较工具DBCompareTool 0.3.0 preview 发布：http://www.blogjava.net/allenny/archive/2011/09/30/359028.html
+* DB Compare(SQL Server): http://dbcompare.codeplex.com/
+* DBComparer(SQL Server): http://dbcomparer.com/
 
 
 # MySQL
@@ -199,33 +201,6 @@ Oracle客户端    需要安装配置             不用安装
 
 注：ORCL是数据库实例名，默认的数据库是ORCL，你可以创建其他的，即OracleService+数据库名。
 
-## oracle 临时表空间和数据表空间
-
-Oracle临时表空间主要用来做查询和存放一些缓冲区数据。临时表空间消耗的主要原因是需要对查询的中间结果进行排序。重启数据库可以释放临时表空间，如果不能重启实例，而一直保持问题sql语句的执行，temp表空间会一直增长。直到耗尽硬盘空间。网上有人猜测在磁盘空间的分配上，oracle使用的是贪心算法，如果上次磁盘空间消耗达到1GB，那么临时表空间就是1GB。也就是说当前临时表空间文件的大小是历史上使用临时表空间最大的大小。临时表空间的主要作用：
-
-* 索引create或rebuild
-* Order by 或 group by
-* Distinct 操作
-* Union 或 intersect 或 minus
-* Sort-merge joins
-* analyze
-
-数据表空间：表空间的作用能帮助DBA用户完成以下工作:
-
-* 决定数据库实体的空间分配;
-* 设置数据库用户的空间份额;
-* 控制数据库部分数据的可用性;
-* 分布数据于不同的设备之间以改善性能;
-* 备份和恢复数据。
-
-用户创建其数据库实体时其必须于给定的表空间中具有相应的权力,所以对一个用户来说,其要操纵一个ORACLE数据库中的数据,应该:
-
-* 被授予关于一个或多个表空间中的RESOURCE特权;
-* 被指定缺省表空间;
-* 被分配指定表空间的存储空间使用份额;
-* 被指定缺省临时段表空间。
-
-表空间的维护是由ORACLE数据库系统管理员DBA通过SQL*PLUS语句实现的,其中表空间创建与修改中的文件名是不能带路径的,因此DBA必须在ORACLE/DBS目录中操作。
 
 ## 使sqlplus中方向键可用
 
@@ -322,7 +297,6 @@ ORA-28000: 账户锁定
     emctl start dbconsole 启动
 ```
 
-## 系统表
 
 ```sql
     -- Windows下以管理员身份启动数据库
@@ -440,103 +414,7 @@ ORA-28000: 账户锁定
     set linesize 300;
 
 
-    -- oracle常用系统表
-    -- dba_开头
-
-    select * from dba_users; --数据库用户信息
-    select * from dba_segments; --表段信息
-    select * from dba_extents; --数据区信息
-    select * from dba_objects; --数据库对象信息
-    select * from dba_tablespaces; --数据库表空间信息
-    select * from dba_data_files; --数据文件设置信息
-    select * from dba_temp_files; --临时数据文件信息
-    select * from dba_rollback_segs; --回滚段信息
-    select * from dba_ts_quotas; --用户表空间配额信息
-    select * from dba_free_space; --数据库空闲空间信息
-    select * from dba_profiles; --数据库用户资源限制信息
-    select * from dba_sys_privs; --用户的系统权限信息
-    select * from dba_tab_privs; --用户具有的对象权限信息
-    select * from dba_col_privs; --用户具有的列对象权限信息
-    select * from dba_role_privs; --用户具有的角色信息
-    select * from dba_audit_trail; --审计跟踪记录信息
-    select * from dba_stmt_audit_opts; --审计设置信息
-    select * from dba_audit_object; --对象审计结果信息
-    select * from dba_audit_session; --会话审计结果信息
-    select * from dba_indexes; --用户模式的索引信息
-
-    -- user_开头
-    select * from user_objects; --用户对象信息
-    select * from user_source; --数据库用户的所有资源对象信息
-    select * from user_segments; --用户的表段信息
-    select * from user_tables; --用户的表对象信息
-    select * from user_tab_columns; --用户的表列信息
-    select * from user_constraints; --用户的对象约束信息
-    select * from user_sys_privs; --当前用户的系统权限信息
-    select * from user_tab_privs; --当前用户的对象权限信息
-    select * from user_col_privs; --当前用户的表列权限信息
-    select * from user_col_comments; -- 查询本用户的表的列名和注释
-    select * from user_role_privs; --当前用户的角色权限信息
-    select * from user_indexes; --用户的索引信息
-    select * from user_ind_columns; --用户的索引对应的表列信息
-    select * from user_cons_columns; --用户的约束对应的表列信息
-    select * from user_clusters; --用户的所有簇信息
-    select * from user_clu_columns; --用户的簇所包含的内容信息
-    select * from user_cluster_hash_expressions; --散列簇的信息
-
-
-    -- all_开头
-    select * from all_users; --数据库所有用户的信息
-    select * from all_objects; --数据库所有的对象的信息
-    select * from all_def_audit_opts; --所有默认的审计设置信息
-    select * from all_tables; --所有的表对象信息
-    select * from all_indexes; --所有的数据库对象索引的信息
-    select * from all_tab_comments; --查询所有用户的表,视图等
-    select * from all_col_comments; --查询所有用户的表的列名和注释.
-    select * from all_tab_columns; --查询所有用户的表的列名等信息(详细但是没有备注)
-
-
-    -- v$开头
-    select * from v$database; --数据库信息
-    select * from v$datafile; --数据文件信息
-    select * from v$controlfile; --控制文件信息
-    select * from v$logfile; --重做日志信息
-    select * from v$instance; --数据库实例信息
-    select * from v$log; --日志组信息
-    select * from v$loghist; --日志历史信息
-    select * from v$sga; --数据库SGA信息
-    select * from v$parameter; --初始化参数信息
-    select * from v$process; --数据库服务器进程信息
-    select * from v$bgprocess; --数据库后台进程信息
-    select * from v$controlfile_record_section; --控制文件记载的各部分信息
-    select * from v$thread; --线程信息
-    select * from v$datafile_header; --数据文件头所记载的信息
-    select * from v$archived_log; --归档日志信息
-    select * from v$archive_dest; --归档日志的设置信息
-    select * from v$logmnr_contents; --归档日志分析的DML DDL结果信息
-    select * from v$logmnr_dictionary; --日志分析的字典文件信息
-    select * from v$logmnr_logs; --日志分析的日志列表信息
-    select * from v$tablespace; --表空间信息
-    select * from v$tempfile; --临时文件信息
-    select * from v$filestat; --数据文件的I/O统计信息
-    select * from v$undostat; --Undo数据信息
-    select * from v$rollname; --在线回滚段信息
-    select * from v$session; --会话信息
-    select * from v$transaction; --事务信息
-    select * from v$rollstat; --回滚段统计信息
-    select * from v$pwfile_users; --特权用户信息
-    select * from v$sqlarea; --当前查询过的sql语句访问过的资源及相关的信息
-    select * from v$sql; --与v$sqlarea基本相同的相关信息
-    select * from v$sysstat; --数据库系统状态信息
-
-    -- session_开头
-    select * from session_roles; --会话的角色信息
-    select * from session_privs; --会话的权限信息
-
-    -- index_开头
-    select * from index_stats; --索引的设置和存储信息
-
-    -- 伪表
-    select * from dual; --系统伪列表信息
+   
 
     -- 删除表对象
     select 'drop table '||segment_name from dba_segments where owner='VPMUSER' and segment_type='TABLE';
@@ -584,34 +462,6 @@ ORA-28000: 账户锁定
     -- 查询表的所有列及其属性
     select t.*,c.COMMENTS from user_tab_columns t,user_col_comments c where t.table_name = c.table_name and t.column_name = c.column_name and t.table_name = 要查询的表
     
-    --创建永久表空间
-    create tablespace userSpace  --表空间名称
-    datafile 'C:\app\yeduanqiao\oradata\dbname\useSpacer.dbf'    --文件路径及文件名
-    size 50M   --表空间大小
-    AUTOEXTEND ON NEXT 50M   --每次自动扩展50M
-
-    --创建临时表空间
-    create temporary tablespace userTemp
-    tempfile  'C:\app\yeduanqiao\oradata\dbname\userTemp.dbf'
-    size 50M
-
-    ---查看表空间名称、id，文件存储位置,初始大小
-    select tablespace_name,file_id,file_name,bytes
-    from dba_data_files
-    order by file_id
-
-    --修改表空间大小
-    alter database
-    datafile 'C:\app\yeduanqiao\oradata\dbname\useSpacer.dbf'  
-    resize 1000M
-    
-    --修改表空间大小:增加数据文件
-    alter tablespace USERSPACE
-    add datafile 'C:\app\yeduanqiao\oradata\dbname\USERSPACE2.dbf' 
-    size 500M
-
-    --删除表空间
-    drop tablespace USERSPACE
 	
 	--备份表数据
 	create table emp as select * from scott.emp
