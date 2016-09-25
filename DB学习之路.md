@@ -628,23 +628,14 @@ Oracle sqlplus在打错字符时我们可以使用ctrl+backspace组合键实现�
 
 ## Oracle中session和processes的设置
 
-在初始化参数所设定的限制中，最为人所知的估计就是sessions和processes。sessions 参数指定了一个 instance中能够同时存在的sessions数量，或者说，就是能同时登陆到数据库的并发用户数。通常，我们设定这个数字时需要考虑我们可能会有多少个同时连接到数据库的并发用户，并加上后台进程的进程数，最后乘与1.1。比如说，估计系统中可能会同时有100个用户连接到数据库，那么，你的session最少应该为
+* PROCESSES: http://docs.oracle.com/cd/B28359_01/server.111/b28320/initparams188.htm#sthref560
+* SESSIONS: http://docs.oracle.com/cd/B28359_01/server.111/b28320/initparams220.htm#sthref647
+* TRANSACTIONS: http://docs.oracle.com/cd/B28359_01/server.111/b28320/initparams248.htm
 
-    (100 + 10 ) * 1.1 = 121
+Oracle 11gR2之前：sessions=(1.1*processes) + 5
+Oracle 11gR2之后：sessions=(1.5*porcesses) + 22
 
-当数据库连接的并发用户已经达到这个值时，又有新session连进来，就会报错
-
-```shell
-    00018, 00000, "maximum number of sessions exceeded"
-    // *Cause: All session state objects are in use.
-    // *Action: Increase the value of the SESSIONS initialization parameter.
-```
-
-和sessions是类似的是processes这个参数。processes参数指定了instance在OS层面所能同时运行的进程数。基于和sessions设定同样的考虑，我们在设定processes时，也应考虑我们可能会有多少个同时连接到数据库的并发用户，并加上后台进程的进程数。当然，在MTS(shared server)的配置下，这个值的确定会有所不同。应该是
-
-    普通后台进程+最大共享服务器的进程数(max_shared_servers) + 最大Dispatcher进程数(max_dispatchers).
-
-另外，由于在window平台中，Oracle是以单一一个进程的形式存在，processes 参数变成了限制Oracle进程里的线程数了。当Oracle需要启动新的process而又已经达到processes参数时，就会报错：
+当Oracle需要启动新的process而又已经达到processes参数时，就会报错：
 
 ```shell
     00020, 00000, "maximum number of processes (%s) exceeded"
@@ -652,10 +643,21 @@ Oracle sqlplus在打错字符时我们可以使用ctrl+backspace组合键实现�
     // *Action: Increase the value of the PROCESSES initialization parameter.
 ```
 
-sessions是个派生值,由processes的值决定,公式sessions=1.1*process + 5。那么如何使用sqlplus修改processes呢？使用sys，以sysdba权限登录：
+当数据库连接的并发用户已经达到sessions这个值时，又有新session连进来，就会报错
+
+```shell
+    00018, 00000, "maximum number of sessions exceeded"
+    // *Cause: All session state objects are in use.
+    // *Action: Increase the value of the SESSIONS initialization parameter.
+```
+
+如何使用sqlplus查看、修改processes呢？使用sys，以sysdba权限登录：
 
 ```shell
     show parameter processes; --显示：processes integer 150
+	show parameter sessions; --显示：sessions integer 165
+	select count(*) from v$process; --显示当前processes数目
+	select  count(*) from v$session; --显示当前sessions数目
     alter system set processes=400 scope = spfile; --显示系统已更改
     show parameter processes; --显示：processes integer 150
     create pfile from spfile; --显示：文件已创建。
