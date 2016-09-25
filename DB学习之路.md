@@ -632,8 +632,8 @@ Oracle sqlplus在打错字符时我们可以使用ctrl+backspace组合键实现�
 * SESSIONS: http://docs.oracle.com/cd/B28359_01/server.111/b28320/initparams220.htm#sthref647
 * TRANSACTIONS: http://docs.oracle.com/cd/B28359_01/server.111/b28320/initparams248.htm
 
-Oracle 11gR2之前：sessions=(1.1*processes) + 5
-Oracle 11gR2之后：sessions=(1.5*porcesses) + 22
+* Oracle 11gR2之前：sessions=(1.1*processes) + 5
+* Oracle 11gR2之后：sessions=(1.5*porcesses) + 22
 
 当Oracle需要启动新的process而又已经达到processes参数时，就会报错：
 
