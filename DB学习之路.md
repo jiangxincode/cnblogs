@@ -24,6 +24,13 @@
 * windows下忘记mysql超级管理员root密码的解决办法：http://superman7020.blog.163.com/blog/static/1374465920085210119253/
 * 5款常用mysql slow log分析工具的比较：http://blog.chinaunix.net/uid-8504518-id-2030594.html
 * Autocomplete in MySQL under Windows: http://stackoverflow.com/questions/269653/autocomplete-in-mysql-under-windows
+* 安装mysql，在./configure时出现错误：error: No curses/termcap library found的解决办法: http://www.cnblogs.com/luojianqun/p/4087423.html
+* MYSQL常见错误及其解决方式: http://www.cnblogs.com/jiangxinnju/p/5894225.html
+* 如何提高MySql的安全性？: http://blog.163.com/longsu2010@yeah/blog/static/17361234820116223593175/
+* 如何写出高质量、高性能的MySQL查询: http://blog.sina.com.cn/s/blog_a8cf6bb20101a33v.html
+* 解决mysql字符集乱码问题: http://www.cnblogs.com/dayday-study/archive/2012/05/18/2507276.html
+* MySQL默认数据库: http://www.cnblogs.com/jiangxinnju/p/5901845.html
+* MySQL的安装、使用及权限管理: http://www.cnblogs.com/sunada2005/articles/2647435.html
 
 
 # SQL Server
@@ -38,6 +45,27 @@
 * Sql Server 2005中的架构(Schema)、用户(User)、角色(Role)和登录(Login)(三)：http://www.cnblogs.com/end/archive/2009/08/07/1541377.html
 * 谓词和运算符：http://www.cnblogs.com/cuiyh/archive/2010/12/18/1910090.html
 * Tempdb数据库详细介绍：http://www.cnblogs.com/qanholas/archive/2012/01/05/2313006.html
+* MS SQL专用管理员连接DAC: http://www.cnblogs.com/kerrycode/p/3344085.html
+* 用于数据库管理员的诊断连接: https://msdn.microsoft.com/zh-cn/library/ms189595.aspx
+* 解决sqlserver 2008 sqlcmd无法登陆: http://www.cnblogs.com/skynothing/archive/2010/08/26/1809125.html
+* 关于SQLSERVER的全文目录跟全文索引的区别: http://www.cnblogs.com/lyhabc/archive/2012/08/05/2623795.html
+* 在SQL Server中如何获得刚插入一条新记录的自动ID号: http://blog.csdn.net/wangji163163/article/details/2424191
+* SQL Server中如何取得刚插入的标识值: http://www.blogjava.net/DreamAngel/archive/2012/05/11/377920.html
+* Join操作基本：外连接、自然连接、内连接: http://www.cnblogs.com/huangfr/archive/2012/06/20/2555530.html
+* SQL 中 where 1=1 和 1=0的 作用: http://blog.csdn.net/wanghai__/article/details/4813909
+* left join on 和where条件的放置: http://blog.csdn.net/muxiaoshan/article/details/7617533
+
+
+
+## 全文索引和普通索引的区别
+
+两种索引的功能和结构都是不同的，普通索引的结构主要以B+树和哈希索引为主，用于实现对字段中数据的精确查找，比如查找某个字段值等于给定值的记录，A=10这种查询，因此适合数值型字段和短文本字段。全文索引是用于检索字段中是否包含或不包含指定的关键字，有点像搜索引擎的功能，因此全文索引内部采用的是与搜索引擎相同的倒排索引结构，其原理是对字段中的文本进行分词，然后为每一个出现的单词记录一个索引项，这个索引项中保存了所有出现过该单词的记录的信息，也就是说在索引中找到这个单词后，就知道哪些记录的字段中包含这个单词了。因此适合用大文本字段的查找。大字段之所以不适合做普通索引，最主要的原因是普通索引对检索条件只能进行精确匹配，而大字段中的文本内容很多，通常也不会在这种字段上执行精确的文本匹配查询，而更多的是基于关键字的全文检索查询，例如你查一篇文章信息，你会只输入一些关键字，而不是把整篇文章输入查询（如果有整篇文章也就不用查询了）。而全文索引正是适合这种查询需求。
+
+## 提示找不到存储过程(SQLServer)
+
+在sql server 里新建了几个存储过程，每次都是建了之后，存储过程是可以看见的，但用exec语句的时候，却一直有红色波浪线提示找不到存储过程，但是直接执行，却又是可以执行成功的，每次都需要重新打开ssms，红色的波浪线提示才会取消。
+原因是这样的.你的SQL Server 客户端，在连接到 SQL Server 数据库以后。会自动读取数据库的数据字典信息。也就是当前数据库，有哪些表/字段/视图/存储过程等基础信息。保存在客户端的内存里面。这样。当你在客户端输入 SQL 语句的时候，输入表名字.会自动弹出这个表的字段列表让你选择。但是当你新建了一个对象的时候，例如表或者上面那个例子，新建存储过程abc这个时候，数据库那里已经有存储过程abc 了。但是客户端的缓存里面并没有存储过程 abc 的信息。因为内存里面的信息没有更新。因此在客户端那里。输入EXEC abc，abc下有红线。将客户端关闭后，重新打开，由于客户端重新加载了数据库的基础信息。知道了当前数据库里面，有一个名字叫 abc 的存储过程，因此就不出红线了。
+
 
 
 # Oracle Database
@@ -50,6 +78,7 @@
 * Database Concepts: http://docs.oracle.com/database/121/CNCPT/toc.htm
 * The differences of "on delete cascade" and "on delete set null": http://docs.oracle.com/cd/B28359_01/server.111/b28286/clauses002.htm (search "on delete")
 * Database Error Messages: http://docs.oracle.com/cd/B28359_01/server.111/b28278/toc.htm
+* 3 Starting Up and Shutting Down: http://docs.oracle.com/database/121/ADMIN/start.htm
 * 5 Introduction to LOBs: http://docs.oracle.com/cd/B10500_01/appdev.920/a96583/cci05lob.htm
 
 * Oracle SQL Developer: http://www.oracle.com/technetwork/developer-tools/sql-developer/overview/index.html
@@ -329,33 +358,7 @@ ORA-28000: 账户锁定
 
     desc v$database; --查询v$database数据库的表结构
 
-    show parameter name; -- 查看一些数据库的名字信息
 
-    select global_name from global_name; -- 查看oracle的全局数据库名
-
-    select name,dbid from v$database; -- 查看数据库名
-    show parameter db_name;
-
-    select instance_name from v$instance; --查询实例名
-    show parameter instance_name;
-
-    -- 数据库实例名对应着SID，查询SID还可以使用下面的方式：
-    -- linux下在配置oracle环境变量的情况可以使用 echo $ORACLE_SID,如果没有可以使用ps -ef |grep oracle 来查询，结果中的xxxx就是对应的SID。
-    -- oracle    2548     1  0 Aug17 ?        00:00:00 ora_pmon_xxxx
-    -- 在windows环境下,oracle是以后台服务的方式被管理的,所以看"控制面板->管理工具->服务 里面的名称:"OracleServiceORCL",则ORCL就是sid;
-
-    select value from v$parameter where name='db_domin'; --查询数据库域名
-    show parameter domain;
-
-    --查询数据库服务名，数据库如果有域，则数据库服务名就是全局数据库名；如果没有，则数据库服务名就是数据库名。
-    select value from v$parameter where name='service_name';
-    show parameter service_name
-    show parameter service;
-    show parameter names;
-
-
-    alter user sys identified by new_password --修改用户密码
-    alter user system account unlock --解锁用户
 
     --在sqlplus中执行sql脚本，下面两种方式都可以
     START file_name
@@ -527,32 +530,6 @@ Oracle sqlplus在打错字符时我们可以使用ctrl+backspace组合键实现�
     isig icanon iexten echo echoe echok -echonl -noflsh -xcase -tostop -echoprt echoctl echoke
 ```
 
-## ORACLE的CONNECT和RESOURCE角色权限
-
-最近在处理数据库的用户权限问题，之前惯性思维，觉得给用户授权RESOURCE权限之后，用户的一般权限都会有，等到发现用户有RESOURCE角色，却没有创建视图的权限之后，才发现这部分还是一知半解啊，所以此处整理了一下相关的CONNECT角色和RESOURCE角色的内容。一般情况下，在新建数据库用户后，都会习惯性的给用户授权CONNECT角色和RESOURCE角色：
-
-    GRANT connect,resource TO 用户;
-
-但是拥有这两个角色的用户都拥有什么权限呢？可以使用如下语句查看一下：
-
-    SELECT * FROM dba_sys_privs WHERE grantee IN ('RESOURCE', 'CONNECT') ORDER BY 1;
-
-从查询结果可以看到：
-
-CONNECT角色：仅具有创建SESSION的权限
-RESOURCE角色：仅具有创建CLUSTER,INDEXTYPE,OPERATOR,PROCEDEURE,SEQUENCE,TABLE,TRIGGER,TYPE的权限
-
-确实没有创建视图的权限，由此看来如果需要创建视图权限，只能单独授权：
-
-    GRANT CREATE VIEW TO 用户;
-
-同时，当把ORACLE resource角色授予一个user的时候，不但会授予ORACLE resource角色本身的权限，而且还有unlimited tablespace权限，但是，当把resource授予一个role时，就不会授予unlimited tablespace权限。
-
-那么，一个用户，如果查看他拥有什么权限呢？可以使用PLSQL Developer工具。在PLSQL Developer中可以很方便的查看用户的各种类型权限（包括对象权限，角色权限，系统权限），如果要使用SQL语句查询也可以：
-
-    SELECT * FROM dba_tab_privs a WHERE a.grantee = '用户名'; --对象权限
-    SELECT * FROM dba_role_privs a WHERE a.GRANTEE = '用户名'; --角色权限
-    SELECT * FROM dba_sys_privs a WHERE a.GRANTEE = '用户名'; --系统权限
 
 ## oracle 的修改SID
 
