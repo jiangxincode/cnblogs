@@ -80,6 +80,11 @@
 * Database Error Messages: http://docs.oracle.com/cd/B28359_01/server.111/b28278/toc.htm
 * 3 Starting Up and Shutting Down: http://docs.oracle.com/database/121/ADMIN/start.htm
 * 5 Introduction to LOBs: http://docs.oracle.com/cd/B10500_01/appdev.920/a96583/cci05lob.htm
+* E Managing Oracle Database Port Numbers: http://docs.oracle.com/cd/B19306_01/install.102/b15667/app_port.htm
+* Configuring the Operating System Environment Variables: http://docs.oracle.com/database/121/ADMQS/GUID-EC18C4A6-3BA5-4C14-9D76-B0DD62FEFFF2.htm#ADMQS12369
+* 1 Administering Oracle Database: http://docs.oracle.com/database/121/UNXAR/admin_ora.htm#UNXAR001
+* 9 Managing Diagnostic Data: http://docs.oracle.com/database/121/ADMIN/diag.htm#ADMIN11007
+* 12 Managing Archived Redo Log Files: http://docs.oracle.com/database/121/ADMIN/archredo.htm#ADMIN008
 
 * Oracle SQL Developer: http://www.oracle.com/technetwork/developer-tools/sql-developer/overview/index.html
 * Instant Client Downloads for Microsoft Windows (32-bit): http://www.oracle.com/technetwork/topics/winsoft-085727.html
@@ -103,6 +108,9 @@
 * 【Foreign Key】Oracle外键约束三种删除行为 : http://blog.itpub.net/519536/viewspace-630034/
 * Oracle导入JAR包并调用Java: http://www.jianshu.com/p/4280ac298ded
 * Reclaiming Unused LOB Space: http://www.idevelopment.info/data/Oracle/DBA_tips/LOBs/LOBS_85.shtml
+* sqlplus 汉字乱码问题的解决: http://blog.csdn.net/tianlesoftware/article/details/5224448
+* Oracle 10g: Issue with startup mount command (ORA-24324, ORA-01041): http://stackoverflow.com/questions/12470893/oracle-10g-issue-with-startup-mount-command-ora-24324-ora-01041
+* 你所不知道的OERR: http://blog.163.com/jet_it_life/blog/static/2050970832012320146595/
 
 
 ## PL/SQL Developer
@@ -124,7 +132,7 @@ windows Server 2008 服务器上安装了Oracle 11g R2，在用Navicat去连接O
 
 * 在上述地址中下载文件：instantclient-basic-nt-12.1.0.2.0.zip,
 * 解压此安装包至：D:/app/administrator/product/instantclient_2_2_x32
-* 打开Navicat，选择工具→选项→其他→OCI，然后设置OCI library为：D:app/administrator/product/instantclient_12_2_x32/oci.dll，设置SQL *plus为：D:/app/administrator/product/11.2.0/dbhome_1/BIN/sqlplus.exe。确定。
+* 打开Navicat，选择工具→选项→其他→OCI，然后设置OCI library为：D:app/administrator/product/instantclient_12_2_x32/oci.dll，设置SQL  plus为：D:/app/administrator/product/11.2.0/dbhome_1/BIN/sqlplus.exe。确定。
 * 测试成功。
 
 
@@ -207,12 +215,6 @@ Oracle客户端    需要安装配置             不用安装
     jdbc:oracle:oci:@youroracle-tns-name
     jdbc:oracle:oci:@(description=(address=(host=youroraclehost)(protocol=tcp)(port=1521))(connect_data=(SERVICE_NAME=yourservicename)))
 ```
-
-## 与 oracle 有关的几个端口：1158、1521、5500、5560
-
-* 1521端口：响应sqlplus
-* 1158端口：http://RemoteIP:1158/em，即通过网页方式访问em
-* 5560端口：http://RemoteIP:5560/isqlplus，即通过网页方式访问sqlplus
 
 ## Oracle 11g服务详细介绍及哪些服务是必须开启的？
 
