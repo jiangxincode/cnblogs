@@ -20,6 +20,7 @@
 * java sampleexamples: http://java.sampleexamples.com/
 * java examples: http://www.javased.com/
 * java papers: http://javapapers.com/
+* http://www.programcreek.com/
 
 
 ## Java tutorial
@@ -79,6 +80,9 @@
 * Need to suppress “Warning: running an XSLT 1.0 stylesheet with an XSLT 2.0 processor” in Tomcat std out log file: http://stackoverflow.com/questions/4445481/need-to-suppress-warning-running-an-xslt-1-0-stylesheet-with-an-xslt-2-0-proce
 * Java 授权内幕: http://www.ibm.com/developerworks/cn/java/j-javaauth/
 * ServletInputStream的重复读取（多次读取）（转）: http://www.cnblogs.com/jiangxinnju/p/5709378.html
+* Character Sets and Unicode: Java.I.O.2nd.Edition.May.2006.chm
+* 99%的人都理解错了HTTP中GET与POST的区别: http://web.jobbole.com/88068/
+* Java中的SPI(Service Provider Interface)介绍及示例: http://blog.csdn.net/fenglibing/article/details/7083071
 
 
 
@@ -901,6 +905,13 @@ JavaDoc: https://storm.apache.org/javadoc/apidocs/index.html
 * Binary JSON with bson4jackson: http://www.michel-kraemer.com/binary-json-with-bson4jackson
 
 
+## neethi
+
+* http://ws.apache.org/neethi/
+* https://www.w3.org/TR/ws-policy/
+
+
+
 ## JDOM
 
 * http://www.jdom.org/
@@ -987,6 +998,13 @@ JavaDoc: https://storm.apache.org/javadoc/apidocs/index.html
 ## sablecc
 
 * https://github.com/SableCC/sablecc
+
+
+## cglib
+
+* https://github.com/cglib/cglib
+* cglib动态代理介绍(一): http://blog.csdn.net/xiaohai0504/article/details/6832990
+* Java动态代理机制详解（JDK 和CGLIB，Javassist，ASM）: http://blog.csdn.net/luanlouis/article/details/24589193
 
 
 
