@@ -85,6 +85,7 @@
 * 1 Administering Oracle Database: http://docs.oracle.com/database/121/UNXAR/admin_ora.htm#UNXAR001
 * 9 Managing Diagnostic Data: http://docs.oracle.com/database/121/ADMIN/diag.htm#ADMIN11007
 * 12 Managing Archived Redo Log Files: http://docs.oracle.com/database/121/ADMIN/archredo.htm#ADMIN008
+* 3 Setting Up a Globalization Support Environment: http://docs.oracle.com/database/121/NLSPG/ch3globenv.htm#NLSPG003
 
 * Oracle SQL Developer: http://www.oracle.com/technetwork/developer-tools/sql-developer/overview/index.html
 * Instant Client Downloads for Microsoft Windows (32-bit): http://www.oracle.com/technetwork/topics/winsoft-085727.html
