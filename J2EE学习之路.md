@@ -83,6 +83,7 @@
 * Character Sets and Unicode: Java.I.O.2nd.Edition.May.2006.chm
 * 99%的人都理解错了HTTP中GET与POST的区别: http://web.jobbole.com/88068/
 * Java中的SPI(Service Provider Interface)介绍及示例: http://blog.csdn.net/fenglibing/article/details/7083071
+* 驱动模块和桩模块的概念和区别: http://daimajishu.iteye.com/blog/1557295
 
 
 
