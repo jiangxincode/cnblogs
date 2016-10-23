@@ -84,6 +84,9 @@
 * 99%的人都理解错了HTTP中GET与POST的区别: http://web.jobbole.com/88068/
 * Java中的SPI(Service Provider Interface)介绍及示例: http://blog.csdn.net/fenglibing/article/details/7083071
 * 驱动模块和桩模块的概念和区别: http://daimajishu.iteye.com/blog/1557295
+* astyle 使用说明: http://www.cnblogs.com/jiangxinnju/p/4908575.html
+* JAX-WS error on WSDL file: “Error resolving component 's:schema'”: http://stackoverflow.com/questions/13499860/jax-ws-error-on-wsdl-file-error-resolving-component-sschema
+* How to make Java 6, which fails SSL connection with “SSL peer shut down incorrectly”, succeed like Java 7?: http://stackoverflow.com/questions/15589880/how-to-make-java-6-which-fails-ssl-connection-with-ssl-peer-shut-down-incorrec
 
 
 
@@ -106,6 +109,7 @@
 * Axis2创建WebService实例: http://clq9761.iteye.com/blog/976029/
 * Axis2中使用模块: http://zhangjunhd.blog.51cto.com/113473/25593/
 * SOAPUI: https://www.soapui.org/
+* Automating SoapUI using Groovy – A Walk Through: http://www.codeproject.com/Articles/820414/Automating-SoapUI-using-Groovy-A-Walk-Through
 * tcpmon: https://github.com/robertbachmann/tcpmon
 
 
@@ -279,11 +283,6 @@
 * 项目地址：http://reportng.uncommons.org/
 
 
-## SoapUI
-
-* http://www.soapui.org/
-* Automating SoapUI using Groovy – A Walk Through: http://www.codeproject.com/Articles/820414/Automating-SoapUI-using-Groovy-A-Walk-Through
-
 
 ## SLF4J
 
@@ -355,6 +354,11 @@
 * Bytecode Outline plugin for Eclipse: http://asm.ow2.org/eclipse/index.html
 * JOTM: http://jotm.ow2.org/xwiki/bin/view/Main/WebHome
 * XAPool: http://xapool.ow2.org/
+
+
+## ForgeRock
+
+* https://forgerock.org/
 
 
 ## apache

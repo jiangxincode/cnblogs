@@ -6,6 +6,8 @@
 * Tech On The Net: http://www.techonthenet.com/index.php
 * SQL Pretty Printer formatter: http://www.dpriver.com/index.php
 * ApexSQL: http://www.apexsql.com/
+* RazorSQL: http://www.razorsql.com/
+* AquaFold: http://www.aquafold.com/
 * Withdata: http://www.withdata.com/index.html
 * 红宝书：http://www.redbook.io/
 * erwin: http://erwin.com/
@@ -113,6 +115,7 @@
 * sqlplus 汉字乱码问题的解决: http://blog.csdn.net/tianlesoftware/article/details/5224448
 * Oracle 10g: Issue with startup mount command (ORA-24324, ORA-01041): http://stackoverflow.com/questions/12470893/oracle-10g-issue-with-startup-mount-command-ora-24324-ora-01041
 * 你所不知道的OERR: http://blog.163.com/jet_it_life/blog/static/2050970832012320146595/
+* 第9 章 HWM 与数据库性能的探讨: Oracle 数据库性能优化
 
 
 ## PL/SQL Developer
