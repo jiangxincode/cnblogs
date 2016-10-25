@@ -430,6 +430,7 @@ Eclipse中`Update Project`，选择`Force Update of Snapshots/Releases`
 * Maven编译jar出现：无法确定 T 的类型参数的异常的原因和处理方案: http://www.cnblogs.com/peida/p/4218210.html
 * 常见Maven仓库：
     * http://mvnrepository.com/    （搜索）
+	* https://maven-repository.com/    （搜索）
     * http://maven.oschina.net/home.html    （搜索）
     * http://www.ebi.ac.uk/intact/maven/nexus/content/repositories/
     * http://repo1.maven.org/maven2/
@@ -786,6 +787,11 @@ JavaDoc: https://storm.apache.org/javadoc/apidocs/index.html
 * 官网：http://zookeeper.apache.org/
 
 
+## curator
+
+* http://curator.apache.org/
+
+
 ## GProf
 
 * Linux Tools Project/GProf/User Guide：http://wiki.eclipse.org/Linux_Tools_Project/GProf/User_Guide
@@ -932,6 +938,11 @@ JavaDoc: https://storm.apache.org/javadoc/apidocs/index.html
 ## XML Pull Parsing
 
 * http://www.xmlpull.org/index.shtml
+
+
+## Apache Santuario(xmlsec)
+
+* http://santuario.apache.org/
 
 ## SAXON
 
