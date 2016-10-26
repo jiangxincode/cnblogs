@@ -87,6 +87,8 @@
 * astyle 使用说明: http://www.cnblogs.com/jiangxinnju/p/4908575.html
 * JAX-WS error on WSDL file: “Error resolving component 's:schema'”: http://stackoverflow.com/questions/13499860/jax-ws-error-on-wsdl-file-error-resolving-component-sschema
 * How to make Java 6, which fails SSL connection with “SSL peer shut down incorrectly”, succeed like Java 7?: http://stackoverflow.com/questions/15589880/how-to-make-java-6-which-fails-ssl-connection-with-ssl-peer-shut-down-incorrec
+* 使用监听器对Spring bean id进行唯一校验: http://chenzhou123520.iteye.com/blog/1774106
+* 'Must Override a Superclass Method' Errors after importing a project into Eclipse: http://stackoverflow.com/questions/1678122/must-override-a-superclass-method-errors-after-importing-a-project-into-eclips
 
 
 
