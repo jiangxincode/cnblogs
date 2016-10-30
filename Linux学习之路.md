@@ -80,6 +80,9 @@
 * linux中无 conio.h的解决办法：http://www.cnblogs.com/jiangxinnju/p/5516906.html
 * hexdump命令使用：http://blog.csdn.net/zybasjj/article/details/7874720
 * ubuntu下终端路径只显示当前目录：http://www.cnblogs.com/king-77024128/articles/2270487.html
+* linux连接投影机：http://www.2cto.com/os/201211/168387.html
+* Devhelp：https://wiki.gnome.org/Apps/Devhelp
+* 在Windows下使用GTK+开发GUI应用程序: http://blog.csdn.net/blackboyofsnp/article/details/3343045
 
 
 
@@ -1169,135 +1172,6 @@ screen为多重视窗管理程序。此处所谓的视窗，是指一个全屏�
 
 screen可以同步显示你的屏幕给另一个会话。这在给别人处理问题是尤为好用，可以让对方同步看到你的操作。双方同时登陆一台主机，演示方输入  screen -S example，观看方输入 screen -x example，即可同步显示演示方输入的内容
 
-
-## linux连接投影机
-
-方案一：
-
-一般来说，需要笔记本当前使用的分辨率和投影仪的分辨率相同，才能在投影仪上显示笔记本的X。那么，可以先运行这个命令：
-
-$xrandr
-
-比如在我的电脑上，结果如下：
-
-    $xrandr
-
-     SZ:    Pixels          Physical       Refresh
-    *0   1280 x 1024   ( 433mm x 346mm )  *50   54
-     1   1024 x 768    ( 346mm x 260mm )   51   60   61
-     2    800 x 600    ( 270mm x 203mm )   52   65   66   67   68
-     3    640 x 480    ( 216mm x 162mm )   53   73   74   75
-     4   1280 x 960    ( 433mm x 325mm )   55
-     5   1280 x 800    ( 433mm x 270mm )   56
-     6   1280 x 768    ( 433mm x 260mm )   57
-     7   1152 x 864    ( 390mm x 292mm )   58
-     8   1152 x 768    ( 390mm x 260mm )   59
-     9    960 x 600    ( 325mm x 203mm )   62
-     10   840 x 525    ( 284mm x 177mm )   63
-     11   832 x 624    ( 281mm x 211mm )   64
-     12   800 x 512    ( 270mm x 173mm )   69
-     13   720 x 450    ( 243mm x 152mm )   70
-     14   640 x 512    ( 216mm x 173mm )   71   72
-     15   640 x 400    ( 216mm x 135mm )   76
-     16   640 x 384    ( 216mm x 130mm )   77
-     17   576 x 432    ( 195mm x 146mm )   78
-     18   576 x 384    ( 195mm x 130mm )   79
-     19   512 x 384    ( 173mm x 130mm )   80   81   82
-     20   416 x 312    ( 140mm x 105mm )   83
-     21   400 x 300    ( 135mm x 101mm )   84   85   86   87
-     22   320 x 240    ( 108mm x  81mm )   88   89   90
-    Current rotation - normal
-    Current reflection - none
-    Rotations possible - normal
-    Reflections possible - none
-
-
-第0条加了*号，说明这是笔记本电脑当前使用的分辨率。如果投影仪的分辨率是1024x768，那么就需要改变笔记本电脑的分辨率。因为在上面的结果中，1024x768对应第1条，所以运行这个命令来改变分辨率：
-
-    $xrandr -s 1
-
-这样就切换了分辨率。等待投影仪的搜索吧。
-
-首先接上VGA，执行命令(VGA代表显示器，LVDS代表笔记本液晶屏):
-
-    $ xrandr --output VGA --auto
-
-当前桌面会复制到VGA上面，此时执行xrandr会看到有了VGA-0
-
-断开VGA-0:
-
-    $ xrandr --output VGA-0 --auto
-
-按照当前的配置扩展桌面:
-
-    $xrandr --output VGA-0 --auto --left-of LVDS
-
-这是需修改xorg.conf，先用不带参数执行xrandr能够列出当前的显示设备和每个设备支持的模式。Screen代表了总显示区域，VGA代表显示器，LVDS代表笔记本液晶屏。
-
-    Screen 0: minimum 320 x 200, current 1280 x 768, maximum 1280 x 1280
-    VGA connected (normal left inverted right x axis y axis)
-       1280x1024      75.0 +   69.8     59.9
-       1024x768       75.1     70.1     60.0
-       800x600        72.2     75.0     60.3
-       640x480        75.0     72.8     65.4     60.0
-       720x400        70.1
-    LVDS connected 1024x768+0+0 (normal left inverted right x axis y axis) 246mm x 184mm
-       1024x768       50.0*+   60.0     40.0
-       800x600        60.3
-       640x480        60.0     59.9
-
-修改：
-
-    gksudo gedit /etc/X11/xorg.conf
-
-修改后如下：
-
-    Section "Screen"
-       Identifier "Default Screen"
-       Monitor "Configured Monitor"
-       Device "Configured Video Device"
-       SubSection "Display"
-          Virtual 2304 1024 #左右扩展双屏,2304=1280+1024,1024=max(1024,768)
-       EndSubSection
-    EndSection
-
-注意：Ubuntu 8.04中的xorg.conf已经非常精简，Subsection "Display" 可能要自己添加，别忘记 EndSubSection
-
-xrandr 命令行可以很方便地切换双屏，常用方式如下，其他的可以自己探索：
-
-    xrandr --output VGA --same-as LVDS --auto # 打开外接显示器(最高分辨率)，与笔记本液晶屏幕显示同样内容（克隆）
-    xrandr --output VGA --same-as LVDS --mode 1024x768 # 打开外接显示器(分辨率为1024x768)，与笔记本液晶屏幕显示同样内容（克隆）
-    xrandr --output VGA --right-of LVDS --auto # 打开外接显示器(最高分辨率)，设置为右侧扩展屏幕
-    xrandr --output VGA --off # 关闭外接显示器
-    xrandr --output VGA --auto --output LVDS --off # 打开外接显示器，同时关闭笔记本液晶屏幕（只用外接显示器工作）
-    xrandr --output VGA --off --output LVDS --auto # 关闭外接显示器，同时打开笔记本液晶屏幕 (只用笔记本液晶屏)
-
-方案二：
-
-
-
-打开xorg.conf
-
-    gksudo gedit /etc/X11/xorg.conf
-
-修改Section “Device”如下：
-
-    Section "Device"
-
-    Identifier "Configured Video Device"
-
-    Option "TwinView" "True" #打开双显支持
-
-    Option "TwinViewOrientation" "Clone" #复制模式，Relative为扩展模式
-
-    Option "UseEdidFreqs" "True" #打开刷新频率设置
-
-    Option "Metamodes" "1024x768_60, 1024x768; 1024x768_60,800x600" #刷新频率模式，指明这两个设备的分辨率，逗号前的第一个是本机显示设备，逗号后的第二个是外部设备，分号分隔开多套模式，可以设两套方案或更多。
-
-    EndSection
-
-保存。连接好投影仪，重新启动Xwindows(Ctrl+Alt+Backspace)就OK了。
-
 # ssh相关
 
 ## Agent admitted failure to sign using the key
@@ -1439,73 +1313,7 @@ $ ssh localhost
 
 # GTK+相关
 
-##在Windows下使用GTK+
 
-由于GTK+的跨平台特性, 我们可以在Windows下使用DevCpp来开发使用GTK+图形库的GUI程序.
-
-  步骤如下:
-
-
-
-1. 下载DevCPP, 也叫Dev-C++, 我使用的版本是4.9.9.2, 并安装
-
-
-
-2. 下载gtk+ for win32工具包集合, 这个里面含有编译运行GTK+程序所需的所有东西, 不需要一个一个包下载安装了. 地址 : http://ftp.gnome.org/pub/gnome/binaries/win32/gtk+/2.14/gtk+-bundle_2.14.4-20081108_win32.zip, 照提示安装, 我的安装目录为 D:/dev/GTK
-
-
-
-3. 将D:/dev/GTK/bin加入环境变量PATH
-
-
-
-4. 运行cmd, 输入 " pkg-config --cflags --libs gtk+-2.0 > d:/a.txt", 意思是把编译GTK+程序所需要的参数都重定向到D盘的a.txt文本文件中
-
-
-
-5. 打开DevCpp, 新建一个工程, 注意工程类型为 Windows Application, C工程.
-
-   DevCpp可能会给你生成一个源文件, 将这个源文件的所有内容替换为一个简单的GTK+代码, 以下是一个例子:
-
-#include <gtk/gtk.h>
-
-int  main( int  argc, char  *argv[])
-
-{
-
-    GtkWidget *window;
-
-    gtk_init(&argc,&argv);
-
-    window=gtk_window_new(GTK_WINDOW_TOPLEVEL);
-
-    gtk_window_set_title(GTK_WINDOW(window),g_locale_to_utf8("中文" ,-1,NULL,NULL,NULL));
-
-    g_signal_connect(window,  "destroy", G_CALLBACK(gtk_main_quit), &window);
-
-    gtk_widget_show(window);
-
-    gtk_main();
-
-     return  0;
-
-}
-
-6.点击 工程 > 工程属性 > "参数"选项卡, 在"编译器"框中输入a.txt的前半部分内容,我机器上是这样的:
-
- -mms-bitfields -ID:/dev/GTK/include/gtk-2.0 -ID:/dev/GTK/lib/gtk-2.0/include -ID:/dev/GTK/include/atk-1.0 -ID:/dev/GTK/include/cairo -ID:/dev/GTK/include/pango-1.0 -ID:/dev/GTK/include/glib-2.0 -ID:/dev/GTK/lib/glib-2.0/include -ID:/dev/GTK/include/libpng13
-
-  在"连接器"框中输入a.txt的后半部分内容, 我机器上是这样的:
-
- -LD:/dev/GTK/lib -lgtk-win32-2.0 -lgdk-win32-2.0 -latk-1.0 -lgdk_pixbuf-2.0 -lpangowin32-1.0 -lgdi32 -lpangocairo-1.0 -lpango-1.0 -lcairo -lgobject-2.0 -lgmodule-2.0 -lglib-2.0 -lintl
-
-  注意这些内容会根据GTK+安装目录的不同而有所差别, 再说一遍, 我机器上是D:/dev/GTK. 设置完后点"确定".
-
-
-
-7. 编译运行.
-
-如果出现一个简单的空白窗口, 恭喜你成功了. [完]
 
 # GTK中的delete_event和destroy
 delete_event 事件一般由用户或者说用户通过窗口管理器产生，即点击窗口右上角的退出按钮。假如不做任何特殊处理，窗口管理器会自动产生destroy信号；如果我们自 定义了处理delete_event事件的回调函数，是否产生destroy信号就和函数的返回值有关，如果是FALSE就产生，反之则没有效果。
@@ -1980,28 +1788,6 @@ GLIBC_PRIVATE
 
 这样就能看到glibc支持的版本。
 
-## DevHelp
-# shell编程学习之路
-
-3、用Shell编程，判断一文件是不是字符设备文件，如果是将其拷贝到 /dev 目录下。
-
-参考程序：
-
-#!/bin/sh
-
-FILENAME=
-
-echo “Input file name：”
-
-read FILENAME
-
-if [ -c "$FILENAME" ]
-
-then
-
-cp $FILENAME /dev
-
-fi
 
 # shell “syntax error:unexpected end of file”
 
@@ -2117,11 +1903,6 @@ If you os is ubuntu 14.04, do this before:
 
     hostname # 查看主机名
     hostname --fqdn # 查看FQDN名字
-
-
-
-
-
 
 
 # ubuntu终端颜色消失的问题
