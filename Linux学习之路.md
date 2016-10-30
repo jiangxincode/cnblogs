@@ -49,9 +49,261 @@
 * htop: https://sourceforge.net/projects/htop/
 * iftop: http://www.ex-parrot.com/~pdw/iftop/
 * Iotop: http://guichaz.free.fr/iotop/
+* tldr: https://github.com/tldr-pages/tldr
 * 串口传输文件 lrzsz: http://www.cnblogs.com/lidabo/p/4780866.html
 * 基于CentOS的Linux基本网络配置,包括网卡eth0、DNS、Host等: http://www.cnblogs.com/rooney/archive/2012/03/24/2415144.html
+* iproute2: https://wiki.linuxfoundation.org/networking/iproute2
+* httpry: https://github.com/jbittel/httpry
+* su cannot set user id Resource temporarily unavailable故障解决 : http://blog.itpub.net/12457158/viewspace-753400
+* 12款最佳Linux命令行终端工具: http://www.vaikan.com/best-terminal-alternatives-for-linux-systems/
+* Linux下好玩的命令: http://www.cnblogs.com/joeyupdo/articles/2768113.html
+* 动画演示一些无用但有趣的Linux命令: http://www.vaikan.com/10-funny-liunx-command/
+* Linux中10个有用的命令行补齐命令: http://www.geekfan.net/8169/
+* Linux中的10个链接操作符: http://linux.cn/thread/12205/1/1/
+* 7 个致命的 Linux 命令: http://linux.cn/thread/10246/1/1/
+* 翻墙！（Chrome+代理工具GoAgent+SwitchySharp插件/火狐Firefox+AutoProxy）: http://blog.chinaunix.net/uid-24250828-id-3788304.html
+* 通过命令行查找一个IP的地理位置信息: http://www.geekfan.net/7863/
+* 多终端管理器tmux使用详解: http://blog.csdn.net/stelalala/article/details/9025691
+* Linux系统里如何彻底的清空屏幕？: http://www.vaikan.com/how-to-clear-the-terminal-screen-for-real-in-case-of-linux/
+* 如何在Linux上将HTML页面转化成png图片: http://linux.cn/article-2708-1.html
+* SSH原理与运用（一）：远程登录: http://www.ruanyifeng.com/blog/2011/12/ssh_remote_login.html
+* SSH原理与运用（二）：远程操作与端口转发: http://www.ruanyifeng.com/blog/2011/12/ssh_port_forwarding.html
+* LNMP安装快速导航（官网教程）: http://lnmp.org/install.html
+* ubuntu删除旧内核和多余启动项: http://pppboy.blog.163.com/blog/static/3020379620113173147935/
+* 各个Linux版本的本地root密码破解方法: http://os.51cto.com/art/200910/159523.htm
+* apt-get remove, apt-get autoremove和aptitude remove的区别: http://blog.csdn.net/jiangxinnju/article/details/38341283
+* Linux乱码问题解决方案：http://www.cnblogs.com/jiangxinnju/p/6014111.html
+* LINUX下GDB调试：http://blog.csdn.net/sco_field/article/details/4310987
+* Linux 软件看门狗 watchdog：http://blog.csdn.net/liigo/article/details/9227205
+* C语言调试手段:锁定错误的实现方法：http://blog.csdn.net/huangblog/article/details/8281165
+* Linux终端字符颜色设置：http://blog.csdn.net/fuyajun01/article/details/7931934
+* linux中无 conio.h的解决办法：http://www.cnblogs.com/jiangxinnju/p/5516906.html
+* hexdump命令使用：http://blog.csdn.net/zybasjj/article/details/7874720
+* ubuntu下终端路径只显示当前目录：http://www.cnblogs.com/king-77024128/articles/2270487.html
 
+
+
+## Linux常用命令
+
+```shell
+	rdate # set the system's date from a remote host. (sudo apt-get install rdate)
+	grep -R "org.apache.commons.FileUtils" *
+	grep -inr --color "ERROR" test_debug.log
+	ps –fu $USER | grep java # 显示当前用户的所有线程
+	ps -ef | grep 4736 # 查看4736端口是否被占用
+	netstat -tulnp | grep mysqld # 查看mysqld的监听情况
+	find . –name "*.log" | xargs grep error # 在当前目录的所有日志文件中查找关键词"error"
+	find . -mmin -1 # 查找最近一分钟修改过的文件
+	find . -mtime -1 # 查找最近一天修改过的文件
+	ls -t `find . -name "*.log"` #列出最近修改的文件
+    glxinfo | grep rendering # 查询OpenGL是否打开。提示：direct rendering: Yes 表明启动正常
+    cfdisk -Ps # 查看磁盘分区的用法   cfdisk   -Ps 磁盘设备名 只有一个硬盘也可以用 cfdisk -Ps
+    cfdisk -Ps /dev/sda
+    sfdisk -l
+
+    cat /proc/cpuinfo | grep flags # 查看cpuinfo中是否有lm，如果有lm表示支持64位，lm的意思是long mod
+    cat /proc/cpuinfo | grep flags | grep lm | wc -l # 输出结果大于 0 表示支持64位
+    cat /proc/cpuinfo |grep "physical id"|sort |uniq|wc -l # 查看物理CPU的个数
+    cat /proc/cpuinfo |grep "processor"|wc -l # 查看逻辑CPU的个数
+    cat /proc/cpuinfo |grep "cores"|uniq # 查看CPU是几核
+    cat /proc/cpuinfo |grep MHz|uniq # 查看CPU的主频
+    cat /proc/cpuinfo | grep name | cut -f2 -d: | uniq -c # 看到有8个逻辑CPU, 也知道了CPU型号
+    # 8  Intel(R) Xeon(R) CPU            E5410   @ 2.33GHz
+    
+    cat /proc/cpuinfo | grep physical | uniq -c # 说明实际上是两颗4核的CPU
+    # 4 physical id      : 0
+    # 4 physical id      : 1
+
+    getconf LONG_BIT # 说明当前CPU运行在32bit模式下, 但不代表CPU不支持64bit
+    # 32
+
+    cat /etc/issue | grep Linux # 查看当前操作系统发行版信息
+
+    apt-cache # query the APT cache
+    apt-file # APT package searching utility
+    apt-get
+    apt-cdrom # apt-cdrom is a tool to add CDROM's to APT's source list. 
+    apititude
+    dpkg
+
+    sudo sh *.sh # 打开.sh文件
+
+    ./*** # 打开其它可执行文件,如果没有可执行权限，需要chmod
+
+    man nautilus
+    man ed
+
+    file explore
+
+    xdg-open # 命令行快速打开各类型文件
+    mplayer xxx.mp3 # 使用mplayer打开
+
+    fc-list :lang=zh-cn # 查看字体
+
+    uname -a               # 查看内核/操作系统/CPU信息
+    head -n 1 /etc/issue   # 查看操作系统版本
+    cat /proc/cpuinfo      # 查看CPU信息
+    hostname               # 查看计算机名
+    lspci -tv              # 列出所有PCI设备
+    lsusb -tv              # 列出所有USB设备
+    lsmod                  # 列出加载的内核模块
+    env                    # 查看环境变量资源
+    free -m                # 查看内存使用量和交换区使用量
+    df -h                  # 查看各分区使用情况
+    du -sh <目录名>        # 查看指定目录的大小
+    grep MemTotal /proc/meminfo   # 查看内存总量
+    grep MemFree /proc/meminfo    # 查看空闲内存量
+    uptime                 # 查看系统运行时间、用户数、负载
+    cat /proc/loadavg      # 查看系统负载磁盘和分区
+    mount | column -t      # 查看挂接的分区状态
+    fdisk -l               # 查看所有分区
+    swapon -s              # 查看所有交换分区
+    hdparm -i /dev/hda     # 查看磁盘参数(仅适用于IDE设备)
+    dmesg | grep IDE       # 查看启动时IDE设备检测状况网络
+    ifconfig               # 查看所有网络接口的属性
+    iptables -L            # 查看防火墙设置
+    route -n               # 查看路由表
+    netstat -lntp          # 查看所有监听端口
+    netstat -antp          # 查看所有已经建立的连接
+    netstat -s             # 查看网络统计信息进程
+    ps -ef                 # 查看所有进程
+    top                    # 实时显示进程状态用户
+    w                      # 查看活动用户
+    id <用户名>            # 查看指定用户信息
+    last                   # 查看用户登录日志
+    cut -d: -f1 /etc/passwd   # 查看系统所有用户
+    cut -d: -f1 /etc/group    # 查看系统所有组
+    crontab -l             # 查看当前用户的计划任务服务
+    chkconfig --list       # 列出所有系统服务
+    chkconfig --list | grep on    # 列出所有启动的系统服务程序
+    rpm -qa                # 查看所有安装的软件包
+
+    netstat -anp | grep xxxx   #xxxx为端口号 Linux下查看某个端口下运行的是什么程序
+    lsof -i :xxxx    #xxxx为端口号
+
+    cat /proc/version # 查看内核版本命令
+    lsb_release -a ##查看linux版本
+    cat /etc/debian_version
+    cat /etc/issue
+    file /bin/bash
+    file /bin/cat
+    cat /etc/debian_version //Only for Debian
+    cat /etc/redhat-release //Only for Redhat
+    rpm -q redhat-release //Only for Redhat
+    redhat-release-5Server-5.6.0.3
+    
+    # 注:这种方式下可看到一个所谓的release号，比如上边的例子是5，这个release号和实际的版本之间存在一定的对应关系，如下：
+    # redhat-release-3AS-1 -> Redhat Enterprise Linux AS 3
+    # redhat-release-3AS-7.4 -> Redhat Enterprise Linux AS 3 Update 4
+    # redhat-release-4AS-2 -> Redhat Enterprise Linux AS 4
+    # redhat-release-4AS-2.4 -> Redhat Enterprise Linux AS 4 Update 1
+    # redhat-release-4AS-3 -> Redhat Enterprise Linux AS 4 Update 2
+    # redhat-release-4AS-4.1 -> Redhat Enterprise Linux AS 4 Update 3
+    # redhat-release-4AS-5.5 -> Redhat Enterprise Linux AS 4 Update 4
+
+    # man update-alternatives
+
+    # Configure参数解释说明: autoconf: 16 Running configure Scripts
+
+    # 把/dev/cdrom目录制作为镜像，名字为/root/rh1.iso，可以使用下面命令中的任意一条
+    dd if=/dev/cdrom of=/root/rh1.iso
+    #cat /dev/cdrom >;/root/1.iso
+    mkisofs -r -o myiso.iso /dev/cdrom
+    cp -r /home/user name.iso
+
+    ## Linux下打包压缩war和解压war包
+    jar -cvfM0 game.war ./ # 把当前目录下的所有文件打包成game.war
+    jar -xvf game.war # 解压game.war到当前目录
+	
+	# man tailf
+	# Linux下分割合并文: man split/cat
+	# 生成目录树结构: man tree
+	# rename命令: http://man.linuxde.net/rename
+
+```
+
+## tar/zip/
+
+* -c: 建立压缩档案
+* -x：解压
+* -t：查看内容
+* -r：向压缩归档文件末尾追加文件
+* -u：更新原压缩包中的文件
+
+这五个是独立的命令，压缩解压都要用到其中一个，可以和别的命令连用但只能用其中一个。下面的参数是根据需要在压缩或解压档案时可选的。
+
+* -z：有gzip属性的
+* -j：有bz2属性的
+* -Z：有compress属性的
+* -v：显示所有过程
+* -O：将文件解开到标准输出
+
+下面的参数-f是必须的
+
+-f: 使用档案名字，切记，这个参数是最后一个参数，后面只能接档案名。
+
+```shell
+    tar -cf all.tar *.jpg # 这条命令是将所有.jpg的文件打成一个名为all.tar的包。-c是表示产生新的包，-f指定包的文件名。
+    tar -rf all.tar *.gif # 这条命令是将所有.gif的文件增加到all.tar的包里面去。-r是表示增加文件的意思。
+    tar -uf all.tar logo.gif # 这条命令是更新原来tar包all.tar中logo.gif文件，-u是表示更新文件的意思。
+    tar -tf all.tar # 这条命令是列出all.tar包中所有文件，-t是列出文件的意思
+    tar -xf all.tar # 这条命令是解出all.tar包中所有文件，-x是解开的意思
+```
+
+压缩
+
+    tar –cvf jpg.tar *.jpg //将目录里所有jpg文件打包成tar.jpg
+    tar –czf jpg.tar.gz *.jpg   //将目录里所有jpg文件打包成jpg.tar后，并且将其用gzip压缩，生成一个gzip压缩过的包，命名为jpg.tar.gz
+    tar –cjf jpg.tar.bz2 *.jpg //将目录里所有jpg文件打包成jpg.tar后，并且将其用bzip2压缩，生成一个bzip2压缩过的包，命名为jpg.tar.bz2
+    tar –cZf jpg.tar.Z *.jpg   //将目录里所有jpg文件打包成jpg.tar后，并且将其用compress压缩，生成一个umcompress压缩过的包，命名为jpg.tar.Z
+    rar a jpg.rar *.jpg //rar格式的压缩，需要先下载rar for linux
+    zip jpg.zip *.jpg //zip格式的压缩，需要先下载zip for linux
+
+解压
+
+    tar –xvf file.tar //解压 tar包
+    tar -xzvf file.tar.gz //解压tar.gz
+    tar -xjvf file.tar.bz2   //解压 tar.bz2
+    tar –xZvf file.tar.Z   //解压tar.Z
+    unrar e file.rar //解压rar
+    unzip file.zip //解压zip
+
+
+总结
+
+    *.tar 用 tar –xvf 解压
+    *.gz 用 gzip -d或者gunzip 解压
+    *.tar.gz和*.tgz 用 tar –xzf 解压
+    *.bz2 用 bzip2 -d或者用bunzip2 解压
+    *.tar.bz2用tar –xjf 解压
+    *.Z 用 uncompress 解压
+    *.tar.Z 用tar –xZf 解压
+    *.rar 用 unrar e解压
+    *.zip 用 unzip 解压
+
+## 打印某一文件夹下的所有文件名及其行数
+
+这里分别要考虑到该文件夹有或没有子文件夹的情况，用shell实现打印某一文件夹下的所有文件（如果是子文件夹下的文件，需要打印相对目录）及该文件的行数清单。列表类似这样：
+
+    filename1 100行
+    file/filename2 200行
+    .......
+
+    find -name "*" | xargs wc -l
+
+加 -type f 参数，过滤掉对目录的wc
+
+    find -name "*" -type f | xargs wc -l
+
+想要得到指定的格式，用万能的awk：
+
+    find -name "*" -type f| xargs wc -l | awk '{print $2" "$1"行"}'
+
+find 后面可加指定目录，如"/etc/"
+
+    find "/etc/" -name "*" -type f| xargs wc -l | awk '{print $2" "$1"行"}'
+
+	
 ## Shell 快捷键
 
 ```
@@ -237,196 +489,7 @@ linux 下全局的文件与程序的关联是通过`/usr/share/applications/defa
     ftp://ftp.kernel.org/pub/
     ftp://ftp.gnu.org
 
-## 乱码及编码问题
 
-* 基本码：ascii
-* 中国制定的编码：（gb代表国家标准，其中gbk不是国家标准，但其兼容gb2312.并扩充了许多字符）:gb2312/gbk/gb18030
-* 世界统一编码：utf
-
-linux系统中文件名内容为urf8编码, windows系统中文件名默认为gbk编码, 多数文档使用gbk编码，系统采用utf8编码
-
-## 无中文输入法导致的乱码
-
-1、ibus输入法
-
-Ubuntu 系统安装后已经自带了ibus输入法，在英语环境下默认不启动。配置ibus自动启动可以在ubuntu系统菜单上选择System --- Preferences --- Startup Applications，在该窗口中增加一个程序：
-
-    Name: ibus-daemon
-    Command: ibus-daemon -d -x -r
-
-ibus默认提供的中文输入法比较弱智，需要额外安装ibus-pinyin，命令如下：
-
-    sudo apt-get install ibus-pinyin
-
-这时，还需要将ibus-pinyin输入法启动。在ubuntu系统菜单上选择System --- Preferences --- IBus Preferences，在Input Method页中的“Select an input method”下拉框中选择增加Chinese – Pinyin，就是图标中有个一个大大的“拼”字的那一个，然后点击Add按钮，最后通过Up按钮将该输入法移动到最上面。系统重启后，通过Ctrl + 空格即可调出ibus输入法。ibus输入法总体来说不错，但是在我的环境下发现无法在部分Java程序中调出来，例如Netbeans、OpenProj。
-
-2、fcitx输入法
-
-由于ibus的缺陷，所以我尝试了fcitx，使用下来也非常不错，而且可以在Java程序中正常使用，只是在这种情况下光标跟随有些问题，输入界面会停 留在屏幕最下端，但是可以接受，比起ibus不能使用要好多了。
-
-安装fcitx：
-
-    sudo apt-get install fcitx
-
-启动fcitx：
-
-    im-switch -s fcitx
-
-注销后重新登录，fcitx就会生效。如果需要切换回ibus，可以运行im-switch -s ibus，然后注销，重新登录。fcitx同样可以通过Ctrl + 空格调出，这时会发现fcitx显示的中文是方框，因此需要修改fcitx的配置。Fcitx的配置文件在~/.fcitx/config，该文件为 GBK编码，在Ubuntu下显示不正常，可以通过如下方式操作：
-
-    cd ~/.fcitx
-    iconv -f gbk -t utf8 config > config.tmp
-
-编辑config.tmp文件：
-
-    显示字体(中)=WenQuanYi Micro Hei
-    显示字体大小=10
-    使用粗体=0
-
-保存退出，然后运行命令：
-
-    iconv -f utf8 -t gbk config.tmp > config
-
-注销后重新登录，fcitx显示正常。
-
-对于搜狗输入候选字乱码问题，先运行
-
-    sudo apt-get install fcitx-module-kimpanel
-
-然后注销或者重启，一般就可以了
-
-
-## utf8 和 UTF-8 有什么区别
-
-“UTF-8”是标准写法，在windows下边英文不区分大小写，所以也可以写成“utf-8”。“UTF-8”也可以把中间的“-”省略，写成“UTF8”。一般程序都能识别，但也有例外（如下文），为了严格一点，最好用标准的大写“UTF-8”。只有在MySQL中可以使用“utf-8”的别名“utf8”，但是在其他地方一律使用大写“UTF-8”。
-
-
-##网页上Flash中的中文显示为方框的解决办法
-
-编辑/etc/fonts/conf.d/49-sansserif.conf文件，作如下修改：
-
-    <edit name="family" mode="append_last">
-    <string>WenQuanYi Micro Hei</string>
-    </edit>
-
-## Java程序部分中文显示为方框的解决办法
-
-在$JAVA_HOME/jre /lib/fonts目录下建立fallback目录，将中文字体文件复制（或link）到fallback目录。
-
-    sudo mkdir $JAVA_HOME/jre/lib/fonts/fallback
-    sudo ln /usr/share/fonts/truetype/wqy/wqy-microhei.ttc $JAVA_HOME/jre/lib/fonts/fallback/
-
-## “GBK乱码”，参考
-
-乱码的样子类似：
-
-    à??ü òá??à3?￡???1,°2à??ü òá??à3?￡???1
-
-解决方法：
-
-    convmv -r -f utf8 -t iso88591 --notest --nosmart * && convmv -r -f gbk -t utf8 --notest --nosmart * # 把乱码文件名文件复制在一个空目录里运行（这样错了也不怕）：
-
-## “ascii乱码”参考
-
-乱码的样子类似：
-
-    %E5%8C%BB%E4%BF%9D
-
-解决方法：
-
-1.使用uni2ascii 代码:`echo 乱码原文 | ascii2uni -a J`
-2.安装nautilus-filename-repairer0.06（官方有源码，但是依赖问题，我还没安装成功，而0.05版与现在的nautilus有点小小的合作障碍，只能看不能改名)
-3.用chromeplus-1.3.3.1下载（因为这类乱码主要在用ff（默认utf8）下载qq群里的文件之后产生，用chromeplus(默认GBK)下就没问题了）
-
-另外，至于文件里面内容的乱码问题可以搜索enca.
-
-## 解决Rhythmox乱码问题：
-
-    安装Rhythmox：sudo apt-get install rhythmbox
-    安装mid3iconv：sudo apt-get install python-mutagen
-    mid3iconv -h
-
-## Clementine乱码问题
-
-    安装mid3iconv：sudo apt-get install python-mutagen
-    mid3iconv -h
-
-Clementine不支持utf8，需要吧所有的mp3歌曲转换为gbk格式，wma好像不用转就可以
-
-    mid3iconv -e gbk *.mp3(由于不能带-r参数，所以要依次进入每个文件夹)
-
-另外clementine采用gstreamer作为后端，需要安装gstreamer插件：
-
-* 如果想支持mp3，需要安装gstreamer-0.10-plugins-bad和gstreamer-0.10-plugins-ugly
-* 如果想支持wma，需要安装gstreamer-0.10-ffmpeg
-* 如果想支持mms流媒体，需要安装gstreamer plugins for mms
-
-另外Clementine基于Amarok，所以支持Amarok的插件一般都支持Clementine，比如osdlyrics。
-
-## 转换文件内容编码:
-
-    file -i <file name> 检测文件编码
-    iconv --help
-
-## 转换文件名编码
-
-    sudo apt-get install convmv
-    convmv --help
-    convmv -f gbk -t utf8 -r --notest files
-    convmv -r -f utf8 -t iso88591 * --notest --nosmart && convmv -r -f gbk -t utf8 * --notest --nosmart
-
-## 解决gedit乱码问题：
-
-    gsettings set org.gnome.gedit.preferences.encodings auto-detected "['GB18030', 'GB2312', 'GBK', 'UTF-8', 'BIG5', 'CURRENT', 'UTF-16']"
-    gsettings set org.gnome.gedit.preferences.encodings shown-in-menu "['GB18030', 'GB2312', 'GBK', 'UTF-8', 'BIG5', 'CURRENT', 'UTF-16']"
-
-## 解决PDF中文乱码：
-
-    sudo apt-get install poppler-data
-
-## 解决rar文件乱码
-
-使用rar
-
-## 解压zip文件乱码
-
-最近碰到这个问题，网上搜了一圈，都是什么unzip -O，一点用都没有，这些哥们估计是直接复制，用都没用过。后来找了个终极方法，用python的脚本来解压，试了下，还真管用！！！以下为python脚本的代码，新建文件jieya.py，写入以下代码：
-
-```python
-    #!/usr/bin/env python
-    # -*- coding: utf-8 -*-
-
-    import os
-    import sys
-    import zipfile
-
-    print "Processing File " + sys.argv[1]
-    file=zipfile.ZipFile(sys.argv[1],"r");
-    for name in file.namelist():
-        utf8name=name.decode('gbk')
-        print "Extracting " + utf8name
-        pathname = os.path.dirname(utf8name)
-        if not os.path.exists(pathname) and pathname!= "":
-            os.makedirs(pathname)
-        data = file.read(name)
-        if not os.path.exists(utf8name):
-            fo = open(utf8name, "w")
-            fo.write(data)
-            fo.close
-    file.close()
-```
-
-然后zip文件跟jieya.py放在同一级目录，运行命令python  jieya.py file.zip，哦了！
-
-## smplayer 中文字幕乱码解决方法
-
-1. 打开选项－》首选现：选择字幕选项卡。
-2. 找到“默认字符编码”选项，在下拉框中选择“简体中文（cp936）”
-3. 再打开“字体”页卡（上边），选择“系统字体”在下拉选框中选择一种简体中文字体，如 Weu Quanyi Zen Hei 等。
-
-## VLC播放器显示文件名乱码
-
-初选项中修改一种支持中文的字体
 
 
 
@@ -865,64 +928,6 @@ E: Unable to lock the list directory
 
 　　上面介绍的手工安装软件的方法虽然是针对Ubuntu环境来介绍的，但是各种Linux系统下的从源文件安装应用的方法基本上都大同小异。
 
-## tar/zip/
-
-* -c: 建立压缩档案
-* -x：解压
-* -t：查看内容
-* -r：向压缩归档文件末尾追加文件
-* -u：更新原压缩包中的文件
-
-这五个是独立的命令，压缩解压都要用到其中一个，可以和别的命令连用但只能用其中一个。下面的参数是根据需要在压缩或解压档案时可选的。
-
-* -z：有gzip属性的
-* -j：有bz2属性的
-* -Z：有compress属性的
-* -v：显示所有过程
-* -O：将文件解开到标准输出
-
-下面的参数-f是必须的
-
--f: 使用档案名字，切记，这个参数是最后一个参数，后面只能接档案名。
-
-```shell
-    tar -cf all.tar *.jpg # 这条命令是将所有.jpg的文件打成一个名为all.tar的包。-c是表示产生新的包，-f指定包的文件名。
-    tar -rf all.tar *.gif # 这条命令是将所有.gif的文件增加到all.tar的包里面去。-r是表示增加文件的意思。
-    tar -uf all.tar logo.gif # 这条命令是更新原来tar包all.tar中logo.gif文件，-u是表示更新文件的意思。
-    tar -tf all.tar # 这条命令是列出all.tar包中所有文件，-t是列出文件的意思
-    tar -xf all.tar # 这条命令是解出all.tar包中所有文件，-x是解开的意思
-```
-
-压缩
-
-    tar –cvf jpg.tar *.jpg //将目录里所有jpg文件打包成tar.jpg
-    tar –czf jpg.tar.gz *.jpg   //将目录里所有jpg文件打包成jpg.tar后，并且将其用gzip压缩，生成一个gzip压缩过的包，命名为jpg.tar.gz
-    tar –cjf jpg.tar.bz2 *.jpg //将目录里所有jpg文件打包成jpg.tar后，并且将其用bzip2压缩，生成一个bzip2压缩过的包，命名为jpg.tar.bz2
-    tar –cZf jpg.tar.Z *.jpg   //将目录里所有jpg文件打包成jpg.tar后，并且将其用compress压缩，生成一个umcompress压缩过的包，命名为jpg.tar.Z
-    rar a jpg.rar *.jpg //rar格式的压缩，需要先下载rar for linux
-    zip jpg.zip *.jpg //zip格式的压缩，需要先下载zip for linux
-
-解压
-
-    tar –xvf file.tar //解压 tar包
-    tar -xzvf file.tar.gz //解压tar.gz
-    tar -xjvf file.tar.bz2   //解压 tar.bz2
-    tar –xZvf file.tar.Z   //解压tar.Z
-    unrar e file.rar //解压rar
-    unzip file.zip //解压zip
-
-
-总结
-
-    *.tar 用 tar –xvf 解压
-    *.gz 用 gzip -d或者gunzip 解压
-    *.tar.gz和*.tgz 用 tar –xzf 解压
-    *.bz2 用 bzip2 -d或者用bunzip2 解压
-    *.tar.bz2用tar –xjf 解压
-    *.Z 用 uncompress 解压
-    *.tar.Z 用tar –xZf 解压
-    *.rar 用 unrar e解压
-    *.zip 用 unzip 解压
 
 
 ## linux系统下无法访问电脑硬盘
@@ -1032,178 +1037,6 @@ Linux中，脚本语言环境中，即你用make xxx及其他一些普通linux�
     -rwxr-xr-x 1 root root 5842 Feb 25 16:42 /data1/1230/server-a
 
 
-## 打印某一文件夹下的所有文件名及其行数
-
-这里分别要考虑到该文件夹有或没有子文件夹的情况，用shell实现打印某一文件夹下的所有文件（如果是子文件夹下的文件，需要打印相对目录）及该文件的行数清单。列表类似这样：
-
-    filename1 100行
-    file/filename2 200行
-    .......
-
-    find -name "*" | xargs wc -l
-
-加 -type f 参数，过滤掉对目录的wc
-
-    find -name "*" -type f | xargs wc -l
-
-想要得到指定的格式，用万能的awk：
-
-    find -name "*" -type f| xargs wc -l | awk '{print $2" "$1"行"}'
-
-find 后面可加指定目录，如"/etc/"
-
-    find "/etc/" -name "*" -type f| xargs wc -l | awk '{print $2" "$1"行"}'
-
-## Linux常用命令
-
-```shell
-	rdate # set the system's date from a remote host. (sudo apt-get install rdate)
-	grep -R "org.apache.commons.FileUtils" *
-	grep -inr --color "ERROR" test_debug.log
-	ps –fu $USER | grep java # 显示当前用户的所有线程
-	ps -ef | grep 4736 # 查看4736端口是否被占用
-	netstat -tulnp | grep mysqld # 查看mysqld的监听情况
-	find . –name "*.log" | xargs grep error # 在当前目录的所有日志文件中查找关键词"error"
-	find . -mmin -1 # 查找最近一分钟修改过的文件
-	find . -mtime -1 # 查找最近一天修改过的文件
-	ls -t `find . -name "*.log"` #列出最近修改的文件
-    glxinfo | grep rendering # 查询OpenGL是否打开。提示：direct rendering: Yes 表明启动正常
-    cfdisk -Ps # 查看磁盘分区的用法   cfdisk   -Ps 磁盘设备名 只有一个硬盘也可以用 cfdisk -Ps
-    cfdisk -Ps /dev/sda
-    sfdisk -l
-
-    cat /proc/cpuinfo | grep flags # 查看cpuinfo中是否有lm，如果有lm表示支持64位，lm的意思是long mod
-    cat /proc/cpuinfo | grep flags | grep lm | wc -l # 输出结果大于 0 表示支持64位
-    cat /proc/cpuinfo |grep "physical id"|sort |uniq|wc -l # 查看物理CPU的个数
-    cat /proc/cpuinfo |grep "processor"|wc -l # 查看逻辑CPU的个数
-    cat /proc/cpuinfo |grep "cores"|uniq # 查看CPU是几核
-    cat /proc/cpuinfo |grep MHz|uniq # 查看CPU的主频
-    cat /proc/cpuinfo | grep name | cut -f2 -d: | uniq -c # 看到有8个逻辑CPU, 也知道了CPU型号
-    # 8  Intel(R) Xeon(R) CPU            E5410   @ 2.33GHz
-    
-    cat /proc/cpuinfo | grep physical | uniq -c # 说明实际上是两颗4核的CPU
-    # 4 physical id      : 0
-    # 4 physical id      : 1
-
-    getconf LONG_BIT # 说明当前CPU运行在32bit模式下, 但不代表CPU不支持64bit
-    # 32
-
-    cat /etc/issue | grep Linux # 查看当前操作系统发行版信息
-
-    apt-cache # query the APT cache
-    apt-file # APT package searching utility
-    apt-get
-    apt-cdrom # apt-cdrom is a tool to add CDROM's to APT's source list. 
-    apititude
-    dpkg
-
-    sudo sh *.sh # 打开.sh文件
-
-    ./*** # 打开其它可执行文件,如果没有可执行权限，需要chmod
-
-    man nautilus
-    man ed
-
-    file explore
-
-    xdg-open # 命令行快速打开各类型文件
-    mplayer xxx.mp3 # 使用mplayer打开
-
-    fc-list :lang=zh-cn # 查看字体
-
-    uname -a               # 查看内核/操作系统/CPU信息
-    head -n 1 /etc/issue   # 查看操作系统版本
-    cat /proc/cpuinfo      # 查看CPU信息
-    hostname               # 查看计算机名
-    lspci -tv              # 列出所有PCI设备
-    lsusb -tv              # 列出所有USB设备
-    lsmod                  # 列出加载的内核模块
-    env                    # 查看环境变量资源
-    free -m                # 查看内存使用量和交换区使用量
-    df -h                  # 查看各分区使用情况
-    du -sh <目录名>        # 查看指定目录的大小
-    grep MemTotal /proc/meminfo   # 查看内存总量
-    grep MemFree /proc/meminfo    # 查看空闲内存量
-    uptime                 # 查看系统运行时间、用户数、负载
-    cat /proc/loadavg      # 查看系统负载磁盘和分区
-    mount | column -t      # 查看挂接的分区状态
-    fdisk -l               # 查看所有分区
-    swapon -s              # 查看所有交换分区
-    hdparm -i /dev/hda     # 查看磁盘参数(仅适用于IDE设备)
-    dmesg | grep IDE       # 查看启动时IDE设备检测状况网络
-    ifconfig               # 查看所有网络接口的属性
-    iptables -L            # 查看防火墙设置
-    route -n               # 查看路由表
-    netstat -lntp          # 查看所有监听端口
-    netstat -antp          # 查看所有已经建立的连接
-    netstat -s             # 查看网络统计信息进程
-    ps -ef                 # 查看所有进程
-    top                    # 实时显示进程状态用户
-    w                      # 查看活动用户
-    id <用户名>            # 查看指定用户信息
-    last                   # 查看用户登录日志
-    cut -d: -f1 /etc/passwd   # 查看系统所有用户
-    cut -d: -f1 /etc/group    # 查看系统所有组
-    crontab -l             # 查看当前用户的计划任务服务
-    chkconfig --list       # 列出所有系统服务
-    chkconfig --list | grep on    # 列出所有启动的系统服务程序
-    rpm -qa                # 查看所有安装的软件包
-
-    netstat -anp | grep xxxx   #xxxx为端口号 Linux下查看某个端口下运行的是什么程序
-    lsof -i :xxxx    #xxxx为端口号
-
-    cat /proc/version # 查看内核版本命令
-    lsb_release -a ##查看linux版本
-    cat /etc/debian_version
-    cat /etc/issue
-    file /bin/bash
-    file /bin/cat
-    cat /etc/debian_version //Only for Debian
-    cat /etc/redhat-release //Only for Redhat
-    rpm -q redhat-release //Only for Redhat
-    redhat-release-5Server-5.6.0.3
-    
-    # 注:这种方式下可看到一个所谓的release号，比如上边的例子是5，这个release号和实际的版本之间存在一定的对应关系，如下：
-    # redhat-release-3AS-1 -> Redhat Enterprise Linux AS 3
-    # redhat-release-3AS-7.4 -> Redhat Enterprise Linux AS 3 Update 4
-    # redhat-release-4AS-2 -> Redhat Enterprise Linux AS 4
-    # redhat-release-4AS-2.4 -> Redhat Enterprise Linux AS 4 Update 1
-    # redhat-release-4AS-3 -> Redhat Enterprise Linux AS 4 Update 2
-    # redhat-release-4AS-4.1 -> Redhat Enterprise Linux AS 4 Update 3
-    # redhat-release-4AS-5.5 -> Redhat Enterprise Linux AS 4 Update 4
-
-    # man update-alternatives
-
-    # Configure参数解释说明: autoconf: 16 Running configure Scripts
-
-    # 把/dev/cdrom目录制作为镜像，名字为/root/rh1.iso，可以使用下面命令中的任意一条
-    dd if=/dev/cdrom of=/root/rh1.iso
-    #cat /dev/cdrom >;/root/1.iso
-    mkisofs -r -o myiso.iso /dev/cdrom
-    cp -r /home/user name.iso
-
-    ## Linux下打包压缩war和解压war包
-    jar -cvfM0 game.war ./ # 把当前目录下的所有文件打包成game.war
-    jar -xvf game.war # 解压game.war到当前目录
-
-```
-
-## 在shell中使用chrome命令
-
-以linux的bash shell为例说明 google-chrome这个命令的使用方法
-
-linux中打开chrome浏览器的命令为:"google-chrome"(打开chromium浏览器的命令为:"chromium-browser",chrome浏览器是基于开源的chromium浏览器开发的)
-
-在basn中输入“google-chrome” 执行命令后即可弹出chrome浏览器的窗口,网址为设置的默认的网址
-
-在ban中输入"google-chrome --help"或者"google-chrome -h"即可弹出关于google-chrome这个命令的一些用法信息
-
-在bash中输入"google-chrome  网址"即可打开指定的网址
-
-在bash中输入"google-chrome --app="http://www.baidu.com"" 就可以以应用程序的方式打开网址
-
-其他命令的使用方式同上
-
 
 ## lspci的使用
 
@@ -1241,50 +1074,6 @@ DOS/Windows文本文件格式转换成Linux/Unix文本文件格式: `sed -e 's/.
     dos2unix filename
 
 
-## Linux的rename命令
-
-不同于Dos下的rename命令，linux下的rename命令功能非常强大。 rename命令的格式：
-
-    rename [ -v ] [ -n ] [ -f ] perlexpr [ files ]
-
-第一个参数：被替换掉的字符串
-
-第二个参数：替换成的字符串
-
-第三个参数：匹配要替换的文件模式
-
-    rename  main1.c main.c main1.c  # 将main1.c重命名为main.c
-
-rename支持通配符
-
-    ?    可替代单个字符
-    *    可替代多个字符
-    [charset]  可替代charset集中的任意单个字符
-
-eg：文件夹中有这些文件foo1, ..., foo9, foo10, ..., foo278，如果使用
-
-    rename foo foo0 foo?
-
-会把foo1到foo9的文件重命名为foo01到foo09，重命名的文件只是有4个字符长度名称的文件，文件名中的foo被替换为foo0。如果使用
-
-    rename foo foo0 foo??
-
-foo01到foo99的所有文件都被重命名为foo001到foo099，只重命名5个字符长度名称的文件，文件名中的foo被替换为foo0。如果使用
-
-    rename foo foo0 foo*
-
-foo001到foo278的所有文件都被重命名为foo0001到foo0278，所有以foo开头的文件都被重命名。如果使用
-
-    ename foo0 foo foo0[2]*
-
-从foo0200到foo0278的所有文件都被重命名为foo200到foo278，文件名中的foo0被替换为foo。
-
-rename支持正则表达式
-
-    rename "s/AA/aa/" *             //把文件名中的AA替换成aa
-    rename "s/.html/.php/" *     //把.html 后缀的改成 .php后缀
-    rename "s/$//.txt/" *             //把所有的文件名都以txt结尾
-    rename "s//.txt//" *               //把所有以.txt结尾的文件名的.txt删掉
 
 ##使用script记录Linux终端会话
 
@@ -1379,26 +1168,6 @@ screen为多重视窗管理程序。此处所谓的视窗，是指一个全屏�
     C-a K -> kill window，强行关闭当前的 window
 
 screen可以同步显示你的屏幕给另一个会话。这在给别人处理问题是尤为好用，可以让对方同步看到你的操作。双方同时登陆一台主机，演示方输入  screen -S example，观看方输入 screen -x example，即可同步显示演示方输入的内容
-
-## tree命令
-
-有时我们需要生成目录树结构。这时需要用到TREE命令。当然tree支持重定向至文件...
-
-tree -L 4 >dirce.doc即可生成UTF8格式的文档..我们也可以在windows 下查看..
-
-注意:生成的TXT或其他文件在win下面打开时也为乱码...这时我们要选择字符编码为UTF-8..当然..UTF-8是你linux下的默认字符集才可以......
-
-## Linux下创建目录和文件
-
-创建文件夹：
-
-    mkdir [-p][--help][--version][-m <目录属性>][目录名称]
-
-创建文件：
-
-    vi a.php
-    echo “abfdsfdsf” > b.txt
-    cat > c.txt
 
 
 ## linux连接投影机
@@ -1664,75 +1433,7 @@ $ ssh localhost
 
 　　ps也可打印其路径,但不是万能的,有些路径只能使用以上两种方法取得.
 
-#一些网络文章
 
-12款最佳Linux命令行终端工具
-
-http://www.vaikan.com/best-terminal-alternatives-for-linux-systems/
-
-Linux下好玩的命令
-
-http://www.cnblogs.com/joeyupdo/articles/2768113.html
-
-动画演示一些无用但有趣的Linux命令
-
-http://www.vaikan.com/10-funny-liunx-command/
-
-Linux中10个有用的命令行补齐命令
-
-http://www.geekfan.net/8169/
-
-Linux中的10个链接操作符
-
-http://linux.cn/thread/12205/1/1/
-
-7 个致命的 Linux 命令
-
-http://linux.cn/thread/10246/1/1/
-
-翻墙！（Chrome+代理工具GoAgent+SwitchySharp插件/火狐Firefox+AutoProxy）
-
-http://blog.chinaunix.net/uid-24250828-id-3788304.html
-
-通过命令行查找一个IP的地理位置信息
-
-http://www.geekfan.net/7863/
-
-多终端管理器tmux使用详解
-
-http://blog.csdn.net/stelalala/article/details/9025691
-
-Linux系统里如何彻底的清空屏幕？
-
-http://www.vaikan.com/how-to-clear-the-terminal-screen-for-real-in-case-of-linux/
-
-如何在Linux上将HTML页面转化成png图片
-
-http://linux.cn/article-2708-1.html
-
-SSH原理与运用（一）：远程登录
-
-http://www.ruanyifeng.com/blog/2011/12/ssh_remote_login.html
-
-SSH原理与运用（二）：远程操作与端口转发
-
-http://www.ruanyifeng.com/blog/2011/12/ssh_port_forwarding.html
-
-LNMP安装快速导航（官网教程）
-
-http://lnmp.org/install.html
-
-ubuntu删除旧内核和多余启动项
-
-http://pppboy.blog.163.com/blog/static/3020379620113173147935/
-
-各个Linux版本的本地root密码破解方法
-
-http://os.51cto.com/art/200910/159523.htm
-
-apt-get remove, apt-get autoremove和aptitude remove的区别
-
-http://blog.csdn.net/jiangxinnju/article/details/38341283
 
 # Linux编程学习之路
 
@@ -1900,153 +1601,7 @@ while((ch=getchar())!='/n'&&ch!=EOF);
 
 以上语句将清除stdin中的字符，知道遇到换行符或者是读完缓冲区。
 
-# linux中无 conio.h的解决办法（原创）
 
-conio.h不是C标准库中的头文件，在ISO和POSIX标准中均没有定义。conio是Console Input/Output（控制台输入输出）的简写，其中定义了通过控制台进行数据输入和数据输出的函数，主要是一些用户通过按键盘产生的对应操作，比如getch()函数等等。大部分DOS，Windows，Phar Lap，DOSX，OS/2 等平台上的C编译器提供此文件，UNIX 和Linux平台的C编译器本身通常不包含此头文件，但已经有其兼容包，可参考：
-
-http://conio.sourceforge.net/
-
-另外大家平时主要是利用conio.h这个头文件中的getch()函数，即读取键盘字符但是不显示出来（without echo)，但是含有conio.h的程序在linux无法直接编译通过，因为linux没有这个头文件，除了利用上述的兼容包外还可以在linux采用原生的方法达到同样的效果，那就是利用linux系统的命令stty –echo，它代表不显示输入内容，源代码如下。
-
-//in windows
-
-#include<stdio.h>
-
-#include<conio.h>
-
-int main(){
-
-char c;
-
-printf("input a char:");
-
-c=getch();
-
-printf("You have inputed:%c \n",c);
-
-return 0;
-
-}
-
-//in linux
-
-#include<stdio.h>
-
-int main(){
-
-char c;
-
-printf("Input a char:");
-
-system("stty -echo");
-
-c=getchar();
-
-system("stty echo");
-
-printf("You have inputed:%c \n",c);
-
-return 0;
-
-}
-
-#改变linux终端颜色
-
-文本终端的颜色可以使用“ANSI非常规字符序列”来生成，“ANSI非常规字符序列”均以 Esc[ 作为控制码的开始标志，其中，Esc 的ansi码为 27-十进制，33-八进制，所以在c中，可以使用 \033 表示。
-
-
-
-echo -e "\033[前景;背景;光标m ME \033[0m"
-
-
-
-举例：echo -e "\033[44;37;5m ME \033[0m COOL"
-
-
-
-以上命令设置背景成为蓝色，前景白色，闪烁光标，输出字符“ME”，然后重新设置屏幕到缺省设置，输出字符 “COOL”。“e”是命令 echo 的一个可选项，它用于激活特殊字符的解析器。“\033”引导非常规字符序列。“m”意味着设置属性然后结束非常规字符序列，这个例子里真正有效的字符是 “44;37;5” 和“0”。修改“44;37;5”可以生成不同颜色的组合，数值和编码的前后顺序没有关系。可以选择的编码如下所示：
-
-
-
-前景      背景       颜色
-
----------------------------------------
-
-30          40          黑色
-
-31          41          红色
-
-32          42          绿色
-
-33          43          黄色
-
-34          44          蓝色
-
-35          45          紫红色
-
-36          46          青蓝色
-
-37          47          白色
-
-
-
-
-
-\33[0m 关闭所有属性
-
-\33[1m 设置粗体
-
-\33[2m 设置一半亮度（模拟彩色显示器的颜色）
-
-\33[4m 下划线
-
-\33[5m 闪烁
-
-\33[7m 反显
-
-\33[8m 消隐
-
-\33[30m -- \33[37m 设置前景色
-
-\33[38m在缺省的前景颜色上设置下划线
-
-\33[39m在缺省的前景颜色上关闭下划线
-
-\33[40m -- \33[47m 设置背景色
-
-\33[nA 光标上移n行
-
-\33[nB 光标下移n行
-
-\33[nC 光标右移n行
-
-\33[nD 光标左移n行
-
-\33[y;xH设置光标位置
-
-\33[2J 清屏
-
-\33[K 清除从光标到行尾的内容
-
-\33[s 保存光标位置
-
-\33[u 恢复光标位置
-
-\33[?25l 隐藏光标
-
-\33[?25h 显示光标
-
-\033[0q         　	关闭所有的键盘指示灯
-
-\033[1q         　	设置“滚动锁定”指示灯 (Scroll Lock)
-
-\033[2q         　	设置“数值锁定”指示灯 (Num Lock)
-
-\033[3q         　	设置“大写锁定”指示灯 (Caps Lock)
-
-\033[15:40H     		把关闭移动到第15行，40列
-
-\007            　　	发蜂鸣生beep
 
 # linux下如何用c语言调用shell命令
 
@@ -2328,273 +1883,6 @@ gprof 是安装在你的 Linux 系统的 /usr/bin 目录下的一个程序. 它�
 
 gprof <program_name>
 
-## hexdump
-
-可用参数
-
-	[-bcCdovx] [-e format_string] [-f format_file] [-n length] [-s skip] file ...
-
-
-
-参数含义
-
-	-b	单字节八进制显示，十六进制显示偏移量，每行显示16个字符，每字符用三位显示，不足补零，列间以空格分隔
-
-	-c	单字节字符显示，十六进制显示偏移量，每行显示16个字符，每字符三位显示，不足补空格，列间以空格分隔
-
-	-C	标准十六进制+ascii码显示，十六进制显示偏移量，每行16个字符，每字符两位显示，不足补0，结尾显示当前16位数据的ascii码值，以|框住
-
-	-d	双字节十进制显示，十六进制显示偏移量，每行8组（16字节）每组5位，不足补零，列间以空格分隔，以无符号10进制数值显示
-
-	-e format_string
-
-		以指定的格式显示
-
-	-f format_file
-
-		根据format file中的格式进行输出，忽略formatfile中空行及以#开始的行会
-
-	-n length
-
-		只显示length个字节的数据
-
-	-o	双字节八进制显示。十六进制显示偏移量，每行8组数据，每数据占两字节，6列，不足补零，以空格分隔
-
-	-s offset
-
-		跳过从开始的offset个字节，默认输入十进制，以0x或0X开始按16进制处理，否则如以0开始按八进制处理，如果以b/k/m结尾，则原数值乘以512/1024/1048576
-
-	-v	显示所有数据，如果不包含这一选项，对于同上一行完全相同的数据，hexdump会以*代替显示
-
-	-x	两位十六进制显示.十六进制显示偏移量，每行8组数据，每数据占两字节，4列，不足补零，以空格分隔
-
-
-
-
-
-
-
--e 指定格式字符串，格式字符串包含在一对单引号中，格式字符串形如：
-
-'a/b "format1" "format2"'
-
-
-
-
-
-每个格式字符串由三部分组成，每个由空格分隔，第一个形如a/b，b表示对每b个输入字节应用format1格式，a表示对每a个输入字节应用format2格式，一般a>b，且b只能为1，2，4，另外a可以省略，省略则a=1。format1和format2中可以使用类似printf的格式字符串，如：
-
-%02d：两位十进制
-
-%03x：三位十六进制
-
-%02o：两位八进制
-
-%c：单个字符等
-
-
-
-
-
-还有一些特殊的用法：
-
-%_ad：标记下一个输出字节的序号，用十进制表示
-
-%_ax：标记下一个输出字节的序号，用十六进制表示
-
-
-
-%_ao：标记下一个输出字节的序号，用八进制表示
-
-
-
-%_p：对不能以常规字符显示的用.代替
-
-同一行如果要显示多个格式字符串，则可以跟多个-e选项
-
-
-
-
-
-
-
-
-
-例1：
-
-输入：
-
-hexdump -e '16/1 "%02X " "  |  "' -e '16/1 "%_p" "\n"' test
-
-
-
-输出：
-
-00 01 02 03 04 05 06 07 08 09 0A 0B 0C 0D 0E 0F  |  ................
-
-10 11 12 13 14 15 16 17 18 19 1A 1B 1C 1D 1E 1F  |  ................
-
-20 21 22 23 24 25 26 27 28 29 2A 2B 2C 2D 2E 2F  |   !"#$%&'()*+,-./
-
-
-
-00 01 02 03 04 05 06 07 08 09 0A 0B 0C 0D 0E 0F  |  ................
-
-10 11 12 13 14 15 16 17 18 19 1A 1B 1C 1D 1E 1F  |  ................
-
-20 21 22 23 24 25 26 27 28 29 2A 2B 2C 2D 2E 2F  |   !"#$%&'()*+,-./
-
-
-
-
-
-
-
-
-
-例2：
-
-输入：
-
-hexdump -e '1/1 "0x%08_ax "' -e '8/1 "%02X " " *  "' -e '8/1 "%_p" "\n"' test
-
-
-
-输出：
-
-0x00000000 00 01 02 03 04 05 06 07 *  ........
-
-0x00000008 08 09 0A 0B 0C 0D 0E 0F *  ........
-
-0x00000010 10 11 12 13 14 15 16 17 *  ........
-
-0x00000018 18 19 1A 1B 1C 1D 1E 1F *  ........
-
-0x00000020 20 21 22 23 24 25 26 27 *   !"#$%&'
-
-0x00000028 28 29 2A 2B 2C 2D 2E 2F *  ()*+,-./
-
-
-
-0x00000000 00 01 02 03 04 05 06 07 *  ........
-
-0x00000008 08 09 0A 0B 0C 0D 0E 0F *  ........
-
-0x00000010 10 11 12 13 14 15 16 17 *  ........
-
-0x00000018 18 19 1A 1B 1C 1D 1E 1F *  ........
-
-0x00000020 20 21 22 23 24 25 26 27 *   !"#$%&'
-
-0x00000028 28 29 2A 2B 2C 2D 2E 2F *  ()*+,-./
-
-
-
-
-
-
-
-例3：
-
-输入：
-
-
-
-hexdump -e '1/1 "%02_ad#    "' -e '/1 "hex = %02X * "' -e '/1 "dec = %03d | "' -e '/1 "oct = %03o"' -e '/1 " \_\n"' -n 20 test
-
-
-
-输出：
-
-00#    hex = 00 * dec = 000 | oct = 000 _
-
-01#    hex = 01 * dec = 001 | oct = 001 _
-
-02#    hex = 02 * dec = 002 | oct = 002 _
-
-03#    hex = 03 * dec = 003 | oct = 003 _
-
-04#    hex = 04 * dec = 004 | oct = 004 _
-
-05#    hex = 05 * dec = 005 | oct = 005 _
-
-06#    hex = 06 * dec = 006 | oct = 006 _
-
-07#    hex = 07 * dec = 007 | oct = 007 _
-
-08#    hex = 08 * dec = 008 | oct = 010 _
-
-09#    hex = 09 * dec = 009 | oct = 011 _
-
-10#    hex = 0A * dec = 010 | oct = 012 _
-
-11#    hex = 0B * dec = 011 | oct = 013 _
-
-12#    hex = 0C * dec = 012 | oct = 014 _
-
-13#    hex = 0D * dec = 013 | oct = 015 _
-
-14#    hex = 0E * dec = 014 | oct = 016 _
-
-15#    hex = 0F * dec = 015 | oct = 017 _
-
-16#    hex = 10 * dec = 016 | oct = 020 _
-
-17#    hex = 11 * dec = 017 | oct = 021 _
-
-18#    hex = 12 * dec = 018 | oct = 022 _
-
-19#    hex = 13 * dec = 019 | oct = 023 _
-
-
-
-00#    hex = 00 * dec = 000 | oct = 000 _
-
-01#    hex = 01 * dec = 001 | oct = 001 _
-
-02#    hex = 02 * dec = 002 | oct = 002 _
-
-03#    hex = 03 * dec = 003 | oct = 003 _
-
-04#    hex = 04 * dec = 004 | oct = 004 _
-
-05#    hex = 05 * dec = 005 | oct = 005 _
-
-06#    hex = 06 * dec = 006 | oct = 006 _
-
-07#    hex = 07 * dec = 007 | oct = 007 _
-
-08#    hex = 08 * dec = 008 | oct = 010 _
-
-09#    hex = 09 * dec = 009 | oct = 011 _
-
-10#    hex = 0A * dec = 010 | oct = 012 _
-
-11#    hex = 0B * dec = 011 | oct = 013 _
-
-12#    hex = 0C * dec = 012 | oct = 014 _
-
-13#    hex = 0D * dec = 013 | oct = 015 _
-
-14#    hex = 0E * dec = 014 | oct = 016 _
-
-15#    hex = 0F * dec = 015 | oct = 017 _
-
-16#    hex = 10 * dec = 016 | oct = 020 _
-
-17#    hex = 11 * dec = 017 | oct = 021 _
-
-18#    hex = 12 * dec = 018 | oct = 022 _
-
-19#    hex = 13 * dec = 019 | oct = 023 _
-
-## GDB教程
-
-
-
-LINUX下GDB调试
-
-http://blog.csdn.net/sco_field/article/details/4310987
 
 ## objdump（反汇编工具）
 
@@ -2715,107 +2003,6 @@ cp $FILENAME /dev
 
 fi
 
-
-
-
-
-7．某系统管理员需每天做一定的重复工作，请按照下列要求，编制一个解决 方案 ：
-
-（1）在下午4 :50删除/abc目录下的全部子目录和全部文件；
-
-（2）从早8:00～下午6:00每小时读取/xyz目录下x1文件中每行第一个域的全部数据加入到/backup目录下的bak01.txt文件内；
-
-（3）每逢星期一下午5:50将/data目录下的所有目录和文件归档并压缩为文件：backup.tar.gz；
-
-（4）在下午5:55将IDE接口的CD-ROM卸载（假设：CD-ROM的设备名为hdc）；
-
-（5）在早晨8:00前开机后启动。
-
-
-
-参考答案:
-
-解决方案：
-
-（1）用vi创建编辑一个名为prgx的crontab文件；
-
-	prgx文件的内容：
-
-50 16 * * * rm -r /abc/*
-
-
-
-（2）、0 8-18/1 * * * cut -f1 /xyz/x1 >;>; /backup/bak01.txt
-
-（3）、50 17 * * * tar zcvf backup.tar.gz /data
-
-（4）、55 17 * * * umount /dev/hdc
-
-（5）、由超级用户登录，用crontab执行 prgx文件中的内容：
-
-root@xxx:#crontab prgx；在每日早晨8:00之前开机后即可自动启动crontab。
-
-－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－
-
-8．设计一个shell程序，在每月第一天备份并压缩/etc目录的所有内容，存放在/root/bak目录里，且文件名为如下形式yymmdd_etc，yy为年，mm为月，dd为日。Shell程序fileback存放在/usr/bin目录下。
-
-参考答案：
-
-（1）编写shell程序fileback：
-
-#!/bin/sh
-
-DIRNAME=`ls /root | grep bak`
-
-if [ -z "$DIRNAME" ] ; then
-
-mkdir /root/bak
-
-cd /root/bak
-
-fi
-
-YY=`date +%y`
-
-MM=`date +%m`
-
-DD=`date +%d`
-
-BACKETC=$YY$MM$DD_etc.tar.gz
-
-tar zcvf $BACKETC /etc
-
-echo "fileback finished!"
-
-（2）编写任务定时器：
-
-echo "0 0 1 * * /bin/sh /usr/bin/fileback" >; /root/etcbakcron
-
-crontab /root/etcbakcron
-
-或使用crontab -e 命令添加定时任务：
-
-0 1 * * * /bin/sh /usr/bin/fileback
-
-
-
-9．有一普通用户想在每周日凌晨零点零分定期备份/user/backup到/tmp目录下，该用户应如何做？
-
-参考答案：（1）第一种方法：
-
-用户应使用crontab –e 命令创建crontab文件。格式如下：
-
-0 0 * * sun cp –r /user/backup /tmp
-
-（2）第二种方法：
-
-用户先在自己目录下新建文件file，文件内容如下：
-
-0 * * sun cp –r /user/backup /tmp
-
-然后执行 crontab file 使生效。
-
-
 # shell “syntax error:unexpected end of file”
 
 今天在写Shell时，运行时出现了这样的错误。
@@ -2900,98 +2087,7 @@ echo $ip
 ```
 
 
-## C语言调试手段:锁定错误的实现方法
 
-在项目开发工程中，如果能确定哪个文件下的哪个函数下的哪行出错--即锁定错误，那该多好啊，该文章就是为此而作的。首先来了解一下文件默认的输出信息的函数吧：
-
-```C
-    printf("line : %d\n", __LINE__);                   //当前行数
-    printf("filename : %s\n", __FILE__);             //当前文件名
-    printf("function : %s\n", __FUNCTION__);  //当前函数
-    printf("time : %s\n", __TIME__);                  //当前时间
-    printf ("date : %s\n",  __DATE__);              //当前日期
-
-    line : 10
-    filename : test.c
-    function : main.c
-    time : 14:13:51
-    date : Oct 13 2012
-```
-
-理论已足，那就来看看如何锁定错误吧：
-
-一、源文件(erroutput.c)
-
-```C
-#include <stdio.h>
-#include <assert.h>
-#define _DEBUG(msg...)    printf("[ %s,%s, %d ]=>",__FILE__, __FUNCTION__, __LINE__);  printf(msg);printf("\r\n")
-#define _ERROR(msg...)    printf("[ error: %s, %d]=>", __FILE__,  __LINE__);printf(msg); printf("\r\n")
-#define _ASSERT(exp)      \
-                        do {\
-                                if (!(exp)) {\
-                                printf( "[ %s ]  ",#exp);printf("\r\n");\
-                                assert(exp);\
-                                }\
-                        } while (0)
-
-int main(void)
-{
-        char *p = NULL;
-        _DEBUG("DEBUG!");
-        _ERROR("ERROR!");
-        _ASSERT(NULL != p);
-        return 0;
-}
-```
-
-二、输出：
-
-    [root@localhost for_test]# gcc erroutput.c
-    [root@localhost for_test]# ./a.out
-    [ erroutput.c,main, 17 ]=>DEBUG!
-    [ error: erroutput.c, 18]=>ERROR!
-    [ NULL != p ]
-    a.out: erroutput.c:19: main: Assertion `((void *)0) != p' failed.
-    已放弃
-
-TI处理：
-
-```
-    #ifdef DEBUG
-        #define DBG(fmt, args...)  printf("Debug " fmt, ##args)// ##运算符用于把参数连接到一起。预处理程序把出现在##两侧的参数合并成一个符号。
-    #else
-        #define DBG(fmt, args...)
-    #endif
-    #define ERR(fmt, args...)  printf("Error " fmt, ##args)
-    
-    [root@localhost for_test]# cat debug_err.c
-    
-    #include <stdio.h>
-    //#define DEBUG
-    int main(void)
-    {
-           DBG("xxxx\n");
-           ERR("xxxx\n");
-           return 0;
-    }
-    
-    [root@localhost for_test]# ./a.out
-    
-    Error xxxx
-    
-    #ifdef __DEBUG
-    
-        #define DBG(fmt, args...) fprintf(stderr,"Encode Debug: " fmt, ## args)
-    
-    #else
-    
-        #define DBG(fmt, args...)
-    
-    #endif
-    
-    #define ERR(fmt, args...) fprintf(stderr,"Encode Error: " fmt, ## args)
-```
 
 ## 解决ubuntu下找不到libgtk-x11-2.0.so.0
 
@@ -3022,107 +2118,11 @@ If you os is ubuntu 14.04, do this before:
     hostname # 查看主机名
     hostname --fqdn # 查看FQDN名字
 
-## Linux下分割合并文
 
-切割合并文件在linux下用split和cat就可以完成。下面举些实例进行说明。
 
-1.文件切割
 
-文件切割模式分为两种：文本文件、二进制模式。
 
-1.1文本模式
 
-文本模式只适用于文本文件，用这种模式切割后的每个文件都是可读的。文本模式又分为两种：
-
-按最大文件大小切割；
-
-按文本行数切割。
-
-1.1.1最大文件大小切割
-
-split -C 5k duanxin split
-
-将文本文件duanxin按每块最大5k的大小进行切割，不打碎行。输出文件名类似splitaa, splitab……
-
-split -b 5k duanxin split
-
-每个分块（当然，最后一个不保证）大小都是5k，可能会打碎行。
-
-1.1.2 按文本行数切割
-
-split -l 100 duanxin split
-
-每个分块100行，不考虑大小。日志分析时应该有用。
-
-1.2 二进制模式
-
-split -b 5k duanxin split
-
-每个分块（当然，最后一个不保证）大小都是5k，基本不可读。任何类型文件都可以用这种切割模式。
-
-2.文件合并
-
-cat split* >newduanxin
-
-不管用什么方式切割，合并方法不变。
-
-3.其它
-
-split可以用-a选项指定输出文件名的长度。如
-
-split -l 100 -a 3 duanxin split
-
-则输出文件出类似于splitaaa,splitaab。不指定时默认为2。
-
-用-b或-C指定分块大小时，可用的单位有，b for 512bytes, k for 1Kbytes, m for 1 Megbytes.
-
-split 参数：
-
--a, --suffix-length=N   指定输出文件名的后缀，默认为2个
-
--b, --bytes=SIZE        指定输出文件的字节数
-
--C, --line-bytes=SIZE  每一输出档中，单行的最大 byte 数
-
--d, --numeric-suffixes  使用数字代替字母做后缀
-
--l, --lines=NUMBER    NUMBER 值为每一输出档的列数大小
-
-## ubuntu下终端路径只显示当前目录
-
-最近一直在用终端操作，看着他长长的路径名实在不爽， 动手来改改咯～
-
-$: sudo vim ~/.bashrc
-
-这个文件记录了用户终端配置
-
-找到
-
-if [ "$color_prompt " = yes ]; then
-
-    PS1 ='{debian_chroot:+(debian_chroot)}
-
-\033[01;32m
-
-\u@\h
-
-\033[00m
-
-:
-
-\033[01;34m
-
-\W
-
-\033[00m
-
-\$ '
-
-else
-
-    PS1 ='{debian_chroot:+(debian_chroot)}\u@\h:\W \$ '
-
- 将蓝色的w由小写改成大写，可以表示只显示当前目录名称.
 
 # ubuntu终端颜色消失的问题
 
@@ -3224,74 +2224,7 @@ ls .Xauthority -l
 
 此时拥有者已经变为用户。按下shift + ctrl + F7切换回图形登陆界面登陆即可。
 
-# watchdog
 
-Linux 自带了一个 watchdog 的实现，用于监视系统的运行，包括一个内核 watchdog module 和一个用户空间的 watchdog 程序。内核 watchdog 模块通过 /dev/watchdog 这个字符设备与用户空间通信。用户空间程序一旦打开 /dev/watchdog 设备（俗称“开门放狗”），就会导致在内核中启动一个1分钟的定时器（系统默认时间），此后，用户空间程序需要保证在1分钟之内向这个设备写入数据（俗称“定期喂狗”），每次写操作会导致重新设定定时器。如果用户空间程序在1分钟之内没有写操作，定时器到期会导致一次系统
-
-reboot 操作（“狗咬人了”呵呵）。通过这种机制，我们可以保证系统核心进程大部分时间都处于运行状态，即使特定情形下进程崩溃，因无法正常定时“喂狗”，Linux系统在看门狗作用下重新启动（reboot），核心进程又运行起来了。多用于嵌入式系统。
-
-
-
-打开 /dev/watchdog 设备（“开门放狗”）：
-
-
-
-int fd_watchdog = open("/dev/watchdog", O_WRONLY);
-
-if(fd_watchdog == -1) {
-
-	int err = errno;
-
-	printf("\n!!! FAILED to open /dev/watchdog, errno: %d, %s\n", err, strerror(err));
-
-	syslog(LOG_WARNING, "FAILED to open /dev/watchdog, errno: %d, %s", err, strerror(err));
-
-}
-
-每隔一段时间向 /dev/watchdog 设备写入数据（“定期喂狗”）：
-
-
-
-//feed the watchdog
-
-if(fd_watchdog >= 0) {
-
-	static unsigned char food = 0;
-
-	ssize_t eaten = write(fd_watchdog, &food, 1);
-
-	if(eaten != 1) {
-
-		puts("\n!!! FAILED feeding watchdog");
-
-		syslog(LOG_WARNING, "FAILED feeding watchdog");
-
-	}
-
-}
-
-关闭 /dev/watchdog 设备，通常不需要这个步骤：
-
-
-
-close(fd_watchdog);
-
-所需头文件：
-
-    #include <unistd.h>
-    #include <sys/stat.h>
-    #include <syslog.h>
-    #include <errno.h>
-
-# tailf
-
-tailf命令几乎等同于tail -f，严格说来应该与tail --follow=name更相似些。当文件改名之后它也能继续跟踪，特别适合于日志文件的跟踪。与tail -f不同的是，如果文件不增长，它不会去访问磁盘文件，这样带来的好处是如果没有新的日志产生，日志文件的时间戳(access time)就不会改变。tailf特别适合那些便携机上跟踪日志文件，因为它能省电，因为减少了磁盘访问嘛。
-
-格式：tailf logfile
-
-动态跟踪日志文件logfile，最初的时候打印文件的最后10行内容。
-
-Ctrl+C 停止
 
 # vimrc，bashrc中rc的含义
 

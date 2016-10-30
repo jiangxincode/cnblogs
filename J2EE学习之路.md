@@ -89,6 +89,9 @@
 * How to make Java 6, which fails SSL connection with “SSL peer shut down incorrectly”, succeed like Java 7?: http://stackoverflow.com/questions/15589880/how-to-make-java-6-which-fails-ssl-connection-with-ssl-peer-shut-down-incorrec
 * 使用监听器对Spring bean id进行唯一校验: http://chenzhou123520.iteye.com/blog/1774106
 * 'Must Override a Superclass Method' Errors after importing a project into Eclipse: http://stackoverflow.com/questions/1678122/must-override-a-superclass-method-errors-after-importing-a-project-into-eclips
+* Android安全开发之ZIP文件目录遍历: http://www.cnblogs.com/alisecurity/p/5610654.html
+* 华为内部的Web安全原则: http://www.ha97.com/5520.html
+* su cannot set user id Resource temporarily unavailable故障解决 : http://blog.itpub.net/12457158/viewspace-753400
 
 
 
