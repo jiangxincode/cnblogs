@@ -116,6 +116,7 @@
 * Oracle 10g: Issue with startup mount command (ORA-24324, ORA-01041): http://stackoverflow.com/questions/12470893/oracle-10g-issue-with-startup-mount-command-ora-24324-ora-01041
 * 你所不知道的OERR: http://blog.163.com/jet_it_life/blog/static/2050970832012320146595/
 * 第9 章 HWM 与数据库性能的探讨: Oracle 数据库性能优化
+* Oracle数据库shutdown immediate被hang住的几个原因: http://www.cnblogs.com/kerrycode/p/3506430.html
 
 
 ## PL/SQL Developer

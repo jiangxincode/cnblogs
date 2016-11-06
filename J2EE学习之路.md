@@ -40,25 +40,14 @@
 * The Java serialization algorithm revealed: http://www.javaworld.com/article/2072752/the-java-serialization-algorithm-revealed.html
 * Java Performance Tuning Guide: http://java-performance.info/
 * 构建一个文本可视化和分析应用程序: http://www.ibm.com/developerworks/cn/opensource/os-txtviz/
-* Top 10 Java Debugging Tips with Eclipse: http://javapapers.com/core-java/top-10-java-debugging-tips-with-eclipse/
 * POJO模式: http://www.cnblogs.com/yezhenhan/archive/2011/11/21/2256642.html
-* Linux下安装最新的Eclipse：http://www.cnblogs.com/jiangxinnju/p/4780268.html
-* eclipse调试的方法和技巧：http://www.cnblogs.com/ycxyyzw/archive/2013/03/27/2983905.html
-* eclipse调试java程序的九个技巧: http://www.cnblogs.com/lingiu/p/3802391.html
-* eclipse远程调试Tomcat方法:http://blog.csdn.net/afgasdg/article/details/9236877
-* Eclipse远程调试出现“JDWP Transport dt_socket failed to initialize”的解决方案: http://www.cnblogs.com/jiangxinnju/p/4906457.html
 * tomcat startup.sh/shutdown.sh/setclasspath.sh/catalina.sh分析：http://vekergu.blog.51cto.com/9966832/d-2
 * src源代码生成html格式文档：http://www.cnblogs.com/shenliang123/archive/2012/04/23/2466483.html
 * 自己动手制作chm格式开源文档：http://www.cnblogs.com/shenliang123/archive/2012/04/23/2466441.html
 * Javadoc转换chm帮助文档的四种方法总结: http://lishunli.iteye.com/blog/1051688
 * Java数字图像处理基础知识 - 必读: http://blog.csdn.net/jia20003/article/details/7279667
 * Java反序列化时对象注入可以造成代码执行漏洞: http://0day5.com/archives/3572
-* Eclipse中用两个控制台测试网络通信程序: http://blog.csdn.net/f309587969/article/details/7097976
-* Eclipse jar打包详解: http://jingyan.baidu.com/article/219f4bf7d0ef87de442d3820.html
 * Java NIO与IO的区别和比较: http://my.oschina.net/u/2001537/blog/353035
-* Eclipse中Ant的配置与测试 转: http://www.cnblogs.com/jiangxinnju/p/5040436.html
-* 如何使用Eclipse将Java项目打成jar包？:http://jingyan.baidu.com/article/4dc40848b5a8c9c8d946f139.html
-* 如何使用eclipse生成javadoc帮助文档？:http://jingyan.baidu.com/article/dca1fa6f4d3d7ff1a4405239.html
 * [改编]深入equals方法，讨论instanceof的使用！: http://www.blogjava.net/bacoo/archive/2007/12/20/169176.html
 * Struts2、Spring和Hibernate应用实例: http://871421448.iteye.com/blog/1546058
 * spring中注册bean(通过代码动态注册): http://blog.csdn.net/buyaore_wo/article/details/8119577
@@ -82,16 +71,20 @@
 * ServletInputStream的重复读取（多次读取）（转）: http://www.cnblogs.com/jiangxinnju/p/5709378.html
 * Character Sets and Unicode: Java.I.O.2nd.Edition.May.2006.chm
 * 99%的人都理解错了HTTP中GET与POST的区别: http://web.jobbole.com/88068/
-* Java中的SPI(Service Provider Interface)介绍及示例: http://blog.csdn.net/fenglibing/article/details/7083071
+* Developing a Service Provider using Java API(Service Provider Interface): http://www.lordofthejars.com/2011/11/en-ti-puedo-ver-la-libertad-tu-me-haces.html
 * 驱动模块和桩模块的概念和区别: http://daimajishu.iteye.com/blog/1557295
 * astyle 使用说明: http://www.cnblogs.com/jiangxinnju/p/4908575.html
 * JAX-WS error on WSDL file: “Error resolving component 's:schema'”: http://stackoverflow.com/questions/13499860/jax-ws-error-on-wsdl-file-error-resolving-component-sschema
 * How to make Java 6, which fails SSL connection with “SSL peer shut down incorrectly”, succeed like Java 7?: http://stackoverflow.com/questions/15589880/how-to-make-java-6-which-fails-ssl-connection-with-ssl-peer-shut-down-incorrec
 * 使用监听器对Spring bean id进行唯一校验: http://chenzhou123520.iteye.com/blog/1774106
-* 'Must Override a Superclass Method' Errors after importing a project into Eclipse: http://stackoverflow.com/questions/1678122/must-override-a-superclass-method-errors-after-importing-a-project-into-eclips
 * Android安全开发之ZIP文件目录遍历: http://www.cnblogs.com/alisecurity/p/5610654.html
 * 华为内部的Web安全原则: http://www.ha97.com/5520.html
-* su cannot set user id Resource temporarily unavailable故障解决 : http://blog.itpub.net/12457158/viewspace-753400
+* UML关系(泛化,实现,依赖,关联(聚合,组合))：http://justsee.iteye.com/blog/808799
+* 解析UML箭头、线条代表的意义：http://developer.51cto.com/art/201006/206134.htm
+* Burp Suite使用介绍（一） （二） （三）: http://www.2cto.com/article/201406/310929.html
+* String.intern(): 深入理解Java虚拟机：JVM高级特性与最佳实践第二版-周志明.pdf
+* [原创] SSO(Single Sign-on) in Action(上篇): http://www.blogjava.net/security/archive/2006/10/02/sso_in_action.html
+* 单点登陆(Single Sign-On,SSO)介绍（翻译）: http://blog.csdn.net/rosen/article/details/445112
 
 
 
@@ -117,6 +110,11 @@
 * Automating SoapUI using Groovy – A Walk Through: http://www.codeproject.com/Articles/820414/Automating-SoapUI-using-Groovy-A-Walk-Through
 * tcpmon: https://github.com/robertbachmann/tcpmon
 
+### 常用第三方webservice
+
+* http://www.pullword.com/
+* http://www.webxml.com.cn/zh_cn/index.aspx
+
 
 ## IDE
 
@@ -133,6 +131,19 @@
 * FAQ What is a Quick Fix?: http://wiki.eclipse.org/FAQ_What_is_a_Quick_Fix?
 * Eclipse插件: http://www.oschina.net/project/tag/148/eclipse-plugins
 * Eclipse相关问题：http://www.cnblogs.com/jiangxinnju/p/5205365.html
+* Top 10 Java Debugging Tips with Eclipse: http://javapapers.com/core-java/top-10-java-debugging-tips-with-eclipse/
+* JSP EL (Expression Language) causing problems in Eclipse: http://stackoverflow.com/questions/1790749/jsp-el-expression-language-causing-problems-in-eclipse
+* Linux下安装最新的Eclipse：http://www.cnblogs.com/jiangxinnju/p/4780268.html
+* eclipse调试的方法和技巧：http://www.cnblogs.com/ycxyyzw/archive/2013/03/27/2983905.html
+* eclipse调试java程序的九个技巧: http://www.cnblogs.com/lingiu/p/3802391.html
+* eclipse远程调试Tomcat方法:http://blog.csdn.net/afgasdg/article/details/9236877
+* Eclipse远程调试出现“JDWP Transport dt_socket failed to initialize”的解决方案: http://www.cnblogs.com/jiangxinnju/p/4906457.html
+* Eclipse中用两个控制台测试网络通信程序: http://blog.csdn.net/f309587969/article/details/7097976
+* Eclipse jar打包详解: http://jingyan.baidu.com/article/219f4bf7d0ef87de442d3820.html
+* Eclipse中Ant的配置与测试 转: http://www.cnblogs.com/jiangxinnju/p/5040436.html
+* 如何使用Eclipse将Java项目打成jar包？:http://jingyan.baidu.com/article/4dc40848b5a8c9c8d946f139.html
+* 如何使用eclipse生成javadoc帮助文档？:http://jingyan.baidu.com/article/dca1fa6f4d3d7ff1a4405239.html
+* 'Must Override a Superclass Method' Errors after importing a project into Eclipse: http://stackoverflow.com/questions/1678122/must-override-a-superclass-method-errors-after-importing-a-project-into-eclips
 
 
 ## Eclipse GUI Plugin
@@ -431,8 +442,10 @@ Eclipse中`Update Project`，选择`Force Update of Snapshots/Releases`
 * 如何用Maven创建web项目（具体步骤）：http://blog.csdn.net/chuyuqing/article/details/28879477
 * maven依赖总结: http://blog.csdn.net/lastsweetop/article/details/8493475
 * maven2 up to maven3的'version' contains an expression but should be a constant: http://www.cnblogs.com/beiyeren/p/4275032.html
+* MavenMNG-4715 version expression constant: https://issues.apache.org/jira/browse/MNG-4715
 * 解决Maven报Plugin execution not covered by lifecycle configuration: http://blog.csdn.net/xxd851116/article/details/25197373
 * Maven编译jar出现：无法确定 T 的类型参数的异常的原因和处理方案: http://www.cnblogs.com/peida/p/4218210.html
+* 向maven中央仓库提交jar: http://www.cnblogs.com/gaoxing/p/4359795.html
 * 常见Maven仓库：
     * http://mvnrepository.com/    （搜索）
 	* https://maven-repository.com/    （搜索）
@@ -848,6 +861,11 @@ JavaDoc: https://storm.apache.org/javadoc/apidocs/index.html
 * http://ezmorph.sourceforge.net/index.html
 
 
+## Apache Shiro
+
+* Apache Shiro：http://shiro.apache.org/
+
+
 ## SSH相关
 
 ## Struts
@@ -867,6 +885,7 @@ JavaDoc: https://storm.apache.org/javadoc/apidocs/index.html
 * 官网：http://spring.io/
 * 文档：http://docs.spring.io/spring/docs/current/spring-framework-reference/htmlsingle/
 * Spring Framework 开发参考手册: http://man.lupaworld.com/content/develop/spring_ref/2.0/html/
+* Spring Security：http://projects.spring.io/spring-security
 * 源码：
     * Spring 3.0(deprecated) https://src.springframework.org/svn/spring-framework/
     * Spring 2.5及以下(deprecated) https://src.springframework.org/svn/spring-maintenance/
@@ -1028,6 +1047,11 @@ JavaDoc: https://storm.apache.org/javadoc/apidocs/index.html
 * Java动态代理机制详解（JDK 和CGLIB，Javassist，ASM）: http://blog.csdn.net/luanlouis/article/details/24589193
 
 
+## iCal4j
+
+* https://github.com/ical4j/ical4j
+
+
 
 ## 分词
 
@@ -1161,6 +1185,10 @@ JavaDoc: https://storm.apache.org/javadoc/apidocs/index.html
 ## Velocity
 
 * http://velocity.apache.org/engine/devel/
+
+## Aurora
+
+* http://aurora.apache.org/
 
 
 ## 文件类型检测

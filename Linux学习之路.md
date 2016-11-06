@@ -83,6 +83,9 @@
 * linux连接投影机：http://www.2cto.com/os/201211/168387.html
 * Devhelp：https://wiki.gnome.org/Apps/Devhelp
 * 在Windows下使用GTK+开发GUI应用程序: http://blog.csdn.net/blackboyofsnp/article/details/3343045
+* Unix 即集成开发环境: https://github.com/ConanChou/Unix-as-IDE--Chinese-
+* Linux Troubleshooting Cheatsheet: strace, htop, lsof, tcpdump, iftop & sysdig: https://sysdig.com/blog/linux-troubleshooting-cheatsheet/
+* java.lang.VerifyError: Expecting a stackmap frame at branch target JDK 1.7: http://stackoverflow.com/questions/15122890/java-lang-verifyerror-expecting-a-stackmap-frame-at-branch-target-jdk-1-7
 
 
 
