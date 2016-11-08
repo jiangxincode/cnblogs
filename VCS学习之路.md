@@ -53,6 +53,7 @@
 * SVN版本库无损迁移与自动备份（一）:http://www.cnblogs.com/springside-example/archive/2011/11/30/2530176.html
 * SVN版本库无损迁移与自动备份（二）:http://www.cnblogs.com/springside-example/archive/2011/11/30/2530174.html
 * SVN+Apache域用户认证配置方法_Windows(转，重新排版，部分内容更新优化): http://www.cnblogs.com/jiangxinnju/p/5906377.html
+* TortoiseSVN,TortoiseGit修改差异查看器为BeyondCompare: http://blog.csdn.net/sanfye/article/details/48028879
 
 
 ## 简单教程（详细说明参考前面的教程地址，此处仅为了速查速用）

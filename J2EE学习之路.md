@@ -85,6 +85,7 @@
 * String.intern(): 深入理解Java虚拟机：JVM高级特性与最佳实践第二版-周志明.pdf
 * [原创] SSO(Single Sign-on) in Action(上篇): http://www.blogjava.net/security/archive/2006/10/02/sso_in_action.html
 * 单点登陆(Single Sign-On,SSO)介绍（翻译）: http://blog.csdn.net/rosen/article/details/445112
+* How do I prevent people from shutting down my Tomcat?: http://www.avajava.com/tutorials/lessons/how-do-i-prevent-people-from-shutting-down-my-tomcat.html
 
 
 

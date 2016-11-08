@@ -50,6 +50,8 @@
 * iftop: http://www.ex-parrot.com/~pdw/iftop/
 * Iotop: http://guichaz.free.fr/iotop/
 * tldr: https://github.com/tldr-pages/tldr
+* Vimium - The Hacker's Browser: https://github.com/philc/vimium
+* Vimperator: http://www.vimperator.org/
 * 串口传输文件 lrzsz: http://www.cnblogs.com/lidabo/p/4780866.html
 * 基于CentOS的Linux基本网络配置,包括网卡eth0、DNS、Host等: http://www.cnblogs.com/rooney/archive/2012/03/24/2415144.html
 * iproute2: https://wiki.linuxfoundation.org/networking/iproute2
@@ -86,7 +88,16 @@
 * Unix 即集成开发环境: https://github.com/ConanChou/Unix-as-IDE--Chinese-
 * Linux Troubleshooting Cheatsheet: strace, htop, lsof, tcpdump, iftop & sysdig: https://sysdig.com/blog/linux-troubleshooting-cheatsheet/
 * java.lang.VerifyError: Expecting a stackmap frame at branch target JDK 1.7: http://stackoverflow.com/questions/15122890/java-lang-verifyerror-expecting-a-stackmap-frame-at-branch-target-jdk-1-7
-
+* Rdseed与SAC的安装: http://www.cnblogs.com/jiangxinnju/p/6045044.html
+* Ubuntu下GTK的安装、编译和测试: http://www.cnblogs.com/niocai/archive/2011/07/15/2107472.html
+* 将Linux下编译的warning警告信息输出到文件中[整理笔记]: http://blog.csdn.net/feihongwang/article/details/6975670
+* linux C中调用shell命令和运行shell脚本: http://blog.sina.com.cn/s/blog_8043547601013rxf.html
+* ssh: connect to host localhost port 22: Connection refused 问题: http://blog.csdn.net/jszhangyili/article/details/8881807
+* find 删除拷贝用法: http://6764097.blog.51cto.com/6754097/1795690
+* linux命令strings: http://www.cppblog.com/prayer/archive/2009/07/22/90836.html
+* linux 修改分区卷标 ( Partition Label ) : http://blog.chinaunix.net/uid-20321915-id-1966428.html
+* GTK+ 2.0 教程－－信号和回调函数的原理: http://blog.csdn.net/lastking/article/details/67356
+* Linux快捷键: http://www.cnblogs.com/jiangxinnju/p/6045204.html
 
 
 ## Linux常用命令
@@ -310,57 +321,6 @@ find 后面可加指定目录，如"/etc/"
     find "/etc/" -name "*" -type f| xargs wc -l | awk '{print $2" "$1"行"}'
 
 	
-## Shell 快捷键
-
-```
-    <Ctrl k>：删除从光标到行尾的部分
-    <Ctrl u>：删除从光标到行首的部分
-    <Alt d>：删除从光标到当前单词结尾的部分
-    <Ctrl w>：删除从光标到当前单词开头的部分
-    <Ctrl a>：将光标移到行首
-    <Ctrl e>：将光标移到行尾
-    <Alt a>：将光标移到当前单词头部
-    <Alt e>：将光标移到当前单词尾部
-    <Ctrl y>：插入最近删除的单词
-    <Ctrl a>：跳到行首
-    <Ctrl b>：左移一个字符
-    <Ctrl c>：终止终端进程
-    <Ctrl d>：从光标处向右删除
-    <Ctrl e>：跳到行尾
-    <Ctrl f>：右移一个字符
-    <Ctrl k>：从光标处删除到行尾
-    <Ctrl l>：清屏，类似 clear 命令
-    <Ctrl r>：查找历史命令
-    <Ctrl z>：Suspend/ Stop the command  、 暂停命令的执行
-    <Ctrl h>：删除当前字符
-    <Ctrl w>：删除最后输入的单词
-    <!$>：重复前一个命令最后的参数。
-    <SHIFT PageUp/PageDown>：终端上下翻页
-```
-
-## 常用快捷键
-
-```
-    <Alt+Tab>：切换窗口(win)
-    <Win+Tab>：若开3D效果了切换
-    <Ctrl+Alt+Backspace>：相当于强制注销
-    <Ctrl+Alt+Del>：调出关机菜单
-    <Ctrl+Alt+l>：锁定桌面
-    <Ctrl+Alt+d>：最小化gnome所有窗口
-    <Ctrl+Alt+f2>：linux终端用户（Alt + f7返回xwindows，Alt+ <- 或-> 进行终端切换）
-    <Ctrl+Alt+ <- 或-> >：切换桌面
-    <Alt + F1>：打开主菜单
-    <Alt + F2运行>：（重启x窗口：r 重启：reboot 关机：hAlt）
-    <Ctrl + Alt + d>：显示桌面
-    <Alt + F9>：最小化当前窗口
-    <Alt + F10>：最大化当前窗口
-    <Alt + F4>：关闭当前窗口
-    Print Screen截取全屏
-    Alt + Print Screen截取窗口
-    <Ctrl+Alt+上下箭头>：切换工作区(Fedora)
-    <Alt+F10>：调整窗口的默认大小(Fedora)
-```
-
 ## 修改默认打开文件的程序
 
 linux 下全局的文件与程序的关联是通过`/usr/share/applications/defaults.list`文件来设置，该文件保存了个人文件与程序的关联的打开方式。安装了nero之后文件iso的文件默认使用archive manager打开，在`~/.local/share/applications/mimeapps.list`添加一行：
@@ -497,8 +457,6 @@ linux 下全局的文件与程序的关联是通过`/usr/share/applications/defa
 
 
 
-
-
 ## 常用软件及相关配置问题
 
 * pdf阅读器:okular evince
@@ -564,134 +522,6 @@ Tools → Options... → LibreOffice → View → Graphics output (取消钩选U
     export LANG=zh_CN.UTF-8
 
 
-## Rdseed的安装
-
-1. 下载: http://www.iris.edu/pub/programs/rdseedv5.2.tar.gz
-2. 解压: tar -xzvf rdseedv5.2.tar.gz
-3. 编译：
-
-```shell
-    # 在makefile中找到这几句
-    CC = cc
-    # for cygwin add the -D_CYGwin flag, for users of windows pcs
-    CFLAGS     = -O -m32 -g -D_CYGwin
-    
-    # to compile rdseed as a 32-bit application
-    #CFLAGS     = -O -m32 -g
-    
-    # 将CYGwin行注释掉，取消最下面一行的注释：
-    CC = cc
-    # for cygwin add the -D_CYGwin flag, for users of windows pcs
-    #CFLAGS     = -O -m32 -g -D_CYGwin
-    
-    # to compile rdseed as a 32-bit application
-    CFLAGS     = -O -m32 -g
-    
-    # 然后
-    make clean
-    make
-```
-
-4. 将编译好的rdseed文件拷贝靠bin目录下：sudo cp rdseed /usr/bin/
-5. 输入rdseed即可进入。
-
-注：64位系统下可以直接使用已编译好的文件:cp -p rdseed.rh6.linux_64 /usr/local/bin/rdseed
-
-## SAC安装
-
-1. 软件包可以在下面给出的网站上申请，认真填写，在平台选择处选择Linux 32 位或64位（如果有兴趣也可以选择一个source code）。注意不要图省事一次把所有包都申请了，那样管理员会专门给你发邮件要你解释的。最好使用学校邮箱或者较正规的邮箱，否则有被拒的可能。若验证通过，三个工作日内即可收到邮件。申请网址：http://www.iris.edu/forms/sac_request.htm
-
-2. 对sac 文件压缩包直接解压，会出现sac文件夹，里面包含了多个文件夹：
-
-```shell
-    tar xvfz netcdf-3.6.3.tar.gz
-    for i in *.bz2;do tar jxvf $i;done
-```
-
-3. 将整个sac 文件夹拷到某目录下（SAC 推荐安装目录为/usr/local）：
-
-```shell
-    sudo cp -r sac /usr/local
-```
-
-4. 编辑.bashrc 设置环境变量
-
-```shell
-    gedit ~/.bashrc
-```
-
-在.bashrc 的最后添加如下语句
-
-```shell
-    export SACHOME=/usr/local/sac
-    export SACAUX=$SACHOME/aux
-    export PATH=$SACHOME/bin:$PATH
-```
-
-5. 终端输入source ~/.bashrc 
-6. 终端输入sac（注意要小写），看到版本号等信息即安装成功。
-
-
-## GTK
-
-我利用此方法成功在Ubuntu?12.04下安装GTK 2.24.10  记录一下
-
-    sudo apt-get install build-essential # 安装gcc/g++/gdb/make 等基本编程工具
-    sudo apt-get install gnome-core-devel # 安装 libgtk2.0-dev libglib2.0-dev 等开发相关的库文件
-    sudo apt-get install pkg-config # 用于在编译GTK程序时自动找出头文件及库文件位置
-    sudo apt-get install devhelp # 安装 devhelp GTK文档查看程序
-    sudo apt-get install libglib2.0-doc libgtk2.0-doc # 安装 gtk/glib 的API参考手册及其它帮助文档
-    sudo apt-get install glade libglade2-dev # 安装基于GTK的界面GTK是开发Gnome窗口的c/c++语言图形库
-    sudo apt-get install libgtk2.0-dev # 安装gtk2.0 或者 将gtk+2.0所需的所有文件统通下载安装完毕
-    pkg-config --modversion gtk+-2.0 # 查看 2.x 版本
-    pkg-config --version # 查看pkg-config的版本
-    pkg-config --list-all grep gtk # 查看是否安装了gtk
-
-测试程序
-
-```C
-    //Helloworld.c
-    #include <gtk/gtk.h>
-    int main(int argc,char *argv[])
-    {
-        GtkWidget    *window;
-        GtkWidget    *label;
-    
-        gtk_init(&argc,&argv);
-    
-        /* create the main, top level, window */
-        window = gtk_window_new(GTK_winDOW_TOPLEVEL);
-    
-        /* give it the title */
-        gtk_window_set_title(GTK_winDOW(window),"Hello World");
-    
-        /* connect the destroy signal of the window to gtk_main_quit
-        * when the window is about to be destroyed we get a notification and
-        * stop the main GTK+ loop
-        */
-        g_signal_connect(window,"destroy",G_CALLBACK(gtk_main_quit),NULL);
-    
-        /* create the "Hello, World" label */
-        label = gtk_label_new("Hello, World");
-    
-        /* and insert it into the main window */
-        gtk_container_add(GTK_CONTAINER(window),label);
-    
-        /* make sure that everything, window and label, are visible */
-        gtk_widget_show_all(window);
-    
-        /* start the main loop, and let it rest until the application is closed */
-        gtk_main();
-    
-        return 0;
-    }
-```
-
-编译运行
-
-    gcc -o Helloworld Helloworld.c `pkg-config --cflags --libs gtk+-2.0`
-    ./Helloworld
-
 ## Wireshark
 
     sudo apt-get install wireshark
@@ -706,11 +536,6 @@ Tools → Options... → LibreOffice → View → Graphics output (取消钩选U
     press the right arrow and enter for yes
     sudo chmod +x /usr/bin/dumpcap
 
-## Vimium、Vimperator 浏览器插件
-
-今天的主角是 Vimium 和 Vimperator，相信很多人一看到上面的两个名字就已经联想到了经典的 Vim 编辑器 —— 这是一款被无数人誉为编辑器中的神器。它完全只使用键盘操作，虽然 Vim 的入门学习曲线比较陡峭，但一旦熟悉之后，你将会被其极之高效且无比强大的键盘流操作深深折服，而且一点都不会比使用鼠标的编辑器慢，相反，用得好的高手往往效率比使用一般win下的编辑器效率要高得多。
-
-Vimium 和 Vimperator 就是两款参考了 Vim 按键操作方式和理念而来的浏览器插件，可以让你几乎全程使用键盘快捷键来上网，大大提高浏览效率。如果你本身是一位 Vim 用户的话，你几乎没有学习的门槛，很快就能找到使用 Vim 编辑器那种流畅操作的“熟悉感”！不过，如果你之前完全没有接触过 Vim，那么就得稍微了解学习一下了。当然，你也可以将其看作是网页浏览器的快捷键工具，记住一些常用操作就能体验一番高手们行云流水地用键盘工作时的畅快感了。Vimium 是一款 Chrome 浏览器中的插件，而 Vimperator 则是 FireFox 火狐浏览器的插件，虽然名字不同，但是他们的操作基本上没有什么区别，所以下面我就以介绍 Vimium 为主吧。Vimperator 的同学可以作为参考一下.按 shift+/ （chrome）或者是进入设置页面（firefox+chrome），可以找到更详细的的帮助。甚至，你还可以在设置中按照你自己的习惯替换掉一些键。如果有些网站你不想它占用你的按键的话，可以在设置中加入例外，比方说豆瓣电台（小问题：你知道豆瓣电台的快捷键吗？）
 
 ## glxgears
 
@@ -722,39 +547,7 @@ glxgears是一个测试你的Linux是否可以顺利运行2D、3D的测试软件
 windows系统可以在重装时只格式化C盘，从而保留其他分区的数据。 Ubuntu系统也可以，只要在安装系统时分出一个/home分区。你可以把Ubuntu的“/”分区看为windows的C盘，重装Ubuntu时只格式化“/”分区，不格式化“/home”，这样就可以保留“/home”中的数据
 
 
-## 修改分区的卷标
 
-Fat16/Fat32格式
-
-    #安装
-    sudo apt-get install mtools
-    
-    #新建配置文件
-    cp /etc/mtools.conf ~/.mtoolsrc
-    
-    #编辑刚复制的”~/.mtoolsrc”文件,在最後一行加入如下命令行：
-    drive i: file="/dev/sda2"    //里面的”/devsda2”应根据实际情况更改为你要改的盘
-    
-    #更改命令提示符路径到”i:”盘：
-    mcd i:
-    
-    #查看”i:”当前的卷标
-    sudo mlabel -s i:
-    
-    #更改”i:”盘原始卷标为你喜欢的新卷标名：
-    sudo mlabel i: newLabelName
-
-NTFS格式
-
-    #安装
-    sudo apt-get install ntfsprogs # 注：安装包已下
-    
-    #修改
-    sudo ntfslabel /dev/sda1 newLabelName //里面的"/dev/sda1"应根据实际情况修改
-
-ext2/ext3格式
-
-    sudo e2label /dev/sda1 newLabelName
 
 ## 如何启用 Ubuntu 中的 root 帐号
 
@@ -813,7 +606,6 @@ ext2/ext3格式
 ```
 
 正常情况下这样就成功安装了。和有root权限安装的区别在于./configure 需要指定安装文件的目录。
-
 
 
 ## 卸载LNMP
@@ -879,62 +671,6 @@ E: Unable to lock the list directory
 
     sudo rm /var/lib/apt/lists/lock
 
-## Ubuntu Linux下如何用源码文件安装软件
-
-　　在附带了丰富的软件，这些软件一般使用图形化的自动方式（“添加／删除”或“新立得”）即可轻松安装，但是对于那些刚刚问世的新软件，Ubuntu的源中还未收录其中，这时我们就需要用到一种更通用的安装方式：通过手工方式从源文件来安装这些软件。下面就介绍这种手工安装方式的详细步骤。　　
-
-一、 安装编译程序
-
-因为要编译源代码，所以第一步就是安装编译和构建之类的程序。如果你已经安装过了，可以跳过此步。在Ubuntu系统中非常简单，只要执行下面命令就行了：
-
-    $ sudo apt-get install build-essential
-
-该命令执行后，从源文件安装软件所需的工具，如gcc、make、g++及其他所需软件就安装好了。
-
-二、下载并编译软件的源代码
-
-当我们下载源文件时，一定要弄清该软件所依赖的库文件和其他程序，并且首先将它们装好。这些信息，通常都能在该开源项目的主页上查找到。做好这些准备工作后，我们就可以进行下面的工作了。因为，软件的源代码通常以压缩文件形式发布，所以需要将其解压到指定目录。命令如下所示：
-
-    OwnLinux@ubuntu:~$ tar xvzf program.tar.gz
-    OwnLinux@ubuntu:~$ cd program/
-
-　　在Linux下从源文件安装程序时，有一个通用模式，即配置（./configure）–＞ 编译（make） –＞ 安装（sudo make install）。但是，此前你最好还是阅读源文件中附带的安装说明，因为对于每个程序，其开发者的指示才是最具权威性的。程序开发者通常将安装说明存放在名为INSTALL或README。到哪里找这些文件呢？它们在项目主页或源代码主目录中都能找到。
-
-　　1.配置
-
-　　构建应用的第一步就是执行configure脚本,该脚本位于程序源文件的主目录下：
-
-    OwnLinux@ubuntu:~/program$ ./configure
-
-　　该脚本将扫描系统，以确保程序所需的所有库文件业已存在，并做好文件路径及其他所需的设置工作。如果程序所需的库文件不完全，该配置脚本就会退出，并告诉您还需要哪些库文件或者是哪些版本太旧需要更新。如果遇到这种情况，仅弄到含有该库文件的软件包还是不够的，同时还要找到具有该库文件所有头文件的开发包，在，这样的包一般以-dev作为文件名的结尾。安装好所有需要的库文件后，重新运行配置脚本，直到没有错误提示为止，这说明需要的库文件已经全部安装妥当了即满足了依赖关系。
-
-　　2.编译
-
-　　当配置脚本成功退出后，接下来要做的就是编译代码了。具体操作为在源文件的主目录中运行make命令：
-
-    OwnLinux@ubuntu:~/program$ make
-
-　　这时，您会看到一串编译输出数据迅速从屏幕上滚过，如果正常的话，系统会返回的提示符状态。然而，如果编译过程中出现错误的话，排错的过程可就不像配置步骤那么简单了。因为，这通常要涉及到源代码的调试，可能源代码有语法错误，或其他错误等等。怎么办？如果您是编程高手，那就自己调试吧！否则，检查该软件的邮件列表等支持渠道，看看是不是已知的bug，如果是就看看别人是怎么解决的，不是就提交一份bug报告吧，也许不久就会有解决办法。
-
-　　3.安装
-
-　　当软件成功编译后，最后一步就是将它们安装到系统上。大部分程序的makefile文件中都会有一个用于安装的函数。需要注意的是，大多时候我们必须作为root用户来安装程序，这样程序就把文件安装到/usr或其他只有超级用户才有写权限的目录中。依旧是在源文件的主目录下，执行如下命令：
-
-    OwnLinux@ubuntu:~/program$ sudo make install
-
-　　好了，这样程序就会安装到您的计算机上了。另外，当您不再使用该程序时，可以使用软件所带的卸载功能，一般程序都会具备此功能。切换至源文件的主目录下，执行以下命令即可：
-
-    OwnLinux@ubuntu:~/program$ sudo make uninstall
-
-　　多数情况下，利用上面介绍的方法安装的程序，都位于/usr/local下面。若想让安装的程序文件与Ubuntu巡视的文件系统隔离开的话，可以为命令添加项，如下所示：
-
-    OwnLinux@ubuntu:~/program$ ./configure –prefix=/opt
-
-　　尽管这样做一般都是有效的，但是也有例外，有些程序根本不理会项；有些程序如含有内核模块的程序，会把它们自己全部放进您的文件系统。
-
-　　上面介绍的手工安装软件的方法虽然是针对Ubuntu环境来介绍的，但是各种Linux系统下的从源文件安装应用的方法基本上都大同小异。
-
-
 
 ## linux系统下无法访问电脑硬盘
 
@@ -976,56 +712,6 @@ E: Unable to lock the list directory
 
 更换domain.com为你要屏蔽的网站，你完成了编辑处理后，保存该文件并退出。
 
-## 将脚本中的信息输出到文件中
-
-Linux中，脚本语言环境中，即你用make xxx及其他一些普通linux命令，比如ls，find等，不同的数字，代表不同的含义：
-
-* 0代表标准输入
-* 1代表标准输出
-* 2代表错误输出
-
-而系统默认的stdin是键盘，stdout，stderr都是屏幕，所以当你执行命令，比如make后，所输出的信息，都是可以在屏幕上看到的。所以想要将对应信息输出到某个文件中，就用对应的数字加上重定向符号'>'，实现将这些信息重新定向到对应的文件中即可。下面以make命令为例来说明，如何把对应的信息，输出到对应的文件中：
-
-1.想要把make输出的全部信息，输出到某个文件中，最常见的办法就是：
-
-    make xxx > build_output.txt
-
-此时默认情况是没有改变2=stderr的输出方式，还是屏幕，所以，如果有错误信息，还是可以在屏幕上看到的。
-
-2.只需要把make输出中的错误（及警告）信息输出到文件中ing，可以用：
-
-    make xxx 2> build_output.txt
-
-相应地，由于1=stdout没有变，还是屏幕，所以，那些命令执行时候输出的正常信息，还是会输出到屏幕上，你还是可以在屏幕上看到的。
-
-3.只需要把make输出中的正常（非错误，非警告）的信息输出到文件中，可以用：
-
-    make xxx 1> build_output.txt
-
-相应地，由于2=stderr没有变，还是屏幕，所以，那些命令执行时候输出的错误信息，还是会输出到屏幕上，你还是可以在屏幕上看到的。
-
-4.想要把正常输出信息和错误信息输出到分别的文件中，可以用：
-
-    make xxx 1> build_output_normal.txt 2>build_output_error.txt
-
-即联合使用了1和2，正常信息和错误信息，都输出到对应文件中了。
-
-5. 所有的信息都输出到同一个文件中：
-
-    make xxx > build_output_all.txt 2>&1
-
-其中的2>&1表示错误信息输出到&1中，而&1，指的是前面的那个文件：build_output_all.txt 。
-
-注意：上面所有的1,2等数字，后面紧跟着大于号'>' ，中间不能有空格。
-
-    make xxx > build_output_all.txt 2>&1
-
-也可以写成：
-
-    make xxx 2>&1 | tee build_output_all.txt
-
-唯一的区别就是，stdout和stderr被导入文件的同时，还可以看到屏幕输出。
-
 
 ## 获取某程序的完整路径名
 
@@ -1041,7 +727,6 @@ Linux中，脚本语言环境中，即你用make xxx及其他一些普通linux�
 
     bash-3.2# ls -l /data1/1230/server-a
     -rwxr-xr-x 1 root root 5842 Feb 25 16:42 /data1/1230/server-a
-
 
 
 ## lspci的使用
@@ -1079,8 +764,7 @@ DOS/Windows文本文件格式转换成Linux/Unix文本文件格式: `sed -e 's/.
     unix2dos filename
     dos2unix filename
 
-
-
+	
 ##使用script记录Linux终端会话
 
 许多系统管理员都知道保留一个包含各种任务、配置改变等活动日志的重要性。对一些组织而言，保留“我做了这件事”或“约翰做了那件事”的简单日志就已足够；但另一些组织则需要记录所有改变。对终端输出进行复制粘贴可能非常乏味，我们使用一个叫做script的鲜为人知的程序来解决这个问题，它是大多数Linux产品util-linux软件包的一部分。script记录会话的一切内容：你输入的内容和你看到的内容。它甚至记录颜色；因此如果你的命令提示符或程序输出中包含颜色，script将记录它。要使用script，简单执行以下命令：
@@ -1188,53 +872,6 @@ Agent admitted failure to sign using the key
 
 Identity added: /home/user/.ssh/id_rsa (/home/user/.ssh/id_rsa)
 
-## connect to host localhost port 22: Connection refused
-
-错误原因：
-
-1.sshd 未安装
-
-2.sshd 未启动
-
-3.防火墙
-
-4需重新启动ssh 服务
-
-
-
-解决方法：
-
-1.确定安装sshd:
-
-$ sudo apt-get install openssh-server
-
-2.启动sshd:
-
-$ sudo net start sshd
-
-3.检查防火墙设置,关闭防火墙：
-
-$ sudo ufw disable
-
-检验方法：
-
-输入命令：
-
-$ ssh localhost
-
-若成功，则表示安装成功，且连接通过；
-
-但是有的时候虽然成功了但是还是会出现Connection refused 问题。
-
-运行 ps -e | grep ssh，查看是否有sshd进程：
-
-
-
-有时候虽然可以看到sshd 但是还是不能连接成功
-
-这时候就要想到重新启动一下：sudo service ssh restart
-
-然后在连接
 
 ## 查看linux进程的执行文件路径
 
@@ -1317,49 +954,12 @@ $ ssh localhost
 # GTK+相关
 
 
-
 # GTK中的delete_event和destroy
 delete_event 事件一般由用户或者说用户通过窗口管理器产生，即点击窗口右上角的退出按钮。假如不做任何特殊处理，窗口管理器会自动产生destroy信号；如果我们自 定义了处理delete_event事件的回调函数，是否产生destroy信号就和函数的返回值有关，如果是FALSE就产生，反之则没有效果。
 
 至 于destroy，除了可以由delete_event事件产生之外，还可以通过gtk_widget_destroy函数与其它信号发生交换。同样，如果不加指定，默认结果是关闭所指向的窗口但并不结束进程。如果我们希望主窗口和进程一起关闭，必须使用gtk_main_quit()。
 
-# g_signal_connect 与 g_signal_connect_swapped
 
-在 2.0 版，信号系统已从 GTK 移到 GLib，因此在函数和类型的说明中有前缀 "g_" 而不是 "gtk_"。我们不打算介绍 GLib 2.0 信号系统相对 GTK 1.2 信号系统扩展的细节。
-
-在我们详细分析 helloworld 程序之前，我们会讨论信号和回调函数。GTK 是一个事件驱动的工具包，意味着它会等在 gtk_main() 那里，直到下一个事件发生，才把控制权传给适当的函数。
-
-控制权的传递是使用“信号”的办法来完成的。(注意这里的信号并不等同于 Unix 系统里的信号，并且也不是用它们实现的，虽然使用的术语是一样的。) 当一个事件发生时，如按一下鼠标键，所按的构件会“发出”适当的信号。这就是 GTK 的工作机制。有所有构件都继承的信号，如 "destroy"，有构件专有的信号，如开关 (toggle) 按钮发出的 "toggled" 信号。
-
-要使一个按钮执行一个动作，我们需设置信号和信号处理函数之间的连接。可以这样使用函数来设置连接：
-
-gulong g_signal_connect( gpointer *object,const gchar *name,GCallback func,gpointer func_data );
-
-第一个参数是要发出信号的构件，第二个参数是你想要连接的信号的名称，第三个参数是信号被捕获时所要调用的函数，第四个参数是你想传递给这个函数的数据。
-
-第三个参数指定的函数叫做回调函数，一般为下面的形式：
-
-void callback_func( GtkWidget *widget,gpointer callback_data );
-
-第一个参数是一个指向发出信号的构件的指针，第二个参数是一个指向数据的指针，就是上面 g_signal_connect() 函数的最后一个参数传进来的数据。
-
-注意上面回调函数的声明只是一般的形式，有些构件的特殊信号会用不同的调用参数。
-
-另一个在 helloworld 示例中使用的调用，是：
-
-gulong g_signal_connect_swapped( gpointer *object,const gchar *name,GCallback func,gpointer *slot_object );
-
-g_signal_connect_swapped() 和 g_signal_connect() 相同，只是回调函数只用一个参数，一个指向 GTK 对象的指针。所以当使用这个函数连接信号时，回调函数应该是这样的形式
-
-void callback_func( GtkObject *object );
-
-
-
-这个对象通常是一个构件。然而我们一般不用函数 g_signal_connect_swapped() 设置回调。它们常用来调用一个只接受一个单独的构件或者对象作为参数的 GTK 函数，如同我们的 helloworld 示例中那样。
-
-
-
-拥有两个函数来设置信号连接的目的只是为了允许回调函数有不同数目的参数。GTK 库中许多函数仅接受一个单独的构件指针作为其参数，所以对于这些函数你要用 g_signal_connect_swapped()，然而对你自己定义的函数，你可能需要附加的数据提供给你的回调函数。
 
 # CodeBlocks 使用经验谈
 
@@ -1412,173 +1012,6 @@ while((ch=getchar())!='/n'&&ch!=EOF);
 
 以上语句将清除stdin中的字符，知道遇到换行符或者是读完缓冲区。
 
-
-
-# linux下如何用c语言调用shell命令
-
-#include <stdlib.h>
-
-int system(const char *string);
-
-例：在~/myprogram/目录下有shell脚本test.sh，内容为
-
-　　#!bin/bash
-
-　　#test.sh
-
-　　echo $HOME
-
-　　在该目录下新建一个c文件systemtest.c，内容为：
-
-　　#include<stdlib.h>
-
-　　
-
-　　main()
-
-　　{
-
-　　system("~/myprogram/test.sh");
-
-　　}
-
-　　执行结果如下：
-
-　　xiakeyou@ubuntu:~/myprogram$ gcc systemtest.c -o systemtest
-
-　　xiakeyou@ubuntu:~/myprogram$ ./systemtest
-
-　　/home/d/e/xiakeyou
-
-　　xiakeyou@ubuntu:~/myprogram$
-
-　　2）popen(char *command,char *type)
-
-　　执行过程：popen()会调用fork()产生子进程，然后从子进程中调用/bin/sh -c来执行参数command的指令。参数type可使用“r”代表读取，“w”代表写入。依照此type值，popen()会建立管道连到子进程的标准输出设备或标准输入设备，然后返回一个文件指针。随后进程便可利用此文件指针来读取子进程的输出设备或是写入到子进程的标准输入设备中。此外，所有使用文件指针(FILE*)操作的函数也都可以使用，除了fclose()以外。
-
-　　返回值：若成功则返回文件指针，否则返回NULL，错误原因存于errno中。
-
-　　注意：在编写具SUID/SGID权限的程序时请尽量避免使用popen()，popen()会继承环境变量，通过环境变量可能会造成系统安全的问题。
-
-　　例：C程序popentest.c内容如下：
-
-　　#include<stdio.h>
-
-　　main()
-
-　　{
-
-　　FILE * fp;
-
-　　charbuffer[80];
-
-　　fp=popen(“~/myprogram/test.sh”,”r”);
-
-　　fgets(buffer,sizeof(buffer),fp);
-
-　　printf(“%s”,buffer);
-
-　　pclose(fp);
-
-　　}
-
-　　执行结果如下：
-
-　　xiakeyou@ubuntu:~/myprogram$ vim popentest.c
-
-　　xiakeyou@ubuntu:~/myprogram$ gcc popentest.c -o popentest
-
-　　xiakeyou@ubuntu:~/myprogram$ ./popentest
-
-　　/home/d/e/xiakeyou
-
-　　xiakeyou@ubuntu:~/myprogram$
-
-　　只是偶能力可能有点有限，没有太看懂。直接用system()倒是脚本可是执行，只是返回值却是一塌糊涂，试了多次也没有找到什么规律。不免又看了一下上面的那篇博文，得到一些启发，可以这样来实现：
-
-　　先将脚本的返回值利用 echo > XXXXX 输出到一个本地文件中
-
-　　当需要这个返回值是，可是通过C语言的文件操作函数来直接从文件中读取
-
-　　后来一想，这应该就是上文中POPEN的实现方法！
-
-C程序调用shell脚本共有三种法子 ：system()、popen()、exec系列函数 system() 不用你自己去产生进程，它已经封装了，直接加入自己的命令exec 需要你自己 fork 进程，然后exec 自己的命令
-
-popen() 也可以实现执行你的命令，比system 开销小
-
-1）system(shell命令或shell脚本路径);
-
-system()会调用fork()产生 子历程，由子历程来调用/bin/sh-c string来履行 参数string字符串所代表的命令，此命令履行 完后随即返回原调用的历程。在调用system()期间SIGCHLD 信号会被暂时搁置，SIGINT和SIGQUIT 信号则会被漠视 。
-
-返回值：如果system()在调用/bin/sh时失败则返回127，其他失败原因返回-1。若参数string为空指针(NULL)，则返回非零值。 如果 system()调用成功 则最后会返回履行 shell命令后的返回值，但是此返回值也有可能为system()调用/bin/sh失败所返回的127，因 此最好能再反省 errno 来确认履行 成功 。
-
-system命令以其简略 高效的作用得到很很广泛 的利用 ，下面是一个例子
-
-例：在~/test/目录下有shell脚本test.sh，内容为
-
-#!bin/bash
-
-#test.sh
-
-echo hello
-
-在同层目录下新建一个c文件system_test.c，内容为：
-
-#include<stdlib.h>
-
-int main()
-
-{
-
-system("~/test/test.sh");
-
-}
-
-履行 效果 如下：
-
-[root@localhost test]$gcc system_test.c -o system_test
-
-[root@localhost test]$./system_test
-
-hello
-
-[root@localhost test]$
-
-2）popen(char *command,char *type)
-
-popen()会调用fork()产生 子历程，然后从子历程中调用/bin/sh -c来履行 参数command的指令。参数type可应用 “r”代表读取，“w”代表写入。遵循此type值，popen()会建立 管道连到子历程的标准 输出设备 或标准 输入设备 ，然后返回一个文件指针。随后历程便可利用 此文件指针来读取子历程的输出设备 或是写入到子历程的标准 输入设备 中。此外，所有应用 文 件指针(FILE*)操作的函数也都可以应用 ，除了fclose()以外。
-
-返回值：若成功 则返回文件指针，否则返回NULL，差错 原因存于errno中。注意：在编写具SUID/SGID权限的程序时请尽量避免应用 popen()，popen()会继承环境变量，通过环境变量可能会造成系统安全的问题。
-
-例：C程序popentest.c内容如下：
-
-#include<stdio.h>
-
-main
-
-{
-
-FILE * fp;
-
-charbuffer[80];
-
-fp=popen(“~/myprogram/test.sh”,”r”);
-
-fgets(buffer,sizeof(buffer),fp);
-
-printf(“%s”,buffer);
-
-pclose(fp);
-
-}
-
-履行 效果 如下：
-
-[root@localhost test]$ vim popentest.c
-
-[root@localhost test]$ gcc popentest.c -o popentest
-
-[root@localhost test]$ ./popentest
 
 # ftok()函数(linux)
 
@@ -1747,49 +1180,6 @@ SYMBOL TABLE:
 
 6. 符号名
 
-linux的strings命令
-
-strings - 显示文件中的可打印字符，一般用来查看非文本文件的内容.
-
-man strings
-
-# strings /lib/tls/libc.so.6 | grep GLIBC
-
-GLIBC_2.0
-
-GLIBC_2.1
-
-GLIBC_2.1.1
-
-GLIBC_2.1.2
-
-GLIBC_2.1.3
-
-GLIBC_2.2
-
-GLIBC_2.2.1
-
-GLIBC_2.2.2
-
-GLIBC_2.2.3
-
-GLIBC_2.2.4
-
-GLIBC_2.2.6
-
-GLIBC_2.3
-
-GLIBC_2.3.2
-
-GLIBC_2.3.3
-
-GLIBC_2.3.4
-
-GLIBC_PRIVATE
-
-
-
-这样就能看到glibc支持的版本。
 
 
 # shell “syntax error:unexpected end of file”
@@ -1875,9 +1265,6 @@ echo $ip
     ${var/.../...}
 ```
 
-
-
-
 ## 解决ubuntu下找不到libgtk-x11-2.0.so.0
 
 The following error came up when I tried to run Adobe Acrobat Reader on ubuntu 12.10
@@ -1918,67 +1305,7 @@ cp /etc/skel/.bashrc  ~/
 
 后问题解决，如果要改颜色配置，可以修改PS1的值。
 
-## 通过find命令寻找文件并拷贝到指定目录
 
-有这样的一个需求，需要将一部分符合条件的文件从一个目录拷贝到另一个目录中，可以通过使用find命令从源目录查找到符合条件的文件然后使用cp命令拷贝到目标目录
-
-方法一
-
-命令如下：
-
-find src_dir -name "access.log.2011102[2-6]*" -exec cp {} dst_dir \;
-
-拷贝文件到远程主机上的目标目录的命令：
-
-find src_dir -name "access.log.2011102[2-6]*" -exec scp {} 用户名@主机ip:dst_dir \;
-
-方法二
-
-find src_dir -name "access.log.2011102[2-6]*" |xargs -i cp {} dst_dir
-
-或
-
-find src_dir -name "access.log.2011102[2-6]*" |xargs -I {} cp {} dst_dir
-
-拷贝文件到远程主机上的目标目录的命令：
-
-find src_dir -name "access.log.2011102[2-6]*" |xargs -i scp {} 用户名@主机ip:dst_dir
-
-或
-
-find src_dir -name "access.log.2011102[2-6]*" |xargs -I {} scp {} 用户名@主机ip:dst_dir
-
-src_dir 源目录
-
-dst_dir 目标目录
-
-access.log.2011102[2-6]* 文件名的正则表达式，获取文件的条件
-
-方法三
-
-find命令结合cp命令，拷贝某个目录下所有文件到另一个目录中
-
-
-要求整个目录完全拷贝到另一个目录，并且忽略个别目录，脚本如下：
-
-find ./ -path '/tmp/mnt/disk1/ignore' -prune -o \( -name '*' ! -name "*.tmp" \) | xargs cp "目的目录" "{}" \;
-
-
-在上面这个脚本中，当执行到“| xargs cp”时，假设输入的字符串类似如下：
-
-/tmp/mnt/disk1/tt.txt
-
-/tmp/mnt/disk1/test/dd.txt
-
-
-
-要求执行“xargs cp”后，相应拷贝成如下的目录结构
-
-(即：原来disk1目录下所有文件都拷贝到src目录下，目录结构不变)：
-
-/tmp/mnt/src/tt.txt
-
-/tmp/mnt/src/test/dd.txt
 
 # ubuntu登录输入用户名密码后重新跳回登录界面
 
@@ -2007,7 +1334,6 @@ ls .Xauthority -l
 -rw------- 1 hp hp 80 1月 27 10:41 .Xauthority
 
 此时拥有者已经变为用户。按下shift + ctrl + F7切换回图形登陆界面登陆即可。
-
 
 
 # vimrc，bashrc中rc的含义
@@ -2047,16 +1373,6 @@ yum会把下载的软件包和header存储在cache中,而不会自动删除.可�
 
 可以通过强制关掉yum进程：`rm -f /var/run/yum.pid`
 
-#杂项
-
-GTK+2.0编程范例作者宋国伟邮箱：
-
-gwsong52@sohu.com
-
-待解决问题：
-
-G_CALLBACK()与  GTK_SIGNAL_FUNC()区别
-
 ## Ubuntu开机直接进入控制台
 
 只需编辑文件`/etc/default/grub`，把 `GRUB_CMDLINE_LINUX_DEFAULT=”quiet splash”`改成`GRUB_CMDLINE_LINUX_DEFAULT=”quiet splash text”`，然后再运行`sudo update-grub`即可。
@@ -2064,3 +1380,11 @@ G_CALLBACK()与  GTK_SIGNAL_FUNC()区别
 在控制台下想进入x-window，可以在root用户下输入：`gdm`或者`startx`
 
 修改Ubuntu默认启动进入文本模式后，重新启动后停在Checking battery state问题。没关系，实际系统已经启动，按键 ALT+F1 即可进入输入用户名登录得字符提示界面。
+
+
+#杂项
+
+待解决问题：
+
+G_CALLBACK()与  GTK_SIGNAL_FUNC()区别
+
