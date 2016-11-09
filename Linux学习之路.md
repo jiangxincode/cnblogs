@@ -98,6 +98,10 @@
 * linux 修改分区卷标 ( Partition Label ) : http://blog.chinaunix.net/uid-20321915-id-1966428.html
 * GTK+ 2.0 教程－－信号和回调函数的原理: http://blog.csdn.net/lastking/article/details/67356
 * Linux快捷键: http://www.cnblogs.com/jiangxinnju/p/6045204.html
+* shell脚本“syntax error:unexpected end of file”解决方案 : http://renyongjie668.blog.163.com/blog/static/1600531201172803244846/
+* String contains in Bash: http://stackoverflow.com/questions/229551/string-contains-in-bash
+* Could not get lock /var/lib/apt/lists/lock - open: http://blog.csdn.net/zyxlinux888/article/details/6358615
+* ubuntu 14.04 中找不到 libgtk-x11-2.0.so: http://www.cnblogs.com/bovenson/p/3684356.html
 
 
 ## Linux常用命令
@@ -547,8 +551,6 @@ glxgears是一个测试你的Linux是否可以顺利运行2D、3D的测试软件
 windows系统可以在重装时只格式化C盘，从而保留其他分区的数据。 Ubuntu系统也可以，只要在安装系统时分出一个/home分区。你可以把Ubuntu的“/”分区看为windows的C盘，重装Ubuntu时只格式化“/”分区，不格式化“/home”，这样就可以保留“/home”中的数据
 
 
-
-
 ## 如何启用 Ubuntu 中的 root 帐号
 
 和其它发行版本的Linux不同，Ubuntu Linux有一个与众不同的特点，那就是初次使用时，你无法作为root来登录系统，为什么会这样？这就要从系统的安装说起。对于其他Linux系统来说，一般在安装过程就设定root密码，这样用户就能用它登录root帐户或使用su命令转换到超级用户身份。与之相反，Ubuntu默认安装时，并没有给root用户设置口令，也没有启用root帐户。问题是要想作为root用户来运行命令该怎么办呢？没关系，我们可以使用sudo命令达此目的。sudo是linux下常用的允许普通用户使用超级用户权限的工具，该命令为管理员提供了一种细颗粒度的访问控制方法，通过它人们既可以作为超级用户又可以作为其它类型的用户来访问系统。这样做的好处是，管理员能够在不告诉用户root密码的前提下，授予他们某些特定类型的超级用户权限，这正是许多系统管理员所梦寐以求的。这里有必要说先简单一下sudo和su命令的区别：su命令是在不退出当前用户的情况下切换用户的工具，通过su可以在用户之间切换，如果超级权限用户root向普通或虚拟用户切换不需要密码，而普通用户切换到其它任何用户都需要密码验证。sudo是Unix/Linux平台上的一个非常有用的工具，它允许系统管理员分配给普通用户一些合理的“权利”，让他们执行一些只有超级用户或其他特许用户才能完成的任务这样一来，就不仅减少了root用户的登陆次数和管理时间，也提高了系统安全性。sudo设计者的宗旨是：给用户尽可能少的权限但仍允许完成他们的工作。我们可以简单的理解成：su获得稳定的超级用户（或其他用户权限），sudo获得暂时性的限制了的超级用户权限，一段时间之后会失效。
@@ -626,50 +628,7 @@ windows系统可以在重装时只格式化C盘，从而保留其他分区的数
 
 或者安装文件中执行.unistall.sh
 
-## Could not get lock /var/lib/apt/lists/lock - open
 
-    Could not get lock /var/lib/apt/lists/lock - open(11:Resource temporarily unavailable)
-
-ubuntukilllist终端工作
-
-出现这个问题的原因可能是有另外一个程序正在运行，导致资源被锁不可用。而导致资源被锁的原因，可能是上次安装时没正常完成，而导致出现此状况。
-
-解决方法：输入以下命令，之后再安装想装的包，即可解决
-
-    sudo rm /var/cache/apt/archives/lock
-    sudo rm /var/lib/dpkg/lock
-
-今天玩ubuntu的时候，在弄更新源的时候，突然出现以下错误：
-
-[1]+ Stopped                 sudo apt-get update
-
-haiquan@haiquan-desktop:~$ sudo apt-get update
-
-E: Could not get lock /var/lib/apt/lists/lock - open (11: Resource temporarily unavailable)
-
-E: Unable to lock the list directory
-
-开始以为是权限不够，就是用 sudo apt-get update,发现还是报错，问题没有解决。于是上网搜索了一下，答案如下：
-
-问题应该是之前那个更新被强制取消的问题，进程仍然还在。用这个命令查看一下：
-
-    ps -e | grep apt
-
-显示结果如下：
-
-    6362 ? 00:00:00 apt
-    6934 ? 00:00:00 apt-get
-    7368 ? 00:00:00 synaptic
-
-然后就执行
-
-    sudo killall apt
-    sudo killall apt-get
-    sudo killall synaptic
-
-再次在终端里查看ps -e | grep apt 没有任何结果了。继续执行sudo apt-get update。如果提示错误:E: Could not get lock /var/lib/dpkg/lock - open (11 Resource temporarily unavailable)
-
-    sudo rm /var/lib/apt/lists/lock
 
 
 ## linux系统下无法访问电脑硬盘
@@ -1182,46 +1141,6 @@ SYMBOL TABLE:
 
 
 
-# shell “syntax error:unexpected end of file”
-
-今天在写Shell时，运行时出现了这样的错误。
-
-git-sync-tree.sh_temp: line 111: syntax error: unexpected end of file
-
-网上Google了一下，网上都是说从windows下脚本传到Linux上可能会出现这样的问题，是因为Windows和Linux下的行末结束符是不一样的，曾经写过一篇博客：回车与换行的区别    当然，我今天遇到的不是这种情况导致的。
-
-1. 如果确实是这种情况，在windows下写好了Shell 但是在linux下用：
-
-sh -n [filesName]  检查语法总是出一个错误 syntax error:unexpected end of file
-
-原因如下:
-
-dos文件传输到unix系统时,会在每行的结尾多一个^M,在vi的时候,当你用如下命令：
-
-vi dos.txt
-
-:set fileformat=unix
-
-:w
-
-就会看到这些存在于每行结尾的^M符号，这个就是产生syntax error:unexpected end of file的原因
-
-解决方案：
-
-在vi下把这些^M都删除后即可。
-
-也可以使用Linux下的工具：dos2unix也可轻松将一个windows下的文本文件转化为Unix兼容的格式。
-
-2.我遇到的不是这样由于windows和Linux相互拷贝文件而导致的。这个是语法错误嘛，由于我这个shell脚本有点大，看了一阵子也没发现是那句话语法错误了，所以不得不用二分法来查找原因，不断注释一些代码，然后用sh -n test.sh来做语法检查，直到最后找到那一段或者哪一行代码引起的错误。我发现是下面这行代码引起的，你能看出其中的问题吗？^_^
-
-[ -d /home/repo/${SPPATH} ] || { mkdir -p /home/repo/${SPPATH}; cd /home/repo/${SPPATH}; git init >> $GITLOG 2>&1 }
-
-嗯，其实我用花括号{}是想把几个命令组合起来在当前shell中执行，然后我犯了一个语法错误，在最后的一个命令后没有加分号（;）。将这行改为如下即可（添加一个最后的分号）：
-
-[ -d /home/repo/${SPPATH} ] || { mkdir -p /home/repo/${SPPATH}; cd /home/repo/${SPPATH}; git init >> $GITLOG 2>&1; }
-
-关于当前shell中执行一组命令，特别要注意的是，在”{“的右边 和”}“的左边，至少要间隔一个以上的空格，而且每个命令都要以分号(;)作为结尾。
-
 #怎样给变量传递执行命令结果
 
 在linux shell脚本里，设置一个变量，但是变量是一个命令，需要将执行结果放到变量里，并输出，例如：ip='ifconfig eth0'  echo $ip，怎样可以叫页面显示的是eth0的网络状况？就是ifconfig eth0的结果？
@@ -1232,54 +1151,9 @@ echo $ip
 
 使用反引号可以把一个命令的输出插到另一个命令中去。相同功能的写法还有$()，功能同` ` 效果是一样的。不过某些unix系统不支持$()这种写法。但是` `在任何unix或linux系统下都可以使用。
 
-# shell 判断字符串是否存在包含关系
 
-```
-    #! /bin/bash
-    
-    var1="hello"
-    var2="he"
-    
-    # 方法1
-    if [ ${var1:0:2} = $var2 ]
-    then
-        echo "1:include"
-    fi
-    
-    # 方法2
-    echo "$var1" |grep -q "$var2"
-    if [ $? -eq 0 ]
-    then
-        echo "2:include"
-    fi
-    
-    # 方法3
-    echo "$var1" |grep -q "$var2" && echo "include" ||echo "not"
-    
-    # 方法4
-    [[ "${var1/$var2/}" != "$var2" ]] && echo "include" || echo "not"
-    
-    # 其他方法，expr或awk的index函数
-    ${var#...}
-    ${var%...}
-    ${var/.../...}
-```
 
-## 解决ubuntu下找不到libgtk-x11-2.0.so.0
 
-The following error came up when I tried to run Adobe Acrobat Reader on ubuntu 12.10
-error while loading shared libraries: libgtk-x11-2.0.so.0: cannot open shared object file: No such file or directory
-To fix this, simple install the package ia32-libs-gtk
-
-    sudo apt-get install ia32-libs-gtk
-
-Now run the application again and the error should go away.
-
-If you os is ubuntu 14.04, do this before:
-
-    echo "deb http://archive.ubuntu.com/ubuntu/ raring main restricted universe multiverse"  >>  sudo gedit /etc/apt/sources.list
-    sudo apt-get update
-    sudo apt-get install ia32-libs ia32-libs-gtk
 
 
 ## debian hosts文件中的 127.0.1.1 主机地址
