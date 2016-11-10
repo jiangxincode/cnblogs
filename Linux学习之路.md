@@ -102,6 +102,7 @@
 * String contains in Bash: http://stackoverflow.com/questions/229551/string-contains-in-bash
 * Could not get lock /var/lib/apt/lists/lock - open: http://blog.csdn.net/zyxlinux888/article/details/6358615
 * ubuntu 14.04 中找不到 libgtk-x11-2.0.so: http://www.cnblogs.com/bovenson/p/3684356.html
+* Ubuntu输入密码登陆后又跳回到登录界面: http://blog.163.com/thinki_cao/blog/static/8394487520130270379437/
 
 
 ## Linux常用命令
@@ -426,40 +427,6 @@ linux 下全局的文件与程序的关联是通过`/usr/share/applications/defa
     deb-src http://mirrors.163.com/ubuntu/ maverick-backports main restricted universe multiverse
 
 
-## FTP资源
-
-    ftp://ftp.tsinghua.edu.cn # 各种镜像、Linux软件
-    ftp://mirror.pku.edu.cn/pub/linux/
-    ftp://219.238.157.219/pub/
-    ftp://eelinux.3322.org
-    ftp://166.111.72.5/Linux
-    ftp://166.111.121.3/Linux/
-    ftp://166.111.68.183/pub/Linux/
-    
-    # Debian升级镜像
-    ftp://debian.ustc.edu.cn/          这个比较全
-    ftp://ftp.tsinghua.edu.cn/mirror/debian
-    ftp://ftp.sjtu.edu.cn/mirror/sites/ftp.debian.org/
-    ftp://mirror.dlut.edu.cn/
-    ftp://debian.nctu.edu.tw/
-    http://debian.cn99.com/
-    http://debian.okey.net/
-    ftp://deb.distro.cn
-    
-    # Gentoo升级镜像
-    ftp://ftp.sjtu.edu.cn/mirror/sites/gentoo
-    ftp://ftp.tsinghua.edu.cn/mirror/gentoo
-    ftp://166.111.172.55/pub/mirror/gentoo
-    rsync://gentoo.net9.org/gentoo-portage
-    
-    # Fedora:apt-rpm
-    ftp://ftp.tsinghua.edu.cn/mirror/ayo.freshrpms.net/pub/freshrpms/ayo/fedora/linux/2/i386/
-    ftp://ftp.sjtu.edu.cn apt/fedora/2/i386 os updates freshrpms
-    ftp://ftp.ctex.org/?
-    ftp://ftp.kernel.org/pub/
-    ftp://ftp.gnu.org
-
-
 
 ## 常用软件及相关配置问题
 
@@ -627,8 +594,6 @@ windows系统可以在重装时只格式化C盘，从而保留其他分区的数
     rm /root/lnmp *//删除lnmp文件夹
 
 或者安装文件中执行.unistall.sh
-
-
 
 
 ## linux系统下无法访问电脑硬盘
@@ -972,100 +937,6 @@ while((ch=getchar())!='/n'&&ch!=EOF);
 以上语句将清除stdin中的字符，知道遇到换行符或者是读完缓冲区。
 
 
-# ftok()函数(linux)
-
-系统建立IPC通讯（如消息队列、共享内存时）必须指定一个ID值。通常情况下，该id值通过ftok函数得到。ftok原型如下：
-
-key_t ftok( char * fname, int id )
-
-fname就时你指定的文件名(该文件必须是存在而且可以访问的)，一般使用当前目录，如：key = ftok(".", 1); 这样就是将fname设为当前目录。id是子序号，虽然为int，但是只有8个比特被使用(0-255)。当成功执行的时候，一个key_t值将会被返回，否则 -1 被返回。在一般的UNIX实现中，是将文件的索引节点号取出，前面加上子序号得到key_t的返回值。如指定文件的索引节点号为65538，换算成16进制为 0x010002，而你指定的ID值为38，换算成16进制为0x26，则最后的key_t返回值为0x26010002。查询文件索引节点号的方法是：ls -i。在成功获取到key之后，就可以使用该key作为某种方法的进程间通信的key值，例如shmget共享内存的方式。shmget的函数原型为：int shmget( key_t, size_t, flag)。在创建成功后，就返回共享内存的描述符。在shmget中使用到的key_t就是通过ftok的方式生成的。
-
-shmctl(shmid, IPC_RMID, 0)的作用是从系统中删除该共享存储段。因为每个共享存储段有一个连接计数(shmid_ds结构中的shm_nattch)，所以除非使用该段的最后一个进程终止与该段脱接，否则不会实际上删除该存储段
-
-#共享内存与信号量
-
-##共享内存
-
-共享内存是两个或多个进程共享同一块内存区域，并通过该内存区域实现数据交换的进程间通信。虽然共享内存是进程间通信的最快速的机制，但是进程间的同步问题靠自身难以解决，于是就需要信号量机制，信号量能很好的解决互斥资源的同步问题。这些牵涉到操作系统里的知识，要好好研究一番同步互斥问题才能继续。
-
-共享内存的工作模式一般是：
-
-创建或取得一块共享内存
-
-1）不指定 KEY
-
-// IPC_PRIVATE指出需要创建内存;
-
-//SHM_SIZE 指出字节大小;
-
-//SHM_MODE 指出访问权限字如 0600表示，用户可以读写该内存
-
-int shmget(key_t IPC_PRIVATE,size_t SHM_SIZE,int SHM_MODE);
-
-2）指定KEY
-
-//如果SHM_KEY指向的共享存储已经存在，则返回共享存储的ID;
-
-//否则，创建共享存储并返回其ID
-
-int  shmget(key_t SHM_KEY,size_t SHM_SIZE,int SHM_MODE);
-
-2.	void *shmat(int shmid, const void *shmaddr, int shmflg);
-
-	将shmid所指共享内存和当前进程连接(attach)
-
-3.	要做的事
-
-4.	int shmdt(const void *shmaddr);
-
-	将先前用shmat连接好的共享内存分离(detach)当前的进程
-
-5.	int shmctl(int shmid ,int cmd, struct shmid_ds *buf)
-
-	把cmd设成IPC_RMID删除共享内存及其数据结构
-
-附加说明：
-
-1.     在经过fork()后，子进程将继承已连接的共享内存地址
-
-2.     在经过exec()后，已连接的共享内存地址会自动detach
-
-3.     在结束进程后，已连接的共享内存地址会自动detach
-
-##信号量
-
-信号量对应于某一种资源，取一个非负的整型值
-
-信号量值指的是当前可用的该资源的数量，若它等于0则意味着目前没有可用的资源
-
-在该信号量下等待资源的进程等待队列
-
-对信号量进行的两个原子操作：P操作和V操作。最简单的信号量是只能取0 和1 两种值，叫做二维信号量
-
-编程步骤：
-
-创建信号量或获得在系统已存在的信号量
-
-调用semget()函数，不同进程使用同一个信号量键值来获得同一个信号量
-
-int semget(key_t key, int nsems, int semflg);
-
-控制信号量
-
-使用semctl()函数的SETVAL操作，当使用二维信号量时，通常将信号量初始化为1，如cmd=SETVAL设置信号量的值； 或者cmd=IPC_STAT获得semid_ds结构
-
- int semctl(int semid, int semnum, int cmd, union semun arg);
-
-进行信号量的PV操作
-
-调用semop()函数，实现进程之间的同步和互斥的核心部分
-
-如果不需要信号量，则从系统中删除它
-
-使用semclt()函数的IPC_RMID操作，在程序中不应该出现对已被删除的信号量的操作
-
-一个例子程序”sem_shm_1.c”，有小改动：简单的服务器和客户端程序，启动不带参数运行服务器，带参数则是客户端。服务器启动后创建信号量和共享内存，并将共享内存的引用ID显示出来，将信号量的引用ID放在共享内存中，利用服务器端提供的共享内存引用ID将共享内存附加到地址段,读取信号量以实现两个进程之间的同步,之后这两个进程就可利用共享内存进行进程间通信,客户端输入的信息将在服务器端显示出来。
-
 # Linux下开发工具介绍
 
 ## indent
@@ -1180,36 +1051,6 @@ cp /etc/skel/.bashrc  ~/
 后问题解决，如果要改颜色配置，可以修改PS1的值。
 
 
-
-# ubuntu登录输入用户名密码后重新跳回登录界面
-
-现象：在Ubuntu 14.04登陆界面输入密码之后，黑屏一闪后，又跳转到登录界面。
-
-原因：主目录下的.Xauthority文件拥有者变成了root，从而以用户登陆的时候无法都取.Xauthority文件。
-
-说明：Xauthority，是startx脚本记录文件。Xserver启动时，读文件~/.Xauthority,读入对应其display的记录。当一个需要显示的客户程序启动调用XOpenDisplay()也读这个文 件，并把找到的magic code 发送给Xserver。
-
-当Xserver验证这个magic code正确以后，就同意连接啦。观察startx脚本也可以看到，每次startx运行，都在调用xinit以前使用了xauth的add命令添加了一个新的记录到~/.Xauthority，用来这次运行X使用认证
-
-解决方法：我们需要将.Xauthority的拥有者改为登陆用户（或者干脆将.Xauthority删除，此法转自网上，本人未验证）
-
-开机后在登陆界面按下shift + ctrl + F1进入tty命令行终端登陆后输入：
-
-$ cd ~
-
-$ sudo chown groupname:username .Xauthority
-
-然后再次输入：
-
-ls .Xauthority -l
-
-成功后显示如下：
-
--rw------- 1 hp hp 80 1月 27 10:41 .Xauthority
-
-此时拥有者已经变为用户。按下shift + ctrl + F7切换回图形登陆界面登陆即可。
-
-
 # vimrc，bashrc中rc的含义
 
 rc (像是 ".cshrc" 或 "/etc/rc" 中的 rc 这两个字母) = "RunCom"
@@ -1261,4 +1102,3 @@ yum会把下载的软件包和header存储在cache中,而不会自动删除.可�
 待解决问题：
 
 G_CALLBACK()与  GTK_SIGNAL_FUNC()区别
-
