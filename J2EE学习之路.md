@@ -86,8 +86,40 @@
 * [原创] SSO(Single Sign-on) in Action(上篇): http://www.blogjava.net/security/archive/2006/10/02/sso_in_action.html
 * 单点登陆(Single Sign-On,SSO)介绍（翻译）: http://blog.csdn.net/rosen/article/details/445112
 * How do I prevent people from shutting down my Tomcat?: http://www.avajava.com/tutorials/lessons/how-do-i-prevent-people-from-shutting-down-my-tomcat.html
-
-
+* 浅析Web工程目录和tomcat目录: http://blog.csdn.net/ystyaoshengting/article/details/6204886
+* web.xml配置详解: http://twb.iteye.com/blog/196733
+* CSS3美化有序列表: http://www.w3cplus.com/css3/css3-ordered-list-styles
+* 简洁纯净的CSS表单设计实例: http://blog.bingo929.com/clean-and-pure-css-form-design.html
+* DreamweaverCS5+Tomcat环境配置: http://blog.csdn.net/jnqqls/article/details/7024170
+* Java关键字及其作用：http://blog.csdn.net/hfmbook/article/details/7634385
+* java中static{}语句块详解: http://blog.csdn.net/lubiaopan/article/details/4802430
+* 转一个J2EE开发时的包命名规则，养成良好的开发习惯：http://www.blogjava.net/paulwong/archive/2012/04/15/374675.html
+* 对比C++ 和Java: Thinking in java[Java编程思想第4版].pdf
+* 舞蹈特点与编程语言特点的联想曲: http://blog.csdn.net/iammerryz/article/details/7661067?_t_t_t=0.3386819043662399
+* className.class.getResourceAsStream()与ClassLoader.getSystemResourceAsStream() 的区别：http://www.blogjava.net/icewee/archive/2012/05/04/377371.html
+* JAR文件包及jar命令详解: http://blog.donews.com/hitfly/archive/2005/03/25/312851.aspx
+* JAVA调用系统命令或可执行程序：http://wuhongyu.iteye.com/blog/461477/
+* 过时date.toLocaleString()的解决方法: http://ldl8818.iteye.com/blog/1492301
+* Jps介绍以及解决jps无法查看某个已经启动的java进程问题: http://trinea.iteye.com/blog/1196400
+* java中Assert的用法：http://lgl669.iteye.com/blog/483271
+* Java RMI与RPC，JMS的比较：http://visionsky.blog.51cto.com/733317/438693/
+* java存储数据的地方以及九种基本类型：http://blog.sina.com.cn/s/blog_81daf24e0100snj4.html
+* FINAL .....FINALLY ...... 和FINALIZE ......区别: http://www.cnblogs.com/wl0000-03/p/5961582.html
+* Comparable与Comparator的区别：http://blog.csdn.net/mageshuai/article/details/3849143
+* FILE,FILEINPUTSTREAM,FILEREADER,INPUTSTREAMREADER,BUFFEREDREADER的使用和区别: http://www.blogjava.net/flysky19/articles/92286.html
+* MyEclipse删除对Struts、Hibernate、Spring的支持：http://www.cnblogs.com/xj626852095/p/3648148.html
+* 修改Struts2的struts.xml配置文件位置：http://blog.csdn.net/zht666/article/details/8980451
+* Eclipse 开发WEB项目所遇问题 WebContent WebRoot：http://blog.sina.com.cn/s/blog_525960510100jo0j.html
+* javascript CDATA: http://blog.csdn.net/shenyan008/article/details/12222241
+* Java调用动态库方法说明: http://www.cnblogs.com/xifanyaoyao/p/3659019.html
+* struts2关于A web application created a ThreadLocal with key of type 异常解决办法: http://cooliron.blog.163.com/blog/static/12470313820111235248426/
+* Tomcat7启动报Error listenerStart错误: http://www.cnblogs.com/nayitian/p/3439336.html
+* 关于toString: http://www.iteye.com/problems/96872
+* 关于使用InputStreamReader读取GBK编码文件乱码的有关问题：http://mypyg.iteye.com/blog/888915
+* Java编码浅析（注意区分三个概念）：http://www.iteye.com/topic/311583
+* Servlet容器的匹配过程：http://developer.51cto.com/art/200907/134840.htm
+* 解决java.lang.IncompatibleClassChangeError: https://my.oschina.net/itblog/blog/528613
+* html的meta总结，html标签中meta属性使用介绍: http://www.haorooms.com/post/html_meta_ds
 
 
 ## WebService
