@@ -103,6 +103,9 @@
 * Could not get lock /var/lib/apt/lists/lock - open: http://blog.csdn.net/zyxlinux888/article/details/6358615
 * ubuntu 14.04 中找不到 libgtk-x11-2.0.so: http://www.cnblogs.com/bovenson/p/3684356.html
 * Ubuntu输入密码登陆后又跳回到登录界面: http://blog.163.com/thinki_cao/blog/static/8394487520130270379437/
+* Linux压缩与解压常用命令: http://www.cnblogs.com/jiangxinnju/p/6055870.html
+* vimrc，bashrc中rc的含义: UNIX Power Tools (3rd Edition).chm 搜索rc
+* objdump: http://sourceware.org/binutils/docs-2.27/binutils/objdump.html#objdump
 
 
 ## Linux常用命令
@@ -232,77 +235,14 @@
     #cat /dev/cdrom >;/root/1.iso
     mkisofs -r -o myiso.iso /dev/cdrom
     cp -r /home/user name.iso
-
-    ## Linux下打包压缩war和解压war包
-    jar -cvfM0 game.war ./ # 把当前目录下的所有文件打包成game.war
-    jar -xvf game.war # 解压game.war到当前目录
 	
 	# man tailf
 	# Linux下分割合并文: man split/cat
 	# 生成目录树结构: man tree
 	# rename命令: http://man.linuxde.net/rename
-
 ```
 
-## tar/zip/
-
-* -c: 建立压缩档案
-* -x：解压
-* -t：查看内容
-* -r：向压缩归档文件末尾追加文件
-* -u：更新原压缩包中的文件
-
-这五个是独立的命令，压缩解压都要用到其中一个，可以和别的命令连用但只能用其中一个。下面的参数是根据需要在压缩或解压档案时可选的。
-
-* -z：有gzip属性的
-* -j：有bz2属性的
-* -Z：有compress属性的
-* -v：显示所有过程
-* -O：将文件解开到标准输出
-
-下面的参数-f是必须的
-
--f: 使用档案名字，切记，这个参数是最后一个参数，后面只能接档案名。
-
-```shell
-    tar -cf all.tar *.jpg # 这条命令是将所有.jpg的文件打成一个名为all.tar的包。-c是表示产生新的包，-f指定包的文件名。
-    tar -rf all.tar *.gif # 这条命令是将所有.gif的文件增加到all.tar的包里面去。-r是表示增加文件的意思。
-    tar -uf all.tar logo.gif # 这条命令是更新原来tar包all.tar中logo.gif文件，-u是表示更新文件的意思。
-    tar -tf all.tar # 这条命令是列出all.tar包中所有文件，-t是列出文件的意思
-    tar -xf all.tar # 这条命令是解出all.tar包中所有文件，-x是解开的意思
-```
-
-压缩
-
-    tar –cvf jpg.tar *.jpg //将目录里所有jpg文件打包成tar.jpg
-    tar –czf jpg.tar.gz *.jpg   //将目录里所有jpg文件打包成jpg.tar后，并且将其用gzip压缩，生成一个gzip压缩过的包，命名为jpg.tar.gz
-    tar –cjf jpg.tar.bz2 *.jpg //将目录里所有jpg文件打包成jpg.tar后，并且将其用bzip2压缩，生成一个bzip2压缩过的包，命名为jpg.tar.bz2
-    tar –cZf jpg.tar.Z *.jpg   //将目录里所有jpg文件打包成jpg.tar后，并且将其用compress压缩，生成一个umcompress压缩过的包，命名为jpg.tar.Z
-    rar a jpg.rar *.jpg //rar格式的压缩，需要先下载rar for linux
-    zip jpg.zip *.jpg //zip格式的压缩，需要先下载zip for linux
-
-解压
-
-    tar –xvf file.tar //解压 tar包
-    tar -xzvf file.tar.gz //解压tar.gz
-    tar -xjvf file.tar.bz2   //解压 tar.bz2
-    tar –xZvf file.tar.Z   //解压tar.Z
-    unrar e file.rar //解压rar
-    unzip file.zip //解压zip
-
-
-总结
-
-    *.tar 用 tar –xvf 解压
-    *.gz 用 gzip -d或者gunzip 解压
-    *.tar.gz和*.tgz 用 tar –xzf 解压
-    *.bz2 用 bzip2 -d或者用bunzip2 解压
-    *.tar.bz2用tar –xjf 解压
-    *.Z 用 uncompress 解压
-    *.tar.Z 用tar –xZf 解压
-    *.rar 用 unrar e解压
-    *.zip 用 unzip 解压
-
+    
 ## 打印某一文件夹下的所有文件名及其行数
 
 这里分别要考虑到该文件夹有或没有子文件夹的情况，用shell实现打印某一文件夹下的所有文件（如果是子文件夹下的文件，需要打印相对目录）及该文件的行数清单。列表类似这样：
@@ -867,13 +807,8 @@ Identity added: /home/user/.ssh/id_rsa (/home/user/.ssh/id_rsa)
 
 3. ps -aux 命令
 
-
-
 　　ps也可打印其路径,但不是万能的,有些路径只能使用以上两种方法取得.
 
-
-
-# Linux编程学习之路
 
 # GTK+相关
 
@@ -881,8 +816,7 @@ Identity added: /home/user/.ssh/id_rsa (/home/user/.ssh/id_rsa)
 # GTK中的delete_event和destroy
 delete_event 事件一般由用户或者说用户通过窗口管理器产生，即点击窗口右上角的退出按钮。假如不做任何特殊处理，窗口管理器会自动产生destroy信号；如果我们自 定义了处理delete_event事件的回调函数，是否产生destroy信号就和函数的返回值有关，如果是FALSE就产生，反之则没有效果。
 
-至 于destroy，除了可以由delete_event事件产生之外，还可以通过gtk_widget_destroy函数与其它信号发生交换。同样，如果不加指定，默认结果是关闭所指向的窗口但并不结束进程。如果我们希望主窗口和进程一起关闭，必须使用gtk_main_quit()。
-
+至于destroy，除了可以由delete_event事件产生之外，还可以通过gtk_widget_destroy函数与其它信号发生交换。同样，如果不加指定，默认结果是关闭所指向的窗口但并不结束进程。如果我们希望主窗口和进程一起关闭，必须使用gtk_main_quit()。
 
 
 # CodeBlocks 使用经验谈
@@ -958,60 +892,6 @@ gprof 是安装在你的 Linux 系统的 /usr/bin 目录下的一个程序. 它�
 gprof <program_name>
 
 
-## objdump（反汇编工具）
-
-objdump –t
-
-这个命令可以打印出bomb 的符号表。符号表包含了bomb中所有函数的名称和存储地址以及全局变量的名称。你可以通过查看函数名得到一些信息。
-
-objdump –d
-
-运用这个命令我们可以对bomb 中的代码进行反汇编。通过阅读汇编代码可以告诉你bomb 是如何运行的。虽然objdump –d 给了你很多的信息，但是它并不能告诉你所有的信息。例如：一个调用sscanf 函数的语句可能显示为：8048c36: e8 99 fc ff ff call 80488d4 <_init+0x1a0>，你还需要gdb 来帮助你确定这个语句的具体功能。
-
-objdump打印符号表的格式：
-
-shenyan@ubuntu:~/Temp$ objdump -t a.o
-
-a.o:     file format elf32-i386
-
-SYMBOL TABLE:
-
-00000000 l    df *ABS* 00000000 a.c
-
-00000000 l    d  .text 00000000 .text
-
-00000000 l    d  .data 00000000 .data
-
-00000000 l    d  .bss 00000000 .bss
-
-00000000 l    d  .note.GNU-stack 00000000 .note.GNU-stack
-
-00000000 l    d  .comment 00000000 .comment
-
-00000000 g     F .text 00000005 f_test
-
-00000005 g     F .text 00000027 main
-
-00000000         *UND* 00000000 shared
-
-00000000         *UND* 00000000 swap
-
-
-
-1.段内偏移
-
-2.符号作用域
-
-3.符号类型：d ??；df 源文件名；F 函数名
-
-4.符号所在段： *UND*外部链接符号，未在本目标文件定义
-
-5.符号对应的对象占据的内存空间大小，没有实体对象大小为0，未定义的为0
-
-6. 符号名
-
-
-
 #怎样给变量传递执行命令结果
 
 在linux shell脚本里，设置一个变量，但是变量是一个命令，需要将执行结果放到变量里，并输出，例如：ip='ifconfig eth0'  echo $ip，怎样可以叫页面显示的是eth0的网络状况？就是ifconfig eth0的结果？
@@ -1021,10 +901,6 @@ ip=`ifconfig eth0`
 echo $ip
 
 使用反引号可以把一个命令的输出插到另一个命令中去。相同功能的写法还有$()，功能同` ` 效果是一样的。不过某些unix系统不支持$()这种写法。但是` `在任何unix或linux系统下都可以使用。
-
-
-
-
 
 
 ## debian hosts文件中的 127.0.1.1 主机地址
@@ -1050,14 +926,6 @@ cp /etc/skel/.bashrc  ~/
 
 后问题解决，如果要改颜色配置，可以修改PS1的值。
 
-
-# vimrc，bashrc中rc的含义
-
-rc (像是 ".cshrc" 或 "/etc/rc" 中的 rc 这两个字母) = "RunCom"
-
-"rc" 是取自 "runcom", 来自麻省理工学院在 1965 年发展的 CTSS系统。相关文献曾记载这一段话: '具有从档案中取出一系列命令来执行的功能；这称为 "run commands" 又称为 "runcom"，而这种档案又称为一个 runcom (a runcom)。'
-
-Brian Kernighan 与 Dennis Ritchie 告诉 Vicki Brown 说: "rc" 也是Plan 9 作业系统 shell 的名字。
 
 #.cshrc文件是干什么用的?
 
