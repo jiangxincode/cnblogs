@@ -4,7 +4,6 @@ JDK(Java Development Kit)是一个写Java程序所需的开发环境。它由一
 
 * javac: 编译器，将源程序转成字节码
 * jar: 打包工具，将相关的类文件打包成一个文件
-* javadoc: 文档生成器，从源码注释中提取文档
 * jdb: debugger，查错工具
 
 JDK中还包括完整的JRE（Java Runtime Environment，Java运行环境），也被称为private runtime。包括了用于产品环境的各种库类，以及给开发员使用的补充库，如国际化的库、IDL库。 JDK中还包括各种例子程序，用以展示Java API中的各部分。
@@ -70,26 +69,6 @@ Fedora, OracleLinux, Red Hat Enterprise Linux等系统：在命令行中，键�
 
     $ su -c "yum install java-1.7.0-openjdk-devel"
     $ su -c "yum install java-1.6.0-openjdk-devel"
-
-
-## javadoc注意点（原创）
-
-javadoc生成文档时总是报java.lang.IllegalArgumentException错
-
-JavamavenEXTSUNJDK .
-
-javadoc生成文档时总是报java.lang.IllegalArgumentException错误,是classpath里面字符冲突引起的。我在classpath中包含了%JAVA_HOME%\lib;解决方法是重新设置classpath或者删除classpath.要注意设置完成后重启下cmd或者editplus，重启后生效！
-
-见官方参考文档 http://maven.apache.org/plugins/maven-javadoc-plugin/faq.html
-
-
-javadoc生成时出错：编码GBK的不可映射字符
-
-由于java源代码是用的UTF-8编码，Eclipse中默认编码是GB18030，因此，在生成javadoc的时候，需要手工指定一下编码和字符集。
-
-解决方案是： 主菜单–>Project–>Generate javadoc–>next>next–> 在 “Extra javadoc options”下面的文本框中填入：
-
--encoding UTF-8 -charset UTF-8
 
 
 # Java中char到底是多少字节？

@@ -106,6 +106,7 @@
 * Linux压缩与解压常用命令: http://www.cnblogs.com/jiangxinnju/p/6055870.html
 * vimrc，bashrc中rc的含义: UNIX Power Tools (3rd Edition).chm 搜索rc
 * objdump: http://sourceware.org/binutils/docs-2.27/binutils/objdump.html#objdump
+* tcpdump捕捉样例: http://www.cnblogs.com/jiangxinnju/p/6012867.html
 
 
 ## Linux常用命令

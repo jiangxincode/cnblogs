@@ -42,9 +42,6 @@
 * 构建一个文本可视化和分析应用程序: http://www.ibm.com/developerworks/cn/opensource/os-txtviz/
 * POJO模式: http://www.cnblogs.com/yezhenhan/archive/2011/11/21/2256642.html
 * tomcat startup.sh/shutdown.sh/setclasspath.sh/catalina.sh分析：http://vekergu.blog.51cto.com/9966832/d-2
-* src源代码生成html格式文档：http://www.cnblogs.com/shenliang123/archive/2012/04/23/2466483.html
-* 自己动手制作chm格式开源文档：http://www.cnblogs.com/shenliang123/archive/2012/04/23/2466441.html
-* Javadoc转换chm帮助文档的四种方法总结: http://lishunli.iteye.com/blog/1051688
 * Java数字图像处理基础知识 - 必读: http://blog.csdn.net/jia20003/article/details/7279667
 * Java反序列化时对象注入可以造成代码执行漏洞: http://0day5.com/archives/3572
 * Java NIO与IO的区别和比较: http://my.oschina.net/u/2001537/blog/353035
@@ -120,6 +117,12 @@
 * Servlet容器的匹配过程：http://developer.51cto.com/art/200907/134840.htm
 * 解决java.lang.IncompatibleClassChangeError: https://my.oschina.net/itblog/blog/528613
 * html的meta总结，html标签中meta属性使用介绍: http://www.haorooms.com/post/html_meta_ds
+* spring security中限制用户登录次数超过限制的处理: http://jackyrong.iteye.com/blog/2244803
+* (流控、流量控制)Guava RateLimiter在Web应用中的使用: http://blog.csdn.net/cloud_ll/article/details/43602325
+* javadoc相关问题: http://www.cnblogs.com/jiangxinnju/p/6091525.html
+* 测试方面的基础概念: http://javazhou.iteye.com/blog/1727745
+* SIT和UAT: http://henry-cong.iteye.com/blog/1460431
+* http://stackoverflow.com/questions/37697359/jsonpropertyaccess-jsonproperty-access-write-only-not-working
 
 
 ## WebService
@@ -175,7 +178,6 @@
 * Eclipse jar打包详解: http://jingyan.baidu.com/article/219f4bf7d0ef87de442d3820.html
 * Eclipse中Ant的配置与测试 转: http://www.cnblogs.com/jiangxinnju/p/5040436.html
 * 如何使用Eclipse将Java项目打成jar包？:http://jingyan.baidu.com/article/4dc40848b5a8c9c8d946f139.html
-* 如何使用eclipse生成javadoc帮助文档？:http://jingyan.baidu.com/article/dca1fa6f4d3d7ff1a4405239.html
 * 'Must Override a Superclass Method' Errors after importing a project into Eclipse: http://stackoverflow.com/questions/1678122/must-override-a-superclass-method-errors-after-importing-a-project-into-eclips
 
 
@@ -299,10 +301,8 @@
 
 ## JUnit
 
-    JUnit is a simple framework to write repeatable tests. It is an instance of the xUnit architecture for unit testing frameworks.
-
-* 项目地址：http://junit.org/
-* Junit4 JavaDoc: http://junit.org/javadoc/latest/index.html
+* http://junit.org/
+* http://junit.org/javadoc/latest/index.html
 * JUnit4 详解：http://www.cnblogs.com/eggbucket/archive/2012/02/02/2335697.html
 
 
@@ -479,6 +479,7 @@ Eclipse中`Update Project`，选择`Force Update of Snapshots/Releases`
 * 解决Maven报Plugin execution not covered by lifecycle configuration: http://blog.csdn.net/xxd851116/article/details/25197373
 * Maven编译jar出现：无法确定 T 的类型参数的异常的原因和处理方案: http://www.cnblogs.com/peida/p/4218210.html
 * 向maven中央仓库提交jar: http://www.cnblogs.com/gaoxing/p/4359795.html
+* 利用github搭建个人maven仓库: http://blog.csdn.net/hengyunabc/article/details/47308913
 * 常见Maven仓库：
     * http://mvnrepository.com/    （搜索）
 	* https://maven-repository.com/    （搜索）
@@ -491,36 +492,6 @@ Eclipse中`Update Project`，选择`Force Update of Snapshots/Releases`
     * http://people.apache.org/repo/m2-snapshot-repository/
     * http://mirrors.ibiblio.org/maven2/org/acegisecurity/
 
-## maven下载源码和javadoc
-
-当在IDE中使用Maven时如果想要看引用的jar包中类的源码和javadoc需要通过maven命令下载这些源码，然后再进行引入，通过mvn命令能够容易的达到这个目的：
-
-```sehll
-    mvn dependency:sources
-    mvn dependency:resolve -Dclassifier=javadoc
-```
-
-命令使用方法：首先进入到相应的pom.xml目录中，然后执行以上命令。第一个命令尝试下载在pom.xml中依赖的文件的源代码。第二个命令尝试下载对应的javadocs。但是有可能一些文件没有源代码或者javadocs。也可以通过配置文件添加，打开maven配置文件 setting.xml文件(.../.m2/settings.xml) 增加如下配置：
-
-```xml
-    <profiles>
-    <profile>
-        <id>downloadSources</id>
-        <properties>
-            <downloadSources>true</downloadSources>
-            <downloadJavadocs>true</downloadJavadocs>
-        </properties>
-    </profile>
-    </profiles>
-
-    <activeProfiles>
-      <activeProfile>downloadSources</activeProfile>
-    </activeProfiles>
-```
-
-配置eclipse
-
-    Window > Preferences > Maven and checking the "Download Artifact Sources" and "Download Artifact JavaDoc" options
 
 ## maven快速下载某个jar包依赖的所有jar
 
@@ -573,9 +544,7 @@ mvn deploy:deploy-file -DgroupId="edu.jiangxin" -DartifactId=”gcu” -Dversion
 
 -DrepositoryId=internal
 
-maven中如何生成javadoc
 
-mvn javadoc:javadoc
 
 
 ## bintray
@@ -825,7 +794,7 @@ http://spark.apache.org/
 ## Storm
 
 http://storm.apache.org/index.html
-JavaDoc: https://storm.apache.org/javadoc/apidocs/index.html
+https://storm.apache.org/javadoc/apidocs/index.html
 
 
 ## nutch
@@ -965,9 +934,9 @@ JavaDoc: https://storm.apache.org/javadoc/apidocs/index.html
 
 ## Jackson
 
-* 下载：http://wiki.fasterxml.com/JacksonDownload
-* fasterxml: http://fasterxml.com/
-* javadoc: http://wiki.fasterxml.com/JacksonJavaDocs
+* http://fasterxml.com/
+* http://wiki.fasterxml.com/JacksonDownload
+* http://wiki.fasterxml.com/JacksonJavaDocs
 * Jackson 框架，轻易转换JSON: http://www.cnblogs.com/hoojo/archive/2011/04/22/2024628.html
 * bson4json: https://github.com/michel-kraemer/bson4jackson
 * Binary JSON with bson4jackson: http://www.michel-kraemer.com/binary-json-with-bson4jackson
@@ -984,7 +953,7 @@ JavaDoc: https://storm.apache.org/javadoc/apidocs/index.html
 
 * http://www.jdom.org/
 * https://github.com/hunterhacker/jdom/
-* Javadoc: http://www.jdom.org/downloads/docs.html
+* http://www.jdom.org/downloads/docs.html
 
 
 ## Dom4j
