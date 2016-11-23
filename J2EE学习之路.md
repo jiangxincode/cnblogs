@@ -123,6 +123,7 @@
 * 测试方面的基础概念: http://javazhou.iteye.com/blog/1727745
 * SIT和UAT: http://henry-cong.iteye.com/blog/1460431
 * http://stackoverflow.com/questions/37697359/jsonpropertyaccess-jsonproperty-access-write-only-not-working
+* 全面分析 Spring 的编程式事务管理及声明式事务管理: http://www.ibm.com/developerworks/cn/education/opensource/os-cn-spring-trans/
 
 
 ## WebService
