@@ -9,6 +9,7 @@
 
 ## Tools
 
+* jsunit: http://www.jsunit.net/
 * firebug: http://getfirebug.com/
 * Brackets: http://brackets.io/
 * Tridiv is a web-based editor for creating 3D shapes in CSS: http://tridiv.com/

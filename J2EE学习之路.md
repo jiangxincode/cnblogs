@@ -124,6 +124,12 @@
 * SIT和UAT: http://henry-cong.iteye.com/blog/1460431
 * http://stackoverflow.com/questions/37697359/jsonpropertyaccess-jsonproperty-access-write-only-not-working
 * 全面分析 Spring 的编程式事务管理及声明式事务管理: http://www.ibm.com/developerworks/cn/education/opensource/os-cn-spring-trans/
+* 客户端的IP地址伪造、CDN、反向代理、获取的那些事儿: http://www.cnblogs.com/zhengyun_ustc/archive/2012/09/19/getremoteaddr.html
+* 一些安全相关的HTTP响应头: https://imququ.com/post/web-security-and-response-header.html#simple_thread
+* Ehcache详细解读: http://raychase.iteye.com/blog/1545906
+* EhCache介绍: http://chenjumin.iteye.com/blog/684926
+* Spring使用Cache: http://elim.iteye.com/blog/2123030
+* spring security源码分析之一springSecurityFilterChain: http://www.cnblogs.com/davidwang456/p/4521955.html
 
 
 ## WebService
@@ -198,48 +204,18 @@
 * ModelGoon UML4Java: http://marketplace.eclipse.org/content/modelgoon-uml4java
 * agile(收费): http://www.agilej.com/
 
-## AnyEdit
+* AnyEdit: http://marketplace.eclipse.org/content/anyedit-tools
+* StartExplorer: https://github.com/fabioz/startexplorer
+* EClim (不推荐): http://eclim.org
+* Eclipse EditorList Plug-in: https://sourceforge.net/projects/editorlist/
+* eclipse-games: http://eclipse-games.sourceforge.net/
+* MouseFeed: http://marketplace.eclipse.org/content/mousefeed
+* FileSync: http://andrei.gmxhome.de/filesync/
+* eclipse-rbe: https://github.com/essiembre/eclipse-rbe
+* CODE RECOMMENDERS: http://www.eclipse.org/recommenders/
+* Spket IDE（提供Eclipse的插件）: http://www.spket.com/
+* Aptana（提供Eclipse插件）: http://www.aptana.com/
 
-    AnyEdit plugin adds several new tools to the context menu of text- based Eclipse editors, to output consoles, to Eclipse main menu and editor toolbar. AnyEdit contributes also Import/Export working sets wizards.
-
-* http://marketplace.eclipse.org/content/anyedit-tools
-
-
-## StartExplorer
-
-* https://github.com/fabioz/startexplorer
-
-
-## EClim (不推荐)
-
-* http://eclim.org
-
-## Eclipse EditorList Plug-in
-
-* https://sourceforge.net/projects/editorlist/
-
-## eclipse-games
-
-* http://eclipse-games.sourceforge.net/
-
-
-## eclipse-rbe
-
-    Eclipse plugin for editing Java resource bundles. Lets you manage all localized .properties files in one screen. Some features: sorted keys, warning icons on missing keys/values, conversion to/from Unicode, hierarchical view of keys, and more.
-
-* https://github.com/essiembre/eclipse-rbe
-
-
-## MouseFeed
-
-* http://marketplace.eclipse.org/content/mousefeed
-
-
-## FileSync
-
-    FileSync plugin for Eclipse is a file synchronisation tool. The main goal is to keep files outside of Eclipse projects in-sync with Eclipse project files. The plugin works as builder in Eclipse and will synchronize all changes on Eclipse project files to mapped external folders. E.g. if a file is created, changed or deleted in Eclipse, then the mapped (external) file will be created, changed or deleted too. Please note, that synchronization works is only in one direction - from Eclipse to the rest of the world.
-
-* http://andrei.gmxhome.de/filesync/
 
 ## Apache IvyDE
 
@@ -258,18 +234,7 @@
 * https://github.com/ingokegel/jclasslib
 
 
-## Spket IDE（提供Eclipse的插件）
 
-    Spket IDE is powerful toolkit for JavaScript and XML development.
-
-* 官网：http://www.spket.com/
-
-
-## Aptana（提供Eclipse插件）
-
-    Build web applications quickly and easily using the industry’s leading web application IDE. Aptana Studio harnesses the flexibility of Eclipse and focuses it into a powerful web development engine.
-
-* 官网：http://www.aptana.com/
 
 
 ## Hudson
