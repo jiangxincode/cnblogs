@@ -129,7 +129,7 @@
 * Ehcache详细解读: http://raychase.iteye.com/blog/1545906
 * EhCache介绍: http://chenjumin.iteye.com/blog/684926
 * Spring使用Cache: http://elim.iteye.com/blog/2123030
-* spring security源码分析之一springSecurityFilterChain: http://www.cnblogs.com/davidwang456/p/4521955.html
+* 加盐密码哈希：如何正确使用: http://blog.jobbole.com/61872/
 
 
 ## WebService
