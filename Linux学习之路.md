@@ -126,6 +126,8 @@
     cfdisk -Ps # 查看磁盘分区的用法   cfdisk   -Ps 磁盘设备名 只有一个硬盘也可以用 cfdisk -Ps
     cfdisk -Ps /dev/sda
     sfdisk -l
+	
+	watch "ls -al myfile" 监控文件变化
 
     cat /proc/cpuinfo | grep flags # 查看cpuinfo中是否有lm，如果有lm表示支持64位，lm的意思是long mod
     cat /proc/cpuinfo | grep flags | grep lm | wc -l # 输出结果大于 0 表示支持64位

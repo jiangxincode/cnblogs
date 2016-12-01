@@ -130,6 +130,17 @@
 * EhCache介绍: http://chenjumin.iteye.com/blog/684926
 * Spring使用Cache: http://elim.iteye.com/blog/2123030
 * 加盐密码哈希：如何正确使用: http://blog.jobbole.com/61872/
+* Java 8 API 设计经验浅析: http://www.codeceo.com/article/java-8-api-design.html
+* JDK自带工具之概览: http://www.rowkey.me/blog/2016/11/03/jdk-tools/
+* 服务化之－路由: http://mp.weixin.qq.com/s?__biz=MzIzODYyNjkzNw==&mid=2247483732&idx=1&sn=5e3533b6f79823083e567e092a0e65fc&chksm=e9373042de40b95466784930dfc9468a7974ddd1bae05b02f9776c0e8a2074463f2df7ed59e0#rd
+* Emoji的编码以及常见问题的解决方法: https://segmentfault.com/a/1190000007594620
+* Class热替换与卸载: https://my.oschina.net/xianggao/blog/367822
+* jsessionid的简单说明: http://blog.csdn.net/chunqiuwei/article/details/23461995
+* HTTP Keep-Alive详解: http://liuzhigong.blog.163.com/blog/static/1782723752011412551547/
+* 定义文档兼容性:  https://msdn.microsoft.com/zh-cn/library/cc288325(VS.85).aspx
+* 让浏览器不再显示 https 页面中的 http 请求警报: http://www.cnblogs.com/hustskyking/p/upgrade-insecure-requests.html
+* RESTful API 编写指南: http://www.cnblogs.com/chinajava/p/5871310.html
+* SNA (Share Nothing Architecture) Session 解剖: http://blog.csdn.net/lovingprince/article/details/5883473
 
 
 ## WebService
