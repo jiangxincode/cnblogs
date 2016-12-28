@@ -119,6 +119,8 @@
 * 第9 章 HWM 与数据库性能的探讨: Oracle 数据库性能优化
 * Oracle数据库shutdown immediate被hang住的几个原因: http://www.cnblogs.com/kerrycode/p/3506430.html
 * Oracle JDBC 连接卡死后 Connection Reset: http://www.cnblogs.com/lailailai/p/4055670.html
+* Oracle Start Up 2 Oracle 框架构件、启动、解决一个问题(shared memory realm does not exist):http://kylinsoong.iteye.com/blog/776654
+* ORA-01144: File size (4224000 blocks) exceeds maximum of 4194303: http://www.runningoracle.com/product_info.php?products_id=338
 
 
 ## PL/SQL Developer

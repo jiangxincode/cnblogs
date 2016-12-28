@@ -107,6 +107,7 @@
 * vimrc，bashrc中rc的含义: UNIX Power Tools (3rd Edition).chm 搜索rc
 * objdump: http://sourceware.org/binutils/docs-2.27/binutils/objdump.html#objdump
 * tcpdump捕捉样例: http://www.cnblogs.com/jiangxinnju/p/6012867.html
+* Slow Server? This is the Flow Chart You're Looking For: http://blog.scoutapp.com/articles/2014/07/31/slow_server_flow_chart
 
 
 ## Linux常用命令

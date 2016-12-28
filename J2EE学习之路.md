@@ -141,6 +141,9 @@
 * 让浏览器不再显示 https 页面中的 http 请求警报: http://www.cnblogs.com/hustskyking/p/upgrade-insecure-requests.html
 * RESTful API 编写指南: http://www.cnblogs.com/chinajava/p/5871310.html
 * SNA (Share Nothing Architecture) Session 解剖: http://blog.csdn.net/lovingprince/article/details/5883473
+* 挑战认证机制：《LINUX网络管理员指南(第3版).chm》6.8. Authentication with PPP
+* Tomcat Cannot assign requested address: JVM_Bind 非端口占用冲突：http://jameswsz.iteye.com/blog/1976489
+
 
 
 ## WebService
@@ -318,6 +321,12 @@
 * 为什么要使用SLF4J而不是Log4J: http://www.importnew.com/7450.html
 
 
+
+## Tomcat
+
+* Apache Tomcat 8 Configuration Reference: http://tomcat.apache.org/tomcat-8.0-doc/config/index.html
+
+
 ## Log4j
 
 * 官方网址：
@@ -457,6 +466,7 @@ Eclipse中`Update Project`，选择`Force Update of Snapshots/Releases`
 * Maven编译jar出现：无法确定 T 的类型参数的异常的原因和处理方案: http://www.cnblogs.com/peida/p/4218210.html
 * 向maven中央仓库提交jar: http://www.cnblogs.com/gaoxing/p/4359795.html
 * 利用github搭建个人maven仓库: http://blog.csdn.net/hengyunabc/article/details/47308913
+* Maven添加本地依赖: http://blog.csdn.net/xwl617756974/article/details/7832882
 * 常见Maven仓库：
     * http://mvnrepository.com/    （搜索）
 	* https://maven-repository.com/    （搜索）
