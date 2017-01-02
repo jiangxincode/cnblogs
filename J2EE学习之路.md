@@ -143,6 +143,7 @@
 * SNA (Share Nothing Architecture) Session 解剖: http://blog.csdn.net/lovingprince/article/details/5883473
 * 挑战认证机制：《LINUX网络管理员指南(第3版).chm》6.8. Authentication with PPP
 * Tomcat Cannot assign requested address: JVM_Bind 非端口占用冲突：http://jameswsz.iteye.com/blog/1976489
+* DH密钥交换和ECDH原理： http://www.cnblogs.com/fishou/p/4206451.html
 
 
 
@@ -467,6 +468,8 @@ Eclipse中`Update Project`，选择`Force Update of Snapshots/Releases`
 * 向maven中央仓库提交jar: http://www.cnblogs.com/gaoxing/p/4359795.html
 * 利用github搭建个人maven仓库: http://blog.csdn.net/hengyunabc/article/details/47308913
 * Maven添加本地依赖: http://blog.csdn.net/xwl617756974/article/details/7832882
+* Maven常用插件: http://iffiffj.iteye.com/blog/1661936
+* How to Publish Maven Site Docs to BitBucket or GitHub Pages: http://www.ensor.cc/2013/01/how-to-publish-maven-site-docs-to.html
 * 常见Maven仓库：
     * http://mvnrepository.com/    （搜索）
 	* https://maven-repository.com/    （搜索）
@@ -577,6 +580,7 @@ https://bintray.com/
 
 * 项目地址：http://www.eclemma.org/
 * EMMA项目地址：http://emma.sourceforge.net/
+* Maven EMMA plugin(不支持maven2): http://emma.sourceforge.net/maven-emma-plugin/
 
 
 ## eCobertura
@@ -584,6 +588,15 @@ https://bintray.com/
     Eclipse Plugin for Cobertura. Java code coverage integrated into the IDE.
 
 * 项目地址：http://ecobertura.johoop.de/
+* Cobertura Maven Plugin: http://www.mojohaus.org/cobertura-maven-plugin/
+
+
+## JavaNCSS
+
+	JavaNCSS - A Source Measurement Suite for Java
+
+* http://www.kclee.de/clemens/java/javancss/
+* javancss-maven-plugin: http://www.mojohaus.org/javancss-maven-plugin/usage.html
 
 
 ## Clover（收费）
@@ -659,7 +672,9 @@ https://bintray.com/
 * FindBugs Bug Descriptions：http://findbugs.sourceforge.net/bugDescriptions.html
 * 浅淡静态代码分析工具：http://www.cnblogs.com/hyddd/archive/2008/12/16/1356310.html
 * 七款代码味道识别工具【简介】：http://blog.csdn.net/lovelion/article/details/18467149
-* mvn: http://mvnrepository.com/artifact/com.google.code.findbugs
+* FindBugs Plug-in: http://maven-plugins.sourceforge.net/maven-findbugs-plugin/
+* maven 使用findbugs 插件: http://hw1287789687.iteye.com/blog/1960322
+* 如何友好地展示findbugs分析报告: http://hw1287789687.iteye.com/blog/1960331
 
 
 ## PMD
@@ -668,6 +683,7 @@ https://bintray.com/
 
 * 项目地址：https://pmd.github.io/
 * https://pmd.github.io/pmd-5.3.6/pmd-java/rules/index.html
+* maven-pmd-plugin: http://maven.apache.org/plugins/maven-pmd-plugin/
 
 
 ## Metric
@@ -682,6 +698,7 @@ https://bintray.com/
 
 * 官网：http://www.clarkware.com/software/JDepend.html
 * JDepend4Eclipse：http://marketplace.eclipse.org/content/jdepend4eclipse
+* JDepend Maven Plugin: http://www.mojohaus.org/jdepend-maven-plugin/index.html
 
 
 ## SourceHelper
@@ -716,6 +733,8 @@ https://bintray.com/
     Simian (Similarity Analyser) identifies duplication in Java, C#, C, C++, COBOL, Ruby, JSP, ASP, HTML, XML, Visual Basic, Groovy source code and even plain text files. In fact, simian can be used on any human readable files such as ini files, deployment descriptors, you name it.
 
 * 项目地址：http://www.redhillconsulting.com.au/products/simian/
+* maven-simian-plugin(不支持maven2): http://maven.apache.org/archives/maven-1.x/plugins/simian/
+* How do you use the maven-simian-plugin in Maven2?: http://stackoverflow.com/questions/1077700/how-do-you-use-the-maven-simian-plugin-in-maven2
 
 
 ## CheckStyle
@@ -725,6 +744,7 @@ https://bintray.com/
 * 项目地址：http://checkstyle.sourceforge.net/
 * Eclipse Checkstyle plug-in: https://sourceforge.net/projects/eclipse-cs/
 * Checkclipse: https://sourceforge.net/projects/checkclipse/
+* maven-checkstyle-plugin: http://maven.apache.org/plugins/maven-checkstyle-plugin/
 
 
 ## CCT
@@ -771,6 +791,7 @@ https://bintray.com/
 * http://hadoop.apache.org/docs/current/hadoop-project-dist/hadoop-common/ClusterSetup.html#Web_Interfaces
 * Eclipse下搭建Hadoop2.4.0开发环境：http://www.cnblogs.com/kinglau/p/3802705.html
 * 使用eclipse连接hadoop失败情况：http://blog.csdn.net/yunlong34574/article/details/21331927
+* Hadoop JobHistory: http://www.cnblogs.com/luogankun/p/4019303.html
 
 
 ## Spark
@@ -792,6 +813,8 @@ https://storm.apache.org/javadoc/apidocs/index.html
 ## ZooKeeper
 
 * 官网：http://zookeeper.apache.org/
+* Zookeeper分布式安装手册: http://blog.csdn.net/dajuezhao/article/details/5717508
+* hadoop、hbase、zookeeper环境搭建（详细）: http://zhli986-yahoo-cn.iteye.com/blog/1204199
 
 
 ## curator
