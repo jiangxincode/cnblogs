@@ -144,6 +144,7 @@
 * 挑战认证机制：《LINUX网络管理员指南(第3版).chm》6.8. Authentication with PPP
 * Tomcat Cannot assign requested address: JVM_Bind 非端口占用冲突：http://jameswsz.iteye.com/blog/1976489
 * DH密钥交换和ECDH原理： http://www.cnblogs.com/fishou/p/4206451.html
+* jdk-logging、log4j、logback日志介绍及原理: https://my.oschina.net/pingpangkuangmo/blog/406618
 
 
 
@@ -470,6 +471,7 @@ Eclipse中`Update Project`，选择`Force Update of Snapshots/Releases`
 * Maven添加本地依赖: http://blog.csdn.net/xwl617756974/article/details/7832882
 * Maven常用插件: http://iffiffj.iteye.com/blog/1661936
 * How to Publish Maven Site Docs to BitBucket or GitHub Pages: http://www.ensor.cc/2013/01/how-to-publish-maven-site-docs-to.html
+* maven项目在eclipse的library中没有Maven Dependencies: http://blog.csdn.net/lulidaitian/article/details/53440643
 * 常见Maven仓库：
     * http://mvnrepository.com/    （搜索）
 	* https://maven-repository.com/    （搜索）
