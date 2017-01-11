@@ -50,11 +50,20 @@
 * cppcheck: https://sourceforge.net/projects/cppcheck/
 * DISLIN: https://www.mps.mpg.de/dislin/
 
+
+* MinGW: http://www.mingw.org/
+* MinGW-w64: http://mingw-w64.org/
+* TDM-GCC: http://tdm-gcc.tdragon.net/
+* cygwin: http://www.cygwin.com/
+* 对话 UNIX: 在 Windows 上使用 Cygwin: http://www.ibm.com/developerworks/cn/aix/library/au-spunix_cygwin/
+
+
 ## Eclipse CDT
 
 * 项目地址：http://www.eclipse.org/cdt/
 * 安装说明：http://www.eclipse.org/cdt/downloads.php
 * 也可以在Eclipse的MarketPlace中搜索CDT，但是需要注意搜到的CDT版本是否与Eclipse版本匹配。
+* eclipse 配置 TDM-GCC 64位版方法: http://blog.csdn.net/luozhuang/article/details/8270522
 
 ## CodeBlocks
 
@@ -62,6 +71,9 @@
 * cbp2make: http://forums.codeblocks.org/index.php/topic,13675.msg92163.html#msg92163
 * cbMakefileGen plugin: http://forums.codeblocks.org/index.php/topic,6241.0.html
 * CodeBlocks插件开发指南(一): http://www.cppblog.com/lymons/archive/2010/04/17/112850.html
+
+
+
 
 ## Other IDEs
 
