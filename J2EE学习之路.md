@@ -139,7 +139,6 @@
 * HTTP Keep-Alive详解: http://liuzhigong.blog.163.com/blog/static/1782723752011412551547/
 * 定义文档兼容性:  https://msdn.microsoft.com/zh-cn/library/cc288325(VS.85).aspx
 * 让浏览器不再显示 https 页面中的 http 请求警报: http://www.cnblogs.com/hustskyking/p/upgrade-insecure-requests.html
-* RESTful API 编写指南: http://www.cnblogs.com/chinajava/p/5871310.html
 * SNA (Share Nothing Architecture) Session 解剖: http://blog.csdn.net/lovingprince/article/details/5883473
 * 挑战认证机制：《LINUX网络管理员指南(第3版).chm》6.8. Authentication with PPP
 * Tomcat Cannot assign requested address: JVM_Bind 非端口占用冲突：http://jameswsz.iteye.com/blog/1976489
@@ -151,12 +150,16 @@
 ## WebService
 
 * Style of WebService: REST vs. SOAP: http://cenwenchu.iteye.com/blog/316717
+* RESTful API 编写指南: http://www.cnblogs.com/chinajava/p/5871310.html
+* principles of good restful api design(中文): http://blog.csdn.net/qq_35799003/article/details/52316705
+* Principles of good RESTful API Design: https://codeplanet.io/principles-good-restful-api-design/
 * 用 Java 技术创建 RESTful Web 服务: http://www.ibm.com/developerworks/cn/web/wa-jaxrs/index.html
 * REST, Web services, REST-ful services: http://www.ibm.com/developerworks/webservices/library/ws-RESTservices/index.html
 * JAX-RS HTTP Headers: https://cwiki.apache.org/confluence/display/WINK/JAX-RS+HTTP+Headers
 * Web Service描述语言 WSDL 详解: http://www.blogjava.net/libin2722/articles/159469.html
 * WebService之WSDL和SOAP实例(基于JAVA): http://di201yao.iteye.com/blog/310292
 * java 利用JAX-RS快速开发RESTful 服务(以JBoss为容器)：http://www.cnblogs.com/yjmyzz/p/javaee-jax-rs-tutorial.html
+* RESTful API 利器 Swagger: http://www.razorer.com/2016/10/16/swagger-intro/
 * 使用 Jersey 和 Apache Tomcat 构建 RESTful Web 服务: http://www.ibm.com/developerworks/cn/web/wa-aj-tomcat/
 * 改写Restful2ActionMapper让Struts2支持REST风格的URL映射: http://andlu.iteye.com/blog/110934
 * Jersey: https://jersey.java.net/
