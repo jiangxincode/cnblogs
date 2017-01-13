@@ -123,6 +123,7 @@
 * Oracle Start Up 2 Oracle 框架构件、启动、解决一个问题(shared memory realm does not exist):http://kylinsoong.iteye.com/blog/776654
 * ORA-01144: File size (4224000 blocks) exceeds maximum of 4194303: http://www.runningoracle.com/product_info.php?products_id=338
 * sqlldr的用法：http://blog.chinaunix.net/uid-23622436-id-2394093.html
+* oracle表空间表分区详解及oracle表分区查询使用方法(转+整理): http://www.cnblogs.com/jiangxinnju/p/6284096.html
 
 
 ## PL/SQL Developer

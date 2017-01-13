@@ -144,6 +144,8 @@
 * Tomcat Cannot assign requested address: JVM_Bind 非端口占用冲突：http://jameswsz.iteye.com/blog/1976489
 * DH密钥交换和ECDH原理： http://www.cnblogs.com/fishou/p/4206451.html
 * jdk-logging、log4j、logback日志介绍及原理: https://my.oschina.net/pingpangkuangmo/blog/406618
+* GetPropertyAction vs System.getProperty in obtaining system variables: http://stackoverflow.com/questions/4954924/getpropertyaction-vs-system-getproperty-in-obtaining-system-variables
+* File.separator vs FileSystem.getSeparator() vs System.getProperty(“file.separator”)?: http://stackoverflow.com/questions/8075373/file-separator-vs-filesystem-getseparator-vs-system-getpropertyfile-separato
 
 
 
