@@ -792,43 +792,6 @@ https://bintray.com/
 * http://www.klocwork.com/
 
 
-## Hadoop
-
-* http://hadoop.apache.org/
-* http://hadoop.apache.org/docs/current/hadoop-project-dist/hadoop-common/ClusterSetup.html#Web_Interfaces
-* Eclipse下搭建Hadoop2.4.0开发环境：http://www.cnblogs.com/kinglau/p/3802705.html
-* 使用eclipse连接hadoop失败情况：http://blog.csdn.net/yunlong34574/article/details/21331927
-* Hadoop JobHistory: http://www.cnblogs.com/luogankun/p/4019303.html
-
-
-## Spark
-
-http://spark.apache.org/
-
-
-## Storm
-
-http://storm.apache.org/index.html
-https://storm.apache.org/javadoc/apidocs/index.html
-
-
-## nutch
-
-* http://nutch.apache.org/
-
-
-## ZooKeeper
-
-* 官网：http://zookeeper.apache.org/
-* Zookeeper分布式安装手册: http://blog.csdn.net/dajuezhao/article/details/5717508
-* hadoop、hbase、zookeeper环境搭建（详细）: http://zhli986-yahoo-cn.iteye.com/blog/1204199
-
-
-## curator
-
-* http://curator.apache.org/
-
-
 ## GProf
 
 * Linux Tools Project/GProf/User Guide：http://wiki.eclipse.org/Linux_Tools_Project/GProf/User_Guide
@@ -1115,28 +1078,6 @@ https://storm.apache.org/javadoc/apidocs/index.html
 * https://sourceforge.net/projects/openas2/
 
 
-## Lucene
-
-* http://lucene.apache.org/
-* Lucene原理与代码分析: http://www.cnblogs.com/forfuture1978/category/300665.html
-
-## Apache Flume
-
-* <del>https://github.com/cloudera/flume</del>
-* http://flume.apache.org/
-
-
-## Solr
-
-* http://lucene.apache.org/solr/
-* solr教程，值得刚接触搜索开发人员一看: http://blog.csdn.net/awj3584/article/details/16963525
-* nutch1.8+solr 4 配置过程： http://blog.csdn.net/hmbig2/article/details/22572473
-
-## Commons DbUtils: JDBC Utility Component
-
-* http://commons.apache.org/proper/commons-dbutils/
-
-
 ## Java Native Access (JNA)
 
 * https://github.com/java-native-access/jna
@@ -1233,5 +1174,94 @@ https://storm.apache.org/javadoc/apidocs/index.html
 * http://wiki.eclipse.org/Tycho
 * 使用Tycho来构建你的RCP程序: http://chnic.iteye.com/category/337072
 * Dependencies from pom.xml not considered by Eclipse in Tycho Project: http://stackoverflow.com/questions/12476451/dependencies-from-pom-xml-not-considered-by-eclipse-in-tycho-project
+
+
+
+# 大数据相关
+
+
+## Hadoop
+
+* http://hadoop.apache.org/
+* http://hadoop.apache.org/docs/current/hadoop-project-dist/hadoop-common/ClusterSetup.html#Web_Interfaces
+* HDFS Users Guide: http://hadoop.apache.org/docs/stable/hadoop-project-dist/hadoop-hdfs/HdfsUserGuide.html
+* Eclipse下搭建Hadoop2.4.0开发环境：http://www.cnblogs.com/kinglau/p/3802705.html
+* 使用eclipse连接hadoop失败情况：http://blog.csdn.net/yunlong34574/article/details/21331927
+* Windows平台下安装Eclipse插件，开发Hadoop应用：http://www.cnblogs.com/jiangxinnju/p/6287365.html
+* Hadoop JobHistory: http://www.cnblogs.com/luogankun/p/4019303.html
+
+* 国内第一篇详细讲解hadoop2的automatic HA+Federation+Yarn配置的教程：http://www.cnblogs.com/meiyuanbao/p/3545929.html
+* 如何编译Apache Hadoop2.2.0源代码：http://www.cnblogs.com/jiangxinnju/p/6286849.html
+* ZooKeeper的分布模式安装：http://www.superwu.cn/2013/08/10/413/
+
+* Hadoop Journal Node 作用：https://my.oschina.net/u/189445/blog/661561
+
+
+## Spark
+
+http://spark.apache.org/
+
+
+## Storm
+
+http://storm.apache.org/index.html
+https://storm.apache.org/javadoc/apidocs/index.html
+
+
+## nutch
+
+* http://nutch.apache.org/
+
+
+## ZooKeeper
+
+* 官网：http://zookeeper.apache.org/
+* Zookeeper分布式安装手册: http://blog.csdn.net/dajuezhao/article/details/5717508
+* hadoop、hbase、zookeeper环境搭建（详细）: http://zhli986-yahoo-cn.iteye.com/blog/1204199
+
+## Lucene
+
+* http://lucene.apache.org/
+* Lucene原理与代码分析: http://www.cnblogs.com/forfuture1978/category/300665.html
+
+## Apache Flume
+
+* <del>https://github.com/cloudera/flume</del>
+* http://flume.apache.org/
+* 开源日志系统比较：http://dongxicheng.org/search-engine/log-systems/
+
+
+## Solr
+
+* http://lucene.apache.org/solr/
+* solr教程，值得刚接触搜索开发人员一看: http://blog.csdn.net/awj3584/article/details/16963525
+* nutch1.8+solr 4 配置过程： http://blog.csdn.net/hmbig2/article/details/22572473
+
+## Commons DbUtils: JDBC Utility Component
+
+* http://commons.apache.org/proper/commons-dbutils/
+
+
+## curator
+
+* http://curator.apache.org/
+
+
+## Sqoop
+
+* http://sqoop.apache.org/
+
+
+## Avro
+
+* http://avro.apache.org/
+
+## Chukwa
+
+* http://chukwa.apache.org/
+
+## HIVE 
+
+* http://hive.apache.org/
 
 

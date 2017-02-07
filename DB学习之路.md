@@ -91,6 +91,7 @@
 * 3 Setting Up a Globalization Support Environment: http://docs.oracle.com/database/121/NLSPG/ch3globenv.htm#NLSPG003
 * 12 Logical Storage Structures: http://docs.oracle.com/database/121/CNCPT/logical.htm#CNCPT004
 * dbms_lob.substr: http://docs.oracle.com/cd/B28359_01/appdev.111/b28419/d_lob.htm#i999349
+* SQL*Loader: http://docs.oracle.com/cd/E11882_01/server.112/e22490/ldr_concepts.htm#SUTIL003
 
 * Oracle SQL Developer: http://www.oracle.com/technetwork/developer-tools/sql-developer/overview/index.html
 * Instant Client Downloads for Microsoft Windows (32-bit): http://www.oracle.com/technetwork/topics/winsoft-085727.html
@@ -124,6 +125,8 @@
 * ORA-01144: File size (4224000 blocks) exceeds maximum of 4194303: http://www.runningoracle.com/product_info.php?products_id=338
 * sqlldr的用法：http://blog.chinaunix.net/uid-23622436-id-2394093.html
 * oracle表空间表分区详解及oracle表分区查询使用方法(转+整理): http://www.cnblogs.com/jiangxinnju/p/6284096.html
+* linux下重启oracle服务：监听器和实例：http://www.cnblogs.com/lingbing/p/6071745.html
+* TNS-01190: The user is not authorized to execute the requested listener command：http://www.dba-oracle.com/t_tns_01190_listener_password_security_authorization.htm
 
 
 ## PL/SQL Developer
@@ -751,6 +754,11 @@ Oracle提供了两种验证方式，一种是OS验证，另一种密码文件验
 * Spring Data MongoDB hello world example: http://www.mkyong.com/mongodb/spring-data-mongodb-hello-world-example/
 * MongoDB设置访问权限、设置用户: http://www.cnblogs.com/zengen/archive/2011/04/23/2025722.html
 * 三招解决MongoDB的磁盘IO问题: http://blog.nosqlfan.com/html/3925.html
+
+
+# GreenPlum
+
+* https://pivotal.io/big-data/pivotal-greenplum
 
 
 # MONGOVUE
