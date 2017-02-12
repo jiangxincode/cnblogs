@@ -1195,11 +1195,15 @@ https://bintray.com/
 * ZooKeeper的分布模式安装：http://www.superwu.cn/2013/08/10/413/
 
 * Hadoop Journal Node 作用：https://my.oschina.net/u/189445/blog/661561
+* ERROR org.apache.hadoop.yarn.server.resourcemanager.ResourceManager: RECEIVED SIGNAL 15: SIGTERM: http://blog.csdn.net/caiandyong/article/details/50913268
+* Hadoop在master查看live nodes为0解决方案: http://blog.csdn.net/shenlan211314/article/details/7414728
+* VMware虚拟机中Hadoop服务的端口无法访问的问题: http://www.cnblogs.com/sdjnzqr/p/3865477.html
 
 
 ## Spark
 
 http://spark.apache.org/
+* mmicky 的博客(均为spark相关博客): http://mmicky.blog.163.com/
 
 
 ## Storm

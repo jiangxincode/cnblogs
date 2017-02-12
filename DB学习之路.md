@@ -127,6 +127,7 @@
 * oracle表空间表分区详解及oracle表分区查询使用方法(转+整理): http://www.cnblogs.com/jiangxinnju/p/6284096.html
 * linux下重启oracle服务：监听器和实例：http://www.cnblogs.com/lingbing/p/6071745.html
 * TNS-01190: The user is not authorized to execute the requested listener command：http://www.dba-oracle.com/t_tns_01190_listener_password_security_authorization.htm
+* ORACLE实例配置多个监听器: http://blog.itpub.net/30150152/viewspace-1479571/
 
 
 ## PL/SQL Developer
