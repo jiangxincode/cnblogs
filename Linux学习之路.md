@@ -970,6 +970,17 @@ yum会把下载的软件包和header存储在cache中,而不会自动删除.可�
 
 修改Ubuntu默认启动进入文本模式后，重新启动后停在Checking battery state问题。没关系，实际系统已经启动，按键 ALT+F1 即可进入输入用户名登录得字符提示界面。
 
+# 用Xshell连接会自动断开
+
+这可能是由于 SSH 超时断开连接 导致的！可以这样做。。。
+修改/etc/ssh/sshd_config文件，找到 ClientAliveInterval 0和ClientAliveCountMax 3并将注释符号（"#"）去掉,
+将ClientAliveInterval对应的0改成60,
+ClientAliveInterval指定了服务器端向客户端请求消息 的时间间隔, 默认是0, 不发送.
+ClientAliveInterval 60表示每分钟发送一次, 然后客户端响应, 这样就保持长连接了.
+ClientAliveCountMax, 使用默认值3即可.ClientAliveCountMax表示服务器发出请求后客户端没有响应的次数达到一定值, 就自动断开.
+正常情况下, 客户端不会不响应.
+重起sshd服务：
+service sshd restart
 
 #杂项
 

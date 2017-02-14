@@ -128,6 +128,15 @@
 * linux下重启oracle服务：监听器和实例：http://www.cnblogs.com/lingbing/p/6071745.html
 * TNS-01190: The user is not authorized to execute the requested listener command：http://www.dba-oracle.com/t_tns_01190_listener_password_security_authorization.htm
 * ORACLE实例配置多个监听器: http://blog.itpub.net/30150152/viewspace-1479571/
+* PLSQL_性能优化工具系列02_SQL Tuning Health-Check Script (SQLHC): http://www.cnblogs.com/eastsea/p/3973596.html
+* Script:SQL调优健康检查脚本: http://www.askmaclean.com/archives/sql-tuning-health-check-script.html
+* Oracle导出awr报告: http://jingyan.baidu.com/article/b2c186c8218b55c46ff6ff5f.html
+* 重走长征路——1、V$SQL%知多少？http://www.cnblogs.com/sopost/archive/2012/06/03/2532826.html
+* 由12170问题引起的Oracle无法登陆问题de解决办法: http://jingh3209.blog.163.com/blog/static/156966720103295715623
+* TNS-12535: TNS:operation timed out、TNS-00505: Operation timed out: http://www.cnblogs.com/future2012lg/p/3739752.html
+* oracle网络配置listener.ora、sqlnet.ora、tnsnames.ora(改文章可以整理重新发布): http://blog.csdn.net/s464036801/article/details/8017897
+* 配置tnsping跟踪来诊断Oracle Net连接: http://blog.itpub.net/17203031/viewspace-1161228/
+* 说说Oracle监听器（二）: http://blog.itpub.net/17203031/viewspace-682628/
 
 
 ## PL/SQL Developer
