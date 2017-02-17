@@ -110,6 +110,10 @@
 * Slow Server? This is the Flow Chart You're Looking For: http://blog.scoutapp.com/articles/2014/07/31/slow_server_flow_chart
 * ldd命令：An Introduction to GCC.pdf
 * 设置Linux系统的空闲等待时间TMOUT: http://zzkai.blog.51cto.com/804611/1352964
+* Linux下chkconfig命令详解：http://www.cnblogs.com/panjun-Donet/archive/2010/08/10/1796873.html
+* linux下如何关闭防火墙？如何查看防火墙当前的状态：http://www.cnblogs.com/8899man/p/5899176.html
+* TCP 连接断连问题剖析：http://www.ibm.com/developerworks/cn/aix/library/0808_zhengyong_tcp/
+* mknod指令详解：http://www.cnblogs.com/hnrainll/archive/2011/06/09/2076160.html
 
 
 ## Linux常用命令
@@ -192,7 +196,6 @@
     hdparm -i /dev/hda     # 查看磁盘参数(仅适用于IDE设备)
     dmesg | grep IDE       # 查看启动时IDE设备检测状况网络
     ifconfig               # 查看所有网络接口的属性
-    iptables -L            # 查看防火墙设置
     route -n               # 查看路由表
     netstat -lntp          # 查看所有监听端口
     netstat -antp          # 查看所有已经建立的连接
@@ -205,8 +208,6 @@
     cut -d: -f1 /etc/passwd   # 查看系统所有用户
     cut -d: -f1 /etc/group    # 查看系统所有组
     crontab -l             # 查看当前用户的计划任务服务
-    chkconfig --list       # 列出所有系统服务
-    chkconfig --list | grep on    # 列出所有启动的系统服务程序
     rpm -qa                # 查看所有安装的软件包
 
     netstat -anp | grep xxxx   #xxxx为端口号 Linux下查看某个端口下运行的是什么程序

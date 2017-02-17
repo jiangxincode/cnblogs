@@ -92,6 +92,7 @@
 * 12 Logical Storage Structures: http://docs.oracle.com/database/121/CNCPT/logical.htm#CNCPT004
 * dbms_lob.substr: http://docs.oracle.com/cd/B28359_01/appdev.111/b28419/d_lob.htm#i999349
 * SQL*Loader: http://docs.oracle.com/cd/E11882_01/server.112/e22490/ldr_concepts.htm#SUTIL003
+* SQLNET.EXPIRE_TIME: http://docs.oracle.com/cd/B19306_01/network.102/b14213/sqlnet.htm
 
 * Oracle SQL Developer: http://www.oracle.com/technetwork/developer-tools/sql-developer/overview/index.html
 * Instant Client Downloads for Microsoft Windows (32-bit): http://www.oracle.com/technetwork/topics/winsoft-085727.html

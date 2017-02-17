@@ -146,6 +146,7 @@
 * jdk-logging、log4j、logback日志介绍及原理: https://my.oschina.net/pingpangkuangmo/blog/406618
 * GetPropertyAction vs System.getProperty in obtaining system variables: http://stackoverflow.com/questions/4954924/getpropertyaction-vs-system-getproperty-in-obtaining-system-variables
 * File.separator vs FileSystem.getSeparator() vs System.getProperty(“file.separator”)?: http://stackoverflow.com/questions/8075373/file-separator-vs-filesystem-getseparator-vs-system-getpropertyfile-separato
+* 三个实例演示 Java Thread Dump 日志分析：http://www.cnblogs.com/zhengyun_ustc/archive/2013/01/06/dumpanalysis.html
 
 
 
@@ -1185,6 +1186,8 @@ https://bintray.com/
 * http://hadoop.apache.org/
 * http://hadoop.apache.org/docs/current/hadoop-project-dist/hadoop-common/ClusterSetup.html#Web_Interfaces
 * HDFS Users Guide: http://hadoop.apache.org/docs/stable/hadoop-project-dist/hadoop-hdfs/HdfsUserGuide.html
+
+* Hadoop 1.0.0集群安装: http://blog.sina.com.cn/s/blog_540c640b01010fo3.html
 * Eclipse下搭建Hadoop2.4.0开发环境：http://www.cnblogs.com/kinglau/p/3802705.html
 * 使用eclipse连接hadoop失败情况：http://blog.csdn.net/yunlong34574/article/details/21331927
 * Windows平台下安装Eclipse插件，开发Hadoop应用：http://www.cnblogs.com/jiangxinnju/p/6287365.html
@@ -1198,6 +1201,8 @@ https://bintray.com/
 * ERROR org.apache.hadoop.yarn.server.resourcemanager.ResourceManager: RECEIVED SIGNAL 15: SIGTERM: http://blog.csdn.net/caiandyong/article/details/50913268
 * Hadoop在master查看live nodes为0解决方案: http://blog.csdn.net/shenlan211314/article/details/7414728
 * VMware虚拟机中Hadoop服务的端口无法访问的问题: http://www.cnblogs.com/sdjnzqr/p/3865477.html
+
+* 虾皮工作室(讲解大数据相关知识，如《细细品味Hadoop系列文章》)：http://www.cnblogs.com/xia520pi/
 
 
 ## Spark
