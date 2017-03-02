@@ -118,7 +118,6 @@
 * 解决java.lang.IncompatibleClassChangeError: https://my.oschina.net/itblog/blog/528613
 * html的meta总结，html标签中meta属性使用介绍: http://www.haorooms.com/post/html_meta_ds
 * spring security中限制用户登录次数超过限制的处理: http://jackyrong.iteye.com/blog/2244803
-* (流控、流量控制)Guava RateLimiter在Web应用中的使用: http://blog.csdn.net/cloud_ll/article/details/43602325
 * javadoc相关问题: http://www.cnblogs.com/jiangxinnju/p/6091525.html
 * 测试方面的基础概念: http://javazhou.iteye.com/blog/1727745
 * SIT和UAT: http://henry-cong.iteye.com/blog/1460431
@@ -372,6 +371,7 @@
 ## guava
 
 * 项目地址：https://github.com/google/guava
+* (流控、流量控制)Guava RateLimiter在Web应用中的使用: http://blog.csdn.net/cloud_ll/article/details/43602325
 
 ## jga
 
@@ -911,13 +911,9 @@ https://bintray.com/
 * Json-lib: https://sourceforge.net/projects/json-lib/
 * fastjson: http://mvnrepository.com/artifact/com.alibaba/fastjson
 * Eclipse Json Editor Plugin: https://sourceforge.net/projects/eclipsejsonedit/
-
-
-## Jackson
-
-* http://fasterxml.com/
-* http://wiki.fasterxml.com/JacksonDownload
-* http://wiki.fasterxml.com/JacksonJavaDocs
+* Jackson: http://fasterxml.com/
+* Jackson: http://wiki.fasterxml.com/JacksonDownload
+* Jackson: http://wiki.fasterxml.com/JacksonJavaDocs
 * Jackson 框架，轻易转换JSON: http://www.cnblogs.com/hoojo/archive/2011/04/22/2024628.html
 * bson4json: https://github.com/michel-kraemer/bson4jackson
 * Binary JSON with bson4jackson: http://www.michel-kraemer.com/binary-json-with-bson4jackson
@@ -1188,6 +1184,7 @@ https://bintray.com/
 * HDFS Users Guide: http://hadoop.apache.org/docs/stable/hadoop-project-dist/hadoop-hdfs/HdfsUserGuide.html
 
 * Hadoop 1.0.0集群安装: http://blog.sina.com.cn/s/blog_540c640b01010fo3.html
+* 一步步教你Hadoop多节点集群安装配置: http://www.cnblogs.com/lanxuezaipiao/p/3525554.html
 * Eclipse下搭建Hadoop2.4.0开发环境：http://www.cnblogs.com/kinglau/p/3802705.html
 * 使用eclipse连接hadoop失败情况：http://blog.csdn.net/yunlong34574/article/details/21331927
 * Windows平台下安装Eclipse插件，开发Hadoop应用：http://www.cnblogs.com/jiangxinnju/p/6287365.html
@@ -1196,6 +1193,11 @@ https://bintray.com/
 * 国内第一篇详细讲解hadoop2的automatic HA+Federation+Yarn配置的教程：http://www.cnblogs.com/meiyuanbao/p/3545929.html
 * 如何编译Apache Hadoop2.2.0源代码：http://www.cnblogs.com/jiangxinnju/p/6286849.html
 * ZooKeeper的分布模式安装：http://www.superwu.cn/2013/08/10/413/
+* Hadoop HDFS和KFS (CloudStore)的比较: http://blog.csdn.net/Cloudeep/article/details/4467238
+* performance-benchmark-cgl-mapreduce-mpi-and-hadoop: http://salsahpc.indiana.edu/content/performance-benchmark-cgl-mapreduce-mpi-and-hadoop
+* 汇总运行在Hadoop YARN上的开源系统: http://dongxicheng.org/mapreduce-nextgen/run-systems-on-hadoop-yarn/
+* 利用Hadoop实现超大矩阵相乘之我见（一）: http://www.cnblogs.com/eczhou/p/3340731.html
+* 使用mapreduce计算大矩阵相乘: http://f.dataguru.cn/forum.php?mod=viewthread&tid=133912&extra=page%3D1&ordertype=1
 
 * Hadoop Journal Node 作用：https://my.oschina.net/u/189445/blog/661561
 * ERROR org.apache.hadoop.yarn.server.resourcemanager.ResourceManager: RECEIVED SIGNAL 15: SIGTERM: http://blog.csdn.net/caiandyong/article/details/50913268
@@ -1203,6 +1205,8 @@ https://bintray.com/
 * VMware虚拟机中Hadoop服务的端口无法访问的问题: http://www.cnblogs.com/sdjnzqr/p/3865477.html
 
 * 虾皮工作室(讲解大数据相关知识，如《细细品味Hadoop系列文章》)：http://www.cnblogs.com/xia520pi/
+* [Hadoop系列]Hadoop的MapReduce中多文件输出: http://blog.csdn.net/inkfish/article/details/5156651
+* Hadoop源码分析——TaskAttemptContext类和TaskAttemptID类: http://blog.sina.com.cn/s/blog_61ef49250100vcps.html
 
 
 ## Spark
@@ -1210,6 +1214,7 @@ https://bintray.com/
 http://spark.apache.org/
 http://spark.apache.org/docs/latest/api/java/index.html
 * mmicky 的博客(均为spark相关博客): http://mmicky.blog.163.com/
+
 
 
 ## Storm
@@ -1226,8 +1231,6 @@ https://storm.apache.org/javadoc/apidocs/index.html
 ## ZooKeeper
 
 * 官网：http://zookeeper.apache.org/
-* Zookeeper分布式安装手册: http://blog.csdn.net/dajuezhao/article/details/5717508
-* hadoop、hbase、zookeeper环境搭建（详细）: http://zhli986-yahoo-cn.iteye.com/blog/1204199
 
 ## Lucene
 
@@ -1270,8 +1273,10 @@ https://storm.apache.org/javadoc/apidocs/index.html
 
 * http://chukwa.apache.org/
 
-## HIVE 
 
-* http://hive.apache.org/
+## Thirft
+
+* http://thrift.apache.org/
+* Thirft框架介绍: http://dongxicheng.org/search-engine/thrift-framework-intro/
 
 

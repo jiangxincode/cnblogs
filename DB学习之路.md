@@ -138,6 +138,8 @@
 * oracle网络配置listener.ora、sqlnet.ora、tnsnames.ora(改文章可以整理重新发布): http://blog.csdn.net/s464036801/article/details/8017897
 * 配置tnsping跟踪来诊断Oracle Net连接: http://blog.itpub.net/17203031/viewspace-1161228/
 * 说说Oracle监听器（二）: http://blog.itpub.net/17203031/viewspace-682628/
+* Linux 安装oracle客户端: http://www.cnblogs.com/yangxia-test/p/4159449.html
+* 深入理解JDBC的超时设置: http://www.importnew.com/2466.html
 
 
 ## PL/SQL Developer
@@ -560,6 +562,12 @@ Oracle sqlplus在打错字符时我们可以使用ctrl+backspace组合键实现�
 ```
 
 
+## ORACLE_HOME/ORACLE_SID
+
+ORACLE_HOME 安装目录
+ORACLE_SID 实例ID
+一台linux机器上安装一个oracle，两个实例，分别对应两个用户。切换到对应用户时 echo $ORACLE_SID会显示各自的实例
+
 ## oracle 的修改SID
 
 1、检查原来的数据库实例名（sid）
@@ -789,12 +797,29 @@ Oracle提供了两种验证方式，一种是OS验证，另一种密码文件验
 
 * http://hbase.apache.org/
 * HBase 官方文档(中文)：http://yankaycom-wordpress.stor.sinaapp.com/hbase/book.html?q=/wp-content/hbase/book.html
+* HBase介绍: http://www.cnblogs.com/jiangxinnju/p/6427124.html
+
+* Hbase,Hive,Pig的区别: http://blog.sina.com.cn/s/blog_662728650101kurp.html
+* HBase运维实战：disable table失败的处理: http://www.searchdatabase.com.cn/showcontent_53017.htm
+* 图形化理解 HBase 数据写操作、压缩操作过程: http://blog.nosqlfan.com/html/1249.html
+* hbase在淘宝的应用和优化小结: http://www.cnblogs.com/panfeng412/articles/hbase-optimization-and-apply-summary-in-taobao.html
+* bigtable model with cassandra and hbase: http://horicky.blogspot.com/2010/10/bigtable-model-with-cassandra-and-hbase.html
 
 
 # Hive
 
 * http://hive.apache.org/
 * https://cwiki.apache.org/confluence/display/Hive/Home
+
+# Pig
+
+* http://pig.apache.org/
+* 使用 Apache Pig 处理数据: http://www.ibm.com/developerworks/cn/linux/l-apachepigdataquery/
+* Pig实战: http://www.cnblogs.com/xuqiang/archive/2011/06/06/2073601.html
+* Apache Pig的一些基础概念及用法总结（1）: http://www.codelast.com/?p=3621
+* Apache Pig的一些基础概念及用法总结（2）: http://www.codelast.com/?p=4611
+* Apache Pig中文教程（进阶）: http://www.codelast.com/?p=4249
+* 使用Apache Pig时应该注意/避免的操作或事项: http://www.codelast.com/?p=4577
 
 
 # Others

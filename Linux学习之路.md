@@ -114,6 +114,7 @@
 * linux下如何关闭防火墙？如何查看防火墙当前的状态：http://www.cnblogs.com/8899man/p/5899176.html
 * TCP 连接断连问题剖析：http://www.ibm.com/developerworks/cn/aix/library/0808_zhengyong_tcp/
 * mknod指令详解：http://www.cnblogs.com/hnrainll/archive/2011/06/09/2076160.html
+* ethtool的基本设置: http://www.cnblogs.com/fbwfbi/p/3612658.html
 
 
 ## Linux常用命令
@@ -186,6 +187,7 @@
     free -m                # 查看内存使用量和交换区使用量
     df -h                  # 查看各分区使用情况
     du -sh <目录名>        # 查看指定目录的大小
+	du --max-depth=1 dir   # 查看指定目录指定深度的大小
     grep MemTotal /proc/meminfo   # 查看内存总量
     grep MemFree /proc/meminfo    # 查看空闲内存量
     uptime                 # 查看系统运行时间、用户数、负载
@@ -973,7 +975,7 @@ yum会把下载的软件包和header存储在cache中,而不会自动删除.可�
 
 # 用Xshell连接会自动断开
 
-这可能是由于 SSH 超时断开连接 导致的！可以这样做。。。
+这是由于 SSH 超时断开连接导致的。可以
 修改/etc/ssh/sshd_config文件，找到 ClientAliveInterval 0和ClientAliveCountMax 3并将注释符号（"#"）去掉,
 将ClientAliveInterval对应的0改成60,
 ClientAliveInterval指定了服务器端向客户端请求消息 的时间间隔, 默认是0, 不发送.
