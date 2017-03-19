@@ -27,6 +27,7 @@
 
 * Java Versions, Features and History: http://javapapers.com/core-java/java-features-and-history/
 * Introduction to Java Programming, Eighth Edition: http://www.cs.armstrong.edu/liang/intro8e/
+* Java杂项: http://www.cnblogs.com/jiangxinnju/p/6582135.html
 * Java 理论与实践: http://www.ibm.com/developerworks/cn/java/j-jtp/
 * Java多线程：http://blog.csdn.net/column/details/multithreading.html
 * Java Runtime.exec()的使用: http://www.cnblogs.com/mingforyou/p/3551199.html
@@ -146,6 +147,7 @@
 * GetPropertyAction vs System.getProperty in obtaining system variables: http://stackoverflow.com/questions/4954924/getpropertyaction-vs-system-getproperty-in-obtaining-system-variables
 * File.separator vs FileSystem.getSeparator() vs System.getProperty(“file.separator”)?: http://stackoverflow.com/questions/8075373/file-separator-vs-filesystem-getseparator-vs-system-getpropertyfile-separato
 * 三个实例演示 Java Thread Dump 日志分析：http://www.cnblogs.com/zhengyun_ustc/archive/2013/01/06/dumpanalysis.html
+* * OpenJDK和SunJDK有啥区别？https://www.zhihu.com/question/19646618
 
 
 
