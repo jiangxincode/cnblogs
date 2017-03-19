@@ -28,6 +28,7 @@
 * Java Versions, Features and History: http://javapapers.com/core-java/java-features-and-history/
 * Introduction to Java Programming, Eighth Edition: http://www.cs.armstrong.edu/liang/intro8e/
 * Java杂项: http://www.cnblogs.com/jiangxinnju/p/6582135.html
+* FindBugs详解: http://www.cnblogs.com/jiangxinnju/p/6582404.html
 * Java 理论与实践: http://www.ibm.com/developerworks/cn/java/j-jtp/
 * Java多线程：http://blog.csdn.net/column/details/multithreading.html
 * Java Runtime.exec()的使用: http://www.cnblogs.com/mingforyou/p/3551199.html
