@@ -749,6 +749,7 @@ Oracle提供了两种验证方式，一种是OS验证，另一种密码文件验
 
 * 官网：http://www-01.ibm.com/software/data/db2/
 * DB2China：http://www.db2china.net/
+* Ubuntu 16.04安装DB2 Express C v11.1: http://www.cnblogs.com/jiangxinnju/p/6571785.html
 
 
 # Oracle Berkeley DB

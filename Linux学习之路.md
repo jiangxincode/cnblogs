@@ -156,7 +156,7 @@
     cat /etc/issue | grep Linux # 查看当前操作系统发行版信息
 
     apt-cache # query the APT cache
-    apt-file # APT package searching utility
+    apt-file search libz.so.1 # APT package searching utility
     apt-get
     apt-cdrom # apt-cdrom is a tool to add CDROM's to APT's source list. 
     apititude
@@ -179,7 +179,7 @@
     uname -a               # 查看内核/操作系统/CPU信息
     head -n 1 /etc/issue   # 查看操作系统版本
     cat /proc/cpuinfo      # 查看CPU信息
-    hostname               # 查看计算机名
+    hostname               # 查看计算机名,hostname name只能暂时修改，重启后失效，如果需要永久修改，使用/etc/hostname文件
     lspci -tv              # 列出所有PCI设备
     lsusb -tv              # 列出所有USB设备
     lsmod                  # 列出加载的内核模块
