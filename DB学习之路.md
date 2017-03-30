@@ -750,6 +750,8 @@ Oracle提供了两种验证方式，一种是OS验证，另一种密码文件验
 * 官网：http://www-01.ibm.com/software/data/db2/
 * DB2China：http://www.db2china.net/
 * Ubuntu 16.04安装DB2 Express C v11.1: http://www.cnblogs.com/jiangxinnju/p/6571785.html
+* DB2 9.5 数据库分区管理及应用实践: https://www.ibm.com/developerworks/cn/data/library/techarticles/dm-0903zhanggy/
+* 如何建立DB2分区数据库？: http://www.cnblogs.com/jiangxinnju/p/6649305.html
 
 
 # Oracle Berkeley DB
@@ -774,6 +776,7 @@ Oracle提供了两种验证方式，一种是OS验证，另一种密码文件验
 * Spring Data MongoDB hello world example: http://www.mkyong.com/mongodb/spring-data-mongodb-hello-world-example/
 * MongoDB设置访问权限、设置用户: http://www.cnblogs.com/zengen/archive/2011/04/23/2025722.html
 * 三招解决MongoDB的磁盘IO问题: http://blog.nosqlfan.com/html/3925.html
+* Install MongoDB Community Edition on Ubuntu: https://docs.mongodb.com/master/tutorial/install-mongodb-on-ubuntu/
 
 
 # GreenPlum
