@@ -1233,7 +1233,7 @@ https://storm.apache.org/javadoc/apidocs/index.html
 
 ## ZooKeeper
 
-* 官网：http://zookeeper.apache.org/
+* http://zookeeper.apache.org/
 
 ## Lucene
 

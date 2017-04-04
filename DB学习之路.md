@@ -833,6 +833,7 @@ Oracle提供了两种验证方式，一种是OS验证，另一种密码文件验
 * Teradata Aster: http://developer.teradata.com/aster
 * actian: http://www.actian.com/
 * Apache Derby: http://db.apache.org/derby/
+* BlinkDB: http://blinkdb.org/
 
 # 数据模型
 
