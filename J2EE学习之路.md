@@ -1217,7 +1217,9 @@ https://bintray.com/
 http://spark.apache.org/
 http://spark.apache.org/docs/latest/api/java/index.html
 * mmicky 的博客(均为spark相关博客): http://mmicky.blog.163.com/
-
+* Spark性能优化指南——基础篇: http://tech.meituan.com/spark-tuning-basic.html
+* RDD中cache和persist的区别: http://www.cnblogs.com/luogankun/p/3801062.html
+* 每次进步一点点——Spark 中的宽依赖和窄依赖: http://blog.csdn.net/houmou/article/details/52531205
 
 
 ## Storm
