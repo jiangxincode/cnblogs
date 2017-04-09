@@ -115,6 +115,8 @@
 * TCP 连接断连问题剖析：http://www.ibm.com/developerworks/cn/aix/library/0808_zhengyong_tcp/
 * mknod指令详解：http://www.cnblogs.com/hnrainll/archive/2011/06/09/2076160.html
 * ethtool的基本设置: http://www.cnblogs.com/fbwfbi/p/3612658.html
+* Linux find 用法示例: http://www.cnblogs.com/wanqieddy/archive/2011/06/09/2076785.html
+* Shell脚本：判断用户和用户组是否已经存在/创建用户和用户组: http://blog.csdn.net/bluishglc/article/details/42060223
 
 
 ## Linux常用命令
@@ -127,8 +129,6 @@
 	ps -ef | grep 4736 # 查看4736端口是否被占用
 	netstat -tulnp | grep mysqld # 查看mysqld的监听情况
 	find . –name "*.log" | xargs grep error # 在当前目录的所有日志文件中查找关键词"error"
-	find . -mmin -1 # 查找最近一分钟修改过的文件
-	find . -mtime -1 # 查找最近一天修改过的文件
 	ls -t `find . -name "*.log"` #列出最近修改的文件
     glxinfo | grep rendering # 查询OpenGL是否打开。提示：direct rendering: Yes 表明启动正常
     cfdisk -Ps # 查看磁盘分区的用法   cfdisk   -Ps 磁盘设备名 只有一个硬盘也可以用 cfdisk -Ps

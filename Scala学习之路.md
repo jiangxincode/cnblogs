@@ -6,6 +6,8 @@
 * ScalaTest: http://www.scalatest.org/
 * SBT: http://www.scala-sbt.org/
 * ScalaIDE: http://scala-ide.org/
+
+* Scala入门之高级类型:this.type: http://blog.csdn.net/pofengliuming/article/details/52163099
   
 
 

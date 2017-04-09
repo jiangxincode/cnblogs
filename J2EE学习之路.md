@@ -148,7 +148,8 @@
 * GetPropertyAction vs System.getProperty in obtaining system variables: http://stackoverflow.com/questions/4954924/getpropertyaction-vs-system-getproperty-in-obtaining-system-variables
 * File.separator vs FileSystem.getSeparator() vs System.getProperty(“file.separator”)?: http://stackoverflow.com/questions/8075373/file-separator-vs-filesystem-getseparator-vs-system-getpropertyfile-separato
 * 三个实例演示 Java Thread Dump 日志分析：http://www.cnblogs.com/zhengyun_ustc/archive/2013/01/06/dumpanalysis.html
-* * OpenJDK和SunJDK有啥区别？https://www.zhihu.com/question/19646618
+* OpenJDK和SunJDK有啥区别？https://www.zhihu.com/question/19646618
+* 系统吞吐量（TPS）、用户并发量、性能测试概念和公式: http://www.ha97.com/5095.html
 
 
 
@@ -176,6 +177,7 @@
 * SOAPUI: https://www.soapui.org/
 * Automating SoapUI using Groovy – A Walk Through: http://www.codeproject.com/Articles/820414/Automating-SoapUI-using-Groovy-A-Walk-Through
 * tcpmon: https://github.com/robertbachmann/tcpmon
+* JMeter: http://jmeter.apache.org/
 
 ### 常用第三方webservice
 
@@ -345,6 +347,7 @@
     * http://logging.apache.org/log4j/1.2/
 
 * log4j 日志配置 properties 和 xml形式两种：http://my.oschina.net/exit/blog/182445
+* 通过log4j日志异步化大幅提升系统性能: http://blog.csdn.net/henryqqq/article/details/2254355
 
 
 ## Logback
@@ -1218,8 +1221,10 @@ http://spark.apache.org/
 http://spark.apache.org/docs/latest/api/java/index.html
 * mmicky 的博客(均为spark相关博客): http://mmicky.blog.163.com/
 * Spark性能优化指南——基础篇: http://tech.meituan.com/spark-tuning-basic.html
+* Spark性能优化指南——高级篇: http://tech.meituan.com/spark-tuning-pro.html
 * RDD中cache和persist的区别: http://www.cnblogs.com/luogankun/p/3801062.html
 * 每次进步一点点——Spark 中的宽依赖和窄依赖: http://blog.csdn.net/houmou/article/details/52531205
+* Spark中的错误处理: http://blog.csdn.net/zrc199021/article/details/52711593
 
 
 ## Storm
