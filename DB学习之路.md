@@ -752,6 +752,8 @@ Oracle提供了两种验证方式，一种是OS验证，另一种密码文件验
 * Ubuntu 16.04安装DB2 Express C v11.1: http://www.cnblogs.com/jiangxinnju/p/6571785.html
 * DB2 9.5 数据库分区管理及应用实践: https://www.ibm.com/developerworks/cn/data/library/techarticles/dm-0903zhanggy/
 * 如何建立DB2分区数据库？: http://www.cnblogs.com/jiangxinnju/p/6649305.html
+* IBM DB2关键特性解析：DB2分区特性: http://tech.it168.com/a2012/0306/1321/000001321022_2.shtml
+* db2建立schema: http://guoyanxi.iteye.com/blog/910755
 
 
 # Oracle Berkeley DB
