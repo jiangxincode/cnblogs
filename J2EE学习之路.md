@@ -484,6 +484,7 @@ Eclipse中`Update Project`，选择`Force Update of Snapshots/Releases`
 * Maven常用插件: http://iffiffj.iteye.com/blog/1661936
 * How to Publish Maven Site Docs to BitBucket or GitHub Pages: http://www.ensor.cc/2013/01/how-to-publish-maven-site-docs-to.html
 * maven项目在eclipse的library中没有Maven Dependencies: http://blog.csdn.net/lulidaitian/article/details/53440643
+* Maven Enforcer Plugin: http://maven.apache.org/enforcer/maven-enforcer-plugin/
 * 常见Maven仓库：
     * http://mvnrepository.com/    （搜索）
 	* https://maven-repository.com/    （搜索）
@@ -991,6 +992,11 @@ https://bintray.com/
     OpenLDAP Software is an open source implementation of the Lightweight Directory Access Protocol.
 
 * 官网：http://www.openldap.org/
+
+## Protobuf
+
+* https://github.com/google/protobuf/
+* Protobuf协议的Java应用例子: http://blog.csdn.net/antgan/article/details/52103966
 
 
 
