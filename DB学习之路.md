@@ -781,6 +781,12 @@ Oracle提供了两种验证方式，一种是OS验证，另一种密码文件验
 * Install MongoDB Community Edition on Ubuntu: https://docs.mongodb.com/master/tutorial/install-mongodb-on-ubuntu/
 
 
+# Teradata
+
+* Teradata Express for VMware Player: http://downloads.teradata.com/download/database/teradata-express-for-vmware-player
+* Teradata Aster: http://developer.teradata.com/aster
+* Teradata 教程: http://www.w3cschool.cn/teradata/
+
 # GreenPlum
 
 * https://pivotal.io/big-data/pivotal-greenplum
@@ -832,7 +838,6 @@ Oracle提供了两种验证方式，一种是OS验证，另一种密码文件验
 
 * GBase: http://www.gbase.cn/
 * Vertica: https://www.vertica.com/
-* Teradata Aster: http://developer.teradata.com/aster
 * actian: http://www.actian.com/
 * Apache Derby: http://db.apache.org/derby/
 * BlinkDB: http://blinkdb.org/

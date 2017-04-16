@@ -136,7 +136,7 @@
 * 服务化之－路由: http://mp.weixin.qq.com/s?__biz=MzIzODYyNjkzNw==&mid=2247483732&idx=1&sn=5e3533b6f79823083e567e092a0e65fc&chksm=e9373042de40b95466784930dfc9468a7974ddd1bae05b02f9776c0e8a2074463f2df7ed59e0#rd
 * Emoji的编码以及常见问题的解决方法: https://segmentfault.com/a/1190000007594620
 * Class热替换与卸载: https://my.oschina.net/xianggao/blog/367822
-* jsessionid的简单说明: http://blog.csdn.net/chunqiuwei/article/details/23461995
+* Tomcat中的Session小结: http://www.cnblogs.com/chenpi/p/5434537.html
 * HTTP Keep-Alive详解: http://liuzhigong.blog.163.com/blog/static/1782723752011412551547/
 * 定义文档兼容性:  https://msdn.microsoft.com/zh-cn/library/cc288325(VS.85).aspx
 * 让浏览器不再显示 https 页面中的 http 请求警报: http://www.cnblogs.com/hustskyking/p/upgrade-insecure-requests.html
