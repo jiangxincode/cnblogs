@@ -93,6 +93,13 @@
 * dbms_lob.substr: http://docs.oracle.com/cd/B28359_01/appdev.111/b28419/d_lob.htm#i999349
 * SQL*Loader: http://docs.oracle.com/cd/E11882_01/server.112/e22490/ldr_concepts.htm#SUTIL003
 * SQLNET.EXPIRE_TIME: http://docs.oracle.com/cd/B19306_01/network.102/b14213/sqlnet.htm
+* Database Net Services Reference: http://docs.oracle.com/cd/E11882_01/network.112/e10835/toc.htm
+* 8 Data Sources and URLs: http://docs.oracle.com/cd/B28359_01/java.111/b31224/urls.htm
+* Database JDBC Developer's Guide: http://docs.oracle.com/cd/E11882_01/java.112/e16548/toc.htm
+* Predefined User Accounts Provided by Oracle Database: http://docs.oracle.com/database/122/TDPSG/securing-the-database-installation-and-configuration.htm#TDPSG20030
+* Protecting Your Database: Specifying Passwords for Users SYS and SYSTEM: http://docs.oracle.com/cd/B28359_01/server.111/b28310/create004.htm#ADMIN11087
+* Managing Oracle Enterprise Manager Database Control: http://docs.oracle.com/cd/E11882_01/server.112/e25494/dbcontrol.htm#ADMIN13401
+* 2 Oracle SQL Connector for Hadoop Distributed File System: http://docs.oracle.com/cd/E37231_01/doc.20/e36961/sqlch.htm#BDCUG125
 
 * Oracle SQL Developer: http://www.oracle.com/technetwork/developer-tools/sql-developer/overview/index.html
 * Instant Client Downloads for Microsoft Windows (32-bit): http://www.oracle.com/technetwork/topics/winsoft-085727.html
@@ -109,7 +116,9 @@
 * 数据库使用详解：[3]SQL Developer如何配置：http://jingyan.baidu.com/article/e4511cf33f289e2b845eafb6.html
 * oracle的各版本发行时间及特点: http://blog.csdn.net/dream19881003/article/details/7178357
 * oracle客户端软件的说明：http://blog.csdn.net/haiross/article/details/17917637
+* 如何查看Oracle客户端版本: http://www.cnblogs.com/kerrycode/p/4087292.html
 * 怎么判断oracle客户端、服务器端的位数：http://blog.csdn.net/linghe301/article/details/8471945
+* oracle 查版本号,oracle怎样查版本: http://jingyan.baidu.com/article/4f34706ee1ea02e387b56ddc.html
 * oracle数据导入与导出: http://blog.csdn.net/loadrunn/article/details/7283441
 * EXECUTE IMMEDIATE 常见使用方法: http://blog.itpub.net/27042095/viewspace-739404/
 * Oracle11g自带的SQL developer无法打开解决方案(百度文库)： http://wenku.baidu.com/link?url=scHbokjqF7nK8kca00Pxrm8uaUmm7HNkgXLGaq0tNU-9T2zOrc08oZ7YJkXagD-QbQUmQl7c1wiZNigvIZ9YNVwMU9qIgxBI34HfkM8kWdO
@@ -140,6 +149,7 @@
 * 说说Oracle监听器（二）: http://blog.itpub.net/17203031/viewspace-682628/
 * Linux 安装oracle客户端: http://www.cnblogs.com/yangxia-test/p/4159449.html
 * 深入理解JDBC的超时设置: http://www.importnew.com/2466.html
+* 关于 SQLNET.AUTHENTICATION_SERVICES 验证方式的说明: http://blog.csdn.net/aaron8219/article/details/38904965
 
 
 ## PL/SQL Developer
@@ -171,79 +181,15 @@ windows Server 2008 服务器上安装了Oracle 11g R2，在用Navicat去连接O
 安装ORACLE时，若没有为下列用户重设密码，则其默认密码如下：
 
 用户名/密码                登录身份                说明
-
 sys/change_on_install      SYSDBA 或 SYSOPER       不能以 NORMAL 登录，可作为默认的系统管理员
-
 system/manager             SYSDBA 或 NORMAL        不能以 SYSOPER 登录，可作为默认的系统管理员
-
 sysman/oem_temp            sysman                  为 oms 的用户名
-
 scott/tiger                NORMAL                  普通用户
-
 aqadm/aqadm               SYSDBA 或 NORMAL        高级队列管理员
-
 Dbsnmp/dbsnmp              SYSDBA 或 NORMAL        复制管理员
-
 
 登录身份：指登录时的Role指定，oracle11g中分SYSDBA和default两种。在安装Oracle 10g的时候，提示创建数据库，在创建的同时提示你输入口令，若此时你输入了密码，在登录数据库的时候用户名sys 对应的密码就应该是你创建数据库时候输入的口令。而非默认的change_on_install.
 
-
-
-## SID和service_name的区别
-
-sid是数据库实例的名字，每个实例各不相同。
-
-service_name参数是由oracle8i引进的。在8i以前，使用SID来表示标识数据库的一个实例，但是在Oracle的并行环境中，一个数据库对应多个实例，这样就需要多个网络服务名，设置繁琐。为了方便并行环境中的设置，引进了service_name参数，该参数对应一个数据库，而不是一个实例，而且该参数有许多其它的好处。该参数的缺省值为Db_name.Db_domain，即等于Global_name。一个数据库可以对应多个service_name，以便实现更灵活的配置。该参数与SID没有直接关系，即不必service name 必须与SID一样
-
-Java JDBC Thin Driver 连接 Oracle有三种方法，如下：
-
-格式一: Oracle JDBC Thin using a ServiceName:
-
-jdbc:oracle:thin:@//<host>:<port>/<service_name>
-
-Example: jdbc:oracle:thin:@//192.168.2.1:1521/XE
-
-注意这里的格式，@后面有//, 这是与使用SID的主要区别。 这种格式是Oracle 推荐的格式，因为对于集群来说，每个节点的SID 是不一样的，但是SERVICE_NAME 确可以包含所有节点。
-
-格式二: Oracle JDBC Thin using an SID:
-
-jdbc:oracle:thin:@<host>:<port>:<SID>
-
-Example: jdbc:oracle:thin:@192.168.2.1:1521:X01A
-
-Note: Support for SID is being phased out. Oracle recommends that users switch over to usingservice names.
-
-格式三：Oracle JDBC Thin using a TNSName:
-
-jdbc:oracle:thin:@<TNSName>
-
-Example: jdbc:oracle:thin:@GL
-
-Note:Support for TNSNames was added in the driver release 10.2.0.1
-
-
-## Oracle的thin与oci连接方式比较
-
-应用与oracle的连接分为thin和oci两种模式：
-
-                Oracle oci                Oracle thin
-
-实现方式        用Java调用本机Oracle客户端达到访问数据库目的       用Java完成访问数据库
-
-Oracle客户端    需要安装配置             不用安装
-
-性能            理论上略好               理论上略差
-
-移植性          略差                     略好
-
-推荐使用THIN DRIVER，移植性好，相对规范些，问题也少。具体连接上的写法的差异：
-
-```
-    jdbc:oracle:thin:@youroraclehost:1521:yoursid
-    jdbc:oracle:thin:@(description=(address=(host=youroraclehost)(protocol=tcp)(port=1521))(connect_data=(SERVICE_NAME=yourservicename)))
-    jdbc:oracle:oci:@youroracle-tns-name
-    jdbc:oracle:oci:@(description=(address=(host=youroraclehost)(protocol=tcp)(port=1521))(connect_data=(SERVICE_NAME=yourservicename)))
-```
 
 ## Oracle 11g服务详细介绍及哪些服务是必须开启的？
 
@@ -325,208 +271,6 @@ ORA-28000: 账户锁定
 * 点击“应用”再点击“关闭”；
 * 重新登录就可以通过验证了
 
-## oracle emca常用命令
-
-```
-    $emctl stop dbconsole
-    $emca -r 修复完毕，dbconsole 可以正常使用了
-
-    创建一个EM资料库
-    emca -repos create
-
-    重建一个EM资料库
-    emca -repos recreate
-    删除一个EM资料库
-    emca -repos drop
-    配置数据库的 Database Control
-    emca -config dbcontrol db
-    删除数据库的 Database Control配置
-    emca -deconfig dbcontrol db
-    重新配置db control的端口，默认端口在1158
-    emca -reconfig ports
-    emca -reconfig ports -dbcontrol_http_port 1160
-    emca -reconfig ports -agent_port 3940
-    先设置ORACLE_SID环境变量后,启动EM console服务
-    emctl start dbconsole
-    emctl stop dbconsole
-    emctl status dbconsole
-    重新配置dbconsole的步骤
-    emca -repos drop 删除DBConsole
-    emca -repos create 重建
-    emca -config dbcontrol db 配置
-    emctl start dbconsole 启动
-```
-
-
-```sql
-    -- Windows下以管理员身份启动数据库
-    net start oracleserviceorcl -- 后面的orcl是你安装的数据库实例名
-    net start oracleoradb11g_home1tnslistener --非必须
-
-    -- linux下以sysdba用户登录，然后启动数据库
-    sqlplus / as sysdba
-    startup
-
-    -- sqlplus登陆方式
-    sqlplus / as sysdba --以操作系统权限认证的oracle sys管理员登陆
-
-    sqlplus /nolog
-    conn / as sysdba --以操作系统权限认证的oracle sys管理员登陆
-
-
-    sqlplus sys/password@orcl as sysdba --以sys用户登陆必须使用as sysdba
-
-    sqlplus /nolog --不在cmd或者teminal当中暴露密码的登陆方式
-    conn sys/password as sysdba
-
-
-    sqlplus --不显露密码的方式登陆
-    Enter user-name：sys
-    Enter password：password as sysdba --以sys用户登陆的话 必须要加上as sysdba子句
-
-    sqlplus scott/tiger@orcl --非管理员用户登陆
-
-
-    desc v$database; --查询v$database数据库的表结构
-
-
-
-    --在sqlplus中执行sql脚本，下面两种方式都可以
-    START file_name
-    @file_name
-
-
-    --判断表是否存在，如果存在则删除
-    declare
-          num   number;
-    begin
-          select count(1) into num from all_tables where TABLE_NAME = 'EMP' and OWNER='SCOTT';
-          if   num=1   then
-              execute immediate 'drop table EMP';
-          end   if;
-    end;
-    /
-    --创建表
-    CREATE TABLE EMP
-           (EMPNO NUMBER(4) NOT NULL,
-            ENAME VARCHAR2(10),
-            JOB VARCHAR2(9),
-            MGR NUMBER(4),
-            HIREDATE DATE,
-            SAL NUMBER(7, 2),
-            COMM NUMBER(7, 2),
-            DEPTNO NUMBER(2));
-    可以将上述存储过程加载到每一个create table前面。
-
-    --ORACLE 判断序列是否存在,如果存在就删除
-
-    declare
-     V_NUM number;
-
-    BEGIN
-      ----多次删除时，每次都将v_num设置成为0
-        V_NUM := 0;
-        ----判断序列 seq_name_1 是否存在（区分大小写）
-        select count(0) into V_NUM from user_sequences where sequence_name = 'SEQ_BUSINESS_PROCESS_INDEX_ID';
-        ----如果存在立即删除
-        if V_NUM > 0 then
-        execute immediate 'DROP SEQUENCE  SEQ_BUSINESS_PROCESS_INDEX_ID';
-        end if;
-    END;
-
-
-    -- 设置sqlplus模式显示总行数
-    show pagesize; --查看当前的pagesize
-    set pagesize 300;
-
-    -- 设置sqlplus模式显示行宽度
-    show linesize; --查看当前的linesize
-    set linesize 300;
-
-    -- 修改安装目录glogin.sql文件才能保证之前的设置永久生效
-    set pagesize 300;
-    set linesize 300;
-
-
-   
-
-    -- 删除表对象
-    select 'drop table '||segment_name from dba_segments where owner='VPMUSER' and segment_type='TABLE';
-    -- 创建表对象
-    select
-    'create table '||segment_name || ' as select * from '||segment_name ||'@DBLINK'
-    from dba_segments where owner='VPMUSER' and segment_type='TABLE';
-
-    -- 检查表是否完整导入
-    select segment_name from dba_segments@aaa where owner='VPMUSER' and segment_type='TABLE'
-    and (segment_name not like 'BIN$%'
-    and segment_name not like '%201%')
-    minus
-    select segment_name from dba_segments where owner='VPMUSER' and segment_type='TABLE'  and segment_name not like 'BIN$%'
-
-
-    --查询用户所有表的语句1
-    select t.table_name,t.comments from user_tab_comments t
-
-    --查询用户所有表的语句2:
-    select r1, r2, r3, r5
-    from (select a.table_name r1, a.column_name r2, a.comments r3
-              from user_col_comments a),
-           (select t.table_name r4, t.comments r5 from user_tab_comments t)
-    where r4 = r1
-
-
-    -- 查找表的所有索引（包括索引名，类型，构成列）：
-    select t.*,i.index_type from user_ind_columns t,user_indexes i where t.index_name = i.index_name and t.table_name = i.table_name and t.table_name = 要查询的表
-    -- 查找表的主键（包括名称，构成列）：
-    select cu.* from user_cons_columns cu, user_constraints au where cu.constraint_name = au.constraint_name and au.constraint_type = 'P' and au.table_name = 要查询的表
-
-    -- 查找表的唯一性约束（包括名称，构成列）：
-    select column_name from user_cons_columns cu, user_constraints au where cu.constraint_name = au.constraint_name and au.constraint_type = 'U' and au.table_name = 要查询的表
-
-    -- 查找表的外键（包括名称，引用表的表名和对应的键名，下面是分成多步查询）：
-    select * from user_constraints c where c.constraint_type = 'R' and c.table_name = 要查询的表
-
-    -- 查询外键约束的列名：
-    select * from user_cons_columns cl where cl.constraint_name = 外键名称
-
-    -- 查询引用表的键的列名：
-    select * from user_cons_columns cl where cl.constraint_name = 外键引用表的键名
-
-    -- 查询表的所有列及其属性
-    select t.*,c.COMMENTS from user_tab_columns t,user_col_comments c where t.table_name = c.table_name and t.column_name = c.column_name and t.table_name = 要查询的表
-    
-	
-	--备份表数据
-	create table emp as select * from scott.emp
-
-	--还原表数据
-	insert into emp select * from scott.emp
-	
-	--查看已经执行过的sql这些是存在共享池中的，用户名需要大写，必须具有DBA 的权限
-	select * from v$sqlarea t where t.PARSING_SCHEMA_NAME in ('用户名') order by t.LAST_ACTIVE_TIME desc
-	
-	
-	--ORACLE11G 字符集更改（这里更改为AL32UTF8）
-	sqlplus sys as sysdba
-
-	--执行下面命令，有可能造成数据库中已有数据混乱的情况，所以在进行操作前，要进行数据库的备份操作
-    shutdown immediate;
-    STARTUP MOUNT;
-    ALTER SESSION SET SQL_TRACE=TRUE;
-    ALTER SYSTEM ENABLE RESTRICTED SESSION;
-    ALTER SYSTEM SET JOB_QUEUE_PROCESSES=0;
-    ALTER SYSTEM SET AQ_TM_PROCESSES=0;
-    ALTER DATABASE OPEN;
-    ALTER DATABASE character set INTERNAL_USE AL32UTF8;
-    ALTER SESSION SET SQL_TRACE=FALSE;
-    shutdown immediate;
-    startup;
-
-	--察看 NLS_LANG 信息：
-    SELECT parameter, value FROM v$nls_parameters WHERE parameter LIKE '%CHARACTERSET';
-
-```
 
 ## linux/unix平台Oracle sqlplus 中Backspace无法删除字符
 
