@@ -92,7 +92,6 @@
 * 12 Logical Storage Structures: http://docs.oracle.com/database/121/CNCPT/logical.htm#CNCPT004
 * dbms_lob.substr: http://docs.oracle.com/cd/B28359_01/appdev.111/b28419/d_lob.htm#i999349
 * SQL*Loader: http://docs.oracle.com/cd/E11882_01/server.112/e22490/ldr_concepts.htm#SUTIL003
-* SQLNET.EXPIRE_TIME: http://docs.oracle.com/cd/B19306_01/network.102/b14213/sqlnet.htm
 * Database Net Services Reference: http://docs.oracle.com/cd/E11882_01/network.112/e10835/toc.htm
 * 8 Data Sources and URLs: http://docs.oracle.com/cd/B28359_01/java.111/b31224/urls.htm
 * Database JDBC Developer's Guide: http://docs.oracle.com/cd/E11882_01/java.112/e16548/toc.htm
@@ -100,6 +99,7 @@
 * Protecting Your Database: Specifying Passwords for Users SYS and SYSTEM: http://docs.oracle.com/cd/B28359_01/server.111/b28310/create004.htm#ADMIN11087
 * Managing Oracle Enterprise Manager Database Control: http://docs.oracle.com/cd/E11882_01/server.112/e25494/dbcontrol.htm#ADMIN13401
 * 2 Oracle SQL Connector for Hadoop Distributed File System: http://docs.oracle.com/cd/E37231_01/doc.20/e36961/sqlch.htm#BDCUG125
+* Generating an AWR Report Using the Command-Line Interface: http://docs.oracle.com/database/121/TGDBA/gather_stats.htm#TGDBA233
 
 * Oracle SQL Developer: http://www.oracle.com/technetwork/developer-tools/sql-developer/overview/index.html
 * Instant Client Downloads for Microsoft Windows (32-bit): http://www.oracle.com/technetwork/topics/winsoft-085727.html
@@ -140,16 +140,13 @@
 * ORACLE实例配置多个监听器: http://blog.itpub.net/30150152/viewspace-1479571/
 * PLSQL_性能优化工具系列02_SQL Tuning Health-Check Script (SQLHC): http://www.cnblogs.com/eastsea/p/3973596.html
 * Script:SQL调优健康检查脚本: http://www.askmaclean.com/archives/sql-tuning-health-check-script.html
-* Oracle导出awr报告: http://jingyan.baidu.com/article/b2c186c8218b55c46ff6ff5f.html
 * 重走长征路——1、V$SQL%知多少？http://www.cnblogs.com/sopost/archive/2012/06/03/2532826.html
 * 由12170问题引起的Oracle无法登陆问题de解决办法: http://jingh3209.blog.163.com/blog/static/156966720103295715623
 * TNS-12535: TNS:operation timed out、TNS-00505: Operation timed out: http://www.cnblogs.com/future2012lg/p/3739752.html
-* oracle网络配置listener.ora、sqlnet.ora、tnsnames.ora(改文章可以整理重新发布): http://blog.csdn.net/s464036801/article/details/8017897
 * 配置tnsping跟踪来诊断Oracle Net连接: http://blog.itpub.net/17203031/viewspace-1161228/
 * 说说Oracle监听器（二）: http://blog.itpub.net/17203031/viewspace-682628/
 * Linux 安装oracle客户端: http://www.cnblogs.com/yangxia-test/p/4159449.html
 * 深入理解JDBC的超时设置: http://www.importnew.com/2466.html
-* 关于 SQLNET.AUTHENTICATION_SERVICES 验证方式的说明: http://blog.csdn.net/aaron8219/article/details/38904965
 
 
 ## PL/SQL Developer

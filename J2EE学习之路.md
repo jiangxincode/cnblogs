@@ -260,9 +260,6 @@
 * https://github.com/ingokegel/jclasslib
 
 
-
-
-
 ## Hudson
 
     用Java编写的持续集成（CI）工具。

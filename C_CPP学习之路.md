@@ -49,6 +49,7 @@
 * Borland-style CONIO: https://sourceforge.net/projects/conio/
 * cppcheck: https://sourceforge.net/projects/cppcheck/
 * DISLIN: https://www.mps.mpg.de/dislin/
+* Useful enhancements for Visual Studio .NET: http://www.codeproject.com/Articles/2704/Useful-enhancements-for-Visual-Studio-NET
 
 
 * MinGW: http://www.mingw.org/
