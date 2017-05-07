@@ -194,10 +194,11 @@
 
 * Eclipse的项目地址：http://www.eclipse.org/
 * Eclipse MarketPlace地址：http://marketplace.eclipse.org/
-* 各个版本的下载地址(我一般下载JavaEE)：http://www.eclipse.org/downloads/
+* 各个版本的下载地址：http://www.eclipse.org/downloads/
 * 帮助地址：http://help.eclipse.org/
 * 源码：http://git.eclipse.org/
 * FAQ What is a Quick Fix?: http://wiki.eclipse.org/FAQ_What_is_a_Quick_Fix?
+* Eclipse插件开发总群（QQ群）：584434100
 * Eclipse插件: http://www.oschina.net/project/tag/148/eclipse-plugins
 * Eclipse相关问题：http://www.cnblogs.com/jiangxinnju/p/5205365.html
 * Top 10 Java Debugging Tips with Eclipse: http://javapapers.com/core-java/top-10-java-debugging-tips-with-eclipse/
@@ -465,6 +466,7 @@ Eclipse中`Update Project`，选择`Force Update of Snapshots/Releases`
 * Introduction to Repositories: http://maven.apache.org/guides/introduction/introduction-to-repositories.html
 * Using Mirrors for Repositories: http://maven.apache.org/guides/mini/guide-mirror-settings.html
 * Core Plug-ins List: http://maven.apache.org/plugins/index.html
+* overlays: http://maven.apache.org/plugins/maven-war-plugin/overlays.html
 * http://www.mojohaus.org/
 * Maven Ant Tasks: http://maven.apache.org/ant-tasks/
 * M2Eclipse项目地址：http://www.eclipse.org/m2e/

@@ -117,6 +117,7 @@
 * ethtool的基本设置: http://www.cnblogs.com/fbwfbi/p/3612658.html
 * Linux find 用法示例: http://www.cnblogs.com/wanqieddy/archive/2011/06/09/2076785.html
 * Shell脚本：判断用户和用户组是否已经存在/创建用户和用户组: http://blog.csdn.net/bluishglc/article/details/42060223
+* nc命令用法举例: http://www.cnblogs.com/nmap/p/6148306.html
 
 
 ## Linux常用命令
