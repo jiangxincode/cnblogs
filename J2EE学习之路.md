@@ -144,7 +144,6 @@
 * 挑战认证机制：《LINUX网络管理员指南(第3版).chm》6.8. Authentication with PPP
 * Tomcat Cannot assign requested address: JVM_Bind 非端口占用冲突：http://jameswsz.iteye.com/blog/1976489
 * DH密钥交换和ECDH原理： http://www.cnblogs.com/fishou/p/4206451.html
-* jdk-logging、log4j、logback日志介绍及原理: https://my.oschina.net/pingpangkuangmo/blog/406618
 * GetPropertyAction vs System.getProperty in obtaining system variables: http://stackoverflow.com/questions/4954924/getpropertyaction-vs-system-getproperty-in-obtaining-system-variables
 * File.separator vs FileSystem.getSeparator() vs System.getProperty(“file.separator”)?: http://stackoverflow.com/questions/8075373/file-separator-vs-filesystem-getseparator-vs-system-getpropertyfile-separato
 * 三个实例演示 Java Thread Dump 日志分析：http://www.cnblogs.com/zhengyun_ustc/archive/2013/01/06/dumpanalysis.html
@@ -346,6 +345,8 @@
 
 * log4j 日志配置 properties 和 xml形式两种：http://my.oschina.net/exit/blog/182445
 * 通过log4j日志异步化大幅提升系统性能: http://blog.csdn.net/henryqqq/article/details/2254355
+* jdk-logging、log4j、logback日志介绍及原理: https://my.oschina.net/pingpangkuangmo/blog/406618
+* 在 Web 应用中增加用户跟踪功能[学习在多线程环境下 Apache Log4j 的 NDC/MDC 开发]: https://www.ibm.com/developerworks/cn/web/wa-lo-usertrack/
 
 
 ## Logback
@@ -1218,6 +1219,7 @@ https://bintray.com/
 * 虾皮工作室(讲解大数据相关知识，如《细细品味Hadoop系列文章》)：http://www.cnblogs.com/xia520pi/
 * [Hadoop系列]Hadoop的MapReduce中多文件输出: http://blog.csdn.net/inkfish/article/details/5156651
 * Hadoop源码分析——TaskAttemptContext类和TaskAttemptID类: http://blog.sina.com.cn/s/blog_61ef49250100vcps.html
+* Kerberos认证原理简介: http://www.cnblogs.com/xiaodf/p/5968086.html
 
 
 ## Spark
