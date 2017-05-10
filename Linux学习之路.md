@@ -118,6 +118,7 @@
 * Linux find 用法示例: http://www.cnblogs.com/wanqieddy/archive/2011/06/09/2076785.html
 * Shell脚本：判断用户和用户组是否已经存在/创建用户和用户组: http://blog.csdn.net/bluishglc/article/details/42060223
 * nc命令用法举例: http://www.cnblogs.com/nmap/p/6148306.html
+* How to Manage ‘Systemd’ Services and Units Using ‘Systemctl’ in Linux：https://www.tecmint.com/manage-services-using-systemd-and-systemctl-in-linux/
 
 
 ## Linux常用命令
@@ -129,6 +130,7 @@
 	ps –fu $USER | grep java # 显示当前用户的所有线程
 	ps -ef | grep 4736 # 查看4736端口是否被占用
 	netstat -tulnp | grep mysqld # 查看mysqld的监听情况
+    netstat –apn    ps -aux | grep pid   #先查进程号，再找到进程信息
 	find . –name "*.log" | xargs grep error # 在当前目录的所有日志文件中查找关键词"error"
 	ls -t `find . -name "*.log"` #列出最近修改的文件
     glxinfo | grep rendering # 查询OpenGL是否打开。提示：direct rendering: Yes 表明启动正常
@@ -968,11 +970,20 @@ yum会把下载的软件包和header存储在cache中,而不会自动删除.可�
 
 ## Ubuntu开机直接进入控制台
 
-只需编辑文件`/etc/default/grub`，把 `GRUB_CMDLINE_LINUX_DEFAULT=”quiet splash”`改成`GRUB_CMDLINE_LINUX_DEFAULT=”quiet splash text”`，然后再运行`sudo update-grub`即可。
+* 16.04之前的Ubuntu版本
 
-在控制台下想进入x-window，可以在root用户下输入：`gdm`或者`startx`
+只需编辑文件`/etc/default/grub`，把 `GRUB_CMDLINE_LINUX_DEFAULT=”quiet splash”`改成`GRUB_CMDLINE_LINUX_DEFAULT=”quiet splash text”`，然后再运行`sudo update-grub`即可。在控制台下想进入x-window，可以在root用户下输入：`gdm`或者`startx`。修改Ubuntu默认启动进入文本模式后，重新启动后停在Checking battery state问题。没关系，实际系统已经启动，按键 ALT+F1 即可进入输入用户名登录得字符提示界面。
 
-修改Ubuntu默认启动进入文本模式后，重新启动后停在Checking battery state问题。没关系，实际系统已经启动，按键 ALT+F1 即可进入输入用户名登录得字符提示界面。
+* 16.04及之后的Ubuntu版本
+
+```shell
+sudo systemctl disable lightdm.service
+sudo ln -s /lib/systemd/system/lightdm.service /etc/systemd/system/display-manager.service #恢复默认图形界面启动
+```
+
+* CentOS以及Redhat
+
+http://blog.csdn.net/zoubf/article/details/47607039
 
 # 用Xshell连接会自动断开
 

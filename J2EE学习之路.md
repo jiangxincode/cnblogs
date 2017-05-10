@@ -43,7 +43,6 @@
 * Java Performance Tuning Guide: http://java-performance.info/
 * 构建一个文本可视化和分析应用程序: http://www.ibm.com/developerworks/cn/opensource/os-txtviz/
 * POJO模式: http://www.cnblogs.com/yezhenhan/archive/2011/11/21/2256642.html
-* tomcat startup.sh/shutdown.sh/setclasspath.sh/catalina.sh分析：http://vekergu.blog.51cto.com/9966832/d-2
 * Java数字图像处理基础知识 - 必读: http://blog.csdn.net/jia20003/article/details/7279667
 * Java反序列化时对象注入可以造成代码执行漏洞: http://0day5.com/archives/3572
 * Java NIO与IO的区别和比较: http://my.oschina.net/u/2001537/blog/353035
@@ -84,7 +83,6 @@
 * String.intern(): 深入理解Java虚拟机：JVM高级特性与最佳实践第二版-周志明.pdf
 * [原创] SSO(Single Sign-on) in Action(上篇): http://www.blogjava.net/security/archive/2006/10/02/sso_in_action.html
 * 单点登陆(Single Sign-On,SSO)介绍（翻译）: http://blog.csdn.net/rosen/article/details/445112
-* How do I prevent people from shutting down my Tomcat?: http://www.avajava.com/tutorials/lessons/how-do-i-prevent-people-from-shutting-down-my-tomcat.html
 * 浅析Web工程目录和tomcat目录: http://blog.csdn.net/ystyaoshengting/article/details/6204886
 * web.xml配置详解: http://twb.iteye.com/blog/196733
 * CSS3美化有序列表: http://www.w3cplus.com/css3/css3-ordered-list-styles
@@ -112,7 +110,6 @@
 * javascript CDATA: http://blog.csdn.net/shenyan008/article/details/12222241
 * Java调用动态库方法说明: http://www.cnblogs.com/xifanyaoyao/p/3659019.html
 * struts2关于A web application created a ThreadLocal with key of type 异常解决办法: http://cooliron.blog.163.com/blog/static/12470313820111235248426/
-* Tomcat7启动报Error listenerStart错误: http://www.cnblogs.com/nayitian/p/3439336.html
 * 关于toString: http://www.iteye.com/problems/96872
 * 关于使用InputStreamReader读取GBK编码文件乱码的有关问题：http://mypyg.iteye.com/blog/888915
 * Java编码浅析（注意区分三个概念）：http://www.iteye.com/topic/311583
@@ -136,19 +133,18 @@
 * 服务化之－路由: http://mp.weixin.qq.com/s?__biz=MzIzODYyNjkzNw==&mid=2247483732&idx=1&sn=5e3533b6f79823083e567e092a0e65fc&chksm=e9373042de40b95466784930dfc9468a7974ddd1bae05b02f9776c0e8a2074463f2df7ed59e0#rd
 * Emoji的编码以及常见问题的解决方法: https://segmentfault.com/a/1190000007594620
 * Class热替换与卸载: https://my.oschina.net/xianggao/blog/367822
-* Tomcat中的Session小结: http://www.cnblogs.com/chenpi/p/5434537.html
 * HTTP Keep-Alive详解: http://liuzhigong.blog.163.com/blog/static/1782723752011412551547/
 * 定义文档兼容性:  https://msdn.microsoft.com/zh-cn/library/cc288325(VS.85).aspx
 * 让浏览器不再显示 https 页面中的 http 请求警报: http://www.cnblogs.com/hustskyking/p/upgrade-insecure-requests.html
 * SNA (Share Nothing Architecture) Session 解剖: http://blog.csdn.net/lovingprince/article/details/5883473
 * 挑战认证机制：《LINUX网络管理员指南(第3版).chm》6.8. Authentication with PPP
-* Tomcat Cannot assign requested address: JVM_Bind 非端口占用冲突：http://jameswsz.iteye.com/blog/1976489
 * DH密钥交换和ECDH原理： http://www.cnblogs.com/fishou/p/4206451.html
 * GetPropertyAction vs System.getProperty in obtaining system variables: http://stackoverflow.com/questions/4954924/getpropertyaction-vs-system-getproperty-in-obtaining-system-variables
 * File.separator vs FileSystem.getSeparator() vs System.getProperty(“file.separator”)?: http://stackoverflow.com/questions/8075373/file-separator-vs-filesystem-getseparator-vs-system-getpropertyfile-separato
 * 三个实例演示 Java Thread Dump 日志分析：http://www.cnblogs.com/zhengyun_ustc/archive/2013/01/06/dumpanalysis.html
 * OpenJDK和SunJDK有啥区别？https://www.zhihu.com/question/19646618
 * 系统吞吐量（TPS）、用户并发量、性能测试概念和公式: http://www.ha97.com/5095.html
+* Easy way of running the same junit test over and over? http://stackoverflow.com/questions/1492856/easy-way-of-running-the-same-junit-test-over-and-over
 
 
 
@@ -334,6 +330,14 @@
 ## Tomcat
 
 * Apache Tomcat 8 Configuration Reference: http://tomcat.apache.org/tomcat-8.0-doc/config/index.html
+* Security Considerations: https://tomcat.apache.org/tomcat-8.0-doc/security-howto.html
+* SSL/TLS Configuration HOW-TO: https://tomcat.apache.org/tomcat-8.0-doc/ssl-howto.html
+* Tomcat Cannot assign requested address: JVM_Bind 非端口占用冲突：http://jameswsz.iteye.com/blog/1976489
+* Tomcat中的Session小结: http://www.cnblogs.com/chenpi/p/5434537.html
+* Tomcat7启动报Error listenerStart错误: http://www.cnblogs.com/nayitian/p/3439336.html
+* How do I prevent people from shutting down my Tomcat?: http://www.avajava.com/tutorials/lessons/how-do-i-prevent-people-from-shutting-down-my-tomcat.html
+* tomcat startup.sh/shutdown.sh/setclasspath.sh/catalina.sh分析：http://vekergu.blog.51cto.com/9966832/d-2
+* SSL/TLS, ciphers, perfect forward secrecy and Tomcat: https://blog.eveoh.nl/2014/02/tls-ssl-ciphers-pfs-tomcat/
 
 
 ## Log4j
@@ -1219,7 +1223,6 @@ https://bintray.com/
 * 虾皮工作室(讲解大数据相关知识，如《细细品味Hadoop系列文章》)：http://www.cnblogs.com/xia520pi/
 * [Hadoop系列]Hadoop的MapReduce中多文件输出: http://blog.csdn.net/inkfish/article/details/5156651
 * Hadoop源码分析——TaskAttemptContext类和TaskAttemptID类: http://blog.sina.com.cn/s/blog_61ef49250100vcps.html
-* Kerberos认证原理简介: http://www.cnblogs.com/xiaodf/p/5968086.html
 
 
 ## Spark
