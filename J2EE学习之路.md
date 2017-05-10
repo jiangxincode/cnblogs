@@ -72,7 +72,6 @@
 * Developing a Service Provider using Java API(Service Provider Interface): http://www.lordofthejars.com/2011/11/en-ti-puedo-ver-la-libertad-tu-me-haces.html
 * 驱动模块和桩模块的概念和区别: http://daimajishu.iteye.com/blog/1557295
 * astyle 使用说明: http://www.cnblogs.com/jiangxinnju/p/4908575.html
-* JAX-WS error on WSDL file: “Error resolving component 's:schema'”: http://stackoverflow.com/questions/13499860/jax-ws-error-on-wsdl-file-error-resolving-component-sschema
 * How to make Java 6, which fails SSL connection with “SSL peer shut down incorrectly”, succeed like Java 7?: http://stackoverflow.com/questions/15589880/how-to-make-java-6-which-fails-ssl-connection-with-ssl-peer-shut-down-incorrec
 * 使用监听器对Spring bean id进行唯一校验: http://chenzhou123520.iteye.com/blog/1774106
 * Android安全开发之ZIP文件目录遍历: http://www.cnblogs.com/alisecurity/p/5610654.html
@@ -173,6 +172,8 @@
 * Automating SoapUI using Groovy – A Walk Through: http://www.codeproject.com/Articles/820414/Automating-SoapUI-using-Groovy-A-Walk-Through
 * tcpmon: https://github.com/robertbachmann/tcpmon
 * JMeter: http://jmeter.apache.org/
+* JAX-WS error on WSDL file: “Error resolving component 's:schema'”: http://stackoverflow.com/questions/13499860/jax-ws-error-on-wsdl-file-error-resolving-component-sschema
+* JAX-WS Maven Plugin: http://www.mojohaus.org/jaxws-maven-plugin/
 
 ### 常用第三方webservice
 
