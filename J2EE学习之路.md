@@ -83,7 +83,6 @@
 * [原创] SSO(Single Sign-on) in Action(上篇): http://www.blogjava.net/security/archive/2006/10/02/sso_in_action.html
 * 单点登陆(Single Sign-On,SSO)介绍（翻译）: http://blog.csdn.net/rosen/article/details/445112
 * 浅析Web工程目录和tomcat目录: http://blog.csdn.net/ystyaoshengting/article/details/6204886
-* web.xml配置详解: http://twb.iteye.com/blog/196733
 * CSS3美化有序列表: http://www.w3cplus.com/css3/css3-ordered-list-styles
 * 简洁纯净的CSS表单设计实例: http://blog.bingo929.com/clean-and-pure-css-form-design.html
 * DreamweaverCS5+Tomcat环境配置: http://blog.csdn.net/jnqqls/article/details/7024170
@@ -144,6 +143,10 @@
 * OpenJDK和SunJDK有啥区别？https://www.zhihu.com/question/19646618
 * 系统吞吐量（TPS）、用户并发量、性能测试概念和公式: http://www.ha97.com/5095.html
 * Easy way of running the same junit test over and over? http://stackoverflow.com/questions/1492856/easy-way-of-running-the-same-junit-test-over-and-over
+* Java 语言的 XPath API: https://www.ibm.com/developerworks/cn/xml/x-javaxpathapi.html
+* XMLHttpRequest Living Standard: https://xhr.spec.whatwg.org/
+* How to solve the error: The system cannot find the file C:\ProgramData\Oracle\Java\javapath\java.exe：http://stackoverflow.com/questions/26864662/how-to-solve-the-error-the-system-cannot-find-the-file-c-programdata-oracle-ja
+* Servlet 3.1规范[翻译]: http://jinnianshilongnian.iteye.com/category/255452
 
 
 
@@ -339,6 +342,10 @@
 * How do I prevent people from shutting down my Tomcat?: http://www.avajava.com/tutorials/lessons/how-do-i-prevent-people-from-shutting-down-my-tomcat.html
 * tomcat startup.sh/shutdown.sh/setclasspath.sh/catalina.sh分析：http://vekergu.blog.51cto.com/9966832/d-2
 * SSL/TLS, ciphers, perfect forward secrecy and Tomcat: https://blog.eveoh.nl/2014/02/tls-ssl-ciphers-pfs-tomcat/
+* web.xml配置详解: http://twb.iteye.com/blog/196733
+* web.xml 详细介绍: http://mianhuaman.iteye.com/blog/1105522
+* Web.xml配置详解之context-param: http://blog.csdn.net/liaoxiaohua1981/article/details/6759206
+* 监控Tomcat解决方案（监控应用服务器系列文章）: http://blog.csdn.net/yunzhu666/article/details/8662045
 
 
 ## Log4j

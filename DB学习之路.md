@@ -59,6 +59,14 @@
 * left join on 和where条件的放置: http://blog.csdn.net/muxiaoshan/article/details/7617533
 
 
+## SQL Server不同版本的驱动
+
+* msbase.jar、mssqlserver.jar、msutil.jar 在连接数据时候需要手动导入驱动包，即手动导入class.forName(驱动名称)，支持sql2000
+* sqljdbc.jar 应用程序必须首先按class.forName(驱动名称)注册驱动程序。Jdk1.6以上版本不推荐使用.支持sql2005，sql2008
+* sqljdbc4.jar DriverManager.getConnection方法得到了增强，可自动加载 JDBC Driver。因此使用sqljdbc4.jar 类库时，应用程序无需调用 Class.forName 方法来注册或加载驱动程序。调用 DriverManager 类的 getConnection 方法时，会从已注册的 JDBC Driver 集中找到相应的驱动程序。sqljdbc4.jar 文件包括“META-INF/services/java.sql.Driver”文件，后者包含.sqlserver.jdbc.SQLServerDriver 作为已注册的驱动程序。现有的应用程序（当前通过使用 Class.forName 方法加载驱动程序）将继续工作，而无需修改。要求使用 6.0 或更高版本的JRE，支持sql2005，sql2008
+
+
+
 
 ## 全文索引和普通索引的区别
 

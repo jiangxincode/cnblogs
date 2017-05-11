@@ -107,6 +107,7 @@
 * Linux压缩与解压常用命令: http://www.cnblogs.com/jiangxinnju/p/6055870.html
 * vimrc，bashrc中rc的含义: UNIX Power Tools (3rd Edition).chm 搜索rc
 * objdump: http://sourceware.org/binutils/docs-2.27/binutils/objdump.html#objdump
+* tcpdump: https://github.com/the-tcpdump-group/tcpdump
 * tcpdump捕捉样例: http://www.cnblogs.com/jiangxinnju/p/6012867.html
 * Slow Server? This is the Flow Chart You're Looking For: http://blog.scoutapp.com/articles/2014/07/31/slow_server_flow_chart
 * ldd命令：An Introduction to GCC.pdf
@@ -114,9 +115,7 @@
 * Linux下chkconfig命令详解：http://www.cnblogs.com/panjun-Donet/archive/2010/08/10/1796873.html
 * linux下如何关闭防火墙？如何查看防火墙当前的状态：http://www.cnblogs.com/8899man/p/5899176.html
 * TCP 连接断连问题剖析：http://www.ibm.com/developerworks/cn/aix/library/0808_zhengyong_tcp/
-* mknod指令详解：http://www.cnblogs.com/hnrainll/archive/2011/06/09/2076160.html
 * ethtool的基本设置: http://www.cnblogs.com/fbwfbi/p/3612658.html
-* Linux find 用法示例: http://www.cnblogs.com/wanqieddy/archive/2011/06/09/2076785.html
 * Shell脚本：判断用户和用户组是否已经存在/创建用户和用户组: http://blog.csdn.net/bluishglc/article/details/42060223
 * nc命令用法举例: http://www.cnblogs.com/nmap/p/6148306.html
 * How to Manage ‘Systemd’ Services and Units Using ‘Systemctl’ in Linux：https://www.tecmint.com/manage-services-using-systemd-and-systemctl-in-linux/
