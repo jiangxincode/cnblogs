@@ -18,6 +18,7 @@
 * DB Compare(SQL Server): http://dbcompare.codeplex.com/
 * DBComparer(SQL Server): http://dbcomparer.com/
 * NoSQL数据库笔谈: http://old.sebug.net/paper/databases/nosql/Nosql.html
+* 存储过程使用建议: http://www.cnblogs.com/jes_shaw/archive/2009/05/20/1468505.html
 
 
 # MySQL
@@ -530,6 +531,7 @@ Oracle提供了两种验证方式，一种是OS验证，另一种密码文件验
 * MongoDB设置访问权限、设置用户: http://www.cnblogs.com/zengen/archive/2011/04/23/2025722.html
 * 三招解决MongoDB的磁盘IO问题: http://blog.nosqlfan.com/html/3925.html
 * Install MongoDB Community Edition on Ubuntu: https://docs.mongodb.com/master/tutorial/install-mongodb-on-ubuntu/
+* Mongo Database 性能优化: http://www.cnblogs.com/shanyou/archive/2010/10/02/1841348.html
 
 
 # Teradata

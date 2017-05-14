@@ -156,6 +156,9 @@
 * 数据库分页Java实现: http://www.cnblogs.com/ITtangtang/archive/2012/04/21/2462385.html
 * 使用 jQuery.i18n.properties 实现 Web 前端的国际化: https://www.ibm.com/developerworks/cn/web/1305_hezj_jqueryi18n/
 * Jar包的正确运行方法: http://www.cnblogs.com/jifeng/archive/2012/06/07/2540338.html
+* ajax与302响应: http://www.cnblogs.com/dudu/p/ajax_302_found.html
+* HTTPS 升级指南: http://www.ruanyifeng.com/blog/2016/08/migrate-from-http-to-https.html
+* 软件项目“免坑”指南: http://www.cnblogs.com/MeteorSeed/archive/2012/04/08/2427966.html
 
 
 
@@ -808,6 +811,7 @@ https://bintray.com/
 * WooYun知识库：http://drops.wooyun.org/
 * HP Security Research：http://hpsr1.libsyn.com/
 * CVE: http://cve.mitre.org/
+* SCAP安全内容自动化协议中文社区: http://www.scap.org.cn/index.html
 * acunetix: http://www.acunetix.com/
 * xfocus: http://www.xfocus.net/index.html
 
@@ -1003,6 +1007,8 @@ https://bintray.com/
 * JMX Technology Home Page: http://www.oracle.com/technetwork/java/javase/tech/javamanagement-140525.html
 * JMX的Hello World: http://www.blogjava.net/hengheng123456789/articles/65690.html
 * JMX(TM) Remote API RI, Optional Packages: http://mvnrepository.com/artifact/org.jvnet.opendmk/jmxremote_optional
+* JMX学习笔记(一)-MBean: http://tuhaitao.iteye.com/blog/786391
+* JMX之模型MBean: http://guojuanjun.blog.51cto.com/277646/599229/
 
 
 ## jsch
