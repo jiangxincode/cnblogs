@@ -147,6 +147,15 @@
 * XMLHttpRequest Living Standard: https://xhr.spec.whatwg.org/
 * How to solve the error: The system cannot find the file C:\ProgramData\Oracle\Java\javapath\java.exe：http://stackoverflow.com/questions/26864662/how-to-solve-the-error-the-system-cannot-find-the-file-c-programdata-oracle-ja
 * Servlet 3.1规范[翻译]: http://jinnianshilongnian.iteye.com/category/255452
+* 深入 Java 调试体系: https://www.ibm.com/developerworks/cn/views/java/libraryview.jsp?search_by=%E6%B7%B1%E5%85%A5+Java+%E8%B0%83%E8%AF%95%E4%BD%93%E7%B3%BB
+* MVC，MVP 和 MVVM 的图示: http://www.ruanyifeng.com/blog/2015/02/mvcmvp_mvvm.html
+* Java 类的热替换 —— 概念、设计与实现: https://www.ibm.com/developerworks/cn/java/j-lo-hotswapcls/
+* 类加载器基本概念: https://www.ibm.com/developerworks/cn/java/j-lo-classloader/index.html
+* Installing Java Cryptography Extension unlimited strength jurisdiction policy files: https://www.ibm.com/support/knowledgecenter/SSWPVP_2.5.0.3/com.ibm.sklm.doc_2.5.0.3/admin/tsk/tsk_ic_admin_backup_jce_policy_files.html
+* 面向对象设计原则和创建SOLID应用的5个方法: http://www.importnew.com/10656.html
+* 数据库分页Java实现: http://www.cnblogs.com/ITtangtang/archive/2012/04/21/2462385.html
+* 使用 jQuery.i18n.properties 实现 Web 前端的国际化: https://www.ibm.com/developerworks/cn/web/1305_hezj_jqueryi18n/
+* Jar包的正确运行方法: http://www.cnblogs.com/jifeng/archive/2012/06/07/2540338.html
 
 
 
@@ -212,6 +221,8 @@
 * Eclipse中Ant的配置与测试 转: http://www.cnblogs.com/jiangxinnju/p/5040436.html
 * 如何使用Eclipse将Java项目打成jar包？:http://jingyan.baidu.com/article/4dc40848b5a8c9c8d946f139.html
 * 'Must Override a Superclass Method' Errors after importing a project into Eclipse: http://stackoverflow.com/questions/1678122/must-override-a-superclass-method-errors-after-importing-a-project-into-eclips
+* SFTP Plug-in for Eclipse: http://www.jcraft.com/eclipse-sftp/
+* Eclipse 远程开发：http://lovespss.blog.51cto.com/1907593/536614
 
 
 ## Eclipse GUI Plugin
@@ -248,6 +259,25 @@
     Apache IvyDE is the Eclipse plugin which integrates Apache Ivy's dependency management into Eclipse™.
 
 * http://ant.apache.org/ivy/ivyde/index.html
+
+
+## Tomcat
+
+* Apache Tomcat 8 Configuration Reference: http://tomcat.apache.org/tomcat-8.0-doc/config/index.html
+* Security Considerations: https://tomcat.apache.org/tomcat-8.0-doc/security-howto.html
+* SSL/TLS Configuration HOW-TO: https://tomcat.apache.org/tomcat-8.0-doc/ssl-howto.html
+* Tomcat Cannot assign requested address: JVM_Bind 非端口占用冲突：http://jameswsz.iteye.com/blog/1976489
+* Tomcat中的Session小结: http://www.cnblogs.com/chenpi/p/5434537.html
+* Tomcat7启动报Error listenerStart错误: http://www.cnblogs.com/nayitian/p/3439336.html
+* How do I prevent people from shutting down my Tomcat?: http://www.avajava.com/tutorials/lessons/how-do-i-prevent-people-from-shutting-down-my-tomcat.html
+* tomcat startup.sh/shutdown.sh/setclasspath.sh/catalina.sh分析：http://vekergu.blog.51cto.com/9966832/d-2
+* SSL/TLS, ciphers, perfect forward secrecy and Tomcat: https://blog.eveoh.nl/2014/02/tls-ssl-ciphers-pfs-tomcat/
+* web.xml配置详解: http://twb.iteye.com/blog/196733
+* web.xml 详细介绍: http://mianhuaman.iteye.com/blog/1105522
+* Web.xml配置详解之context-param: http://blog.csdn.net/liaoxiaohua1981/article/details/6759206
+* 监控Tomcat解决方案（监控应用服务器系列文章）: http://blog.csdn.net/yunzhu666/article/details/8662045
+* CATALINA_BASE与CATALINA_HOME的区别: http://blog.csdn.net/keda8997110/article/details/21400455
+* 同一个服务器部署多个tomcat: http://www.cnblogs.com/sj521/p/5974562.html
 
 
 ## Javassist
@@ -330,24 +360,6 @@
 * 为什么要使用SLF4J而不是Log4J: http://www.importnew.com/7450.html
 
 
-
-## Tomcat
-
-* Apache Tomcat 8 Configuration Reference: http://tomcat.apache.org/tomcat-8.0-doc/config/index.html
-* Security Considerations: https://tomcat.apache.org/tomcat-8.0-doc/security-howto.html
-* SSL/TLS Configuration HOW-TO: https://tomcat.apache.org/tomcat-8.0-doc/ssl-howto.html
-* Tomcat Cannot assign requested address: JVM_Bind 非端口占用冲突：http://jameswsz.iteye.com/blog/1976489
-* Tomcat中的Session小结: http://www.cnblogs.com/chenpi/p/5434537.html
-* Tomcat7启动报Error listenerStart错误: http://www.cnblogs.com/nayitian/p/3439336.html
-* How do I prevent people from shutting down my Tomcat?: http://www.avajava.com/tutorials/lessons/how-do-i-prevent-people-from-shutting-down-my-tomcat.html
-* tomcat startup.sh/shutdown.sh/setclasspath.sh/catalina.sh分析：http://vekergu.blog.51cto.com/9966832/d-2
-* SSL/TLS, ciphers, perfect forward secrecy and Tomcat: https://blog.eveoh.nl/2014/02/tls-ssl-ciphers-pfs-tomcat/
-* web.xml配置详解: http://twb.iteye.com/blog/196733
-* web.xml 详细介绍: http://mianhuaman.iteye.com/blog/1105522
-* Web.xml配置详解之context-param: http://blog.csdn.net/liaoxiaohua1981/article/details/6759206
-* 监控Tomcat解决方案（监控应用服务器系列文章）: http://blog.csdn.net/yunzhu666/article/details/8662045
-
-
 ## Log4j
 
 * 官方网址：
@@ -355,10 +367,8 @@
     * http://logging.apache.org/log4j/2.x/
     * http://logging.apache.org/log4j/1.2/
 
-* log4j 日志配置 properties 和 xml形式两种：http://my.oschina.net/exit/blog/182445
-* 通过log4j日志异步化大幅提升系统性能: http://blog.csdn.net/henryqqq/article/details/2254355
 * jdk-logging、log4j、logback日志介绍及原理: https://my.oschina.net/pingpangkuangmo/blog/406618
-* 在 Web 应用中增加用户跟踪功能[学习在多线程环境下 Apache Log4j 的 NDC/MDC 开发]: https://www.ibm.com/developerworks/cn/web/wa-lo-usertrack/
+* 热切换Log4j级别配置: http://www.cnblogs.com/jiangxinnju/p/6848472.html
 
 
 ## Logback
@@ -896,6 +906,7 @@ https://bintray.com/
 
 * Spring Tool Suite：http://spring.io/tools/sts
 * spring-ide：http://marketplace.eclipse.org/content/spring-ide
+* Spring 的优秀工具类盘点: https://www.ibm.com/developerworks/cn/java/j-lo-spring-utils1/index.html
 
 
 ## Hibernate
@@ -1306,5 +1317,15 @@ https://storm.apache.org/javadoc/apidocs/index.html
 
 * http://thrift.apache.org/
 * Thirft框架介绍: http://dongxicheng.org/search-engine/thrift-framework-intro/
+
+
+## CAS
+
+* https://www.apereo.org/projects/cas
+* https://github.com/apereo/cas
+* CAS protocol: https://apereo.github.io/cas/5.0.x/protocol/CAS-Protocol.html
+* CAS Client集群环境的问题及解决方案: https://yq.aliyun.com/articles/49871
+* cas系列文章: http://www.cnblogs.com/vhua/tag/cas/
+* cas单点登录配置速成: http://www.blogjava.net/goodlyts/archive/2009/10/20/299091.html
 
 

@@ -87,4 +87,5 @@ PowerShell的默认启动路径其实就是执行PowerShell时指定的默认工
 * Powershell 错误记录:详细错误：http://www.pstips.net/powershell-error-record-details.html
 * pstips.net: http://www.pstips.net/
 * Xshell利用登录脚本从服务器登录到另外一个服务器：http://www.cnblogs.com/jiangxinnju/p/6376415.html
+* 浅谈批处理中的%cd%与%~dp0: http://blog.csdn.net/luols/article/details/7397757
 

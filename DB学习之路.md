@@ -155,6 +155,8 @@
 * 说说Oracle监听器（二）: http://blog.itpub.net/17203031/viewspace-682628/
 * Linux 安装oracle客户端: http://www.cnblogs.com/yangxia-test/p/4159449.html
 * 深入理解JDBC的超时设置: http://www.importnew.com/2466.html
+* The Difference between User and Schema in Oracle: http://www.oratable.com/oracle-user-schema-difference/
+* Atom Authentication: http://www.xml.com/pub/a/2003/12/17/dive.html
 
 
 ## PL/SQL Developer
