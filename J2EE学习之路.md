@@ -266,9 +266,11 @@
 
 ## Tomcat
 
-* Apache Tomcat 8 Configuration Reference: http://tomcat.apache.org/tomcat-8.0-doc/config/index.html
+* Apache Tomcat 8 Configuration Reference: http://tomcat.apache.org/tomcat-8.0-doc/
 * Security Considerations: https://tomcat.apache.org/tomcat-8.0-doc/security-howto.html
 * SSL/TLS Configuration HOW-TO: https://tomcat.apache.org/tomcat-8.0-doc/ssl-howto.html
+* Tomcat配置JNDI全局数据源: http://tomcat.apache.org/tomcat-8.0-doc/jndi-datasource-examples-howto.html
+* Tomcat配置JNDI局部数据源: http://blog.csdn.net/u011686226/article/details/51858488
 * Tomcat Cannot assign requested address: JVM_Bind 非端口占用冲突：http://jameswsz.iteye.com/blog/1976489
 * Tomcat中的Session小结: http://www.cnblogs.com/chenpi/p/5434537.html
 * Tomcat7启动报Error listenerStart错误: http://www.cnblogs.com/nayitian/p/3439336.html
@@ -839,6 +841,11 @@ https://bintray.com/
 * 程序员的绘图利器 — Graphviz：http://blog.csdn.net/zhangskd/article/details/8250470
 * Graphviz Eclipse plug-in：https://github.com/abstratt/eclipsegraphviz
 
+## sikuli
+
+* https://github.com/sikuli/sikuli
+* http://www.sikuli.org/
+
 ## JBoss
 
     The JBoss AS community project has been renamed to the WildFly community project, which has a new home at wildfly.org. The JBoss name now only applies to the commercially supported product, called JBoss EAP, which is derived from the WildFly community project and is available at http://www.jboss.org/products/eap/overview/.
@@ -1201,6 +1208,8 @@ https://bintray.com/
 * c3p0: https://sourceforge.net/projects/c3p0/
 * DBCP: http://commons.apache.org/proper/commons-dbcp/index.html
 * Proxool: http://proxool.sourceforge.net/index.html
+* The Tomcat JDBC Connection Pool: http://tomcat.apache.org/tomcat-8.0-doc/jdbc-pool.html
+* Apache Commons Pool: http://commons.apache.org/proper/commons-pool/index.html
 
 
 ## Eclipse插件开发
