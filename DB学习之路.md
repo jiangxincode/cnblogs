@@ -160,6 +160,14 @@
 * Atom Authentication: http://www.xml.com/pub/a/2003/12/17/dive.html
 
 
+## oracle疑难问题排查集：
+
+* 数据库无响应，出现很多tns的错误: http://www.itpub.net/thread-1359536-1-1.html
+* oracle 11g不能连接报ORA-12537+ora-609解决: http://www.cnblogs.com/hanbo112/p/4583047.html
+* TNS-12537 TNSconnection closed ORA-609错误处理: http://blog.sina.com.cn/s/blog_4bad366d0101oea2.html
+* ORA-3136、TNS-12535 12170 12606: http://blog.chinaunix.net/uid-20276248-id-92210.html
+* 关于 Fatal NI connect error 12170: http://blog.csdn.net/liqfyiyi/article/details/7107249
+
 ## PL/SQL Developer
 
 * http://www.allroundautomations.com/registered/plsqldev.html
