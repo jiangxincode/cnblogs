@@ -6,6 +6,8 @@
 * VGER.KERNEL.ORG: http://vger.kernel.org/
 * The Open Group(Unix): http://opengroup.org/subjectareas/platform/unix
 * GNU Operating System: http://www.gnu.org/
+* https://zh.wikipedia.org/wiki/Linux
+* http://distrowatch.com/index.php
 
 * Ubuntu: http://www.ubuntu.org.cn/
 * Ubuntu Wiki: https://wiki.ubuntu.com/
@@ -23,11 +25,23 @@
 * AppImage: http://appimage.org/
 * MenuetOS: http://www.menuetos.net/index.htm
 
+* UNIX System V: https://en.wikipedia.org/wiki/UNIX_System_V
+
+* Linux中国: https://linux.cn/portal.php
+* Linux导航：http://www.linux265.com/
+* ChinaUnix: http://bbs.chinaunix.net/
+
 * 鳥哥的 Linux 私房菜: http://linux.vbird.org/
 * Linux Professional Institute: http://www.lpi.org/
 * Linux命令大全: http://man.linuxde.net/
 * Linux man pages: http://linux.die.net/man/
 
+* Linux Performance: http://www.brendangregg.com/linuxperf.html
+
+* Linux兼容内核（龙井）: http://www.longene.org/index.php
+* wine: https://www.winehq.org/
+
+* Shebang (Unix): https://en.wikipedia.org/wiki/Shebang_(Unix)
 * shunit2: https://github.com/zandev/shunit2
 * RPM Fusion: http://rpmfusion.org/
 * ATrpms: http://atrpms.net/
@@ -119,6 +133,7 @@
 * Shell脚本：判断用户和用户组是否已经存在/创建用户和用户组: http://blog.csdn.net/bluishglc/article/details/42060223
 * nc命令用法举例: http://www.cnblogs.com/nmap/p/6148306.html
 * How to Manage ‘Systemd’ Services and Units Using ‘Systemctl’ in Linux：https://www.tecmint.com/manage-services-using-systemd-and-systemctl-in-linux/
+* Master PDF Editor for Linux: https://code-industry.net/free-pdf-editor/
 
 
 ## Linux常用命令
