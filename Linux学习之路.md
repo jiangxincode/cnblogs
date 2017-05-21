@@ -131,9 +131,6 @@
 * Shell脚本：判断用户和用户组是否已经存在/创建用户和用户组: http://blog.csdn.net/bluishglc/article/details/42060223
 * nc命令用法举例: http://www.cnblogs.com/nmap/p/6148306.html
 * How to Manage ‘Systemd’ Services and Units Using ‘Systemctl’ in Linux：https://www.tecmint.com/manage-services-using-systemd-and-systemctl-in-linux/
-
-# Linux工具
-
 * Master PDF Editor for Linux: https://code-industry.net/free-pdf-editor/
 * indent: https://www.gnu.org/software/indent/
 * cproto: https://sourceforge.net/projects/cproto/
