@@ -1,6 +1,4 @@
-# Linux学习之路
-
-## Websit List
+# Websit List
 
 * The Linux Kernel Archives: https://www.kernel.org/
 * VGER.KERNEL.ORG: http://vger.kernel.org/
@@ -133,10 +131,53 @@
 * Shell脚本：判断用户和用户组是否已经存在/创建用户和用户组: http://blog.csdn.net/bluishglc/article/details/42060223
 * nc命令用法举例: http://www.cnblogs.com/nmap/p/6148306.html
 * How to Manage ‘Systemd’ Services and Units Using ‘Systemctl’ in Linux：https://www.tecmint.com/manage-services-using-systemd-and-systemctl-in-linux/
+
+# Linux工具
+
 * Master PDF Editor for Linux: https://code-industry.net/free-pdf-editor/
+* indent: https://www.gnu.org/software/indent/
+* cproto: https://sourceforge.net/projects/cproto/
+* gprof: https://sourceware.org/binutils/docs/gprof/
+* linux中screen命令的用法：http://www.9usb.net/201002/linux-screen-mingling.html
+* linux 下script命令记录终端会话：http://blog.chinaunix.net/uid-25885064-id-3430216.html
+* 记录终端下的操作（tee）：http://os.chinaunix.net/a2008/0810/986/000000986568.shtml
+* pdf阅读器:okular evince
+* 文本编辑器：vim，emacs，gedit
+* 音乐播放软件：clementine
+* rhythmbox歌词显示工具：osd-lyrics
+* 桌面美化工具：compiz
+* 视频播放器：KMPlayer
+* eD2k下载:aMule
+* 编程工具:bluefish
+* pdf合并工具——pdftk
+* 输入法：ibus+fcitx  重新启动Xwindow完成，按 Ctrl + 空格键激活输入法。当不能切换输入法时，把键盘-拼音输入法调到顶部。
+* 微软字体包：sudo apt-get install msttcorefonts
+* 字体管理器:font manager
+* 笔记软件:为知笔记：直接用tar.gz包
+* 网盘:云诺网盘(菜单会有部分变成英文,不宜使用,可以替换为坚果云) /Dropbox
+* 软件包工具:新立得(Synaptic)
+* 磁盘管理器：LVM/GParted
+* 浏览器：Chrome
+* 词典：goldendict
+* 3D建模工具：blender
+* 图片处理工具：GIMP
+* Dock:GLX-Dock
+* 视频编辑–Openshot
+* BT下载：Transimssion
+* ftp客户端Filezilla
+* 邮件客户端：thunderbird
+* 虚拟光驱软件：Furius ISO Mount
+* 文件对比软件：meld
+* 脑图软件：xmind
+* 远程控制：vncview
+* 数据处理软件：octave（部分兼容matlab）
+* 记录、保存和播放终端会话软件: ttyrec 和 ttyplay
+* 垃圾清理软件：BleachBit
+* Audio CD Extractor（音频CD提取器）:又名“音乐榨汁机”、“Sound Juicer”。能把CD转成flac、ogg、mp3等格式。官方主页：http://www.burtonini.com/blog/computers/sound-juicer
+* Sound Converter（声音转换程序）: 支持flac、ogg、mp3、wav、m4a等格式间批量互转。官方主页：http://soundconverter.berlios.de
+* curl是利用URL语法在命令行方式下工作的文件传输工具。
 
-
-## Linux常用命令
+# Linux常用命令
 
 ```shell
 	rdate # set the system's date from a remote host. (sudo apt-get install rdate)
@@ -269,8 +310,7 @@
 	# rename命令: http://man.linuxde.net/rename
 ```
 
-    
-## 打印某一文件夹下的所有文件名及其行数
+# 打印某一文件夹下的所有文件名及其行数
 
 这里分别要考虑到该文件夹有或没有子文件夹的情况，用shell实现打印某一文件夹下的所有文件（如果是子文件夹下的文件，需要打印相对目录）及该文件的行数清单。列表类似这样：
 
@@ -293,7 +333,7 @@ find 后面可加指定目录，如"/etc/"
     find "/etc/" -name "*" -type f| xargs wc -l | awk '{print $2" "$1"行"}'
 
 	
-## 修改默认打开文件的程序
+# 修改默认打开文件的程序
 
 linux 下全局的文件与程序的关联是通过`/usr/share/applications/defaults.list`文件来设置，该文件保存了个人文件与程序的关联的打开方式。安装了nero之后文件iso的文件默认使用archive manager打开，在`~/.local/share/applications/mimeapps.list`添加一行：
 
@@ -306,7 +346,7 @@ linux 下全局的文件与程序的关联是通过`/usr/share/applications/defa
 图形界面下双击iso文件就使用nero打开了。
 
 
-## 零碎问题
+# 零碎问题
 
 * 联网问题：12.10以及之前的版本很好使，但是13.04之后，不仅校园网老是掉线，解决方法是在panel的网络菜单里面把“启用wifi”关掉。
 * 星级译王词典安装目录: /usr/share/stardict/dic
@@ -362,7 +402,7 @@ linux 下全局的文件与程序的关联是通过`/usr/share/applications/defa
     4. 删除内核：# yum remove kernel-...（内核版本名称）使用 yum remove 进行删除，会自动移除：/boot/grub/menu.lst 中的相关启动项
 
 
-## ubuntu更新问题
+# ubuntu更新问题
 
 更新管理器在检查软件包的时候总是有如下问题
 
@@ -373,76 +413,16 @@ linux 下全局的文件与程序的关联是通过`/usr/share/applications/defa
 
 解决方法：把 /etc/apt/sources.list里面有cdrom的几行删掉，或者利用软件中心或新立德包管理器把软件源终中的cdrom去掉。
 
-## Ubuntu更新安装源
 
-    sudo cp /etc/apt/sources.list /etc/apt/sources.list.bk
-    sudo gedit /etc/apt/sources.list # 编辑你的源列表，将原来的内容全部删除，添加下面列表中最适合你的源（注意不要全部添加），选择一个最合适你的即可，复制到你的列表中，然后保存列表。
-    sudo apt-get update 更新源列表信息 # 可以在运行“sudo apt-get update ”时查看一下错误信息，把不能连接的源删除再重新运行“sudo apt-get update ”。
-    sudo apt-get upgrade # 升级或者用ubuntu自带的更新管理器升级也可。
-
-网易 Ubuntu 10.10 源（速度很快）
-
-    deb http://mirrors.163.com/ubuntu/ maverick main restricted universe multiverse
-    deb http://mirrors.163.com/ubuntu/ maverick-security main restricted universe multiverse
-    deb http://mirrors.163.com/ubuntu/ maverick-updates main restricted universe multiverse
-    deb http://mirrors.163.com/ubuntu/ maverick-proposed main restricted universe multiverse
-    deb http://mirrors.163.com/ubuntu/ maverick-backports main restricted universe multiverse
-    deb-src http://mirrors.163.com/ubuntu/ maverick main restricted universe multiverse
-    deb-src http://mirrors.163.com/ubuntu/ maverick-security main restricted universe multiverse
-    deb-src http://mirrors.163.com/ubuntu/ maverick-updates main restricted universe multiverse
-    deb-src http://mirrors.163.com/ubuntu/ maverick-proposed main restricted universe multiverse
-    deb-src http://mirrors.163.com/ubuntu/ maverick-backports main restricted universe multiverse
-
-
-
-## 常用软件及相关配置问题
-
-* pdf阅读器:okular evince
-* 文本编辑器：vim，emacs，gedit
-* 音乐播放软件：clementine
-* rhythmbox歌词显示工具：osd-lyrics
-* 桌面美化工具：compiz
-* 视频播放器：KMPlayer
-* eD2k下载:aMule
-* 编程工具:bluefish
-* pdf合并工具——pdftk
-* 输入法：ibus+fcitx  重新启动Xwindow完成，按 Ctrl + 空格键激活输入法。当不能切换输入法时，把键盘-拼音输入法调到顶部。
-* 微软字体包：sudo apt-get install msttcorefonts
-* 字体管理器:font manager
-* 笔记软件:为知笔记：直接用tar.gz包
-* 网盘:云诺网盘(菜单会有部分变成英文,不宜使用,可以替换为坚果云) /Dropbox
-* 软件包工具:新立得(Synaptic)
-* 磁盘管理器：LVM/GParted
-* 浏览器：Chrome
-* 词典：goldendict
-* 3D建模工具：blender
-* 图片处理工具：GIMP
-* Dock:GLX-Dock
-* 视频编辑–Openshot
-* BT下载：Transimssion
-* ftp客户端Filezilla
-* 邮件客户端：thunderbird
-* 虚拟光驱软件：Furius ISO Mount
-* 文件对比软件：meld
-* 脑图软件：xmind
-* 远程控制：vncview
-* 数据处理软件：octave（部分兼容matlab）
-* 记录、保存和播放终端会话软件: ttyrec 和 ttyplay
-* 垃圾清理软件：BleachBit
-* Audio CD Extractor（音频CD提取器）:又名“音乐榨汁机”、“Sound Juicer”。能把CD转成flac、ogg、mp3等格式。官方主页：http://www.burtonini.com/blog/computers/sound-juicer
-* Sound Converter（声音转换程序）: 支持flac、ogg、mp3、wav、m4a等格式间批量互转。官方主页：http://soundconverter.berlios.de
-* curl是利用URL语法在命令行方式下工作的文件传输工具。
-
-
-##解决金山wps字体问题
+# 解决金山wps字体问题
 
 将字体解压到~/.fonts目录，然后重启wps即可。这些文件为微软版权所有，使用这些字体请自行确定拥有这些字体的使用授权（比如说有某版本windows授权即可）。另外据一部分用户反映，如果系统安装了xfonts-mathml可能导致符号无法显示。经过查证，发现是因为xfonts-mathml中也存在一个字体叫Symbol导致的。如果安装上述字体后仍存在乱码现象，请尝试移除xfonts-mathml包。
 
-## libreoffice中PPT字体便粗问题
+# libreoffice中PPT字体便粗问题
 
 Tools → Options... → LibreOffice → View → Graphics output (取消钩选Use hardware acceleration)
 
-##小企鹅输入法突然无法使用
+# 小企鹅输入法突然无法使用
 
 查看一下是否安装了ibus，可在系统设置中的语言支持中重新把输入法改为ibus
 
@@ -458,7 +438,6 @@ Tools → Options... → LibreOffice → View → Graphics output (取消钩选U
 再执行：
 
     export LANG=zh_CN.UTF-8
-
 
 ## Wireshark
 
@@ -544,25 +523,6 @@ windows系统可以在重装时只格式化C盘，从而保留其他分区的数
 正常情况下这样就成功安装了。和有root权限安装的区别在于./configure 需要指定安装文件的目录。
 
 
-## 卸载LNMP
-
-    killall nginx *//终止nginx进程
-    /etc/init.d/mysql stop *//关闭mysql
-    killall mysqld *//终止mysql进程
-    /usr/local/php/sbin/php-fpm stop *//关闭php
-    killall php-cgi *//终止php-cgi进程
-    rm -rf /usr/local/php *//删除php文件
-    rm -rf /usr/local/nginx *//删除nginx文件
-    rm -rf /usr/local/mysql *//删除mysql文件
-    rm -rf /usr/local/zend *//删除zend文件
-    rm /etc/my.cnf *//删除配置文件
-    rm /etc/init.d/mysql *//删除mysql文件
-    rm /root/vhost.sh *//删除配置虚拟主机脚本
-    rm /root/lnmp *//删除lnmp文件夹
-
-或者安装文件中执行.unistall.sh
-
-
 ## linux系统下无法访问电脑硬盘
 
 ```
@@ -604,38 +564,9 @@ windows系统可以在重装时只格式化C盘，从而保留其他分区的数
 更换domain.com为你要屏蔽的网站，你完成了编辑处理后，保存该文件并退出。
 
 
-## 获取某程序的完整路径名
-
-当我们在Linux下用ps aux 看到有如下一个进程时：
-
-    root     19463  0.0  0.0   1508   272 pts/0    S    16:43   0:00 ./server-a
-
-作为系统管理员的你，如何获得程序server-a所在的完整路径呢？从上面ps 的输出中可以看出19463是server-a的PID号，那么运行如下命令：`cat /proc/19463/environ` ,输出如下：
-
-    PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/gamesGNOME_KEYRING_PID=2269USER=jiangxinLANGUAGE=zh_CN:XDG_SEAT=seat0TEXTDOMAIN=im-configCOMPIZ_CONFIG_PROFILE=ubuntuHOME=/home/jiangxinQT4_IM_MODULE=fcitxDESKTOP_SESSION=ubuntuXDG_SEAT_PATH=/org/freedesktop/DisplayManager/Seat0GTK_MODULES=overlay-scrollbar:unity-gtk-moduleGNOME_KEYRING_CONTROL=/run/user/1000/keyring-wrFl7VQT_QPA_PLATFORMTHEME=appmenu-qt5MANDATORY_PATH=/usr/share/gconf/ubuntu.mandatory.pathIM_CONFIG_PHASE=1SESSIONTYPE=gnome-sessionLOGNAME=jiangxinGTK_IM_MODULE=fcitxDEFAULTS_PATH=/usr/share/gconf/ubuntu.default.pathXDG_SESSION_ID=c3GDM_LANG=zh_CNXDG_SESSION_PATH=/org/freedesktop/DisplayManager/Session0XDG_RUNTIME_DIR=/run/user/1000DISPLAY=:0XDG_CURRENT_DESKTOP=UnityLANG=zh_CN.UTF-8XAUTHORITY=/home/jiangxin/.XauthorityXMODIFIERS=@im=fcitxXDG_GREETER_DATA_DIR=/var/lib/lightdm-data/jiangxinSHELL=/bin/bashGDMSESSION=ubuntuTEXTDOMAINDIR=/usr/share/locale/XDG_VTNR=7QT_IM_MODULE=ximPWD=/home/jiangxinXDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntu:/usr/share/upstart/xdg:/etc/xdgXDG_DATA_DIRS=/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/CLUTTER_IM_MODULE=ximSELINUX_INIT=YESUBUNTU_MENUPROXY=1DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-BqwNaGt8wESSH_AUTH_SOCK=/run/user/1000/keyring-wrFl7V/sshSSH_AGENT_PID=2383SSH_AGENT_LAUNCHER=upstartGNOME_DESKTOP_SESSION_ID=this-is-deprecatedJOB=gnome-sessionINSTANCE=UnityUPSTART_EVENTS=started startingUPSTART_JOB=unity-settings-daemonUPSTART_INSTANCE=UPSTART_SESSION=unix:abstract=/com/ubuntu/upstart-session/1000/2299GPG_AGENT_INFO=/run/user/1000/keyring-wrFl7V/gpg:0:1
-
-注意输出中的：`PWD=/data1/1230`。由此可以判断出程序`server-a`所在完成路径为：`/data1/1230/server-a`。来，验证一下吧：
-
-    bash-3.2# ls -l /data1/1230/server-a
-    -rwxr-xr-x 1 root root 5842 Feb 25 16:42 /data1/1230/server-a
-
-
 ## lspci的使用
 
 PCI和PCI Express，是计算机常使用的一种高速总线。操作系统中的PCI/PCI-E设备驱动以及操作系统内核，都需要访问PCI及PCI-E配置空间。PCI/PCI-E设备的正常运行，离不开PCI/PCI-E配置空间。通过读写PCI/PCI-E配置空间，可以更改设备运行参数，优化设备运行。本文介绍用户空间可以读取、修改、扫描PCI/PCIE设备的用户命令及使用。在Linux内核中，为PCI和PCI-E只适用了一种总线PCI（内核提供的总线系统），故访问PCI-E配置空间，也包括了PCI设备配置空间。读取PCI-E设备配置空间的命令是`lspci`。详细命令参数，可以使用man lspci来查看。命令默认输出结果是，当前系统的所有PCI/PCI-E设备。
-
-
-## mplayer使用ascii文本播放电影
-
-首先，你要确认mplayer已经装好，你只需执行下面这条命令：
-
-    sudo apt-get install mplayer
-
-接下来，为了播放电影，你需要执行下面的命令，记得把MovieName.avi改成你电脑里面电影文件的名字：
-
-    mplayer -vo caca MovieName.avi
-
-“caca”命令代表着彩色文本播放引擎，你也可以使用“-vo aa”命令来替代它，这样你就可以把彩色的文本变成黑白两色。
 
 
 ## Windows/Linux文本文件格式转换
@@ -651,237 +582,48 @@ DOS/Windows文本文件格式转换成Linux/Unix文本文件格式: `sed -e 's/.
 说明：'$' 正则表达式将与行的末尾匹配，而 '\r' 告诉 sed 在其之前插入一个回车。在换行之前插入回车，每一行就以 CR/LF 结束。
 
 另外还有个方法，使用命令 ：
-
+```shell
     unix2dos filename
     dos2unix filename
+```
 
-	
-##使用script记录Linux终端会话
+# 获取某程序的完整路径名
 
-许多系统管理员都知道保留一个包含各种任务、配置改变等活动日志的重要性。对一些组织而言，保留“我做了这件事”或“约翰做了那件事”的简单日志就已足够；但另一些组织则需要记录所有改变。对终端输出进行复制粘贴可能非常乏味，我们使用一个叫做script的鲜为人知的程序来解决这个问题，它是大多数Linux产品util-linux软件包的一部分。script记录会话的一切内容：你输入的内容和你看到的内容。它甚至记录颜色；因此如果你的命令提示符或程序输出中包含颜色，script将记录它。要使用script，简单执行以下命令：
+当我们在Linux下用ps aux 看到有如下一个进程时：
 
-    $ script
+    root     19463  0.0  0.0   1508   272 pts/0    S    16:43   0:00 ./server-a
 
-默认情况下，它向当前目录的typescript文件中写入内容。然后，你输入的一切内容都被记录到那个文件中。要往另一个文件中记录日志，只需使用命令：
+如何获得程序server-a所在的完整路径呢？从上面ps 的输出中可以看出19463是server-a的PID号，那么运行如下命令：`cat /proc/19463/environ` ,输出如下：
 
-    script /path/to/file
+    PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/gamesGNOME_KEYRING_PID=2269USER=jiangxinLANGUAGE=zh_CN:XDG_SEAT=seat0TEXTDOMAIN=im-configCOMPIZ_CONFIG_PROFILE=ubuntuHOME=/home/jiangxinQT4_IM_MODULE=fcitxDESKTOP_SESSION=ubuntuXDG_SEAT_PATH=/org/freedesktop/DisplayManager/Seat0GTK_MODULES=overlay-scrollbar:unity-gtk-moduleGNOME_KEYRING_CONTROL=/run/user/1000/keyring-wrFl7VQT_QPA_PLATFORMTHEME=appmenu-qt5MANDATORY_PATH=/usr/share/gconf/ubuntu.mandatory.pathIM_CONFIG_PHASE=1SESSIONTYPE=gnome-sessionLOGNAME=jiangxinGTK_IM_MODULE=fcitxDEFAULTS_PATH=/usr/share/gconf/ubuntu.default.pathXDG_SESSION_ID=c3GDM_LANG=zh_CNXDG_SESSION_PATH=/org/freedesktop/DisplayManager/Session0XDG_RUNTIME_DIR=/run/user/1000DISPLAY=:0XDG_CURRENT_DESKTOP=UnityLANG=zh_CN.UTF-8XAUTHORITY=/home/jiangxin/.XauthorityXMODIFIERS=@im=fcitxXDG_GREETER_DATA_DIR=/var/lib/lightdm-data/jiangxinSHELL=/bin/bashGDMSESSION=ubuntuTEXTDOMAINDIR=/usr/share/locale/XDG_VTNR=7QT_IM_MODULE=ximPWD=/home/jiangxinXDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntu:/usr/share/upstart/xdg:/etc/xdgXDG_DATA_DIRS=/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/CLUTTER_IM_MODULE=ximSELINUX_INIT=YESUBUNTU_MENUPROXY=1DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-BqwNaGt8wESSH_AUTH_SOCK=/run/user/1000/keyring-wrFl7V/sshSSH_AGENT_PID=2383SSH_AGENT_LAUNCHER=upstartGNOME_DESKTOP_SESSION_ID=this-is-deprecatedJOB=gnome-sessionINSTANCE=UnityUPSTART_EVENTS=started startingUPSTART_JOB=unity-settings-daemonUPSTART_INSTANCE=UPSTART_SESSION=unix:abstract=/com/ubuntu/upstart-session/1000/2299GPG_AGENT_INFO=/run/user/1000/keyring-wrFl7V/gpg:0:1
 
-(例如script screen.log)
+注意输出中的：`PWD=/data1/1230`。由此可以判断出程序`server-a`所在完成路径为：`/data1/1230/server-a`。来，验证一下吧：
+```sh
+bash-3.2# ls -l /data1/1230/server-a
+-rwxr-xr-x 1 root root 5842 Feb 25 16:42 /data1/1230/server-a
+```
 
-完成记录后，输入exit退出。这个命令将关闭script会话并保存文件。现在你可以使用cat或其它任何程序来检查日志文件。异常退出也没有问题,仍然记录log,只不过需要加上参数：
+`/proc/进程号`目录下的文件说明
 
-    script -f ido.log
-
-如果在一个终端上使用：
-
-    mkfifo ido.log;script -f ido.log
-
-然后在另一个终端登录,找到这个ido.log文件,你tail -f 就会滚动输出你操作的内容。
-
-2.使用script的缺点在于，它记录所有特殊的字符；因此你输入的文件中将充满控制字符和ANSI转义序列。你可以在script中使用一个非常简单的shell来解决这个问题：
-
-    SHELL=/bin/bash PS1=”$ ” script
-
-使用script时，不要使用交互式程序或处理窗口的程序，如vior top。它们会破坏会话的输出结果。另外，日志文件会记录你使用的任何命令行程序和你完成一项任务所采取的步骤。如果你需要在脚本中编辑一个文件，考虑退出script会话，然后用script –a（它在旧会话后添加新会话）对文件进行编辑后再重新启动会话。
-
-## tee命令
-
-    tee--  read from standard input and write to standard output and files
-
-这个命令可以读取终端输入输出到终端或者文件中，有时候可以用来记录make等命令可能产生的输出到终端的大量内容输出到文件中去。这样可以方便记录这些命令的日志。
-
-    cmd | tee -a file.txt
-    > make 2>&1 | tee make.log当然，我们也可以直接重定向到一个文件中> make > make.log
-
-PS: 2>&1是为了记录错误日志if you want to filter the control symbols, try to use the "col" command like this:
-
-$ cat screenlog.0 | col -b > screenlog
-
-or
-
-$ cat typescript | col -b > scriptlog
-
- 执行script -q tty.log后,就开始记录终端的输入输出信息,结束的时候按Ctrl+D即可得到终端的内容文件tty.log
-
-## screen命令
-
-Screen是一个可以在多个进程之间多路复用一个物理终端的窗口管理器,这意味着你能够使用一个单一的终端窗口运行多终端的应用。Screen中有会话的概念，用户可以在一个screen会话中创建多个screen窗口，在每一个screen窗口中就像操作一个真实的 telnet/SSH连接窗口那样。
-
-安装：
-
-    CentOS/Red Hat：yum install screen
-    Debian/Ubuntu：apt-get install screen
-
-screen的配置文件，一般在 /etc/screenrc 或者 ~/.screenrc，可以在文件里更改参数设定，也可以通过参数传递或者命令来动态指定。
-
-语法：
-
-    screen [-AmRvx -ls -wipe][-d <作业名称>][-h <行数>][-r <作业名称>][-s ][-S <作业名称>]
-
-补充说明：
-
-screen为多重视窗管理程序。此处所谓的视窗，是指一个全屏幕的文字模式画面。通常只有在使用telnet登入主机或是使用老式的终端机时，才有可能用到screen程序。
-
-常用screen参数：
-
-    screen -S yourname -> 新建一个叫yourname的session
-    screen -ls -> 列出当前所有的session
-    screen -r yourname -> 回到yourname这个session
-    screen -d yourname -> 远程detach某个session
-    screen -d -r yourname -> 结束当前session并回到yourname这个session
-
-在每个screen session 下，所有命令都以 Ctrl+a(C-a) 开始。退出screen使用 exit
-
-例：Ctrl+a,d(按住Ctrl　然后按a　放开a　按d)
-
-    C-a ? -> Help，显示简单说明
-    C-a c -> Create，开启新的 window
-    C-a n -> Next，切换到下个 window
-    C-a p -> Previous，前一个 window
-    C-a 0..9 -> 切换到第 0..9 个window
-    Ctrl+a [Space] -> 由視窗0循序換到視窗9
-    C-a C-a -> 在两个最近使用的 window 间切换
-    C-a x -> 锁住当前的 window，需用用户密码解锁
-    C-a d -> detach，暂时离开当前session，将目前的 screen session (可能含有多个 windows) 丢到后台执行，并会回到还没进 screen 时的状态，此时在 screen session 里    每个 window 内运行的 process (无论是前台/后台)都在继续执行，即使 logout 也不影响。
-    C-a z -> 把当前session放到后台执行，用 shell 的 fg 命令則可回去。
-    C-a w -> windows，列出已开启的 windows 有那些
-    C-a t -> Time，显示当前时间，和系统的 load
-    C-a K -> kill window，强行关闭当前的 window
-
-screen可以同步显示你的屏幕给另一个会话。这在给别人处理问题是尤为好用，可以让对方同步看到你的操作。双方同时登陆一台主机，演示方输入  screen -S example，观看方输入 screen -x example，即可同步显示演示方输入的内容
-
-# ssh相关
-
-## Agent admitted failure to sign using the key
-ssh-keygen 产生出 id_rsa, id_rsa.pub, 已经都放到正确位置(.ssh), 但是联机时却出现下述讯息:
-
-Agent admitted failure to sign using the key
-
-解法
-
-于自己的机器上, 执行 ssh-add, 会出现下述讯息.
-
-Identity added: /home/user/.ssh/id_rsa (/home/user/.ssh/id_rsa)
-
-
-## 查看linux进程的执行文件路径
-
-           1、以超级用户登陆
-
-           2、进入/proc目录
-
-           3、ps查看所有符合./cmd的进程，找出其对应的PID进程号
-
-           4、用ll命令： ll 进程号
-
-              如下显示一个示例：
-
-              [root@Cluster1 proc]# ll 22401 (proc文件夹中有对应PID码的文件名,进入即可)
-
-       total 0
-
-       -r--r--r--    1 zhouys    zhouys     0 Dec 11 11:10 cmdline
-
-       -r--r--r--    1 zhouys    zhouys     0 Dec 11 11:10 cpu
-
-       lrwxrwxrwx    1 zhouys    zhouys     0 Dec 11 11:10 cwd -> /home/zhouys/sbs/bin
-
-       -r--------    1 zhouys    zhouys     0 Dec 11 11:10 environ
-
-       lrwxrwxrwx    1 zhouys    zhouys     0 Dec 11 11:10 exe -> /home/zhouys/sbs/bin/cbs (deleted)
-
-       dr-x------    2 zhouys    zhouys     0 Dec 11 11:10 fd
-
-       -r--------    1 zhouys    zhouys     0 Dec 11 11:10 maps
-
-       -rw-------    1 zhouys    zhouys     0 Dec 11 11:10 mem
-
-       -r--r--r--    1 zhouys    zhouys     0 Dec 11 11:10 mounts
-
-       lrwxrwxrwx    1 zhouys    zhouys     0 Dec 11 11:10 root -> /
-
-       -r--r--r--    1 zhouys    zhouys     0 Dec 11 11:10 stat
-
-       -r--r--r--    1 zhouys    zhouys     0 Dec 11 11:10 statm
-
-       -r--r--r--    1 zhouys    zhouys     0 Dec 11 11:10 status
-
-              /proc文件系统下的 进程号目录 下面的文件镜像了进程的当前运行信息，
-
-              从中可以看到：
-
-              cwd符号链接的就是进程22401的运行目录；
-
-              exe符号连接就是执行程序的绝对路径；
-
-              cmdline就是程序运行时输入的命令行命令；本例为：./cbs
-
-              cpu记录了进程可能运行在其上的cpu；显示虚拟的cpu信息
-
-              environ记录了进程运行时的环境变量
-
-              fd目录下是进程打开或使用的文件的符号连接
-
-              ...
-
-
-
-        通过cwd直接进入进程运行目录，通过查看相关信息就可以定位此目录对应那个端口号，以及
-
-    定位是那个应用才使用此服务程序。
-
-
-
-3. ps -aux 命令
-
-　　ps也可打印其路径,但不是万能的,有些路径只能使用以上两种方法取得.
-
-
-# GTK+相关
+* cwd符号链接的就是进程的运行目录；
+* exe符号连接就是执行程序的绝对路径；
+* cmdline就是程序运行时输入的命令行命令；
+* cpu记录了进程可能运行在其上的cpu；显示虚拟的cpu信息
+* environ记录了进程运行时的环境变量
+* fd目录下是进程打开或使用的文件的符号连接
 
 
 # GTK中的delete_event和destroy
-delete_event 事件一般由用户或者说用户通过窗口管理器产生，即点击窗口右上角的退出按钮。假如不做任何特殊处理，窗口管理器会自动产生destroy信号；如果我们自 定义了处理delete_event事件的回调函数，是否产生destroy信号就和函数的返回值有关，如果是FALSE就产生，反之则没有效果。
 
-至于destroy，除了可以由delete_event事件产生之外，还可以通过gtk_widget_destroy函数与其它信号发生交换。同样，如果不加指定，默认结果是关闭所指向的窗口但并不结束进程。如果我们希望主窗口和进程一起关闭，必须使用gtk_main_quit()。
+* delete_event 事件一般由用户或者说用户通过窗口管理器产生，即点击窗口右上角的退出按钮。假如不做任何特殊处理，窗口管理器会自动产生destroy信号；如果我们自 定义了处理delete_event事件的回调函数，是否产生destroy信号就和函数的返回值有关，如果是FALSE就产生，反之则没有效果。
+* destroy，除了可以由delete_event事件产生之外，还可以通过gtk_widget_destroy函数与其它信号发生交换。同样，如果不加指定，默认结果是关闭所指向的窗口但并不结束进程。如果我们希望主窗口和进程一起关闭，必须使用gtk_main_quit()。
 
 
-# CodeBlocks 使用经验谈
-
-以最新的CodeBlocks 10.05为例。
-
-一、自定义自动补全
+# CodeBlocks自定义自动补全
 
 1、依次打开 Project -> Properties -> C/C++ parser options 来到 Additional search paths;
-
-2、点  Add 选择头文件的路径后点确定;
-
+2、点 Add 选择头文件的路径后点确定;
 3、在源文件中添加相应的头文件后即可实现自动补全。
-
-或者在第2步，改成“工作空间”中包含相应的头文件也行。
-
-apt-get install codeblocks-contrib
-
-# ubuntu 无法使用gnome库,该如何处理
-
-gcc:
-gcc -o gnome1 gnome1.c `pkg-config –libs –cflags libgnome-2.0 libgnomeui-2.0`
-
-codebocks:
-
-`pkg-config libgnome-2.0 libgnomeui-2.0 --cflags`
-
-`pkg-config  libgnome-2.0 libgnomeui-2.0 --libs`
-
-`pkg-config gtk+-2.0 --cflags --libs`
-
-#线程调用
-
--lpthread
-
-#常用函数
-
-herror(3)
 
 # Linux 中C语言如何清空标准输入流
 
@@ -889,131 +631,90 @@ herror(3)
 
 注：上述内容有几处错误，详见《The Standart Library》
 
-通过读完标准缓冲区中的剩余字符并丢弃掉来清空标准缓冲区，使用的函数是getchar()，此函数的作用是从标准输入缓冲区中读出一个字符，此方法中Linux中可行。如果需要清除stdin可以通过如下循环实现：
-
+Linux上可以通过getchar()函数读完标准缓冲区中的剩余字符来清空标准缓冲区：
+```c
 char ch;
-
 while((ch=getchar())!='/n'&&ch!=EOF);
-
-以上语句将清除stdin中的字符，知道遇到换行符或者是读完缓冲区。
-
-
-# Linux下开发工具介绍
-
-## indent
-
-indent 实用程序是 Linux 里包含的另一个编程实用工具. 这个工具简单的说就为你的代码产生美观的缩进的格式. indent 也有很多选项来指定如何格式化你的源代码.这些选项的更多信息请看 indent 的指南页 .indent 并不改变代码的实质内容, 而只是改变代码的外观. 使它变得更可读, 这永远是一件好事.
-
-indent是一个很有用的c源代码对齐工具。一般大家有自己喜欢的风格，可以根据需要来设定indent的风格。
-
-indent -kr -cli4 -nut -bl4 -bli0 <filename>
-
-## cproto
-
-cproto 读入 C 源程序文件并自动为每个函数产生原型申明. 用 cproto 可以在写程序时为你节省大量用来定义函数原型的时间.
-
-## gprof
-
-gprof 是安装在你的 Linux 系统的 /usr/bin 目录下的一个程序. 它使你能剖析你的程序从而知道程序的哪一个部分在执行时最费时间.gprof 将告诉你程序里每个函数被调用的次数和每个函数执行时所占时间的百分比. 你如果想提高你的程序性能的话这些信息非常有用.为了在你的程序上使用 gprof, 你必须在编译程序时加上 -pg 选项. 这将使程序在每次执行时产生一个叫 gmon.out 的文件. gprof 用这个文件产生剖析信息.在你运行了你的程序并产生了 gmon.out 文件后你能用下面的命令获得剖析信息:
-
-gprof <program_name>
+```
 
 
-#怎样给变量传递执行命令结果
+# 怎样给变量传递执行命令结果
 
 在linux shell脚本里，设置一个变量，但是变量是一个命令，需要将执行结果放到变量里，并输出，例如：ip='ifconfig eth0'  echo $ip，怎样可以叫页面显示的是eth0的网络状况？就是ifconfig eth0的结果？
-
+```shell
 ip=`ifconfig eth0`
-
 echo $ip
-
+```
 使用反引号可以把一个命令的输出插到另一个命令中去。相同功能的写法还有$()，功能同` ` 效果是一样的。不过某些unix系统不支持$()这种写法。但是` `在任何unix或linux系统下都可以使用。
 
 
-## debian hosts文件中的 127.0.1.1 主机地址
+# debian hosts文件中的 127.0.1.1 主机地址
 
-有时候/etc/hosts文件会看到127.0.1.1这个地址,这是什么呢? 127.0.0.1这个loopback地址很常见，就是本地接口的回路/回环地址。但有时候/etc/hosts文件中还会出现127.0.1.1,这又是什么地址呢？这也是个本地回路/回环地址。出现这个地址的原因是因为有些应用程序需要规范的全限定域名FQDN(Fully Qualified Domain Name)，FQDN不只需要主机名还需要主机域名，其表达形式为hostname.domainname。如果你的主机有一个静态IP地址，则FQDN名字解析到这个静态地址，否则解析到127.0.1.1这个本地回路地址。所以一般情况下不会看到127.0.1.1这个地址。127.0.0.1一般只对应hostname，这也是二者的主要区别，如下
+有时候`/etc/hosts`文件会看到127.0.1.1这个地址,即本地接口的回路/回环地址。但有时候`/etc/hosts`文件中还会出现127.0.1.1,这也是个本地回路/回环地址。出现这个地址的原因是因为有些应用程序需要规范的全限定域名FQDN(Fully Qualified Domain Name)，FQDN不只需要主机名还需要主机域名，其表达形式为hostname.domainname。如果你的主机有一个静态IP地址，则FQDN名字解析到这个静态地址，否则解析到127.0.1.1这个本地回路地址。所以一般情况下不会看到127.0.1.1这个地址。127.0.0.1一般只对应hostname，这也是二者的主要区别，如下
 
-    127.0.0.1 hostname
-    127.0.1.1 hostname.domainname
+```sh
+127.0.0.1 hostname
+127.0.1.1 hostname.domainname
+```
 
 当然并一定非要用127.0.1.1这个IP,RFC规定的127.0.0.0/8这个IP段内的任意IP都可以，只要没有冲突，debian选择了127.0.1.1
+```sh
+hostname # 查看主机名
+hostname --fqdn # 查看FQDN名字
+```
 
-    hostname # 查看主机名
-    hostname --fqdn # 查看FQDN名字
+# 解决ubuntu终端颜色消失问题
+
+ubuntukylin-13.10登陆用户使用ls命令，终端显示的所有输出都是黑底白字，没有彩色，`su - root`后使用ls命令，输出为彩色。分别在登陆用户和root用户下执行`echo $PS1` 输出有差异。后发现登陆用户目录下没有`.bashrc`文件。复制默认`.bashrc`文件后解决：`cp /etc/skel/.bashrc  ~/`。
+
+# YUM相关问题解决
+
+## There are unfinished transactions remaining
+
+使用yum安装东西报错:`There are unfinished transactions remaining. You might consider running yum-complete-transaction first to finish them.`。可能之前有强制结束yum过,解决办法如如下：
+
+```sh
+yum -y install yum-utils # 安装 yum-complete-transaction（这是一个能发现未完成或被中断的yum事务的程序）
+yum clean all # 清除yum缓存
+yum-complete-transaction --cleanup-only # 运行 yum-complete-transaction,清理未完成事务
+```
+注：yum会把下载的软件包和header存储在cache中,而不会自动删除.可用yum clean headers清除header,yum clean packages清除下载的rpm包,yum clean all全清.
+
+## another app is currently holding the yum lock;waiting for it to exit
+
+yum提示如标题，可能是系统自动升级正在运行，yum在锁定状态中。可以强制关掉yum进程：`rm -f /var/run/yum.pid`
 
 
-# ubuntu终端颜色消失的问题
+# 设置开机直接进入命令行
 
-ubuntukylin 13.10    ls后终端显示的所有输出都是黑底白字，没有彩色，用su后ls却有彩色
+## 16.04之前的Ubuntu版本
 
-echo $PS1  输出二者也有差异，一看发现用户目录下.bashrc没有，
+需编辑文件`/etc/default/grub`，把 `GRUB_CMDLINE_LINUX_DEFAULT=”quiet splash”`改成`GRUB_CMDLINE_LINUX_DEFAULT=”quiet splash text”`，然后运行`sudo update-grub`。在控制台下想进入x-window，可以在root用户下输入：`gdm`或者`startx`。
 
-cp /etc/skel/.bashrc  ~/
+## 16.04及之后的Ubuntu版本
 
-后问题解决，如果要改颜色配置，可以修改PS1的值。
-
-
-#.cshrc文件是干什么用的?
-
-这个是个隐藏文件  ，在你使用的用户家目录下的
-
-是csh 这个shell(csh)的配置文件，你对csh的更改都会记录在这个文件中，下次你再启动csh的时候会读取这个文件。
-
-# There are unfinished transactions remaining
-
-今天在服务器用yum安装东西的时候,老是报:`There are unfinished transactions remaining. You might consider running yum-complete-transaction first to finish them.`问了下开发,原来有强制结束yum过,好吧,对于我这样有点轻微强迫症的人来说,不允许服务器出现这些信息的.
-
-解决办法:
-
-    # 安装 yum-complete-transaction（这是一个能发现未完成或被中断的yum事务的程序）
-    yum -y install yum-utils
-    # 清除yum缓存
-    yum clean all
-    # 运行 yum-complete-transaction,清理未完成事务
-    yum-complete-transaction --cleanup-only
-
-ps:
-
-yum会把下载的软件包和header存储在cache中,而不会自动删除.可用yum clean headers清除header,yum clean packages清除下载的rpm包,yum clean all全清.
-
-## yum提示another app is currently holding the yum lock;waiting for it to exit
-
-可能是系统自动升级正在运行，yum在锁定状态中。
-
-可以通过强制关掉yum进程：`rm -f /var/run/yum.pid`
-
-## Ubuntu开机直接进入控制台
-
-* 16.04之前的Ubuntu版本
-
-只需编辑文件`/etc/default/grub`，把 `GRUB_CMDLINE_LINUX_DEFAULT=”quiet splash”`改成`GRUB_CMDLINE_LINUX_DEFAULT=”quiet splash text”`，然后再运行`sudo update-grub`即可。在控制台下想进入x-window，可以在root用户下输入：`gdm`或者`startx`。修改Ubuntu默认启动进入文本模式后，重新启动后停在Checking battery state问题。没关系，实际系统已经启动，按键 ALT+F1 即可进入输入用户名登录得字符提示界面。
-
-* 16.04及之后的Ubuntu版本
-
-```shell
+```sh
 sudo systemctl disable lightdm.service
 sudo ln -s /lib/systemd/system/lightdm.service /etc/systemd/system/display-manager.service #恢复默认图形界面启动
 ```
 
-* CentOS以及Redhat
+## CentOS/Redhat
 
 http://blog.csdn.net/zoubf/article/details/47607039
 
-# 用Xshell连接会自动断开
 
-这是由于 SSH 超时断开连接导致的。可以
-修改/etc/ssh/sshd_config文件，找到 ClientAliveInterval 0和ClientAliveCountMax 3并将注释符号（"#"）去掉,
-将ClientAliveInterval对应的0改成60,
-ClientAliveInterval指定了服务器端向客户端请求消息 的时间间隔, 默认是0, 不发送.
-ClientAliveInterval 60表示每分钟发送一次, 然后客户端响应, 这样就保持长连接了.
-ClientAliveCountMax, 使用默认值3即可.ClientAliveCountMax表示服务器发出请求后客户端没有响应的次数达到一定值, 就自动断开.
-正常情况下, 客户端不会不响应.
-重起sshd服务：
+# ssh相关
+
+## Agent admitted failure to sign using the key
+ssh-keygen 产生出 id_rsa, id_rsa.pub, 已经都放到正确位置(.ssh), 但是联机时却出现下述讯息:`Agent admitted failure to sign using the key`。解决方法是在自己的机器上, 执行 ssh-add, 会出现：`Identity added: /home/user/.ssh/id_rsa (/home/user/.ssh/id_rsa)`
+
+## 解决SSH超时断开连接问题
+
+```sh
+vim /etc/ssh/sshd_config
+
+ClientAliveInterval # 指定服务器向客户端请求消息的时间间隔，默认是0表示不发送；可以改为60表示每分钟发送一次
+ClientAliveCountMax # 表示服务器发出请求后客户端没有响应的次数达到一定值, 就自动断开
+
 service sshd restart
-
-#杂项
-
-待解决问题：
-
-G_CALLBACK()与  GTK_SIGNAL_FUNC()区别
+```

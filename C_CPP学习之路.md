@@ -106,6 +106,8 @@
 
 * http://www.gtk.org/
 
+* Glade User Interface Designer Reference Manual: https://developer.gnome.org/gladeui/unstable/
+
 * GLib Reference Manual: https://developer.gnome.org/glib/stable/
 * Part II. GTK+ Widgets and Objects: https://developer.gnome.org/gtk3/stable/gtkobjects.html
 * GNOME 开发者中心: https://developer.gnome.org/
@@ -123,6 +125,9 @@
 * Gtk对于通常的gui程序，大家想做的事就是做一点事件处理(包括各种计算、文件操作等)，然后在界面上显示出来: http://www.cnblogs.com/cy163/archive/2007/06/16/785341.html
 * GTK+2.0 中的容器控件与布局技巧: http://www.ibm.com/developerworks/cn/linux/l-gtk/part1/
 * GTK编程: http://jianlee.ylinux.org/Computer/C/gtk%E7%BC%96%E7%A8%8B.html
+* GLIB 常用数据结构介绍: http://blog.csdn.net/billxin2012/article/category/5334329
+* glib库简介: http://liujian.is-programmer.com/posts/243.html
+* glib库异步队列和线程池代码分析: http://blog.csdn.net/ljl1704/article/details/17243429
 
 ## QT
 

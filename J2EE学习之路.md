@@ -21,6 +21,7 @@
 * java examples: http://www.javased.com/
 * java papers: http://javapapers.com/
 * http://www.programcreek.com/
+* 酷壳: http://coolshell.cn/
 
 
 ## Java tutorial
@@ -159,6 +160,7 @@
 * ajax与302响应: http://www.cnblogs.com/dudu/p/ajax_302_found.html
 * HTTPS 升级指南: http://www.ruanyifeng.com/blog/2016/08/migrate-from-http-to-https.html
 * 软件项目“免坑”指南: http://www.cnblogs.com/MeteorSeed/archive/2012/04/08/2427966.html
+* 如何重构“箭头型”代码: http://coolshell.cn/articles/17757.html
 
 
 
