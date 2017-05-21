@@ -48,7 +48,6 @@
 * yED Grahp Editor:http://www.yworks.com/en/index.html
 * SEISMIC UNIX 安装实例（Fedora Core /Ubuntu 系统 ）: http://bdh915.blog.163.com/blog/static/293674922012018114016500/
 * winetricks 用WineTricks令你的Wine更完整: http://blog.csdn.net/arthur_yang/article/details/6365445
-* PDFtk: https://www.pdflabs.com/
 * File system: https://en.wikipedia.org/wiki/File_system
 * ack: http://beyondgrep.com/
 * iPerf / iPerf3: https://iperf.fr/
@@ -122,7 +121,6 @@
 * tcpdump: https://github.com/the-tcpdump-group/tcpdump
 * tcpdump捕捉样例: http://www.cnblogs.com/jiangxinnju/p/6012867.html
 * Slow Server? This is the Flow Chart You're Looking For: http://blog.scoutapp.com/articles/2014/07/31/slow_server_flow_chart
-* ldd命令：An Introduction to GCC.pdf
 * 设置Linux系统的空闲等待时间TMOUT: http://zzkai.blog.51cto.com/804611/1352964
 * Linux下chkconfig命令详解：http://www.cnblogs.com/panjun-Donet/archive/2010/08/10/1796873.html
 * linux下如何关闭防火墙？如何查看防火墙当前的状态：http://www.cnblogs.com/8899man/p/5899176.html
@@ -131,22 +129,18 @@
 * Shell脚本：判断用户和用户组是否已经存在/创建用户和用户组: http://blog.csdn.net/bluishglc/article/details/42060223
 * nc命令用法举例: http://www.cnblogs.com/nmap/p/6148306.html
 * How to Manage ‘Systemd’ Services and Units Using ‘Systemctl’ in Linux：https://www.tecmint.com/manage-services-using-systemd-and-systemctl-in-linux/
-* Master PDF Editor for Linux: https://code-industry.net/free-pdf-editor/
 * indent: https://www.gnu.org/software/indent/
 * cproto: https://sourceforge.net/projects/cproto/
 * gprof: https://sourceware.org/binutils/docs/gprof/
 * linux中screen命令的用法：http://www.9usb.net/201002/linux-screen-mingling.html
 * linux 下script命令记录终端会话：http://blog.chinaunix.net/uid-25885064-id-3430216.html
 * 记录终端下的操作（tee）：http://os.chinaunix.net/a2008/0810/986/000000986568.shtml
-* pdf阅读器:okular evince
-* 文本编辑器：vim，emacs，gedit
 * 音乐播放软件：clementine
 * rhythmbox歌词显示工具：osd-lyrics
 * 桌面美化工具：compiz
 * 视频播放器：KMPlayer
 * eD2k下载:aMule
 * 编程工具:bluefish
-* pdf合并工具——pdftk
 * 输入法：ibus+fcitx  重新启动Xwindow完成，按 Ctrl + 空格键激活输入法。当不能切换输入法时，把键盘-拼音输入法调到顶部。
 * 微软字体包：sudo apt-get install msttcorefonts
 * 字体管理器:font manager
@@ -154,25 +148,25 @@
 * 网盘:云诺网盘(菜单会有部分变成英文,不宜使用,可以替换为坚果云) /Dropbox
 * 软件包工具:新立得(Synaptic)
 * 磁盘管理器：LVM/GParted
-* 浏览器：Chrome
 * 词典：goldendict
 * 3D建模工具：blender
 * 图片处理工具：GIMP
 * Dock:GLX-Dock
 * 视频编辑–Openshot
 * BT下载：Transimssion
-* ftp客户端Filezilla
 * 邮件客户端：thunderbird
 * 虚拟光驱软件：Furius ISO Mount
-* 文件对比软件：meld
-* 脑图软件：xmind
 * 远程控制：vncview
-* 数据处理软件：octave（部分兼容matlab）
 * 记录、保存和播放终端会话软件: ttyrec 和 ttyplay
 * 垃圾清理软件：BleachBit
 * Audio CD Extractor（音频CD提取器）:又名“音乐榨汁机”、“Sound Juicer”。能把CD转成flac、ogg、mp3等格式。官方主页：http://www.burtonini.com/blog/computers/sound-juicer
 * Sound Converter（声音转换程序）: 支持flac、ogg、mp3、wav、m4a等格式间批量互转。官方主页：http://soundconverter.berlios.de
 * curl是利用URL语法在命令行方式下工作的文件传输工具。
+
+* PDFtk: https://www.pdflabs.com/
+* Master PDF Editor for Linux: https://code-industry.net/free-pdf-editor/
+* Okular: https://okular.kde.org/
+* pdf阅读器:evince
 
 # Linux常用命令
 
