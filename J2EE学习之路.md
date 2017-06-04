@@ -161,6 +161,7 @@
 * HTTPS 升级指南: http://www.ruanyifeng.com/blog/2016/08/migrate-from-http-to-https.html
 * 软件项目“免坑”指南: http://www.cnblogs.com/MeteorSeed/archive/2012/04/08/2427966.html
 * 如何重构“箭头型”代码: http://coolshell.cn/articles/17757.html
+* 使用浏览器的计算力，对抗密码破解：https://www.cnblogs.com/index-html/p/frontend_kdf.html
 
 
 
@@ -1037,6 +1038,9 @@ https://bintray.com/
 * Protobuf协议的Java应用例子: http://blog.csdn.net/antgan/article/details/52103966
 
 
+## zip4j
+
+* http://www.lingala.net/zip4j/
 
 ## Xtext
 

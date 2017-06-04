@@ -19,3 +19,4 @@
 
 * http://tools.android-studio.org/index.php
 * http://tools.android-studio.org/index.php/proxy
+* https://www.xamarin.com/

@@ -138,24 +138,14 @@
 * 音乐播放软件：clementine
 * rhythmbox歌词显示工具：osd-lyrics
 * 桌面美化工具：compiz
-* 视频播放器：KMPlayer
-* eD2k下载:aMule
-* 编程工具:bluefish
 * 输入法：ibus+fcitx  重新启动Xwindow完成，按 Ctrl + 空格键激活输入法。当不能切换输入法时，把键盘-拼音输入法调到顶部。
 * 微软字体包：sudo apt-get install msttcorefonts
 * 字体管理器:font manager
-* 笔记软件:为知笔记：直接用tar.gz包
 * 网盘:云诺网盘(菜单会有部分变成英文,不宜使用,可以替换为坚果云) /Dropbox
 * 软件包工具:新立得(Synaptic)
 * 磁盘管理器：LVM/GParted
 * 词典：goldendict
-* 3D建模工具：blender
-* 图片处理工具：GIMP
 * Dock:GLX-Dock
-* 视频编辑–Openshot
-* BT下载：Transimssion
-* 邮件客户端：thunderbird
-* 虚拟光驱软件：Furius ISO Mount
 * 远程控制：vncview
 * 记录、保存和播放终端会话软件: ttyrec 和 ttyplay
 * 垃圾清理软件：BleachBit
