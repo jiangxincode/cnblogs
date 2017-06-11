@@ -135,6 +135,8 @@
 * linux中screen命令的用法：http://www.9usb.net/201002/linux-screen-mingling.html
 * linux 下script命令记录终端会话：http://blog.chinaunix.net/uid-25885064-id-3430216.html
 * 记录终端下的操作（tee）：http://os.chinaunix.net/a2008/0810/986/000000986568.shtml
+* Shell脚本交互之：自动输入密码: http://blog.csdn.net/zhangjikuan/article/details/51105166
+* Shell中重定向<<EOF注意事项: http://blog.csdn.net/iamlaosong/article/details/40509399
 * 音乐播放软件：clementine
 * rhythmbox歌词显示工具：osd-lyrics
 * 桌面美化工具：compiz
@@ -152,6 +154,8 @@
 * Audio CD Extractor（音频CD提取器）:又名“音乐榨汁机”、“Sound Juicer”。能把CD转成flac、ogg、mp3等格式。官方主页：http://www.burtonini.com/blog/computers/sound-juicer
 * Sound Converter（声音转换程序）: 支持flac、ogg、mp3、wav、m4a等格式间批量互转。官方主页：http://soundconverter.berlios.de
 * curl是利用URL语法在命令行方式下工作的文件传输工具。
+* thunderbird: https://www.mozilla.org/zh-CN/thunderbird/
+* gimp: https://www.gimp.org/
 
 * PDFtk: https://www.pdflabs.com/
 * Master PDF Editor for Linux: https://code-industry.net/free-pdf-editor/
@@ -350,12 +354,11 @@ linux 下全局的文件与程序的关联是通过`/usr/share/applications/defa
 ```
 
 * 安装Synaptic软件包管理器
-* 卸载libreoffice/firefox/thunderbird/youker-assistant/amazon
+* 卸载libreoffice/firefox/youker-assistant/amazon
 * 重新启动计算机
 * 安装GLX-Dock并进行配置
 * 配置输入法（快捷键等）并重新登录
 * 安装clementine/osd-lyrics并进行配置，解决乱码问题，安装解码插件
-* 按装bluefish和geany
 * 安装快盘，进行配快盘和ubuntu one
 * 安装filezilla/okular/meld
 * 卸载Rhythmbox/empathy/account-plugin-*

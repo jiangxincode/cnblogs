@@ -325,3 +325,32 @@ J 合并行
 * GNU Emacs Manuals Online: http://www.gnu.org/software/emacs/manual/
 
 
+# VSC
+
+* Visual Studio Code: https://code.visualstudio.com/Download
+* Settings Sync: https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync
+
+
+# ultraedit
+
+* http://www.ultraedit.com/
+* User-submitted wordfiles for UltraEdit/UEStudio: http://www.ultraedit.com/downloads/extras/wordfiles.html
+
+
+# Sublime Text
+
+* http://www.sublimetext.com/
+* http://www.sublimetext.com/docs/3/
+* https://packagecontrol.io/installation
+
+
+# Others
+
+* geany: http://www.geany.org/Download/Extras
+* Lime Text: http://limetext.org/
+* sourceinsight: http://www.sourceinsight.com/
+* Scintilla: http://www.scintilla.org/
+* xmlspy: https://www.altova.com/xmlspy.html
+* Bluefish: http://bluefish.openoffice.nl/index.html
+
+

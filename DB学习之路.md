@@ -109,6 +109,7 @@
 * Managing Oracle Enterprise Manager Database Control: http://docs.oracle.com/cd/E11882_01/server.112/e25494/dbcontrol.htm#ADMIN13401
 * 2 Oracle SQL Connector for Hadoop Distributed File System: http://docs.oracle.com/cd/E37231_01/doc.20/e36961/sqlch.htm#BDCUG125
 * Generating an AWR Report Using the Command-Line Interface: http://docs.oracle.com/database/121/TGDBA/gather_stats.htm#TGDBA233
+* TRUNC (date): http://docs.oracle.com/cd/B28359_01/server.111/b28286/functions209.htm#SQLRF06151
 
 * Oracle SQL Developer: http://www.oracle.com/technetwork/developer-tools/sql-developer/overview/index.html
 * Instant Client Downloads for Microsoft Windows (32-bit): http://www.oracle.com/technetwork/topics/winsoft-085727.html
