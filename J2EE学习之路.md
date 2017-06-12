@@ -813,9 +813,11 @@ https://bintray.com/
 * HP Fortify Taxonomy: Software Security Errors：http://www.hpenterprisesecurity.com/vulncat/en/vulncat/index.html
 * Sebug漏洞库：http://old.sebug.net/
 * The Open Web Application Security Project：https://www.owasp.org
+* ESAPI(OWASP Enterprise Security API): https://www.owasp.org/index.php/Category:OWASP_Enterprise_Security_API
 * WooYun知识库：http://drops.wooyun.org/
 * HP Security Research：http://hpsr1.libsyn.com/
 * CVE: http://cve.mitre.org/
+* National Vulnerability Database: https://nvd.nist.gov/home
 * SCAP安全内容自动化协议中文社区: http://www.scap.org.cn/index.html
 * acunetix: http://www.acunetix.com/
 * xfocus: http://www.xfocus.net/index.html
