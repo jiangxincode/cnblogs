@@ -110,6 +110,7 @@
 * 2 Oracle SQL Connector for Hadoop Distributed File System: http://docs.oracle.com/cd/E37231_01/doc.20/e36961/sqlch.htm#BDCUG125
 * Generating an AWR Report Using the Command-Line Interface: http://docs.oracle.com/database/121/TGDBA/gather_stats.htm#TGDBA233
 * TRUNC (date): http://docs.oracle.com/cd/B28359_01/server.111/b28286/functions209.htm#SQLRF06151
+* SYS_CONTEXT: http://docs.oracle.com/database/122/SQLRF/SYS_CONTEXT.htm#SQLRF06117
 
 * Oracle SQL Developer: http://www.oracle.com/technetwork/developer-tools/sql-developer/overview/index.html
 * Instant Client Downloads for Microsoft Windows (32-bit): http://www.oracle.com/technetwork/topics/winsoft-085727.html
@@ -135,7 +136,6 @@
 * 【Foreign Key】Oracle外键约束三种删除行为 : http://blog.itpub.net/519536/viewspace-630034/
 * Oracle导入JAR包并调用Java: http://www.jianshu.com/p/4280ac298ded
 * Reclaiming Unused LOB Space: http://www.idevelopment.info/data/Oracle/DBA_tips/LOBs/LOBS_85.shtml
-* sqlplus 汉字乱码问题的解决: http://blog.csdn.net/tianlesoftware/article/details/5224448
 * Oracle 10g: Issue with startup mount command (ORA-24324, ORA-01041): http://stackoverflow.com/questions/12470893/oracle-10g-issue-with-startup-mount-command-ora-24324-ora-01041
 * 你所不知道的OERR: http://blog.163.com/jet_it_life/blog/static/2050970832012320146595/
 * 第9 章 HWM 与数据库性能的探讨: Oracle 数据库性能优化
@@ -574,17 +574,32 @@ Oracle提供了两种验证方式，一种是OS验证，另一种密码文件验
 * HBase 官方文档(中文)：http://yankaycom-wordpress.stor.sinaapp.com/hbase/book.html?q=/wp-content/hbase/book.html
 * HBase介绍: http://www.cnblogs.com/jiangxinnju/p/6427124.html
 
+* HBase 权限控制: http://debugo.com/hbase-access-control/
+* HBase Shell 常用操作: http://debugo.com/hbase-shell-cmds/
 * Hbase,Hive,Pig的区别: http://blog.sina.com.cn/s/blog_662728650101kurp.html
 * HBase运维实战：disable table失败的处理: http://www.searchdatabase.com.cn/showcontent_53017.htm
+* HBase性能调优: http://blog.nosqlfan.com/html/2095.html
+* 关于HFile的思考: http://blog.nosqlfan.com/html/2545.html
+* HBase性能优化方法总结（一）：表的设计: http://www.cnblogs.com/panfeng412/archive/2012/03/08/hbase-performance-tuning-section1.html
+* HBase性能优化方法总结（二）：写表操作: http://www.cnblogs.com/panfeng412/archive/2012/03/08/hbase-performance-tuning-section2.html
+* HBase性能优化方法总结（三）：读表操作: http://www.cnblogs.com/panfeng412/archive/2012/03/08/hbase-performance-tuning-section3.html
+* HBase性能优化方法总结（四）：数据计算: http://www.cnblogs.com/panfeng412/archive/2012/03/08/hbase-performance-tuning-section4.html
+* HBase如何合理设置客户端Write Buffer: http://www.cnblogs.com/panfeng412/archive/2012/10/16/how-to-use-hbase-client-write-buffer.html
+* HBase的Block Cache实现机制分析: http://www.cnblogs.com/panfeng412/archive/2012/09/24/hbase-block-cache-mechanism.html
+* HBase入门篇: http://www.uml.org.cn/sjjm/201212141.asp
+* Hbase分析报告: http://xiaoxia001.iteye.com/blog/1332874
+* HBase 系统架构: http://blog.chinaunix.net/uid-20577907-id-3491151.html
 * 图形化理解 HBase 数据写操作、压缩操作过程: http://blog.nosqlfan.com/html/1249.html
 * hbase在淘宝的应用和优化小结: http://www.cnblogs.com/panfeng412/articles/hbase-optimization-and-apply-summary-in-taobao.html
 * bigtable model with cassandra and hbase: http://horicky.blogspot.com/2010/10/bigtable-model-with-cassandra-and-hbase.html
+* 编译和使用hive与HBase通信包--hive-hbase-handler.jar及下载: http://www.aboutyun.com/thread-7817-1-1.html
 
 
 # Hive
 
 * http://hive.apache.org/
 * https://cwiki.apache.org/confluence/display/Hive/Home
+* 使用Hive读取Hbase中的数据: http://victorzhzh.iteye.com/blog/972406
 
 # Pig
 
