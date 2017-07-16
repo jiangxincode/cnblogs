@@ -143,7 +143,6 @@
 * 三个实例演示 Java Thread Dump 日志分析：http://www.cnblogs.com/zhengyun_ustc/archive/2013/01/06/dumpanalysis.html
 * OpenJDK和SunJDK有啥区别？https://www.zhihu.com/question/19646618
 * 系统吞吐量（TPS）、用户并发量、性能测试概念和公式: http://www.ha97.com/5095.html
-* Easy way of running the same junit test over and over? http://stackoverflow.com/questions/1492856/easy-way-of-running-the-same-junit-test-over-and-over
 * Java 语言的 XPath API: https://www.ibm.com/developerworks/cn/xml/x-javaxpathapi.html
 * XMLHttpRequest Living Standard: https://xhr.spec.whatwg.org/
 * How to solve the error: The system cannot find the file C:\ProgramData\Oracle\Java\javapath\java.exe：http://stackoverflow.com/questions/26864662/how-to-solve-the-error-the-system-cannot-find-the-file-c-programdata-oracle-ja
@@ -331,6 +330,8 @@
 * http://junit.org/
 * http://junit.org/javadoc/latest/index.html
 * JUnit4 详解：http://www.cnblogs.com/eggbucket/archive/2012/02/02/2335697.html
+* Easy way of running the same junit test over and over? http://stackoverflow.com/questions/1492856/easy-way-of-running-the-same-junit-test-over-and-over
+* Testing for expected exceptions in JUnit: http://www.shaunabram.com/testing-for-expected-exceptions-in-junit/
 
 
 ## DbUnit
