@@ -156,6 +156,8 @@
 * curl是利用URL语法在命令行方式下工作的文件传输工具。
 * thunderbird: https://www.mozilla.org/zh-CN/thunderbird/
 * gimp: https://www.gimp.org/
+* Linux shell脚本的字符串截取: http://www.cnblogs.com/wangbin/archive/2011/10/11/2207179.html
+* Linux 技巧: Bash 参数和参数扩展: https://www.ibm.com/developerworks/cn/linux/l-bash-parameters.html
 
 * PDFtk: https://www.pdflabs.com/
 * Master PDF Editor for Linux: https://code-industry.net/free-pdf-editor/

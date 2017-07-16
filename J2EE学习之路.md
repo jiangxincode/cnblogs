@@ -161,6 +161,11 @@
 * 软件项目“免坑”指南: http://www.cnblogs.com/MeteorSeed/archive/2012/04/08/2427966.html
 * 如何重构“箭头型”代码: http://coolshell.cn/articles/17757.html
 * 使用浏览器的计算力，对抗密码破解：https://www.cnblogs.com/index-html/p/frontend_kdf.html
+* Atom Authentication: http://www.xml.com/pub/a/2003/12/17/dive.html
+* 在AI寻路决策中运用势力图（Influence Map）: http://www.aisharing.com/archives/80?replytocom=219
+* 关于 Token，你应该知道的十件事: http://ju.outofmemory.cn/entry/134189
+* 10 Things You Should Know about Tokens: https://auth0.com/blog/ten-things-you-should-know-about-tokens-and-cookies/
+* Java陷阱之assert关键字: http://lavasoft.blog.51cto.com/62575/43735/
 
 
 
