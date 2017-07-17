@@ -166,6 +166,7 @@
 * 关于 Token，你应该知道的十件事: http://ju.outofmemory.cn/entry/134189
 * 10 Things You Should Know about Tokens: https://auth0.com/blog/ten-things-you-should-know-about-tokens-and-cookies/
 * Java陷阱之assert关键字: http://lavasoft.blog.51cto.com/62575/43735/
+* Buffer源码深入分析: http://www.cnblogs.com/YDDMAX/p/6961189.html
 
 
 
@@ -1283,6 +1284,9 @@ http://spark.apache.org/docs/latest/api/java/index.html
 * RDD中cache和persist的区别: http://www.cnblogs.com/luogankun/p/3801062.html
 * 每次进步一点点——Spark 中的宽依赖和窄依赖: http://blog.csdn.net/houmou/article/details/52531205
 * Spark中的错误处理: http://blog.csdn.net/zrc199021/article/details/52711593
+* Why does Spark RDD partition has 2GB limit for HDFS? https://stackoverflow.com/questions/29689719/why-does-spark-rdd-partition-has-2gb-limit-for-hdfs
+* Spark 架构: http://www.cnblogs.com/gaoxing/p/5041806.html
+* Spark(一): 基本架构及原理: http://www.cnblogs.com/tgzhu/p/5818374.html
 
 
 ## Storm
