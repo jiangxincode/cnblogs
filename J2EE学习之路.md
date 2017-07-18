@@ -1272,13 +1272,14 @@ https://bintray.com/
 * 虾皮工作室(讲解大数据相关知识，如《细细品味Hadoop系列文章》)：http://www.cnblogs.com/xia520pi/
 * [Hadoop系列]Hadoop的MapReduce中多文件输出: http://blog.csdn.net/inkfish/article/details/5156651
 * Hadoop源码分析——TaskAttemptContext类和TaskAttemptID类: http://blog.sina.com.cn/s/blog_61ef49250100vcps.html
+* hadoop代理用户 -超级用户代理其它用户: http://www.aboutyun.com/thread-16507-1-1.html
 
 
 ## Spark
 
-http://spark.apache.org/
-http://spark.apache.org/docs/latest/api/java/index.html
-* mmicky 的博客(均为spark相关博客): http://mmicky.blog.163.com/
+* http://spark.apache.org/
+* http://spark.apache.org/docs/latest/api/java/index.html
+* mmicky 的博客: http://blog.csdn.net/book_mmicky/article/category/2604051    http://blog.csdn.net/book_mmicky/article/category/2261687
 * Spark性能优化指南——基础篇: http://tech.meituan.com/spark-tuning-basic.html
 * Spark性能优化指南——高级篇: http://tech.meituan.com/spark-tuning-pro.html
 * RDD中cache和persist的区别: http://www.cnblogs.com/luogankun/p/3801062.html
@@ -1360,5 +1361,26 @@ https://storm.apache.org/javadoc/apidocs/index.html
 * CAS Client集群环境的问题及解决方案: https://yq.aliyun.com/articles/49871
 * cas系列文章: http://www.cnblogs.com/vhua/tag/cas/
 * cas单点登录配置速成: http://www.blogjava.net/goodlyts/archive/2009/10/20/299091.html
+
+
+## Prometheus
+
+* https://prometheus.io/
+* EXPOSITION FORMATS: https://prometheus.io/docs/instrumenting/exposition_formats/
+* Prometheus 系统监控方案: http://www.cnblogs.com/vovlie/p/Prometheus_CONCEPTS.html
+
+
+## grafana
+
+* https://grafana.com/
+
+## collectd
+
+* http://collectd.org/
+
+
+## influxdata
+
+* https://www.influxdata.com/
 
 

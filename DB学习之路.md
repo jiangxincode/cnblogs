@@ -158,8 +158,7 @@
 * Linux 安装oracle客户端: http://www.cnblogs.com/yangxia-test/p/4159449.html
 * 深入理解JDBC的超时设置: http://www.importnew.com/2466.html
 * The Difference between User and Schema in Oracle: http://www.oratable.com/oracle-user-schema-difference/
-* Atom Authentication: http://www.xml.com/pub/a/2003/12/17/dive.html
-* 在AI寻路决策中运用势力图（Influence Map）: http://www.aisharing.com/archives/80?replytocom=219
+
 
 
 ## oracle疑难问题排查集：
