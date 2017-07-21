@@ -51,6 +51,10 @@
 * DISLIN: https://www.mps.mpg.de/dislin/
 * Useful enhancements for Visual Studio .NET: http://www.codeproject.com/Articles/2704/Useful-enhancements-for-Visual-Studio-NET
 * ICU - International Components for Unicode: http://site.icu-project.org/
+* libevent: http://libevent.org/
+
+
+* Comparing Two High-Performance I/O Design Patterns: http://www.artima.com/articles/io_design_patterns.html
 
 
 * MinGW: http://www.mingw.org/
@@ -148,6 +152,7 @@
 
 * Google Test: https://github.com/google/googletest
 * Parasoft C/C++test: https://www.parasoft.com/product/cpptest/
+* 使用CppUnit: http://www.cnblogs.com/zhcncn/archive/2012/12/25/2832162.html
 * 开放源码 C/C++ 单元测试工具，第 3 部分: 了解 CppTest: http://www.ibm.com/developerworks/cn/aix/library/au-ctools3_ccptest/
 
 ## Articles
