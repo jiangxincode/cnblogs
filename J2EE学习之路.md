@@ -29,7 +29,6 @@
 * Java Versions, Features and History: http://javapapers.com/core-java/java-features-and-history/
 * Introduction to Java Programming, Eighth Edition: http://www.cs.armstrong.edu/liang/intro8e/
 * Java杂项: http://www.cnblogs.com/jiangxinnju/p/6582135.html
-* FindBugs详解: http://www.cnblogs.com/jiangxinnju/p/6582404.html
 * Java 理论与实践: http://www.ibm.com/developerworks/cn/java/j-jtp/
 * Java多线程：http://blog.csdn.net/column/details/multithreading.html
 * Java Runtime.exec()的使用: http://www.cnblogs.com/mingforyou/p/3551199.html
@@ -166,7 +165,7 @@
 * 关于 Token，你应该知道的十件事: http://ju.outofmemory.cn/entry/134189
 * 10 Things You Should Know about Tokens: https://auth0.com/blog/ten-things-you-should-know-about-tokens-and-cookies/
 * Java陷阱之assert关键字: http://lavasoft.blog.51cto.com/62575/43735/
-* Buffer源码深入分析: http://www.cnblogs.com/YDDMAX/p/6961189.html
+* Buffer: https://yddmax.github.io/2017/06/08/Buffer/
 
 
 
@@ -727,6 +726,7 @@ https://bintray.com/
 * FindBugs Plug-in: http://maven-plugins.sourceforge.net/maven-findbugs-plugin/
 * maven 使用findbugs 插件: http://hw1287789687.iteye.com/blog/1960322
 * 如何友好地展示findbugs分析报告: http://hw1287789687.iteye.com/blog/1960331
+* FindBugs详解: http://www.cnblogs.com/jiangxinnju/p/6582404.html
 
 
 ## PMD

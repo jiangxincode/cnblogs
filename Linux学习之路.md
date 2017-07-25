@@ -705,3 +705,17 @@ ClientAliveCountMax # 表示服务器发出请求后客户端没有响应的次�
 
 service sshd restart
 ```
+
+## sftp子系统申请已拒绝 请确保ssh连接的sftp子系统设置有效
+
+```shell
+[root@bogon ~]# vi /etc/ssh/sshd_config 
+
+# override default of no subsystems
+# Subsystem       sftp /usr/libexec/openssh/sftp-server
+-->
+# override default of no subsystems
+Subsystem       sftp /usr/libexec/openssh/sftp-server
+
+[root@bogon ~]# /etc/init.d/sshd reload
+```
