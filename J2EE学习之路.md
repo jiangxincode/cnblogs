@@ -770,8 +770,10 @@ https://bintray.com/
 
     Whether you own, are responsible for, or are acquiring software projects in C/C++ or Java, inFusion puts you in full control of architecture and design quality. inFusion makes quality assurance of multi-million LOC systems not merely practical, but effective, successfully handling both object oriented and procedural style code.
 
-* 官方地址：http://www.intooitus.com/products/infusion
+* http://www.intooitus.com/products/infusion(deprecated)
 * InFusion错误类型分析：http://www.cnblogs.com/Leo_wl/p/3493231.html
+* 软件设计度量工具inFusion(一)：inFusion的基本概念: http://blog.csdn.net/aitangyong/article/details/50206419
+* 软件设计度量工具inFusion(二)：看懂inFusion度量结果: http://blog.csdn.net/aitangyong/article/details/50250967
 
 
 ## SourceMonitor
