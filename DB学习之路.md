@@ -25,16 +25,13 @@
 
 * MySQL: http://www.mysql.com/
 * MySQL参考：http://dev.mysql.com/doc/#manual
-* windows下忘记mysql超级管理员root密码的解决办法：http://superman7020.blog.163.com/blog/static/1374465920085210119253/
-* 5款常用mysql slow log分析工具的比较：http://blog.chinaunix.net/uid-8504518-id-2030594.html
+* 5款常用mysql slow log分析工具的比较：http://bbs.chinaunix.net/thread-1286359-1-1.html
 * Autocomplete in MySQL under Windows: http://stackoverflow.com/questions/269653/autocomplete-in-mysql-under-windows
-* 安装mysql，在./configure时出现错误：error: No curses/termcap library found的解决办法: http://www.cnblogs.com/luojianqun/p/4087423.html
 * MYSQL常见错误及其解决方式: http://www.cnblogs.com/jiangxinnju/p/5894225.html
+* MySQL默认数据库: http://www.cnblogs.com/jiangxinnju/p/5901845.html
 * 如何提高MySql的安全性？: http://blog.163.com/longsu2010@yeah/blog/static/17361234820116223593175/
 * 如何写出高质量、高性能的MySQL查询: http://blog.sina.com.cn/s/blog_a8cf6bb20101a33v.html
 * 解决mysql字符集乱码问题: http://www.cnblogs.com/dayday-study/archive/2012/05/18/2507276.html
-* MySQL默认数据库: http://www.cnblogs.com/jiangxinnju/p/5901845.html
-* MySQL的安装、使用及权限管理: http://www.cnblogs.com/sunada2005/articles/2647435.html
 
 
 # SQL Server

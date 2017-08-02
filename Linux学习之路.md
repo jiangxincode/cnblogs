@@ -258,6 +258,7 @@
     cut -d: -f1 /etc/group    # 查看系统所有组
     crontab -l             # 查看当前用户的计划任务服务
     rpm -qa                # 查看所有安装的软件包
+    rpm -q mysql   # 查看是否安装了mysql客户端
 
     netstat -anp | grep xxxx   #xxxx为端口号 Linux下查看某个端口下运行的是什么程序
     lsof -i :xxxx    #xxxx为端口号
