@@ -29,6 +29,7 @@
 * Autocomplete in MySQL under Windows: http://stackoverflow.com/questions/269653/autocomplete-in-mysql-under-windows
 * MYSQL常见错误及其解决方式: http://www.cnblogs.com/jiangxinnju/p/5894225.html
 * MySQL默认数据库: http://www.cnblogs.com/jiangxinnju/p/5901845.html
+* MySQL日期、时间相关内容：http://www.cnblogs.com/jiangxinnju/p/7282667.html
 * 如何提高MySql的安全性？: http://blog.163.com/longsu2010@yeah/blog/static/17361234820116223593175/
 * 如何写出高质量、高性能的MySQL查询: http://blog.sina.com.cn/s/blog_a8cf6bb20101a33v.html
 * 解决mysql字符集乱码问题: http://www.cnblogs.com/dayday-study/archive/2012/05/18/2507276.html
@@ -109,6 +110,7 @@
 * TRUNC (date): http://docs.oracle.com/cd/B28359_01/server.111/b28286/functions209.htm#SQLRF06151
 * SYS_CONTEXT: http://docs.oracle.com/database/122/SQLRF/SYS_CONTEXT.htm#SQLRF06117
 * ALTER SEQUENCE: http://docs.oracle.com/cd/B28359_01/server.111/b28286/statements_2011.htm#SQLRF00817
+* VARCHAR2(50 CHAR) and VARCHAR2(50): http://docs.oracle.com/cd/B28359_01/server.111/b28286/sql_elements001.htm#SQLRF50957
 
 * Oracle SQL Developer: http://www.oracle.com/technetwork/developer-tools/sql-developer/overview/index.html
 * Instant Client Downloads for Microsoft Windows (32-bit): http://www.oracle.com/technetwork/topics/winsoft-085727.html
