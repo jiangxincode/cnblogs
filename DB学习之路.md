@@ -13,7 +13,7 @@
 * erwin: http://erwin.com/
 * DBeaver: http://dbeaver.jkiss.org/
 * Navicat: http://www.navicat.com.cn/
-* 0xDBE: https://www.jetbrains.com/dbe/
+* DataGrip: https://www.jetbrains.com/datagrip/
 * 数据库比较工具DBCompareTool 0.3.0 preview 发布：http://www.blogjava.net/allenny/archive/2011/09/30/359028.html
 * DB Compare(SQL Server): http://dbcompare.codeplex.com/
 * DBComparer(SQL Server): http://dbcomparer.com/
@@ -26,7 +26,6 @@
 * MySQL: http://www.mysql.com/
 * MySQL参考：http://dev.mysql.com/doc/#manual
 * 5款常用mysql slow log分析工具的比较：http://bbs.chinaunix.net/thread-1286359-1-1.html
-* Autocomplete in MySQL under Windows: http://stackoverflow.com/questions/269653/autocomplete-in-mysql-under-windows
 * MYSQL常见错误及其解决方式: http://www.cnblogs.com/jiangxinnju/p/5894225.html
 * MySQL默认数据库: http://www.cnblogs.com/jiangxinnju/p/5901845.html
 * MySQL日期、时间相关内容：http://www.cnblogs.com/jiangxinnju/p/7282667.html
