@@ -13,6 +13,7 @@
 * firebug: http://getfirebug.com/
 * Brackets: http://brackets.io/
 * Tridiv is a web-based editor for creating 3D shapes in CSS: http://tridiv.com/
+* CodeMirror: http://codemirror.net/
 
 ## WTP
 
@@ -172,3 +173,5 @@ Web Tools Platform(WTP): http://www.eclipse.org/webtools/
 ## Chrome调试
 
 * 最全面的JavaScript调试技巧总结: http://www.codeceo.com/article/javascript-debug-skills.html
+
+
