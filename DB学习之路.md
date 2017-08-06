@@ -28,7 +28,7 @@
 * 5款常用mysql slow log分析工具的比较：http://bbs.chinaunix.net/thread-1286359-1-1.html
 * MYSQL常见错误及其解决方式: http://www.cnblogs.com/jiangxinnju/p/5894225.html
 * MySQL默认数据库: http://www.cnblogs.com/jiangxinnju/p/5901845.html
-* MySQL日期、时间相关内容：http://www.cnblogs.com/jiangxinnju/p/7282667.html
+* Should I use field 'datetime' or 'timestamp'? https://stackoverflow.com/questions/409286/should-i-use-field-datetime-or-timestamp
 * 如何提高MySql的安全性？: http://blog.163.com/longsu2010@yeah/blog/static/17361234820116223593175/
 * 如何写出高质量、高性能的MySQL查询: http://blog.sina.com.cn/s/blog_a8cf6bb20101a33v.html
 * 解决mysql字符集乱码问题: http://www.cnblogs.com/dayday-study/archive/2012/05/18/2507276.html
