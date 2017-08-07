@@ -25,6 +25,7 @@
 
 * MySQL: http://www.mysql.com/
 * MySQL参考：http://dev.mysql.com/doc/#manual
+* Workbench: https://dev.mysql.com/downloads/workbench/
 * 5款常用mysql slow log分析工具的比较：http://bbs.chinaunix.net/thread-1286359-1-1.html
 * MYSQL常见错误及其解决方式: http://www.cnblogs.com/jiangxinnju/p/5894225.html
 * MySQL默认数据库: http://www.cnblogs.com/jiangxinnju/p/5901845.html
