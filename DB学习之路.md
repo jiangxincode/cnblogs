@@ -3,17 +3,21 @@
 # 通用：
 
 * http://db-engines.com
+
 * Tech On The Net: http://www.techonthenet.com/index.php
+* Readings in Database Systems (commonly known as the "Red Book")：http://www.redbook.io/
+
 * SQL Pretty Printer formatter: http://www.dpriver.com/index.php
 * ApexSQL: http://www.apexsql.com/
 * RazorSQL: http://www.razorsql.com/
 * AquaFold: http://www.aquafold.com/
 * Withdata: http://www.withdata.com/index.html
-* 红宝书：http://www.redbook.io/
+* HeidiSQL: https://www.heidisql.com/
 * erwin: http://erwin.com/
 * DBeaver: http://dbeaver.jkiss.org/
 * Navicat: http://www.navicat.com.cn/
 * DataGrip: https://www.jetbrains.com/datagrip/
+* EMS Database Management Solutions: https://www.sqlmanager.net/
 * 数据库比较工具DBCompareTool 0.3.0 preview 发布：http://www.blogjava.net/allenny/archive/2011/09/30/359028.html
 * DB Compare(SQL Server): http://dbcompare.codeplex.com/
 * DBComparer(SQL Server): http://dbcomparer.com/
@@ -26,6 +30,7 @@
 * MySQL: http://www.mysql.com/
 * MySQL参考：http://dev.mysql.com/doc/#manual
 * Workbench: https://dev.mysql.com/downloads/workbench/
+* SQLyog: https://www.webyog.com/product/sqlyog
 * 5款常用mysql slow log分析工具的比较：http://bbs.chinaunix.net/thread-1286359-1-1.html
 * MYSQL常见错误及其解决方式: http://www.cnblogs.com/jiangxinnju/p/5894225.html
 * MySQL默认数据库: http://www.cnblogs.com/jiangxinnju/p/5901845.html
@@ -33,6 +38,7 @@
 * 如何提高MySql的安全性？: http://blog.163.com/longsu2010@yeah/blog/static/17361234820116223593175/
 * 如何写出高质量、高性能的MySQL查询: http://blog.sina.com.cn/s/blog_a8cf6bb20101a33v.html
 * 解决mysql字符集乱码问题: http://www.cnblogs.com/dayday-study/archive/2012/05/18/2507276.html
+* MySQL-Front: http://www.mysqlfront.de/
 
 
 # SQL Server
