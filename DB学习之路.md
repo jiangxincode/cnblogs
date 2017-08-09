@@ -116,7 +116,6 @@
 * TRUNC (date): http://docs.oracle.com/cd/B28359_01/server.111/b28286/functions209.htm#SQLRF06151
 * SYS_CONTEXT: http://docs.oracle.com/database/122/SQLRF/SYS_CONTEXT.htm#SQLRF06117
 * ALTER SEQUENCE: http://docs.oracle.com/cd/B28359_01/server.111/b28286/statements_2011.htm#SQLRF00817
-* VARCHAR2(50 CHAR) and VARCHAR2(50): http://docs.oracle.com/cd/B28359_01/server.111/b28286/sql_elements001.htm#SQLRF50957
 
 * Oracle SQL Developer: http://www.oracle.com/technetwork/developer-tools/sql-developer/overview/index.html
 * Instant Client Downloads for Microsoft Windows (32-bit): http://www.oracle.com/technetwork/topics/winsoft-085727.html
