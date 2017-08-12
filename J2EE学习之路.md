@@ -936,8 +936,8 @@ https://bintray.com/
 
 ## Hibernate
 
-* 官网：http://hibernate.org/
-* 文档：http://hibernate.org/orm/documentation
+* http://hibernate.org/
+* http://hibernate.org/orm/documentation
 * 源码：
     * 匿名可访问地址 http://anonsvn.jboss.org/repos/hibernate
     * 开发者访问地址 http://svn.jboss.org/repos/hibernate

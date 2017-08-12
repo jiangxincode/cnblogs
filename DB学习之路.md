@@ -27,10 +27,11 @@
 
 # MySQL
 
-* MySQL: http://www.mysql.com/
-* MySQL参考：http://dev.mysql.com/doc/#manual
+* http://www.mysql.com/
+* http://dev.mysql.com/doc/#manual
 * Workbench: https://dev.mysql.com/downloads/workbench/
 * SQLyog: https://www.webyog.com/product/sqlyog
+* MySQL-Front: http://www.mysqlfront.de/
 * 5款常用mysql slow log分析工具的比较：http://bbs.chinaunix.net/thread-1286359-1-1.html
 * MYSQL常见错误及其解决方式: http://www.cnblogs.com/jiangxinnju/p/5894225.html
 * MySQL默认数据库: http://www.cnblogs.com/jiangxinnju/p/5901845.html
@@ -38,7 +39,6 @@
 * 如何提高MySql的安全性？: http://blog.163.com/longsu2010@yeah/blog/static/17361234820116223593175/
 * 如何写出高质量、高性能的MySQL查询: http://blog.sina.com.cn/s/blog_a8cf6bb20101a33v.html
 * 解决mysql字符集乱码问题: http://www.cnblogs.com/dayday-study/archive/2012/05/18/2507276.html
-* MySQL-Front: http://www.mysqlfront.de/
 
 
 # SQL Server
@@ -90,6 +90,7 @@
 * Documents: http://docs.oracle.com/en/database/
 * Database Reference: http://docs.oracle.com/cd/B28359_01/server.111/b28320/index.htm
 * Database SQL Language Reference: http://docs.oracle.com/cd/B28359_01/server.111/b28286/index.htm
+* Database JDBC Developer's Guide: http://docs.oracle.com/cd/E11882_01/java.112/e16548/toc.htm
 * Listener Control Utility (LSNRCTL): http://docs.oracle.com/cd/A87861_01/NT817EE/network.817/a76933/controlu.htm#433891
 * Database Concepts: http://docs.oracle.com/database/121/CNCPT/toc.htm
 * The differences of "on delete cascade" and "on delete set null": http://docs.oracle.com/cd/B28359_01/server.111/b28286/clauses002.htm (search "on delete")
@@ -107,7 +108,6 @@
 * SQL*Loader: http://docs.oracle.com/cd/E11882_01/server.112/e22490/ldr_concepts.htm#SUTIL003
 * Database Net Services Reference: http://docs.oracle.com/cd/E11882_01/network.112/e10835/toc.htm
 * 8 Data Sources and URLs: http://docs.oracle.com/cd/B28359_01/java.111/b31224/urls.htm
-* Database JDBC Developer's Guide: http://docs.oracle.com/cd/E11882_01/java.112/e16548/toc.htm
 * Predefined User Accounts Provided by Oracle Database: http://docs.oracle.com/database/122/TDPSG/securing-the-database-installation-and-configuration.htm#TDPSG20030
 * Protecting Your Database: Specifying Passwords for Users SYS and SYSTEM: http://docs.oracle.com/cd/B28359_01/server.111/b28310/create004.htm#ADMIN11087
 * Managing Oracle Enterprise Manager Database Control: http://docs.oracle.com/cd/E11882_01/server.112/e25494/dbcontrol.htm#ADMIN13401
@@ -540,12 +540,15 @@ Oracle提供了两种验证方式，一种是OS验证，另一种密码文件验
 * https://docs.mongodb.org/manual/
 * http://api.mongodb.org/java/
 * MonjaDB (MongoDB GUI client tool) : http://www.jumperz.net/index.php?i=2&a=0&b=9
+* MONGOVUE: http://www.mongovue.com/
 * mongolab: https://mongolab.com/
 * Spring Data MongoDB hello world example: http://www.mkyong.com/mongodb/spring-data-mongodb-hello-world-example/
 * MongoDB设置访问权限、设置用户: http://www.cnblogs.com/zengen/archive/2011/04/23/2025722.html
 * 三招解决MongoDB的磁盘IO问题: http://blog.nosqlfan.com/html/3925.html
 * Install MongoDB Community Edition on Ubuntu: https://docs.mongodb.com/master/tutorial/install-mongodb-on-ubuntu/
 * Mongo Database 性能优化: http://www.cnblogs.com/shanyou/archive/2010/10/02/1841348.html
+* Morphia(The Java Object Document Mapper for MongoDB): http://mongodb.github.io/morphia/
+* NoSQL 之 Morphia 操作 MongoDB: http://www.cnblogs.com/hoojo/archive/2012/02/17/2355384.html
 
 
 # Teradata
@@ -557,19 +560,6 @@ Oracle提供了两种验证方式，一种是OS验证，另一种密码文件验
 # GreenPlum
 
 * https://pivotal.io/big-data/pivotal-greenplum
-
-
-# MONGOVUE
-
-* http://www.mongovue.com/
-
-
-# Morphia
-
-    The Java Object Document Mapper for MongoDB
-
-* http://mongodb.github.io/morphia/
-* NoSQL 之 Morphia 操作 MongoDB: http://www.cnblogs.com/hoojo/archive/2012/02/17/2355384.html
 
 
 # hbase
