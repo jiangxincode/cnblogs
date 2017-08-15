@@ -39,6 +39,7 @@
 * 如何提高MySql的安全性？: http://blog.163.com/longsu2010@yeah/blog/static/17361234820116223593175/
 * 如何写出高质量、高性能的MySQL查询: http://blog.sina.com.cn/s/blog_a8cf6bb20101a33v.html
 * 解决mysql字符集乱码问题: http://www.cnblogs.com/dayday-study/archive/2012/05/18/2507276.html
+* Oracle与MySQL字符串拼接: http://blog.csdn.net/itmyhome1990/article/details/41848229
 
 
 # SQL Server
@@ -116,6 +117,7 @@
 * TRUNC (date): http://docs.oracle.com/cd/B28359_01/server.111/b28286/functions209.htm#SQLRF06151
 * SYS_CONTEXT: http://docs.oracle.com/database/122/SQLRF/SYS_CONTEXT.htm#SQLRF06117
 * ALTER SEQUENCE: http://docs.oracle.com/cd/B28359_01/server.111/b28286/statements_2011.htm#SQLRF00817
+* / (slash): http://docs.oracle.com/cd/B28359_01/server.111/b31189/ch12004.htm
 
 * Oracle SQL Developer: http://www.oracle.com/technetwork/developer-tools/sql-developer/overview/index.html
 * Instant Client Downloads for Microsoft Windows (32-bit): http://www.oracle.com/technetwork/topics/winsoft-085727.html
@@ -163,6 +165,7 @@
 * Linux 安装oracle客户端: http://www.cnblogs.com/yangxia-test/p/4159449.html
 * 深入理解JDBC的超时设置: http://www.importnew.com/2466.html
 * The Difference between User and Schema in Oracle: http://www.oratable.com/oracle-user-schema-difference/
+* Oracle中如何插入特殊字符: & 和 ' (多种解决方案): http://blog.csdn.net/ye1992/article/details/37509915
 
 
 

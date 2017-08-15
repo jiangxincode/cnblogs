@@ -3,6 +3,9 @@
 * About images, containers, and storage drivers: https://docs.docker.com/engine/userguide/storagedriver/imagesandcontainers/
 
 
+* Kubernetes: https://kubernetes.io/
+
+
 
 * Docker —— 从入门到实践: https://www.gitbook.com/book/yeasy/docker_practice/details
 * docker中文: http://www.docker.org.cn/
