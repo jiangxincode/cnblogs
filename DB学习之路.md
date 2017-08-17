@@ -40,6 +40,11 @@
 * 如何写出高质量、高性能的MySQL查询: http://blog.sina.com.cn/s/blog_a8cf6bb20101a33v.html
 * 解决mysql字符集乱码问题: http://www.cnblogs.com/dayday-study/archive/2012/05/18/2507276.html
 * Oracle与MySQL字符串拼接: http://blog.csdn.net/itmyhome1990/article/details/41848229
+* 关于InnoDB索引长度限制的tips: http://dinglin.iteye.com/blog/1681332
+* Using Innodb_large_prefix to Avoid ERROR 1071: http://mechanics.flite.com/blog/2014/07/29/using-innodb-large-prefix-to-avoid-error-1071
+* Mysql异常'SET OPTION SQL_SELECT_LIMIT=DEFAULT': http://blog.csdn.net/wangyang1354/article/details/60135602
+* MySQL无法重启问题解决Warning: World-writable config file ‘/etc/my.cnf’ is ignored: http://www.ttlsa.com/mysql/warning-world-writable-config-file-etcmy-cnf-is-ignored/
+* 慎用lower_case_table_names来实现表名不区分大小写: http://www.codeweblog.com/%E6%85%8E%E7%94%A8lower_case_table_names%E6%9D%A5%E5%AE%9E%E7%8E%B0%E8%A1%A8%E5%90%8D%E4%B8%8D%E5%8C%BA%E5%88%86%E5%A4%A7%E5%B0%8F%E5%86%99/
 
 
 # SQL Server
