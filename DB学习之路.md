@@ -45,6 +45,9 @@
 * Mysql异常'SET OPTION SQL_SELECT_LIMIT=DEFAULT': http://blog.csdn.net/wangyang1354/article/details/60135602
 * MySQL无法重启问题解决Warning: World-writable config file ‘/etc/my.cnf’ is ignored: http://www.ttlsa.com/mysql/warning-world-writable-config-file-etcmy-cnf-is-ignored/
 * 慎用lower_case_table_names来实现表名不区分大小写: http://www.codeweblog.com/%E6%85%8E%E7%94%A8lower_case_table_names%E6%9D%A5%E5%AE%9E%E7%8E%B0%E8%A1%A8%E5%90%8D%E4%B8%8D%E5%8C%BA%E5%88%86%E5%A4%A7%E5%B0%8F%E5%86%99/
+* Can't execute a MySQL stored procedure from Java: https://stackoverflow.com/questions/986628/cant-execute-a-mysql-stored-procedure-from-java
+* 『浅入浅出』MySQL 和 InnoDB: http://www.cocoachina.com/programmer/20170807/20158.html
+* MySQL 加锁处理分析: http://hedengcheng.com/?p=771
 
 
 # SQL Server

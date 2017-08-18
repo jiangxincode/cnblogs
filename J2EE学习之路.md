@@ -383,6 +383,7 @@
 
 * jdk-logging、log4j、logback日志介绍及原理: https://my.oschina.net/pingpangkuangmo/blog/406618
 * 热切换Log4j级别配置: http://www.cnblogs.com/jiangxinnju/p/6848472.html
+* log4j:ERROR Attempted to append to closed appender named: http://blog.csdn.net/xvshu/article/details/51028644
 
 
 ## Logback

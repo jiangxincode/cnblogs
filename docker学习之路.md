@@ -4,6 +4,7 @@
 
 
 * Kubernetes: https://kubernetes.io/
+* Kubernetes指南: https://kubernetes.feisky.xyz/
 
 
 
