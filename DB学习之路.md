@@ -48,6 +48,7 @@
 * Can't execute a MySQL stored procedure from Java: https://stackoverflow.com/questions/986628/cant-execute-a-mysql-stored-procedure-from-java
 * 『浅入浅出』MySQL 和 InnoDB: http://www.cocoachina.com/programmer/20170807/20158.html
 * MySQL 加锁处理分析: http://hedengcheng.com/?p=771
+* MySQL中的配置参数interactive_timeout和wait_timeout(可能导致过多sleep进程的两个参数)：http://www.cnblogs.com/jiunadianshi/articles/2475475.html
 
 
 # SQL Server
