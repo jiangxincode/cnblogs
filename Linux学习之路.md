@@ -159,6 +159,7 @@
 * Linux shell脚本的字符串截取: http://www.cnblogs.com/wangbin/archive/2011/10/11/2207179.html
 * Linux 技巧: Bash 参数和参数扩展: https://www.ibm.com/developerworks/cn/linux/l-bash-parameters.html
 * 理解Linux系统的日志: http://blog.donews.com/zhaiming/archive/2006/12/01/1088458.aspx
+* linux时间和时区修改（附suse）: http://chopper.blog.51cto.com/3946170/1095274
 
 * PDFtk: https://www.pdflabs.com/
 * Master PDF Editor for Linux: https://code-industry.net/free-pdf-editor/
