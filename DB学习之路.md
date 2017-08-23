@@ -538,6 +538,11 @@ Oracle提供了两种验证方式，一种是OS验证，另一种密码文件验
 
 * Oracle Berkeley DB：http://www.oracle.com/technetwork/database/database-technologies/berkeleydb/overview/index.html
 
+# MariaDB
+
+* https://mariadb.org/
+
+
 
 # SQLite
 
