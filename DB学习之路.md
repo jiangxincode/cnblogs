@@ -49,6 +49,7 @@
 * 『浅入浅出』MySQL 和 InnoDB: http://www.cocoachina.com/programmer/20170807/20158.html
 * MySQL 加锁处理分析: http://hedengcheng.com/?p=771
 * MySQL中的配置参数interactive_timeout和wait_timeout(可能导致过多sleep进程的两个参数)：http://www.cnblogs.com/jiunadianshi/articles/2475475.html
+* MySQL令人头疼的Aborted告警案例分析: http://suifu.blog.51cto.com/9167728/1942302
 
 
 # SQL Server
