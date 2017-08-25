@@ -24,6 +24,9 @@
 * NoSQL数据库笔谈: http://old.sebug.net/paper/databases/nosql/Nosql.html
 * 存储过程使用建议: http://www.cnblogs.com/jes_shaw/archive/2009/05/20/1468505.html
 
+* Java 6 RowSet 使用完全剖析: https://www.ibm.com/developerworks/cn/java/j-lo-java6rowset/
+* Hibernate与autoCommit: http://www.cnblogs.com/jiangxinnju/p/7429951.html
+
 
 # MySQL
 
