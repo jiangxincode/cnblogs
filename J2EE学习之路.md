@@ -114,17 +114,14 @@
 * Servlet容器的匹配过程：http://developer.51cto.com/art/200907/134840.htm
 * 解决java.lang.IncompatibleClassChangeError: https://my.oschina.net/itblog/blog/528613
 * html的meta总结，html标签中meta属性使用介绍: http://www.haorooms.com/post/html_meta_ds
-* spring security中限制用户登录次数超过限制的处理: http://jackyrong.iteye.com/blog/2244803
 * javadoc相关问题: http://www.cnblogs.com/jiangxinnju/p/6091525.html
 * 测试方面的基础概念: http://javazhou.iteye.com/blog/1727745
 * SIT和UAT: http://henry-cong.iteye.com/blog/1460431
 * http://stackoverflow.com/questions/37697359/jsonpropertyaccess-jsonproperty-access-write-only-not-working
-* 全面分析 Spring 的编程式事务管理及声明式事务管理: http://www.ibm.com/developerworks/cn/education/opensource/os-cn-spring-trans/
 * 客户端的IP地址伪造、CDN、反向代理、获取的那些事儿: http://www.cnblogs.com/zhengyun_ustc/archive/2012/09/19/getremoteaddr.html
 * 一些安全相关的HTTP响应头: https://imququ.com/post/web-security-and-response-header.html#simple_thread
 * Ehcache详细解读: http://raychase.iteye.com/blog/1545906
 * EhCache介绍: http://chenjumin.iteye.com/blog/684926
-* Spring使用Cache: http://elim.iteye.com/blog/2123030
 * 加盐密码哈希：如何正确使用: http://blog.jobbole.com/61872/
 * Java 8 API 设计经验浅析: http://www.codeceo.com/article/java-8-api-design.html
 * JDK自带工具之概览: http://www.rowkey.me/blog/2016/11/03/jdk-tools/
@@ -933,6 +930,8 @@ https://bintray.com/
 * Spring Tool Suite：http://spring.io/tools/sts
 * spring-ide：http://marketplace.eclipse.org/content/spring-ide
 * Spring 的优秀工具类盘点: https://www.ibm.com/developerworks/cn/java/j-lo-spring-utils1/index.html
+* Spring使用Cache: http://elim.iteye.com/blog/2123030
+* spring security中限制用户登录次数超过限制的处理: http://jackyrong.iteye.com/blog/2244803
 
 
 ## Hibernate
