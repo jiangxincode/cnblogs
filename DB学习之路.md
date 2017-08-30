@@ -53,6 +53,7 @@
 * MySQL 加锁处理分析: http://hedengcheng.com/?p=771
 * MySQL中的配置参数interactive_timeout和wait_timeout(可能导致过多sleep进程的两个参数)：http://www.cnblogs.com/jiunadianshi/articles/2475475.html
 * MySQL令人头疼的Aborted告警案例分析: http://suifu.blog.51cto.com/9167728/1942302
+* Spring 事务 readOnly 到底是怎么回事？http://www.cnblogs.com/hackem/p/3890656.html
 
 
 # SQL Server
@@ -140,6 +141,8 @@
 
 * ToadWorld: http://www.toadworld.com/
 
+* 诗檀软件: http://www.askmaclean.com/
+
 * Oracle 11g安装图文攻略: http://jingyan.baidu.com/article/9f7e7ec04c14c76f29155465.html
 * oracle 11g如何完全卸载: http://jingyan.baidu.com/article/922554468d4e6b851648f4e3.html
 * win7_oracle11g_64位连接32位PLSQL_Developer: http://jingyan.baidu.com/article/fb48e8be4c7c206e622e1491.html
@@ -179,6 +182,8 @@
 * 深入理解JDBC的超时设置: http://www.importnew.com/2466.html
 * The Difference between User and Schema in Oracle: http://www.oratable.com/oracle-user-schema-difference/
 * Oracle中如何插入特殊字符: & 和 ' (多种解决方案): http://blog.csdn.net/ye1992/article/details/37509915
+* LogMiner配置使用手册: http://www.cnblogs.com/shishanyuan/p/3140440.html
+* Oracle未开启审计情况下追踪表变更记录: http://hbxztc.blog.51cto.com/1587495/1918407
 
 
 
