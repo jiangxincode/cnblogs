@@ -141,6 +141,8 @@
 
 * ToadWorld: http://www.toadworld.com/
 
+* https://asktom.oracle.com
+
 * 诗檀软件: http://www.askmaclean.com/
 
 * Oracle 11g安装图文攻略: http://jingyan.baidu.com/article/9f7e7ec04c14c76f29155465.html
