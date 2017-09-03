@@ -102,12 +102,17 @@
 # Oracle Database
 
 * Oracle Database DownLoad: http://www.oracle.com/technetwork/cn/database/enterprise-edition/downloads/index.html
-* Documents: http://docs.oracle.com/en/database/
-* Database Reference: http://docs.oracle.com/cd/B28359_01/server.111/b28320/index.htm
-* Database SQL Language Reference: http://docs.oracle.com/cd/B28359_01/server.111/b28286/index.htm
-* Database JDBC Developer's Guide: http://docs.oracle.com/cd/E11882_01/java.112/e16548/toc.htm
+* Oracle SQL Developer: http://www.oracle.com/technetwork/developer-tools/sql-developer/overview/index.html
+* Instant Client Downloads for Microsoft Windows (32-bit): http://www.oracle.com/technetwork/topics/winsoft-085727.html
+* Database Virtual Box Appliance / Virtual Machine: http://www.oracle.com/technetwork/database/enterprise-edition/databaseappdev-vm-161299.html
+
+* https://support.oracle.com/
+* https://asktom.oracle.com
+
+* http://docs.oracle.com/en/database/
+* http://docs.oracle.com/en/bigdata/
+
 * Listener Control Utility (LSNRCTL): http://docs.oracle.com/cd/A87861_01/NT817EE/network.817/a76933/controlu.htm#433891
-* Database Concepts: http://docs.oracle.com/database/121/CNCPT/toc.htm
 * The differences of "on delete cascade" and "on delete set null": http://docs.oracle.com/cd/B28359_01/server.111/b28286/clauses002.htm (search "on delete")
 * Database Error Messages: http://docs.oracle.com/cd/B28359_01/server.111/b28278/toc.htm
 * 3 Starting Up and Shutting Down: http://docs.oracle.com/database/121/ADMIN/start.htm
@@ -119,26 +124,18 @@
 * 12 Managing Archived Redo Log Files: http://docs.oracle.com/database/121/ADMIN/archredo.htm#ADMIN008
 * 3 Setting Up a Globalization Support Environment: http://docs.oracle.com/database/121/NLSPG/ch3globenv.htm#NLSPG003
 * 12 Logical Storage Structures: http://docs.oracle.com/database/121/CNCPT/logical.htm#CNCPT004
-* dbms_lob.substr: http://docs.oracle.com/cd/B28359_01/appdev.111/b28419/d_lob.htm#i999349
+* dbms_lob.substr: http://docs.oracle.com/database/122/ARPLS/DBMS_LOB.htm#ARPLS66748
 * SQL*Loader: http://docs.oracle.com/cd/E11882_01/server.112/e22490/ldr_concepts.htm#SUTIL003
 * Database Net Services Reference: http://docs.oracle.com/cd/E11882_01/network.112/e10835/toc.htm
 * 8 Data Sources and URLs: http://docs.oracle.com/cd/B28359_01/java.111/b31224/urls.htm
 * Predefined User Accounts Provided by Oracle Database: http://docs.oracle.com/database/122/TDPSG/securing-the-database-installation-and-configuration.htm#TDPSG20030
 * Protecting Your Database: Specifying Passwords for Users SYS and SYSTEM: http://docs.oracle.com/cd/B28359_01/server.111/b28310/create004.htm#ADMIN11087
 * Managing Oracle Enterprise Manager Database Control: http://docs.oracle.com/cd/E11882_01/server.112/e25494/dbcontrol.htm#ADMIN13401
-* 2 Oracle SQL Connector for Hadoop Distributed File System: http://docs.oracle.com/cd/E37231_01/doc.20/e36961/sqlch.htm#BDCUG125
 * Generating an AWR Report Using the Command-Line Interface: http://docs.oracle.com/database/121/TGDBA/gather_stats.htm#TGDBA233
 * TRUNC (date): http://docs.oracle.com/cd/B28359_01/server.111/b28286/functions209.htm#SQLRF06151
 * SYS_CONTEXT: http://docs.oracle.com/database/122/SQLRF/SYS_CONTEXT.htm#SQLRF06117
 * ALTER SEQUENCE: http://docs.oracle.com/cd/B28359_01/server.111/b28286/statements_2011.htm#SQLRF00817
 * / (slash): http://docs.oracle.com/cd/B28359_01/server.111/b31189/ch12004.htm
-
-* Oracle SQL Developer: http://www.oracle.com/technetwork/developer-tools/sql-developer/overview/index.html
-* Instant Client Downloads for Microsoft Windows (32-bit): http://www.oracle.com/technetwork/topics/winsoft-085727.html
-* Database Virtual Box Appliance / Virtual Machine: http://www.oracle.com/technetwork/database/enterprise-edition/databaseappdev-vm-161299.html
-
-* https://support.oracle.com/
-* https://asktom.oracle.com
 
 * Oracle SQL Handler：http://www.heartblue.cn/
 * SI Object Browser：http://www.presoft.com.cn/ob/
