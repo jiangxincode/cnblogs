@@ -135,15 +135,19 @@
 
 * Oracle SQL Developer: http://www.oracle.com/technetwork/developer-tools/sql-developer/overview/index.html
 * Instant Client Downloads for Microsoft Windows (32-bit): http://www.oracle.com/technetwork/topics/winsoft-085727.html
+* Database Virtual Box Appliance / Virtual Machine: http://www.oracle.com/technetwork/database/enterprise-edition/databaseappdev-vm-161299.html
+
+* https://support.oracle.com/
+* https://asktom.oracle.com
 
 * Oracle SQL Handler：http://www.heartblue.cn/
 * SI Object Browser：http://www.presoft.com.cn/ob/
 
 * ToadWorld: http://www.toadworld.com/
 
-* https://asktom.oracle.com
-
-* 诗檀软件: http://www.askmaclean.com/
+* http://www.itpub.net/
+* http://www.askmaclean.com/
+* http://f.dataguru.cn/
 
 * Oracle 11g安装图文攻略: http://jingyan.baidu.com/article/9f7e7ec04c14c76f29155465.html
 * oracle 11g如何完全卸载: http://jingyan.baidu.com/article/922554468d4e6b851648f4e3.html
@@ -186,6 +190,7 @@
 * Oracle中如何插入特殊字符: & 和 ' (多种解决方案): http://blog.csdn.net/ye1992/article/details/37509915
 * LogMiner配置使用手册: http://www.cnblogs.com/shishanyuan/p/3140440.html
 * Oracle未开启审计情况下追踪表变更记录: http://hbxztc.blog.51cto.com/1587495/1918407
+* Unix/Linux操作系统中如何在sqlplus/rman中使用方向键: http://www.cnblogs.com/jiangxinnju/p/7469325.html  
 
 
 
@@ -253,44 +258,6 @@ Dbsnmp/dbsnmp              SYSDBA 或 NORMAL        复制管理员
 注：ORCL是数据库实例名，默认的数据库是ORCL，你可以创建其他的，即OracleService+数据库名。
 
 
-## 使sqlplus中方向键可用
-
-使Unix下的sqlplus/rman也像windows下sqlplus/rman命令一样，可以通过左右箭头修改命令，通过上下箭头查看命令历史。The rlwrap (readline wrapper) utility provides a command history and editing of keyboard input for any other command. This is a really handy addition to SQL*Plus and RMAN on Linux. 而rlwrap会用到readline包，首先要安装readline，然后安装rlwrap。
-
-### 下载
-
-* readline下载：http://directory.fsf.org/project/readline/
-* rlwrap下载：http://utopia.knoware.nl/~hlub/uck/rlwrap/
-
-### 安装（使用root登陆，平台是Solaris，其它类似）
-```
-    # install readline：
-    gunzip readline-5.0.tar.gz
-    tar xvf readline-5.0.tar
-    cd readline-5.0
-    ./configure
-    make
-    make install
-
-    # install rlwrap：
-    gunzip rlwrap-0.30.tar.gz
-    tar xvf rlwrap-0.30.tar
-    cd rlwrap-0.30
-    ./configure
-    make
-    make check
-    make install
-```
-
-### 使用
-
-# rlwrap sqlplus user/pwd@testdb
-
-可以设别名放到.bash_porfile里，然后直接使用别名即可。
-
-    alias rlsqlplus='rlwrap sqlplus'
-    source ~/.bash_porfile
-
 ## Oracle安装错误ora-00922（缺少或无效选项）
 
 安装Oracle 11g R2的过程中，在新建数据库实例时出现了该错误，如果选择"忽略"就会出现ora-28000错误。经网络查询验证，这是属于在前面配置管理员密码的时候，采用了数字开头的密码，Oracle貌似对此不支持，但当时不提示出错，晕倒！据说包含其他非法特殊字符也可能产生此问题。
@@ -315,40 +282,6 @@ ORA-28000: 账户锁定
 * 修改密码，把“帐户被锁住”的勾去掉；
 * 点击“应用”再点击“关闭”；
 * 重新登录就可以通过验证了
-
-
-## linux/unix平台Oracle sqlplus 中Backspace无法删除字符
-
-Oracle sqlplus在打错字符时我们可以使用ctrl+backspace组合键实现删除功能。但是你一定要使用Backspace键删除的话，会出现^H，无法删除。这是因为linux中对tty设备的字符转换没有配置好，可通过stty命令修改终端配置来实现Backspace删除功能。具体修改办法如下：
-
-```shell
-    [oracle@www.yeserver.com ~]$ id
-    uid=800(oracle) gid=803(oinstall) groups=800(dba),801(oper),803(oinstall)
-    [oracle@www.yeserver.com ~]$ stty erase ^h
-```
-
-若要恢复Ctrl+Backspace组合键删除功能，可执行以下命令:
-
-```shell
-    [oracle@www.yeserver.com ~]$ id
-    uid=800(oracle) gid=803(oinstall) groups=800(dba),801(oper),803(oinstall)
-    [oracle@www.yeserver.com ~]$ stty erase ^?
-```
-
-同时可通过stty -a查看所有的终端设置
-
-```shell
-    [oracle@www.yeserver.com ~]$ id
-    uid=800(oracle) gid=803(oinstall) groups=800(dba),801(oper),803(oinstall)
-    [oracle@www.yeserver.com ~]$ stty -a
-    speed 38400 baud; rows 37; columns 122; line = 0;
-    intr = ^C; quit = ^\; erase = ^?; kill = ^U; eof = ^D; eol = ; eol2 = ; swtch = ; start = ^Q;
-    stop = ^S; susp = ^Z; rprnt = ^R; werase = ^W; lnext = ^V; flush = ^O; min = 1; time = 0;
-    -parenb -parodd cs8 -hupcl -cstopb cread -clocal -crtscts -cdtrdsr
-    -ignbrk -brkint -ignpar -parmrk -inpck -istrip -inlcr -igncr icrnl ixon -ixoff -iuclc -ixany -imaxbel -iutf8
-    opost -olcuc -ocrnl onlcr -onocr -onlret -ofill -ofdel nl0 cr0 tab0 bs0 vt0 ff0
-    isig icanon iexten echo echoe echok -echonl -noflsh -xcase -tostop -echoprt echoctl echoke
-```
 
 
 ## ORACLE_HOME/ORACLE_SID

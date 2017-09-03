@@ -6,6 +6,7 @@
 * GNU Operating System: http://www.gnu.org/
 * https://zh.wikipedia.org/wiki/Linux
 * http://distrowatch.com/index.php
+* https://pkgs.org/  -- very userful
 
 * Ubuntu: http://www.ubuntu.org.cn/
 * Ubuntu Wiki: https://wiki.ubuntu.com/
@@ -137,6 +138,8 @@
 * 记录终端下的操作（tee）：http://os.chinaunix.net/a2008/0810/986/000000986568.shtml
 * Shell脚本交互之：自动输入密码: http://blog.csdn.net/zhangjikuan/article/details/51105166
 * Shell中重定向<<EOF注意事项: http://blog.csdn.net/iamlaosong/article/details/40509399
+* linux 终端backspace不能删除字符: http://blog.163.com/chen_cong_520/blog/static/841151912010829240926/
+
 * 音乐播放软件：clementine
 * rhythmbox歌词显示工具：osd-lyrics
 * 桌面美化工具：compiz
