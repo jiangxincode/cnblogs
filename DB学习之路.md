@@ -112,19 +112,20 @@
 * http://docs.oracle.com/en/database/
 * http://docs.oracle.com/en/bigdata/
 
-* Listener Control Utility (LSNRCTL): http://docs.oracle.com/cd/A87861_01/NT817EE/network.817/a76933/controlu.htm#433891
-* The differences of "on delete cascade" and "on delete set null": http://docs.oracle.com/cd/B28359_01/server.111/b28286/clauses002.htm (search "on delete")
-* Database Error Messages: http://docs.oracle.com/cd/B28359_01/server.111/b28278/toc.htm
-* 3 Starting Up and Shutting Down: http://docs.oracle.com/database/121/ADMIN/start.htm
-* 5 Introduction to LOBs: http://docs.oracle.com/cd/B10500_01/appdev.920/a96583/cci05lob.htm
-* E Managing Oracle Database Port Numbers: http://docs.oracle.com/cd/B19306_01/install.102/b15667/app_port.htm
+* dbms_lob.substr[DBMS_LOB -> SUBSTR]: http://docs.oracle.com/database/122/ARPLS
+* lsnrctl的用法[Configuring the Network Environment -> lsnrctl]: http://docs.oracle.com/database/122/ADMQS
+* "on delete cascade" 和 "on delete set null" 的差别[Common SQL DDL Clauses -> constraint -> on delete]: http://docs.oracle.com/database/122/SQLRF
+* Database Error Messages: http://docs.oracle.com/database/122/ERRMG
+* 开启和关闭数据库[Starting Up and Shutting Down]: http://docs.oracle.com/database/122/ADMIN
+* LOBs类型说明[Using SQL Data Types in Database Applications -> Representing Large Amounts of Data]: http://docs.oracle.com/database/122/ADFNS
+* 端口配置[Managing Oracle Database Port Numbers]: http://docs.oracle.com/database/122/LADBI
+
 * Configuring the Operating System Environment Variables: http://docs.oracle.com/database/121/ADMQS/GUID-EC18C4A6-3BA5-4C14-9D76-B0DD62FEFFF2.htm#ADMQS12369
 * 1 Administering Oracle Database: http://docs.oracle.com/database/121/UNXAR/admin_ora.htm#UNXAR001
 * 9 Managing Diagnostic Data: http://docs.oracle.com/database/121/ADMIN/diag.htm#ADMIN11007
 * 12 Managing Archived Redo Log Files: http://docs.oracle.com/database/121/ADMIN/archredo.htm#ADMIN008
 * 3 Setting Up a Globalization Support Environment: http://docs.oracle.com/database/121/NLSPG/ch3globenv.htm#NLSPG003
 * 12 Logical Storage Structures: http://docs.oracle.com/database/121/CNCPT/logical.htm#CNCPT004
-* dbms_lob.substr: http://docs.oracle.com/database/122/ARPLS/DBMS_LOB.htm#ARPLS66748
 * SQL*Loader: http://docs.oracle.com/cd/E11882_01/server.112/e22490/ldr_concepts.htm#SUTIL003
 * Database Net Services Reference: http://docs.oracle.com/cd/E11882_01/network.112/e10835/toc.htm
 * 8 Data Sources and URLs: http://docs.oracle.com/cd/B28359_01/java.111/b31224/urls.htm
