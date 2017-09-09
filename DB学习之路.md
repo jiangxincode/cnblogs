@@ -108,6 +108,10 @@
 
 * https://support.oracle.com/
 * https://asktom.oracle.com
+* http://www.itpub.net/
+* http://www.askmaclean.com/
+* http://f.dataguru.cn/
+* http://www.eygle.com/
 
 * http://docs.oracle.com/en/database/
 * http://docs.oracle.com/en/bigdata/
@@ -119,43 +123,36 @@
 * 开启和关闭数据库[Starting Up and Shutting Down]: http://docs.oracle.com/database/122/ADMIN
 * LOBs类型说明[Using SQL Data Types in Database Applications -> Representing Large Amounts of Data]: http://docs.oracle.com/database/122/ADFNS
 * 端口配置[Managing Oracle Database Port Numbers]: http://docs.oracle.com/database/122/LADBI
-
-* Configuring the Operating System Environment Variables: http://docs.oracle.com/database/121/ADMQS/GUID-EC18C4A6-3BA5-4C14-9D76-B0DD62FEFFF2.htm#ADMQS12369
-* 1 Administering Oracle Database: http://docs.oracle.com/database/121/UNXAR/admin_ora.htm#UNXAR001
-* 9 Managing Diagnostic Data: http://docs.oracle.com/database/121/ADMIN/diag.htm#ADMIN11007
-* 12 Managing Archived Redo Log Files: http://docs.oracle.com/database/121/ADMIN/archredo.htm#ADMIN008
-* 3 Setting Up a Globalization Support Environment: http://docs.oracle.com/database/121/NLSPG/ch3globenv.htm#NLSPG003
-* 12 Logical Storage Structures: http://docs.oracle.com/database/121/CNCPT/logical.htm#CNCPT004
-* SQL*Loader: http://docs.oracle.com/cd/E11882_01/server.112/e22490/ldr_concepts.htm#SUTIL003
-* Database Net Services Reference: http://docs.oracle.com/cd/E11882_01/network.112/e10835/toc.htm
-* 8 Data Sources and URLs: http://docs.oracle.com/cd/B28359_01/java.111/b31224/urls.htm
-* Predefined User Accounts Provided by Oracle Database: http://docs.oracle.com/database/122/TDPSG/securing-the-database-installation-and-configuration.htm#TDPSG20030
-* Protecting Your Database: Specifying Passwords for Users SYS and SYSTEM: http://docs.oracle.com/cd/B28359_01/server.111/b28310/create004.htm#ADMIN11087
-* Managing Oracle Enterprise Manager Database Control: http://docs.oracle.com/cd/E11882_01/server.112/e25494/dbcontrol.htm#ADMIN13401
-* Generating an AWR Report Using the Command-Line Interface: http://docs.oracle.com/database/121/TGDBA/gather_stats.htm#TGDBA233
-* TRUNC (date): http://docs.oracle.com/cd/B28359_01/server.111/b28286/functions209.htm#SQLRF06151
-* SYS_CONTEXT: http://docs.oracle.com/database/122/SQLRF/SYS_CONTEXT.htm#SQLRF06117
-* ALTER SEQUENCE: http://docs.oracle.com/cd/B28359_01/server.111/b28286/statements_2011.htm#SQLRF00817
-* / (slash): http://docs.oracle.com/cd/B28359_01/server.111/b31189/ch12004.htm
+* 配置系统环境变量[Getting Started with Database Administration -> Configuring the Operating System Environment Variables]: http://docs.oracle.com/database/122/ADMQS
+* 环境变量[Administering Oracle Database -> Oracle Database Environment Variables]: docs.oracle.com/database/122/UNXAR
+* ADR[Managing Diagnostic Data -> Automatic Diagnostic Repository (ADR)]: http://docs.oracle.com/database/122/ADMIN
+* 归档日志[Managing the Redo Log]: http://docs.oracle.com/database/122/ADMIN
+* 设置国际化支持环境变量[Setting Up a Globalization Support Environment]: http://docs.oracle.com/database/122/NLSPG/
+* 逻辑存储结构[Logical Storage Structures]: http://docs.oracle.com/database/122/CNCPT/
+* SQL*Loader[SQL*Loader Concepts]: http://docs.oracle.com/database/122/SUTIL
+* 数据库网络服务全部内容: http://docs.oracle.com/database/122/NETRF
+* JDBC数据源配置[Data Sources and URLs]: http://docs.oracle.com/database/122/JJDBC
+* 预置账户[Securing the Database Installation and Configuration -> Predefined User Accounts Provided by Oracle Database]: http://docs.oracle.com/database/122/TDPSG
+* 为系统用户指定密码[Creating and Configuring an Oracle Database -> Protecting Your Database: Specifying Passwords for Users SYS and SYSTEM]: http://docs.oracle.com/database/122/ADMIN
+* Managing Oracle Enterprise Manager Database Control: http://docs.oracle.com/database/122/ADMIN
+* [Gathering Database Statistics -> Generating an AWR Report Using the Command-Line Interface]: http://docs.oracle.com/database/122/TGDBA
+* TRUNC (date)[Functions -> TRUNC (date)]: http://docs.oracle.com/database/122/SQLRF
+* SYS_CONTEXT[Functions -> SYS_CONTEXT]: http://docs.oracle.com/database/122/SQLRF
+* ALTER SEQUENCE[SQL Statements: ALTER MATERIALIZED VIEW to ALTER SYSTEM -> ALTER SEQUENCE]: http://docs.oracle.com/database/122/SQLRF
+* / (slash)[SQL*Plus Command Reference -> / (slash)]: http://docs.oracle.com/database/122/SQPUG
 
 * Oracle SQL Handler：http://www.heartblue.cn/
 * SI Object Browser：http://www.presoft.com.cn/ob/
 
 * ToadWorld: http://www.toadworld.com/
 
-* http://www.itpub.net/
-* http://www.askmaclean.com/
-* http://f.dataguru.cn/
 
-* Oracle 11g安装图文攻略: http://jingyan.baidu.com/article/9f7e7ec04c14c76f29155465.html
+
 * oracle 11g如何完全卸载: http://jingyan.baidu.com/article/922554468d4e6b851648f4e3.html
 * win7_oracle11g_64位连接32位PLSQL_Developer: http://jingyan.baidu.com/article/fb48e8be4c7c206e622e1491.html
 * Oracle 11g 如何创建数据库：http://jingyan.baidu.com/article/cbcede07cf42ef02f40b4dc2.html
 * 数据库使用详解：[3]SQL Developer如何配置：http://jingyan.baidu.com/article/e4511cf33f289e2b845eafb6.html
 * oracle的各版本发行时间及特点: http://blog.csdn.net/dream19881003/article/details/7178357
-* oracle客户端软件的说明：http://blog.csdn.net/haiross/article/details/17917637
-* 如何查看Oracle客户端版本: http://www.cnblogs.com/kerrycode/p/4087292.html
-* 怎么判断oracle客户端、服务器端的位数：http://blog.csdn.net/linghe301/article/details/8471945
 * oracle 查版本号,oracle怎样查版本: http://jingyan.baidu.com/article/4f34706ee1ea02e387b56ddc.html
 * oracle数据导入与导出: http://blog.csdn.net/loadrunn/article/details/7283441
 * EXECUTE IMMEDIATE 常见使用方法: http://blog.itpub.net/27042095/viewspace-739404/
@@ -182,13 +179,17 @@
 * TNS-12535: TNS:operation timed out、TNS-00505: Operation timed out: http://www.cnblogs.com/future2012lg/p/3739752.html
 * 配置tnsping跟踪来诊断Oracle Net连接: http://blog.itpub.net/17203031/viewspace-1161228/
 * 说说Oracle监听器（二）: http://blog.itpub.net/17203031/viewspace-682628/
+* oracle客户端软件的说明：http://blog.csdn.net/haiross/article/details/17917637
+* 如何查看Oracle客户端版本: http://www.cnblogs.com/kerrycode/p/4087292.html
+* 怎么判断oracle客户端、服务器端的位数：http://blog.csdn.net/linghe301/article/details/8471945
 * Linux 安装oracle客户端: http://www.cnblogs.com/yangxia-test/p/4159449.html
 * 深入理解JDBC的超时设置: http://www.importnew.com/2466.html
 * The Difference between User and Schema in Oracle: http://www.oratable.com/oracle-user-schema-difference/
 * Oracle中如何插入特殊字符: & 和 ' (多种解决方案): http://blog.csdn.net/ye1992/article/details/37509915
 * LogMiner配置使用手册: http://www.cnblogs.com/shishanyuan/p/3140440.html
 * Oracle未开启审计情况下追踪表变更记录: http://hbxztc.blog.51cto.com/1587495/1918407
-* Unix/Linux操作系统中如何在sqlplus/rman中使用方向键: http://www.cnblogs.com/jiangxinnju/p/7469325.html  
+* Unix/Linux操作系统中如何在sqlplus/rman中使用方向键: http://www.cnblogs.com/jiangxinnju/p/7469325.html
+* Oracle OLAP 与 OLTP 介绍: http://blog.csdn.net/tianlesoftware/article/details/5794844
 
 
 

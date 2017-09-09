@@ -294,6 +294,7 @@ SVN本身并不提供这种强制写log的功能，而是通过一系列的钩�
 * Writing a Friendly README: http://rowanmanning.com/posts/writing-a-friendly-readme/
 * GitHub Pages + Hexo搭建博客: http://crazymilk.github.io/2015/12/28/GitHub-Pages-Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/
 * Hexo+Next搭建Github个人静态博客: 	http://www.cnblogs.com/cnfanhua/p/5167191.html
+* Git教程-分支和tag管理: http://blog.csdn.net/top_code/article/details/52336221
 
 ## install
 
