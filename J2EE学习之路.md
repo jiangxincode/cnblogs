@@ -163,6 +163,7 @@
 * 10 Things You Should Know about Tokens: https://auth0.com/blog/ten-things-you-should-know-about-tokens-and-cookies/
 * Java陷阱之assert关键字: http://lavasoft.blog.51cto.com/62575/43735/
 * Buffer: https://yddmax.github.io/2017/06/08/Buffer/
+* 轻松把玩HttpClient之配置ssl，采用绕过证书验证实现https: http://blog.csdn.net/xiaoxian8023/article/details/49865335
 
 
 
@@ -225,7 +226,6 @@
 * Eclipse远程调试出现“JDWP Transport dt_socket failed to initialize”的解决方案: http://www.cnblogs.com/jiangxinnju/p/4906457.html
 * Eclipse中用两个控制台测试网络通信程序: http://blog.csdn.net/f309587969/article/details/7097976
 * Eclipse jar打包详解: http://jingyan.baidu.com/article/219f4bf7d0ef87de442d3820.html
-* Eclipse中Ant的配置与测试 转: http://www.cnblogs.com/jiangxinnju/p/5040436.html
 * 如何使用Eclipse将Java项目打成jar包？:http://jingyan.baidu.com/article/4dc40848b5a8c9c8d946f139.html
 * 'Must Override a Superclass Method' Errors after importing a project into Eclipse: http://stackoverflow.com/questions/1678122/must-override-a-superclass-method-errors-after-importing-a-project-into-eclips
 * SFTP Plug-in for Eclipse: http://www.jcraft.com/eclipse-sftp/
@@ -261,13 +261,6 @@
 * Aptana（提供Eclipse插件）: http://www.aptana.com/
 
 
-## Apache IvyDE
-
-    Apache IvyDE is the Eclipse plugin which integrates Apache Ivy's dependency management into Eclipse™.
-
-* http://ant.apache.org/ivy/ivyde/index.html
-
-
 ## Tomcat
 
 * Apache Tomcat 8 Configuration Reference: http://tomcat.apache.org/tomcat-8.0-doc/
@@ -287,6 +280,7 @@
 * 监控Tomcat解决方案（监控应用服务器系列文章）: http://blog.csdn.net/yunzhu666/article/details/8662045
 * CATALINA_BASE与CATALINA_HOME的区别: http://blog.csdn.net/keda8997110/article/details/21400455
 * 同一个服务器部署多个tomcat: http://www.cnblogs.com/sj521/p/5974562.html
+* Tomcat 到底依赖JRE还是JDK：http://www.cnblogs.com/jiangxinnju/p/7616386.html
 
 
 ## Javassist
@@ -600,15 +594,12 @@ https://bintray.com/
 
 ## Ant
 
-* 项目地址：http://ant.apache.org/
-* 用户手册：http://ant.apache.org/manual/index.html
-
-
-## Ivy
-
-    Apache Ant项目的一个子项目，一个可传递的依赖项管理器。
-
-* http://ant.apache.org/ivy/
+* http://ant.apache.org/
+* http://ant.apache.org/manual/index.html
+* Ivy(Apache Ant项目的一个子项目，一个可传递的依赖项管理器): http://ant.apache.org/ivy/
+* Apache IvyDE(Eclipse plugin which integrates Apache Ivy's dependency management into Eclipse):http://ant.apache.org/ivy/ivyde/index.html
+* Eclipse中Ant的配置与测试 转: http://www.cnblogs.com/jiangxinnju/p/5040436.html
+* 使用Ant脚本执行bat文件: http://lyj86.iteye.com/blog/1838713
 
 
 ## Eclipse Color Themes

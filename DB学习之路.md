@@ -147,6 +147,11 @@
 * ToadWorld: http://www.toadworld.com/
 
 
+* Oracle系统表整理+常用SQL语句收集: http://www.cnblogs.com/jiangxinnju/p/5840420.html
+* Unix/Linux操作系统中如何在sqlplus/rman中使用方向键: http://www.cnblogs.com/jiangxinnju/p/7469325.html
+* oracle表空间表分区详解及oracle表分区查询使用方法(转+整理): http://www.cnblogs.com/jiangxinnju/p/6284096.html
+* oracle表空间不足相关问题解决办法: http://www.cnblogs.com/jiangxinnju/p/5839679.html
+* Oracle导入导出常用命令: http://www.cnblogs.com/jiangxinnju/p/7616837.html
 
 * oracle 11g如何完全卸载: http://jingyan.baidu.com/article/922554468d4e6b851648f4e3.html
 * win7_oracle11g_64位连接32位PLSQL_Developer: http://jingyan.baidu.com/article/fb48e8be4c7c206e622e1491.html
@@ -168,7 +173,6 @@
 * Oracle Start Up 2 Oracle 框架构件、启动、解决一个问题(shared memory realm does not exist):http://kylinsoong.iteye.com/blog/776654
 * ORA-01144: File size (4224000 blocks) exceeds maximum of 4194303: http://www.runningoracle.com/product_info.php?products_id=338
 * sqlldr的用法：http://blog.chinaunix.net/uid-23622436-id-2394093.html
-* oracle表空间表分区详解及oracle表分区查询使用方法(转+整理): http://www.cnblogs.com/jiangxinnju/p/6284096.html
 * linux下重启oracle服务：监听器和实例：http://www.cnblogs.com/lingbing/p/6071745.html
 * TNS-01190: The user is not authorized to execute the requested listener command：http://www.dba-oracle.com/t_tns_01190_listener_password_security_authorization.htm
 * ORACLE实例配置多个监听器: http://blog.itpub.net/30150152/viewspace-1479571/
@@ -188,8 +192,8 @@
 * Oracle中如何插入特殊字符: & 和 ' (多种解决方案): http://blog.csdn.net/ye1992/article/details/37509915
 * LogMiner配置使用手册: http://www.cnblogs.com/shishanyuan/p/3140440.html
 * Oracle未开启审计情况下追踪表变更记录: http://hbxztc.blog.51cto.com/1587495/1918407
-* Unix/Linux操作系统中如何在sqlplus/rman中使用方向键: http://www.cnblogs.com/jiangxinnju/p/7469325.html
 * Oracle OLAP 与 OLTP 介绍: http://blog.csdn.net/tianlesoftware/article/details/5794844
+* Oracle Database 11g Release 2 (11.2.0.3) RAC On Oracle Linux 6.3 Using VirtualBox: https://oracle-base.com/articles/11g/oracle-db-11gr2-rac-installation-on-oracle-linux-6-using-virtualbox
 
 
 
