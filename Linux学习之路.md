@@ -137,6 +137,9 @@
 * linux 终端backspace不能删除字符: http://blog.163.com/chen_cong_520/blog/static/841151912010829240926/
 * Linux查看物理CPU个数、核数、逻辑CPU个数: http://www.cnblogs.com/bugutian/p/6138880.html
 * Linux查看CPU信息、机器型号等硬件信息: http://www.51testing.com/html/38/225738-210333.html
+* 理解inode: http://www.ruanyifeng.com/blog/2011/12/inode.html
+* rm参数列表过长: http://blog.sina.com.cn/s/blog_63a2aa330100v2ax.html
+* Unix/Linux如何同时统计多文件夹下文件、文件夹的个数: http://bbs.51cto.com/thread-1083941-1-1.html
 
 * 桌面美化工具: compiz
 * 输入法: ibus+fcitx  重新启动Xwindow完成，按 Ctrl + 空格键激活输入法。当不能切换输入法时，把键盘-拼音输入法调到顶部。
