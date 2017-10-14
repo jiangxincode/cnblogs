@@ -140,6 +140,11 @@
 * 理解inode: http://www.ruanyifeng.com/blog/2011/12/inode.html
 * rm参数列表过长: http://blog.sina.com.cn/s/blog_63a2aa330100v2ax.html
 * Unix/Linux如何同时统计多文件夹下文件、文件夹的个数: http://bbs.51cto.com/thread-1083941-1-1.html
+* Linux shell脚本的字符串截取: http://www.cnblogs.com/wangbin/archive/2011/10/11/2207179.html
+* Linux 技巧: Bash 参数和参数扩展: https://www.ibm.com/developerworks/cn/linux/l-bash-parameters.html
+* 理解Linux系统的日志: http://blog.donews.com/zhaiming/archive/2006/12/01/1088458.aspx
+* linux时间和时区修改（附suse）: http://chopper.blog.51cto.com/3946170/1095274
+* linux中时间设置date、hwclock、clock：http://lomomo.blog.51cto.com/65441/277618
 
 * 桌面美化工具: compiz
 * 输入法: ibus+fcitx  重新启动Xwindow完成，按 Ctrl + 空格键激活输入法。当不能切换输入法时，把键盘-拼音输入法调到顶部。
@@ -152,11 +157,6 @@
 * 记录、保存和播放终端会话软件: ttyrec 和 ttyplay
 * curl是利用URL语法在命令行方式下工作的文件传输工具。
 * gimp: https://www.gimp.org/
-* Linux shell脚本的字符串截取: http://www.cnblogs.com/wangbin/archive/2011/10/11/2207179.html
-* Linux 技巧: Bash 参数和参数扩展: https://www.ibm.com/developerworks/cn/linux/l-bash-parameters.html
-* 理解Linux系统的日志: http://blog.donews.com/zhaiming/archive/2006/12/01/1088458.aspx
-* linux时间和时区修改（附suse）: http://chopper.blog.51cto.com/3946170/1095274
-
 * PDFtk: https://www.pdflabs.com/
 * Master PDF Editor for Linux: https://code-industry.net/free-pdf-editor/
 * Okular: https://okular.kde.org/
@@ -165,6 +165,7 @@
 # Linux常用命令
 
 ```shell
+    sha1sum/md5sum
 	rdate # set the system's date from a remote host. (sudo apt-get install rdate)
 	grep -R "org.apache.commons.FileUtils" *
 	grep -inr --color "ERROR" test_debug.log
@@ -213,6 +214,7 @@
     env                    # 查看环境变量资源
     free -m                # 查看内存使用量和交换区使用量
     df -h                  # 查看各分区使用情况
+    df -i                   # 查看inode使用
     du -sh <目录名>        # 查看指定目录的大小
 	du --max-depth=1 dir   # 查看指定目录指定深度的大小
     grep MemTotal /proc/meminfo   # 查看内存总量
@@ -704,6 +706,12 @@ Subsystem       sftp /usr/libexec/openssh/sftp-server
 
 [root@bogon ~]# /etc/init.d/sshd reload
 ```
+
+## too many authentication failures for root  
+
+使用xshell提示此问题，但可以通过Putty登录系统。
+打开文件 /etc/ssh/sshd_config
+修改 MaxAuthTries 这个参数的值，不建议修改太大。
 
 # vSphere专题
 

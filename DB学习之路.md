@@ -194,6 +194,7 @@
 * Oracle未开启审计情况下追踪表变更记录: http://hbxztc.blog.51cto.com/1587495/1918407
 * Oracle OLAP 与 OLTP 介绍: http://blog.csdn.net/tianlesoftware/article/details/5794844
 * Oracle Database 11g Release 2 (11.2.0.3) RAC On Oracle Linux 6.3 Using VirtualBox: https://oracle-base.com/articles/11g/oracle-db-11gr2-rac-installation-on-oracle-linux-6-using-virtualbox
+* Oracle RAC 12c Database on Linux Using VirtualBox: http://www.lab128.com/rac12_installation_using_vb/article_text.html
 * 12c ASM audit目录增长过快的bug: http://blog.itpub.net/29047826/viewspace-1659960/
 * 【ASM】SYSASM 角色: https://yq.aliyun.com/articles/28404
 

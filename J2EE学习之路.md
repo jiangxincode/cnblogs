@@ -164,6 +164,7 @@
 * Java陷阱之assert关键字: http://lavasoft.blog.51cto.com/62575/43735/
 * Buffer: https://yddmax.github.io/2017/06/08/Buffer/
 * 轻松把玩HttpClient之配置ssl，采用绕过证书验证实现https: http://blog.csdn.net/xiaoxian8023/article/details/49865335
+* 浅析ReDoS的原理与实践: http://www.freebuf.com/articles/network/124422.html
 
 
 
@@ -972,26 +973,15 @@ https://bintray.com/
 
 
 
-## JDOM
+## XML
 
-* http://www.jdom.org/
-* https://github.com/hunterhacker/jdom/
-* http://www.jdom.org/downloads/docs.html
-
-
-## Dom4j
-
-* http://dom4j.github.io/
-
-
-## XML Pull Parsing
-
-* http://www.xmlpull.org/index.shtml
-
-
-## Apache Santuario(xmlsec)
-
-* http://santuario.apache.org/
+* JDOM: http://www.jdom.org/
+* JDOM: https://github.com/hunterhacker/jdom/
+* Dom4j: http://dom4j.github.io/
+* xml-commons: http://xerces.apache.org/xml-commons/
+* XML Pull Parsing: http://www.xmlpull.org/index.shtml
+* Apache Santuario(xmlsec): http://santuario.apache.org/
+* Stream API for XML(StAX介绍): http://blog.csdn.net/ant_ren/article/details/5340883
 
 ## SAXON
 
