@@ -981,7 +981,9 @@ https://bintray.com/
 * xml-commons: http://xerces.apache.org/xml-commons/
 * XML Pull Parsing: http://www.xmlpull.org/index.shtml
 * Apache Santuario(xmlsec): http://santuario.apache.org/
-* Stream API for XML(StAX介绍): http://blog.csdn.net/ant_ren/article/details/5340883
+* 使用 StAX 解析 XML，第 1 部分: Streaming API for XML (StAX) 简介: http://blog.csdn.net/achellies/article/details/7048333
+* 使用 StAX 解析 XML，第 2 部分: 拉式解析和事件: http://blog.csdn.net/achellies/article/details/7048334
+* 使用 StAX 解析 XML，第 3 部分: 使用定制事件和编写 XML: http://blog.csdn.net/achellies/article/details/7048335
 
 ## SAXON
 

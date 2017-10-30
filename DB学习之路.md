@@ -54,6 +54,7 @@
 * MySQL中的配置参数interactive_timeout和wait_timeout(可能导致过多sleep进程的两个参数)：http://www.cnblogs.com/jiunadianshi/articles/2475475.html
 * MySQL令人头疼的Aborted告警案例分析: http://suifu.blog.51cto.com/9167728/1942302
 * Spring 事务 readOnly 到底是怎么回事？http://www.cnblogs.com/hackem/p/3890656.html
+* 解决MySQL查询不区分大小写: https://my.oschina.net/xiangtao/blog/33983
 
 
 # SQL Server
