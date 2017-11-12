@@ -2,7 +2,7 @@
 
 # 通用：
 
-* http://db-engines.com
+* <http://db-engines.com>
 
 * Tech On The Net: http://www.techonthenet.com/index.php
 * Readings in Database Systems (commonly known as the "Red Book")：http://www.redbook.io/
@@ -20,7 +20,7 @@
 * EMS Database Management Solutions: https://www.sqlmanager.net/
 * 数据库比较工具DBCompareTool 0.3.0 preview 发布：http://www.blogjava.net/allenny/archive/2011/09/30/359028.html
 * DB Compare(SQL Server): http://dbcompare.codeplex.com/
-* DBComparer(SQL Server): http://dbcomparer.com/
+* DBComparer(SQL Server): <http://dbcomparer.com/>
 * NoSQL数据库笔谈: http://old.sebug.net/paper/databases/nosql/Nosql.html
 * 存储过程使用建议: http://www.cnblogs.com/jes_shaw/archive/2009/05/20/1468505.html
 
@@ -30,7 +30,7 @@
 
 # MySQL
 
-* http://www.mysql.com/
+* <http://www.mysql.com/>
 * http://dev.mysql.com/doc/#manual
 * Workbench: https://dev.mysql.com/downloads/workbench/
 * SQLyog: https://www.webyog.com/product/sqlyog
@@ -131,6 +131,7 @@
 * 设置国际化支持环境变量[Setting Up a Globalization Support Environment]: http://docs.oracle.com/database/122/NLSPG/
 * 逻辑存储结构[Logical Storage Structures]: http://docs.oracle.com/database/122/CNCPT/
 * SQL*Loader[SQL*Loader Concepts]: http://docs.oracle.com/database/122/SUTIL
+* ADRCI: ADR Command Interpreter: http://docs.oracle.com/database/122/SUTIL
 * 数据库网络服务全部内容: http://docs.oracle.com/database/122/NETRF
 * JDBC数据源配置[Data Sources and URLs]: http://docs.oracle.com/database/122/JJDBC
 * 预置账户[Securing the Database Installation and Configuration -> Predefined User Accounts Provided by Oracle Database]: http://docs.oracle.com/database/122/TDPSG
@@ -141,6 +142,7 @@
 * SYS_CONTEXT[Functions -> SYS_CONTEXT]: http://docs.oracle.com/database/122/SQLRF
 * ALTER SEQUENCE[SQL Statements: ALTER MATERIALIZED VIEW to ALTER SYSTEM -> ALTER SEQUENCE]: http://docs.oracle.com/database/122/SQLRF
 * / (slash)[SQL*Plus Command Reference -> / (slash)]: http://docs.oracle.com/database/122/SQPUG
+* CRSCTL/SRVCTL: https://docs.oracle.com/database/122/CWADD
 
 * Oracle SQL Handler：http://www.heartblue.cn/
 * SI Object Browser：http://www.presoft.com.cn/ob/
@@ -198,6 +200,8 @@
 * Oracle RAC 12c Database on Linux Using VirtualBox: http://www.lab128.com/rac12_installation_using_vb/article_text.html
 * 12c ASM audit目录增长过快的bug: http://blog.itpub.net/29047826/viewspace-1659960/
 * 【ASM】SYSASM 角色: https://yq.aliyun.com/articles/28404
+* rac节点无法启动ORA-29702的问题及分析: http://blog.itpub.net/23718752/viewspace-1158618
+* ORACLE RAC 的启动和关闭顺序: http://blog.itpub.net/29634949/viewspace-1269073/
 
 
 
