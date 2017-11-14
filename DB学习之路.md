@@ -198,6 +198,7 @@
 * Oracle OLAP 与 OLTP 介绍: http://blog.csdn.net/tianlesoftware/article/details/5794844
 * Oracle Database 11g Release 2 (11.2.0.3) RAC On Oracle Linux 6.3 Using VirtualBox: https://oracle-base.com/articles/11g/oracle-db-11gr2-rac-installation-on-oracle-linux-6-using-virtualbox
 * Oracle RAC 12c Database on Linux Using VirtualBox: http://www.lab128.com/rac12_installation_using_vb/article_text.html
+* 如何利用Oracle VM Templates 在几分钟内部署Oracle Real Application Clusters (RAC): http://www.cnblogs.com/jiangxinnju/p/7732012.html
 * 12c ASM audit目录增长过快的bug: http://blog.itpub.net/29047826/viewspace-1659960/
 * 【ASM】SYSASM 角色: https://yq.aliyun.com/articles/28404
 * rac节点无法启动ORA-29702的问题及分析: http://blog.itpub.net/23718752/viewspace-1158618
@@ -425,9 +426,9 @@ ORACLE_SID 实例ID
 
 ```shell
     show parameter processes; --显示：processes integer 150
-	show parameter sessions; --显示：sessions integer 165
-	select count(*) from v$process; --显示当前processes数目
-	select  count(*) from v$session; --显示当前sessions数目
+    show parameter sessions; --显示：sessions integer 165
+    select count(*) from v$process; --显示当前processes数目
+    select  count(*) from v$session; --显示当前sessions数目
     alter system set processes=400 scope = spfile; --显示系统已更改
     show parameter processes; --显示：processes integer 150
     create pfile from spfile; --显示：文件已创建。
@@ -435,7 +436,7 @@ ORACLE_SID 实例ID
     --重启数据库
     shutdown immediate;
     startup
-    
+
     --重启监听
     lsnrctl stop/start/status
 
