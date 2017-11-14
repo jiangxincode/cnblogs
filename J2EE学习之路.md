@@ -924,6 +924,7 @@ https://bintray.com/
 * Spring 的优秀工具类盘点: https://www.ibm.com/developerworks/cn/java/j-lo-spring-utils1/index.html
 * Spring使用Cache: http://elim.iteye.com/blog/2123030
 * spring security中限制用户登录次数超过限制的处理: http://jackyrong.iteye.com/blog/2244803
+* Introducing Spring's Transaction Abstraction: Professional.Java.Development.with.the.Spring.Framework.chm
 
 
 ## Hibernate
