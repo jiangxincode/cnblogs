@@ -163,7 +163,6 @@
 * 10 Things You Should Know about Tokens: https://auth0.com/blog/ten-things-you-should-know-about-tokens-and-cookies/
 * Java陷阱之assert关键字: http://lavasoft.blog.51cto.com/62575/43735/
 * Buffer: https://yddmax.github.io/2017/06/08/Buffer/
-* 轻松把玩HttpClient之配置ssl，采用绕过证书验证实现https: http://blog.csdn.net/xiaoxian8023/article/details/49865335
 * 浅析ReDoS的原理与实践: http://www.freebuf.com/articles/network/124422.html
 
 
@@ -487,6 +486,12 @@ sandbox中的项目无法直接通过maven进行依赖，必须通过svn下载�
 ```
 
 Eclipse中`Update Project`，选择`Force Update of Snapshots/Releases`
+
+## Apache HttpComponents
+
+* <http://hc.apache.org/>
+* httpcomponents-core-4.4.x.chm
+* httpcomponents-httpclient-4.5.chm
 
 ## Maven and M2Eclipse
 
