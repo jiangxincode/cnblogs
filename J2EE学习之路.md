@@ -122,7 +122,6 @@
 * 一些安全相关的HTTP响应头: https://imququ.com/post/web-security-and-response-header.html#simple_thread
 * Ehcache详细解读: http://raychase.iteye.com/blog/1545906
 * EhCache介绍: http://chenjumin.iteye.com/blog/684926
-* 加盐密码哈希：如何正确使用: http://blog.jobbole.com/61872/
 * Java 8 API 设计经验浅析: http://www.codeceo.com/article/java-8-api-design.html
 * JDK自带工具之概览: http://www.rowkey.me/blog/2016/11/03/jdk-tools/
 * 服务化之－路由: http://mp.weixin.qq.com/s?__biz=MzIzODYyNjkzNw==&mid=2247483732&idx=1&sn=5e3533b6f79823083e567e092a0e65fc&chksm=e9373042de40b95466784930dfc9468a7974ddd1bae05b02f9776c0e8a2074463f2df7ed59e0#rd
@@ -134,6 +133,7 @@
 * SNA (Share Nothing Architecture) Session 解剖: http://blog.csdn.net/lovingprince/article/details/5883473
 * 挑战认证机制：《LINUX网络管理员指南(第3版).chm》6.8. Authentication with PPP
 * DH密钥交换和ECDH原理： http://www.cnblogs.com/fishou/p/4206451.html
+* Salted Password Hashing - Doing it Right: <https://crackstation.net/hashing-security.htm>
 * GetPropertyAction vs System.getProperty in obtaining system variables: http://stackoverflow.com/questions/4954924/getpropertyaction-vs-system-getproperty-in-obtaining-system-variables
 * File.separator vs FileSystem.getSeparator() vs System.getProperty(“file.separator”)?: http://stackoverflow.com/questions/8075373/file-separator-vs-filesystem-getseparator-vs-system-getpropertyfile-separato
 * 三个实例演示 Java Thread Dump 日志分析：http://www.cnblogs.com/zhengyun_ustc/archive/2013/01/06/dumpanalysis.html
@@ -492,6 +492,7 @@ Eclipse中`Update Project`，选择`Force Update of Snapshots/Releases`
 * <http://hc.apache.org/>
 * httpcomponents-core-4.4.x.chm
 * httpcomponents-httpclient-4.5.chm
+* 使用样例(搜索HttpClientTest): <https://bitbucket.org/jiangxincode/javawebtest>
 
 ## Maven and M2Eclipse
 
