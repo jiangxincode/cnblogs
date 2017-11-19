@@ -78,6 +78,12 @@
 * cbMakefileGen plugin: http://forums.codeblocks.org/index.php/topic,6241.0.html
 * CodeBlocks插件开发指南(一): http://www.cppblog.com/lymons/archive/2010/04/17/112850.html
 
+## CodeBlocks自定义自动补全
+
+1、依次打开 Project -> Properties -> C/C++ parser options 来到 Additional search paths;
+2、点 Add 选择头文件的路径后点确定;
+3、在源文件中添加相应的头文件后即可实现自动补全。
+
 
 
 

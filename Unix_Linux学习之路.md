@@ -511,12 +511,6 @@ bash-3.2# ls -l /data1/1230/server-a
 * delete_event 事件一般由用户或者说用户通过窗口管理器产生，即点击窗口右上角的退出按钮。假如不做任何特殊处理，窗口管理器会自动产生destroy信号；如果我们自 定义了处理delete_event事件的回调函数，是否产生destroy信号就和函数的返回值有关，如果是FALSE就产生，反之则没有效果。
 * destroy，除了可以由delete_event事件产生之外，还可以通过gtk_widget_destroy函数与其它信号发生交换。同样，如果不加指定，默认结果是关闭所指向的窗口但并不结束进程。如果我们希望主窗口和进程一起关闭，必须使用gtk_main_quit()。
 
-## CodeBlocks自定义自动补全
-
-1、依次打开 Project -> Properties -> C/C++ parser options 来到 Additional search paths;
-2、点 Add 选择头文件的路径后点确定;
-3、在源文件中添加相应的头文件后即可实现自动补全。
-
 ## Linux中C语言如何清空标准输入流
 
 今天在Linux程序设计的时候需要清空标准输入缓冲区，于是使用了如下Windows程序设计中的方法: fflush(stdin)，这个fflush()函数根本不是标准C中的函数，只是标准C的扩展，所以在Linux中使用根本不行；在网上搜索了下，发现有网友建议使用rewind(stdin)；这个函数其实是将指针指向流的开始处。但是它是文件操作中的一个函数，操作的是FILE型流，在Windows程序设计中是可以清空标准输入缓冲区的，但是在Linux中不行。
