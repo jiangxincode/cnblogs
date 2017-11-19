@@ -19,6 +19,8 @@
 * Learn Vimscript the Hard Way: http://learnvimscriptthehardway.stevelosh.com/
 * Vim 复制粘贴探秘: http://www.cnblogs.com/jianyungsun/archive/2011/03/19/1988855.html
 * VIMAdventures: http://vim-adventures.com/
+* Vimium - The Hacker's Browser: https://github.com/philc/vimium
+* Vimperator: http://www.vimperator.org/
 
 ## vim中光标如何回到上一次位置
 

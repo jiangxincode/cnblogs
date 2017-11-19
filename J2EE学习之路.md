@@ -134,6 +134,7 @@
 * 挑战认证机制：《LINUX网络管理员指南(第3版).chm》6.8. Authentication with PPP
 * DH密钥交换和ECDH原理： http://www.cnblogs.com/fishou/p/4206451.html
 * Salted Password Hashing - Doing it Right: <https://crackstation.net/hashing-security.htm>
+* 加盐密码哈希：如何正确使用: <http://blog.jobbole.com/61872/>
 * GetPropertyAction vs System.getProperty in obtaining system variables: http://stackoverflow.com/questions/4954924/getpropertyaction-vs-system-getproperty-in-obtaining-system-variables
 * File.separator vs FileSystem.getSeparator() vs System.getProperty(“file.separator”)?: http://stackoverflow.com/questions/8075373/file-separator-vs-filesystem-getseparator-vs-system-getpropertyfile-separato
 * 三个实例演示 Java Thread Dump 日志分析：http://www.cnblogs.com/zhengyun_ustc/archive/2013/01/06/dumpanalysis.html
@@ -1025,6 +1026,12 @@ https://bintray.com/
 ## jsch
 
 * 官网：http://www.jcraft.com/jsch/
+
+## * yFiles
+
+The yFiles diagramming software components are extensive class libraries that enable you to add high-quality diagramming functionality to your own software applications
+
+* http://www.yworks.com/en/index.html
 
 
 ## OpenLDAP
