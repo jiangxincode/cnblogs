@@ -158,20 +158,24 @@
 
 ```shell
     sha1sum/md5sum
-    find "/etc/" -name "*" -type f| xargs wc -l | awk '{print $2" "$1"lines"}' # 打印某一文件夹下的所有文件名及其行数
+    find "/etc/" -name "*" -type f | xargs wc -l | awk '{print $2" "$1"lines"}' # 打印某一文件夹下的所有文件名及其行数
     rdate # set the system's date from a remote host. (sudo apt-get install rdate)
     grep -R "org.apache.commons.FileUtils" *
     grep -inr --color "ERROR" test_debug.log
     ps –fu $USER | grep java # 显示当前用户的所有线程
     ps -ef | grep 4736 # 查看4736端口是否被占用
+    ps -aux
+    ps -ef                 # 查看所有进程
     netstat -tulnp | grep mysqld # 查看mysqld的监听情况
-    netstat –apn    ps -aux | grep pid   #先查进程号，再找到进程信息
+    netstat –apn | grep pid   #先查进程号，再找到进程信息
+    netstat -lntp          # 查看所有监听端口
+    netstat -antp          # 查看所有已经建立的连接
+    netstat -anp | grep xxxx   #xxxx为端口号 Linux下查看某个端口下运行的是什么程序
+    netstat -s             # 查看网络统计信息进程
     find . –name "*.log" | xargs grep error # 在当前目录的所有日志文件中查找关键词"error"
     ls -t `find . -name "*.log"` #列出最近修改的文件
     glxinfo | grep rendering # 查询OpenGL是否打开。提示: direct rendering: Yes 表明启动正常
-    cfdisk -Ps # 查看磁盘分区的用法   cfdisk   -Ps 磁盘设备名 只有一个硬盘也可以用 cfdisk -Ps
-    cfdisk -Ps /dev/sda
-    sfdisk -l
+    glxgears # glxgears是一个测试你的Linux是否可以顺利运行2D、3D的测试软件。
 
     watch "ls -al myfile" 监控文件变化
 
@@ -185,7 +189,6 @@
     dpkg
 
     sudo sh *.sh # 打开.sh文件
-
     ./*** # 打开其它可执行文件,如果没有可执行权限，需要chmod
 
     man nautilus
@@ -201,7 +204,7 @@
     uname -a               # 查看系统信息
     head -n 1 /etc/issue   # 查看操作系统版本
     hostname               # 查看计算机名,hostname name只能暂时修改，重启后失效，如果需要永久修改，使用/etc/hostname文件
-    lspci -tv              # 列出所有PCI设备
+    lspci -tv              # 列出所有PCI设备。PCI和PCI Express，是计算机常使用的一种高速总线。操作系统中的PCI/PCI-E设备驱动以及操作系统内核，都需要访问PCI及PCI-E配置空间。PCI/PCI-E设备的正常运行，离不开PCI/PCI-E配置空间。通过读写PCI/PCI-E配置空间，可以更改设备运行参数，优化设备运行。本文介绍用户空间可以读取、修改、扫描PCI/PCIE设备的用户命令及使用。在Linux内核中，为PCI和PCI-E只适用了一种总线PCI（内核提供的总线系统），故访问PCI-E配置空间，也包括了PCI设备配置空间。
     lsusb -tv              # 列出所有USB设备
     lsmod                  # 列出加载的内核模块
     env                    # 查看环境变量资源
@@ -216,15 +219,14 @@
     cat /proc/loadavg      # 查看系统负载磁盘和分区
     mount | column -t      # 查看挂接的分区状态
     fdisk -l               # 查看所有分区
+    cfdisk -Ps # 查看磁盘分区的用法   cfdisk   -Ps 磁盘设备名 只有一个硬盘也可以用 cfdisk -Ps
+    cfdisk -Ps /dev/sda
+    sfdisk -l
     swapon -s              # 查看所有交换分区
     hdparm -i /dev/hda     # 查看磁盘参数(仅适用于IDE设备)
     dmesg | grep IDE       # 查看启动时IDE设备检测状况网络
     ifconfig               # 查看所有网络接口的属性
     route -n               # 查看路由表
-    netstat -lntp          # 查看所有监听端口
-    netstat -antp          # 查看所有已经建立的连接
-    netstat -s             # 查看网络统计信息进程
-    ps -ef                 # 查看所有进程
     top                    # 实时显示进程状态用户
     w                      # 查看活动用户
     id <用户名>            # 查看指定用户信息
@@ -235,7 +237,6 @@
     rpm -qa                # 查看所有安装的软件包
     rpm -q mysql   # 查看是否安装了mysql客户端
 
-    netstat -anp | grep xxxx   #xxxx为端口号 Linux下查看某个端口下运行的是什么程序
     lsof -i :xxxx    #xxxx为端口号
 
     cat /proc/version # 查看内核版本命令
@@ -271,10 +272,8 @@
     # man tailf
     # Linux下分割合并文: man split/cat
     # 生成目录树结构: man tree
-    # rename命令: http://man.linuxde.net/rename
 
-    # glxgears是一个测试你的Linux是否可以顺利运行2D、3D的测试软件。
-    glxgears
+    rename # http://man.linuxde.net/rename
 ```
 
 ## 修改默认打开文件的程序
@@ -301,7 +300,6 @@ linux 下全局的文件与程序的关联是通过`/usr/share/applications/defa
 * 卸载libreoffice/firefox/youker-assistant/amazon
 * 重新启动计算机
 * 安装GLX-Dock并进行配置
-* 配置输入法（快捷键等）并重新登录
 * 安装clementine/osd-lyrics并进行配置，解决乱码问题，安装解码插件
 * 安装快盘，进行配快盘和ubuntu one
 * 安装filezilla/okular/meld
@@ -319,7 +317,6 @@ linux 下全局的文件与程序的关联是通过`/usr/share/applications/defa
 * 配置RPM Fusion
 * 安装相关软件:gcc/Yumex/Compiz(ccsm)/Cariodock
 * 设置自动挂载文件系统fstab
-* 升级系统yum update
 
 ## ubuntu更新问题
 
@@ -456,13 +453,6 @@ windows系统可以在重装时只格式化C盘，从而保留其他分区的数
 
 如果同一个变量在用户环境(/etc/profile)和系统环境(/etc/environment)有不同的值那应该是以用户环境为准了。修改environment 之后，执行 source /etc/environment 可以立即生效。
 
-## fedora如何用yum清除无用的软件包
-
-* yum history [undo|redo|info|...]: yum的子命令，显示你yum的历史记录，并且可以撤销指定的记录(undo)，重做指定记录(redo)等等，更多的功能看man yum
-* yum-plugin-remove-with-leaves: 卸载软件包时把因此产生的叶子一起卸载掉，用的时候别加-y选项，看清楚了再确认，有些非常大的依赖树会把主要的系统组件卸载掉，具体用法安装完该插件以后看帮助:yum --help，这个yum插件应该就是最贴近你需求的，不过记住，慎用，如果能从yum history里查到记录的话，还是用yum history undo来操作比较安全。
-* yum-plugin-show-leaves:  执行安装/卸载以后，显示此次操作所产生的叶子，自动运行，无需要操作。
-* rpmreaper: 基于ncurses库的程序，通过基于文本的gui界面显示系统中的rpm依赖树，提供各种操作，具体的看man。
-
 ## 如何在Ubuntu中屏蔽一个网站
 
 打开/etc/hosts文件，添加下面这行
@@ -470,10 +460,6 @@ windows系统可以在重装时只格式化C盘，从而保留其他分区的数
     127.0.0.1 domain.com
 
 更换domain.com为你要屏蔽的网站，你完成了编辑处理后，保存该文件并退出。
-
-## lspci的使用
-
-PCI和PCI Express，是计算机常使用的一种高速总线。操作系统中的PCI/PCI-E设备驱动以及操作系统内核，都需要访问PCI及PCI-E配置空间。PCI/PCI-E设备的正常运行，离不开PCI/PCI-E配置空间。通过读写PCI/PCI-E配置空间，可以更改设备运行参数，优化设备运行。本文介绍用户空间可以读取、修改、扫描PCI/PCIE设备的用户命令及使用。在Linux内核中，为PCI和PCI-E只适用了一种总线PCI（内核提供的总线系统），故访问PCI-E配置空间，也包括了PCI设备配置空间。读取PCI-E设备配置空间的命令是`lspci`。详细命令参数，可以使用man lspci来查看。命令默认输出结果是，当前系统的所有PCI/PCI-E设备。
 
 ## Windows/Linux文本文件格式转换
 
@@ -576,6 +562,12 @@ hostname --fqdn # 查看FQDN名字
 ubuntukylin-13.10登陆用户使用ls命令，终端显示的所有输出都是黑底白字，没有彩色，`su - root`后使用ls命令，输出为彩色。分别在登陆用户和root用户下执行`echo $PS1` 输出有差异。后发现登陆用户目录下没有`.bashrc`文件。复制默认`.bashrc`文件后解决: `cp /etc/skel/.bashrc  ~/`。
 
 ## YUM相关问题解决
+
+* yum history [undo|redo|info|...]: yum的子命令，显示你yum的历史记录，并且可以撤销指定的记录(undo)，重做指定记录(redo)等等，更多的功能看man yum
+* yum-plugin-remove-with-leaves: 卸载软件包时把因此产生的叶子一起卸载掉，用的时候别加-y选项，看清楚了再确认，有些非常大的依赖树会把主要的系统组件卸载掉，具体用法安装完该插件以后看帮助:yum --help，这个yum插件应该就是最贴近你需求的，不过记住，慎用，如果能从yum history里查到记录的话，还是用yum history undo来操作比较安全。
+* yum-plugin-show-leaves:  执行安装/卸载以后，显示此次操作所产生的叶子，自动运行，无需要操作。
+* rpmreaper: 基于ncurses库的程序，通过基于文本的gui界面显示系统中的rpm依赖树，提供各种操作，具体的看man。
+* yum update: 升级系统
 
 ### There are unfinished transactions remaining
 
