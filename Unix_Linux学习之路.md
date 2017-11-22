@@ -125,6 +125,10 @@
 * wine: <https://www.winehq.org/>
 * Winetricks: <https://wiki.winehq.org/Winetricks>
 * 搜狗输入法: <http://pinyin.sogou.com/linux/>
+* wps for linux: <http://linux.wps.cn/>
+* LibreOffice: <http://www.libreoffice.org/>
+* 永中office: <http://www.yozosoft.com>
+* 有道词典: <http://cidian.youdao.com/multi.html#linuxAll>
 * Compiz(桌面美化工具): <http://www.compiz.org/>
 * 新立得(Synaptic): <http://www.nongnu.org/synaptic/>
 * GLX-Dock: <http://www.glx-dock.org/>

@@ -23,7 +23,6 @@
 * http://www.programcreek.com/
 * 酷壳: http://coolshell.cn/
 
-
 ## Java tutorial
 
 * Java Versions, Features and History: http://javapapers.com/core-java/java-features-and-history/
@@ -132,7 +131,6 @@
 * 让浏览器不再显示 https 页面中的 http 请求警报: http://www.cnblogs.com/hustskyking/p/upgrade-insecure-requests.html
 * SNA (Share Nothing Architecture) Session 解剖: http://blog.csdn.net/lovingprince/article/details/5883473
 * 挑战认证机制：《LINUX网络管理员指南(第3版).chm》6.8. Authentication with PPP
-* DH密钥交换和ECDH原理： <http://www.cnblogs.com/fishou/p/4206451.html>
 * Salted Password Hashing - Doing it Right: <https://crackstation.net/hashing-security.htm>
 * 加盐密码哈希：如何正确使用: <http://blog.jobbole.com/61872/>
 * CMD5(MD5反向查询): <http://www.cmd5.com/default.aspx>
@@ -169,8 +167,6 @@
 * Buffer: https://yddmax.github.io/2017/06/08/Buffer/
 * 浅析ReDoS的原理与实践: http://www.freebuf.com/articles/network/124422.html
 
-
-
 ## WebService
 
 * Style of WebService: REST vs. SOAP: http://cenwenchu.iteye.com/blog/316717
@@ -204,7 +200,6 @@
 * http://www.pullword.com/
 * http://www.webxml.com.cn/zh_cn/index.aspx
 
-
 ## IDE
 
 * https://netbeans.org/
@@ -235,7 +230,6 @@
 * SFTP Plug-in for Eclipse: http://www.jcraft.com/eclipse-sftp/
 * Eclipse 远程开发：http://lovespss.blog.51cto.com/1907593/536614
 
-
 ## Eclipse GUI Plugin
 
 * WindowBuilder(SWT Designer): http://www.eclipse.org/windowbuilder/
@@ -264,7 +258,6 @@
 * Spket IDE（提供Eclipse的插件）: http://www.spket.com/
 * Aptana（提供Eclipse插件）: http://www.aptana.com/
 
-
 ## Tomcat
 
 * Apache Tomcat 8 Configuration Reference: http://tomcat.apache.org/tomcat-8.0-doc/
@@ -286,16 +279,13 @@
 * 同一个服务器部署多个tomcat: http://www.cnblogs.com/sj521/p/5974562.html
 * Tomcat 到底依赖JRE还是JDK：http://www.cnblogs.com/jiangxinnju/p/7616386.html
 
-
 ## Javassist
 
 * https://github.com/jboss-javassist/javassist
 
-
 ## jclasslib
 
 * https://github.com/ingokegel/jclasslib
-
 
 ## Hudson
 
@@ -303,13 +293,11 @@
 
 * http://hudson-ci.org/
 
-
 ## Jenkins
 
     用Java编写的一个开源持续集成工具。项目是在和Oracle发生争执后的来自于Hudson 的分支。
 
 * https://jenkins-ci.org/
-
 
 ## Atlassian Bamboo
 
@@ -317,13 +305,11 @@
 
 * https://www.atlassian.com/software/bamboo/
 
-
 ## TeamCity
 
     来自于JetBrains的一个基于Java构建的管理和持续集成服务器。
 
 * https://www.jetbrains.com/teamcity/
-
 
 ## JUnit
 
@@ -333,17 +319,14 @@
 * Easy way of running the same junit test over and over? http://stackoverflow.com/questions/1492856/easy-way-of-running-the-same-junit-test-over-and-over
 * Testing for expected exceptions in JUnit: http://www.shaunabram.com/testing-for-expected-exceptions-in-junit/
 
-
 ## DbUnit
 
 * 官网：http://dbunit.sourceforge.net/
-
 
 ## JMockit
 
 * 官网：http://jmockit.org/
 * 各种mock工具的比较：http://jmockit.org/MockingToolkitComparisonMatrix.html
-
 
 ## TestNG
 
@@ -352,14 +335,11 @@
 * 项目地址：http://testng.org/doc/index.html
 * 下载及安装说明：http://testng.org/doc/download.html
 
-
 ## ReportNG
 
     ReportNG is a simple HTML reporting plug-in for the TestNG unit-testing framework. It is intended as a replacement for the default TestNG HTML report. The default report is comprehensive but is not so easy to understand at-a-glance. ReportNG provides a simple, colour-coded view of the test results.
 
 * 项目地址：http://reportng.uncommons.org/
-
-
 
 ## SLF4J
 
@@ -368,18 +348,13 @@
 * 官方网址：http://www.slf4j.org/
 * 为什么要使用SLF4J而不是Log4J: http://www.importnew.com/7450.html
 
-
 ## Log4j
 
-* 官方网址：
-
-    * http://logging.apache.org/log4j/2.x/
-    * http://logging.apache.org/log4j/1.2/
-
+* http://logging.apache.org/log4j/2.x/
+* http://logging.apache.org/log4j/1.2/
 * jdk-logging、log4j、logback日志介绍及原理: https://my.oschina.net/pingpangkuangmo/blog/406618
 * 热切换Log4j级别配置: http://www.cnblogs.com/jiangxinnju/p/6848472.html
 * log4j:ERROR Attempted to append to closed appender named: http://blog.csdn.net/xvshu/article/details/51028644
-
 
 ## Logback
 
@@ -390,13 +365,11 @@
 * Java程序员修炼之道 之 Logging(2/3) - 怎么写Log:http://www.blogjava.net/justfly/archive/2014/08/13/416925.html
 * Java程序员修炼之道 之 Logging(3/3) - 怎么分析Log:http://www.blogjava.net/justfly/archive/2014/09/17/418034.html
 
-
 ## Log4E
 
     Log4E is an Eclipse Plugin which helps you to use your logger easily in Java Projects.The Plugin Log4E is not bound to any special logging framework. Thus you might be able to adapt to your own logger by defining your own templates using the preferences. It has active support for Log4j, Log4j 2, SLF4J, Commons Logging and JDK 1.4 logging.
 
 * http://log4e.jayefem.de/
-
 
 ## 代码评审
 
@@ -412,10 +385,9 @@
 
 ## jga
 
-	jga is a functors library: the intent is to explore and exploit functors as a design and implementation tool to reduce boilerplate coding. A functor is an object that encapsulates a function or expression: it can take arguments and produce results, as can any method, expression, or function (in other languages that support functions). Unlike an expression, as an object it can be passed as an argument without being executed; it can be persisted to a database or file; it can be serialized and passed from client to server (and back); and it can be instantiated at runtime based on information unavailable at compile-time.
-	
-* http://jga.sourceforge.net/index.shtml
+    jga is a functors library: the intent is to explore and exploit functors as a design and implementation tool to reduce boilerplate coding. A functor is an object that encapsulates a function or expression: it can take arguments and produce results, as can any method, expression, or function (in other languages that support functions). Unlike an expression, as an object it can be passed as an argument without being executed; it can be persisted to a database or file; it can be serialized and passed from client to server (and back); and it can be instantiated at runtime based on information unavailable at compile-time.
 
+* http://jga.sourceforge.net/index.shtml
 
 ## Java Class Dependency Analyzer
 
@@ -424,22 +396,18 @@
 * STAN, the leading Eclipse-based structure analysis tool for Java: http://stan4j.com/
 * nWire, Code Exploration for Eclipse(not free): http://www.nwiresoftware.com/
 
-
-
 ## OW2
 
-	OW2 is an independent, global, open-source software community. The mission of OW2 is to a) promote the development of open-source middleware, generic business applications, cloud computing platforms and b) foster a vibrant community and business ecosystem.
-	
+    OW2 is an independent, global, open-source software community. The mission of OW2 is to a) promote the development of open-source middleware, generic business applications, cloud computing platforms and b) foster a vibrant community and business ecosystem.
+
 * ASM: http://asm.ow2.org/index.html
 * Bytecode Outline plugin for Eclipse: http://asm.ow2.org/eclipse/index.html
 * JOTM: http://jotm.ow2.org/xwiki/bin/view/Main/WebHome
 * XAPool: http://xapool.ow2.org/
 
-
 ## ForgeRock
 
 * https://forgerock.org/
-
 
 ## apache
 
@@ -524,18 +492,17 @@ Eclipse中`Update Project`，选择`Force Update of Snapshots/Releases`
 * How to Publish Maven Site Docs to BitBucket or GitHub Pages: http://www.ensor.cc/2013/01/how-to-publish-maven-site-docs-to.html
 * maven项目在eclipse的library中没有Maven Dependencies: http://blog.csdn.net/lulidaitian/article/details/53440643
 * Maven Enforcer Plugin: http://maven.apache.org/enforcer/maven-enforcer-plugin/
-* 常见Maven仓库：
-    * http://mvnrepository.com/    （搜索）
-	* https://maven-repository.com/    （搜索）
-    * http://maven.oschina.net/home.html    （搜索）
-    * http://www.ebi.ac.uk/intact/maven/nexus/content/repositories/
-    * http://repo1.maven.org/maven2/
-    * http://repository.jboss.com/maven2/
-    * http://repository.sonatype.org/content/groups/public/
-    * http://people.apache.org/repo/m2-incubating-repository/
-    * http://people.apache.org/repo/m2-snapshot-repository/
-    * http://mirrors.ibiblio.org/maven2/org/acegisecurity/
 
+* http://mvnrepository.com/    （搜索）
+* https://maven-repository.com/    （搜索）
+* http://maven.oschina.net/home.html    （搜索）
+* http://www.ebi.ac.uk/intact/maven/nexus/content/repositories/
+* http://repo1.maven.org/maven2/
+* http://repository.jboss.com/maven2/
+* http://repository.sonatype.org/content/groups/public/
+* http://people.apache.org/repo/m2-incubating-repository/
+* http://people.apache.org/repo/m2-snapshot-repository/
+* http://mirrors.ibiblio.org/maven2/org/acegisecurity/
 
 ## maven快速下载某个jar包依赖的所有jar
 
@@ -563,22 +530,17 @@ Eclipse中`Update Project`，选择`Force Update of Snapshots/Releases`
 
     `mvn -f download-dep-pom.xml dependency:copy-dependencies`
 
-
 ## 杂项
 
 间接依赖的jar包能否直接使用
 
 如果工程依赖A.jar，并用maven设置好依赖，同时A.jar会依赖B.jar，所以maven在下载A.jar的同时会下载B.jar，这时如果项目发现需要使用B.jar中的一些内容，在maven中不必从新设置依赖，可以在工程中直接使用。
 
-
-
 把某个本地jar包安装到本地仓库中
 
 mvn install:install-file -DgroupId="edu.jiangxin" -DartifactId=”gcu” -Dversion="1.0.0"
 
 -Dpackaging=”jar” -Dfile="D:\CS\J2EE\lib\edu.jiangxin.gcu-1.0.0.jar"
-
-
 
 把某个本地jar包部署到某个远程仓库中
 
@@ -588,20 +550,15 @@ mvn deploy:deploy-file -DgroupId="edu.jiangxin" -DartifactId=”gcu” -Dversion
 
 -DrepositoryId=internal
 
-
-
-
 ## bintray
 
 https://bintray.com/
-
 
 ## Gradle
 
     一个开源的自动化构建系统，建立在Apache Ant和Maven Apache概念的基础上，并引入了基于Groovy的特定领域语言（DSL），而不是使用Apache Maven宣布的项目配置XML形式。
 
 * http://gradle.org/
-
 
 ## Ant
 
@@ -612,11 +569,9 @@ https://bintray.com/
 * Eclipse中Ant的配置与测试 转: http://www.cnblogs.com/jiangxinnju/p/5040436.html
 * 使用Ant脚本执行bat文件: http://lyj86.iteye.com/blog/1838713
 
-
 ## Eclipse Color Themes
 
 * 项目地址：http://eclipsecolorthemes.org/
-
 
 ## MyEclipse
 
@@ -633,7 +588,6 @@ https://bintray.com/
 * EMMA项目地址：http://emma.sourceforge.net/
 * Maven EMMA plugin(不支持maven2): http://emma.sourceforge.net/maven-emma-plugin/
 
-
 ## eCobertura
 
     Eclipse Plugin for Cobertura. Java code coverage integrated into the IDE.
@@ -641,14 +595,12 @@ https://bintray.com/
 * 项目地址：http://ecobertura.johoop.de/
 * Cobertura Maven Plugin: http://www.mojohaus.org/cobertura-maven-plugin/
 
-
 ## JavaNCSS
 
-	JavaNCSS - A Source Measurement Suite for Java
+    JavaNCSS - A Source Measurement Suite for Java
 
 * http://www.kclee.de/clemens/java/javancss/
 * javancss-maven-plugin: http://www.mojohaus.org/javancss-maven-plugin/usage.html
-
 
 ## Clover（收费）
 
@@ -661,16 +613,13 @@ https://bintray.com/
 
 * https://sourceforge.net/projects/cap4e/
 
-
 ## Visual Performance Analyzer
 
 * 洞悉 Java 应用性能瓶颈的利器：Visual Performance Analyzer: http://www.ibm.com/developerworks/cn/java/j-lo-vpa/
 
-
 ## VisualVM
 
 * VisualVM: http://visualvm.java.net/
-
 
 ## JD(Java Decompiler)
 
@@ -678,24 +627,18 @@ https://bintray.com/
 
 注：不支持命令行使用，因而很难批量编译。
 
-
 ## jad
 
 * jad: http://varaneckas.com/jad/
 * jadclipse: https://sourceforge.net/projects/jadclipse/
-* Eclipse Class Decompiler——Java反编译插件: 
-	* http://www.blogjava.net/cnfree/archive/2012/10/30/390457.html
-	* http://marketplace.eclipse.org/content/eclipse-class-decompiler
+* Eclipse Class Decompiler——Java反编译插件: https://github.com/cnfree/Eclipse-Class-Decompiler
 
 注：jad支持命令行方式使用，最新版本为1.5.8g，支持的class版本过低。经常出现问题：The class file version is 48.0 (only 45.3, 46.0 and 47.0 are supported)。还有一个工具uuDeJava，也是基于jad，所以估计也难以避免这个问题。
-
 
 ## jdec
 
 * http://jdec.sourceforge.net/
 * Jode Eclipse Plugin: http://blog.technoetic.com/open-source/jode-eclipse-plugin/
-
-
 
 ## JODE
 
@@ -709,13 +652,11 @@ https://bintray.com/
 
 注：收费软件，没有试用过
 
-
 ## ProGuard
 
     ProGuard is a free Java class file shrinker, optimizer, obfuscator, and preverifier. It detects and removes unused classes, fields, methods, and attributes. It optimizes bytecode and removes unused instructions. It renames the remaining classes, fields, and methods using short meaningless names. Finally, it preverifies the processed code for Java 6 or higher, or for Java Micro Edition.
 
 * http://proguard.sourceforge.net/
-
 
 ## FindBugs
 
@@ -728,7 +669,6 @@ https://bintray.com/
 * 如何友好地展示findbugs分析报告: http://hw1287789687.iteye.com/blog/1960331
 * FindBugs详解: http://www.cnblogs.com/jiangxinnju/p/6582404.html
 
-
 ## PMD
 
     PMD is a source code analyzer. It finds common programming flaws like unused variables, empty catch blocks, unnecessary object creation, and so forth. It supports Java, JavaScript, PLSQL, Apache Velocity, XML, XSL. Additionally it includes CPD, the copy-paste-detector. CPD finds duplicated code in Java, C, C++, C#, PHP, Ruby, Fortran, JavaScript, PLSQL, Apache Velocity, Ruby, Scala, Objective C, Matlab, Python, Go.
@@ -737,12 +677,10 @@ https://bintray.com/
 * https://pmd.github.io/pmd-5.3.6/pmd-java/rules/index.html
 * maven-pmd-plugin: http://maven.apache.org/plugins/maven-pmd-plugin/
 
-
 ## Metric
 
 * Metrics-Java版的指标度量工具之一：http://www.cnblogs.com/nexiyi/p/metrics_sample_1.html
 * Metrics-Java版的指标度量工具之二：http://www.cnblogs.com/nexiyi/p/metrics_sample_2.html
-
 
 ## Jdepend
 
@@ -752,13 +690,11 @@ https://bintray.com/
 * JDepend4Eclipse：http://marketplace.eclipse.org/content/jdepend4eclipse
 * JDepend Maven Plugin: http://www.mojohaus.org/jdepend-maven-plugin/index.html
 
-
 ## SourceHelper
 
     The “Source Helper” plugin is an Eclipse plugin that takes a very useful feature that exists in Intellij IDEA and puts it into Eclipse. In short, the feature shows the code of an out-of-visible-range starting bracket by floating a window that shows the code you cannot see. This helps immensely when trying to identify what closing bracket belongs to what part of the code.
 
 * http://hexapixel.com/projects/sourcehelper
-
 
 ## Structure101
 
@@ -775,12 +711,10 @@ https://bintray.com/
 * 软件设计度量工具inFusion(一)：inFusion的基本概念: http://blog.csdn.net/aitangyong/article/details/50206419
 * 软件设计度量工具inFusion(二)：看懂inFusion度量结果: http://blog.csdn.net/aitangyong/article/details/50250967
 
-
 ## SourceMonitor
 
 * 官网: http://www.campwoodsw.com/
 * 代码度量工具——SourceMonitor的学习和使用：http://www.cnblogs.com/bangerlee/archive/2011/09/18/2178172.html
-
 
 ## Simian
 
@@ -789,7 +723,6 @@ https://bintray.com/
 * 项目地址：http://www.redhillconsulting.com.au/products/simian/
 * maven-simian-plugin(不支持maven2): http://maven.apache.org/archives/maven-1.x/plugins/simian/
 * How do you use the maven-simian-plugin in Maven2?: http://stackoverflow.com/questions/1077700/how-do-you-use-the-maven-simian-plugin-in-maven2
-
 
 ## CheckStyle
 
@@ -800,11 +733,9 @@ https://bintray.com/
 * Checkclipse: https://sourceforge.net/projects/checkclipse/
 * maven-checkstyle-plugin: http://maven.apache.org/plugins/maven-checkstyle-plugin/
 
-
 ## CCT
 
     代码规模统计工具CCT是根据华为公司的项目特点而开发的软件规模统计工具；它既可以统计指定版本的非空非注释行，也可以通过比较当前版本和基础版本，计算新增修改规模得到增强项目的规模。CCT通过辨认不同的扩展名支持对多种语言的规模统计，包括C,C++,JAVA,DELPHI,汇编(ASM),SQL,JSP,ASP,HTML和TXT等文件。
-
 
 ## EJ-Technologies一家（收费）
 
@@ -812,7 +743,6 @@ https://bintray.com/
 * perfino：http://www.ej-technologies.com/products/perfino/overview.html
 * jprofiler：http://www.ej-technologies.com/products/jprofiler/overview.html
 * install4j：http://www.ej-technologies.com/products/install4j/overview.html
-
 
 ## FORTIFY SCA（收费）
 
@@ -831,21 +761,17 @@ https://bintray.com/
 * acunetix: http://www.acunetix.com/
 * xfocus: http://www.xfocus.net/index.html
 
-
 ## coverity（收费）
 
 * http://www.coverity.com/
-
 
 ## klocwork（收费）
 
 * http://www.klocwork.com/
 
-
 ## GProf
 
 * Linux Tools Project/GProf/User Guide：http://wiki.eclipse.org/Linux_Tools_Project/GProf/User_Guide
-
 
 ## Dot and Graphviz
 
@@ -872,13 +798,11 @@ https://bintray.com/
 
 * 官网：https://glassfish.java.net/
 
-
 ## Virgo
 
     Virgo from EclipseRT is a completely module-based Java application server that is designed to run enterprise Java applications and Spring-powered applications with a high degree of flexibility and reliability. It offers a simple yet comprehensive platform to develop, deploy, and service enterprise Java applications.
 
 * 官网：http://www.eclipse.org/virgo/
-
 
 ## Jetty
 
@@ -886,36 +810,29 @@ https://bintray.com/
 
 * 官网：http://www.eclipse.org/jetty/
 
-
 ## cpDetector
 
 * https://sourceforge.net/projects/cpdetector/
 
 ## EZMorph
 
-	EZMorph is simple java library for transforming an Object to another Object.
+    EZMorph is simple java library for transforming an Object to another Object.
 
 * http://ezmorph.sourceforge.net/index.html
-
 
 ## Apache Shiro
 
 * Apache Shiro：http://shiro.apache.org/
 
-
-## SSH相关
-
 ## Struts
 
 * 官网：http://struts.apache.org/
-* 源码：
-    * deprecated: http://svn.apache.org/repos/asf/struts/
-    * now: https://github.com/apache/struts/blob/master/src/site/site.xml:w
-* 教程：
-    * Struts 2.0系列: http://www.blogjava.net/max/category/16130.html?Show=All
-    * Struts2中的零配置与CoC（Convention over Configration）: http://andlu.iteye.com/blog/112675
-    * struts2采用convention-plugin实现零配置: http://javeye.iteye.com/blog/358744
+* 源码：deprecated: http://svn.apache.org/repos/asf/struts/
+* 源码：now: https://github.com/apache/struts/blob/master/src/site/site.xml:w
 
+* Struts 2.0系列: http://www.blogjava.net/max/category/16130.html?Show=All
+* Struts2中的零配置与CoC（Convention over Configration）: http://andlu.iteye.com/blog/112675
+* struts2采用convention-plugin实现零配置: http://javeye.iteye.com/blog/358744
 
 ## Spring
 
@@ -923,11 +840,10 @@ https://bintray.com/
 * 文档：http://docs.spring.io/spring/docs/current/spring-framework-reference/htmlsingle/
 * Spring Framework 开发参考手册: http://man.lupaworld.com/content/develop/spring_ref/2.0/html/
 * Spring Security：http://projects.spring.io/spring-security
-* 源码：
-    * Spring 3.0(deprecated) https://src.springframework.org/svn/spring-framework/
-    * Spring 2.5及以下(deprecated) https://src.springframework.org/svn/spring-maintenance/
-    * Spring Security(deprecated) https://src.springframework.org/svn/spring-security/:w
-    * spring-framework https://github.com/spring-projects/spring-framework/
+* 源码：Spring 3.0(deprecated) https://src.springframework.org/svn/spring-framework/
+* 源码：Spring 2.5及以下(deprecated) https://src.springframework.org/svn/spring-maintenance/
+* 源码：Spring Security(deprecated) https://src.springframework.org/svn/spring-security/
+* 源码：spring-framework https://github.com/spring-projects/spring-framework/
 
 * Spring Tool Suite：http://spring.io/tools/sts
 * spring-ide：http://marketplace.eclipse.org/content/spring-ide
@@ -936,23 +852,19 @@ https://bintray.com/
 * spring security中限制用户登录次数超过限制的处理: http://jackyrong.iteye.com/blog/2244803
 * Introducing Spring's Transaction Abstraction: Professional.Java.Development.with.the.Spring.Framework.chm
 
-
 ## Hibernate
 
 * http://hibernate.org/
 * http://hibernate.org/orm/documentation
-* 源码：
-    * 匿名可访问地址 http://anonsvn.jboss.org/repos/hibernate
-    * 开发者访问地址 http://svn.jboss.org/repos/hibernate
+* 源码：匿名可访问地址 http://anonsvn.jboss.org/repos/hibernate
+* 源码：开发者访问地址 http://svn.jboss.org/repos/hibernate
 
 * hibernator：https://sourceforge.net/projects/hibernator/
-
 
 ## iBATIS/MyBatis
 
 * iBATIS官网：http://ibatis.apache.org/
 * MyBatis官网：http://mybatis.github.io/
-
 
 ## appfuse
 
@@ -976,13 +888,10 @@ https://bintray.com/
 * bson4json: https://github.com/michel-kraemer/bson4jackson
 * Binary JSON with bson4jackson: http://www.michel-kraemer.com/binary-json-with-bson4jackson
 
-
 ## neethi
 
 * http://ws.apache.org/neethi/
 * https://www.w3.org/TR/ws-policy/
-
-
 
 ## XML
 
@@ -1002,11 +911,9 @@ https://bintray.com/
 
 * http://saxon.sourceforge.net/
 
-
 ## jsoup
 
 * https://jsoup.org/
-
 
 ## HTML Parser
 
@@ -1016,7 +923,6 @@ https://bintray.com/
 
 * https://sourceforge.net/projects/jchardet/
 
-
 ## JMX
 
 * JMX Technology Home Page: http://www.oracle.com/technetwork/java/javase/tech/javamanagement-140525.html
@@ -1024,7 +930,6 @@ https://bintray.com/
 * JMX(TM) Remote API RI, Optional Packages: http://mvnrepository.com/artifact/org.jvnet.opendmk/jmxremote_optional
 * JMX学习笔记(一)-MBean: http://tuhaitao.iteye.com/blog/786391
 * JMX之模型MBean: http://guojuanjun.blog.51cto.com/277646/599229/
-
 
 ## jsch
 
@@ -1035,7 +940,6 @@ https://bintray.com/
 The yFiles diagramming software components are extensive class libraries that enable you to add high-quality diagramming functionality to your own software applications
 
 * http://www.yworks.com/en/index.html
-
 
 ## OpenLDAP
 
@@ -1048,7 +952,6 @@ The yFiles diagramming software components are extensive class libraries that en
 * https://github.com/google/protobuf/
 * Protobuf协议的Java应用例子: http://blog.csdn.net/antgan/article/details/52103966
 
-
 ## zip4j
 
 * http://www.lingala.net/zip4j/
@@ -1056,7 +959,6 @@ The yFiles diagramming software components are extensive class libraries that en
 ## Xtext
 
 * 项目地址：http://www.eclipse.org/Xtext/
-
 
 ## antlr
 
@@ -1066,10 +968,9 @@ The yFiles diagramming software components are extensive class libraries that en
 
 * ANTLR plugin for Eclipse(2 or below): https://sourceforge.net/projects/antlreclipse/
 * ANTLRWorks 2: http://www.tunnelvisionlabs.com/products/demo/antlrworks
-* ANTLR IDE:
-    * https://sourceforge.net/projects/antlrv3ide/ (unsupported)
-    * https://github.com/jknack/antlr-ide (unsupported,3 or below)
-    * https://github.com/jknack/antlr4ide
+* ANTLR IDE:https://sourceforge.net/projects/antlrv3ide/ (unsupported)
+* ANTLR IDE:https://github.com/jknack/antlr-ide (unsupported,3 or below)
+* ANTLR IDE:https://github.com/jknack/antlr4ide
 * Antlr v4入门教程和实例: http://blog.csdn.net/dc_726/article/details/45399371
 
 ## JavaCC
@@ -1078,11 +979,9 @@ The yFiles diagramming software components are extensive class libraries that en
 
 * https://javacc.java.net/
 
-
 ## sablecc
 
 * https://github.com/SableCC/sablecc
-
 
 ## cglib
 
@@ -1090,12 +989,9 @@ The yFiles diagramming software components are extensive class libraries that en
 * cglib动态代理介绍(一): http://blog.csdn.net/xiaohai0504/article/details/6832990
 * Java动态代理机制详解（JDK 和CGLIB，Javassist，ASM）: http://blog.csdn.net/luanlouis/article/details/24589193
 
-
 ## iCal4j
 
 * https://github.com/ical4j/ical4j
-
-
 
 ## 分词
 
@@ -1103,7 +999,6 @@ The yFiles diagramming software components are extensive class libraries that en
 * 分词工具比较（转）：http://www.cnblogs.com/jiangxinnju/p/5205363.html
 * ik-analyze(java开源中文分词器): https://code.google.com/p/ik-analyzer/
 * ICTCLAS： http://www.ictclas.org/index.html
-
 
 ## 规则引擎
 
@@ -1118,20 +1013,17 @@ The yFiles diagramming software components are extensive class libraries that en
 * Java bytecode instruction listings: https://en.wikipedia.org/wiki/Java_bytecode_instruction_listings
 * ZeroCrawler V0.1：多线程爬虫: http://www.cnblogs.com/FengYan/archive/2012/11/27/2788369.html
 
-
-## Drools:
+## Drools
 
 * http://drools.org/
 * http://drools.org/download/download.html
 * http://docs.jboss.org/drools/release/6.0.1.Final/drools-docs/html_single/index.html
 * Drools规则描述语言快速手册: http://holbrook.github.io/2012/12/06/rule_language.html
 
-
 ## jBPM
 
 * http://www.jbpm.org/
 * jbpm5.1介绍：http://www.cnblogs.com/skyme/archive/2011/11/06/2233192.html
-
 
 ## OpenAS2
 
@@ -1139,11 +1031,9 @@ The yFiles diagramming software components are extensive class libraries that en
 
 * https://sourceforge.net/projects/openas2/
 
-
 ## Java Native Access (JNA)
 
 * https://github.com/java-native-access/jna
-
 
 ## mpiJava
 
@@ -1153,7 +1043,6 @@ The yFiles diagramming software components are extensive class libraries that en
 
 * https://sourceforge.net/projects/ebus/
 
-
 ## JACOB
 
 * old：http://danadler.com/jacob/
@@ -1161,7 +1050,6 @@ The yFiles diagramming software components are extensive class libraries that en
 * Java操作Microsoft Word之jacob: http://xiaoduan.blog.51cto.com/502137/136692/
 * 浅析JACOB: http://www.blogjava.net/lusm/archive/2008/11/22/jacob.html
 * JACOB的语法: http://www.bitscn.com/pdb/java/200904/161117.html
-
 
 ## Apache POI - the Java API for Microsoft Documents
 
@@ -1172,37 +1060,30 @@ The yFiles diagramming software components are extensive class libraries that en
 * http://itextpdf.com/
 * https://github.com/itext/itextpdf
 
-
 ## aspose
 
 * http://www.aspose.com/
-
 
 ## MVEL(Drools)
 
 * https://github.com/mvel/mvel
 * https://en.wikisource.org/wiki/MVEL_Language_Guide
 
-
 ## OGNL(Struts)
 
 * http://commons.apache.org/proper/commons-ognl/
-
 
 ## SPEL(Spring)
 
 * See Spring
 
-
 ## JSP EL
 
 * http://commons.apache.org/proper/commons-el/
 
-
 ## freemarker
 
 * http://freemarker.org/
-
 
 ## Velocity
 
@@ -1212,13 +1093,11 @@ The yFiles diagramming software components are extensive class libraries that en
 
 * http://aurora.apache.org/
 
-
 ## 文件类型检测
 
 * Apache Tika - a content analysis toolkit: http://tika.apache.org/
 * Mime Type Detection Utility: https://sourceforge.net/projects/mime-util/
 * jmimemagic: https://github.com/arimus/jmimemagic
-
 
 ## 数据库连接池
 
@@ -1227,7 +1106,6 @@ The yFiles diagramming software components are extensive class libraries that en
 * Proxool: http://proxool.sourceforge.net/index.html
 * The Tomcat JDBC Connection Pool: http://tomcat.apache.org/tomcat-8.0-doc/jdbc-pool.html
 * Apache Commons Pool: http://commons.apache.org/proper/commons-pool/index.html
-
 
 ## Eclipse插件开发
 
@@ -1238,11 +1116,6 @@ The yFiles diagramming software components are extensive class libraries that en
 * http://wiki.eclipse.org/Tycho
 * 使用Tycho来构建你的RCP程序: http://chnic.iteye.com/category/337072
 * Dependencies from pom.xml not considered by Eclipse in Tycho Project: http://stackoverflow.com/questions/12476451/dependencies-from-pom-xml-not-considered-by-eclipse-in-tycho-project
-
-
-
-# 大数据相关
-
 
 ## Hadoop
 
@@ -1276,7 +1149,6 @@ The yFiles diagramming software components are extensive class libraries that en
 * Hadoop源码分析——TaskAttemptContext类和TaskAttemptID类: http://blog.sina.com.cn/s/blog_61ef49250100vcps.html
 * hadoop代理用户 -超级用户代理其它用户: http://www.aboutyun.com/thread-16507-1-1.html
 
-
 ## Spark
 
 * http://spark.apache.org/
@@ -1291,17 +1163,14 @@ The yFiles diagramming software components are extensive class libraries that en
 * Spark 架构: http://www.cnblogs.com/gaoxing/p/5041806.html
 * Spark(一): 基本架构及原理: http://www.cnblogs.com/tgzhu/p/5818374.html
 
-
 ## Storm
 
 http://storm.apache.org/index.html
 https://storm.apache.org/javadoc/apidocs/index.html
 
-
 ## nutch
 
 * http://nutch.apache.org/
-
 
 ## ZooKeeper
 
@@ -1314,10 +1183,9 @@ https://storm.apache.org/javadoc/apidocs/index.html
 
 ## Apache Flume
 
-* <del>https://github.com/cloudera/flume</del>
+* deprcated: https://github.com/cloudera/flume
 * http://flume.apache.org/
 * 开源日志系统比较：http://dongxicheng.org/search-engine/log-systems/
-
 
 ## Solr
 
@@ -1329,16 +1197,13 @@ https://storm.apache.org/javadoc/apidocs/index.html
 
 * http://commons.apache.org/proper/commons-dbutils/
 
-
 ## curator
 
 * http://curator.apache.org/
 
-
 ## Sqoop
 
 * http://sqoop.apache.org/
-
 
 ## Avro
 
@@ -1348,12 +1213,10 @@ https://storm.apache.org/javadoc/apidocs/index.html
 
 * http://chukwa.apache.org/
 
-
 ## Thirft
 
 * http://thrift.apache.org/
 * Thirft框架介绍: http://dongxicheng.org/search-engine/thrift-framework-intro/
-
 
 ## CAS
 
@@ -1364,13 +1227,11 @@ https://storm.apache.org/javadoc/apidocs/index.html
 * cas系列文章: http://www.cnblogs.com/vhua/tag/cas/
 * cas单点登录配置速成: http://www.blogjava.net/goodlyts/archive/2009/10/20/299091.html
 
-
 ## Prometheus
 
 * https://prometheus.io/
 * EXPOSITION FORMATS: https://prometheus.io/docs/instrumenting/exposition_formats/
 * Prometheus 系统监控方案: http://www.cnblogs.com/vovlie/p/Prometheus_CONCEPTS.html
-
 
 ## grafana
 
@@ -1380,9 +1241,6 @@ https://storm.apache.org/javadoc/apidocs/index.html
 
 * http://collectd.org/
 
-
 ## influxdata
 
 * https://www.influxdata.com/
-
-
