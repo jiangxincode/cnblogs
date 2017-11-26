@@ -118,30 +118,46 @@
 * http://docs.oracle.com/en/bigdata/
 
 * dbms_lob.substr[DBMS_LOB -> SUBSTR]: http://docs.oracle.com/database/122/ARPLS
+
 * lsnrctl的用法[Configuring the Network Environment -> lsnrctl]: http://docs.oracle.com/database/122/ADMQS
-* "on delete cascade" 和 "on delete set null" 的差别[Common SQL DDL Clauses -> constraint -> on delete]: http://docs.oracle.com/database/122/SQLRF
-* Database Error Messages: http://docs.oracle.com/database/122/ERRMG
-* 开启和关闭数据库[Starting Up and Shutting Down]: http://docs.oracle.com/database/122/ADMIN
-* LOBs类型说明[Using SQL Data Types in Database Applications -> Representing Large Amounts of Data]: http://docs.oracle.com/database/122/ADFNS
-* 端口配置[Managing Oracle Database Port Numbers]: http://docs.oracle.com/database/122/LADBI
 * 配置系统环境变量[Getting Started with Database Administration -> Configuring the Operating System Environment Variables]: http://docs.oracle.com/database/122/ADMQS
-* 环境变量[Administering Oracle Database -> Oracle Database Environment Variables]: docs.oracle.com/database/122/UNXAR
-* ADR[Managing Diagnostic Data -> Automatic Diagnostic Repository (ADR)]: http://docs.oracle.com/database/122/ADMIN
-* 归档日志[Managing the Redo Log]: http://docs.oracle.com/database/122/ADMIN
-* 设置国际化支持环境变量[Setting Up a Globalization Support Environment]: http://docs.oracle.com/database/122/NLSPG/
-* 逻辑存储结构[Logical Storage Structures]: http://docs.oracle.com/database/122/CNCPT/
-* SQL*Loader[SQL*Loader Concepts]: http://docs.oracle.com/database/122/SUTIL
-* ADRCI: ADR Command Interpreter: http://docs.oracle.com/database/122/SUTIL
-* 数据库网络服务全部内容: http://docs.oracle.com/database/122/NETRF
-* JDBC数据源配置[Data Sources and URLs]: http://docs.oracle.com/database/122/JJDBC
-* 预置账户[Securing the Database Installation and Configuration -> Predefined User Accounts Provided by Oracle Database]: http://docs.oracle.com/database/122/TDPSG
-* 为系统用户指定密码[Creating and Configuring an Oracle Database -> Protecting Your Database: Specifying Passwords for Users SYS and SYSTEM]: http://docs.oracle.com/database/122/ADMIN
-* Managing Oracle Enterprise Manager Database Control: http://docs.oracle.com/database/122/ADMIN
-* [Gathering Database Statistics -> Generating an AWR Report Using the Command-Line Interface]: http://docs.oracle.com/database/122/TGDBA
+
+* "on delete cascade" 和 "on delete set null" 的差别[Common SQL DDL Clauses -> constraint -> on delete]: http://docs.oracle.com/database/122/SQLRF
 * TRUNC (date)[Functions -> TRUNC (date)]: http://docs.oracle.com/database/122/SQLRF
 * SYS_CONTEXT[Functions -> SYS_CONTEXT]: http://docs.oracle.com/database/122/SQLRF
 * ALTER SEQUENCE[SQL Statements: ALTER MATERIALIZED VIEW to ALTER SYSTEM -> ALTER SEQUENCE]: http://docs.oracle.com/database/122/SQLRF
+
+* Database Error Messages: http://docs.oracle.com/database/122/ERRMG
+
+* 开启和关闭数据库[Starting Up and Shutting Down]: http://docs.oracle.com/database/122/ADMIN
+* ADR[Managing Diagnostic Data -> Automatic Diagnostic Repository (ADR)]: http://docs.oracle.com/database/122/ADMIN
+* 归档日志[Managing the Redo Log]: http://docs.oracle.com/database/122/ADMIN
+* 为系统用户指定密码[Creating and Configuring an Oracle Database -> Protecting Your Database: Specifying Passwords for Users SYS and SYSTEM]: http://docs.oracle.com/database/122/ADMIN
+* Managing Oracle Enterprise Manager Database Control: http://docs.oracle.com/database/122/ADMIN
+
+* LOBs类型说明[Using SQL Data Types in Database Applications -> Representing Large Amounts of Data]: http://docs.oracle.com/database/122/ADFNS
+
+* 端口配置[Managing Oracle Database Port Numbers]: http://docs.oracle.com/database/122/LADBI
+
+* 环境变量[Administering Oracle Database -> Oracle Database Environment Variables]: docs.oracle.com/database/122/UNXAR
+
+* 设置国际化支持环境变量[Setting Up a Globalization Support Environment]: http://docs.oracle.com/database/122/NLSPG/
+
+* 逻辑存储结构[Logical Storage Structures]: http://docs.oracle.com/database/122/CNCPT/
+
+* SQL*Loader[SQL*Loader Concepts]: http://docs.oracle.com/database/122/SUTIL
+* ADRCI: ADR Command Interpreter: http://docs.oracle.com/database/122/SUTIL
+* Using LogMiner to Analyze Redo Log Files: https://docs.oracle.com/database/122/SUTIL
+
+* 数据库网络服务全部内容: http://docs.oracle.com/database/122/NETRF
+* JDBC数据源配置[Data Sources and URLs]: http://docs.oracle.com/database/122/JJDBC
+
+* 预置账户[Securing the Database Installation and Configuration -> Predefined User Accounts Provided by Oracle Database]: http://docs.oracle.com/database/122/TDPSG
+
+* [Gathering Database Statistics -> Generating an AWR Report Using the Command-Line Interface]: http://docs.oracle.com/database/122/TGDBA
+
 * / (slash)[SQL*Plus Command Reference -> / (slash)]: http://docs.oracle.com/database/122/SQPUG
+
 * CRSCTL/SRVCTL: https://docs.oracle.com/database/122/CWADD
 
 * Oracle SQL Handler：http://www.heartblue.cn/
@@ -203,8 +219,15 @@
 * 【ASM】SYSASM 角色: https://yq.aliyun.com/articles/28404
 * rac节点无法启动ORA-29702的问题及分析: http://blog.itpub.net/23718752/viewspace-1158618
 * ORACLE RAC 的启动和关闭顺序: http://blog.itpub.net/29634949/viewspace-1269073/
-
-
+* Oracle RAC中public ip, private ip, vip, scan ip的概念: 《Oracle RAC 11g实战指南》 2.2 3.1.3 3.2.4章节
+* 深入了解 Oracle Flex ASM 及其优点(了解性知识)：<http://www.oracle.com/technetwork/cn/articles/database/flexasm-flexcluster-benefits-odb12c-2177371-zhs.html>
+* oracle数据库备份删除操作：<http://www.blogjava.net/wangxinsh55/archive/2010/11/05/337300.html>
+* Oracle关闭和开启归档日志: <http://oma1989.iteye.com/blog/1469744>
+* oracle数据库自动提交事务(autocommit)为OFF,但事务自动提交了: <http://blog.sina.com.cn/s/blog_68fe7e150100z7tn.html>
+* statspack安装使用 和 report 分析: <http://blog.csdn.net/tianlesoftware/article/details/4682329>
+* 【性能调优】Oracle AWR报告指标全解析: <http://www.askmaclean.com/archives/performance-tuning-oracle-awr.html>
+* Oracle Trace文件生成及查看: http://blog.csdn.net/weiwenhp/article/details/6932835
+* Oracle 10g Audit（审计） --- 记录登录用户在Oracle中的所有操作: <http://blog.csdn.net/ryb7899/article/details/5413720>
 
 ## oracle疑难问题排查集：
 
@@ -586,6 +609,7 @@ Oracle提供了两种验证方式，一种是OS验证，另一种密码文件验
 * actian: http://www.actian.com/
 * Apache Derby: http://db.apache.org/derby/
 * BlinkDB: http://blinkdb.org/
+* H2 Database Engine: http://www.h2database.com/html/main.html
 
 # 数据模型
 
