@@ -228,6 +228,9 @@
 * 【性能调优】Oracle AWR报告指标全解析: <http://www.askmaclean.com/archives/performance-tuning-oracle-awr.html>
 * Oracle Trace文件生成及查看: http://blog.csdn.net/weiwenhp/article/details/6932835
 * Oracle 10g Audit（审计） --- 记录登录用户在Oracle中的所有操作: <http://blog.csdn.net/ryb7899/article/details/5413720>
+* 修改oracle实例名(sid)和数据库名(db_name): <http://blog.51cto.com/liujia/539294>
+* Oracle安装错误ora-00922（缺少或无效选项）: <http://blog.sina.com.cn/s/blog_5674f6d401012ekw.html>
+* Oracle中session和processes的设置: <http://www.cnblogs.com/jiangxinnju/p/7900870.html>
 
 ## oracle疑难问题排查集：
 
@@ -259,8 +262,6 @@ windows Server 2008 服务器上安装了Oracle 11g R2，在用Navicat去连接O
 * 打开Navicat，选择工具→选项→其他→OCI，然后设置OCI library为：D:app/administrator/product/instantclient_12_2_x32/oci.dll，设置SQL  plus为：D:/app/administrator/product/11.2.0/dbhome_1/BIN/sqlplus.exe。确定。
 * 测试成功。
 
-
-
 ## Oracle 11g 默认用户名和密码
 
 安装ORACLE时，若没有为下列用户重设密码，则其默认密码如下：
@@ -274,7 +275,6 @@ aqadm/aqadm               SYSDBA 或 NORMAL        高级队列管理员
 Dbsnmp/dbsnmp              SYSDBA 或 NORMAL        复制管理员
 
 登录身份：指登录时的Role指定，oracle11g中分SYSDBA和default两种。在安装Oracle 10g的时候，提示创建数据库，在创建的同时提示你输入口令，若此时你输入了密码，在登录数据库的时候用户名sys 对应的密码就应该是你创建数据库时候输入的口令。而非默认的change_on_install.
-
 
 ## Oracle 11g服务详细介绍及哪些服务是必须开启的？
 
@@ -292,118 +292,11 @@ Dbsnmp/dbsnmp              SYSDBA 或 NORMAL        复制管理员
 
 注：ORCL是数据库实例名，默认的数据库是ORCL，你可以创建其他的，即OracleService+数据库名。
 
-
-## Oracle安装错误ora-00922（缺少或无效选项）
-
-安装Oracle 11g R2的过程中，在新建数据库实例时出现了该错误，如果选择"忽略"就会出现ora-28000错误。经网络查询验证，这是属于在前面配置管理员密码的时候，采用了数字开头的密码，Oracle貌似对此不支持，但当时不提示出错，晕倒！据说包含其他非法特殊字符也可能产生此问题。
-
-ORA-00922: 选项缺失或无效
-
-错误原因：一般是语句的语法有问题。比如命名不对，关键字写错等等。对于非标准的命名，一般采用双引号来创建。
-
-标识符命名规则:
-
-* 必须以字母开始。
-* 长度不能超过30个单字节字符。
-* 只能包括A-Z，a-z，0-9，_，$和#。
-* 不能在相同用户下建立两个同名的对象。
-* 不能使用保留字和关键字
-
-ORA-28000: 账户锁定
-
-* 使用PL/SQL，登录名为system,数据库名称不变，选择类型的时候把Normal修改为Sysdba;
-* 选择myjob,查看users;
-* 选择system,右击点击“编辑”；
-* 修改密码，把“帐户被锁住”的勾去掉；
-* 点击“应用”再点击“关闭”；
-* 重新登录就可以通过验证了
-
-
 ## ORACLE_HOME/ORACLE_SID
 
 ORACLE_HOME 安装目录
 ORACLE_SID 实例ID
 一台linux机器上安装一个oracle，两个实例，分别对应两个用户。切换到对应用户时 echo $ORACLE_SID会显示各自的实例
-
-## oracle 的修改SID
-
-1、检查原来的数据库实例名（sid）
-
-    oracle@oracle[/home/oracle]> echo $ORACLE_SID
-    orcl
-    oracle@oracle[/home/oracle]> sqlplus / as sysdba
-    SQL*Plus: Release 10.2.0.1.0 - Production on Sun Dec 20 11:14:49 2009
-    Copyright (c) 1982, 2005, Oracle. All rights reserved.
-    Connected to:
-    Oracle Database 10g Enterprise Edition Release 10.2.0.1.0 - Production
-    With the Partitioning, OLAP and Data Mining options
-    sys@ORCL> select instance from v$thread;
-    INSTANCE
-    --------------------------------------------------------------------------------
-    orcl
-
-2、关闭数据库
-
-注意不能用shutdown abort，只能是shutdown immediate或shutdown normal
-
-    sys@ORCL> shutdown immediate
-    Database closed.
-    Database dismounted.
-    ORACLE instance shut down.
-    sys@ORCL> exit
-    Disconnected from Oracle Database 10g Enterprise Edition Release 10.2.0.1.0 - Production
-    With the Partitioning, OLAP and Data Mining options
-
-3、修改oracle用户的ORACLE_SID环境变量，如由orcl修改为ybbe
-
-4、修改/etc/oratab文件，将sid名由旧的修改为新的，如从orcl修改为ybbe
-
-5、进入到$ORACLE_HOME/dbs目录，将所有文件名中包含原来的sid的修改为对应的新sid的。如我对如下文件修改为其后对应的文件
-
-    hc_orcl.dat->hc_ybbe.dat
-    lkORCL->lkYBBE
-    orapworcl->orapwybbe
-    snapcf_orcl.f->snapcf_cnhtm.f
-    spfileorcl.ora->spfilecnhtm.ora
-    cd $ORACLE_HOME/dbs
-    orapwd file=orapwybbe password='ybbe' entries=5 force=y
-
-可以用命令进行对上面的文件进行自动生成
-
-6、使新修改的ORACLE_SID环境变量生效
-
-    oracle@oracle[/oracle/app/10.1/dbs]> . ~/.bash_profile
-    oracle@oracle[/oracle/app/10.1/dbs]> echo $ORACLE_SID
-    cnhtm
-
-7、重建口令文件
-
-因为口令文件改名后不能在新实例中使用，所以重建
-
-    oracle@oracle[/oracle/app/10.1/dbs]> orapwd file=$ORACLE_HOME/dbs/orapw$ORACLE_SID password=oracle entries=5 force=y
-    oracle@oracle[/oracle/app/10.1/dbs]> ls -lrt orapw*
-    -rw-r----- 1 oracle oinstall 2048 Dec 20 11:27 orapwybbe
-
-8、启动数据库
-
-    oracle@oracle[/oracle/app/10.1/dbs]> sqlplus / as sysdba
-    SQL*Plus: Release 10.2.0.1.0 - Production on Sun Dec 20 11:29:53 2009
-    Copyright (c) 1982, 2005, Oracle. All rights reserved.
-    Connected to an idle instance.
-    idle> startup
-    ORACLE instance started.
-    Total System Global Area 167772160 bytes
-    Fixed Size 1218292 bytes
-    Variable Size 62916876 bytes
-    Database Buffers 96468992 bytes
-    Redo Buffers 7168000 bytes
-    Database mounted.
-    Database opened.
-
-9、检查数据库实例名。通过如下语句检查数据库实例名，发现实例名已经由orcl变成ybbe
-
-    select instance from v$thread;
-    INSTANCE
 
 ## ESCAPE关键字用法
 
@@ -419,53 +312,6 @@ ORACLE_SID 实例ID
 1.使用 ESCAPE 关键字定义转义符。在模式中，当转义符置于通配符之前时，该通配符就解释为普通字符。
 2.ESCAPE 'escape_character' 允许在字符串中搜索通配符而不是将其作为通配符使用。escape_character 是放在通配符前表示此特殊用途的字符。
 
-
-## Oracle中session和processes的设置
-
-* PROCESSES: http://docs.oracle.com/cd/B28359_01/server.111/b28320/initparams188.htm#sthref560
-* SESSIONS: http://docs.oracle.com/cd/B28359_01/server.111/b28320/initparams220.htm#sthref647
-* TRANSACTIONS: http://docs.oracle.com/cd/B28359_01/server.111/b28320/initparams248.htm
-
-* Oracle 11gR2之前：sessions=(1.1*processes) + 5
-* Oracle 11gR2之后：sessions=(1.5*porcesses) + 22
-
-当Oracle需要启动新的process而又已经达到processes参数时，就会报错：
-
-```shell
-    00020, 00000, "maximum number of processes (%s) exceeded"
-    // *Cause: All process state objects are in use.
-    // *Action: Increase the value of the PROCESSES initialization parameter.
-```
-
-当数据库连接的并发用户已经达到sessions这个值时，又有新session连进来，就会报错
-
-```shell
-    00018, 00000, "maximum number of sessions exceeded"
-    // *Cause: All session state objects are in use.
-    // *Action: Increase the value of the SESSIONS initialization parameter.
-```
-
-如何使用sqlplus查看、修改processes呢？使用sys，以sysdba权限登录：
-
-```shell
-    show parameter processes; --显示：processes integer 150
-    show parameter sessions; --显示：sessions integer 165
-    select count(*) from v$process; --显示当前processes数目
-    select  count(*) from v$session; --显示当前sessions数目
-    alter system set processes=400 scope = spfile; --显示系统已更改
-    show parameter processes; --显示：processes integer 150
-    create pfile from spfile; --显示：文件已创建。
-
-    --重启数据库
-    shutdown immediate;
-    startup
-
-    --重启监听
-    lsnrctl stop/start/status
-
-    show parameter processes; --显示：processes integer 400
-    show parameter session; --显示：sessions integer 445
-```
 
 ## 忘记oracle的sys用户密码怎么修改
 
@@ -511,7 +357,6 @@ Oracle提供了两种验证方式，一种是OS验证，另一种密码文件验
 * 如何建立DB2分区数据库？: http://www.cnblogs.com/jiangxinnju/p/6649305.html
 * IBM DB2关键特性解析：DB2分区特性: http://tech.it168.com/a2012/0306/1321/000001321022_2.shtml
 * db2建立schema: http://guoyanxi.iteye.com/blog/910755
-
 
 # Oracle Berkeley DB
 
