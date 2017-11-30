@@ -136,6 +136,7 @@
 * CMD5(MD5反向查询): <http://www.cmd5.com/default.aspx>
 * 数字证书原理: <https://www.cnblogs.com/JeffreySun/archive/2010/06/24/1627247.html>
 * 彩虹表(Rainbow Tables)原理详解: <http://www.ha97.com/4009.html>
+* 使用浏览器的计算力，对抗密码破解：<https://www.cnblogs.com/index-html/p/frontend_kdf.html>
 * GetPropertyAction vs System.getProperty in obtaining system variables: http://stackoverflow.com/questions/4954924/getpropertyaction-vs-system-getproperty-in-obtaining-system-variables
 * File.separator vs FileSystem.getSeparator() vs System.getProperty(“file.separator”)?: http://stackoverflow.com/questions/8075373/file-separator-vs-filesystem-getseparator-vs-system-getpropertyfile-separato
 * 三个实例演示 Java Thread Dump 日志分析：http://www.cnblogs.com/zhengyun_ustc/archive/2013/01/06/dumpanalysis.html
@@ -158,7 +159,6 @@
 * HTTPS 升级指南: http://www.ruanyifeng.com/blog/2016/08/migrate-from-http-to-https.html
 * 软件项目“免坑”指南: http://www.cnblogs.com/MeteorSeed/archive/2012/04/08/2427966.html
 * 如何重构“箭头型”代码: http://coolshell.cn/articles/17757.html
-* 使用浏览器的计算力，对抗密码破解：https://www.cnblogs.com/index-html/p/frontend_kdf.html
 * Atom Authentication: http://www.xml.com/pub/a/2003/12/17/dive.html
 * 在AI寻路决策中运用势力图（Influence Map）: http://www.aisharing.com/archives/80?replytocom=219
 * 关于 Token，你应该知道的十件事: http://ju.outofmemory.cn/entry/134189

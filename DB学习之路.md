@@ -231,6 +231,8 @@
 * 修改oracle实例名(sid)和数据库名(db_name): <http://blog.51cto.com/liujia/539294>
 * Oracle安装错误ora-00922（缺少或无效选项）: <http://blog.sina.com.cn/s/blog_5674f6d401012ekw.html>
 * Oracle中session和processes的设置: <http://www.cnblogs.com/jiangxinnju/p/7900870.html>
+* 忘记oracle的sys用户密码怎么修改以及Oracle 11g 默认用户名和密码: <http://www.cnblogs.com/jiangxinnju/p/7928029.html>
+* navicat 连接Oracle 报错：Cannot load OCI DLL, 126: <https://my.oschina.net/xqx/blog/340743>
 
 ## oracle疑难问题排查集：
 
@@ -244,37 +246,6 @@
 
 * http://www.allroundautomations.com/registered/plsqldev.html
 * 配置：localhost:1521/orcl
-
-## navicat 连接Oracle 报错：Cannot load OCI DLL, 126
-
-windows Server 2008 服务器上安装了Oracle 11g R2，在用Navicat去连接Oracle时，提示以下错误：
-
-    Cannot load OCI DLL, 126: Instant Client package is required for Baic and TNS connection ，For more information: http://wiki.navicat.com/wiki/index.php/Instant_client_required
-
-查看上述链接页面提示，Navicat only support 32-bit instant client， 因此，尽管我们安装了64位的Oracle，但由于Navicat仅支持32位的，因此我们还需下载一个32位的客户端， 下载地址：
-
-    http://www.oracle.com/technetwork/topics/winsoft-085727.html。
-
-以下为完整的解决方法：
-
-* 在上述地址中下载文件：instantclient-basic-nt-12.1.0.2.0.zip,
-* 解压此安装包至：D:/app/administrator/product/instantclient_2_2_x32
-* 打开Navicat，选择工具→选项→其他→OCI，然后设置OCI library为：D:app/administrator/product/instantclient_12_2_x32/oci.dll，设置SQL  plus为：D:/app/administrator/product/11.2.0/dbhome_1/BIN/sqlplus.exe。确定。
-* 测试成功。
-
-## Oracle 11g 默认用户名和密码
-
-安装ORACLE时，若没有为下列用户重设密码，则其默认密码如下：
-
-用户名/密码                登录身份                说明
-sys/change_on_install      SYSDBA 或 SYSOPER       不能以 NORMAL 登录，可作为默认的系统管理员
-system/manager             SYSDBA 或 NORMAL        不能以 SYSOPER 登录，可作为默认的系统管理员
-sysman/oem_temp            sysman                  为 oms 的用户名
-scott/tiger                NORMAL                  普通用户
-aqadm/aqadm               SYSDBA 或 NORMAL        高级队列管理员
-Dbsnmp/dbsnmp              SYSDBA 或 NORMAL        复制管理员
-
-登录身份：指登录时的Role指定，oracle11g中分SYSDBA和default两种。在安装Oracle 10g的时候，提示创建数据库，在创建的同时提示你输入口令，若此时你输入了密码，在登录数据库的时候用户名sys 对应的密码就应该是你创建数据库时候输入的口令。而非默认的change_on_install.
 
 ## Oracle 11g服务详细介绍及哪些服务是必须开启的？
 
@@ -311,41 +282,6 @@ ORACLE_SID 实例ID
 
 1.使用 ESCAPE 关键字定义转义符。在模式中，当转义符置于通配符之前时，该通配符就解释为普通字符。
 2.ESCAPE 'escape_character' 允许在字符串中搜索通配符而不是将其作为通配符使用。escape_character 是放在通配符前表示此特殊用途的字符。
-
-
-## 忘记oracle的sys用户密码怎么修改
-
-### 忘记除SYS、SYSTEM用户之外的用户的登录密码
-
-    CONN SYS/PASS_WORD AS SYSDBA; --用SYS (或SYSTEM)用户登录
-    ALTER USER user_name IDENTIFIED BY "newpassword"; --修改用户的密码，密码不能是数字开头，否则会出现：ORA-00988: 口令缺失或无效
-
-### 忘记SYS用户，或者是SYSTEM用户的密码
-
-    CONN SYS/PASS_WORD AS SYSDBA; --如果是忘记SYSTEM用户的密码，可以用SYS用户登录。
-    ALTER USER SYSTEM IDENTIFIED BY "newpassword";
-
-    CONN SYSTEM/PASS_WORD AS SYSDBA; --如果是忘记SYS用户的密码，可以用SYSTEM用户登录。
-    ALTER USER SYS IDENTIFIED BY "newpassword";
-
-### SYS,SYSTEM用户的密码都忘记
-
-Oracle提供了两种验证方式，一种是OS验证，另一种密码文件验证方式，如果是第一种方式用以下方法修改密码：
-
-```sql
-　　sqlplus /nolog;
-　　connect / as sysdba
-　　alter user sys identified by newpassword;
-　　alter user system identified by newpassword;
-```
-
-如果是第二种方法可以使用ORAPWD.EXE 工具修改密码。打开命令提示符窗口，输入如下命令：
-
-    orapwd file=D:\oracle10g\database\pwdctcsys.ora password=newpassword
-
-这个命令重新生成了数据库的密码文件。密码文件的位置在ORACLE_HOME目录下的\database目录下。这个密码是修改sys用户的密码。除sys其他用户的密码不会改变。也可以下方法修改密码，设定完后，重新启动服务，再次登陆就可以了。
-
-    orapwd file=pwdxxx.ora password=newpassword entries=10
 
 
 # DB2
