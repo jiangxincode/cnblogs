@@ -279,14 +279,6 @@
 * 同一个服务器部署多个tomcat: http://www.cnblogs.com/sj521/p/5974562.html
 * Tomcat 到底依赖JRE还是JDK：http://www.cnblogs.com/jiangxinnju/p/7616386.html
 
-## Javassist
-
-* https://github.com/jboss-javassist/javassist
-
-## jclasslib
-
-* https://github.com/ingokegel/jclasslib
-
 ## Hudson
 
     用Java编写的持续集成（CI）工具。
@@ -956,38 +948,42 @@ The yFiles diagramming software components are extensive class libraries that en
 
 * http://www.lingala.net/zip4j/
 
-## Xtext
+## JFlex
 
-* 项目地址：http://www.eclipse.org/Xtext/
-
-## antlr
-
-    ANTLR (ANother Tool for Language Recognition) is a powerful parser generator for reading, processing, executing, or translating structured text or binary files. It's widely used to build languages, tools, and frameworks. From a grammar, ANTLR generates a parser that can build and walk parse trees.
-
-* 官网：http://www.antlr.org/
-
-* ANTLR plugin for Eclipse(2 or below): https://sourceforge.net/projects/antlreclipse/
-* ANTLRWorks 2: http://www.tunnelvisionlabs.com/products/demo/antlrworks
-* ANTLR IDE:https://sourceforge.net/projects/antlrv3ide/ (unsupported)
-* ANTLR IDE:https://github.com/jknack/antlr-ide (unsupported,3 or below)
-* ANTLR IDE:https://github.com/jknack/antlr4ide
-* Antlr v4入门教程和实例: http://blog.csdn.net/dc_726/article/details/45399371
+* http://www.jflex.de/
 
 ## JavaCC
 
-    Java Compiler Compiler tm (JavaCC tm) is the most popular parser generator for use with Java tm applications. A parser generator is a tool that reads a grammar specification and converts it to a Java program that can recognize matches to the grammar. In addition to the parser generator itself, JavaCC provides other standard capabilities related to parser generation such as tree building (via a tool called JJTree included with JavaCC), actions, debugging, etc.
-
-* https://javacc.java.net/
+* https://javacc.org/
+* JavaCC Eclipse Plugin: https://sourceforge.net/projects/eclipse-javacc/
 
 ## sablecc
 
 * https://github.com/SableCC/sablecc
+* http://www.sablecc.org/
+
+## Xtext
+
+* http://www.eclipse.org/Xtext/
+
+## antlr
+
+* http://www.antlr.org/
+* 常用IDE的Antlr插件：<http://www.antlr.org/tools.html>
 
 ## cglib
 
 * https://github.com/cglib/cglib
 * cglib动态代理介绍(一): http://blog.csdn.net/xiaohai0504/article/details/6832990
-* Java动态代理机制详解（JDK 和CGLIB，Javassist，ASM）: http://blog.csdn.net/luanlouis/article/details/24589193
+* Java动态代理机制详解（JDK和CGLIB，Javassist，ASM）: http://blog.csdn.net/luanlouis/article/details/24589193
+
+## Javassist
+
+* https://github.com/jboss-javassist/javassist
+
+## jclasslib
+
+* https://github.com/ingokegel/jclasslib
 
 ## iCal4j
 
