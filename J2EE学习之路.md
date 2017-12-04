@@ -567,7 +567,7 @@ https://bintray.com/
 
 ## MyEclipse
 
-* 项目地址（需要翻墙）：http://www.myeclipseide.com/
+* http://www.myeclipseide.com/
 * 官方中文网：http://www.myeclipsecn.com/
 * 中国下载地址：http://www.myeclipseide.cn/
 * 在MyEclipse下创建Java Web项目 入门（图文并茂）经典教程：http://jijiaa12345.iteye.com/blog/1739754
@@ -970,6 +970,7 @@ The yFiles diagramming software components are extensive class libraries that en
 
 * http://www.antlr.org/
 * 常用IDE的Antlr插件：<http://www.antlr.org/tools.html>
+* ANTLR 4进阶: <https://liangshuang.name/2017/08/20/antlr/>
 
 ## cglib
 
