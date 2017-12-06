@@ -546,12 +546,6 @@ mvn deploy:deploy-file -DgroupId="edu.jiangxin" -DartifactId=”gcu” -Dversion
 
 https://bintray.com/
 
-## Gradle
-
-    一个开源的自动化构建系统，建立在Apache Ant和Maven Apache概念的基础上，并引入了基于Groovy的特定领域语言（DSL），而不是使用Apache Maven宣布的项目配置XML形式。
-
-* http://gradle.org/
-
 ## Ant
 
 * http://ant.apache.org/

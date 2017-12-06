@@ -116,6 +116,7 @@
 * linux 终端backspace不能删除字符: <http://blog.163.com/chen_cong_520/blog/static/841151912010829240926/>
 * ssh相关原理学习与常见错误总结: <http://www.cnblogs.com/jiangxinnju/p/7859488.html>
 * Fedora 删除旧内核: <http://www.cnblogs.com/william-lee/archive/2011/07/23/2115084.html>
+* linux关于S权限和T权限的介绍: <http://blog.csdn.net/qq_35116353/article/details/56049592>
 * Linux下好玩的命令: <http://www.cnblogs.com/joeyupdo/articles/2768113.html>
 * 动画演示一些无用但有趣的Linux命令: <http://www.vaikan.com/10-funny-liunx-command/>
 * Linux中10个有用的命令行补齐命令: <http://www.geekfan.net/8169/>
