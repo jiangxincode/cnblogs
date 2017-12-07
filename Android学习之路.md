@@ -29,7 +29,11 @@
 * <http://gradle.org/>
 * Gradle User Guide: <https://docs.gradle.org/current/userguide/userguide_single.html>
 * 配置构建: <https://developer.android.com/studio/build/index.html>
+* Chapter 6. The Gradle Wrapper: <https://docs.gradle.org/current/userguide/gradle_wrapper.html>
 
 ## Kotlin
 
 * <http://kotlinlang.org/>
+* <https://kotlinlang.org/docs/reference/>
+* 中文站: <https://www.kotlincn.net/>
+* 《Kotlin for android developers》中文版翻译: <https://wangjiegulu.gitbooks.io/kotlin-for-android-developers-zh/content/>

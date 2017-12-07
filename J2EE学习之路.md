@@ -488,6 +488,7 @@ Eclipse中`Update Project`，选择`Force Update of Snapshots/Releases`
 * http://mvnrepository.com/    （搜索）
 * https://maven-repository.com/    （搜索）
 * http://maven.oschina.net/home.html    （搜索）
+* https://bintray.com/bintray/jcenter    （搜索）
 * http://www.ebi.ac.uk/intact/maven/nexus/content/repositories/
 * http://repo1.maven.org/maven2/
 * http://repository.jboss.com/maven2/
