@@ -31,6 +31,12 @@
 * 配置构建: <https://developer.android.com/studio/build/index.html>
 * Chapter 6. The Gradle Wrapper: <https://docs.gradle.org/current/userguide/gradle_wrapper.html>
 
+## Gerrit
+
+* <https://www.gerritcodereview.com/>
+* <https://gerrit-documentation.storage.googleapis.com/Documentation/2.14.5.1/install.html>
+* 如何搭建开源code review gerrit服务器: <https://www.cnblogs.com/tesky0125/p/5877536.html>
+
 ## Kotlin
 
 * <http://kotlinlang.org/>
