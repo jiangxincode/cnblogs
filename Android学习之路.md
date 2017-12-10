@@ -13,10 +13,15 @@
 * andbook: <http://andbook.anddev.org/>
 * <http://androidcommunity.com/>
 * <http://blog.sina.com.cn/s/articlelist_1463312553_1_1.html>
-* http://stackoverflow.com/questions/tagged/android>
+* <http://stackoverflow.com/questions/tagged/android>
 * <http://www.marschen.com/portal.php>
 
 * <https://www.xamarin.com/>
+
+* Android之基于XMPP协议即时通讯软件(一): <http://blog.csdn.net/way_ping_li/article/details/17385379>
+* Android之基于XMPP协议即时通讯软件(二): <http://blog.csdn.net/way_ping_li/article/details/17403929>
+* Android之基于XMPP协议即时通讯软件(三): <http://blog.csdn.net/way_ping_li/article/details/17490377>
+* Android核心分析: <http://blog.csdn.net/column/details/androidcore.html>
 
 ## Eclipse
 
