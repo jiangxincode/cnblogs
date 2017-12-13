@@ -22,6 +22,7 @@
 * Android之基于XMPP协议即时通讯软件(三): <http://blog.csdn.net/way_ping_li/article/details/17490377>
 * Android核心分析: <http://blog.csdn.net/column/details/androidcore.html>
 * Android 新一代编译 toolchain Jack & Jill 简介: <https://yq.aliyun.com/articles/40811>
+* ANDROID STUDIO详细教程汇总: <http://stormzhang.com/devtools/2015/06/17/android-studio-all/>
 
 ## Eclipse
 
