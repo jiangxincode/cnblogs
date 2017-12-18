@@ -1,9 +1,8 @@
 # Andriod学习之路
 
-* <http://www.android-studio.org/>
-* <http://developer.android.com/guide/index.html>
-* <http://developer.android.com/training/index.html>
+* <https://developer.android.com/develop/index.html>
 * Git repositories on android: <https://android.googlesource.com/>
+* <http://www.android-studio.org/>
 
 * 安卓巴士: <http://www.apkbus.com/>
 * eoeandroid: <http://www.eoeandroid.com/forum.php>
@@ -23,6 +22,11 @@
 * Android核心分析: <http://blog.csdn.net/column/details/androidcore.html>
 * Android 新一代编译 toolchain Jack & Jill 简介: <https://yq.aliyun.com/articles/40811>
 * ANDROID STUDIO详细教程汇总: <http://stormzhang.com/devtools/2015/06/17/android-studio-all/>
+* android adb push 与 adb install的比较（两种安装APK的方法）: <http://blog.csdn.net/liranke/article/details/6795984>
+* Android AM命令行启动程序的方法: <http://blog.csdn.net/sunrock/article/details/5675067>
+* Android系统开篇: <http://gityuan.com/android/>
+* Handler内存泄漏详解及其解决方案: <http://blog.csdn.net/javazejian/article/details/50839443>
+* 对于android.intent.action.MAIN和android.intent.category.LAUNCHER的理解: <http://blog.csdn.net/lindroid20/article/details/51993247>
 
 ## Eclipse
 
