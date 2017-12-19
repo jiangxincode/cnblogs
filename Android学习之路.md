@@ -27,6 +27,12 @@
 * Android系统开篇: <http://gityuan.com/android/>
 * Handler内存泄漏详解及其解决方案: <http://blog.csdn.net/javazejian/article/details/50839443>
 * 对于android.intent.action.MAIN和android.intent.category.LAUNCHER的理解: <http://blog.csdn.net/lindroid20/article/details/51993247>
+* 基础总结篇之二：Activity的四种launchMode: <http://blog.csdn.net/liuhe688/article/details/6754323>
+* Android加密之文件级加密: <http://blog.csdn.net/myfriend0/article/details/77094890>
+* Android属性allowBackup安全风险浅析: <http://www.freebuf.com/articles/terminal/60778.html>
+* Android Bander设计与实现 - 设计篇: <http://blog.csdn.net/universus/article/details/6211589>
+* Android Application的使用及其生命周期: <https://www.cnblogs.com/carlo/p/4734291.html>
+* Android ActionBar完全解析，使用官方推荐的最佳导航栏(上): <http://blog.csdn.net/guolin_blog/article/details/18234477>
 
 ## Eclipse
 
