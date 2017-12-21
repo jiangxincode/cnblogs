@@ -33,6 +33,15 @@
 * Android Bander设计与实现 - 设计篇: <http://blog.csdn.net/universus/article/details/6211589>
 * Android Application的使用及其生命周期: <https://www.cnblogs.com/carlo/p/4734291.html>
 * Android ActionBar完全解析，使用官方推荐的最佳导航栏(上): <http://blog.csdn.net/guolin_blog/article/details/18234477>
+* Android中Handler的使用: <http://blog.csdn.net/iispring/article/details/47115879>
+* 深入源码解析Android中的Handler,Message,MessageQueue,Looper: <http://blog.csdn.net/iispring/article/details/47180325>
+* 详解 Android 通信: <http://www.androidchina.net/5028.html>
+* 什么是android.R.id.content？ <http://blog.csdn.net/colinandroid/article/details/77748695>
+* Android Fragment的用法（一）: <https://www.cnblogs.com/guop/p/5072572.html>
+* Fragment相关: Pro Android 5
+* Android Partitions Explained: boot, system, recovery, data, cache & misc: <https://www.addictivetips.com/mobile/android-partitions-explained-boot-system-recovery-data-cache-misc/>
+* Android for work总结(上): <http://blog.csdn.net/liu1314you/article/details/52028823>
+* MIUI ROM适配之旅第一天——认识Android手机: <http://www.miui.com/thread-402302-1-1.html>
 
 ## Eclipse
 

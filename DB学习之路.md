@@ -306,9 +306,10 @@ ORACLE_SID 实例ID
 
 # SQLite
 
-* http://www.sqlite.org/
-* DB Browser for SQLite: http://sqlitebrowser.org/
-* SQLite Expert: http://www.sqliteexpert.com/index.html
+* <http://www.sqlite.org/>
+* DB Browser for SQLite: <http://sqlitebrowser.org/>
+* SQLite Expert: <http://www.sqliteexpert.com/index.html>
+* SQLCipher: <https://www.zetetic.net/sqlcipher/>
 
 
 # mongodb
