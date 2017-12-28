@@ -42,6 +42,7 @@
 * Android Partitions Explained: boot, system, recovery, data, cache & misc: <https://www.addictivetips.com/mobile/android-partitions-explained-boot-system-recovery-data-cache-misc/>
 * Android for work总结(上): <http://blog.csdn.net/liu1314you/article/details/52028823>
 * MIUI ROM适配之旅第一天——认识Android手机: <http://www.miui.com/thread-402302-1-1.html>
+* android获取内置和外置SD卡路径: <http://blog.csdn.net/chadeltu/article/details/43736093>
 
 ## Eclipse
 

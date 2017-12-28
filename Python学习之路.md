@@ -39,6 +39,8 @@
 * Swaroop C H: http://www.swaroopch.com/
 * JPype: http://www.ibm.com/developerworks/cn/opensource/os-cn-jpype/index.html
 
+* Python zipfile报错问题: http://blog.csdn.net/u012063703/article/details/43448397
+
 # PyDev
 
 * 项目地址：http://www.pydev.org/
