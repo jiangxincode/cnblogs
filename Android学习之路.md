@@ -3,6 +3,7 @@
 * <https://developer.android.com/develop/index.html>
 * Git repositories on android: <https://android.googlesource.com/>
 * <http://www.android-studio.org/>
+* AOSP: <https://source.android.com/>
 
 * 安卓巴士: <http://www.apkbus.com/>
 * eoeandroid: <http://www.eoeandroid.com/forum.php>
@@ -44,6 +45,13 @@
 * MIUI ROM适配之旅第一天——认识Android手机: <http://www.miui.com/thread-402302-1-1.html>
 * android获取内置和外置SD卡路径: <http://blog.csdn.net/chadeltu/article/details/43736093>
 
+* Android Studio系列教程一--下载与安装: <http://stormzhang.com/devtools/2014/11/25/android-studio-tutorial1/>
+* Android Studio系列教程二--基本设置与运行: <http://stormzhang.com/devtools/2014/11/28/android-studio-tutorial2/>
+* Android Studio系列教程三--快捷键: <http://stormzhang.com/devtools/2014/12/09/android-studio-tutorial3/>
+* Android Studio系列教程四--Gradle基础: <http://stormzhang.com/devtools/2014/12/18/android-studio-tutorial4/>
+* ANDROID STUDIO系列教程五--GRADLE命令详解与导入第三方包: <http://stormzhang.com/devtools/2015/01/05/android-studio-tutorial5/>
+* ANDROID STUDIO系列教程六--GRADLE多渠道打包: <http://stormzhang.com/devtools/2015/01/15/android-studio-tutorial6/>
+
 ## Eclipse
 
 * Android Development Tools for Eclipse: <http://marketplace.eclipse.org/content/android-development-tools-eclipse>
@@ -54,12 +62,23 @@
 * Android程序开发初级教程(二): <http://blog.csdn.net/k7sem/article/details/1887437>
 * Android程序开发初级教程(三): <http://blog.csdn.net/k7sem/article/details/1887499>
 
-## Gradle
+## Gradle And Android Plugin
 
 * <http://gradle.org/>
 * Gradle User Guide: <https://docs.gradle.org/current/userguide/userguide_single.html>
-* 配置构建: <https://developer.android.com/studio/build/index.html>
 * Chapter 6. The Gradle Wrapper: <https://docs.gradle.org/current/userguide/gradle_wrapper.html>
+* Getting Started With Gradle: <https://www.petrikainulainen.net/getting-started-with-gradle/>
+* Gradle学习系列之一——Gradle快速入门: <http://www.cnblogs.com/davenkin/p/gradle-learning-1.html>
+* gradle使用文档: <https://yq.aliyun.com/articles/54151>
+* Gradle修改本地仓库的位置: <http://blog.csdn.net/xq328220454/article/details/30233759>
+
+* (新)配置构建: <https://developer.android.com/studio/build/index.html>
+* (老)Gradle Plugin User Guide: <http://tools.android.com/tech-docs/new-build-system/user-guide>
+* (老)Gradle Plugin User Guide 翻译: <http://avatarqing.github.io/Gradle-Plugin-User-Guide-Chinese-Verision/>
+* 加速Android Studio/Gradle构建: <https://isming.me/2015/03/18/android-build-speed-up/>
+* 用Gradle 构建你的android程序: <https://www.cnblogs.com/youxilua/archive/2013/05/20/3087935.html>
+* 用Gradle 构建你的android程序-依赖管理篇: <http://www.cnblogs.com/youxilua/archive/2013/05/22/3092657.html>
+
 
 ## Gerrit
 

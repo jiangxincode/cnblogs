@@ -53,9 +53,7 @@
 * ICU - International Components for Unicode: http://site.icu-project.org/
 * libevent: http://libevent.org/
 
-
 * Comparing Two High-Performance I/O Design Patterns: http://www.artima.com/articles/io_design_patterns.html
-
 
 * MinGW: http://www.mingw.org/
 * MinGW-w64: http://mingw-w64.org/
@@ -84,13 +82,6 @@
 2、点 Add 选择头文件的路径后点确定;
 3、在源文件中添加相应的头文件后即可实现自动补全。
 
-
-
-
-## Other IDEs
-
-* http://www.codelite.org/
-* http://anjuta.org/
 
 ## CMake
 
