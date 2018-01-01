@@ -10,7 +10,7 @@
 * SQL Pretty Printer formatter: http://www.dpriver.com/index.php
 * ApexSQL: http://www.apexsql.com/
 * RazorSQL: http://www.razorsql.com/
-* AquaFold: http://www.aquafold.com/
+* AquaFold(Aqua Data Studio): http://www.aquafold.com/
 * Withdata: http://www.withdata.com/index.html
 * HeidiSQL: https://www.heidisql.com/
 * erwin: http://erwin.com/
@@ -21,6 +21,7 @@
 * 数据库比较工具DBCompareTool 0.3.0 preview 发布：http://www.blogjava.net/allenny/archive/2011/09/30/359028.html
 * DB Compare(SQL Server): http://dbcompare.codeplex.com/
 * DBComparer(SQL Server): <http://dbcomparer.com/>
+* SQL Delta: <https://sqldelta.com/>
 * NoSQL数据库笔谈: http://old.sebug.net/paper/databases/nosql/Nosql.html
 * 存储过程使用建议: http://www.cnblogs.com/jes_shaw/archive/2009/05/20/1468505.html
 
@@ -365,7 +366,6 @@ ORACLE_SID 实例ID
 * hbase在淘宝的应用和优化小结: http://www.cnblogs.com/panfeng412/articles/hbase-optimization-and-apply-summary-in-taobao.html
 * bigtable model with cassandra and hbase: http://horicky.blogspot.com/2010/10/bigtable-model-with-cassandra-and-hbase.html
 * 编译和使用hive与HBase通信包--hive-hbase-handler.jar及下载: http://www.aboutyun.com/thread-7817-1-1.html
-
 
 # Hive
 

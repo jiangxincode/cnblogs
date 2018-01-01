@@ -44,6 +44,9 @@
 * Android for work总结(上): <http://blog.csdn.net/liu1314you/article/details/52028823>
 * MIUI ROM适配之旅第一天——认识Android手机: <http://www.miui.com/thread-402302-1-1.html>
 * android获取内置和外置SD卡路径: <http://blog.csdn.net/chadeltu/article/details/43736093>
+* Android之Adapter用法总结：<http://blog.csdn.net/fznpcy/article/details/8658155/>
+* Android签名机制之---签名过程详解: <http://blog.csdn.net/jiangwei0910410003/article/details/50402000>
+* android文件读写以及不同应用之间的文件读写操作: <http://blog.csdn.net/zyb243380456/article/details/7426449>
 
 * Android Studio系列教程一--下载与安装: <http://stormzhang.com/devtools/2014/11/25/android-studio-tutorial1/>
 * Android Studio系列教程二--基本设置与运行: <http://stormzhang.com/devtools/2014/11/28/android-studio-tutorial2/>
