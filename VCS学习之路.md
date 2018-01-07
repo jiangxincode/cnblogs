@@ -295,6 +295,7 @@ SVN本身并不提供这种强制写log的功能，而是通过一系列的钩�
 * Git教程-分支和tag管理: http://blog.csdn.net/top_code/article/details/52336221
 * Publishing a Website on Bitbucket Cloud: https://confluence.atlassian.com/bitbucket/publishing-a-website-on-bitbucket-cloud-221449776.html
 * What are the git concepts of HEAD, master, origin? <https://stackoverflow.com/questions/8196544/what-are-the-git-concepts-of-head-master-origin>
+* How do I make Git use the editor of my choice for commits?: <https://stackoverflow.com/questions/2596805/how-do-i-make-git-use-the-editor-of-my-choice-for-commits>
 
 ## install
 

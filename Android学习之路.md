@@ -16,6 +16,12 @@
 
 * <https://www.xamarin.com/>
 
+* busybox: <https://busybox.net/>
+
+* 解决adb push时出现的"Read-only file system"问题: <http://www.cnblogs.com/jiangxinnju/p/8186390.html>
+* Android Studio移动鼠标显示悬浮提示的设置方法: <http://www.cnblogs.com/jiangxinnju/p/8227442.html>
+* Android真机安装sqlite3的方法: <http://www.cnblogs.com/jiangxinnju/p/8227625.html>
+
 * 使用 Intel HAXM 为 Android 模拟器加速，媲美真机: <http://www.cnblogs.com/beginor/archive/2013/01/13/2858228.html>
 * Android之基于XMPP协议即时通讯软件(一): <http://blog.csdn.net/way_ping_li/article/details/17385379>
 * Android之基于XMPP协议即时通讯软件(二): <http://blog.csdn.net/way_ping_li/article/details/17403929>
@@ -42,11 +48,15 @@
 * Fragment相关: Pro Android 5
 * Android Partitions Explained: boot, system, recovery, data, cache & misc: <https://www.addictivetips.com/mobile/android-partitions-explained-boot-system-recovery-data-cache-misc/>
 * Android for work总结(上): <http://blog.csdn.net/liu1314you/article/details/52028823>
-* MIUI ROM适配之旅第一天——认识Android手机: <http://www.miui.com/thread-402302-1-1.html>
 * android获取内置和外置SD卡路径: <http://blog.csdn.net/chadeltu/article/details/43736093>
 * Android之Adapter用法总结：<http://blog.csdn.net/fznpcy/article/details/8658155/>
 * Android签名机制之---签名过程详解: <http://blog.csdn.net/jiangwei0910410003/article/details/50402000>
 * android文件读写以及不同应用之间的文件读写操作: <http://blog.csdn.net/zyb243380456/article/details/7426449>
+* [Android] 为Android安装BusyBox —— 完整的bash shell: <https://www.cnblogs.com/xiaowenji/archive/2011/03/12/1982309.html>
+* 各种Intent Action: <https://developer.android.com/reference/android/content/Intent.html>
+* Android 使用android-support-multidex解决Dex超出方法数的限制问题,让你的应用不再爆棚: <http://blog.csdn.net/t12x3456/article/details/40837287>
+* Android应用坐标系统全面详解: <http://blog.csdn.net/yanbober/article/details/50419117/>
+
 
 * Android Studio系列教程一--下载与安装: <http://stormzhang.com/devtools/2014/11/25/android-studio-tutorial1/>
 * Android Studio系列教程二--基本设置与运行: <http://stormzhang.com/devtools/2014/11/28/android-studio-tutorial2/>
@@ -54,6 +64,11 @@
 * Android Studio系列教程四--Gradle基础: <http://stormzhang.com/devtools/2014/12/18/android-studio-tutorial4/>
 * ANDROID STUDIO系列教程五--GRADLE命令详解与导入第三方包: <http://stormzhang.com/devtools/2015/01/05/android-studio-tutorial5/>
 * ANDROID STUDIO系列教程六--GRADLE多渠道打包: <http://stormzhang.com/devtools/2015/01/15/android-studio-tutorial6/>
+
+* Android Studio优化技巧：<http://blog.oneapm.com/apm-tech/257.html>
+
+* MIUI ROM适配之旅第一天——认识Android手机: <http://www.miui.com/thread-402302-1-1.html>
+* H60-L01 EMUI3.0 ROOT 傻瓜教程: <http://cn.ui.vmall.com/thread-1267937-1-1.html>
 
 ## Eclipse
 
@@ -71,9 +86,13 @@
 * Gradle User Guide: <https://docs.gradle.org/current/userguide/userguide_single.html>
 * Chapter 6. The Gradle Wrapper: <https://docs.gradle.org/current/userguide/gradle_wrapper.html>
 * Getting Started With Gradle: <https://www.petrikainulainen.net/getting-started-with-gradle/>
+
+* 彻底搞懂Gradle、Gradle Wrapper与Android Plugin for Gradle的区别和联系: <http://www.cnblogs.com/jiangxinnju/p/8229129.html>
+
 * Gradle学习系列之一——Gradle快速入门: <http://www.cnblogs.com/davenkin/p/gradle-learning-1.html>
 * gradle使用文档: <https://yq.aliyun.com/articles/54151>
 * Gradle修改本地仓库的位置: <http://blog.csdn.net/xq328220454/article/details/30233759>
+* gradle cache目录(.gradle)剖析: <https://zhuanlan.zhihu.com/p/26473930>
 
 * (新)配置构建: <https://developer.android.com/studio/build/index.html>
 * (老)Gradle Plugin User Guide: <http://tools.android.com/tech-docs/new-build-system/user-guide>
@@ -82,6 +101,13 @@
 * 用Gradle 构建你的android程序: <https://www.cnblogs.com/youxilua/archive/2013/05/20/3087935.html>
 * 用Gradle 构建你的android程序-依赖管理篇: <http://www.cnblogs.com/youxilua/archive/2013/05/22/3092657.html>
 
+## Android常见路径说明
+
+* 数据库默认路径: /data/data/apk包名/databases
+* 系统自带的应用程序: /system/app
+* 用户程序安装的目录: /data/app
+* 存放应用程序的数据: /data/data
+* dalvik虚拟机的可执行文件: /data/dalvik-cache
 
 ## Gerrit
 
