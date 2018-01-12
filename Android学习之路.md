@@ -5,6 +5,8 @@
 * <http://www.android-studio.org/>
 * AOSP: <https://source.android.com/>
 
+* ADB: <http://adbshell.com/>
+
 * 安卓巴士: <http://www.apkbus.com/>
 * eoeandroid: <http://www.eoeandroid.com/forum.php>
 * <http://www.anddev.org/>
