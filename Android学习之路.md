@@ -58,7 +58,9 @@
 * 各种Intent Action: <https://developer.android.com/reference/android/content/Intent.html>
 * Android 使用android-support-multidex解决Dex超出方法数的限制问题,让你的应用不再爆棚: <http://blog.csdn.net/t12x3456/article/details/40837287>
 * Android应用坐标系统全面详解: <http://blog.csdn.net/yanbober/article/details/50419117/>
-
+* Android命令行/c语言/java设置获取系统属性的方法: <http://www.mikewootc.com/wiki/android/other/system_property.html>
+* Android中visibility属性VISIBLE、INVISIBLE、GONE的区别: <http://blog.csdn.net/chindroid/article/details/8000713>
+* Formatting and Plurals: Android UI Fundamentals[Android UI基础教程](Formatting and Plurals)
 
 * Android Studio系列教程一--下载与安装: <http://stormzhang.com/devtools/2014/11/25/android-studio-tutorial1/>
 * Android Studio系列教程二--基本设置与运行: <http://stormzhang.com/devtools/2014/11/28/android-studio-tutorial2/>

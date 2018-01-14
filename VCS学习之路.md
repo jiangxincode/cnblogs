@@ -8,7 +8,6 @@
 * https://sourceforge.net/ (Git Mercurial SVN)
 * http://www.codeplex.com/
 * https://sourceware.org/
-* <del>http://code.taobao.org/</del> (SVN)
 * http://git.oschina.net/
 * http://www.javaforge.com (Git Mercurial SVN)
 * http://unfuddle.com
@@ -16,6 +15,7 @@
 * http://svn.jundie.net/
 * http://www.svnchina.com/index.php
 * http://code.svnspot.com/
+* <del>http://code.taobao.org/</del> (SVN)
 * <del>http://code.google.com/</del>
 * <del>http://svn.coollittlethings.com/index.php</del>
 * <del>http://www.svnhost.cn/</del> (SVN)
@@ -140,8 +140,6 @@
 
 ## GIT
 
-安装了git后会附带很多linux下常用的工具，比如ssh,scp,curl,split,cat等，很方便。
-
 * GIT：<http://git-scm.com/>
 * Reference：<http://git-scm.com/docs>
 * Documentation：<http://git-scm.com/doc>
@@ -182,11 +180,12 @@
 * Commit message 和 Change log 编写指南：http://www.ruanyifeng.com/blog/2016/01/commit_message_change_log.html
 * Writing a Friendly README: http://rowanmanning.com/posts/writing-a-friendly-readme/
 * GitHub Pages + Hexo搭建博客: http://crazymilk.github.io/2015/12/28/GitHub-Pages-Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/
-* Hexo+Next搭建Github个人静态博客: 	<http://www.cnblogs.com/cnfanhua/p/5167191.html>
+* Hexo+Next搭建Github个人静态博客: <http://www.cnblogs.com/cnfanhua/p/5167191.html>
 * Git教程-分支和tag管理: http://blog.csdn.net/top_code/article/details/52336221
 * Publishing a Website on Bitbucket Cloud: https://confluence.atlassian.com/bitbucket/publishing-a-website-on-bitbucket-cloud-221449776.html
 * What are the git concepts of HEAD, master, origin? <https://stackoverflow.com/questions/8196544/what-are-the-git-concepts-of-head-master-origin>
 * How do I make Git use the editor of my choice for commits?: <https://stackoverflow.com/questions/2596805/how-do-i-make-git-use-the-editor-of-my-choice-for-commits>
+* warning: push.default is unset的解决方案: <http://blog.csdn.net/jrainbow/article/details/19338525>
 * 分支管理策略: <https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/0013758410364457b9e3d821f4244beb0fd69c61a185ae0000>
 * Bug分支: <https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/00137602359178794d966923e5c4134bc8bf98dfb03aea3000>
 
