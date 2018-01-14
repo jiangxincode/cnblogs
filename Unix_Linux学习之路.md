@@ -71,6 +71,7 @@
 * ubuntu删除旧内核和多余启动项: <http://pppboy.blog.163.com/blog/static/3020379620113173147935/>
 * 各个Linux版本的本地root密码破解方法: <http://os.51cto.com/art/200910/159523.htm>
 * apt-get remove, apt-get autoremove和aptitude remove的区别: <http://blog.csdn.net/jiangxinnju/article/details/38341283>
+* What is the difference between dpkg and aptitude/apt-get? <https://askubuntu.com/questions/309113/what-is-the-difference-between-dpkg-and-aptitude-apt-get>
 * Linux乱码问题解决方案: <http://www.cnblogs.com/jiangxinnju/p/6014111.html>
 * LINUX下GDB调试: <http://blog.csdn.net/sco_field/article/details/4310987>
 * Linux 软件看门狗 watchdog: <http://blog.csdn.net/liigo/article/details/9227205>
@@ -191,9 +192,7 @@
 
     apt-cache # query the APT cache
     apt-file search libz.so.1 # APT package searching utility
-    apt-get
     apt-cdrom # apt-cdrom is a tool to add CDROM's to APT's source list.
-    apititude
     dpkg
 
     sudo sh *.sh # 打开.sh文件
