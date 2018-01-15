@@ -60,6 +60,7 @@
 * Android应用坐标系统全面详解: <http://blog.csdn.net/yanbober/article/details/50419117/>
 * Android命令行/c语言/java设置获取系统属性的方法: <http://www.mikewootc.com/wiki/android/other/system_property.html>
 * Android中visibility属性VISIBLE、INVISIBLE、GONE的区别: <http://blog.csdn.net/chindroid/article/details/8000713>
+* 如何在Root的手机上开启ViewServer，使得HierachyViewer能够连接: <http://maider.blog.sohu.com/255448342.html>
 * Formatting and Plurals: Android UI Fundamentals[Android UI基础教程](Formatting and Plurals)
 
 * Android Studio系列教程一--下载与安装: <http://stormzhang.com/devtools/2014/11/25/android-studio-tutorial1/>
