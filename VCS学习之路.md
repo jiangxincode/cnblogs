@@ -188,6 +188,7 @@
 * warning: push.default is unset的解决方案: <http://blog.csdn.net/jrainbow/article/details/19338525>
 * 分支管理策略: <https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/0013758410364457b9e3d821f4244beb0fd69c61a185ae0000>
 * Bug分支: <https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/00137602359178794d966923e5c4134bc8bf98dfb03aea3000>
+* 简单对比git pull和git pull --rebase的使用: <https://www.cnblogs.com/kevingrace/p/5896706.html>
 
 ### git init 与 git init --bare
 

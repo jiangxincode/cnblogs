@@ -55,13 +55,18 @@
 * Android签名机制之---签名过程详解: <http://blog.csdn.net/jiangwei0910410003/article/details/50402000>
 * android文件读写以及不同应用之间的文件读写操作: <http://blog.csdn.net/zyb243380456/article/details/7426449>
 * [Android] 为Android安装BusyBox —— 完整的bash shell: <https://www.cnblogs.com/xiaowenji/archive/2011/03/12/1982309.html>
-* 各种Intent Action: <https://developer.android.com/reference/android/content/Intent.html>
+* Intent: <https://developer.android.com/reference/android/content/Intent.html>
+* Configure Android Studio: <https://developer.android.com/studio/intro/studio-config.html>
+* Managing the System UI: <https://developer.android.com/training/system-ui/index.html>
 * Android 使用android-support-multidex解决Dex超出方法数的限制问题,让你的应用不再爆棚: <http://blog.csdn.net/t12x3456/article/details/40837287>
 * Android应用坐标系统全面详解: <http://blog.csdn.net/yanbober/article/details/50419117/>
 * Android命令行/c语言/java设置获取系统属性的方法: <http://www.mikewootc.com/wiki/android/other/system_property.html>
 * Android中visibility属性VISIBLE、INVISIBLE、GONE的区别: <http://blog.csdn.net/chindroid/article/details/8000713>
 * 如何在Root的手机上开启ViewServer，使得HierachyViewer能够连接: <http://maider.blog.sohu.com/255448342.html>
 * Formatting and Plurals: Android UI Fundamentals[Android UI基础教程](Formatting and Plurals)
+* Android vector标签 PathData 画图超详解: <https://www.cnblogs.com/yuhanghzsd/p/5466846.html>
+* Implementation vs API dependency: <https://jeroenmols.com/blog/2017/06/14/androidstudio3/>
+* Android软键盘遮挡的四种解决方案: <https://www.cnblogs.com/jerehedu/p/4194125.html>
 
 * Android Studio系列教程一--下载与安装: <http://stormzhang.com/devtools/2014/11/25/android-studio-tutorial1/>
 * Android Studio系列教程二--基本设置与运行: <http://stormzhang.com/devtools/2014/11/28/android-studio-tutorial2/>
@@ -71,6 +76,7 @@
 * ANDROID STUDIO系列教程六--GRADLE多渠道打包: <http://stormzhang.com/devtools/2015/01/15/android-studio-tutorial6/>
 
 * Android Studio优化技巧：<http://blog.oneapm.com/apm-tech/257.html>
+* Android Studio相关目录解析: <http://www.cnblogs.com/jiangxinnju/p/8323569.html>
 
 * MIUI ROM适配之旅第一天——认识Android手机: <http://www.miui.com/thread-402302-1-1.html>
 * H60-L01 EMUI3.0 ROOT 傻瓜教程: <http://cn.ui.vmall.com/thread-1267937-1-1.html>

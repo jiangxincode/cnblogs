@@ -1,4 +1,4 @@
-# Tools/Libraries/Books
+# Lisp学习之路
 
 * Common Lisp: https://en.wikipedia.org/wiki/Common_Lisp
 * Clozure Common Lisp: http://ccl.clozure.com/
@@ -24,6 +24,7 @@
 * Limp: http://www.vim.org/scripts/script.php?script_id=2219
 * 使用 Cusp Eclipse 插件开发 Lisp 应用程序：https://www.ibm.com/developerworks/cn/opensource/os-eclipse-lispcusp/
 * Dandelion: http://sourceforge.net/projects/dandelion-ecl/
+* Dandelion - Eclipse Lisp Plugin：<http://blog.csdn.net/yang_7_46/article/details/26445133>
 * LispWorks: http://www.lispworks.com/
 * Racket: http://racket-lang.org/
 * MIT/GNU Scheme: http://www.gnu.org/software/mit-scheme/
@@ -33,8 +34,6 @@
 * Lisp Programming with Cusp: http://www.sergeykolos.com/cusp/intro/
 * MELPA: http://melpa.org/
 * CLOCC - Common Lisp Open Code Collection: https://sourceforge.net/projects/clocc/
-
-# Tutorials
 
 * MIT/GNU Scheme: http://groups.csail.mit.edu/mac/projects/scheme/
 * Lisp之根源: http://daiyuwen.freeshell.org/gb/rol/roots_of_lisp.html
@@ -67,9 +66,7 @@
 * Lisp as an Alternative to Java: http://www.norvig.com/java-lisp.html
 * The Common Lisp Cookbook: http://cl-cookbook.sourceforge.net/
 
-
-
-# Clojure
+## Clojure
 
 * Clojure: http://clojure.org/
 * Getting Started: http://dev.clojure.org/display/doc/Getting+Started
