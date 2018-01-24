@@ -67,6 +67,7 @@
 * Android vector标签 PathData 画图超详解: <https://www.cnblogs.com/yuhanghzsd/p/5466846.html>
 * Implementation vs API dependency: <https://jeroenmols.com/blog/2017/06/14/androidstudio3/>
 * Android软键盘遮挡的四种解决方案: <https://www.cnblogs.com/jerehedu/p/4194125.html>
+* repo 下载Android源码（国内镜像）: <http://blog.csdn.net/shenlan18446744/article/details/d>
 
 * Android Studio系列教程一--下载与安装: <http://stormzhang.com/devtools/2014/11/25/android-studio-tutorial1/>
 * Android Studio系列教程二--基本设置与运行: <http://stormzhang.com/devtools/2014/11/28/android-studio-tutorial2/>
