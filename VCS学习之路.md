@@ -15,11 +15,14 @@
 * http://svn.jundie.net/
 * http://www.svnchina.com/index.php
 * http://code.svnspot.com/
-* <del>http://code.taobao.org/</del> (SVN)
-* <del>http://code.google.com/</del>
-* <del>http://svn.coollittlethings.com/index.php</del>
-* <del>http://www.svnhost.cn/</del> (SVN)
-* <del>http://www.chinasvn.com</del> (SVN)
+
+## 代码托管网站（已废弃）
+
+* <http://code.taobao.org/> (SVN)
+* <http://code.google.com/>
+* <http://svn.coollittlethings.com/index.php>
+* <http://www.svnhost.cn/> (SVN)
+* <http://www.chinasvn.com> (SVN)
 
 ## SVN
 
@@ -49,86 +52,11 @@
 * SVN版本库无损迁移与自动备份（一）:http://www.cnblogs.com/springside-example/archive/2011/11/30/2530176.html
 * SVN版本库无损迁移与自动备份（二）:http://www.cnblogs.com/springside-example/archive/2011/11/30/2530174.html
 * SVN+Apache域用户认证配置方法_Windows(转，重新排版，部分内容更新优化): http://www.cnblogs.com/jiangxinnju/p/5906377.html
+* Use the SVN command-line tool: <http://www.cnblogs.com/jiangxinnju/p/4781259.html>
 * TortoiseSVN,TortoiseGit修改差异查看器为BeyondCompare: http://blog.csdn.net/sanfye/article/details/48028879
 * SVN的钩子--限制强制写日志（log）: <http://duchengjiu.iteye.com/blog/1739694>
 * svn ignore 的用法（忽略文件及目录）: <http://blog.csdn.net/yhl27/article/details/24318001>
 * SVN版本冲突，COMMIT时出现.MINE等文件: <https://www.cnblogs.com/xiezhengcai/archive/2013/06/06/3120931.html>
-
-### 简单教程（详细说明参考前面的教程地址，此处仅为了速查速用）
-
-以Win32SVN为例，在前面所列的地址中下载Win32SVN客户端并进行安装。安装好后，bin目录下就是相应程序了。通过添加环境变量的方式，把bin目录添加到path。启动cmd，敲入 svn help 以确认是否安装成功。现在可以找到你的代码，做checkout了。在commit代码的过程中，经常会出现的一个问题是：
-
-    svn: None of the environment variables SVN_EDITOR, VISUAL or EDITOR is set, and no 'editor-cmd' run-time configuration option was found
-
-这表示你的系统，没有指定svn客户端通过什么样的文本编辑器来写提交的注释。我们添加环境变量，SVN_EDITOR的值为notepad。再次svn ci 代码。notepad弹出了，写完注释保存。代码提交！
-
-注册环境变量SVN_EDITOR为"E:\Program Files\Vim\vim71\gvim.exe"，结果在svn ci的时候，出现错误:
-
-    'E:\Program' 不是内部或外部命令，也不是可运行的程序或批处理文件。
-    svn: 提交失败(细节如下):
-    svn: system('E:\Program Files\Vim\vim71\gvim.exe svn-commit.tmp') 返回 1
-
-把SVN_EDITOR改为"gvim.exe"，并且在path中添加路径"E:\Program Files\Vim\vim71",这样就可以在提交的时候用vim编写注释了。
-
-如果你不知道命令怎么用svn命令,可通过如下方式查询：
-
-    svn help
-
-知道了子命令，但是不知道子命令的用法，还可以查询：
-
-    svn help ci
-
-导入项目
-
-    svn import http://svn.chinasvn.com:82/pthread --message "Start project"
-
-导出项目
-
-    svn checkout http://svn.chinasvn.com:82/pthread
-
-采用 export 的方式来导出一份“干净”的项目
-
-    svn export http://svn.chinasvn.com:82/pthread pthread
-
-为失败的事务清场
-
-    svn cleanup
-
-在本地进行代码修改，检查修改状态
-
-    svn status -v
-    svn diff
-
-更新(update)服务器数据到本地
-
-    svn update directory
-    svn update file
-
-增加(add)本地数据到服务器
-
-    svn add file.c
-    svn add dir
-
-取消svn add
-
-    svn revert --recursive dir
-
-对文件进行改名和删除
-
-    svn mv b.c bb.c
-    svn rm d.c
-    svn rm dir --keep-local
-
-提交(commit)本地文档到服务器
-
-    svn commit
-    svn ci
-    svn ci -m "commit"
-
-查看日志
-
-    svn log directory
-    svn log file
 
 ### SVN更新失败，提示locked
 
@@ -165,6 +93,9 @@
 * choosealicense: http://choosealicense.com/
 
 * Git Community Book 中文版：<http://gitbook.liuhui998.com/index.html>
+* 分支管理策略: <https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/0013758410364457b9e3d821f4244beb0fd69c61a185ae0000>
+* Bug分支: <https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/00137602359178794d966923e5c4134bc8bf98dfb03aea3000>
+* git patch: Version Control with Git 2nd Edition[Git 版本控制管理 第2版] CHAPTER 14 Patches
 * Permanently remove files and folders from Git repo：http://dalibornasevic.com/posts/2-permanently-remove-files-and-folders-from-a-git-repository
 * git/github初级运用自如：http://www.cnblogs.com/fnng/archive/2012/01/07/2315685.html
 * windows中使用Git工具连接GitHub(配置篇)：http://www.cnblogs.com/sorex/archive/2011/08/10/2132359.html
@@ -186,9 +117,11 @@
 * What are the git concepts of HEAD, master, origin? <https://stackoverflow.com/questions/8196544/what-are-the-git-concepts-of-head-master-origin>
 * How do I make Git use the editor of my choice for commits?: <https://stackoverflow.com/questions/2596805/how-do-i-make-git-use-the-editor-of-my-choice-for-commits>
 * warning: push.default is unset的解决方案: <http://blog.csdn.net/jrainbow/article/details/19338525>
-* 分支管理策略: <https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/0013758410364457b9e3d821f4244beb0fd69c61a185ae0000>
-* Bug分支: <https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/00137602359178794d966923e5c4134bc8bf98dfb03aea3000>
 * 简单对比git pull和git pull --rebase的使用: <https://www.cnblogs.com/kevingrace/p/5896706.html>
+* 使用git rebase合并多次commit: <http://blog.csdn.net/yangcs2009/article/details/47166361>
+* git中将多次commit合并为一次commit: <http://blog.csdn.net/itfootball/article/details/44037181>
+* Resolving a merge conflict on gerrit: <https://www.entropywins.wtf/blog/2013/07/01/resolving-a-merge-conflict-on-gerrit/>
+* CHERRY-PICKING SPECIFIC COMMITS FROM ANOTHER BRANCH: <https://www.devroom.io/2010/06/10/cherry-picking-specific-commits-from-another-branch/>
 
 ### git init 与 git init --bare
 
@@ -208,12 +141,12 @@ git push origin master:b1
 
 ## Mercurial
 
-* Mercurial：https://mercurial.selenic.com/
-* mercurialeclipse： https://bitbucket.org/mercurialeclipse/main/wiki/Home
-* tortoisehg：http://tortoisehg.bitbucket.org/
+* Mercurial：<https://mercurial.selenic.com/>
+* mercurialeclipse： <https://bitbucket.org/mercurialeclipse/main/wiki/Home>
+* tortoisehg：<http://tortoisehg.bitbucket.org/>
 
 ## Others
 
-* perforce: https://www.perforce.com/
-* CVS：http://www.nongnu.org/cvs/
-* bazaar：http://bazaar.canonical.com/en/
+* perforce: <https://www.perforce.com/>
+* CVS：<http://www.nongnu.org/cvs/>
+* bazaar：<http://bazaar.canonical.com/en/>

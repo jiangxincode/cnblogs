@@ -5,8 +5,6 @@
 * <http://www.android-studio.org/>
 * AOSP: <https://source.android.com/>
 
-* ADB: <http://adbshell.com/>
-
 * 安卓巴士: <http://www.apkbus.com/>
 * eoeandroid: <http://www.eoeandroid.com/forum.php>
 * <http://www.anddev.org/>
@@ -20,7 +18,6 @@
 
 * busybox: <https://busybox.net/>
 
-* 解决adb push时出现的"Read-only file system"问题: <http://www.cnblogs.com/jiangxinnju/p/8186390.html>
 * Android Studio移动鼠标显示悬浮提示的设置方法: <http://www.cnblogs.com/jiangxinnju/p/8227442.html>
 * Android真机安装sqlite3的方法: <http://www.cnblogs.com/jiangxinnju/p/8227625.html>
 
@@ -31,7 +28,6 @@
 * Android核心分析: <http://blog.csdn.net/column/details/androidcore.html>
 * Android 新一代编译 toolchain Jack & Jill 简介: <https://yq.aliyun.com/articles/40811>
 * ANDROID STUDIO详细教程汇总: <http://stormzhang.com/devtools/2015/06/17/android-studio-all/>
-* android adb push 与 adb install的比较（两种安装APK的方法）: <http://blog.csdn.net/liranke/article/details/6795984>
 * Android AM命令行启动程序的方法: <http://blog.csdn.net/sunrock/article/details/5675067>
 * Android系统开篇: <http://gityuan.com/android/>
 * Handler内存泄漏详解及其解决方案: <http://blog.csdn.net/javazejian/article/details/50839443>
@@ -50,6 +46,7 @@
 * Fragment相关: Pro Android 5
 * Android Partitions Explained: boot, system, recovery, data, cache & misc: <https://www.addictivetips.com/mobile/android-partitions-explained-boot-system-recovery-data-cache-misc/>
 * Android for work总结(上): <http://blog.csdn.net/liu1314you/article/details/52028823>
+* Android for work总结(下): <http://blog.csdn.net/liu1314you/article/details/52038916>
 * android获取内置和外置SD卡路径: <http://blog.csdn.net/chadeltu/article/details/43736093>
 * Android之Adapter用法总结：<http://blog.csdn.net/fznpcy/article/details/8658155/>
 * Android签名机制之---签名过程详解: <http://blog.csdn.net/jiangwei0910410003/article/details/50402000>
@@ -58,6 +55,7 @@
 * Intent: <https://developer.android.com/reference/android/content/Intent.html>
 * Configure Android Studio: <https://developer.android.com/studio/intro/studio-config.html>
 * Managing the System UI: <https://developer.android.com/training/system-ui/index.html>
+* SDK版本关系: <https://developer.android.com/guide/topics/manifest/uses-sdk-element.html>
 * Android 使用android-support-multidex解决Dex超出方法数的限制问题,让你的应用不再爆棚: <http://blog.csdn.net/t12x3456/article/details/40837287>
 * Android应用坐标系统全面详解: <http://blog.csdn.net/yanbober/article/details/50419117/>
 * Android命令行/c语言/java设置获取系统属性的方法: <http://www.mikewootc.com/wiki/android/other/system_property.html>
@@ -68,6 +66,9 @@
 * Implementation vs API dependency: <https://jeroenmols.com/blog/2017/06/14/androidstudio3/>
 * Android软键盘遮挡的四种解决方案: <https://www.cnblogs.com/jerehedu/p/4194125.html>
 * repo 下载Android源码（国内镜像）: <http://blog.csdn.net/shenlan18446744/article/details/d>
+* android怎样调用@hide和internal API: <http://blog.csdn.net/linghu_java/article/details/8283042>
+* android下的SuppressLint与TargetApi: <http://blog.csdn.net/pony_maggie/article/details/52115884>
+* Android完美获取状态栏高度、标题栏高度、编辑区域高度的获取: <http://blog.csdn.net/a_running_wolf/article/details/5047796>
 
 * Android Studio系列教程一--下载与安装: <http://stormzhang.com/devtools/2014/11/25/android-studio-tutorial1/>
 * Android Studio系列教程二--基本设置与运行: <http://stormzhang.com/devtools/2014/11/28/android-studio-tutorial2/>
@@ -81,6 +82,13 @@
 
 * MIUI ROM适配之旅第一天——认识Android手机: <http://www.miui.com/thread-402302-1-1.html>
 * H60-L01 EMUI3.0 ROOT 傻瓜教程: <http://cn.ui.vmall.com/thread-1267937-1-1.html>
+
+## ADB
+
+* awesome-adb: <https://github.com/mzlogin/awesome-adb>
+* ADB: <http://adbshell.com/>
+* 解决adb push时出现的"Read-only file system"问题: <http://www.cnblogs.com/jiangxinnju/p/8186390.html>
+* android adb push 与 adb install的比较（两种安装APK的方法）: <http://blog.csdn.net/liranke/article/details/6795984>
 
 ## Eclipse
 
