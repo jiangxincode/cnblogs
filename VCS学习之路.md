@@ -36,7 +36,7 @@
 * Windows GUI客户端推荐TortoiseSVN：http://tortoisesvn.net/
 * Linux GUI客户端推荐RabbitVCS：http://rabbitvcs.org/
 * SVNKit：http://www.svnkit.com/index.html
-* VISUALSVN SERVER // Features // Windows Authentication for Subversion: https://www.visualsvn.com/server/features/windows-auth/
+* VISUALSVN: https://www.visualsvn.com/server/features/windows-auth/
 
 * Subversion 与版本控制：http://svnbook.red-bean.com/
 * TortoiseSVN：http://tortoisesvn.net/docs/release/TortoiseSVN_en/index.html
@@ -150,3 +150,5 @@ git push origin master:b1
 * perforce: <https://www.perforce.com/>
 * CVS：<http://www.nongnu.org/cvs/>
 * bazaar：<http://bazaar.canonical.com/en/>
+* ClearCase: <https://www.ibm.com/us-en/marketplace/rational-clearcase>
+* SourceSafe: <https://msdn.microsoft.com/en-us/vstudio/aa718670.aspx>
