@@ -69,6 +69,7 @@
 * android怎样调用@hide和internal API: <http://blog.csdn.net/linghu_java/article/details/8283042>
 * android下的SuppressLint与TargetApi: <http://blog.csdn.net/pony_maggie/article/details/52115884>
 * Android完美获取状态栏高度、标题栏高度、编辑区域高度的获取: <http://blog.csdn.net/a_running_wolf/article/details/5047796>
+* Android开发中dip，dpi，density，px等详解: <http://blog.qiji.tech/archives/2581>
 
 * Android Studio系列教程一--下载与安装: <http://stormzhang.com/devtools/2014/11/25/android-studio-tutorial1/>
 * Android Studio系列教程二--基本设置与运行: <http://stormzhang.com/devtools/2014/11/28/android-studio-tutorial2/>
