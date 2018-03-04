@@ -1,5 +1,10 @@
 # Editor And IDE
 
+## VSCode
+
+* Visual Studio Code: <https://code.visualstudio.com/Download>
+* Settings Sync: <https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync>
+
 ## VIM
 
 * http://www.vim.org/
@@ -29,11 +34,6 @@
 
 * emacswiki: http://www.emacswiki.org/emacs/
 * GNU Emacs Manuals Online: http://www.gnu.org/software/emacs/manual/
-
-## VSC
-
-* Visual Studio Code: https://code.visualstudio.com/Download
-* Settings Sync: https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync
 
 ## ultraedit
 

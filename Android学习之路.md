@@ -70,6 +70,9 @@
 * android下的SuppressLint与TargetApi: <http://blog.csdn.net/pony_maggie/article/details/52115884>
 * Android完美获取状态栏高度、标题栏高度、编辑区域高度的获取: <http://blog.csdn.net/a_running_wolf/article/details/5047796>
 * Android开发中dip，dpi，density，px等详解: <http://blog.qiji.tech/archives/2581>
+* 高斯模糊: <https://zh.wikipedia.org/wiki/%E9%AB%98%E6%96%AF%E6%A8%A1%E7%B3%8A>
+* 总结一下Android中主题(Theme)的正确玩法: <https://www.cnblogs.com/zhouyou96/p/5323138.html>
+* Android中 @和?区别以及?attr/**与@style/**等的区别: <http://blog.csdn.net/xx326664162/article/details/64125654>
 
 * Android Studio系列教程一--下载与安装: <http://stormzhang.com/devtools/2014/11/25/android-studio-tutorial1/>
 * Android Studio系列教程二--基本设置与运行: <http://stormzhang.com/devtools/2014/11/28/android-studio-tutorial2/>
