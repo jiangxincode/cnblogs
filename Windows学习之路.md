@@ -58,8 +58,8 @@ PowerShell的默认启动路径其实就是执行PowerShell时指定的默认工
 
 使用Beyond Compare扩展插件可以直接对比编译的.class文件，而不会显示一大堆乱码。
 
-* windows：http://www.scootersoftware.com/download.php?zz=kb_moreformats_win
-* linux：http://www.scootersoftware.com/download.php?zz=kb_moreformats_nix
+* windows：<http://www.scootersoftware.com/download.php?zz=kb_moreformats_win>
+* linux：<http://www.scootersoftware.com/download.php?zz=kb_moreformats_nix>
 
 ## 解决xshell中vim显示中文乱码的问题
 

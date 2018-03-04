@@ -1,1 +1,1 @@
-* http://www.lua.org/
+* <http://www.lua.org/>

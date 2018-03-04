@@ -1,2 +1,2 @@
-* http://www.erlang.org/
-* http://www.erlang-cn.com/
+* <http://www.erlang.org/>
+* <http://www.erlang-cn.com/>

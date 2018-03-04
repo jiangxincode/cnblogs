@@ -4,81 +4,81 @@
 
 * <http://db-engines.com>
 
-* Tech On The Net: http://www.techonthenet.com/index.php
-* Readings in Database Systems (commonly known as the "Red Book")：http://www.redbook.io/
+* Tech On The Net: <http://www.techonthenet.com/index.php>
+* Readings in Database Systems (commonly known as the "Red Book")：<http://www.redbook.io/>
 
-* SQL Pretty Printer formatter: http://www.dpriver.com/index.php
-* ApexSQL: http://www.apexsql.com/
-* RazorSQL: http://www.razorsql.com/
-* AquaFold(Aqua Data Studio): http://www.aquafold.com/
-* Withdata: http://www.withdata.com/index.html
-* HeidiSQL: https://www.heidisql.com/
-* erwin: http://erwin.com/
-* DBeaver: http://dbeaver.jkiss.org/
-* Navicat: http://www.navicat.com.cn/
-* DataGrip: https://www.jetbrains.com/datagrip/
-* EMS Database Management Solutions: https://www.sqlmanager.net/
-* 数据库比较工具DBCompareTool 0.3.0 preview 发布：http://www.blogjava.net/allenny/archive/2011/09/30/359028.html
-* DB Compare(SQL Server): http://dbcompare.codeplex.com/
+* SQL Pretty Printer formatter: <http://www.dpriver.com/index.php>
+* ApexSQL: <http://www.apexsql.com/>
+* RazorSQL: <http://www.razorsql.com/>
+* AquaFold(Aqua Data Studio): <http://www.aquafold.com/>
+* Withdata: <http://www.withdata.com/index.html>
+* HeidiSQL: <https://www.heidisql.com/>
+* erwin: <http://erwin.com/>
+* DBeaver: <http://dbeaver.jkiss.org/>
+* Navicat: <http://www.navicat.com.cn/>
+* DataGrip: <https://www.jetbrains.com/datagrip/>
+* EMS Database Management Solutions: <https://www.sqlmanager.net/>
+* 数据库比较工具DBCompareTool 0.3.0 preview 发布：<http://www.blogjava.net/allenny/archive/2011/09/30/359028.html>
+* DB Compare(SQL Server): <http://dbcompare.codeplex.com/>
 * DBComparer(SQL Server): <http://dbcomparer.com/>
 * SQL Delta: <https://sqldelta.com/>
-* NoSQL数据库笔谈: http://old.sebug.net/paper/databases/nosql/Nosql.html
-* 存储过程使用建议: http://www.cnblogs.com/jes_shaw/archive/2009/05/20/1468505.html
+* NoSQL数据库笔谈: <http://old.sebug.net/paper/databases/nosql/Nosql.html>
+* 存储过程使用建议: <http://www.cnblogs.com/jes_shaw/archive/2009/05/20/1468505.html>
 
-* Java 6 RowSet 使用完全剖析: https://www.ibm.com/developerworks/cn/java/j-lo-java6rowset/
-* Hibernate与autoCommit: http://www.cnblogs.com/jiangxinnju/p/7429951.html
+* Java 6 RowSet 使用完全剖析: <https://www.ibm.com/developerworks/cn/java/j-lo-java6rowset/>
+* Hibernate与autoCommit: <http://www.cnblogs.com/jiangxinnju/p/7429951.html>
 
 
 # MySQL
 
 * <http://www.mysql.com/>
-* http://dev.mysql.com/doc/#manual
-* Workbench: https://dev.mysql.com/downloads/workbench/
-* SQLyog: https://www.webyog.com/product/sqlyog
-* MySQL-Front: http://www.mysqlfront.de/
-* 5款常用mysql slow log分析工具的比较：http://bbs.chinaunix.net/thread-1286359-1-1.html
-* MYSQL常见错误及其解决方式: http://www.cnblogs.com/jiangxinnju/p/5894225.html
-* MySQL默认数据库: http://www.cnblogs.com/jiangxinnju/p/5901845.html
-* Should I use field 'datetime' or 'timestamp'? https://stackoverflow.com/questions/409286/should-i-use-field-datetime-or-timestamp
-* 如何提高MySql的安全性？: http://blog.163.com/longsu2010@yeah/blog/static/17361234820116223593175/
-* 如何写出高质量、高性能的MySQL查询: http://blog.sina.com.cn/s/blog_a8cf6bb20101a33v.html
-* 解决mysql字符集乱码问题: http://www.cnblogs.com/dayday-study/archive/2012/05/18/2507276.html
-* Oracle与MySQL字符串拼接: http://blog.csdn.net/itmyhome1990/article/details/41848229
-* 关于InnoDB索引长度限制的tips: http://dinglin.iteye.com/blog/1681332
-* Using Innodb_large_prefix to Avoid ERROR 1071: http://mechanics.flite.com/blog/2014/07/29/using-innodb-large-prefix-to-avoid-error-1071
-* Mysql异常'SET OPTION SQL_SELECT_LIMIT=DEFAULT': http://blog.csdn.net/wangyang1354/article/details/60135602
-* MySQL无法重启问题解决Warning: World-writable config file ‘/etc/my.cnf’ is ignored: http://www.ttlsa.com/mysql/warning-world-writable-config-file-etcmy-cnf-is-ignored/
-* 慎用lower_case_table_names来实现表名不区分大小写: http://www.codeweblog.com/%E6%85%8E%E7%94%A8lower_case_table_names%E6%9D%A5%E5%AE%9E%E7%8E%B0%E8%A1%A8%E5%90%8D%E4%B8%8D%E5%8C%BA%E5%88%86%E5%A4%A7%E5%B0%8F%E5%86%99/
-* Can't execute a MySQL stored procedure from Java: https://stackoverflow.com/questions/986628/cant-execute-a-mysql-stored-procedure-from-java
-* 『浅入浅出』MySQL 和 InnoDB: http://www.cocoachina.com/programmer/20170807/20158.html
-* MySQL 加锁处理分析: http://hedengcheng.com/?p=771
-* MySQL中的配置参数interactive_timeout和wait_timeout(可能导致过多sleep进程的两个参数)：http://www.cnblogs.com/jiunadianshi/articles/2475475.html
-* MySQL令人头疼的Aborted告警案例分析: http://suifu.blog.51cto.com/9167728/1942302
-* Spring 事务 readOnly 到底是怎么回事？http://www.cnblogs.com/hackem/p/3890656.html
-* 解决MySQL查询不区分大小写: https://my.oschina.net/xiangtao/blog/33983
+* <http://dev.mysql.com/doc/#manual>
+* Workbench: <https://dev.mysql.com/downloads/workbench/>
+* SQLyog: <https://www.webyog.com/product/sqlyog>
+* MySQL-Front: <http://www.mysqlfront.de/>
+* 5款常用mysql slow log分析工具的比较：<http://bbs.chinaunix.net/thread-1286359-1-1.html>
+* MYSQL常见错误及其解决方式: <http://www.cnblogs.com/jiangxinnju/p/5894225.html>
+* MySQL默认数据库: <http://www.cnblogs.com/jiangxinnju/p/5901845.html>
+* Should I use field 'datetime' or 'timestamp'? <https://stackoverflow.com/questions/409286/should-i-use-field-datetime-or-timestamp>
+* 如何提高MySql的安全性？: <http://blog.163.com/longsu2010@yeah/blog/static/17361234820116223593175/>
+* 如何写出高质量、高性能的MySQL查询: <http://blog.sina.com.cn/s/blog_a8cf6bb20101a33v.html>
+* 解决mysql字符集乱码问题: <http://www.cnblogs.com/dayday-study/archive/2012/05/18/2507276.html>
+* Oracle与MySQL字符串拼接: <http://blog.csdn.net/itmyhome1990/article/details/41848229>
+* 关于InnoDB索引长度限制的tips: <http://dinglin.iteye.com/blog/1681332>
+* Using Innodb_large_prefix to Avoid ERROR 1071: <http://mechanics.flite.com/blog/2014/07/29/using-innodb-large-prefix-to-avoid-error-1071>
+* Mysql异常'SET OPTION SQL_SELECT_LIMIT=DEFAULT': <http://blog.csdn.net/wangyang1354/article/details/60135602>
+* MySQL无法重启问题解决Warning: World-writable config file ‘/etc/my.cnf’ is ignored: <http://www.ttlsa.com/mysql/warning-world-writable-config-file-etcmy-cnf-is-ignored/>
+* 慎用lower_case_table_names来实现表名不区分大小写: <http://www.codeweblog.com/%E6%85%8E%E7%94%A8lower_case_table_names%E6%9D%A5%E5%AE%9E%E7%8E%B0%E8%A1%A8%E5%90%8D%E4%B8%8D%E5%8C%BA%E5%88%86%E5%A4%A7%E5%B0%8F%E5%86%99/>
+* Can't execute a MySQL stored procedure from Java: <https://stackoverflow.com/questions/986628/cant-execute-a-mysql-stored-procedure-from-java>
+* 『浅入浅出』MySQL 和 InnoDB: <http://www.cocoachina.com/programmer/20170807/20158.html>
+* MySQL 加锁处理分析: <http://hedengcheng.com/?p=771>
+* MySQL中的配置参数interactive_timeout和wait_timeout(可能导致过多sleep进程的两个参数)：<http://www.cnblogs.com/jiunadianshi/articles/2475475.html>
+* MySQL令人头疼的Aborted告警案例分析: <http://suifu.blog.51cto.com/9167728/1942302>
+* Spring 事务 readOnly 到底是怎么回事？<http://www.cnblogs.com/hackem/p/3890656.html>
+* 解决MySQL查询不区分大小写: <https://my.oschina.net/xiangtao/blog/33983>
 
 
 # SQL Server
 
-* SQL Server: https://msdn.microsoft.com/library/bb545450.aspx
-* Transact-SQL 参考: https://msdn.microsoft.com/zh-cn/library/bb510741(v=sql.105).aspx
-* TSQLT：http://tsqlt.org/
-* sqlcmd 实用工具：http://msdn.microsoft.com/zh-cn/library/ms162773.aspx
-* SQL SERVER 2005中的Schema（架构）概念详解：http://blog.sina.com.cn/s/blog_5b2c0dcc0100alj9.html
-* Sql Server 2005中的架构(Schema)、用户(User)、角色(Role)和登录(Login)(一)：http://www.cnblogs.com/end/archive/2009/08/07/1541373.html
-* Sql Server 2005中的架构(Schema)、用户(User)、角色(Role)和登录(Login)(二)：http://www.cnblogs.com/end/archive/2009/08/07/1541374.html
-* Sql Server 2005中的架构(Schema)、用户(User)、角色(Role)和登录(Login)(三)：http://www.cnblogs.com/end/archive/2009/08/07/1541377.html
-* 谓词和运算符：http://www.cnblogs.com/cuiyh/archive/2010/12/18/1910090.html
-* Tempdb数据库详细介绍：http://www.cnblogs.com/qanholas/archive/2012/01/05/2313006.html
-* MS SQL专用管理员连接DAC: http://www.cnblogs.com/kerrycode/p/3344085.html
-* 用于数据库管理员的诊断连接: https://msdn.microsoft.com/zh-cn/library/ms189595.aspx
-* 解决sqlserver 2008 sqlcmd无法登陆: http://www.cnblogs.com/skynothing/archive/2010/08/26/1809125.html
-* 关于SQLSERVER的全文目录跟全文索引的区别: http://www.cnblogs.com/lyhabc/archive/2012/08/05/2623795.html
-* 在SQL Server中如何获得刚插入一条新记录的自动ID号: http://blog.csdn.net/wangji163163/article/details/2424191
-* SQL Server中如何取得刚插入的标识值: http://www.blogjava.net/DreamAngel/archive/2012/05/11/377920.html
-* Join操作基本：外连接、自然连接、内连接: http://www.cnblogs.com/huangfr/archive/2012/06/20/2555530.html
-* SQL 中 where 1=1 和 1=0的 作用: http://blog.csdn.net/wanghai__/article/details/4813909
-* left join on 和where条件的放置: http://blog.csdn.net/muxiaoshan/article/details/7617533
+* SQL Server: <https://msdn.microsoft.com/library/bb545450.aspx>
+* Transact-SQL 参考: <https://msdn.microsoft.com/zh-cn/library/bb510741>(v=sql.105).aspx
+* TSQLT：<http://tsqlt.org/>
+* sqlcmd 实用工具：<http://msdn.microsoft.com/zh-cn/library/ms162773.aspx>
+* SQL SERVER 2005中的Schema（架构）概念详解：<http://blog.sina.com.cn/s/blog_5b2c0dcc0100alj9.html>
+* Sql Server 2005中的架构(Schema)、用户(User)、角色(Role)和登录(Login)(一)：<http://www.cnblogs.com/end/archive/2009/08/07/1541373.html>
+* Sql Server 2005中的架构(Schema)、用户(User)、角色(Role)和登录(Login)(二)：<http://www.cnblogs.com/end/archive/2009/08/07/1541374.html>
+* Sql Server 2005中的架构(Schema)、用户(User)、角色(Role)和登录(Login)(三)：<http://www.cnblogs.com/end/archive/2009/08/07/1541377.html>
+* 谓词和运算符：<http://www.cnblogs.com/cuiyh/archive/2010/12/18/1910090.html>
+* Tempdb数据库详细介绍：<http://www.cnblogs.com/qanholas/archive/2012/01/05/2313006.html>
+* MS SQL专用管理员连接DAC: <http://www.cnblogs.com/kerrycode/p/3344085.html>
+* 用于数据库管理员的诊断连接: <https://msdn.microsoft.com/zh-cn/library/ms189595.aspx>
+* 解决sqlserver 2008 sqlcmd无法登陆: <http://www.cnblogs.com/skynothing/archive/2010/08/26/1809125.html>
+* 关于SQLSERVER的全文目录跟全文索引的区别: <http://www.cnblogs.com/lyhabc/archive/2012/08/05/2623795.html>
+* 在SQL Server中如何获得刚插入一条新记录的自动ID号: <http://blog.csdn.net/wangji163163/article/details/2424191>
+* SQL Server中如何取得刚插入的标识值: <http://www.blogjava.net/DreamAngel/archive/2012/05/11/377920.html>
+* Join操作基本：外连接、自然连接、内连接: <http://www.cnblogs.com/huangfr/archive/2012/06/20/2555530.html>
+* SQL 中 where 1=1 和 1=0的 作用: <http://blog.csdn.net/wanghai__/article/details/4813909>
+* left join on 和where条件的放置: <http://blog.csdn.net/muxiaoshan/article/details/7617533>
 
 
 ## SQL Server不同版本的驱动
@@ -103,123 +103,123 @@
 
 # Oracle Database
 
-* Oracle Database DownLoad: http://www.oracle.com/technetwork/cn/database/enterprise-edition/downloads/index.html
-* Oracle SQL Developer: http://www.oracle.com/technetwork/developer-tools/sql-developer/overview/index.html
-* Instant Client Downloads for Microsoft Windows (32-bit): http://www.oracle.com/technetwork/topics/winsoft-085727.html
-* Database Virtual Box Appliance / Virtual Machine: http://www.oracle.com/technetwork/database/enterprise-edition/databaseappdev-vm-161299.html
+* Oracle Database DownLoad: <http://www.oracle.com/technetwork/cn/database/enterprise-edition/downloads/index.html>
+* Oracle SQL Developer: <http://www.oracle.com/technetwork/developer-tools/sql-developer/overview/index.html>
+* Instant Client Downloads for Microsoft Windows (32-bit): <http://www.oracle.com/technetwork/topics/winsoft-085727.html>
+* Database Virtual Box Appliance / Virtual Machine: <http://www.oracle.com/technetwork/database/enterprise-edition/databaseappdev-vm-161299.html>
 
-* https://support.oracle.com/
-* https://asktom.oracle.com
-* http://www.itpub.net/
-* http://www.askmaclean.com/
-* http://f.dataguru.cn/
-* http://www.eygle.com/
+* <https://support.oracle.com/>
+* <https://asktom.oracle.com>
+* <http://www.itpub.net/>
+* <http://www.askmaclean.com/>
+* <http://f.dataguru.cn/>
+* <http://www.eygle.com/>
 
-* http://docs.oracle.com/en/database/
-* http://docs.oracle.com/en/bigdata/
+* <http://docs.oracle.com/en/database/>
+* <http://docs.oracle.com/en/bigdata/>
 
-* dbms_lob.substr[DBMS_LOB -> SUBSTR]: http://docs.oracle.com/database/122/ARPLS
+* dbms_lob.substr[DBMS_LOB -> SUBSTR]: <http://docs.oracle.com/database/122/ARPLS>
 
-* lsnrctl的用法[Configuring the Network Environment -> lsnrctl]: http://docs.oracle.com/database/122/ADMQS
-* 配置系统环境变量[Getting Started with Database Administration -> Configuring the Operating System Environment Variables]: http://docs.oracle.com/database/122/ADMQS
+* lsnrctl的用法[Configuring the Network Environment -> lsnrctl]: <http://docs.oracle.com/database/122/ADMQS>
+* 配置系统环境变量[Getting Started with Database Administration -> Configuring the Operating System Environment Variables]: <http://docs.oracle.com/database/122/ADMQS>
 
-* "on delete cascade" 和 "on delete set null" 的差别[Common SQL DDL Clauses -> constraint -> on delete]: http://docs.oracle.com/database/122/SQLRF
-* TRUNC (date)[Functions -> TRUNC (date)]: http://docs.oracle.com/database/122/SQLRF
-* SYS_CONTEXT[Functions -> SYS_CONTEXT]: http://docs.oracle.com/database/122/SQLRF
-* ALTER SEQUENCE[SQL Statements: ALTER MATERIALIZED VIEW to ALTER SYSTEM -> ALTER SEQUENCE]: http://docs.oracle.com/database/122/SQLRF
+* "on delete cascade" 和 "on delete set null" 的差别[Common SQL DDL Clauses -> constraint -> on delete]: <http://docs.oracle.com/database/122/SQLRF>
+* TRUNC (date)[Functions -> TRUNC (date)]: <http://docs.oracle.com/database/122/SQLRF>
+* SYS_CONTEXT[Functions -> SYS_CONTEXT]: <http://docs.oracle.com/database/122/SQLRF>
+* ALTER SEQUENCE[SQL Statements: ALTER MATERIALIZED VIEW to ALTER SYSTEM -> ALTER SEQUENCE]: <http://docs.oracle.com/database/122/SQLRF>
 
-* Database Error Messages: http://docs.oracle.com/database/122/ERRMG
+* Database Error Messages: <http://docs.oracle.com/database/122/ERRMG>
 
-* 开启和关闭数据库[Starting Up and Shutting Down]: http://docs.oracle.com/database/122/ADMIN
-* ADR[Managing Diagnostic Data -> Automatic Diagnostic Repository (ADR)]: http://docs.oracle.com/database/122/ADMIN
-* 归档日志[Managing the Redo Log]: http://docs.oracle.com/database/122/ADMIN
-* 为系统用户指定密码[Creating and Configuring an Oracle Database -> Protecting Your Database: Specifying Passwords for Users SYS and SYSTEM]: http://docs.oracle.com/database/122/ADMIN
-* Managing Oracle Enterprise Manager Database Control: http://docs.oracle.com/database/122/ADMIN
+* 开启和关闭数据库[Starting Up and Shutting Down]: <http://docs.oracle.com/database/122/ADMIN>
+* ADR[Managing Diagnostic Data -> Automatic Diagnostic Repository (ADR)]: <http://docs.oracle.com/database/122/ADMIN>
+* 归档日志[Managing the Redo Log]: <http://docs.oracle.com/database/122/ADMIN>
+* 为系统用户指定密码[Creating and Configuring an Oracle Database -> Protecting Your Database: Specifying Passwords for Users SYS and SYSTEM]: <http://docs.oracle.com/database/122/ADMIN>
+* Managing Oracle Enterprise Manager Database Control: <http://docs.oracle.com/database/122/ADMIN>
 
-* LOBs类型说明[Using SQL Data Types in Database Applications -> Representing Large Amounts of Data]: http://docs.oracle.com/database/122/ADFNS
+* LOBs类型说明[Using SQL Data Types in Database Applications -> Representing Large Amounts of Data]: <http://docs.oracle.com/database/122/ADFNS>
 
-* 端口配置[Managing Oracle Database Port Numbers]: http://docs.oracle.com/database/122/LADBI
+* 端口配置[Managing Oracle Database Port Numbers]: <http://docs.oracle.com/database/122/LADBI>
 
 * 环境变量[Administering Oracle Database -> Oracle Database Environment Variables]: docs.oracle.com/database/122/UNXAR
 
-* 设置国际化支持环境变量[Setting Up a Globalization Support Environment]: http://docs.oracle.com/database/122/NLSPG/
+* 设置国际化支持环境变量[Setting Up a Globalization Support Environment]: <http://docs.oracle.com/database/122/NLSPG/>
 
-* 逻辑存储结构[Logical Storage Structures]: http://docs.oracle.com/database/122/CNCPT/
+* 逻辑存储结构[Logical Storage Structures]: <http://docs.oracle.com/database/122/CNCPT/>
 
-* SQL*Loader[SQL*Loader Concepts]: http://docs.oracle.com/database/122/SUTIL
-* ADRCI: ADR Command Interpreter: http://docs.oracle.com/database/122/SUTIL
-* Using LogMiner to Analyze Redo Log Files: https://docs.oracle.com/database/122/SUTIL
+* SQL*Loader[SQL*Loader Concepts]: <http://docs.oracle.com/database/122/SUTIL>
+* ADRCI: ADR Command Interpreter: <http://docs.oracle.com/database/122/SUTIL>
+* Using LogMiner to Analyze Redo Log Files: <https://docs.oracle.com/database/122/SUTIL>
 
-* 数据库网络服务全部内容: http://docs.oracle.com/database/122/NETRF
-* JDBC数据源配置[Data Sources and URLs]: http://docs.oracle.com/database/122/JJDBC
+* 数据库网络服务全部内容: <http://docs.oracle.com/database/122/NETRF>
+* JDBC数据源配置[Data Sources and URLs]: <http://docs.oracle.com/database/122/JJDBC>
 
-* 预置账户[Securing the Database Installation and Configuration -> Predefined User Accounts Provided by Oracle Database]: http://docs.oracle.com/database/122/TDPSG
+* 预置账户[Securing the Database Installation and Configuration -> Predefined User Accounts Provided by Oracle Database]: <http://docs.oracle.com/database/122/TDPSG>
 
-* [Gathering Database Statistics -> Generating an AWR Report Using the Command-Line Interface]: http://docs.oracle.com/database/122/TGDBA
+* [Gathering Database Statistics -> Generating an AWR Report Using the Command-Line Interface]: <http://docs.oracle.com/database/122/TGDBA>
 
-* / (slash)[SQL*Plus Command Reference -> / (slash)]: http://docs.oracle.com/database/122/SQPUG
+* / (slash)[SQL*Plus Command Reference -> / (slash)]: <http://docs.oracle.com/database/122/SQPUG>
 
-* CRSCTL/SRVCTL: https://docs.oracle.com/database/122/CWADD
+* CRSCTL/SRVCTL: <https://docs.oracle.com/database/122/CWADD>
 
-* Oracle SQL Handler：http://www.heartblue.cn/
-* SI Object Browser：http://www.presoft.com.cn/ob/
+* Oracle SQL Handler：<http://www.heartblue.cn/>
+* SI Object Browser：<http://www.presoft.com.cn/ob/>
 
-* ToadWorld: http://www.toadworld.com/
+* ToadWorld: <http://www.toadworld.com/>
 
 
-* Oracle系统表整理+常用SQL语句收集: http://www.cnblogs.com/jiangxinnju/p/5840420.html
-* Unix/Linux操作系统中如何在sqlplus/rman中使用方向键: http://www.cnblogs.com/jiangxinnju/p/7469325.html
-* oracle表空间表分区详解及oracle表分区查询使用方法(转+整理): http://www.cnblogs.com/jiangxinnju/p/6284096.html
-* oracle表空间不足相关问题解决办法: http://www.cnblogs.com/jiangxinnju/p/5839679.html
-* Oracle导入导出常用命令: http://www.cnblogs.com/jiangxinnju/p/7616837.html
+* Oracle系统表整理+常用SQL语句收集: <http://www.cnblogs.com/jiangxinnju/p/5840420.html>
+* Unix/Linux操作系统中如何在sqlplus/rman中使用方向键: <http://www.cnblogs.com/jiangxinnju/p/7469325.html>
+* oracle表空间表分区详解及oracle表分区查询使用方法(转+整理): <http://www.cnblogs.com/jiangxinnju/p/6284096.html>
+* oracle表空间不足相关问题解决办法: <http://www.cnblogs.com/jiangxinnju/p/5839679.html>
+* Oracle导入导出常用命令: <http://www.cnblogs.com/jiangxinnju/p/7616837.html>
 
-* oracle 11g如何完全卸载: http://jingyan.baidu.com/article/922554468d4e6b851648f4e3.html
-* win7_oracle11g_64位连接32位PLSQL_Developer: http://jingyan.baidu.com/article/fb48e8be4c7c206e622e1491.html
-* Oracle 11g 如何创建数据库：http://jingyan.baidu.com/article/cbcede07cf42ef02f40b4dc2.html
-* 数据库使用详解：[3]SQL Developer如何配置：http://jingyan.baidu.com/article/e4511cf33f289e2b845eafb6.html
-* oracle的各版本发行时间及特点: http://blog.csdn.net/dream19881003/article/details/7178357
-* oracle 查版本号,oracle怎样查版本: http://jingyan.baidu.com/article/4f34706ee1ea02e387b56ddc.html
-* oracle数据导入与导出: http://blog.csdn.net/loadrunn/article/details/7283441
-* EXECUTE IMMEDIATE 常见使用方法: http://blog.itpub.net/27042095/viewspace-739404/
-* Oracle11g自带的SQL developer无法打开解决方案(百度文库)： http://wenku.baidu.com/link?url=scHbokjqF7nK8kca00Pxrm8uaUmm7HNkgXLGaq0tNU-9T2zOrc08oZ7YJkXagD-QbQUmQl7c1wiZNigvIZ9YNVwMU9qIgxBI34HfkM8kWdO
-* 【Foreign Key】Oracle外键约束三种删除行为 : http://blog.itpub.net/519536/viewspace-630034/
-* Oracle导入JAR包并调用Java: http://www.jianshu.com/p/4280ac298ded
-* Reclaiming Unused LOB Space: http://www.idevelopment.info/data/Oracle/DBA_tips/LOBs/LOBS_85.shtml
-* Oracle 10g: Issue with startup mount command (ORA-24324, ORA-01041): http://stackoverflow.com/questions/12470893/oracle-10g-issue-with-startup-mount-command-ora-24324-ora-01041
-* 你所不知道的OERR: http://blog.163.com/jet_it_life/blog/static/2050970832012320146595/
+* oracle 11g如何完全卸载: <http://jingyan.baidu.com/article/922554468d4e6b851648f4e3.html>
+* win7_oracle11g_64位连接32位PLSQL_Developer: <http://jingyan.baidu.com/article/fb48e8be4c7c206e622e1491.html>
+* Oracle 11g 如何创建数据库：<http://jingyan.baidu.com/article/cbcede07cf42ef02f40b4dc2.html>
+* 数据库使用详解：[3]SQL Developer如何配置：<http://jingyan.baidu.com/article/e4511cf33f289e2b845eafb6.html>
+* oracle的各版本发行时间及特点: <http://blog.csdn.net/dream19881003/article/details/7178357>
+* oracle 查版本号,oracle怎样查版本: <http://jingyan.baidu.com/article/4f34706ee1ea02e387b56ddc.html>
+* oracle数据导入与导出: <http://blog.csdn.net/loadrunn/article/details/7283441>
+* EXECUTE IMMEDIATE 常见使用方法: <http://blog.itpub.net/27042095/viewspace-739404/>
+* Oracle11g自带的SQL developer无法打开解决方案(百度文库)： <http://wenku.baidu.com/link?url=scHbokjqF7nK8kca00Pxrm8uaUmm7HNkgXLGaq0tNU-9T2zOrc08oZ7YJkXagD-QbQUmQl7c1wiZNigvIZ9YNVwMU9qIgxBI34HfkM8kWdO>
+* 【Foreign Key】Oracle外键约束三种删除行为 : <http://blog.itpub.net/519536/viewspace-630034/>
+* Oracle导入JAR包并调用Java: <http://www.jianshu.com/p/4280ac298ded>
+* Reclaiming Unused LOB Space: <http://www.idevelopment.info/data/Oracle/DBA_tips/LOBs/LOBS_85.shtml>
+* Oracle 10g: Issue with startup mount command (ORA-24324, ORA-01041): <http://stackoverflow.com/questions/12470893/oracle-10g-issue-with-startup-mount-command-ora-24324-ora-01041>
+* 你所不知道的OERR: <http://blog.163.com/jet_it_life/blog/static/2050970832012320146595/>
 * 第9 章 HWM 与数据库性能的探讨: Oracle 数据库性能优化
-* Oracle数据库shutdown immediate被hang住的几个原因: http://www.cnblogs.com/kerrycode/p/3506430.html
-* Oracle JDBC 连接卡死后 Connection Reset: http://www.cnblogs.com/lailailai/p/4055670.html
-* Oracle Start Up 2 Oracle 框架构件、启动、解决一个问题(shared memory realm does not exist):http://kylinsoong.iteye.com/blog/776654
-* ORA-01144: File size (4224000 blocks) exceeds maximum of 4194303: http://www.runningoracle.com/product_info.php?products_id=338
-* sqlldr的用法：http://blog.chinaunix.net/uid-23622436-id-2394093.html
-* linux下重启oracle服务：监听器和实例：http://www.cnblogs.com/lingbing/p/6071745.html
-* TNS-01190: The user is not authorized to execute the requested listener command：http://www.dba-oracle.com/t_tns_01190_listener_password_security_authorization.htm
-* ORACLE实例配置多个监听器: http://blog.itpub.net/30150152/viewspace-1479571/
-* PLSQL_性能优化工具系列02_SQL Tuning Health-Check Script (SQLHC): http://www.cnblogs.com/eastsea/p/3973596.html
-* Script:SQL调优健康检查脚本: http://www.askmaclean.com/archives/sql-tuning-health-check-script.html
-* 重走长征路——1、V$SQL%知多少？http://www.cnblogs.com/sopost/archive/2012/06/03/2532826.html
-* 由12170问题引起的Oracle无法登陆问题de解决办法: http://jingh3209.blog.163.com/blog/static/156966720103295715623
-* TNS-12535: TNS:operation timed out、TNS-00505: Operation timed out: http://www.cnblogs.com/future2012lg/p/3739752.html
-* 配置tnsping跟踪来诊断Oracle Net连接: http://blog.itpub.net/17203031/viewspace-1161228/
-* 说说Oracle监听器（二）: http://blog.itpub.net/17203031/viewspace-682628/
-* oracle客户端软件的说明：http://blog.csdn.net/haiross/article/details/17917637
-* 如何查看Oracle客户端版本: http://www.cnblogs.com/kerrycode/p/4087292.html
-* 怎么判断oracle客户端、服务器端的位数：http://blog.csdn.net/linghe301/article/details/8471945
-* Linux 安装oracle客户端: http://www.cnblogs.com/yangxia-test/p/4159449.html
-* 深入理解JDBC的超时设置: http://www.importnew.com/2466.html
-* The Difference between User and Schema in Oracle: http://www.oratable.com/oracle-user-schema-difference/
-* Oracle中如何插入特殊字符: & 和 ' (多种解决方案): http://blog.csdn.net/ye1992/article/details/37509915
-* LogMiner配置使用手册: http://www.cnblogs.com/shishanyuan/p/3140440.html
-* Oracle未开启审计情况下追踪表变更记录: http://hbxztc.blog.51cto.com/1587495/1918407
-* Oracle OLAP 与 OLTP 介绍: http://blog.csdn.net/tianlesoftware/article/details/5794844
-* Oracle Database 11g Release 2 (11.2.0.3) RAC On Oracle Linux 6.3 Using VirtualBox: https://oracle-base.com/articles/11g/oracle-db-11gr2-rac-installation-on-oracle-linux-6-using-virtualbox
-* Oracle RAC 12c Database on Linux Using VirtualBox: http://www.lab128.com/rac12_installation_using_vb/article_text.html
-* 如何利用Oracle VM Templates 在几分钟内部署Oracle Real Application Clusters (RAC): http://www.cnblogs.com/jiangxinnju/p/7732012.html
-* 12c ASM audit目录增长过快的bug: http://blog.itpub.net/29047826/viewspace-1659960/
-* 【ASM】SYSASM 角色: https://yq.aliyun.com/articles/28404
-* rac节点无法启动ORA-29702的问题及分析: http://blog.itpub.net/23718752/viewspace-1158618
-* ORACLE RAC 的启动和关闭顺序: http://blog.itpub.net/29634949/viewspace-1269073/
+* Oracle数据库shutdown immediate被hang住的几个原因: <http://www.cnblogs.com/kerrycode/p/3506430.html>
+* Oracle JDBC 连接卡死后 Connection Reset: <http://www.cnblogs.com/lailailai/p/4055670.html>
+* Oracle Start Up 2 Oracle 框架构件、启动、解决一个问题(shared memory realm does not exist):<http://kylinsoong.iteye.com/blog/776654>
+* ORA-01144: File size (4224000 blocks) exceeds maximum of 4194303: <http://www.runningoracle.com/product_info.php?products_id=338>
+* sqlldr的用法：<http://blog.chinaunix.net/uid-23622436-id-2394093.html>
+* linux下重启oracle服务：监听器和实例：<http://www.cnblogs.com/lingbing/p/6071745.html>
+* TNS-01190: The user is not authorized to execute the requested listener command：<http://www.dba-oracle.com/t_tns_01190_listener_password_security_authorization.htm>
+* ORACLE实例配置多个监听器: <http://blog.itpub.net/30150152/viewspace-1479571/>
+* PLSQL_性能优化工具系列02_SQL Tuning Health-Check Script (SQLHC): <http://www.cnblogs.com/eastsea/p/3973596.html>
+* Script:SQL调优健康检查脚本: <http://www.askmaclean.com/archives/sql-tuning-health-check-script.html>
+* 重走长征路——1、V$SQL%知多少？<http://www.cnblogs.com/sopost/archive/2012/06/03/2532826.html>
+* 由12170问题引起的Oracle无法登陆问题de解决办法: <http://jingh3209.blog.163.com/blog/static/156966720103295715623>
+* TNS-12535: TNS:operation timed out、TNS-00505: Operation timed out: <http://www.cnblogs.com/future2012lg/p/3739752.html>
+* 配置tnsping跟踪来诊断Oracle Net连接: <http://blog.itpub.net/17203031/viewspace-1161228/>
+* 说说Oracle监听器（二）: <http://blog.itpub.net/17203031/viewspace-682628/>
+* oracle客户端软件的说明：<http://blog.csdn.net/haiross/article/details/17917637>
+* 如何查看Oracle客户端版本: <http://www.cnblogs.com/kerrycode/p/4087292.html>
+* 怎么判断oracle客户端、服务器端的位数：<http://blog.csdn.net/linghe301/article/details/8471945>
+* Linux 安装oracle客户端: <http://www.cnblogs.com/yangxia-test/p/4159449.html>
+* 深入理解JDBC的超时设置: <http://www.importnew.com/2466.html>
+* The Difference between User and Schema in Oracle: <http://www.oratable.com/oracle-user-schema-difference/>
+* Oracle中如何插入特殊字符: & 和 ' (多种解决方案): <http://blog.csdn.net/ye1992/article/details/37509915>
+* LogMiner配置使用手册: <http://www.cnblogs.com/shishanyuan/p/3140440.html>
+* Oracle未开启审计情况下追踪表变更记录: <http://hbxztc.blog.51cto.com/1587495/1918407>
+* Oracle OLAP 与 OLTP 介绍: <http://blog.csdn.net/tianlesoftware/article/details/5794844>
+* Oracle Database 11g Release 2 (11.2.0.3) RAC On Oracle Linux 6.3 Using VirtualBox: <https://oracle-base.com/articles/11g/oracle-db-11gr2-rac-installation-on-oracle-linux-6-using-virtualbox>
+* Oracle RAC 12c Database on Linux Using VirtualBox: <http://www.lab128.com/rac12_installation_using_vb/article_text.html>
+* 如何利用Oracle VM Templates 在几分钟内部署Oracle Real Application Clusters (RAC): <http://www.cnblogs.com/jiangxinnju/p/7732012.html>
+* 12c ASM audit目录增长过快的bug: <http://blog.itpub.net/29047826/viewspace-1659960/>
+* 【ASM】SYSASM 角色: <https://yq.aliyun.com/articles/28404>
+* rac节点无法启动ORA-29702的问题及分析: <http://blog.itpub.net/23718752/viewspace-1158618>
+* ORACLE RAC 的启动和关闭顺序: <http://blog.itpub.net/29634949/viewspace-1269073/>
 * Oracle RAC中public ip, private ip, vip, scan ip的概念: 《Oracle RAC 11g实战指南》 2.2 3.1.3 3.2.4章节
 * 深入了解 Oracle Flex ASM 及其优点(了解性知识)：<http://www.oracle.com/technetwork/cn/articles/database/flexasm-flexcluster-benefits-odb12c-2177371-zhs.html>
 * oracle数据库备份删除操作：<http://www.blogjava.net/wangxinsh55/archive/2010/11/05/337300.html>
@@ -227,7 +227,7 @@
 * oracle数据库自动提交事务(autocommit)为OFF,但事务自动提交了: <http://blog.sina.com.cn/s/blog_68fe7e150100z7tn.html>
 * statspack安装使用 和 report 分析: <http://blog.csdn.net/tianlesoftware/article/details/4682329>
 * 【性能调优】Oracle AWR报告指标全解析: <http://www.askmaclean.com/archives/performance-tuning-oracle-awr.html>
-* Oracle Trace文件生成及查看: http://blog.csdn.net/weiwenhp/article/details/6932835
+* Oracle Trace文件生成及查看: <http://blog.csdn.net/weiwenhp/article/details/6932835>
 * Oracle 10g Audit（审计） --- 记录登录用户在Oracle中的所有操作: <http://blog.csdn.net/ryb7899/article/details/5413720>
 * 修改oracle实例名(sid)和数据库名(db_name): <http://blog.51cto.com/liujia/539294>
 * Oracle安装错误ora-00922（缺少或无效选项）: <http://blog.sina.com.cn/s/blog_5674f6d401012ekw.html>
@@ -237,15 +237,15 @@
 
 ## oracle疑难问题排查集：
 
-* 数据库无响应，出现很多tns的错误: http://www.itpub.net/thread-1359536-1-1.html
-* oracle 11g不能连接报ORA-12537+ora-609解决: http://www.cnblogs.com/hanbo112/p/4583047.html
-* TNS-12537 TNSconnection closed ORA-609错误处理: http://blog.sina.com.cn/s/blog_4bad366d0101oea2.html
-* ORA-3136、TNS-12535 12170 12606: http://blog.chinaunix.net/uid-20276248-id-92210.html
-* 关于 Fatal NI connect error 12170: http://blog.csdn.net/liqfyiyi/article/details/7107249
+* 数据库无响应，出现很多tns的错误: <http://www.itpub.net/thread-1359536-1-1.html>
+* oracle 11g不能连接报ORA-12537+ora-609解决: <http://www.cnblogs.com/hanbo112/p/4583047.html>
+* TNS-12537 TNSconnection closed ORA-609错误处理: <http://blog.sina.com.cn/s/blog_4bad366d0101oea2.html>
+* ORA-3136、TNS-12535 12170 12606: <http://blog.chinaunix.net/uid-20276248-id-92210.html>
+* 关于 Fatal NI connect error 12170: <http://blog.csdn.net/liqfyiyi/article/details/7107249>
 
 ## PL/SQL Developer
 
-* http://www.allroundautomations.com/registered/plsqldev.html
+* <http://www.allroundautomations.com/registered/plsqldev.html>
 * 配置：localhost:1521/orcl
 
 ## Oracle 11g服务详细介绍及哪些服务是必须开启的？
@@ -287,21 +287,21 @@ ORACLE_SID 实例ID
 
 # DB2
 
-* 官网：http://www-01.ibm.com/software/data/db2/
-* DB2China：http://www.db2china.net/
-* Ubuntu 16.04安装DB2 Express C v11.1: http://www.cnblogs.com/jiangxinnju/p/6571785.html
-* DB2 9.5 数据库分区管理及应用实践: https://www.ibm.com/developerworks/cn/data/library/techarticles/dm-0903zhanggy/
-* 如何建立DB2分区数据库？: http://www.cnblogs.com/jiangxinnju/p/6649305.html
-* IBM DB2关键特性解析：DB2分区特性: http://tech.it168.com/a2012/0306/1321/000001321022_2.shtml
-* db2建立schema: http://guoyanxi.iteye.com/blog/910755
+* 官网：<http://www-01.ibm.com/software/data/db2/>
+* DB2China：<http://www.db2china.net/>
+* Ubuntu 16.04安装DB2 Express C v11.1: <http://www.cnblogs.com/jiangxinnju/p/6571785.html>
+* DB2 9.5 数据库分区管理及应用实践: <https://www.ibm.com/developerworks/cn/data/library/techarticles/dm-0903zhanggy/>
+* 如何建立DB2分区数据库？: <http://www.cnblogs.com/jiangxinnju/p/6649305.html>
+* IBM DB2关键特性解析：DB2分区特性: <http://tech.it168.com/a2012/0306/1321/000001321022_2.shtml>
+* db2建立schema: <http://guoyanxi.iteye.com/blog/910755>
 
 # Oracle Berkeley DB
 
-* Oracle Berkeley DB：http://www.oracle.com/technetwork/database/database-technologies/berkeleydb/overview/index.html
+* Oracle Berkeley DB：<http://www.oracle.com/technetwork/database/database-technologies/berkeleydb/overview/index.html>
 
 # MariaDB
 
-* https://mariadb.org/
+* <https://mariadb.org/>
 
 
 
@@ -315,83 +315,83 @@ ORACLE_SID 实例ID
 
 # mongodb
 
-* https://www.mongodb.org/
-* https://docs.mongodb.org/manual/
-* http://api.mongodb.org/java/
-* MonjaDB (MongoDB GUI client tool) : http://www.jumperz.net/index.php?i=2&a=0&b=9
-* MONGOVUE: http://www.mongovue.com/
-* mongolab: https://mongolab.com/
-* Spring Data MongoDB hello world example: http://www.mkyong.com/mongodb/spring-data-mongodb-hello-world-example/
-* MongoDB设置访问权限、设置用户: http://www.cnblogs.com/zengen/archive/2011/04/23/2025722.html
-* 三招解决MongoDB的磁盘IO问题: http://blog.nosqlfan.com/html/3925.html
-* Install MongoDB Community Edition on Ubuntu: https://docs.mongodb.com/master/tutorial/install-mongodb-on-ubuntu/
-* Mongo Database 性能优化: http://www.cnblogs.com/shanyou/archive/2010/10/02/1841348.html
-* Morphia(The Java Object Document Mapper for MongoDB): http://mongodb.github.io/morphia/
-* NoSQL 之 Morphia 操作 MongoDB: http://www.cnblogs.com/hoojo/archive/2012/02/17/2355384.html
+* <https://www.mongodb.org/>
+* <https://docs.mongodb.org/manual/>
+* <http://api.mongodb.org/java/>
+* MonjaDB (MongoDB GUI client tool) : <http://www.jumperz.net/index.php?i=2&a=0&b=9>
+* MONGOVUE: <http://www.mongovue.com/>
+* mongolab: <https://mongolab.com/>
+* Spring Data MongoDB hello world example: <http://www.mkyong.com/mongodb/spring-data-mongodb-hello-world-example/>
+* MongoDB设置访问权限、设置用户: <http://www.cnblogs.com/zengen/archive/2011/04/23/2025722.html>
+* 三招解决MongoDB的磁盘IO问题: <http://blog.nosqlfan.com/html/3925.html>
+* Install MongoDB Community Edition on Ubuntu: <https://docs.mongodb.com/master/tutorial/install-mongodb-on-ubuntu/>
+* Mongo Database 性能优化: <http://www.cnblogs.com/shanyou/archive/2010/10/02/1841348.html>
+* Morphia(The Java Object Document Mapper for MongoDB): <http://mongodb.github.io/morphia/>
+* NoSQL 之 Morphia 操作 MongoDB: <http://www.cnblogs.com/hoojo/archive/2012/02/17/2355384.html>
 
 
 # Teradata
 
-* Teradata Express for VMware Player: http://downloads.teradata.com/download/database/teradata-express-for-vmware-player
-* Teradata Aster: http://developer.teradata.com/aster
-* Teradata 教程: http://www.w3cschool.cn/teradata/
+* Teradata Express for VMware Player: <http://downloads.teradata.com/download/database/teradata-express-for-vmware-player>
+* Teradata Aster: <http://developer.teradata.com/aster>
+* Teradata 教程: <http://www.w3cschool.cn/teradata/>
 
 # GreenPlum
 
-* https://pivotal.io/big-data/pivotal-greenplum
+* <https://pivotal.io/big-data/pivotal-greenplum>
 
 
 # hbase
 
-* http://hbase.apache.org/
-* HBase 官方文档(中文)：http://yankaycom-wordpress.stor.sinaapp.com/hbase/book.html?q=/wp-content/hbase/book.html
-* HBase介绍: http://www.cnblogs.com/jiangxinnju/p/6427124.html
+* <http://hbase.apache.org/>
+* HBase 官方文档(中文)：<http://yankaycom-wordpress.stor.sinaapp.com/hbase/book.html?q=/wp-content/hbase/book.html>
+* HBase介绍: <http://www.cnblogs.com/jiangxinnju/p/6427124.html>
 
-* HBase 权限控制: http://debugo.com/hbase-access-control/
-* HBase Shell 常用操作: http://debugo.com/hbase-shell-cmds/
-* Hbase,Hive,Pig的区别: http://blog.sina.com.cn/s/blog_662728650101kurp.html
-* HBase运维实战：disable table失败的处理: http://www.searchdatabase.com.cn/showcontent_53017.htm
-* HBase性能调优: http://blog.nosqlfan.com/html/2095.html
-* 关于HFile的思考: http://blog.nosqlfan.com/html/2545.html
-* HBase性能优化方法总结（一）：表的设计: http://www.cnblogs.com/panfeng412/archive/2012/03/08/hbase-performance-tuning-section1.html
-* HBase性能优化方法总结（二）：写表操作: http://www.cnblogs.com/panfeng412/archive/2012/03/08/hbase-performance-tuning-section2.html
-* HBase性能优化方法总结（三）：读表操作: http://www.cnblogs.com/panfeng412/archive/2012/03/08/hbase-performance-tuning-section3.html
-* HBase性能优化方法总结（四）：数据计算: http://www.cnblogs.com/panfeng412/archive/2012/03/08/hbase-performance-tuning-section4.html
-* HBase如何合理设置客户端Write Buffer: http://www.cnblogs.com/panfeng412/archive/2012/10/16/how-to-use-hbase-client-write-buffer.html
-* HBase的Block Cache实现机制分析: http://www.cnblogs.com/panfeng412/archive/2012/09/24/hbase-block-cache-mechanism.html
-* HBase入门篇: http://www.uml.org.cn/sjjm/201212141.asp
-* Hbase分析报告: http://xiaoxia001.iteye.com/blog/1332874
-* HBase 系统架构: http://blog.chinaunix.net/uid-20577907-id-3491151.html
-* 图形化理解 HBase 数据写操作、压缩操作过程: http://blog.nosqlfan.com/html/1249.html
-* hbase在淘宝的应用和优化小结: http://www.cnblogs.com/panfeng412/articles/hbase-optimization-and-apply-summary-in-taobao.html
-* bigtable model with cassandra and hbase: http://horicky.blogspot.com/2010/10/bigtable-model-with-cassandra-and-hbase.html
-* 编译和使用hive与HBase通信包--hive-hbase-handler.jar及下载: http://www.aboutyun.com/thread-7817-1-1.html
+* HBase 权限控制: <http://debugo.com/hbase-access-control/>
+* HBase Shell 常用操作: <http://debugo.com/hbase-shell-cmds/>
+* Hbase,Hive,Pig的区别: <http://blog.sina.com.cn/s/blog_662728650101kurp.html>
+* HBase运维实战：disable table失败的处理: <http://www.searchdatabase.com.cn/showcontent_53017.htm>
+* HBase性能调优: <http://blog.nosqlfan.com/html/2095.html>
+* 关于HFile的思考: <http://blog.nosqlfan.com/html/2545.html>
+* HBase性能优化方法总结（一）：表的设计: <http://www.cnblogs.com/panfeng412/archive/2012/03/08/hbase-performance-tuning-section1.html>
+* HBase性能优化方法总结（二）：写表操作: <http://www.cnblogs.com/panfeng412/archive/2012/03/08/hbase-performance-tuning-section2.html>
+* HBase性能优化方法总结（三）：读表操作: <http://www.cnblogs.com/panfeng412/archive/2012/03/08/hbase-performance-tuning-section3.html>
+* HBase性能优化方法总结（四）：数据计算: <http://www.cnblogs.com/panfeng412/archive/2012/03/08/hbase-performance-tuning-section4.html>
+* HBase如何合理设置客户端Write Buffer: <http://www.cnblogs.com/panfeng412/archive/2012/10/16/how-to-use-hbase-client-write-buffer.html>
+* HBase的Block Cache实现机制分析: <http://www.cnblogs.com/panfeng412/archive/2012/09/24/hbase-block-cache-mechanism.html>
+* HBase入门篇: <http://www.uml.org.cn/sjjm/201212141.asp>
+* Hbase分析报告: <http://xiaoxia001.iteye.com/blog/1332874>
+* HBase 系统架构: <http://blog.chinaunix.net/uid-20577907-id-3491151.html>
+* 图形化理解 HBase 数据写操作、压缩操作过程: <http://blog.nosqlfan.com/html/1249.html>
+* hbase在淘宝的应用和优化小结: <http://www.cnblogs.com/panfeng412/articles/hbase-optimization-and-apply-summary-in-taobao.html>
+* bigtable model with cassandra and hbase: <http://horicky.blogspot.com/2010/10/bigtable-model-with-cassandra-and-hbase.html>
+* 编译和使用hive与HBase通信包--hive-hbase-handler.jar及下载: <http://www.aboutyun.com/thread-7817-1-1.html>
 
 # Hive
 
-* http://hive.apache.org/
-* https://cwiki.apache.org/confluence/display/Hive/Home
-* 使用Hive读取Hbase中的数据: http://victorzhzh.iteye.com/blog/972406
+* <http://hive.apache.org/>
+* <https://cwiki.apache.org/confluence/display/Hive/Home>
+* 使用Hive读取Hbase中的数据: <http://victorzhzh.iteye.com/blog/972406>
 
 # Pig
 
-* http://pig.apache.org/
-* 使用 Apache Pig 处理数据: http://www.ibm.com/developerworks/cn/linux/l-apachepigdataquery/
-* Pig实战: http://www.cnblogs.com/xuqiang/archive/2011/06/06/2073601.html
-* Apache Pig的一些基础概念及用法总结（1）: http://www.codelast.com/?p=3621
-* Apache Pig的一些基础概念及用法总结（2）: http://www.codelast.com/?p=4611
-* Apache Pig中文教程（进阶）: http://www.codelast.com/?p=4249
-* 使用Apache Pig时应该注意/避免的操作或事项: http://www.codelast.com/?p=4577
+* <http://pig.apache.org/>
+* 使用 Apache Pig 处理数据: <http://www.ibm.com/developerworks/cn/linux/l-apachepigdataquery/>
+* Pig实战: <http://www.cnblogs.com/xuqiang/archive/2011/06/06/2073601.html>
+* Apache Pig的一些基础概念及用法总结（1）: <http://www.codelast.com/?p=3621>
+* Apache Pig的一些基础概念及用法总结（2）: <http://www.codelast.com/?p=4611>
+* Apache Pig中文教程（进阶）: <http://www.codelast.com/?p=4249>
+* 使用Apache Pig时应该注意/避免的操作或事项: <http://www.codelast.com/?p=4577>
 
 
 # Others
 
-* GBase: http://www.gbase.cn/
-* Vertica: https://www.vertica.com/
-* actian: http://www.actian.com/
-* Apache Derby: http://db.apache.org/derby/
-* BlinkDB: http://blinkdb.org/
-* H2 Database Engine: http://www.h2database.com/html/main.html
+* GBase: <http://www.gbase.cn/>
+* Vertica: <https://www.vertica.com/>
+* actian: <http://www.actian.com/>
+* Apache Derby: <http://db.apache.org/derby/>
+* BlinkDB: <http://blinkdb.org/>
+* H2 Database Engine: <http://www.h2database.com/html/main.html>
 
 # 数据模型
 
