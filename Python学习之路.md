@@ -1,9 +1,11 @@
+# Python学习之路
+
 * <https://www.python.org/>
 * <https://docs.python.org/3/>
 * PyPI - the Python Package Index: <https://pypi.python.org/pypi>
 * pip: <https://pypi.python.org/pypi/pip>
 * setuptools: <https://pypi.python.org/pypi/setuptools>
-    * <https://bitbucket.org/pypa/setuptools>
+* setuptools: <https://bitbucket.org/pypa/setuptools>
 * spyder: <https://pypi.python.org/pypi/spyder/>
 * Python Enhancement Proposals: <http://legacy.python.org/dev/peps/>
 
@@ -41,11 +43,9 @@
 
 * Python zipfile报错问题: <http://blog.csdn.net/u012063703/article/details/43448397>
 
-# PyDev
+## PyDev
 
 * 项目地址：<http://www.pydev.org/>
 * 安装说明：<http://www.pydev.org/download.html>
 * 与之相关的LiClipse项目地址：<http://www.liclipse.com/liclipse/>
 * PyDev Manual：<http://www.pydev.org/manual.html>
-
-

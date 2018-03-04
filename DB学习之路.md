@@ -1,7 +1,5 @@
 # DB学习之路 [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 
-# 通用：
-
 * <http://db-engines.com>
 
 * Tech On The Net: <http://www.techonthenet.com/index.php>
@@ -28,8 +26,7 @@
 * Java 6 RowSet 使用完全剖析: <https://www.ibm.com/developerworks/cn/java/j-lo-java6rowset/>
 * Hibernate与autoCommit: <http://www.cnblogs.com/jiangxinnju/p/7429951.html>
 
-
-# MySQL
+## MySQL
 
 * <http://www.mysql.com/>
 * <http://dev.mysql.com/doc/#manual>
@@ -57,8 +54,7 @@
 * Spring 事务 readOnly 到底是怎么回事？<http://www.cnblogs.com/hackem/p/3890656.html>
 * 解决MySQL查询不区分大小写: <https://my.oschina.net/xiangtao/blog/33983>
 
-
-# SQL Server
+## SQL Server
 
 * SQL Server: <https://msdn.microsoft.com/library/bb545450.aspx>
 * Transact-SQL 参考: <https://msdn.microsoft.com/zh-cn/library/bb510741>(v=sql.105).aspx
@@ -80,28 +76,22 @@
 * SQL 中 where 1=1 和 1=0的 作用: <http://blog.csdn.net/wanghai__/article/details/4813909>
 * left join on 和where条件的放置: <http://blog.csdn.net/muxiaoshan/article/details/7617533>
 
-
-## SQL Server不同版本的驱动
+### SQL Server不同版本的驱动
 
 * msbase.jar、mssqlserver.jar、msutil.jar 在连接数据时候需要手动导入驱动包，即手动导入class.forName(驱动名称)，支持sql2000
 * sqljdbc.jar 应用程序必须首先按class.forName(驱动名称)注册驱动程序。Jdk1.6以上版本不推荐使用.支持sql2005，sql2008
 * sqljdbc4.jar DriverManager.getConnection方法得到了增强，可自动加载 JDBC Driver。因此使用sqljdbc4.jar 类库时，应用程序无需调用 Class.forName 方法来注册或加载驱动程序。调用 DriverManager 类的 getConnection 方法时，会从已注册的 JDBC Driver 集中找到相应的驱动程序。sqljdbc4.jar 文件包括“META-INF/services/java.sql.Driver”文件，后者包含.sqlserver.jdbc.SQLServerDriver 作为已注册的驱动程序。现有的应用程序（当前通过使用 Class.forName 方法加载驱动程序）将继续工作，而无需修改。要求使用 6.0 或更高版本的JRE，支持sql2005，sql2008
 
-
-
-
-## 全文索引和普通索引的区别
+### 全文索引和普通索引的区别
 
 两种索引的功能和结构都是不同的，普通索引的结构主要以B+树和哈希索引为主，用于实现对字段中数据的精确查找，比如查找某个字段值等于给定值的记录，A=10这种查询，因此适合数值型字段和短文本字段。全文索引是用于检索字段中是否包含或不包含指定的关键字，有点像搜索引擎的功能，因此全文索引内部采用的是与搜索引擎相同的倒排索引结构，其原理是对字段中的文本进行分词，然后为每一个出现的单词记录一个索引项，这个索引项中保存了所有出现过该单词的记录的信息，也就是说在索引中找到这个单词后，就知道哪些记录的字段中包含这个单词了。因此适合用大文本字段的查找。大字段之所以不适合做普通索引，最主要的原因是普通索引对检索条件只能进行精确匹配，而大字段中的文本内容很多，通常也不会在这种字段上执行精确的文本匹配查询，而更多的是基于关键字的全文检索查询，例如你查一篇文章信息，你会只输入一些关键字，而不是把整篇文章输入查询（如果有整篇文章也就不用查询了）。而全文索引正是适合这种查询需求。
 
-## 提示找不到存储过程(SQLServer)
+### 提示找不到存储过程(SQLServer)
 
 在sql server 里新建了几个存储过程，每次都是建了之后，存储过程是可以看见的，但用exec语句的时候，却一直有红色波浪线提示找不到存储过程，但是直接执行，却又是可以执行成功的，每次都需要重新打开ssms，红色的波浪线提示才会取消。
 原因是这样的.你的SQL Server 客户端，在连接到 SQL Server 数据库以后。会自动读取数据库的数据字典信息。也就是当前数据库，有哪些表/字段/视图/存储过程等基础信息。保存在客户端的内存里面。这样。当你在客户端输入 SQL 语句的时候，输入表名字.会自动弹出这个表的字段列表让你选择。但是当你新建了一个对象的时候，例如表或者上面那个例子，新建存储过程abc这个时候，数据库那里已经有存储过程abc 了。但是客户端的缓存里面并没有存储过程 abc 的信息。因为内存里面的信息没有更新。因此在客户端那里。输入EXEC abc，abc下有红线。将客户端关闭后，重新打开，由于客户端重新加载了数据库的基础信息。知道了当前数据库里面，有一个名字叫 abc 的存储过程，因此就不出红线了。
 
-
-
-# Oracle Database
+## Oracle Database
 
 * Oracle Database DownLoad: <http://www.oracle.com/technetwork/cn/database/enterprise-edition/downloads/index.html>
 * Oracle SQL Developer: <http://www.oracle.com/technetwork/developer-tools/sql-developer/overview/index.html>
@@ -165,7 +155,6 @@
 * SI Object Browser：<http://www.presoft.com.cn/ob/>
 
 * ToadWorld: <http://www.toadworld.com/>
-
 
 * Oracle系统表整理+常用SQL语句收集: <http://www.cnblogs.com/jiangxinnju/p/5840420.html>
 * Unix/Linux操作系统中如何在sqlplus/rman中使用方向键: <http://www.cnblogs.com/jiangxinnju/p/7469325.html>
@@ -235,7 +224,7 @@
 * 忘记oracle的sys用户密码怎么修改以及Oracle 11g 默认用户名和密码: <http://www.cnblogs.com/jiangxinnju/p/7928029.html>
 * navicat 连接Oracle 报错：Cannot load OCI DLL, 126: <https://my.oschina.net/xqx/blog/340743>
 
-## oracle疑难问题排查集：
+### oracle疑难问题排查集：
 
 * 数据库无响应，出现很多tns的错误: <http://www.itpub.net/thread-1359536-1-1.html>
 * oracle 11g不能连接报ORA-12537+ora-609解决: <http://www.cnblogs.com/hanbo112/p/4583047.html>
@@ -243,12 +232,12 @@
 * ORA-3136、TNS-12535 12170 12606: <http://blog.chinaunix.net/uid-20276248-id-92210.html>
 * 关于 Fatal NI connect error 12170: <http://blog.csdn.net/liqfyiyi/article/details/7107249>
 
-## PL/SQL Developer
+### PL/SQL Developer
 
 * <http://www.allroundautomations.com/registered/plsqldev.html>
 * 配置：localhost:1521/orcl
 
-## Oracle 11g服务详细介绍及哪些服务是必须开启的？
+### Oracle 11g服务详细介绍及哪些服务是必须开启的？
 
 成功安装Oracle 11g后，共有7个服务，这七个服务的含义分别为：
 
@@ -264,13 +253,13 @@
 
 注：ORCL是数据库实例名，默认的数据库是ORCL，你可以创建其他的，即OracleService+数据库名。
 
-## ORACLE_HOME/ORACLE_SID
+### ORACLE_HOME/ORACLE_SID
 
 ORACLE_HOME 安装目录
 ORACLE_SID 实例ID
 一台linux机器上安装一个oracle，两个实例，分别对应两个用户。切换到对应用户时 echo $ORACLE_SID会显示各自的实例
 
-## ESCAPE关键字用法
+### ESCAPE关键字用法
 
 　　定义：escape关键字经常用于使某些特殊字符，如通配符：'%','_'转义为它们原来的字符的意义，被定义的转义字符通常使用'\',但是也可以使用其他的符号。实例：
 
@@ -284,8 +273,7 @@ ORACLE_SID 实例ID
 1.使用 ESCAPE 关键字定义转义符。在模式中，当转义符置于通配符之前时，该通配符就解释为普通字符。
 2.ESCAPE 'escape_character' 允许在字符串中搜索通配符而不是将其作为通配符使用。escape_character 是放在通配符前表示此特殊用途的字符。
 
-
-# DB2
+## DB2
 
 * 官网：<http://www-01.ibm.com/software/data/db2/>
 * DB2China：<http://www.db2china.net/>
@@ -295,25 +283,22 @@ ORACLE_SID 实例ID
 * IBM DB2关键特性解析：DB2分区特性: <http://tech.it168.com/a2012/0306/1321/000001321022_2.shtml>
 * db2建立schema: <http://guoyanxi.iteye.com/blog/910755>
 
-# Oracle Berkeley DB
+## Oracle Berkeley DB
 
 * Oracle Berkeley DB：<http://www.oracle.com/technetwork/database/database-technologies/berkeleydb/overview/index.html>
 
-# MariaDB
+## MariaDB
 
 * <https://mariadb.org/>
 
-
-
-# SQLite
+## SQLite
 
 * <http://www.sqlite.org/>
 * DB Browser for SQLite: <http://sqlitebrowser.org/>
 * SQLite Expert: <http://www.sqliteexpert.com/index.html>
 * SQLCipher: <https://www.zetetic.net/sqlcipher/>
 
-
-# mongodb
+## mongodb
 
 * <https://www.mongodb.org/>
 * <https://docs.mongodb.org/manual/>
@@ -329,19 +314,17 @@ ORACLE_SID 实例ID
 * Morphia(The Java Object Document Mapper for MongoDB): <http://mongodb.github.io/morphia/>
 * NoSQL 之 Morphia 操作 MongoDB: <http://www.cnblogs.com/hoojo/archive/2012/02/17/2355384.html>
 
-
-# Teradata
+## Teradata
 
 * Teradata Express for VMware Player: <http://downloads.teradata.com/download/database/teradata-express-for-vmware-player>
 * Teradata Aster: <http://developer.teradata.com/aster>
 * Teradata 教程: <http://www.w3cschool.cn/teradata/>
 
-# GreenPlum
+## GreenPlum
 
 * <https://pivotal.io/big-data/pivotal-greenplum>
 
-
-# hbase
+## hbase
 
 * <http://hbase.apache.org/>
 * HBase 官方文档(中文)：<http://yankaycom-wordpress.stor.sinaapp.com/hbase/book.html?q=/wp-content/hbase/book.html>
@@ -367,13 +350,13 @@ ORACLE_SID 实例ID
 * bigtable model with cassandra and hbase: <http://horicky.blogspot.com/2010/10/bigtable-model-with-cassandra-and-hbase.html>
 * 编译和使用hive与HBase通信包--hive-hbase-handler.jar及下载: <http://www.aboutyun.com/thread-7817-1-1.html>
 
-# Hive
+## Hive
 
 * <http://hive.apache.org/>
 * <https://cwiki.apache.org/confluence/display/Hive/Home>
 * 使用Hive读取Hbase中的数据: <http://victorzhzh.iteye.com/blog/972406>
 
-# Pig
+## Pig
 
 * <http://pig.apache.org/>
 * 使用 Apache Pig 处理数据: <http://www.ibm.com/developerworks/cn/linux/l-apachepigdataquery/>
@@ -383,8 +366,7 @@ ORACLE_SID 实例ID
 * Apache Pig中文教程（进阶）: <http://www.codelast.com/?p=4249>
 * 使用Apache Pig时应该注意/避免的操作或事项: <http://www.codelast.com/?p=4577>
 
-
-# Others
+## Others
 
 * GBase: <http://www.gbase.cn/>
 * Vertica: <https://www.vertica.com/>
@@ -393,8 +375,8 @@ ORACLE_SID 实例ID
 * BlinkDB: <http://blinkdb.org/>
 * H2 Database Engine: <http://www.h2database.com/html/main.html>
 
-# 数据模型
+## 数据模型
 
-## PowerDesigner两张表主键如何设成一致的
+### PowerDesigner两张表主键如何设成一致的
 
 设置方法：Tools--->Model Options->Model Settings。在Data Item组框中定义数据项的唯一性代码选项(Unique Code)与重用选项（Allow Reuse）。把allow reuse选上，去掉unique code选项。
