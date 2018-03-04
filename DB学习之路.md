@@ -114,7 +114,7 @@
 * 配置系统环境变量[Getting Started with Database Administration -> Configuring the Operating System Environment Variables]: <http://docs.oracle.com/database/122/ADMQS>
 
 * "on delete cascade" 和 "on delete set null" 的差别[Common SQL DDL Clauses -> constraint -> on delete]: <http://docs.oracle.com/database/122/SQLRF>
-* TRUNC (date)[Functions -> TRUNC (date)]: <http://docs.oracle.com/database/122/SQLRF>
+* `TRUNC (date)[Functions -> TRUNC (date)]`: <http://docs.oracle.com/database/122/SQLRF>
 * SYS_CONTEXT[Functions -> SYS_CONTEXT]: <http://docs.oracle.com/database/122/SQLRF>
 * ALTER SEQUENCE[SQL Statements: ALTER MATERIALIZED VIEW to ALTER SYSTEM -> ALTER SEQUENCE]: <http://docs.oracle.com/database/122/SQLRF>
 
@@ -147,7 +147,7 @@
 
 * [Gathering Database Statistics -> Generating an AWR Report Using the Command-Line Interface]: <http://docs.oracle.com/database/122/TGDBA>
 
-* / (slash)[SQL*Plus Command Reference -> / (slash)]: <http://docs.oracle.com/database/122/SQPUG>
+* `/ (slash)[SQL*Plus Command Reference -> / (slash)]`: <http://docs.oracle.com/database/122/SQPUG>
 
 * CRSCTL/SRVCTL: <https://docs.oracle.com/database/122/CWADD>
 

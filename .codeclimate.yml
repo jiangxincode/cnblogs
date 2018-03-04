@@ -8,7 +8,7 @@ engines:
       MD034:
         enabled: true
       MD013:
-        enabled: true
+        enabled: false
 ratings:
   paths: []
 exclude_paths: []

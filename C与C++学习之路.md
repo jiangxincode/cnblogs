@@ -97,7 +97,7 @@
 * <http://clipsrules.sourceforge.net/WhatIsCLIPS.html>
 
 ## Xapian
-  
+
     Xapian is an Open Source Search Engine Library, released under the GPL v2+. It's written in C++, with bindings to allow use from Perl, Python, PHP, Java, Tcl, C#, Ruby, Lua, Erlang and Node.js (so far!)
 
 * <http://xapian.org/>
