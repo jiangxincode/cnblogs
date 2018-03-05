@@ -1,5 +1,6 @@
 # OJ学习之路
 
+* ACM竞赛之输入输出：<http://www.cnblogs.com/jiangxinnju/p/8506089.html>
 * codevs: <http://codevs.cn/>
 * 九度OJ: <http://ac.jobdu.com/>
 * hihocoder: <http://hihocoder.com/>

@@ -166,6 +166,8 @@
 * Java陷阱之assert关键字: <http://lavasoft.blog.51cto.com/62575/43735/>
 * Buffer: <https://yddmax.github.io/2017/06/08/Buffer/>
 * 浅析ReDoS的原理与实践: <http://www.freebuf.com/articles/network/124422.html>
+* More Servlets and JavaServer Pages: <http://pdf.moreservlets.com/>
+* 大陆简中自由软件本地化工作指南: <https://repo.anthonos.org/misc/l10n/zh_CN_l10n_1.4.4.pdf>
 
 ## WebService
 

@@ -60,6 +60,8 @@
 * TDM-GCC: <http://tdm-gcc.tdragon.net/>
 * cygwin: <http://www.cygwin.com/>
 * 对话 UNIX: 在 Windows 上使用 Cygwin: <http://www.ibm.com/developerworks/cn/aix/library/au-spunix_cygwin/>
+* 使您的软件运行起来——防止缓冲区溢出：<https://www.ibm.com/developerworks/cn/security/buffer-defend/index.html#main>
+* 屏幕输出VS文件输出：<http://blog.csdn.net/jiangxinnju/article/details/26081963>
 
 ## Eclipse CDT
 
@@ -67,6 +69,8 @@
 * 安装说明：<http://www.eclipse.org/cdt/downloads.php>
 * 也可以在Eclipse的MarketPlace中搜索CDT，但是需要注意搜到的CDT版本是否与Eclipse版本匹配。
 * eclipse 配置 TDM-GCC 64位版方法: <http://blog.csdn.net/luozhuang/article/details/8270522>
+* 用UTF－8编写的代码在codeblocks中编译后汉字不能正常显示: <http://tieba.baidu.com/p/3208939336>
+* eclipse写C++控制台程序，不见输出: <http://bbs.csdn.net/topics/360207855>
 
 ## CodeBlocks
 
