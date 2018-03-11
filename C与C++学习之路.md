@@ -18,6 +18,8 @@
 * The International Obfuscated C Code Contest: <http://www.ioccc.org/>
 * The C++ Standard Library - A Tutorial and Reference: <http://www.cppstdlib.com/>
 
+* CRT Library Features: <https://docs.microsoft.com/en-us/cpp/c-runtime-library/crt-library-features>
+
 * C 语言常见问题集: <http://c-faq-chn.sourceforge.net/ccfaq/>
 
 * <http://www.boost.org/>

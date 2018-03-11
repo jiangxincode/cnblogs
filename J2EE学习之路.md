@@ -168,6 +168,7 @@
 * 浅析ReDoS的原理与实践: <http://www.freebuf.com/articles/network/124422.html>
 * More Servlets and JavaServer Pages: <http://pdf.moreservlets.com/>
 * 大陆简中自由软件本地化工作指南: <https://repo.anthonos.org/misc/l10n/zh_CN_l10n_1.4.4.pdf>
+* 一个程序员能够控制多少行代码: <https://www.cnblogs.com/jiangxinnju/p/5516918.html>
 
 ## WebService
 
@@ -1227,7 +1228,7 @@ The yFiles diagramming software components are extensive class libraries that en
 * EXPOSITION FORMATS: <https://prometheus.io/docs/instrumenting/exposition_formats/>
 * Prometheus 系统监控方案: <http://www.cnblogs.com/vovlie/p/Prometheus_CONCEPTS.html>
 
-## grafana
+## grafanagrafana
 
 * <https://grafana.com/>
 
@@ -1238,3 +1239,8 @@ The yFiles diagramming software components are extensive class libraries that en
 ## influxdata
 
 * <https://www.influxdata.com/>
+
+## opengrok
+
+* <https://github.com/oracle/opengrok>
+* OpenGrok搜索技巧: <http://jingzitakk66.iteye.com/blog/2122730>
