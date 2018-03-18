@@ -169,6 +169,8 @@
 * More Servlets and JavaServer Pages: <http://pdf.moreservlets.com/>
 * 大陆简中自由软件本地化工作指南: <https://repo.anthonos.org/misc/l10n/zh_CN_l10n_1.4.4.pdf>
 * 一个程序员能够控制多少行代码: <https://www.cnblogs.com/jiangxinnju/p/5516918.html>
+* HTML中`&nbsp; &ensp; &emsp; &thinsp;`等6种空白空格的区别: <https://www.cnblogs.com/chenshihaook/p/6186343.html>
+* UTF-8 encoding table and Unicode characters: <http://www.utf8-chartable.de/>
 
 ## WebService
 
