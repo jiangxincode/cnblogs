@@ -210,7 +210,7 @@
 
 ## Eclipse
 
-* Eclipse的项目地址：<http://www.eclipse.org/>
+* <http://www.eclipse.org/>
 * Eclipse MarketPlace地址：<http://marketplace.eclipse.org/>
 * 各个版本的下载地址：<http://www.eclipse.org/downloads/>
 * 帮助地址：<http://help.eclipse.org/>
@@ -251,7 +251,7 @@
 
 * AnyEdit: <http://marketplace.eclipse.org/content/anyedit-tools>
 * StartExplorer: <https://github.com/fabioz/startexplorer>
-* EClim (不推荐): <http://eclim.org>
+* EClim: <http://eclim.org>
 * Eclipse EditorList Plug-in: <https://sourceforge.net/projects/editorlist/>
 * eclipse-games: <http://eclipse-games.sourceforge.net/>
 * MouseFeed: <http://marketplace.eclipse.org/content/mousefeed>

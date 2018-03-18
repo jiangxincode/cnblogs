@@ -19,6 +19,9 @@
 * The C++ Standard Library - A Tutorial and Reference: <http://www.cppstdlib.com/>
 
 * CRT Library Features: <https://docs.microsoft.com/en-us/cpp/c-runtime-library/crt-library-features>
+* Security Features in the CRT: <https://docs.microsoft.com/en-us/cpp/c-runtime-library/security-features-in-the-crt>
+* Linker Tools Warning LNK4098: <https://docs.microsoft.com/en-us/cpp/error-messages/tool-errors/linker-tools-warning-lnk4098>
+* LINK : fatal error LNK1104: 无法打开文件“LIBCD.lib”: <https://www.cnblogs.com/hyfemma/archive/2010/11/14/1876846.html>
 
 * C 语言常见问题集: <http://c-faq-chn.sourceforge.net/ccfaq/>
 
