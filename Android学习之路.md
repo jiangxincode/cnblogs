@@ -75,7 +75,10 @@
 * Android中`@`和`?`区别以及`?attr/**`与`@style/**`等的区别: <http://blog.csdn.net/xx326664162/article/details/64125654>
 * Android:去掉系统自带的Activity跳转动画，跳转无动画,返回无动画: <http://blog.csdn.net/qq_24697659/article/details/49660275>
 * Android 权限的一些细节: <http://blog.csdn.net/u013553529/article/details/53167072>
+* Android 将自己的应用改为系统应用: <https://blog.csdn.net/xx326664162/article/details/53406933>
 * 用ColorFilter为安卓按钮增加效果: <https://www.jianshu.com/p/9cae2250d0ed>
+* What is the difference between system apps and privileged apps on Android? <https://stackoverflow.com/questions/19868138/what-is-the-difference-between-system-apps-and-privileged-apps-on-android>
+* 全面的Android文件目录解析和获取方法(包含对6.0系统的说明)：<https://blog.csdn.net/zhangbuzhangbu/article/details/23257873>
 
 * Android Studio系列教程一--下载与安装: <http://stormzhang.com/devtools/2014/11/25/android-studio-tutorial1/>
 * Android Studio系列教程二--基本设置与运行: <http://stormzhang.com/devtools/2014/11/28/android-studio-tutorial2/>
@@ -130,11 +133,17 @@
 
 ## Android常见路径说明
 
-* 数据库默认路径: /data/data/apk包名/databases
-* 系统自带的应用程序: /system/app
-* 用户程序安装的目录: /data/app
-* 存放应用程序的数据: /data/data
-* dalvik虚拟机的可执行文件: /data/dalvik-cache
+* /system/app/pkg_name 系统应用
+* /system/priv-app/pkg_name 核心系统应用
+* /data/app 用户程序安装的目录
+* /data/user/pkg_name
+* /data/user_de/user_id/pkg_name/databases 应用数据库
+* /data/user_de/user_id/pkg_name/shared_prefs 应用shared preference
+* /data/data 存放应用程序的数据
+* /data/data/pkg_name/databases 数据库默认路径
+* /data/log/android_logs 应用日志
+* /data/system/dropbox 系统日志
+* /data/dalvik-cache dalvik虚拟机的可执行文件
 
 ## Gerrit
 
