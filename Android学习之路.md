@@ -56,6 +56,7 @@
 * Configure Android Studio: <https://developer.android.com/studio/intro/studio-config.html>
 * Managing the System UI: <https://developer.android.com/training/system-ui/index.html>
 * SDK版本关系: <https://developer.android.com/guide/topics/manifest/uses-sdk-element.html>
+* 代号、标记和细分版本号: <https://source.android.com/source/build-numbers>
 * Android 使用android-support-multidex解决Dex超出方法数的限制问题,让你的应用不再爆棚: <http://blog.csdn.net/t12x3456/article/details/40837287>
 * Android应用坐标系统全面详解: <http://blog.csdn.net/yanbober/article/details/50419117/>
 * Android命令行/c语言/java设置获取系统属性的方法: <http://www.mikewootc.com/wiki/android/other/system_property.html>
