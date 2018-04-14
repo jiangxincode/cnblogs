@@ -80,8 +80,8 @@
 * 用ColorFilter为安卓按钮增加效果: <https://www.jianshu.com/p/9cae2250d0ed>
 * What is the difference between system apps and privileged apps on Android? <https://stackoverflow.com/questions/19868138/what-is-the-difference-between-system-apps-and-privileged-apps-on-android>
 * 全面的Android文件目录解析和获取方法(包含对6.0系统的说明)：<https://blog.csdn.net/zhangbuzhangbu/article/details/23257873>
-* LinearLayout中实现水平方向上的两个textview一个居左，一个居右的效果: <https://blog.csdn.net/lb1207087645/article/details/49819453>
 * Android 那些年，处理getActivity()为null的日子: <https://www.jianshu.com/p/9d75e328f1de>
+* Repo command reference: <https://source.android.com/setup/develop/repo>
 
 * Android Studio系列教程一--下载与安装: <http://stormzhang.com/devtools/2014/11/25/android-studio-tutorial1/>
 * Android Studio系列教程二--基本设置与运行: <http://stormzhang.com/devtools/2014/11/28/android-studio-tutorial2/>
