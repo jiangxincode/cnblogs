@@ -1,9 +1,19 @@
 # Andriod学习之路
 
 * <https://developer.android.com/develop/index.html>
+* Intent: <https://developer.android.com/reference/android/content/Intent.html>
+* Configure Android Studio: <https://developer.android.com/studio/intro/studio-config.html>
+* Managing the System UI: <https://developer.android.com/training/system-ui/index.html>
+* SDK版本关系: <https://developer.android.com/guide/topics/manifest/uses-sdk-element.html>
+* 设置应用 ID: <https://developer.android.com/studio/build/application-id.html>
+* (新)配置构建: <https://developer.android.com/studio/build/index.html>
+
+* AOSP: <https://source.android.com/>
+* 代号、标记和细分版本号: <https://source.android.com/source/build-numbers>
+* Repo command reference: <https://source.android.com/setup/develop/repo>
+
 * Git repositories on android: <https://android.googlesource.com/>
 * <http://www.android-studio.org/>
-* AOSP: <https://source.android.com/>
 
 * 安卓巴士: <http://www.apkbus.com/>
 * eoeandroid: <http://www.eoeandroid.com/forum.php>
@@ -52,11 +62,6 @@
 * Android签名机制之---签名过程详解: <http://blog.csdn.net/jiangwei0910410003/article/details/50402000>
 * android文件读写以及不同应用之间的文件读写操作: <http://blog.csdn.net/zyb243380456/article/details/7426449>
 * [Android] 为Android安装BusyBox —— 完整的bash shell: <https://www.cnblogs.com/xiaowenji/archive/2011/03/12/1982309.html>
-* Intent: <https://developer.android.com/reference/android/content/Intent.html>
-* Configure Android Studio: <https://developer.android.com/studio/intro/studio-config.html>
-* Managing the System UI: <https://developer.android.com/training/system-ui/index.html>
-* SDK版本关系: <https://developer.android.com/guide/topics/manifest/uses-sdk-element.html>
-* 代号、标记和细分版本号: <https://source.android.com/source/build-numbers>
 * Android 使用android-support-multidex解决Dex超出方法数的限制问题,让你的应用不再爆棚: <http://blog.csdn.net/t12x3456/article/details/40837287>
 * Android应用坐标系统全面详解: <http://blog.csdn.net/yanbober/article/details/50419117/>
 * Android命令行/c语言/java设置获取系统属性的方法: <http://www.mikewootc.com/wiki/android/other/system_property.html>
@@ -81,7 +86,10 @@
 * What is the difference between system apps and privileged apps on Android? <https://stackoverflow.com/questions/19868138/what-is-the-difference-between-system-apps-and-privileged-apps-on-android>
 * 全面的Android文件目录解析和获取方法(包含对6.0系统的说明)：<https://blog.csdn.net/zhangbuzhangbu/article/details/23257873>
 * Android 那些年，处理getActivity()为null的日子: <https://www.jianshu.com/p/9d75e328f1de>
-* Repo command reference: <https://source.android.com/setup/develop/repo>
+* Android 汉字转拼音的多种实现方式: <https://blog.csdn.net/zhuwentao2150/article/details/70230341>
+* MaterialDesign之SearchView解锁 仿网易云音乐搜索: <http://www.sohu.com/a/142436167_611601>
+* Android下setTextSize的正确使用姿势: <https://www.jianshu.com/p/7f2941dbfb17>
+* Android Notification常见样式总结: <https://blog.csdn.net/w804518214/article/details/51231946>
 
 * Android Studio系列教程一--下载与安装: <http://stormzhang.com/devtools/2014/11/25/android-studio-tutorial1/>
 * Android Studio系列教程二--基本设置与运行: <http://stormzhang.com/devtools/2014/11/28/android-studio-tutorial2/>
@@ -127,7 +135,6 @@
 * Gradle修改本地仓库的位置: <http://blog.csdn.net/xq328220454/article/details/30233759>
 * gradle cache目录(.gradle)剖析: <https://zhuanlan.zhihu.com/p/26473930>
 
-* (新)配置构建: <https://developer.android.com/studio/build/index.html>
 * (老)Gradle Plugin User Guide: <http://tools.android.com/tech-docs/new-build-system/user-guide>
 * (老)Gradle Plugin User Guide 翻译: <http://avatarqing.github.io/Gradle-Plugin-User-Guide-Chinese-Verision/>
 * 加速Android Studio/Gradle构建: <https://isming.me/2015/03/18/android-build-speed-up/>

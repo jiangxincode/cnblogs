@@ -78,3 +78,4 @@ PowerShell的默认启动路径其实就是执行PowerShell时指定的默认工
 * Win10添加本地帐户且设置为管理员帐户的方法: <https://jingyan.baidu.com/article/7082dc1c629264e40a89bd34.html>
 * 证书错误 导航已阻止: <https://jingyan.baidu.com/article/cbf0e5008af1392eaa2893cf.html>
 * PDF常见问题总结：<http://www.cnblogs.com/jiangxinnju/p/8511860.html>
+* PowerShell Studio: <https://www.sapien.com/software/powershell_studio>
