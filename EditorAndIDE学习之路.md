@@ -57,3 +57,4 @@
 * Understand: <https://scitools.com/>
 * codelite: <http://www.codelite.org/>
 * Anjuta: <http://anjuta.org/>
+* kite: <https://kite.com/>
