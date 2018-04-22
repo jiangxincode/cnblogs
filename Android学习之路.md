@@ -27,6 +27,7 @@
 * <https://www.xamarin.com/>
 
 * busybox: <https://busybox.net/>
+* Test DPC APK Download for Android: <http://www.testdpc.com/>
 
 * Android Studio移动鼠标显示悬浮提示的设置方法: <http://www.cnblogs.com/jiangxinnju/p/8227442.html>
 * Android真机安装sqlite3的方法: <http://www.cnblogs.com/jiangxinnju/p/8227625.html>
@@ -90,6 +91,8 @@
 * MaterialDesign之SearchView解锁 仿网易云音乐搜索: <http://www.sohu.com/a/142436167_611601>
 * Android下setTextSize的正确使用姿势: <https://www.jianshu.com/p/7f2941dbfb17>
 * Android Notification常见样式总结: <https://blog.csdn.net/w804518214/article/details/51231946>
+* Mipmap drawables for icons: <https://stackoverflow.com/questions/23935810/mipmap-drawables-for-icons>
+* Android 修改阿拉伯语数字显示: <https://blog.csdn.net/wangchezheng/article/details/51065470>
 
 * Android Studio系列教程一--下载与安装: <http://stormzhang.com/devtools/2014/11/25/android-studio-tutorial1/>
 * Android Studio系列教程二--基本设置与运行: <http://stormzhang.com/devtools/2014/11/28/android-studio-tutorial2/>
@@ -159,6 +162,7 @@
 
 * <https://www.gerritcodereview.com/>
 * <https://gerrit-documentation.storage.googleapis.com/Documentation/2.14.5.1/install.html>
+* <https://gerrit-documentation.storage.googleapis.com/Documentation/2.15.1/user-search.html>
 * 如何搭建开源code review gerrit服务器: <https://www.cnblogs.com/tesky0125/p/5877536.html>
 
 ## Kotlin
