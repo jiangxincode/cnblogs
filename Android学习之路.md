@@ -93,6 +93,9 @@
 * Android Notification常见样式总结: <https://blog.csdn.net/w804518214/article/details/51231946>
 * Mipmap drawables for icons: <https://stackoverflow.com/questions/23935810/mipmap-drawables-for-icons>
 * Android 修改阿拉伯语数字显示: <https://blog.csdn.net/wangchezheng/article/details/51065470>
+* 安卓应用在各大应用市场上架方法整理: <https://blog.csdn.net/niezhipeng8/article/details/79103436>
+* Android 5.0 在优先模式下依然能收到微信的提醒是什么原理？<https://www.zhihu.com/question/26692324>
+* 一大波 Android 刘海屏来袭，全网最全适配技巧！<https://www.cnblogs.com/plokmju/p/android_liuhaiping.html>
 
 * Android Studio系列教程一--下载与安装: <http://stormzhang.com/devtools/2014/11/25/android-studio-tutorial1/>
 * Android Studio系列教程二--基本设置与运行: <http://stormzhang.com/devtools/2014/11/28/android-studio-tutorial2/>
