@@ -24,10 +24,12 @@
 * <http://stackoverflow.com/questions/tagged/android>
 * <http://www.marschen.com/portal.php>
 
-* <https://www.xamarin.com/>
+* 奇兔刷机：<https://www.xamarin.com/>
 
 * busybox: <https://busybox.net/>
 * Test DPC APK Download for Android: <http://www.testdpc.com/>
+* fastlane screenshots for Android: <https://docs.fastlane.tools/getting-started/android/screenshots/>
+* <http://www.7to.cn/>
 
 * Android Studio移动鼠标显示悬浮提示的设置方法: <http://www.cnblogs.com/jiangxinnju/p/8227442.html>
 * Android真机安装sqlite3的方法: <http://www.cnblogs.com/jiangxinnju/p/8227625.html>
@@ -43,7 +45,6 @@
 * Android系统开篇: <http://gityuan.com/android/>
 * Handler内存泄漏详解及其解决方案: <http://blog.csdn.net/javazejian/article/details/50839443>
 * 对于android.intent.action.MAIN和android.intent.category.LAUNCHER的理解: <http://blog.csdn.net/lindroid20/article/details/51993247>
-* 基础总结篇之二：Activity的四种launchMode: <http://blog.csdn.net/liuhe688/article/details/6754323>
 * Android加密之文件级加密: <http://blog.csdn.net/myfriend0/article/details/77094890>
 * Android属性allowBackup安全风险浅析: <http://www.freebuf.com/articles/terminal/60778.html>
 * Android Bander设计与实现 - 设计篇: <http://blog.csdn.net/universus/article/details/6211589>
@@ -122,6 +123,7 @@
 * Android Development Tools for Eclipse: <http://marketplace.eclipse.org/content/android-development-tools-eclipse>
 * eclipse搭建android开发环境: <http://jingyan.baidu.com/article/7e440953ca6f142fc0e2efe0.html>
 * Windows7部署Android开发环境傻瓜式教程(Eclipse+ADT): <http://www.cnblogs.com/vengen/archive/2010/04/01/AndroidSetup.html>
+* AndroidManifest.xml file missing! <https://bbs.csdn.net/topics/390812425?page=1>
 
 * Android程序开发初级教程(一): <http://blog.csdn.net/k7sem/article/details/1886871>
 * Android程序开发初级教程(二): <http://blog.csdn.net/k7sem/article/details/1887437>
