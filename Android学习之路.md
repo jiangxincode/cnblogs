@@ -7,6 +7,7 @@
 * SDK版本关系: <https://developer.android.com/guide/topics/manifest/uses-sdk-element.html>
 * 设置应用 ID: <https://developer.android.com/studio/build/application-id.html>
 * (新)配置构建: <https://developer.android.com/studio/build/index.html>
+* App Shortcuts: <https://developer.android.com/guide/topics/ui/shortcuts>
 
 * AOSP: <https://source.android.com/>
 * 代号、标记和细分版本号: <https://source.android.com/source/build-numbers>
@@ -24,12 +25,12 @@
 * <http://stackoverflow.com/questions/tagged/android>
 * <http://www.marschen.com/portal.php>
 
-* 奇兔刷机：<https://www.xamarin.com/>
+* Xamarin: <https://www.xamarin.com/>
 
 * busybox: <https://busybox.net/>
 * Test DPC APK Download for Android: <http://www.testdpc.com/>
 * fastlane screenshots for Android: <https://docs.fastlane.tools/getting-started/android/screenshots/>
-* <http://www.7to.cn/>
+* 奇兔刷机：<http://www.7to.cn/>
 
 * Android Studio移动鼠标显示悬浮提示的设置方法: <http://www.cnblogs.com/jiangxinnju/p/8227442.html>
 * Android真机安装sqlite3的方法: <http://www.cnblogs.com/jiangxinnju/p/8227625.html>
@@ -148,6 +149,13 @@
 * 加速Android Studio/Gradle构建: <https://isming.me/2015/03/18/android-build-speed-up/>
 * 用Gradle 构建你的android程序: <https://www.cnblogs.com/youxilua/archive/2013/05/20/3087935.html>
 * 用Gradle 构建你的android程序-依赖管理篇: <http://www.cnblogs.com/youxilua/archive/2013/05/22/3092657.html>
+
+## Bug跟踪
+
+* 网易云捕: <http://crash.163.com/>
+* bugly: <https://bugly.qq.com/v2/workbench/apps>
+* BugTags: <https://work.bugtags.com/login.html>
+* 蒲公英：<https://www.pgyer.com/>
 
 ## Android常见路径说明
 
