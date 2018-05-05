@@ -13,6 +13,9 @@
 * 代号、标记和细分版本号: <https://source.android.com/source/build-numbers>
 * Repo command reference: <https://source.android.com/setup/develop/repo>
 
+* androidxref: <http://androidxref.com/>
+* grepcode: <http://www.grepcode.com>
+
 * Git repositories on android: <https://android.googlesource.com/>
 * <http://www.android-studio.org/>
 
@@ -100,6 +103,8 @@
 * 一大波 Android 刘海屏来袭，全网最全适配技巧！<https://www.cnblogs.com/plokmju/p/android_liuhaiping.html>
 * Android百分比布局: <https://www.jianshu.com/p/7a6475757743?from=jiantop.com>
 * 安卓约束控件(ConstraintLayout)扁平化布局入门: <https://www.jianshu.com/p/792d2682c538>
+* Android之分屏模式解析（上）: <https://blog.csdn.net/itluochen/article/details/52127126>
+* Android之分屏模式解析（下）: <https://blog.csdn.net/itluochen/article/details/52127222>
 
 * Android Studio系列教程一--下载与安装: <http://stormzhang.com/devtools/2014/11/25/android-studio-tutorial1/>
 * Android Studio系列教程二--基本设置与运行: <http://stormzhang.com/devtools/2014/11/28/android-studio-tutorial2/>
