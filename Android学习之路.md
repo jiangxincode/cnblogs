@@ -105,6 +105,7 @@
 * 安卓约束控件(ConstraintLayout)扁平化布局入门: <https://www.jianshu.com/p/792d2682c538>
 * Android之分屏模式解析（上）: <https://blog.csdn.net/itluochen/article/details/52127126>
 * Android之分屏模式解析（下）: <https://blog.csdn.net/itluochen/article/details/52127222>
+* Getting the null pointer exception in the getActionBar method: <https://stackoverflow.com/questions/27959107/getting-the-null-pointer-exception-in-the-getactionbar-method/27960390>
 
 * Android Studio系列教程一--下载与安装: <http://stormzhang.com/devtools/2014/11/25/android-studio-tutorial1/>
 * Android Studio系列教程二--基本设置与运行: <http://stormzhang.com/devtools/2014/11/28/android-studio-tutorial2/>
