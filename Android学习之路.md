@@ -165,6 +165,12 @@
 * BugTags: <https://work.bugtags.com/login.html>
 * 蒲公英：<https://www.pgyer.com/>
 
+## XMPP
+
+* <http://xmpp.org/>
+* Openfire 的安装和配置: <http://www.cnblogs.com/hoojo/archive/2012/05/17/2506769.html>
+* smack4-doc-zh: <https://github.com/likfe/smack4-doc-zh>
+
 ## Android常见路径说明
 
 * /system/app/pkg_name 系统应用
