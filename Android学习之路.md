@@ -8,6 +8,7 @@
 * 设置应用 ID: <https://developer.android.com/studio/build/application-id.html>
 * (新)配置构建: <https://developer.android.com/studio/build/index.html>
 * App Shortcuts: <https://developer.android.com/guide/topics/ui/shortcuts>
+* dumpsys: <https://developer.android.com/studio/command-line/dumpsys>
 
 * AOSP: <https://source.android.com/>
 * 代号、标记和细分版本号: <https://source.android.com/source/build-numbers>
@@ -80,7 +81,7 @@
 * repo 下载Android源码（国内镜像）: <http://blog.csdn.net/shenlan18446744/article/details/d>
 * android怎样调用@hide和internal API: <http://blog.csdn.net/linghu_java/article/details/8283042>
 * android下的SuppressLint与TargetApi: <http://blog.csdn.net/pony_maggie/article/details/52115884>
-* Android完美获取状态栏高度、标题栏高度、编辑区域高度的获取: <http://blog.csdn.net/a_running_wolf/article/details/5047796>
+* Android完美获取状态栏高度、标题栏高度、编辑区域高度的获取: <http://blog.csdn.net/a_running_wolf/article/details/50477965>
 * Android开发中dip，dpi，density，px等详解: <http://blog.qiji.tech/archives/2581>
 * 高斯模糊: <https://zh.wikipedia.org/wiki/%E9%AB%98%E6%96%AF%E6%A8%A1%E7%B3%8A>
 * 总结一下Android中主题(Theme)的正确玩法: <https://www.cnblogs.com/zhouyou96/p/5323138.html>
@@ -105,6 +106,7 @@
 * 安卓约束控件(ConstraintLayout)扁平化布局入门: <https://www.jianshu.com/p/792d2682c538>
 * Android之分屏模式解析（上）: <https://blog.csdn.net/itluochen/article/details/52127126>
 * Android之分屏模式解析（下）: <https://blog.csdn.net/itluochen/article/details/52127222>
+* Android中app进程ABI确定过程: <https://blog.csdn.net/weixin_40107510/article/details/78138874>
 * Getting the null pointer exception in the getActionBar method: <https://stackoverflow.com/questions/27959107/getting-the-null-pointer-exception-in-the-getactionbar-method/27960390>
 
 * Android Studio系列教程一--下载与安装: <http://stormzhang.com/devtools/2014/11/25/android-studio-tutorial1/>
