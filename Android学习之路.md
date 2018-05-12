@@ -38,13 +38,8 @@
 
 * Android Studio移动鼠标显示悬浮提示的设置方法: <http://www.cnblogs.com/jiangxinnju/p/8227442.html>
 * Android真机安装sqlite3的方法: <http://www.cnblogs.com/jiangxinnju/p/8227625.html>
-
 * 使用 Intel HAXM 为 Android 模拟器加速，媲美真机: <http://www.cnblogs.com/beginor/archive/2013/01/13/2858228.html>
-* Android之基于XMPP协议即时通讯软件(一): <http://blog.csdn.net/way_ping_li/article/details/17385379>
-* Android之基于XMPP协议即时通讯软件(二): <http://blog.csdn.net/way_ping_li/article/details/17403929>
-* Android之基于XMPP协议即时通讯软件(三): <http://blog.csdn.net/way_ping_li/article/details/17490377>
 * Android核心分析: <http://blog.csdn.net/column/details/androidcore.html>
-* Android 新一代编译 toolchain Jack & Jill 简介: <https://yq.aliyun.com/articles/40811>
 * ANDROID STUDIO详细教程汇总: <http://stormzhang.com/devtools/2015/06/17/android-studio-all/>
 * Android AM命令行启动程序的方法: <http://blog.csdn.net/sunrock/article/details/5675067>
 * Android系统开篇: <http://gityuan.com/android/>
@@ -61,6 +56,9 @@
 * 什么是android.R.id.content？ <http://blog.csdn.net/colinandroid/article/details/77748695>
 * Android Fragment的用法（一）: <https://www.cnblogs.com/guop/p/5072572.html>
 * Fragment相关: Pro Android 5
+* Fragment相关源码解析一——FragmentManagerImpl和BackStackRecord: <https://blog.csdn.net/chengkun_123/article/details/72548373>
+* Fragment相关源码解析二——生命周期: <https://blog.csdn.net/chengkun_123/article/details/73302779>
+* Fragment相关源码解析三——状态保存与恢复: <https://blog.csdn.net/chengkun_123/article/details/72832728>
 * Android Partitions Explained: boot, system, recovery, data, cache & misc: <https://www.addictivetips.com/mobile/android-partitions-explained-boot-system-recovery-data-cache-misc/>
 * Android for work总结(上): <http://blog.csdn.net/liu1314you/article/details/52028823>
 * Android for work总结(下): <http://blog.csdn.net/liu1314you/article/details/52038916>
@@ -107,6 +105,7 @@
 * Android之分屏模式解析（上）: <https://blog.csdn.net/itluochen/article/details/52127126>
 * Android之分屏模式解析（下）: <https://blog.csdn.net/itluochen/article/details/52127222>
 * Android中app进程ABI确定过程: <https://blog.csdn.net/weixin_40107510/article/details/78138874>
+* Context, What Context? <https://possiblemobile.com/2013/06/context/>
 * Getting the null pointer exception in the getActionBar method: <https://stackoverflow.com/questions/27959107/getting-the-null-pointer-exception-in-the-getactionbar-method/27960390>
 
 * Android Studio系列教程一--下载与安装: <http://stormzhang.com/devtools/2014/11/25/android-studio-tutorial1/>
@@ -121,6 +120,28 @@
 
 * MIUI ROM适配之旅第一天——认识Android手机: <http://www.miui.com/thread-402302-1-1.html>
 * H60-L01 EMUI3.0 ROOT 傻瓜教程: <http://cn.ui.vmall.com/thread-1267937-1-1.html>
+
+## Jack
+
+* Android 新一代编译 toolchain Jack & Jill 简介: <https://yq.aliyun.com/articles/40811>
+* Google 又弃坑了，Jack+Jill vs. javac+dx: <https://zhuanlan.zhihu.com/p/25814519>
+
+## 升级相关
+
+* Android A/B System OTA分析（一）概览: <https://blog.csdn.net/guyongqiangx/article/details/71334889>
+* Android A/B System OTA分析（二）系统image的生成: <https://blog.csdn.net/guyongqiangx/article/details/71516768>
+* Android A/B System OTA分析（三）主系统和bootloader的通信: <https://blog.csdn.net/guyongqiangx/article/details/72480154>
+* Android A/B System OTA分析（四）系统的启动和升级: <https://blog.csdn.net/guyongqiangx/article/details/72604355>
+
+* Android OTA升级原理和流程分析（一）--update.zip包的制作: <https://blog.csdn.net/ylyuanlu/article/details/44457557>
+* Android OTA升级原理和流程分析（二）---update.zip差分包问题的解决: <https://blog.csdn.net/ylyuanlu/article/details/44457605>
+* Android OTA升级原理和流程分析（三）---Android系统的三种启动模式: <https://blog.csdn.net/ylyuanlu/article/details/44457691>
+* Android OTA升级原理和流程分析（四）---Android系统Recovery模式的工作原理: <https://blog.csdn.net/ylyuanlu/article/details/44457729>
+* Android OTA升级原理和流程分析（五）---update.zip包从上层进入Recovery服务: <https://blog.csdn.net/ylyuanlu/article/details/44457797>
+* Android OTA升级原理和流程分析（六）---Recovery服务流程细节: <https://blog.csdn.net/ylyuanlu/article/details/44457835>
+* Android OTA升级原理和流程分析（七）---Recovery服务的核心install_package函数: <https://blog.csdn.net/ylyuanlu/article/details/44457879>
+* Android OTA升级原理和流程分析（八）---升级程序update_binary的执行过程: <https://blog.csdn.net/ylyuanlu/article/details/44457903>
+* Android OTA升级原理和流程分析（九）---updater-script脚本语法简介以及执行流程: <https://blog.csdn.net/ylyuanlu/article/details/44457941>
 
 ## ADB
 
@@ -172,6 +193,9 @@
 * <http://xmpp.org/>
 * Openfire 的安装和配置: <http://www.cnblogs.com/hoojo/archive/2012/05/17/2506769.html>
 * smack4-doc-zh: <https://github.com/likfe/smack4-doc-zh>
+* Android之基于XMPP协议即时通讯软件(一): <http://blog.csdn.net/way_ping_li/article/details/17385379>
+* Android之基于XMPP协议即时通讯软件(二): <http://blog.csdn.net/way_ping_li/article/details/17403929>
+* Android之基于XMPP协议即时通讯软件(三): <http://blog.csdn.net/way_ping_li/article/details/17490377>
 
 ## Android常见路径说明
 
