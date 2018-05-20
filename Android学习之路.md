@@ -34,6 +34,7 @@
 * busybox: <https://busybox.net/>
 * Test DPC APK Download for Android: <http://www.testdpc.com/>
 * fastlane screenshots for Android: <https://docs.fastlane.tools/getting-started/android/screenshots/>
+* genymotion: <https://www.genymotion.com/>
 * 奇兔刷机：<http://www.7to.cn/>
 
 * Android Studio移动鼠标显示悬浮提示的设置方法: <http://www.cnblogs.com/jiangxinnju/p/8227442.html>
@@ -121,6 +122,10 @@
 * MIUI ROM适配之旅第一天——认识Android手机: <http://www.miui.com/thread-402302-1-1.html>
 * H60-L01 EMUI3.0 ROOT 傻瓜教程: <http://cn.ui.vmall.com/thread-1267937-1-1.html>
 
+* butterknife: <https://github.com/JakeWharton/butterknife>
+* xUtils3: <https://github.com/wyouflf/xUtils3>
+* jpinyin: <https://github.com/stuxuhai/jpinyin>
+
 ## Jack
 
 * Android 新一代编译 toolchain Jack & Jill 简介: <https://yq.aliyun.com/articles/40811>
@@ -191,11 +196,41 @@
 ## XMPP
 
 * <http://xmpp.org/>
-* Openfire 的安装和配置: <http://www.cnblogs.com/hoojo/archive/2012/05/17/2506769.html>
+
+* rfc3920: <https://tools.ietf.org/html/rfc3920>
+* rfc3920翻译: <http://wiki.jabbercn.org/RFC3920>
+
+
+* smack: <https://github.com/igniterealtime/Smack>
+* smack source: <https://github.com/igniterealtime/Smack>
+* asmack: <https://github.com/Flowdalic/asmack>
+* smack4-doc: <http://download.igniterealtime.org/smack/docs/latest/documentation/index.html>
 * smack4-doc-zh: <https://github.com/likfe/smack4-doc-zh>
+
 * Android之基于XMPP协议即时通讯软件(一): <http://blog.csdn.net/way_ping_li/article/details/17385379>
 * Android之基于XMPP协议即时通讯软件(二): <http://blog.csdn.net/way_ping_li/article/details/17403929>
 * Android之基于XMPP协议即时通讯软件(三): <http://blog.csdn.net/way_ping_li/article/details/17490377>
+
+* Openfire 的安装和配置: <http://www.cnblogs.com/hoojo/archive/2012/05/17/2506769.html>
+* Jabber 协议 概述: <https://blog.csdn.net/hezhi007/article/details/614359>
+* Smack编写jabber客户端: <https://blog.csdn.net/qqiabc521/article/details/6393721>
+* Subscriptions 运行机制: <http://www.moon-soft.com/doc/28326.htm>
+
+## Mina
+
+* <http://mina.apache.org>
+* Mina2.0快速入门: <http://www.cnblogs.com/phinecos/archive/2008/11/27/1342655.html>
+* Mina2.0框架源码剖析（一）: <https://www.cnblogs.com/phinecos/archive/2008/12/03/1347052.html>
+* Mina2.0框架源码剖析（二）: <http://www.cnblogs.com/phinecos/archive/2008/12/04/1347394.html>
+* Mina2.0框架源码剖析（三）: <http://www.cnblogs.com/phinecos/archive/2008/12/04/1347626.html>
+* Mina2.0框架源码剖析（四）: <http://www.cnblogs.com/phinecos/archive/2008/12/04/1347663.html>
+* Mina2.0框架源码剖析（五）: <http://www.cnblogs.com/phinecos/archive/2008/12/04/1347752.html>
+* Mina2.0框架源码剖析（六）: <http://www.cnblogs.com/phinecos/archive/2008/12/07/1349723.html>
+* Mina2.0框架源码剖析（七）: <http://www.cnblogs.com/phinecos/archive/2008/12/08/1350315.html>
+* Mina2.0框架源码剖析（八）: <http://www.cnblogs.com/phinecos/archive/2008/12/08/1350391.html>
+
+* MINA2官方教程翻译: <http://picasso-di.iteye.com/category/75577>
+
 
 ## Android常见路径说明
 
