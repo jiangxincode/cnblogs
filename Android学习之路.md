@@ -200,16 +200,23 @@
 * rfc3920: <https://tools.ietf.org/html/rfc3920>
 * rfc3920翻译: <http://wiki.jabbercn.org/RFC3920>
 
-
 * smack: <https://github.com/igniterealtime/Smack>
 * smack source: <https://github.com/igniterealtime/Smack>
 * asmack: <https://github.com/Flowdalic/asmack>
 * smack4-doc: <http://download.igniterealtime.org/smack/docs/latest/documentation/index.html>
 * smack4-doc-zh: <https://github.com/likfe/smack4-doc-zh>
 
-* Android之基于XMPP协议即时通讯软件(一): <http://blog.csdn.net/way_ping_li/article/details/17385379>
-* Android之基于XMPP协议即时通讯软件(二): <http://blog.csdn.net/way_ping_li/article/details/17403929>
-* Android之基于XMPP协议即时通讯软件(三): <http://blog.csdn.net/way_ping_li/article/details/17490377>
+* 环信即时通讯云: <https://www.easemob.com/download/im>
+* Android之基于XMPP协议即时通讯软件(一): <https://blog.csdn.net/way_ping_li/article/details/17385379>
+* Android之基于XMPP协议即时通讯软件(二): <https://blog.csdn.net/way_ping_li/article/details/17403929>
+* Android之基于XMPP协议即时通讯软件(三): <https://blog.csdn.net/way_ping_li/article/details/17490377>
+
+* 基于xmpp openfire smack开发之openfire介绍和部署[1]: <https://blog.csdn.net/shimiso/article/details/8816558>
+* 基于xmpp openfire smack开发之smack类库介绍和使用[2]: <https://blog.csdn.net/shimiso/article/details/8816540>
+* 基于xmpp openfire smack开发之Android客户端开发[3]: <https://blog.csdn.net/shimiso/article/details/11225873>
+* 基于xmpp openfire smack开发之Android消息推送技术原理分析和实践[4]: <https://blog.csdn.net/shimiso/article/details/8156439>
+
+* 基于XMPP协议的Android聊天IM客户端: <http://archive.dutycode.com/?post=85> <http://code.google.com/p/chatchat/>
 
 * Openfire 的安装和配置: <http://www.cnblogs.com/hoojo/archive/2012/05/17/2506769.html>
 * Jabber 协议 概述: <https://blog.csdn.net/hezhi007/article/details/614359>
@@ -230,7 +237,6 @@
 * Mina2.0框架源码剖析（八）: <http://www.cnblogs.com/phinecos/archive/2008/12/08/1350391.html>
 
 * MINA2官方教程翻译: <http://picasso-di.iteye.com/category/75577>
-
 
 ## Android常见路径说明
 

@@ -778,6 +778,10 @@ mvn deploy:deploy-file -DgroupId="edu.jiangxin" -DartifactId=”gcu” -Dversion
 * <https://github.com/sikuli/sikuli>
 * <http://www.sikuli.org/>
 
+## exe4j
+
+* <http://www.softpedia.com/get/Authoring-tools/Setup-creators/exe4j.shtml>
+
 ## JBoss
 
     The JBoss AS community project has been renamed to the WildFly community project, which has a new home at wildfly.org. The JBoss name now only applies to the commercially supported product, called JBoss EAP, which is derived from the WildFly community project and is available at <http://www.jboss.org/products/eap/overview/>.
