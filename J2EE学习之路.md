@@ -1100,6 +1100,21 @@ The yFiles diagramming software components are extensive class libraries that en
 * Mime Type Detection Utility: <https://sourceforge.net/projects/mime-util/>
 * jmimemagic: <https://github.com/arimus/jmimemagic>
 
+## Mina
+
+* <http://mina.apache.org>
+* Mina2.0快速入门: <http://www.cnblogs.com/phinecos/archive/2008/11/27/1342655.html>
+* Mina2.0框架源码剖析（一）: <https://www.cnblogs.com/phinecos/archive/2008/12/03/1347052.html>
+* Mina2.0框架源码剖析（二）: <http://www.cnblogs.com/phinecos/archive/2008/12/04/1347394.html>
+* Mina2.0框架源码剖析（三）: <http://www.cnblogs.com/phinecos/archive/2008/12/04/1347626.html>
+* Mina2.0框架源码剖析（四）: <http://www.cnblogs.com/phinecos/archive/2008/12/04/1347663.html>
+* Mina2.0框架源码剖析（五）: <http://www.cnblogs.com/phinecos/archive/2008/12/04/1347752.html>
+* Mina2.0框架源码剖析（六）: <http://www.cnblogs.com/phinecos/archive/2008/12/07/1349723.html>
+* Mina2.0框架源码剖析（七）: <http://www.cnblogs.com/phinecos/archive/2008/12/08/1350315.html>
+* Mina2.0框架源码剖析（八）: <http://www.cnblogs.com/phinecos/archive/2008/12/08/1350391.html>
+
+* MINA2官方教程翻译: <http://picasso-di.iteye.com/category/75577>
+
 ## 数据库连接池
 
 * c3p0: <https://sourceforge.net/projects/c3p0/>

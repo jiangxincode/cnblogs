@@ -19,6 +19,8 @@
 
 * Git repositories on android: <https://android.googlesource.com/>
 * <http://www.android-studio.org/>
+* <http://www.androiddevtools.cn/>
+* Android Support Overview: <http://www.jetbrains.com/help/idea/android-support-overview.html>
 
 * 安卓巴士: <http://www.apkbus.com/>
 * eoeandroid: <http://www.eoeandroid.com/forum.php>
@@ -119,12 +121,34 @@
 * Android Studio优化技巧：<http://blog.oneapm.com/apm-tech/257.html>
 * Android Studio相关目录解析: <http://www.cnblogs.com/jiangxinnju/p/8323569.html>
 
+* android程序自动化生成apk的过程: <https://blog.csdn.net/f2006116/article/details/52254519>
+
 * MIUI ROM适配之旅第一天——认识Android手机: <http://www.miui.com/thread-402302-1-1.html>
 * H60-L01 EMUI3.0 ROOT 傻瓜教程: <http://cn.ui.vmall.com/thread-1267937-1-1.html>
 
 * butterknife: <https://github.com/JakeWharton/butterknife>
 * xUtils3: <https://github.com/wyouflf/xUtils3>
 * jpinyin: <https://github.com/stuxuhai/jpinyin>
+* Android-Universal-Image-Loader: <https://github.com/nostra13/Android-Universal-Image-Loader>
+
+## Android Studio插件
+
+* ADB Idea 方便卸载apk,删除缓存: <http://plugins.jetbrains.com/plugin/7380-adb-idea>
+* Android ButterKnife Zelezny ButterKnife对应的插件: <http://plugins.jetbrains.com/plugin/7369-android-butterknife-zelezny>
+* Android Code Generator 生成ViewHolder,生成initView方法: <https://plugins.jetbrains.com/plugin/7595-android-code-generator>
+* Codota 搜索代码块: <https://plugins.jetbrains.com/plugin/7638-codota>
+* GsonFormat jsonString自动转bean插件: <https://plugins.jetbrains.com/plugin/7654-gsonformat>
+* genymotion-idea-plugin genymotion对应的插件: <https://plugins.jetbrains.com/plugin/7269-genymotion>
+* SelectorChapek for Android 帮助生成selector: <https://plugins.jetbrains.com/plugin/7298-selectorchapek-for-android>
+* Sexy Editor 代码区域加背景: <https://plugins.jetbrains.com/plugin/1833-sexy-editor>
+* Android Drawable Importer 同一张图片生成多个自动生成多分辨率图片: <https://plugins.jetbrains.com/plugin/7658-android-drawable-importer>
+* Android Layout ID Converter xml到控件的转换: <https://plugins.jetbrains.com/plugin/7373-android-layout-id-converter>
+* Android Postfix Completion toast和log加强: <https://plugins.jetbrains.com/plugin/7775-android-postfix-completion>
+* Android Studio Prettify 帮助findViewById: <https://plugins.jetbrains.com/plugin/7405-android-studio-prettify>
+* .ignore git忽略文件高亮效果,文件夹颜色提示: <https://plugins.jetbrains.com/plugin/7495--ignore>
+* Android Parcelable code generator 生成Parcelable代码: <https://plugins.jetbrains.com/plugin/7332-android-parcelable-code-generator>
+* Gradle Dependencies Helper gradle帮助插件: <https://plugins.jetbrains.com/plugin/7299-gradle-dependencies-helper>
+* Android Toolbox Plugin 生成ViewHolder,意义不大: <https://plugins.jetbrains.com/plugin/7200-android-toolbox-plugin>
 
 ## Jack
 
@@ -200,6 +224,8 @@
 * rfc3920: <https://tools.ietf.org/html/rfc3920>
 * rfc3920翻译: <http://wiki.jabbercn.org/RFC3920>
 
+* <https://www.igniterealtime.org/downloads/index.jsp>
+
 * smack: <https://github.com/igniterealtime/Smack>
 * smack source: <https://github.com/igniterealtime/Smack>
 * asmack: <https://github.com/Flowdalic/asmack>
@@ -222,21 +248,26 @@
 * Jabber 协议 概述: <https://blog.csdn.net/hezhi007/article/details/614359>
 * Smack编写jabber客户端: <https://blog.csdn.net/qqiabc521/article/details/6393721>
 * Subscriptions 运行机制: <http://www.moon-soft.com/doc/28326.htm>
+* XMPP协议分析-原理篇: <https://blog.csdn.net/xutaozero21/article/details/4873439>
 
-## Mina
+## Player
 
-* <http://mina.apache.org>
-* Mina2.0快速入门: <http://www.cnblogs.com/phinecos/archive/2008/11/27/1342655.html>
-* Mina2.0框架源码剖析（一）: <https://www.cnblogs.com/phinecos/archive/2008/12/03/1347052.html>
-* Mina2.0框架源码剖析（二）: <http://www.cnblogs.com/phinecos/archive/2008/12/04/1347394.html>
-* Mina2.0框架源码剖析（三）: <http://www.cnblogs.com/phinecos/archive/2008/12/04/1347626.html>
-* Mina2.0框架源码剖析（四）: <http://www.cnblogs.com/phinecos/archive/2008/12/04/1347663.html>
-* Mina2.0框架源码剖析（五）: <http://www.cnblogs.com/phinecos/archive/2008/12/04/1347752.html>
-* Mina2.0框架源码剖析（六）: <http://www.cnblogs.com/phinecos/archive/2008/12/07/1349723.html>
-* Mina2.0框架源码剖析（七）: <http://www.cnblogs.com/phinecos/archive/2008/12/08/1350315.html>
-* Mina2.0框架源码剖析（八）: <http://www.cnblogs.com/phinecos/archive/2008/12/08/1350391.html>
+* ApolloMod: <https://github.com/Splitter/android_packages_apps_apolloMod>
+* android-visualizer: <https://github.com/felixpalmer/android-visualizer/tree/master/src/com/pheelicks/visualizer>
 
-* MINA2官方教程翻译: <http://picasso-di.iteye.com/category/75577>
+## Vitamio
+
+* Vitamio: <https://www.vitamio.org/>
+* 帮助文档：<https://www.vitamio.org/docs/>
+* 4.2.2版本之前的源码: <https://github.com/yixia/VitamioBundle>
+* 5.0.0版本之后的源码: <https://github.com/yixia/VitamioBundleStudio>
+* vplayer: <https://vplayer.net/>
+* 一下科技: <http://www.yixia.com/>
+* 使用Vitamio打造自己的Android万能播放器: <http://www.cnblogs.com/over140/archive/2012/04/26/2471060.html>
+
+## 百度媒体云
+
+* <https://cloud.baidu.com/doc/MCT/Android-Player-SDK-2.0.html>
 
 ## Android常见路径说明
 
@@ -258,10 +289,3 @@
 * <https://gerrit-documentation.storage.googleapis.com/Documentation/2.14.5.1/install.html>
 * <https://gerrit-documentation.storage.googleapis.com/Documentation/2.15.1/user-search.html>
 * 如何搭建开源code review gerrit服务器: <https://www.cnblogs.com/tesky0125/p/5877536.html>
-
-## Kotlin
-
-* <http://kotlinlang.org/>
-* <https://kotlinlang.org/docs/reference/>
-* 中文站: <https://www.kotlincn.net/>
-* 《Kotlin for android developers》中文版翻译: <https://wangjiegulu.gitbooks.io/kotlin-for-android-developers-zh/content/>
