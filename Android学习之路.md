@@ -33,11 +33,46 @@
 
 * Xamarin: <https://www.xamarin.com/>
 
+## Libraries
+
+* butterknife: <https://github.com/JakeWharton/butterknife>
+* xUtils3: <https://github.com/wyouflf/xUtils3>
+* jpinyin: <https://github.com/stuxuhai/jpinyin>
+* Android-Universal-Image-Loader: <https://github.com/nostra13/Android-Universal-Image-Loader>
+* hugo: <https://github.com/JakeWharton/hugo>
+
+## Tools
+
 * busybox: <https://busybox.net/>
+* godeyes: <http://godeyes.duapp.com/index.jsp>
 * Test DPC APK Download for Android: <http://www.testdpc.com/>
 * fastlane screenshots for Android: <https://docs.fastlane.tools/getting-started/android/screenshots/>
 * genymotion: <https://www.genymotion.com/>
+* Android 应用开发调试利器——开发助手，数十倍效率提升: <http://www.trinea.cn/android/android-develop-and-debug-tools/>
 * 奇兔刷机：<http://www.7to.cn/>
+* dex-method-counts: <https://github.com/jiangxincode/dex-method-counts>
+* dexcount-gradle-plugin: <https://github.com/KeepSafe/dexcount-gradle-plugin>
+
+## Android Studio插件
+
+* ADB Idea 方便卸载apk,删除缓存: <http://plugins.jetbrains.com/plugin/7380-adb-idea>
+* Android ButterKnife Zelezny ButterKnife对应的插件: <http://plugins.jetbrains.com/plugin/7369-android-butterknife-zelezny>
+* Android Code Generator 生成ViewHolder,生成initView方法: <https://plugins.jetbrains.com/plugin/7595-android-code-generator>
+* Codota 搜索代码块: <https://plugins.jetbrains.com/plugin/7638-codota>
+* GsonFormat jsonString自动转bean插件: <https://plugins.jetbrains.com/plugin/7654-gsonformat>
+* genymotion-idea-plugin genymotion对应的插件: <https://plugins.jetbrains.com/plugin/7269-genymotion>
+* SelectorChapek for Android 帮助生成selector: <https://plugins.jetbrains.com/plugin/7298-selectorchapek-for-android>
+* Sexy Editor 代码区域加背景: <https://plugins.jetbrains.com/plugin/1833-sexy-editor>
+* Android Drawable Importer 同一张图片生成多个自动生成多分辨率图片: <https://plugins.jetbrains.com/plugin/7658-android-drawable-importer>
+* Android Layout ID Converter xml到控件的转换: <https://plugins.jetbrains.com/plugin/7373-android-layout-id-converter>
+* Android Postfix Completion toast和log加强: <https://plugins.jetbrains.com/plugin/7775-android-postfix-completion>
+* Android Studio Prettify 帮助findViewById: <https://plugins.jetbrains.com/plugin/7405-android-studio-prettify>
+* .ignore git忽略文件高亮效果,文件夹颜色提示: <https://plugins.jetbrains.com/plugin/7495--ignore>
+* Android Parcelable code generator 生成Parcelable代码: <https://plugins.jetbrains.com/plugin/7332-android-parcelable-code-generator>
+* Gradle Dependencies Helper gradle帮助插件: <https://plugins.jetbrains.com/plugin/7299-gradle-dependencies-helper>
+* Android Toolbox Plugin 生成ViewHolder,意义不大: <https://plugins.jetbrains.com/plugin/7200-android-toolbox-plugin>
+
+## Article
 
 * Android Studio移动鼠标显示悬浮提示的设置方法: <http://www.cnblogs.com/jiangxinnju/p/8227442.html>
 * Android真机安装sqlite3的方法: <http://www.cnblogs.com/jiangxinnju/p/8227625.html>
@@ -110,6 +145,7 @@
 * Android中app进程ABI确定过程: <https://blog.csdn.net/weixin_40107510/article/details/78138874>
 * Context, What Context? <https://possiblemobile.com/2013/06/context/>
 * Getting the null pointer exception in the getActionBar method: <https://stackoverflow.com/questions/27959107/getting-the-null-pointer-exception-in-the-getactionbar-method/27960390>
+* INSTALL_FAILED_TEST_ONLY: <https://blog.csdn.net/zou_pl/article/details/78679394>
 
 * Android Studio系列教程一--下载与安装: <http://stormzhang.com/devtools/2014/11/25/android-studio-tutorial1/>
 * Android Studio系列教程二--基本设置与运行: <http://stormzhang.com/devtools/2014/11/28/android-studio-tutorial2/>
@@ -122,33 +158,10 @@
 * Android Studio相关目录解析: <http://www.cnblogs.com/jiangxinnju/p/8323569.html>
 
 * android程序自动化生成apk的过程: <https://blog.csdn.net/f2006116/article/details/52254519>
+* Android方法引用数超过65535优雅解决: <https://www.cnblogs.com/dongweiq/p/7116326.html>
 
 * MIUI ROM适配之旅第一天——认识Android手机: <http://www.miui.com/thread-402302-1-1.html>
 * H60-L01 EMUI3.0 ROOT 傻瓜教程: <http://cn.ui.vmall.com/thread-1267937-1-1.html>
-
-* butterknife: <https://github.com/JakeWharton/butterknife>
-* xUtils3: <https://github.com/wyouflf/xUtils3>
-* jpinyin: <https://github.com/stuxuhai/jpinyin>
-* Android-Universal-Image-Loader: <https://github.com/nostra13/Android-Universal-Image-Loader>
-
-## Android Studio插件
-
-* ADB Idea 方便卸载apk,删除缓存: <http://plugins.jetbrains.com/plugin/7380-adb-idea>
-* Android ButterKnife Zelezny ButterKnife对应的插件: <http://plugins.jetbrains.com/plugin/7369-android-butterknife-zelezny>
-* Android Code Generator 生成ViewHolder,生成initView方法: <https://plugins.jetbrains.com/plugin/7595-android-code-generator>
-* Codota 搜索代码块: <https://plugins.jetbrains.com/plugin/7638-codota>
-* GsonFormat jsonString自动转bean插件: <https://plugins.jetbrains.com/plugin/7654-gsonformat>
-* genymotion-idea-plugin genymotion对应的插件: <https://plugins.jetbrains.com/plugin/7269-genymotion>
-* SelectorChapek for Android 帮助生成selector: <https://plugins.jetbrains.com/plugin/7298-selectorchapek-for-android>
-* Sexy Editor 代码区域加背景: <https://plugins.jetbrains.com/plugin/1833-sexy-editor>
-* Android Drawable Importer 同一张图片生成多个自动生成多分辨率图片: <https://plugins.jetbrains.com/plugin/7658-android-drawable-importer>
-* Android Layout ID Converter xml到控件的转换: <https://plugins.jetbrains.com/plugin/7373-android-layout-id-converter>
-* Android Postfix Completion toast和log加强: <https://plugins.jetbrains.com/plugin/7775-android-postfix-completion>
-* Android Studio Prettify 帮助findViewById: <https://plugins.jetbrains.com/plugin/7405-android-studio-prettify>
-* .ignore git忽略文件高亮效果,文件夹颜色提示: <https://plugins.jetbrains.com/plugin/7495--ignore>
-* Android Parcelable code generator 生成Parcelable代码: <https://plugins.jetbrains.com/plugin/7332-android-parcelable-code-generator>
-* Gradle Dependencies Helper gradle帮助插件: <https://plugins.jetbrains.com/plugin/7299-gradle-dependencies-helper>
-* Android Toolbox Plugin 生成ViewHolder,意义不大: <https://plugins.jetbrains.com/plugin/7200-android-toolbox-plugin>
 
 ## Jack
 
@@ -209,6 +222,10 @@
 * 加速Android Studio/Gradle构建: <https://isming.me/2015/03/18/android-build-speed-up/>
 * 用Gradle 构建你的android程序: <https://www.cnblogs.com/youxilua/archive/2013/05/20/3087935.html>
 * 用Gradle 构建你的android程序-依赖管理篇: <http://www.cnblogs.com/youxilua/archive/2013/05/22/3092657.html>
+
+## NDK
+
+* <https://developer.android.com/ndk/>
 
 ## Bug跟踪
 
