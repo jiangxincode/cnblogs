@@ -158,7 +158,9 @@
 * Android Studio相关目录解析: <http://www.cnblogs.com/jiangxinnju/p/8323569.html>
 
 * android程序自动化生成apk的过程: <https://blog.csdn.net/f2006116/article/details/52254519>
-* Android方法引用数超过65535优雅解决: <https://www.cnblogs.com/dongweiq/p/7116326.html>
+* Android DEX安全攻防战: <https://blog.csdn.net/androidsecurity/article/details/9428861>
+* Android Dex文件格式(一): <https://www.cnblogs.com/dacainiao/p/6035274.html>
+* 配置方法数超过 64K 的应用: <http://developer.android.com/intl/zh-cn/tools/building/multidex.html#about>
 
 * MIUI ROM适配之旅第一天——认识Android手机: <http://www.miui.com/thread-402302-1-1.html>
 * H60-L01 EMUI3.0 ROOT 傻瓜教程: <http://cn.ui.vmall.com/thread-1267937-1-1.html>
