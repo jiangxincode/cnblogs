@@ -5,6 +5,7 @@
 * Configure Android Studio: <https://developer.android.com/studio/intro/studio-config.html>
 * Managing the System UI: <https://developer.android.com/training/system-ui/index.html>
 * SDK版本关系: <https://developer.android.com/guide/topics/manifest/uses-sdk-element.html>
+* Android P 开发者预览版: <https://developer.android.com/preview/>
 * 设置应用 ID: <https://developer.android.com/studio/build/application-id.html>
 * (新)配置构建: <https://developer.android.com/studio/build/index.html>
 * App Shortcuts: <https://developer.android.com/guide/topics/ui/shortcuts>
@@ -47,11 +48,17 @@
 * godeyes: <http://godeyes.duapp.com/index.jsp>
 * Test DPC APK Download for Android: <http://www.testdpc.com/>
 * fastlane screenshots for Android: <https://docs.fastlane.tools/getting-started/android/screenshots/>
-* genymotion: <https://www.genymotion.com/>
 * Android 应用开发调试利器——开发助手，数十倍效率提升: <http://www.trinea.cn/android/android-develop-and-debug-tools/>
 * 奇兔刷机：<http://www.7to.cn/>
 * dex-method-counts: <https://github.com/jiangxincode/dex-method-counts>
 * dexcount-gradle-plugin: <https://github.com/KeepSafe/dexcount-gradle-plugin>
+
+## Android模拟器
+
+* genymotion: <https://www.genymotion.com/>
+* genymotion个人免费版: <https://www.genymotion.com/fun-zone/>
+* genymotion-idea-plugin: <https://plugins.jetbrains.com/plugin/7269-genymotion>
+* 夜神模拟器: <https://www.yeshen.com/>
 
 ## Android Studio插件
 
@@ -60,7 +67,6 @@
 * Android Code Generator 生成ViewHolder,生成initView方法: <https://plugins.jetbrains.com/plugin/7595-android-code-generator>
 * Codota 搜索代码块: <https://plugins.jetbrains.com/plugin/7638-codota>
 * GsonFormat jsonString自动转bean插件: <https://plugins.jetbrains.com/plugin/7654-gsonformat>
-* genymotion-idea-plugin genymotion对应的插件: <https://plugins.jetbrains.com/plugin/7269-genymotion>
 * SelectorChapek for Android 帮助生成selector: <https://plugins.jetbrains.com/plugin/7298-selectorchapek-for-android>
 * Sexy Editor 代码区域加背景: <https://plugins.jetbrains.com/plugin/1833-sexy-editor>
 * Android Drawable Importer 同一张图片生成多个自动生成多分辨率图片: <https://plugins.jetbrains.com/plugin/7658-android-drawable-importer>
@@ -74,6 +80,7 @@
 
 ## Article
 
+* Android O Preview 之 通知渠道（Notification Channels）: <https://www.jianshu.com/p/92afa56aee05>
 * Android Studio移动鼠标显示悬浮提示的设置方法: <http://www.cnblogs.com/jiangxinnju/p/8227442.html>
 * Android真机安装sqlite3的方法: <http://www.cnblogs.com/jiangxinnju/p/8227625.html>
 * 使用 Intel HAXM 为 Android 模拟器加速，媲美真机: <http://www.cnblogs.com/beginor/archive/2013/01/13/2858228.html>
@@ -92,11 +99,6 @@
 * 深入源码解析Android中的Handler,Message,MessageQueue,Looper: <http://blog.csdn.net/iispring/article/details/47180325>
 * 详解 Android 通信: <http://www.androidchina.net/5028.html>
 * 什么是android.R.id.content？ <http://blog.csdn.net/colinandroid/article/details/77748695>
-* Android Fragment的用法（一）: <https://www.cnblogs.com/guop/p/5072572.html>
-* Fragment相关: Pro Android 5
-* Fragment相关源码解析一——FragmentManagerImpl和BackStackRecord: <https://blog.csdn.net/chengkun_123/article/details/72548373>
-* Fragment相关源码解析二——生命周期: <https://blog.csdn.net/chengkun_123/article/details/73302779>
-* Fragment相关源码解析三——状态保存与恢复: <https://blog.csdn.net/chengkun_123/article/details/72832728>
 * Android Partitions Explained: boot, system, recovery, data, cache & misc: <https://www.addictivetips.com/mobile/android-partitions-explained-boot-system-recovery-data-cache-misc/>
 * Android for work总结(上): <http://blog.csdn.net/liu1314you/article/details/52028823>
 * Android for work总结(下): <http://blog.csdn.net/liu1314you/article/details/52038916>
@@ -146,6 +148,15 @@
 * Context, What Context? <https://possiblemobile.com/2013/06/context/>
 * Getting the null pointer exception in the getActionBar method: <https://stackoverflow.com/questions/27959107/getting-the-null-pointer-exception-in-the-getactionbar-method/27960390>
 * INSTALL_FAILED_TEST_ONLY: <https://blog.csdn.net/zou_pl/article/details/78679394>
+* setEnabled() vs setClickable(), what is the difference? <https://stackoverflow.com/questions/15615823/setenabled-vs-setclickable-what-is-the-difference>
+* Android兼容性测试CTS Verifier-环境搭建、测试执行、结果分析: <https://www.cnblogs.com/wi100sh/p/4613502.html>
+
+* Android Fragment的用法（一）: <https://www.cnblogs.com/guop/p/5072572.html>
+* Fragment相关: Pro Android 5
+* Fragment相关源码解析一——FragmentManagerImpl和BackStackRecord: <https://blog.csdn.net/chengkun_123/article/details/72548373>
+* Fragment相关源码解析二——生命周期: <https://blog.csdn.net/chengkun_123/article/details/73302779>
+* Fragment相关源码解析三——状态保存与恢复: <https://blog.csdn.net/chengkun_123/article/details/72832728>
+* 为什么要用Fragment.setArguments(Bundle bundle)来传递参数: <https://blog.csdn.net/tu_bingbing/article/details/24143249>
 
 * Android Studio系列教程一--下载与安装: <http://stormzhang.com/devtools/2014/11/25/android-studio-tutorial1/>
 * Android Studio系列教程二--基本设置与运行: <http://stormzhang.com/devtools/2014/11/28/android-studio-tutorial2/>

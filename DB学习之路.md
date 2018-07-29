@@ -297,6 +297,7 @@ ORACLE_SID 实例ID
 * DB Browser for SQLite: <http://sqlitebrowser.org/>
 * SQLite Expert: <http://www.sqliteexpert.com/index.html>
 * SQLCipher: <https://www.zetetic.net/sqlcipher/>
+* Sqlite学习笔记(四)&&SQLite-WAL原理: <http://www.cnblogs.com/cchust/p/4754619.html>
 
 ## mongodb
 

@@ -46,11 +46,14 @@
 * <http://www.sublimetext.com/docs/3/>
 * <https://packagecontrol.io/installation>
 
+## sourceinsight
+
+* <http://www.sourceinsight.com/>
+
 ## Others
 
 * geany: <http://www.geany.org/Download/Extras>
 * Lime Text: <http://limetext.org/>
-* sourceinsight: <http://www.sourceinsight.com/>
 * Scintilla: <http://www.scintilla.org/>
 * xmlspy: <https://www.altova.com/xmlspy.html>
 * Bluefish: <http://bluefish.openoffice.nl/index.html>
