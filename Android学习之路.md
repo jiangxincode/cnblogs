@@ -150,6 +150,7 @@
 * INSTALL_FAILED_TEST_ONLY: <https://blog.csdn.net/zou_pl/article/details/78679394>
 * setEnabled() vs setClickable(), what is the difference? <https://stackoverflow.com/questions/15615823/setenabled-vs-setclickable-what-is-the-difference>
 * Android兼容性测试CTS Verifier-环境搭建、测试执行、结果分析: <https://www.cnblogs.com/wi100sh/p/4613502.html>
+* Why do most fields (class members) in Android tutorial start with `m`? <https://stackoverflow.com/questions/2092098/why-do-most-fields-class-members-in-android-tutorial-start-with-m>
 
 * Android Fragment的用法（一）: <https://www.cnblogs.com/guop/p/5072572.html>
 * Fragment相关: Pro Android 5
