@@ -52,6 +52,7 @@
 * 奇兔刷机：<http://www.7to.cn/>
 * dex-method-counts: <https://github.com/jiangxincode/dex-method-counts>
 * dexcount-gradle-plugin: <https://github.com/KeepSafe/dexcount-gradle-plugin>
+* leakcanary: <https://github.com/square/leakcanary>
 
 ## Android模拟器
 
@@ -151,6 +152,8 @@
 * setEnabled() vs setClickable(), what is the difference? <https://stackoverflow.com/questions/15615823/setenabled-vs-setclickable-what-is-the-difference>
 * Android兼容性测试CTS Verifier-环境搭建、测试执行、结果分析: <https://www.cnblogs.com/wi100sh/p/4613502.html>
 * Why do most fields (class members) in Android tutorial start with `m`? <https://stackoverflow.com/questions/2092098/why-do-most-fields-class-members-in-android-tutorial-start-with-m>
+* Android多语言国际化适配(兼容7.0): <https://blog.csdn.net/pigdreams/article/details/81277110>
+* ListView中getView的原理与解决多轮重复调用的方法: <https://www.cnblogs.com/lirizhi/p/3357771.html>
 
 * Android Fragment的用法（一）: <https://www.cnblogs.com/guop/p/5072572.html>
 * Fragment相关: Pro Android 5
