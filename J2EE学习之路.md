@@ -172,6 +172,7 @@
 * HTML中`&nbsp; &ensp; &emsp; &thinsp;`等6种空白空格的区别: <https://www.cnblogs.com/chenshihaook/p/6186343.html>
 * UTF-8 encoding table and Unicode characters: <http://www.utf8-chartable.de/>
 * Java之美[从菜鸟到高手演变]之设计模式：<https://blog.csdn.net/zhangerqing/article/details/8245560>
+* [System.currentTimeMillis]/[Calendar.getInstance().getTimeInMillis()]/[new Date().getTime()]: <https://www.cnblogs.com/jiangxinnju/p/9425411.html>
 
 ## WebService
 

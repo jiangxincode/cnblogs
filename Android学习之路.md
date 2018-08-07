@@ -37,10 +37,15 @@
 ## Libraries
 
 * butterknife: <https://github.com/JakeWharton/butterknife>
+* xUtils2: <https://github.com/wyouflf/xUtils>
 * xUtils3: <https://github.com/wyouflf/xUtils3>
+* SlidingMenu: <https://github.com/jfeinstein10/SlidingMenu>
+* ViewPagerIndicator: <https://github.com/JakeWharton/ViewPagerIndicator>
+* [DEPRECATED]ActionBarSherlock: <https://github.com/JakeWharton/ActionBarSherlock>
 * jpinyin: <https://github.com/stuxuhai/jpinyin>
 * Android-Universal-Image-Loader: <https://github.com/nostra13/Android-Universal-Image-Loader>
 * hugo: <https://github.com/JakeWharton/hugo>
+* 极光推送: <http://docs.jiguang.cn/jpush/resources/#android-sdk>
 
 ## Tools
 
@@ -81,6 +86,7 @@
 
 ## Article
 
+* Android 编程与兼容性问题: Android Programming The Big Nerd Ranch Guide 3rd[Android编程权威指南（第3版） 6.2 7.8 7.9
 * Android O Preview 之 通知渠道（Notification Channels）: <https://www.jianshu.com/p/92afa56aee05>
 * Android Studio移动鼠标显示悬浮提示的设置方法: <http://www.cnblogs.com/jiangxinnju/p/8227442.html>
 * Android真机安装sqlite3的方法: <http://www.cnblogs.com/jiangxinnju/p/8227625.html>
@@ -155,6 +161,7 @@
 * Android多语言国际化适配(兼容7.0): <https://blog.csdn.net/pigdreams/article/details/81277110>
 * ListView中getView的原理与解决多轮重复调用的方法: <https://www.cnblogs.com/lirizhi/p/3357771.html>
 
+* Fragments：Pro Android 5[精通Android 3] Chapter 8
 * Android Fragment的用法（一）: <https://www.cnblogs.com/guop/p/5072572.html>
 * Fragment相关: Pro Android 5
 * Fragment相关源码解析一——FragmentManagerImpl和BackStackRecord: <https://blog.csdn.net/chengkun_123/article/details/72548373>
@@ -176,6 +183,8 @@
 * Android DEX安全攻防战: <https://blog.csdn.net/androidsecurity/article/details/9428861>
 * Android Dex文件格式(一): <https://www.cnblogs.com/dacainiao/p/6035274.html>
 * 配置方法数超过 64K 的应用: <http://developer.android.com/intl/zh-cn/tools/building/multidex.html#about>
+
+* android存储访问框架Storage Access Framework：<http://www.jcodecraeer.com/a/anzhuokaifa/androidkaifa/2014/1026/1845.html>
 
 * MIUI ROM适配之旅第一天——认识Android手机: <http://www.miui.com/thread-402302-1-1.html>
 * H60-L01 EMUI3.0 ROOT 傻瓜教程: <http://cn.ui.vmall.com/thread-1267937-1-1.html>
