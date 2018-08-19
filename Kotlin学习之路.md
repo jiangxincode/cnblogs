@@ -8,3 +8,5 @@
 * 《Kotlin for android developers》中文版翻译: <https://wangjiegulu.gitbooks.io/kotlin-for-android-developers-zh/content/>
 * Kotlin-Tutorials: <https://github.com/enbandari/Kotlin-Tutorials>
 * <https://github.com/KotlinBy/awesome-kotlin>
+
+* Android Testing with Kotlin: <https://fernandocejas.com/2017/02/03/android-testing-with-kotlin/>

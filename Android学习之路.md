@@ -97,6 +97,7 @@
 * Android系统开篇: <http://gityuan.com/android/>
 * Handler内存泄漏详解及其解决方案: <http://blog.csdn.net/javazejian/article/details/50839443>
 * 对于android.intent.action.MAIN和android.intent.category.LAUNCHER的理解: <http://blog.csdn.net/lindroid20/article/details/51993247>
+* lntentfilter的匹配规则: Android开发艺术探索 1.3
 * Android加密之文件级加密: <http://blog.csdn.net/myfriend0/article/details/77094890>
 * Android属性allowBackup安全风险浅析: <http://www.freebuf.com/articles/terminal/60778.html>
 * Android Bander设计与实现 - 设计篇: <http://blog.csdn.net/universus/article/details/6211589>
@@ -160,6 +161,8 @@
 * Why do most fields (class members) in Android tutorial start with `m`? <https://stackoverflow.com/questions/2092098/why-do-most-fields-class-members-in-android-tutorial-start-with-m>
 * Android多语言国际化适配(兼容7.0): <https://blog.csdn.net/pigdreams/article/details/81277110>
 * ListView中getView的原理与解决多轮重复调用的方法: <https://www.cnblogs.com/lirizhi/p/3357771.html>
+* Android控件--ProgressBar: <https://blog.csdn.net/hardworkingant/article/details/71910731>
+* Android逆向之旅---解析编译之后的AndroidManifest文件格式: <https://blog.csdn.net/jiangwei0910410003/article/details/50568487>
 
 * Fragments：Pro Android 5[精通Android 3] Chapter 8
 * Android Fragment的用法（一）: <https://www.cnblogs.com/guop/p/5072572.html>
@@ -168,6 +171,7 @@
 * Fragment相关源码解析二——生命周期: <https://blog.csdn.net/chengkun_123/article/details/73302779>
 * Fragment相关源码解析三——状态保存与恢复: <https://blog.csdn.net/chengkun_123/article/details/72832728>
 * 为什么要用Fragment.setArguments(Bundle bundle)来传递参数: <https://blog.csdn.net/tu_bingbing/article/details/24143249>
+* IllegalStateException: Can not perform this action after onSaveInstanceState with ViewPager: <https://stackoverflow.com/questions/7575921/illegalstateexception-can-not-perform-this-action-after-onsaveinstancestate-wit?rq=1>
 
 * Android Studio系列教程一--下载与安装: <http://stormzhang.com/devtools/2014/11/25/android-studio-tutorial1/>
 * Android Studio系列教程二--基本设置与运行: <http://stormzhang.com/devtools/2014/11/28/android-studio-tutorial2/>
