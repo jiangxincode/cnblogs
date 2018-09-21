@@ -152,6 +152,7 @@
 * iftop: <http://www.ex-parrot.com/~pdw/iftop/>
 * Iotop: <http://guichaz.free.fr/iotop/>
 * tldr: <https://github.com/tldr-pages/tldr>
+* cloc: <https://github.com/AlDanial/cloc>
 * 串口传输文件 lrzsz: <http://www.cnblogs.com/lidabo/p/4780866.html>
 * httpry(HTTP logging and information retrieval tool ): <https://github.com/jbittel/httpry>
 * iproute2: <https://en.wikipedia.org/wiki/Iproute2>

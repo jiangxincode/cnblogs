@@ -90,7 +90,6 @@
 * 转一个J2EE开发时的包命名规则，养成良好的开发习惯：<http://www.blogjava.net/paulwong/archive/2012/04/15/374675.html>
 * 对比C++ 和Java: Thinking in java[Java编程思想第4版].pdf
 * 舞蹈特点与编程语言特点的联想曲: <http://blog.csdn.net/iammerryz/article/details/7661067?_t_t_t=0.3386819043662399>
-* className.class.getResourceAsStream()与ClassLoader.getSystemResourceAsStream() 的区别：<http://www.blogjava.net/icewee/archive/2012/05/04/377371.html>
 * JAR文件包及jar命令详解: <http://blog.donews.com/hitfly/archive/2005/03/25/312851.aspx>
 * JAVA调用系统命令或可执行程序：<http://wuhongyu.iteye.com/blog/461477/>
 * 过时date.toLocaleString()的解决方法: <http://ldl8818.iteye.com/blog/1492301>
@@ -491,6 +490,7 @@ Eclipse中`Update Project`，选择`Force Update of Snapshots/Releases`
 * How to Publish Maven Site Docs to BitBucket or GitHub Pages: <http://www.ensor.cc/2013/01/how-to-publish-maven-site-docs-to.html>
 * maven项目在eclipse的library中没有Maven Dependencies: <http://blog.csdn.net/lulidaitian/article/details/53440643>
 * Maven Enforcer Plugin: <http://maven.apache.org/enforcer/maven-enforcer-plugin/>
+* templating-maven-plugin: <http://www.mojohaus.org/templating-maven-plugin/>
 
 * <http://mvnrepository.com/>    （搜索）
 * <https://maven-repository.com/>    （搜索）
@@ -615,6 +615,12 @@ mvn deploy:deploy-file -DgroupId="edu.jiangxin" -DartifactId=”gcu” -Dversion
 
 * VisualVM: <http://visualvm.java.net/>
 
+## Eclipse Class Decompiler
+
+* Eclipse Class Decompiler——Java反编译插件: <https://github.com/cnfree/Eclipse-Class-Decompiler>
+* Eclipse Class Decompiler -> Enhanced Class Decompiler: <https://github.com/cnfree/Eclipse-Class-Decompiler/issues/36>
+* Enhanced Class Decompiler: <https://github.com/ecd-plugin/ecd>
+
 ## JD(Java Decompiler)
 
 * 项目地址及安装说明：<http://jd.benow.ca/>
@@ -625,7 +631,6 @@ mvn deploy:deploy-file -DgroupId="edu.jiangxin" -DartifactId=”gcu” -Dversion
 
 * jad: <http://varaneckas.com/jad/>
 * jadclipse: <https://sourceforge.net/projects/jadclipse/>
-* Eclipse Class Decompiler——Java反编译插件: <https://github.com/cnfree/Eclipse-Class-Decompiler>
 
 注：jad支持命令行方式使用，最新版本为1.5.8g，支持的class版本过低。经常出现问题：The class file version is 48.0 (only 45.3, 46.0 and 47.0 are supported)。还有一个工具uuDeJava，也是基于jad，所以估计也难以避免这个问题。
 
@@ -1267,3 +1272,7 @@ The yFiles diagramming software components are extensive class libraries that en
 
 * <https://github.com/oracle/opengrok>
 * OpenGrok搜索技巧: <http://jingzitakk66.iteye.com/blog/2122730>
+
+## Markdown转换
+
+* flexmark-java: <https://github.com/vsch/flexmark-java>
