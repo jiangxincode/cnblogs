@@ -483,7 +483,8 @@ Eclipse中`Update Project`，选择`Force Update of Snapshots/Releases`
 * MavenMNG-4715 version expression constant: <https://issues.apache.org/jira/browse/MNG-4715>
 * 解决Maven报Plugin execution not covered by lifecycle configuration: <http://blog.csdn.net/xxd851116/article/details/25197373>
 * Maven编译jar出现：无法确定 T 的类型参数的异常的原因和处理方案: <http://www.cnblogs.com/peida/p/4218210.html>
-* 向maven中央仓库提交jar: <http://www.cnblogs.com/gaoxing/p/4359795.html>
+* 如何发布jar包到maven中央仓库: <https://blog.csdn.net/tiger435/article/details/50470316>
+* maven发布jar包到nexus: <https://www.cnblogs.com/yucy/p/7509561.html>
 * 利用github搭建个人maven仓库: <http://blog.csdn.net/hengyunabc/article/details/47308913>
 * Maven添加本地依赖: <http://blog.csdn.net/xwl617756974/article/details/7832882>
 * Maven常用插件: <http://iffiffj.iteye.com/blog/1661936>
@@ -493,6 +494,7 @@ Eclipse中`Update Project`，选择`Force Update of Snapshots/Releases`
 * templating-maven-plugin: <http://www.mojohaus.org/templating-maven-plugin/>
 
 * <http://mvnrepository.com/>    （搜索）
+* <https://search.maven.org/>    （搜索）
 * <https://maven-repository.com/>    （搜索）
 * <http://maven.oschina.net/home.html>    （搜索）
 * <https://bintray.com/bintray/jcenter>    （搜索）
@@ -720,7 +722,8 @@ mvn deploy:deploy-file -DgroupId="edu.jiangxin" -DartifactId=”gcu” -Dversion
     Simian (Similarity Analyser) identifies duplication in Java, C#, C, C++, COBOL, Ruby, JSP, ASP, HTML, XML, Visual Basic, Groovy source code and even plain text files. In fact, simian can be used on any human readable files such as ini files, deployment descriptors, you name it.
 
 * 项目地址：<http://www.redhillconsulting.com.au/products/simian/>
-* maven-simian-plugin(不支持maven2): <http://maven.apache.org/archives/maven-1.x/plugins/simian/>
+* maven-simian-plugin(maven1): <http://maven.apache.org/archives/maven-1.x/plugins/simian/>
+* simian-maven-plugin(maven2+): <https://github.com/jiangxincode/simian-maven-plugin>
 * How do you use the maven-simian-plugin in Maven2?: <http://stackoverflow.com/questions/1077700/how-do-you-use-the-maven-simian-plugin-in-maven2>
 
 ## CheckStyle
@@ -813,9 +816,10 @@ mvn deploy:deploy-file -DgroupId="edu.jiangxin" -DartifactId=”gcu” -Dversion
 
 * 官网：<http://www.eclipse.org/jetty/>
 
-## cpDetector
+## 字符编码判断
 
-* <https://sourceforge.net/projects/cpdetector/>
+* cpdetector: <https://sourceforge.net/projects/cpdetector/>
+* juniversalchardet: <https://github.com/takscape/juniversalchardet>
 
 ## EZMorph
 
@@ -898,6 +902,8 @@ mvn deploy:deploy-file -DgroupId="edu.jiangxin" -DartifactId=”gcu” -Dversion
 
 ## XML
 
+* Java Web开发详解[XML XSLT Servlet JSP深入剖析实例应用]
+* What is difference between XML Schema and DTD? <https://stackoverflow.com/questions/1544200/what-is-difference-between-xml-schema-and-dtd>
 * JDOM: <http://www.jdom.org/>
 * JDOM: <https://github.com/hunterhacker/jdom/>
 * Dom4j: <http://dom4j.github.io/>
