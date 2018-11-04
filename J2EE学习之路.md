@@ -483,9 +483,8 @@ Eclipse中`Update Project`，选择`Force Update of Snapshots/Releases`
 * MavenMNG-4715 version expression constant: <https://issues.apache.org/jira/browse/MNG-4715>
 * 解决Maven报Plugin execution not covered by lifecycle configuration: <http://blog.csdn.net/xxd851116/article/details/25197373>
 * Maven编译jar出现：无法确定 T 的类型参数的异常的原因和处理方案: <http://www.cnblogs.com/peida/p/4218210.html>
-* 如何发布jar包到maven中央仓库: <https://blog.csdn.net/tiger435/article/details/50470316>
-* maven发布jar包到nexus: <https://www.cnblogs.com/yucy/p/7509561.html>
 * 利用github搭建个人maven仓库: <http://blog.csdn.net/hengyunabc/article/details/47308913>
+* 如何发布Maven依赖到中央仓库: <https://www.cnblogs.com/jiangxinnju/p/9903517.html>
 * Maven添加本地依赖: <http://blog.csdn.net/xwl617756974/article/details/7832882>
 * Maven常用插件: <http://iffiffj.iteye.com/blog/1661936>
 * How to Publish Maven Site Docs to BitBucket or GitHub Pages: <http://www.ensor.cc/2013/01/how-to-publish-maven-site-docs-to.html>
