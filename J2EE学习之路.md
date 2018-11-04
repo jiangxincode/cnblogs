@@ -721,7 +721,7 @@ mvn deploy:deploy-file -DgroupId="edu.jiangxin" -DartifactId=”gcu” -Dversion
 
     Simian (Similarity Analyser) identifies duplication in Java, C#, C, C++, COBOL, Ruby, JSP, ASP, HTML, XML, Visual Basic, Groovy source code and even plain text files. In fact, simian can be used on any human readable files such as ini files, deployment descriptors, you name it.
 
-* 项目地址：<http://www.redhillconsulting.com.au/products/simian/>
+* 项目地址：<http://www.harukizaemon.com/simian/>
 * maven-simian-plugin(maven1): <http://maven.apache.org/archives/maven-1.x/plugins/simian/>
 * simian-maven-plugin(maven2+): <https://github.com/jiangxincode/simian-maven-plugin>
 * How do you use the maven-simian-plugin in Maven2?: <http://stackoverflow.com/questions/1077700/how-do-you-use-the-maven-simian-plugin-in-maven2>
@@ -1033,6 +1033,7 @@ The yFiles diagramming software components are extensive class libraries that en
 * <http://drools.org/download/download.html>
 * <http://docs.jboss.org/drools/release/6.0.1.Final/drools-docs/html_single/index.html>
 * Drools规则描述语言快速手册: <http://holbrook.github.io/2012/12/06/rule_language.html>
+* Why isn't Drools working with Java 8? <https://stackoverflow.com/questions/22493865/why-isnt-drools-working-with-java-8>
 
 ## jBPM
 
