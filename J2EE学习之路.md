@@ -167,6 +167,8 @@
 * 浅析ReDoS的原理与实践: <http://www.freebuf.com/articles/network/124422.html>
 * More Servlets and JavaServer Pages: <http://pdf.moreservlets.com/>
 * 大陆简中自由软件本地化工作指南: <https://repo.anthonos.org/misc/l10n/zh_CN_l10n_1.4.4.pdf>
+* 开源协议汇总: <https://opensource.org/licenses>
+* 如何选择开源许可证？：<http://www.ruanyifeng.com/blog/2011/05/how_to_choose_free_software_licenses.html>
 * 一个程序员能够控制多少行代码: <https://www.cnblogs.com/jiangxinnju/p/5516918.html>
 * HTML中`&nbsp; &ensp; &emsp; &thinsp;`等6种空白空格的区别: <https://www.cnblogs.com/chenshihaook/p/6186343.html>
 * UTF-8 encoding table and Unicode characters: <http://www.utf8-chartable.de/>
@@ -492,6 +494,15 @@ Eclipse中`Update Project`，选择`Force Update of Snapshots/Releases`
 * Maven Enforcer Plugin: <http://maven.apache.org/enforcer/maven-enforcer-plugin/>
 * templating-maven-plugin: <http://www.mojohaus.org/templating-maven-plugin/>
 
+* 开发自己的Maven插件之一:hello world: <https://blog.csdn.net/csfreebird/article/details/7709109>
+* 开发自己的Maven插件之二:利用创建向导简化工作: <https://blog.csdn.net/csfreebird/article/details/7709611>
+* 开发自己的Maven插件之三:使用插件: <https://blog.csdn.net/csfreebird/article/details/7709738>
+* 开发自己的Maven插件之四:基本概念: <https://blog.csdn.net/csfreebird/article/details/7711117>
+* 开发自己的Maven插件之五:创建简单的report plugin: <https://blog.csdn.net/csfreebird/article/details/7711398>
+* 开发自己的Maven插件之六:使用自己的report-plugin: <https://blog.csdn.net/csfreebird/article/details/7712077>
+* 开发自己的Maven插件之七:开发jslint4java-report plugin: <https://blog.csdn.net/csfreebird/article/details/7714833>
+* 开发自己的Maven插件之八:使用jslint4java-report plugin: <https://blog.csdn.net/csfreebird/article/details/7714868>
+
 * <http://mvnrepository.com/>    （搜索）
 * <https://search.maven.org/>    （搜索）
 * <https://maven-repository.com/>    （搜索）
@@ -575,28 +586,6 @@ mvn deploy:deploy-file -DgroupId="edu.jiangxin" -DartifactId=”gcu” -Dversion
 * 中国下载地址：<http://www.myeclipseide.cn/>
 * 在MyEclipse下创建Java Web项目 入门（图文并茂）经典教程：<http://jijiaa12345.iteye.com/blog/1739754>
 
-## EclEmma
-
-    EclEmma is a free Java code coverage tool for Eclipse.
-
-* 项目地址：<http://www.eclemma.org/>
-* EMMA项目地址：<http://emma.sourceforge.net/>
-* Maven EMMA plugin(不支持maven2): <http://emma.sourceforge.net/maven-emma-plugin/>
-
-## eCobertura
-
-    Eclipse Plugin for Cobertura. Java code coverage integrated into the IDE.
-
-* 项目地址：<http://ecobertura.johoop.de/>
-* Cobertura Maven Plugin: <http://www.mojohaus.org/cobertura-maven-plugin/>
-
-## JavaNCSS
-
-    JavaNCSS - A Source Measurement Suite for Java
-
-* <http://www.kclee.de/clemens/java/javancss/>
-* javancss-maven-plugin: <http://www.mojohaus.org/javancss-maven-plugin/usage.html>
-
 ## Clover（收费）
 
 * 项目地址：<http://atlassian.botwave.com/products/clover/default.html>
@@ -658,18 +647,30 @@ mvn deploy:deploy-file -DgroupId="edu.jiangxin" -DartifactId=”gcu” -Dversion
 
 * <http://proguard.sourceforge.net/>
 
-## FindBugs
+## Java静态代码检查
 
-* 项目地址及安装说明：<http://findbugs.sourceforge.net/>
-* FindBugs Bug Descriptions：<http://findbugs.sourceforge.net/bugDescriptions.html>
 * 浅淡静态代码分析工具：<http://www.cnblogs.com/hyddd/archive/2008/12/16/1356310.html>
 * 七款代码味道识别工具【简介】：<http://blog.csdn.net/lovelion/article/details/18467149>
-* FindBugs Plug-in: <http://maven-plugins.sourceforge.net/maven-findbugs-plugin/>
-* maven 使用findbugs 插件: <http://hw1287789687.iteye.com/blog/1960322>
-* 如何友好地展示findbugs分析报告: <http://hw1287789687.iteye.com/blog/1960331>
-* FindBugs详解: <http://www.cnblogs.com/jiangxinnju/p/6582404.html>
 
-## PMD
+### FindBugs
+
+* FindBugs：<http://findbugs.sourceforge.net/>
+* spotbugs(FindBugs继承者): <https://spotbugs.github.io/>
+* FindBugs Bug Descriptions：<http://findbugs.sourceforge.net/bugDescriptions.html>
+* FindBugs详解: <http://www.cnblogs.com/jiangxinnju/p/6582404.html>
+* FindBugs Plug-in(maven 1.0): <http://maven-plugins.sourceforge.net/maven-findbugs-plugin/>
+* FindBugs Maven Plugin(maven 2.0+): <https://gleclaire.github.io/findbugs-maven-plugin/>
+
+### CheckStyle
+
+    Checkstyle is a development tool to help programmers write Java code that adheres to a coding standard. It automates the process of checking Java code to spare humans of this boring (but important) task. This makes it ideal for projects that want to enforce a coding standard.
+
+* 项目地址：<http://checkstyle.sourceforge.net/>
+* Eclipse Checkstyle plug-in: <https://sourceforge.net/projects/eclipse-cs/>
+* Checkclipse: <https://sourceforge.net/projects/checkclipse/>
+* maven-checkstyle-plugin: <http://maven.apache.org/plugins/maven-checkstyle-plugin/>
+
+### PMD
 
     PMD is a source code analyzer. It finds common programming flaws like unused variables, empty catch blocks, unnecessary object creation, and so forth. It supports Java, JavaScript, PLSQL, Apache Velocity, XML, XSL. Additionally it includes CPD, the copy-paste-detector. CPD finds duplicated code in Java, C, C++, C#, PHP, Ruby, Fortran, JavaScript, PLSQL, Apache Velocity, Ruby, Scala, Objective C, Matlab, Python, Go.
 
@@ -677,18 +678,65 @@ mvn deploy:deploy-file -DgroupId="edu.jiangxin" -DartifactId=”gcu” -Dversion
 * <https://pmd.github.io/pmd-5.3.6/pmd-java/rules/index.html>
 * maven-pmd-plugin: <http://maven.apache.org/plugins/maven-pmd-plugin/>
 
+### Jdepend
+
+    JDepend traverses Java class file directories and generates design quality metrics for each Java package. JDepend allows you to automatically measure the quality of a design in terms of its extensibility, reusability, and maintainability to manage package dependencies effectively.
+
+* Jdepend：<http://www.clarkware.com/software/JDepend.html>
+* JDepend4Eclipse：<http://marketplace.eclipse.org/content/jdepend4eclipse>
+* JDepend Maven Plugin: <http://www.mojohaus.org/jdepend-maven-plugin/index.html>
+
+### Emma
+
+    a free Java code coverage tool
+
+* Emma：<http://emma.sourceforge.net/>
+* eclemma(Eclipse Plugin, 开始基于Emma后来基于JaCoCo)：<http://www.eclemma.org/>
+* JaCoCo: <https://www.eclemma.org/jacoco/index.html>
+* Getting “Skipping JaCoCo execution due to missing execution data file” upon executing JaCoCo? <https://stackoverflow.com/questions/18107375/getting-skipping-jacoco-execution-due-to-missing-execution-data-file-upon-exec>
+* Testng, Emma, Cobertura, coverage and JDK 7 result in ClassFormatError and VerifyError: <https://stackoverflow.com/questions/7010665/testng-emma-cobertura-coverage-and-jdk-7-result-in-classformaterror-and-verif>
+* Java 6 -> 7 migration ClassFormatError: Illegal local variable table length: <https://stackoverflow.com/questions/21917985/java-6-7-migration-classformaterror-illegal-local-variable-table-length>
+* Maven EMMA plugin(maven1): <http://emma.sourceforge.net/maven-emma-plugin/>
+* emma-maven-plugin(maven2+): <https://github.com/sonatype/emma-maven-plugin>
+
+### Cobertura
+
+    Cobertura is a free Java code coverage reporting tool.
+
+* Cobertura: <https://github.com/christ66/cobertura>
+* eCobertura(Eclipse Plugin)：<http://ecobertura.johoop.de/>
+* Cobertura Maven Plugin: <http://www.mojohaus.org/cobertura-maven-plugin/>
+* 学习Maven之Cobertura Maven Plugin: <https://www.cnblogs.com/qyf404/archive/2015/12/12/5040593.html>
+
+### JavaNCSS
+
+    JavaNCSS - A Source Measurement Suite for Java
+
+* <http://www.kclee.de/clemens/java/javancss/>
+* javancss-maven-plugin: <http://www.mojohaus.org/javancss-maven-plugin/usage.html>
+
+### Simian
+
+    Simian (Similarity Analyser) identifies duplication in Java, C#, C, C++, COBOL, Ruby, JSP, ASP, HTML, XML, Visual Basic, Groovy source code and even plain text files. In fact, simian can be used on any human readable files such as ini files, deployment descriptors, you name it.
+
+* 项目地址：<http://www.harukizaemon.com/simian/>
+* maven-simian-plugin(maven1): <http://maven.apache.org/archives/maven-1.x/plugins/simian/>
+* simian-maven-plugin(maven2+): <https://github.com/jiangxincode/simian-maven-plugin>
+* How do you use the maven-simian-plugin in Maven2?: <http://stackoverflow.com/questions/1077700/how-do-you-use-the-maven-simian-plugin-in-maven2>
+
+### SourceMonitor
+
+* 官网: <http://www.campwoodsw.com/>
+* 代码度量工具——SourceMonitor的学习和使用：<http://www.cnblogs.com/bangerlee/archive/2011/09/18/2178172.html>
+
+### CCT
+
+    代码规模统计工具CCT是根据华为公司的项目特点而开发的软件规模统计工具；它既可以统计指定版本的非空非注释行，也可以通过比较当前版本和基础版本，计算新增修改规模得到增强项目的规模。CCT通过辨认不同的扩展名支持对多种语言的规模统计，包括C,C++,JAVA,DELPHI,汇编(ASM),SQL,JSP,ASP,HTML和TXT等文件。
+
 ## Metric
 
 * Metrics-Java版的指标度量工具之一：<http://www.cnblogs.com/nexiyi/p/metrics_sample_1.html>
 * Metrics-Java版的指标度量工具之二：<http://www.cnblogs.com/nexiyi/p/metrics_sample_2.html>
-
-## Jdepend
-
-    JDepend traverses Java class file directories and generates design quality metrics for each Java package. JDepend allows you to automatically measure the quality of a design in terms of its extensibility, reusability, and maintainability to manage package dependencies effectively.
-
-* 官网：<http://www.clarkware.com/software/JDepend.html>
-* JDepend4Eclipse：<http://marketplace.eclipse.org/content/jdepend4eclipse>
-* JDepend Maven Plugin: <http://www.mojohaus.org/jdepend-maven-plugin/index.html>
 
 ## SourceHelper
 
@@ -710,33 +758,6 @@ mvn deploy:deploy-file -DgroupId="edu.jiangxin" -DartifactId=”gcu” -Dversion
 * InFusion错误类型分析：<http://www.cnblogs.com/Leo_wl/p/3493231.html>
 * 软件设计度量工具inFusion(一)：inFusion的基本概念: <http://blog.csdn.net/aitangyong/article/details/50206419>
 * 软件设计度量工具inFusion(二)：看懂inFusion度量结果: <http://blog.csdn.net/aitangyong/article/details/50250967>
-
-## SourceMonitor
-
-* 官网: <http://www.campwoodsw.com/>
-* 代码度量工具——SourceMonitor的学习和使用：<http://www.cnblogs.com/bangerlee/archive/2011/09/18/2178172.html>
-
-## Simian
-
-    Simian (Similarity Analyser) identifies duplication in Java, C#, C, C++, COBOL, Ruby, JSP, ASP, HTML, XML, Visual Basic, Groovy source code and even plain text files. In fact, simian can be used on any human readable files such as ini files, deployment descriptors, you name it.
-
-* 项目地址：<http://www.harukizaemon.com/simian/>
-* maven-simian-plugin(maven1): <http://maven.apache.org/archives/maven-1.x/plugins/simian/>
-* simian-maven-plugin(maven2+): <https://github.com/jiangxincode/simian-maven-plugin>
-* How do you use the maven-simian-plugin in Maven2?: <http://stackoverflow.com/questions/1077700/how-do-you-use-the-maven-simian-plugin-in-maven2>
-
-## CheckStyle
-
-    Checkstyle is a development tool to help programmers write Java code that adheres to a coding standard. It automates the process of checking Java code to spare humans of this boring (but important) task. This makes it ideal for projects that want to enforce a coding standard.
-
-* 项目地址：<http://checkstyle.sourceforge.net/>
-* Eclipse Checkstyle plug-in: <https://sourceforge.net/projects/eclipse-cs/>
-* Checkclipse: <https://sourceforge.net/projects/checkclipse/>
-* maven-checkstyle-plugin: <http://maven.apache.org/plugins/maven-checkstyle-plugin/>
-
-## CCT
-
-    代码规模统计工具CCT是根据华为公司的项目特点而开发的软件规模统计工具；它既可以统计指定版本的非空非注释行，也可以通过比较当前版本和基础版本，计算新增修改规模得到增强项目的规模。CCT通过辨认不同的扩展名支持对多种语言的规模统计，包括C,C++,JAVA,DELPHI,汇编(ASM),SQL,JSP,ASP,HTML和TXT等文件。
 
 ## EJ-Technologies一家（收费）
 
@@ -817,6 +838,7 @@ mvn deploy:deploy-file -DgroupId="edu.jiangxin" -DartifactId=”gcu” -Dversion
 
 ## 字符编码判断
 
+* What is the most accurate encoding detector? <https://stackoverflow.com/questions/3759356/what-is-the-most-accurate-encoding-detector>
 * cpdetector: <https://sourceforge.net/projects/cpdetector/>
 * juniversalchardet: <https://github.com/takscape/juniversalchardet>
 

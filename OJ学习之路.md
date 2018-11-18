@@ -10,6 +10,7 @@
 * codechef: <https://www.codechef.com/>
 * topcoder: <https://www.topcoder.com/>
 * LeetCode Online Judge: <https://leetcode.com/>
+* awesome-algorithm: <https://github.com/apachecn/awesome-algorithm>
 * LeetCode中国: <https://leetcode-cn.com/>
 * PKU JudgeOnline: <http://poj.org/>
 * <http://acm.zju.edu.cn/onlinejudge/>
