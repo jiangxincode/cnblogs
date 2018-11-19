@@ -167,13 +167,17 @@
 * 浅析ReDoS的原理与实践: <http://www.freebuf.com/articles/network/124422.html>
 * More Servlets and JavaServer Pages: <http://pdf.moreservlets.com/>
 * 大陆简中自由软件本地化工作指南: <https://repo.anthonos.org/misc/l10n/zh_CN_l10n_1.4.4.pdf>
-* 开源协议汇总: <https://opensource.org/licenses>
-* 如何选择开源许可证？：<http://www.ruanyifeng.com/blog/2011/05/how_to_choose_free_software_licenses.html>
 * 一个程序员能够控制多少行代码: <https://www.cnblogs.com/jiangxinnju/p/5516918.html>
 * HTML中`&nbsp; &ensp; &emsp; &thinsp;`等6种空白空格的区别: <https://www.cnblogs.com/chenshihaook/p/6186343.html>
 * UTF-8 encoding table and Unicode characters: <http://www.utf8-chartable.de/>
 * Java之美[从菜鸟到高手演变]之设计模式：<https://blog.csdn.net/zhangerqing/article/details/8245560>
 * [System.currentTimeMillis]/[Calendar.getInstance().getTimeInMillis()]/[new Date().getTime()]: <https://www.cnblogs.com/jiangxinnju/p/9425411.html>
+
+* 开源协议汇总: <https://opensource.org/licenses>
+* 如何选择开源许可证？：<http://www.ruanyifeng.com/blog/2011/05/how_to_choose_free_software_licenses.html>
+* What is difference between fail safe iterator and fail fast iterator: <http://marjavamitjava.com/difference-fail-safe-iterator-fail-fast-iterator/>
+* Item 11: Always override hashCode when you override equals: <Effective Java 3rd Edition>
+* Jdk1.8中的HashMap实现原理: <https://blog.csdn.net/fjse51/article/details/53811465>
 
 ## WebService
 
