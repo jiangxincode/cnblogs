@@ -178,6 +178,7 @@
 * What is difference between fail safe iterator and fail fast iterator: <http://marjavamitjava.com/difference-fail-safe-iterator-fail-fast-iterator/>
 * Item 11: Always override hashCode when you override equals: <Effective Java 3rd Edition>
 * Jdk1.8中的HashMap实现原理: <https://blog.csdn.net/fjse51/article/details/53811465>
+* Java代码质量度量工具大阅兵: <https://www.cnblogs.com/jiangxinnju/p/10010177.html>
 
 ## WebService
 
@@ -650,92 +651,6 @@ mvn deploy:deploy-file -DgroupId="edu.jiangxin" -DartifactId=”gcu” -Dversion
     ProGuard is a free Java class file shrinker, optimizer, obfuscator, and preverifier. It detects and removes unused classes, fields, methods, and attributes. It optimizes bytecode and removes unused instructions. It renames the remaining classes, fields, and methods using short meaningless names. Finally, it preverifies the processed code for Java 6 or higher, or for Java Micro Edition.
 
 * <http://proguard.sourceforge.net/>
-
-## Java静态代码检查
-
-* 浅淡静态代码分析工具：<http://www.cnblogs.com/hyddd/archive/2008/12/16/1356310.html>
-* 七款代码味道识别工具【简介】：<http://blog.csdn.net/lovelion/article/details/18467149>
-
-### FindBugs
-
-* FindBugs：<http://findbugs.sourceforge.net/>
-* spotbugs(FindBugs继承者): <https://spotbugs.github.io/>
-* FindBugs Bug Descriptions：<http://findbugs.sourceforge.net/bugDescriptions.html>
-* FindBugs详解: <http://www.cnblogs.com/jiangxinnju/p/6582404.html>
-* FindBugs Plug-in(maven 1.0): <http://maven-plugins.sourceforge.net/maven-findbugs-plugin/>
-* FindBugs Maven Plugin(maven 2.0+): <https://gleclaire.github.io/findbugs-maven-plugin/>
-
-### CheckStyle
-
-    Checkstyle is a development tool to help programmers write Java code that adheres to a coding standard. It automates the process of checking Java code to spare humans of this boring (but important) task. This makes it ideal for projects that want to enforce a coding standard.
-
-* 项目地址：<http://checkstyle.sourceforge.net/>
-* Eclipse Checkstyle plug-in: <https://sourceforge.net/projects/eclipse-cs/>
-* Checkclipse: <https://sourceforge.net/projects/checkclipse/>
-* maven-checkstyle-plugin: <http://maven.apache.org/plugins/maven-checkstyle-plugin/>
-
-### PMD
-
-    PMD is a source code analyzer. It finds common programming flaws like unused variables, empty catch blocks, unnecessary object creation, and so forth. It supports Java, JavaScript, PLSQL, Apache Velocity, XML, XSL. Additionally it includes CPD, the copy-paste-detector. CPD finds duplicated code in Java, C, C++, C#, PHP, Ruby, Fortran, JavaScript, PLSQL, Apache Velocity, Ruby, Scala, Objective C, Matlab, Python, Go.
-
-* 项目地址：<https://pmd.github.io/>
-* <https://pmd.github.io/pmd-5.3.6/pmd-java/rules/index.html>
-* maven-pmd-plugin: <http://maven.apache.org/plugins/maven-pmd-plugin/>
-
-### Jdepend
-
-    JDepend traverses Java class file directories and generates design quality metrics for each Java package. JDepend allows you to automatically measure the quality of a design in terms of its extensibility, reusability, and maintainability to manage package dependencies effectively.
-
-* Jdepend：<http://www.clarkware.com/software/JDepend.html>
-* JDepend4Eclipse：<http://marketplace.eclipse.org/content/jdepend4eclipse>
-* JDepend Maven Plugin: <http://www.mojohaus.org/jdepend-maven-plugin/index.html>
-
-### Emma
-
-    a free Java code coverage tool
-
-* Emma：<http://emma.sourceforge.net/>
-* eclemma(Eclipse Plugin, 开始基于Emma后来基于JaCoCo)：<http://www.eclemma.org/>
-* JaCoCo: <https://www.eclemma.org/jacoco/index.html>
-* Getting “Skipping JaCoCo execution due to missing execution data file” upon executing JaCoCo? <https://stackoverflow.com/questions/18107375/getting-skipping-jacoco-execution-due-to-missing-execution-data-file-upon-exec>
-* Testng, Emma, Cobertura, coverage and JDK 7 result in ClassFormatError and VerifyError: <https://stackoverflow.com/questions/7010665/testng-emma-cobertura-coverage-and-jdk-7-result-in-classformaterror-and-verif>
-* Java 6 -> 7 migration ClassFormatError: Illegal local variable table length: <https://stackoverflow.com/questions/21917985/java-6-7-migration-classformaterror-illegal-local-variable-table-length>
-* Maven EMMA plugin(maven1): <http://emma.sourceforge.net/maven-emma-plugin/>
-* emma-maven-plugin(maven2+): <https://github.com/sonatype/emma-maven-plugin>
-
-### Cobertura
-
-    Cobertura is a free Java code coverage reporting tool.
-
-* Cobertura: <https://github.com/christ66/cobertura>
-* eCobertura(Eclipse Plugin)：<http://ecobertura.johoop.de/>
-* Cobertura Maven Plugin: <http://www.mojohaus.org/cobertura-maven-plugin/>
-* 学习Maven之Cobertura Maven Plugin: <https://www.cnblogs.com/qyf404/archive/2015/12/12/5040593.html>
-
-### JavaNCSS
-
-    JavaNCSS - A Source Measurement Suite for Java
-
-* <http://www.kclee.de/clemens/java/javancss/>
-* javancss-maven-plugin: <http://www.mojohaus.org/javancss-maven-plugin/usage.html>
-
-### Simian
-
-    Simian (Similarity Analyser) identifies duplication in Java, C#, C, C++, COBOL, Ruby, JSP, ASP, HTML, XML, Visual Basic, Groovy source code and even plain text files. In fact, simian can be used on any human readable files such as ini files, deployment descriptors, you name it.
-
-* 项目地址：<http://www.harukizaemon.com/simian/>
-* maven-simian-plugin(maven1): <http://maven.apache.org/archives/maven-1.x/plugins/simian/>
-* simian-maven-plugin(maven2+): <https://github.com/jiangxincode/simian-maven-plugin>
-* How do you use the maven-simian-plugin in Maven2?: <http://stackoverflow.com/questions/1077700/how-do-you-use-the-maven-simian-plugin-in-maven2>
-
-### SourceMonitor
-
-* 官网: <http://www.campwoodsw.com/>
-* 代码度量工具——SourceMonitor的学习和使用：<http://www.cnblogs.com/bangerlee/archive/2011/09/18/2178172.html>
-
-### CCT
-
-    代码规模统计工具CCT是根据华为公司的项目特点而开发的软件规模统计工具；它既可以统计指定版本的非空非注释行，也可以通过比较当前版本和基础版本，计算新增修改规模得到增强项目的规模。CCT通过辨认不同的扩展名支持对多种语言的规模统计，包括C,C++,JAVA,DELPHI,汇编(ASM),SQL,JSP,ASP,HTML和TXT等文件。
 
 ## Metric
 
