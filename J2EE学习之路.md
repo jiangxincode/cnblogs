@@ -1,29 +1,24 @@
 # J2EE学习之路 [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 
-## Java Commons
+## 官方文档
 
-* The Java™ Tutorials: <http://docs.oracle.com/javase/tutorial/index.html>
+* Java SE: <https://docs.oracle.com/javase>
+* Java EE: <http://docs.oracle.com/javaee/>
+
 * Java Community Process: <https://www.jcp.org/>
-* Java Platform, Enterprise Edition (Java EE): <http://docs.oracle.com/javaee/>
-* The Java® Language Specification: <https://docs.oracle.com/javase/specs/jls/se7/html/index.html>
-* The Java® Virtual Machine Specification: <https://docs.oracle.com/javase/specs/jvms/se7/html/>
-* JDK Tools and Utilities: <http://docs.oracle.com/javase/6/docs/technotes/tools/>
+
+## Java tutorial
+
 * VirtualMachine：<http://docs.oracle.com/javase/7/docs/jdk/api/attach/spec/com/sun/tools/attach/VirtualMachine.html>
 * Java HotSpot VM Options： <http://www.oracle.com/technetwork/java/javase/tech/vmoptions-jsp-140102.html>
 * Setting Project Facets: <http://docs.oracle.com/cd/E13224_01/wlw/docs103/guide/ideuserguide/projects/conFacets.html>
 * Overriding and Hiding Methods: <http://docs.oracle.com/javase/tutorial/java/IandI/override.html>
-* List of HTTP status codes: <https://en.wikipedia.org/wiki/List_of_HTTP_status_codes>
 
 * Java开源大全: <http://www.open-open.com/>
-* importnew: <http://www.importnew.com/>
 * jarFinder: <http://www.jarfinder.com/>
 * java sampleexamples: <http://java.sampleexamples.com/>
 * java examples: <http://www.javased.com/>
-* java papers: <http://javapapers.com/>
 * <http://www.programcreek.com/>
-* 酷壳: <http://coolshell.cn/>
-
-## Java tutorial
 
 * Java Versions, Features and History: <http://javapapers.com/core-java/java-features-and-history/>
 * Introduction to Java Programming, Eighth Edition: <http://www.cs.armstrong.edu/liang/intro8e/>
@@ -79,8 +74,6 @@
 * 解析UML箭头、线条代表的意义：<http://developer.51cto.com/art/201006/206134.htm>
 * Burp Suite使用介绍（一） （二） （三）: <http://www.2cto.com/article/201406/310929.html>
 * String.intern(): 深入理解Java虚拟机：JVM高级特性与最佳实践第二版-周志明.pdf
-* [原创] SSO(Single Sign-on) in Action(上篇): <http://www.blogjava.net/security/archive/2006/10/02/sso_in_action.html>
-* 单点登陆(Single Sign-On,SSO)介绍（翻译）: <http://blog.csdn.net/rosen/article/details/445112>
 * 浅析Web工程目录和tomcat目录: <http://blog.csdn.net/ystyaoshengting/article/details/6204886>
 * CSS3美化有序列表: <http://www.w3cplus.com/css3/css3-ordered-list-styles>
 * 简洁纯净的CSS表单设计实例: <http://blog.bingo929.com/clean-and-pure-css-form-design.html>
@@ -179,6 +172,7 @@
 * Item 11: Always override hashCode when you override equals: <Effective Java 3rd Edition>
 * Jdk1.8中的HashMap实现原理: <https://blog.csdn.net/fjse51/article/details/53811465>
 * Java代码质量度量工具大阅兵: <https://www.cnblogs.com/jiangxinnju/p/10010177.html>
+* List of HTTP status codes: <https://en.wikipedia.org/wiki/List_of_HTTP_status_codes>
 
 ## WebService
 
@@ -1188,8 +1182,10 @@ The yFiles diagramming software components are extensive class libraries that en
 * <http://thrift.apache.org/>
 * Thirft框架介绍: <http://dongxicheng.org/search-engine/thrift-framework-intro/>
 
-## CAS
+## CAS/SSO
 
+* [原创] SSO(Single Sign-on) in Action(上篇): <http://www.blogjava.net/security/archive/2006/10/02/sso_in_action.html>
+* 单点登陆(Single Sign-On,SSO)介绍（翻译）: <http://blog.csdn.net/rosen/article/details/445112>
 * <https://www.apereo.org/projects/cas>
 * <https://github.com/apereo/cas>
 * CAS protocol: <https://apereo.github.io/cas/5.0.x/protocol/CAS-Protocol.html>

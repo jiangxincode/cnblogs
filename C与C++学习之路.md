@@ -18,6 +18,9 @@
 * The International Obfuscated C Code Contest: <http://www.ioccc.org/>
 * The C++ Standard Library - A Tutorial and Reference: <http://www.cppstdlib.com/>
 
+* The LLVM Compiler Infrastructure: <http://llvm.org/>
+* clang: a C language family frontend for LLVM: <http://clang.llvm.org/>
+
 * CRT Library Features: <https://docs.microsoft.com/en-us/cpp/c-runtime-library/crt-library-features>
 * Security Features in the CRT: <https://docs.microsoft.com/en-us/cpp/c-runtime-library/security-features-in-the-crt>
 * Linker Tools Warning LNK4098: <https://docs.microsoft.com/en-us/cpp/error-messages/tool-errors/linker-tools-warning-lnk4098>
@@ -36,8 +39,6 @@
 * Borland Graphics Interface (BGI) for Windows: <http://www.cs.colorado.edu/~main/cs1300/doc/bgi/>
 * libcstl: <http://libcstl.org/>
 * Valgrind: <http://www.valgrind.org/>
-* The LLVM Compiler Infrastructure: <http://llvm.org/>
-* clang: a C language family frontend for LLVM: <http://clang.llvm.org/>
 * SWIG: <http://www.swig.org/>
 * EasyX Library for C++: <http://www.easyx.cn/>
 * EGE（Easy Graphics Engine）: <http://xege.org/>
@@ -54,7 +55,6 @@
 * Borland-style CONIO: <https://sourceforge.net/projects/conio/>
 * cppcheck: <https://sourceforge.net/projects/cppcheck/>
 * DISLIN: <https://www.mps.mpg.de/dislin/>
-* Useful enhancements for Visual Studio .NET: <http://www.codeproject.com/Articles/2704/Useful-enhancements-for-Visual-Studio-NET>
 * ICU - International Components for Unicode: <http://site.icu-project.org/>
 * libevent: <http://libevent.org/>
 
@@ -74,21 +74,12 @@
 * 安装说明：<http://www.eclipse.org/cdt/downloads.php>
 * 也可以在Eclipse的MarketPlace中搜索CDT，但是需要注意搜到的CDT版本是否与Eclipse版本匹配。
 * eclipse 配置 TDM-GCC 64位版方法: <http://blog.csdn.net/luozhuang/article/details/8270522>
-* 用UTF－8编写的代码在codeblocks中编译后汉字不能正常显示: <http://tieba.baidu.com/p/3208939336>
 * eclipse写C++控制台程序，不见输出: <http://bbs.csdn.net/topics/360207855>
 
-## CodeBlocks
+## Visual Studio
 
-* <http://www.codeblocks.org/>
-* cbp2make: <http://forums.codeblocks.org/index.php/topic,13675.msg92163.html#msg92163>
-* cbMakefileGen plugin: <http://forums.codeblocks.org/index.php/topic,6241.0.html>
-* CodeBlocks插件开发指南(一): <http://www.cppblog.com/lymons/archive/2010/04/17/112850.html>
-
-## CodeBlocks自定义自动补全
-
-1、依次打开 Project -> Properties -> C/C++ parser options 来到 Additional search paths;
-2、点 Add 选择头文件的路径后点确定;
-3、在源文件中添加相应的头文件后即可实现自动补全。
+* visual studio 2008中头文件和库文件路径设置: <http://blog.sina.com.cn/s/blog_77c35cff01010u7b.html>
+* Useful enhancements for Visual Studio .NET: <http://www.codeproject.com/Articles/2704/Useful-enhancements-for-Visual-Studio-NET>
 
 ## CMake
 
@@ -159,7 +150,7 @@
 * 使用CppUnit: <http://www.cnblogs.com/zhcncn/archive/2012/12/25/2832162.html>
 * 开放源码 C/C++ 单元测试工具，第 3 部分: 了解 CppTest: <http://www.ibm.com/developerworks/cn/aix/library/au-ctools3_ccptest/>
 
-## Articles
+## 杂项
 
 * Comparison of Diagnostics between GCC and Clang: <https://gcc.gnu.org/wiki/ClangDiagnosticsComparison>
 * C++ unit test start guide, how to set up Google Test (gtest) in Eclipse?：<http://www.codeproject.com/Articles/811934/Cplusplus-unit-test-start-guide-how-to-set-up-Goog>
@@ -211,3 +202,13 @@
 * VC知识库: <http://www.vckbase.com/>
 * 基于X的GNOME、GTK、GDK、XLib、GLib等之间的关系: <http://socol.iteye.com/blog/579718>
 * 减少C++代码编译时间的方法: <http://www.cnblogs.com/misserwell/p/4343927.html>
+
+* C++编译错误cannot have cv-qualifier: <https://www.cnblogs.com/jiangxinnju/p/5516904.html>
+* 在 console mode 中使用 C/C++ 编译器: <https://blog.csdn.net/dlyhlq/article/details/2104217>
+* Linux静态/动态链接库的创建和使用: <https://blog.csdn.net/hcj2002/article/details/712146>
+* 基于对象和面向对象的区别: <http://www.cnblogs.com/jiangxinnju/p/5516880.html>
+* const 不再迷茫: <https://www.cnblogs.com/jiangxinnju/p/5516881.html>
+* C语言中随机数相关问题: <https://www.cnblogs.com/jiangxinnju/p/5516905.html>
+* Windows动态库与Linux共享对象比较: <https://blog.csdn.net/jatula/article/details/83324280>
+* C/C++大数库简介: <https://www.cnblogs.com/jiangxinnju/p/5516911.html>
+* C++资源之不完全导引: C++资源之不完全导引.docx

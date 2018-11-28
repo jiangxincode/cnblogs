@@ -50,6 +50,20 @@
 
 * <http://www.sourceinsight.com/>
 
+## CodeBlocks
+
+* <http://www.codeblocks.org/>
+* cbp2make: <http://forums.codeblocks.org/index.php/topic,13675.msg92163.html#msg92163>
+* cbMakefileGen plugin: <http://forums.codeblocks.org/index.php/topic,6241.0.html>
+* CodeBlocks插件开发指南(一): <http://www.cppblog.com/lymons/archive/2010/04/17/112850.html>
+* 用UTF－8编写的代码在codeblocks中编译后汉字不能正常显示: <http://tieba.baidu.com/p/3208939336>
+
+### CodeBlocks自定义自动补全
+
+1、依次打开 Project -> Properties -> C/C++ parser options 来到 Additional search paths;
+2、点 Add 选择头文件的路径后点确定;
+3、在源文件中添加相应的头文件后即可实现自动补全。
+
 ## Others
 
 * geany: <http://www.geany.org/Download/Extras>
@@ -61,3 +75,6 @@
 * codelite: <http://www.codelite.org/>
 * Anjuta: <http://anjuta.org/>
 * kite: <https://kite.com/>
+* kdevelop：<https://www.kdevelop.org/>
+* xcode: <https://developer.apple.com/xcode/>
+* QtCreator: <https://www.qt.io/qt-features-libraries-apis-tools-and-ide/#ide>
