@@ -32,7 +32,6 @@
 * Emoji的编码以及常见问题的解决方法: <https://segmentfault.com/a/1190000007594620>
 
 * Java代码质量度量工具大阅兵: <https://www.cnblogs.com/jiangxinnju/p/10010177.html>
-* List of HTTP status codes: <https://en.wikipedia.org/wiki/List_of_HTTP_status_codes>
 
 * VirtualMachine：<http://docs.oracle.com/javase/7/docs/jdk/api/attach/spec/com/sun/tools/attach/VirtualMachine.html>
 * Java HotSpot VM Options： <http://www.oracle.com/technetwork/java/javase/tech/vmoptions-jsp-140102.html>
@@ -40,10 +39,8 @@
 * Overriding and Hiding Methods: <http://docs.oracle.com/javase/tutorial/java/IandI/override.html>
 
 * jarFinder: <http://www.jarfinder.com/>
-* java sampleexamples: <http://java.sampleexamples.com/>
 * java examples: <http://www.javased.com/>
 
-* Java Versions, Features and History: <http://javapapers.com/core-java/java-features-and-history/>
 * Introduction to Java Programming, Eighth Edition: <http://www.cs.armstrong.edu/liang/intro8e/>
 * Java杂项: <http://www.cnblogs.com/jiangxinnju/p/6582135.html>
 * Java 理论与实践: <http://www.ibm.com/developerworks/cn/java/j-jtp/>
@@ -99,7 +96,6 @@
 * java中static{}语句块详解: <http://blog.csdn.net/lubiaopan/article/details/4802430>
 * 转一个J2EE开发时的包命名规则，养成良好的开发习惯：<http://www.blogjava.net/paulwong/archive/2012/04/15/374675.html>
 * 对比C++ 和Java: Thinking in java[Java编程思想第4版].pdf
-* 舞蹈特点与编程语言特点的联想曲: <http://blog.csdn.net/iammerryz/article/details/7661067?_t_t_t=0.3386819043662399>
 * JAR文件包及jar命令详解: <http://blog.donews.com/hitfly/archive/2005/03/25/312851.aspx>
 * JAVA调用系统命令或可执行程序：<http://wuhongyu.iteye.com/blog/461477/>
 * 过时date.toLocaleString()的解决方法: <http://ldl8818.iteye.com/blog/1492301>
@@ -116,11 +112,6 @@
 * 关于toString: <http://www.iteye.com/problems/96872>
 * Servlet容器的匹配过程：<http://developer.51cto.com/art/200907/134840.htm>
 * 解决java.lang.IncompatibleClassChangeError: <https://my.oschina.net/itblog/blog/528613>
-* html的meta总结，html标签中meta属性使用介绍: <http://www.haorooms.com/post/html_meta_ds>
-* 使用 jQuery.i18n.properties 实现 Web 前端的国际化: <https://www.ibm.com/developerworks/cn/web/1305_hezj_jqueryi18n/>
-* ajax与302响应: <http://www.cnblogs.com/dudu/p/ajax_302_found.html>
-* HTTPS 升级指南: <http://www.ruanyifeng.com/blog/2016/08/migrate-from-http-to-https.html>
-* HTML中`&nbsp; &ensp; &emsp; &thinsp;`等6种空白空格的区别: <https://www.cnblogs.com/chenshihaook/p/6186343.html>
 * javadoc相关问题: <http://www.cnblogs.com/jiangxinnju/p/6091525.html>
 * 测试方面的基础概念: <http://javazhou.iteye.com/blog/1727745>
 * SIT和UAT: <http://henry-cong.iteye.com/blog/1460431>
@@ -169,6 +160,13 @@
 * UTF-8 encoding table and Unicode characters: <http://www.utf8-chartable.de/>
 * Java之美[从菜鸟到高手演变]之设计模式：<https://blog.csdn.net/zhangerqing/article/details/8245560>
 * [System.currentTimeMillis]/[Calendar.getInstance().getTimeInMillis()]/[new Date().getTime()]: <https://www.cnblogs.com/jiangxinnju/p/9425411.html>
+
+* List of HTTP status codes: <https://en.wikipedia.org/wiki/List_of_HTTP_status_codes>
+* html的meta总结，html标签中meta属性使用介绍: <http://www.haorooms.com/post/html_meta_ds>
+* 使用 jQuery.i18n.properties 实现 Web 前端的国际化: <https://www.ibm.com/developerworks/cn/web/1305_hezj_jqueryi18n/>
+* ajax与302响应: <http://www.cnblogs.com/dudu/p/ajax_302_found.html>
+* HTTPS 升级指南: <http://www.ruanyifeng.com/blog/2016/08/migrate-from-http-to-https.html>
+* HTML中`&nbsp; &ensp; &emsp; &thinsp;`等6种空白空格的区别: <https://www.cnblogs.com/chenshihaook/p/6186343.html>
 
 ## JVM
 
