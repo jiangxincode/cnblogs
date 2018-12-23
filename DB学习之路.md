@@ -367,6 +367,11 @@ ORACLE_SID 实例ID
 * Apache Pig中文教程（进阶）: <http://www.codelast.com/?p=4249>
 * 使用Apache Pig时应该注意/避免的操作或事项: <http://www.codelast.com/?p=4577>
 
+## Redis
+
+* <https://redis.io/>
+* <https://github.com/antirez/redis>
+
 ## Others
 
 * GBase: <http://www.gbase.cn/>

@@ -239,12 +239,6 @@
 * SFTP Plug-in for Eclipse: <http://www.jcraft.com/eclipse-sftp/>
 * Eclipse 远程开发：<http://lovespss.blog.51cto.com/1907593/536614>
 
-## Eclipse GUI Plugin
-
-* WindowBuilder(SWT Designer): <http://www.eclipse.org/windowbuilder/>
-* Jigloo SWT/Swing GUI Builder: <http://marketplace.eclipse.org/content/jigloo-swtswing-gui-builder>
-* Visual Editor: <http://wiki.eclipse.org/Visual_Editor_Project>
-
 ## Eclipse根据java代码生成UML图
 
 * Eclipse UML插件AmaterasUML的配置及使用(推荐): <http://blog.csdn.net/asce1885/article/details/40744163>
@@ -287,6 +281,13 @@
 * CATALINA_BASE与CATALINA_HOME的区别: <http://blog.csdn.net/keda8997110/article/details/21400455>
 * 同一个服务器部署多个tomcat: <http://www.cnblogs.com/sj521/p/5974562.html>
 * Tomcat 到底依赖JRE还是JDK：<http://www.cnblogs.com/jiangxinnju/p/7616386.html>
+
+## AWT/Swing/SWT/Jface
+
+* Visual Editor(deprated): <http://wiki.eclipse.org/Visual_Editor_Project>
+* WindowBuilder(SWT Designer): <http://www.eclipse.org/windowbuilder/>
+* Jigloo SWT/Swing GUI Builder: <http://marketplace.eclipse.org/content/jigloo-swtswing-gui-builder>
+* SWT、Swing 或 AWT：哪个更适合您？ <https://www.ibm.com/developerworks/cn/opensource/os-swingswt/>
 
 ## Hudson
 

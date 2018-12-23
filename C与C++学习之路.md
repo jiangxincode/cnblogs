@@ -35,7 +35,6 @@
 * OGLplus: <http://oglplus.org/>
 * POSIX Threads for Win32: <https://www.sourceware.org/pthreads-win32/>
 * Visual Leak Detector for Visual C++ : <http://vld.codeplex.com/>
-* Libxml2: <http://xmlsoft.org/>
 * Borland Graphics Interface (BGI) for Windows: <http://www.cs.colorado.edu/~main/cs1300/doc/bgi/>
 * libcstl: <http://libcstl.org/>
 * Valgrind: <http://www.valgrind.org/>
@@ -51,7 +50,6 @@
 * CppUnit - C++ port of JUnit: <https://sourceforge.net/projects/cppunit/>
 * Log library for C++: <https://sourceforge.net/projects/log4cpp/>
 * log4cplus: <https://sourceforge.net/projects/log4cplus/>
-* TinyXML: <https://sourceforge.net/projects/tinyxml/>
 * Borland-style CONIO: <https://sourceforge.net/projects/conio/>
 * cppcheck: <https://sourceforge.net/projects/cppcheck/>
 * DISLIN: <https://www.mps.mpg.de/dislin/>
@@ -84,6 +82,18 @@
 ## CMake
 
 * <https://cmake.org/>
+
+## 包管理器
+
+* Does C++ need a universal package manager? <http://pfultz2.com/blog/2017/10/27/universal-package-manager/>
+* vcpkg(C++ Library Manager for Windows, Linux, and MacOS): <https://github.com/Microsoft/vcpkg>
+* Conan(the C / C++ Package Manager for Developers): <https://conan.io/>
+* Buckaroo: <https://www.buckaroo.pm/>
+* cget: <https://cget.readthedocs.io/en/latest/>
+* Conda: <https://conda.io/docs/>
+* CPM: <http://www.cpm.rocks/>
+* CPPAN: <https://cppan.org/>
+* Hunter: <https://docs.hunter.sh/en/latest/>
 
 ## Ctags
 
@@ -146,14 +156,37 @@
 ## Unit Test
 
 * Google Test: <https://github.com/google/googletest>
-* Parasoft C/C++test: <https://www.parasoft.com/product/cpptest/>
-* 使用CppUnit: <http://www.cnblogs.com/zhcncn/archive/2012/12/25/2832162.html>
+* 玩转Google开源C++单元测试框架Google Test系列(gtest)(总): <http://www.cnblogs.com/coderzh/archive/2009/04/06/1426755.html>
+* Code Blocks+gtest环境配置: <https://www.cnblogs.com/jiangxinnju/p/10163312.html>
+* C++ unit test start guide, how to set up Google Test (gtest) in Eclipse?：<http://www.codeproject.com/Articles/811934/Cplusplus-unit-test-start-guide-how-to-set-up-Goog>
+
+* CppUnit(C++ port of JUnit): <https://sourceforge.net/projects/cppunit/>
+* 使用CppUnit(Windows): <http://www.cnblogs.com/zhcncn/archive/2012/12/25/2832162.html>
+* cppunit helloworld详尽篇(Linux): <https://blog.csdn.net/snaill/article/details/605374>
 * 开放源码 C/C++ 单元测试工具，第 3 部分: 了解 CppTest: <http://www.ibm.com/developerworks/cn/aix/library/au-ctools3_ccptest/>
+
+* Parasoft C/C++test: <https://www.parasoft.com/products/ctest>
+
+## XML
+
+* TinyXML: <https://sourceforge.net/projects/tinyxml/> <https://github.com/leethomason/tinyxml2>
+* Libxml2: <http://xmlsoft.org/>
+
+## INI
+
+* GetPrivateProfileString/WritePrivateProfileString: <https://docs.microsoft.com/zh-cn/windows/desktop/api/winbase/>
+
+## JSON
+
+* jsoncpp: <https://github.com/open-source-parsers/jsoncpp>
+
+## 其它配置格式
+
+* libconfig: <https://github.com/hyperrealm/libconfig>
 
 ## 杂项
 
 * Comparison of Diagnostics between GCC and Clang: <https://gcc.gnu.org/wiki/ClangDiagnosticsComparison>
-* C++ unit test start guide, how to set up Google Test (gtest) in Eclipse?：<http://www.codeproject.com/Articles/811934/Cplusplus-unit-test-start-guide-how-to-set-up-Goog>
 * Linux内核中无名管道pipe和有名管道fifo的分析: <http://blog.csdn.net/duanyipeng/article/details/6825232>
 * C/C++内存泄漏及检测: <http://www.cnblogs.com/skynet/archive/2011/02/20/1959162.html>
 * 浅谈C/C++内存泄露及其检测工具: <http://www.cnblogs.com/taoxu0903/archive/2007/10/27/939261.html>
