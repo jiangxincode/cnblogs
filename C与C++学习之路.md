@@ -5,79 +5,141 @@
 * <http://www.cplusplus.com/>
 * <http://en.cppreference.com/>
 * <https://isocpp.org/>
-
 * C standard library: <https://en.wikipedia.org/wiki/C_standard_library>
 * C++ Standard Library: <https://en.wikipedia.org/wiki/C%2B%2B_Standard_Library>
-* C POSIX library: <https://en.wikipedia.org/wiki/C_POSIX_library>
-* GNU C Library: <https://en.wikipedia.org/wiki/GNU_C_Library>
-* List of numerical libraries: <https://en.wikipedia.org/wiki/List_of_numerical_libraries>
-* Standard Template Library Programmer's Guide: <http://www.sgi.com/tech/stl/>
+
 * comp.lang.c Frequently Asked Questions: <http://c-faq.com/>
-* Headers: <http://pubs.opengroup.org/onlinepubs/9699919799/idx/head.html>
-* cdecl: <http://www.cdecl.org/>
-* The International Obfuscated C Code Contest: <http://www.ioccc.org/>
+* C 语言常见问题集: <http://c-faq-chn.sourceforge.net/ccfaq/>
 * The C++ Standard Library - A Tutorial and Reference: <http://www.cppstdlib.com/>
 
-* The LLVM Compiler Infrastructure: <http://llvm.org/>
-* clang: a C language family frontend for LLVM: <http://clang.llvm.org/>
+* The International Obfuscated C Code Contest: <http://www.ioccc.org/>
 
-* CRT Library Features: <https://docs.microsoft.com/en-us/cpp/c-runtime-library/crt-library-features>
-* Security Features in the CRT: <https://docs.microsoft.com/en-us/cpp/c-runtime-library/security-features-in-the-crt>
-* Linker Tools Warning LNK4098: <https://docs.microsoft.com/en-us/cpp/error-messages/tool-errors/linker-tools-warning-lnk4098>
-* LINK : fatal error LNK1104: 无法打开文件“LIBCD.lib”: <https://www.cnblogs.com/hyfemma/archive/2010/11/14/1876846.html>
+* Comparing Two High-Performance I/O Design Patterns: <http://www.artima.com/articles/io_design_patterns.html>
+* 使您的软件运行起来——防止缓冲区溢出：<https://www.ibm.com/developerworks/cn/security/buffer-defend/index.html#main>
+* 屏幕输出VS文件输出：<http://blog.csdn.net/jiangxinnju/article/details/26081963>
+* C/C++内存泄漏及检测: <http://www.cnblogs.com/skynet/archive/2011/02/20/1959162.html>
+* 浅谈C/C++内存泄露及其检测工具: <http://www.cnblogs.com/taoxu0903/archive/2007/10/27/939261.html>
+* 内存泄露检测工具比较: <http://hi.baidu.com/cpuramdisk/item/22be18c22fd58a2eee4665db>
+* 亲密接触C可变参数函数 : <http://blog.csdn.net/linyt/article/details/2243605>
+* TCP连接中的TIME_WAIT状态: <http://blog.csdn.net/sunnydogzhou/article/details/6572071>
+* see also: 《TCP-IP详解卷1：协议》第十八章
+* TCP可靠传输及流量控制系列六：TCP连接中的TIME_WAIT状态: <http://zenhumany.blog.163.com/blog/static/1718066332010827104655541/>
+* C++项目中的extern "C" {}: <http://www.cnblogs.com/skynet/archive/2010/07/10/1774964.html>
+* 由函数clock想到的: <http://blog.csdn.net/jiangxinnju/article/details/25411743>
+* 理解 pkg-config 工具: <http://www.chenjunlu.com/2011/03/understanding-pkg-config-tool/>
+* see also: <http://technet.microsoft.com/zh-cn/library/zk17ww08>
+* C/C++中的abort、atexit、exit和_Exit: <http://blog.csdn.net/jiangxinnju/article/details/38155973>
+* setjmp()/longjmp()的使用方法和场合: <http://www.cnblogs.com/lowhere/archive/2008/08/22/1274309.html>
+* C++ 工程实践(7)：iostream 的用途与局限: <http://blog.csdn.net/solstice/article/details/6612179>
+* 指针的大小: <http://shansun123.iteye.com/blog/398601>
+* C/C++指针原理: <http://blog.csdn.net/column/details/c-pointer.html>
+* C++ STL轻松导学: <http://morningspace.51.net/resource/stlintro/stlintro.html?s=85fee499fe8534afc1f76ceceb0d41ff>
+* undefined reference问题总结: <http://ticktick.blog.51cto.com/823160/431329/>
+* Enabling string conversion functions in MinGW: <http://tehsausage.com/mingw-to-string>
+* C++ Rocks!: <http://cpprocks.com/>
+* 减少C++代码编译时间的方法: <http://www.cnblogs.com/misserwell/p/4343927.html>
+* C++编译错误cannot have cv-qualifier: <https://www.cnblogs.com/jiangxinnju/p/5516904.html>
+* 在 console mode 中使用 C/C++ 编译器: <https://blog.csdn.net/dlyhlq/article/details/2104217>
+* 基于对象和面向对象的区别: <http://www.cnblogs.com/jiangxinnju/p/5516880.html>
+* const 不再迷茫: <https://www.cnblogs.com/jiangxinnju/p/5516881.html>
+* C语言中随机数相关问题: <https://www.cnblogs.com/jiangxinnju/p/5516905.html>
+* C/C++大数库简介: <https://www.cnblogs.com/jiangxinnju/p/5516911.html>
+* C++资源之不完全导引: C++资源之不完全导引.docx
 
-* C 语言常见问题集: <http://c-faq-chn.sourceforge.net/ccfaq/>
+## Tools
 
-* <http://www.boost.org/>
+* cdecl: <http://www.cdecl.org/>
+* Visual Leak Detector for Visual C++ : <http://vld.codeplex.com/>
+* Valgrind: <http://www.valgrind.org/>
+* PC-lint for C/C++: <http://www.gimpel.com/html/pcl.htm>
+* cppcheck: <https://sourceforge.net/projects/cppcheck/>
+* C and C++ Code Counter(CCCC): <https://sourceforge.net/projects/cccc/>
+* Dev-C++: <https://sourceforge.net/projects/orwelldevcpp/>
+
+## Libraries
+
+* boost: <http://www.boost.org/>
 * Ncurses: <http://invisible-island.net/ncurses/ncurses.html>
 * GMP: <https://gmplib.org/>
 * Crypto++: <http://www.cryptopp.com/>
 * OGLplus: <http://oglplus.org/>
 * POSIX Threads for Win32: <https://www.sourceware.org/pthreads-win32/>
-* Visual Leak Detector for Visual C++ : <http://vld.codeplex.com/>
 * Borland Graphics Interface (BGI) for Windows: <http://www.cs.colorado.edu/~main/cs1300/doc/bgi/>
 * libcstl: <http://libcstl.org/>
-* Valgrind: <http://www.valgrind.org/>
 * SWIG: <http://www.swig.org/>
 * EasyX Library for C++: <http://www.easyx.cn/>
 * EGE（Easy Graphics Engine）: <http://xege.org/>
-* PC-lint for C/C++: <http://www.gimpel.com/html/pcl.htm>
-* CLucene - a C++ search engine: <https://sourceforge.net/projects/clucene/>
-* C and C++ Code Counter(CCCC): <https://sourceforge.net/projects/cccc/>
+* CLucene - a C++ search engine: <https://sourceforge.net/projects/clucene/>
 * Translate STL 2 C Language: <https://sourceforge.net/projects/tstl2cl/>
-* Dev-C++: <https://sourceforge.net/projects/orwelldevcpp/>
-* C Unit Testing Framework: <https://sourceforge.net/projects/cunit/>
-* CppUnit - C++ port of JUnit: <https://sourceforge.net/projects/cppunit/>
 * Log library for C++: <https://sourceforge.net/projects/log4cpp/>
 * log4cplus: <https://sourceforge.net/projects/log4cplus/>
 * Borland-style CONIO: <https://sourceforge.net/projects/conio/>
-* cppcheck: <https://sourceforge.net/projects/cppcheck/>
 * DISLIN: <https://www.mps.mpg.de/dislin/>
 * ICU - International Components for Unicode: <http://site.icu-project.org/>
 * libevent: <http://libevent.org/>
+* List of numerical libraries: <https://en.wikipedia.org/wiki/List_of_numerical_libraries>
+* Standard Template Library Programmer's Guide: <http://www.sgi.com/tech/stl/>
 
-* Comparing Two High-Performance I/O Design Patterns: <http://www.artima.com/articles/io_design_patterns.html>
+## Windows C++
+
+* CRT Library Features: <https://docs.microsoft.com/en-us/cpp/c-runtime-library/crt-library-features>
+* Security Features in the CRT: <https://docs.microsoft.com/en-us/cpp/c-runtime-library/security-features-in-the-crt>
+* Linker Tools Warning LNK4098: <https://docs.microsoft.com/en-us/cpp/error-messages/tool-errors/linker-tools-warning-lnk4098>
+* LINK : fatal error LNK1104: 无法打开文件“LIBCD.lib”: <https://www.cnblogs.com/hyfemma/archive/2010/11/14/1876846.html>
+* 为 Visual C++ 项目创建的文件类型: <https://docs.microsoft.com/zh-cn/cpp/ide/file-types-created-for-visual-cpp-projects>
+* VC知识库: <http://www.vckbase.com/>
+* VC 常用数据类型总结 俩篇: <http://www.cnblogs.com/sadier/articles/102085.html>
+* 预编译头文件介绍和说明: <http://www.cppblog.com/AutomateProgram/archive/2010/10/14/129846.html>
+* 预编译头文件解析: <http://www.cnblogs.com/khler/archive/2010/07/22/1782977.html>
+* VC 预编译头文件的使用: <http://www.cnblogs.com/xiao-cheng/archive/2012/02/05/2338787.html>
+* VC++的Unicode编程: <http://www.vckbase.com/index.php/wv/1438.html>
+* VC++，掀起你的盖头来——谈VC++对象模型: <http://www.cnblogs.com/chio/archive/2007/11/25/971644.html>
+* Visual C++ 入门精解: <http://www.cppblog.com/yuqilin1228/archive/2010/03/26/110614.html>
+* visual studio 2008中头文件和库文件路径设置: <http://blog.sina.com.cn/s/blog_77c35cff01010u7b.html>
+* Useful enhancements for Visual Studio .NET: <http://www.codeproject.com/Articles/2704/Useful-enhancements-for-Visual-Studio-NET>
+* Windows动态库与Linux共享对象比较: <https://blog.csdn.net/jatula/article/details/83324280>
+* atexit和onexit的主要用法和区别: <http://technet.microsoft.com/zh-cn/library/tze57ck3>
+* ODBC中的FX/Bulk RFX数据交换机制分析: <http://blog.csdn.net/workdog/article/details/1524126>
+
+## Linux C++
+
+* GNU C Library: <https://en.wikipedia.org/wiki/GNU_C_Library>
+* C POSIX library: <https://en.wikipedia.org/wiki/C_POSIX_library>
+* POSIX.1-2017: <http://pubs.opengroup.org/onlinepubs/9699919799>
+
+* The LLVM Compiler Infrastructure: <http://llvm.org/>
+* clang: a C language family frontend for LLVM: <http://clang.llvm.org/>
+
+* Linux内核中无名管道pipe和有名管道fifo的分析: <http://blog.csdn.net/duanyipeng/article/details/6825232>
+* 应用 Valgrind 发现 Linux 程序的内存问题: <http://www.ibm.com/developerworks/cn/linux/l-cn-valgrind/>
+* 如何在linux下检测内存泄漏: <http://www.ibm.com/developerworks/cn/linux/l-mleak/>
+* Linux下的时间概念(主要是其中的计时器的使用): <http://blog.chinaunix.net/uid-23215128-id-2521295.html>
+* Linux 桌面应用技术专题: <http://www.ibm.com/developerworks/cn/linux/theme/desktop/index.html>
+* Linux系统调用列表: <http://www.ibm.com/developerworks/cn/linux/kernel/syscall/part1/appendix.html>
+* GNU GCC手册-1: <http://blog.chinaunix.net/uid-10386087-id-2958766.html>
+* gcc的基本用法: <http://blog.chinaunix.net/uid-20183141-id-1731007.html>
+* Linux 套接字编程中的 5 个隐患: <http://www.ibm.com/developerworks/cn/linux/l-sockpit/>
+* gcc和g++的区别: <http://www.linuxsky.org/doc/dev/200804/298.html>
+* 使用 GLib 工具集管理 C 数据帖子发表于: <http://forum.ubuntu.org.cn/viewtopic.php?p=2614850>
+* Linux静态/动态链接库的创建和使用: <https://blog.csdn.net/hcj2002/article/details/712146>
+* 基于X的GNOME、GTK、GDK、XLib、GLib等之间的关系: <http://socol.iteye.com/blog/579718>
+* Comparison of Diagnostics between GCC and Clang: <https://gcc.gnu.org/wiki/ClangDiagnosticsComparison>
+
+## Windows/Linux简不单理还乱
 
 * MinGW: <http://www.mingw.org/>
 * MinGW-w64: <http://mingw-w64.org/>
 * TDM-GCC: <http://tdm-gcc.tdragon.net/>
 * cygwin: <http://www.cygwin.com/>
 * 对话 UNIX: 在 Windows 上使用 Cygwin: <http://www.ibm.com/developerworks/cn/aix/library/au-spunix_cygwin/>
-* 使您的软件运行起来——防止缓冲区溢出：<https://www.ibm.com/developerworks/cn/security/buffer-defend/index.html#main>
-* 屏幕输出VS文件输出：<http://blog.csdn.net/jiangxinnju/article/details/26081963>
+* GTK+与MFC不完全对比: <http://blog.csdn.net/absurd/article/details/1091143>
+* 将 MFC 应用程序移植到 Linux: <https://www.ibm.com/developerworks/cn/linux/guitoolkit/l-mfc/index.html>
 
 ## Eclipse CDT
 
-* 项目地址：<http://www.eclipse.org/cdt/>
-* 安装说明：<http://www.eclipse.org/cdt/downloads.php>
-* 也可以在Eclipse的MarketPlace中搜索CDT，但是需要注意搜到的CDT版本是否与Eclipse版本匹配。
+* <http://www.eclipse.org/cdt/>
 * eclipse 配置 TDM-GCC 64位版方法: <http://blog.csdn.net/luozhuang/article/details/8270522>
 * eclipse写C++控制台程序，不见输出: <http://bbs.csdn.net/topics/360207855>
-
-## Visual Studio
-
-* visual studio 2008中头文件和库文件路径设置: <http://blog.sina.com.cn/s/blog_77c35cff01010u7b.html>
-* Useful enhancements for Visual Studio .NET: <http://www.codeproject.com/Articles/2704/Useful-enhancements-for-Visual-Studio-NET>
 
 ## CMake
 
@@ -94,22 +156,6 @@
 * CPM: <http://www.cpm.rocks/>
 * CPPAN: <https://cppan.org/>
 * Hunter: <https://docs.hunter.sh/en/latest/>
-
-## Ctags
-
-* <https://sourceforge.net/projects/ctags/>
-
-## CLIPS
-
-    CLIPS is a productive development and delivery expert system tool which provides a complete environment for the construction of rule and/or object based expert systems.
-
-* <http://clipsrules.sourceforge.net/WhatIsCLIPS.html>
-
-## Xapian
-
-    Xapian is an Open Source Search Engine Library, released under the GPL v2+. It's written in C++, with bindings to allow use from Perl, Python, PHP, Java, Tcl, C#, Ruby, Lua, Erlang and Node.js (so far!)
-
-* <http://xapian.org/>
 
 ## GTK+
 
@@ -152,6 +198,8 @@
 
 * <http://www.stack.nl/~dimitri/doxygen/index.html>
 * 学习用 doxygen 生成源码文档: <http://www.ibm.com/developerworks/cn/aix/library/au-learningdoxygen/>
+* 使用doxygen为C/C++程序生成中文文档（上）: <http://blog.csdn.net/fmddlmyy/article/details/1663898>
+* Doxygen + Graphviz + Htmlhelp, 成为文档好手: <http://www.cnblogs.com/lidabo/archive/2012/12/24/2831518.html>
 
 ## Unit Test
 
@@ -164,6 +212,9 @@
 * 使用CppUnit(Windows): <http://www.cnblogs.com/zhcncn/archive/2012/12/25/2832162.html>
 * cppunit helloworld详尽篇(Linux): <https://blog.csdn.net/snaill/article/details/605374>
 * 开放源码 C/C++ 单元测试工具，第 3 部分: 了解 CppTest: <http://www.ibm.com/developerworks/cn/aix/library/au-ctools3_ccptest/>
+* CppUnit源码解读: <http://morningspace.51.net/resource/cppunit/cppunit_anno.html>
+
+* C Unit Testing Framework: <https://sourceforge.net/projects/cunit/>
 
 * Parasoft C/C++test: <https://www.parasoft.com/products/ctest>
 
@@ -184,64 +235,18 @@
 
 * libconfig: <https://github.com/hyperrealm/libconfig>
 
-## 杂项
+## Ctags
 
-* Comparison of Diagnostics between GCC and Clang: <https://gcc.gnu.org/wiki/ClangDiagnosticsComparison>
-* Linux内核中无名管道pipe和有名管道fifo的分析: <http://blog.csdn.net/duanyipeng/article/details/6825232>
-* C/C++内存泄漏及检测: <http://www.cnblogs.com/skynet/archive/2011/02/20/1959162.html>
-* 浅谈C/C++内存泄露及其检测工具: <http://www.cnblogs.com/taoxu0903/archive/2007/10/27/939261.html>
-* 内存泄露检测工具比较: <http://hi.baidu.com/cpuramdisk/item/22be18c22fd58a2eee4665db>
-* 应用 Valgrind 发现 Linux 程序的内存问题: <http://www.ibm.com/developerworks/cn/linux/l-cn-valgrind/>
-* 如何在linux下检测内存泄漏: <http://www.ibm.com/developerworks/cn/linux/l-mleak/>
-* 亲密接触C可变参数函数 : <http://blog.csdn.net/linyt/article/details/2243605>
-* TCP连接中的TIME_WAIT状态: <http://blog.csdn.net/sunnydogzhou/article/details/6572071>
-* see also: 《TCP-IP详解卷1：协议》第十八章
-* TCP可靠传输及流量控制系列六：TCP连接中的TIME_WAIT状态: <http://zenhumany.blog.163.com/blog/static/1718066332010827104655541/>
-* C++项目中的extern "C" {}: <http://www.cnblogs.com/skynet/archive/2010/07/10/1774964.html>
-* 由函数clock想到的: <http://blog.csdn.net/jiangxinnju/article/details/25411743>
-* 理解 pkg-config 工具: <http://www.chenjunlu.com/2011/03/understanding-pkg-config-tool/>
-* GTK+与MFC不完全对比: <http://blog.csdn.net/absurd/article/details/1091143>
-* 将 MFC 应用程序移植到 Linux: <http://blog.163.com/ssb_it/blog/static/4487616520087601642718/>
-* VC++，掀起你的盖头来——谈VC++对象模型: <http://www.cnblogs.com/chio/archive/2007/11/25/971644.html>
-* atexit和onexit的主要用法和区别: <http://technet.microsoft.com/zh-cn/library/tze57ck3>
-* see also: <http://technet.microsoft.com/zh-cn/library/zk17ww08>
-* C/C++中的abort、atexit、exit和_Exit: <http://blog.csdn.net/jiangxinnju/article/details/38155973>
-* setjmp()/longjmp()的使用方法和场合: <http://www.cnblogs.com/lowhere/archive/2008/08/22/1274309.html>
-* Linux下的时间概念(主要是其中的计时器的使用): <http://blog.chinaunix.net/uid-23215128-id-2521295.html>
-* C++ 工程实践(7)：iostream 的用途与局限: <http://blog.csdn.net/solstice/article/details/6612179>
-* 指针的大小: <http://shansun123.iteye.com/blog/398601>
-* 使用doxygen为C/C++程序生成中文文档（上）: <http://blog.csdn.net/fmddlmyy/article/details/1663898>
-* C/C++指针原理: <http://blog.csdn.net/column/details/c-pointer.html>
-* C++ STL轻松导学: <http://morningspace.51.net/resource/stlintro/stlintro.html?s=85fee499fe8534afc1f76ceceb0d41ff>
-* Linux 桌面应用技术专题: <http://www.ibm.com/developerworks/cn/linux/theme/desktop/index.html>
-* CppUnit源码解读: <http://morningspace.51.net/resource/cppunit/cppunit_anno.html>
-* ODBC中的FX/Bulk RFX数据交换机制分析: <http://blog.csdn.net/workdog/article/details/1524126>
-* Linux系统调用列表: <http://www.ibm.com/developerworks/cn/linux/kernel/syscall/part1/appendix.html>
-* 预编译头文件介绍和说明: <http://www.cppblog.com/AutomateProgram/archive/2010/10/14/129846.html>
-* 预编译头文件解析: <http://www.cnblogs.com/khler/archive/2010/07/22/1782977.html>
-* VC 预编译头文件的使用: <http://www.cnblogs.com/xiao-cheng/archive/2012/02/05/2338787.html>
-* VC++的Unicode编程: <http://www.vckbase.com/index.php/wv/1438.html>
-* Visual C++ 入门精解: <http://www.cppblog.com/yuqilin1228/archive/2010/03/26/110614.html>
-* GNU GCC手册-1: <http://blog.chinaunix.net/uid-10386087-id-2958766.html>
-* gcc的基本用法: <http://blog.chinaunix.net/uid-20183141-id-1731007.html>
-* Linux 套接字编程中的 5 个隐患: <http://www.ibm.com/developerworks/cn/linux/l-sockpit/>
-* gcc和g++的区别: <http://www.linuxsky.org/doc/dev/200804/298.html>
-* VC 常用数据类型总结 俩篇: <http://www.cnblogs.com/sadier/articles/102085.html>
-* 使用 GLib 工具集管理 C 数据帖子发表于: <http://forum.ubuntu.org.cn/viewtopic.php?p=2614850>
-* undefined reference问题总结: <http://ticktick.blog.51cto.com/823160/431329/>
-* Enabling string conversion functions in MinGW: <http://tehsausage.com/mingw-to-string>
-* Doxygen + Graphviz + Htmlhelp, 成为文档好手: <http://www.cnblogs.com/lidabo/archive/2012/12/24/2831518.html>
-* C++ Rocks!: <http://cpprocks.com/>
-* VC知识库: <http://www.vckbase.com/>
-* 基于X的GNOME、GTK、GDK、XLib、GLib等之间的关系: <http://socol.iteye.com/blog/579718>
-* 减少C++代码编译时间的方法: <http://www.cnblogs.com/misserwell/p/4343927.html>
+* <https://sourceforge.net/projects/ctags/>
 
-* C++编译错误cannot have cv-qualifier: <https://www.cnblogs.com/jiangxinnju/p/5516904.html>
-* 在 console mode 中使用 C/C++ 编译器: <https://blog.csdn.net/dlyhlq/article/details/2104217>
-* Linux静态/动态链接库的创建和使用: <https://blog.csdn.net/hcj2002/article/details/712146>
-* 基于对象和面向对象的区别: <http://www.cnblogs.com/jiangxinnju/p/5516880.html>
-* const 不再迷茫: <https://www.cnblogs.com/jiangxinnju/p/5516881.html>
-* C语言中随机数相关问题: <https://www.cnblogs.com/jiangxinnju/p/5516905.html>
-* Windows动态库与Linux共享对象比较: <https://blog.csdn.net/jatula/article/details/83324280>
-* C/C++大数库简介: <https://www.cnblogs.com/jiangxinnju/p/5516911.html>
-* C++资源之不完全导引: C++资源之不完全导引.docx
+## CLIPS
+
+    CLIPS is a productive development and delivery expert system tool which provides a complete environment for the construction of rule and/or object based expert systems.
+
+* <http://clipsrules.sourceforge.net/WhatIsCLIPS.html>
+
+## Xapian
+
+    Xapian is an Open Source Search Engine Library, released under the GPL v2+. It's written in C++, with bindings to allow use from Perl, Python, PHP, Java, Tcl, C#, Ruby, Lua, Erlang and Node.js (so far!)
+
+* <http://xapian.org/>
