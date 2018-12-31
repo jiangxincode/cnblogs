@@ -91,6 +91,7 @@
 * Android中Handler的使用: <http://blog.csdn.net/iispring/article/details/47115879>
 * 深入源码解析Android中的Handler,Message,MessageQueue,Looper: <http://blog.csdn.net/iispring/article/details/47180325>
 * Android异步更新UI的几种方法: <https://blog.csdn.net/ydxlt/article/details/51247822>
+* AsyncTaskLoader vs AsyncTask: <https://stackoverflow.com/questions/7120813/asynctaskloader-vs-asynctask>
 
 * Android 编程与兼容性问题: Android Programming The Big Nerd Ranch Guide 3rd[Android编程权威指南（第3版） 6.2 7.8 7.9
 * Android O Preview 之 通知渠道（Notification Channels）: <https://www.jianshu.com/p/92afa56aee05>
