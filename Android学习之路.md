@@ -86,6 +86,12 @@
 
 ## Article
 
+* 《Android开发艺术探索》
+* Handler内存泄漏详解及其解决方案: <http://blog.csdn.net/javazejian/article/details/50839443>
+* Android中Handler的使用: <http://blog.csdn.net/iispring/article/details/47115879>
+* 深入源码解析Android中的Handler,Message,MessageQueue,Looper: <http://blog.csdn.net/iispring/article/details/47180325>
+* Android异步更新UI的几种方法: <https://blog.csdn.net/ydxlt/article/details/51247822>
+
 * Android 编程与兼容性问题: Android Programming The Big Nerd Ranch Guide 3rd[Android编程权威指南（第3版） 6.2 7.8 7.9
 * Android O Preview 之 通知渠道（Notification Channels）: <https://www.jianshu.com/p/92afa56aee05>
 * Android Studio移动鼠标显示悬浮提示的设置方法: <http://www.cnblogs.com/jiangxinnju/p/8227442.html>
@@ -95,7 +101,6 @@
 * ANDROID STUDIO详细教程汇总: <http://stormzhang.com/devtools/2015/06/17/android-studio-all/>
 * Android AM命令行启动程序的方法: <http://blog.csdn.net/sunrock/article/details/5675067>
 * Android系统开篇: <http://gityuan.com/android/>
-* Handler内存泄漏详解及其解决方案: <http://blog.csdn.net/javazejian/article/details/50839443>
 * 对于android.intent.action.MAIN和android.intent.category.LAUNCHER的理解: <http://blog.csdn.net/lindroid20/article/details/51993247>
 * lntentfilter的匹配规则: Android开发艺术探索 1.3
 * Android加密之文件级加密: <http://blog.csdn.net/myfriend0/article/details/77094890>
@@ -103,8 +108,6 @@
 * Android Bander设计与实现 - 设计篇: <http://blog.csdn.net/universus/article/details/6211589>
 * Android Application的使用及其生命周期: <https://www.cnblogs.com/carlo/p/4734291.html>
 * Android ActionBar完全解析，使用官方推荐的最佳导航栏(上): <http://blog.csdn.net/guolin_blog/article/details/18234477>
-* Android中Handler的使用: <http://blog.csdn.net/iispring/article/details/47115879>
-* 深入源码解析Android中的Handler,Message,MessageQueue,Looper: <http://blog.csdn.net/iispring/article/details/47180325>
 * 详解 Android 通信: <http://www.androidchina.net/5028.html>
 * 什么是android.R.id.content？ <http://blog.csdn.net/colinandroid/article/details/77748695>
 * Android Partitions Explained: boot, system, recovery, data, cache & misc: <https://www.addictivetips.com/mobile/android-partitions-explained-boot-system-recovery-data-cache-misc/>

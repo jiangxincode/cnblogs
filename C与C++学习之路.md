@@ -12,40 +12,6 @@
 * C 语言常见问题集: <http://c-faq-chn.sourceforge.net/ccfaq/>
 * The C++ Standard Library - A Tutorial and Reference: <http://www.cppstdlib.com/>
 
-* The International Obfuscated C Code Contest: <http://www.ioccc.org/>
-
-* Comparing Two High-Performance I/O Design Patterns: <http://www.artima.com/articles/io_design_patterns.html>
-* 使您的软件运行起来——防止缓冲区溢出：<https://www.ibm.com/developerworks/cn/security/buffer-defend/index.html#main>
-* 屏幕输出VS文件输出：<http://blog.csdn.net/jiangxinnju/article/details/26081963>
-* C/C++内存泄漏及检测: <http://www.cnblogs.com/skynet/archive/2011/02/20/1959162.html>
-* 浅谈C/C++内存泄露及其检测工具: <http://www.cnblogs.com/taoxu0903/archive/2007/10/27/939261.html>
-* 内存泄露检测工具比较: <http://hi.baidu.com/cpuramdisk/item/22be18c22fd58a2eee4665db>
-* 亲密接触C可变参数函数 : <http://blog.csdn.net/linyt/article/details/2243605>
-* TCP连接中的TIME_WAIT状态: <http://blog.csdn.net/sunnydogzhou/article/details/6572071>
-* see also: 《TCP-IP详解卷1：协议》第十八章
-* TCP可靠传输及流量控制系列六：TCP连接中的TIME_WAIT状态: <http://zenhumany.blog.163.com/blog/static/1718066332010827104655541/>
-* C++项目中的extern "C" {}: <http://www.cnblogs.com/skynet/archive/2010/07/10/1774964.html>
-* 由函数clock想到的: <http://blog.csdn.net/jiangxinnju/article/details/25411743>
-* 理解 pkg-config 工具: <http://www.chenjunlu.com/2011/03/understanding-pkg-config-tool/>
-* see also: <http://technet.microsoft.com/zh-cn/library/zk17ww08>
-* C/C++中的abort、atexit、exit和_Exit: <http://blog.csdn.net/jiangxinnju/article/details/38155973>
-* setjmp()/longjmp()的使用方法和场合: <http://www.cnblogs.com/lowhere/archive/2008/08/22/1274309.html>
-* C++ 工程实践(7)：iostream 的用途与局限: <http://blog.csdn.net/solstice/article/details/6612179>
-* 指针的大小: <http://shansun123.iteye.com/blog/398601>
-* C/C++指针原理: <http://blog.csdn.net/column/details/c-pointer.html>
-* C++ STL轻松导学: <http://morningspace.51.net/resource/stlintro/stlintro.html?s=85fee499fe8534afc1f76ceceb0d41ff>
-* undefined reference问题总结: <http://ticktick.blog.51cto.com/823160/431329/>
-* Enabling string conversion functions in MinGW: <http://tehsausage.com/mingw-to-string>
-* C++ Rocks!: <http://cpprocks.com/>
-* 减少C++代码编译时间的方法: <http://www.cnblogs.com/misserwell/p/4343927.html>
-* C++编译错误cannot have cv-qualifier: <https://www.cnblogs.com/jiangxinnju/p/5516904.html>
-* 在 console mode 中使用 C/C++ 编译器: <https://blog.csdn.net/dlyhlq/article/details/2104217>
-* 基于对象和面向对象的区别: <http://www.cnblogs.com/jiangxinnju/p/5516880.html>
-* const 不再迷茫: <https://www.cnblogs.com/jiangxinnju/p/5516881.html>
-* C语言中随机数相关问题: <https://www.cnblogs.com/jiangxinnju/p/5516905.html>
-* C/C++大数库简介: <https://www.cnblogs.com/jiangxinnju/p/5516911.html>
-* C++资源之不完全导引: C++资源之不完全导引.docx
-
 ## Tools
 
 * cdecl: <http://www.cdecl.org/>
@@ -86,6 +52,10 @@
 * Security Features in the CRT: <https://docs.microsoft.com/en-us/cpp/c-runtime-library/security-features-in-the-crt>
 * Linker Tools Warning LNK4098: <https://docs.microsoft.com/en-us/cpp/error-messages/tool-errors/linker-tools-warning-lnk4098>
 * LINK : fatal error LNK1104: 无法打开文件“LIBCD.lib”: <https://www.cnblogs.com/hyfemma/archive/2010/11/14/1876846.html>
+* 链接器工具错误 LNK2026: <https://docs.microsoft.com/zh-cn/previous-versions/visualstudio/visual-studio-2008/100ezk17(v=vs.90)>
+* DUMPBIN Reference: <https://docs.microsoft.com/en-us/cpp/build/reference/dumpbin-reference>
+* atexit和onexit的主要用法和区别: <http://technet.microsoft.com/zh-cn/library/tze57ck3>
+* _onexit, _onexit_m: <http://technet.microsoft.com/zh-cn/library/zk17ww08>
 * 为 Visual C++ 项目创建的文件类型: <https://docs.microsoft.com/zh-cn/cpp/ide/file-types-created-for-visual-cpp-projects>
 * VC知识库: <http://www.vckbase.com/>
 * VC 常用数据类型总结 俩篇: <http://www.cnblogs.com/sadier/articles/102085.html>
@@ -98,8 +68,11 @@
 * visual studio 2008中头文件和库文件路径设置: <http://blog.sina.com.cn/s/blog_77c35cff01010u7b.html>
 * Useful enhancements for Visual Studio .NET: <http://www.codeproject.com/Articles/2704/Useful-enhancements-for-Visual-Studio-NET>
 * Windows动态库与Linux共享对象比较: <https://blog.csdn.net/jatula/article/details/83324280>
-* atexit和onexit的主要用法和区别: <http://technet.microsoft.com/zh-cn/library/tze57ck3>
 * ODBC中的FX/Bulk RFX数据交换机制分析: <http://blog.csdn.net/workdog/article/details/1524126>
+* VC++6.0编译时总死机，安装vcsp6补丁: <https://blog.csdn.net/xs574924427/article/details/8242414>
+* DEBUG和RELEASE 版本差异及调试相关问题: <https://blog.csdn.net/orc/article/details/8758>
+* Debug和Release有什么区别: <https://blog.csdn.net/chenhu_doc/article/details/932305>
+* MSVC vs. MinGW 之 (lib,dll,def,obj,exe) vs (a,dll,def,o,exe): <http://blog.sina.com.cn/s/blog_5ea0192f010102ig.html>
 
 ## Linux C++
 
@@ -250,3 +223,38 @@
     Xapian is an Open Source Search Engine Library, released under the GPL v2+. It's written in C++, with bindings to allow use from Perl, Python, PHP, Java, Tcl, C#, Ruby, Lua, Erlang and Node.js (so far!)
 
 * <http://xapian.org/>
+
+## Others
+
+* The International Obfuscated C Code Contest: <http://www.ioccc.org/>
+
+* Comparing Two High-Performance I/O Design Patterns: <http://www.artima.com/articles/io_design_patterns.html>
+* 使您的软件运行起来——防止缓冲区溢出：<https://www.ibm.com/developerworks/cn/security/buffer-defend/index.html#main>
+* 屏幕输出VS文件输出：<http://blog.csdn.net/jiangxinnju/article/details/26081963>
+* C/C++内存泄漏及检测: <http://www.cnblogs.com/skynet/archive/2011/02/20/1959162.html>
+* 浅谈C/C++内存泄露及其检测工具: <http://www.cnblogs.com/taoxu0903/archive/2007/10/27/939261.html>
+* 内存泄露检测工具比较: <http://hi.baidu.com/cpuramdisk/item/22be18c22fd58a2eee4665db>
+* 亲密接触C可变参数函数 : <http://blog.csdn.net/linyt/article/details/2243605>
+* TCP连接中的TIME_WAIT状态: <http://blog.csdn.net/sunnydogzhou/article/details/6572071>
+* see also: 《TCP-IP详解卷1：协议》第十八章
+* TCP可靠传输及流量控制系列六：TCP连接中的TIME_WAIT状态: <http://zenhumany.blog.163.com/blog/static/1718066332010827104655541/>
+* C++项目中的extern "C" {}: <http://www.cnblogs.com/skynet/archive/2010/07/10/1774964.html>
+* 由函数clock想到的: <http://blog.csdn.net/jiangxinnju/article/details/25411743>
+* 理解 pkg-config 工具: <http://www.chenjunlu.com/2011/03/understanding-pkg-config-tool/>
+* C/C++中的abort、atexit、exit和_Exit: <http://blog.csdn.net/jiangxinnju/article/details/38155973>
+* setjmp()/longjmp()的使用方法和场合: <http://www.cnblogs.com/lowhere/archive/2008/08/22/1274309.html>
+* C++ 工程实践(7)：iostream 的用途与局限: <http://blog.csdn.net/solstice/article/details/6612179>
+* 指针的大小: <http://shansun123.iteye.com/blog/398601>
+* C/C++指针原理: <http://blog.csdn.net/column/details/c-pointer.html>
+* C++ STL轻松导学: <http://morningspace.51.net/resource/stlintro/stlintro.html?s=85fee499fe8534afc1f76ceceb0d41ff>
+* undefined reference问题总结: <http://ticktick.blog.51cto.com/823160/431329/>
+* Enabling string conversion functions in MinGW: <http://tehsausage.com/mingw-to-string>
+* C++ Rocks!: <http://cpprocks.com/>
+* 减少C++代码编译时间的方法: <http://www.cnblogs.com/misserwell/p/4343927.html>
+* C++编译错误cannot have cv-qualifier: <https://www.cnblogs.com/jiangxinnju/p/5516904.html>
+* 在 console mode 中使用 C/C++ 编译器: <https://blog.csdn.net/dlyhlq/article/details/2104217>
+* 基于对象和面向对象的区别: <http://www.cnblogs.com/jiangxinnju/p/5516880.html>
+* const 不再迷茫: <https://www.cnblogs.com/jiangxinnju/p/5516881.html>
+* C语言中随机数相关问题: <https://www.cnblogs.com/jiangxinnju/p/5516905.html>
+* C/C++大数库简介: <https://www.cnblogs.com/jiangxinnju/p/5516911.html>
+* C++资源之不完全导引: C++资源之不完全导引.docx
