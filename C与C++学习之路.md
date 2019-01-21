@@ -134,7 +134,8 @@
 
 * <http://www.gtk.org/>
 
-* Glade User Interface Designer Reference Manual: <https://developer.gnome.org/gladeui/unstable/>
+* GTK+ 2.0 Tutorial: <https://developer.gnome.org/gtk-tutorial/stable/>
+* GTK+ 2.0 教程: <http://www.huzheng.org/ebook/gtk2-tut/book1.html>
 
 * GLib Reference Manual: <https://developer.gnome.org/glib/stable/>
 * Part II. GTK+ Widgets and Objects: <https://developer.gnome.org/gtk3/stable/gtkobjects.html>
@@ -145,9 +146,7 @@
 * Cairo: <http://www.cairographics.org/>
 * GTK-Doc: <http://www.gtk.org/gtk-doc/>
 * <http://www.gtkforums.com/>
-* Glade: <https://glade.gnome.org/>
 
-* 用Glade和libGlade设计Gtk＋图形界面: <http://blog.sina.com.cn/s/blog_606c49090100fa30.html>
 * 《GTK+》编程基础: <http://guoyinghui2012.blog.163.com/blog/static/20871720020126294943228/>
 * 在gtk+程序中显示中文说明: <http://blog.chinaunix.net/uid-222028-id-2658485.html>
 * Gtk对于通常的gui程序，大家想做的事就是做一点事件处理(包括各种计算、文件操作等)，然后在界面上显示出来: <http://www.cnblogs.com/cy163/archive/2007/06/16/785341.html>
@@ -156,6 +155,20 @@
 * GLIB 常用数据结构介绍: <http://blog.csdn.net/billxin2012/article/category/5334329>
 * glib库简介: <http://liujian.is-programmer.com/posts/243.html>
 * glib库异步队列和线程池代码分析: <http://blog.csdn.net/ljl1704/article/details/17243429>
+* 在Windows下使用GTK+开发GUI应用程序: <http://blog.csdn.net/blackboyofsnp/article/details/3343045>
+* Ubuntu下GTK的安装、编译和测试: <http://www.cnblogs.com/niocai/archive/2011/07/15/2107472.html>
+* GTK+ 2.0 教程－－信号和回调函数的原理: <http://blog.csdn.net/lastking/article/details/67356>
+* ubuntu 14.04 中找不到 libgtk-x11-2.0.so: <http://www.cnblogs.com/bovenson/p/3684356.html>
+
+* Anjuta(难用): <http://anjuta.org/>
+* Glade(难用): <https://glade.gnome.org/>
+* Glade User Interface Designer Reference Manual: <https://developer.gnome.org/gladeui/unstable/>
+* 用Glade和libGlade设计Gtk＋图形界面: <http://blog.sina.com.cn/s/blog_606c49090100fa30.html>
+
+### GTK中的delete_event和destroy
+
+* delete_event 事件一般由用户或者说用户通过窗口管理器产生，即点击窗口右上角的退出按钮。假如不做任何特殊处理，窗口管理器会自动产生destroy信号；如果我们自 定义了处理delete_event事件的回调函数，是否产生destroy信号就和函数的返回值有关，如果是FALSE就产生，反之则没有效果。
+* destroy，除了可以由delete_event事件产生之外，还可以通过gtk_widget_destroy函数与其它信号发生交换。同样，如果不加指定，默认结果是关闭所指向的窗口但并不结束进程。如果我们希望主窗口和进程一起关闭，必须使用gtk_main_quit()。
 
 ## QT
 

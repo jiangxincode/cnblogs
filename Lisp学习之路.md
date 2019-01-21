@@ -20,6 +20,7 @@
 * SLIME: The Superior Lisp Interaction Mode for Emacs: <https://common-lisp.net/project/slime/>
 * <https://github.com/slime/slime/>
 * Lispbox: <https://common-lisp.net/project/lispbox/>
+* slimv: <https://github.com/kovisoft/slimv>
 * Jabberwocky a Lisp IDE: <https://sourceforge.net/projects/jabberwocky/>
 * Limp: <http://www.vim.org/scripts/script.php?script_id=2219>
 * 使用 Cusp Eclipse 插件开发 Lisp 应用程序：<https://www.ibm.com/developerworks/cn/opensource/os-eclipse-lispcusp/>

@@ -1116,6 +1116,11 @@ The yFiles diagramming software components are extensive class libraries that en
 * Hadoop源码分析——TaskAttemptContext类和TaskAttemptID类: <http://blog.sina.com.cn/s/blog_61ef49250100vcps.html>
 * hadoop代理用户 -超级用户代理其它用户: <http://www.aboutyun.com/thread-16507-1-1.html>
 
+## Ambari
+
+* <http://ambari.apache.org/>
+* Ambari——大数据平台的搭建利器: <https://www.ibm.com/developerworks/cn/opensource/os-cn-bigdata-ambari/>
+
 ## Spark
 
 * <http://spark.apache.org/>

@@ -82,23 +82,19 @@
 * ubuntu下终端路径只显示当前目录: <http://www.cnblogs.com/king-77024128/articles/2270487.html>
 * linux连接投影机: <http://www.2cto.com/os/201211/168387.html>
 * Devhelp: <https://wiki.gnome.org/Apps/Devhelp>
-* 在Windows下使用GTK+开发GUI应用程序: <http://blog.csdn.net/blackboyofsnp/article/details/3343045>
 * Unix 即集成开发环境: <https://github.com/ConanChou/Unix-as-IDE--Chinese->
 * Linux Troubleshooting Cheatsheet: strace, htop, lsof, tcpdump, iftop & sysdig: <https://sysdig.com/blog/linux-troubleshooting-cheatsheet/>
 * java.lang.VerifyError: Expecting a stackmap frame at branch target JDK 1.7: <http://stackoverflow.com/questions/15122890/java-lang-verifyerror-expecting-a-stackmap-frame-at-branch-target-jdk-1-7>
 * Rdseed与SAC的安装: <http://www.cnblogs.com/jiangxinnju/p/6045044.html>
-* Ubuntu下GTK的安装、编译和测试: <http://www.cnblogs.com/niocai/archive/2011/07/15/2107472.html>
 * 将Linux下编译的warning警告信息输出到文件中[整理笔记]: <http://blog.csdn.net/feihongwang/article/details/6975670>
 * linux C中调用shell命令和运行shell脚本: <http://blog.sina.com.cn/s/blog_8043547601013rxf.html>
 * find 删除拷贝用法: <http://6764097.blog.51cto.com/6754097/1795690>
 * linux命令strings: <http://www.cppblog.com/prayer/archive/2009/07/22/90836.html>
 * linux 修改分区卷标 ( Partition Label ) : <http://blog.chinaunix.net/uid-20321915-id-1966428.html>
-* GTK+ 2.0 教程－－信号和回调函数的原理: <http://blog.csdn.net/lastking/article/details/67356>
 * Linux快捷键: <http://www.cnblogs.com/jiangxinnju/p/6045204.html>
 * shell脚本“syntax error:unexpected end of file”解决方案 : <http://renyongjie668.blog.163.com/blog/static/1600531201172803244846/>
 * String contains in Bash: <http://stackoverflow.com/questions/229551/string-contains-in-bash>
 * Could not get lock /var/lib/apt/lists/lock - open: <http://blog.csdn.net/zyxlinux888/article/details/6358615>
-* ubuntu 14.04 中找不到 libgtk-x11-2.0.so: <http://www.cnblogs.com/bovenson/p/3684356.html>
 * tcpdump捕捉样例: <http://www.cnblogs.com/jiangxinnju/p/6012867.html>
 * Slow Server? This is the Flow Chart You're Looking For: <http://blog.scoutapp.com/articles/2014/07/31/slow_server_flow_chart>
 * 设置Linux系统的空闲等待时间TMOUT: <http://zzkai.blog.51cto.com/804611/1352964>
@@ -513,11 +509,6 @@ bash-3.2# ls -l /data1/1230/server-a
 * cpu记录了进程可能运行在其上的cpu；显示虚拟的cpu信息
 * environ记录了进程运行时的环境变量
 * fd目录下是进程打开或使用的文件的符号连接
-
-## GTK中的delete_event和destroy
-
-* delete_event 事件一般由用户或者说用户通过窗口管理器产生，即点击窗口右上角的退出按钮。假如不做任何特殊处理，窗口管理器会自动产生destroy信号；如果我们自 定义了处理delete_event事件的回调函数，是否产生destroy信号就和函数的返回值有关，如果是FALSE就产生，反之则没有效果。
-* destroy，除了可以由delete_event事件产生之外，还可以通过gtk_widget_destroy函数与其它信号发生交换。同样，如果不加指定，默认结果是关闭所指向的窗口但并不结束进程。如果我们希望主窗口和进程一起关闭，必须使用gtk_main_quit()。
 
 ## Linux中C语言如何清空标准输入流
 

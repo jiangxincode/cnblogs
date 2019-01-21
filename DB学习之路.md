@@ -383,6 +383,9 @@ ORACLE_SID 实例ID
 
 ## 数据模型
 
+* 使用PowerDesigner画ER图详细教程: <https://blog.csdn.net/smxjant/article/details/70738960>
+* 使用visio 2010建立sql server数据模型——手动画、利用逆向工程: <https://blog.csdn.net/mazhaojuan/article/details/8257148>
+
 ### PowerDesigner两张表主键如何设成一致的
 
 设置方法：Tools--->Model Options->Model Settings。在Data Item组框中定义数据项的唯一性代码选项(Unique Code)与重用选项（Allow Reuse）。把allow reuse选上，去掉unique code选项。
