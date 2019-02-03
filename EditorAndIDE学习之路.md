@@ -73,7 +73,6 @@
 * Bluefish: <http://bluefish.openoffice.nl/index.html>
 * Understand: <https://scitools.com/>
 * codelite: <http://www.codelite.org/>
-* Anjuta: <http://anjuta.org/>
 * kite: <https://kite.com/>
 * kdevelop：<https://www.kdevelop.org/>
 * xcode: <https://developer.apple.com/xcode/>
