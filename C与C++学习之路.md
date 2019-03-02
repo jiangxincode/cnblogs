@@ -154,6 +154,7 @@
 * GTK编程: <http://jianlee.ylinux.org/Computer/C/gtk%E7%BC%96%E7%A8%8B.html>
 * GTK+ 2.0 教程－－信号和回调函数的原理: <http://blog.csdn.net/lastking/article/details/67356>
 * ubuntu 14.04 中找不到libgtk-x11-2.0.so: <http://www.cnblogs.com/bovenson/p/3684356.html>
+* GTK v1.2 Tutorial: <https://www.gtk.org/tutorial1.2/gtk_tut.html>
 
 * GNOME 开发者中心: <https://developer.gnome.org/>
 * Gnome下载地址: <http://ftp.gnome.org/pub/gnome/>

@@ -167,6 +167,7 @@
 * ListView中getView的原理与解决多轮重复调用的方法: <https://www.cnblogs.com/lirizhi/p/3357771.html>
 * Android控件--ProgressBar: <https://blog.csdn.net/hardworkingant/article/details/71910731>
 * Android逆向之旅---解析编译之后的AndroidManifest文件格式: <https://blog.csdn.net/jiangwei0910410003/article/details/50568487>
+* .nomedia: 《解析 Google Android SDK-智能手机开发范例手册》5.3
 
 * Fragments：Pro Android 5[精通Android 3] Chapter 8
 * Android Fragment的用法（一）: <https://www.cnblogs.com/guop/p/5072572.html>

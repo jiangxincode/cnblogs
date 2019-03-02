@@ -41,6 +41,10 @@
 * jarFinder: <http://www.jarfinder.com/>
 * java examples: <http://www.javased.com/>
 
+* SEI CERT Oracle Coding Standard for Java: <https://wiki.sei.cmu.edu/confluence/display/java/SEI+CERT+Oracle+Coding+Standard+for+Java>
+* Secure Coding Guidelines for Java SE: <https://www.oracle.com/technetwork/java/seccodeguide-139067.html>
+* CWE/SANS Top 25 Most Dangerous Software Errors: <http://cwe.mitre.org/top25/index.html>
+
 * Introduction to Java Programming, Eighth Edition: <http://www.cs.armstrong.edu/liang/intro8e/>
 * Java杂项: <http://www.cnblogs.com/jiangxinnju/p/6582135.html>
 * Java 理论与实践: <http://www.ibm.com/developerworks/cn/java/j-jtp/>
@@ -691,6 +695,7 @@ mvn deploy:deploy-file -DgroupId="edu.jiangxin" -DartifactId=”gcu” -Dversion
 * Sebug漏洞库：<http://old.sebug.net/>
 * The Open Web Application Security Project：<https://www.owasp.org>
 * ESAPI(OWASP Enterprise Security API): <https://www.owasp.org/index.php/Category:OWASP_Enterprise_Security_API>
+* OWASP Guide Project: <https://www.owasp.org/index.php/OWASP_Guide_Project>
 * WooYun知识库：<http://drops.wooyun.org/>
 * HP Security Research：<http://hpsr1.libsyn.com/>
 * CVE: <http://cve.mitre.org/>
