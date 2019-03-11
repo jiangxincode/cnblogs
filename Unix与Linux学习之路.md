@@ -116,7 +116,7 @@
 * linux关于S权限和T权限的介绍: <http://blog.csdn.net/qq_35116353/article/details/56049592>
 * Linux使用技巧12--Ubuntu代理: <http://blog.csdn.net/lincyang/article/details/51306367>
 * Bash的陷阱: <https://charlee.li/bash-pitfalls.html>
-* 如何在ubuntu下创建eclipse的桌面快捷方式: <https://blog.csdn.net/chenyuangege/article/details/45771001>
+* Linux下为刚安装好的Eclipse在桌面建一个启动图标: <https://www.cnblogs.com/xzdblogs/p/6422489.html>
 
 * Linux下好玩的命令: <http://www.cnblogs.com/joeyupdo/articles/2768113.html>
 * 动画演示一些无用但有趣的Linux命令: <http://www.vaikan.com/10-funny-liunx-command/>

@@ -168,6 +168,9 @@
 * Android控件--ProgressBar: <https://blog.csdn.net/hardworkingant/article/details/71910731>
 * Android逆向之旅---解析编译之后的AndroidManifest文件格式: <https://blog.csdn.net/jiangwei0910410003/article/details/50568487>
 * .nomedia: 《解析 Google Android SDK-智能手机开发范例手册》5.3
+* 存储访问框架android Storage Access Framework(SAF): <https://blog.csdn.net/caryee89/article/details/44155375>
+* Android 7.0 行为变更 通过FileProvider在应用间共享文件吧: <https://blog.csdn.net/lmj623565791/article/details/72859156>
+* FileProvider文件分享: <https://blog.csdn.net/lin962792501/article/details/52164695>
 
 * Fragments：Pro Android 5[精通Android 3] Chapter 8
 * Android Fragment的用法（一）: <https://www.cnblogs.com/guop/p/5072572.html>
