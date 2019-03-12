@@ -168,6 +168,12 @@
 * Android控件--ProgressBar: <https://blog.csdn.net/hardworkingant/article/details/71910731>
 * Android逆向之旅---解析编译之后的AndroidManifest文件格式: <https://blog.csdn.net/jiangwei0910410003/article/details/50568487>
 * .nomedia: 《解析 Google Android SDK-智能手机开发范例手册》5.3
+* android程序自动化生成apk的过程: <https://blog.csdn.net/f2006116/article/details/52254519>
+* Android DEX安全攻防战: <https://blog.csdn.net/androidsecurity/article/details/9428861>
+* Android Dex文件格式(一): <https://www.cnblogs.com/dacainiao/p/6035274.html>
+* 配置方法数超过 64K 的应用: <http://developer.android.com/intl/zh-cn/tools/building/multidex.html#about>
+
+* android存储访问框架Storage Access Framework：<http://www.jcodecraeer.com/a/anzhuokaifa/androidkaifa/2014/1026/1845.html>
 * 存储访问框架android Storage Access Framework(SAF): <https://blog.csdn.net/caryee89/article/details/44155375>
 * Android 7.0 行为变更 通过FileProvider在应用间共享文件吧: <https://blog.csdn.net/lmj623565791/article/details/72859156>
 * FileProvider文件分享: <https://blog.csdn.net/lin962792501/article/details/52164695>
@@ -190,13 +196,6 @@
 
 * Android Studio优化技巧：<http://blog.oneapm.com/apm-tech/257.html>
 * Android Studio相关目录解析: <http://www.cnblogs.com/jiangxinnju/p/8323569.html>
-
-* android程序自动化生成apk的过程: <https://blog.csdn.net/f2006116/article/details/52254519>
-* Android DEX安全攻防战: <https://blog.csdn.net/androidsecurity/article/details/9428861>
-* Android Dex文件格式(一): <https://www.cnblogs.com/dacainiao/p/6035274.html>
-* 配置方法数超过 64K 的应用: <http://developer.android.com/intl/zh-cn/tools/building/multidex.html#about>
-
-* android存储访问框架Storage Access Framework：<http://www.jcodecraeer.com/a/anzhuokaifa/androidkaifa/2014/1026/1845.html>
 
 * MIUI ROM适配之旅第一天——认识Android手机: <http://www.miui.com/thread-402302-1-1.html>
 * H60-L01 EMUI3.0 ROOT 傻瓜教程: <http://cn.ui.vmall.com/thread-1267937-1-1.html>
