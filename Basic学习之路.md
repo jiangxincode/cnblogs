@@ -15,7 +15,7 @@
 * IrrlichtWrapper Library: <http://www.frankdodd.screaming.net/IrrlichtWrapper/IrrlichtWrapperPortal.htm>
 * Free BASIC 试用: <http://blog.sina.com.cn/s/blog_54dc74aa010002z0.html>
 
-## QuickBASIC QBasic
+## QuickBASIC/QBasic
 
 * QuickBASIC: <https://en.wikipedia.org/wiki/QuickBASIC>
 * QBasic: <https://en.wikipedia.org/wiki/QBasic>

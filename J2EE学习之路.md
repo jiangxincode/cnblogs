@@ -242,6 +242,7 @@
 * 'Must Override a Superclass Method' Errors after importing a project into Eclipse: <http://stackoverflow.com/questions/1678122/must-override-a-superclass-method-errors-after-importing-a-project-into-eclips>
 * SFTP Plug-in for Eclipse: <http://www.jcraft.com/eclipse-sftp/>
 * Eclipse 远程开发：<http://lovespss.blog.51cto.com/1907593/536614>
+* How to set the Eclipse date variable format? <https://stackoverflow.com/questions/1131712/how-to-set-the-eclipse-date-variable-format>
 
 ## Eclipse根据java代码生成UML图
 
@@ -514,6 +515,7 @@ Eclipse中`Update Project`，选择`Force Update of Snapshots/Releases`
 * <https://maven-repository.com/>    （搜索）
 * <http://maven.oschina.net/home.html>    （搜索）
 * <https://bintray.com/bintray/jcenter>    （搜索）
+* <https://maven.aliyun.com/mvn/search>    （搜索）
 * <http://www.ebi.ac.uk/intact/maven/nexus/content/repositories/>
 * <http://repo1.maven.org/maven2/>
 * <http://repository.jboss.com/maven2/>
@@ -669,15 +671,6 @@ mvn deploy:deploy-file -DgroupId="edu.jiangxin" -DartifactId=”gcu” -Dversion
     Structure101 is an agile architecture development environment (ADE) that lets the software development team organize a codebase.
 
 * <http://structure101.com/>
-
-## inFusion
-
-    Whether you own, are responsible for, or are acquiring software projects in C/C++ or Java, inFusion puts you in full control of architecture and design quality. inFusion makes quality assurance of multi-million LOC systems not merely practical, but effective, successfully handling both object oriented and procedural style code.
-
-* <http://www.intooitus.com/products/infusion>(deprecated)
-* InFusion错误类型分析：<http://www.cnblogs.com/Leo_wl/p/3493231.html>
-* 软件设计度量工具inFusion(一)：inFusion的基本概念: <http://blog.csdn.net/aitangyong/article/details/50206419>
-* 软件设计度量工具inFusion(二)：看懂inFusion度量结果: <http://blog.csdn.net/aitangyong/article/details/50250967>
 
 ## EJ-Technologies一家（收费）
 
@@ -1011,6 +1004,10 @@ The yFiles diagramming software components are extensive class libraries that en
 ## Apache POI - the Java API for Microsoft Documents
 
 * <http://poi.apache.org/>
+
+## Apache PDFBox - A Java PDF Library
+
+* <https://pdfbox.apache.org/index.html>
 
 ## iText(AGPL)
 

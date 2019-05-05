@@ -23,6 +23,8 @@
 * <http://www.androiddevtools.cn/>
 * Android Support Overview: <http://www.jetbrains.com/help/idea/android-support-overview.html>
 
+* I18n Translation Search: <https://i18ns.com/>
+
 * 安卓巴士: <http://www.apkbus.com/>
 * eoeandroid: <http://www.eoeandroid.com/forum.php>
 * <http://www.anddev.org/>
@@ -68,18 +70,18 @@
 
 ## Android Studio插件
 
+* 插件搜素: <https://plugins.jetbrains.com>
+* Android Localizationer: <https://github.com/westlinkin/AndroidLocalizationer>
 * ADB Idea 方便卸载apk,删除缓存: <http://plugins.jetbrains.com/plugin/7380-adb-idea>
 * Android ButterKnife Zelezny ButterKnife对应的插件: <http://plugins.jetbrains.com/plugin/7369-android-butterknife-zelezny>
 * Android Code Generator 生成ViewHolder,生成initView方法: <https://plugins.jetbrains.com/plugin/7595-android-code-generator>
 * Codota 搜索代码块: <https://plugins.jetbrains.com/plugin/7638-codota>
 * GsonFormat jsonString自动转bean插件: <https://plugins.jetbrains.com/plugin/7654-gsonformat>
 * SelectorChapek for Android 帮助生成selector: <https://plugins.jetbrains.com/plugin/7298-selectorchapek-for-android>
-* Sexy Editor 代码区域加背景: <https://plugins.jetbrains.com/plugin/1833-sexy-editor>
 * Android Drawable Importer 同一张图片生成多个自动生成多分辨率图片: <https://plugins.jetbrains.com/plugin/7658-android-drawable-importer>
 * Android Layout ID Converter xml到控件的转换: <https://plugins.jetbrains.com/plugin/7373-android-layout-id-converter>
 * Android Postfix Completion toast和log加强: <https://plugins.jetbrains.com/plugin/7775-android-postfix-completion>
 * Android Studio Prettify 帮助findViewById: <https://plugins.jetbrains.com/plugin/7405-android-studio-prettify>
-* .ignore git忽略文件高亮效果,文件夹颜色提示: <https://plugins.jetbrains.com/plugin/7495--ignore>
 * Android Parcelable code generator 生成Parcelable代码: <https://plugins.jetbrains.com/plugin/7332-android-parcelable-code-generator>
 * Gradle Dependencies Helper gradle帮助插件: <https://plugins.jetbrains.com/plugin/7299-gradle-dependencies-helper>
 * Android Toolbox Plugin 生成ViewHolder,意义不大: <https://plugins.jetbrains.com/plugin/7200-android-toolbox-plugin>
@@ -158,7 +160,7 @@
 * Android之分屏模式解析（下）: <https://blog.csdn.net/itluochen/article/details/52127222>
 * Android中app进程ABI确定过程: <https://blog.csdn.net/weixin_40107510/article/details/78138874>
 * Context, What Context? <https://possiblemobile.com/2013/06/context/>
-* Getting the null pointer exception in the getActionBar method: <https://stackoverflow.com/questions/27959107/getting-the-null-pointer-exception-in-the-getactionbar-method/27960390>
+* Android “getActionBar()返回NullPointerException”问题分析: <https://www.jianshu.com/p/feb4cc119659>
 * INSTALL_FAILED_TEST_ONLY: <https://blog.csdn.net/zou_pl/article/details/78679394>
 * setEnabled() vs setClickable(), what is the difference? <https://stackoverflow.com/questions/15615823/setenabled-vs-setclickable-what-is-the-difference>
 * Android兼容性测试CTS Verifier-环境搭建、测试执行、结果分析: <https://www.cnblogs.com/wi100sh/p/4613502.html>
@@ -172,6 +174,8 @@
 * Android DEX安全攻防战: <https://blog.csdn.net/androidsecurity/article/details/9428861>
 * Android Dex文件格式(一): <https://www.cnblogs.com/dacainiao/p/6035274.html>
 * 配置方法数超过 64K 的应用: <http://developer.android.com/intl/zh-cn/tools/building/multidex.html#about>
+* 目前最全面的Android安全工具清单: <https://www.ctocio.com/top%E6%B8%85%E5%8D%95/23912.html>
+* menu中的item标签的showAsAction属性可以取哪些值: <https://www.jianshu.com/p/4106e1414d64>
 
 * android存储访问框架Storage Access Framework：<http://www.jcodecraeer.com/a/anzhuokaifa/androidkaifa/2014/1026/1845.html>
 * 存储访问框架android Storage Access Framework(SAF): <https://blog.csdn.net/caryee89/article/details/44155375>
@@ -199,6 +203,7 @@
 
 * MIUI ROM适配之旅第一天——认识Android手机: <http://www.miui.com/thread-402302-1-1.html>
 * H60-L01 EMUI3.0 ROOT 傻瓜教程: <http://cn.ui.vmall.com/thread-1267937-1-1.html>
+* Android 获取手机中微信聊天记录: <https://blog.csdn.net/baidu_34928905/article/details/78008287>
 
 ## Jack
 
