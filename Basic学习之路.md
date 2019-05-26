@@ -27,11 +27,13 @@
 
 * <http://www.qb64.net/>
 
-## Other
-
-* BASIC-256: <http://www.basic256.org/index_en>
-* PowerBASIC: <http://www.powerbasic.com/>
+## Visual Basic/Visual Basic .NET
 
 * Developing Automated Tests Using NUnit and VB.NET: <http://www.byte-vision.com/NUnitAndVBArticle.aspx>
 * Differences between VB.NET and VB: <http://stackoverflow.com/questions/23603569/differences-between-vb-net-and-vb>
 * Comparison of Visual Basic and Visual Basic .NET: <https://en.wikipedia.org/wiki/Comparison_of_Visual_Basic_and_Visual_Basic_.NET>
+
+## Other
+
+* BASIC-256: <http://www.basic256.org/index_en>
+* PowerBASIC: <http://www.powerbasic.com/>

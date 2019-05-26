@@ -35,6 +35,8 @@
 * Lisp Programming with Cusp: <http://www.sergeykolos.com/cusp/intro/>
 * MELPA: <http://melpa.org/>
 * CLOCC - Common Lisp Open Code Collection: <https://sourceforge.net/projects/clocc/>
+* Common Lisp配置：SBCL: <http://blog.csdn.net/sw2wolf/article/details/7192721>
+
 
 * MIT/GNU Scheme: <http://groups.csail.mit.edu/mac/projects/scheme/>
 * Lisp之根源: <http://daiyuwen.freeshell.org/gb/rol/roots_of_lisp.html>
