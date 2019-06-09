@@ -119,6 +119,11 @@
 
 * <https://cmake.org/>
 
+## GDB
+
+* GDB: The GNU Project Debugger: <http://www.gnu.org/software/gdb/>
+* LINUX下GDB调试: <http://blog.csdn.net/sco_field/article/details/4310987>
+
 ## 包管理器
 
 * Does C++ need a universal package manager? <http://pfultz2.com/blog/2017/10/27/universal-package-manager/>

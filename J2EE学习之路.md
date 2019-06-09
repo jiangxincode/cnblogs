@@ -293,6 +293,7 @@
 * WindowBuilder(SWT Designer): <http://www.eclipse.org/windowbuilder/>
 * Jigloo SWT/Swing GUI Builder: <http://marketplace.eclipse.org/content/jigloo-swtswing-gui-builder>
 * SWT、Swing 或 AWT：哪个更适合您？ <https://www.ibm.com/developerworks/cn/opensource/os-swingswt/>
+* OpenSwing: <http://oswing.sourceforge.net/setup.html>
 
 ## Hudson
 

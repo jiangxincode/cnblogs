@@ -1,14 +1,18 @@
 # Lisp学习之路
 
 * Common Lisp: <https://en.wikipedia.org/wiki/Common_Lisp>
+* Common Lisp wiki: <http://www.cliki.net/>
+* <https://common-lisp.net/index.html>
+
 * Clozure Common Lisp: <http://ccl.clozure.com/>
 * CLISP - an ANSI Common Lisp: <https://sourceforge.net/projects/clisp/>
 * Allegro CL: <http://franz.com/products/allegrocl/>
 * CMUCL: <http://www.cons.org/cmucl/>
 * Steel Bank Common Lisp: <https://sourceforge.net/projects/sbcl/>
+
+* LispWorks: <http://www.lispworks.com/>
 * Common Lisp HyperSpec: <http://www.lispworks.com/documentation/HyperSpec/Front/index.htm>
-* Common Lisp wiki: <http://www.cliki.net/>
-* <https://common-lisp.net/index.html>
+
 * L-99: Ninety-Nine Lisp Problems: <http://www.ic.unicamp.br/~meidanis/courses/mc336/2006s2/funcional/L-99_Ninety-Nine_Lisp_Problems.html>
 * Quicklisp: <https://www.quicklisp.org/>
 * AspectL: <https://common-lisp.net/project/aspectl/>
@@ -23,16 +27,18 @@
 * slimv: <https://github.com/kovisoft/slimv>
 * Jabberwocky a Lisp IDE: <https://sourceforge.net/projects/jabberwocky/>
 * Limp: <http://www.vim.org/scripts/script.php?script_id=2219>
+
 * 使用 Cusp Eclipse 插件开发 Lisp 应用程序：<https://www.ibm.com/developerworks/cn/opensource/os-eclipse-lispcusp/>
+* Lisp Programming with Cusp: <http://www.sergeykolos.com/cusp/intro/>
+
 * Dandelion: <http://sourceforge.net/projects/dandelion-ecl/>
 * Dandelion - Eclipse Lisp Plugin：<http://blog.csdn.net/yang_7_46/article/details/26445133>
-* LispWorks: <http://www.lispworks.com/>
+
 * Racket: <http://racket-lang.org/>
 * MIT/GNU Scheme: <http://www.gnu.org/software/mit-scheme/>
 * The Common Foreign Function Interface(cffi): <https://common-lisp.net/project/cffi/>
 * milkypostman/melpa: <https://github.com/milkypostman/melpa>
 * Build Your Own Lisp: <http://www.buildyourownlisp.com/contents>
-* Lisp Programming with Cusp: <http://www.sergeykolos.com/cusp/intro/>
 * MELPA: <http://melpa.org/>
 * CLOCC - Common Lisp Open Code Collection: <https://sourceforge.net/projects/clocc/>
 * Common Lisp配置：SBCL: <http://blog.csdn.net/sw2wolf/article/details/7192721>

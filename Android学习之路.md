@@ -49,6 +49,8 @@
 * hugo: <https://github.com/JakeWharton/hugo>
 * 极光推送: <http://docs.jiguang.cn/jpush/resources/#android-sdk>
 
+* 移动服务SDK：<http://www.mob.com/download>
+
 ## Tools
 
 * busybox: <https://busybox.net/>
@@ -177,10 +179,20 @@
 * 目前最全面的Android安全工具清单: <https://www.ctocio.com/top%E6%B8%85%E5%8D%95/23912.html>
 * menu中的item标签的showAsAction属性可以取哪些值: <https://www.jianshu.com/p/4106e1414d64>
 
+* Contacts Provider: <http://www.android-doc.com/guide/topics/providers/contacts-provider.html>
+
 * android存储访问框架Storage Access Framework：<http://www.jcodecraeer.com/a/anzhuokaifa/androidkaifa/2014/1026/1845.html>
 * 存储访问框架android Storage Access Framework(SAF): <https://blog.csdn.net/caryee89/article/details/44155375>
 * Android 7.0 行为变更 通过FileProvider在应用间共享文件吧: <https://blog.csdn.net/lmj623565791/article/details/72859156>
 * FileProvider文件分享: <https://blog.csdn.net/lin962792501/article/details/52164695>
+
+* Android：MediaSession框架介绍: <https://www.oschina.net/question/2561862_2150611>
+
+* Android中的Service：默默的奉献者 (1): <https://blog.csdn.net/luoyanglizi/article/details/51586437>
+* Android中的Service：Binder，Messenger，AIDL（2）:<https://blog.csdn.net/luoyanglizi/article/details/51594016>
+* Android：学习AIDL，这一篇文章就够了(上): <https://blog.csdn.net/luoyanglizi/article/details/51980630>
+* Android：学习AIDL，这一篇文章就够了(下): <https://blog.csdn.net/luoyanglizi/article/details/52029091>
+* Service的onStartCommand方法的返回值和参数详解：<https://blog.csdn.net/fenggering/article/details/82535154>
 
 * Fragments：Pro Android 5[精通Android 3] Chapter 8
 * Android Fragment的用法（一）: <https://www.cnblogs.com/guop/p/5072572.html>
@@ -200,6 +212,8 @@
 
 * Android Studio优化技巧：<http://blog.oneapm.com/apm-tech/257.html>
 * Android Studio相关目录解析: <http://www.cnblogs.com/jiangxinnju/p/8323569.html>
+
+* Android8.0及以上，获取模拟器root权限: <https://blog.csdn.net/weixin_42814931/article/details/81253678>
 
 * MIUI ROM适配之旅第一天——认识Android手机: <http://www.miui.com/thread-402302-1-1.html>
 * H60-L01 EMUI3.0 ROOT 傻瓜教程: <http://cn.ui.vmall.com/thread-1267937-1-1.html>

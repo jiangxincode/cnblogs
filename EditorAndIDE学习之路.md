@@ -50,6 +50,10 @@
 
 * <http://www.sourceinsight.com/>
 
+## Understand
+
+* Understand: <https://scitools.com/>
+
 ## CodeBlocks
 
 * <http://www.codeblocks.org/>
@@ -71,7 +75,6 @@
 * Scintilla: <http://www.scintilla.org/>
 * xmlspy: <https://www.altova.com/xmlspy.html>
 * Bluefish: <http://bluefish.openoffice.nl/index.html>
-* Understand: <https://scitools.com/>
 * codelite: <http://www.codelite.org/>
 * kite: <https://kite.com/>
 * kdevelop：<https://www.kdevelop.org/>

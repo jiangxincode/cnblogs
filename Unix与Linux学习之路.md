@@ -41,6 +41,7 @@
 
 ## Softwares/Tools/Knowledge
 
+* explainshell: <https://explainshell.com/>
 * Install Microsoft Windows Fonts in Ubuntu: <https://www.ostechnix.com/install-microsoft-windows-fonts-ubuntu-16-04/>
 * Linux Performance: <http://www.brendangregg.com/linuxperf.html>
 * File system: <https://en.wikipedia.org/wiki/File_system>
@@ -73,7 +74,6 @@
 * apt-get remove, apt-get autoremove和aptitude remove的区别: <http://blog.csdn.net/jiangxinnju/article/details/38341283>
 * What is the difference between dpkg and aptitude/apt-get? <https://askubuntu.com/questions/309113/what-is-the-difference-between-dpkg-and-aptitude-apt-get>
 * Linux乱码问题解决方案: <http://www.cnblogs.com/jiangxinnju/p/6014111.html>
-* LINUX下GDB调试: <http://blog.csdn.net/sco_field/article/details/4310987>
 * Linux 软件看门狗 watchdog: <http://blog.csdn.net/liigo/article/details/9227205>
 * C语言调试手段:锁定错误的实现方法: <http://blog.csdn.net/huangblog/article/details/8281165>
 * Linux终端字符颜色设置: <http://blog.csdn.net/fuyajun01/article/details/7931934>
