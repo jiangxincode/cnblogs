@@ -42,6 +42,8 @@
 ## Softwares/Tools/Knowledge
 
 * explainshell: <https://explainshell.com/>
+* tldr: <https://github.com/tldr-pages/tldr>
+
 * Install Microsoft Windows Fonts in Ubuntu: <https://www.ostechnix.com/install-microsoft-windows-fonts-ubuntu-16-04/>
 * Linux Performance: <http://www.brendangregg.com/linuxperf.html>
 * File system: <https://en.wikipedia.org/wiki/File_system>
@@ -117,6 +119,9 @@
 * Linux使用技巧12--Ubuntu代理: <http://blog.csdn.net/lincyang/article/details/51306367>
 * Bash的陷阱: <https://charlee.li/bash-pitfalls.html>
 * Linux下为刚安装好的Eclipse在桌面建一个启动图标: <https://www.cnblogs.com/xzdblogs/p/6422489.html>
+* Linux命令之file - 检测并显示文件类型: <https://codingstandards.iteye.com/blog/804463>
+* Linux Centos 删除除某(多)个文件之外的所有文件: <https://blog.csdn.net/weixin_33994429/article/details/86363583>
+* linux如何删除zip包中某个文件夹及里面的内容: <https://zhidao.baidu.com/question/2074079962247221788.html>
 
 * Linux下好玩的命令: <http://www.cnblogs.com/joeyupdo/articles/2768113.html>
 * 动画演示一些无用但有趣的Linux命令: <http://www.vaikan.com/10-funny-liunx-command/>
@@ -141,14 +146,12 @@
 * Okular: <https://okular.kde.org/>
 * AppImage(Package desktop applications as AppImages that run on common Linux-based operating systems): <http://appimage.org/>
 * shunit2: <https://github.com/zandev/shunit2>
-* ack: <http://beyondgrep.com/>
 * iPerf / iPerf3: <https://iperf.fr/>
 * Glances: <https://github.com/nicolargo/glances/>
 * Atop: <http://www.atoptool.nl/index.php>
 * htop: <https://sourceforge.net/projects/htop/>
 * iftop: <http://www.ex-parrot.com/~pdw/iftop/>
 * Iotop: <http://guichaz.free.fr/iotop/>
-* tldr: <https://github.com/tldr-pages/tldr>
 * 串口传输文件 lrzsz: <http://www.cnblogs.com/lidabo/p/4780866.html>
 * httpry(HTTP logging and information retrieval tool ): <https://github.com/jbittel/httpry>
 * iproute2: <https://en.wikipedia.org/wiki/Iproute2>
@@ -160,6 +163,12 @@
 * ttyrec 和 ttyplay(记录、保存和播放终端会话软件): <http://0xcc.net/ttyrec/>
 * curl: <https://curl.haxx.se/>
 * Poptop - The PPTP Server for Linux: <http://poptop.sourceforge.net/dox/>
+
+* GNU Grep: <http://www.gnu.org/software/grep/>
+* ack: <http://beyondgrep.com/>
+
+* gawk: <http://www.gnu.org/software/gawk/>
+* GNU sed: <http://www.gnu.org/software/sed/>
 
 ## Linux常用命令
 

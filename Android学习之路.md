@@ -2,13 +2,25 @@
 
 * <https://developer.android.com/develop/index.html>
 * Intent: <https://developer.android.com/reference/android/content/Intent.html>
-* Configure Android Studio: <https://developer.android.com/studio/intro/studio-config.html>
+
+* Android开发者预览版: <https://developer.android.com/preview/>
+
+* Android Jetpack: <https://developer.android.com/jetpack>
+* AndroidX 概览: <https://developer.android.com/jetpack/androidx>
+
 * Managing the System UI: <https://developer.android.com/training/system-ui/index.html>
+* Create and Manage Notification Channels: <https://developer.android.com/training/notify-user/channels>
+
+* App Shortcuts: <https://developer.android.com/guide/topics/ui/shortcuts>
 * SDK版本关系: <https://developer.android.com/guide/topics/manifest/uses-sdk-element.html>
-* Android P 开发者预览版: <https://developer.android.com/preview/>
+* 支持库: <https://developer.android.com/topic/libraries/support-library/index>
+* uses-library: <https://developer.android.com/guide/topics/manifest/uses-library-element.html>
+
+* Configure Android Studio: <https://developer.android.com/studio/intro/studio-config.html>
 * 设置应用 ID: <https://developer.android.com/studio/build/application-id.html>
 * (新)配置构建: <https://developer.android.com/studio/build/index.html>
-* App Shortcuts: <https://developer.android.com/guide/topics/ui/shortcuts>
+* 创建和管理虚拟设备: <https://developer.android.com/studio/run/managing-avds>
+* 对您的应用进行版本控制: <https://developer.android.com/studio/publish/versioning.html>
 * dumpsys: <https://developer.android.com/studio/command-line/dumpsys>
 
 * AOSP: <https://source.android.com/>
@@ -98,7 +110,6 @@
 * AsyncTaskLoader vs AsyncTask: <https://stackoverflow.com/questions/7120813/asynctaskloader-vs-asynctask>
 
 * Android 编程与兼容性问题: Android Programming The Big Nerd Ranch Guide 3rd[Android编程权威指南（第3版） 6.2 7.8 7.9
-* Android O Preview 之 通知渠道（Notification Channels）: <https://www.jianshu.com/p/92afa56aee05>
 * Android Studio移动鼠标显示悬浮提示的设置方法: <http://www.cnblogs.com/jiangxinnju/p/8227442.html>
 * Android真机安装sqlite3的方法: <http://www.cnblogs.com/jiangxinnju/p/8227625.html>
 * 使用 Intel HAXM 为 Android 模拟器加速，媲美真机: <http://www.cnblogs.com/beginor/archive/2013/01/13/2858228.html>
@@ -178,6 +189,7 @@
 * 配置方法数超过 64K 的应用: <http://developer.android.com/intl/zh-cn/tools/building/multidex.html#about>
 * 目前最全面的Android安全工具清单: <https://www.ctocio.com/top%E6%B8%85%E5%8D%95/23912.html>
 * menu中的item标签的showAsAction属性可以取哪些值: <https://www.jianshu.com/p/4106e1414d64>
+* Android soong build系统介绍: <https://www.jianshu.com/p/80013a768a45>
 
 * Contacts Provider: <http://www.android-doc.com/guide/topics/providers/contacts-provider.html>
 
