@@ -165,6 +165,7 @@
 * UTF-8 encoding table and Unicode characters: <http://www.utf8-chartable.de/>
 * Java之美[从菜鸟到高手演变]之设计模式：<https://blog.csdn.net/zhangerqing/article/details/8245560>
 * [System.currentTimeMillis]/[Calendar.getInstance().getTimeInMillis()]/[new Date().getTime()]: <https://www.cnblogs.com/jiangxinnju/p/9425411.html>
+* javac的调试选项-g的意义: <https://shenzhang722.iteye.com/blog/1824921>
 
 * List of HTTP status codes: <https://en.wikipedia.org/wiki/List_of_HTTP_status_codes>
 * html的meta总结，html标签中meta属性使用介绍: <http://www.haorooms.com/post/html_meta_ds>
@@ -691,6 +692,7 @@ mvn deploy:deploy-file -DgroupId="edu.jiangxin" -DartifactId=”gcu” -Dversion
 * The Open Web Application Security Project：<https://www.owasp.org>
 * ESAPI(OWASP Enterprise Security API): <https://www.owasp.org/index.php/Category:OWASP_Enterprise_Security_API>
 * OWASP Guide Project: <https://www.owasp.org/index.php/OWASP_Guide_Project>
+* WebScarab: <https://www.owasp.org/index.php/Category:OWASP_WebScarab_Project>
 * WooYun知识库：<http://drops.wooyun.org/>
 * HP Security Research：<http://hpsr1.libsyn.com/>
 * CVE: <http://cve.mitre.org/>
@@ -698,10 +700,6 @@ mvn deploy:deploy-file -DgroupId="edu.jiangxin" -DartifactId=”gcu” -Dversion
 * SCAP安全内容自动化协议中文社区: <http://www.scap.org.cn/index.html>
 * acunetix: <http://www.acunetix.com/>
 * xfocus: <http://www.xfocus.net/index.html>
-
-## coverity（收费）
-
-* <http://www.coverity.com/>
 
 ## klocwork（收费）
 

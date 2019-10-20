@@ -33,6 +33,7 @@
 * Borland Graphics Interface (BGI) for Windows: <http://www.cs.colorado.edu/~main/cs1300/doc/bgi/>
 * libcstl: <http://libcstl.org/>
 * SWIG: <http://www.swig.org/>
+* Win32 BGI implementation: <https://sourceforge.net/projects/openbgi/>
 * EasyX Library for C++: <http://www.easyx.cn/>
 * EGE（Easy Graphics Engine）: <http://xege.org/>
 * CLucene - a C++ search engine: <https://sourceforge.net/projects/clucene/>
@@ -99,15 +100,27 @@
 * 基于X的GNOME、GTK、GDK、XLib、GLib等之间的关系: <http://socol.iteye.com/blog/579718>
 * Comparison of Diagnostics between GCC and Clang: <https://gcc.gnu.org/wiki/ClangDiagnosticsComparison>
 
-## Windows/Linux简不单理还乱
+## Windows/Linux剪不断理还乱
 
+* MinGW-w64(推荐): <http://mingw-w64.org/>
+* MinGW-w64下载地址:<https://sourceforge.net/projects/mingw-w64/files/mingw-w64/mingw-w64-release/>
 * MinGW: <http://www.mingw.org/>
-* MinGW-w64: <http://mingw-w64.org/>
 * TDM-GCC: <http://tdm-gcc.tdragon.net/>
 * cygwin: <http://www.cygwin.com/>
 * 对话 UNIX: 在 Windows 上使用 Cygwin: <http://www.ibm.com/developerworks/cn/aix/library/au-spunix_cygwin/>
 * GTK+与MFC不完全对比: <http://blog.csdn.net/absurd/article/details/1091143>
 * 将 MFC 应用程序移植到 Linux: <https://www.ibm.com/developerworks/cn/linux/guitoolkit/l-mfc/index.html>
+
+* Win32蓝牙开发: <https://docs.microsoft.com/zh-cn/windows/win32/bluetooth/bluetooth-start-page>
+
+* Native Wifi: <https://docs.microsoft.com/zh-cn/windows/win32/nativewifi/portal>
+* WiFi direct 的相关特点: <https://www.cnblogs.com/TheAfter/p/9914480.html>
+* NATIVE WIFI HOSTED NETWORK VS WIFI DIRECT LEGACY SOFT AP: <https://www.btframework.com/hostednetwork.htm>
+* Wi-Fi Direct: <https://docs.microsoft.com/en-us/windows-hardware/drivers/partnerapps/wi-fi-direct>
+* Wi-Fi Direct Legacy Connection C++ WRL Demo: <https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/WiFiDirectLegacyAP>
+* Windows.Devices.WiFi Namespace: <https://docs.microsoft.com/en-us/uwp/api/windows.devices.wifi><https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/WiFiScan>
+* Windows.Devices.WiFiDirect Namespace: <https://docs.microsoft.com/en-us/uwp/api/Windows.Devices.WiFiDirect><https://github.com/microsoft/Windows-universal-samples/tree/master/Samples/WiFiDirect>
+* Windows.Devices.WiFiDirect.Services Namespace: <https://docs.microsoft.com/en-us/uwp/api/Windows.Devices.WiFiDirect.Services><https://github.com/microsoft/Windows-universal-samples/tree/master/Samples/WiFiDirectServices>
 
 ## Eclipse CDT
 
@@ -132,7 +145,7 @@
 * Buckaroo: <https://www.buckaroo.pm/>
 * cget: <https://cget.readthedocs.io/en/latest/>
 * Conda: <https://conda.io/docs/>
-* CPM: <http://www.cpm.rocks/>
+* CPM(Deprcated): <http://www.cpm.rocks/>
 * CPPAN: <https://cppan.org/>
 * Hunter: <https://docs.hunter.sh/en/latest/>
 

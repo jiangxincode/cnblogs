@@ -190,6 +190,7 @@
 * 目前最全面的Android安全工具清单: <https://www.ctocio.com/top%E6%B8%85%E5%8D%95/23912.html>
 * menu中的item标签的showAsAction属性可以取哪些值: <https://www.jianshu.com/p/4106e1414d64>
 * Android soong build系统介绍: <https://www.jianshu.com/p/80013a768a45>
+* Android Studio 3.0+ 新Dex编译器D8 Desugar R8: <https://blog.csdn.net/jamin0107/article/details/81123154>
 
 * Contacts Provider: <http://www.android-doc.com/guide/topics/providers/contacts-provider.html>
 

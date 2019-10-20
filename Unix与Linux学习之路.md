@@ -86,6 +86,7 @@
 * Devhelp: <https://wiki.gnome.org/Apps/Devhelp>
 * Unix 即集成开发环境: <https://github.com/ConanChou/Unix-as-IDE--Chinese->
 * Linux Troubleshooting Cheatsheet: strace, htop, lsof, tcpdump, iftop & sysdig: <https://sysdig.com/blog/linux-troubleshooting-cheatsheet/>
+* strace: <https://github.com/strace/strace>
 * java.lang.VerifyError: Expecting a stackmap frame at branch target JDK 1.7: <http://stackoverflow.com/questions/15122890/java-lang-verifyerror-expecting-a-stackmap-frame-at-branch-target-jdk-1-7>
 * Rdseed与SAC的安装: <http://www.cnblogs.com/jiangxinnju/p/6045044.html>
 * 将Linux下编译的warning警告信息输出到文件中[整理笔记]: <http://blog.csdn.net/feihongwang/article/details/6975670>

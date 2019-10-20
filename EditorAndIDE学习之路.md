@@ -30,6 +30,11 @@
 * Vimperator: <http://www.vimperator.org/>
 * VIM常见用法总结: <http://www.cnblogs.com/jiangxinnju/p/8146715.html>
 
+## Jetbrains
+
+* Clion: <https://www.jetbrains.com/clion/>
+* Eclipse Code Formatter: <http://plugins.jetbrains.com/plugin/6546-eclipse-code-formatter>
+
 ## Emacs
 
 * emacswiki: <http://www.emacswiki.org/emacs/>
