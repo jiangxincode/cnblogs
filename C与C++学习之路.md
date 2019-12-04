@@ -272,7 +272,7 @@
 * TCP可靠传输及流量控制系列六：TCP连接中的TIME_WAIT状态: <http://zenhumany.blog.163.com/blog/static/1718066332010827104655541/>
 * C++项目中的extern "C" {}: <http://www.cnblogs.com/skynet/archive/2010/07/10/1774964.html>
 * 由函数clock想到的: <http://blog.csdn.net/jiangxinnju/article/details/25411743>
-* 理解 pkg-config 工具: <http://www.chenjunlu.com/2011/03/understanding-pkg-config-tool/>
+* 理解 pkg-config 工具: <http://www.cheWebScarabnjunlu.com/2011/03/understanding-pkg-config-tool/>
 * C/C++中的abort、atexit、exit和_Exit: <http://blog.csdn.net/jiangxinnju/article/details/38155973>
 * setjmp()/longjmp()的使用方法和场合: <http://www.cnblogs.com/lowhere/archive/2008/08/22/1274309.html>
 * C++ 工程实践(7)：iostream 的用途与局限: <http://blog.csdn.net/solstice/article/details/6612179>
