@@ -4,6 +4,7 @@
 
 * <http://www.cplusplus.com/>
 * <http://en.cppreference.com/>
+* C++ compiler support: <https://en.cppreference.com/w/cpp/compiler_support>
 * <https://isocpp.org/>
 * C standard library: <https://en.wikipedia.org/wiki/C_standard_library>
 * C++ Standard Library: <https://en.wikipedia.org/wiki/C%2B%2B_Standard_Library>
@@ -50,6 +51,7 @@
 
 ## Windows C++
 
+* /std (Specify Language Standard Version): <https://docs.microsoft.com/zh-cn/cpp/build/reference/std-specify-language-standard-version>
 * CRT Library Features: <https://docs.microsoft.com/en-us/cpp/c-runtime-library/crt-library-features>
 * Security Features in the CRT: <https://docs.microsoft.com/en-us/cpp/c-runtime-library/security-features-in-the-crt>
 * Linker Tools Warning LNK4098: <https://docs.microsoft.com/en-us/cpp/error-messages/tool-errors/linker-tools-warning-lnk4098>
@@ -82,8 +84,14 @@
 * C POSIX library: <https://en.wikipedia.org/wiki/C_POSIX_library>
 * POSIX.1-2017: <http://pubs.opengroup.org/onlinepubs/9699919799>
 
+* GCC, the GNU Compiler Collection: <https://gcc.gnu.org/>
 * The LLVM Compiler Infrastructure: <http://llvm.org/>
 * clang: a C language family frontend for LLVM: <http://clang.llvm.org/>
+
+* GNU GCC手册-1: <http://blog.chinaunix.net/uid-10386087-id-2958766.html>
+* gcc的基本用法: <http://blog.chinaunix.net/uid-20183141-id-1731007.html>
+* Comparison of Diagnostics between GCC and Clang: <https://gcc.gnu.org/wiki/ClangDiagnosticsComparison>
+* gcc和g++的区别: <http://www.linuxsky.org/doc/dev/200804/298.html>
 
 * Linux内核中无名管道pipe和有名管道fifo的分析: <http://blog.csdn.net/duanyipeng/article/details/6825232>
 * 应用 Valgrind 发现 Linux 程序的内存问题: <http://www.ibm.com/developerworks/cn/linux/l-cn-valgrind/>
@@ -91,14 +99,10 @@
 * Linux下的时间概念(主要是其中的计时器的使用): <http://blog.chinaunix.net/uid-23215128-id-2521295.html>
 * Linux 桌面应用技术专题: <http://www.ibm.com/developerworks/cn/linux/theme/desktop/index.html>
 * Linux系统调用列表: <http://www.ibm.com/developerworks/cn/linux/kernel/syscall/part1/appendix.html>
-* GNU GCC手册-1: <http://blog.chinaunix.net/uid-10386087-id-2958766.html>
-* gcc的基本用法: <http://blog.chinaunix.net/uid-20183141-id-1731007.html>
 * Linux 套接字编程中的 5 个隐患: <http://www.ibm.com/developerworks/cn/linux/l-sockpit/>
-* gcc和g++的区别: <http://www.linuxsky.org/doc/dev/200804/298.html>
 * 使用 GLib 工具集管理 C 数据帖子发表于: <http://forum.ubuntu.org.cn/viewtopic.php?p=2614850>
 * Linux静态/动态链接库的创建和使用: <https://blog.csdn.net/hcj2002/article/details/712146>
 * 基于X的GNOME、GTK、GDK、XLib、GLib等之间的关系: <http://socol.iteye.com/blog/579718>
-* Comparison of Diagnostics between GCC and Clang: <https://gcc.gnu.org/wiki/ClangDiagnosticsComparison>
 
 ## Windows/Linux剪不断理还乱
 
