@@ -701,12 +701,6 @@ mvn deploy:deploy-file -DgroupId="edu.jiangxin" -DartifactId=”gcu” -Dversion
 * acunetix: <http://www.acunetix.com/>
 * xfocus: <http://www.xfocus.net/index.html>
 
-## OpenSSL
-
-* OpenSSL: <https://www.openssl.org>
-* BoringSSL: <https://github.com/google/boringssl>
-* LibreSSL: <http://www.libressl.org/>
-
 ## klocwork（收费）
 
 * <http://www.klocwork.com/>

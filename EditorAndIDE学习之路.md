@@ -30,6 +30,10 @@
 * Vimperator: <http://www.vimperator.org/>
 * VIM常见用法总结: <http://www.cnblogs.com/jiangxinnju/p/8146715.html>
 
+* TagCollection: <https://github.com/jiangxincode/TagCollection>
+* mpi.vim: <https://github.com/jiangxincode/mpi.vim>
+* VimLogViewer: <https://github.com/jiangxincode/VimLogViewer>
+
 ## Jetbrains
 
 * Clion: <https://www.jetbrains.com/clion/>

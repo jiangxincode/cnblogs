@@ -150,6 +150,7 @@
 
 * Does C++ need a universal package manager? <http://pfultz2.com/blog/2017/10/27/universal-package-manager/>
 * vcpkg(C++ Library Manager for Windows, Linux, and MacOS): <https://github.com/Microsoft/vcpkg>
+* 解决vcpkg下载缓慢的问题: <https://blog.csdn.net/qq_39690181/article/details/82910610>
 * Conan(the C / C++ Package Manager for Developers): <https://conan.io/>
 * Buckaroo: <https://www.buckaroo.pm/>
 * cget: <https://cget.readthedocs.io/en/latest/>
@@ -157,6 +158,14 @@
 * CPM(Deprcated): <http://www.cpm.rocks/>
 * CPPAN: <https://cppan.org/>
 * Hunter: <https://docs.hunter.sh/en/latest/>
+
+## 一点经验教训
+
+C/C++由于历史原因，编译，构建难度相对于目前主流的其他语言如Java、Python、Go等要大的多，不同操作系统平台，不同编译工具差别很大，且没有一个完美的包管理工具，为了少花时间到环境配置上，推荐选型如下：
+
+* 如果是Windows平台，且基本没有依赖，建议配套CLION+GCC+MinGW;
+* 如果是Windows平台，且依赖较多，比如Gtest，OpenSSL，建议配套VS+VCPKGS;
+* 如果是Linux平台，CLION+GCC
 
 ## Glib/GTK+/Gnome
 
@@ -231,6 +240,13 @@
 * C Unit Testing Framework: <https://sourceforge.net/projects/cunit/>
 
 * Parasoft C/C++test: <https://www.parasoft.com/products/ctest>
+
+## OpenSSL
+
+* OpenSSL: <https://www.openssl.org>
+* BoringSSL: <https://github.com/google/boringssl>
+* LibreSSL: <http://www.libressl.org/>
+* OpenSSL 在windows系统下的编译全解: <https://blog.csdn.net/danscort2000/article/details/81300248>
 
 ## XML
 
