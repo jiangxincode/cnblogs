@@ -113,6 +113,7 @@
 
 * MinGW-w64(推荐): <http://mingw-w64.org/>
 * MinGW-w64下载地址:<https://sourceforge.net/projects/mingw-w64/files/mingw-w64/mingw-w64-release/>
+* What is difference between sjlj vs dwarf vs seh? <https://stackoverflow.com/questions/15670169/what-is-difference-between-sjlj-vs-dwarf-vs-seh>
 * MinGW: <http://www.mingw.org/>
 * TDM-GCC: <http://tdm-gcc.tdragon.net/>
 * cygwin: <http://www.cygwin.com/>
