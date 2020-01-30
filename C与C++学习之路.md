@@ -54,6 +54,7 @@
 * /std (Specify Language Standard Version): <https://docs.microsoft.com/zh-cn/cpp/build/reference/std-specify-language-standard-version>
 * CRT Library Features: <https://docs.microsoft.com/en-us/cpp/c-runtime-library/crt-library-features>
 * VC 运行时库 /MD、/MDd 和 /MT、/MTd: <https://www.iteye.com/blog/qimo601-1550348>
+* #error Please use the /MD switch for _AFXDLL builds: <https://stackoverflow.com/questions/4229120/error-please-use-the-md-switch-for-afxdll-builds>
 * Security Features in the CRT: <https://docs.microsoft.com/en-us/cpp/c-runtime-library/security-features-in-the-crt>
 * Linker Tools Warning LNK4098: <https://docs.microsoft.com/en-us/cpp/error-messages/tool-errors/linker-tools-warning-lnk4098>
 * LINK : fatal error LNK1104: 无法打开文件“LIBCD.lib”: <https://www.cnblogs.com/hyfemma/archive/2010/11/14/1876846.html>
@@ -85,6 +86,7 @@
 * 在 VS2017 使用所有旧版本的平台工具集: <https://bbs.pediy.com/thread-248840.htm>
 * Visual Studio 如何屏蔽告警: <https://blog.csdn.net/ZHAOJUNWEI08/article/details/84288189>
 * C++17 Feature Removals And Deprecation: <https://devblogs.microsoft.com/cppblog/c17-feature-removals-and-deprecations/>
+* C++：在程序中获取全球唯一标识号（GUID或UUID）: <https://www.cnblogs.com/john-h/p/5886761.html>
 
 ## Linux C++
 
@@ -288,8 +290,11 @@ C/C++由于历史原因，编译，构建难度相对于目前主流的其他语
 
 ## 标准C/C++语法知识点
 
+* C结构体之位域（位段）: <https://www.cnblogs.com/bigrabbit/archive/2012/09/20/2695543.html>
+* C++ NULL与nullptr的区别: <https://www.cnblogs.com/Philip-Tell-Truth/p/6594632.html>
 * nothrow: <http://www.cplusplus.com/reference/new/nothrow/>
 * C++中的delete和delete[]的区别: <https://blog.csdn.net/u012936940/article/details/80919880>
+* 对C++中map的四种插入方式的比较及同值覆盖问题: <https://blog.csdn.net/qq_41135605/article/details/98876749>
 
 ## Others
 
