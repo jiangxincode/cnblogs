@@ -3,9 +3,9 @@
 ## Reference
 
 * <http://www.cplusplus.com/>
-* <http://en.cppreference.com/>
+* <http://cppreference.com/>
+* News, Status & Discussion about Standard C++: <https://isocpp.org/>
 * C++ compiler support: <https://en.cppreference.com/w/cpp/compiler_support>
-* <https://isocpp.org/>
 * C standard library: <https://en.wikipedia.org/wiki/C_standard_library>
 * C++ Standard Library: <https://en.wikipedia.org/wiki/C%2B%2B_Standard_Library>
 
@@ -63,21 +63,17 @@
 * atexit和onexit的主要用法和区别: <http://technet.microsoft.com/zh-cn/library/tze57ck3>
 * _onexit, _onexit_m: <http://technet.microsoft.com/zh-cn/library/zk17ww08>
 * error C4995: “wcscpy”: 名称被标记为 #pragma deprecated: <https://www.cnblogs.com/aliflycoris/p/11328425.html>
-* VC知识库: <http://www.vckbase.com/>
 * VC 常用数据类型总结 俩篇: <http://www.cnblogs.com/sadier/articles/102085.html>
 * 预编译头文件介绍和说明: <http://www.cppblog.com/AutomateProgram/archive/2010/10/14/129846.html>
 * 预编译头文件解析: <http://www.cnblogs.com/khler/archive/2010/07/22/1782977.html>
 * VC 预编译头文件的使用: <http://www.cnblogs.com/xiao-cheng/archive/2012/02/05/2338787.html>
-* VC++的Unicode编程: <http://www.vckbase.com/index.php/wv/1438.html>
+* VC++的Unicode编程: <https://blog.csdn.net/u014015972/article/details/47382665>
 * VC++，掀起你的盖头来——谈VC++对象模型: <http://www.cnblogs.com/chio/archive/2007/11/25/971644.html>
 * Visual C++ 入门精解: <http://www.cppblog.com/yuqilin1228/archive/2010/03/26/110614.html>
 * Useful enhancements for Visual Studio .NET: <http://www.codeproject.com/Articles/2704/Useful-enhancements-for-Visual-Studio-NET>
 * Windows动态库与Linux共享对象比较: <https://blog.csdn.net/jatula/article/details/83324280>
 * ODBC中的FX/Bulk RFX数据交换机制分析: <http://blog.csdn.net/workdog/article/details/1524126>
 * VC++6.0编译时总死机，安装vcsp6补丁: <https://blog.csdn.net/xs574924427/article/details/8242414>
-* DEBUG和RELEASE 版本差异及调试相关问题: <https://blog.csdn.net/orc/article/details/8758>
-* Debug和Release有什么区别: <https://blog.csdn.net/chenhu_doc/article/details/932305>
-* 关于VS中区分debug与release，32位与64位编译的宏定义: <https://blog.csdn.net/zhuyingqingfen/article/details/24352137>
 * MSVC vs. MinGW 之 (lib,dll,def,obj,exe) vs (a,dll,def,o,exe): <http://blog.sina.com.cn/s/blog_5ea0192f010102ig.html>
 * 为 Visual C++ 项目创建的文件类型: <https://docs.microsoft.com/zh-cn/cpp/ide/file-types-created-for-visual-cpp-projects>
 * visual studio 2008中头文件和库文件路径设置: <http://blog.sina.com.cn/s/blog_77c35cff01010u7b.html>
@@ -87,6 +83,12 @@
 * Visual Studio 如何屏蔽告警: <https://blog.csdn.net/ZHAOJUNWEI08/article/details/84288189>
 * C++17 Feature Removals And Deprecation: <https://devblogs.microsoft.com/cppblog/c17-feature-removals-and-deprecations/>
 * C++：在程序中获取全球唯一标识号（GUID或UUID）: <https://www.cnblogs.com/john-h/p/5886761.html>
+
+## 需要整理的
+
+* DEBUG和RELEASE 版本差异及调试相关问题: <https://blog.csdn.net/orc/article/details/8758>
+* Debug和Release有什么区别: <https://blog.csdn.net/chenhu_doc/article/details/932305>
+* 关于VS中区分debug与release，32位与64位编译的宏定义: <https://blog.csdn.net/zhuyingqingfen/article/details/24352137>
 
 ## Linux C++
 
