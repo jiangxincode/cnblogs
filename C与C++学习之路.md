@@ -53,6 +53,7 @@
 
 * /std (Specify Language Standard Version): <https://docs.microsoft.com/zh-cn/cpp/build/reference/std-specify-language-standard-version>
 * CRT Library Features: <https://docs.microsoft.com/en-us/cpp/c-runtime-library/crt-library-features>
+* VC 运行时库 /MD、/MDd 和 /MT、/MTd: <https://www.iteye.com/blog/qimo601-1550348>
 * Security Features in the CRT: <https://docs.microsoft.com/en-us/cpp/c-runtime-library/security-features-in-the-crt>
 * Linker Tools Warning LNK4098: <https://docs.microsoft.com/en-us/cpp/error-messages/tool-errors/linker-tools-warning-lnk4098>
 * LINK : fatal error LNK1104: 无法打开文件“LIBCD.lib”: <https://www.cnblogs.com/hyfemma/archive/2010/11/14/1876846.html>
@@ -82,6 +83,8 @@
 * VS2017中设置程序以管理员身份运行: <https://blog.csdn.net/li_wen01/article/details/80110423>
 * VS2017应用在XP系统上运行: <https://blog.csdn.net/baidu_33720448/article/details/84284625>
 * 在 VS2017 使用所有旧版本的平台工具集: <https://bbs.pediy.com/thread-248840.htm>
+* Visual Studio 如何屏蔽告警: <https://blog.csdn.net/ZHAOJUNWEI08/article/details/84288189>
+* C++17 Feature Removals And Deprecation: <https://devblogs.microsoft.com/cppblog/c17-feature-removals-and-deprecations/>
 
 ## Linux C++
 
@@ -261,6 +264,7 @@ C/C++由于历史原因，编译，构建难度相对于目前主流的其他语
 ## JSON
 
 * jsoncpp: <https://github.com/open-source-parsers/jsoncpp>
+* nlohmann/json(JSON for Modern C++): <https://github.com/nlohmann/json>
 
 ## 其它配置格式
 
@@ -281,6 +285,11 @@ C/C++由于历史原因，编译，构建难度相对于目前主流的其他语
     Xapian is an Open Source Search Engine Library, released under the GPL v2+. It's written in C++, with bindings to allow use from Perl, Python, PHP, Java, Tcl, C#, Ruby, Lua, Erlang and Node.js (so far!)
 
 * <http://xapian.org/>
+
+## 标准C/C++语法知识点
+
+* nothrow: <http://www.cplusplus.com/reference/new/nothrow/>
+* C++中的delete和delete[]的区别: <https://blog.csdn.net/u012936940/article/details/80919880>
 
 ## Others
 
@@ -314,5 +323,6 @@ C/C++由于历史原因，编译，构建难度相对于目前主流的其他语
 * 基于对象和面向对象的区别: <http://www.cnblogs.com/jiangxinnju/p/5516880.html>
 * const 不再迷茫: <https://www.cnblogs.com/jiangxinnju/p/5516881.html>
 * C语言中随机数相关问题: <https://www.cnblogs.com/jiangxinnju/p/5516905.html>
+* VS Code C++ 代码格式化方法(clang-format): <https://blog.csdn.net/core571/article/details/82867932>
 * C/C++大数库简介: <https://www.cnblogs.com/jiangxinnju/p/5516911.html>
 * C++资源之不完全导引: C++资源之不完全导引.docx
