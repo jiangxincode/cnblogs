@@ -13,16 +13,6 @@
 * C 语言常见问题集: <http://c-faq-chn.sourceforge.net/ccfaq/>
 * The C++ Standard Library - A Tutorial and Reference: <http://www.cppstdlib.com/>
 
-## Tools
-
-* cdecl: <http://www.cdecl.org/>
-* Visual Leak Detector for Visual C++ : <http://vld.codeplex.com/>
-* Valgrind: <http://www.valgrind.org/>
-* PC-lint for C/C++: <http://www.gimpel.com/html/pcl.htm>
-* cppcheck: <https://sourceforge.net/projects/cppcheck/>
-* C and C++ Code Counter(CCCC): <https://sourceforge.net/projects/cccc/>
-* Dev-C++: <https://sourceforge.net/projects/orwelldevcpp/>
-
 ## Libraries
 
 * boost: <http://www.boost.org/>
@@ -39,8 +29,6 @@
 * EGE（Easy Graphics Engine）: <http://xege.org/>
 * CLucene - a C++ search engine: <https://sourceforge.net/projects/clucene/>
 * Translate STL 2 C Language: <https://sourceforge.net/projects/tstl2cl/>
-* Log library for C++: <https://sourceforge.net/projects/log4cpp/>
-* log4cplus: <https://sourceforge.net/projects/log4cplus/>
 * Borland-style CONIO: <https://sourceforge.net/projects/conio/>
 * DISLIN: <https://www.mps.mpg.de/dislin/>
 * ICU - International Components for Unicode: <http://site.icu-project.org/>
@@ -53,21 +41,33 @@
 
 * /std (Specify Language Standard Version): <https://docs.microsoft.com/zh-cn/cpp/build/reference/std-specify-language-standard-version>
 * CRT Library Features: <https://docs.microsoft.com/en-us/cpp/c-runtime-library/crt-library-features>
-* VC 运行时库 /MD、/MDd 和 /MT、/MTd: <https://www.iteye.com/blog/qimo601-1550348>
-* #error Please use the /MD switch for _AFXDLL builds: <https://stackoverflow.com/questions/4229120/error-please-use-the-md-switch-for-afxdll-builds>
+* 从 WRL 移动到 C++/WinRT: <https://docs.microsoft.com/zh-cn/windows/uwp/cpp-and-winrt-apis/move-to-winrt-from-wrl>
 * Security Features in the CRT: <https://docs.microsoft.com/en-us/cpp/c-runtime-library/security-features-in-the-crt>
 * Linker Tools Warning LNK4098: <https://docs.microsoft.com/en-us/cpp/error-messages/tool-errors/linker-tools-warning-lnk4098>
-* LINK : fatal error LNK1104: 无法打开文件“LIBCD.lib”: <https://www.cnblogs.com/hyfemma/archive/2010/11/14/1876846.html>
+* Importing and Exporting: <https://docs.microsoft.com/en-us/cpp/build/importing-and-exporting>
+* OneCore.lib umbrella library (by module): <https://docs.microsoft.com/zh-cn/windows/win32/apiindex/umbrella-lib-onecore>
+* Windows 8.1 API Sets: <https://docs.microsoft.com/zh-cn/windows/win32/apiindex/windows-81-api-sets>
+* SecureZeroMemory function: <https://docs.microsoft.com/en-us/previous-versions/windows/desktop/legacy/aa366877(v=vs.85)>
+* ShellExecuteA function: <https://docs.microsoft.com/zh-cn/windows/win32/api/shellapi/nf-shellapi-shellexecutea>
 * 链接器工具错误 LNK2026: <https://docs.microsoft.com/zh-cn/previous-versions/visualstudio/visual-studio-2008/100ezk17(v=vs.90)>
+* CREATEGUID Function (GUID): <https://docs.microsoft.com/en-us/previous-versions/dynamicsnav-2013r2/dd339033(v=nav.71)>
 * DUMPBIN Reference: <https://docs.microsoft.com/en-us/cpp/build/reference/dumpbin-reference>
+* 为 Visual C++ 项目创建的文件类型: <https://docs.microsoft.com/zh-cn/cpp/ide/file-types-created-for-visual-cpp-projects>
+
+* C++17 Feature Removals And Deprecation: <https://devblogs.microsoft.com/cppblog/c17-feature-removals-and-deprecations/>
+
 * atexit和onexit的主要用法和区别: <http://technet.microsoft.com/zh-cn/library/tze57ck3>
 * _onexit, _onexit_m: <http://technet.microsoft.com/zh-cn/library/zk17ww08>
+
+* VC 运行时库 /MD、/MDd 和 /MT、/MTd: <https://www.iteye.com/blog/qimo601-1550348>
+* #error Please use the /MD switch for _AFXDLL builds: <https://stackoverflow.com/questions/4229120/error-please-use-the-md-switch-for-afxdll-builds>
+* LINK : fatal error LNK1104: 无法打开文件“LIBCD.lib”: <https://www.cnblogs.com/hyfemma/archive/2010/11/14/1876846.html>
 * error C4995: “wcscpy”: 名称被标记为 #pragma deprecated: <https://www.cnblogs.com/aliflycoris/p/11328425.html>
 * VC 常用数据类型总结 俩篇: <http://www.cnblogs.com/sadier/articles/102085.html>
 * 预编译头文件介绍和说明: <http://www.cppblog.com/AutomateProgram/archive/2010/10/14/129846.html>
 * 预编译头文件解析: <http://www.cnblogs.com/khler/archive/2010/07/22/1782977.html>
 * VC 预编译头文件的使用: <http://www.cnblogs.com/xiao-cheng/archive/2012/02/05/2338787.html>
-* VC++的Unicode编程: <https://blog.csdn.net/u014015972/article/details/47382665>
+* VC++6.0应用程序错误,0x5003eaed: <https://jingyan.baidu.com/article/1709ad80a1b2c64634c4f0eb.html>
 * VC++，掀起你的盖头来——谈VC++对象模型: <http://www.cnblogs.com/chio/archive/2007/11/25/971644.html>
 * Visual C++ 入门精解: <http://www.cppblog.com/yuqilin1228/archive/2010/03/26/110614.html>
 * Useful enhancements for Visual Studio .NET: <http://www.codeproject.com/Articles/2704/Useful-enhancements-for-Visual-Studio-NET>
@@ -75,13 +75,11 @@
 * ODBC中的FX/Bulk RFX数据交换机制分析: <http://blog.csdn.net/workdog/article/details/1524126>
 * VC++6.0编译时总死机，安装vcsp6补丁: <https://blog.csdn.net/xs574924427/article/details/8242414>
 * MSVC vs. MinGW 之 (lib,dll,def,obj,exe) vs (a,dll,def,o,exe): <http://blog.sina.com.cn/s/blog_5ea0192f010102ig.html>
-* 为 Visual C++ 项目创建的文件类型: <https://docs.microsoft.com/zh-cn/cpp/ide/file-types-created-for-visual-cpp-projects>
 * visual studio 2008中头文件和库文件路径设置: <http://blog.sina.com.cn/s/blog_77c35cff01010u7b.html>
 * VS2017中设置程序以管理员身份运行: <https://blog.csdn.net/li_wen01/article/details/80110423>
 * VS2017应用在XP系统上运行: <https://blog.csdn.net/baidu_33720448/article/details/84284625>
 * 在 VS2017 使用所有旧版本的平台工具集: <https://bbs.pediy.com/thread-248840.htm>
 * Visual Studio 如何屏蔽告警: <https://blog.csdn.net/ZHAOJUNWEI08/article/details/84288189>
-* C++17 Feature Removals And Deprecation: <https://devblogs.microsoft.com/cppblog/c17-feature-removals-and-deprecations/>
 * C++：在程序中获取全球唯一标识号（GUID或UUID）: <https://www.cnblogs.com/john-h/p/5886761.html>
 
 ## 需要整理的
@@ -89,6 +87,7 @@
 * DEBUG和RELEASE 版本差异及调试相关问题: <https://blog.csdn.net/orc/article/details/8758>
 * Debug和Release有什么区别: <https://blog.csdn.net/chenhu_doc/article/details/932305>
 * 关于VS中区分debug与release，32位与64位编译的宏定义: <https://blog.csdn.net/zhuyingqingfen/article/details/24352137>
+* VC++中debug跟release编译模式的区别总结: <https://www.iteye.com/blog/javafans-609937>
 
 ## Linux C++
 
@@ -104,6 +103,12 @@
 * gcc的基本用法: <http://blog.chinaunix.net/uid-20183141-id-1731007.html>
 * Comparison of Diagnostics between GCC and Clang: <https://gcc.gnu.org/wiki/ClangDiagnosticsComparison>
 * gcc和g++的区别: <http://www.linuxsky.org/doc/dev/200804/298.html>
+
+* GNU build system: <http://en.wikipedia.org/wiki/GNU_build_system>
+* GNU_Libtool: <http://en.wikipedia.org/wiki/GNU_Libtool>
+* Autotools Mythbuster: <https://autotools.io/index.html>
+* Autoconf: <http://zh.wikipedia.org/wiki/Autoconf>
+* Automake: <http://zh.wikipedia.org/wiki/Automake><https://baike.baidu.com/item/aotumake>
 
 * Linux内核中无名管道pipe和有名管道fifo的分析: <http://blog.csdn.net/duanyipeng/article/details/6825232>
 * 应用 Valgrind 发现 Linux 程序的内存问题: <http://www.ibm.com/developerworks/cn/linux/l-cn-valgrind/>
@@ -127,6 +132,9 @@
 * 对话 UNIX: 在 Windows 上使用 Cygwin: <http://www.ibm.com/developerworks/cn/aix/library/au-spunix_cygwin/>
 * GTK+与MFC不完全对比: <http://blog.csdn.net/absurd/article/details/1091143>
 * 将 MFC 应用程序移植到 Linux: <https://www.ibm.com/developerworks/cn/linux/guitoolkit/l-mfc/index.html>
+* Enabling string conversion functions in MinGW: <http://tehsausage.com/mingw-to-string>
+
+## C++近场通讯开发
 
 * Win32蓝牙开发: <https://docs.microsoft.com/zh-cn/windows/win32/bluetooth/bluetooth-start-page>
 
@@ -144,6 +152,11 @@
 * <http://www.eclipse.org/cdt/>
 * eclipse 配置 TDM-GCC 64位版方法: <http://blog.csdn.net/luozhuang/article/details/8270522>
 * eclipse写C++控制台程序，不见输出: <http://bbs.csdn.net/topics/360207855>
+* eclipse C/ C++编译含有多个main函数的项目: <https://blog.csdn.net/u011039332/article/details/50389979>
+
+## Dev-C++
+
+* Dev-C++: <https://sourceforge.net/projects/orwelldevcpp/>
 
 ## CMake
 
@@ -171,9 +184,9 @@
 
 C/C++由于历史原因，编译，构建难度相对于目前主流的其他语言如Java、Python、Go等要大的多，不同操作系统平台，不同编译工具差别很大，且没有一个完美的包管理工具，为了少花时间到环境配置上，推荐选型如下：
 
-* 如果是Windows平台，且基本没有依赖，建议配套CLION+GCC+MinGW;
+* 如果是Windows平台，且基本没有依赖，建议配套CLION+CMAKE+GCC(MinGW);
 * 如果是Windows平台，且依赖较多，比如Gtest，OpenSSL，建议配套VS+VCPKGS;
-* 如果是Linux平台，CLION+GCC
+* 如果是Linux平台，CLION+CMAKE+GCC
 
 ## Glib/GTK+/Gnome
 
@@ -227,7 +240,7 @@ C/C++由于历史原因，编译，构建难度相对于目前主流的其他语
 
 ## Doxygen
 
-* <http://www.stack.nl/~dimitri/doxygen/index.html>
+* <https://github.com/doxygen/doxygen>
 * 学习用 doxygen 生成源码文档: <http://www.ibm.com/developerworks/cn/aix/library/au-learningdoxygen/>
 * 使用doxygen为C/C++程序生成中文文档（上）: <http://blog.csdn.net/fmddlmyy/article/details/1663898>
 * Doxygen + Graphviz + Htmlhelp, 成为文档好手: <http://www.cnblogs.com/lidabo/archive/2012/12/24/2831518.html>
@@ -248,6 +261,18 @@ C/C++由于历史原因，编译，构建难度相对于目前主流的其他语
 * C Unit Testing Framework: <https://sourceforge.net/projects/cunit/>
 
 * Parasoft C/C++test: <https://www.parasoft.com/products/ctest>
+
+## 日志
+
+* Log library for C++: <https://sourceforge.net/projects/log4cpp/>
+* log4cplus: <https://sourceforge.net/projects/log4cplus/>
+* log4cxx: <https://logging.apache.org/log4cxx/latest_stable/>
+
+* glog: <https://github.com/google/glog>
+* C++日志操作开源函数库之Google-glog: <https://www.cnblogs.com/kuliuheng/p/5046101.html>
+* Google glog 使用: <https://www.cnblogs.com/zhoug2020/p/5884598.html>
+* 关于glog使用中遇到的问题: <https://www.cnblogs.com/haodafeng/p/11969284.html>
+* 在Windows上编译、应用glog: <https://blog.csdn.net/sagittarius_warrior/article/details/77482087>
 
 ## OpenSSL
 
@@ -300,14 +325,13 @@ C/C++由于历史原因，编译，构建难度相对于目前主流的其他语
 
 ## Others
 
+* C++代码质量度量工具大阅兵: <https://www.cnblogs.com/jiangxinnju/p/12292818.html>
+
 * The International Obfuscated C Code Contest: <http://www.ioccc.org/>
 
 * Comparing Two High-Performance I/O Design Patterns: <http://www.artima.com/articles/io_design_patterns.html>
 * 使您的软件运行起来——防止缓冲区溢出：<https://www.ibm.com/developerworks/cn/security/buffer-defend/index.html#main>
 * 屏幕输出VS文件输出：<http://blog.csdn.net/jiangxinnju/article/details/26081963>
-* C/C++内存泄漏及检测: <http://www.cnblogs.com/skynet/archive/2011/02/20/1959162.html>
-* 浅谈C/C++内存泄露及其检测工具: <http://www.cnblogs.com/taoxu0903/archive/2007/10/27/939261.html>
-* 内存泄露检测工具比较: <http://hi.baidu.com/cpuramdisk/item/22be18c22fd58a2eee4665db>
 * 亲密接触C可变参数函数 : <http://blog.csdn.net/linyt/article/details/2243605>
 * TCP连接中的TIME_WAIT状态: <http://blog.csdn.net/sunnydogzhou/article/details/6572071>
 * see also: 《TCP-IP详解卷1：协议》第十八章
@@ -322,7 +346,6 @@ C/C++由于历史原因，编译，构建难度相对于目前主流的其他语
 * C/C++指针原理: <http://blog.csdn.net/column/details/c-pointer.html>
 * C++ STL轻松导学: <http://morningspace.51.net/resource/stlintro/stlintro.html?s=85fee499fe8534afc1f76ceceb0d41ff>
 * undefined reference问题总结: <http://ticktick.blog.51cto.com/823160/431329/>
-* Enabling string conversion functions in MinGW: <http://tehsausage.com/mingw-to-string>
 * C++ Rocks!: <http://cpprocks.com/>
 * 减少C++代码编译时间的方法: <http://www.cnblogs.com/misserwell/p/4343927.html>
 * C++编译错误cannot have cv-qualifier: <https://www.cnblogs.com/jiangxinnju/p/5516904.html>
@@ -332,4 +355,5 @@ C/C++由于历史原因，编译，构建难度相对于目前主流的其他语
 * C语言中随机数相关问题: <https://www.cnblogs.com/jiangxinnju/p/5516905.html>
 * VS Code C++ 代码格式化方法(clang-format): <https://blog.csdn.net/core571/article/details/82867932>
 * C/C++大数库简介: <https://www.cnblogs.com/jiangxinnju/p/5516911.html>
+* cdecl: <http://www.cdecl.org/>
 * C++资源之不完全导引: C++资源之不完全导引.docx

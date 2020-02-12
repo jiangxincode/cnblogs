@@ -43,6 +43,7 @@
 
 * explainshell: <https://explainshell.com/>
 * tldr: <https://github.com/tldr-pages/tldr>
+* Nushell: <https://www.nushell.sh/>
 
 * Install Microsoft Windows Fonts in Ubuntu: <https://www.ostechnix.com/install-microsoft-windows-fonts-ubuntu-16-04/>
 * Linux Performance: <http://www.brendangregg.com/linuxperf.html>
@@ -92,7 +93,6 @@
 * 将Linux下编译的warning警告信息输出到文件中[整理笔记]: <http://blog.csdn.net/feihongwang/article/details/6975670>
 * linux C中调用shell命令和运行shell脚本: <http://blog.sina.com.cn/s/blog_8043547601013rxf.html>
 * find 删除拷贝用法: <http://6764097.blog.51cto.com/6754097/1795690>
-* linux命令strings: <http://www.cppblog.com/prayer/archive/2009/07/22/90836.html>
 * linux 修改分区卷标 ( Partition Label ) : <http://blog.chinaunix.net/uid-20321915-id-1966428.html>
 * Linux快捷键: <http://www.cnblogs.com/jiangxinnju/p/6045204.html>
 * shell脚本“syntax error:unexpected end of file”解决方案 : <http://renyongjie668.blog.163.com/blog/static/1600531201172803244846/>
@@ -156,14 +156,14 @@
 * 串口传输文件 lrzsz: <http://www.cnblogs.com/lidabo/p/4780866.html>
 * httpry(HTTP logging and information retrieval tool ): <https://github.com/jbittel/httpry>
 * iproute2: <https://en.wikipedia.org/wiki/Iproute2>
-* objdump: <http://sourceware.org/binutils/docs-2.27/binutils/objdump.html#objdump>
+* GNU Binutils(objdump/gprof/strings): <https://sourceware.org/binutils/>
 * tcpdump: <https://github.com/the-tcpdump-group/tcpdump>
 * indent: <https://www.gnu.org/software/indent/>
 * cproto: <https://sourceforge.net/projects/cproto/>
-* gprof: <https://sourceware.org/binutils/docs/gprof/>
 * ttyrec 和 ttyplay(记录、保存和播放终端会话软件): <http://0xcc.net/ttyrec/>
 * curl: <https://curl.haxx.se/>
 * Poptop - The PPTP Server for Linux: <http://poptop.sourceforge.net/dox/>
+* Linux Extended BPF (eBPF) Tracing Tools: <http://www.brendangregg.com/ebpf.html>
 
 * GNU Grep: <http://www.gnu.org/software/grep/>
 * ack: <http://beyondgrep.com/>
