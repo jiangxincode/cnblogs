@@ -41,23 +41,38 @@
 
 * /std (Specify Language Standard Version): <https://docs.microsoft.com/zh-cn/cpp/build/reference/std-specify-language-standard-version>
 * CRT Library Features: <https://docs.microsoft.com/en-us/cpp/c-runtime-library/crt-library-features>
+* UCRT 按字母顺序排列的函数参考: <https://docs.microsoft.com/zh-cn/cpp/c-runtime-library/reference/crt-alphabetical-function-reference>
 * 从 WRL 移动到 C++/WinRT: <https://docs.microsoft.com/zh-cn/windows/uwp/cpp-and-winrt-apis/move-to-winrt-from-wrl>
 * Security Features in the CRT: <https://docs.microsoft.com/en-us/cpp/c-runtime-library/security-features-in-the-crt>
-* Linker Tools Warning LNK4098: <https://docs.microsoft.com/en-us/cpp/error-messages/tool-errors/linker-tools-warning-lnk4098>
 * Importing and Exporting: <https://docs.microsoft.com/en-us/cpp/build/importing-and-exporting>
 * OneCore.lib umbrella library (by module): <https://docs.microsoft.com/zh-cn/windows/win32/apiindex/umbrella-lib-onecore>
 * Windows 8.1 API Sets: <https://docs.microsoft.com/zh-cn/windows/win32/apiindex/windows-81-api-sets>
+* Windows 7 API Sets: <http://www.geoffchappell.com/studies/windows/win32/apisetschema/history/sets61.htm>
+* major changes between 7.00 and 8.00: <http://www.smorgasbordet.com/pellesc/changes_700_800.htm>
 * SecureZeroMemory function: <https://docs.microsoft.com/en-us/previous-versions/windows/desktop/legacy/aa366877(v=vs.85)>
 * ShellExecuteA function: <https://docs.microsoft.com/zh-cn/windows/win32/api/shellapi/nf-shellapi-shellexecutea>
 * 链接器工具错误 LNK2026: <https://docs.microsoft.com/zh-cn/previous-versions/visualstudio/visual-studio-2008/100ezk17(v=vs.90)>
 * CREATEGUID Function (GUID): <https://docs.microsoft.com/en-us/previous-versions/dynamicsnav-2013r2/dd339033(v=nav.71)>
 * DUMPBIN Reference: <https://docs.microsoft.com/en-us/cpp/build/reference/dumpbin-reference>
 * 为 Visual C++ 项目创建的文件类型: <https://docs.microsoft.com/zh-cn/cpp/ide/file-types-created-for-visual-cpp-projects>
+* I/O Completion Ports: <https://docs.microsoft.com/zh-cn/windows/win32/fileio/i-o-completion-ports>
+
+* C/C++ Compiler and build tools errors and warnings: <https://docs.microsoft.com/en-us/cpp/error-messages/compiler-errors-1/c-cpp-build-errors>
+  * C2360(initialization of 'identifier' is skipped by 'case' label)
+  * C4251('identifier' : class 'type' needs to have dll-interface to be used by clients of class 'type2')
+    * Exporting classes containing std:: objects (vector, map, etc) from a dll: <https://stackoverflow.com/questions/767579/exporting-classes-containing-std-objects-vector-map-etc-from-a-dll>
+  * LNK4042(object specified more than once; extras ignored)
+    * Visual Studio 2010's strange “warning LNK4042”: <https://stackoverflow.com/questions/3695174/visual-studio-2010s-strange-warning-lnk4042>
+    * Visual Studio 2010 & 2008 can't handle source files with identical names in different folders?: <https://stackoverflow.com/questions/3729515/visual-studio-2010-2008-cant-handle-source-files-with-identical-names-in-diff>
+  * LNK4098(defaultlib 'library' conflicts with use of other libs; use /NODEFAULTLIB:library)
+
+* GetPrivateProfileString/WritePrivateProfileString(INI读取和写入): <https://docs.microsoft.com/zh-cn/windows/desktop/api/winbase/>
 
 * C++17 Feature Removals And Deprecation: <https://devblogs.microsoft.com/cppblog/c17-feature-removals-and-deprecations/>
 
 * atexit和onexit的主要用法和区别: <http://technet.microsoft.com/zh-cn/library/tze57ck3>
 * _onexit, _onexit_m: <http://technet.microsoft.com/zh-cn/library/zk17ww08>
+* Windows 8 SDK: Include files in "shared", "um", and "winrt" directories. What's the difference? <https://social.msdn.microsoft.com/Forums/vstudio/en-US/24b9c784-d642-423e-a407-8bbee14e19ab/windows-8-sdk-include-files-in-quotsharedquot-quotumquot-and-quotwinrtquot>
 
 * VC 运行时库 /MD、/MDd 和 /MT、/MTd: <https://www.iteye.com/blog/qimo601-1550348>
 * #error Please use the /MD switch for _AFXDLL builds: <https://stackoverflow.com/questions/4229120/error-please-use-the-md-switch-for-afxdll-builds>
@@ -76,11 +91,14 @@
 * VC++6.0编译时总死机，安装vcsp6补丁: <https://blog.csdn.net/xs574924427/article/details/8242414>
 * MSVC vs. MinGW 之 (lib,dll,def,obj,exe) vs (a,dll,def,o,exe): <http://blog.sina.com.cn/s/blog_5ea0192f010102ig.html>
 * visual studio 2008中头文件和库文件路径设置: <http://blog.sina.com.cn/s/blog_77c35cff01010u7b.html>
+* VS2005调试时出现无法找到调试信息解决方案: <https://blog.csdn.net/bozhi2008/article/details/83732685>
 * VS2017中设置程序以管理员身份运行: <https://blog.csdn.net/li_wen01/article/details/80110423>
 * VS2017应用在XP系统上运行: <https://blog.csdn.net/baidu_33720448/article/details/84284625>
 * 在 VS2017 使用所有旧版本的平台工具集: <https://bbs.pediy.com/thread-248840.htm>
 * Visual Studio 如何屏蔽告警: <https://blog.csdn.net/ZHAOJUNWEI08/article/details/84288189>
 * C++：在程序中获取全球唯一标识号（GUID或UUID）: <https://www.cnblogs.com/john-h/p/5886761.html>
+* MSBulid、IncrediBuild命令行接口实现自动化编译: <https://blog.csdn.net/yockie/article/details/17010509>
+* 理解WinRT: <http://www.cppblog.com/weiym/archive/2013/01/13/197234.html>
 
 ## 需要整理的
 
@@ -139,13 +157,14 @@
 * Win32蓝牙开发: <https://docs.microsoft.com/zh-cn/windows/win32/bluetooth/bluetooth-start-page>
 
 * Native Wifi: <https://docs.microsoft.com/zh-cn/windows/win32/nativewifi/portal>
-* WiFi direct 的相关特点: <https://www.cnblogs.com/TheAfter/p/9914480.html>
-* NATIVE WIFI HOSTED NETWORK VS WIFI DIRECT LEGACY SOFT AP: <https://www.btframework.com/hostednetwork.htm>
 * Wi-Fi Direct: <https://docs.microsoft.com/en-us/windows-hardware/drivers/partnerapps/wi-fi-direct>
 * Wi-Fi Direct Legacy Connection C++ WRL Demo: <https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/WiFiDirectLegacyAP>
-* Windows.Devices.WiFi Namespace: <https://docs.microsoft.com/en-us/uwp/api/windows.devices.wifi><https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/WiFiScan>
-* Windows.Devices.WiFiDirect Namespace: <https://docs.microsoft.com/en-us/uwp/api/Windows.Devices.WiFiDirect><https://github.com/microsoft/Windows-universal-samples/tree/master/Samples/WiFiDirect>
+* Windows.Devices.WiFi Namespace: <https://docs.microsoft.com/en-us/uwp/api/windows.devices.wifi>
+* Windows.Devices.WiFiDirect Namespace(含Wi-Fi Direct sample): <https://docs.microsoft.com/en-us/uwp/api/Windows.Devices.WiFiDirect><https://github.com/microsoft/Windows-universal-samples/tree/master/Samples/WiFiDirect>
 * Windows.Devices.WiFiDirect.Services Namespace: <https://docs.microsoft.com/en-us/uwp/api/Windows.Devices.WiFiDirect.Services><https://github.com/microsoft/Windows-universal-samples/tree/master/Samples/WiFiDirectServices>
+
+* WiFi direct 的相关特点: <https://www.cnblogs.com/TheAfter/p/9914480.html>
+* NATIVE WIFI HOSTED NETWORK VS WIFI DIRECT LEGACY SOFT AP: <https://www.btframework.com/hostednetwork.htm>
 
 ## Eclipse CDT
 
@@ -286,10 +305,6 @@ C/C++由于历史原因，编译，构建难度相对于目前主流的其他语
 * TinyXML: <https://sourceforge.net/projects/tinyxml/> <https://github.com/leethomason/tinyxml2>
 * Libxml2: <http://xmlsoft.org/>
 
-## INI
-
-* GetPrivateProfileString/WritePrivateProfileString: <https://docs.microsoft.com/zh-cn/windows/desktop/api/winbase/>
-
 ## JSON
 
 * jsoncpp: <https://github.com/open-source-parsers/jsoncpp>
@@ -329,6 +344,14 @@ C/C++由于历史原因，编译，构建难度相对于目前主流的其他语
 
 * The International Obfuscated C Code Contest: <http://www.ioccc.org/>
 
+* C++基础----C++ 布尔类型（bool）及BOOL和bool的区别: <https://blog.csdn.net/qiaoxinyu1989/article/details/80942364>
+* size_t 类型: <https://www.cnblogs.com/xiongmao-cpp/p/5233760.html>
+* C++命名空间: <https://blog.csdn.net/xiongya8888/article/details/89345539>
+* c++对象的生命周期: <https://blog.csdn.net/j_factory/article/details/3582499>
+* C语言内存分配方式: <https://www.cnblogs.com/dyx1024/archive/2011/01/27/2556769.html>
+* C++ 中 # 和 ## 和 #@ 的使用: <https://blog.csdn.net/martinue/article/details/84344384>
+* 容器元素是const元素时的错误: <https://segmentfault.com/q/1010000004125702>
+* Does C++11 allow vector<const T>? <https://stackoverflow.com/questions/6954906/does-c11-allow-vectorconst-t>
 * Comparing Two High-Performance I/O Design Patterns: <http://www.artima.com/articles/io_design_patterns.html>
 * 使您的软件运行起来——防止缓冲区溢出：<https://www.ibm.com/developerworks/cn/security/buffer-defend/index.html#main>
 * 屏幕输出VS文件输出：<http://blog.csdn.net/jiangxinnju/article/details/26081963>
@@ -356,4 +379,5 @@ C/C++由于历史原因，编译，构建难度相对于目前主流的其他语
 * VS Code C++ 代码格式化方法(clang-format): <https://blog.csdn.net/core571/article/details/82867932>
 * C/C++大数库简介: <https://www.cnblogs.com/jiangxinnju/p/5516911.html>
 * cdecl: <http://www.cdecl.org/>
+* Return-into-libc 攻击及其防御: <https://www.csdn.net/article/a/2014-03-03/15818077>
 * C++资源之不完全导引: C++资源之不完全导引.docx
