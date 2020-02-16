@@ -99,6 +99,7 @@
 * C++：在程序中获取全球唯一标识号（GUID或UUID）: <https://www.cnblogs.com/john-h/p/5886761.html>
 * MSBulid、IncrediBuild命令行接口实现自动化编译: <https://blog.csdn.net/yockie/article/details/17010509>
 * 理解WinRT: <http://www.cppblog.com/weiym/archive/2013/01/13/197234.html>
+* 请问如何修改某个exe文件的版本信息，包括CompanyName、ProductName等？: <https://bbs.csdn.net/topics/80184784>
 
 ## 需要整理的
 
