@@ -21,17 +21,17 @@
 * Crypto++: <http://www.cryptopp.com/>
 * OGLplus: <http://oglplus.org/>
 * POSIX Threads for Win32: <https://www.sourceware.org/pthreads-win32/>
-* Borland Graphics Interface (BGI) for Windows: <http://www.cs.colorado.edu/~main/cs1300/doc/bgi/>
 * libcstl: <http://libcstl.org/>
 * SWIG: <http://www.swig.org/>
-* Win32 BGI implementation: <https://sourceforge.net/projects/openbgi/>
+* Borland Graphics Interface (BGI) for Windows: <http://www.cs.colorado.edu/~main/cs1300/doc/bgi/>
+* Win32 BGI implementation(OpenBGI): <https://sourceforge.net/projects/openbgi/>
 * EasyX Library for C++: <http://www.easyx.cn/>
 * EGE（Easy Graphics Engine）: <http://xege.org/>
 * CLucene - a C++ search engine: <https://sourceforge.net/projects/clucene/>
 * Translate STL 2 C Language: <https://sourceforge.net/projects/tstl2cl/>
 * Borland-style CONIO: <https://sourceforge.net/projects/conio/>
 * DISLIN: <https://www.mps.mpg.de/dislin/>
-* ICU - International Components for Unicode: <http://site.icu-project.org/>
+* ICU - International Components for Unicode(ICU4C/ICU4J): <http://site.icu-project.org/>
 * libevent: <http://libevent.org/>
 * List of numerical libraries: <https://en.wikipedia.org/wiki/List_of_numerical_libraries>
 * Standard Template Library Programmer's Guide: <http://www.sgi.com/tech/stl/>
@@ -51,16 +51,18 @@
 * major changes between 7.00 and 8.00: <http://www.smorgasbordet.com/pellesc/changes_700_800.htm>
 * SecureZeroMemory function: <https://docs.microsoft.com/en-us/previous-versions/windows/desktop/legacy/aa366877(v=vs.85)>
 * ShellExecuteA function: <https://docs.microsoft.com/zh-cn/windows/win32/api/shellapi/nf-shellapi-shellexecutea>
-* 链接器工具错误 LNK2026: <https://docs.microsoft.com/zh-cn/previous-versions/visualstudio/visual-studio-2008/100ezk17(v=vs.90)>
 * CREATEGUID Function (GUID): <https://docs.microsoft.com/en-us/previous-versions/dynamicsnav-2013r2/dd339033(v=nav.71)>
+* Strsafe.h: <https://docs.microsoft.com/zh-cn/windows/win32/menurc/strsafe-ovw>
 * DUMPBIN Reference: <https://docs.microsoft.com/en-us/cpp/build/reference/dumpbin-reference>
 * 为 Visual C++ 项目创建的文件类型: <https://docs.microsoft.com/zh-cn/cpp/ide/file-types-created-for-visual-cpp-projects>
 * I/O Completion Ports: <https://docs.microsoft.com/zh-cn/windows/win32/fileio/i-o-completion-ports>
 
 * C/C++ Compiler and build tools errors and warnings: <https://docs.microsoft.com/en-us/cpp/error-messages/compiler-errors-1/c-cpp-build-errors>
   * C2360(initialization of 'identifier' is skipped by 'case' label)
+  * C2760(syntax error : expected 'name1' not 'name2'): <https://blog.csdn.net/xiongya8888/article/details/84571420>
   * C4251('identifier' : class 'type' needs to have dll-interface to be used by clients of class 'type2')
     * Exporting classes containing std:: objects (vector, map, etc) from a dll: <https://stackoverflow.com/questions/767579/exporting-classes-containing-std-objects-vector-map-etc-from-a-dll>
+  * LNK2026(链接器工具错误): <https://docs.microsoft.com/zh-cn/previous-versions/visualstudio/visual-studio-2008/100ezk17(v=vs.90)>
   * LNK4042(object specified more than once; extras ignored)
     * Visual Studio 2010's strange “warning LNK4042”: <https://stackoverflow.com/questions/3695174/visual-studio-2010s-strange-warning-lnk4042>
     * Visual Studio 2010 & 2008 can't handle source files with identical names in different folders?: <https://stackoverflow.com/questions/3729515/visual-studio-2010-2008-cant-handle-source-files-with-identical-names-in-diff>
@@ -107,6 +109,7 @@
 * Debug和Release有什么区别: <https://blog.csdn.net/chenhu_doc/article/details/932305>
 * 关于VS中区分debug与release，32位与64位编译的宏定义: <https://blog.csdn.net/zhuyingqingfen/article/details/24352137>
 * VC++中debug跟release编译模式的区别总结: <https://www.iteye.com/blog/javafans-609937>
+* _DEBUG vs NDEBUG: <https://stackoverflow.com/questions/2290509/debug-vs-ndebug>
 
 ## Linux C++
 
@@ -180,7 +183,9 @@
 
 ## CMake
 
-* <https://cmake.org/>
+* CMake: <https://cmake.org/>
+* cmakeconverter: <https://github.com/pavelliavonau/cmakeconverter>
+* How to support both vcxproj to cmake on a project? <https://stackoverflow.com/questions/6649606/how-to-support-both-vcxproj-to-cmake-on-a-project>
 
 ## GDB
 
@@ -256,7 +261,15 @@ C/C++由于历史原因，编译，构建难度相对于目前主流的其他语
 
 ## wxWidgets
 
-* <http://www.wxwidgets.org/>
+* wxWidgets: <http://www.wxwidgets.org/>
+
+## Duilib
+
+* Duilib: <https://github.com/duilib/duilib>
+
+* DUILibxml配置: <https://www.cnblogs.com/xubin0523/archive/2012/06/01/2530914.html>
+* DUiLib 源码分析——第一篇UIManager: <https://www.cnblogs.com/xubin0523/archive/2012/06/01/2530922.html>
+* DUiLib 源码分析——第二篇UIBase: <https://www.cnblogs.com/xubin0523/archive/2012/06/01/2530910.html>
 
 ## Doxygen
 
@@ -284,6 +297,8 @@ C/C++由于历史原因，编译，构建难度相对于目前主流的其他语
 
 ## 日志
 
+* log4c: <https://sourceforge.net/projects/log4c/>
+* clog: <https://github.com/mmueller/clog>
 * Log library for C++: <https://sourceforge.net/projects/log4cpp/>
 * log4cplus: <https://sourceforge.net/projects/log4cplus/>
 * log4cxx: <https://logging.apache.org/log4cxx/latest_stable/>
