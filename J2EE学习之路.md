@@ -13,7 +13,6 @@
 * API Design with Java 8: <https://dzone.com/articles/the-java-8-api-design-principles>
 * 如何重构“箭头型”代码: <http://coolshell.cn/articles/17757.html>
 * 软件项目“免坑”指南: <http://www.cnblogs.com/MeteorSeed/archive/2012/04/08/2427966.html>
-* 面向对象设计原则和创建SOLID应用的5个方法: <http://www.importnew.com/10656.html>
 * 大陆简中自由软件本地化工作指南: <https://repo.anthonos.org/misc/l10n/zh_CN_l10n_1.4.4.pdf>
 * 为什么称为北向接口、南向接口？ <https://club.mscbsc.com/t59732p1.html>
 * 一个程序员能够控制多少行代码: <https://www.cnblogs.com/jiangxinnju/p/5516918.html>

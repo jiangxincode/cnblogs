@@ -32,5 +32,6 @@
 * topcoder: <https://www.topcoder.com/>
 * codevs: <http://codevs.cn/>
 * 猿圈: <http://www.oxcoder.com/index.htm>
-* 九度OJ: <http://ac.jobdu.com/> <http://www.cskaoyan.com/thread-647811-1-1.html>
+* 九度OJ: <http://ac.jobdu.com/>
+* 九度OJ永久关闭声明: <http://www.cskaoyan.com/thread-647811-1-1.html>
 * ACdream Online Judge: <http://acdream.info/>
