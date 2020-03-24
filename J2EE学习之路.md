@@ -17,7 +17,7 @@
 * 面向对象设计的SOLID原则: Agile Software Development Principles Patterns and Practices[敏捷软件开发：原则、模式与实践]
 * 接口隔离原则+合成/聚合复用原则+迪米特法则（最小知识原则）:
 * 浅谈命令查询职责分离(CQRS)模式: <https://www.cnblogs.com/yangecnu/p/Introduction-CQRS.html>
-* Shalloway原则: Essential Skills for the Agile Developer[A Guide to Better Programming and Design][敏捷技能修炼_敏捷软件开发与设计的最佳实践]
+* Shalloway原则+分离构造和使用原则: Essential Skills for the Agile Developer[A Guide to Better Programming and Design][敏捷技能修炼_敏捷软件开发与设计的最佳实践]
 * 好莱坞原则: Hear First 设计模式
 
 * 变化驱动：正交设计: <https://www.jianshu.com/p/d127b8afc8cb>
