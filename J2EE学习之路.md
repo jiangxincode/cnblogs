@@ -13,6 +13,17 @@
 * API Design with Java 8: <https://dzone.com/articles/the-java-8-api-design-principles>
 * 如何重构“箭头型”代码: <http://coolshell.cn/articles/17757.html>
 * 软件项目“免坑”指南: <http://www.cnblogs.com/MeteorSeed/archive/2012/04/08/2427966.html>
+
+* 面向对象设计的SOLID原则: Agile Software Development Principles Patterns and Practices[敏捷软件开发：原则、模式与实践]
+* 接口隔离原则+合成/聚合复用原则+迪米特法则（最小知识原则）:
+* 浅谈命令查询职责分离(CQRS)模式: <https://www.cnblogs.com/yangecnu/p/Introduction-CQRS.html>
+* Shalloway原则: Essential Skills for the Agile Developer[A Guide to Better Programming and Design][敏捷技能修炼_敏捷软件开发与设计的最佳实践]
+* 好莱坞原则: Hear First 设计模式
+
+* 变化驱动：正交设计: <https://www.jianshu.com/p/d127b8afc8cb>
+* 正交设计，OO与SOLID: <https://www.jianshu.com/p/f7f5813882a1>
+* 实战正交设计: <https://www.jianshu.com/p/a95f67ed714d>
+
 * 大陆简中自由软件本地化工作指南: <https://repo.anthonos.org/misc/l10n/zh_CN_l10n_1.4.4.pdf>
 * 为什么称为北向接口、南向接口？ <https://club.mscbsc.com/t59732p1.html>
 * 一个程序员能够控制多少行代码: <https://www.cnblogs.com/jiangxinnju/p/5516918.html>
@@ -72,7 +83,6 @@
 * PO BO VO DTO POJO DAO DO这些Java中的概念分别指一些什么？: <https://www.zhihu.com/question/39651928>
 * Java bytecode instruction listings: <https://en.wikipedia.org/wiki/Java_bytecode_instruction_listings>
 * Java自动装箱与拆箱及其陷阱: <http://blog.csdn.net/jairuschan/article/details/7513045>
-* Web安全漏洞之：JDK1.5环境下扫描远程调试端口导致JVM崩溃【JDWP exit error JVMTI_ERROR_NONE(0)】: <http://blog.csdn.net/sfdev/article/details/5828509>
 * java byte与char互转原理: <http://www.cnblogs.com/bluespot/archive/2008/10/23/1318155.html>
 * Virtual Memory Usage from Java under Linux, too much memory used: <http://stackoverflow.com/questions/561245/virtual-memory-usage-from-java-under-linux-too-much-memory-used/561450#561450>
 * 理解OAuth 2.0: <http://www.ruanyifeng.com/blog/2014/05/oauth_2_0.html>
@@ -87,8 +97,6 @@
 * astyle 使用说明: <http://www.cnblogs.com/jiangxinnju/p/4908575.html>
 * How to make Java 6, which fails SSL connection with “SSL peer shut down incorrectly”, succeed like Java 7?: <http://stackoverflow.com/questions/15589880/how-to-make-java-6-which-fails-ssl-connection-with-ssl-peer-shut-down-incorrec>
 * 使用监听器对Spring bean id进行唯一校验: <http://chenzhou123520.iteye.com/blog/1774106>
-* Android安全开发之ZIP文件目录遍历: <http://www.cnblogs.com/alisecurity/p/5610654.html>
-* 华为内部的Web安全原则: <http://www.ha97.com/5520.html>
 * UML关系(泛化,实现,依赖,关联(聚合,组合))：<http://justsee.iteye.com/blog/808799>
 * 解析UML箭头、线条代表的意义：<http://developer.51cto.com/art/201006/206134.htm>
 * Burp Suite使用介绍（一） （二） （三）: <http://www.2cto.com/article/201406/310929.html>
@@ -121,7 +129,6 @@
 * SIT和UAT: <http://henry-cong.iteye.com/blog/1460431>
 * <http://stackoverflow.com/questions/37697359/jsonpropertyaccess-jsonproperty-access-write-only-not-working>
 * 客户端的IP地址伪造、CDN、反向代理、获取的那些事儿: <http://www.cnblogs.com/zhengyun_ustc/archive/2012/09/19/getremoteaddr.html>
-* 一些安全相关的HTTP响应头: <https://imququ.com/post/web-security-and-response-header.html#simple_thread>
 * Ehcache详细解读: <http://raychase.iteye.com/blog/1545906>
 * EhCache介绍: <http://chenjumin.iteye.com/blog/684926>
 * JDK自带工具之概览: <http://www.rowkey.me/blog/2016/11/03/jdk-tools/>
@@ -162,7 +169,6 @@
 * 浅析ReDoS的原理与实践: <http://www.freebuf.com/articles/network/124422.html>
 * More Servlets and JavaServer Pages: <http://pdf.moreservlets.com/>
 * UTF-8 encoding table and Unicode characters: <http://www.utf8-chartable.de/>
-* Java之美[从菜鸟到高手演变]之设计模式：<https://blog.csdn.net/zhangerqing/article/details/8245560>
 * [System.currentTimeMillis]/[Calendar.getInstance().getTimeInMillis()]/[new Date().getTime()]: <https://www.cnblogs.com/jiangxinnju/p/9425411.html>
 * javac的调试选项-g的意义: <https://shenzhang722.iteye.com/blog/1824921>
 
@@ -172,6 +178,13 @@
 * ajax与302响应: <http://www.cnblogs.com/dudu/p/ajax_302_found.html>
 * HTTPS 升级指南: <http://www.ruanyifeng.com/blog/2016/08/migrate-from-http-to-https.html>
 * HTML中`&nbsp; &ensp; &emsp; &thinsp;`等6种空白空格的区别: <https://www.cnblogs.com/chenshihaook/p/6186343.html>
+
+* STRIDE威胁建模方法讨论: <https://www.freebuf.com/articles/es/205984.html>
+* STRIDE威胁建模漫谈: <https://www.secrss.com/articles/3298>
+* 华为内部的Web安全原则: <http://www.ha97.com/5520.html>
+* Android安全开发之ZIP文件目录遍历: <http://www.cnblogs.com/alisecurity/p/5610654.html>
+* Web安全漏洞之：JDK1.5环境下扫描远程调试端口导致JVM崩溃【JDWP exit error JVMTI_ERROR_NONE(0)】: <http://blog.csdn.net/sfdev/article/details/5828509>
+* 一些安全相关的HTTP响应头: <https://imququ.com/post/web-security-and-response-header.html#simple_thread>
 
 ## JVM
 
