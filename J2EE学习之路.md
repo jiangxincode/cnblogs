@@ -15,7 +15,7 @@
 * 软件项目“免坑”指南: <http://www.cnblogs.com/MeteorSeed/archive/2012/04/08/2427966.html>
 
 * 面向对象设计的SOLID原则: Agile Software Development Principles Patterns and Practices[敏捷软件开发：原则、模式与实践]
-* 接口隔离原则+合成/聚合复用原则+迪米特法则（最小知识原则）:
+* 合成/聚合复用原则+迪米特法则（最小知识原则）: Java与模式.pdf
 * 浅谈命令查询职责分离(CQRS)模式: <https://www.cnblogs.com/yangecnu/p/Introduction-CQRS.html>
 * Shalloway原则+分离构造和使用原则: Essential Skills for the Agile Developer[A Guide to Better Programming and Design][敏捷技能修炼_敏捷软件开发与设计的最佳实践]
 * 好莱坞原则: Hear First 设计模式
@@ -31,7 +31,7 @@
 * 开源协议汇总: <https://opensource.org/licenses>
 * 如何选择开源许可证？：<http://www.ruanyifeng.com/blog/2011/05/how_to_choose_free_software_licenses.html>
 
-* Item 11: Always override hashCode when you override equals: <Effective Java 3rd Edition>
+* Item 11: Always override hashCode when you override equals: Effective Java 3rd Edition
 * Jdk1.8中的HashMap实现原理: <https://blog.csdn.net/fjse51/article/details/53811465>
 * Java7/8 中的HashMap 和 ConcurrentHashMap: <https://www.jianshu.com/p/39a57484932e>
 * What is difference between fail safe iterator and fail fast iterator: <http://marjavamitjava.com/difference-fail-safe-iterator-fail-fast-iterator/>
@@ -48,6 +48,9 @@
 * Java HotSpot VM Options： <http://www.oracle.com/technetwork/java/javase/tech/vmoptions-jsp-140102.html>
 * Setting Project Facets: <http://docs.oracle.com/cd/E13224_01/wlw/docs103/guide/ideuserguide/projects/conFacets.html>
 * Overriding and Hiding Methods: <http://docs.oracle.com/javase/tutorial/java/IandI/override.html>
+* javac: <https://docs.oracle.com/javase/8/docs/technotes/tools/windows/javac.html>
+* javac的调试选项-g的意义: <https://shenzhang722.iteye.com/blog/1824921>
+* Java Platform Debugger Architecture (JPDA): <https://docs.oracle.com/javase/8/docs/technotes/guides/jpda/index.html>
 
 * jarFinder: <http://www.jarfinder.com/>
 * java examples: <http://www.javased.com/>
@@ -170,7 +173,6 @@
 * More Servlets and JavaServer Pages: <http://pdf.moreservlets.com/>
 * UTF-8 encoding table and Unicode characters: <http://www.utf8-chartable.de/>
 * [System.currentTimeMillis]/[Calendar.getInstance().getTimeInMillis()]/[new Date().getTime()]: <https://www.cnblogs.com/jiangxinnju/p/9425411.html>
-* javac的调试选项-g的意义: <https://shenzhang722.iteye.com/blog/1824921>
 
 * List of HTTP status codes: <https://en.wikipedia.org/wiki/List_of_HTTP_status_codes>
 * html的meta总结，html标签中meta属性使用介绍: <http://www.haorooms.com/post/html_meta_ds>
