@@ -15,7 +15,7 @@
 * 软件项目“免坑”指南: <http://www.cnblogs.com/MeteorSeed/archive/2012/04/08/2427966.html>
 
 * 面向对象设计的SOLID原则: Agile Software Development Principles Patterns and Practices[敏捷软件开发：原则、模式与实践]
-* 合成/聚合复用原则+迪米特法则（最小知识原则）: Java与模式.pdf
+* 合成/聚合复用原则+迪米特法则（最小知识原则）: Java与模式
 * 浅谈命令查询职责分离(CQRS)模式: <https://www.cnblogs.com/yangecnu/p/Introduction-CQRS.html>
 * Shalloway原则+分离构造和使用原则: Essential Skills for the Agile Developer[A Guide to Better Programming and Design][敏捷技能修炼_敏捷软件开发与设计的最佳实践]
 * 好莱坞原则: Hear First 设计模式
@@ -36,7 +36,7 @@
 * Java7/8 中的HashMap 和 ConcurrentHashMap: <https://www.jianshu.com/p/39a57484932e>
 * What is difference between fail safe iterator and fail fast iterator: <http://marjavamitjava.com/difference-fail-safe-iterator-fail-fast-iterator/>
 
-* Java IO相关，字符编码相关: "Java IO 2nd Edition"
+* Java IO相关，字符编码相关:  Java IO 2nd Edition
 * Java直接内存与非直接内存性能测试: <http://www.cnblogs.com/xing901022/p/5243657.html>
 * Java直接（堆外）内存使用详解: <http://www.cnblogs.com/xing901022/p/5248934.html>
 * Buffer: <https://yddmax.github.io/2017/06/08/Buffer/>
@@ -110,7 +110,7 @@
 * Java关键字及其作用：<http://blog.csdn.net/hfmbook/article/details/7634385>
 * java中static{}语句块详解: <http://blog.csdn.net/lubiaopan/article/details/4802430>
 * 转一个J2EE开发时的包命名规则，养成良好的开发习惯：<http://www.blogjava.net/paulwong/archive/2012/04/15/374675.html>
-* 对比C++ 和Java: Thinking in java[Java编程思想第4版].pdf
+* 对比C++ 和Java: Thinking in java[Java编程思想第4版]
 * JAR文件包及jar命令详解: <http://blog.donews.com/hitfly/archive/2005/03/25/312851.aspx>
 * JAVA调用系统命令或可执行程序：<http://wuhongyu.iteye.com/blog/461477/>
 * 过时date.toLocaleString()的解决方法: <http://ldl8818.iteye.com/blog/1492301>
@@ -349,8 +349,17 @@
 
 ## JMockit
 
-* 官网：<http://jmockit.org/>
-* 各种mock工具的比较：<http://jmockit.org/MockingToolkitComparisonMatrix.html>
+* JMockit：<http://jmockit.github.io/>
+* jMock: <http://jmock.org/>
+* EasyMock: <http://easymock.org/>
+* mockito: <https://github.com/mockito/mockito>
+* Mock测试工具比较：<https://blog.csdn.net/l947069962/article/details/77543016>
+
+## Fuzz
+
+* fuzz实战之libfuzzer: <https://www.secpulse.com/archives/71898.html>
+* 浅析Peach Fuzz: <http://blog.nsfocus.net/peach-fuzz/>
+* Syzkaller：Linux内核模糊测试工具分享: <https://www.freebuf.com/sectool/142969.html>
 
 ## TestNG
 
