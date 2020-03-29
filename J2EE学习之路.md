@@ -9,6 +9,7 @@
 
 ## Java tutorial
 
+* On Java 8(事实上的 Java 编程思想 第5版): <https://lingcoder.github.io/OnJava8/#/>
 * 9 Best Practices to Handle Exceptions in Java: <https://dzone.com/articles/9-best-practices-to-handle-exceptions-in-java>
 * API Design with Java 8: <https://dzone.com/articles/the-java-8-api-design-principles>
 * 如何重构“箭头型”代码: <http://coolshell.cn/articles/17757.html>
@@ -19,10 +20,12 @@
 * 浅谈命令查询职责分离(CQRS)模式: <https://www.cnblogs.com/yangecnu/p/Introduction-CQRS.html>
 * Shalloway原则+分离构造和使用原则: Essential Skills for the Agile Developer[A Guide to Better Programming and Design][敏捷技能修炼_敏捷软件开发与设计的最佳实践]
 * 好莱坞原则: Hear First 设计模式
+* Tell, Don't Ask: <https://pragprog.com/articles/tell-dont-ask>
 
 * 变化驱动：正交设计: <https://www.jianshu.com/p/d127b8afc8cb>
 * 正交设计，OO与SOLID: <https://www.jianshu.com/p/f7f5813882a1>
 * 实战正交设计: <https://www.jianshu.com/p/a95f67ed714d>
+* 简单设计: <https://www.jianshu.com/p/0228d2dd90fe>
 
 * 大陆简中自由软件本地化工作指南: <https://repo.anthonos.org/misc/l10n/zh_CN_l10n_1.4.4.pdf>
 * 为什么称为北向接口、南向接口？ <https://club.mscbsc.com/t59732p1.html>
@@ -32,6 +35,7 @@
 * 如何选择开源许可证？：<http://www.ruanyifeng.com/blog/2011/05/how_to_choose_free_software_licenses.html>
 
 * Item 11: Always override hashCode when you override equals: Effective Java 3rd Edition
+* 在 Java 中初始化 List 的五种方法: <https://juejin.im/post/5bddcee3e51d4520b6639663>
 * Jdk1.8中的HashMap实现原理: <https://blog.csdn.net/fjse51/article/details/53811465>
 * Java7/8 中的HashMap 和 ConcurrentHashMap: <https://www.jianshu.com/p/39a57484932e>
 * What is difference between fail safe iterator and fail fast iterator: <http://marjavamitjava.com/difference-fail-safe-iterator-fail-fast-iterator/>
@@ -40,6 +44,7 @@
 * Java直接内存与非直接内存性能测试: <http://www.cnblogs.com/xing901022/p/5243657.html>
 * Java直接（堆外）内存使用详解: <http://www.cnblogs.com/xing901022/p/5248934.html>
 * Buffer: <https://yddmax.github.io/2017/06/08/Buffer/>
+* Java引用总结--StrongReference、SoftReference、WeakReference、PhantomReference: <https://www.cnblogs.com/skywang12345/p/3154474.html>
 * Emoji的编码以及常见问题的解决方法: <https://segmentfault.com/a/1190000007594620>
 
 * Java代码质量度量工具大阅兵: <https://www.cnblogs.com/jiangxinnju/p/10010177.html>
