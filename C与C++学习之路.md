@@ -39,6 +39,7 @@
 
 ## Windows C++
 
+* VISUAL ASSIST: <https://www.wholetomato.com/>
 * /std (Specify Language Standard Version): <https://docs.microsoft.com/zh-cn/cpp/build/reference/std-specify-language-standard-version>
 * CRT Library Features: <https://docs.microsoft.com/en-us/cpp/c-runtime-library/crt-library-features>
 * UCRT 按字母顺序排列的函数参考: <https://docs.microsoft.com/zh-cn/cpp/c-runtime-library/reference/crt-alphabetical-function-reference>
@@ -315,11 +316,14 @@ C/C++由于历史原因，编译，构建难度相对于目前主流的其他语
 * BoringSSL: <https://github.com/google/boringssl>
 * LibreSSL: <http://www.libressl.org/>
 * OpenSSL 在windows系统下的编译全解: <https://blog.csdn.net/danscort2000/article/details/81300248>
+* 使用OpenSSL实现X25519秘钥协商功能：<https://www.cnblogs.com/jiangxinnju/p/12615280.html>
 
 ## XML
 
-* TinyXML: <https://sourceforge.net/projects/tinyxml/> <https://github.com/leethomason/tinyxml2>
+* TinyXML: <https://sourceforge.net/projects/tinyxml/>
+* tinyxml2: <https://github.com/leethomason/tinyxml2>
 * Libxml2: <http://xmlsoft.org/>
+* RapidXml: <https://sourceforge.net/projects/rapidxml/>
 
 ## JSON
 

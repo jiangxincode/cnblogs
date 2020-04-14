@@ -515,6 +515,7 @@ Eclipse中`Update Project`，选择`Force Update of Snapshots/Releases`
 * overlays: <http://maven.apache.org/plugins/maven-war-plugin/overlays.html>
 * <http://www.mojohaus.org/>
 * Maven Ant Tasks: <http://maven.apache.org/ant-tasks/>
+* Maven插件maven-antrun-plugin的使用: <https://www.cnblogs.com/EasonJim/p/6819338.html>
 * M2Eclipse项目地址：<http://www.eclipse.org/m2e/>
 * 安装说明（Eclipse EE中自带）：<http://www.eclipse.org/m2e/m2e-downloads.html>
 * 如何用Maven创建web项目（具体步骤）：<http://blog.csdn.net/chuyuqing/article/details/28879477>
