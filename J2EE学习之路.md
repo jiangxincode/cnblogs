@@ -9,7 +9,6 @@
 
 ## Java tutorial
 
-* On Java 8(事实上的 Java 编程思想 第5版): <https://lingcoder.github.io/OnJava8/#/>
 * 9 Best Practices to Handle Exceptions in Java: <https://dzone.com/articles/9-best-practices-to-handle-exceptions-in-java>
 * API Design with Java 8: <https://dzone.com/articles/the-java-8-api-design-principles>
 * 如何重构“箭头型”代码: <http://coolshell.cn/articles/17757.html>
@@ -34,20 +33,49 @@
 * 开源协议汇总: <https://opensource.org/licenses>
 * 如何选择开源许可证？：<http://www.ruanyifeng.com/blog/2011/05/how_to_choose_free_software_licenses.html>
 
+* java 泛型详解-绝对是对泛型方法讲解最详细的，没有之一: <https://blog.csdn.net/s10461/article/details/53941091>
+* Java 泛型中 <? extends T> 与 <? super T> 的区别: <https://www.jianshu.com/p/0808c0029b2d>
 * Item 11: Always override hashCode when you override equals: Effective Java 3rd Edition
 * 在 Java 中初始化 List 的五种方法: <https://juejin.im/post/5bddcee3e51d4520b6639663>
+* 最全的集合干货送给大家：<https://blog.csdn.net/javageektech/article/details/102385002>
+* Java集合ArrayDeque类解读: <https://blog.csdn.net/wangyang1354/article/details/57081920>
 * Jdk1.8中的HashMap实现原理: <https://blog.csdn.net/fjse51/article/details/53811465>
 * Java7/8 中的HashMap 和 ConcurrentHashMap: <https://www.jianshu.com/p/39a57484932e>
 * What is difference between fail safe iterator and fail fast iterator: <http://marjavamitjava.com/difference-fail-safe-iterator-fail-fast-iterator/>
-
 * Java IO相关，字符编码相关:  Java IO 2nd Edition
 * Java直接内存与非直接内存性能测试: <http://www.cnblogs.com/xing901022/p/5243657.html>
 * Java直接（堆外）内存使用详解: <http://www.cnblogs.com/xing901022/p/5248934.html>
 * Buffer: <https://yddmax.github.io/2017/06/08/Buffer/>
 * Java引用总结--StrongReference、SoftReference、WeakReference、PhantomReference: <https://www.cnblogs.com/skywang12345/p/3154474.html>
-* Emoji的编码以及常见问题的解决方法: <https://segmentfault.com/a/1190000007594620>
+* Java实现单例模式的9种方法：<https://blog.csdn.net/qq_35860138/article/details/86477538>
+* 5种必会的Java异步调用转同步的方法你会几种: <https://blog.csdn.net/m0_37595562/article/details/81638445>
+* Java中Volatile关键字详解: <https://www.cnblogs.com/zhengbin/p/5654805.html>
 
-* Java代码质量度量工具大阅兵: <https://www.cnblogs.com/jiangxinnju/p/10010177.html>
+* Java Runtime.exec()的使用: <http://www.cnblogs.com/mingforyou/p/3551199.html>
+* 深入理解Java：SimpleDateFormat安全的时间格式化: <http://www.cnblogs.com/peida/archive/2013/05/31/3070790.html>
+* 深入理解Java：注解（Annotation）基本概念: <http://www.cnblogs.com/peida/archive/2013/04/23/3036035.html>
+* Java annotation 自定义注释@interface的用法: <http://www.blogjava.net/hao446tian/archive/2011/10/25/361960.html>
+* [改编]深入equals方法，讨论instanceof的使用！: <http://www.blogjava.net/bacoo/archive/2007/12/20/169176.html>
+* Java自动装箱与拆箱及其陷阱: <http://blog.csdn.net/jairuschan/article/details/7513045>
+* java byte与char互转原理: <http://www.cnblogs.com/bluespot/archive/2008/10/23/1318155.html>
+* Java关键字及其作用：<http://blog.csdn.net/hfmbook/article/details/7634385>
+* java中static{}语句块详解: <http://blog.csdn.net/lubiaopan/article/details/4802430>
+* JAR文件包及jar命令详解: <http://www.blogjava.net/liyong/articles/84377.html>
+* 类加载器基本概念: <https://www.ibm.com/developerworks/cn/java/j-lo-classloader/index.html>
+* Jar包的正确运行方法: <http://www.cnblogs.com/jifeng/archive/2012/06/07/2540338.html>
+* Class热替换与卸载: <https://my.oschina.net/xianggao/blog/367822>
+* Java 类的热替换 —— 概念、设计与实现: <https://www.ibm.com/developerworks/cn/java/j-lo-hotswapcls/>
+* Java陷阱之assert关键字: <http://lavasoft.blog.51cto.com/62575/43735/>
+* [System.currentTimeMillis]/[Calendar.getInstance().getTimeInMillis()]/[new Date().getTime()]: <https://www.cnblogs.com/jiangxinnju/p/9425411.html>
+* JAVA调用系统命令或可执行程序：<http://wuhongyu.iteye.com/blog/461477/>
+* 过时date.toLocaleString()的解决方法: <http://ldl8818.iteye.com/blog/1492301>
+* java中Assert的用法：<http://lgl669.iteye.com/blog/483271>
+* FINAL .....FINALLY ...... 和FINALIZE ......区别: <http://www.cnblogs.com/wl0000-03/p/5961582.html>
+* Comparable与Comparator的区别：<http://blog.csdn.net/mageshuai/article/details/3849143>
+* 关于toString: <http://www.iteye.com/problems/96872>
+* OpenJDK和SunJDK有啥区别？<https://www.zhihu.com/question/19646618>
+* GetPropertyAction vs System.getProperty in obtaining system variables: <http://stackoverflow.com/questions/4954924/getpropertyaction-vs-system-getproperty-in-obtaining-system-variables>
+* File.separator vs FileSystem.getSeparator() vs System.getProperty(“file.separator”)?: <http://stackoverflow.com/questions/8075373/file-separator-vs-filesystem-getseparator-vs-system-getpropertyfile-separato>
 
 * VirtualMachine：<http://docs.oracle.com/javase/7/docs/jdk/api/attach/spec/com/sun/tools/attach/VirtualMachine.html>
 * Java HotSpot VM Options： <http://www.oracle.com/technetwork/java/javase/tech/vmoptions-jsp-140102.html>
@@ -55,96 +83,96 @@
 * Overriding and Hiding Methods: <http://docs.oracle.com/javase/tutorial/java/IandI/override.html>
 * javac: <https://docs.oracle.com/javase/8/docs/technotes/tools/windows/javac.html>
 * javac的调试选项-g的意义: <https://shenzhang722.iteye.com/blog/1824921>
+* javadoc相关问题: <http://www.cnblogs.com/jiangxinnju/p/6091525.html>
+* JDK自带工具之概览: <http://www.rowkey.me/blog/2016/11/03/jdk-tools/>
+* How to solve the error: The system cannot find the file C:\ProgramData\Oracle\Java\javapath\java.exe：<http://stackoverflow.com/questions/26864662/how-to-solve-the-error-the-system-cannot-find-the-file-c-programdata-oracle-ja>
+* 三个实例演示 Java Thread Dump 日志分析：<http://www.cnblogs.com/zhengyun_ustc/archive/2013/01/06/dumpanalysis.html>
+* 深入 Java 调试体系: <https://www.ibm.com/developerworks/cn/views/java/libraryview.jsp?search_by=%E6%B7%B1%E5%85%A5+Java+%E8%B0%83%E8%AF%95%E4%BD%93%E7%B3%BB>
 * Java Platform Debugger Architecture (JPDA): <https://docs.oracle.com/javase/8/docs/technotes/guides/jpda/index.html>
+* Jps介绍以及解决jps无法查看某个已经启动的java进程问题: <http://trinea.iteye.com/blog/1196400>
+* Java永久代去哪儿了: <http://www.infoq.com/cn/articles/Java-PERMGEN-Removed>
+* Java8内存模型—永久代(PermGen)和元空间(Metaspace): <https://www.cnblogs.com/paddix/p/5309550.html>
+* JVM调优总结（转）: <http://www.cnblogs.com/jiangxinnju/p/5655535.html>
+* Java server application troubleshooting using JDK tools: <http://java-performance.info/>
 
-* jarFinder: <http://www.jarfinder.com/>
-* java examples: <http://www.javased.com/>
-
-* SEI CERT Oracle Coding Standard for Java: <https://wiki.sei.cmu.edu/confluence/display/java/SEI+CERT+Oracle+Coding+Standard+for+Java>
-* Secure Coding Guidelines for Java SE: <https://www.oracle.com/technetwork/java/seccodeguide-139067.html>
-* CWE/SANS Top 25 Most Dangerous Software Errors: <http://cwe.mitre.org/top25/index.html>
-
-* Introduction to Java Programming, Eighth Edition: <http://www.cs.armstrong.edu/liang/intro8e/>
+* Java代码质量度量工具大阅兵: <https://www.cnblogs.com/jiangxinnju/p/10010177.html>
 * Java杂项: <http://www.cnblogs.com/jiangxinnju/p/6582135.html>
 * Java 理论与实践: <http://www.ibm.com/developerworks/cn/java/j-jtp/>
-* Java多线程：<http://blog.csdn.net/column/details/multithreading.html>
-* Java Runtime.exec()的使用: <http://www.cnblogs.com/mingforyou/p/3551199.html>
 * 敏捷开发中高质量 Java 代码开发实践: <http://www.ibm.com/developerworks/cn/java/j-lo-agile/>
-* 深入理解Java：SimpleDateFormat安全的时间格式化: <http://www.cnblogs.com/peida/archive/2013/05/31/3070790.html>
-* 深入理解Java：注解（Annotation）基本概念: <http://www.cnblogs.com/peida/archive/2013/04/23/3036035.html>
-* Java annotation 自定义注释@interface的用法: <http://www.blogjava.net/hao446tian/archive/2011/10/25/361960.html>
-* JAVA正则表达式高级用法(分组与捕获): <http://www.cnblogs.com/lovingprince/archive/2008/08/06/2166368.html>
 * Java RMI 入门指南: <http://www.blogjava.net/zhenyu33154/articles/320245.html>
 * Java RMI与RPC，JMS的比较：<http://visionsky.blog.51cto.com/733317/438693/>
 * Flatten your objects Discover the secrets of the Java Serialization API: <http://www.javaworld.com/article/2076120/java-se/flatten-your-objects.html>
 * The Java serialization algorithm revealed: <http://www.javaworld.com/article/2072752/the-java-serialization-algorithm-revealed.html>
-* Java Performance Tuning Guide: <http://java-performance.info/>
+* Emoji的编码以及常见问题的解决方法: <https://segmentfault.com/a/1190000007594620>
 * 构建一个文本可视化和分析应用程序: <http://www.ibm.com/developerworks/cn/opensource/os-txtviz/>
 * POJO模式: <http://www.cnblogs.com/yezhenhan/archive/2011/11/21/2256642.html>
 * Java数字图像处理基础知识 - 必读: <http://blog.csdn.net/jia20003/article/details/7279667>
 * Java反序列化时对象注入可以造成代码执行漏洞: <http://0day5.com/archives/3572>
-* [改编]深入equals方法，讨论instanceof的使用！: <http://www.blogjava.net/bacoo/archive/2007/12/20/169176.html>
-* Struts2、Spring和Hibernate应用实例: <http://871421448.iteye.com/blog/1546058>
-* spring中注册bean(通过代码动态注册): <http://blog.csdn.net/buyaore_wo/article/details/8119577>
 * Apache和IIS网站Web日志格式详解: <http://www.ha97.com/4813.html>
 * 领域驱动设计系列文章——浅析VO、DTO、DO、PO的概念、区别和用处: <http://www.cnblogs.com/qixuejia/p/4390086.html>
 * PO BO VO DTO POJO DAO DO这些Java中的概念分别指一些什么？: <https://www.zhihu.com/question/39651928>
 * Java bytecode instruction listings: <https://en.wikipedia.org/wiki/Java_bytecode_instruction_listings>
-* Java自动装箱与拆箱及其陷阱: <http://blog.csdn.net/jairuschan/article/details/7513045>
-* java byte与char互转原理: <http://www.cnblogs.com/bluespot/archive/2008/10/23/1318155.html>
 * Virtual Memory Usage from Java under Linux, too much memory used: <http://stackoverflow.com/questions/561245/virtual-memory-usage-from-java-under-linux-too-much-memory-used/561450#561450>
 * 理解OAuth 2.0: <http://www.ruanyifeng.com/blog/2014/05/oauth_2_0.html>
-* Spring框架的反序列化远程代码执行漏洞分析（转）: <http://www.cnblogs.com/jiangxinnju/p/5697050.html>
-* Spring “redirect:” EL vulnerability?: <http://stackoverflow.com/questions/22917760/spring-redirect-el-vulnerability>
 * Need to suppress “Warning: running an XSLT 1.0 stylesheet with an XSLT 2.0 processor” in Tomcat std out log file: <http://stackoverflow.com/questions/4445481/need-to-suppress-warning-running-an-xslt-1-0-stylesheet-with-an-xslt-2-0-proce>
 * Java 授权内幕: <http://www.ibm.com/developerworks/cn/java/j-javaauth/>
 * ServletInputStream的重复读取（多次读取）（转）: <http://www.cnblogs.com/jiangxinnju/p/5709378.html>
-* 99%的人都理解错了HTTP中GET与POST的区别: <http://web.jobbole.com/88068/>
 * Developing a Service Provider using Java API(Service Provider Interface): <http://www.lordofthejars.com/2011/11/en-ti-puedo-ver-la-libertad-tu-me-haces.html>
 * 驱动模块和桩模块的概念和区别: <http://daimajishu.iteye.com/blog/1557295>
 * astyle 使用说明: <http://www.cnblogs.com/jiangxinnju/p/4908575.html>
-* How to make Java 6, which fails SSL connection with “SSL peer shut down incorrectly”, succeed like Java 7?: <http://stackoverflow.com/questions/15589880/how-to-make-java-6-which-fails-ssl-connection-with-ssl-peer-shut-down-incorrec>
-* 使用监听器对Spring bean id进行唯一校验: <http://chenzhou123520.iteye.com/blog/1774106>
 * UML关系(泛化,实现,依赖,关联(聚合,组合))：<http://justsee.iteye.com/blog/808799>
 * 解析UML箭头、线条代表的意义：<http://developer.51cto.com/art/201006/206134.htm>
+* 转一个J2EE开发时的包命名规则，养成良好的开发习惯：<http://www.blogjava.net/paulwong/archive/2012/04/15/374675.html>
+* Eclipse 开发WEB项目所遇问题 WebContent WebRoot：<http://blog.sina.com.cn/s/blog_525960510100jo0j.html>
+* Java调用动态库方法说明: <http://www.cnblogs.com/xifanyaoyao/p/3659019.html>
+* Servlet容器的匹配过程：<http://developer.51cto.com/art/200907/134840.htm>
+
+* 测试方面的基础概念: <http://javazhou.iteye.com/blog/1727745>
+* SIT和UAT: <http://henry-cong.iteye.com/blog/1460431>
 * Burp Suite使用介绍（一） （二） （三）: <http://www.2cto.com/article/201406/310929.html>
+* <http://stackoverflow.com/questions/37697359/jsonpropertyaccess-jsonproperty-access-write-only-not-working>
+* Ehcache详细解读: <http://raychase.iteye.com/blog/1545906>
+* EhCache介绍: <http://chenjumin.iteye.com/blog/684926>
+* 服务化之－路由: <http://mp.weixin.qq.com/s?__biz=MzIzODYyNjkzNw==&mid=2247483732&idx=1&sn=5e3533b6f79823083e567e092a0e65fc&chksm=e9373042de40b95466784930dfc9468a7974ddd1bae05b02f9776c0e8a2074463f2df7ed59e0#rd>
+* HTTP Keep-Alive详解: <http://liuzhigong.blog.163.com/blog/static/1782723752011412551547/>
+* 定义文档兼容性:  <https://msdn.microsoft.com/zh-cn/library/cc288325>(VS.85).aspx
+* 系统吞吐量（TPS）、用户并发量、性能测试概念和公式: <http://www.ha97.com/5095.html>
+* Java 语言的 XPath API: <https://www.ibm.com/developerworks/cn/xml/x-javaxpathapi.html>
+* XMLHttpRequest Living Standard: <https://xhr.spec.whatwg.org/>
+* Servlet 3.1规范[翻译]: <http://jinnianshilongnian.iteye.com/category/255452>
+* MVC，MVP 和 MVVM 的图示: <http://www.ruanyifeng.com/blog/2015/02/mvcmvp_mvvm.html>
+* 数据库分页Java实现: <http://www.cnblogs.com/ITtangtang/archive/2012/04/21/2462385.html>
+* Atom Authentication: <http://www.xml.com/pub/a/2003/12/17/dive.html>
+* 在AI寻路决策中运用势力图（Influence Map）: <http://www.aisharing.com/archives/80?replytocom=219>
+* More Servlets and JavaServer Pages: <http://pdf.moreservlets.com/>
+* UTF-8 encoding table and Unicode characters: <http://www.utf8-chartable.de/>
+* jarFinder: <http://www.jarfinder.com/>
+* java examples: <http://www.javased.com/>
+
+* 99%的人都理解错了HTTP中GET与POST的区别: <http://web.jobbole.com/88068/>
+* List of HTTP status codes: <https://en.wikipedia.org/wiki/List_of_HTTP_status_codes>
+* html的meta总结，html标签中meta属性使用介绍: <http://www.haorooms.com/post/html_meta_ds>
+* 使用 jQuery.i18n.properties 实现 Web 前端的国际化: <https://www.ibm.com/developerworks/cn/web/1305_hezj_jqueryi18n/>
+* ajax与302响应: <http://www.cnblogs.com/dudu/p/ajax_302_found.html>
+* HTTPS 升级指南: <http://www.ruanyifeng.com/blog/2016/08/migrate-from-http-to-https.html>
+* HTML中`&nbsp; &ensp; &emsp; &thinsp;`等6种空白空格的区别: <https://www.cnblogs.com/chenshihaook/p/6186343.html>
+
+* javascript CDATA: <http://blog.csdn.net/shenyan008/article/details/12222241>
 * 浅析Web工程目录和tomcat目录: <http://blog.csdn.net/ystyaoshengting/article/details/6204886>
 * CSS3美化有序列表: <http://www.w3cplus.com/css3/css3-ordered-list-styles>
 * 简洁纯净的CSS表单设计实例: <http://blog.bingo929.com/clean-and-pure-css-form-design.html>
 * DreamweaverCS5+Tomcat环境配置: <http://blog.csdn.net/jnqqls/article/details/7024170>
-* Java关键字及其作用：<http://blog.csdn.net/hfmbook/article/details/7634385>
-* java中static{}语句块详解: <http://blog.csdn.net/lubiaopan/article/details/4802430>
-* 转一个J2EE开发时的包命名规则，养成良好的开发习惯：<http://www.blogjava.net/paulwong/archive/2012/04/15/374675.html>
-* 对比C++ 和Java: Thinking in java[Java编程思想第4版]
-* JAR文件包及jar命令详解: <http://blog.donews.com/hitfly/archive/2005/03/25/312851.aspx>
-* JAVA调用系统命令或可执行程序：<http://wuhongyu.iteye.com/blog/461477/>
-* 过时date.toLocaleString()的解决方法: <http://ldl8818.iteye.com/blog/1492301>
-* Jps介绍以及解决jps无法查看某个已经启动的java进程问题: <http://trinea.iteye.com/blog/1196400>
-* java中Assert的用法：<http://lgl669.iteye.com/blog/483271>
-* FINAL .....FINALLY ...... 和FINALIZE ......区别: <http://www.cnblogs.com/wl0000-03/p/5961582.html>
-* Comparable与Comparator的区别：<http://blog.csdn.net/mageshuai/article/details/3849143>
-* MyEclipse删除对Struts、Hibernate、Spring的支持：<http://www.cnblogs.com/xj626852095/p/3648148.html>
-* 修改Struts2的struts.xml配置文件位置：<http://blog.csdn.net/zht666/article/details/8980451>
-* Eclipse 开发WEB项目所遇问题 WebContent WebRoot：<http://blog.sina.com.cn/s/blog_525960510100jo0j.html>
-* javascript CDATA: <http://blog.csdn.net/shenyan008/article/details/12222241>
-* Java调用动态库方法说明: <http://www.cnblogs.com/xifanyaoyao/p/3659019.html>
-* struts2关于A web application created a ThreadLocal with key of type 异常解决办法: <http://cooliron.blog.163.com/blog/static/12470313820111235248426/>
-* 关于toString: <http://www.iteye.com/problems/96872>
-* Servlet容器的匹配过程：<http://developer.51cto.com/art/200907/134840.htm>
-* 解决java.lang.IncompatibleClassChangeError: <https://my.oschina.net/itblog/blog/528613>
-* javadoc相关问题: <http://www.cnblogs.com/jiangxinnju/p/6091525.html>
-* 测试方面的基础概念: <http://javazhou.iteye.com/blog/1727745>
-* SIT和UAT: <http://henry-cong.iteye.com/blog/1460431>
-* <http://stackoverflow.com/questions/37697359/jsonpropertyaccess-jsonproperty-access-write-only-not-working>
-* 客户端的IP地址伪造、CDN、反向代理、获取的那些事儿: <http://www.cnblogs.com/zhengyun_ustc/archive/2012/09/19/getremoteaddr.html>
-* Ehcache详细解读: <http://raychase.iteye.com/blog/1545906>
-* EhCache介绍: <http://chenjumin.iteye.com/blog/684926>
-* JDK自带工具之概览: <http://www.rowkey.me/blog/2016/11/03/jdk-tools/>
-* 服务化之－路由: <http://mp.weixin.qq.com/s?__biz=MzIzODYyNjkzNw==&mid=2247483732&idx=1&sn=5e3533b6f79823083e567e092a0e65fc&chksm=e9373042de40b95466784930dfc9468a7974ddd1bae05b02f9776c0e8a2074463f2df7ed59e0#rd>
-* Class热替换与卸载: <https://my.oschina.net/xianggao/blog/367822>
-* HTTP Keep-Alive详解: <http://liuzhigong.blog.163.com/blog/static/1782723752011412551547/>
-* 定义文档兼容性:  <https://msdn.microsoft.com/zh-cn/library/cc288325>(VS.85).aspx
-* 让浏览器不再显示 https 页面中的 http 请求警报: <http://www.cnblogs.com/hustskyking/p/upgrade-insecure-requests.html>
+
+* How to make Java 6, which fails SSL connection with “SSL peer shut down incorrectly”, succeed like Java 7?: <http://stackoverflow.com/questions/15589880/how-to-make-java-6-which-fails-ssl-connection-with-ssl-peer-shut-down-incorrec>
+* SEI CERT Oracle Coding Standard for Java: <https://wiki.sei.cmu.edu/confluence/display/java/SEI+CERT+Oracle+Coding+Standard+for+Java>
+* Secure Coding Guidelines for Java SE: <https://www.oracle.com/technetwork/java/seccodeguide-139067.html>
+* CWE/SANS Top 25 Most Dangerous Software Errors: <http://cwe.mitre.org/top25/index.html>
+* STRIDE威胁建模方法讨论: <https://www.freebuf.com/articles/es/205984.html>
+* STRIDE威胁建模漫谈: <https://www.secrss.com/articles/3298>
+* 华为内部的Web安全原则: <http://www.ha97.com/5520.html>
+* Android安全开发之ZIP文件目录遍历: <http://www.cnblogs.com/alisecurity/p/5610654.html>
+* Web安全漏洞之：JDK1.5环境下扫描远程调试端口导致JVM崩溃【JDWP exit error JVMTI_ERROR_NONE(0)】: <http://blog.csdn.net/sfdev/article/details/5828509>
+* 一些安全相关的HTTP响应头: <https://imququ.com/post/web-security-and-response-header.html#simple_thread>
 * SNA (Share Nothing Architecture) Session 解剖: <http://blog.csdn.net/lovingprince/article/details/5883473>
 * 挑战认证机制：《LINUX网络管理员指南(第3版).chm》6.8. Authentication with PPP
 * Salted Password Hashing - Doing it Right: <https://crackstation.net/hashing-security.htm>
@@ -153,53 +181,59 @@
 * 数字证书原理: <https://www.cnblogs.com/JeffreySun/archive/2010/06/24/1627247.html>
 * 彩虹表(Rainbow Tables)原理详解: <http://www.ha97.com/4009.html>
 * 使用浏览器的计算力，对抗密码破解：<https://www.cnblogs.com/index-html/p/frontend_kdf.html>
-* GetPropertyAction vs System.getProperty in obtaining system variables: <http://stackoverflow.com/questions/4954924/getpropertyaction-vs-system-getproperty-in-obtaining-system-variables>
-* File.separator vs FileSystem.getSeparator() vs System.getProperty(“file.separator”)?: <http://stackoverflow.com/questions/8075373/file-separator-vs-filesystem-getseparator-vs-system-getpropertyfile-separato>
-* 三个实例演示 Java Thread Dump 日志分析：<http://www.cnblogs.com/zhengyun_ustc/archive/2013/01/06/dumpanalysis.html>
-* OpenJDK和SunJDK有啥区别？<https://www.zhihu.com/question/19646618>
-* 系统吞吐量（TPS）、用户并发量、性能测试概念和公式: <http://www.ha97.com/5095.html>
-* Java 语言的 XPath API: <https://www.ibm.com/developerworks/cn/xml/x-javaxpathapi.html>
-* XMLHttpRequest Living Standard: <https://xhr.spec.whatwg.org/>
-* How to solve the error: The system cannot find the file C:\ProgramData\Oracle\Java\javapath\java.exe：<http://stackoverflow.com/questions/26864662/how-to-solve-the-error-the-system-cannot-find-the-file-c-programdata-oracle-ja>
-* Servlet 3.1规范[翻译]: <http://jinnianshilongnian.iteye.com/category/255452>
-* 深入 Java 调试体系: <https://www.ibm.com/developerworks/cn/views/java/libraryview.jsp?search_by=%E6%B7%B1%E5%85%A5+Java+%E8%B0%83%E8%AF%95%E4%BD%93%E7%B3%BB>
-* MVC，MVP 和 MVVM 的图示: <http://www.ruanyifeng.com/blog/2015/02/mvcmvp_mvvm.html>
-* Java 类的热替换 —— 概念、设计与实现: <https://www.ibm.com/developerworks/cn/java/j-lo-hotswapcls/>
-* 类加载器基本概念: <https://www.ibm.com/developerworks/cn/java/j-lo-classloader/index.html>
 * Installing Java Cryptography Extension unlimited strength jurisdiction policy files: <https://www.ibm.com/support/knowledgecenter/SSWPVP_2.5.0.3/com.ibm.sklm.doc_2.5.0.3/admin/tsk/tsk_ic_admin_backup_jce_policy_files.html>
-* 数据库分页Java实现: <http://www.cnblogs.com/ITtangtang/archive/2012/04/21/2462385.html>
-* Jar包的正确运行方法: <http://www.cnblogs.com/jifeng/archive/2012/06/07/2540338.html>
-* Atom Authentication: <http://www.xml.com/pub/a/2003/12/17/dive.html>
-* 在AI寻路决策中运用势力图（Influence Map）: <http://www.aisharing.com/archives/80?replytocom=219>
 * 关于 Token，你应该知道的十件事: <http://ju.outofmemory.cn/entry/134189>
 * 10 Things You Should Know about Tokens: <https://auth0.com/blog/ten-things-you-should-know-about-tokens-and-cookies/>
-* Java陷阱之assert关键字: <http://lavasoft.blog.51cto.com/62575/43735/>
 * 浅析ReDoS的原理与实践: <http://www.freebuf.com/articles/network/124422.html>
-* More Servlets and JavaServer Pages: <http://pdf.moreservlets.com/>
-* UTF-8 encoding table and Unicode characters: <http://www.utf8-chartable.de/>
-* [System.currentTimeMillis]/[Calendar.getInstance().getTimeInMillis()]/[new Date().getTime()]: <https://www.cnblogs.com/jiangxinnju/p/9425411.html>
+* 让浏览器不再显示 https 页面中的 http 请求警报: <http://www.cnblogs.com/hustskyking/p/upgrade-insecure-requests.html>
+* 客户端的IP地址伪造、CDN、反向代理、获取的那些事儿: <http://www.cnblogs.com/zhengyun_ustc/archive/2012/09/19/getremoteaddr.html>
 
-* List of HTTP status codes: <https://en.wikipedia.org/wiki/List_of_HTTP_status_codes>
-* html的meta总结，html标签中meta属性使用介绍: <http://www.haorooms.com/post/html_meta_ds>
-* 使用 jQuery.i18n.properties 实现 Web 前端的国际化: <https://www.ibm.com/developerworks/cn/web/1305_hezj_jqueryi18n/>
-* ajax与302响应: <http://www.cnblogs.com/dudu/p/ajax_302_found.html>
-* HTTPS 升级指南: <http://www.ruanyifeng.com/blog/2016/08/migrate-from-http-to-https.html>
-* HTML中`&nbsp; &ensp; &emsp; &thinsp;`等6种空白空格的区别: <https://www.cnblogs.com/chenshihaook/p/6186343.html>
+## Struts
 
-* STRIDE威胁建模方法讨论: <https://www.freebuf.com/articles/es/205984.html>
-* STRIDE威胁建模漫谈: <https://www.secrss.com/articles/3298>
-* 华为内部的Web安全原则: <http://www.ha97.com/5520.html>
-* Android安全开发之ZIP文件目录遍历: <http://www.cnblogs.com/alisecurity/p/5610654.html>
-* Web安全漏洞之：JDK1.5环境下扫描远程调试端口导致JVM崩溃【JDWP exit error JVMTI_ERROR_NONE(0)】: <http://blog.csdn.net/sfdev/article/details/5828509>
-* 一些安全相关的HTTP响应头: <https://imququ.com/post/web-security-and-response-header.html#simple_thread>
+* 官网：<http://struts.apache.org/>
+* 源码：deprecated: <http://svn.apache.org/repos/asf/struts/>
+* 源码：now: <https://github.com/apache/struts/blob/master/src/site/site.xml:w>
 
-## JVM
+* Struts 2.0系列: <http://www.blogjava.net/max/category/16130.html?Show=All>
+* Struts2中的零配置与CoC（Convention over Configration）: <http://andlu.iteye.com/blog/112675>
+* struts2采用convention-plugin实现零配置: <http://javeye.iteye.com/blog/358744>
+* struts2关于A web application created a ThreadLocal with key of type 异常解决办法: <http://cooliron.blog.163.com/blog/static/12470313820111235248426/>
+* 修改Struts2的struts.xml配置文件位置：<http://blog.csdn.net/zht666/article/details/8980451>
 
-* 深入理解Java虚拟机：JVM高级特性与最佳实践第二版-周志明
-* String.intern(): 深入理解Java虚拟机：JVM高级特性与最佳实践第二版-周志明
-* Java永久代去哪儿了: <http://www.infoq.com/cn/articles/Java-PERMGEN-Removed>
-* Java8内存模型—永久代(PermGen)和元空间(Metaspace): <https://www.cnblogs.com/paddix/p/5309550.html>
-* JVM调优总结（转）: <http://www.cnblogs.com/jiangxinnju/p/5655535.html>
+## Spring
+
+* 官网：<http://spring.io/>
+* 文档：<http://docs.spring.io/spring/docs/current/spring-framework-reference/htmlsingle/>
+* Spring Framework 开发参考手册: <http://man.lupaworld.com/content/develop/spring_ref/2.0/html/>
+* Spring Security：<http://projects.spring.io/spring-security>
+* 源码：Spring 3.0(deprecated) <https://src.springframework.org/svn/spring-framework/>
+* 源码：Spring 2.5及以下(deprecated) <https://src.springframework.org/svn/spring-maintenance/>
+* 源码：Spring Security(deprecated) <https://src.springframework.org/svn/spring-security/>
+* 源码：spring-framework <https://github.com/spring-projects/spring-framework/>
+
+* Spring Tool Suite：<http://spring.io/tools/sts>
+* spring-ide：<http://marketplace.eclipse.org/content/spring-ide>
+* Spring 的优秀工具类盘点: <https://www.ibm.com/developerworks/cn/java/j-lo-spring-utils1/index.html>
+* Spring使用Cache: <http://elim.iteye.com/blog/2123030>
+* spring security中限制用户登录次数超过限制的处理: <http://jackyrong.iteye.com/blog/2244803>
+* Introducing Spring's Transaction Abstraction: Professional.Java.Development.with.the.Spring.Framework.chm
+
+* Struts2、Spring和Hibernate应用实例: <http://871421448.iteye.com/blog/1546058>
+* spring中注册bean(通过代码动态注册): <http://blog.csdn.net/buyaore_wo/article/details/8119577>
+* Spring框架的反序列化远程代码执行漏洞分析（转）: <http://www.cnblogs.com/jiangxinnju/p/5697050.html>
+* Spring “redirect:” EL vulnerability?: <http://stackoverflow.com/questions/22917760/spring-redirect-el-vulnerability>
+* 使用监听器对Spring bean id进行唯一校验: <http://chenzhou123520.iteye.com/blog/1774106>
+* MyEclipse删除对Struts、Hibernate、Spring的支持：<http://www.cnblogs.com/xj626852095/p/3648148.html>
+* 解决java.lang.IncompatibleClassChangeError: <https://my.oschina.net/itblog/blog/528613>
+
+## Hibernate
+
+* <http://hibernate.org/>
+* <http://hibernate.org/orm/documentation>
+* 源码：匿名可访问地址 <http://anonsvn.jboss.org/repos/hibernate>
+* 源码：开发者访问地址 <http://svn.jboss.org/repos/hibernate>
+
+* hibernator：<https://sourceforge.net/projects/hibernator/>
 
 ## WebService
 
@@ -795,43 +829,6 @@ mvn deploy:deploy-file -DgroupId="edu.jiangxin" -DartifactId=”gcu” -Dversion
 
 * Apache Shiro：<http://shiro.apache.org/>
 
-## Struts
-
-* 官网：<http://struts.apache.org/>
-* 源码：deprecated: <http://svn.apache.org/repos/asf/struts/>
-* 源码：now: <https://github.com/apache/struts/blob/master/src/site/site.xml:w>
-
-* Struts 2.0系列: <http://www.blogjava.net/max/category/16130.html?Show=All>
-* Struts2中的零配置与CoC（Convention over Configration）: <http://andlu.iteye.com/blog/112675>
-* struts2采用convention-plugin实现零配置: <http://javeye.iteye.com/blog/358744>
-
-## Spring
-
-* 官网：<http://spring.io/>
-* 文档：<http://docs.spring.io/spring/docs/current/spring-framework-reference/htmlsingle/>
-* Spring Framework 开发参考手册: <http://man.lupaworld.com/content/develop/spring_ref/2.0/html/>
-* Spring Security：<http://projects.spring.io/spring-security>
-* 源码：Spring 3.0(deprecated) <https://src.springframework.org/svn/spring-framework/>
-* 源码：Spring 2.5及以下(deprecated) <https://src.springframework.org/svn/spring-maintenance/>
-* 源码：Spring Security(deprecated) <https://src.springframework.org/svn/spring-security/>
-* 源码：spring-framework <https://github.com/spring-projects/spring-framework/>
-
-* Spring Tool Suite：<http://spring.io/tools/sts>
-* spring-ide：<http://marketplace.eclipse.org/content/spring-ide>
-* Spring 的优秀工具类盘点: <https://www.ibm.com/developerworks/cn/java/j-lo-spring-utils1/index.html>
-* Spring使用Cache: <http://elim.iteye.com/blog/2123030>
-* spring security中限制用户登录次数超过限制的处理: <http://jackyrong.iteye.com/blog/2244803>
-* Introducing Spring's Transaction Abstraction: Professional.Java.Development.with.the.Spring.Framework.chm
-
-## Hibernate
-
-* <http://hibernate.org/>
-* <http://hibernate.org/orm/documentation>
-* 源码：匿名可访问地址 <http://anonsvn.jboss.org/repos/hibernate>
-* 源码：开发者访问地址 <http://svn.jboss.org/repos/hibernate>
-
-* hibernator：<https://sourceforge.net/projects/hibernator/>
-
 ## iBATIS/MyBatis
 
 * iBATIS官网：<http://ibatis.apache.org/>
@@ -1055,10 +1052,6 @@ The yFiles diagramming software components are extensive class libraries that en
 ## OGNL(Struts)
 
 * <http://commons.apache.org/proper/commons-ognl/>
-
-## SPEL(Spring)
-
-* See Spring
 
 ## JSP EL
 
