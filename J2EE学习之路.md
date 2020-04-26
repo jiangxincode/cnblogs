@@ -49,6 +49,7 @@
 * Java引用总结--StrongReference、SoftReference、WeakReference、PhantomReference: <https://www.cnblogs.com/skywang12345/p/3154474.html>
 * Java实现单例模式的9种方法：<https://blog.csdn.net/qq_35860138/article/details/86477538>
 * 5种必会的Java异步调用转同步的方法你会几种: <https://blog.csdn.net/m0_37595562/article/details/81638445>
+* java 偏向锁、轻量级锁及重量级锁synchronized原理: <https://www.cnblogs.com/deltadeblog/p/9559035.html>
 * Java中Volatile关键字详解: <https://www.cnblogs.com/zhengbin/p/5654805.html>
 
 * Java Runtime.exec()的使用: <http://www.cnblogs.com/mingforyou/p/3551199.html>
@@ -94,6 +95,7 @@
 * Java8内存模型—永久代(PermGen)和元空间(Metaspace): <https://www.cnblogs.com/paddix/p/5309550.html>
 * JVM调优总结（转）: <http://www.cnblogs.com/jiangxinnju/p/5655535.html>
 * Java server application troubleshooting using JDK tools: <http://java-performance.info/>
+* jstack简单使用，定位死循环、线程阻塞、死锁等问题: <https://www.cnblogs.com/chenpi/p/5377445.html>
 
 * Java代码质量度量工具大阅兵: <https://www.cnblogs.com/jiangxinnju/p/10010177.html>
 * Java杂项: <http://www.cnblogs.com/jiangxinnju/p/6582135.html>
