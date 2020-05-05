@@ -30,9 +30,6 @@
 * 为什么称为北向接口、南向接口？ <https://club.mscbsc.com/t59732p1.html>
 * 一个程序员能够控制多少行代码: <https://www.cnblogs.com/jiangxinnju/p/5516918.html>
 
-* 开源协议汇总: <https://opensource.org/licenses>
-* 如何选择开源许可证？：<http://www.ruanyifeng.com/blog/2011/05/how_to_choose_free_software_licenses.html>
-
 * java 泛型详解-绝对是对泛型方法讲解最详细的，没有之一: <https://blog.csdn.net/s10461/article/details/53941091>
 * Java 泛型中 <? extends T> 与 <? super T> 的区别: <https://www.jianshu.com/p/0808c0029b2d>
 * Item 11: Always override hashCode when you override equals: Effective Java 3rd Edition
@@ -41,6 +38,8 @@
 * Java集合ArrayDeque类解读: <https://blog.csdn.net/wangyang1354/article/details/57081920>
 * Jdk1.8中的HashMap实现原理: <https://blog.csdn.net/fjse51/article/details/53811465>
 * Java7/8 中的HashMap 和 ConcurrentHashMap: <https://www.jianshu.com/p/39a57484932e>
+* 图解LinkedHashMap原理: <https://www.jianshu.com/p/8f4f58b4b8ab>
+* Java提高篇（二七）-----TreeMap: <https://www.cnblogs.com/chenssy/p/3746600.html>
 * What is difference between fail safe iterator and fail fast iterator: <http://marjavamitjava.com/difference-fail-safe-iterator-fail-fast-iterator/>
 * Java IO相关，字符编码相关:  Java IO 2nd Edition
 * Java直接内存与非直接内存性能测试: <http://www.cnblogs.com/xing901022/p/5243657.html>
@@ -51,6 +50,9 @@
 * 5种必会的Java异步调用转同步的方法你会几种: <https://blog.csdn.net/m0_37595562/article/details/81638445>
 * java 偏向锁、轻量级锁及重量级锁synchronized原理: <https://www.cnblogs.com/deltadeblog/p/9559035.html>
 * Java中Volatile关键字详解: <https://www.cnblogs.com/zhengbin/p/5654805.html>
+* 请别再拿“String s = new String("xyz");创建了多少个String实例”来面试了吧: <https://www.iteye.com/topic/774673>
+* 彻底弄懂字符串常量池等相关问题: <https://www.cnblogs.com/gxyandwmm/p/9495923.html>
+* java安全沙箱（四）之安全管理器及Java API: <https://www.cnblogs.com/duanxz/p/6108357.html>
 
 * Java Runtime.exec()的使用: <http://www.cnblogs.com/mingforyou/p/3551199.html>
 * 深入理解Java：SimpleDateFormat安全的时间格式化: <http://www.cnblogs.com/peida/archive/2013/05/31/3070790.html>
@@ -189,6 +191,7 @@
 * 浅析ReDoS的原理与实践: <http://www.freebuf.com/articles/network/124422.html>
 * 让浏览器不再显示 https 页面中的 http 请求警报: <http://www.cnblogs.com/hustskyking/p/upgrade-insecure-requests.html>
 * 客户端的IP地址伪造、CDN、反向代理、获取的那些事儿: <http://www.cnblogs.com/zhengyun_ustc/archive/2012/09/19/getremoteaddr.html>
+* Threat Modeling: Uncover Security Design Flaws Using The STRIDE Approach: <https://docs.microsoft.com/en-us/archive/msdn-magazine/2006/november/uncover-security-design-flaws-using-the-stride-approach>
 
 ## Struts
 
