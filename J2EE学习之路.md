@@ -11,6 +11,7 @@
 
 * 9 Best Practices to Handle Exceptions in Java: <https://dzone.com/articles/9-best-practices-to-handle-exceptions-in-java>
 * API Design with Java 8: <https://dzone.com/articles/the-java-8-api-design-principles>
+* Java Tips and Best practices to avoid NullPointerException in Java Applications: <https://javarevisited.blogspot.com/2013/05/ava-tips-and-best-practices-to-avoid-nullpointerexception-program-application.html>
 * 如何重构“箭头型”代码: <http://coolshell.cn/articles/17757.html>
 * 软件项目“免坑”指南: <http://www.cnblogs.com/MeteorSeed/archive/2012/04/08/2427966.html>
 
@@ -910,7 +911,7 @@ mvn deploy:deploy-file -DgroupId="edu.jiangxin" -DartifactId=”gcu” -Dversion
 
 * 官网：<http://www.jcraft.com/jsch/>
 
-## * yFiles
+## yFiles
 
 The yFiles diagramming software components are extensive class libraries that enable you to add high-quality diagramming functionality to your own software applications
 
