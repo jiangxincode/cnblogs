@@ -151,7 +151,6 @@
 * 高斯模糊: <https://zh.wikipedia.org/wiki/%E9%AB%98%E6%96%AF%E6%A8%A1%E7%B3%8A>
 * 总结一下Android中主题(Theme)的正确玩法: <https://www.cnblogs.com/zhouyou96/p/5323138.html>
 * Android中`@`和`?`区别以及`?attr/**`与`@style/**`等的区别: <http://blog.csdn.net/xx326664162/article/details/64125654>
-* Android:去掉系统自带的Activity跳转动画，跳转无动画,返回无动画: <http://blog.csdn.net/qq_24697659/article/details/49660275>
 * Android 权限的一些细节: <http://blog.csdn.net/u013553529/article/details/53167072>
 * Android 将自己的应用改为系统应用: <https://blog.csdn.net/xx326664162/article/details/53406933>
 * 用ColorFilter为安卓按钮增加效果: <https://www.jianshu.com/p/9cae2250d0ed>
@@ -231,6 +230,16 @@
 * MIUI ROM适配之旅第一天——认识Android手机: <http://www.miui.com/thread-402302-1-1.html>
 * H60-L01 EMUI3.0 ROOT 傻瓜教程: <http://cn.ui.vmall.com/thread-1267937-1-1.html>
 * Android 获取手机中微信聊天记录: <https://blog.csdn.net/baidu_34928905/article/details/78008287>
+
+## 动效
+
+* Android 属性动画 常用方法 与 插值器 Interpolator: <https://blog.csdn.net/qq_30889373/article/details/78881140>
+* Android动画之Interpolator(插值器): <https://blog.csdn.net/pzm1993/article/details/77926373>
+* Android 路径绘制艺术——贝塞尔曲线: <https://www.jianshu.com/p/12fcc3fedbbc>
+* 三阶贝塞尔曲线Interpolator的应用: <https://blog.csdn.net/xsl_bj/article/details/47722489>
+* 在线演示: <https://cubic-bezier.com/>
+* Android颜色透明度百分比和十六进制对应关系: <https://blog.csdn.net/zhangcanyan/article/details/78400179>
+* Android:去掉系统自带的Activity跳转动画，跳转无动画,返回无动画: <http://blog.csdn.net/qq_24697659/article/details/49660275>
 
 ## Jack
 
