@@ -233,11 +233,12 @@
 
 ## 动效
 
+* Lottie - 让复杂动画如此简单: <https://www.jianshu.com/p/282d098cf928>
 * Android 属性动画 常用方法 与 插值器 Interpolator: <https://blog.csdn.net/qq_30889373/article/details/78881140>
 * Android动画之Interpolator(插值器): <https://blog.csdn.net/pzm1993/article/details/77926373>
 * Android 路径绘制艺术——贝塞尔曲线: <https://www.jianshu.com/p/12fcc3fedbbc>
 * 三阶贝塞尔曲线Interpolator的应用: <https://blog.csdn.net/xsl_bj/article/details/47722489>
-* 在线演示: <https://cubic-bezier.com/>
+* 在线演示: <https://cubic-bezier.com/><http://inloop.github.io/interpolator/>
 * Android颜色透明度百分比和十六进制对应关系: <https://blog.csdn.net/zhangcanyan/article/details/78400179>
 * Android:去掉系统自带的Activity跳转动画，跳转无动画,返回无动画: <http://blog.csdn.net/qq_24697659/article/details/49660275>
 
