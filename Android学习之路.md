@@ -82,7 +82,7 @@
 * genymotion-idea-plugin: <https://plugins.jetbrains.com/plugin/7269-genymotion>
 * 夜神模拟器: <https://www.yeshen.com/>
 
-## Android Studio插件
+## Android Studio及其插件
 
 * 插件搜素: <https://plugins.jetbrains.com>
 * Android Localizationer: <https://github.com/westlinkin/AndroidLocalizationer>
@@ -100,6 +100,19 @@
 * Gradle Dependencies Helper gradle帮助插件: <https://plugins.jetbrains.com/plugin/7299-gradle-dependencies-helper>
 * Android Toolbox Plugin 生成ViewHolder,意义不大: <https://plugins.jetbrains.com/plugin/7200-android-toolbox-plugin>
 
+* Android Studio移动鼠标显示悬浮提示的设置方法: <http://www.cnblogs.com/jiangxinnju/p/8227442.html>
+* ANDROID STUDIO详细教程汇总: <http://stormzhang.com/devtools/2015/06/17/android-studio-all/>
+* Android Studio 3.0+ 新Dex编译器D8 Desugar R8: <https://blog.csdn.net/jamin0107/article/details/81123154>
+* Android Studio系列教程一--下载与安装: <http://stormzhang.com/devtools/2014/11/25/android-studio-tutorial1/>
+* Android Studio系列教程二--基本设置与运行: <http://stormzhang.com/devtools/2014/11/28/android-studio-tutorial2/>
+* Android Studio系列教程三--快捷键: <http://stormzhang.com/devtools/2014/12/09/android-studio-tutorial3/>
+* Android Studio系列教程四--Gradle基础: <http://stormzhang.com/devtools/2014/12/18/android-studio-tutorial4/>
+* ANDROID STUDIO系列教程五--GRADLE命令详解与导入第三方包: <http://stormzhang.com/devtools/2015/01/05/android-studio-tutorial5/>
+* ANDROID STUDIO系列教程六--GRADLE多渠道打包: <http://stormzhang.com/devtools/2015/01/15/android-studio-tutorial6/>
+* Android Studio优化技巧：<http://blog.oneapm.com/apm-tech/257.html>
+* Android Studio相关目录解析: <http://www.cnblogs.com/jiangxinnju/p/8323569.html>
+* Android Studio Build Output 栏内汉字出现乱码的解决方案: <https://blog.csdn.net/zhang5690800/article/details/104502632>
+
 ## Article
 
 * 《Android开发艺术探索》
@@ -110,11 +123,9 @@
 * AsyncTaskLoader vs AsyncTask: <https://stackoverflow.com/questions/7120813/asynctaskloader-vs-asynctask>
 
 * Android 编程与兼容性问题: Android Programming The Big Nerd Ranch Guide 3rd[Android编程权威指南（第3版） 6.2 7.8 7.9
-* Android Studio移动鼠标显示悬浮提示的设置方法: <http://www.cnblogs.com/jiangxinnju/p/8227442.html>
 * Android真机安装sqlite3的方法: <http://www.cnblogs.com/jiangxinnju/p/8227625.html>
 * 使用 Intel HAXM 为 Android 模拟器加速，媲美真机: <http://www.cnblogs.com/beginor/archive/2013/01/13/2858228.html>
 * Android核心分析: <http://blog.csdn.net/column/details/androidcore.html>
-* ANDROID STUDIO详细教程汇总: <http://stormzhang.com/devtools/2015/06/17/android-studio-all/>
 * Android AM命令行启动程序的方法: <http://blog.csdn.net/sunrock/article/details/5675067>
 * Android系统开篇: <http://gityuan.com/android/>
 * 对于android.intent.action.MAIN和android.intent.category.LAUNCHER的理解: <http://blog.csdn.net/lindroid20/article/details/51993247>
@@ -189,7 +200,6 @@
 * 目前最全面的Android安全工具清单: <https://www.ctocio.com/top%E6%B8%85%E5%8D%95/23912.html>
 * menu中的item标签的showAsAction属性可以取哪些值: <https://www.jianshu.com/p/4106e1414d64>
 * Android soong build系统介绍: <https://www.jianshu.com/p/80013a768a45>
-* Android Studio 3.0+ 新Dex编译器D8 Desugar R8: <https://blog.csdn.net/jamin0107/article/details/81123154>
 
 * Contacts Provider: <http://www.android-doc.com/guide/topics/providers/contacts-provider.html>
 
@@ -214,16 +224,6 @@
 * Fragment相关源码解析三——状态保存与恢复: <https://blog.csdn.net/chengkun_123/article/details/72832728>
 * 为什么要用Fragment.setArguments(Bundle bundle)来传递参数: <https://blog.csdn.net/tu_bingbing/article/details/24143249>
 * IllegalStateException: Can not perform this action after onSaveInstanceState with ViewPager: <https://stackoverflow.com/questions/7575921/illegalstateexception-can-not-perform-this-action-after-onsaveinstancestate-wit?rq=1>
-
-* Android Studio系列教程一--下载与安装: <http://stormzhang.com/devtools/2014/11/25/android-studio-tutorial1/>
-* Android Studio系列教程二--基本设置与运行: <http://stormzhang.com/devtools/2014/11/28/android-studio-tutorial2/>
-* Android Studio系列教程三--快捷键: <http://stormzhang.com/devtools/2014/12/09/android-studio-tutorial3/>
-* Android Studio系列教程四--Gradle基础: <http://stormzhang.com/devtools/2014/12/18/android-studio-tutorial4/>
-* ANDROID STUDIO系列教程五--GRADLE命令详解与导入第三方包: <http://stormzhang.com/devtools/2015/01/05/android-studio-tutorial5/>
-* ANDROID STUDIO系列教程六--GRADLE多渠道打包: <http://stormzhang.com/devtools/2015/01/15/android-studio-tutorial6/>
-
-* Android Studio优化技巧：<http://blog.oneapm.com/apm-tech/257.html>
-* Android Studio相关目录解析: <http://www.cnblogs.com/jiangxinnju/p/8323569.html>
 
 * Android8.0及以上，获取模拟器root权限: <https://blog.csdn.net/weixin_42814931/article/details/81253678>
 
