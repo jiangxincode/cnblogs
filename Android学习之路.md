@@ -74,6 +74,7 @@
 * dex-method-counts: <https://github.com/jiangxincode/dex-method-counts>
 * dexcount-gradle-plugin: <https://github.com/KeepSafe/dexcount-gradle-plugin>
 * leakcanary: <https://github.com/square/leakcanary>
+* Display and control your Android device: <https://github.com/Genymobile/scrcpy>
 
 ## Android模拟器
 
@@ -233,6 +234,7 @@
 
 ## 动效
 
+* 各种专场动画: <https://github.com/lgvalle/Material-Animations>
 * Lottie - 让复杂动画如此简单: <https://www.jianshu.com/p/282d098cf928>
 * Android 属性动画 常用方法 与 插值器 Interpolator: <https://blog.csdn.net/qq_30889373/article/details/78881140>
 * Android动画之Interpolator(插值器): <https://blog.csdn.net/pzm1993/article/details/77926373>
