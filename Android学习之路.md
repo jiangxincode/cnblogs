@@ -235,6 +235,7 @@
 ## 动效
 
 * 各种专场动画: <https://github.com/lgvalle/Material-Animations>
+* Android:去掉系统自带的Activity跳转动画，跳转无动画,返回无动画: <http://blog.csdn.net/qq_24697659/article/details/49660275>
 * Lottie - 让复杂动画如此简单: <https://www.jianshu.com/p/282d098cf928>
 * Android 属性动画 常用方法 与 插值器 Interpolator: <https://blog.csdn.net/qq_30889373/article/details/78881140>
 * Android动画之Interpolator(插值器): <https://blog.csdn.net/pzm1993/article/details/77926373>
@@ -242,7 +243,12 @@
 * 三阶贝塞尔曲线Interpolator的应用: <https://blog.csdn.net/xsl_bj/article/details/47722489>
 * 在线演示: <https://cubic-bezier.com/><http://inloop.github.io/interpolator/>
 * Android颜色透明度百分比和十六进制对应关系: <https://blog.csdn.net/zhangcanyan/article/details/78400179>
-* Android:去掉系统自带的Activity跳转动画，跳转无动画,返回无动画: <http://blog.csdn.net/qq_24697659/article/details/49660275>
+* Android 关于Path的FillType: <https://www.jianshu.com/p/ce808a9e7e38>
+* Android中使用SVG实现炫酷动画效果: <https://blog.csdn.net/SilenceOO/article/details/78629028>
+* SVG 的 PathData 在 Android 中的使用: <https://blog.csdn.net/zwlove5280/article/details/73196543>
+* Android矢量图(一)--VectorDrawable基础: <https://www.jianshu.com/p/0972a0d290e9>
+* 在 Android 开发中使用 SVG: <https://enzowyf.github.io/svg_android.html>
+* 手把手教学， android 使用 SVG: <https://www.jianshu.com/p/5c81970ddf33>
 
 ## Jack
 
