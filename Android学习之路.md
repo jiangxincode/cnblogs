@@ -250,6 +250,20 @@
 * 在 Android 开发中使用 SVG: <https://enzowyf.github.io/svg_android.html>
 * 手把手教学， android 使用 SVG: <https://www.jianshu.com/p/5c81970ddf33>
 
+## 图形处理库
+
+* Vulkan: <https://www.khronos.org/vulkan/>
+* Vulkan Graphics API: <https://developer.android.google.cn/ndk/guides/graphics>
+* Vulkan 设置: <https://developer.android.google.cn/ndk/guides/graphics/getting-started>
+
+* ANGLE: <https://github.com/google/angle>
+
+* OpenGL: <https://www.opengl.org/>
+
+* Rajawali: <https://github.com/Rajawali/Rajawali>
+* Basic Rajawali3D Tutorial for Android: <http://www.clintonmedbery.com/basic-rajawali3d-tutorial-for-android/>
+
+
 ## Jack
 
 * Android 新一代编译 toolchain Jack & Jill 简介: <https://yq.aliyun.com/articles/40811>
