@@ -261,7 +261,10 @@
 * ANGLE: <https://github.com/google/angle>
 
 * OpenGL: <https://www.opengl.org/>
+* OpenGL Wiki: <http://khronos.org/opengl/wiki>
+
 * LearnOpenGL: <https://learnopengl-cn.github.io/>
+* OpenGL: <http://songho.ca/opengl/index.html>
 
 * Rajawali: <https://github.com/Rajawali/Rajawali>
 * Basic Rajawali3D Tutorial for Android: <http://www.clintonmedbery.com/basic-rajawali3d-tutorial-for-android/>
@@ -276,6 +279,7 @@
 * How vertex and fragment shaders communicate in OpenGL? <https://stackoverflow.com/questions/28333019/how-vertex-and-fragment-shaders-communicate-in-opengl>
 * How does the fragment shader know what variable to use for the color of a pixel? <https://stackoverflow.com/questions/9222217/how-does-the-fragment-shader-know-what-variable-to-use-for-the-color-of-a-pixel>
 * Non power of two textures in iOS <https://stackoverflow.com/questions/11069441/non-power-of-two-textures-in-ios>
+* difference of freeglut vs glew? <https://stackoverflow.com/questions/15613978/difference-of-freeglut-vs-glew>
 
 ## Jack
 
