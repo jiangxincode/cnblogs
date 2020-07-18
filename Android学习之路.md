@@ -262,6 +262,7 @@
 
 * OpenGL: <https://www.opengl.org/>
 * OpenGL Wiki: <http://khronos.org/opengl/wiki>
+* docs.GL: <http://docs.gl/#>
 
 * LearnOpenGL: <https://learnopengl-cn.github.io/>
 * OpenGL: <http://songho.ca/opengl/index.html>
