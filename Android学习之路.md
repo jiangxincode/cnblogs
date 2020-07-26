@@ -1,6 +1,7 @@
 # Andriod学习之路
 
 * <https://developer.android.com/develop/index.html>
+* NDK: <https://developer.android.com/ndk/>
 * Intent: <https://developer.android.com/reference/android/content/Intent.html>
 
 * Android开发者预览版: <https://developer.android.com/preview/>
@@ -75,6 +76,16 @@
 * dexcount-gradle-plugin: <https://github.com/KeepSafe/dexcount-gradle-plugin>
 * leakcanary: <https://github.com/square/leakcanary>
 * Display and control your Android device: <https://github.com/Genymobile/scrcpy>
+
+## BugReport
+
+* Android adb bugreport工具分析和使用: <https://blog.csdn.net/createchance/article/details/51954142>
+* battery-historian: <https://github.com/google/battery-historian>
+* ChkBugReport: <https://github.com/sonyxperiadev/ChkBugReport>
+
+## systrace
+
+* Android Systrace 基础知识: <https://www.androidperformance.com/2019/05/28/Android-Systrace-About/>
 
 ## Android模拟器
 
@@ -234,9 +245,8 @@
 
 ## 动效
 
-* 各种专场动画: <https://github.com/lgvalle/Material-Animations>
+* 各种转场动画: <https://github.com/lgvalle/Material-Animations>
 * Android:去掉系统自带的Activity跳转动画，跳转无动画,返回无动画: <http://blog.csdn.net/qq_24697659/article/details/49660275>
-* Lottie - 让复杂动画如此简单: <https://www.jianshu.com/p/282d098cf928>
 * Android 属性动画 常用方法 与 插值器 Interpolator: <https://blog.csdn.net/qq_30889373/article/details/78881140>
 * Android动画之Interpolator(插值器): <https://blog.csdn.net/pzm1993/article/details/77926373>
 * Android 路径绘制艺术——贝塞尔曲线: <https://www.jianshu.com/p/12fcc3fedbbc>
@@ -249,6 +259,16 @@
 * Android矢量图(一)--VectorDrawable基础: <https://www.jianshu.com/p/0972a0d290e9>
 * 在 Android 开发中使用 SVG: <https://enzowyf.github.io/svg_android.html>
 * 手把手教学， android 使用 SVG: <https://www.jianshu.com/p/5c81970ddf33>
+
+## SVGA
+
+* SVGA: <http://svga.io/>
+* SVGAPlayer-Android: <https://github.com/svga/SVGAPlayer-Android>
+
+## Lottie
+
+* Lottie: <https://github.com/airbnb/lottie-android>
+* Lottie - 让复杂动画如此简单: <https://www.jianshu.com/p/282d098cf928>
 
 ## 图形处理库
 
@@ -342,10 +362,6 @@
 * 用Gradle 构建你的android程序: <https://www.cnblogs.com/youxilua/archive/2013/05/20/3087935.html>
 * 用Gradle 构建你的android程序-依赖管理篇: <http://www.cnblogs.com/youxilua/archive/2013/05/22/3092657.html>
 
-## NDK
-
-* <https://developer.android.com/ndk/>
-
 ## Bug跟踪
 
 * 网易云捕: <http://crash.163.com/>
@@ -404,10 +420,3 @@
 ## 百度媒体云
 
 * <https://cloud.baidu.com/doc/MCT/Android-Player-SDK-2.0.html>
-
-## Gerrit
-
-* <https://www.gerritcodereview.com/>
-* <https://gerrit-documentation.storage.googleapis.com/Documentation/2.14.5.1/install.html>
-* <https://gerrit-documentation.storage.googleapis.com/Documentation/2.15.1/user-search.html>
-* 如何搭建开源code review gerrit服务器: <https://www.cnblogs.com/tesky0125/p/5877536.html>
