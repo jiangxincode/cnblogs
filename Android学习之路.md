@@ -96,7 +96,8 @@
 
 ## Android Studio及其插件
 
-* 插件搜素: <https://plugins.jetbrains.com>
+* JetBrains Plugins Repository: <https://plugins.jetbrains.com>
+
 * Android Localizationer: <https://github.com/westlinkin/AndroidLocalizationer>
 * ADB Idea 方便卸载apk,删除缓存: <http://plugins.jetbrains.com/plugin/7380-adb-idea>
 * Android ButterKnife Zelezny ButterKnife对应的插件: <http://plugins.jetbrains.com/plugin/7369-android-butterknife-zelezny>
@@ -124,6 +125,11 @@
 * Android Studio优化技巧：<http://blog.oneapm.com/apm-tech/257.html>
 * Android Studio相关目录解析: <http://www.cnblogs.com/jiangxinnju/p/8323569.html>
 * Android Studio Build Output 栏内汉字出现乱码的解决方案: <https://blog.csdn.net/zhang5690800/article/details/104502632>
+
+### Firebase
+
+* Firebase: <https://firebase.google.com/>
+* Plugin Fierbase Services was not installed:Cannot download...: <https://blog.csdn.net/u010368726/article/details/105263487>
 
 ## Article
 
@@ -350,6 +356,7 @@
 * Getting Started With Gradle: <https://www.petrikainulainen.net/getting-started-with-gradle/>
 
 * 彻底搞懂Gradle、Gradle Wrapper与Android Plugin for Gradle的区别和联系: <http://www.cnblogs.com/jiangxinnju/p/8229129.html>
+* 通过设置JDK解决存在多个Gradle后台进程的问题: <https://www.cnblogs.com/jiangxinnju/p/13443183.html>
 
 * Gradle学习系列之一——Gradle快速入门: <http://www.cnblogs.com/davenkin/p/gradle-learning-1.html>
 * gradle使用文档: <https://yq.aliyun.com/articles/54151>
