@@ -49,6 +49,60 @@
 
 * Xamarin: <https://www.xamarin.com/>
 
+## Gradle And Android Plugin
+
+* <http://gradle.org/>
+* Gradle User Guide: <https://docs.gradle.org/current/userguide/userguide_single.html>
+* Chapter 6. The Gradle Wrapper: <https://docs.gradle.org/current/userguide/gradle_wrapper.html>
+* Getting Started With Gradle: <https://www.petrikainulainen.net/getting-started-with-gradle/>
+
+* 彻底搞懂Gradle、Gradle Wrapper与Android Plugin for Gradle的区别和联系: <http://www.cnblogs.com/jiangxinnju/p/8229129.html>
+* 通过设置JDK解决存在多个Gradle后台进程的问题: <https://www.cnblogs.com/jiangxinnju/p/13443183.html>
+
+* Gradle学习系列之一——Gradle快速入门: <http://www.cnblogs.com/davenkin/p/gradle-learning-1.html>
+* gradle使用文档: <https://yq.aliyun.com/articles/54151>
+* Gradle修改本地仓库的位置: <http://blog.csdn.net/xq328220454/article/details/30233759>
+* gradle cache目录(.gradle)剖析: <https://zhuanlan.zhihu.com/p/26473930>
+
+* (老)Gradle Plugin User Guide: <http://tools.android.com/tech-docs/new-build-system/user-guide>
+* (老)Gradle Plugin User Guide 翻译: <http://avatarqing.github.io/Gradle-Plugin-User-Guide-Chinese-Verision/>
+* 加速Android Studio/Gradle构建: <https://isming.me/2015/03/18/android-build-speed-up/>
+* 用Gradle 构建你的android程序: <https://www.cnblogs.com/youxilua/archive/2013/05/20/3087935.html>
+* 用Gradle 构建你的android程序-依赖管理篇: <http://www.cnblogs.com/youxilua/archive/2013/05/22/3092657.html>
+
+## Android Studio及其插件
+
+* JetBrains Plugins Repository: <https://plugins.jetbrains.com>
+* 在 AndroidStudio 工程点击 Run 按钮， 实际上做了什么操作呢？<https://www.zhihu.com/question/65289196>
+
+* Android Localizationer: <https://github.com/westlinkin/AndroidLocalizationer>
+* ADB Idea 方便卸载apk,删除缓存: <http://plugins.jetbrains.com/plugin/7380-adb-idea>
+* Android ButterKnife Zelezny ButterKnife对应的插件: <http://plugins.jetbrains.com/plugin/7369-android-butterknife-zelezny>
+* Android Code Generator 生成ViewHolder,生成initView方法: <https://plugins.jetbrains.com/plugin/7595-android-code-generator>
+* Codota 搜索代码块: <https://plugins.jetbrains.com/plugin/7638-codota>
+* GsonFormat jsonString自动转bean插件: <https://plugins.jetbrains.com/plugin/7654-gsonformat>
+* SelectorChapek for Android 帮助生成selector: <https://plugins.jetbrains.com/plugin/7298-selectorchapek-for-android>
+* Android Drawable Importer 同一张图片生成多个自动生成多分辨率图片: <https://plugins.jetbrains.com/plugin/7658-android-drawable-importer>
+* Android Layout ID Converter xml到控件的转换: <https://plugins.jetbrains.com/plugin/7373-android-layout-id-converter>
+* Android Postfix Completion toast和log加强: <https://plugins.jetbrains.com/plugin/7775-android-postfix-completion>
+* Android Studio Prettify 帮助findViewById: <https://plugins.jetbrains.com/plugin/7405-android-studio-prettify>
+* Android Parcelable code generator 生成Parcelable代码: <https://plugins.jetbrains.com/plugin/7332-android-parcelable-code-generator>
+* Gradle Dependencies Helper gradle帮助插件: <https://plugins.jetbrains.com/plugin/7299-gradle-dependencies-helper>
+* Android Toolbox Plugin 生成ViewHolder,意义不大: <https://plugins.jetbrains.com/plugin/7200-android-toolbox-plugin>
+
+* Android Studio移动鼠标显示悬浮提示的设置方法: <http://www.cnblogs.com/jiangxinnju/p/8227442.html>
+* ANDROID STUDIO详细教程汇总: <http://stormzhang.com/devtools/2015/06/17/android-studio-all/>
+* Android Studio 3.0+ 新Dex编译器D8 Desugar R8: <https://blog.csdn.net/jamin0107/article/details/81123154>
+* Android Studio系列教程一--下载与安装: <http://stormzhang.com/devtools/2014/11/25/android-studio-tutorial1/>
+* Android Studio系列教程二--基本设置与运行: <http://stormzhang.com/devtools/2014/11/28/android-studio-tutorial2/>
+* Android Studio系列教程三--快捷键: <http://stormzhang.com/devtools/2014/12/09/android-studio-tutorial3/>
+* Android Studio系列教程四--Gradle基础: <http://stormzhang.com/devtools/2014/12/18/android-studio-tutorial4/>
+* ANDROID STUDIO系列教程五--GRADLE命令详解与导入第三方包: <http://stormzhang.com/devtools/2015/01/05/android-studio-tutorial5/>
+* ANDROID STUDIO系列教程六--GRADLE多渠道打包: <http://stormzhang.com/devtools/2015/01/15/android-studio-tutorial6/>
+* Android Studio优化技巧：<http://blog.oneapm.com/apm-tech/257.html>
+* Android Studio相关目录解析: <http://www.cnblogs.com/jiangxinnju/p/8323569.html>
+* Android Studio Build Output 栏内汉字出现乱码的解决方案: <https://blog.csdn.net/zhang5690800/article/details/104502632>
+
 ## Libraries
 
 * butterknife: <https://github.com/JakeWharton/butterknife>
@@ -87,44 +141,17 @@
 
 * Android Systrace 基础知识: <https://www.androidperformance.com/2019/05/28/Android-Systrace-About/>
 
+## Perfetto
+
+* Perfetto: <https://perfetto.dev/>
+* PerfettoUI: <https://ui.perfetto.dev/#!/>
+
 ## Android模拟器
 
 * genymotion: <https://www.genymotion.com/>
 * genymotion个人免费版: <https://www.genymotion.com/fun-zone/>
 * genymotion-idea-plugin: <https://plugins.jetbrains.com/plugin/7269-genymotion>
 * 夜神模拟器: <https://www.yeshen.com/>
-
-## Android Studio及其插件
-
-* JetBrains Plugins Repository: <https://plugins.jetbrains.com>
-
-* Android Localizationer: <https://github.com/westlinkin/AndroidLocalizationer>
-* ADB Idea 方便卸载apk,删除缓存: <http://plugins.jetbrains.com/plugin/7380-adb-idea>
-* Android ButterKnife Zelezny ButterKnife对应的插件: <http://plugins.jetbrains.com/plugin/7369-android-butterknife-zelezny>
-* Android Code Generator 生成ViewHolder,生成initView方法: <https://plugins.jetbrains.com/plugin/7595-android-code-generator>
-* Codota 搜索代码块: <https://plugins.jetbrains.com/plugin/7638-codota>
-* GsonFormat jsonString自动转bean插件: <https://plugins.jetbrains.com/plugin/7654-gsonformat>
-* SelectorChapek for Android 帮助生成selector: <https://plugins.jetbrains.com/plugin/7298-selectorchapek-for-android>
-* Android Drawable Importer 同一张图片生成多个自动生成多分辨率图片: <https://plugins.jetbrains.com/plugin/7658-android-drawable-importer>
-* Android Layout ID Converter xml到控件的转换: <https://plugins.jetbrains.com/plugin/7373-android-layout-id-converter>
-* Android Postfix Completion toast和log加强: <https://plugins.jetbrains.com/plugin/7775-android-postfix-completion>
-* Android Studio Prettify 帮助findViewById: <https://plugins.jetbrains.com/plugin/7405-android-studio-prettify>
-* Android Parcelable code generator 生成Parcelable代码: <https://plugins.jetbrains.com/plugin/7332-android-parcelable-code-generator>
-* Gradle Dependencies Helper gradle帮助插件: <https://plugins.jetbrains.com/plugin/7299-gradle-dependencies-helper>
-* Android Toolbox Plugin 生成ViewHolder,意义不大: <https://plugins.jetbrains.com/plugin/7200-android-toolbox-plugin>
-
-* Android Studio移动鼠标显示悬浮提示的设置方法: <http://www.cnblogs.com/jiangxinnju/p/8227442.html>
-* ANDROID STUDIO详细教程汇总: <http://stormzhang.com/devtools/2015/06/17/android-studio-all/>
-* Android Studio 3.0+ 新Dex编译器D8 Desugar R8: <https://blog.csdn.net/jamin0107/article/details/81123154>
-* Android Studio系列教程一--下载与安装: <http://stormzhang.com/devtools/2014/11/25/android-studio-tutorial1/>
-* Android Studio系列教程二--基本设置与运行: <http://stormzhang.com/devtools/2014/11/28/android-studio-tutorial2/>
-* Android Studio系列教程三--快捷键: <http://stormzhang.com/devtools/2014/12/09/android-studio-tutorial3/>
-* Android Studio系列教程四--Gradle基础: <http://stormzhang.com/devtools/2014/12/18/android-studio-tutorial4/>
-* ANDROID STUDIO系列教程五--GRADLE命令详解与导入第三方包: <http://stormzhang.com/devtools/2015/01/05/android-studio-tutorial5/>
-* ANDROID STUDIO系列教程六--GRADLE多渠道打包: <http://stormzhang.com/devtools/2015/01/15/android-studio-tutorial6/>
-* Android Studio优化技巧：<http://blog.oneapm.com/apm-tech/257.html>
-* Android Studio相关目录解析: <http://www.cnblogs.com/jiangxinnju/p/8323569.html>
-* Android Studio Build Output 栏内汉字出现乱码的解决方案: <https://blog.csdn.net/zhang5690800/article/details/104502632>
 
 ### Firebase
 
@@ -347,27 +374,6 @@
 * Android程序开发初级教程(一): <http://blog.csdn.net/k7sem/article/details/1886871>
 * Android程序开发初级教程(二): <http://blog.csdn.net/k7sem/article/details/1887437>
 * Android程序开发初级教程(三): <http://blog.csdn.net/k7sem/article/details/1887499>
-
-## Gradle And Android Plugin
-
-* <http://gradle.org/>
-* Gradle User Guide: <https://docs.gradle.org/current/userguide/userguide_single.html>
-* Chapter 6. The Gradle Wrapper: <https://docs.gradle.org/current/userguide/gradle_wrapper.html>
-* Getting Started With Gradle: <https://www.petrikainulainen.net/getting-started-with-gradle/>
-
-* 彻底搞懂Gradle、Gradle Wrapper与Android Plugin for Gradle的区别和联系: <http://www.cnblogs.com/jiangxinnju/p/8229129.html>
-* 通过设置JDK解决存在多个Gradle后台进程的问题: <https://www.cnblogs.com/jiangxinnju/p/13443183.html>
-
-* Gradle学习系列之一——Gradle快速入门: <http://www.cnblogs.com/davenkin/p/gradle-learning-1.html>
-* gradle使用文档: <https://yq.aliyun.com/articles/54151>
-* Gradle修改本地仓库的位置: <http://blog.csdn.net/xq328220454/article/details/30233759>
-* gradle cache目录(.gradle)剖析: <https://zhuanlan.zhihu.com/p/26473930>
-
-* (老)Gradle Plugin User Guide: <http://tools.android.com/tech-docs/new-build-system/user-guide>
-* (老)Gradle Plugin User Guide 翻译: <http://avatarqing.github.io/Gradle-Plugin-User-Guide-Chinese-Verision/>
-* 加速Android Studio/Gradle构建: <https://isming.me/2015/03/18/android-build-speed-up/>
-* 用Gradle 构建你的android程序: <https://www.cnblogs.com/youxilua/archive/2013/05/20/3087935.html>
-* 用Gradle 构建你的android程序-依赖管理篇: <http://www.cnblogs.com/youxilua/archive/2013/05/22/3092657.html>
 
 ## Bug跟踪
 

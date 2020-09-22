@@ -380,14 +380,6 @@
 
 * <https://www.jetbrains.com/teamcity/>
 
-## JUnit
-
-* <http://junit.org/>
-* <http://junit.org/javadoc/latest/index.html>
-* JUnit4 详解：<http://www.cnblogs.com/eggbucket/archive/2012/02/02/2335697.html>
-* Easy way of running the same junit test over and over? <http://stackoverflow.com/questions/1492856/easy-way-of-running-the-same-junit-test-over-and-over>
-* Testing for expected exceptions in JUnit: <http://www.shaunabram.com/testing-for-expected-exceptions-in-junit/>
-
 ## DbUnit
 
 * 官网：<http://dbunit.sourceforge.net/>
@@ -405,6 +397,13 @@
 * fuzz实战之libfuzzer: <https://www.secpulse.com/archives/71898.html>
 * 浅析Peach Fuzz: <http://blog.nsfocus.net/peach-fuzz/>
 * Syzkaller：Linux内核模糊测试工具分享: <https://www.freebuf.com/sectool/142969.html>
+
+## JUnit
+
+* <http://junit.org/>
+* JUnit4 详解：<http://www.cnblogs.com/eggbucket/archive/2012/02/02/2335697.html>
+* Easy way of running the same junit test over and over? <http://stackoverflow.com/questions/1492856/easy-way-of-running-the-same-junit-test-over-and-over>
+* Testing for expected exceptions in JUnit: <http://www.shaunabram.com/testing-for-expected-exceptions-in-junit/>
 
 ## TestNG
 
@@ -584,17 +583,11 @@ Eclipse中`Update Project`，选择`Force Update of Snapshots/Releases`
 
 * <http://mvnrepository.com/>    （搜索）
 * <https://search.maven.org/>    （搜索）
-* <https://maven-repository.com/>    （搜索）
-* <http://maven.oschina.net/home.html>    （搜索）
 * <https://bintray.com/bintray/jcenter>    （搜索）
 * <https://maven.aliyun.com/mvn/search>    （搜索）
-* <http://www.ebi.ac.uk/intact/maven/nexus/content/repositories/>
-* <http://repo1.maven.org/maven2/>
-* <http://repository.jboss.com/maven2/>
+* <https://www.ebi.ac.uk/intact/maven/nexus/content/repositories/>
+* <https://repo1.maven.org/maven2/>
 * <http://repository.sonatype.org/content/groups/public/>
-* <http://people.apache.org/repo/m2-incubating-repository/>
-* <http://people.apache.org/repo/m2-snapshot-repository/>
-* <http://mirrors.ibiblio.org/maven2/org/acegisecurity/>
 
 ## maven快速下载某个jar包依赖的所有jar
 
