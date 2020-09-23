@@ -160,7 +160,15 @@
 
 ## Article
 
-* 《Android开发艺术探索》
+* repo 下载Android源码（国内镜像）: <https://blog.csdn.net/shenlan18446744/article/details/51490560>
+* repo使用: <https://blog.csdn.net/fe421504975/article/details/8272065>
+
+* Android soong build系统介绍: <https://www.jianshu.com/p/80013a768a45>
+
+* Android Studio导入整个Android系统源码: <https://blog.csdn.net/QQxiaoqiang1573/article/details/72903237>
+* AndroidStudio工程导入部分Android源码: <https://blog.csdn.net/mcsbary/article/details/90721626>
+
+* HenCoder——给高级 Android 工程师的进阶手册: <https://hencoder.com/>
 * Handler内存泄漏详解及其解决方案: <http://blog.csdn.net/javazejian/article/details/50839443>
 * Android中Handler的使用: <http://blog.csdn.net/iispring/article/details/47115879>
 * 深入源码解析Android中的Handler,Message,MessageQueue,Looper: <http://blog.csdn.net/iispring/article/details/47180325>
@@ -199,7 +207,6 @@
 * Android vector标签 PathData 画图超详解: <https://www.cnblogs.com/yuhanghzsd/p/5466846.html>
 * Implementation vs API dependency: <https://jeroenmols.com/blog/2017/06/14/androidstudio3/>
 * Android软键盘遮挡的四种解决方案: <https://www.cnblogs.com/jerehedu/p/4194125.html>
-* repo 下载Android源码（国内镜像）: <http://blog.csdn.net/shenlan18446744/article/details/d>
 * android怎样调用@hide和internal API: <http://blog.csdn.net/linghu_java/article/details/8283042>
 * android下的SuppressLint与TargetApi: <http://blog.csdn.net/pony_maggie/article/details/52115884>
 * Android完美获取状态栏高度、标题栏高度、编辑区域高度的获取: <http://blog.csdn.net/a_running_wolf/article/details/50477965>
@@ -244,7 +251,6 @@
 * 配置方法数超过 64K 的应用: <http://developer.android.com/intl/zh-cn/tools/building/multidex.html#about>
 * 目前最全面的Android安全工具清单: <https://www.ctocio.com/top%E6%B8%85%E5%8D%95/23912.html>
 * menu中的item标签的showAsAction属性可以取哪些值: <https://www.jianshu.com/p/4106e1414d64>
-* Android soong build系统介绍: <https://www.jianshu.com/p/80013a768a45>
 
 * Contacts Provider: <http://www.android-doc.com/guide/topics/providers/contacts-provider.html>
 
@@ -270,11 +276,12 @@
 * 为什么要用Fragment.setArguments(Bundle bundle)来传递参数: <https://blog.csdn.net/tu_bingbing/article/details/24143249>
 * IllegalStateException: Can not perform this action after onSaveInstanceState with ViewPager: <https://stackoverflow.com/questions/7575921/illegalstateexception-can-not-perform-this-action-after-onsaveinstancestate-wit?rq=1>
 
+* 从圆角到圆角: <https://zhuanlan.zhihu.com/p/29560646>
+* J 的艺术，R 的艺术: <http://www.hi-id.com/?p=3231>
+
 * Android8.0及以上，获取模拟器root权限: <https://blog.csdn.net/weixin_42814931/article/details/81253678>
 
 * MIUI ROM适配之旅第一天——认识Android手机: <http://www.miui.com/thread-402302-1-1.html>
-* H60-L01 EMUI3.0 ROOT 傻瓜教程: <http://cn.ui.vmall.com/thread-1267937-1-1.html>
-* Android 获取手机中微信聊天记录: <https://blog.csdn.net/baidu_34928905/article/details/78008287>
 
 ## 动效
 
@@ -302,6 +309,10 @@
 
 * Lottie: <https://github.com/airbnb/lottie-android>
 * Lottie - 让复杂动画如此简单: <https://www.jianshu.com/p/282d098cf928>
+
+## Flutter
+
+* Flutter: <https://flutter.dev/>
 
 ## 图形处理库
 
