@@ -139,7 +139,18 @@
 
 ## systrace
 
+* System Trace: <https://developer.android.com/topic/performance/tracing>
 * Android Systrace 基础知识: <https://www.androidperformance.com/2019/05/28/Android-Systrace-About/>
+* systrace.py环境配置: <https://blog.csdn.net/zc37093/article/details/105415843>
+
+## CPU Profiler
+
+* CPU Profiler: <https://developer.android.com/studio/profile/cpu-profiler>
+
+## TraceView
+
+* TraceView: <https://developer.android.com/studio/profile/traceview>
+* Android性能优化—TraceView的使用: <https://www.jianshu.com/p/7e9ca2c73c97>
 
 ## Perfetto
 
@@ -167,6 +178,10 @@
 
 * Android Studio导入整个Android系统源码: <https://blog.csdn.net/QQxiaoqiang1573/article/details/72903237>
 * AndroidStudio工程导入部分Android源码: <https://blog.csdn.net/mcsbary/article/details/90721626>
+
+* 图解 Android 事件分发机制: <https://www.jianshu.com/p/e99b5e8bd67b>
+* requestDisallowInterceptTouchEvent() 阻止父层的View截获touch事件(事件处理机制): <https://blog.csdn.net/cl18652469346/article/details/53184508>
+* View·InputEvent事件投递源码分析: <https://www.jianshu.com/p/b7f33f46d33c>
 
 * HenCoder——给高级 Android 工程师的进阶手册: <https://hencoder.com/>
 * Handler内存泄漏详解及其解决方案: <http://blog.csdn.net/javazejian/article/details/50839443>
