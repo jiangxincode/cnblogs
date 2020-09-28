@@ -20,7 +20,10 @@
 
 * AOSP: <https://source.android.com/>
 * 代号、标记和细分版本号: <https://source.android.com/source/build-numbers>
+
 * Repo command reference: <https://source.android.com/setup/develop/repo>
+* repo 下载Android源码（国内镜像）: <https://blog.csdn.net/shenlan18446744/article/details/51490560>
+* repo使用: <https://blog.csdn.net/fe421504975/article/details/8272065>
 
 * androidxref: <http://androidxref.com/>
 * grepcode: <http://www.grepcode.com>
@@ -150,9 +153,6 @@
 * Plugin Fierbase Services was not installed:Cannot download...: <https://blog.csdn.net/u010368726/article/details/105263487>
 
 ## Article
-
-* repo 下载Android源码（国内镜像）: <https://blog.csdn.net/shenlan18446744/article/details/51490560>
-* repo使用: <https://blog.csdn.net/fe421504975/article/details/8272065>
 
 * Android soong build系统介绍: <https://www.jianshu.com/p/80013a768a45>
 
