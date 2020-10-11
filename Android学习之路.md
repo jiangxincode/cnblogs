@@ -209,8 +209,6 @@
 * Android下setTextSize的正确使用姿势: <https://www.jianshu.com/p/7f2941dbfb17>
 * Mipmap drawables for icons: <https://stackoverflow.com/questions/23935810/mipmap-drawables-for-icons>
 * 一大波 Android 刘海屏来袭，全网最全适配技巧！<https://www.cnblogs.com/plokmju/p/android_liuhaiping.html>
-* Android百分比布局: <https://www.jianshu.com/p/7a6475757743?from=jiantop.com>
-* 安卓约束控件(ConstraintLayout)扁平化布局入门: <https://www.jianshu.com/p/792d2682c538>
 * Android “getActionBar()返回NullPointerException”问题分析: <https://www.jianshu.com/p/feb4cc119659>
 * setEnabled() vs setClickable(), what is the difference? <https://stackoverflow.com/questions/15615823/setenabled-vs-setclickable-what-is-the-difference>
 * ListView中getView的原理与解决多轮重复调用的方法: <https://www.cnblogs.com/lirizhi/p/3357771.html>
