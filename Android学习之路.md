@@ -313,7 +313,7 @@
 
 ## 图形处理库
 
-## OpenGL
+### OpenGL
 
 * OpenGL: <https://www.opengl.org/>
 * OpenGL Wiki: <http://khronos.org/opengl/wiki>
@@ -330,26 +330,30 @@
 * OpenGL入门: <https://juejin.im/post/5dee8814e51d4557e87fc6be>
 * OpenGL学习脚印: <https://blog.csdn.net/ziyuanxiazai123/category_2107037.html>
 * OpenGL ES: <https://blog.csdn.net/gongxiaoou/category_8847081.html>
+* 20分钟让你了解OpenGL——OpenGL全流程详细解读: <https://zhuanlan.zhihu.com/p/56693625>
 
-* 为什么opengl中，gl_Position是vec4类型的？不是应该是vec3吗，多出来的那个是什么呀: <https://zhidao.baidu.com/question/1817876033322344268.html>
+* OpenGL ES 2.0 specifiying position attribute vec3 or vec4: <https://stackoverflow.com/questions/8551935/opengl-es-2-0-specifiying-position-attribute-vec3-or-vec4>
+* Why not vec3 for OpenGL ES 2.0 gl_Position? <https://stackoverflow.com/questions/9943636/why-not-vec3-for-opengl-es-2-0-gl-position>
 * Is OpenGL coordinate system left-handed or right-handed? <https://stackoverflow.com/questions/4124041/is-opengl-coordinate-system-left-handed-or-right-handed/12336360#12336360>
 * How vertex and fragment shaders communicate in OpenGL? <https://stackoverflow.com/questions/28333019/how-vertex-and-fragment-shaders-communicate-in-opengl>
 * How does the fragment shader know what variable to use for the color of a pixel? <https://stackoverflow.com/questions/9222217/how-does-the-fragment-shader-know-what-variable-to-use-for-the-color-of-a-pixel>
 * Non power of two textures in iOS <https://stackoverflow.com/questions/11069441/non-power-of-two-textures-in-ios>
-* difference of freeglut vs glew? <https://stackoverflow.com/questions/15613978/difference-of-freeglut-vs-glew>
 
 ### 其他图形处理库
+
+* GLFW: <https://www.glfw.org/>
+* freeglut: <http://freeglut.sourceforge.net/>
+* difference of freeglut vs glew? <https://stackoverflow.com/questions/15613978/difference-of-freeglut-vs-glew>
+
+* Rajawali: <https://github.com/Rajawali/Rajawali>
+* Basic Rajawali3D Tutorial for Android: <http://www.clintonmedbery.com/basic-rajawali3d-tutorial-for-android/>
 
 * 计算机图形程序接口 | Graphics API: <https://www.jianshu.com/p/3ab72184a906>
 
 * Vulkan: <https://www.khronos.org/vulkan/>
 * Vulkan Graphics API: <https://developer.android.google.cn/ndk/guides/graphics>
-* Vulkan 设置: <https://developer.android.google.cn/ndk/guides/graphics/getting-started>
 
 * ANGLE: <https://github.com/google/angle>
-
-* Rajawali: <https://github.com/Rajawali/Rajawali>
-* Basic Rajawali3D Tutorial for Android: <http://www.clintonmedbery.com/basic-rajawali3d-tutorial-for-android/>
 
 ## Jack
 
