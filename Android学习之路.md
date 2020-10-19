@@ -331,6 +331,9 @@
 * OpenGL学习脚印: <https://blog.csdn.net/ziyuanxiazai123/category_2107037.html>
 * OpenGL ES: <https://blog.csdn.net/gongxiaoou/category_8847081.html>
 * 20分钟让你了解OpenGL——OpenGL全流程详细解读: <https://zhuanlan.zhihu.com/p/56693625>
+* affine transformation matrix 仿射变换矩阵 与 OpenGL: <https://www.cnblogs.com/ghj1976/p/5199086.html>
+* 3D图形:矩阵、欧拉角、四元数与方位的故事: <https://www.jianshu.com/p/7a114062866e>
+* 四元数与欧拉角（RPY角）的相互转换: <https://www.cnblogs.com/21207-iHome/p/6894128.html>
 
 * OpenGL ES 2.0 specifiying position attribute vec3 or vec4: <https://stackoverflow.com/questions/8551935/opengl-es-2-0-specifiying-position-attribute-vec3-or-vec4>
 * Why not vec3 for OpenGL ES 2.0 gl_Position? <https://stackoverflow.com/questions/9943636/why-not-vec3-for-opengl-es-2-0-gl-position>
