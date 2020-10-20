@@ -27,6 +27,7 @@
 
 * androidxref: <http://androidxref.com/>
 * grepcode: <http://www.grepcode.com>
+* Android Code Search: <https://cs.android.com/>
 
 * Git repositories on android: <https://android.googlesource.com/>
 * Android Studio: <http://www.android-studio.org/>
@@ -190,6 +191,10 @@
 * Android图形系统（十一）-Choreographer: <https://www.jianshu.com/p/bab0b454e39e>
 * HenCoder——给高级 Android 工程师的进阶手册: <https://hencoder.com/>
 
+* 支持不同的屏幕尺寸: <https://developer.android.google.cn/training/multiscreen/screensizes.html>
+* Android开发中dip，dpi，density，px等详解: <http://blog.qiji.tech/archives/2581>
+* Android原生系统API自带dp、px、sp单位转换: <https://www.cnblogs.com/touko/p/6478851.html>
+
 * Android ActionBar完全解析，使用官方推荐的最佳导航栏(上): <http://blog.csdn.net/guolin_blog/article/details/18234477>
 * Android完美获取状态栏高度、标题栏高度、编辑区域高度的获取: <http://blog.csdn.net/a_running_wolf/article/details/50477965>
 * menu中的item标签的showAsAction属性可以取哪些值: <https://www.jianshu.com/p/4106e1414d64>
@@ -199,8 +204,6 @@
 * 如何在Root的手机上开启ViewServer，使得HierachyViewer能够连接: <http://maider.blog.sohu.com/255448342.html>
 * Formatting and Plurals: Android UI Fundamentals[Android UI基础教程](Formatting and Plurals)
 * Android vector标签 PathData 画图超详解: <https://www.cnblogs.com/yuhanghzsd/p/5466846.html>
-* Android开发中dip，dpi，density，px等详解: <http://blog.qiji.tech/archives/2581>
-* Android原生系统API自带dp、px、sp单位转换: <https://www.cnblogs.com/touko/p/6478851.html>
 * 高斯模糊: <https://zh.wikipedia.org/wiki/%E9%AB%98%E6%96%AF%E6%A8%A1%E7%B3%8A>
 * 总结一下Android中主题(Theme)的正确玩法: <https://www.cnblogs.com/zhouyou96/p/5323138.html>
 * Android中`@`和`?`区别以及`?attr/**`与`@style/**`等的区别: <http://blog.csdn.net/xx326664162/article/details/64125654>
@@ -270,6 +273,8 @@
 * Android 7.0 行为变更 通过FileProvider在应用间共享文件吧: <https://blog.csdn.net/lmj623565791/article/details/72859156>
 * FileProvider文件分享: <https://blog.csdn.net/lin962792501/article/details/52164695>
 
+* 使用广色域内容增强图形效果: <https://developer.android.google.cn/training/wide-color-gamut>
+
 * 安卓应用在各大应用市场上架方法整理: <https://blog.csdn.net/niezhipeng8/article/details/79103436>
 * 从圆角到圆角: <https://zhuanlan.zhihu.com/p/29560646>
 * J 的艺术，R 的艺术: <http://www.hi-id.com/?p=3231>
@@ -323,7 +328,6 @@
 * OpenGL(很多文章的参考文献): <http://songho.ca/opengl/index.html>
 * Learn WebGL: <http://learnwebgl.brown37.net/>
 
-* OpenGL 3D渲染技术：坐标系及矩阵变换: <https://juejin.im/post/6844903862973759496>
 * OpenGL顶点坐标与纹理坐标: <https://www.jianshu.com/p/355137fa2817>
 * 投影矩阵的推导(Deriving Projection Matrices): <https://blog.csdn.net/zhanghua1816/article/details/23121735>
 * Android OpenGL ES从白痴到入门(四):离屏渲染(Pbuffer): <https://www.jianshu.com/p/8793f0fbd1e6>
@@ -357,6 +361,9 @@
 * Vulkan Graphics API: <https://developer.android.google.cn/ndk/guides/graphics>
 
 * ANGLE: <https://github.com/google/angle>
+
+* Cairo: <http://www.cairographics.org/>
+* Skia: <https://skia.org>
 
 ## Jack
 

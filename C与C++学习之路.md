@@ -35,7 +35,6 @@
 * libevent: <http://libevent.org/>
 * List of numerical libraries: <https://en.wikipedia.org/wiki/List_of_numerical_libraries>
 * Standard Template Library Programmer's Guide: <http://www.sgi.com/tech/stl/>
-* Cairo: <http://www.cairographics.org/>
 
 ## Windows C++
 
