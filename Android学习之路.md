@@ -194,6 +194,8 @@
 * 支持不同的屏幕尺寸: <https://developer.android.google.cn/training/multiscreen/screensizes.html>
 * Android开发中dip，dpi，density，px等详解: <http://blog.qiji.tech/archives/2581>
 * Android原生系统API自带dp、px、sp单位转换: <https://www.cnblogs.com/touko/p/6478851.html>
+* 一种非常好用的Android屏幕适配: <https://www.jianshu.com/p/1302ad5a4b04>
+* 最清晰的Android多屏幕适配方案: <https://www.cnblogs.com/soaringEveryday/p/4835839.html>
 
 * Android ActionBar完全解析，使用官方推荐的最佳导航栏(上): <http://blog.csdn.net/guolin_blog/article/details/18234477>
 * Android完美获取状态栏高度、标题栏高度、编辑区域高度的获取: <http://blog.csdn.net/a_running_wolf/article/details/50477965>
@@ -290,6 +292,7 @@
 * 各种转场动画: <https://github.com/lgvalle/Material-Animations>
 * Android:去掉系统自带的Activity跳转动画，跳转无动画,返回无动画: <http://blog.csdn.net/qq_24697659/article/details/49660275>
 * Android 属性动画 常用方法 与 插值器 Interpolator: <https://blog.csdn.net/qq_30889373/article/details/78881140>
+* Property Animation框架详解(一): <https://blog.csdn.net/u012422440/article/details/51352852>
 * Android动画之Interpolator(插值器): <https://blog.csdn.net/pzm1993/article/details/77926373>
 * Android 路径绘制艺术——贝塞尔曲线: <https://www.jianshu.com/p/12fcc3fedbbc>
 * 三阶贝塞尔曲线Interpolator的应用: <https://blog.csdn.net/xsl_bj/article/details/47722489>
@@ -336,6 +339,9 @@
 * OpenGL ES: <https://blog.csdn.net/gongxiaoou/category_8847081.html>
 * 20分钟让你了解OpenGL——OpenGL全流程详细解读: <https://zhuanlan.zhihu.com/p/56693625>
 * affine transformation matrix 仿射变换矩阵 与 OpenGL: <https://www.cnblogs.com/ghj1976/p/5199086.html>
+* Android Matrix 详解: <https://www.jianshu.com/p/5e30db034596>
+* 谈一谈 Matrix 与坐标变换: <https://www.jianshu.com/p/d61a785af776>
+* Android中利用Camera与Matrix实现3D效果详解: <https://blog.csdn.net/zhangke3016/article/details/52093776>
 * 3D图形:矩阵、欧拉角、四元数与方位的故事: <https://www.jianshu.com/p/7a114062866e>
 * 四元数与欧拉角（RPY角）的相互转换: <https://www.cnblogs.com/21207-iHome/p/6894128.html>
 
