@@ -196,6 +196,7 @@
 * Android原生系统API自带dp、px、sp单位转换: <https://www.cnblogs.com/touko/p/6478851.html>
 * 一种非常好用的Android屏幕适配: <https://www.jianshu.com/p/1302ad5a4b04>
 * 最清晰的Android多屏幕适配方案: <https://www.cnblogs.com/soaringEveryday/p/4835839.html>
+* Android 刘海屏适配全攻略: <https://blog.csdn.net/u011810352/article/details/80587531>
 
 * Android ActionBar完全解析，使用官方推荐的最佳导航栏(上): <http://blog.csdn.net/guolin_blog/article/details/18234477>
 * Android完美获取状态栏高度、标题栏高度、编辑区域高度的获取: <http://blog.csdn.net/a_running_wolf/article/details/50477965>
@@ -213,7 +214,6 @@
 * MaterialDesign之SearchView解锁 仿网易云音乐搜索: <http://www.sohu.com/a/142436167_611601>
 * Android下setTextSize的正确使用姿势: <https://www.jianshu.com/p/7f2941dbfb17>
 * Mipmap drawables for icons: <https://stackoverflow.com/questions/23935810/mipmap-drawables-for-icons>
-* 一大波 Android 刘海屏来袭，全网最全适配技巧！<https://www.cnblogs.com/plokmju/p/android_liuhaiping.html>
 * Android “getActionBar()返回NullPointerException”问题分析: <https://www.jianshu.com/p/feb4cc119659>
 * setEnabled() vs setClickable(), what is the difference? <https://stackoverflow.com/questions/15615823/setenabled-vs-setclickable-what-is-the-difference>
 * ListView中getView的原理与解决多轮重复调用的方法: <https://www.cnblogs.com/lirizhi/p/3357771.html>
@@ -319,7 +319,7 @@
 
 * Flutter: <https://flutter.dev/>
 
-## 图形处理库
+## 图形处理库(参考"OpenGL学习之路"脑图)
 
 ### OpenGL
 
@@ -330,6 +330,7 @@
 * LearnOpenGL: <https://learnopengl-cn.github.io/>
 * OpenGL(很多文章的参考文献): <http://songho.ca/opengl/index.html>
 * Learn WebGL: <http://learnwebgl.brown37.net/>
+* NEHE Tutorials: <http://nehe.gamedev.net/>
 
 * OpenGL顶点坐标与纹理坐标: <https://www.jianshu.com/p/355137fa2817>
 * OpenGL纹理上下颠倒翻转的三种解决办法: <https://blog.csdn.net/xipiaoyouzi/article/details/53611585>
@@ -355,19 +356,14 @@
 
 ### 其他图形处理库
 
-* GLFW: <https://www.glfw.org/>
-* freeglut: <http://freeglut.sourceforge.net/>
-* difference of freeglut vs glew? <https://stackoverflow.com/questions/15613978/difference-of-freeglut-vs-glew>
-
 * Rajawali: <https://github.com/Rajawali/Rajawali>
 * Basic Rajawali3D Tutorial for Android: <http://www.clintonmedbery.com/basic-rajawali3d-tutorial-for-android/>
 
+* List of rendering APIs: <https://en.wikipedia.org/wiki/List_of_rendering_APIs>
 * 计算机图形程序接口 | Graphics API: <https://www.jianshu.com/p/3ab72184a906>
 
 * Vulkan: <https://www.khronos.org/vulkan/>
 * Vulkan Graphics API: <https://developer.android.google.cn/ndk/guides/graphics>
-
-* ANGLE: <https://github.com/google/angle>
 
 * Cairo: <http://www.cairographics.org/>
 * Skia: <https://skia.org>
