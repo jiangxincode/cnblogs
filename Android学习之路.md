@@ -192,8 +192,8 @@
 * HenCoder——给高级 Android 工程师的进阶手册: <https://hencoder.com/>
 
 * 支持不同的屏幕尺寸: <https://developer.android.google.cn/training/multiscreen/screensizes.html>
+* 多屏幕多分辨率的支持: <https://www.cnblogs.com/tianjian/p/3430085.html>
 * Android开发中dip，dpi，density，px等详解: <http://blog.qiji.tech/archives/2581>
-* Android原生系统API自带dp、px、sp单位转换: <https://www.cnblogs.com/touko/p/6478851.html>
 * 一种非常好用的Android屏幕适配: <https://www.jianshu.com/p/1302ad5a4b04>
 * 最清晰的Android多屏幕适配方案: <https://www.cnblogs.com/soaringEveryday/p/4835839.html>
 * Android 刘海屏适配全攻略: <https://blog.csdn.net/u011810352/article/details/80587531>

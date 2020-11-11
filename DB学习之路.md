@@ -163,6 +163,7 @@
 * Oracle导入导出常用命令: <http://www.cnblogs.com/jiangxinnju/p/7616837.html>
 
 * oracle 11g如何完全卸载: <http://jingyan.baidu.com/article/922554468d4e6b851648f4e3.html>
+* Oracle 11G数据库VMware虚拟机下载: <https://blog.csdn.net/sunansheng/article/details/49680201>
 * win7_oracle11g_64位连接32位PLSQL_Developer: <http://jingyan.baidu.com/article/fb48e8be4c7c206e622e1491.html>
 * Oracle 11g 如何创建数据库：<http://jingyan.baidu.com/article/cbcede07cf42ef02f40b4dc2.html>
 * 数据库使用详解：[3]SQL Developer如何配置：<http://jingyan.baidu.com/article/e4511cf33f289e2b845eafb6.html>
