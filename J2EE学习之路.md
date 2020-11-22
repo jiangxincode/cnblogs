@@ -284,7 +284,7 @@
 * <http://www.eclipse.org/>
 * Eclipse MarketPlace地址：<http://marketplace.eclipse.org/>
 * 各个版本的下载地址：<http://www.eclipse.org/downloads/>
-* 帮助地址：<http://help.eclipse.org/>
+* Eclipse documentation：<http://help.eclipse.org/>
 * 源码：<http://git.eclipse.org/>
 * FAQ What is a Quick Fix?: <http://wiki.eclipse.org/FAQ_What_is_a_Quick_Fix>?
 * Eclipse插件开发总群（QQ群）：584434100
@@ -517,7 +517,6 @@ sandbox中的项目无法直接通过maven进行依赖，必须通过svn下载�
 
     cd ../bcel (classscan/bcel)
     mvn clean package install -DskipTests
-```
 
 在pom.xml中添加依赖
 

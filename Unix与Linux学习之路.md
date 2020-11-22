@@ -19,15 +19,10 @@
 * RPM Fusion(RPM Fusion provides software that the Fedora Project or Red Hat doesn't want to ship): <http://rpmfusion.org/>
 * Linux From Scratch: <http://www.linuxfromscratch.org/>
 
-* Linux中国: <https://linux.cn/portal.php>
-* Linux导航: <http://www.linux265.com/>
-* ChinaUnix: <http://bbs.chinaunix.net/>
-
 ## Linux Distributions
 
 * Ubuntu: <https://www.ubuntu.com>
 * Ubuntu Wiki: <https://wiki.ubuntu.com/>
-* Ubuntu Kylin: <http://www.ubuntukylin.com/>
 * deepin: <https://www.deepin.org/>
 * Debian: <http://www.debian.org/>
 * Fedora: <http://fedoraproject.org/>
@@ -37,10 +32,14 @@
 * opensuse-guide: <https://lug.ustc.edu.cn/sites/opensuse-guide/>
 
 * 鳥哥的 Linux 私房菜: <http://linux.vbird.org/>
-* Linux命令大全: <http://man.linuxde.net/>
 
 ## Softwares/Tools/Knowledge
 
+* 一篇文章搞懂apt-get update, apt-get upgrade, apt-get dist-upgrade, do-release-upgrade, apt-get remove, apt-get autoremove, aptitude remove的区别: <https://www.cnblogs.com/jiangxinnju/p/14017675.html>
+* What is the difference between dpkg and aptitude/apt-get? <https://askubuntu.com/questions/309113/what-is-the-difference-between-dpkg-and-aptitude-apt-get>
+* Snap: <https://snapcraft.io/>
+
+* Linux命令大全: <http://man.linuxde.net/>
 * explainshell: <https://explainshell.com/>
 * tldr: <https://github.com/tldr-pages/tldr>
 * Nushell: <https://www.nushell.sh/>
@@ -74,8 +73,6 @@
 * LNMP安装快速导航（官网教程）: <http://lnmp.org/install.html>
 * ubuntu删除旧内核和多余启动项: <http://pppboy.blog.163.com/blog/static/3020379620113173147935/>
 * 各个Linux版本的本地root密码破解方法: <http://os.51cto.com/art/200910/159523.htm>
-* apt-get remove, apt-get autoremove和aptitude remove的区别: <http://blog.csdn.net/jiangxinnju/article/details/38341283>
-* What is the difference between dpkg and aptitude/apt-get? <https://askubuntu.com/questions/309113/what-is-the-difference-between-dpkg-and-aptitude-apt-get>
 * Linux乱码问题解决方案: <http://www.cnblogs.com/jiangxinnju/p/6014111.html>
 * Linux 软件看门狗 watchdog: <http://blog.csdn.net/liigo/article/details/9227205>
 * C语言调试手段:锁定错误的实现方法: <http://blog.csdn.net/huangblog/article/details/8281165>
@@ -129,18 +126,13 @@
 * Linux中10个有用的命令行补齐命令: <http://www.geekfan.net/8169/>
 * Linux中的10个链接操作符: <http://linux.cn/thread/12205/1/1/>
 
-* Linux兼容内核（龙井）: <http://www.longene.org/index.php>
 * wine: <https://www.winehq.org/>
 * Winetricks: <https://wiki.winehq.org/Winetricks>
-* 搜狗输入法: <http://pinyin.sogou.com/linux/>
-* wps for linux: <http://linux.wps.cn/>
-* LibreOffice: <http://www.libreoffice.org/>
-* 永中office: <http://www.yozosoft.com>
-* 有道词典: <http://cidian.youdao.com/multi.html#linuxAll>
-* Compiz(桌面美化工具): <http://www.compiz.org/>
+* fswatch: <https://github.com/emcrisostomo/fswatch>
+* Compiz: <http://www.compiz.org/>
 * 新立得(Synaptic): <http://www.nongnu.org/synaptic/>
 * GLX-Dock: <http://www.glx-dock.org/>
-* vncview(远程控制): <https://www.realvnc.com/en/connect/download/viewer/>
+* vncview: <https://www.realvnc.com/en/connect/download/viewer/>
 * gimp: <https://www.gimp.org/>
 * PDFtk: <https://www.pdflabs.com/>
 * Master PDF Editor for Linux:<https://code-industry.net/free-pdf-editor/>
@@ -153,7 +145,7 @@
 * htop: <https://sourceforge.net/projects/htop/>
 * iftop: <http://www.ex-parrot.com/~pdw/iftop/>
 * Iotop: <http://guichaz.free.fr/iotop/>
-* 串口传输文件 lrzsz: <http://www.cnblogs.com/lidabo/p/4780866.html>
+* lrzsz(串口传输文件): <http://www.cnblogs.com/lidabo/p/4780866.html>
 * httpry(HTTP logging and information retrieval tool ): <https://github.com/jbittel/httpry>
 * iproute2: <https://en.wikipedia.org/wiki/Iproute2>
 * GNU Binutils(objdump/gprof/strings): <https://sourceware.org/binutils/>
@@ -174,9 +166,16 @@
 ## Linux常用命令
 
 ```shell
+    # 先尝试man再尝试google
+    man xxx
+
     sha1sum/md5sum
     find "/etc/" -name "*" -type f | xargs wc -l | awk '{print $2" "$1"lines"}' # 打印某一文件夹下的所有文件名及其行数
-    rdate # set the system's date from a remote host. (sudo apt-get install rdate)
+
+    # set the system's date from a remote host
+    # sudo apt-get install rdate
+    rdate
+
     grep -R "org.apache.commons.FileUtils" *
     grep -inr --color "ERROR" test_debug.log
     ps –fu $USER | grep java # 显示当前用户的所有线程
@@ -288,7 +287,13 @@
     # Linux下分割合并文: man split/cat
     # 生成目录树结构: man tree
 
-    rename # http://man.linuxde.net/rename
+    # 重命名文件
+    rename
+
+    # 切换用户并执行一条命令
+    su - oracle -c command
+    # 切换用户并执行一个shell文件
+    su - oracle -s /bin/bash shell.sh
 ```
 
 ## 修改默认打开文件的程序

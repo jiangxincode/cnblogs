@@ -359,14 +359,7 @@
 * Rajawali: <https://github.com/Rajawali/Rajawali>
 * Basic Rajawali3D Tutorial for Android: <http://www.clintonmedbery.com/basic-rajawali3d-tutorial-for-android/>
 
-* List of rendering APIs: <https://en.wikipedia.org/wiki/List_of_rendering_APIs>
-* 计算机图形程序接口 | Graphics API: <https://www.jianshu.com/p/3ab72184a906>
-
-* Vulkan: <https://www.khronos.org/vulkan/>
 * Vulkan Graphics API: <https://developer.android.google.cn/ndk/guides/graphics>
-
-* Cairo: <http://www.cairographics.org/>
-* Skia: <https://skia.org>
 
 ## Jack
 
@@ -455,12 +448,8 @@
 
 ## Vitamio
 
-* Vitamio: <https://www.vitamio.org/>
-* 帮助文档：<https://www.vitamio.org/docs/>
 * 4.2.2版本之前的源码: <https://github.com/yixia/VitamioBundle>
 * 5.0.0版本之后的源码: <https://github.com/yixia/VitamioBundleStudio>
-* vplayer: <https://vplayer.net/>
-* 一下科技: <http://www.yixia.com/>
 * 使用Vitamio打造自己的Android万能播放器: <http://www.cnblogs.com/over140/archive/2012/04/26/2471060.html>
 
 ## 百度媒体云
