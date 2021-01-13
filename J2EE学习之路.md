@@ -1017,30 +1017,18 @@ The yFiles diagramming software components are extensive class libraries that en
 
 * <https://sourceforge.net/projects/ebus/>
 
-## JACOB
+## Java操作Word/Excel/PowerPoint/PDF
 
-* old：<http://danadler.com/jacob/>
-* new：<https://sourceforge.net/projects/jacob-project/>
+* Apache POI - the Java API for Microsoft Documents: <http://poi.apache.org/>
+* aspose: <http://www.aspose.com/>
+* iText: <https://github.com/itext/itext7>
+* Apache PDFBox - A Java PDF Library: <https://pdfbox.apache.org/index.html>
+* JExcelApi(长时间不更新): <https://sourceforge.net/projects/jexcelapi/>
+
+* jacob：<https://github.com/freemansoft/jacob-project>
 * Java操作Microsoft Word之jacob: <http://xiaoduan.blog.51cto.com/502137/136692/>
 * 浅析JACOB: <http://www.blogjava.net/lusm/archive/2008/11/22/jacob.html>
 * JACOB的语法: <http://www.bitscn.com/pdb/java/200904/161117.html>
-
-## Apache POI - the Java API for Microsoft Documents
-
-* <http://poi.apache.org/>
-
-## Apache PDFBox - A Java PDF Library
-
-* <https://pdfbox.apache.org/index.html>
-
-## iText(AGPL)
-
-* <http://itextpdf.com/>
-* <https://github.com/itext/itextpdf>
-
-## aspose
-
-* <http://www.aspose.com/>
 
 ## MVEL(Drools)
 

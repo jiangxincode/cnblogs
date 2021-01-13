@@ -21,9 +21,7 @@
 * AOSP: <https://source.android.com/>
 * 代号、标记和细分版本号: <https://source.android.com/source/build-numbers>
 
-* Repo command reference: <https://source.android.com/setup/develop/repo>
-* repo 下载Android源码（国内镜像）: <https://blog.csdn.net/shenlan18446744/article/details/51490560>
-* repo使用: <https://blog.csdn.net/fe421504975/article/details/8272065>
+* Repo实践指南: <https://www.cnblogs.com/jiangxinnju/p/14274982.html>
 
 * androidxref: <http://androidxref.com/>
 * grepcode: <http://www.grepcode.com>
