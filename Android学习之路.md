@@ -1,8 +1,11 @@
 # Andriod学习之路
 
 * <https://developer.android.com/develop/index.html>
+
 * NDK: <https://developer.android.com/ndk/>
+
 * Intent: <https://developer.android.com/reference/android/content/Intent.html>
+* PendingIntent: <https://developer.android.com/reference/android/app/PendingIntent>
 * Settings.Global: <https://developer.android.com/reference/android/provider/Settings.Global>
 
 * Android开发者预览版: <https://developer.android.com/preview/>
@@ -18,158 +21,47 @@
 * 支持库: <https://developer.android.com/topic/libraries/support-library/index>
 * uses-library: <https://developer.android.com/guide/topics/manifest/uses-library-element.html>
 
-* AOSP: <https://source.android.com/>
-* 代号、标记和细分版本号: <https://source.android.com/source/build-numbers>
-
-* Repo实践指南: <https://www.cnblogs.com/jiangxinnju/p/14274982.html>
-
-* androidxref: <http://androidxref.com/>
-* grepcode: <http://www.grepcode.com>
-* Android Code Search: <https://cs.android.com/>
-
-* Git repositories on android: <https://android.googlesource.com/>
 * Android Studio: <http://www.android-studio.org/>
-* AndroidDevTools: <http://www.androiddevtools.cn/>
+* Xamarin: <https://www.xamarin.com/>
 * Android Support Overview: <http://www.jetbrains.com/help/idea/android-support-overview.html>
 
 * I18n Translation Search: <https://i18ns.com/>
 
 * androidcommunity: <http://androidcommunity.com/>
-* <http://blog.sina.com.cn/s/articlelist_1463312553_1_1.html>
+* AndroidDevTools: <http://www.androiddevtools.cn/>
 
-* Xamarin: <https://www.xamarin.com/>
+## AOSP源码与架构学习
 
-## Gradle/Gradle Wrapper/Android Plugin for Gradle
-
-* Gradle: <http://gradle.org/>
-* Gradle User Guide: <https://docs.gradle.org/current/userguide/userguide_single.html>
-* Chapter 6. The Gradle Wrapper: <https://docs.gradle.org/current/userguide/gradle_wrapper.html>
-* Getting Started With Gradle: <https://www.petrikainulainen.net/getting-started-with-gradle/>
-
-* 彻底搞懂Gradle、Gradle Wrapper与Android Plugin for Gradle的区别和联系: <http://www.cnblogs.com/jiangxinnju/p/8229129.html>
-* 通过设置JDK解决存在多个Gradle后台进程的问题: <https://www.cnblogs.com/jiangxinnju/p/13443183.html>
-* Gradle Could not find method leftShift() for arguments: <https://blog.csdn.net/qq_30596077/article/details/88837029>
-
-* Gradle学习系列之一——Gradle快速入门: <http://www.cnblogs.com/davenkin/p/gradle-learning-1.html>
-* gradle使用文档: <https://yq.aliyun.com/articles/54151>
-* Gradle修改本地仓库的位置: <http://blog.csdn.net/xq328220454/article/details/30233759>
-* gradle cache目录(.gradle)剖析: <https://zhuanlan.zhihu.com/p/26473930>
-
-* (老)Gradle Plugin User Guide: <http://tools.android.com/tech-docs/new-build-system/user-guide>
-* 加速Android Studio/Gradle构建: <https://isming.me/2015/03/18/android-build-speed-up/>
-* 用Gradle 构建你的android程序: <https://www.cnblogs.com/youxilua/archive/2013/05/20/3087935.html>
-* 用Gradle 构建你的android程序-依赖管理篇: <http://www.cnblogs.com/youxilua/archive/2013/05/22/3092657.html>
-
-## Android Studio及其插件
-
-* JetBrains Plugins Repository: <https://plugins.jetbrains.com>
-* Android Studio常用插件汇总: <https://www.cnblogs.com/jiangxinnju/p/13736788.html>
-* 在 AndroidStudio 工程点击 Run 按钮， 实际上做了什么操作呢？<https://www.zhihu.com/question/65289196>
-
-* 设置应用 ID: <https://developer.android.com/studio/build/application-id.html>
-* (新)配置构建: <https://developer.android.com/studio/build/index.html>
-* 创建和管理虚拟设备: <https://developer.android.com/studio/run/managing-avds>
-* 对您的应用进行版本控制: <https://developer.android.com/studio/publish/versioning.html>
-* dumpsys: <https://developer.android.com/studio/command-line/dumpsys>
-* Debug Your layout with Layout Inspector and Layout Validation: <https://developer.android.com/studio/debug/layout-inspector>
-* Configure Android Studio: <https://developer.android.com/studio/intro/studio-config.html>
-* CPU Profiler: <https://developer.android.com/studio/profile/cpu-profiler>
-* TraceView: <https://developer.android.com/studio/profile/traceview>
-
-* Android性能优化—TraceView的使用: <https://www.jianshu.com/p/7e9ca2c73c97>
-
-* Android Studio导入整个Android系统源码: <https://blog.csdn.net/QQxiaoqiang1573/article/details/72903237>
-* AndroidStudio工程导入部分Android源码: <https://blog.csdn.net/mcsbary/article/details/90721626>
-
-* Android Studio移动鼠标显示悬浮提示的设置方法: <http://www.cnblogs.com/jiangxinnju/p/8227442.html>
-* ANDROID STUDIO详细教程汇总: <http://stormzhang.com/devtools/2015/06/17/android-studio-all/>
-* Android Studio 3.0+ 新Dex编译器D8 Desugar R8: <https://blog.csdn.net/jamin0107/article/details/81123154>
-* Android Studio系列教程一--下载与安装: <http://stormzhang.com/devtools/2014/11/25/android-studio-tutorial1/>
-* Android Studio系列教程二--基本设置与运行: <http://stormzhang.com/devtools/2014/11/28/android-studio-tutorial2/>
-* Android Studio系列教程三--快捷键: <http://stormzhang.com/devtools/2014/12/09/android-studio-tutorial3/>
-* Android Studio系列教程四--Gradle基础: <http://stormzhang.com/devtools/2014/12/18/android-studio-tutorial4/>
-* ANDROID STUDIO系列教程五--GRADLE命令详解与导入第三方包: <http://stormzhang.com/devtools/2015/01/05/android-studio-tutorial5/>
-* ANDROID STUDIO系列教程六--GRADLE多渠道打包: <http://stormzhang.com/devtools/2015/01/15/android-studio-tutorial6/>
-* Android Studio优化技巧：<http://blog.oneapm.com/apm-tech/257.html>
-* Android Studio相关目录解析: <http://www.cnblogs.com/jiangxinnju/p/8323569.html>
-* Android Studio Build Output 栏内汉字出现乱码的解决方案: <https://blog.csdn.net/zhang5690800/article/details/104502632>
-
-## Libraries
-
-* butterknife: <https://github.com/JakeWharton/butterknife>
-* xUtils2: <https://github.com/wyouflf/xUtils>
-* xUtils3: <https://github.com/wyouflf/xUtils3>
-* SlidingMenu: <https://github.com/jfeinstein10/SlidingMenu>
-* ViewPagerIndicator: <https://github.com/JakeWharton/ViewPagerIndicator>
-* [DEPRECATED]ActionBarSherlock: <https://github.com/JakeWharton/ActionBarSherlock>
-* jpinyin: <https://github.com/stuxuhai/jpinyin>
-* Android-Universal-Image-Loader: <https://github.com/nostra13/Android-Universal-Image-Loader>
-* hugo: <https://github.com/JakeWharton/hugo>
-* 极光推送: <http://docs.jiguang.cn/jpush/resources/#android-sdk>
-
-* 移动服务SDK：<http://www.mob.com/download>
-
-## Tools
-
-* busybox: <https://busybox.net/>
-* godeyes: <http://godeyes.duapp.com/index.jsp>
-* Test DPC APK Download for Android: <http://www.testdpc.com/>
-* fastlane screenshots for Android: <https://docs.fastlane.tools/getting-started/android/screenshots/>
-* Android 应用开发调试利器——开发助手，数十倍效率提升: <http://www.trinea.cn/android/android-develop-and-debug-tools/>
-* 奇兔刷机：<http://www.7to.cn/>
-* dex-method-counts: <https://github.com/jiangxincode/dex-method-counts>
-* dexcount-gradle-plugin: <https://github.com/KeepSafe/dexcount-gradle-plugin>
-* leakcanary: <https://github.com/square/leakcanary>
-* Display and control your Android device: <https://github.com/Genymobile/scrcpy>
-
-## BugReport
-
-* Android adb bugreport工具分析和使用: <https://blog.csdn.net/createchance/article/details/51954142>
-* battery-historian: <https://github.com/google/battery-historian>
-* ChkBugReport: <https://github.com/sonyxperiadev/ChkBugReport>
-
-## systrace
-
-* System Trace: <https://developer.android.com/topic/performance/tracing>
-* Android Systrace 基础知识: <https://www.androidperformance.com/2019/05/28/Android-Systrace-About/>
-* systrace.py环境配置: <https://blog.csdn.net/zc37093/article/details/105415843>
-
-## Perfetto
-
-* Perfetto: <https://perfetto.dev/>
-* PerfettoUI: <https://ui.perfetto.dev/#!/>
-
-## Android模拟器
-
-* genymotion: <https://www.genymotion.com/>
-* genymotion个人免费版: <https://www.genymotion.com/fun-zone/>
-* genymotion-idea-plugin: <https://plugins.jetbrains.com/plugin/7269-genymotion>
-* 夜神模拟器: <https://www.yeshen.com/>
-
-### Firebase
-
-* Firebase: <https://firebase.google.com/>
-* Plugin Fierbase Services was not installed:Cannot download...: <https://blog.csdn.net/u010368726/article/details/105263487>
+* AOSP相关网址: <https://www.cnblogs.com/jiangxinnju/p/14401872.html>
+* Android构建系统: <https://www.cnblogs.com/jiangxinnju/p/14402000.html>
+* Android soong build系统介绍: <https://www.jianshu.com/p/80013a768a45>
+* Repo实践指南: <https://www.cnblogs.com/jiangxinnju/p/14274982.html>
+* Android OTA升级: <https://www.cnblogs.com/jiangxinnju/p/14404073.html>
+* Android 新一代编译 toolchain Jack & Jill 简介: <https://yq.aliyun.com/articles/40811>
+* Google 又弃坑了，Jack+Jill vs. javac+dx: <https://zhuanlan.zhihu.com/p/25814519>
 
 ## Article
 
-* Android soong build系统介绍: <https://www.jianshu.com/p/80013a768a45>
+* Android 编程与兼容性问题: 《Android Programming The Big Nerd Ranch Guide 3rd[Android编程权威指南（第3版）》 6.2 7.8 7.9
+* lntentfilter的匹配规则: 《Android开发艺术探索》 1.3
+* .nomedia: 《解析 Google Android SDK-智能手机开发范例手册》5.3
+* StrictMode: 《Android核心原理与系统应用高效开发》 9.2.3
 
+* Eight Ways Your Android App Can Leak Memory: <https://blog.nimbledroid.com/2016/05/23/memory-leaks.html>
+* Eight Ways Your Android App Can STOP Leaking Memory: <https://blog.nimbledroid.com/2016/09/06/stop-memory-leaks.html>
+* Android性能优化: <http://liuwangshu.cn/tags/Android%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/>
+* 使用meminfo分析Android单个进程内存信息: <https://my.oschina.net/shaorongjie/blog/128442>
+* How do I discover memory usage of my application in Android? <https://stackoverflow.com/questions/2298208/how-do-i-discover-memory-usage-of-my-application-in-android>
 * Handler内存泄漏详解及其解决方案: <http://blog.csdn.net/javazejian/article/details/50839443>
 * Android中Handler的使用: <http://blog.csdn.net/iispring/article/details/47115879>
 * 深入源码解析Android中的Handler,Message,MessageQueue,Looper: <http://blog.csdn.net/iispring/article/details/47180325>
 * Android异步更新UI的几种方法: <https://blog.csdn.net/ydxlt/article/details/51247822>
 * AsyncTaskLoader vs AsyncTask: <https://stackoverflow.com/questions/7120813/asynctaskloader-vs-asynctask>
 
-* Android中的Service：默默的奉献者 (1): <https://blog.csdn.net/luoyanglizi/article/details/51586437>
-* Android中的Service：Binder，Messenger，AIDL（2）:<https://blog.csdn.net/luoyanglizi/article/details/51594016>
-* Android：学习AIDL，这一篇文章就够了(上): <https://blog.csdn.net/luoyanglizi/article/details/51980630>
-* Android：学习AIDL，这一篇文章就够了(下): <https://blog.csdn.net/luoyanglizi/article/details/52029091>
-* Service的onStartCommand方法的返回值和参数详解：<https://blog.csdn.net/fenggering/article/details/82535154>
+* Service/Binder/Messenger/AIDL: <https://developer.android.com/guide/components/services>+《Android开发艺术探索》第2章、第9章
 
 * Fragments：Pro Android 5[精通Android 3] Chapter 8
 * Android Fragment的用法（一）: <https://www.cnblogs.com/guop/p/5072572.html>
-* Fragment相关: Pro Android 5
 * Fragment相关源码解析一——FragmentManagerImpl和BackStackRecord: <https://blog.csdn.net/chengkun_123/article/details/72548373>
 * Fragment相关源码解析二——生命周期: <https://blog.csdn.net/chengkun_123/article/details/73302779>
 * Fragment相关源码解析三——状态保存与恢复: <https://blog.csdn.net/chengkun_123/article/details/72832728>
@@ -180,7 +72,6 @@
 * requestDisallowInterceptTouchEvent() 阻止父层的View截获touch事件(事件处理机制): <https://blog.csdn.net/cl18652469346/article/details/53184508>
 * View·InputEvent事件投递源码分析: <https://www.jianshu.com/p/b7f33f46d33c>
 
-* Graphics: <https://source.android.com/devices/graphics>
 * Hardware acceleration: <https://developer.android.com/guide/topics/graphics/hardware-accel>
 * Android应用程序UI硬件加速渲染技术简要介绍和学习计划: <https://blog.csdn.net/Luoshengyang/article/details/45601143>
 * Android 显示系统：SurfaceFlinger详解: <https://www.cnblogs.com/blogs-of-lxl/p/11272756.html>
@@ -216,12 +107,11 @@
 * setEnabled() vs setClickable(), what is the difference? <https://stackoverflow.com/questions/15615823/setenabled-vs-setclickable-what-is-the-difference>
 * ListView中getView的原理与解决多轮重复调用的方法: <https://www.cnblogs.com/lirizhi/p/3357771.html>
 * Android控件--ProgressBar: <https://blog.csdn.net/hardworkingant/article/details/71910731>
+* 拖放框架: <https://developer.android.com/guide/topics/ui/drag-drop>
 
-* Android 编程与兼容性问题: Android Programming The Big Nerd Ranch Guide 3rd[Android编程权威指南（第3版） 6.2 7.8 7.9
 * Android核心分析: <http://blog.csdn.net/column/details/androidcore.html>
 * Android系统开篇: <http://gityuan.com/android/>
 * 对于android.intent.action.MAIN和android.intent.category.LAUNCHER的理解: <http://blog.csdn.net/lindroid20/article/details/51993247>
-* lntentfilter的匹配规则: Android开发艺术探索 1.3
 * 详解 Android 通信: <http://www.androidchina.net/5028.html>
 * Android Bander设计与实现 - 设计篇: <http://blog.csdn.net/universus/article/details/6211589>
 * Android Application的使用及其生命周期: <https://www.cnblogs.com/carlo/p/4734291.html>
@@ -250,7 +140,6 @@
 * Android兼容性测试CTS Verifier-环境搭建、测试执行、结果分析: <https://www.cnblogs.com/wi100sh/p/4613502.html>
 * Why do most fields (class members) in Android tutorial start with `m`? <https://stackoverflow.com/questions/2092098/why-do-most-fields-class-members-in-android-tutorial-start-with-m>
 * Android多语言国际化适配(兼容7.0): <https://blog.csdn.net/pigdreams/article/details/81277110>
-* .nomedia: 《解析 Google Android SDK-智能手机开发范例手册》5.3
 * android程序自动化生成apk的过程: <https://blog.csdn.net/f2006116/article/details/52254519>
 * 配置方法数超过 64K 的应用: <http://developer.android.com/intl/zh-cn/tools/building/multidex.html#about>
 * 升级ndk报错：No toolchains found in the NDK toolchains folder for ABI with prefix: mips64el-linux-android: <https://blog.csdn.net/qq_37299249/article/details/90290468>
@@ -303,6 +192,90 @@
 * 在 Android 开发中使用 SVG: <https://enzowyf.github.io/svg_android.html>
 * 手把手教学， android 使用 SVG: <https://www.jianshu.com/p/5c81970ddf33>
 
+## Gradle/Gradle Wrapper/Android Plugin for Gradle
+
+* Gradle: <http://gradle.org/>
+* Gradle User Guide: <https://docs.gradle.org/current/userguide/userguide_single.html>
+* Chapter 6. The Gradle Wrapper: <https://docs.gradle.org/current/userguide/gradle_wrapper.html>
+* Getting Started With Gradle: <https://www.petrikainulainen.net/getting-started-with-gradle/>
+
+* 彻底搞懂Gradle、Gradle Wrapper与Android Plugin for Gradle的区别和联系: <http://www.cnblogs.com/jiangxinnju/p/8229129.html>
+* 通过设置JDK解决存在多个Gradle后台进程的问题: <https://www.cnblogs.com/jiangxinnju/p/13443183.html>
+* Gradle Could not find method leftShift() for arguments: <https://blog.csdn.net/qq_30596077/article/details/88837029>
+
+* Gradle学习系列之一——Gradle快速入门: <http://www.cnblogs.com/davenkin/p/gradle-learning-1.html>
+* gradle使用文档: <https://yq.aliyun.com/articles/54151>
+* Gradle修改本地仓库的位置: <http://blog.csdn.net/xq328220454/article/details/30233759>
+* gradle cache目录(.gradle)剖析: <https://zhuanlan.zhihu.com/p/26473930>
+
+* (老)Gradle Plugin User Guide: <http://tools.android.com/tech-docs/new-build-system/user-guide>
+* 加速Android Studio/Gradle构建: <https://isming.me/2015/03/18/android-build-speed-up/>
+* 用Gradle 构建你的android程序: <https://www.cnblogs.com/youxilua/archive/2013/05/20/3087935.html>
+* 用Gradle 构建你的android程序-依赖管理篇: <http://www.cnblogs.com/youxilua/archive/2013/05/22/3092657.html>
+
+* Android Gradle and the curious case of invisible dependency: <https://proandroiddev.com/android-gradle-and-the-curious-case-of-invisible-dependency-7f1bcc8bb79e>
+
+## Android Studio及其插件
+
+* JetBrains Plugins Repository: <https://plugins.jetbrains.com>
+* Android Studio常用插件汇总: <https://www.cnblogs.com/jiangxinnju/p/13736788.html>
+* 在 AndroidStudio 工程点击 Run 按钮， 实际上做了什么操作呢？<https://www.zhihu.com/question/65289196>
+
+* 设置应用 ID: <https://developer.android.com/studio/build/application-id.html>
+* (新)配置构建: <https://developer.android.com/studio/build/index.html>
+* 创建和管理虚拟设备: <https://developer.android.com/studio/run/managing-avds>
+* 对您的应用进行版本控制: <https://developer.android.com/studio/publish/versioning.html>
+* dumpsys: <https://developer.android.com/studio/command-line/dumpsys>
+* Debug Your layout with Layout Inspector and Layout Validation: <https://developer.android.com/studio/debug/layout-inspector>
+* Configure Android Studio: <https://developer.android.com/studio/intro/studio-config.html>
+* CPU Profiler: <https://developer.android.com/studio/profile/cpu-profiler>
+* TraceView: <https://developer.android.com/studio/profile/traceview>
+
+* Android性能优化—TraceView的使用: <https://www.jianshu.com/p/7e9ca2c73c97>
+
+* Android Studio导入整个Android系统源码: <https://blog.csdn.net/QQxiaoqiang1573/article/details/72903237>
+* AndroidStudio工程导入部分Android源码: <https://blog.csdn.net/mcsbary/article/details/90721626>
+
+* Android Studio移动鼠标显示悬浮提示的设置方法: <http://www.cnblogs.com/jiangxinnju/p/8227442.html>
+* ANDROID STUDIO详细教程汇总: <http://stormzhang.com/devtools/2015/06/17/android-studio-all/>
+* Android Studio 3.0+ 新Dex编译器D8 Desugar R8: <https://blog.csdn.net/jamin0107/article/details/81123154>
+* Android Studio系列教程一--下载与安装: <http://stormzhang.com/devtools/2014/11/25/android-studio-tutorial1/>
+* Android Studio系列教程二--基本设置与运行: <http://stormzhang.com/devtools/2014/11/28/android-studio-tutorial2/>
+* Android Studio系列教程三--快捷键: <http://stormzhang.com/devtools/2014/12/09/android-studio-tutorial3/>
+* Android Studio系列教程四--Gradle基础: <http://stormzhang.com/devtools/2014/12/18/android-studio-tutorial4/>
+* ANDROID STUDIO系列教程五--GRADLE命令详解与导入第三方包: <http://stormzhang.com/devtools/2015/01/05/android-studio-tutorial5/>
+* ANDROID STUDIO系列教程六--GRADLE多渠道打包: <http://stormzhang.com/devtools/2015/01/15/android-studio-tutorial6/>
+* Android Studio优化技巧：<http://blog.oneapm.com/apm-tech/257.html>
+* Android Studio相关目录解析: <http://www.cnblogs.com/jiangxinnju/p/8323569.html>
+* Android Studio Build Output 栏内汉字出现乱码的解决方案: <https://blog.csdn.net/zhang5690800/article/details/104502632>
+* ERROR Android emulator gets killed: <https://stackoverflow.com/questions/36841461/error-android-emulator-gets-killed/47578244>
+
+## Libraries
+
+* butterknife: <https://github.com/JakeWharton/butterknife>
+* xUtils3: <https://github.com/wyouflf/xUtils3>
+* SlidingMenu: <https://github.com/jfeinstein10/SlidingMenu>
+* ViewPagerIndicator: <https://github.com/JakeWharton/ViewPagerIndicator>
+* jpinyin: <https://github.com/stuxuhai/jpinyin>
+* Android-Universal-Image-Loader: <https://github.com/nostra13/Android-Universal-Image-Loader>
+* hugo: <https://github.com/JakeWharton/hugo>
+* 极光推送: <http://docs.jiguang.cn/jpush/resources/#android-sdk>
+* 移动服务SDK：<http://www.mob.com/download>
+
+## Tools
+
+* busybox: <https://busybox.net/>
+* godeyes: <http://godeyes.duapp.com/index.jsp>
+* Test DPC APK Download for Android: <http://www.testdpc.com/>
+* fastlane screenshots for Android: <https://docs.fastlane.tools/getting-started/android/screenshots/>
+* Android 应用开发调试利器——开发助手，数十倍效率提升: <http://www.trinea.cn/android/android-develop-and-debug-tools/>
+* 奇兔刷机：<http://www.7to.cn/>
+* dex-method-counts: <https://github.com/jiangxincode/dex-method-counts>
+* dexcount-gradle-plugin: <https://github.com/KeepSafe/dexcount-gradle-plugin>
+* leakcanary: <https://github.com/square/leakcanary>
+* Display and control your Android device: <https://github.com/Genymobile/scrcpy>
+* PerfDog性能狗: <https://perfdog.qq.com/>
+
 ## SVGA
 
 * SVGA: <http://svga.io/>
@@ -316,6 +289,36 @@
 ## Flutter
 
 * Flutter: <https://flutter.dev/>
+* Flutter中文网: <https://flutterchina.club/get-started/install/>
+
+## BugReport
+
+* Android adb bugreport工具分析和使用: <https://blog.csdn.net/createchance/article/details/51954142>
+* battery-historian: <https://github.com/google/battery-historian>
+* ChkBugReport: <https://github.com/sonyxperiadev/ChkBugReport>
+
+## systrace
+
+* System Trace: <https://developer.android.com/topic/performance/tracing>
+* Android Systrace 基础知识: <https://www.androidperformance.com/2019/05/28/Android-Systrace-About/>
+* systrace.py环境配置: <https://blog.csdn.net/zc37093/article/details/105415843>
+
+## Perfetto
+
+* Perfetto: <https://perfetto.dev/>
+* PerfettoUI: <https://ui.perfetto.dev/#!/>
+
+## Android模拟器
+
+* genymotion: <https://www.genymotion.com/>
+* genymotion个人免费版: <https://www.genymotion.com/fun-zone/>
+* genymotion-idea-plugin: <https://plugins.jetbrains.com/plugin/7269-genymotion>
+* 夜神模拟器: <https://www.yeshen.com/>
+
+## Firebase
+
+* Firebase: <https://firebase.google.com/>
+* Plugin Fierbase Services was not installed:Cannot download...: <https://blog.csdn.net/u010368726/article/details/105263487>
 
 ## 图形处理库(参考"OpenGL学习之路"脑图)
 
@@ -358,28 +361,6 @@
 * Basic Rajawali3D Tutorial for Android: <http://www.clintonmedbery.com/basic-rajawali3d-tutorial-for-android/>
 
 * Vulkan Graphics API: <https://developer.android.google.cn/ndk/guides/graphics>
-
-## Jack
-
-* Android 新一代编译 toolchain Jack & Jill 简介: <https://yq.aliyun.com/articles/40811>
-* Google 又弃坑了，Jack+Jill vs. javac+dx: <https://zhuanlan.zhihu.com/p/25814519>
-
-## 升级相关
-
-* Android A/B System OTA分析（一）概览: <https://blog.csdn.net/guyongqiangx/article/details/71334889>
-* Android A/B System OTA分析（二）系统image的生成: <https://blog.csdn.net/guyongqiangx/article/details/71516768>
-* Android A/B System OTA分析（三）主系统和bootloader的通信: <https://blog.csdn.net/guyongqiangx/article/details/72480154>
-* Android A/B System OTA分析（四）系统的启动和升级: <https://blog.csdn.net/guyongqiangx/article/details/72604355>
-
-* Android OTA升级原理和流程分析（一）--update.zip包的制作: <https://blog.csdn.net/ylyuanlu/article/details/44457557>
-* Android OTA升级原理和流程分析（二）---update.zip差分包问题的解决: <https://blog.csdn.net/ylyuanlu/article/details/44457605>
-* Android OTA升级原理和流程分析（三）---Android系统的三种启动模式: <https://blog.csdn.net/ylyuanlu/article/details/44457691>
-* Android OTA升级原理和流程分析（四）---Android系统Recovery模式的工作原理: <https://blog.csdn.net/ylyuanlu/article/details/44457729>
-* Android OTA升级原理和流程分析（五）---update.zip包从上层进入Recovery服务: <https://blog.csdn.net/ylyuanlu/article/details/44457797>
-* Android OTA升级原理和流程分析（六）---Recovery服务流程细节: <https://blog.csdn.net/ylyuanlu/article/details/44457835>
-* Android OTA升级原理和流程分析（七）---Recovery服务的核心install_package函数: <https://blog.csdn.net/ylyuanlu/article/details/44457879>
-* Android OTA升级原理和流程分析（八）---升级程序update_binary的执行过程: <https://blog.csdn.net/ylyuanlu/article/details/44457903>
-* Android OTA升级原理和流程分析（九）---updater-script脚本语法简介以及执行流程: <https://blog.csdn.net/ylyuanlu/article/details/44457941>
 
 ## ADB
 
