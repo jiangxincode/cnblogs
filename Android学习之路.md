@@ -33,6 +33,8 @@
 ## AOSP源码与架构学习
 
 * AOSP相关网址: <https://www.cnblogs.com/jiangxinnju/p/14401872.html>
+* 将AOSP源码导入到Android Studio进行查看: <https://www.cnblogs.com/jiangxinnju/p/14426645.html>
+* AndroidStudio工程导入部分Android源码: <https://blog.csdn.net/mcsbary/article/details/90721626>
 * Android构建系统: <https://www.cnblogs.com/jiangxinnju/p/14402000.html>
 * Android soong build系统介绍: <https://www.jianshu.com/p/80013a768a45>
 * Repo实践指南: <https://www.cnblogs.com/jiangxinnju/p/14274982.html>
@@ -233,9 +235,6 @@
 
 * Android性能优化—TraceView的使用: <https://www.jianshu.com/p/7e9ca2c73c97>
 
-* Android Studio导入整个Android系统源码: <https://blog.csdn.net/QQxiaoqiang1573/article/details/72903237>
-* AndroidStudio工程导入部分Android源码: <https://blog.csdn.net/mcsbary/article/details/90721626>
-
 * Android Studio移动鼠标显示悬浮提示的设置方法: <http://www.cnblogs.com/jiangxinnju/p/8227442.html>
 * ANDROID STUDIO详细教程汇总: <http://stormzhang.com/devtools/2015/06/17/android-studio-all/>
 * Android Studio 3.0+ 新Dex编译器D8 Desugar R8: <https://blog.csdn.net/jamin0107/article/details/81123154>
@@ -319,48 +318,6 @@
 
 * Firebase: <https://firebase.google.com/>
 * Plugin Fierbase Services was not installed:Cannot download...: <https://blog.csdn.net/u010368726/article/details/105263487>
-
-## 图形处理库(参考"OpenGL学习之路"脑图)
-
-### OpenGL
-
-* OpenGL: <https://www.opengl.org/>
-* OpenGL Wiki: <http://khronos.org/opengl/wiki>
-* docs.GL: <http://docs.gl/#>
-
-* LearnOpenGL: <https://learnopengl-cn.github.io/>
-* OpenGL(很多文章的参考文献): <http://songho.ca/opengl/index.html>
-* Learn WebGL: <http://learnwebgl.brown37.net/>
-* NEHE Tutorials: <http://nehe.gamedev.net/>
-
-* OpenGL顶点坐标与纹理坐标: <https://www.jianshu.com/p/355137fa2817>
-* OpenGL纹理上下颠倒翻转的三种解决办法: <https://blog.csdn.net/xipiaoyouzi/article/details/53611585>
-* 投影矩阵的推导(Deriving Projection Matrices): <https://blog.csdn.net/zhanghua1816/article/details/23121735>
-* Android OpenGL ES从白痴到入门(四):离屏渲染(Pbuffer): <https://www.jianshu.com/p/8793f0fbd1e6>
-* OpenGL入门: <https://juejin.im/post/5dee8814e51d4557e87fc6be>
-* OpenGL学习脚印: <https://blog.csdn.net/ziyuanxiazai123/category_2107037.html>
-* OpenGL ES: <https://blog.csdn.net/gongxiaoou/category_8847081.html>
-* 20分钟让你了解OpenGL——OpenGL全流程详细解读: <https://zhuanlan.zhihu.com/p/56693625>
-* affine transformation matrix 仿射变换矩阵 与 OpenGL: <https://www.cnblogs.com/ghj1976/p/5199086.html>
-* Android Matrix 详解: <https://www.jianshu.com/p/5e30db034596>
-* 谈一谈 Matrix 与坐标变换: <https://www.jianshu.com/p/d61a785af776>
-* Android中利用Camera与Matrix实现3D效果详解: <https://blog.csdn.net/zhangke3016/article/details/52093776>
-* 3D图形:矩阵、欧拉角、四元数与方位的故事: <https://www.jianshu.com/p/7a114062866e>
-* 四元数与欧拉角（RPY角）的相互转换: <https://www.cnblogs.com/21207-iHome/p/6894128.html>
-
-* OpenGL ES 2.0 specifiying position attribute vec3 or vec4: <https://stackoverflow.com/questions/8551935/opengl-es-2-0-specifiying-position-attribute-vec3-or-vec4>
-* Why not vec3 for OpenGL ES 2.0 gl_Position? <https://stackoverflow.com/questions/9943636/why-not-vec3-for-opengl-es-2-0-gl-position>
-* Is OpenGL coordinate system left-handed or right-handed? <https://stackoverflow.com/questions/4124041/is-opengl-coordinate-system-left-handed-or-right-handed/12336360#12336360>
-* How vertex and fragment shaders communicate in OpenGL? <https://stackoverflow.com/questions/28333019/how-vertex-and-fragment-shaders-communicate-in-opengl>
-* How does the fragment shader know what variable to use for the color of a pixel? <https://stackoverflow.com/questions/9222217/how-does-the-fragment-shader-know-what-variable-to-use-for-the-color-of-a-pixel>
-* Non power of two textures in iOS <https://stackoverflow.com/questions/11069441/non-power-of-two-textures-in-ios>
-
-### 其他图形处理库
-
-* Rajawali: <https://github.com/Rajawali/Rajawali>
-* Basic Rajawali3D Tutorial for Android: <http://www.clintonmedbery.com/basic-rajawali3d-tutorial-for-android/>
-
-* Vulkan Graphics API: <https://developer.android.google.cn/ndk/guides/graphics>
 
 ## ADB
 
