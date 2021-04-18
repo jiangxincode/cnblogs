@@ -34,7 +34,6 @@
 
 * AOSP相关网址: <https://www.cnblogs.com/jiangxinnju/p/14401872.html>
 * 将AOSP源码导入到Android Studio进行查看: <https://www.cnblogs.com/jiangxinnju/p/14426645.html>
-* AndroidStudio工程导入部分Android源码: <https://blog.csdn.net/mcsbary/article/details/90721626>
 * Android构建系统: <https://www.cnblogs.com/jiangxinnju/p/14402000.html>
 * Android soong build系统介绍: <https://www.jianshu.com/p/80013a768a45>
 * Repo实践指南: <https://www.cnblogs.com/jiangxinnju/p/14274982.html>
@@ -144,6 +143,7 @@
 * Android多语言国际化适配(兼容7.0): <https://blog.csdn.net/pigdreams/article/details/81277110>
 * android程序自动化生成apk的过程: <https://blog.csdn.net/f2006116/article/details/52254519>
 * 配置方法数超过 64K 的应用: <http://developer.android.com/intl/zh-cn/tools/building/multidex.html#about>
+* NDK编译脚本：Android.mk or CMakeLists.txt: <https://blog.csdn.net/u011686167/article/details/106458899/>
 * 升级ndk报错：No toolchains found in the NDK toolchains folder for ABI with prefix: mips64el-linux-android: <https://blog.csdn.net/qq_37299249/article/details/90290468>
 * Contacts Provider: <http://www.android-doc.com/guide/topics/providers/contacts-provider.html>
 * Android：MediaSession框架介绍: <https://www.oschina.net/question/2561862_2150611>
@@ -264,7 +264,6 @@
 ## Tools
 
 * busybox: <https://busybox.net/>
-* godeyes: <http://godeyes.duapp.com/index.jsp>
 * Test DPC APK Download for Android: <http://www.testdpc.com/>
 * fastlane screenshots for Android: <https://docs.fastlane.tools/getting-started/android/screenshots/>
 * Android 应用开发调试利器——开发助手，数十倍效率提升: <http://www.trinea.cn/android/android-develop-and-debug-tools/>
@@ -274,6 +273,7 @@
 * leakcanary: <https://github.com/square/leakcanary>
 * Display and control your Android device: <https://github.com/Genymobile/scrcpy>
 * PerfDog性能狗: <https://perfdog.qq.com/>
+* LibChecker: <https://github.com/zhaobozhen/LibChecker>
 
 ## SVGA
 

@@ -9,6 +9,8 @@
 * Learn WebGL: <http://learnwebgl.brown37.net/>
 * NEHE Tutorials: <http://nehe.gamedev.net/>
 
+* Android平台OpenGL ES/Assimp/OpenCV/GLM集成说明: <https://www.cnblogs.com/jiangxinnju/p/14674355.html>
+
 * OpenGL顶点坐标与纹理坐标: <https://www.jianshu.com/p/355137fa2817>
 * OpenGL纹理上下颠倒翻转的三种解决办法: <https://blog.csdn.net/xipiaoyouzi/article/details/53611585>
 * 投影矩阵的推导(Deriving Projection Matrices): <https://blog.csdn.net/zhanghua1816/article/details/23121735>
