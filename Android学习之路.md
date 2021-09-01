@@ -40,6 +40,7 @@
 * Android OTA升级: <https://www.cnblogs.com/jiangxinnju/p/14404073.html>
 * Android 新一代编译 toolchain Jack & Jill 简介: <https://yq.aliyun.com/articles/40811>
 * Google 又弃坑了，Jack+Jill vs. javac+dx: <https://zhuanlan.zhihu.com/p/25814519>
+* Android R Framework流程分析: <https://juejin.cn/column/6982159044094427173>
 
 ## Article
 

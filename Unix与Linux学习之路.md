@@ -35,9 +35,7 @@
 
 ## Softwares/Tools/Knowledge
 
-* 一篇文章搞懂apt-get update, apt-get upgrade, apt-get dist-upgrade, do-release-upgrade, apt-get remove, apt-get autoremove, aptitude remove的区别: <https://www.cnblogs.com/jiangxinnju/p/14017675.html>
-* What is the difference between dpkg and aptitude/apt-get? <https://askubuntu.com/questions/309113/what-is-the-difference-between-dpkg-and-aptitude-apt-get>
-* Snap: <https://snapcraft.io/>
+* 一篇文章搞懂Debian_Ubuntu软件包更新和删除: <https://www.cnblogs.com/jiangxinnju/p/14017675.html>
 
 * Linux命令大全: <http://man.linuxde.net/>
 * explainshell: <https://explainshell.com/>
@@ -195,7 +193,7 @@
 
     watch "ls -al myfile" 监控文件变化
 
-    cat /etc/issue | grep Linux # 查看当前操作系统发行版信息
+    cat /etc/issue # 查看当前操作系统发行版信息
 
     apt-cache # query the APT cache
     apt-file search libz.so.1 # APT package searching utility
@@ -296,17 +294,12 @@
     su - oracle -s /bin/bash shell.sh
 ```
 
-## 修改默认打开文件的程序
+## 修改文件打开方式
 
-linux 下全局的文件与程序的关联是通过`/usr/share/applications/defaults.list`文件来设置，该文件保存了个人文件与程序的关联的打开方式。安装了nero之后文件iso的文件默认使用archive manager打开，在`~/.local/share/applications/mimeapps.list`添加一行:
+* 全局配置：`/usr/share/applications/defaults.list`
+* 用户配置：`~/.local/share/applications/mimeapps.list`
 
-    `application/x-cd-image=nerolinux.desktop;`
-
-在`/usr/share/applications/defaults.list`中添加一行:
-
-    `application/x-cd-image=nerolinux.desktop;`
-
-图形界面下双击iso文件就使用nero打开了。
+例如配置iso类型文件的打开方式一般默认是archive manager，如果想修改为nero，可以添加：`application/x-cd-image=nerolinux.desktop;`，然后图形界面下双击iso文件就使用nero打开了。
 
 ## Linux重装系统指南(Ubuntu)
 
