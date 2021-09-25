@@ -82,6 +82,8 @@
 * Android图形系统（十一）-Choreographer: <https://www.jianshu.com/p/bab0b454e39e>
 * HenCoder——给高级 Android 工程师的进阶手册: <https://hencoder.com/>
 
+* Android | 打印堆栈: <https://blog.csdn.net/u011386173/article/details/88394346>
+
 * 支持不同的屏幕尺寸: <https://developer.android.google.cn/training/multiscreen/screensizes.html>
 * 多屏幕多分辨率的支持: <https://www.cnblogs.com/tianjian/p/3430085.html>
 * Android开发中dip，dpi，density，px等详解: <http://blog.qiji.tech/archives/2581>
@@ -111,7 +113,7 @@
 * Android控件--ProgressBar: <https://blog.csdn.net/hardworkingant/article/details/71910731>
 * 拖放框架: <https://developer.android.com/guide/topics/ui/drag-drop>
 
-* Android核心分析: <http://blog.csdn.net/column/details/androidcore.html>
+* Android核心分析: <https://blog.csdn.net/maxleng/category_9260799.html>
 * Android系统开篇: <http://gityuan.com/android/>
 * 对于android.intent.action.MAIN和android.intent.category.LAUNCHER的理解: <http://blog.csdn.net/lindroid20/article/details/51993247>
 * 详解 Android 通信: <http://www.androidchina.net/5028.html>
@@ -164,6 +166,11 @@
 * 存储访问框架android Storage Access Framework(SAF): <https://blog.csdn.net/caryee89/article/details/44155375>
 * Android 7.0 行为变更 通过FileProvider在应用间共享文件吧: <https://blog.csdn.net/lmj623565791/article/details/72859156>
 * FileProvider文件分享: <https://blog.csdn.net/lin962792501/article/details/52164695>
+
+* 了解一下，Android 10中的APEX: <https://blog.csdn.net/Innost/article/details/103776120>
+* Android-APEX化之后如何替换对应的文件: <https://blog.csdn.net/cheriyou_/article/details/108540771>
+
+* 针对低电耗模式和应用待机模式进行优化: <https://developer.android.com/training/monitoring-device-state/doze-standby>
 
 * 使用广色域内容增强图形效果: <https://developer.android.google.cn/training/wide-color-gamut>
 
