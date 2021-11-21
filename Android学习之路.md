@@ -49,11 +49,6 @@
 * .nomedia: 《解析 Google Android SDK-智能手机开发范例手册》5.3
 * StrictMode: 《Android核心原理与系统应用高效开发》 9.2.3
 
-* Eight Ways Your Android App Can Leak Memory: <https://blog.nimbledroid.com/2016/05/23/memory-leaks.html>
-* Eight Ways Your Android App Can STOP Leaking Memory: <https://blog.nimbledroid.com/2016/09/06/stop-memory-leaks.html>
-* Android性能优化: <http://liuwangshu.cn/tags/Android%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/>
-* 使用meminfo分析Android单个进程内存信息: <https://my.oschina.net/shaorongjie/blog/128442>
-* How do I discover memory usage of my application in Android? <https://stackoverflow.com/questions/2298208/how-do-i-discover-memory-usage-of-my-application-in-android>
 * Handler内存泄漏详解及其解决方案: <http://blog.csdn.net/javazejian/article/details/50839443>
 * Android中Handler的使用: <http://blog.csdn.net/iispring/article/details/47115879>
 * 深入源码解析Android中的Handler,Message,MessageQueue,Looper: <http://blog.csdn.net/iispring/article/details/47180325>
@@ -238,10 +233,6 @@
 * dumpsys: <https://developer.android.com/studio/command-line/dumpsys>
 * Debug Your layout with Layout Inspector and Layout Validation: <https://developer.android.com/studio/debug/layout-inspector>
 * Configure Android Studio: <https://developer.android.com/studio/intro/studio-config.html>
-* CPU Profiler: <https://developer.android.com/studio/profile/cpu-profiler>
-* TraceView: <https://developer.android.com/studio/profile/traceview>
-
-* Android性能优化—TraceView的使用: <https://www.jianshu.com/p/7e9ca2c73c97>
 
 * Android Studio移动鼠标显示悬浮提示的设置方法: <http://www.cnblogs.com/jiangxinnju/p/8227442.html>
 * ANDROID STUDIO详细教程汇总: <http://stormzhang.com/devtools/2015/06/17/android-studio-all/>
@@ -280,7 +271,6 @@
 * dexcount-gradle-plugin: <https://github.com/KeepSafe/dexcount-gradle-plugin>
 * leakcanary: <https://github.com/square/leakcanary>
 * Display and control your Android device: <https://github.com/Genymobile/scrcpy>
-* PerfDog性能狗: <https://perfdog.qq.com/>
 * LibChecker: <https://github.com/zhaobozhen/LibChecker>
 
 ## SVGA
@@ -298,22 +288,31 @@
 * Flutter: <https://flutter.dev/>
 * Flutter中文网: <https://flutterchina.club/get-started/install/>
 
-## BugReport
+## 性能分析
+
+* Overview of system tracing: <https://developer.android.com/topic/performance/tracing>
+* Inspect CPU activity with CPU Profiler: <https://developer.android.com/studio/profile/cpu-profiler>
+* Simpleperf: <https://android.googlesource.com/platform/system/extras/+/master/simpleperf/doc/README.md>
+* Android Systrace 基础知识: <https://www.androidperformance.com/2019/05/28/Android-Systrace-About/>
+* systrace.py环境配置: <https://blog.csdn.net/zc37093/article/details/105415843>
+
+* Perfetto: <https://perfetto.dev/>
+* PerfettoUI: <https://ui.perfetto.dev/#!/>
+
+* TraceView(已弃用): <https://developer.android.com/studio/profile/traceview>
+* Android性能优化—TraceView的使用: <https://www.jianshu.com/p/7e9ca2c73c97>
+
+* PerfDog性能狗: <https://perfdog.qq.com/>
+
+* Eight Ways Your Android App Can Leak Memory: <https://blog.nimbledroid.com/2016/05/23/memory-leaks.html>
+* Eight Ways Your Android App Can STOP Leaking Memory: <https://blog.nimbledroid.com/2016/09/06/stop-memory-leaks.html>
+* Android性能优化: <http://liuwangshu.cn/tags/Android%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/>
+* 使用meminfo分析Android单个进程内存信息: <https://my.oschina.net/shaorongjie/blog/128442>
+* How do I discover memory usage of my application in Android? <https://stackoverflow.com/questions/2298208/how-do-i-discover-memory-usage-of-my-application-in-android>
 
 * Android adb bugreport工具分析和使用: <https://blog.csdn.net/createchance/article/details/51954142>
 * battery-historian: <https://github.com/google/battery-historian>
 * ChkBugReport: <https://github.com/sonyxperiadev/ChkBugReport>
-
-## systrace
-
-* System Trace: <https://developer.android.com/topic/performance/tracing>
-* Android Systrace 基础知识: <https://www.androidperformance.com/2019/05/28/Android-Systrace-About/>
-* systrace.py环境配置: <https://blog.csdn.net/zc37093/article/details/105415843>
-
-## Perfetto
-
-* Perfetto: <https://perfetto.dev/>
-* PerfettoUI: <https://ui.perfetto.dev/#!/>
 
 ## Android模拟器
 

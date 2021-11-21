@@ -19,6 +19,8 @@
 * RPM Fusion(RPM Fusion provides software that the Fedora Project or Red Hat doesn't want to ship): <http://rpmfusion.org/>
 * Linux From Scratch: <http://www.linuxfromscratch.org/>
 
+* 
+
 ## Linux Distributions
 
 * Ubuntu: <https://www.ubuntu.com>
@@ -118,6 +120,7 @@
 * Linux命令之file - 检测并显示文件类型: <https://codingstandards.iteye.com/blog/804463>
 * Linux Centos 删除除某(多)个文件之外的所有文件: <https://blog.csdn.net/weixin_33994429/article/details/86363583>
 * linux如何删除zip包中某个文件夹及里面的内容: <https://zhidao.baidu.com/question/2074079962247221788.html>
+* GPG入门教程: <https://www.ruanyifeng.com/blog/2013/07/gpg.html>
 
 * Linux下好玩的命令: <http://www.cnblogs.com/joeyupdo/articles/2768113.html>
 * 动画演示一些无用但有趣的Linux命令: <http://www.vaikan.com/10-funny-liunx-command/>
