@@ -1,10 +1,10 @@
 # TeX学习之路
 
 * TeX Live: <http://tug.org/texlive/>
+* WinEdt: <http://www.winedt.com/>
 
-* TeXworks: <http://www.tug.org/texworks/>
-* winedt: <http://www.winedt.com/>
 * Texmaker - The universal LaTeX editor: <http://www.xm1math.net/texmaker/>
+* TeXworks: <http://www.tug.org/texworks/>
 * TeXstudio: <https://github.com/texstudio-org/texstudio>
 * TeXpen, a LaTeX editor for mankind: <https://github.com/Amuwa/TeXpen>
 * SciTE LaTeX IDE: <https://code.google.com/archive/p/scitelatexide/>
@@ -33,14 +33,11 @@
 * CTEX FAQ （常见问题集）: texlive\${VERSION}\texmf-dist\doc\latex\ctex-faq\ctex-faq.pdf
 * 一份（不太）简短的LATEX2e 介绍: texlive\${VERSION}\texmf-dist\doc\latex\lshort-chinese\lshort-zh-cn.pdf
 * The Comprehensive LATEX Symbol List: texlive\${VERSION}\texmf-dist\doc\latex\comprehensive\symbols-a4.pdf
-
-## TeX Live自带模板
-
-* moderncv: texlive\${VERSION}\texmf-dist\tex\latex\moderncv\moderncv.cls
-* moderncv: template-zh: texlive\${VERSION}\texmf-dist\doc\latex\moderncv\examples\template-zh.tex
+* moderncv: texlive\${VERSION}\texmf-dist\doc\latex\moderncv\manual\moderncv_userguide.pdf
 
 ## 其它文档
 
+* 使用VSCode编写LaTeX: <https://zhuanlan.zhihu.com/p/38178015>
 * LaTeX内容总结: <http://www.cnblogs.com/jiangxinnju/p/5514720.html>
 * LaTeX技巧68：TeX/LaTeX 常用宏包简介: <http://blog.sina.com.cn/s/blog_5e16f1770100g04j.html>
 * Linux下Texlive的ctex包中文字体问题：<http://huxuan.org/2012/07/14/chinese-font-problem-of-ctex-in-texlive-under-linux/>

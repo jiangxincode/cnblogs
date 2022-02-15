@@ -54,6 +54,7 @@
 * 请别再拿“String s = new String("xyz");创建了多少个String实例”来面试了吧: <https://www.iteye.com/topic/774673>
 * 彻底弄懂字符串常量池等相关问题: <https://www.cnblogs.com/gxyandwmm/p/9495923.html>
 * java安全沙箱（四）之安全管理器及Java API: <https://www.cnblogs.com/duanxz/p/6108357.html>
+* 深入浅出Java多线程: <https://github.com/RedSpider1/concurrent>
 
 * Java Runtime.exec()的使用: <http://www.cnblogs.com/mingforyou/p/3551199.html>
 * 深入理解Java：SimpleDateFormat安全的时间格式化: <http://www.cnblogs.com/peida/archive/2013/05/31/3070790.html>
@@ -355,6 +356,9 @@
 * Jigloo SWT/Swing GUI Builder: <http://marketplace.eclipse.org/content/jigloo-swtswing-gui-builder>
 * SWT、Swing 或 AWT：哪个更适合您？ <https://www.ibm.com/developerworks/cn/opensource/os-swingswt/>
 * OpenSwing: <http://oswing.sourceforge.net/setup.html>
+* FlatLaf: <https://github.com/JFormDesigner/FlatLaf>
+* Darcula: <https://github.com/bulenkov/Darcula>
+* beautyeye: <https://github.com/JackJiang2011/beautyeye>
 
 ## Hudson
 
