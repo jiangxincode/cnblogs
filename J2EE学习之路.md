@@ -568,6 +568,7 @@ Eclipse中`Update Project`，选择`Force Update of Snapshots/Releases`
 * 解决Maven报Plugin execution not covered by lifecycle configuration: <http://blog.csdn.net/xxd851116/article/details/25197373>
 * Maven编译jar出现：无法确定 T 的类型参数的异常的原因和处理方案: <http://www.cnblogs.com/peida/p/4218210.html>
 * Hosting a Maven repository on github: <https://stackoverflow.com/questions/14013644/hosting-a-maven-repository-on-github/14013645>
+* Working with the Apache Maven registry: <https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-apache-maven-registry>
 * 如何发布Maven依赖到中央仓库: <https://www.cnblogs.com/jiangxinnju/p/9903517.html>
 * Maven添加本地依赖: <http://blog.csdn.net/xwl617756974/article/details/7832882>
 * Maven常用插件: <http://iffiffj.iteye.com/blog/1661936>

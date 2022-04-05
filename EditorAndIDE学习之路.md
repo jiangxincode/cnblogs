@@ -85,7 +85,6 @@
 * xmlspy: <https://www.altova.com/xmlspy.html>
 * Bluefish: <http://bluefish.openoffice.nl/index.html>
 * codelite: <http://www.codelite.org/>
-* kite: <https://kite.com/>
 * kdevelop：<https://www.kdevelop.org/>
 * xcode: <https://developer.apple.com/xcode/>
 * QtCreator: <https://www.qt.io/qt-features-libraries-apis-tools-and-ide/#ide>
