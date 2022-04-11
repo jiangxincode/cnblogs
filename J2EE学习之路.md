@@ -570,6 +570,7 @@ Eclipse中`Update Project`，选择`Force Update of Snapshots/Releases`
 * Hosting a Maven repository on github: <https://stackoverflow.com/questions/14013644/hosting-a-maven-repository-on-github/14013645>
 * Working with the Apache Maven registry: <https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-apache-maven-registry>
 * 如何发布Maven依赖到中央仓库: <https://www.cnblogs.com/jiangxinnju/p/9903517.html>
+* 20分钟理清Maven构建中的测试相关工具的关系: <https://www.cnblogs.com/jiangxinnju/p/13549735.html>
 * Maven添加本地依赖: <http://blog.csdn.net/xwl617756974/article/details/7832882>
 * Maven常用插件: <http://iffiffj.iteye.com/blog/1661936>
 * How to Publish Maven Site Docs to BitBucket or GitHub Pages: <http://www.ensor.cc/2013/01/how-to-publish-maven-site-docs-to.html>
@@ -926,9 +927,12 @@ The yFiles diagramming software components are extensive class libraries that en
 * <https://github.com/google/protobuf/>
 * Protobuf协议的Java应用例子: <http://blog.csdn.net/antgan/article/details/52103966>
 
-## zip4j
+## Archiver/Compressor
 
-* <http://www.lingala.net/zip4j/>
+* zip4j: <http://www.lingala.net/zip4j/>
+* jukka/java-unrar(No maintance): <https://github.com/jukka/java-unrar>
+* java-unrar(No maintance, based on jukka/java-unrar): <https://code.google.com/archive/p/java-unrar/>
+* junrar/junrar(Recommend): <https://github.com/junrar/junrar>
 
 ## JFlex
 
