@@ -748,7 +748,6 @@ mvn deploy:deploy-file -DgroupId="edu.jiangxin" -DartifactId=”gcu” -Dversion
 * 公司网址：<http://www.ej-technologies.com/index.html>
 * perfino：<http://www.ej-technologies.com/products/perfino/overview.html>
 * jprofiler：<http://www.ej-technologies.com/products/jprofiler/overview.html>
-* install4j：<http://www.ej-technologies.com/products/install4j/overview.html>
 
 ## FORTIFY SCA（收费）
 
@@ -789,10 +788,6 @@ mvn deploy:deploy-file -DgroupId="edu.jiangxin" -DartifactId=”gcu” -Dversion
 
 * <https://github.com/sikuli/sikuli>
 * <http://www.sikuli.org/>
-
-## exe4j
-
-* <http://www.softpedia.com/get/Authoring-tools/Setup-creators/exe4j.shtml>
 
 ## JBoss
 
