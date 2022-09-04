@@ -79,6 +79,7 @@
 
 ## Others
 
+* notepad++: <https://notepad-plus-plus.org/>
 * geany: <http://www.geany.org/Download/Extras>
 * Lime Text: <http://limetext.org/>
 * Scintilla: <http://www.scintilla.org/>

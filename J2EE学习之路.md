@@ -1,10 +1,8 @@
-# J2EE学习之路 [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
+# Java学习之路 [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 
-## 官方文档
+## Java SE
 
 * Java SE: <https://docs.oracle.com/javase>
-* Java EE: <http://docs.oracle.com/javaee/>
-
 * Java Community Process: <https://www.jcp.org/>
 
 ## Java tutorial
@@ -195,11 +193,25 @@
 * 客户端的IP地址伪造、CDN、反向代理、获取的那些事儿: <http://www.cnblogs.com/zhengyun_ustc/archive/2012/09/19/getremoteaddr.html>
 * Threat Modeling: Uncover Security Design Flaws Using The STRIDE Approach: <https://docs.microsoft.com/en-us/archive/msdn-magazine/2006/november/uncover-security-design-flaws-using-the-stride-approach>
 
+## Java EE
+
+* Jakarta EE: <https://en.wikipedia.org/wiki/Jakarta_EE>
+* Jakarta EE Platform Project: <https://eclipse-ee4j.github.io/jakartaee-platform/>
+* Java EE(Deprcated): <http://docs.oracle.com/javaee/>
+
+* Oracle Java SE Support Roadmap: <https://www.oracle.com/java/technologies/java-se-support-roadmap.html>
+* Oracle Java SE Licensing FAQ: <https://www.oracle.com/java/technologies/javase/jdk-faqs.html>
+
 ## Struts
 
 * 官网：<http://struts.apache.org/>
 * 源码：deprecated: <http://svn.apache.org/repos/asf/struts/>
 * 源码：now: <https://github.com/apache/struts/blob/master/src/site/site.xml:w>
+
+* OGNL: <http://commons.apache.org/proper/commons-ognl/>
+
+* freemarker: <http://freemarker.org/>
+* Velocity: <http://velocity.apache.org/engine/devel/>
 
 * Struts 2.0系列: <http://www.blogjava.net/max/category/16130.html?Show=All>
 * Struts2中的零配置与CoC（Convention over Configration）: <http://andlu.iteye.com/blog/112675>
@@ -213,9 +225,6 @@
 * 文档：<http://docs.spring.io/spring/docs/current/spring-framework-reference/htmlsingle/>
 * Spring Framework 开发参考手册: <http://man.lupaworld.com/content/develop/spring_ref/2.0/html/>
 * Spring Security：<http://projects.spring.io/spring-security>
-* 源码：Spring 3.0(deprecated) <https://src.springframework.org/svn/spring-framework/>
-* 源码：Spring 2.5及以下(deprecated) <https://src.springframework.org/svn/spring-maintenance/>
-* 源码：Spring Security(deprecated) <https://src.springframework.org/svn/spring-security/>
 * 源码：spring-framework <https://github.com/spring-projects/spring-framework/>
 
 * Spring Tool Suite：<http://spring.io/tools/sts>
@@ -255,9 +264,9 @@
 * WebService之WSDL和SOAP实例(基于JAVA): <http://di201yao.iteye.com/blog/310292>
 * java 利用JAX-RS快速开发RESTful 服务(以JBoss为容器)：<http://www.cnblogs.com/yjmyzz/p/javaee-jax-rs-tutorial.html>
 * RESTful API 利器 Swagger: <http://www.razorer.com/2016/10/16/swagger-intro/>
-* 使用 Jersey 和 Apache Tomcat 构建 RESTful Web 服务: <http://www.ibm.com/developerworks/cn/web/wa-aj-tomcat/>
 * 改写Restful2ActionMapper让Struts2支持REST风格的URL映射: <http://andlu.iteye.com/blog/110934>
-* Jersey: <https://jersey.java.net/>
+* Jersey: <https://eclipse-ee4j.github.io/jersey/>
+* Build a RESTful Web service using Jersey and Apache Tomcat: <https://developer.ibm.com/articles/wa-aj-tomcat/>
 * Restlet：<http://restlet.com/>
 * Apache CXF: <http://cxf.apache.org/>
 * axis2: <http://axis.apache.org/axis2/java/core/>
@@ -316,8 +325,15 @@
 * ModelGoon UML4Java: <http://marketplace.eclipse.org/content/modelgoon-uml4java>
 * agile(收费): <http://www.agilej.com/>
 
+* Web Tools Platform: <https://www.eclipse.org/webtools/>
 * AnyEdit: <http://marketplace.eclipse.org/content/anyedit-tools>
+* YEdit: <https://marketplace.eclipse.org/content/yedit>
+* Enhanced Class Decompiler: <https://marketplace.eclipse.org/content/enhanced-class-decompiler>
+* Eclipse Web Developer Tools: <https://marketplace.eclipse.org/content/eclipse-web-developer-tools-0/>
+* Properties Editor: <http://propedit.osdn.jp/index_en.html>
 * StartExplorer: <https://github.com/fabioz/startexplorer>
+* Eclipse Mylyn: <https://projects.eclipse.org/projects/mylyn>
+* JavaScript Development Tools (JSDT): <https://www.eclipse.org/webtools/jsdt/>
 * EClim: <http://eclim.org>
 * Eclipse EditorList Plug-in: <https://sourceforge.net/projects/editorlist/>
 * eclipse-games: <http://eclipse-games.sourceforge.net/>
@@ -325,6 +341,7 @@
 * FileSync: <http://andrei.gmxhome.de/filesync/>
 * eclipse-rbe: <https://github.com/essiembre/eclipse-rbe>
 * CODE RECOMMENDERS: <http://www.eclipse.org/recommenders/>
+* Eclipse EGit: <https://www.eclipse.org/egit/>
 * Spket IDE（提供Eclipse的插件）: <http://www.spket.com/>
 * Aptana（提供Eclipse插件）: <http://www.aptana.com/>
 
@@ -347,9 +364,9 @@
 * 监控Tomcat解决方案（监控应用服务器系列文章）: <http://blog.csdn.net/yunzhu666/article/details/8662045>
 * CATALINA_BASE与CATALINA_HOME的区别: <http://blog.csdn.net/keda8997110/article/details/21400455>
 * 同一个服务器部署多个tomcat: <http://www.cnblogs.com/sj521/p/5974562.html>
-* Tomcat 到底依赖JRE还是JDK：<http://www.cnblogs.com/jiangxinnju/p/7616386.html>
+* Does Tomcat require JDK or JRE?：<https://stackoverflow.com/questions/16726897/does-tomcat-require-jdk-or-jre>
 
-## AWT/Swing/SWT/Jface
+## AWT/Swing/SWT/Jface/JavaFX
 
 * Visual Editor(deprated): <http://wiki.eclipse.org/Visual_Editor_Project>
 * WindowBuilder(SWT Designer): <http://www.eclipse.org/windowbuilder/>
@@ -359,6 +376,7 @@
 * FlatLaf: <https://github.com/JFormDesigner/FlatLaf>
 * Darcula: <https://github.com/bulenkov/Darcula>
 * beautyeye: <https://github.com/JackJiang2011/beautyeye>
+* JavaFX/JavaFX Scene Builder: <https://docs.oracle.com/javase/8/javase-books.htm>
 
 ## Hudson
 
@@ -500,7 +518,13 @@
 
     Apache Commons is an Apache project focused on all aspects of reusable Java components.
 
-* 官网：<http://commons.apache.org/>
+* Apache Commons: <http://commons.apache.org/>
+* commons-beanutils: <https://commons.apache.org/proper/commons-beanutils/>
+* commons-collections: <https://commons.apache.org/proper/commons-collections/>
+* commons-configuration: <https://commons.apache.org/proper/commons-configuration/>
+* commons-io: <https://commons.apache.org/proper/commons-io/>
+* commons-lang: <https://commons.apache.org/proper/commons-lang/>
+* commons-logging: <https://commons.apache.org/proper/commons-logging/>
 
 sandbox中的项目无法直接通过maven进行依赖，必须通过svn下载源码，部署到本地maven仓库中。例如对于sandbox中的classscan项目：
 
@@ -676,13 +700,11 @@ mvn deploy:deploy-file -DgroupId="edu.jiangxin" -DartifactId=”gcu” -Dversion
 
 * <https://sourceforge.net/projects/cap4e/>
 
-## Visual Performance Analyzer
+## Java程序分析工具
 
 * 洞悉 Java 应用性能瓶颈的利器：Visual Performance Analyzer: <http://www.ibm.com/developerworks/cn/java/j-lo-vpa/>
-
-## VisualVM
-
 * VisualVM: <http://visualvm.java.net/>
+* arthas: <https://github.com/alibaba/arthas>
 
 ## Eclipse Class Decompiler
 
@@ -786,8 +808,13 @@ mvn deploy:deploy-file -DgroupId="edu.jiangxin" -DartifactId=”gcu” -Dversion
 
 ## sikuli
 
-* <https://github.com/sikuli/sikuli>
-* <http://www.sikuli.org/>
+* sikuli(Deprcated): <https://github.com/sikuli/sikuli>
+* SikuliX1: <https://github.com/RaiMan/SikuliX1>
+* SikuliX Docs: <https://sikulix.github.io/docs/>
+
+## Selenium
+
+* Selenium: <https://www.selenium.dev/>
 
 ## JBoss
 
@@ -924,7 +951,7 @@ The yFiles diagramming software components are extensive class libraries that en
 
 ## Archiver/Compressor
 
-* zip4j: <http://www.lingala.net/zip4j/>
+* zip4j: <https://github.com/srikanth-lingala/zip4j>
 * jukka/java-unrar(No maintance): <https://github.com/jukka/java-unrar>
 * java-unrar(No maintance, based on jukka/java-unrar): <https://code.google.com/archive/p/java-unrar/>
 * junrar/junrar(Recommend): <https://github.com/junrar/junrar>
@@ -952,6 +979,8 @@ The yFiles diagramming software components are extensive class libraries that en
 * <http://www.antlr.org/>
 * 常用IDE的Antlr插件：<http://www.antlr.org/tools.html>
 * ANTLR 4进阶: <https://liangshuang.name/2017/08/20/antlr/>
+* Enkel-JVM-language: <https://github.com/JakubDziworski/Enkel-JVM-language>
+* JC-Compiler: <https://github.com/cjwcommuny/JC-Compiler>
 
 ## cglib
 
@@ -1040,21 +1069,9 @@ The yFiles diagramming software components are extensive class libraries that en
 * <https://github.com/mvel/mvel>
 * <https://en.wikisource.org/wiki/MVEL_Language_Guide>
 
-## OGNL(Struts)
-
-* <http://commons.apache.org/proper/commons-ognl/>
-
 ## JSP EL
 
 * <http://commons.apache.org/proper/commons-el/>
-
-## freemarker
-
-* <http://freemarker.org/>
-
-## Velocity
-
-* <http://velocity.apache.org/engine/devel/>
 
 ## Aurora
 
