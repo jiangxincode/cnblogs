@@ -41,3 +41,4 @@
 * LaTeX内容总结: <http://www.cnblogs.com/jiangxinnju/p/5514720.html>
 * LaTeX技巧68：TeX/LaTeX 常用宏包简介: <http://blog.sina.com.cn/s/blog_5e16f1770100g04j.html>
 * Linux下Texlive的ctex包中文字体问题：<http://huxuan.org/2012/07/14/chinese-font-problem-of-ctex-in-texlive-under-linux/>
+* Latex相关资源汇总: <https://csqjxiao.wordpress.com/2009/05/17/latex%e7%9b%b8%e5%85%b3%e8%b5%84%e6%ba%90%e6%b1%87%e6%80%bb/>
