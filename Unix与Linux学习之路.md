@@ -19,7 +19,6 @@
 * RPM Fusion(RPM Fusion provides software that the Fedora Project or Red Hat doesn't want to ship): <http://rpmfusion.org/>
 * Linux From Scratch: <http://www.linuxfromscratch.org/>
 
-* 
 
 ## Linux Distributions
 
@@ -172,6 +171,8 @@
 
     sha1sum/md5sum
     find "/etc/" -name "*" -type f | xargs wc -l | awk '{print $2" "$1"lines"}' # 打印某一文件夹下的所有文件名及其行数
+
+    mtools # mtools 命令用于显示mtools 支持的指令。mtools 实际上是一个命令集合，是DOS 文件系统的工具程序，它可以模拟许多MS-DOS命令，使用起来非常方便。使用权限是所有用户。
 
     # set the system's date from a remote host
     # sudo apt-get install rdate
