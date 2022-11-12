@@ -4,5 +4,6 @@
         "**/.project": true,
         "**/.settings": true,
         "**/.factorypath": true
-    }
+    },
+    "sarif-viewer.connectToGithubCodeScanning": "off"
 }

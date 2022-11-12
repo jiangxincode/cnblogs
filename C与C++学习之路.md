@@ -12,6 +12,7 @@
 * comp.lang.c Frequently Asked Questions: <http://c-faq.com/>
 * C 语言常见问题集: <http://c-faq-chn.sourceforge.net/ccfaq/>
 * The C++ Standard Library - A Tutorial and Reference: <http://www.cppstdlib.com/>
+* Google 开源项目风格指南——中文版(Google Style Guide): <https://github.com/zh-google-styleguide/zh-google-styleguide>
 
 ## Libraries
 
@@ -120,6 +121,7 @@
 * GCC, the GNU Compiler Collection: <https://gcc.gnu.org/>
 * The LLVM Compiler Infrastructure: <http://llvm.org/>
 * clang: a C language family frontend for LLVM: <http://clang.llvm.org/>
+* 简述 LLVM 与 Clang 及其关系: <https://xuhehuan.com/2738.html>
 
 * GNU GCC手册-1: <http://blog.chinaunix.net/uid-10386087-id-2958766.html>
 * gcc的基本用法: <http://blog.chinaunix.net/uid-20183141-id-1731007.html>
