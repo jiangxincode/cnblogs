@@ -58,6 +58,8 @@
 ## sourceinsight
 
 * <http://www.sourceinsight.com/>
+* Source Insight 4 User Guide: <https://www.sourceinsight.com/doc/v4/userguide/index.html>
+* 烤鸭的Source Insight学习笔记: <https://blog.csdn.net/benkaoya/article/details/8296197>
 
 ## Understand
 

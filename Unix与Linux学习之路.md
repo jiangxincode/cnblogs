@@ -66,11 +66,11 @@
 * 多终端管理器tmux使用详解: <http://blog.csdn.net/stelalala/article/details/9025691>
 * Linux系统里如何彻底的清空屏幕？: <http://www.vaikan.com/how-to-clear-the-terminal-screen-for-real-in-case-of-linux/>
 * 如何在Linux上将HTML页面转化成png图片: <http://linux.cn/article-2708-1.html>
-* Ubuntu输入密码登陆后又跳回到登录界面: <http://blog.163.com/thinki_cao/blog/static/8394487520130270379437/>
+* Ubuntu输入密码登陆后又跳回到登录界面: <https://askubuntu.com/questions/223501/ubuntu-gets-stuck-in-a-login-loop>
 * Linux压缩与解压常用命令: <http://www.cnblogs.com/jiangxinnju/p/6055870.html>
 * vimrc，bashrc中rc的含义: UNIX Power Tools (3rd Edition).chm 搜索rc
 * LNMP安装快速导航（官网教程）: <http://lnmp.org/install.html>
-* ubuntu删除旧内核和多余启动项: <http://pppboy.blog.163.com/blog/static/3020379620113173147935/>
+* ubuntu删除旧内核和多余启动项: <https://askubuntu.com/questions/2793/how-do-i-remove-old-kernel-versions-to-clean-up-the-boot-menu>
 * 各个Linux版本的本地root密码破解方法: <http://os.51cto.com/art/200910/159523.htm>
 * Linux乱码问题解决方案: <http://www.cnblogs.com/jiangxinnju/p/6014111.html>
 * Linux 软件看门狗 watchdog: <http://blog.csdn.net/liigo/article/details/9227205>

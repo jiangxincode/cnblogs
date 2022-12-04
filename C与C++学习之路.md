@@ -186,8 +186,13 @@
 ## CMake
 
 * CMake: <https://cmake.org/>
+* Mastering CMake: A Cross-Platform Build System: <https://cmake.org/cmake/help/book/mastering-cmake/>
 * cmakeconverter: <https://github.com/pavelliavonau/cmakeconverter>
 * How to support both vcxproj to cmake on a project? <https://stackoverflow.com/questions/6649606/how-to-support-both-vcxproj-to-cmake-on-a-project>
+
+## XMake
+
+* XMake: <https://xmake.io/#/>
 
 ## GDB
 

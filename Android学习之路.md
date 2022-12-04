@@ -32,7 +32,30 @@
 
 ## AOSP源码与架构学习
 
-* AOSP相关网址: <https://www.cnblogs.com/jiangxinnju/p/14401872.html>
+AOSP(Android Open Source Project)项目官网：<https://source.android.com/>
+如果想了解如何将源码下载到本地进行查看，请直接参考<https://source.android.com/setup/downloading>，里面有介绍。
+
+AOSP源码占用空间较大，有时不方便通过下载到本地的方式进行查看，可以考虑使用下列网址在线查看：
+
+* Android Code Search: <https://cs.android.com/>
+* AOSPXRef: <http://aospxref.com/>
+* androidxref: <http://androidxref.com/>
+* Android Cross Reference: <http://aosp.opersys.com/>
+* Android OS: <https://www.androidos.net.cn/sourcecode>
+* Git repositories on android: <https://android.googlesource.com/>
+
+其它曾经关注的AOSP相关网址：
+
+* Building Android: <https://source.android.com/setup/build/building>
+* Codenames, Tags, and Build Numbers: <https://source.android.com/setup/start/build-numbers>
+* Graphics: <https://source.android.com/devices/graphics>
+
+Linux源码相关网址：
+
+* The Linux Kernel Archives: <https://www.kernel.org/>
+* Elixir Cross Referencer: <https://elixir.bootlin.com/linux/latest/source>
+* Linux online: <https://code.woboq.org/linux/linux/>
+
 * 将AOSP源码导入到Android Studio进行查看: <https://www.cnblogs.com/jiangxinnju/p/14426645.html>
 * Android构建系统: <https://www.cnblogs.com/jiangxinnju/p/14402000.html>
 * Android soong build系统介绍: <https://www.jianshu.com/p/80013a768a45>
