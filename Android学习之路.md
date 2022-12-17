@@ -64,6 +64,8 @@ Linux源码相关网址：
 * Android 新一代编译 toolchain Jack & Jill 简介: <https://yq.aliyun.com/articles/40811>
 * Google 又弃坑了，Jack+Jill vs. javac+dx: <https://zhuanlan.zhihu.com/p/25814519>
 * Android R Framework流程分析: <https://juejin.cn/column/6982159044094427173>
+* 深入分析 Android 系统返回手势的实现原理: <https://juejin.cn/post/7103503592119599117>
+* Android 13 返回导航大变更：返回键彻底废弃 + 可预见型返回手势: <https://juejin.cn/post/7105645114760331300>
 
 ## Article
 
