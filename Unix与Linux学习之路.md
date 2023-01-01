@@ -10,6 +10,8 @@
 * MenuetOS(Menuet isn't based on other operating system nor has it roots within UNIX or the POSIX standards.): <http://www.menuetos.net/index.htm>
 
 * The Linux Kernel Archives: <https://www.kernel.org/>
+* Elixir Cross Referencer: <https://elixir.bootlin.com/linux/latest/source>
+* Linux online: <https://code.woboq.org/linux/linux/>
 * VGER.KERNEL.ORG(provide email list services for the linux kernel developers): <http://vger.kernel.org/>
 * GNU Operating System: <http://www.gnu.org/>
 * Linux Professional Institute(LPI is the global certification standard and career support organization for open source professionals): <http://www.lpi.org/>
@@ -18,7 +20,6 @@
 * Linux Packages Search: <https://pkgs.org/>
 * RPM Fusion(RPM Fusion provides software that the Fedora Project or Red Hat doesn't want to ship): <http://rpmfusion.org/>
 * Linux From Scratch: <http://www.linuxfromscratch.org/>
-
 
 ## Linux Distributions
 

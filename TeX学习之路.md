@@ -1,8 +1,9 @@
 # TeX学习之路
 
 * TeX Live: <http://tug.org/texlive/>
-* WinEdt: <http://www.winedt.com/>
 
+* WinEdt: <http://www.winedt.com/>
+* LaTeX-Workshop: <https://github.com/James-Yu/LaTeX-Workshop>
 * Texmaker - The universal LaTeX editor: <http://www.xm1math.net/texmaker/>
 * TeXworks: <http://www.tug.org/texworks/>
 * TeXstudio: <https://github.com/texstudio-org/texstudio>
@@ -37,8 +38,9 @@
 
 ## 其它文档
 
+* An overview of TEX, its children and their friends: <https://github.com/alt/tex-overview/blob/master/tex-overview.pdf>
 * 使用VSCode编写LaTeX: <https://zhuanlan.zhihu.com/p/38178015>
 * LaTeX内容总结: <http://www.cnblogs.com/jiangxinnju/p/5514720.html>
-* LaTeX技巧68：TeX/LaTeX 常用宏包简介: <http://blog.sina.com.cn/s/blog_5e16f1770100g04j.html>
-* Linux下Texlive的ctex包中文字体问题：<http://huxuan.org/2012/07/14/chinese-font-problem-of-ctex-in-texlive-under-linux/>
+* TeX/LaTeX 常用宏包简介: <https://ctex.org/documents/packages/layout/index.htm>
+* Linux下Texlive的ctex包中文字体问题：<https://huxuan.org/2012/07/14/chinese-font-problem-of-ctex-in-texlive-under-linux/>
 * Latex相关资源汇总: <https://csqjxiao.wordpress.com/2009/05/17/latex%e7%9b%b8%e5%85%b3%e8%b5%84%e6%ba%90%e6%b1%87%e6%80%bb/>

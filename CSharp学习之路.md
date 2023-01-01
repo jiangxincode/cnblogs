@@ -2,5 +2,5 @@
 
 * Mono: <http://www.mono-project.com/>
 * MonoDevelop: <http://www.monodevelop.com/>
-* SharpDevelop: <http://www.icsharpcode.net/OpenSource/SD/>
+* SharpDevelop[Deprecated]: <https://github.com/icsharpcode/SharpDevelop>
 * Emonic: <http://emonic.sourceforge.net/>

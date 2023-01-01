@@ -50,12 +50,6 @@ AOSP源码占用空间较大，有时不方便通过下载到本地的方式进�
 * Codenames, Tags, and Build Numbers: <https://source.android.com/setup/start/build-numbers>
 * Graphics: <https://source.android.com/devices/graphics>
 
-Linux源码相关网址：
-
-* The Linux Kernel Archives: <https://www.kernel.org/>
-* Elixir Cross Referencer: <https://elixir.bootlin.com/linux/latest/source>
-* Linux online: <https://code.woboq.org/linux/linux/>
-
 * 将AOSP源码导入到Android Studio进行查看: <https://www.cnblogs.com/jiangxinnju/p/14426645.html>
 * Android构建系统: <https://www.cnblogs.com/jiangxinnju/p/14402000.html>
 * Android soong build系统介绍: <https://www.jianshu.com/p/80013a768a45>
@@ -63,9 +57,17 @@ Linux源码相关网址：
 * Android OTA升级: <https://www.cnblogs.com/jiangxinnju/p/14404073.html>
 * Android 新一代编译 toolchain Jack & Jill 简介: <https://yq.aliyun.com/articles/40811>
 * Google 又弃坑了，Jack+Jill vs. javac+dx: <https://zhuanlan.zhihu.com/p/25814519>
+* Android系统架构-[Android取经之路]: <https://blog.csdn.net/yiranfeng/article/details/103549149>
 * Android R Framework流程分析: <https://juejin.cn/column/6982159044094427173>
 * 深入分析 Android 系统返回手势的实现原理: <https://juejin.cn/post/7103503592119599117>
 * Android 13 返回导航大变更：返回键彻底废弃 + 可预见型返回手势: <https://juejin.cn/post/7105645114760331300>
+* 深入源码解析Android中的Handler,Message,MessageQueue,Looper: <http://blog.csdn.net/iispring/article/details/47180325>
+* Fragment相关源码解析一——FragmentManagerImpl和BackStackRecord: <https://blog.csdn.net/chengkun_123/article/details/72548373>
+* Fragment相关源码解析二——生命周期: <https://blog.csdn.net/chengkun_123/article/details/73302779>
+* Fragment相关源码解析三——状态保存与恢复: <https://blog.csdn.net/chengkun_123/article/details/72832728>
+* 图解 Android 事件分发机制: <https://www.jianshu.com/p/e99b5e8bd67b>
+* requestDisallowInterceptTouchEvent() 阻止父层的View截获touch事件(事件处理机制): <https://blog.csdn.net/cl18652469346/article/details/53184508>
+* View·InputEvent事件投递源码分析: <https://www.jianshu.com/p/b7f33f46d33c>
 
 ## Article
 
@@ -76,7 +78,6 @@ Linux源码相关网址：
 
 * Handler内存泄漏详解及其解决方案: <http://blog.csdn.net/javazejian/article/details/50839443>
 * Android中Handler的使用: <http://blog.csdn.net/iispring/article/details/47115879>
-* 深入源码解析Android中的Handler,Message,MessageQueue,Looper: <http://blog.csdn.net/iispring/article/details/47180325>
 * Android异步更新UI的几种方法: <https://blog.csdn.net/ydxlt/article/details/51247822>
 * AsyncTaskLoader vs AsyncTask: <https://stackoverflow.com/questions/7120813/asynctaskloader-vs-asynctask>
 
@@ -84,15 +85,8 @@ Linux源码相关网址：
 
 * Fragments：Pro Android 5[精通Android 3] Chapter 8
 * Android Fragment的用法（一）: <https://www.cnblogs.com/guop/p/5072572.html>
-* Fragment相关源码解析一——FragmentManagerImpl和BackStackRecord: <https://blog.csdn.net/chengkun_123/article/details/72548373>
-* Fragment相关源码解析二——生命周期: <https://blog.csdn.net/chengkun_123/article/details/73302779>
-* Fragment相关源码解析三——状态保存与恢复: <https://blog.csdn.net/chengkun_123/article/details/72832728>
 * 为什么要用Fragment.setArguments(Bundle bundle)来传递参数: <https://blog.csdn.net/tu_bingbing/article/details/24143249>
 * IllegalStateException: Can not perform this action after onSaveInstanceState with ViewPager: <https://stackoverflow.com/questions/7575921/illegalstateexception-can-not-perform-this-action-after-onsaveinstancestate-wit?rq=1>
-
-* 图解 Android 事件分发机制: <https://www.jianshu.com/p/e99b5e8bd67b>
-* requestDisallowInterceptTouchEvent() 阻止父层的View截获touch事件(事件处理机制): <https://blog.csdn.net/cl18652469346/article/details/53184508>
-* View·InputEvent事件投递源码分析: <https://www.jianshu.com/p/b7f33f46d33c>
 
 * Hardware acceleration: <https://developer.android.com/guide/topics/graphics/hardware-accel>
 * Android应用程序UI硬件加速渲染技术简要介绍和学习计划: <https://blog.csdn.net/Luoshengyang/article/details/45601143>
