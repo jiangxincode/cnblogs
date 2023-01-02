@@ -27,7 +27,7 @@
 
 ## Mind-Mapping App
 
-| 思维导图软件|仍在维护|平台支持|收费情况|备注|
+|思维导图软件|仍在维护|平台支持|收费情况|备注|
 |---|---|---|---|---|
 |[Xmind](https://xmind.cn/)|是|全平台|Pro版收费| |
 |[MindManager](https://www.mindmanager.com/cn/)|是|Windows/Mac|收费| |
@@ -35,3 +35,35 @@
 |[FreeMind](https://freemind.sourceforge.net/)|是|Windows/Mac/Linux|开源免费| |
 |[freemind-mmx](https://github.com/jiangxin/freemind-mmx)|否|Windows/Mac/Linux|开源免费| |
 |[Freeplane](https://sourceforge.net/projects/freeplane/)|是|Windows/Mac/Linux|开源免费 |
+
+## Tools Online
+
+### 表格转换
+
+各种表格样式的互转(Excel/Markdown/LaTeX等)
+
+<https://tableconvert.com/>
+
+### 站长工具
+
+各种站长常用工具，最常用的是时间戳转换
+
+<https://tool.chinaz.com/Tools/unixtime.aspx>
+
+### 在线工具合集
+
+各种在线工具，最常用的是str与hex的互转
+
+<https://tool.lu/hexstr/>
+
+### ezgif
+
+在线GIF生成和编辑工具
+
+<https://ezgif.com/>
+
+### convertio
+
+各种文件格式转换
+
+<https://convertio.co/zh>
