@@ -32,38 +32,24 @@
 |[Xmind](https://xmind.cn/)|是|全平台|Pro版收费| |
 |[MindManager](https://www.mindmanager.com/cn/)|是|Windows/Mac|收费| |
 |[MindMaster](https://www.edrawsoft.cn/mindmaster/)|是|Windows/Mac/Linux|免费导出有水印| |
-|[FreeMind](https://freemind.sourceforge.net/)|是|Windows/Mac/Linux|开源免费| |
+|[FreeMind](https://freemind.sourceforge.net/)|否|Windows/Mac/Linux|开源免费| |
 |[freemind-mmx](https://github.com/jiangxin/freemind-mmx)|否|Windows/Mac/Linux|开源免费| |
 |[Freeplane](https://sourceforge.net/projects/freeplane/)|是|Windows/Mac/Linux|开源免费 |
 
 ## Tools Online
 
-### 表格转换
+* 各种表格格式的互转(Excel/Markdown/LaTeX等): <https://tableconvert.com/>
+* 各种站长常用工具，最常用的是时间戳转换: <https://tool.chinaz.com/Tools/unixtime.aspx>
+* 各种在线工具，最常用的是str与hex的互转: <https://tool.lu/hexstr/>
+* 在线GIF生成和编辑工具: <https://ezgif.com/>
+* 各种文件格式转换: <https://convertio.co/zh>
 
-各种表格样式的互转(Excel/Markdown/LaTeX等)
+## 图床与图床工具
 
-<https://tableconvert.com/>
+* PicGo: <https://github.com/Molunerfinn/PicGo>
 
-### 站长工具
+## Others
 
-各种站长常用工具，最常用的是时间戳转换
-
-<https://tool.chinaz.com/Tools/unixtime.aspx>
-
-### 在线工具合集
-
-各种在线工具，最常用的是str与hex的互转
-
-<https://tool.lu/hexstr/>
-
-### ezgif
-
-在线GIF生成和编辑工具
-
-<https://ezgif.com/>
-
-### convertio
-
-各种文件格式转换
-
-<https://convertio.co/zh>
+* jTessBoxEditor(jTessBoxEditor is a box editor and trainer for Tesseract OCR): <https://vietocr.sourceforge.net/training.html>
+* MotionPro(VPN工具): <https://client.arraynetworks.com.cn:8080/zh/troubleshooting>
+* Altova XMLSpy(Altova XMLSpy is the world's best selling JSON and XML editor for modeling, editing, transforming, and debugging related technologies.): <https://www.altova.com/xmlspy-xml-editor>
