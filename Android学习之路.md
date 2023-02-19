@@ -127,6 +127,9 @@ AOSP源码占用空间较大，有时不方便通过下载到本地的方式进�
 * Android控件--ProgressBar: <https://blog.csdn.net/hardworkingant/article/details/71910731>
 * 拖放框架: <https://developer.android.com/guide/topics/ui/drag-drop>
 
+* 自动填充服务: <https://developer.android.google.cn/reference/android/service/autofill/AutofillService>
+* 自动填充服务样例: <https://github.com/android/input-samples/tree/main/AutofillFramework>
+
 * Android核心分析: <https://blog.csdn.net/maxleng/category_9260799.html>
 * Android系统开篇: <http://gityuan.com/android/>
 * 对于android.intent.action.MAIN和android.intent.category.LAUNCHER的理解: <http://blog.csdn.net/lindroid20/article/details/51993247>
