@@ -92,16 +92,6 @@ QQ浏览器(不推荐，)：<https://browser.qq.com/>
 * ProxyTool: <https://github.com/githubvpn007/ProxyTool>
 * v2rayNvpn: <https://github.com/githubvpn007/v2rayNvpn>
 
-## 编程辅助工具
-
-* Copilot: <https://copilot.github.com/>
-* Kite(已停止运营): <https://kite.com/>
-* codota（已被tabnine替代）: <https://www.codota.com/>
-* tabnine: <https://www.tabnine.com/>
-* Alibaba Cloud AI Coding Assistant(Cosy): <https://developer.aliyun.com/tool/cosy>
-* aixcoder: <https://www.aixcoder.com/>
-* IntelliCode 概述: <https://docs.microsoft.com/zh-cn/visualstudio/intellicode/overview>
-
 ## Others
 
 * jTessBoxEditor(jTessBoxEditor is a box editor and trainer for Tesseract OCR): <https://vietocr.sourceforge.net/training.html>
