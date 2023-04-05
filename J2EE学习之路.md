@@ -192,6 +192,7 @@
 * 让浏览器不再显示 https 页面中的 http 请求警报: <http://www.cnblogs.com/hustskyking/p/upgrade-insecure-requests.html>
 * 客户端的IP地址伪造、CDN、反向代理、获取的那些事儿: <http://www.cnblogs.com/zhengyun_ustc/archive/2012/09/19/getremoteaddr.html>
 * Threat Modeling: Uncover Security Design Flaws Using The STRIDE Approach: <https://docs.microsoft.com/en-us/archive/msdn-magazine/2006/november/uncover-security-design-flaws-using-the-stride-approach>
+* 双因素认证（2FA）教程: <https://ruanyifeng.com/blog/2017/11/2fa-tutorial.html>
 
 ## Java EE
 

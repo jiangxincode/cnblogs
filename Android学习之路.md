@@ -2,6 +2,13 @@
 
 * <https://developer.android.com/develop/index.html>
 
+* Data and file storage overview: <https://developer.android.com/training/data-storage>
+* Managing the System UI: <https://developer.android.com/training/system-ui/index.html>
+* Create and manage notification channels: <https://developer.android.com/develop/ui/views/notifications/channels>
+* Support different screen sizes: <https://developer.android.com/guide/topics/large-screens/support-different-screen-sizes>
+* Optimize for Doze and App Standby: <https://developer.android.com/training/monitoring-device-state/doze-standby>
+* Enhance graphics with wide color content: <https://developer.android.com/training/wide-color-gamut>
+
 * NDK: <https://developer.android.com/ndk/>
 
 * Intent: <https://developer.android.com/reference/android/content/Intent.html>
@@ -12,9 +19,6 @@
 
 * Android Jetpack: <https://developer.android.com/jetpack>
 * AndroidX 概览: <https://developer.android.com/jetpack/androidx>
-
-* Managing the System UI: <https://developer.android.com/training/system-ui/index.html>
-* Create and Manage Notification Channels: <https://developer.android.com/training/notify-user/channels>
 
 * App Shortcuts: <https://developer.android.com/guide/topics/ui/shortcuts>
 * SDK版本关系: <https://developer.android.com/guide/topics/manifest/uses-sdk-element.html>
@@ -98,7 +102,6 @@ AOSP源码占用空间较大，有时不方便通过下载到本地的方式进�
 
 * Android | 打印堆栈: <https://blog.csdn.net/u011386173/article/details/88394346>
 
-* 支持不同的屏幕尺寸: <https://developer.android.google.cn/training/multiscreen/screensizes.html>
 * 多屏幕多分辨率的支持: <https://www.cnblogs.com/tianjian/p/3430085.html>
 * Android开发中dip，dpi，density，px等详解: <http://blog.qiji.tech/archives/2581>
 * 一种非常好用的Android屏幕适配: <https://www.jianshu.com/p/1302ad5a4b04>
@@ -186,10 +189,6 @@ AOSP源码占用空间较大，有时不方便通过下载到本地的方式进�
 
 * 了解一下，Android 10中的APEX: <https://blog.csdn.net/Innost/article/details/103776120>
 * Android-APEX化之后如何替换对应的文件: <https://blog.csdn.net/cheriyou_/article/details/108540771>
-
-* 针对低电耗模式和应用待机模式进行优化: <https://developer.android.com/training/monitoring-device-state/doze-standby>
-
-* 使用广色域内容增强图形效果: <https://developer.android.google.cn/training/wide-color-gamut>
 
 * 安卓应用在各大应用市场上架方法整理: <https://blog.csdn.net/niezhipeng8/article/details/79103436>
 * 从圆角到圆角: <https://zhuanlan.zhihu.com/p/29560646>

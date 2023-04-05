@@ -88,9 +88,20 @@ QQ浏览器(不推荐，)：<https://browser.qq.com/>
 * Shadowsocks: <https://github.com/shadowsocks/shadowsocks-windows>
 * clash: <https://github.com/Dreamacro/clash>
 * Clash for Android: <https://github.com/Kr328/ClashForAndroid>
+* Clash for Windows: <https://github.com/Fndroid/clash_for_windows_pkg>
+* Clash for Windows文档：<https://fndroid.github.io/clash-win-docs/>
 * proxy: <https://github.com/githubvpn007/proxy>
 * ProxyTool: <https://github.com/githubvpn007/ProxyTool>
 * v2rayNvpn: <https://github.com/githubvpn007/v2rayNvpn>
+
+## 密码管理工具
+
+* KeePass: <https://keepass.info/>
+* keepass2android: <https://github.com/PhilippC/keepass2android>
+* 1password: <https://1password.com/zh-cn>
+* lastpass: <https://www.lastpass.com/>
+* authy: <https://authy.com/>
+* Microsoft Authenticator: <https://www.microsoft.com/en-us/security/mobile-authenticator-app/>
 
 ## Others
 
