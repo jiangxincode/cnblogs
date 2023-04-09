@@ -85,3 +85,4 @@
 * kdevelop：<https://www.kdevelop.org/>
 * xcode: <https://developer.apple.com/xcode/>
 * QtCreator: <https://www.qt.io/qt-features-libraries-apis-tools-and-ide/#ide>
+* SlickEdit: <https://www.slickedit.com/products/slickedit>

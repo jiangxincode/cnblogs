@@ -42,6 +42,7 @@
 * WPS Office For Linux: <https://linux.wps.cn/>
 * LibreOffice: <https://www.libreoffice.org/>
 * 永中Office: <http://www.yozosoft.com/>
+* Prezi: <https://prezi.com/>
 
 ## PDF
 
@@ -50,14 +51,14 @@
 
 ## 浏览器
 
-Chrome: <https://www.google.cn/intl/zh-CN/chrome/>
-Fixefox: <http://www.firefox.com.cn/>
+* Chrome: <https://www.google.cn/intl/zh-CN/chrome/>
+* Fixefox: <http://www.firefox.com.cn/>
 
-IE浏览器（不推荐，现已停止维护）
-蚂蚁浏览器（不推荐，曾支持Linux）：<https://www.myie9.com/>
-遨游浏览器（不推荐，曾支持Linux）：<https://www.maxthon.cn/>
-百度浏览器（不推荐，现已停止维护）
-QQ浏览器(不推荐，)：<https://browser.qq.com/>
+* IE浏览器（不推荐，现已停止维护）
+* 蚂蚁浏览器（不推荐，曾支持Linux）：<https://www.myie9.com/>
+* 遨游浏览器（不推荐，曾支持Linux）：<https://www.maxthon.cn/>
+* 百度浏览器（不推荐，现已停止维护）
+* QQ浏览器(不推荐，)：<https://browser.qq.com/>
 
 ## Tools Online
 
@@ -66,6 +67,7 @@ QQ浏览器(不推荐，)：<https://browser.qq.com/>
 * 各种在线工具，最常用的是str与hex的互转: <https://tool.lu/hexstr/>
 * 在线GIF生成和编辑工具: <https://ezgif.com/>
 * 各种文件格式转换: <https://convertio.co/zh>
+* File conversion: <https://www.zamzar.com/>
 
 ## 数据恢复工具
 
@@ -107,11 +109,14 @@ QQ浏览器(不推荐，)：<https://browser.qq.com/>
 
 * jTessBoxEditor(jTessBoxEditor is a box editor and trainer for Tesseract OCR): <https://vietocr.sourceforge.net/training.html>
 * MotionPro(VPN工具): <https://client.arraynetworks.com.cn:8080/zh/troubleshooting>
+* realvnc(安全远程连接): <https://www.realvnc.com/>
 * Altova XMLSpy(Altova XMLSpy is the world's best selling JSON and XML editor for modeling, editing, transforming, and debugging related technologies.): <https://www.altova.com/xmlspy-xml-editor>
 
 * HyperSnap：<http://www.hyperionics.com/>
 * Snipaste：<https://www.snipaste.com/index.html>
 * FastStone Capture: <http://www.softerviews.org/FastStone.html>
+* OBS Studio: <https://obsproject.com/>
+* ScreenToGif: <https://www.screentogif.com/>
 * ClipMate: <http://www.thornsoft.com/>
 * babun：<https://github.com/babun/babun>
 * UltraISO: <https://cn.ultraiso.net/xiazai.html>
@@ -126,6 +131,7 @@ Windows 10 already has this functionality built in so WizMouse is most useful if
 * NFOPad(NFOPad is a small, fast and flexible text editor and nfo viewer.): <https://truehumandesign.se/s_nfopad.php>
 
 * PanDownload: <http://pandownload.com/>
+* amule: <http://www.amule.org/>
 
 * WizTools.org RESTClient(RESTful webservices测试工具): <https://github.com/wiztools/rest-client>
 * httpwatch(HTTP sniffer): <https://www.httpwatch.com/>
@@ -134,3 +140,9 @@ Windows 10 already has this functionality built in so WizMouse is most useful if
 
 * CoolFormat: <https://github.com/akof1314/CoolFormat>
 * Convert Between Programming Languages(The Most Accurate and Reliable Source Code Converters): <https://www.tangiblesoftwaresolutions.com/>
+
+* inkscape: <https://inkscape.org/>
+* OpenShot(Video Editor): <https://www.openshot.org/>
+* GIMP(Image Editor): <https://www.gimp.org/>
+* Eagle(设计师图片管理工具): <https://cn.eagle.cool/>
+* blender(3D CG): <https://www.blender.org/>
