@@ -78,6 +78,7 @@ AOSP源码占用空间较大，有时不方便通过下载到本地的方式进�
 * Android 编程与兼容性问题: 《Android Programming The Big Nerd Ranch Guide 3rd[Android编程权威指南（第3版）》 6.2 7.8 7.9
 * lntentfilter的匹配规则: 《Android开发艺术探索》 1.3
 * .nomedia: 《解析 Google Android SDK-智能手机开发范例手册》5.3
+* Android：MediaSession框架介绍: <https://www.oschina.net/question/2561862_2150611>
 * StrictMode: 《Android核心原理与系统应用高效开发》 9.2.3
 
 * Handler内存泄漏详解及其解决方案: <http://blog.csdn.net/javazejian/article/details/50839443>
@@ -168,8 +169,6 @@ AOSP源码占用空间较大，有时不方便通过下载到本地的方式进�
 * 配置方法数超过 64K 的应用: <http://developer.android.com/intl/zh-cn/tools/building/multidex.html#about>
 * NDK编译脚本：Android.mk or CMakeLists.txt: <https://blog.csdn.net/u011686167/article/details/106458899/>
 * 升级ndk报错：No toolchains found in the NDK toolchains folder for ABI with prefix: mips64el-linux-android: <https://blog.csdn.net/qq_37299249/article/details/90290468>
-* Contacts Provider: <http://www.android-doc.com/guide/topics/providers/contacts-provider.html>
-* Android：MediaSession框架介绍: <https://www.oschina.net/question/2561862_2150611>
 
 * What is the difference between system apps and privileged apps on Android? <https://stackoverflow.com/questions/19868138/what-is-the-difference-between-system-apps-and-privileged-apps-on-android>
 * Android加密之文件级加密: <http://blog.csdn.net/myfriend0/article/details/77094890>
@@ -182,10 +181,11 @@ AOSP源码占用空间较大，有时不方便通过下载到本地的方式进�
 * Android DEX安全攻防战: <https://blog.csdn.net/androidsecurity/article/details/9428861>
 * Android Dex文件格式(一): <https://www.cnblogs.com/dacainiao/p/6035274.html>
 * 目前最全面的Android安全工具清单: <https://www.ctocio.com/top%E6%B8%85%E5%8D%95/23912.html>
-* android存储访问框架Storage Access Framework：<http://www.jcodecraeer.com/a/anzhuokaifa/androidkaifa/2014/1026/1845.html>
-* 存储访问框架android Storage Access Framework(SAF): <https://blog.csdn.net/caryee89/article/details/44155375>
-* Android 7.0 行为变更 通过FileProvider在应用间共享文件吧: <https://blog.csdn.net/lmj623565791/article/details/72859156>
-* FileProvider文件分享: <https://blog.csdn.net/lin962792501/article/details/52164695>
+* Open files using storage access framework: <https://developer.android.com/guide/topics/providers/document-provider>
+* READ_EXTERNAL_STORAGE: <https://developer.android.com/reference/android/Manifest.permission#READ_EXTERNAL_STORAGE>
+* FileProvider: <https://developer.android.com/reference/androidx/core/content/FileProvider>
+* Contacts Provider: <https://developer.android.com/guide/topics/providers/contacts-provider>
+* 请求运行时权限: <https://developer.android.google.cn/training/permissions/requesting?hl=zh-cn#java>
 
 * 了解一下，Android 10中的APEX: <https://blog.csdn.net/Innost/article/details/103776120>
 * Android-APEX化之后如何替换对应的文件: <https://blog.csdn.net/cheriyou_/article/details/108540771>

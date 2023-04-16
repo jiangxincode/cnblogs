@@ -134,7 +134,6 @@
 * 新立得(Synaptic): <http://www.nongnu.org/synaptic/>
 * GLX-Dock: <http://www.glx-dock.org/>
 * vncview: <https://www.realvnc.com/en/connect/download/viewer/>
-* gimp: <https://www.gimp.org/>
 * PDFtk: <https://www.pdflabs.com/>
 * Master PDF Editor for Linux:<https://code-industry.net/free-pdf-editor/>
 * Okular: <https://okular.kde.org/>
