@@ -446,15 +446,6 @@
     The Simple Logging Facade for Java (SLF4J) serves as a simple facade or abstraction for various logging frameworks (e.g. java.util.logging, logback, log4j) allowing the end user to plug in the desired logging framework at deployment time.
 
 * 官方网址：<http://www.slf4j.org/>
-* 为什么要使用SLF4J而不是Log4J: <http://www.importnew.com/7450.html>
-
-## Log4j
-
-* <http://logging.apache.org/log4j/2.x/>
-* <http://logging.apache.org/log4j/1.2/>
-* jdk-logging、log4j、logback日志介绍及原理: <https://my.oschina.net/pingpangkuangmo/blog/406618>
-* 热切换Log4j级别配置: <http://www.cnblogs.com/jiangxinnju/p/6848472.html>
-* log4j:ERROR Attempted to append to closed appender named: <http://blog.csdn.net/xvshu/article/details/51028644>
 
 ## Logback
 
@@ -464,6 +455,17 @@
 * Java程序员修炼之道 之 Logging(1/3) - Logback 配置:<http://www.blogjava.net/justfly/archive/2014/08/10/416768.html>
 * Java程序员修炼之道 之 Logging(2/3) - 怎么写Log:<http://www.blogjava.net/justfly/archive/2014/08/13/416925.html>
 * Java程序员修炼之道 之 Logging(3/3) - 怎么分析Log:<http://www.blogjava.net/justfly/archive/2014/09/17/418034.html>
+
+## Log4j
+
+* <http://logging.apache.org/log4j/2.x/>
+* <http://logging.apache.org/log4j/1.2/>
+* jdk-logging、log4j、logback日志介绍及原理: <https://my.oschina.net/pingpangkuangmo/blog/406618>
+* jcl 与 jul、log4j1、log4j2、logback 的集成原理: <https://my.oschina.net/pingpangkuangmo/blog/407895>
+* slf4j 与 jul、log4j1、log4j2、logback 的集成原理: <https://my.oschina.net/pingpangkuangmo/blog/408382>
+* slf4j、jcl、jul、log4j1、log4j2、logback 大总结: <https://my.oschina.net/pingpangkuangmo/blog/410224>
+* 热切换Log4j级别配置: <http://www.cnblogs.com/jiangxinnju/p/6848472.html>
+* log4j:ERROR Attempted to append to closed appender named: <http://blog.csdn.net/xvshu/article/details/51028644>
 
 ## Log4E
 
@@ -874,6 +876,7 @@ mvn deploy:deploy-file -DgroupId="edu.jiangxin" -DartifactId=”gcu” -Dversion
 
 * 官网：<http://www.json.org/>
 * json中文网：<http://www.json.org.cn/index.htm>
+* JSON in Java [package org.json]: <https://github.com/stleary/JSON-java>
 * Json-lib: <https://sourceforge.net/projects/json-lib/>
 * fastjson: <http://mvnrepository.com/artifact/com.alibaba/fastjson>
 * Eclipse Json Editor Plugin: <https://sourceforge.net/projects/eclipsejsonedit/>
@@ -1060,10 +1063,10 @@ The yFiles diagramming software components are extensive class libraries that en
 * Apache PDFBox - A Java PDF Library: <https://pdfbox.apache.org/index.html>
 * JExcelApi(长时间不更新): <https://sourceforge.net/projects/jexcelapi/>
 
-* jacob：<https://github.com/freemansoft/jacob-project>
+* jacob(Java/COM Bridge)：<https://github.com/freemansoft/jacob-project>
 * Java操作Microsoft Word之jacob: <http://xiaoduan.blog.51cto.com/502137/136692/>
 * 浅析JACOB: <http://www.blogjava.net/lusm/archive/2008/11/22/jacob.html>
-* JACOB的语法: <http://www.bitscn.com/pdb/java/200904/161117.html>
+* JACOB的语法: <https://www.cnblogs.com/x_wukong/p/4273588.html>
 
 ## MVEL(Drools)
 
@@ -1260,3 +1263,7 @@ The yFiles diagramming software components are extensive class libraries that en
 ## Markdown转换
 
 * flexmark-java: <https://github.com/vsch/flexmark-java>
+
+## Tess4j
+
+* Tess4j: <https://tess4j.sourceforge.net/>

@@ -145,7 +145,6 @@ AOSP源码占用空间较大，有时不方便通过下载到本地的方式进�
 * Android for work总结(下): <http://blog.csdn.net/liu1314you/article/details/52038916>
 * android获取内置和外置SD卡路径: <http://blog.csdn.net/chadeltu/article/details/43736093>
 * Android之Adapter用法总结：<http://blog.csdn.net/fznpcy/article/details/8658155/>
-* Android 使用android-support-multidex解决Dex超出方法数的限制问题,让你的应用不再爆棚: <http://blog.csdn.net/t12x3456/article/details/40837287>
 * Android命令行/c语言/java设置获取系统属性的方法: <http://www.mikewootc.com/wiki/android/other/system_property.html>
 * Implementation vs API dependency: <https://jeroenmols.com/blog/2017/06/14/androidstudio3/>
 * android怎样调用@hide和internal API: <http://blog.csdn.net/linghu_java/article/details/8283042>
@@ -166,7 +165,8 @@ AOSP源码占用空间较大，有时不方便通过下载到本地的方式进�
 * Why do most fields (class members) in Android tutorial start with `m`? <https://stackoverflow.com/questions/2092098/why-do-most-fields-class-members-in-android-tutorial-start-with-m>
 * Android多语言国际化适配(兼容7.0): <https://blog.csdn.net/pigdreams/article/details/81277110>
 * android程序自动化生成apk的过程: <https://blog.csdn.net/f2006116/article/details/52254519>
-* 配置方法数超过 64K 的应用: <http://developer.android.com/intl/zh-cn/tools/building/multidex.html#about>
+* Enable multidex for apps with over 64K methods: <https://developer.android.com/build/multidex#about>
+* dex-method-counts: <https://github.com/jiangxincode/dex-method-counts>
 * NDK编译脚本：Android.mk or CMakeLists.txt: <https://blog.csdn.net/u011686167/article/details/106458899/>
 * 升级ndk报错：No toolchains found in the NDK toolchains folder for ABI with prefix: mips64el-linux-android: <https://blog.csdn.net/qq_37299249/article/details/90290468>
 
@@ -288,7 +288,6 @@ AOSP源码占用空间较大，有时不方便通过下载到本地的方式进�
 * fastlane screenshots for Android: <https://docs.fastlane.tools/getting-started/android/screenshots/>
 * Android 应用开发调试利器——开发助手，数十倍效率提升: <http://www.trinea.cn/android/android-develop-and-debug-tools/>
 * 奇兔刷机：<http://www.7to.cn/>
-* dex-method-counts: <https://github.com/jiangxincode/dex-method-counts>
 * dexcount-gradle-plugin: <https://github.com/KeepSafe/dexcount-gradle-plugin>
 * leakcanary: <https://github.com/square/leakcanary>
 * Display and control your Android device: <https://github.com/Genymobile/scrcpy>
@@ -334,6 +333,7 @@ AOSP源码占用空间较大，有时不方便通过下载到本地的方式进�
 * Android adb bugreport工具分析和使用: <https://blog.csdn.net/createchance/article/details/51954142>
 * battery-historian: <https://github.com/google/battery-historian>
 * ChkBugReport: <https://github.com/sonyxperiadev/ChkBugReport>
+* loganalysis(Android日志分析工具): <https://cs.android.com/android/platform/superproject/+/refs/heads/master:tools/loganalysis/src/com/android/loganalysis/LogAnalyzer.java>
 
 ## Android模拟器
 
@@ -341,11 +341,6 @@ AOSP源码占用空间较大，有时不方便通过下载到本地的方式进�
 * genymotion个人免费版: <https://www.genymotion.com/fun-zone/>
 * genymotion-idea-plugin: <https://plugins.jetbrains.com/plugin/7269-genymotion>
 * 夜神模拟器: <https://www.yeshen.com/>
-
-## Firebase
-
-* Firebase: <https://firebase.google.com/>
-* Plugin Fierbase Services was not installed:Cannot download...: <https://blog.csdn.net/u010368726/article/details/105263487>
 
 ## ADB
 
@@ -365,11 +360,15 @@ AOSP源码占用空间较大，有时不方便通过下载到本地的方式进�
 * Android程序开发初级教程(二): <http://blog.csdn.net/k7sem/article/details/1887437>
 * Android程序开发初级教程(三): <http://blog.csdn.net/k7sem/article/details/1887499>
 
-## Bug跟踪
+## App Development Platform
 
-* 网易云捕: <http://crash.163.com/>
-* bugly: <https://bugly.qq.com/v2/workbench/apps>
-* BugTags: <https://work.bugtags.com/login.html>
+* Firebase: <https://firebase.google.com/>
+* Plugin Fierbase Services was not installed:Cannot download...: <https://blog.csdn.net/u010368726/article/details/105263487>
+* Does Firebase Work in China?: <https://www.21cloudbox.com/solutions/does-firebase-work-in-china.html>
+* Supabase: <https://supabase.com/>
+* Parse: <https://parseplatform.org/>
+* 友盟: <https://www.umeng.com/analytics>
+* bugly: <https://bugly.qq.com>
 * 蒲公英：<https://www.pgyer.com/>
 
 ## XMPP
@@ -379,13 +378,8 @@ AOSP源码占用空间较大，有时不方便通过下载到本地的方式进�
 * rfc3920: <https://tools.ietf.org/html/rfc3920>
 * rfc3920翻译: <http://wiki.jabbercn.org/RFC3920>
 
-* <https://www.igniterealtime.org/downloads/index.jsp>
-
+* Open Realtime: <https://www.igniterealtime.org/>
 * smack: <https://github.com/igniterealtime/Smack>
-* smack source: <https://github.com/igniterealtime/Smack>
-* asmack: <https://github.com/Flowdalic/asmack>
-* smack4-doc: <http://download.igniterealtime.org/smack/docs/latest/documentation/index.html>
-* smack4-doc-zh: <https://github.com/likfe/smack4-doc-zh>
 
 * 环信即时通讯云: <https://www.easemob.com/download/im>
 * Android之基于XMPP协议即时通讯软件(一): <https://blog.csdn.net/way_ping_li/article/details/17385379>
@@ -407,15 +401,10 @@ AOSP源码占用空间较大，有时不方便通过下载到本地的方式进�
 
 ## Player
 
+* Universal Android Music Player: <https://github.com/android/uamp>
+* 百度音视频处理: <https://cloud.baidu.com/doc/MCT/index.html>
 * ApolloMod: <https://github.com/Splitter/android_packages_apps_apolloMod>
 * android-visualizer: <https://github.com/felixpalmer/android-visualizer/tree/master/src/com/pheelicks/visualizer>
-
-## Vitamio
-
-* 4.2.2版本之前的源码: <https://github.com/yixia/VitamioBundle>
-* 5.0.0版本之后的源码: <https://github.com/yixia/VitamioBundleStudio>
+* Vitamio 4.2.2版本之前的源码: <https://github.com/yixia/VitamioBundle>
+* Vitamio 5.0.0版本之后的源码: <https://github.com/yixia/VitamioBundleStudio>
 * 使用Vitamio打造自己的Android万能播放器: <http://www.cnblogs.com/over140/archive/2012/04/26/2471060.html>
-
-## 百度媒体云
-
-* <https://cloud.baidu.com/doc/MCT/Android-Player-SDK-2.0.html>

@@ -25,6 +25,7 @@
 * Android中利用Camera与Matrix实现3D效果详解: <https://blog.csdn.net/zhangke3016/article/details/52093776>
 * 3D图形:矩阵、欧拉角、四元数与方位的故事: <https://www.jianshu.com/p/7a114062866e>
 * 四元数与欧拉角（RPY角）的相互转换: <https://www.cnblogs.com/21207-iHome/p/6894128.html>
+* 3D代码实现仓库: <https://github.com/douysu/graphics-algorithm>
 
 * OpenGL ES 2.0 specifiying position attribute vec3 or vec4: <https://stackoverflow.com/questions/8551935/opengl-es-2-0-specifiying-position-attribute-vec3-or-vec4>
 * Why not vec3 for OpenGL ES 2.0 gl_Position? <https://stackoverflow.com/questions/9943636/why-not-vec3-for-opengl-es-2-0-gl-position>
