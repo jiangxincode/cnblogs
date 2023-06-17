@@ -206,8 +206,7 @@
 ## Struts
 
 * 官网：<http://struts.apache.org/>
-* 源码：deprecated: <http://svn.apache.org/repos/asf/struts/>
-* 源码：now: <https://github.com/apache/struts/blob/master/src/site/site.xml:w>
+* 源码：<https://github.com/apache/struts>
 
 * OGNL: <http://commons.apache.org/proper/commons-ognl/>
 
@@ -345,6 +344,23 @@
 * Eclipse EGit: <https://www.eclipse.org/egit/>
 * Spket IDE（提供Eclipse的插件）: <http://www.spket.com/>
 * Aptana（提供Eclipse插件）: <http://www.aptana.com/>
+
+## Eclipse插件开发
+
+* Eclipse Plug-in & OSGI：<http://www.blogjava.net/zhuxing/category/33273.html>
+* Eclipse插件开发打包为Update Site：<http://forchenyun.iteye.com/blog/664241>
+* 插件开发总览：<http://www.cnblogs.com/xing901022/p/4115610.html>
+* Tycho - Building Eclipse plug-ins with maven: <http://www.eclipse.org/tycho/>
+* <http://wiki.eclipse.org/Tycho>
+* 使用Tycho来构建你的RCP程序: <http://chnic.iteye.com/category/337072>
+* Dependencies from pom.xml not considered by Eclipse in Tycho Project: <http://stackoverflow.com/questions/12476451/dependencies-from-pom-xml-not-considered-by-eclipse-in-tycho-project>
+
+## OSGI
+
+* OSGI: <https://www.osgi.org/>
+* Java 9, OSGi and the Future of Modularity (Part 1): <https://www.infoq.com/articles/java9-osgi-future-modularity/>
+* Java 9, OSGi and the Future of Modularity (Part 2): <https://www.infoq.com/articles/java9-osgi-future-modularity-part-2/>
+* OSGi and C++: <http://blog.cppmicroservices.org/2012/03/29/osgi-and-c++/>
 
 ## Tomcat
 
@@ -1109,16 +1125,6 @@ The yFiles diagramming software components are extensive class libraries that en
 * Proxool: <http://proxool.sourceforge.net/index.html>
 * The Tomcat JDBC Connection Pool: <http://tomcat.apache.org/tomcat-8.0-doc/jdbc-pool.html>
 * Apache Commons Pool: <http://commons.apache.org/proper/commons-pool/index.html>
-
-## Eclipse插件开发
-
-* Eclipse Plug-in & OSGI：<http://www.blogjava.net/zhuxing/category/33273.html>
-* Eclipse插件开发打包为Update Site：<http://forchenyun.iteye.com/blog/664241>
-* 插件开发总览：<http://www.cnblogs.com/xing901022/p/4115610.html>
-* Tycho - Building Eclipse plug-ins with maven: <http://www.eclipse.org/tycho/>
-* <http://wiki.eclipse.org/Tycho>
-* 使用Tycho来构建你的RCP程序: <http://chnic.iteye.com/category/337072>
-* Dependencies from pom.xml not considered by Eclipse in Tycho Project: <http://stackoverflow.com/questions/12476451/dependencies-from-pom-xml-not-considered-by-eclipse-in-tycho-project>
 
 ## Hadoop
 
