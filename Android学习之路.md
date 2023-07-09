@@ -280,6 +280,7 @@ AOSP源码占用空间较大，有时不方便通过下载到本地的方式进�
 * hugo: <https://github.com/JakeWharton/hugo>
 * 极光推送: <http://docs.jiguang.cn/jpush/resources/#android-sdk>
 * 移动服务SDK：<http://www.mob.com/download>
+* Retrofit(A type-safe HTTP client for Android and Java): <https://github.com/square/retrofit>
 
 ## Tools
 

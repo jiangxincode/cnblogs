@@ -13,6 +13,14 @@
 * 如何重构“箭头型”代码: <http://coolshell.cn/articles/17757.html>
 * 软件项目“免坑”指南: <http://www.cnblogs.com/MeteorSeed/archive/2012/04/08/2427966.html>
 
+* 当前各种设计模式主要来源：
+  * Design Patterns_Elements of Reusable Object-Oriented Software
+  * Patterns of Enterprise Application Architecture
+  * <https://learn.microsoft.com/en-us/azure/architecture/patterns/> <https://github.com/mspnp/cloud-design-patterns>
+
+* 速查: <https://java-design-patterns.com/patterns/>
+
+* Java实现单例模式的9种方法：<https://blog.csdn.net/qq_35860138/article/details/86477538>
 * 面向对象设计的SOLID原则: Agile Software Development Principles Patterns and Practices[敏捷软件开发：原则、模式与实践]
 * 合成/聚合复用原则+迪米特法则（最小知识原则）: Java与模式
 * 浅谈命令查询职责分离(CQRS)模式: <https://www.cnblogs.com/yangecnu/p/Introduction-CQRS.html>
@@ -45,7 +53,6 @@
 * Java直接（堆外）内存使用详解: <http://www.cnblogs.com/xing901022/p/5248934.html>
 * Buffer: <https://yddmax.github.io/2017/06/08/Buffer/>
 * Java引用总结--StrongReference、SoftReference、WeakReference、PhantomReference: <https://www.cnblogs.com/skywang12345/p/3154474.html>
-* Java实现单例模式的9种方法：<https://blog.csdn.net/qq_35860138/article/details/86477538>
 * 5种必会的Java异步调用转同步的方法你会几种: <https://blog.csdn.net/m0_37595562/article/details/81638445>
 * java 偏向锁、轻量级锁及重量级锁synchronized原理: <https://www.cnblogs.com/deltadeblog/p/9559035.html>
 * Java中Volatile关键字详解: <https://www.cnblogs.com/zhengbin/p/5654805.html>
@@ -124,8 +131,6 @@
 * Developing a Service Provider using Java API(Service Provider Interface): <http://www.lordofthejars.com/2011/11/en-ti-puedo-ver-la-libertad-tu-me-haces.html>
 * 驱动模块和桩模块的概念和区别: <http://daimajishu.iteye.com/blog/1557295>
 * astyle 使用说明: <http://www.cnblogs.com/jiangxinnju/p/4908575.html>
-* UML关系(泛化,实现,依赖,关联(聚合,组合))：<http://justsee.iteye.com/blog/808799>
-* 解析UML箭头、线条代表的意义：<http://developer.51cto.com/art/201006/206134.htm>
 * 转一个J2EE开发时的包命名规则，养成良好的开发习惯：<http://www.blogjava.net/paulwong/archive/2012/04/15/374675.html>
 * Eclipse 开发WEB项目所遇问题 WebContent WebRoot：<http://blog.sina.com.cn/s/blog_525960510100jo0j.html>
 * Java调用动态库方法说明: <http://www.cnblogs.com/xifanyaoyao/p/3659019.html>
@@ -203,22 +208,6 @@
 * Oracle Java SE Support Roadmap: <https://www.oracle.com/java/technologies/java-se-support-roadmap.html>
 * Oracle Java SE Licensing FAQ: <https://www.oracle.com/java/technologies/javase/jdk-faqs.html>
 
-## Struts
-
-* 官网：<http://struts.apache.org/>
-* 源码：<https://github.com/apache/struts>
-
-* OGNL: <http://commons.apache.org/proper/commons-ognl/>
-
-* freemarker: <http://freemarker.org/>
-* Velocity: <http://velocity.apache.org/engine/devel/>
-
-* Struts 2.0系列: <http://www.blogjava.net/max/category/16130.html?Show=All>
-* Struts2中的零配置与CoC（Convention over Configration）: <http://andlu.iteye.com/blog/112675>
-* struts2采用convention-plugin实现零配置: <http://javeye.iteye.com/blog/358744>
-* struts2关于A web application created a ThreadLocal with key of type 异常解决办法: <http://cooliron.blog.163.com/blog/static/12470313820111235248426/>
-* 修改Struts2的struts.xml配置文件位置：<http://blog.csdn.net/zht666/article/details/8980451>
-
 ## Spring
 
 * 官网：<http://spring.io/>
@@ -251,8 +240,33 @@
 
 * hibernator：<https://sourceforge.net/projects/hibernator/>
 
+## Struts(漏洞多，发展慢，后续使用Spring MVC)
+
+* 官网：<http://struts.apache.org/>
+* 源码：<https://github.com/apache/struts>
+
+* Struts 2.0系列: <http://www.blogjava.net/max/category/16130.html?Show=All>
+* Struts2中的零配置与CoC（Convention over Configration）: <http://andlu.iteye.com/blog/112675>
+* struts2采用convention-plugin实现零配置: <http://javeye.iteye.com/blog/358744>
+* struts2关于A web application created a ThreadLocal with key of type 异常解决办法: <http://cooliron.blog.163.com/blog/static/12470313820111235248426/>
+* 修改Struts2的struts.xml配置文件位置：<http://blog.csdn.net/zht666/article/details/8980451>
+
+## 模板引擎与表达式语言
+
+* template engine: <https://en.wikipedia.org/wiki/Template_processor>
+* freemarker: <http://freemarker.org/> <https://freemarker.apache.org/docs/index.html>
+* Velocity: <http://velocity.apache.org/engine/devel/>
+* EL: <https://en.wikipedia.org/wiki/Jakarta_Expression_Language>
+* OGNL(Object Graph Navigation Library): <http://commons.apache.org/proper/commons-ognl/>
+* MVEL: <https://github.com/mvel/mvel>
+* MVEL: <https://en.wikisource.org/wiki/MVEL_Language_Guide>
+
 ## WebService
 
+* Restlet：<http://restlet.com/>
+* Apache CXF: <http://cxf.apache.org/>
+* axis2: <http://axis.apache.org/axis2/java/core/>
+* Jersey: <https://eclipse-ee4j.github.io/jersey/>
 * Style of WebService: REST vs. SOAP: <http://cenwenchu.iteye.com/blog/316717>
 * RESTful API 编写指南: <http://www.cnblogs.com/chinajava/p/5871310.html>
 * principles of good restful api design(中文): <http://blog.csdn.net/qq_35799003/article/details/52316705>
@@ -265,17 +279,14 @@
 * java 利用JAX-RS快速开发RESTful 服务(以JBoss为容器)：<http://www.cnblogs.com/yjmyzz/p/javaee-jax-rs-tutorial.html>
 * RESTful API 利器 Swagger: <http://www.razorer.com/2016/10/16/swagger-intro/>
 * 改写Restful2ActionMapper让Struts2支持REST风格的URL映射: <http://andlu.iteye.com/blog/110934>
-* Jersey: <https://eclipse-ee4j.github.io/jersey/>
 * Build a RESTful Web service using Jersey and Apache Tomcat: <https://developer.ibm.com/articles/wa-aj-tomcat/>
-* Restlet：<http://restlet.com/>
-* Apache CXF: <http://cxf.apache.org/>
-* axis2: <http://axis.apache.org/axis2/java/core/>
 * Axis2创建WebService实例: <http://clq9761.iteye.com/blog/976029/>
 * Axis2中使用模块: <http://zhangjunhd.blog.51cto.com/113473/25593/>
 * SOAPUI: <https://www.soapui.org/>
+* WizTools.org RESTClient(RESTful webservices测试工具): <https://github.com/wiztools/rest-client>
 * Automating SoapUI using Groovy – A Walk Through: <http://www.codeproject.com/Articles/820414/Automating-SoapUI-using-Groovy-A-Walk-Through>
 * tcpmon: <https://github.com/robertbachmann/tcpmon>
-* JMeter: <http://jmeter.apache.org/>
+* JMeter: <https://jmeter.apache.org/>
 * JAX-WS error on WSDL file: “Error resolving component 's:schema'”: <http://stackoverflow.com/questions/13499860/jax-ws-error-on-wsdl-file-error-resolving-component-sschema>
 * JAX-WS Maven Plugin: <http://www.mojohaus.org/jaxws-maven-plugin/>
 
@@ -301,7 +312,6 @@
 * Eclipse插件: <http://www.oschina.net/project/tag/148/eclipse-plugins>
 * Eclipse相关问题：<http://www.cnblogs.com/jiangxinnju/p/5205365.html>
 * Top 10 Java Debugging Tips with Eclipse: <http://javapapers.com/core-java/top-10-java-debugging-tips-with-eclipse/>
-* JSP EL (Expression Language) causing problems in Eclipse: <http://stackoverflow.com/questions/1790749/jsp-el-expression-language-causing-problems-in-eclipse>
 * Linux下安装最新的Eclipse：<http://www.cnblogs.com/jiangxinnju/p/4780268.html>
 * eclipse调试的方法和技巧：<http://www.cnblogs.com/ycxyyzw/archive/2013/03/27/2983905.html>
 * eclipse调试java程序的九个技巧: <http://www.cnblogs.com/lingiu/p/3802391.html>
@@ -315,16 +325,9 @@
 * Eclipse 远程开发：<http://lovespss.blog.51cto.com/1907593/536614>
 * How to set the Eclipse date variable format? <https://stackoverflow.com/questions/1131712/how-to-set-the-eclipse-date-variable-format>
 
-## Eclipse根据java代码生成UML图
+## Eclipse插件
 
-* Eclipse UML插件AmaterasUML的配置及使用(推荐): <http://blog.csdn.net/asce1885/article/details/40744163>
-* EclipseHTMLEditor/AmasterasUML/AmaterasERD: <http://amateras.osdn.jp/cgi-bin/fswiki_en/wiki.cgi>
 * GEF: <http://www.eclipse.org/gef/>
-* Green UML: <http://green.sourceforge.net/index.html>
-* Eclipse UML Generators: <http://www.eclipse.org/umlgen>
-* ModelGoon UML4Java: <http://marketplace.eclipse.org/content/modelgoon-uml4java>
-* agile(收费): <http://www.agilej.com/>
-
 * Web Tools Platform: <https://www.eclipse.org/webtools/>
 * AnyEdit: <http://marketplace.eclipse.org/content/anyedit-tools>
 * YEdit: <https://marketplace.eclipse.org/content/yedit>
@@ -354,6 +357,17 @@
 * <http://wiki.eclipse.org/Tycho>
 * 使用Tycho来构建你的RCP程序: <http://chnic.iteye.com/category/337072>
 * Dependencies from pom.xml not considered by Eclipse in Tycho Project: <http://stackoverflow.com/questions/12476451/dependencies-from-pom-xml-not-considered-by-eclipse-in-tycho-project>
+
+## UML
+
+* AmaterasUML: <https://github.com/takezoe/amateras-modeler>
+* Green UML: <http://green.sourceforge.net/index.html>
+* ModelGoon UML4Java: <https://github.com/riana/ModelGoon-UML4Java>
+* AgileJ(AgileJ StructureViews is a plugin for Eclipse which generates class diagrams reverse engineered from Java source code.): <http://www.agilej.com/>
+* StarUML: <https://staruml.io/>
+* Astah(JUDE): <https://astah.net/>
+* UML关系(泛化,实现,依赖,关联(聚合,组合))：<http://justsee.iteye.com/blog/808799>
+* 解析UML箭头、线条代表的意义：<http://developer.51cto.com/art/201006/206134.htm>
 
 ## OSGI
 
@@ -448,14 +462,13 @@
 
     TestNG is a testing framework inspired from JUnit and NUnit but introducing some new functionalities that make it more powerful and easier to use.
 
-* 项目地址：<http://testng.org/doc/index.html>
-* 下载及安装说明：<http://testng.org/doc/download.html>
+* 项目地址：<https://testng.org/>
 
-## ReportNG
+## ReportNG(已停止维护)
 
     ReportNG is a simple HTML reporting plug-in for the TestNG unit-testing framework. It is intended as a replacement for the default TestNG HTML report. The default report is comprehensive but is not so easy to understand at-a-glance. ReportNG provides a simple, colour-coded view of the test results.
 
-* 项目地址：<http://reportng.uncommons.org/>
+* 项目地址：<https://github.com/dwdyer/reportng>
 
 ## SLF4J
 
@@ -691,7 +704,6 @@ mvn deploy:deploy-file -DgroupId="edu.jiangxin" -DartifactId=”gcu” -Dversion
 ## Ant
 
 * <http://ant.apache.org/>
-* <http://ant.apache.org/manual/index.html>
 * Ivy(Apache Ant项目的一个子项目，一个可传递的依赖项管理器): <http://ant.apache.org/ivy/>
 * Apache IvyDE(Eclipse plugin which integrates Apache Ivy's dependency management into Eclipse):<http://ant.apache.org/ivy/ivyde/index.html>
 * Eclipse中Ant的配置与测试 转: <http://www.cnblogs.com/jiangxinnju/p/5040436.html>
@@ -912,12 +924,11 @@ mvn deploy:deploy-file -DgroupId="edu.jiangxin" -DartifactId=”gcu” -Dversion
 
 * Java Web开发详解[XML XSLT Servlet JSP深入剖析实例应用]
 * What is difference between XML Schema and DTD? <https://stackoverflow.com/questions/1544200/what-is-difference-between-xml-schema-and-dtd>
-* JDOM: <http://www.jdom.org/>
 * JDOM: <https://github.com/hunterhacker/jdom/>
-* Dom4j: <http://dom4j.github.io/>
-* xml-commons: <http://xerces.apache.org/xml-commons/>
-* XML Pull Parsing: <http://www.xmlpull.org/index.shtml>
-* Apache Santuario(xmlsec): <http://santuario.apache.org/>
+* Dom4j: <https://github.com/dom4j/dom4j>
+* xml-commons: <https://xerces.apache.org/xml-commons/>
+* XML Pull Parsing: <https://www.xmlpull.org/index.html>
+* Apache Santuario(xmlsec): <https://santuario.apache.org/>
 * 使用 StAX 解析 XML，第 1 部分: Streaming API for XML (StAX) 简介: <http://blog.csdn.net/achellies/article/details/7048333>
 * 使用 StAX 解析 XML，第 2 部分: 拉式解析和事件: <http://blog.csdn.net/achellies/article/details/7048334>
 * 使用 StAX 解析 XML，第 3 部分: 使用定制事件和编写 XML: <http://blog.csdn.net/achellies/article/details/7048335>
@@ -1084,15 +1095,6 @@ The yFiles diagramming software components are extensive class libraries that en
 * 浅析JACOB: <http://www.blogjava.net/lusm/archive/2008/11/22/jacob.html>
 * JACOB的语法: <https://www.cnblogs.com/x_wukong/p/4273588.html>
 
-## MVEL(Drools)
-
-* <https://github.com/mvel/mvel>
-* <https://en.wikisource.org/wiki/MVEL_Language_Guide>
-
-## JSP EL
-
-* <http://commons.apache.org/proper/commons-el/>
-
 ## Aurora
 
 * <http://aurora.apache.org/>
@@ -1126,66 +1128,6 @@ The yFiles diagramming software components are extensive class libraries that en
 * The Tomcat JDBC Connection Pool: <http://tomcat.apache.org/tomcat-8.0-doc/jdbc-pool.html>
 * Apache Commons Pool: <http://commons.apache.org/proper/commons-pool/index.html>
 
-## Hadoop
-
-* <http://hadoop.apache.org/>
-* <http://hadoop.apache.org/docs/current/hadoop-project-dist/hadoop-common/ClusterSetup.html#Web_Interfaces>
-* HDFS Users Guide: <http://hadoop.apache.org/docs/stable/hadoop-project-dist/hadoop-hdfs/HdfsUserGuide.html>
-
-* Hadoop 1.0.0集群安装: <http://blog.sina.com.cn/s/blog_540c640b01010fo3.html>
-* 一步步教你Hadoop多节点集群安装配置: <http://www.cnblogs.com/lanxuezaipiao/p/3525554.html>
-* Eclipse下搭建Hadoop2.4.0开发环境：<http://www.cnblogs.com/kinglau/p/3802705.html>
-* 使用eclipse连接hadoop失败情况：<http://blog.csdn.net/yunlong34574/article/details/21331927>
-* Windows平台下安装Eclipse插件，开发Hadoop应用：<http://www.cnblogs.com/jiangxinnju/p/6287365.html>
-* Hadoop JobHistory: <http://www.cnblogs.com/luogankun/p/4019303.html>
-
-* 国内第一篇详细讲解hadoop2的automatic HA+Federation+Yarn配置的教程：<http://www.cnblogs.com/meiyuanbao/p/3545929.html>
-* 如何编译Apache Hadoop2.2.0源代码：<http://www.cnblogs.com/jiangxinnju/p/6286849.html>
-* ZooKeeper的分布模式安装：<http://www.superwu.cn/2013/08/10/413/>
-* Hadoop HDFS和KFS (CloudStore)的比较: <http://blog.csdn.net/Cloudeep/article/details/4467238>
-* performance-benchmark-cgl-mapreduce-mpi-and-hadoop: <http://salsahpc.indiana.edu/content/performance-benchmark-cgl-mapreduce-mpi-and-hadoop>
-* 汇总运行在Hadoop YARN上的开源系统: <http://dongxicheng.org/mapreduce-nextgen/run-systems-on-hadoop-yarn/>
-* 利用Hadoop实现超大矩阵相乘之我见（一）: <http://www.cnblogs.com/eczhou/p/3340731.html>
-* 使用mapreduce计算大矩阵相乘: <http://f.dataguru.cn/forum.php?mod=viewthread&tid=133912&extra=page%3D1&ordertype=1>
-
-* Hadoop Journal Node 作用：<https://my.oschina.net/u/189445/blog/661561>
-* ERROR org.apache.hadoop.yarn.server.resourcemanager.ResourceManager: RECEIVED SIGNAL 15: SIGTERM: <http://blog.csdn.net/caiandyong/article/details/50913268>
-* Hadoop在master查看live nodes为0解决方案: <http://blog.csdn.net/shenlan211314/article/details/7414728>
-* VMware虚拟机中Hadoop服务的端口无法访问的问题: <http://www.cnblogs.com/sdjnzqr/p/3865477.html>
-
-* 虾皮工作室(讲解大数据相关知识，如《细细品味Hadoop系列文章》)：<http://www.cnblogs.com/xia520pi/>
-* [Hadoop系列]Hadoop的MapReduce中多文件输出: <http://blog.csdn.net/inkfish/article/details/5156651>
-* Hadoop源码分析——TaskAttemptContext类和TaskAttemptID类: <http://blog.sina.com.cn/s/blog_61ef49250100vcps.html>
-* hadoop代理用户 -超级用户代理其它用户: <http://www.aboutyun.com/thread-16507-1-1.html>
-
-## Ambari
-
-* <http://ambari.apache.org/>
-* Ambari——大数据平台的搭建利器: <https://www.ibm.com/developerworks/cn/opensource/os-cn-bigdata-ambari/>
-
-## Spark
-
-* <http://spark.apache.org/>
-* <http://spark.apache.org/docs/latest/api/java/index.html>
-* mmicky 的博客: <http://blog.csdn.net/book_mmicky/article/category/2604051>    <http://blog.csdn.net/book_mmicky/article/category/2261687>
-* Spark性能优化指南——基础篇: <http://tech.meituan.com/spark-tuning-basic.html>
-* Spark性能优化指南——高级篇: <http://tech.meituan.com/spark-tuning-pro.html>
-* RDD中cache和persist的区别: <http://www.cnblogs.com/luogankun/p/3801062.html>
-* 每次进步一点点——Spark 中的宽依赖和窄依赖: <http://blog.csdn.net/houmou/article/details/52531205>
-* Spark中的错误处理: <http://blog.csdn.net/zrc199021/article/details/52711593>
-* Why does Spark RDD partition has 2GB limit for HDFS? <https://stackoverflow.com/questions/29689719/why-does-spark-rdd-partition-has-2gb-limit-for-hdfs>
-* Spark 架构: <http://www.cnblogs.com/gaoxing/p/5041806.html>
-* Spark(一): 基本架构及原理: <http://www.cnblogs.com/tgzhu/p/5818374.html>
-
-## Storm
-
-<http://storm.apache.org/index.html>
-<https://storm.apache.org/javadoc/apidocs/index.html>
-
-## nutch
-
-* <http://nutch.apache.org/>
-
 ## ZooKeeper
 
 * <http://zookeeper.apache.org/>
@@ -1195,17 +1137,25 @@ The yFiles diagramming software components are extensive class libraries that en
 * <http://lucene.apache.org/>
 * Lucene原理与代码分析: <http://www.cnblogs.com/forfuture1978/category/300665.html>
 
-## Apache Flume
+## nutch
 
-* deprcated: <https://github.com/cloudera/flume>
-* <http://flume.apache.org/>
-* 开源日志系统比较：<http://dongxicheng.org/search-engine/log-systems/>
+* <http://nutch.apache.org/>
+
+## Heritrix
+
+* <https://github.com/internetarchive/heritrix3>
 
 ## Solr
 
 * <http://lucene.apache.org/solr/>
 * solr教程，值得刚接触搜索开发人员一看: <http://blog.csdn.net/awj3584/article/details/16963525>
 * nutch1.8+solr 4 配置过程： <http://blog.csdn.net/hmbig2/article/details/22572473>
+
+## Apache Flume
+
+* deprcated: <https://github.com/cloudera/flume>
+* <http://flume.apache.org/>
+* 开源日志系统比较：<http://dongxicheng.org/search-engine/log-systems/>
 
 ## Commons DbUtils: JDBC Utility Component
 
@@ -1270,6 +1220,6 @@ The yFiles diagramming software components are extensive class libraries that en
 
 * flexmark-java: <https://github.com/vsch/flexmark-java>
 
-## Tess4j
+## Flex
 
-* Tess4j: <https://tess4j.sourceforge.net/>
+* Versions in the Flash Platform: <https://www.senocular.com/flash/tutorials/versions/>

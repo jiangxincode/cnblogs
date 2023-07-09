@@ -107,10 +107,19 @@
 
 ## Others
 
-* jTessBoxEditor(jTessBoxEditor is a box editor and trainer for Tesseract OCR): <https://vietocr.sourceforge.net/training.html>
+* tesseract: <https://github.com/tesseract-ocr/tesseract>
+* Tesseract User Manual: <https://tesseract-ocr.github.io/tessdoc/>
+* jTessBoxEditor: <https://github.com/nguyenq/jTessBoxEditor>
+* Tess4J: <https://tess4j.sourceforge.net/>
+* VietOCR: <https://vietocr.sourceforge.net/>
+
 * MotionPro(VPN工具): <https://client.arraynetworks.com.cn:8080/zh/troubleshooting>
 * realvnc(安全远程连接): <https://www.realvnc.com/>
 * Altova XMLSpy(Altova XMLSpy is the world's best selling JSON and XML editor for modeling, editing, transforming, and debugging related technologies.): <https://www.altova.com/xmlspy-xml-editor>
+
+* potplayer(新版本不支持swf格式): <https://potplayer.daum.net/>
+* QQ影音（播放WMV有时没有声音）: <https://player.qq.com/>
+* VLC media player: <https://www.videolan.org/vlc/>
 
 * HyperSnap：<http://www.hyperionics.com/>
 * Snipaste：<https://www.snipaste.com/index.html>
@@ -133,7 +142,6 @@ Windows 10 already has this functionality built in so WizMouse is most useful if
 * PanDownload: <http://pandownload.com/>
 * amule: <http://www.amule.org/>
 
-* WizTools.org RESTClient(RESTful webservices测试工具): <https://github.com/wiztools/rest-client>
 * httpwatch(HTTP sniffer): <https://www.httpwatch.com/>
 * Fiddler(Http sniffer): <https://www.telerik.com/fiddler>
 * Burp Suite(用于攻击web 应用程序的集成平台): <https://portswigger.net/burp>
