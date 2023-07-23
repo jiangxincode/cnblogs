@@ -48,6 +48,7 @@
 
 * wondershare(All-in-1 PDF Solution，PDF阅读器，PDF转换到其它文件等): <https://www.wondershare.com/products-solutions/office-productivity/document.html>
 * PDF-XChange: <https://www.tracker-software.com/product/pdf-xchange-editor>
+* ILovePDF: <https://www.ilovepdf.com>
 
 ## 浏览器
 
