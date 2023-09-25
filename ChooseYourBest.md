@@ -54,6 +54,7 @@
 
 * Chrome: <https://www.google.cn/intl/zh-CN/chrome/>
 * Fixefox: <http://www.firefox.com.cn/>
+* TorBrowser: <https://www.torproject.org/download/>
 
 * IE浏览器（不推荐，现已停止维护）
 * 蚂蚁浏览器（不推荐，曾支持Linux）：<https://www.myie9.com/>

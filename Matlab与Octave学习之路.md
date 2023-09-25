@@ -19,3 +19,16 @@
 * GNU Octave: <http://www.gnu.org/software/octave/>
 * GNU Octave Manual: <https://docs.octave.org/latest/>
 * Octclipse项目地址：<http://sourceforge.net/projects/octclipse/>
+
+## Maple
+
+* Maple: <https://www.maplesoft.com/products/maple/>
+* User Manual: <https://www.maplesoft.com/documentation_center/Maple2023/UserManual.pdf>
+
+## Mathematica
+
+* Mathematica: <https://www.wolfram.com/mathematica/>
+
+## Mathcad
+
+* Mathcad: <https://www.mathcad.com/>

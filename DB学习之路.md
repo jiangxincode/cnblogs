@@ -225,7 +225,7 @@
 * 忘记oracle的sys用户密码怎么修改以及Oracle 11g 默认用户名和密码: <http://www.cnblogs.com/jiangxinnju/p/7928029.html>
 * navicat 连接Oracle 报错：Cannot load OCI DLL, 126: <https://my.oschina.net/xqx/blog/340743>
 
-### oracle疑难问题排查集：
+### oracle疑难问题排查集
 
 * 数据库无响应，出现很多tns的错误: <http://www.itpub.net/thread-1359536-1-1.html>
 * oracle 11g不能连接报ORA-12537+ora-609解决: <http://www.cnblogs.com/hanbo112/p/4583047.html>

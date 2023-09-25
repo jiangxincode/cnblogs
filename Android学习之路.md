@@ -1,8 +1,17 @@
 # Andriod学习之路
 
-* <https://developer.android.com/develop/index.html>
+* 开发者网站中文: <https://developer.android.google.cn>
+* 开发者网站英文: <https://developer.android.com>
 
-* Data and file storage overview: <https://developer.android.com/training/data-storage>
+* Developer guide: <https://developer.android.com/guide>
+  * Permissions: <https://developer.android.com/training/permissions/requesting>
+  * Android 权限的一些细节: <http://blog.csdn.net/u013553529/article/details/53167072>
+  * Data and file storage overview: <https://developer.android.com/training/data-storage>
+  * Autofill framework: <https://developer.android.com/guide/topics/text/autofill>
+
+
+  * Caching Bitmaps: <https://developer.android.com/topic/performance/graphics/cache-bitmap>
+
 * Managing the System UI: <https://developer.android.com/training/system-ui/index.html>
 * Create and manage notification channels: <https://developer.android.com/develop/ui/views/notifications/channels>
 * Support different screen sizes: <https://developer.android.com/guide/topics/large-screens/support-different-screen-sizes>
@@ -36,10 +45,16 @@
 
 * Material Design: <https://m3.material.io/>
 
-## AOSP源码与架构学习
+## AOSP
 
-AOSP(Android Open Source Project)项目官网：<https://source.android.com/>
-如果想了解如何将源码下载到本地进行查看，请直接参考<https://source.android.com/setup/downloading>，里面有介绍。
+* AOSP项目官网中文：<https://source.android.google.cn>
+* AOSP项目官网英文：<https://source.android.com>
+
+* Building Android: <https://source.android.com/setup/build/building>
+* Codenames, Tags, and Build Numbers: <https://source.android.com/setup/start/build-numbers>
+* Graphics: <https://source.android.com/devices/graphics>
+* Supporting Multiple Users: <https://source.android.com/docs/devices/admin/multi-user>
+* Android5.1--多用户模式: <https://blog.csdn.net/kitty_landon/article/details/47123767>
 
 AOSP源码占用空间较大，有时不方便通过下载到本地的方式进行查看，可以考虑使用下列网址在线查看：
 
@@ -51,10 +66,6 @@ AOSP源码占用空间较大，有时不方便通过下载到本地的方式进�
 * Git repositories on android: <https://android.googlesource.com/>
 
 其它曾经关注的AOSP相关网址：
-
-* Building Android: <https://source.android.com/setup/build/building>
-* Codenames, Tags, and Build Numbers: <https://source.android.com/setup/start/build-numbers>
-* Graphics: <https://source.android.com/devices/graphics>
 
 * 将AOSP源码导入到Android Studio进行查看: <https://www.cnblogs.com/jiangxinnju/p/14426645.html>
 * Android构建系统: <https://www.cnblogs.com/jiangxinnju/p/14402000.html>
@@ -133,9 +144,6 @@ AOSP源码占用空间较大，有时不方便通过下载到本地的方式进�
 * Android控件--ProgressBar: <https://blog.csdn.net/hardworkingant/article/details/71910731>
 * 拖放框架: <https://developer.android.com/guide/topics/ui/drag-drop>
 
-* 自动填充服务: <https://developer.android.google.cn/reference/android/service/autofill/AutofillService>
-* 自动填充服务样例: <https://github.com/android/input-samples/tree/main/AutofillFramework>
-
 * Android核心分析: <https://blog.csdn.net/maxleng/category_9260799.html>
 * Android系统开篇: <http://gityuan.com/android/>
 * 对于android.intent.action.MAIN和android.intent.category.LAUNCHER的理解: <http://blog.csdn.net/lindroid20/article/details/51993247>
@@ -177,7 +185,6 @@ AOSP源码占用空间较大，有时不方便通过下载到本地的方式进�
 * Android属性allowBackup安全风险浅析: <http://www.freebuf.com/articles/terminal/60778.html>
 * Android签名机制之---签名过程详解: <http://blog.csdn.net/jiangwei0910410003/article/details/50402000>
 * android文件读写以及不同应用之间的文件读写操作: <http://blog.csdn.net/zyb243380456/article/details/7426449>
-* Android 权限的一些细节: <http://blog.csdn.net/u013553529/article/details/53167072>
 * Android 将自己的应用改为系统应用: <https://blog.csdn.net/xx326664162/article/details/53406933>
 * Android逆向之旅---解析编译之后的AndroidManifest文件格式: <https://blog.csdn.net/jiangwei0910410003/article/details/50568487>
 * Android DEX安全攻防战: <https://blog.csdn.net/androidsecurity/article/details/9428861>
@@ -187,20 +194,23 @@ AOSP源码占用空间较大，有时不方便通过下载到本地的方式进�
 * READ_EXTERNAL_STORAGE: <https://developer.android.com/reference/android/Manifest.permission#READ_EXTERNAL_STORAGE>
 * FileProvider: <https://developer.android.com/reference/androidx/core/content/FileProvider>
 * Contacts Provider: <https://developer.android.com/guide/topics/providers/contacts-provider>
-* 请求运行时权限: <https://developer.android.google.cn/training/permissions/requesting?hl=zh-cn#java>
 
 * 了解一下，Android 10中的APEX: <https://blog.csdn.net/Innost/article/details/103776120>
 * Android-APEX化之后如何替换对应的文件: <https://blog.csdn.net/cheriyou_/article/details/108540771>
 
 * 安卓应用在各大应用市场上架方法整理: <https://blog.csdn.net/niezhipeng8/article/details/79103436>
-* 从圆角到圆角: <https://zhuanlan.zhihu.com/p/29560646>
-* J 的艺术，R 的艺术: <http://www.hi-id.com/?p=3231>
 
 * Android8.0及以上，获取模拟器root权限: <https://blog.csdn.net/weixin_42814931/article/details/81253678>
 * Android真机安装sqlite3的方法: <http://www.cnblogs.com/jiangxinnju/p/8227625.html>
 * 使用 Intel HAXM 为 Android 模拟器加速，媲美真机: <http://www.cnblogs.com/beginor/archive/2013/01/13/2858228.html>
 * [Android] 为Android安装BusyBox —— 完整的bash shell: <https://www.cnblogs.com/xiaowenji/archive/2011/03/12/1982309.html>
 * MIUI ROM适配之旅第一天——认识Android手机: <http://www.miui.com/thread-402302-1-1.html>
+
+## Android相关的知识
+
+* 从圆角到圆角: <https://zhuanlan.zhihu.com/p/29560646>
+* J 的艺术，R 的艺术: <http://www.hi-id.com/?p=3231>
+* HDR详解 - 什么是HDR？<https://zhuanlan.zhihu.com/p/212141989>
 
 ## 动效
 
