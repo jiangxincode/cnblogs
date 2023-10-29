@@ -3,6 +3,8 @@
 * Markdown 语法说明 (简体中文版): <http://wowubuntu.com/markdown/>
 * Eclipse-Markdown-Editor-Plugin: <https://github.com/winterstein/Eclipse-Markdown-Editor-Plugin>
 
+* Typora: <https://typoraio.cn/>
+* MarkdownPad: <http://www.markdownpad.com/>
 * Online Markdown Editor, DILLINGER: <http://dillinger.io/>
 * Cmd Markdown: <https://www.zybuluo.com/mdeditor>
 * 马克飞象: <https://maxiang.io/>

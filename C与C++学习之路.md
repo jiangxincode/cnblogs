@@ -151,12 +151,13 @@
 * MinGW-w64下载地址:<https://sourceforge.net/projects/mingw-w64/files/mingw-w64/mingw-w64-release/>
 * What is difference between sjlj vs dwarf vs seh? <https://stackoverflow.com/questions/15670169/what-is-difference-between-sjlj-vs-dwarf-vs-seh>
 * MinGW: <http://www.mingw.org/>
-* TDM-GCC: <http://tdm-gcc.tdragon.net/>
 * cygwin: <http://www.cygwin.com/>
+* MSYS2: <https://www.msys2.org/>
 * 对话 UNIX: 在 Windows 上使用 Cygwin: <http://www.ibm.com/developerworks/cn/aix/library/au-spunix_cygwin/>
 * GTK+与MFC不完全对比: <http://blog.csdn.net/absurd/article/details/1091143>
 * 将 MFC 应用程序移植到 Linux: <https://www.ibm.com/developerworks/cn/linux/guitoolkit/l-mfc/index.html>
 * Enabling string conversion functions in MinGW: <http://tehsausage.com/mingw-to-string>
+* TDM-GCC: <https://jmeubank.github.io/tdm-gcc/>
 
 ## C++近场通讯开发
 
@@ -342,7 +343,7 @@ C/C++由于历史原因，编译，构建难度相对于目前主流的其他语
 
 ## Ctags
 
-* <https://sourceforge.net/projects/ctags/>
+* <https://github.com/universal-ctags/ctags>
 
 ## CLIPS
 

@@ -839,15 +839,10 @@ mvn deploy:deploy-file -DgroupId="edu.jiangxin" -DartifactId=”gcu” -Dversion
 * 程序员的绘图利器 — Graphviz：<http://blog.csdn.net/zhangskd/article/details/8250470>
 * Graphviz Eclipse plug-in：<https://github.com/abstratt/eclipsegraphviz>
 
-## sikuli
-
-* sikuli(Deprcated): <https://github.com/sikuli/sikuli>
-* SikuliX1: <https://github.com/RaiMan/SikuliX1>
-* SikuliX Docs: <https://sikulix.github.io/docs/>
-
 ## Selenium
 
 * Selenium: <https://www.selenium.dev/>
+* IE Driver Server: <https://www.selenium.dev/documentation/ie_driver_server/>
 
 ## JBoss
 
@@ -1038,7 +1033,7 @@ The yFiles diagramming software components are extensive class libraries that en
 * 中文分词器分词效果评估对比： <https://github.com/ysc/cws_evaluation>
 * 分词工具比较（转）：<http://www.cnblogs.com/jiangxinnju/p/5205363.html>
 * ik-analyze(java开源中文分词器): <https://code.google.com/p/ik-analyzer/>
-* ICTCLAS： <http://www.ictclas.org/index.html>
+* ICTCLAS： <https://github.com/NLPIR-team/NLPIR/tree/master/NLPIR%20SDK/NLPIR-ICTCLAS>
 
 ## 规则引擎
 

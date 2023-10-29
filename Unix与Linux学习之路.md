@@ -319,7 +319,7 @@
 * 安装GLX-Dock并进行配置
 * 安装clementine/osd-lyrics并进行配置，解决乱码问题，安装解码插件
 * 安装快盘，进行配快盘和ubuntu one
-* 安装filezilla/okular/meld
+* 安装okular/meld
 * 卸载Rhythmbox/empathy/account-plugin-*
 * 安装font-manager
 
@@ -357,20 +357,6 @@ Tools → Options... → LibreOffice → View → Graphics output (取消钩选U
 ## 小企鹅输入法突然无法使用
 
 查看一下是否安装了ibus，可在系统设置中的语言支持中重新把输入法改为ibus
-
-## Wireshark
-
-    sudo apt-get install wireshark
-
-出于安全方面的考虑，普通用户不能够打开网卡设备进行抓包，wireshark不建议用户通过sudo在root权限下运行，wireshark为ubuntu（Debian）用户提供了一种在非root下的解决方法。详细解释可以参考:
-
-    /usr/share/doc/wireshark-common/README.Debian  http://nariver.com/usr/share/doc/wireshark-common/README.Debian）
-
-具体步骤:
-
-    sudo dpkg-reconfigure wireshark-common
-    press the right arrow and enter for yes
-    sudo chmod +x /usr/bin/dumpcap
 
 ## 重装Ubuntu如何保留/home分区中的数据
 

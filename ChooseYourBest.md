@@ -33,6 +33,7 @@
 |[MindManager](https://www.mindmanager.com/cn/)|是|Windows/Mac|收费| |
 |[MindMaster](https://www.edrawsoft.cn/mindmaster/)|是|Windows/Mac/Linux|免费导出有水印| |
 |[Freeplane](https://sourceforge.net/projects/freeplane/)|是|Windows/Mac/Linux|开源免费 |FreeMind的比较活跃分支|
+|[DiagramDesigner](https://github.com/meesoft/DiagramDesigner)|是|Windows|开源免费| |
 |[FreeMind](https://freemind.sourceforge.net/)|否|Windows/Mac/Linux|开源免费| |
 |[freemind-mmx](https://github.com/jiangxin/freemind-mmx)|否|Windows/Mac/Linux|开源免费| |
 
@@ -49,6 +50,9 @@
 * wondershare(All-in-1 PDF Solution，PDF阅读器，PDF转换到其它文件等): <https://www.wondershare.com/products-solutions/office-productivity/document.html>
 * PDF-XChange: <https://www.tracker-software.com/product/pdf-xchange-editor>
 * ILovePDF: <https://www.ilovepdf.com>
+* CAJViewer: <https://cajviewer.cnki.net/>
+* 超星阅读器: <http://ssreader.chaoxing.com/>
+* WinDjView: <https://windjview.sourceforge.io/en/>
 
 ## 浏览器
 
@@ -98,6 +102,10 @@
 * ProxyTool: <https://github.com/githubvpn007/ProxyTool>
 * v2rayNvpn: <https://github.com/githubvpn007/v2rayNvpn>
 
+## 网络相关
+
+* Connectify Hotspot: <https://connectify.me/>
+
 ## 密码管理工具
 
 * KeePass: <https://keepass.info/>
@@ -107,6 +115,22 @@
 * authy: <https://authy.com/>
 * Microsoft Authenticator: <https://www.microsoft.com/en-us/security/mobile-authenticator-app/>
 
+## 压缩/解压缩
+
+* 7-Zip: <https://7-zip.org/>
+* WinRAR: <https://www.win-rar.com/>
+* 快压: <https://www.kpzip.com/>
+* 好压: <https://haozip.2345.cc/>
+* Bitser(exe解压): <https://www.bitser.org/>
+* UniExtract2: <https://github.com/Bioruebe/UniExtract2>
+
+## SSH/FTP
+
+* FileZilla: <https://filezilla-project.org/>
+* WinSCP: <https://winscp.net/eng/index.php>
+* PuTTY: <https://www.putty.org/>
+* Pietty: <https://www.csie.ntu.edu.tw/~piaip/pietty/download>
+
 ## Others
 
 * tesseract: <https://github.com/tesseract-ocr/tesseract>
@@ -115,13 +139,31 @@
 * Tess4J: <https://tess4j.sourceforge.net/>
 * VietOCR: <https://vietocr.sourceforge.net/>
 
+* 按键精灵: <http://www.anjian.com/>
+* sikuli(Deprcated): <https://github.com/sikuli/sikuli>
+* SikuliX1: <https://github.com/RaiMan/SikuliX1>
+* SikuliX Docs: <https://sikulix.github.io/docs/>
+* AutoHotkey: <https://www.autohotkey.com/>
+* SciTE4AutoHotkey: <https://www.autohotkey.com/scite4ahk/>
+
 * MotionPro(VPN工具): <https://client.arraynetworks.com.cn:8080/zh/troubleshooting>
 * realvnc(安全远程连接): <https://www.realvnc.com/>
 * Altova XMLSpy(Altova XMLSpy is the world's best selling JSON and XML editor for modeling, editing, transforming, and debugging related technologies.): <https://www.altova.com/xmlspy-xml-editor>
 
+* FFmpeg: <https://ffmpeg.org/>
+* K-Lite Codec Pack: <https://codecguide.com/download_kl.htm>
+* Shark007 Codecs: <https://shark007.net/index.html>
+* KMPlayer: <https://www.kmplayer.com/home>
 * potplayer(新版本不支持swf格式): <https://potplayer.daum.net/>
 * QQ影音（播放WMV有时没有声音）: <https://player.qq.com/>
 * VLC media player: <https://www.videolan.org/vlc/>
+
+* 龙卷风收音机: <https://cradio.live/>
+* 腾讯视频: <https://v.qq.com/>
+* 爱奇艺: <https://www.iqiyi.com/>
+* 优酷: <https://youku.com/>
+* 央视影音: <https://app.cctv.com/>
+* 暴风影音: <http://www.baofeng.com/>
 
 * HyperSnap：<http://www.hyperionics.com/>
 * Snipaste：<https://www.snipaste.com/index.html>
@@ -130,7 +172,16 @@
 * ScreenToGif: <https://www.screentogif.com/>
 * ClipMate: <http://www.thornsoft.com/>
 * babun：<https://github.com/babun/babun>
+* catdoc ported to Windows: <https://blog.brush.co.nz/2009/09/catdoc-windows/>
 * UltraISO: <https://cn.ultraiso.net/xiazai.html>
+* DAEMON Tools Lite: <https://www.daemon-tools.cc/chn/products/dtLite>
+* Sothink SWF Decompiler: <https://sothink.com/product/flashdecompiler/>
+* Sothink Logo Maker: <https://sothink.com/product/logo-design-software/>
+* Wondershare DVD Slideshow Builder Deluxe: <https://www.wondershare.com/pro/dvd-slideshow-builder-deluxe.html>
+* Wondershare Flash Gallery Factory Deluxe: <http://www.wondershare.com/pro/flash-gallery-factory-deluxe.html>
+* Action Script Viewer: <https://www.buraks.com/asv/>
+
+* 人人钢琴: <https://www.everyonepiano.com/Software.html>
 
 * Total Commander: <https://www.ghisler.com/index.htm>
 * Rapidee: <https://www.rapidee.com/en/about>
@@ -139,14 +190,24 @@
 Windows 10 already has this functionality built in so WizMouse is most useful if you're using earlier versions of Windows): <https://antibody-software.com/wizmouse>
 * ibat: <https://github.com/greatcodeeer/iBAT>
 * Binary Viewer(Binary Viewer can display file contents in binary, hexadecimal, octal, decimal and text formats): <https://www.proxoft.com/BinaryViewer.aspx>
+* Windows日志查看工具合集: <https://www.cnblogs.com/jiangxinnju/p/5456915.html>
 * NFOPad(NFOPad is a small, fast and flexible text editor and nfo viewer.): <https://truehumandesign.se/s_nfopad.php>
 
+* 小Q书桌: <https://guanjia.qq.com/help/xqsz.html>
+* Wox: <https://github.com/Wox-launcher/Wox>
+
+* P2PSearcher: <http://www.p2psearchers.cn/>
 * PanDownload: <http://pandownload.com/>
 * amule: <http://www.amule.org/>
+* WebSite eXtractor: <https://www.internet-soft.com/extractor.htm>
+* uTorrent: <https://www.utorrent.com/intl/zh_cn/>
 
+* Wireshark: <https://www.wireshark.org/>
 * httpwatch(HTTP sniffer): <https://www.httpwatch.com/>
 * Fiddler(Http sniffer): <https://www.telerik.com/fiddler>
 * Burp Suite(用于攻击web 应用程序的集成平台): <https://portswigger.net/burp>
+* 迅雷(Thunder): <https://dl.xunlei.com/>
+* 硕鼠(bigrats): <https://124.232.150.144/>
 
 * CoolFormat: <https://github.com/akof1314/CoolFormat>
 * Convert Between Programming Languages(The Most Accurate and Reliable Source Code Converters): <https://www.tangiblesoftwaresolutions.com/>
@@ -156,3 +217,5 @@ Windows 10 already has this functionality built in so WizMouse is most useful if
 * GIMP(Image Editor): <https://www.gimp.org/>
 * Eagle(设计师图片管理工具): <https://cn.eagle.cool/>
 * blender(3D CG): <https://www.blender.org/>
+
+* GrampsAIO(族谱绘制): <https://gramps-project.org/blog/>

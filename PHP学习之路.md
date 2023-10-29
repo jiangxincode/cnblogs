@@ -4,6 +4,7 @@
 
 * phpStudy: <http://www.phpstudy.net/>
 * WAMPSERVER: <http://www.wampserver.com/>
+* WATMServer服务管理器: <http://www.jspgen.com/cms/node.gen?id=9>
 * LNMP一键安装包: <http://lnmp.org/>
 * AppServ : Apache + PHP + MySQL: <http://www.appservnetwork.com/en/>
 * XAMPP Apache + MariaDB + PHP + Perl: <https://www.apachefriends.org/zh_cn/index.html>

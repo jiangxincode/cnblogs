@@ -3,11 +3,12 @@
 ## VSCode
 
 * Visual Studio Code: <https://code.visualstudio.com/Download>
-* Settings Sync: <https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync>
+* Settings Sync: <https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync>\
+* VSCode调试远程Linux机器上的C代码: <https://github.com/jiangxincode/data>
 
 ## VIM
 
-* <http://www.vim.org/>
+* vim/gvim: <http://www.vim.org/>
 * <http://vim.sourceforge.net/>
 * Vim documentation: usr_41: <http://vimdoc.sourceforge.net/htmldoc/usr_41.html>
 * map.txt: <http://vimcdoc.sourceforge.net/doc/map.html>
