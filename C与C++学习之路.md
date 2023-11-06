@@ -39,7 +39,10 @@
 
 ## Windows C++
 
+* Visual Studio: <https://visualstudio.microsoft.com/zh-hans/>
 * VISUAL ASSIST: <https://www.wholetomato.com/>
+* Spec Explorer 2010 Visual Studio Power Tool: <https://marketplace.visualstudio.com/items?itemName=SpecExplorerTeam.SpecExplorer2010VisualStudioPowerTool-5089>
+* Microsoft Visual Studio 2010 Visualization and Modeling Feature Pack: <https://learn.microsoft.com/en-us/previous-versions/dd460723(v=vs.110)>
 * /std (Specify Language Standard Version): <https://docs.microsoft.com/zh-cn/cpp/build/reference/std-specify-language-standard-version>
 * CRT Library Features: <https://docs.microsoft.com/en-us/cpp/c-runtime-library/crt-library-features>
 * UCRT 按字母顺序排列的函数参考: <https://docs.microsoft.com/zh-cn/cpp/c-runtime-library/reference/crt-alphabetical-function-reference>
@@ -223,38 +226,20 @@ C/C++由于历史原因，编译，构建难度相对于目前主流的其他语
 
 ## Glib/GTK+/Gnome
 
-* GLib Reference Manual: <https://developer.gnome.org/glib/stable/>
-* Glib Test Framework: <https://developer.gnome.org/glib/stable/glib-Testing.html>
+* GLib Reference Manual: <https://docs.gtk.org/glib/>
 * GLIB 常用数据结构介绍: <http://blog.csdn.net/billxin2012/article/category/5334329>
 * glib库简介: <http://liujian.is-programmer.com/posts/243.html>
 * glib库异步队列和线程池代码分析: <http://blog.csdn.net/ljl1704/article/details/17243429>
 
 * GTK+: <http://www.gtk.org/>
-* Part II. GTK+ Widgets and Objects: <https://developer.gnome.org/gtk3/stable/gtkobjects.html>
-* Migrating from GTK+ 2.x to GTK+ 3: <https://developer.gnome.org/gtk3/stable/gtk-migrating-2-to-3.html>
-* GTK+ 2.0 Tutorial: <https://developer.gnome.org/gtk-tutorial/stable/>
-* GTK+ 2.0 Tutorial(中文版): <http://www.huzheng.org/ebook/gtk2-tut/book1.html>
-* GTK-Doc: <http://www.gtk.org/gtk-doc/>
-* 在Windows下使用GTK+开发GUI应用程序: <http://blog.csdn.net/blackboyofsnp/article/details/3343045>
-* Ubuntu下GTK的安装、编译和测试: <http://www.cnblogs.com/niocai/archive/2011/07/15/2107472.html>
-* 《GTK+》编程基础: <http://guoyinghui2012.blog.163.com/blog/static/20871720020126294943228/>
+* GTK文档: <https://docs.gtk.org/>
 * 在gtk+程序中显示中文说明: <http://blog.chinaunix.net/uid-222028-id-2658485.html>
-* Gtk对于通常的gui程序，大家想做的事就是做一点事件处理(包括各种计算、文件操作等)，然后在界面上显示出来: <http://www.cnblogs.com/cy163/archive/2007/06/16/785341.html>
-* GTK+2.0 中的容器控件与布局技巧: <http://www.ibm.com/developerworks/cn/linux/l-gtk/part1/>
-* GTK编程: <http://jianlee.ylinux.org/Computer/C/gtk%E7%BC%96%E7%A8%8B.html>
-* GTK+ 2.0 教程－－信号和回调函数的原理: <http://blog.csdn.net/lastking/article/details/67356>
-* ubuntu 14.04 中找不到libgtk-x11-2.0.so: <http://www.cnblogs.com/bovenson/p/3684356.html>
-* GTK v1.2 Tutorial: <https://www.gtk.org/tutorial1.2/gtk_tut.html>
 
 * GNOME 开发者中心: <https://developer.gnome.org/>
-* Gnome下载地址: <http://ftp.gnome.org/pub/gnome/>
-* Port your application from GNOME 2 to GNOME 3: <https://developer.gnome.org/Gnome3PortingGuide/>
-* Vala - Compiler for the GObject type system: <https://wiki.gnome.org/Projects/Vala>
 
-* Anjuta(难用): <http://anjuta.org/>
-* Glade(难用): <https://glade.gnome.org/>
-* Glade User Interface Designer Reference Manual: <https://developer.gnome.org/gladeui/unstable/>
-* 用Glade和libGlade设计Gtk＋图形界面: <http://blog.sina.com.cn/s/blog_606c49090100fa30.html>
+* Vala: <https://gitlab.gnome.org/GNOME/vala>
+* Anjuta(不推荐): <https://gitlab.gnome.org/Archive/anjuta>
+* Glade(不推荐): <https://gitlab.gnome.org/GNOME/glade/>
 
 ### GTK中的delete_event和destroy
 

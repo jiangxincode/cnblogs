@@ -57,6 +57,7 @@
 ## SQL Server
 
 * SQL Server: <https://msdn.microsoft.com/library/bb545450.aspx>
+* AdventureWorks sample databases: <https://learn.microsoft.com/zh-cn/sql/samples/adventureworks-install-configure?view=sql-server-ver16&tabs=ssms>
 * Transact-SQL 参考: <https://msdn.microsoft.com/zh-cn/library/bb510741>(v=sql.105).aspx
 * TSQLT：<http://tsqlt.org/>
 * sqlcmd 实用工具：<http://msdn.microsoft.com/zh-cn/library/ms162773.aspx>

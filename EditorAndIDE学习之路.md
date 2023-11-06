@@ -3,7 +3,7 @@
 ## VSCode
 
 * Visual Studio Code: <https://code.visualstudio.com/Download>
-* Settings Sync: <https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync>\
+* Settings Sync: <https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync>
 * VSCode调试远程Linux机器上的C代码: <https://github.com/jiangxincode/data>
 
 ## VIM
