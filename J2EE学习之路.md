@@ -352,11 +352,12 @@
 
 ## Eclipse插件开发
 
+* Eclipse 4 RCP指南: <https://lucky-xiaohu.gitbooks.io/eclipse4-rcp-tutor/content/about.html>
+* Eclipse RCP (Rich Client Platform) - Tutorial: <https://www.vogella.com/tutorials/EclipseRCP/article.html>
 * Eclipse Plug-in & OSGI：<http://www.blogjava.net/zhuxing/category/33273.html>
 * Eclipse插件开发打包为Update Site：<http://forchenyun.iteye.com/blog/664241>
 * 插件开发总览：<http://www.cnblogs.com/xing901022/p/4115610.html>
-* Tycho - Building Eclipse plug-ins with maven: <http://www.eclipse.org/tycho/>
-* <http://wiki.eclipse.org/Tycho>
+* Tycho - Building Eclipse plug-ins with maven: <https://github.com/eclipse-tycho/tycho>
 * 使用Tycho来构建你的RCP程序: <http://chnic.iteye.com/category/337072>
 * Dependencies from pom.xml not considered by Eclipse in Tycho Project: <http://stackoverflow.com/questions/12476451/dependencies-from-pom-xml-not-considered-by-eclipse-in-tycho-project>
 
