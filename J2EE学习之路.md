@@ -340,7 +340,7 @@
 * Eclipse Mylyn: <https://projects.eclipse.org/projects/mylyn>
 * JavaScript Development Tools (JSDT): <https://www.eclipse.org/webtools/jsdt/>
 * EClim: <http://eclim.org>
-* Eclipse EditorList Plug-in: <https://sourceforge.net/projects/editorlist/>
+* ~~Eclipse EditorList Plug-in: <https://sourceforge.net/projects/editorlist/>~~
 * eclipse-games: <http://eclipse-games.sourceforge.net/>
 * MouseFeed: <http://marketplace.eclipse.org/content/mousefeed>
 * FileSync: <http://andrei.gmxhome.de/filesync/>
@@ -349,6 +349,7 @@
 * Eclipse EGit: <https://www.eclipse.org/egit/>
 * Spket IDE（提供Eclipse的插件）: <http://www.spket.com/>
 * Aptana（提供Eclipse插件）: <http://www.aptana.com/>
+* EasyShell: <https://github.com/anb0s/EasyShell>
 
 ## Eclipse插件开发
 
@@ -365,7 +366,7 @@
 
 * AmaterasUML: <https://github.com/takezoe/amateras-modeler>
 * Green UML: <http://green.sourceforge.net/index.html>
-* ModelGoon UML4Java: <https://github.com/riana/ModelGoon-UML4Java>
+* ModelGoon UML4Java(已停止维护): <https://github.com/riana/ModelGoon-UML4Java>
 * AgileJ(AgileJ StructureViews is a plugin for Eclipse which generates class diagrams reverse engineered from Java source code.): <http://www.agilej.com/>
 * StarUML: <https://staruml.io/>
 * Astah(JUDE): <https://astah.net/>
@@ -411,6 +412,11 @@
 * Darcula: <https://github.com/bulenkov/Darcula>
 * beautyeye: <https://github.com/JackJiang2011/beautyeye>
 * JavaFX/JavaFX Scene Builder: <https://docs.oracle.com/javase/8/javase-books.htm>
+
+## IBM JDK
+
+* ~~IBM Development Package for Eclipse: <https://www.ibm.com/support/pages/java-sdk-downloads-eclipse>~~
+* ~~IBM JDK: <https://www.ibm.com/support/pages/java-sdk-downloads-version-80>~~
 
 ## Hudson
 
@@ -467,7 +473,7 @@
 
 * 项目地址：<https://testng.org/>
 
-## ReportNG(已停止维护)
+## ~~ReportNG~~
 
     ReportNG is a simple HTML reporting plug-in for the TestNG unit-testing framework. It is intended as a replacement for the default TestNG HTML report. The default report is comprehensive but is not so easy to understand at-a-glance. ReportNG provides a simple, colour-coded view of the test results.
 
@@ -721,7 +727,6 @@ mvn deploy:deploy-file -DgroupId="edu.jiangxin" -DartifactId=”gcu” -Dversion
 
 * <http://www.myeclipseide.com/>
 * 官方中文网：<http://www.myeclipsecn.com/>
-* 中国下载地址：<http://www.myeclipseide.cn/>
 * 在MyEclipse下创建Java Web项目 入门（图文并茂）经典教程：<http://jijiaa12345.iteye.com/blog/1739754>
 
 ## Clover（收费）
@@ -1055,6 +1060,8 @@ The yFiles diagramming software components are extensive class libraries that en
 * <http://drools.org/>
 * <http://drools.org/download/download.html>
 * <http://docs.jboss.org/drools/release/6.0.1.Final/drools-docs/html_single/index.html>
+* ~~droolsjbpm-tools: <https://github.com/kiegroup/droolsjbpm-tools>~~
+* ~~Installing Drools plugin on Eclipse: <https://www.mastertheboss.com/bpm/drools/installing-drools-plugin-on-eclipse/>~~
 * Drools规则描述语言快速手册: <http://holbrook.github.io/2012/12/06/rule_language.html>
 * Why isn't Drools working with Java 8? <https://stackoverflow.com/questions/22493865/why-isnt-drools-working-with-java-8>
 

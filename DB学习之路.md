@@ -32,7 +32,7 @@
 * <http://dev.mysql.com/doc/#manual>
 * Workbench: <https://dev.mysql.com/downloads/workbench/>
 * SQLyog: <https://www.webyog.com/product/sqlyog>
-* MySQL-Front: <http://www.mysqlfront.de/>
+* ~~MySQL-Front: <http://www.mysqlfront.de/>~~
 * 5款常用mysql slow log分析工具的比较：<http://bbs.chinaunix.net/thread-1286359-1-1.html>
 * MYSQL常见错误及其解决方式: <http://www.cnblogs.com/jiangxinnju/p/5894225.html>
 * MySQL默认数据库: <http://www.cnblogs.com/jiangxinnju/p/5901845.html>
@@ -95,9 +95,11 @@
 ## Oracle Database
 
 * Oracle Database DownLoad: <http://www.oracle.com/technetwork/cn/database/enterprise-edition/downloads/index.html>
-* Oracle SQL Developer: <http://www.oracle.com/technetwork/developer-tools/sql-developer/overview/index.html>
-* Instant Client Downloads for Microsoft Windows (32-bit): <http://www.oracle.com/technetwork/topics/winsoft-085727.html>
-* Database Virtual Box Appliance / Virtual Machine: <http://www.oracle.com/technetwork/database/enterprise-edition/databaseappdev-vm-161299.html>
+* Oracle SQL Developer: <https://www.oracle.com/database/sqldeveloper/>
+* Instant Client Downloads for Microsoft Windows (32-bit): <https://www.oracle.com/database/technologies/instant-client/microsoft-windows-32-downloads.html>
+* Developer Day - Hands-on Database Application Development: <https://www.oracle.com/database/technologies/databaseappdev-vm.html>
+
+* Toad for Oracle: <https://www.quest.com/products/toad-for-oracle/>
 
 * <https://support.oracle.com/>
 * <https://asktom.oracle.com>
@@ -277,8 +279,8 @@ ORACLE_SID 实例ID
 
 ## DB2
 
-* 官网：<http://www-01.ibm.com/software/data/db2/>
-* DB2China：<http://www.db2china.net/>
+* 官网：<https://www.ibm.com/products/db2>
+* DB2 JDBC Driver: <https://www.ibm.com/support/pages/db2-jdbc-driver-versions-and-downloads>
 * Ubuntu 16.04安装DB2 Express C v11.1: <http://www.cnblogs.com/jiangxinnju/p/6571785.html>
 * DB2 9.5 数据库分区管理及应用实践: <https://www.ibm.com/developerworks/cn/data/library/techarticles/dm-0903zhanggy/>
 * 如何建立DB2分区数据库？: <http://www.cnblogs.com/jiangxinnju/p/6649305.html>
@@ -295,7 +297,7 @@ ORACLE_SID 实例ID
 
 ## SQLite
 
-* <http://www.sqlite.org/>
+* SQLite: <http://www.sqlite.org/>
 * DB Browser for SQLite: <http://sqlitebrowser.org/>
 * SQLite Expert: <http://www.sqliteexpert.com/index.html>
 * SQLCipher: <https://www.zetetic.net/sqlcipher/>
@@ -319,7 +321,9 @@ ORACLE_SID 实例ID
 
 ## Teradata
 
-* Teradata Express for VMware Player: <http://downloads.teradata.com/download/database/teradata-express-for-vmware-player>
+* Teradata JDBC Driver: <https://downloads.teradata.com/download/connectivity/jdbc-driver>
+* Teradata Vantage Express: <https://downloads.teradata.com/download/database/teradata-express/vmware>
+* Teradata on VMware Developer Tier Preconfigured: <https://downloads.teradata.com/download/database/teradata-on-vmware-developer-tier-preconfigured>
 * Teradata Aster: <http://developer.teradata.com/aster>
 * Teradata 教程: <http://www.w3cschool.cn/teradata/>
 

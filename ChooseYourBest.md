@@ -60,12 +60,6 @@
 * Fixefox: <http://www.firefox.com.cn/>
 * TorBrowser: <https://www.torproject.org/download/>
 
-* IE浏览器（不推荐，现已停止维护）
-* 蚂蚁浏览器（不推荐，曾支持Linux）：<https://www.myie9.com/>
-* 遨游浏览器（不推荐，曾支持Linux）：<https://www.maxthon.cn/>
-* 百度浏览器（不推荐，现已停止维护）
-* QQ浏览器(不推荐，)：<https://browser.qq.com/>
-
 ## Tools Online
 
 * 各种表格格式的互转(Excel/Markdown/LaTeX等): <https://tableconvert.com/>
@@ -83,8 +77,19 @@
 
 * PicGo: <https://github.com/Molunerfinn/PicGo>
 
-## 电脑性能测评
+## 电脑管理工具
 
+* 微PE工具箱: <https://www.wepe.com.cn/>
+* ~~大白菜(有大量捆绑): <https://www.dabaicai.com/>~~
+* balenaEtcher: <https://etcher.balena.io/>
+* 图拉丁吧工具箱：<https://www.tbtool.cn/>
+* AIDA: <https://www.aida64.com/downloads>
+* CPU-Z: <https://www.cpuid.com/softwares/cpu-z.html>
+* AS SSD Benchmark: <https://www.alex-is.de/PHP/fusion/infusions/news/news.php?readmore=61>
+* DiskGenius: <https://www.diskgenius.cn/>
+* SpaceSniffer: <http://www.uderzo.it/main_products/space_sniffer/>
+* UltraISO: <https://cn.ultraiso.net/xiazai.html>
+* DAEMON Tools Lite: <https://www.daemon-tools.cc/chn/products/dtLite>
 * 鲁大师: <https://www.ludashi.com/>
 
 ## 地质相关软件
@@ -173,8 +178,6 @@
 * ClipMate: <http://www.thornsoft.com/>
 * babun：<https://github.com/babun/babun>
 * catdoc ported to Windows: <https://blog.brush.co.nz/2009/09/catdoc-windows/>
-* UltraISO: <https://cn.ultraiso.net/xiazai.html>
-* DAEMON Tools Lite: <https://www.daemon-tools.cc/chn/products/dtLite>
 * Sothink SWF Decompiler: <https://sothink.com/product/flashdecompiler/>
 * Sothink Logo Maker: <https://sothink.com/product/logo-design-software/>
 * Wondershare DVD Slideshow Builder Deluxe: <https://www.wondershare.com/pro/dvd-slideshow-builder-deluxe.html>

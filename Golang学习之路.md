@@ -9,7 +9,7 @@
 * 深入解析Go: <https://github.com/tiancaiamao/go-internals>
 * The-Golang-Standard-Library-by-Example: <https://github.com/polaris1119/The-Golang-Standard-Library-by-Example>
 * Go 标准库 中文参考: <http://www.kancloud.cn/wizardforcel/golang-stdlib-ref/121475>
-* GoClipse: <https://github.com/GoClipse/goclipse>
+* ~~GoClipse: <https://github.com/GoClipse/goclipse>~~
 * liteide: <https://github.com/visualfc/liteide>
 
 * Go Search: <http://go-search.org/>
