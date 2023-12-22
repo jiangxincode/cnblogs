@@ -32,6 +32,7 @@
 * rethat: <https://www.redhat.com>
 * openSUSE: <https://www.opensuse.org/>
 * opensuse-guide: <https://lug.ustc.edu.cn/sites/opensuse-guide/>
+* manjaro: <https://manjaro.org/>
 
 * 鳥哥的 Linux 私房菜: <http://linux.vbird.org/>
 

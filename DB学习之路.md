@@ -359,7 +359,7 @@ ORACLE_SID 实例ID
 
 ## Hive
 
-* <http://hive.apache.org/>
+* Hive: <http://hive.apache.org/>
 * <https://cwiki.apache.org/confluence/display/Hive/Home>
 * 使用Hive读取Hbase中的数据: <http://victorzhzh.iteye.com/blog/972406>
 

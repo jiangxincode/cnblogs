@@ -2,7 +2,7 @@
 
 * <http://php.net/>
 
-* phpStudy: <http://www.phpstudy.net/>
+* phpStudy: <https://www.xp.cn/>
 * WAMPSERVER: <http://www.wampserver.com/>
 * WATMServer服务管理器: <http://www.jspgen.com/cms/node.gen?id=9>
 * LNMP一键安装包: <http://lnmp.org/>

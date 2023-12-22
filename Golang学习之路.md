@@ -1,7 +1,6 @@
 # Golang学习之路
 
-* <https://golang.org/>
-* <https://golang.org/doc/>
+* Go: <https://go.dev/>
 * Go (programming language): <https://en.wikipedia.org/wiki/Go_%28programming_language%29>
 * Go语言圣经（中文版）: <https://github.com/openownworld/gopl-zh>
 * Go 学习笔记: <https://github.com/qyuhen/book>

@@ -4,6 +4,7 @@
 
 * Java SE: <https://docs.oracle.com/javase>
 * Java Community Process: <https://www.jcp.org/>
+* Java Cryptography Extension (JCE) Unlimited Strength Jurisdiction Policy Files: <https://www.oracle.com/java/technologies/javase-jce-all-downloads.html>
 
 ## Java tutorial
 
@@ -192,7 +193,6 @@
 * 数字证书原理: <https://www.cnblogs.com/JeffreySun/archive/2010/06/24/1627247.html>
 * 彩虹表(Rainbow Tables)原理详解: <http://www.ha97.com/4009.html>
 * 使用浏览器的计算力，对抗密码破解：<https://www.cnblogs.com/index-html/p/frontend_kdf.html>
-* Installing Java Cryptography Extension unlimited strength jurisdiction policy files: <https://www.ibm.com/support/knowledgecenter/SSWPVP_2.5.0.3/com.ibm.sklm.doc_2.5.0.3/admin/tsk/tsk_ic_admin_backup_jce_policy_files.html>
 * 关于 Token，你应该知道的十件事: <http://ju.outofmemory.cn/entry/134189>
 * 10 Things You Should Know about Tokens: <https://auth0.com/blog/ten-things-you-should-know-about-tokens-and-cookies/>
 * 浅析ReDoS的原理与实践: <http://www.freebuf.com/articles/network/124422.html>
@@ -205,7 +205,7 @@
 
 * Jakarta EE: <https://en.wikipedia.org/wiki/Jakarta_EE>
 * Jakarta EE Platform Project: <https://eclipse-ee4j.github.io/jakartaee-platform/>
-* Java EE(Deprcated): <http://docs.oracle.com/javaee/>
+* ~~Java EE: <https://docs.oracle.com/javaee/7/index.html>~~
 
 * Oracle Java SE Support Roadmap: <https://www.oracle.com/java/technologies/java-se-support-roadmap.html>
 * Oracle Java SE Licensing FAQ: <https://www.oracle.com/java/technologies/javase/jdk-faqs.html>
@@ -362,6 +362,14 @@
 * 使用Tycho来构建你的RCP程序: <http://chnic.iteye.com/category/337072>
 * Dependencies from pom.xml not considered by Eclipse in Tycho Project: <http://stackoverflow.com/questions/12476451/dependencies-from-pom-xml-not-considered-by-eclipse-in-tycho-project>
 
+## RxJava
+
+* RxJava: Reactive Extensions for the JVM: <https://github.com/ReactiveX/RxJava>
+
+## Vert.x
+
+* Vert.x(Eclipse Vert.x Reactive applications on the JVM): <https://vertx.io/>
+
 ## UML
 
 * AmaterasUML: <https://github.com/takezoe/amateras-modeler>
@@ -382,7 +390,7 @@
 
 ## Tomcat
 
-* Apache Tomcat 8 Configuration Reference: <http://tomcat.apache.org/tomcat-8.0-doc/>
+* Apache Tomcat: <https://tomcat.apache.org/>
 * Security Considerations: <https://tomcat.apache.org/tomcat-8.0-doc/security-howto.html>
 * SSL/TLS Configuration HOW-TO: <https://tomcat.apache.org/tomcat-8.0-doc/ssl-howto.html>
 * Tomcat配置JNDI全局数据源: <http://tomcat.apache.org/tomcat-8.0-doc/jndi-datasource-examples-howto.html>
@@ -418,29 +426,12 @@
 * ~~IBM Development Package for Eclipse: <https://www.ibm.com/support/pages/java-sdk-downloads-eclipse>~~
 * ~~IBM JDK: <https://www.ibm.com/support/pages/java-sdk-downloads-version-80>~~
 
-## Hudson
+## 持续集成
 
-    用Java编写的持续集成（CI）工具。
-
-* <http://hudson-ci.org/>
-
-## Jenkins
-
-    用Java编写的一个开源持续集成工具。项目是在和Oracle发生争执后的来自于Hudson 的分支。
-
-* <https://jenkins-ci.org/>
-
-## Atlassian Bamboo
-
-    持续集成和交付工具，它将自动化构建、测试和发布捆绑到单个流程中。
-
-* <https://www.atlassian.com/software/bamboo/>
-
-## TeamCity
-
-    来自于JetBrains的一个基于Java构建的管理和持续集成服务器。
-
-* <https://www.jetbrains.com/teamcity/>
+* Jenkins: <https://jenkins-ci.org/>
+* ~~Hudson: <http://hudson-ci.org/>~~
+* Atlassian Bamboo: <https://www.atlassian.com/software/bamboo/>
+* TeamCity: <https://www.jetbrains.com/teamcity/>
 
 ## DbUnit
 
@@ -910,7 +901,7 @@ mvn deploy:deploy-file -DgroupId="edu.jiangxin" -DartifactId=”gcu” -Dversion
 * json中文网：<http://www.json.org.cn/index.htm>
 * JSON in Java [package org.json]: <https://github.com/stleary/JSON-java>
 * Json-lib: <https://sourceforge.net/projects/json-lib/>
-* fastjson: <http://mvnrepository.com/artifact/com.alibaba/fastjson>
+* fastjson: <https://github.com/alibaba/fastjson>
 * Eclipse Json Editor Plugin: <https://sourceforge.net/projects/eclipsejsonedit/>
 * Jackson: <http://fasterxml.com/>
 * Jackson: <http://wiki.fasterxml.com/JacksonDownload>
@@ -1134,22 +1125,18 @@ The yFiles diagramming software components are extensive class libraries that en
 * The Tomcat JDBC Connection Pool: <http://tomcat.apache.org/tomcat-8.0-doc/jdbc-pool.html>
 * Apache Commons Pool: <http://commons.apache.org/proper/commons-pool/index.html>
 
+## Commons DbUtils: JDBC Utility Component
+
+* <http://commons.apache.org/proper/commons-dbutils/>
+
 ## ZooKeeper
 
-* <http://zookeeper.apache.org/>
+* ZooKeeper: <http://zookeeper.apache.org/>
 
 ## Lucene
 
 * <http://lucene.apache.org/>
 * Lucene原理与代码分析: <http://www.cnblogs.com/forfuture1978/category/300665.html>
-
-## nutch
-
-* <http://nutch.apache.org/>
-
-## Heritrix
-
-* <https://github.com/internetarchive/heritrix3>
 
 ## Solr
 
@@ -1157,15 +1144,18 @@ The yFiles diagramming software components are extensive class libraries that en
 * solr教程，值得刚接触搜索开发人员一看: <http://blog.csdn.net/awj3584/article/details/16963525>
 * nutch1.8+solr 4 配置过程： <http://blog.csdn.net/hmbig2/article/details/22572473>
 
+## 爬虫库
+
+* nutch: <http://nutch.apache.org/>
+* Heritrix: <https://github.com/internetarchive/heritrix3>
+* crawler4j: <https://github.com/yasserg/crawler4j>
+
 ## Apache Flume
 
-* deprcated: <https://github.com/cloudera/flume>
-* <http://flume.apache.org/>
+    Flume is a distributed, reliable, and available service for efficiently collecting, aggregating, and moving large amounts of log data. It has a simple and flexible architecture based on streaming data flows. It is robust and fault tolerant with tunable reliability mechanisms and many failover and recovery mechanisms. It uses a simple extensible data model that allows for online analytic application.
+
+* Apache Flume: <http://flume.apache.org/>
 * 开源日志系统比较：<http://dongxicheng.org/search-engine/log-systems/>
-
-## Commons DbUtils: JDBC Utility Component
-
-* <http://commons.apache.org/proper/commons-dbutils/>
 
 ## curator
 
@@ -1229,3 +1219,7 @@ The yFiles diagramming software components are extensive class libraries that en
 ## Flex
 
 * Versions in the Flash Platform: <https://www.senocular.com/flash/tutorials/versions/>
+
+## JarScan
+
+* JarScan: <https://jarscan.com/>

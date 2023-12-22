@@ -1,6 +1,8 @@
 # OpenGL学习之路
 
 * OpenGL: <https://www.opengl.org/>
+* GLUT(The OpenGL Utility Toolkit): <https://www.opengl.org/resources/libraries/glut/>
+* freeglut: <https://freeglut.sourceforge.net/>
 * OpenGL Wiki: <http://khronos.org/opengl/wiki>
 * docs.GL: <http://docs.gl/#>
 

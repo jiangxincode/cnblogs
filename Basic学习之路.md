@@ -25,8 +25,6 @@
 * Quick Basic 常用的语句: <http://blog.pfan.cn/hange/1422.html>
 * All about QBasic and QuickBasic: <http://www.qbasic.net/>
 
-* <http://www.qb64.net/>
-
 ## Visual Basic/Visual Basic .NET
 
 * Developing Automated Tests Using NUnit and VB.NET: <http://www.byte-vision.com/NUnitAndVBArticle.aspx>
@@ -35,5 +33,7 @@
 
 ## Other
 
-* BASIC-256: <http://www.basic256.org/index_en>
-* PowerBASIC: <http://www.powerbasic.com/>
+* QB64: <https://github.com/QB64Team/qb64>
+* KBasic(Basic For Qt): <https://www.kbasic.org/index.html>
+* BASIC-256: <https://basic256.org/>
+* PowerBASIC: <https://www.powerbasic.com/>

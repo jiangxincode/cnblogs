@@ -34,6 +34,7 @@
 * DISLIN: <https://www.mps.mpg.de/dislin/>
 * ICU - International Components for Unicode(ICU4C/ICU4J): <http://site.icu-project.org/>
 * libevent: <http://libevent.org/>
+* ZeroMQ: <https://zeromq.org/>
 * List of numerical libraries: <https://en.wikipedia.org/wiki/List_of_numerical_libraries>
 * Standard Template Library Programmer's Guide: <http://www.sgi.com/tech/stl/>
 
@@ -144,13 +145,11 @@
 * Linux 桌面应用技术专题: <http://www.ibm.com/developerworks/cn/linux/theme/desktop/index.html>
 * Linux系统调用列表: <http://www.ibm.com/developerworks/cn/linux/kernel/syscall/part1/appendix.html>
 * Linux 套接字编程中的 5 个隐患: <http://www.ibm.com/developerworks/cn/linux/l-sockpit/>
-* 使用 GLib 工具集管理 C 数据帖子发表于: <http://forum.ubuntu.org.cn/viewtopic.php?p=2614850>
 * Linux静态/动态链接库的创建和使用: <https://blog.csdn.net/hcj2002/article/details/712146>
-* 基于X的GNOME、GTK、GDK、XLib、GLib等之间的关系: <http://socol.iteye.com/blog/579718>
 
 ## Windows/Linux剪不断理还乱
 
-* MinGW-w64(推荐): <http://mingw-w64.org/>
+* MinGW-w64(推荐): <https://www.mingw-w64.org/>
 * MinGW-w64下载地址:<https://sourceforge.net/projects/mingw-w64/files/mingw-w64/mingw-w64-release/>
 * What is difference between sjlj vs dwarf vs seh? <https://stackoverflow.com/questions/15670169/what-is-difference-between-sjlj-vs-dwarf-vs-seh>
 * MinGW: <http://www.mingw.org/>
@@ -234,6 +233,8 @@ C/C++由于历史原因，编译，构建难度相对于目前主流的其他语
 * GTK+: <http://www.gtk.org/>
 * GTK文档: <https://docs.gtk.org/>
 * 在gtk+程序中显示中文说明: <http://blog.chinaunix.net/uid-222028-id-2658485.html>
+* 使用 GLib 工具集管理 C 数据帖子发表于: <http://forum.ubuntu.org.cn/viewtopic.php?p=2614850>
+* 基于X的GNOME、GTK、GDK、XLib、GLib等之间的关系: <http://socol.iteye.com/blog/579718>
 
 * GNOME 开发者中心: <https://developer.gnome.org/>
 
@@ -285,7 +286,6 @@ C/C++由于历史原因，编译，构建难度相对于目前主流的其他语
 * CppUnit源码解读: <http://morningspace.51.net/resource/cppunit/cppunit_anno.html>
 
 * C Unit Testing Framework: <https://sourceforge.net/projects/cunit/>
-
 * Parasoft C/C++test: <https://www.parasoft.com/products/ctest>
 
 ## 日志
