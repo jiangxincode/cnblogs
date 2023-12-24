@@ -5,6 +5,10 @@
 
 * Python Enhancement Proposals: <http://legacy.python.org/dev/peps/>
 
+* ActivePython: <http://www.activestate.com/activepython>
+* IronPython: <https://github.com/IronLanguages/ironpython2>
+* Jython: <http://www.jython.org/>
+
 ## Python基础知识
 
 * Python注释: <https://blog.51cto.com/linben/1296196>
@@ -19,13 +23,6 @@
 * linux怎么改python默认版本: <https://jingyan.baidu.com/article/0f5fb0992adeeb6d8334ea12.html>
 * Python退格键出现方块: <https://blog.csdn.net/gsls200808/article/details/45968785>
 * 在python交互式环境中,在不关闭窗口的情况在如何清除,之前的语句: <https://zhidao.baidu.com/question/281523954.html>
-
-## 发行版和实现
-
-* ActivePython: <http://www.activestate.com/activepython>
-
-* IronPython: <https://github.com/IronLanguages/ironpython2>
-* Jython: <http://www.jython.org/>
 
 ## IDE/工具/三方库
 
@@ -80,5 +77,6 @@
 
 ## 其它
 
+* wxPython: <https://wxpython.org/>
 * pythonchallenge: <http://www.pythonchallenge.com/>
 * Swaroop C H: <http://www.swaroopch.com/>

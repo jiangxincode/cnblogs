@@ -737,41 +737,17 @@ mvn deploy:deploy-file -DgroupId="edu.jiangxin" -DartifactId=”gcu” -Dversion
 * VisualVM: <http://visualvm.java.net/>
 * arthas: <https://github.com/alibaba/arthas>
 
-## Eclipse Class Decompiler
+## 反编译
 
-* Eclipse Class Decompiler——Java反编译插件: <https://github.com/cnfree/Eclipse-Class-Decompiler>
-* Eclipse Class Decompiler -> Enhanced Class Decompiler: <https://github.com/cnfree/Eclipse-Class-Decompiler/issues/36>
-* Enhanced Class Decompiler: <https://github.com/ecd-plugin/ecd>
-
-## JD(Java Decompiler)
-
-* 项目地址及安装说明：<http://jd.benow.ca/>
-
-注：不支持命令行使用，因而很难批量编译。
-
-## jad
-
-* jad: <http://varaneckas.com/jad/>
-* jadclipse: <https://sourceforge.net/projects/jadclipse/>
-
-注：jad支持命令行方式使用，最新版本为1.5.8g，支持的class版本过低。经常出现问题：The class file version is 48.0 (only 45.3, 46.0 and 47.0 are supported)。还有一个工具uuDeJava，也是基于jad，所以估计也难以避免这个问题。
-
-## jdec
-
-* <http://jdec.sourceforge.net/>
-* Jode Eclipse Plugin: <http://blog.technoetic.com/open-source/jode-eclipse-plugin/>
-
-## JODE
-
-    JODE is a java package containing a decompiler and an optimizer (aka obfuscator ;-) for java.
-
-* <https://sourceforge.net/projects/jode/>
-
-## DJ Java Decompiler
-
-* <http://dj.navexpress.com/>
-
-注：收费软件，没有试用过
+* ~~Eclipse Class Decompiler——Java反编译插件: <https://github.com/cnfree/Eclipse-Class-Decompiler>~~
+* Enhanced Class Decompiler(fork from Eclipse Class Decompiler): <https://github.com/ecd-plugin/ecd>
+* JD(Java Decompiler，不支持命令行使用，无法批量编译)：<https://java-decompiler.github.io/>
+* ~~jad(支持命令行方式使用，支持的class版本过低): <http://varaneckas.com/jad/>~~
+* ~~jadclipse: <https://sourceforge.net/projects/jadclipse/>~~
+* ~~jdec(支持命令行方式使用，支持的class版本过低): <http://jdec.sourceforge.net/>~~
+* ~~JODE(Java Optimize and Decompile Environment, ，支持的class版本过低): <https://sourceforge.net/projects/jode/>~~
+* ~~Jode Eclipse Plugin: <http://blog.technoetic.com/open-source/jode-eclipse-plugin/>~~
+* DJ Java Decompiler(收费软件): <http://www.neshkov.com/dj.html>
 
 ## ProGuard
 

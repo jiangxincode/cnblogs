@@ -1,13 +1,18 @@
 # PHP学习之路
 
-* <http://php.net/>
+* PHP: <https://www.php.net/>
 
+* Apache HTTP Server: <https://httpd.apache.org/>
+
+* phpMyAdmin: <https://www.phpmyadmin.net/>
 * phpStudy: <https://www.xp.cn/>
 * WAMPSERVER: <http://www.wampserver.com/>
 * WATMServer服务管理器: <http://www.jspgen.com/cms/node.gen?id=9>
 * LNMP一键安装包: <http://lnmp.org/>
 * AppServ : Apache + PHP + MySQL: <http://www.appservnetwork.com/en/>
 * XAMPP Apache + MariaDB + PHP + Perl: <https://www.apachefriends.org/zh_cn/index.html>
+
+* Zend Optimizer，Zend Guard Loader 和 Zend Opcache 三者之间的区别: <https://www.cnblogs.com/flyfish2012/p/9577451.html>
 
 ## PHPUnit
 

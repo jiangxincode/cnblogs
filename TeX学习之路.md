@@ -21,6 +21,7 @@
 * LyX: <http://www.lyx.org/>
 * BaKoMa TeX Word: <http://www.bakoma-tex.com/>
 * Word-to-LaTeX Converter: <http://www.wordtolatex.com/>
+* MathType: <https://www.wiris.com/en/mathtype/>
 
 * The Comprehensive TEX Archive Network(CTAN): <http://www.ctan.org/>
 * LaTeX – A document preparation system: <https://latex-project.org/>

@@ -5,36 +5,31 @@
 * <https://common-lisp.net/index.html>
 
 * Clozure Common Lisp: <http://ccl.clozure.com/>
+* Steel Bank Common Lisp(SBCL): <https://sourceforge.net/projects/sbcl/>
 * CLISP - an ANSI Common Lisp: <https://sourceforge.net/projects/clisp/>
 * Allegro CL: <http://franz.com/products/allegrocl/>
 * CMUCL: <http://www.cons.org/cmucl/>
-* Steel Bank Common Lisp: <https://sourceforge.net/projects/sbcl/>
 
 * LispWorks: <http://www.lispworks.com/>
 * Common Lisp HyperSpec: <http://www.lispworks.com/documentation/HyperSpec/Front/index.htm>
 
 * L-99: Ninety-Nine Lisp Problems: <http://www.ic.unicamp.br/~meidanis/courses/mc336/2006s2/funcional/L-99_Ninety-Nine_Lisp_Problems.html>
 * Quicklisp: <https://www.quicklisp.org/>
-* AspectL: <https://common-lisp.net/project/aspectl/>
+* AspectL: <https://aspectl.common-lisp.dev/>
 * lispforum: <http://www.lispforum.com/>
-* newLISP: <http://www.newlisp.org/index.cgi?Home>
-* DaanSystems: <http://www.daansystems.com/>
-* My Emacs For Common Lisp: <http://nakrakiiya.github.io/mefcl/>
 * Lisp: Common Lisp, Racket, Clojure, Emacs Lisp: <http://hyperpolyglot.org/lisp>
-* SLIME: The Superior Lisp Interaction Mode for Emacs: <https://common-lisp.net/project/slime/>
-* <https://github.com/slime/slime/>
-* Lispbox: <https://common-lisp.net/project/lispbox/>
-* slimv: <https://github.com/kovisoft/slimv>
-* Jabberwocky a Lisp IDE: <https://sourceforge.net/projects/jabberwocky/>
-* Limp: <http://www.vim.org/scripts/script.php?script_id=2219>
-
-* 使用 Cusp Eclipse 插件开发 Lisp 应用程序：<https://www.ibm.com/developerworks/cn/opensource/os-eclipse-lispcusp/>
-* Lisp Programming with Cusp: <http://www.sergeykolos.com/cusp/intro/>
-
-* Dandelion: <http://sourceforge.net/projects/dandelion-ecl/>
-* Dandelion - Eclipse Lisp Plugin：<http://blog.csdn.net/yang_7_46/article/details/26445133>
+* SLIME: Superior Lisp Interaction Mode for Emacs: <https://github.com/slime/slime/>
+* slimv: Superior Lisp Interaction Mode for Vim: <https://github.com/kovisoft/slimv>
+* lispide: <https://github.com/daansystems/lispide>
+* Dandelion: <https://github.com/Ragnaroek/dandelion>
+* ~~My Emacs For Common Lisp: <https://github.com/nakrakiiya/mefcl>~~
+* ~~Lispbox: <https://github.com/andreer/lispbox/>~~
+* ~~Jabberwocky a Lisp IDE: <https://sourceforge.net/projects/jabberwocky/>~~
+* ~~Limp: <http://www.vim.org/scripts/script.php?script_id=2219>~~
+* ~~Cusp(Cusp is an Eclipse IDE plugin that runs on top of SBCL)：<https://www.cliki.net/Cusp>~~
 
 * Racket: <http://racket-lang.org/>
+* newLISP: <http://www.newlisp.org/index.cgi?Home>
 * MIT/GNU Scheme: <http://www.gnu.org/software/mit-scheme/>
 * The Common Foreign Function Interface(cffi): <https://common-lisp.net/project/cffi/>
 * milkypostman/melpa: <https://github.com/milkypostman/melpa>
@@ -42,7 +37,6 @@
 * MELPA: <http://melpa.org/>
 * CLOCC - Common Lisp Open Code Collection: <https://sourceforge.net/projects/clocc/>
 * Common Lisp配置：SBCL: <http://blog.csdn.net/sw2wolf/article/details/7192721>
-
 
 * MIT/GNU Scheme: <http://groups.csail.mit.edu/mac/projects/scheme/>
 * Lisp之根源: <http://daiyuwen.freeshell.org/gb/rol/roots_of_lisp.html>
@@ -77,6 +71,5 @@
 
 ## Clojure
 
-* Clojure: <http://clojure.org/>
-* Getting Started: <http://dev.clojure.org/display/doc/Getting+Started>
+* Clojure: <https://clojure.org/>
 * Leiningen(一个自动化构建和依赖性管理工具，用于使用Clojure编程语言写的软件项目): <http://leiningen.org/>

@@ -45,6 +45,11 @@
 * 永中Office: <http://www.yozosoft.com/>
 * Prezi: <https://prezi.com/>
 
+## 虚拟机软件
+
+* VMware Workstation Player: <https://www.vmware.com/cn/products/workstation-player.html>
+* VirtualBox: <https://www.virtualbox.org/>
+
 ## PDF
 
 * wondershare(All-in-1 PDF Solution，PDF阅读器，PDF转换到其它文件等): <https://www.wondershare.com/products-solutions/office-productivity/document.html>
@@ -172,6 +177,8 @@
 
 * HyperSnap：<http://www.hyperionics.com/>
 * Snipaste：<https://www.snipaste.com/index.html>
+* PicPick: <https://picpick.app/zh/>
+* Snagit: <https://www.techsmith.com/screen-capture.html>
 * FastStone Capture: <http://www.softerviews.org/FastStone.html>
 * OBS Studio: <https://obsproject.com/>
 * ScreenToGif: <https://www.screentogif.com/>
@@ -206,6 +213,7 @@ Windows 10 already has this functionality built in so WizMouse is most useful if
 * uTorrent: <https://www.utorrent.com/intl/zh_cn/>
 
 * Wireshark: <https://www.wireshark.org/>
+* Omnipeek(Network protocol analyzer): <https://www.liveaction.com/products/omnipeek/>
 * httpwatch(HTTP sniffer): <https://www.httpwatch.com/>
 * Fiddler(Http sniffer): <https://www.telerik.com/fiddler>
 * Burp Suite(用于攻击web 应用程序的集成平台): <https://portswigger.net/burp>
@@ -222,3 +230,5 @@ Windows 10 already has this functionality built in so WizMouse is most useful if
 * blender(3D CG): <https://www.blender.org/>
 
 * GrampsAIO(族谱绘制): <https://gramps-project.org/blog/>
+
+* 坚果云: <https://www.jianguoyun.com/>
