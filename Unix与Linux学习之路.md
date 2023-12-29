@@ -65,6 +65,7 @@
 * 理解Linux系统的日志: <http://blog.donews.com/zhaiming/archive/2006/12/01/1088458.aspx>
 * linux时间和时区修改（附suse）: <http://chopper.blog.51cto.com/3946170/1095274>
 * linux中时间设置date、hwclock、clock：<http://lomomo.blog.51cto.com/65441/277618>
+* Linux&Windows双系统时间不一致解决方案: <https://blog.csdn.net/sunchengyun/article/details/126995040>
 * 通过命令行查找一个IP的地理位置信息: <http://www.geekfan.net/7863/>
 * 多终端管理器tmux使用详解: <http://blog.csdn.net/stelalala/article/details/9025691>
 * Linux系统里如何彻底的清空屏幕？: <http://www.vaikan.com/how-to-clear-the-terminal-screen-for-real-in-case-of-linux/>
@@ -150,8 +151,6 @@
 * httpry(HTTP logging and information retrieval tool ): <https://github.com/jbittel/httpry>
 * iproute2: <https://en.wikipedia.org/wiki/Iproute2>
 * GNU Binutils(objdump/gprof/strings): <https://sourceware.org/binutils/>
-* tcpdump: <https://github.com/the-tcpdump-group/tcpdump>
-* tcpdump捕捉样例: <http://www.cnblogs.com/jiangxinnju/p/6012867.html>
 * indent: <https://www.gnu.org/software/indent/>
 * cproto: <https://sourceforge.net/projects/cproto/>
 * ttyrec 和 ttyplay(记录、保存和播放终端会话软件): <http://0xcc.net/ttyrec/>

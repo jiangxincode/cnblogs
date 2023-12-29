@@ -108,14 +108,16 @@
 
 ## 代理
 
+* 自2023年11月2日起，中国开发者在GitHub上删除或存档翻墙工具: <https://github.com/net4people/bbs/issues/303#issuecomment-1792177030>
+* ~~clash: <https://github.com/Dreamacro/clash>~~
+* ~~Clash for Android: <https://github.com/Kr328/ClashForAndroid>~~
+* ~~Clash for Windows: <https://github.com/Fndroid/clash_for_windows_pkg>~~
+* ~~Clash Verge：<https://github.com/zzzgydi/clash-verge>~~
 * Shadowsocks: <https://github.com/shadowsocks/shadowsocks-windows>
-* clash: <https://github.com/Dreamacro/clash>
-* Clash for Android: <https://github.com/Kr328/ClashForAndroid>
-* Clash for Windows: <https://github.com/Fndroid/clash_for_windows_pkg>
-* Clash for Windows文档：<https://fndroid.github.io/clash-win-docs/>
 * proxy: <https://github.com/githubvpn007/proxy>
 * ProxyTool: <https://github.com/githubvpn007/ProxyTool>
 * v2rayNvpn: <https://github.com/githubvpn007/v2rayNvpn>
+* ~~Freegate: <https://github.com/freegate-release/>~~
 
 ## 网络相关
 
