@@ -37,6 +37,8 @@
 * ZeroMQ: <https://zeromq.org/>
 * List of numerical libraries: <https://en.wikipedia.org/wiki/List_of_numerical_libraries>
 * Standard Template Library Programmer's Guide: <http://www.sgi.com/tech/stl/>
+* libiconv: <https://www.gnu.org/software/libiconv/>
+* GSL - GNU Scientific Library: <https://www.gnu.org/software/gsl/>
 
 ## Windows C++
 
@@ -152,9 +154,11 @@
 * MinGW-w64(推荐): <https://www.mingw-w64.org/>
 * MinGW-w64下载地址:<https://sourceforge.net/projects/mingw-w64/files/mingw-w64/mingw-w64-release/>
 * What is difference between sjlj vs dwarf vs seh? <https://stackoverflow.com/questions/15670169/what-is-difference-between-sjlj-vs-dwarf-vs-seh>
-* MinGW: <http://www.mingw.org/>
+* MinGW: Minimalist GNU for Windows Files, A native Windows port of the GNU Compiler Collection (GCC): <https://sourceforge.net/projects/mingw/>
 * cygwin: <http://www.cygwin.com/>
 * MSYS2: <https://www.msys2.org/>
+* ~~GnuWin: <https://sourceforge.net/projects/getgnuwin32/>~~
+* ~~UnxUtils: <https://sourceforge.net/projects/unxutils/>~~
 * 对话 UNIX: 在 Windows 上使用 Cygwin: <http://www.ibm.com/developerworks/cn/aix/library/au-spunix_cygwin/>
 * GTK+与MFC不完全对比: <http://blog.csdn.net/absurd/article/details/1091143>
 * 将 MFC 应用程序移植到 Linux: <https://www.ibm.com/developerworks/cn/linux/guitoolkit/l-mfc/index.html>
@@ -309,6 +313,10 @@ C/C++由于历史原因，编译，构建难度相对于目前主流的其他语
 * LibreSSL: <http://www.libressl.org/>
 * OpenSSL 在windows系统下的编译全解: <https://blog.csdn.net/danscort2000/article/details/81300248>
 * 使用OpenSSL实现X25519秘钥协商功能：<https://www.cnblogs.com/jiangxinnju/p/12615280.html>
+
+## MPI
+
+* Open MPI(Open Source High Performance Computing): <https://www.open-mpi.org/>
 
 ## XML
 

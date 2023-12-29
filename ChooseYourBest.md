@@ -49,6 +49,7 @@
 
 * VMware Workstation Player: <https://www.vmware.com/cn/products/workstation-player.html>
 * VirtualBox: <https://www.virtualbox.org/>
+* VMTransferFiles: <http://www.newesttools.com/vmtransfer.php>
 
 ## PDF
 
@@ -100,6 +101,10 @@
 ## 地质相关软件
 
 * ROCKWORKS(RockWorks是一个综合软件程序，用于为环境、岩土工程、采矿和石油行业创建2D和3D地图、日志和横截面、地质模型、体积报告和一般地质图): <https://www.rockware.com/product/rockworks/>
+* GeoCorelDRAW: <http://bbs.3s001.com/thread-33301-1-1.html>
+* SAC(Seismic Analysis Code): <https://ds.iris.edu/ds/nodes/dmc/software/downloads/sac>
+* rdseed: <https://ds.iris.edu/ds/nodes/dmc/software/downloads/rdseed/>
+* Visual MINTEQ: <https://vminteq.lwr.kth.se/>
 
 ## 代理
 
@@ -158,7 +163,6 @@
 
 * MotionPro(VPN工具): <https://client.arraynetworks.com.cn:8080/zh/troubleshooting>
 * realvnc(安全远程连接): <https://www.realvnc.com/>
-* Altova XMLSpy(Altova XMLSpy is the world's best selling JSON and XML editor for modeling, editing, transforming, and debugging related technologies.): <https://www.altova.com/xmlspy-xml-editor>
 
 * FFmpeg: <https://ffmpeg.org/>
 * K-Lite Codec Pack: <https://codecguide.com/download_kl.htm>
@@ -190,6 +194,7 @@
 * Wondershare DVD Slideshow Builder Deluxe: <https://www.wondershare.com/pro/dvd-slideshow-builder-deluxe.html>
 * Wondershare Flash Gallery Factory Deluxe: <http://www.wondershare.com/pro/flash-gallery-factory-deluxe.html>
 * Action Script Viewer: <https://www.buraks.com/asv/>
+* install-us: <http://www.install-us.com/>
 
 * 人人钢琴: <https://www.everyonepiano.com/Software.html>
 
@@ -211,12 +216,6 @@ Windows 10 already has this functionality built in so WizMouse is most useful if
 * amule: <http://www.amule.org/>
 * WebSite eXtractor: <https://www.internet-soft.com/extractor.htm>
 * uTorrent: <https://www.utorrent.com/intl/zh_cn/>
-
-* Wireshark: <https://www.wireshark.org/>
-* Omnipeek(Network protocol analyzer): <https://www.liveaction.com/products/omnipeek/>
-* httpwatch(HTTP sniffer): <https://www.httpwatch.com/>
-* Fiddler(Http sniffer): <https://www.telerik.com/fiddler>
-* Burp Suite(用于攻击web 应用程序的集成平台): <https://portswigger.net/burp>
 * 迅雷(Thunder): <https://dl.xunlei.com/>
 * 硕鼠(bigrats): <https://124.232.150.144/>
 
@@ -228,7 +227,21 @@ Windows 10 already has this functionality built in so WizMouse is most useful if
 * GIMP(Image Editor): <https://www.gimp.org/>
 * Eagle(设计师图片管理工具): <https://cn.eagle.cool/>
 * blender(3D CG): <https://www.blender.org/>
+* BusinessCards MX(名片制作工具): <https://www.businesscards-mx.com/>
 
 * GrampsAIO(族谱绘制): <https://gramps-project.org/blog/>
+* Asymptote(2D & 3D TeX-Aware Vector Graphics Language): <https://sourceforge.net/projects/asymptote/>
+
+* docx2txt: <https://sourceforge.net/projects/docx2txt/>
+* txt2tags: <https://github.com/txt2tags/txt2tags>
+
+* Wireshark: <https://www.wireshark.org/>
+* Omnipeek(Network protocol analyzer): <https://www.liveaction.com/products/omnipeek/>
+* httpwatch(HTTP sniffer): <https://www.httpwatch.com/>
+* Fiddler(Http sniffer): <https://www.telerik.com/fiddler>
+* Burp Suite(用于攻击web 应用程序的集成平台): <https://portswigger.net/burp>
+* tcpdump: <https://github.com/the-tcpdump-group/tcpdump>
+* tcpdump捕捉样例: <http://www.cnblogs.com/jiangxinnju/p/6012867.html>
+* WinDump: <https://www.winpcap.org/windump/>
 
 * 坚果云: <https://www.jianguoyun.com/>

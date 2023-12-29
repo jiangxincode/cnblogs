@@ -45,9 +45,11 @@
 * emacswiki: <http://www.emacswiki.org/emacs/>
 * GNU Emacs Manuals Online: <http://www.gnu.org/software/emacs/manual/>
 
-## ultraedit
+## UltraEdit
 
-* <http://www.ultraedit.com/>
+* UltraEdit: <https://www.ultraedit.com/products/ultraedit/>
+* UEStudio: <https://www.ultraedit.com/products/uestudio/>
+* UltraCompare: <https://www.ultraedit.com/products/ultracompare/>
 * User-submitted wordfiles for UltraEdit/UEStudio: <http://www.ultraedit.com/downloads/extras/wordfiles.html>
 
 ## Sublime Text
@@ -80,10 +82,11 @@
 * geany: <http://www.geany.org/Download/Extras>
 * Lime Text: <http://limetext.org/>
 * Scintilla: <http://www.scintilla.org/>
-* xmlspy: <https://www.altova.com/xmlspy.html>
+* XMLSpy(Altova XMLSpy is the world's best selling JSON and XML editor for modeling, editing, transforming, and debugging related technologies.): <https://www.altova.com/xmlspy-xml-editor>
 * Bluefish: <http://bluefish.openoffice.nl/index.html>
 * codelite: <http://www.codelite.org/>
 * kdevelop：<https://www.kdevelop.org/>
 * xcode: <https://developer.apple.com/xcode/>
 * QtCreator: <https://www.qt.io/qt-features-libraries-apis-tools-and-ide/#ide>
 * SlickEdit: <https://www.slickedit.com/products/slickedit>
+* ReText(Simple but powerful editor for Markdown and reStructuredText): <https://github.com/retext-project/retext>

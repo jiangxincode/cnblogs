@@ -14,6 +14,7 @@
 * Linux online: <https://code.woboq.org/linux/linux/>
 * VGER.KERNEL.ORG(provide email list services for the linux kernel developers): <http://vger.kernel.org/>
 * GNU Operating System: <http://www.gnu.org/>
+* Free Software Foundation (FSF): <https://www.fsf.org/>
 * Linux Professional Institute(LPI is the global certification standard and career support organization for open source professionals): <http://www.lpi.org/>
 * <https://en.wikipedia.org/wiki/Linux>
 * <http://distrowatch.com/index.php>
@@ -96,7 +97,6 @@
 * shell脚本“syntax error:unexpected end of file”解决方案 : <http://renyongjie668.blog.163.com/blog/static/1600531201172803244846/>
 * String contains in Bash: <http://stackoverflow.com/questions/229551/string-contains-in-bash>
 * Could not get lock /var/lib/apt/lists/lock - open: <http://blog.csdn.net/zyxlinux888/article/details/6358615>
-* tcpdump捕捉样例: <http://www.cnblogs.com/jiangxinnju/p/6012867.html>
 * Slow Server? This is the Flow Chart You're Looking For: <http://blog.scoutapp.com/articles/2014/07/31/slow_server_flow_chart>
 * 设置Linux系统的空闲等待时间TMOUT: <http://zzkai.blog.51cto.com/804611/1352964>
 * Linux下chkconfig命令详解: <http://www.cnblogs.com/panjun-Donet/archive/2010/08/10/1796873.html>
@@ -151,6 +151,7 @@
 * iproute2: <https://en.wikipedia.org/wiki/Iproute2>
 * GNU Binutils(objdump/gprof/strings): <https://sourceware.org/binutils/>
 * tcpdump: <https://github.com/the-tcpdump-group/tcpdump>
+* tcpdump捕捉样例: <http://www.cnblogs.com/jiangxinnju/p/6012867.html>
 * indent: <https://www.gnu.org/software/indent/>
 * cproto: <https://sourceforge.net/projects/cproto/>
 * ttyrec 和 ttyplay(记录、保存和播放终端会话软件): <http://0xcc.net/ttyrec/>

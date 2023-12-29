@@ -24,3 +24,7 @@
 * 查看powershell命令帮助 help [cmd]：help Remove-Item
 * 删除文件夹：Remove-Item path –Recurse –Forse
 * 查看历史记录：Get-Content (Get-PSReadLineOption).HistorySavePath
+
+## Others
+
+* chocolatey(The Package Manager for Windows): <https://chocolatey.org/>
