@@ -359,6 +359,23 @@ Tools → Options... → LibreOffice → View → Graphics output (取消钩选U
 
 查看一下是否安装了ibus，可在系统设置中的语言支持中重新把输入法改为ibus
 
+## 主文件夹里的中文文件夹改成英文文件夹
+
+打开终端，在终端下输入命令:
+
+```shell
+    export LANG=en_US
+    xdg-user-dirs-gtk-update
+```
+
+这个时候会弹出一个配置界面，提示是否将中文目录切换为英文目录。选中不再提示，确定。系统会删除没有内容的中文目录，而有内容的目录会保持。并创建8个相应的英文目录如下: “Desktop”、“Download”、“Templates”、“Public”、“Documents”、“Music”、“Pictures”、“Videos”。此时，您在“位置”里看到的常用中文目录已经变成英文目录；
+
+再执行:
+
+```shell
+    export LANG=zh_CN.UTF-8
+```
+
 ## 重装Ubuntu如何保留/home分区中的数据
 
 windows系统可以在重装时只格式化C盘，从而保留其他分区的数据。 Ubuntu系统也可以，只要在安装系统时分出一个/home分区。你可以把Ubuntu的“/”分区看为windows的C盘，重装Ubuntu时只格式化“/”分区，不格式化“/home”，这样就可以保留“/home”中的数据
