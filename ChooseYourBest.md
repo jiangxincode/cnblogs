@@ -104,6 +104,7 @@
 * GeoCorelDRAW: <http://bbs.3s001.com/thread-33301-1-1.html>
 * SAC(Seismic Analysis Code): <https://ds.iris.edu/ds/nodes/dmc/software/downloads/sac>
 * rdseed: <https://ds.iris.edu/ds/nodes/dmc/software/downloads/rdseed/>
+* Rdseed与SAC的安装: <https://www.cnblogs.com/jiangxinnju/p/6045044.html>
 * Visual MINTEQ: <https://vminteq.lwr.kth.se/>
 
 ## 代理
@@ -243,7 +244,7 @@ Windows 10 already has this functionality built in so WizMouse is most useful if
 * Fiddler(Http sniffer): <https://www.telerik.com/fiddler>
 * Burp Suite(用于攻击web 应用程序的集成平台): <https://portswigger.net/burp>
 * tcpdump: <https://github.com/the-tcpdump-group/tcpdump>
-* tcpdump捕捉样例: <http://www.cnblogs.com/jiangxinnju/p/6012867.html>
+* tcpdump捕捉样例: <https://www.cnblogs.com/jiangxinnju/p/6012867.html>
 * WinDump: <https://www.winpcap.org/windump/>
 
 * 坚果云: <https://www.jianguoyun.com/>

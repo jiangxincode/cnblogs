@@ -1,6 +1,6 @@
 # OJ学习之路
 
-* ACM竞赛之输入输出：<http://www.cnblogs.com/jiangxinnju/p/8506089.html>
+* ACM竞赛之输入输出：<https://www.cnblogs.com/jiangxinnju/p/8506089.html>
 * awesome-algorithm: <https://github.com/apachecn/awesome-algorithm>
 
 * LeetCode Online Judge: <https://leetcode.com/><https://leetcode-cn.com/>

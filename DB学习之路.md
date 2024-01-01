@@ -24,7 +24,7 @@
 * 存储过程使用建议: <http://www.cnblogs.com/jes_shaw/archive/2009/05/20/1468505.html>
 
 * Java 6 RowSet 使用完全剖析: <https://www.ibm.com/developerworks/cn/java/j-lo-java6rowset/>
-* Hibernate与autoCommit: <http://www.cnblogs.com/jiangxinnju/p/7429951.html>
+* Hibernate与autoCommit: <https://www.cnblogs.com/jiangxinnju/p/7429951.html>
 
 ## MySQL
 
@@ -34,8 +34,8 @@
 * SQLyog: <https://www.webyog.com/product/sqlyog>
 * ~~MySQL-Front: <http://www.mysqlfront.de/>~~
 * 5款常用mysql slow log分析工具的比较：<http://bbs.chinaunix.net/thread-1286359-1-1.html>
-* MYSQL常见错误及其解决方式: <http://www.cnblogs.com/jiangxinnju/p/5894225.html>
-* MySQL默认数据库: <http://www.cnblogs.com/jiangxinnju/p/5901845.html>
+* MYSQL常见错误及其解决方式: <https://www.cnblogs.com/jiangxinnju/p/5894225.html>
+* MySQL默认数据库: <https://www.cnblogs.com/jiangxinnju/p/5901845.html>
 * Should I use field 'datetime' or 'timestamp'? <https://stackoverflow.com/questions/409286/should-i-use-field-datetime-or-timestamp>
 * 如何提高MySql的安全性？: <http://blog.163.com/longsu2010@yeah/blog/static/17361234820116223593175/>
 * 如何写出高质量、高性能的MySQL查询: <http://blog.sina.com.cn/s/blog_a8cf6bb20101a33v.html>
@@ -159,11 +159,11 @@
 
 * ToadWorld: <http://www.toadworld.com/>
 
-* Oracle系统表整理+常用SQL语句收集: <http://www.cnblogs.com/jiangxinnju/p/5840420.html>
-* Unix/Linux操作系统中如何在sqlplus/rman中使用方向键: <http://www.cnblogs.com/jiangxinnju/p/7469325.html>
-* oracle表空间表分区详解及oracle表分区查询使用方法(转+整理): <http://www.cnblogs.com/jiangxinnju/p/6284096.html>
-* oracle表空间不足相关问题解决办法: <http://www.cnblogs.com/jiangxinnju/p/5839679.html>
-* Oracle导入导出常用命令: <http://www.cnblogs.com/jiangxinnju/p/7616837.html>
+* Oracle系统表整理+常用SQL语句收集: <https://www.cnblogs.com/jiangxinnju/p/5840420.html>
+* Unix/Linux操作系统中如何在sqlplus/rman中使用方向键: <https://www.cnblogs.com/jiangxinnju/p/7469325.html>
+* oracle表空间表分区详解及oracle表分区查询使用方法(转+整理): <https://www.cnblogs.com/jiangxinnju/p/6284096.html>
+* oracle表空间不足相关问题解决办法: <https://www.cnblogs.com/jiangxinnju/p/5839679.html>
+* Oracle导入导出常用命令: <https://www.cnblogs.com/jiangxinnju/p/7616837.html>
 
 * oracle 11g如何完全卸载: <http://jingyan.baidu.com/article/922554468d4e6b851648f4e3.html>
 * Oracle 11G数据库VMware虚拟机下载: <https://blog.csdn.net/sunansheng/article/details/49680201>
@@ -208,7 +208,7 @@
 * Oracle OLAP 与 OLTP 介绍: <http://blog.csdn.net/tianlesoftware/article/details/5794844>
 * Oracle Database 11g Release 2 (11.2.0.3) RAC On Oracle Linux 6.3 Using VirtualBox: <https://oracle-base.com/articles/11g/oracle-db-11gr2-rac-installation-on-oracle-linux-6-using-virtualbox>
 * Oracle RAC 12c Database on Linux Using VirtualBox: <http://www.lab128.com/rac12_installation_using_vb/article_text.html>
-* 如何利用Oracle VM Templates 在几分钟内部署Oracle Real Application Clusters (RAC): <http://www.cnblogs.com/jiangxinnju/p/7732012.html>
+* 如何利用Oracle VM Templates 在几分钟内部署Oracle Real Application Clusters (RAC): <https://www.cnblogs.com/jiangxinnju/p/7732012.html>
 * 12c ASM audit目录增长过快的bug: <http://blog.itpub.net/29047826/viewspace-1659960/>
 * 【ASM】SYSASM 角色: <https://yq.aliyun.com/articles/28404>
 * rac节点无法启动ORA-29702的问题及分析: <http://blog.itpub.net/23718752/viewspace-1158618>
@@ -224,8 +224,8 @@
 * Oracle 10g Audit（审计） --- 记录登录用户在Oracle中的所有操作: <http://blog.csdn.net/ryb7899/article/details/5413720>
 * 修改oracle实例名(sid)和数据库名(db_name): <http://blog.51cto.com/liujia/539294>
 * Oracle安装错误ora-00922（缺少或无效选项）: <http://blog.sina.com.cn/s/blog_5674f6d401012ekw.html>
-* Oracle中session和processes的设置: <http://www.cnblogs.com/jiangxinnju/p/7900870.html>
-* 忘记oracle的sys用户密码怎么修改以及Oracle 11g 默认用户名和密码: <http://www.cnblogs.com/jiangxinnju/p/7928029.html>
+* Oracle中session和processes的设置: <https://www.cnblogs.com/jiangxinnju/p/7900870.html>
+* 忘记oracle的sys用户密码怎么修改以及Oracle 11g 默认用户名和密码: <https://www.cnblogs.com/jiangxinnju/p/7928029.html>
 * navicat 连接Oracle 报错：Cannot load OCI DLL, 126: <https://my.oschina.net/xqx/blog/340743>
 
 ### oracle疑难问题排查集
@@ -281,9 +281,9 @@ ORACLE_SID 实例ID
 
 * 官网：<https://www.ibm.com/products/db2>
 * DB2 JDBC Driver: <https://www.ibm.com/support/pages/db2-jdbc-driver-versions-and-downloads>
-* Ubuntu 16.04安装DB2 Express C v11.1: <http://www.cnblogs.com/jiangxinnju/p/6571785.html>
+* Ubuntu 16.04安装DB2 Express C v11.1: <https://www.cnblogs.com/jiangxinnju/p/6571785.html>
 * DB2 9.5 数据库分区管理及应用实践: <https://www.ibm.com/developerworks/cn/data/library/techarticles/dm-0903zhanggy/>
-* 如何建立DB2分区数据库？: <http://www.cnblogs.com/jiangxinnju/p/6649305.html>
+* 如何建立DB2分区数据库？: <https://www.cnblogs.com/jiangxinnju/p/6649305.html>
 * IBM DB2关键特性解析：DB2分区特性: <http://tech.it168.com/a2012/0306/1321/000001321022_2.shtml>
 * db2建立schema: <http://guoyanxi.iteye.com/blog/910755>
 
@@ -335,7 +335,7 @@ ORACLE_SID 实例ID
 
 * <http://hbase.apache.org/>
 * HBase 官方文档(中文)：<http://yankaycom-wordpress.stor.sinaapp.com/hbase/book.html?q=/wp-content/hbase/book.html>
-* HBase介绍: <http://www.cnblogs.com/jiangxinnju/p/6427124.html>
+* HBase介绍: <https://www.cnblogs.com/jiangxinnju/p/6427124.html>
 
 * HBase 权限控制: <http://debugo.com/hbase-access-control/>
 * HBase Shell 常用操作: <http://debugo.com/hbase-shell-cmds/>

@@ -29,7 +29,7 @@
 * VIMAdventures: <http://vim-adventures.com/>
 * Vimium - The Hacker's Browser: <https://github.com/philc/vimium>
 * Vimperator: <http://www.vimperator.org/>
-* VIM常见用法总结: <http://www.cnblogs.com/jiangxinnju/p/8146715.html>
+* VIM常见用法总结: <https://www.cnblogs.com/jiangxinnju/p/8146715.html>
 
 * TagCollection: <https://github.com/jiangxincode/TagCollection>
 * mpi.vim: <https://github.com/jiangxincode/mpi.vim>

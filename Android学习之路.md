@@ -201,7 +201,7 @@ AOSP源码占用空间较大，有时不方便通过下载到本地的方式进�
 * 安卓应用在各大应用市场上架方法整理: <https://blog.csdn.net/niezhipeng8/article/details/79103436>
 
 * Android8.0及以上，获取模拟器root权限: <https://blog.csdn.net/weixin_42814931/article/details/81253678>
-* Android真机安装sqlite3的方法: <http://www.cnblogs.com/jiangxinnju/p/8227625.html>
+* Android真机安装sqlite3的方法: <https://www.cnblogs.com/jiangxinnju/p/8227625.html>
 * 使用 Intel HAXM 为 Android 模拟器加速，媲美真机: <http://www.cnblogs.com/beginor/archive/2013/01/13/2858228.html>
 * [Android] 为Android安装BusyBox —— 完整的bash shell: <https://www.cnblogs.com/xiaowenji/archive/2011/03/12/1982309.html>
 * MIUI ROM适配之旅第一天——认识Android手机: <http://www.miui.com/thread-402302-1-1.html>
@@ -237,7 +237,7 @@ AOSP源码占用空间较大，有时不方便通过下载到本地的方式进�
 * Chapter 6. The Gradle Wrapper: <https://docs.gradle.org/current/userguide/gradle_wrapper.html>
 * Getting Started With Gradle: <https://www.petrikainulainen.net/getting-started-with-gradle/>
 
-* 彻底搞懂Gradle、Gradle Wrapper与Android Plugin for Gradle的区别和联系: <http://www.cnblogs.com/jiangxinnju/p/8229129.html>
+* 彻底搞懂Gradle、Gradle Wrapper与Android Plugin for Gradle的区别和联系: <https://www.cnblogs.com/jiangxinnju/p/8229129.html>
 * 通过设置JDK解决存在多个Gradle后台进程的问题: <https://www.cnblogs.com/jiangxinnju/p/13443183.html>
 * Gradle Could not find method leftShift() for arguments: <https://blog.csdn.net/qq_30596077/article/details/88837029>
 
@@ -267,7 +267,7 @@ AOSP源码占用空间较大，有时不方便通过下载到本地的方式进�
 * Debug Your layout with Layout Inspector and Layout Validation: <https://developer.android.com/studio/debug/layout-inspector>
 * Configure Android Studio: <https://developer.android.com/studio/intro/studio-config.html>
 
-* Android Studio移动鼠标显示悬浮提示的设置方法: <http://www.cnblogs.com/jiangxinnju/p/8227442.html>
+* Android Studio移动鼠标显示悬浮提示的设置方法: <https://www.cnblogs.com/jiangxinnju/p/8227442.html>
 * ANDROID STUDIO详细教程汇总: <http://stormzhang.com/devtools/2015/06/17/android-studio-all/>
 * Android Studio 3.0+ 新Dex编译器D8 Desugar R8: <https://blog.csdn.net/jamin0107/article/details/81123154>
 * Android Studio系列教程一--下载与安装: <http://stormzhang.com/devtools/2014/11/25/android-studio-tutorial1/>
@@ -277,7 +277,7 @@ AOSP源码占用空间较大，有时不方便通过下载到本地的方式进�
 * ANDROID STUDIO系列教程五--GRADLE命令详解与导入第三方包: <http://stormzhang.com/devtools/2015/01/05/android-studio-tutorial5/>
 * ANDROID STUDIO系列教程六--GRADLE多渠道打包: <http://stormzhang.com/devtools/2015/01/15/android-studio-tutorial6/>
 * Android Studio优化技巧：<http://blog.oneapm.com/apm-tech/257.html>
-* Android Studio相关目录解析: <http://www.cnblogs.com/jiangxinnju/p/8323569.html>
+* Android Studio相关目录解析: <https://www.cnblogs.com/jiangxinnju/p/8323569.html>
 * Android Studio Build Output 栏内汉字出现乱码的解决方案: <https://blog.csdn.net/zhang5690800/article/details/104502632>
 * ERROR Android emulator gets killed: <https://stackoverflow.com/questions/36841461/error-android-emulator-gets-killed/47578244>
 
@@ -359,7 +359,7 @@ AOSP源码占用空间较大，有时不方便通过下载到本地的方式进�
 
 * awesome-adb: <https://github.com/mzlogin/awesome-adb>
 * ADB: <http://adbshell.com/>
-* 解决adb push时出现的"Read-only file system"问题: <http://www.cnblogs.com/jiangxinnju/p/8186390.html>
+* 解决adb push时出现的"Read-only file system"问题: <https://www.cnblogs.com/jiangxinnju/p/8186390.html>
 * android adb push 与 adb install的比较（两种安装APK的方法）: <http://blog.csdn.net/liranke/article/details/6795984>
 
 ## Eclipse

@@ -40,6 +40,12 @@
 ## Softwares/Tools/Knowledge
 
 * 一篇文章搞懂Debian_Ubuntu软件包更新和删除: <https://www.cnblogs.com/jiangxinnju/p/14017675.html>
+* 扩容swap文件: <https://www.cnblogs.com/jiangxinnju/p/17938602>
+* Linux压缩与解压常用命令: <https://www.cnblogs.com/jiangxinnju/p/6055870.html>
+* Linux乱码问题解决方案: <https://www.cnblogs.com/jiangxinnju/p/6014111.html>
+* linux中无 conio.h的解决办法: <https://www.cnblogs.com/jiangxinnju/p/5516906.html>
+* Linux快捷键: <https://www.cnblogs.com/jiangxinnju/p/6045204.html>
+* ssh相关原理学习与常见错误总结: <https://www.cnblogs.com/jiangxinnju/p/7859488.html>
 
 * Linux命令大全: <http://man.linuxde.net/>
 * explainshell: <https://explainshell.com/>
@@ -71,16 +77,13 @@
 * Linux系统里如何彻底的清空屏幕？: <http://www.vaikan.com/how-to-clear-the-terminal-screen-for-real-in-case-of-linux/>
 * 如何在Linux上将HTML页面转化成png图片: <http://linux.cn/article-2708-1.html>
 * Ubuntu输入密码登陆后又跳回到登录界面: <https://askubuntu.com/questions/223501/ubuntu-gets-stuck-in-a-login-loop>
-* Linux压缩与解压常用命令: <http://www.cnblogs.com/jiangxinnju/p/6055870.html>
 * vimrc，bashrc中rc的含义: UNIX Power Tools (3rd Edition).chm 搜索rc
 * LNMP安装快速导航（官网教程）: <http://lnmp.org/install.html>
 * ubuntu删除旧内核和多余启动项: <https://askubuntu.com/questions/2793/how-do-i-remove-old-kernel-versions-to-clean-up-the-boot-menu>
 * 各个Linux版本的本地root密码破解方法: <http://os.51cto.com/art/200910/159523.htm>
-* Linux乱码问题解决方案: <http://www.cnblogs.com/jiangxinnju/p/6014111.html>
 * Linux 软件看门狗 watchdog: <http://blog.csdn.net/liigo/article/details/9227205>
 * C语言调试手段:锁定错误的实现方法: <http://blog.csdn.net/huangblog/article/details/8281165>
 * Linux终端字符颜色设置: <http://blog.csdn.net/fuyajun01/article/details/7931934>
-* linux中无 conio.h的解决办法: <http://www.cnblogs.com/jiangxinnju/p/5516906.html>
 * hexdump命令使用: <http://blog.csdn.net/zybasjj/article/details/7874720>
 * ubuntu下终端路径只显示当前目录: <http://www.cnblogs.com/king-77024128/articles/2270487.html>
 * linux连接投影机: <http://www.2cto.com/os/201211/168387.html>
@@ -89,12 +92,10 @@
 * Linux Troubleshooting Cheatsheet: strace, htop, lsof, tcpdump, iftop & sysdig: <https://sysdig.com/blog/linux-troubleshooting-cheatsheet/>
 * strace: <https://github.com/strace/strace>
 * java.lang.VerifyError: Expecting a stackmap frame at branch target JDK 1.7: <http://stackoverflow.com/questions/15122890/java-lang-verifyerror-expecting-a-stackmap-frame-at-branch-target-jdk-1-7>
-* Rdseed与SAC的安装: <http://www.cnblogs.com/jiangxinnju/p/6045044.html>
 * 将Linux下编译的warning警告信息输出到文件中[整理笔记]: <http://blog.csdn.net/feihongwang/article/details/6975670>
 * linux C中调用shell命令和运行shell脚本: <http://blog.sina.com.cn/s/blog_8043547601013rxf.html>
 * find 删除拷贝用法: <http://6764097.blog.51cto.com/6754097/1795690>
 * linux 修改分区卷标 ( Partition Label ) : <http://blog.chinaunix.net/uid-20321915-id-1966428.html>
-* Linux快捷键: <http://www.cnblogs.com/jiangxinnju/p/6045204.html>
 * shell脚本“syntax error:unexpected end of file”解决方案 : <http://renyongjie668.blog.163.com/blog/static/1600531201172803244846/>
 * String contains in Bash: <http://stackoverflow.com/questions/229551/string-contains-in-bash>
 * Could not get lock /var/lib/apt/lists/lock - open: <http://blog.csdn.net/zyxlinux888/article/details/6358615>
@@ -113,7 +114,6 @@
 * Shell脚本交互之: 自动输入密码: <http://blog.csdn.net/zhangjikuan/article/details/51105166>
 * Shell中重定向<<EOF注意事项: <http://blog.csdn.net/iamlaosong/article/details/40509399>
 * linux 终端backspace不能删除字符: <http://blog.163.com/chen_cong_520/blog/static/841151912010829240926/>
-* ssh相关原理学习与常见错误总结: <http://www.cnblogs.com/jiangxinnju/p/7859488.html>
 * Fedora 删除旧内核: <http://www.cnblogs.com/william-lee/archive/2011/07/23/2115084.html>
 * linux关于S权限和T权限的介绍: <http://blog.csdn.net/qq_35116353/article/details/56049592>
 * Linux使用技巧12--Ubuntu代理: <http://blog.csdn.net/lincyang/article/details/51306367>
@@ -134,6 +134,7 @@
 * fswatch: <https://github.com/emcrisostomo/fswatch>
 * Compiz: <http://www.compiz.org/>
 * 新立得(Synaptic): <http://www.nongnu.org/synaptic/>
+* gparted: <https://gparted.org/>
 * GLX-Dock: <http://www.glx-dock.org/>
 * vncview: <https://www.realvnc.com/en/connect/download/viewer/>
 * PDFtk: <https://www.pdflabs.com/>
@@ -225,7 +226,6 @@
     lsusb -tv              # 列出所有USB设备
     lsmod                  # 列出加载的内核模块
     env                    # 查看环境变量资源
-    free -m                # 查看内存使用量和交换区使用量
     df -h                  # 查看各分区使用情况
     df -i                   # 查看inode使用
     du -sh <目录名>        # 查看指定目录的大小
@@ -239,7 +239,6 @@
     cfdisk -Ps # 查看磁盘分区的用法   cfdisk   -Ps 磁盘设备名 只有一个硬盘也可以用 cfdisk -Ps
     cfdisk -Ps /dev/sda
     sfdisk -l
-    swapon -s              # 查看所有交换分区
     hdparm -i /dev/hda     # 查看磁盘参数(仅适用于IDE设备)
     dmesg | grep IDE       # 查看启动时IDE设备检测状况网络
     ifconfig               # 查看所有网络接口的属性

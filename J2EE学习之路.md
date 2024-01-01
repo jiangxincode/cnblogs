@@ -96,7 +96,7 @@
 * Overriding and Hiding Methods: <http://docs.oracle.com/javase/tutorial/java/IandI/override.html>
 * javac: <https://docs.oracle.com/javase/8/docs/technotes/tools/windows/javac.html>
 * javac的调试选项-g的意义: <https://shenzhang722.iteye.com/blog/1824921>
-* javadoc相关问题: <http://www.cnblogs.com/jiangxinnju/p/6091525.html>
+* javadoc相关问题: <https://www.cnblogs.com/jiangxinnju/p/6091525.html>
 * JDK自带工具之概览: <http://www.rowkey.me/blog/2016/11/03/jdk-tools/>
 * How to solve the error: The system cannot find the file C:\ProgramData\Oracle\Java\javapath\java.exe：<http://stackoverflow.com/questions/26864662/how-to-solve-the-error-the-system-cannot-find-the-file-c-programdata-oracle-ja>
 * 三个实例演示 Java Thread Dump 日志分析：<http://www.cnblogs.com/zhengyun_ustc/archive/2013/01/06/dumpanalysis.html>
@@ -105,12 +105,12 @@
 * Jps介绍以及解决jps无法查看某个已经启动的java进程问题: <http://trinea.iteye.com/blog/1196400>
 * Java永久代去哪儿了: <http://www.infoq.com/cn/articles/Java-PERMGEN-Removed>
 * Java8内存模型—永久代(PermGen)和元空间(Metaspace): <https://www.cnblogs.com/paddix/p/5309550.html>
-* JVM调优总结（转）: <http://www.cnblogs.com/jiangxinnju/p/5655535.html>
+* JVM调优总结（转）: <https://www.cnblogs.com/jiangxinnju/p/5655535.html>
 * Java server application troubleshooting using JDK tools: <http://java-performance.info/>
 * jstack简单使用，定位死循环、线程阻塞、死锁等问题: <https://www.cnblogs.com/chenpi/p/5377445.html>
 
 * Java代码质量度量工具大阅兵: <https://www.cnblogs.com/jiangxinnju/p/10010177.html>
-* Java杂项: <http://www.cnblogs.com/jiangxinnju/p/6582135.html>
+* Java杂项: <https://www.cnblogs.com/jiangxinnju/p/6582135.html>
 * Java 理论与实践: <http://www.ibm.com/developerworks/cn/java/j-jtp/>
 * 敏捷开发中高质量 Java 代码开发实践: <http://www.ibm.com/developerworks/cn/java/j-lo-agile/>
 * Java RMI 入门指南: <http://www.blogjava.net/zhenyu33154/articles/320245.html>
@@ -130,10 +130,10 @@
 * 理解OAuth 2.0: <http://www.ruanyifeng.com/blog/2014/05/oauth_2_0.html>
 * Need to suppress “Warning: running an XSLT 1.0 stylesheet with an XSLT 2.0 processor” in Tomcat std out log file: <http://stackoverflow.com/questions/4445481/need-to-suppress-warning-running-an-xslt-1-0-stylesheet-with-an-xslt-2-0-proce>
 * Java 授权内幕: <http://www.ibm.com/developerworks/cn/java/j-javaauth/>
-* ServletInputStream的重复读取（多次读取）（转）: <http://www.cnblogs.com/jiangxinnju/p/5709378.html>
+* ServletInputStream的重复读取（多次读取）（转）: <https://www.cnblogs.com/jiangxinnju/p/5709378.html>
 * Developing a Service Provider using Java API(Service Provider Interface): <http://www.lordofthejars.com/2011/11/en-ti-puedo-ver-la-libertad-tu-me-haces.html>
 * 驱动模块和桩模块的概念和区别: <http://daimajishu.iteye.com/blog/1557295>
-* astyle 使用说明: <http://www.cnblogs.com/jiangxinnju/p/4908575.html>
+* astyle 使用说明: <https://www.cnblogs.com/jiangxinnju/p/4908575.html>
 * 转一个J2EE开发时的包命名规则，养成良好的开发习惯：<http://www.blogjava.net/paulwong/archive/2012/04/15/374675.html>
 * Eclipse 开发WEB项目所遇问题 WebContent WebRoot：<http://blog.sina.com.cn/s/blog_525960510100jo0j.html>
 * Java调用动态库方法说明: <http://www.cnblogs.com/xifanyaoyao/p/3659019.html>
@@ -227,7 +227,7 @@
 
 * Struts2、Spring和Hibernate应用实例: <http://871421448.iteye.com/blog/1546058>
 * spring中注册bean(通过代码动态注册): <http://blog.csdn.net/buyaore_wo/article/details/8119577>
-* Spring框架的反序列化远程代码执行漏洞分析（转）: <http://www.cnblogs.com/jiangxinnju/p/5697050.html>
+* Spring框架的反序列化远程代码执行漏洞分析（转）: <https://www.cnblogs.com/jiangxinnju/p/5697050.html>
 * Spring “redirect:” EL vulnerability?: <http://stackoverflow.com/questions/22917760/spring-redirect-el-vulnerability>
 * 使用监听器对Spring bean id进行唯一校验: <http://chenzhou123520.iteye.com/blog/1774106>
 * MyEclipse删除对Struts、Hibernate、Spring的支持：<http://www.cnblogs.com/xj626852095/p/3648148.html>
@@ -312,13 +312,13 @@
 * FAQ What is a Quick Fix?: <http://wiki.eclipse.org/FAQ_What_is_a_Quick_Fix>?
 * Eclipse插件开发总群（QQ群）：584434100
 * Eclipse插件: <http://www.oschina.net/project/tag/148/eclipse-plugins>
-* Eclipse相关问题：<http://www.cnblogs.com/jiangxinnju/p/5205365.html>
+* Eclipse相关问题：<https://www.cnblogs.com/jiangxinnju/p/5205365.html>
 * Top 10 Java Debugging Tips with Eclipse: <http://javapapers.com/core-java/top-10-java-debugging-tips-with-eclipse/>
-* Linux下安装最新的Eclipse：<http://www.cnblogs.com/jiangxinnju/p/4780268.html>
+* Linux下安装最新的Eclipse：<https://www.cnblogs.com/jiangxinnju/p/4780268.html>
 * eclipse调试的方法和技巧：<http://www.cnblogs.com/ycxyyzw/archive/2013/03/27/2983905.html>
 * eclipse调试java程序的九个技巧: <http://www.cnblogs.com/lingiu/p/3802391.html>
 * eclipse远程调试Tomcat方法:<http://blog.csdn.net/afgasdg/article/details/9236877>
-* Eclipse远程调试出现“JDWP Transport dt_socket failed to initialize”的解决方案: <http://www.cnblogs.com/jiangxinnju/p/4906457.html>
+* Eclipse远程调试出现“JDWP Transport dt_socket failed to initialize”的解决方案: <https://www.cnblogs.com/jiangxinnju/p/4906457.html>
 * Eclipse中用两个控制台测试网络通信程序: <http://blog.csdn.net/f309587969/article/details/7097976>
 * Eclipse jar打包详解: <http://jingyan.baidu.com/article/219f4bf7d0ef87de442d3820.html>
 * 如何使用Eclipse将Java项目打成jar包？:<http://jingyan.baidu.com/article/4dc40848b5a8c9c8d946f139.html>
@@ -493,7 +493,7 @@
 * jcl 与 jul、log4j1、log4j2、logback 的集成原理: <https://my.oschina.net/pingpangkuangmo/blog/407895>
 * slf4j 与 jul、log4j1、log4j2、logback 的集成原理: <https://my.oschina.net/pingpangkuangmo/blog/408382>
 * slf4j、jcl、jul、log4j1、log4j2、logback 大总结: <https://my.oschina.net/pingpangkuangmo/blog/410224>
-* 热切换Log4j级别配置: <http://www.cnblogs.com/jiangxinnju/p/6848472.html>
+* 热切换Log4j级别配置: <https://www.cnblogs.com/jiangxinnju/p/6848472.html>
 * log4j:ERROR Attempted to append to closed appender named: <http://blog.csdn.net/xvshu/article/details/51028644>
 
 ## Log4E
@@ -505,7 +505,7 @@
 ## 代码评审
 
 * Jupiter: <http://csdl.ics.hawaii.edu/research/jupiter/>
-* Peer Code Reviews Made Easy with Eclipse Plug-In: <http://www.cnblogs.com/jiangxinnju/p/4782282.html>
+* Peer Code Reviews Made Easy with Eclipse Plug-In: <https://www.cnblogs.com/jiangxinnju/p/4782282.html>
 * reviewclipse: <https://www.inso.tuwien.ac.at/projects/reviewclipse/>
 * Effective Code Reviews Without the Pain: <http://www.developer.com/tech/article.php/3579756/Effective-Code-Reviews-Without-the-Pain.htm>
 
@@ -707,7 +707,7 @@ mvn deploy:deploy-file -DgroupId="edu.jiangxin" -DartifactId=”gcu” -Dversion
 * <http://ant.apache.org/>
 * Ivy(Apache Ant项目的一个子项目，一个可传递的依赖项管理器): <http://ant.apache.org/ivy/>
 * Apache IvyDE(Eclipse plugin which integrates Apache Ivy's dependency management into Eclipse):<http://ant.apache.org/ivy/ivyde/index.html>
-* Eclipse中Ant的配置与测试 转: <http://www.cnblogs.com/jiangxinnju/p/5040436.html>
+* Eclipse中Ant的配置与测试 转: <https://www.cnblogs.com/jiangxinnju/p/5040436.html>
 * 使用Ant脚本执行bat文件: <http://lyj86.iteye.com/blog/1838713>
 
 ## Eclipse Color Themes
@@ -1005,7 +1005,7 @@ The yFiles diagramming software components are extensive class libraries that en
 ## 分词
 
 * 中文分词器分词效果评估对比： <https://github.com/ysc/cws_evaluation>
-* 分词工具比较（转）：<http://www.cnblogs.com/jiangxinnju/p/5205363.html>
+* 分词工具比较（转）：<https://www.cnblogs.com/jiangxinnju/p/5205363.html>
 * ik-analyze(java开源中文分词器): <https://code.google.com/p/ik-analyzer/>
 * ICTCLAS： <https://github.com/NLPIR-team/NLPIR/tree/master/NLPIR%20SDK/NLPIR-ICTCLAS>
 

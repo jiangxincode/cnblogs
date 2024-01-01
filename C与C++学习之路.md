@@ -374,15 +374,15 @@ C/C++由于历史原因，编译，构建难度相对于目前主流的其他语
 * Does C++11 allow vector<const T>? <https://stackoverflow.com/questions/6954906/does-c11-allow-vectorconst-t>
 * Comparing Two High-Performance I/O Design Patterns: <http://www.artima.com/articles/io_design_patterns.html>
 * 使您的软件运行起来——防止缓冲区溢出：<https://www.ibm.com/developerworks/cn/security/buffer-defend/index.html#main>
-* 屏幕输出VS文件输出：<http://blog.csdn.net/jiangxinnju/article/details/26081963>
+* 屏幕输出VS文件输出：<https://www.cnblogs.com/jiangxinnju/p/5516917.html>
 * 亲密接触C可变参数函数 : <http://blog.csdn.net/linyt/article/details/2243605>
 * TCP连接中的TIME_WAIT状态: <http://blog.csdn.net/sunnydogzhou/article/details/6572071>
 * see also: 《TCP-IP详解卷1：协议》第十八章
 * TCP可靠传输及流量控制系列六：TCP连接中的TIME_WAIT状态: <http://zenhumany.blog.163.com/blog/static/1718066332010827104655541/>
 * C++项目中的extern "C" {}: <http://www.cnblogs.com/skynet/archive/2010/07/10/1774964.html>
-* 由函数clock想到的: <http://blog.csdn.net/jiangxinnju/article/details/25411743>
+* 由函数clock想到的: <https://www.cnblogs.com/jiangxinnju/p/5516920.html>
 * 理解 pkg-config 工具: <http://www.cheWebScarabnjunlu.com/2011/03/understanding-pkg-config-tool/>
-* C/C++中的abort、atexit、exit和_Exit: <http://blog.csdn.net/jiangxinnju/article/details/38155973>
+* C/C++中的abort、atexit、exit和_Exit: <https://www.cnblogs.com/jiangxinnju/p/5516909.html>
 * setjmp()/longjmp()的使用方法和场合: <http://www.cnblogs.com/lowhere/archive/2008/08/22/1274309.html>
 * C++ 工程实践(7)：iostream 的用途与局限: <http://blog.csdn.net/solstice/article/details/6612179>
 * 指针的大小: <http://shansun123.iteye.com/blog/398601>
@@ -393,7 +393,7 @@ C/C++由于历史原因，编译，构建难度相对于目前主流的其他语
 * 减少C++代码编译时间的方法: <http://www.cnblogs.com/misserwell/p/4343927.html>
 * C++编译错误cannot have cv-qualifier: <https://www.cnblogs.com/jiangxinnju/p/5516904.html>
 * 在 console mode 中使用 C/C++ 编译器: <https://blog.csdn.net/dlyhlq/article/details/2104217>
-* 基于对象和面向对象的区别: <http://www.cnblogs.com/jiangxinnju/p/5516880.html>
+* 基于对象和面向对象的区别: <https://www.cnblogs.com/jiangxinnju/p/5516880.html>
 * const 不再迷茫: <https://www.cnblogs.com/jiangxinnju/p/5516881.html>
 * C语言中随机数相关问题: <https://www.cnblogs.com/jiangxinnju/p/5516905.html>
 * VS Code C++ 代码格式化方法(clang-format): <https://blog.csdn.net/core571/article/details/82867932>
