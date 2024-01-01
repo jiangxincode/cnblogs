@@ -19,14 +19,11 @@
 * lispforum: <http://www.lispforum.com/>
 * Lisp: Common Lisp, Racket, Clojure, Emacs Lisp: <http://hyperpolyglot.org/lisp>
 * SLIME: Superior Lisp Interaction Mode for Emacs: <https://github.com/slime/slime/>
-* slimv: Superior Lisp Interaction Mode for Vim: <https://github.com/kovisoft/slimv>
 * lispide: <https://github.com/daansystems/lispide>
 * Dandelion: <https://github.com/Ragnaroek/dandelion>
 * ~~My Emacs For Common Lisp: <https://github.com/nakrakiiya/mefcl>~~
 * ~~Lispbox: <https://github.com/andreer/lispbox/>~~
 * ~~Jabberwocky a Lisp IDE: <https://sourceforge.net/projects/jabberwocky/>~~
-* ~~Limp: <http://www.vim.org/scripts/script.php?script_id=2219>~~
-* ~~Cusp(Cusp is an Eclipse IDE plugin that runs on top of SBCL)：<https://www.cliki.net/Cusp>~~
 
 * Racket: <http://racket-lang.org/>
 * newLISP: <http://www.newlisp.org/index.cgi?Home>

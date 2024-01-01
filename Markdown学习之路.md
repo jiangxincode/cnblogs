@@ -1,7 +1,6 @@
 # Markdown学习之路
 
 * Markdown 语法说明 (简体中文版): <http://wowubuntu.com/markdown/>
-* Eclipse-Markdown-Editor-Plugin: <https://github.com/winterstein/Eclipse-Markdown-Editor-Plugin>
 
 * Typora: <https://typoraio.cn/>
 * MarkdownPad: <http://www.markdownpad.com/>

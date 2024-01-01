@@ -135,7 +135,6 @@
 * 驱动模块和桩模块的概念和区别: <http://daimajishu.iteye.com/blog/1557295>
 * astyle 使用说明: <https://www.cnblogs.com/jiangxinnju/p/4908575.html>
 * 转一个J2EE开发时的包命名规则，养成良好的开发习惯：<http://www.blogjava.net/paulwong/archive/2012/04/15/374675.html>
-* Eclipse 开发WEB项目所遇问题 WebContent WebRoot：<http://blog.sina.com.cn/s/blog_525960510100jo0j.html>
 * Java调用动态库方法说明: <http://www.cnblogs.com/xifanyaoyao/p/3659019.html>
 * Servlet容器的匹配过程：<http://developer.51cto.com/art/200907/134840.htm>
 
@@ -219,7 +218,6 @@
 * 源码：spring-framework <https://github.com/spring-projects/spring-framework/>
 
 * Spring Tool Suite：<http://spring.io/tools/sts>
-* spring-ide：<http://marketplace.eclipse.org/content/spring-ide>
 * Spring 的优秀工具类盘点: <https://www.ibm.com/developerworks/cn/java/j-lo-spring-utils1/index.html>
 * Spring使用Cache: <http://elim.iteye.com/blog/2123030>
 * spring security中限制用户登录次数超过限制的处理: <http://jackyrong.iteye.com/blog/2244803>
@@ -230,7 +228,6 @@
 * Spring框架的反序列化远程代码执行漏洞分析（转）: <https://www.cnblogs.com/jiangxinnju/p/5697050.html>
 * Spring “redirect:” EL vulnerability?: <http://stackoverflow.com/questions/22917760/spring-redirect-el-vulnerability>
 * 使用监听器对Spring bean id进行唯一校验: <http://chenzhou123520.iteye.com/blog/1774106>
-* MyEclipse删除对Struts、Hibernate、Spring的支持：<http://www.cnblogs.com/xj626852095/p/3648148.html>
 * 解决java.lang.IncompatibleClassChangeError: <https://my.oschina.net/itblog/blog/528613>
 
 ## Hibernate
@@ -302,66 +299,6 @@
 * <https://netbeans.org/>
 * <http://www.jetbrains.com/>
 
-## Eclipse
-
-* <http://www.eclipse.org/>
-* Eclipse MarketPlace地址：<http://marketplace.eclipse.org/>
-* 各个版本的下载地址：<http://www.eclipse.org/downloads/>
-* Eclipse documentation：<http://help.eclipse.org/>
-* 源码：<http://git.eclipse.org/>
-* FAQ What is a Quick Fix?: <http://wiki.eclipse.org/FAQ_What_is_a_Quick_Fix>?
-* Eclipse插件开发总群（QQ群）：584434100
-* Eclipse插件: <http://www.oschina.net/project/tag/148/eclipse-plugins>
-* Eclipse相关问题：<https://www.cnblogs.com/jiangxinnju/p/5205365.html>
-* Top 10 Java Debugging Tips with Eclipse: <http://javapapers.com/core-java/top-10-java-debugging-tips-with-eclipse/>
-* Linux下安装最新的Eclipse：<https://www.cnblogs.com/jiangxinnju/p/4780268.html>
-* eclipse调试的方法和技巧：<http://www.cnblogs.com/ycxyyzw/archive/2013/03/27/2983905.html>
-* eclipse调试java程序的九个技巧: <http://www.cnblogs.com/lingiu/p/3802391.html>
-* eclipse远程调试Tomcat方法:<http://blog.csdn.net/afgasdg/article/details/9236877>
-* Eclipse远程调试出现“JDWP Transport dt_socket failed to initialize”的解决方案: <https://www.cnblogs.com/jiangxinnju/p/4906457.html>
-* Eclipse中用两个控制台测试网络通信程序: <http://blog.csdn.net/f309587969/article/details/7097976>
-* Eclipse jar打包详解: <http://jingyan.baidu.com/article/219f4bf7d0ef87de442d3820.html>
-* 如何使用Eclipse将Java项目打成jar包？:<http://jingyan.baidu.com/article/4dc40848b5a8c9c8d946f139.html>
-* 'Must Override a Superclass Method' Errors after importing a project into Eclipse: <http://stackoverflow.com/questions/1678122/must-override-a-superclass-method-errors-after-importing-a-project-into-eclips>
-* SFTP Plug-in for Eclipse: <http://www.jcraft.com/eclipse-sftp/>
-* Eclipse 远程开发：<http://lovespss.blog.51cto.com/1907593/536614>
-* How to set the Eclipse date variable format? <https://stackoverflow.com/questions/1131712/how-to-set-the-eclipse-date-variable-format>
-
-## Eclipse插件
-
-* GEF: <http://www.eclipse.org/gef/>
-* Web Tools Platform: <https://www.eclipse.org/webtools/>
-* AnyEdit: <http://marketplace.eclipse.org/content/anyedit-tools>
-* YEdit: <https://marketplace.eclipse.org/content/yedit>
-* Enhanced Class Decompiler: <https://marketplace.eclipse.org/content/enhanced-class-decompiler>
-* Eclipse Web Developer Tools: <https://marketplace.eclipse.org/content/eclipse-web-developer-tools-0/>
-* Properties Editor: <http://propedit.osdn.jp/index_en.html>
-* StartExplorer: <https://github.com/fabioz/startexplorer>
-* Eclipse Mylyn: <https://projects.eclipse.org/projects/mylyn>
-* JavaScript Development Tools (JSDT): <https://www.eclipse.org/webtools/jsdt/>
-* EClim: <http://eclim.org>
-* ~~Eclipse EditorList Plug-in: <https://sourceforge.net/projects/editorlist/>~~
-* eclipse-games: <http://eclipse-games.sourceforge.net/>
-* MouseFeed: <http://marketplace.eclipse.org/content/mousefeed>
-* FileSync: <http://andrei.gmxhome.de/filesync/>
-* eclipse-rbe: <https://github.com/essiembre/eclipse-rbe>
-* CODE RECOMMENDERS: <http://www.eclipse.org/recommenders/>
-* Eclipse EGit: <https://www.eclipse.org/egit/>
-* Spket IDE（提供Eclipse的插件）: <http://www.spket.com/>
-* Aptana（提供Eclipse插件）: <http://www.aptana.com/>
-* EasyShell: <https://github.com/anb0s/EasyShell>
-
-## Eclipse插件开发
-
-* Eclipse 4 RCP指南: <https://lucky-xiaohu.gitbooks.io/eclipse4-rcp-tutor/content/about.html>
-* Eclipse RCP (Rich Client Platform) - Tutorial: <https://www.vogella.com/tutorials/EclipseRCP/article.html>
-* Eclipse Plug-in & OSGI：<http://www.blogjava.net/zhuxing/category/33273.html>
-* Eclipse插件开发打包为Update Site：<http://forchenyun.iteye.com/blog/664241>
-* 插件开发总览：<http://www.cnblogs.com/xing901022/p/4115610.html>
-* Tycho - Building Eclipse plug-ins with maven: <https://github.com/eclipse-tycho/tycho>
-* 使用Tycho来构建你的RCP程序: <http://chnic.iteye.com/category/337072>
-* Dependencies from pom.xml not considered by Eclipse in Tycho Project: <http://stackoverflow.com/questions/12476451/dependencies-from-pom-xml-not-considered-by-eclipse-in-tycho-project>
-
 ## RxJava
 
 * RxJava: Reactive Extensions for the JVM: <https://github.com/ReactiveX/RxJava>
@@ -375,7 +312,6 @@
 * AmaterasUML: <https://github.com/takezoe/amateras-modeler>
 * Green UML: <http://green.sourceforge.net/index.html>
 * ModelGoon UML4Java(已停止维护): <https://github.com/riana/ModelGoon-UML4Java>
-* AgileJ(AgileJ StructureViews is a plugin for Eclipse which generates class diagrams reverse engineered from Java source code.): <http://www.agilej.com/>
 * StarUML: <https://staruml.io/>
 * Astah(JUDE): <https://astah.net/>
 * UML关系(泛化,实现,依赖,关联(聚合,组合))：<http://justsee.iteye.com/blog/808799>
@@ -411,9 +347,6 @@
 
 ## AWT/Swing/SWT/Jface/JavaFX
 
-* Visual Editor(deprated): <http://wiki.eclipse.org/Visual_Editor_Project>
-* WindowBuilder(SWT Designer): <http://www.eclipse.org/windowbuilder/>
-* Jigloo SWT/Swing GUI Builder: <http://marketplace.eclipse.org/content/jigloo-swtswing-gui-builder>
 * SWT、Swing 或 AWT：哪个更适合您？ <https://www.ibm.com/developerworks/cn/opensource/os-swingswt/>
 * OpenSwing: <http://oswing.sourceforge.net/setup.html>
 * FlatLaf: <https://github.com/JFormDesigner/FlatLaf>
@@ -505,8 +438,6 @@
 ## 代码评审
 
 * Jupiter: <http://csdl.ics.hawaii.edu/research/jupiter/>
-* Peer Code Reviews Made Easy with Eclipse Plug-In: <https://www.cnblogs.com/jiangxinnju/p/4782282.html>
-* reviewclipse: <https://www.inso.tuwien.ac.at/projects/reviewclipse/>
 * Effective Code Reviews Without the Pain: <http://www.developer.com/tech/article.php/3579756/Effective-Code-Reviews-Without-the-Pain.htm>
 
 ## guava
@@ -524,7 +455,7 @@
 
 * Class Dependency Analyzer (CDA): <http://www.dependency-analyzer.org/>
 * Classycle: Analysing Tools for Java Class and Package Dependencies: <http://classycle.sourceforge.net/>
-* STAN, the leading Eclipse-based structure analysis tool for Java: <http://stan4j.com/>
+* STAN(Structure Analysis for Java): <http://stan4j.com/>
 * nWire, Code Exploration for Eclipse(not free): <http://www.nwiresoftware.com/>
 
 ## OW2
@@ -532,7 +463,6 @@
     OW2 is an independent, global, open-source software community. The mission of OW2 is to a) promote the development of open-source middleware, generic business applications, cloud computing platforms and b) foster a vibrant community and business ecosystem.
 
 * ASM: <http://asm.ow2.org/index.html>
-* Bytecode Outline plugin for Eclipse: <http://asm.ow2.org/eclipse/index.html>
 * JOTM: <http://jotm.ow2.org/xwiki/bin/view/Main/WebHome>
 * XAPool: <http://xapool.ow2.org/>
 
@@ -602,7 +532,7 @@ Eclipse中`Update Project`，选择`Force Update of Snapshots/Releases`
 * httpcomponents-httpclient-4.5.chm
 * 使用样例(搜索HttpClientTest): <https://bitbucket.org/jiangxincode/javawebtest>
 
-## Maven and M2Eclipse
+## Maven
 
 * Maven项目地址：<http://maven.apache.org/>
 * Maven Central Repository: <https://maven.apache.org/repository/index.html>
@@ -616,8 +546,6 @@ Eclipse中`Update Project`，选择`Force Update of Snapshots/Releases`
 * Maven Ant Tasks: <http://maven.apache.org/ant-tasks/>
 * 阿里云云效 Maven: <https://developer.aliyun.com/mvn/guide>
 * Maven插件maven-antrun-plugin的使用: <https://www.cnblogs.com/EasonJim/p/6819338.html>
-* M2Eclipse项目地址：<http://www.eclipse.org/m2e/>
-* 安装说明（Eclipse EE中自带）：<http://www.eclipse.org/m2e/m2e-downloads.html>
 * 如何用Maven创建web项目（具体步骤）：<http://blog.csdn.net/chuyuqing/article/details/28879477>
 * maven依赖总结: <http://blog.csdn.net/lastsweetop/article/details/8493475>
 * maven2 up to maven3的'version' contains an expression but should be a constant: <http://www.cnblogs.com/beiyeren/p/4275032.html>
@@ -631,7 +559,6 @@ Eclipse中`Update Project`，选择`Force Update of Snapshots/Releases`
 * Maven添加本地依赖: <http://blog.csdn.net/xwl617756974/article/details/7832882>
 * Maven常用插件: <http://iffiffj.iteye.com/blog/1661936>
 * How to Publish Maven Site Docs to BitBucket or GitHub Pages: <http://www.ensor.cc/2013/01/how-to-publish-maven-site-docs-to.html>
-* maven项目在eclipse的library中没有Maven Dependencies: <http://blog.csdn.net/lulidaitian/article/details/53440643>
 * Maven Enforcer Plugin: <http://maven.apache.org/enforcer/maven-enforcer-plugin/>
 * templating-maven-plugin: <http://www.mojohaus.org/templating-maven-plugin/>
 
@@ -706,30 +633,12 @@ mvn deploy:deploy-file -DgroupId="edu.jiangxin" -DartifactId=”gcu” -Dversion
 
 * <http://ant.apache.org/>
 * Ivy(Apache Ant项目的一个子项目，一个可传递的依赖项管理器): <http://ant.apache.org/ivy/>
-* Apache IvyDE(Eclipse plugin which integrates Apache Ivy's dependency management into Eclipse):<http://ant.apache.org/ivy/ivyde/index.html>
-* Eclipse中Ant的配置与测试 转: <https://www.cnblogs.com/jiangxinnju/p/5040436.html>
 * 使用Ant脚本执行bat文件: <http://lyj86.iteye.com/blog/1838713>
-
-## Eclipse Color Themes
-
-* 项目地址：<http://eclipsecolorthemes.org/>
-
-## MyEclipse
-
-* <http://www.myeclipseide.com/>
-* 官方中文网：<http://www.myeclipsecn.com/>
-* 在MyEclipse下创建Java Web项目 入门（图文并茂）经典教程：<http://jijiaa12345.iteye.com/blog/1739754>
 
 ## Clover（收费）
 
 * 项目地址：<http://atlassian.botwave.com/products/clover/default.html>
 * 安装说明：<http://atlassian.botwave.com/products/clover/download.html>
-
-## CAP (code analysis plugin)
-
-    CAP (code analysis plugin) is an eclipse plugin (written in Java) that analysis your java project. It checks dependencies between the classes and packages and gives you a hint about the architecture, reusability and maintainability. ("JDepend 2")
-
-* <https://sourceforge.net/projects/cap4e/>
 
 ## Java程序分析工具
 
@@ -739,14 +648,10 @@ mvn deploy:deploy-file -DgroupId="edu.jiangxin" -DartifactId=”gcu” -Dversion
 
 ## 反编译
 
-* ~~Eclipse Class Decompiler——Java反编译插件: <https://github.com/cnfree/Eclipse-Class-Decompiler>~~
-* Enhanced Class Decompiler(fork from Eclipse Class Decompiler): <https://github.com/ecd-plugin/ecd>
 * JD(Java Decompiler，不支持命令行使用，无法批量编译)：<https://java-decompiler.github.io/>
 * ~~jad(支持命令行方式使用，支持的class版本过低): <http://varaneckas.com/jad/>~~
-* ~~jadclipse: <https://sourceforge.net/projects/jadclipse/>~~
 * ~~jdec(支持命令行方式使用，支持的class版本过低): <http://jdec.sourceforge.net/>~~
 * ~~JODE(Java Optimize and Decompile Environment, ，支持的class版本过低): <https://sourceforge.net/projects/jode/>~~
-* ~~Jode Eclipse Plugin: <http://blog.technoetic.com/open-source/jode-eclipse-plugin/>~~
 * DJ Java Decompiler(收费软件): <http://www.neshkov.com/dj.html>
 
 ## ProGuard
@@ -759,12 +664,6 @@ mvn deploy:deploy-file -DgroupId="edu.jiangxin" -DartifactId=”gcu” -Dversion
 
 * Metrics-Java版的指标度量工具之一：<http://www.cnblogs.com/nexiyi/p/metrics_sample_1.html>
 * Metrics-Java版的指标度量工具之二：<http://www.cnblogs.com/nexiyi/p/metrics_sample_2.html>
-
-## SourceHelper
-
-    The “Source Helper” plugin is an Eclipse plugin that takes a very useful feature that exists in Intellij IDEA and puts it into Eclipse. In short, the feature shows the code of an out-of-visible-range starting bracket by floating a window that shows the code you cannot see. This helps immensely when trying to identify what closing bracket belongs to what part of the code.
-
-* <http://hexapixel.com/projects/sourcehelper>
 
 ## Structure101
 
@@ -801,17 +700,12 @@ mvn deploy:deploy-file -DgroupId="edu.jiangxin" -DartifactId=”gcu” -Dversion
 
 * <http://www.klocwork.com/>
 
-## GProf
-
-* Linux Tools Project/GProf/User Guide：<http://wiki.eclipse.org/Linux_Tools_Project/GProf/User_Guide>
-
 ## Dot and Graphviz
 
     Graphviz (Graph Visualization Software) 是一个由AT&T实验室启动的开源工具包。DOT是一种图形描述语言，非常简单的，Graphviz就是用来处理这种语言的工具。
 
 * Graphviz项目地址：<http://www.graphviz.org/>
 * 程序员的绘图利器 — Graphviz：<http://blog.csdn.net/zhangskd/article/details/8250470>
-* Graphviz Eclipse plug-in：<https://github.com/abstratt/eclipsegraphviz>
 
 ## Selenium
 
@@ -834,13 +728,13 @@ mvn deploy:deploy-file -DgroupId="edu.jiangxin" -DartifactId=”gcu” -Dversion
 
     Virgo from EclipseRT is a completely module-based Java application server that is designed to run enterprise Java applications and Spring-powered applications with a high degree of flexibility and reliability. It offers a simple yet comprehensive platform to develop, deploy, and service enterprise Java applications.
 
-* 官网：<http://www.eclipse.org/virgo/>
+* Virgo：<http://www.eclipse.org/virgo/>
 
 ## Jetty
 
     Jetty provides a Web server and javax.servlet container, plus support for SPDY, WebSocket, OSGi, JMX, JNDI, JAAS and many other integrations. These components are open source and available for commercial use and distribution.
 
-* 官网：<http://www.eclipse.org/jetty/>
+* Jetty：<http://www.eclipse.org/jetty/>
 
 ## 字符编码判断
 
@@ -878,7 +772,6 @@ mvn deploy:deploy-file -DgroupId="edu.jiangxin" -DartifactId=”gcu” -Dversion
 * JSON in Java [package org.json]: <https://github.com/stleary/JSON-java>
 * Json-lib: <https://sourceforge.net/projects/json-lib/>
 * fastjson: <https://github.com/alibaba/fastjson>
-* Eclipse Json Editor Plugin: <https://sourceforge.net/projects/eclipsejsonedit/>
 * Jackson: <http://fasterxml.com/>
 * Jackson: <http://wiki.fasterxml.com/JacksonDownload>
 * Jackson: <http://wiki.fasterxml.com/JacksonJavaDocs>
@@ -965,7 +858,6 @@ The yFiles diagramming software components are extensive class libraries that en
 ## JavaCC
 
 * <https://javacc.org/>
-* JavaCC Eclipse Plugin: <https://sourceforge.net/projects/eclipse-javacc/>
 
 ## sablecc
 
@@ -974,7 +866,7 @@ The yFiles diagramming software components are extensive class libraries that en
 
 ## Xtext
 
-* <http://www.eclipse.org/Xtext/>
+* Xtext: <http://www.eclipse.org/Xtext/>
 
 ## antlr
 
@@ -1028,7 +920,6 @@ The yFiles diagramming software components are extensive class libraries that en
 * <http://drools.org/download/download.html>
 * <http://docs.jboss.org/drools/release/6.0.1.Final/drools-docs/html_single/index.html>
 * ~~droolsjbpm-tools: <https://github.com/kiegroup/droolsjbpm-tools>~~
-* ~~Installing Drools plugin on Eclipse: <https://www.mastertheboss.com/bpm/drools/installing-drools-plugin-on-eclipse/>~~
 * Drools规则描述语言快速手册: <http://holbrook.github.io/2012/12/06/rule_language.html>
 * Why isn't Drools working with Java 8? <https://stackoverflow.com/questions/22493865/why-isnt-drools-working-with-java-8>
 

@@ -9,9 +9,6 @@
 * FBIde - editor for FreeBASIC: <http://fbide.freebasic.net/>
 * FbEdit FreeBASIC code editor: <https://sourceforge.net/projects/fbedit/>
 * FBWiki: <http://www.freebasic.net/wiki/wikka.php?wakka=CatPgProgrammer>
-* freebasic.vim: <http://cubaxd.net/?p=syntaxfile>
-* Freebasic-vim-syntax-file: <https://github.com/vim-scripts/Freebasic-vim-syntax-file>
-* fbc.vim: <https://github.com/caglartoklu/fbc.vim>
 * IrrlichtWrapper Library: <http://www.frankdodd.screaming.net/IrrlichtWrapper/IrrlichtWrapperPortal.htm>
 * Free BASIC 试用: <http://blog.sina.com.cn/s/blog_54dc74aa010002z0.html>
 

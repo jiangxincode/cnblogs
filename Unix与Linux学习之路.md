@@ -77,7 +77,6 @@
 * Linux系统里如何彻底的清空屏幕？: <http://www.vaikan.com/how-to-clear-the-terminal-screen-for-real-in-case-of-linux/>
 * 如何在Linux上将HTML页面转化成png图片: <http://linux.cn/article-2708-1.html>
 * Ubuntu输入密码登陆后又跳回到登录界面: <https://askubuntu.com/questions/223501/ubuntu-gets-stuck-in-a-login-loop>
-* vimrc，bashrc中rc的含义: UNIX Power Tools (3rd Edition).chm 搜索rc
 * LNMP安装快速导航（官网教程）: <http://lnmp.org/install.html>
 * ubuntu删除旧内核和多余启动项: <https://askubuntu.com/questions/2793/how-do-i-remove-old-kernel-versions-to-clean-up-the-boot-menu>
 * 各个Linux版本的本地root密码破解方法: <http://os.51cto.com/art/200910/159523.htm>
@@ -118,7 +117,6 @@
 * linux关于S权限和T权限的介绍: <http://blog.csdn.net/qq_35116353/article/details/56049592>
 * Linux使用技巧12--Ubuntu代理: <http://blog.csdn.net/lincyang/article/details/51306367>
 * Bash的陷阱: <https://charlee.li/bash-pitfalls.html>
-* Linux下为刚安装好的Eclipse在桌面建一个启动图标: <https://www.cnblogs.com/xzdblogs/p/6422489.html>
 * Linux命令之file - 检测并显示文件类型: <https://codingstandards.iteye.com/blog/804463>
 * Linux Centos 删除除某(多)个文件之外的所有文件: <https://blog.csdn.net/weixin_33994429/article/details/86363583>
 * linux如何删除zip包中某个文件夹及里面的内容: <https://zhidao.baidu.com/question/2074079962247221788.html>
@@ -158,6 +156,8 @@
 * curl: <https://curl.haxx.se/>
 * Poptop - The PPTP Server for Linux: <http://poptop.sourceforge.net/dox/>
 * Linux Extended BPF (eBPF) Tracing Tools: <http://www.brendangregg.com/ebpf.html>
+
+* grep_sed_awk练习: <https://www.cnblogs.com/jiangxinnju/p/17938752>
 
 * GNU Grep: <http://www.gnu.org/software/grep/>
 * ack: <http://beyondgrep.com/>

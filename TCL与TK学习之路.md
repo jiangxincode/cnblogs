@@ -6,6 +6,4 @@
 * MyTcl: <http://mytcl.tcltk.co.kr/doku.php>
 * ACTIVETCL: <https://www.activestate.com/activetcl>
 
-* Configuring Eclipse as TCL/TK IDE: <https://blogsai.wordpress.com/2009/10/15/configuring-eclipse-as-tcltk-ide/>
-
 * Tcler's Wiki: <http://wiki.tcl-lang.org/>

@@ -179,13 +179,6 @@
 * WiFi direct 的相关特点: <https://www.cnblogs.com/TheAfter/p/9914480.html>
 * NATIVE WIFI HOSTED NETWORK VS WIFI DIRECT LEGACY SOFT AP: <https://www.btframework.com/hostednetwork.htm>
 
-## Eclipse CDT
-
-* <http://www.eclipse.org/cdt/>
-* eclipse 配置 TDM-GCC 64位版方法: <http://blog.csdn.net/luozhuang/article/details/8270522>
-* eclipse写C++控制台程序，不见输出: <http://bbs.csdn.net/topics/360207855>
-* eclipse C/ C++编译含有多个main函数的项目: <https://blog.csdn.net/u011039332/article/details/50389979>
-
 ## Dev-C++
 
 * Dev-C++: <https://sourceforge.net/projects/orwelldevcpp/>
@@ -281,7 +274,6 @@ C/C++由于历史原因，编译，构建难度相对于目前主流的其他语
 * Google Test: <https://github.com/google/googletest>
 * 玩转Google开源C++单元测试框架Google Test系列(gtest)(总): <http://www.cnblogs.com/coderzh/archive/2009/04/06/1426755.html>
 * Code Blocks+gtest环境配置: <https://www.cnblogs.com/jiangxinnju/p/10163312.html>
-* C++ unit test start guide, how to set up Google Test (gtest) in Eclipse?：<http://www.codeproject.com/Articles/811934/Cplusplus-unit-test-start-guide-how-to-set-up-Goog>
 
 * CppUnit(C++ port of JUnit): <https://sourceforge.net/projects/cppunit/>
 * 使用CppUnit(Windows): <http://www.cnblogs.com/zhcncn/archive/2012/12/25/2832162.html>

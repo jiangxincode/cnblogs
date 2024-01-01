@@ -362,17 +362,6 @@ AOSP源码占用空间较大，有时不方便通过下载到本地的方式进�
 * 解决adb push时出现的"Read-only file system"问题: <https://www.cnblogs.com/jiangxinnju/p/8186390.html>
 * android adb push 与 adb install的比较（两种安装APK的方法）: <http://blog.csdn.net/liranke/article/details/6795984>
 
-## Eclipse
-
-* Android Development Tools for Eclipse: <http://marketplace.eclipse.org/content/android-development-tools-eclipse>
-* eclipse搭建android开发环境: <http://jingyan.baidu.com/article/7e440953ca6f142fc0e2efe0.html>
-* Windows7部署Android开发环境傻瓜式教程(Eclipse+ADT): <http://www.cnblogs.com/vengen/archive/2010/04/01/AndroidSetup.html>
-* AndroidManifest.xml file missing! <https://bbs.csdn.net/topics/390812425?page=1>
-
-* Android程序开发初级教程(一): <http://blog.csdn.net/k7sem/article/details/1886871>
-* Android程序开发初级教程(二): <http://blog.csdn.net/k7sem/article/details/1887437>
-* Android程序开发初级教程(三): <http://blog.csdn.net/k7sem/article/details/1887499>
-
 ## App Development Platform
 
 * Firebase: <https://firebase.google.com/>

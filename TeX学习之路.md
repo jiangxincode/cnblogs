@@ -12,7 +12,6 @@
 * LEd, is an environment for rapid TeX and LaTeX document development: <http://www.latexeditor.org/>
 * Kile LaTeX Editor: <https://kile.sourceforge.io/>
 * Gummi: The simple LaTeX editor: <https://github.com/alexandervdm/gummi>
-* The TeXlipse plugin for Eclipse provides support for LaTeX projects: <https://github.com/eclipse/texlipse>
 * TeXmacs: <http://www.texmacs.org/tmweb/home/welcome.en.html>
 
 * The easy to use, online, collaborative LaTeX editor: <https://www.overleaf.com/>

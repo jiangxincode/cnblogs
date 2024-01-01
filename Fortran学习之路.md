@@ -8,7 +8,3 @@
 * Approximatrix: <http://approximatrix.com/>
 * Fortran Coder: <http://fcode.cn/>
 
-## Photran
-
-* 项目地址：<http://www.eclipse.org/photran/>
-* 安装说明：<http://www.eclipse.org/photran/download.php>
