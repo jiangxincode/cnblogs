@@ -648,11 +648,30 @@ mvn deploy:deploy-file -DgroupId="edu.jiangxin" -DartifactId=”gcu” -Dversion
 
 ## 反编译
 
-* JD(Java Decompiler，不支持命令行使用，无法批量编译)：<https://java-decompiler.github.io/>
-* ~~jad(支持命令行方式使用，支持的class版本过低): <http://varaneckas.com/jad/>~~
-* ~~jdec(支持命令行方式使用，支持的class版本过低): <http://jdec.sourceforge.net/>~~
-* ~~JODE(Java Optimize and Decompile Environment, ，支持的class版本过低): <https://sourceforge.net/projects/jode/>~~
+* jadx(Dex to Java decompiler): <https://github.com/skylot/jadx>
+* Apktool: <https://github.com/iBotPeaches/Apktool>
+* GDA-android-reversing-Tool: <https://github.com/charles2gan/GDA-android-reversing-Tool>
 * DJ Java Decompiler(收费软件): <http://www.neshkov.com/dj.html>
+* AndroChef Java Decompiler(收费软件): <http://www.neshkov.com/ac_decompiler.html>
+* JEB by PNF Software: <https://www.pnfsoftware.com/>
+* ~~JD(不支持命令行使用，无法批量编译，支持的class版本过低)：<https://java-decompiler.github.io/>~~
+* ~~jad(支持命令行方式使用，支持的class版本过低): <http://www.kpdus.com/jad.html>~~
+* ~~uuDaJava(基于jad): <https://www.uuware.com/st_l.en/st_p2.uw_dejava.html?st_m=24-6>~~
+* ~~jadclipse(基于jad): <https://sourceforge.net/projects/jadclipse/>~~
+* ~~jdec(支持命令行方式使用，支持的class版本过低): <https://sourceforge.net/projects/jdec/>~~
+* ~~JODE(Java Optimize and Decompile Environment, ，支持的class版本过低): <https://sourceforge.net/projects/jode/>~~
+* ~~Jode Eclipse Plugin(基于JODE): <https://sourceforge.net/projects/jodeeclipse/>~~
+* Fernflower(IDEA内置反编译工具): <https://github.com/JetBrains/intellij-community/tree/master/plugins/java-decompiler/engine>
+* Vineflower: <https://github.com/Vineflower/vineflower>
+* CFR(Another Java Decompiler): <https://github.com/leibnitz27/cfr>
+* Procyon: <https://github.com/mstrobel/procyon>
+* Luyten(Java Decompiler Gui for Procyon): <https://github.com/deathmarine/Luyten>
+* Krakatau: <https://github.com/Storyyeller/Krakatau>
+* enjarify: <https://github.com/Storyyeller/enjarify>
+* bytecode-viewer: <https://github.com/konloch/bytecode-viewer>
+* jd-gui-duo: <https://github.com/nbauma109/jd-gui-duo>
+* ~~Eclipse Class Decompiler——Java反编译插件: <https://github.com/cnfree/Eclipse-Class-Decompiler>~~
+* Enhanced Class Decompiler(fork from Eclipse Class Decompiler): <https://github.com/ecd-plugin/ecd>
 
 ## ProGuard
 

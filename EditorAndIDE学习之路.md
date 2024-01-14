@@ -103,10 +103,6 @@
 * AgileJ(AgileJ StructureViews is a plugin for Eclipse which generates class diagrams reverse engineered from Java source code.): <http://www.agilej.com/>
 * CAP (code analysis plugin): <https://sourceforge.net/projects/cap4e/>
 * Bytecode Outline plugin for Eclipse: <http://asm.ow2.org/eclipse/index.html>
-* ~~Eclipse Class Decompiler——Java反编译插件: <https://github.com/cnfree/Eclipse-Class-Decompiler>~~
-* Enhanced Class Decompiler(fork from Eclipse Class Decompiler): <https://marketplace.eclipse.org/content/enhanced-class-decompiler>
-* ~~jadclipse: <https://sourceforge.net/projects/jadclipse/>~~
-* ~~Jode Eclipse Plugin: <http://blog.technoetic.com/open-source/jode-eclipse-plugin/>~~
 
 * Eclipse Web Developer Tools: <https://marketplace.eclipse.org/content/eclipse-web-developer-tools-0/>
 * Linux Tools - GProf Support：<https://eclipse.dev/linuxtools/projectPages/gprof/>
