@@ -74,6 +74,7 @@
 * 在线GIF生成和编辑工具: <https://ezgif.com/>
 * 各种文件格式转换: <https://convertio.co/zh>
 * File conversion: <https://www.zamzar.com/>
+* Protobuf Decoder: <https://protobuf-decoder.netlify.app/>
 
 ## 数据恢复工具
 
@@ -144,10 +145,16 @@
 
 ## SSH/FTP
 
+* MobaXterm(自带rsync等工具，且免费): <https://mobaxterm.mobatek.net/>
+* XManager/XShell/XSftp(收费): <https://www.xshell.com/zh/xmanager/>
+* XShell使用问题汇总: <https://www.cnblogs.com/jiangxinnju/p/6376415.html>
 * FileZilla: <https://filezilla-project.org/>
 * WinSCP: <https://winscp.net/eng/index.php>
 * PuTTY: <https://www.putty.org/>
 * Pietty: <https://www.csie.ntu.edu.tw/~piaip/pietty/download>
+* SecureCRT(收费): <https://www.vandyke.com/products/securecrt/>
+* SecureFX(收费): <https://www.vandyke.com/products/securefx/index.html>
+* ~~SSH Secure Shell Client(无官网): <https://xiazai.zol.com.cn/detail/38/372685.shtml>~~
 
 ## Others
 
