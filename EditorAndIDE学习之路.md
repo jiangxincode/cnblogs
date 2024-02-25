@@ -236,6 +236,7 @@
 
 ## Others
 
+* Lightly: <https://lightly.teamcode.com/>
 * notepad++: <https://notepad-plus-plus.org/>
 * geany: <http://www.geany.org/Download/Extras>
 * Lime Text: <http://limetext.org/>
