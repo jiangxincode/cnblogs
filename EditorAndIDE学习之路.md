@@ -133,7 +133,7 @@
 * The TeXlipse plugin for Eclipse provides support for LaTeX projects: <https://github.com/eclipse/texlipse>
 * Configuring Eclipse as TCL/TK IDE: <https://blogsai.wordpress.com/2009/10/15/configuring-eclipse-as-tcltk-ide/>
 
-## MyEclipse
+### MyEclipse
 
 * <http://www.myeclipseide.com/>
 * 官方中文网：<http://www.myeclipsecn.com/>
@@ -193,7 +193,9 @@
 
 ## Jetbrains
 
+* IntelliJ IDEA: <https://www.jetbrains.com/idea/>
 * Clion: <https://www.jetbrains.com/clion/>
+* RustRover: <https://www.jetbrains.com/rust/>
 * Eclipse Code Formatter: <http://plugins.jetbrains.com/plugin/6546-eclipse-code-formatter>
 
 ## Emacs
