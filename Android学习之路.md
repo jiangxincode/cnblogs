@@ -283,6 +283,7 @@ AOSP源码占用空间较大，有时不方便通过下载到本地的方式进�
 
 ## Libraries
 
+* Dagger2 使用: <https://blog.csdn.net/d0d0bird/article/details/119576002>
 * butterknife: <https://github.com/JakeWharton/butterknife>
 * xUtils3: <https://github.com/wyouflf/xUtils3>
 * SlidingMenu: <https://github.com/jfeinstein10/SlidingMenu>

@@ -234,6 +234,7 @@ C/C++由于历史原因，编译，构建难度相对于目前主流的其他语
 * 基于X的GNOME、GTK、GDK、XLib、GLib等之间的关系: <http://socol.iteye.com/blog/579718>
 
 * GNOME 开发者中心: <https://developer.gnome.org/>
+* ~~GNOME Older guides and API references: <https://developer-old.gnome.org/>~~
 
 * Vala: <https://gitlab.gnome.org/GNOME/vala>
 * Anjuta(不推荐): <https://gitlab.gnome.org/Archive/anjuta>

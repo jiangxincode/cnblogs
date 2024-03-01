@@ -203,7 +203,8 @@
 ## Java EE
 
 * Jakarta EE: <https://en.wikipedia.org/wiki/Jakarta_EE>
-* Jakarta EE Platform Project: <https://eclipse-ee4j.github.io/jakartaee-platform/>
+* Jakarta EE Platform Project: <https://jakartaee.github.io/platform/>
+* Jakarta EE Platform: <https://jakarta.ee/specifications/platform/>
 * ~~Java EE: <https://docs.oracle.com/javaee/7/index.html>~~
 
 * Oracle Java SE Support Roadmap: <https://www.oracle.com/java/technologies/java-se-support-roadmap.html>
@@ -212,12 +213,12 @@
 ## Spring
 
 * 官网：<http://spring.io/>
-* 文档：<http://docs.spring.io/spring/docs/current/spring-framework-reference/htmlsingle/>
+* 文档：<https://docs.spring.io/spring-framework/reference/>
 * Spring Framework 开发参考手册: <http://man.lupaworld.com/content/develop/spring_ref/2.0/html/>
-* Spring Security：<http://projects.spring.io/spring-security>
+* Spring Security：<https://spring.io/projects/spring-security>
 * 源码：spring-framework <https://github.com/spring-projects/spring-framework/>
 
-* Spring Tool Suite：<http://spring.io/tools/sts>
+* Spring Tools：<https://spring.io/tools>
 * Spring 的优秀工具类盘点: <https://www.ibm.com/developerworks/cn/java/j-lo-spring-utils1/index.html>
 * Spring使用Cache: <http://elim.iteye.com/blog/2123030>
 * spring security中限制用户登录次数超过限制的处理: <http://jackyrong.iteye.com/blog/2244803>
@@ -263,7 +264,7 @@
 ## WebService
 
 * Restlet：<http://restlet.com/>
-* Apache CXF: <http://cxf.apache.org/>
+* Apache CXF(开始叫XFire): <http://cxf.apache.org/>
 * axis2: <http://axis.apache.org/axis2/java/core/>
 * Jersey: <https://eclipse-ee4j.github.io/jersey/>
 * Style of WebService: REST vs. SOAP: <http://cenwenchu.iteye.com/blog/316717>
