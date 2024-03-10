@@ -124,6 +124,8 @@
 * C POSIX library: <https://en.wikipedia.org/wiki/C_POSIX_library>
 * POSIX.1-2017: <http://pubs.opengroup.org/onlinepubs/9699919799>
 
+* Linux 常用 C 函数参考手册: <https://getiot.tech/manual/linux-c-functions/>
+
 * GCC, the GNU Compiler Collection: <https://gcc.gnu.org/>
 * The LLVM Compiler Infrastructure: <http://llvm.org/>
 * clang: a C language family frontend for LLVM: <http://clang.llvm.org/>
@@ -229,12 +231,14 @@ C/C++由于历史原因，编译，构建难度相对于目前主流的其他语
 
 * GTK+: <http://www.gtk.org/>
 * GTK文档: <https://docs.gtk.org/>
+* GTK 4 Tutorial for beginners: <https://toshiocp.github.io/Gtk4-tutorial/>
 * 在gtk+程序中显示中文说明: <http://blog.chinaunix.net/uid-222028-id-2658485.html>
 * 使用 GLib 工具集管理 C 数据帖子发表于: <http://forum.ubuntu.org.cn/viewtopic.php?p=2614850>
-* 基于X的GNOME、GTK、GDK、XLib、GLib等之间的关系: <http://socol.iteye.com/blog/579718>
 
 * GNOME 开发者中心: <https://developer.gnome.org/>
 * ~~GNOME Older guides and API references: <https://developer-old.gnome.org/>~~
+* Project Ridley: <https://wiki.gnome.org/Attic/ProjectRidley>
+* libgnome and libgnomeui Must Die! <https://wiki.gnome.org/Attic/LibgnomeMustDie>
 
 * Vala: <https://gitlab.gnome.org/GNOME/vala>
 * Anjuta(不推荐): <https://gitlab.gnome.org/Archive/anjuta>

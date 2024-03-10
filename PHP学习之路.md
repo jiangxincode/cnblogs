@@ -1,6 +1,8 @@
 # PHP学习之路
 
 * PHP: <https://www.php.net/>
+* PHP Manual: <https://www.php.net/manual/en/>
+* ~~PHP 5 Manual: <https://php-legacy-docs.zend.com/manual/php5/en/index>~~
 
 * Apache HTTP Server: <https://httpd.apache.org/>
 

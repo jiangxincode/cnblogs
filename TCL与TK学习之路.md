@@ -4,6 +4,8 @@
 * tclsqueak: <https://github.com/xdobry/tclsqueak>
 * CrowTDE: <https://sourceforge.net/projects/crowtde/>
 * MyTcl: <http://mytcl.tcltk.co.kr/doku.php>
-* ACTIVETCL: <https://www.activestate.com/activetcl>
+
+* ACTIVETCL: <https://www.activestate.com/products/tcl/>
+* Getting started with ActiveTc: <https://docs.activestate.com/activetcl/8.6/start/>
 
 * Tcler's Wiki: <http://wiki.tcl-lang.org/>
