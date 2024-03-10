@@ -15,7 +15,6 @@
 * Managing the System UI: <https://developer.android.com/training/system-ui/index.html>
 * Create and manage notification channels: <https://developer.android.com/develop/ui/views/notifications/channels>
 * Support different screen sizes: <https://developer.android.com/guide/topics/large-screens/support-different-screen-sizes>
-* Optimize for Doze and App Standby: <https://developer.android.com/training/monitoring-device-state/doze-standby>
 * Enhance graphics with wide color content: <https://developer.android.com/training/wide-color-gamut>
 
 * NDK: <https://developer.android.com/ndk/>
@@ -76,15 +75,75 @@ AOSP源码占用空间较大，有时不方便通过下载到本地的方式进�
 * Google 又弃坑了，Jack+Jill vs. javac+dx: <https://zhuanlan.zhihu.com/p/25814519>
 * Android系统架构-[Android取经之路]: <https://blog.csdn.net/yiranfeng/article/details/103549149>
 * Android R Framework流程分析: <https://juejin.cn/column/6982159044094427173>
-* 深入分析 Android 系统返回手势的实现原理: <https://juejin.cn/post/7103503592119599117>
-* Android 13 返回导航大变更：返回键彻底废弃 + 可预见型返回手势: <https://juejin.cn/post/7105645114760331300>
 * 深入源码解析Android中的Handler,Message,MessageQueue,Looper: <http://blog.csdn.net/iispring/article/details/47180325>
 * Fragment相关源码解析一——FragmentManagerImpl和BackStackRecord: <https://blog.csdn.net/chengkun_123/article/details/72548373>
 * Fragment相关源码解析二——生命周期: <https://blog.csdn.net/chengkun_123/article/details/73302779>
 * Fragment相关源码解析三——状态保存与恢复: <https://blog.csdn.net/chengkun_123/article/details/72832728>
+
+### 手势导航相关
+
+* 深入分析 Android 系统返回手势的实现原理: <https://juejin.cn/post/7103503592119599117>
+* Android 13 返回导航大变更：返回键彻底废弃 + 可预见型返回手势: <https://juejin.cn/post/7105645114760331300>
+* Android 14 之返回界面升级：预览目标界面 + 全新返回箭头：<https://juejin.cn/post/7241125859729260600>
+* 开启全面屏体验 | 手势导航 (一): <https://cloud.tencent.com/developer/article/1542904>
+* 处理视觉冲突 | 手势导航 (二): <https://cloud.tencent.com/developer/article/1545958>
+* 如何处理手势冲突 | 手势导航连载 (三): <https://cloud.tencent.com/developer/article/1555442>
+* 沉浸模式 | 手势导航连载 (四) :<https://cloud.tencent.com/developer/article/1563846>
+
+### Input相关
+
 * 图解 Android 事件分发机制: <https://www.jianshu.com/p/e99b5e8bd67b>
 * requestDisallowInterceptTouchEvent() 阻止父层的View截获touch事件(事件处理机制): <https://blog.csdn.net/cl18652469346/article/details/53184508>
 * View·InputEvent事件投递源码分析: <https://www.jianshu.com/p/b7f33f46d33c>
+* Android 输入系统【1】通过 IMS 的创建理解 Android 的输入流程: <https://mp.weixin.qq.com/s/Gv6bATNKfC8FyIs-b_0DoA>
+* input子系统详解: <https://www.cnblogs.com/zhaobinyouth/p/6257662.html>
+* 图解Android - Android GUI 系统 (5) - Android的Event Input System: <https://www.cnblogs.com/samchen2009/p/3368158.html>
+* Android input专题: <https://www.jianshu.com/c/51d936cc1714>
+* Android InputDispatch事件派发-＞选择目标窗口: <https://blog.csdn.net/woai110120130/article/details/112424370>
+* 10.12 android输入系统_InputStage理论: <https://www.cnblogs.com/liusiluandzhangkun/p/9173373.html>
+* Android Input 4: <https://www.jianshu.com/p/06fcccb2bb16>
+* kOS(13)：inputflinger—InputReader线程: <https://zhuanlan.zhihu.com/p/196635542>
+* Android Input (4) -- inputDispatcher到ViewRootImpl: <https://blog.csdn.net/wd229047557/article/details/100766728>
+* 【Android休眠】之Android对PowerKey事件的处理(2)EventHub: <https://blog.csdn.net/u013686019/article/details/53691888>
+* Android_input系统分析EventHub::getevents: <https://blog.csdn.net/weixin_38140931/article/details/100772033>
+* Linux/Android——Input系统之InputReader (七): <https://blog.csdn.net/jscese/article/details/42739197>
+* Android触摸事件的传递（四-1）--输入系统-InputReader: <https://www.jianshu.com/p/34f5c7d55337>
+* Input源码解读——从"Show tabs"开始: <https://www.cnblogs.com/jiangxinnju/p/17035554.html>
+
+### 电源管理
+
+* Optimize for Doze and App Standby: <https://developer.android.com/training/monitoring-device-state/doze-standby>
+* Android 11(R) Power HAL AIDL简析 -- 基本接口: <https://www.cnblogs.com/roger-yu/p/15189708.html>
+
+### Battery相关
+
+* Android 8.1 Battery系列(一) BatteryService分析: <https://blog.csdn.net/FightFightFight/article/details/82353373>
+* Android 8.1 Battery系列(二) BatteryStatsService分析: <https://blog.csdn.net/FightFightFight/article/details/82384336>
+* Android 8.1 Battery系列(三) PowerProfile和power_profile.xml: <https://blog.csdn.net/FightFightFight/article/details/82428483>
+* [Android Framework] 8.1 Battery系列(四) 电量还需多长时间充满时间计算: <https://blog.csdn.net/FightFightFight/article/details/82467246>
+* [Android Framework] 8.1 Battery系列(五) 电量预计可用多长时间计算: <https://blog.csdn.net/FightFightFight/article/details/82628707>
+* [Android Framework] 8.1 Battery系列(六) 上次充满电计算: <https://blog.csdn.net/FightFightFight/article/details/82629645>
+* Android 8.1 Battery系列(七) BatteryStatsHelper类和耗电量统计: <https://blog.csdn.net/FightFightFight/article/details/82694381>
+
+* 通过 Battery Historian 工具分析 Android APP 耗电情况: <https://www.cnblogs.com/huansky/p/14545770.html>
+* AndroidO Battery saver省电助手实现原理: <https://blog.csdn.net/yun_hen/article/details/78143442>
+
+* battery-historian: <https://github.com/google/battery-historian>
+
+### Binder
+
+* Android Binder设计与实现 - 设计篇: <http://blog.csdn.net/universus/article/details/6211589>
+* Service/Binder/Messenger/AIDL: <https://developer.android.com/guide/components/services>+《Android开发艺术探索》第2章、第9章
+* 深入Android HAL binder: <https://sniffer.site/2018/06/06/%E6%B7%B1%E5%85%A5android-hal-binder/>
+* HwBinder入门篇-Android10.0 HwBinder通信原理(一): <https://blog.csdn.net/yiranfeng/article/details/107751217>
+* HIDL详解-Android10.0 HwBinder通信原理(二): <https://blog.csdn.net/yiranfeng/article/details/107824605>
+* BpHwBinder: <https://android.googlesource.com/platform/system/libhwbinder/+/062365942b0fd54cc5e6af46e12a5f90eeb5d4a1/BpHwBinder.cpp>
+* Android源码的Binder权限是如何控制？<https://www.zhihu.com/question/41003297/answer/89328987>
+* Android Binder异常传递流程分析: <https://blog.csdn.net/zhangjg_blog/article/details/83420068>
+
+### 稳定性
+
+* 系统反复重启--RescueParty触发recovery记录: <https://blog.csdn.net/xiaoqiaoq0/article/details/107237769>
 
 ## Article
 
@@ -98,8 +157,6 @@ AOSP源码占用空间较大，有时不方便通过下载到本地的方式进�
 * Android中Handler的使用: <http://blog.csdn.net/iispring/article/details/47115879>
 * Android异步更新UI的几种方法: <https://blog.csdn.net/ydxlt/article/details/51247822>
 * AsyncTaskLoader vs AsyncTask: <https://stackoverflow.com/questions/7120813/asynctaskloader-vs-asynctask>
-
-* Service/Binder/Messenger/AIDL: <https://developer.android.com/guide/components/services>+《Android开发艺术探索》第2章、第9章
 
 * Fragments：Pro Android 5[精通Android 3] Chapter 8
 * Android Fragment的用法（一）: <https://www.cnblogs.com/guop/p/5072572.html>
@@ -148,7 +205,6 @@ AOSP源码占用空间较大，有时不方便通过下载到本地的方式进�
 * Android系统开篇: <http://gityuan.com/android/>
 * 对于android.intent.action.MAIN和android.intent.category.LAUNCHER的理解: <http://blog.csdn.net/lindroid20/article/details/51993247>
 * 详解 Android 通信: <http://www.androidchina.net/5028.html>
-* Android Bander设计与实现 - 设计篇: <http://blog.csdn.net/universus/article/details/6211589>
 * Android Application的使用及其生命周期: <https://www.cnblogs.com/carlo/p/4734291.html>
 * Android Partitions Explained: boot, system, recovery, data, cache & misc: <https://www.addictivetips.com/mobile/android-partitions-explained-boot-system-recovery-data-cache-misc/>
 * Android for work总结(上): <http://blog.csdn.net/liu1314you/article/details/52028823>
@@ -345,7 +401,6 @@ AOSP源码占用空间较大，有时不方便通过下载到本地的方式进�
 * How do I discover memory usage of my application in Android? <https://stackoverflow.com/questions/2298208/how-do-i-discover-memory-usage-of-my-application-in-android>
 
 * Android adb bugreport工具分析和使用: <https://blog.csdn.net/createchance/article/details/51954142>
-* battery-historian: <https://github.com/google/battery-historian>
 * ChkBugReport: <https://github.com/sonyxperiadev/ChkBugReport>
 * loganalysis(Android日志分析工具): <https://cs.android.com/android/platform/superproject/+/refs/heads/master:tools/loganalysis/src/com/android/loganalysis/LogAnalyzer.java>
 
