@@ -9,9 +9,6 @@
   * Data and file storage overview: <https://developer.android.com/training/data-storage>
   * Autofill framework: <https://developer.android.com/guide/topics/text/autofill>
 
-
-  * Caching Bitmaps: <https://developer.android.com/topic/performance/graphics/cache-bitmap>
-
 * Managing the System UI: <https://developer.android.com/training/system-ui/index.html>
 * Create and manage notification channels: <https://developer.android.com/develop/ui/views/notifications/channels>
 * Support different screen sizes: <https://developer.android.com/guide/topics/large-screens/support-different-screen-sizes>
@@ -80,6 +77,11 @@ AOSP源码占用空间较大，有时不方便通过下载到本地的方式进�
 * Fragment相关源码解析二——生命周期: <https://blog.csdn.net/chengkun_123/article/details/73302779>
 * Fragment相关源码解析三——状态保存与恢复: <https://blog.csdn.net/chengkun_123/article/details/72832728>
 
+### 系统架构
+
+*【Android进阶笔记】系统启动流程（init进程、Zygote进程、SystemServer）：<https://juejin.cn/post/6962038395505737765>
+* android关机流程 安卓关机流程: <https://blog.51cto.com/u_16099295/6984333>
+
 ### 手势导航相关
 
 * 深入分析 Android 系统返回手势的实现原理: <https://juejin.cn/post/7103503592119599117>
@@ -112,8 +114,15 @@ AOSP源码占用空间较大，有时不方便通过下载到本地的方式进�
 
 ### 电源管理
 
+* Android电源键亮灭屏流程: <https://blog.csdn.net/feelabclihu/article/details/115410675>
 * Optimize for Doze and App Standby: <https://developer.android.com/training/monitoring-device-state/doze-standby>
+* App Standby Buckets: <https://developer.android.com/topic/performance/appstandby>
+* Doze模式简介: <https://blog.csdn.net/thh159/article/details/113839799>
+* Android中的Doze模式: <https://www.jianshu.com/p/d62d58d6ba5a>
+* Android 8.1 Doze模式分析（一）: <https://blog.csdn.net/liu362732346/article/details/85290519>
 * Android 11(R) Power HAL AIDL简析 -- 基本接口: <https://www.cnblogs.com/roger-yu/p/15189708.html>
+* AOD 息屏是什么？背后技术原理是什么？<https://www.zhihu.com/question/332932501>
+* AOD相关机制: <https://blog.csdn.net/cr459464757/article/details/108054816>
 
 ### Battery相关
 
@@ -130,6 +139,10 @@ AOSP源码占用空间较大，有时不方便通过下载到本地的方式进�
 
 * battery-historian: <https://github.com/google/battery-historian>
 
+### 剪贴板框架
+
+* 复制和粘贴: <https://developer.android.com/develop/ui/views/touch-and-input/copy-paste>
+
 ### Binder
 
 * Android Binder设计与实现 - 设计篇: <http://blog.csdn.net/universus/article/details/6211589>
@@ -144,6 +157,71 @@ AOSP源码占用空间较大，有时不方便通过下载到本地的方式进�
 ### 稳定性
 
 * 系统反复重启--RescueParty触发recovery记录: <https://blog.csdn.net/xiaoqiaoq0/article/details/107237769>
+* android-O RescueParty 介紹: <https://www.twblogs.net/a/5b829c732b717766a1e91145>
+* Rescue Party: <https://source.android.google.cn/docs/core/tests/debug/rescue-party?hl=en>
+* 理解Native Crash处理流程: <https://blog.csdn.net/u010144805/article/details/78560529>
+* ANR Broadcast TimeOut 超时判断: <https://blog.csdn.net/qq_23452385/article/details/89784523>
+* Android ANR：原理分析及解决办法: <https://www.jianshu.com/p/388166988cef>
+
+## 性能分析
+
+* Overview of system tracing: <https://developer.android.com/topic/performance/tracing>
+* Inspect CPU activity with CPU Profiler: <https://developer.android.com/studio/profile/cpu-profiler>
+* Simpleperf: <https://android.googlesource.com/platform/system/extras/+/master/simpleperf/doc/README.md>
+* Android Systrace 基础知识: <https://www.androidperformance.com/2019/05/28/Android-Systrace-About/>
+* systrace.py环境配置: <https://blog.csdn.net/zc37093/article/details/105415843>
+
+* Perfetto: <https://perfetto.dev/>
+* PerfettoUI: <https://ui.perfetto.dev/#!/>
+
+* TraceView(已弃用): <https://developer.android.com/studio/profile/traceview>
+* Android性能优化—TraceView的使用: <https://www.jianshu.com/p/7e9ca2c73c97>
+
+* PerfDog性能狗: <https://perfdog.qq.com/>
+
+* Eight Ways Your Android App Can Leak Memory: <https://blog.nimbledroid.com/2016/05/23/memory-leaks.html>
+* Eight Ways Your Android App Can STOP Leaking Memory: <https://blog.nimbledroid.com/2016/09/06/stop-memory-leaks.html>
+* Android性能优化: <http://liuwangshu.cn/tags/Android%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/>
+* 使用meminfo分析Android单个进程内存信息: <https://my.oschina.net/shaorongjie/blog/128442>
+* How do I discover memory usage of my application in Android? <https://stackoverflow.com/questions/2298208/how-do-i-discover-memory-usage-of-my-application-in-android>
+
+* Android adb bugreport工具分析和使用: <https://blog.csdn.net/createchance/article/details/51954142>
+* ChkBugReport: <https://github.com/sonyxperiadev/ChkBugReport>
+* loganalysis(Android日志分析工具): <https://cs.android.com/android/platform/superproject/+/refs/heads/master:tools/loganalysis/src/com/android/loganalysis/LogAnalyzer.java>
+
+* 性能优化工具（十）- Android内存分析命令: <https://www.jianshu.com/p/9edfe9d5eb34>
+* Android内存优化（使用SparseArray和ArrayMap取代HashMap）:<https://www.cnblogs.com/yjbjingcha/p/7074266.html>
+* Android--＞iostat(显示CPU和IO系统负载情况): <https://blog.csdn.net/angcyo/article/details/51104326>
+* 内存耗用：VSS/RSS/PSS/USS: <https://blog.csdn.net/adaptiver/article/details/7084364>
+
+### 动效
+
+* 各种转场动画: <https://github.com/lgvalle/Material-Animations>
+* Android:去掉系统自带的Activity跳转动画，跳转无动画,返回无动画: <http://blog.csdn.net/qq_24697659/article/details/49660275>
+* Android 属性动画 常用方法 与 插值器 Interpolator: <https://blog.csdn.net/qq_30889373/article/details/78881140>
+* Property Animation框架详解(一): <https://blog.csdn.net/u012422440/article/details/51352852>
+* Android动画之Interpolator(插值器): <https://blog.csdn.net/pzm1993/article/details/77926373>
+* Android 路径绘制艺术——贝塞尔曲线: <https://www.jianshu.com/p/12fcc3fedbbc>
+* 三阶贝塞尔曲线Interpolator的应用: <https://blog.csdn.net/xsl_bj/article/details/47722489>
+* 在线演示: <https://cubic-bezier.com/><http://inloop.github.io/interpolator/>
+* Android颜色透明度百分比和十六进制对应关系: <https://blog.csdn.net/zhangcanyan/article/details/78400179>
+* Android 关于Path的FillType: <https://www.jianshu.com/p/ce808a9e7e38>
+* Android中使用SVG实现炫酷动画效果: <https://blog.csdn.net/SilenceOO/article/details/78629028>
+* SVG 的 PathData 在 Android 中的使用: <https://blog.csdn.net/zwlove5280/article/details/73196543>
+* Android矢量图(一)--VectorDrawable基础: <https://www.jianshu.com/p/0972a0d290e9>
+* 在 Android 开发中使用 SVG: <https://enzowyf.github.io/svg_android.html>
+* 手把手教学， android 使用 SVG: <https://www.jianshu.com/p/5c81970ddf33>
+
+### 控件
+
+* Caching Bitmaps: <https://developer.android.com/topic/performance/graphics/cache-bitmap>
+* 不同版本上 Bitmap 内存分配与回收原理对比: <https://zhuanlan.zhihu.com/p/553523811>
+* Android Drawable Resource学习（一）、Drawable Resource简介: <https://blog.csdn.net/LonelyRoamer/article/details/8148147>
+* How to convert multiple svgs to Android vector drawable in one shot: <https://medium.com/@bhojwaniravi/how-to-convert-multiple-svgs-to-vector-drawable-in-one-shot-8b5083417747>
+* Drawable图像资源抽象类: <https://www.jianshu.com/p/2e7c5ad7d5c8>
+* 将Canvas转换为Drawable: <http://cn.voidcc.com/question/p-tvemojow-rp.html>
+* Carson带你学Android：自定义View Canvas类使用教程: <https://blog.csdn.net/carson_ho/article/details/60598775>
+* Android中Canvas绘图之PorterDuffXfermode使用及工作原理详解: <https://blog.csdn.net/iispring/article/details/50472485>
 
 ## Article
 
@@ -268,24 +346,6 @@ AOSP源码占用空间较大，有时不方便通过下载到本地的方式进�
 * J 的艺术，R 的艺术: <http://www.hi-id.com/?p=3231>
 * HDR详解 - 什么是HDR？<https://zhuanlan.zhihu.com/p/212141989>
 
-## 动效
-
-* 各种转场动画: <https://github.com/lgvalle/Material-Animations>
-* Android:去掉系统自带的Activity跳转动画，跳转无动画,返回无动画: <http://blog.csdn.net/qq_24697659/article/details/49660275>
-* Android 属性动画 常用方法 与 插值器 Interpolator: <https://blog.csdn.net/qq_30889373/article/details/78881140>
-* Property Animation框架详解(一): <https://blog.csdn.net/u012422440/article/details/51352852>
-* Android动画之Interpolator(插值器): <https://blog.csdn.net/pzm1993/article/details/77926373>
-* Android 路径绘制艺术——贝塞尔曲线: <https://www.jianshu.com/p/12fcc3fedbbc>
-* 三阶贝塞尔曲线Interpolator的应用: <https://blog.csdn.net/xsl_bj/article/details/47722489>
-* 在线演示: <https://cubic-bezier.com/><http://inloop.github.io/interpolator/>
-* Android颜色透明度百分比和十六进制对应关系: <https://blog.csdn.net/zhangcanyan/article/details/78400179>
-* Android 关于Path的FillType: <https://www.jianshu.com/p/ce808a9e7e38>
-* Android中使用SVG实现炫酷动画效果: <https://blog.csdn.net/SilenceOO/article/details/78629028>
-* SVG 的 PathData 在 Android 中的使用: <https://blog.csdn.net/zwlove5280/article/details/73196543>
-* Android矢量图(一)--VectorDrawable基础: <https://www.jianshu.com/p/0972a0d290e9>
-* 在 Android 开发中使用 SVG: <https://enzowyf.github.io/svg_android.html>
-* 手把手教学， android 使用 SVG: <https://www.jianshu.com/p/5c81970ddf33>
-
 ## Gradle/Gradle Wrapper/Android Plugin for Gradle
 
 * Gradle: <http://gradle.org/>
@@ -377,32 +437,6 @@ AOSP源码占用空间较大，有时不方便通过下载到本地的方式进�
 
 * Flutter: <https://flutter.dev/>
 * Flutter中文网: <https://flutterchina.club/get-started/install/>
-
-## 性能分析
-
-* Overview of system tracing: <https://developer.android.com/topic/performance/tracing>
-* Inspect CPU activity with CPU Profiler: <https://developer.android.com/studio/profile/cpu-profiler>
-* Simpleperf: <https://android.googlesource.com/platform/system/extras/+/master/simpleperf/doc/README.md>
-* Android Systrace 基础知识: <https://www.androidperformance.com/2019/05/28/Android-Systrace-About/>
-* systrace.py环境配置: <https://blog.csdn.net/zc37093/article/details/105415843>
-
-* Perfetto: <https://perfetto.dev/>
-* PerfettoUI: <https://ui.perfetto.dev/#!/>
-
-* TraceView(已弃用): <https://developer.android.com/studio/profile/traceview>
-* Android性能优化—TraceView的使用: <https://www.jianshu.com/p/7e9ca2c73c97>
-
-* PerfDog性能狗: <https://perfdog.qq.com/>
-
-* Eight Ways Your Android App Can Leak Memory: <https://blog.nimbledroid.com/2016/05/23/memory-leaks.html>
-* Eight Ways Your Android App Can STOP Leaking Memory: <https://blog.nimbledroid.com/2016/09/06/stop-memory-leaks.html>
-* Android性能优化: <http://liuwangshu.cn/tags/Android%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/>
-* 使用meminfo分析Android单个进程内存信息: <https://my.oschina.net/shaorongjie/blog/128442>
-* How do I discover memory usage of my application in Android? <https://stackoverflow.com/questions/2298208/how-do-i-discover-memory-usage-of-my-application-in-android>
-
-* Android adb bugreport工具分析和使用: <https://blog.csdn.net/createchance/article/details/51954142>
-* ChkBugReport: <https://github.com/sonyxperiadev/ChkBugReport>
-* loganalysis(Android日志分析工具): <https://cs.android.com/android/platform/superproject/+/refs/heads/master:tools/loganalysis/src/com/android/loganalysis/LogAnalyzer.java>
 
 ## Android模拟器
 
