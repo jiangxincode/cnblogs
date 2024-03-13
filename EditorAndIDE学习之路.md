@@ -200,6 +200,7 @@
 
 ## Emacs
 
+* GNU Emacs: <https://www.gnu.org/software/emacs/>
 * emacswiki: <http://www.emacswiki.org/emacs/>
 * GNU Emacs Manuals Online: <http://www.gnu.org/software/emacs/manual/>
 

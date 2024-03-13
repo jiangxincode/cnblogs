@@ -354,10 +354,6 @@
 
 Tools → Options... → LibreOffice → View → Graphics output (取消钩选Use hardware acceleration)
 
-## 小企鹅输入法突然无法使用
-
-查看一下是否安装了ibus，可在系统设置中的语言支持中重新把输入法改为ibus
-
 ## 主文件夹里的中文文件夹改成英文文件夹
 
 打开终端，在终端下输入命令:

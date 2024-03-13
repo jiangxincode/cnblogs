@@ -45,6 +45,13 @@
 * 永中Office: <http://www.yozosoft.com/>
 * Prezi: <https://prezi.com/>
 
+## 输入法
+
+* fcitx5: <https://github.com/fcitx/fcitx5>
+* fcitx5-android: <https://github.com/fcitx5-android/fcitx5-android>
+* ibus: <https://github.com/ibus/ibus>
+* 深蓝词库转换: <https://github.com/studyzy/imewlconverter>
+
 ## 虚拟机软件
 
 * VMware Workstation Player: <https://www.vmware.com/cn/products/workstation-player.html>

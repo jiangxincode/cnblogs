@@ -84,6 +84,7 @@ AOSP源码占用空间较大，有时不方便通过下载到本地的方式进�
 
 ### 手势导航相关
 
+* Ensure compatibility with gesture navigation: <https://developer.android.com/develop/ui/views/touch-and-input/gestures/gesturenav>
 * 深入分析 Android 系统返回手势的实现原理: <https://juejin.cn/post/7103503592119599117>
 * Android 13 返回导航大变更：返回键彻底废弃 + 可预见型返回手势: <https://juejin.cn/post/7105645114760331300>
 * Android 14 之返回界面升级：预览目标界面 + 全新返回箭头：<https://juejin.cn/post/7241125859729260600>
@@ -143,9 +144,16 @@ AOSP源码占用空间较大，有时不方便通过下载到本地的方式进�
 
 * 复制和粘贴: <https://developer.android.com/develop/ui/views/touch-and-input/copy-paste>
 
+### 输入法与输入法框架
+
+* 关于Android外设键盘导致系统输入法隐藏的解决方案: <https://blog.csdn.net/xiaolei10086/article/details/41212845>
+
 ### Binder
 
+* 架构概览: <https://source.android.google.cn/docs/core/architecture>
+* 适用于 HAL 的 AIDL: <https://source.android.google.cn/docs/core/architecture/aidl/aidl-hals>
 * Android Binder设计与实现 - 设计篇: <http://blog.csdn.net/universus/article/details/6211589>
+* Here comes Treble: A modular base for Android: <https://android-developers.googleblog.com/2017/05/here-comes-treble-modular-base-for.html>
 * Service/Binder/Messenger/AIDL: <https://developer.android.com/guide/components/services>+《Android开发艺术探索》第2章、第9章
 * 深入Android HAL binder: <https://sniffer.site/2018/06/06/%E6%B7%B1%E5%85%A5android-hal-binder/>
 * HwBinder入门篇-Android10.0 HwBinder通信原理(一): <https://blog.csdn.net/yiranfeng/article/details/107751217>
@@ -154,8 +162,23 @@ AOSP源码占用空间较大，有时不方便通过下载到本地的方式进�
 * Android源码的Binder权限是如何控制？<https://www.zhihu.com/question/41003297/answer/89328987>
 * Android Binder异常传递流程分析: <https://blog.csdn.net/zhangjg_blog/article/details/83420068>
 
+### Service
+
+* About Background work: <https://developer.android.com/develop/background-work>
+* Android使用JobService实现后台服务: <https://www.jianshu.com/p/aba38b9e11e7>
+* Android 中设置线程优先级的正确方式（2种方法）: <https://blog.csdn.net/u011578734/article/details/110549238>
+* 微信团队原创分享：Android版微信后台保活实战分享(进程保活篇): <http://www.52im.net/thread-210-1-1.html>
+* Android单应用开多进程与单进程跑多应用: <https://blog.csdn.net/ragnaro/article/details/51569096>
+* Android中使用ContentProvider进行跨进程方法调用: <https://blog.csdn.net/cnzx219/article/details/46645519>
+* Android 进程管理篇（五）-调度策略与优先级: <https://www.jianshu.com/p/1d2f6a5bbe76>
+* Android性能优化之实现拥有Looper的线程--HandlerThread: <https://blog.csdn.net/chenliguan/article/details/54585646>
+
 ### 稳定性
 
+* AtomicFile: <https://developer.android.com/reference/android/util/AtomicFile>
+* ResilientAtomicFile: <https://android.googlesource.com/platform/frameworks/base/+/master/services/core/java/com/android/server/pm/ResilientAtomicFile.java>
+* Linux sync详解: <https://www.python100.com/html/120303.html>
+* ANDROID 设备写入文件，立即断电重启后，文件丢失，数据没有保存问题: <https://blog.csdn.net/qijingwang/article/details/125381781>
 * 系统反复重启--RescueParty触发recovery记录: <https://blog.csdn.net/xiaoqiaoq0/article/details/107237769>
 * android-O RescueParty 介紹: <https://www.twblogs.net/a/5b829c732b717766a1e91145>
 * Rescue Party: <https://source.android.google.cn/docs/core/tests/debug/rescue-party?hl=en>
@@ -222,6 +245,16 @@ AOSP源码占用空间较大，有时不方便通过下载到本地的方式进�
 * 将Canvas转换为Drawable: <http://cn.voidcc.com/question/p-tvemojow-rp.html>
 * Carson带你学Android：自定义View Canvas类使用教程: <https://blog.csdn.net/carson_ho/article/details/60598775>
 * Android中Canvas绘图之PorterDuffXfermode使用及工作原理详解: <https://blog.csdn.net/iispring/article/details/50472485>
+
+### Statsd
+
+* Statsd: <https://source.android.google.cn/docs/core/architecture/modular-system/statsd?hl=zh-cn>
+* android WMS中的Proto/ProtoLog/ProtoLogTool日志原理介绍: <https://blog.csdn.net/learnframework/article/details/130203370>
+* Android中使用 Protobuf: <https://blog.csdn.net/zhaoyanjun6/article/details/125116393>
+* Language Guide (proto 2): <https://protobuf.dev/programming-guides/proto2/>
+* Protocol Buffers: <https://protobuf.dev/>
+* Protobuf语法指南（proto2）: <https://blog.csdn.net/qq_22660775/article/details/89044538>
+* Android中的StatsLog: <https://blog.csdn.net/ho_mgx/article/details/113486753>
 
 ## Article
 
