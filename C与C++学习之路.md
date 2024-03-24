@@ -123,6 +123,7 @@
 * GNU C Library: <https://en.wikipedia.org/wiki/GNU_C_Library>
 * C POSIX library: <https://en.wikipedia.org/wiki/C_POSIX_library>
 * POSIX.1-2017: <http://pubs.opengroup.org/onlinepubs/9699919799>
+* SUSv4(Single UNIX® Specification, Version 4): <https://publications.opengroup.org/t101>
 
 * Linux 常用 C 函数参考手册: <https://getiot.tech/manual/linux-c-functions/>
 
