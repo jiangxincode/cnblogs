@@ -34,25 +34,12 @@
 * Xamarin: <https://www.xamarin.com/>
 * Android Support Overview: <http://www.jetbrains.com/help/idea/android-support-overview.html>
 
-* I18n Translation Search: <https://i18ns.com/>
-
-* androidcommunity: <http://androidcommunity.com/>
-* AndroidDevTools: <http://www.androiddevtools.cn/>
-
-* Material Design: <https://m3.material.io/>
-
 ## AOSP
 
 * AOSP项目官网中文：<https://source.android.google.cn>
 * AOSP项目官网英文：<https://source.android.com>
 
-* Building Android: <https://source.android.com/setup/build/building>
-* Codenames, Tags, and Build Numbers: <https://source.android.com/setup/start/build-numbers>
-* Graphics: <https://source.android.com/devices/graphics>
-* Supporting Multiple Users: <https://source.android.com/docs/devices/admin/multi-user>
-* Android5.1--多用户模式: <https://blog.csdn.net/kitty_landon/article/details/47123767>
-
-AOSP源码占用空间较大，有时不方便通过下载到本地的方式进行查看，可以考虑使用下列网址在线查看：
+### AOSP源码在线查看
 
 * Android Code Search: <https://cs.android.com/>
 * AOSPXRef: <http://aospxref.com/>
@@ -61,26 +48,34 @@ AOSP源码占用空间较大，有时不方便通过下载到本地的方式进�
 * Android OS: <https://www.androidos.net.cn/sourcecode>
 * Git repositories on android: <https://android.googlesource.com/>
 
-其它曾经关注的AOSP相关网址：
+### AOSP构建
 
+* Building Android: <https://source.android.com/setup/build/building>
+* Codenames, Tags, and Build Numbers: <https://source.android.com/setup/start/build-numbers>
 * 将AOSP源码导入到Android Studio进行查看: <https://www.cnblogs.com/jiangxinnju/p/14426645.html>
 * Android构建系统: <https://www.cnblogs.com/jiangxinnju/p/14402000.html>
 * Android soong build系统介绍: <https://www.jianshu.com/p/80013a768a45>
 * Repo实践指南: <https://www.cnblogs.com/jiangxinnju/p/14274982.html>
-* Android OTA升级: <https://www.cnblogs.com/jiangxinnju/p/14404073.html>
-* Android 新一代编译 toolchain Jack & Jill 简介: <https://yq.aliyun.com/articles/40811>
-* Google 又弃坑了，Jack+Jill vs. javac+dx: <https://zhuanlan.zhihu.com/p/25814519>
-* Android系统架构-[Android取经之路]: <https://blog.csdn.net/yiranfeng/article/details/103549149>
-* Android R Framework流程分析: <https://juejin.cn/column/6982159044094427173>
-* 深入源码解析Android中的Handler,Message,MessageQueue,Looper: <http://blog.csdn.net/iispring/article/details/47180325>
-* Fragment相关源码解析一——FragmentManagerImpl和BackStackRecord: <https://blog.csdn.net/chengkun_123/article/details/72548373>
-* Fragment相关源码解析二——生命周期: <https://blog.csdn.net/chengkun_123/article/details/73302779>
-* Fragment相关源码解析三——状态保存与恢复: <https://blog.csdn.net/chengkun_123/article/details/72832728>
+
+* ~~使用 Jack 编译 (AOSP 6.0 - 8.1): <https://source.android.google.cn/docs/setup/build/jack>~~
+* ~~Android 新一代编译 toolchain Jack & Jill 简介: <https://yq.aliyun.com/articles/40811>~~
+* ~~Google 又弃坑了，Jack+Jill vs. javac+dx: <https://zhuanlan.zhihu.com/p/25814519>~~
 
 ### 系统架构
 
-*【Android进阶笔记】系统启动流程（init进程、Zygote进程、SystemServer）：<https://juejin.cn/post/6962038395505737765>
+* 系统启动流程（init进程、Zygote进程、SystemServer）：<https://juejin.cn/post/6962038395505737765>
 * android关机流程 安卓关机流程: <https://blog.51cto.com/u_16099295/6984333>
+
+### WMS
+
+* WMS转屏流程: <https://www.jianshu.com/p/65bf626c66d5>
+* Android WMS动画系统初探(一): <https://juejin.cn/post/7021082548985921567>
+* WindowManagerService理解与深入（Android Q）: <https://blog.csdn.net/xxzxxzdlut/article/details/103205047>
+* android中Activity中的WindowManager与Window: <https://www.cnblogs.com/meizixiong/p/3546397.html>
+* 浅析onWindowsFocusChanged()方法: <https://blog.csdn.net/a282255307/article/details/74906518>
+* Window.setFlags 各种Flag笔记: <https://blog.csdn.net/sdjianfei/article/details/53505874>
+* Activity的创建（从Activity的角度理解IWindowSession）: <https://blog.csdn.net/lu1024188315/article/details/74911179>
+* Android多点触控问题解决(windowEnableSplitTouch, splitMotionEvents): <https://blog.csdn.net/yztbydh/article/details/82734884>
 
 ### 手势导航相关
 
@@ -113,6 +108,10 @@ AOSP源码占用空间较大，有时不方便通过下载到本地的方式进�
 * Android触摸事件的传递（四-1）--输入系统-InputReader: <https://www.jianshu.com/p/34f5c7d55337>
 * Input源码解读——从"Show tabs"开始: <https://www.cnblogs.com/jiangxinnju/p/17035554.html>
 
+### Accessibility
+
+* Android AccessibilityService机制源码解析: <https://juejin.cn/post/6844903623013597198>
+
 ### 电源管理
 
 * Android电源键亮灭屏流程: <https://blog.csdn.net/feelabclihu/article/details/115410675>
@@ -124,6 +123,11 @@ AOSP源码占用空间较大，有时不方便通过下载到本地的方式进�
 * Android 11(R) Power HAL AIDL简析 -- 基本接口: <https://www.cnblogs.com/roger-yu/p/15189708.html>
 * AOD 息屏是什么？背后技术原理是什么？<https://www.zhihu.com/question/332932501>
 * AOD相关机制: <https://blog.csdn.net/cr459464757/article/details/108054816>
+
+### 生物识别
+
+* Android8.0 Fingerprint指纹启动流程详细分析: <https://blog.csdn.net/weixin_43943188/article/details/88321101>
+* FingerPrintAuth: <https://github.com/hetaoyuan-android/FingerPrintAuth/blob/9d9b82ea2ab6b717dec1f0f1d11e0e7d2251f586/app/src/main/java/com/feelschaotic/MainActivity.java>
 
 ### Battery相关
 
@@ -161,10 +165,14 @@ AOSP源码占用空间较大，有时不方便通过下载到本地的方式进�
 * BpHwBinder: <https://android.googlesource.com/platform/system/libhwbinder/+/062365942b0fd54cc5e6af46e12a5f90eeb5d4a1/BpHwBinder.cpp>
 * Android源码的Binder权限是如何控制？<https://www.zhihu.com/question/41003297/answer/89328987>
 * Android Binder异常传递流程分析: <https://blog.csdn.net/zhangjg_blog/article/details/83420068>
+* HIDL 简单介绍: <https://blog.csdn.net/lei7143/article/details/80931412>
+* 使用Android的HIDL+AIDL方式编写从HAL层到APP层的程序: <http://www.max-shu.com/blog/?p=1075>
+* AIDL interface between Java and C++: <https://stackoverflow.com/questions/65284392/aidl-interface-between-java-and-c>
 
 ### Service
 
 * About Background work: <https://developer.android.com/develop/background-work>
+* 深入源码解析Android中的Handler,Message,MessageQueue,Looper: <http://blog.csdn.net/iispring/article/details/47180325>
 * Android使用JobService实现后台服务: <https://www.jianshu.com/p/aba38b9e11e7>
 * Android 中设置线程优先级的正确方式（2种方法）: <https://blog.csdn.net/u011578734/article/details/110549238>
 * 微信团队原创分享：Android版微信后台保活实战分享(进程保活篇): <http://www.52im.net/thread-210-1-1.html>
@@ -186,7 +194,7 @@ AOSP源码占用空间较大，有时不方便通过下载到本地的方式进�
 * ANR Broadcast TimeOut 超时判断: <https://blog.csdn.net/qq_23452385/article/details/89784523>
 * Android ANR：原理分析及解决办法: <https://www.jianshu.com/p/388166988cef>
 
-## 性能分析
+### 性能分析
 
 * Overview of system tracing: <https://developer.android.com/topic/performance/tracing>
 * Inspect CPU activity with CPU Profiler: <https://developer.android.com/studio/profile/cpu-profiler>
@@ -255,8 +263,40 @@ AOSP源码占用空间较大，有时不方便通过下载到本地的方式进�
 * Protocol Buffers: <https://protobuf.dev/>
 * Protobuf语法指南（proto2）: <https://blog.csdn.net/qq_22660775/article/details/89044538>
 * Android中的StatsLog: <https://blog.csdn.net/ho_mgx/article/details/113486753>
+* Statsd In android 9 (2): <https://maplestorys.github.io/2018/12/19/Statsd-In-android-9-2/>
+
+### 文本分类
+
+* Implement text classifier: <https://source.android.google.cn/docs/core/display/textclassifier>
+* TextClassification介绍（一）: <https://blog.csdn.net/SpkingR/article/details/83540086>
+
+### Sensor
+
+* Android 4.4 Kitkat Phone工作流程浅析(十一)__PSensor工作流程浅析: <https://blog.csdn.net/yihongyuelan/article/details/43449851>
+
+### Vibrator
+
+* 触感反馈: <https://source.android.google.cn/docs/core/interaction/haptics>
 
 ## Article
+
+* I18n Translation Search: <https://i18ns.com/>
+
+* androidcommunity: <http://androidcommunity.com/>
+* AndroidDevTools: <http://www.androiddevtools.cn/>
+
+* Material Design: <https://m3.material.io/>
+
+* Graphics: <https://source.android.com/devices/graphics>
+* Supporting Multiple Users: <https://source.android.com/docs/devices/admin/multi-user>
+* Android5.1--多用户模式: <https://blog.csdn.net/kitty_landon/article/details/47123767>
+
+* Android OTA升级: <https://www.cnblogs.com/jiangxinnju/p/14404073.html>
+* Android系统架构-[Android取经之路]: <https://blog.csdn.net/yiranfeng/article/details/103549149>
+* Android R Framework流程分析: <https://juejin.cn/column/6982159044094427173>
+* Fragment相关源码解析一——FragmentManagerImpl和BackStackRecord: <https://blog.csdn.net/chengkun_123/article/details/72548373>
+* Fragment相关源码解析二——生命周期: <https://blog.csdn.net/chengkun_123/article/details/73302779>
+* Fragment相关源码解析三——状态保存与恢复: <https://blog.csdn.net/chengkun_123/article/details/72832728>
 
 * Android 编程与兼容性问题: 《Android Programming The Big Nerd Ranch Guide 3rd[Android编程权威指南（第3版）》 6.2 7.8 7.9
 * lntentfilter的匹配规则: 《Android开发艺术探索》 1.3
@@ -268,6 +308,9 @@ AOSP源码占用空间较大，有时不方便通过下载到本地的方式进�
 * Android中Handler的使用: <http://blog.csdn.net/iispring/article/details/47115879>
 * Android异步更新UI的几种方法: <https://blog.csdn.net/ydxlt/article/details/51247822>
 * AsyncTaskLoader vs AsyncTask: <https://stackoverflow.com/questions/7120813/asynctaskloader-vs-asynctask>
+* 子线程调用Toast报Can't create handler inside thread that has not called Looper.prepare() 错误: <https://blog.csdn.net/niuls/article/details/22850631>
+* Handler延迟消息执行机制，会阻塞吗？<https://blog.csdn.net/u010126792/article/details/85091348>
+* Handler、Thread、HandlerThread三者的区别: <https://blog.csdn.net/weixin_41101173/article/details/79687313>
 
 * Fragments：Pro Android 5[精通Android 3] Chapter 8
 * Android Fragment的用法（一）: <https://www.cnblogs.com/guop/p/5072572.html>
@@ -402,7 +445,7 @@ AOSP源码占用空间较大，有时不方便通过下载到本地的方式进�
 
 * Android Gradle and the curious case of invisible dependency: <https://proandroiddev.com/android-gradle-and-the-curious-case-of-invisible-dependency-7f1bcc8bb79e>
 
-## Android Studio及其插件
+## Android Studio
 
 * JetBrains Plugins Repository: <https://plugins.jetbrains.com>
 * Android Studio常用插件汇总: <https://www.cnblogs.com/jiangxinnju/p/13736788.html>
@@ -415,6 +458,7 @@ AOSP源码占用空间较大，有时不方便通过下载到本地的方式进�
 * dumpsys: <https://developer.android.com/studio/command-line/dumpsys>
 * Debug Your layout with Layout Inspector and Layout Validation: <https://developer.android.com/studio/debug/layout-inspector>
 * Configure Android Studio: <https://developer.android.com/studio/intro/studio-config.html>
+* Configure hardware acceleration for the Android Emulator: <https://developer.android.com/studio/run/emulator-acceleration>
 
 * Android Studio移动鼠标显示悬浮提示的设置方法: <https://www.cnblogs.com/jiangxinnju/p/8227442.html>
 * ANDROID STUDIO详细教程汇总: <http://stormzhang.com/devtools/2015/06/17/android-studio-all/>
@@ -437,7 +481,6 @@ AOSP源码占用空间较大，有时不方便通过下载到本地的方式进�
 * xUtils3: <https://github.com/wyouflf/xUtils3>
 * SlidingMenu: <https://github.com/jfeinstein10/SlidingMenu>
 * ViewPagerIndicator: <https://github.com/JakeWharton/ViewPagerIndicator>
-* jpinyin: <https://github.com/stuxuhai/jpinyin>
 * Android-Universal-Image-Loader: <https://github.com/nostra13/Android-Universal-Image-Loader>
 * hugo: <https://github.com/JakeWharton/hugo>
 * 极光推送: <http://docs.jiguang.cn/jpush/resources/#android-sdk>
@@ -484,6 +527,10 @@ AOSP源码占用空间较大，有时不方便通过下载到本地的方式进�
 * ADB: <http://adbshell.com/>
 * 解决adb push时出现的"Read-only file system"问题: <https://www.cnblogs.com/jiangxinnju/p/8186390.html>
 * android adb push 与 adb install的比较（两种安装APK的方法）: <http://blog.csdn.net/liranke/article/details/6795984>
+* Android 8.0 adb shell dumpsys activity activities | findstr mFocusedActivity 获取当前的 activity 显示空的: <https://www.cnblogs.com/yinzhuoqun/p/9090030.html>
+* How to read "adb shell dumpsys alarm" output: <https://stackoverflow.com/questions/28742884/how-to-read-adb-shell-dumpsys-alarm-output>
+* Android adb shell svc 知识详解: <https://blog.csdn.net/wenzhi20102321/article/details/132779708>
+* Android 系统内的守护进程 - core类中的服务 (1) : adbd: <https://blog.csdn.net/Xiaoma_Pedro/article/details/103919142>
 
 ## App Development Platform
 

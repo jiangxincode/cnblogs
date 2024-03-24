@@ -574,7 +574,8 @@ Eclipse中`Update Project`，选择`Force Update of Snapshots/Releases`
 
 * <http://mvnrepository.com/>    （搜索）
 * <https://search.maven.org/>    （搜索）
-* <https://bintray.com/bintray/jcenter>    （搜索）
+* ~~<https://bintray.com/bintray/jcenter>~~
+* JitPack: <https://jitpack.io/>
 * <https://maven.aliyun.com/mvn/search>    （搜索）
 * <https://www.ebi.ac.uk/intact/maven/nexus/content/repositories/>
 * <https://repo1.maven.org/maven2/>
@@ -896,6 +897,10 @@ The yFiles diagramming software components are extensive class libraries that en
 * Enkel-JVM-language: <https://github.com/JakubDziworski/Enkel-JVM-language>
 * JC-Compiler: <https://github.com/cjwcommuny/JC-Compiler>
 
+## Markdown转换
+
+* flexmark-java: <https://github.com/vsch/flexmark-java>
+
 ## cglib
 
 * <https://github.com/cglib/cglib>
@@ -920,6 +925,12 @@ The yFiles diagramming software components are extensive class libraries that en
 * 分词工具比较（转）：<https://www.cnblogs.com/jiangxinnju/p/5205363.html>
 * ik-analyze(java开源中文分词器): <https://code.google.com/p/ik-analyzer/>
 * ICTCLAS： <https://github.com/NLPIR-team/NLPIR/tree/master/NLPIR%20SDK/NLPIR-ICTCLAS>
+
+## 拼音
+
+* TinyPinyin: <https://github.com/promeG/TinyPinyin>
+* pinyin4j: <https://github.com/belerweb/pinyin4j>
+* ~~jpinyin: <https://github.com/stuxuhai/jpinyin>~~
 
 ## 规则引擎
 
@@ -1098,10 +1109,6 @@ The yFiles diagramming software components are extensive class libraries that en
 
 * <https://github.com/oracle/opengrok>
 * OpenGrok搜索技巧: <http://jingzitakk66.iteye.com/blog/2122730>
-
-## Markdown转换
-
-* flexmark-java: <https://github.com/vsch/flexmark-java>
 
 ## Flex
 
