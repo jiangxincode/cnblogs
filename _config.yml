@@ -1,0 +1,29 @@
+title: Hangar
+website: https://jiangxincode.github.io/cnblogs
+baseurl: ""
+github_username: jiangxincode
+author: jiangxincode
+google_analytics: UA-92973415-1
+repository: jiangxincode/cnblogs
+incremental: true
+
+social:
+  name: jiangxincode
+  links:
+    - https://github.com/jiangxincode
+
+theme: jekyll-theme-modernist
+markdown: kramdown
+highlighter: rouge
+
+plugins:
+  - jekyll-github-metadata
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-redirect-from
+  - jemoji
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - .gitignore

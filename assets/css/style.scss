@@ -1,0 +1,109 @@
+---
+---
+@import "{{ site.theme }}";
+
+body {
+  font: 20px/1.5 Raleway, "Helvetica Neue", Arial, sans-serif;
+  color: #335;
+  background: #F1F3F7;
+}
+
+header {
+  font: "Crimson Text", "Helvetica Neue", sans-serif;
+  background: #9999cc;
+  border-bottom: 1px solid;
+  h1 {
+    color: #ffff;
+    text-shadow: unset;
+  }
+}
+
+section {
+  background: white;
+}
+
+h1, h2, h3, h4 {
+  margin: 30px 0 10px;
+  font: "Crimson Text", "Helvetica Neue", sans-serif;
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 18px;
+  font-weight: 600;
+  font-style: italic;
+}
+
+blockquote {
+  margin: 0 20px 20px;
+  padding: 15px 20px 1px 20px;
+  color: #444;
+  border-left: 4px solid #deb887;
+  background: rgba(lavender, 0.13);
+}
+
+code.highlighter-rouge {
+  font-family: "Source Code Pro", Monospace;
+  font-size: 15px;
+  color: #222;
+  background: linear-gradient(rgba(wheat, 0.4), rgba(wheat, 0.4)) no-repeat;
+  background-size: 100% 5px;
+  background-position: 0 0.9em;
+}
+
+pre {
+  margin: 0 -10px 20px;
+  background: rgba(wheat, 0.13);
+  code {
+    font-family: "Source Code Pro", Monospace;
+    font-size: 12px;
+    line-height: 1.1;
+    color: #333;
+  }
+}
+
+mark {
+  background-color: #ffffcc;
+}
+
+.wrapper {
+  background: #f8f8ff;
+}
+
+blog-date + h2 {
+  margin: 5px 0 15px;
+}
+
+blog-date {
+  font-variant: small-caps;
+}
+
+footer {
+  font-size: 12px;
+  color: #444;
+  a {
+    color: #727272;
+  }
+}
+
+nav {
+  font-size: 14px;
+  margin: 10px 0 0;
+  a {
+    color: white;
+  }
+}

@@ -1,0 +1,38 @@
+.highlight .hll { color: black; background-color: #ffffcc }
+.highlight .c { color: black; font-style: italic } /* Comment */
+.highlight .err { color: black; border: 1px solid #FF0000 } /* Error */
+.highlight .k { color: black; font-weight: bold } /* Keyword */
+.highlight .cm { color: black; font-style: italic } /* Comment.Multiline */
+.highlight .c1 { color: black; font-style: italic } /* Comment.Single */
+.highlight .cs { color: black; font-style: italic } /* Comment.Special */
+.highlight .ge { color: black; font-style: italic } /* Generic.Emph */
+.highlight .gh { color: black; font-weight: bold } /* Generic.Heading */
+.highlight .gp { color: black; font-weight: bold } /* Generic.Prompt */
+.highlight .gs { color: black; font-weight: bold } /* Generic.Strong */
+.highlight .gu { color: black; font-weight: bold } /* Generic.Subheading */
+.highlight .kc { color: black; font-weight: bold } /* Keyword.Constant */
+.highlight .kd { color: black; font-weight: bold } /* Keyword.Declaration */
+.highlight .kn { color: black; font-weight: bold } /* Keyword.Namespace */
+.highlight .kr { color: black; font-weight: bold } /* Keyword.Reserved */
+.highlight .s { color: black; font-style: italic } /* Literal.String */
+.highlight .o { color: black; font-weight: bold } /* Name.Class */
+.highlight .p { color: black; font-weight: bold } /* Name.Class */
+.highlight .pi { color: black; font-weight: bold } /* Name.Class */
+.highlight .no { color: black; font-weight: bold } /* Name.Class */
+.highlight .nc { color: black; font-weight: bold } /* Name.Class */
+.highlight .ni { color: black; font-weight: bold } /* Name.Entity */
+.highlight .ne { color: black; font-weight: bold } /* Name.Exception */
+.highlight .nn { color: black; font-weight: bold } /* Name.Namespace */
+.highlight .nt { color: black; font-weight: bold } /* Name.Tag */
+.highlight .ow { color: black; font-weight: bold } /* Operator.Word */
+.highlight .sb { color: black; font-style: italic } /* Literal.String.Backtick */
+.highlight .sc { color: black; font-style: italic } /* Literal.String.Char */
+.highlight .sd { color: black; font-style: italic } /* Literal.String.Doc */
+.highlight .s2 { color: black; font-style: italic } /* Literal.String.Double */
+.highlight .se { color: black; font-weight: bold; font-style: italic } /* Literal.String.Escape */
+.highlight .sh { color: black; font-style: italic } /* Literal.String.Heredoc */
+.highlight .si { color: black; font-weight: bold; font-style: italic } /* Literal.String.Interpol */
+.highlight .sx { color: black; font-style: italic } /* Literal.String.Other */
+.highlight .sr { color: black; font-style: italic } /* Literal.String.Regex */
+.highlight .s1 { color: black; font-style: italic } /* Literal.String.Single */
+.highlight .ss { color: black; font-style: italic } /* Literal.String.Symbol */

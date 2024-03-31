@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>
+      {{ site.title | default: site.github.repository_name }} by
+      {{ site.github.owner_name }}
+    </title>
+    {% include twitter_card.html %}
+
+    <link rel='stylesheet'
+          type='text/css'
+          href='https://fonts.googleapis.com/css?family=Raleway:400,700,400italic,700italic|Crimson+Text:400,600,400italic,600italic|Source+Code+Pro:300,400' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet"
+          href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <link rel="stylesheet"
+          href="{{ '/assets/css/bw.css?v=' | append: site.github.build_revision | relative_url }}">
+    <script src="{{ '/assets/js/scale.fix.js' | relative_url }}"></script>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    {% seo %}
+  </head>
+  <body>
+    <div class="wrapper">
+      <header
+        {% unless site.description or site.github.project_tagline %}
+          class="without-description"
+        {% endunless %}>
+        <h1>{{ page.title }}</h1>
+        <nav>
+          {% unless page.index_page %}
+            <a href="{{ site.url }}">Home</i></a>
+            &nbsp;&nbsp;
+          {% endunless %}
+          <a href="https://github.com/jiangxincode">GitHub</i></a>
+        </nav>
+      </header>
+
+      <section>
+        {{ content }}
+      </section>
+    </div>
+
+    {% include footer.html %}
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+
+    {% include analytics.html %}
+  </body>
+</html>
