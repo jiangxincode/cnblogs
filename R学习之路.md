@@ -1,15 +1,19 @@
 # R
 
-* <https://www.r-project.org/>
+* R: <https://www.r-project.org/>
 * The Comprehensive R Archive Network: <https://cran.r-project.org/>
 
-* Econometrics in R: <https://cran.r-project.org/doc/contrib/Farnsworth-EconometricsInR.pdf>
-* Applied Econometrics with R: <https://cran.r-project.org/web/packages/AER/AER.pd>
-* Statistics Using R with Biological Examples: <https://cran.r-project.org/doc/contrib/Seefeld_StatsRBio.pdf>
+## R Basics
+
+* A comprehensive survey of the types of things in R; 'mode' and 'class' and 'typeof' are insufficient: <https://stackoverflow.com/questions/8855589/a-comprehensive-survey-of-the-types-of-things-in-r-mode-and-class-and-type>
+
+## RStudio
 
 * RStudio: <https://posit.co/products/open-source/rstudio/>
 * RStudio User Guide: <https://docs.posit.co/ide/user/>
 * Using RStudio Projects: <https://support.posit.co/hc/en-us/articles/200526207-Using-Projects>
+
+## R Packages
 
 * R语言中，你最常用的软件包有哪些，请简述功能及特点？<https://www.zhihu.com/question/21792740>
 
@@ -30,4 +34,8 @@
 * The R Graph Gallery: <https://r-graph-gallery.com/>
 * R Charts: <https://r-charts.com/>
 
-* A comprehensive survey of the types of things in R; 'mode' and 'class' and 'typeof' are insufficient: <https://stackoverflow.com/questions/8855589/a-comprehensive-survey-of-the-types-of-things-in-r-mode-and-class-and-type>
+## R Books
+
+* Econometrics in R: <https://cran.r-project.org/doc/contrib/Farnsworth-EconometricsInR.pdf>
+* Applied Econometrics with R: <https://cran.r-project.org/web/packages/AER/AER.pdf>
+* Statistics Using R with Biological Examples: <https://cran.r-project.org/doc/contrib/Seefeld_StatsRBio.pdf>

@@ -171,6 +171,9 @@
 * MotionPro(VPN工具): <https://client.arraynetworks.com.cn:8080/zh/troubleshooting>
 * realvnc(安全远程连接): <https://www.realvnc.com/>
 
+* Clementine: <https://www.clementine-player.org/>
+* osdlyrics: <https://github.com/osdlyrics/osdlyrics>
+
 * FFmpeg: <https://ffmpeg.org/>
 * K-Lite Codec Pack: <https://codecguide.com/download_kl.htm>
 * Shark007 Codecs: <https://shark007.net/index.html>

@@ -42,7 +42,6 @@
 * 一篇文章搞懂Debian_Ubuntu软件包更新和删除: <https://www.cnblogs.com/jiangxinnju/p/14017675.html>
 * 扩容swap文件: <https://www.cnblogs.com/jiangxinnju/p/17938602>
 * Linux压缩与解压常用命令: <https://www.cnblogs.com/jiangxinnju/p/6055870.html>
-* Linux乱码问题解决方案: <https://www.cnblogs.com/jiangxinnju/p/6014111.html>
 * linux中无 conio.h的解决办法: <https://www.cnblogs.com/jiangxinnju/p/5516906.html>
 * Linux快捷键: <https://www.cnblogs.com/jiangxinnju/p/6045204.html>
 * ssh相关原理学习与常见错误总结: <https://www.cnblogs.com/jiangxinnju/p/7859488.html>
@@ -345,10 +344,6 @@
     有一些索引文件不能下载，它们可能被忽略了，也可能转而使用了旧的索引文件。
 
 解决方法: 把 /etc/apt/sources.list里面有cdrom的几行删掉，或者利用软件中心或新立德包管理器把软件源终中的cdrom去掉。
-
-## 解决金山wps字体问题
-
-将字体解压到~/.fonts目录，然后重启wps即可。这些文件为微软版权所有，使用这些字体请自行确定拥有这些字体的使用授权（比如说有某版本windows授权即可）。另外据一部分用户反映，如果系统安装了xfonts-mathml可能导致符号无法显示。经过查证，发现是因为xfonts-mathml中也存在一个字体叫Symbol导致的。如果安装上述字体后仍存在乱码现象，请尝试移除xfonts-mathml包。
 
 ## libreoffice中PPT字体便粗问题
 

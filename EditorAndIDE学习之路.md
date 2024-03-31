@@ -5,6 +5,7 @@
 * Visual Studio Code: <https://code.visualstudio.com/Download>
 * Settings Sync: <https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync>
 * VSCode调试远程Linux机器上的C代码: <https://github.com/jiangxincode/data>
+* R in Visual Studio Code: <https://code.visualstudio.com/docs/languages/r>
 
 ## VIM
 
@@ -133,13 +134,6 @@
 * The TeXlipse plugin for Eclipse provides support for LaTeX projects: <https://github.com/eclipse/texlipse>
 * Configuring Eclipse as TCL/TK IDE: <https://blogsai.wordpress.com/2009/10/15/configuring-eclipse-as-tcltk-ide/>
 
-### MyEclipse
-
-* <http://www.myeclipseide.com/>
-* 官方中文网：<http://www.myeclipsecn.com/>
-* 在MyEclipse下创建Java Web项目 入门（图文并茂）经典教程：<http://jijiaa12345.iteye.com/blog/1739754>
-* MyEclipse删除对Struts、Hibernate、Spring的支持：<http://www.cnblogs.com/xj626852095/p/3648148.html>
-
 ### Eclipse插件开发
 
 * Eclipse 4 RCP指南: <https://lucky-xiaohu.gitbooks.io/eclipse4-rcp-tutor/content/about.html>
@@ -190,6 +184,13 @@
 * ~~Eclipse下搭建Hadoop2.4.0开发环境：<http://www.cnblogs.com/kinglau/p/3802705.html>~~
 * ~~使用eclipse连接hadoop失败情况：<http://blog.csdn.net/yunlong34574/article/details/21331927>~~
 * ~~Windows平台下安装Eclipse插件，开发Hadoop应用：<https://www.cnblogs.com/jiangxinnju/p/6287365.html>~~
+
+### MyEclipse
+
+* <http://www.myeclipseide.com/>
+* 官方中文网：<http://www.myeclipsecn.com/>
+* 在MyEclipse下创建Java Web项目 入门（图文并茂）经典教程：<http://jijiaa12345.iteye.com/blog/1739754>
+* MyEclipse删除对Struts、Hibernate、Spring的支持：<http://www.cnblogs.com/xj626852095/p/3648148.html>
 
 ## Jetbrains
 

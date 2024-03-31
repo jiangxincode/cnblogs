@@ -51,7 +51,6 @@
 * 图解LinkedHashMap原理: <https://www.jianshu.com/p/8f4f58b4b8ab>
 * Java提高篇（二七）-----TreeMap: <https://www.cnblogs.com/chenssy/p/3746600.html>
 * What is difference between fail safe iterator and fail fast iterator: <http://marjavamitjava.com/difference-fail-safe-iterator-fail-fast-iterator/>
-* Java IO相关，字符编码相关:  Java IO 2nd Edition
 * Java直接内存与非直接内存性能测试: <http://www.cnblogs.com/xing901022/p/5243657.html>
 * Java直接（堆外）内存使用详解: <http://www.cnblogs.com/xing901022/p/5248934.html>
 * Buffer: <https://yddmax.github.io/2017/06/08/Buffer/>
@@ -117,7 +116,6 @@
 * Java RMI与RPC，JMS的比较：<http://visionsky.blog.51cto.com/733317/438693/>
 * Flatten your objects Discover the secrets of the Java Serialization API: <http://www.javaworld.com/article/2076120/java-se/flatten-your-objects.html>
 * The Java serialization algorithm revealed: <http://www.javaworld.com/article/2072752/the-java-serialization-algorithm-revealed.html>
-* Emoji的编码以及常见问题的解决方法: <https://segmentfault.com/a/1190000007594620>
 * 构建一个文本可视化和分析应用程序: <http://www.ibm.com/developerworks/cn/opensource/os-txtviz/>
 * POJO模式: <http://www.cnblogs.com/yezhenhan/archive/2011/11/21/2256642.html>
 * Java数字图像处理基础知识 - 必读: <http://blog.csdn.net/jia20003/article/details/7279667>
@@ -757,11 +755,29 @@ mvn deploy:deploy-file -DgroupId="edu.jiangxin" -DartifactId=”gcu” -Dversion
 
 * Jetty：<http://www.eclipse.org/jetty/>
 
-## 字符编码判断
+## 字符编码
 
 * What is the most accurate encoding detector? <https://stackoverflow.com/questions/3759356/what-is-the-most-accurate-encoding-detector>
 * cpdetector: <https://sourceforge.net/projects/cpdetector/>
 * juniversalchardet: <https://github.com/takscape/juniversalchardet>
+
+* Character encoding: <https://en.wikipedia.org/wiki/Character_encoding#Character_sets,_character_maps_and_code_pages>
+* What's the difference between an Encoding, Code Page, Character Set and Unicode? <https://learn.microsoft.com/en-us/archive/blogs/shawnste/whats-the-difference-between-an-encoding-code-page-character-set-and-unicode>
+* Code page 936 (Microsoft Windows): <https://en.wikipedia.org/wiki/Code_page_936_(Microsoft_Windows)>
+* GBK (character encoding): <https://en.wikipedia.org/wiki/GBK_(character_encoding)>
+* Emoji的编码以及常见问题的解决方法: <https://segmentfault.com/a/1190000007594620>
+* Java IO相关，字符编码相关:  Java IO 2nd Edition
+
+* Linux乱码问题解决方案: <https://www.cnblogs.com/jiangxinnju/p/6014111.html>
+* git乱码解决方案汇总: <https://blog.zengrong.net/post/git-codec-issues/>
+
+* Unicode 和字符集: <https://learn.microsoft.com/zh-cn/windows/win32/intl/unicode-and-character-sets>
+* 【整理】Dword、LPSTR、LPWSTR、LPCSTR、LPCWSTR、LPTSTR、LPCTSTR: <https://www.cnblogs.com/goed/archive/2011/11/11/2245702.html>
+* win10中如何将cmd，power shell设置默认编码为UTF-8（解决win10命令行中文乱码）: <https://blog.csdn.net/snoopy_ly/article/details/80218125>
+
+* Android Studio Build Output 栏内汉字出现乱码的解决方案: <https://blog.csdn.net/zhang5690800/article/details/104502632>
+* pycharm开发python时出现控制中文显示乱码: <https://blog.51cto.com/alwaysyunwei/1541563>
+* 解决mysql字符集乱码问题: <http://www.cnblogs.com/dayday-study/archive/2012/05/18/2507276.html>
 
 ## EZMorph
 

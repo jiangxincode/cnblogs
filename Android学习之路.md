@@ -65,6 +65,7 @@
 
 * 系统启动流程（init进程、Zygote进程、SystemServer）：<https://juejin.cn/post/6962038395505737765>
 * android关机流程 安卓关机流程: <https://blog.51cto.com/u_16099295/6984333>
+* Android BOOTCLASSPATH详解: <https://blog.csdn.net/qqxiaoqiang1573/article/details/78715846>
 
 ### WMS
 
@@ -107,6 +108,7 @@
 * Linux/Android——Input系统之InputReader (七): <https://blog.csdn.net/jscese/article/details/42739197>
 * Android触摸事件的传递（四-1）--输入系统-InputReader: <https://www.jianshu.com/p/34f5c7d55337>
 * Input源码解读——从"Show tabs"开始: <https://www.cnblogs.com/jiangxinnju/p/17035554.html>
+* input-samples: <https://github.com/android/input-samples>
 
 ### Accessibility
 
@@ -143,6 +145,12 @@
 * AndroidO Battery saver省电助手实现原理: <https://blog.csdn.net/yun_hen/article/details/78143442>
 
 * battery-historian: <https://github.com/google/battery-historian>
+
+### Alarm
+
+* How to read "adb shell dumpsys alarm" output: <https://stackoverflow.com/questions/28742884/how-to-read-adb-shell-dumpsys-alarm-output>
+* android后台执行定时任务（保活）&&使用AlarmManager的各种坑: <https://blog.csdn.net/u013095264/article/details/91880916>
+* Schedule alarms: <https://developer.android.google.cn/develop/background-work/services/alarms/schedule?hl=en>
 
 ### 剪贴板框架
 
@@ -219,6 +227,7 @@
 * Android adb bugreport工具分析和使用: <https://blog.csdn.net/createchance/article/details/51954142>
 * ChkBugReport: <https://github.com/sonyxperiadev/ChkBugReport>
 * loganalysis(Android日志分析工具): <https://cs.android.com/android/platform/superproject/+/refs/heads/master:tools/loganalysis/src/com/android/loganalysis/LogAnalyzer.java>
+* Android单条日志太长导致被截断的问题分析和解决: <https://blog.csdn.net/realDonaldTrump/article/details/128468204>
 
 * 性能优化工具（十）- Android内存分析命令: <https://www.jianshu.com/p/9edfe9d5eb34>
 * Android内存优化（使用SparseArray和ArrayMap取代HashMap）:<https://www.cnblogs.com/yjbjingcha/p/7074266.html>
@@ -269,6 +278,10 @@
 
 * Implement text classifier: <https://source.android.google.cn/docs/core/display/textclassifier>
 * TextClassification介绍（一）: <https://blog.csdn.net/SpkingR/article/details/83540086>
+
+### App Links
+
+* 处理 Android 应用链接: <https://developer.android.google.cn/training/app-links?hl=zh-cn>
 
 ### Sensor
 
@@ -428,6 +441,10 @@
 * Gradle User Guide: <https://docs.gradle.org/current/userguide/userguide_single.html>
 * Chapter 6. The Gradle Wrapper: <https://docs.gradle.org/current/userguide/gradle_wrapper.html>
 * Getting Started With Gradle: <https://www.petrikainulainen.net/getting-started-with-gradle/>
+* Android Gradle原理解释: <https://juejin.cn/post/6844904104486141965>
+* Android Studio点击Run背后发生了什么？<https://juejin.cn/post/6844904104494366733>
+* Android Studio Library 模块中 Native 代码进行 debug 的一些坑: <https://fucknmb.com/2017/05/11/Android-Studio-Library%E6%A8%A1%E5%9D%97%E4%B8%ADNative%E4%BB%A3%E7%A0%81%E8%BF%9B%E8%A1%8Cdebug%E7%9A%84%E4%B8%80%E4%BA%9B%E5%9D%91/>
+* Android gradle打包涉及task源码解析（一）准备工作: <https://www.jianshu.com/p/e73510605c56>
 
 * 彻底搞懂Gradle、Gradle Wrapper与Android Plugin for Gradle的区别和联系: <https://www.cnblogs.com/jiangxinnju/p/8229129.html>
 * 通过设置JDK解决存在多个Gradle后台进程的问题: <https://www.cnblogs.com/jiangxinnju/p/13443183.html>
@@ -528,7 +545,6 @@
 * 解决adb push时出现的"Read-only file system"问题: <https://www.cnblogs.com/jiangxinnju/p/8186390.html>
 * android adb push 与 adb install的比较（两种安装APK的方法）: <http://blog.csdn.net/liranke/article/details/6795984>
 * Android 8.0 adb shell dumpsys activity activities | findstr mFocusedActivity 获取当前的 activity 显示空的: <https://www.cnblogs.com/yinzhuoqun/p/9090030.html>
-* How to read "adb shell dumpsys alarm" output: <https://stackoverflow.com/questions/28742884/how-to-read-adb-shell-dumpsys-alarm-output>
 * Android adb shell svc 知识详解: <https://blog.csdn.net/wenzhi20102321/article/details/132779708>
 * Android 系统内的守护进程 - core类中的服务 (1) : adbd: <https://blog.csdn.net/Xiaoma_Pedro/article/details/103919142>
 
