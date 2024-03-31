@@ -48,7 +48,6 @@
 ## PyCharm
 
 * PyCharm: <https://www.jetbrains.com/pycharm/>
-* pycharm开发python时出现控制中文显示乱码: <https://blog.51cto.com/alwaysyunwei/1541563>
 
 ## PyDev
 

@@ -761,23 +761,7 @@ mvn deploy:deploy-file -DgroupId="edu.jiangxin" -DartifactId=”gcu” -Dversion
 * cpdetector: <https://sourceforge.net/projects/cpdetector/>
 * juniversalchardet: <https://github.com/takscape/juniversalchardet>
 
-* Character encoding: <https://en.wikipedia.org/wiki/Character_encoding#Character_sets,_character_maps_and_code_pages>
-* What's the difference between an Encoding, Code Page, Character Set and Unicode? <https://learn.microsoft.com/en-us/archive/blogs/shawnste/whats-the-difference-between-an-encoding-code-page-character-set-and-unicode>
-* Code page 936 (Microsoft Windows): <https://en.wikipedia.org/wiki/Code_page_936_(Microsoft_Windows)>
-* GBK (character encoding): <https://en.wikipedia.org/wiki/GBK_(character_encoding)>
-* Emoji的编码以及常见问题的解决方法: <https://segmentfault.com/a/1190000007594620>
-* Java IO相关，字符编码相关:  Java IO 2nd Edition
-
-* Linux乱码问题解决方案: <https://www.cnblogs.com/jiangxinnju/p/6014111.html>
-* git乱码解决方案汇总: <https://blog.zengrong.net/post/git-codec-issues/>
-
-* Unicode 和字符集: <https://learn.microsoft.com/zh-cn/windows/win32/intl/unicode-and-character-sets>
-* 【整理】Dword、LPSTR、LPWSTR、LPCSTR、LPCWSTR、LPTSTR、LPCTSTR: <https://www.cnblogs.com/goed/archive/2011/11/11/2245702.html>
-* win10中如何将cmd，power shell设置默认编码为UTF-8（解决win10命令行中文乱码）: <https://blog.csdn.net/snoopy_ly/article/details/80218125>
-
-* Android Studio Build Output 栏内汉字出现乱码的解决方案: <https://blog.csdn.net/zhang5690800/article/details/104502632>
-* pycharm开发python时出现控制中文显示乱码: <https://blog.51cto.com/alwaysyunwei/1541563>
-* 解决mysql字符集乱码问题: <http://www.cnblogs.com/dayday-study/archive/2012/05/18/2507276.html>
+* 字符乱码一锅炖: <https://www.cnblogs.com/jiangxinnju/p/6014111.html>
 
 ## EZMorph
 

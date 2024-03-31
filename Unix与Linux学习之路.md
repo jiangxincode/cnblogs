@@ -316,7 +316,6 @@
 * 卸载libreoffice/firefox/youker-assistant/amazon
 * 重新启动计算机
 * 安装GLX-Dock并进行配置
-* 安装clementine/osd-lyrics并进行配置，解决乱码问题，安装解码插件
 * 安装快盘，进行配快盘和ubuntu one
 * 安装okular/meld
 * 卸载Rhythmbox/empathy/account-plugin-*

@@ -9,7 +9,6 @@
 
 ## CMD
 
-* win10中如何将cmd，power shell设置默认编码为UTF-8（解决win10命令行中文乱码）: <https://blog.csdn.net/snoopy_ly/article/details/80218125>
 * 浅谈批处理中的%cd%与%~dp0: <http://blog.csdn.net/luols/article/details/7397757>
 
 ## PowerShell

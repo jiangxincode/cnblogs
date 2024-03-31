@@ -39,7 +39,6 @@
 * Should I use field 'datetime' or 'timestamp'? <https://stackoverflow.com/questions/409286/should-i-use-field-datetime-or-timestamp>
 * 如何提高MySql的安全性？: <http://blog.163.com/longsu2010@yeah/blog/static/17361234820116223593175/>
 * 如何写出高质量、高性能的MySQL查询: <http://blog.sina.com.cn/s/blog_a8cf6bb20101a33v.html>
-* 解决mysql字符集乱码问题: <http://www.cnblogs.com/dayday-study/archive/2012/05/18/2507276.html>
 * Oracle与MySQL字符串拼接: <http://blog.csdn.net/itmyhome1990/article/details/41848229>
 * 关于InnoDB索引长度限制的tips: <http://dinglin.iteye.com/blog/1681332>
 * Using Innodb_large_prefix to Avoid ERROR 1071: <http://mechanics.flite.com/blog/2014/07/29/using-innodb-large-prefix-to-avoid-error-1071>

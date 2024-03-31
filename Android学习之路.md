@@ -488,7 +488,6 @@
 * ANDROID STUDIO系列教程六--GRADLE多渠道打包: <http://stormzhang.com/devtools/2015/01/15/android-studio-tutorial6/>
 * Android Studio优化技巧：<http://blog.oneapm.com/apm-tech/257.html>
 * Android Studio相关目录解析: <https://www.cnblogs.com/jiangxinnju/p/8323569.html>
-* Android Studio Build Output 栏内汉字出现乱码的解决方案: <https://blog.csdn.net/zhang5690800/article/details/104502632>
 * ERROR Android emulator gets killed: <https://stackoverflow.com/questions/36841461/error-android-emulator-gets-killed/47578244>
 
 ## Libraries
