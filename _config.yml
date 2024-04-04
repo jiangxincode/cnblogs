@@ -63,34 +63,31 @@ plugins:
   - jekyll-include-cache
 
 author:
-  name   : "First Lastname"
+  name   : "Aloys"
   avatar : "/assets/images/bio-photo.jpg"
-  bio    : "My awesome biography constrained to a sentence or two goes here."
+  bio    : "心若冰清，天塌不惊"
   links:
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+      url: "https://github.com/jiangxincode"
+    - label: "知乎"
+      icon: "fas fa-fw fa-link"
+      url: "https://www.zhihu.com/people/jiangxinnju"
+    - label: "博客园"
+      icon: "fas fa-fw fa-link"
+      url: "https://www.cnblogs.com/jiangxinnju"
 
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+      url: "https://github.com/jiangxincode"
+    - label: "知乎"
+      icon: "fas fa-fw fa-link"
+      url: "https://www.zhihu.com/people/jiangxinnju"
+    - label: "博客园"
+      icon: "fas fa-fw fa-link"
+      url: "https://www.cnblogs.com/jiangxinnju"
 
 defaults:
   # _posts
