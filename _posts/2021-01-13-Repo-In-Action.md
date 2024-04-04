@@ -5,6 +5,7 @@ categories:
 tags:
   - Android
   - Repo
+toc: true
 ---
 
 Android使用Git作为代码管理工具，开发了Gerrit进行代码审核以便更好的对代码进行集中式管理，还开发了Repo命令行工具，对Git命令进行封装，将几百个Git库有效的进行组织。Repo并不是用来取代Git，而是用Python对Git进行了一定的封装，简化了对多个Git版本库的管理。对应Repo管理的任何一个版本库，都需要使用Git命令进行操作。
