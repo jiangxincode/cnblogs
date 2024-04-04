@@ -1,13 +1,12 @@
-![](https://raw.githubusercontent.com/jiangxincode/PicGo/master/2021021415101.jpeg)
-
-## 同步发布平台
-
-* 博客园: <https://www.cnblogs.com/jiangxinnju/>
-* CSDN: <https://blog.csdn.net/jiangxinnju>
-* 掘金: <https://juejin.cn/user/166781500533079>
-* 知乎: <https://www.zhihu.com/people/jiangxinnju/posts>
-
-**未经允许，谢绝转载**
+---
+title: "Android构建系统"
+categories:
+  - Blog
+tags:
+  - Android
+  - AOSP
+toc: true
+---
 
 在以下位置描述了Android构建系统：<https：//source.android.com/setup/build>
 你可以使用`build/envsetup.sh`设置一个"便利环境"来处理Android源代码。在当前shell环境中执行`source build/envsetup.sh`后，你可以输入hmm作为已定义函数的列表，这些函数有助于与源进行交互。  

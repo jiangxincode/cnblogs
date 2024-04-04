@@ -1,13 +1,15 @@
-![](https://raw.githubusercontent.com/jiangxincode/PicGo/master/2021072516091.jpeg)
-
-## 同步发布平台
-
-* 博客园: <https://www.cnblogs.com/jiangxinnju/>
-* CSDN: <https://blog.csdn.net/jiangxinnju>
-* 掘金: <https://juejin.cn/user/166781500533079>
-* 知乎: <https://www.zhihu.com/people/jiangxinnju/posts>
-
-**未经允许，谢绝转载**
+---
+title: "彻底搞懂Ubuntu系统上的包管理"
+categories:
+  - Blog
+tags:
+  - Linux
+  - Ubuntu
+  - Debian
+  - apt
+  - aptitude
+toc: true
+---
 
 ## 关联阅读
 
