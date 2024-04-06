@@ -1,4 +1,12 @@
-# 如何发布Maven依赖到中央仓库
+---
+title: "如何发布Maven依赖到中央仓库"
+categories:
+  - Blog
+tags:
+  - Java
+  - Maven
+toc: true
+---
 
 平时我们都是从Maven中央仓库下载依赖，如果我们想发布我们自己写的Maven依赖到中央仓库供别人下载使用应该怎么办？这里以上传自己写的simian-maven-plugin（<https://github.com/jiangxincode/simian-maven-plugin>）的实际过程为例说明如何发布Maven依赖到中央仓库。
 
