@@ -1,10 +1,12 @@
-# Groovy实现原理分析——准备工作
-
-欢迎和大家交流技术相关问题：
-邮箱: jiangxinnju@163.com
-博客园地址: <http://www.cnblogs.com/jiangxinnju>
-GitHub地址: <https://github.com/jiangxincode>
-知乎地址: <https://www.zhihu.com/people/jiangxinnju>
+---
+title: "Groovy实现原理分析——准备工作"
+categories:
+  - Blog
+tags:
+  - Groovy
+  - 源码分析
+  - 编译原理
+---
 
 首先说明一下为什么要写这样一系列分析Groovy实现原理的博文。我之前在华为大数据部门曾维护过一份规则引擎的项目，该项目说白了就是一种DSL(Domain Specified Language)，把用户的输入转化为一种可以执行的程序。让不懂编程语言的用户只定义一些规则说明便可以完成流程编写。后来由于部门调动，接触不到原来的规则引擎了，但是无意间发现Groovy这种DSL语言的实现机制和当时的规则引擎原理大体相当，所以便借分析Groovy的实现原理，缅怀当时负责的规则引擎吧。同时也希望给其他对规则引擎开发、DSL开发或者编程语言开发感兴趣的朋友一个参考，权当抛砖引玉了。
 
