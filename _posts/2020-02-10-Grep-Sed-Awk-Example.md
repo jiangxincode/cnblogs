@@ -1,4 +1,15 @@
-# grep_sed_awk练习
+---
+title: "一个例子掌握grep, sed, awk"
+categories:
+  - Blog
+tags:
+  - Linux
+  - Grep
+  - Sed
+  - Awk
+
+toc: true
+---
 
 ## 数据文件
 
