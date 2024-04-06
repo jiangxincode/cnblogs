@@ -1,4 +1,14 @@
-## 以下大部分工具使用样例请访问<https://github.com/jiangxincode/ApkToolBoxGUI>
+---
+title: "Java代码质量度量工具大阅兵"
+categories:
+  - Blog
+tags:
+  - Java
+  - Code Check
+toc: true
+---
+
+以下大部分工具使用样例请访问: <https://github.com/jiangxincode/ApkToolBoxGUI>
 
 ## FindBugs
 
@@ -183,10 +193,3 @@
 
 * 浅淡静态代码分析工具：<http://www.cnblogs.com/hyddd/archive/2008/12/16/1356310.html>
 * 七款代码味道识别工具【简介】：<http://blog.csdn.net/lovelion/article/details/18467149>
-
-欢迎和大家交流技术相关问题：
-
-* 邮箱: jiangxinnju@163.com
-* 博客园: <http://www.cnblogs.com/jiangxinnju>
-* GitHub: <https://github.com/jiangxincode>
-* 知乎: <https://www.zhihu.com/people/jiangxinnju>
