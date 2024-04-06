@@ -1,4 +1,13 @@
-# 将AOSP源码导入到Android Studio进行查看
+---
+title: "将AOSP源码导入到Android Studio进行查看"
+categories:
+  - Blog
+tags:
+  - Android
+  - Android Studio
+  - AOSP
+toc: true
+---
 
 ## 生成iml和ipr文件
 
