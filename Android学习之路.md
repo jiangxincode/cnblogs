@@ -160,6 +160,16 @@
 
 * 关于Android外设键盘导致系统输入法隐藏的解决方案: <https://blog.csdn.net/xiaolei10086/article/details/41212845>
 
+### USB
+
+* USB 主机和配件概览: <https://developer.android.google.cn/develop/connectivity/usb>
+* Android 开放配件 (AOA): <https://source.android.google.cn/docs/core/interaction/accessories/protocol?hl=zh-cn>
+* Android Open Accessory 协议分析与开发: <https://www.hackermi.com/2015-04/aoa-analyse/>
+* Android下USB Accessory的实现分析: <https://blog.csdn.net/yingzhao80/article/details/45511351>
+
+* Android 对 USB 音频类的支持: <https://source.android.com/docs/core/audio/usb?hl=zh-cn#androidSupport>
+* How to enable USB "Audio Source" option on Android 9+? <https://android.stackexchange.com/questions/225334/how-to-enable-usb-audio-source-option-on-android-9>
+
 ### Binder
 
 * 架构概览: <https://source.android.google.cn/docs/core/architecture>
@@ -276,8 +286,18 @@
 
 ### 文本分类
 
+* android.view.textclassifier: <https://developer.android.com/reference/android/view/textclassifier/package-summary>
+
 * Implement text classifier: <https://source.android.google.cn/docs/core/display/textclassifier>
-* TextClassification介绍（一）: <https://blog.csdn.net/SpkingR/article/details/83540086>
+
+* TextClassification – Part 1: <https://blog.stylingandroid.com/textclassification-part-1/>
+* TextClassification – Part 2: <https://blog.stylingandroid.com/textclassification-part-2/>
+* TextClassification – Part 3: <https://blog.stylingandroid.com/textclassification-part-3/>
+
+* TensorFlow Lite: <https://www.tensorflow.org/lite>
+* TensorFlow Lite 视频系列教程: <https://www.bilibili.com/video/BV18Q4y137NB/>
+* MediaPipe: <https://developers.google.com/mediapipe>
+* Google MediaPipe：设备端机器学习【完整解决方案】背后的技术实现: <https://mp.weixin.qq.com/s/pIyLdRpL_mzK5XCH2DEkdQ>
 
 ### App Links
 

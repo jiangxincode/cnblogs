@@ -310,11 +310,11 @@
 
 * AmaterasUML: <https://github.com/takezoe/amateras-modeler>
 * Green UML: <http://green.sourceforge.net/index.html>
-* ModelGoon UML4Java(已停止维护): <https://github.com/riana/ModelGoon-UML4Java>
+* ~~ModelGoon UML4Java: <https://github.com/riana/ModelGoon-UML4Java>~~
 * StarUML: <https://staruml.io/>
 * Astah(JUDE): <https://astah.net/>
 * UML关系(泛化,实现,依赖,关联(聚合,组合))：<http://justsee.iteye.com/blog/808799>
-* 解析UML箭头、线条代表的意义：<http://developer.51cto.com/art/201006/206134.htm>
+* 解析UML箭头、线条代表的意义：<https://www.51cto.com/article/206134.html>
 
 ## OSGI
 
@@ -529,7 +529,6 @@ Eclipse中`Update Project`，选择`Force Update of Snapshots/Releases`
 * <http://hc.apache.org/>
 * httpcomponents-core-4.4.x.chm
 * httpcomponents-httpclient-4.5.chm
-* 使用样例(搜索HttpClientTest): <https://bitbucket.org/jiangxincode/javawebtest>
 
 ## Maven
 

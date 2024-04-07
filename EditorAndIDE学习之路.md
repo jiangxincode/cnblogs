@@ -197,6 +197,7 @@
 * IntelliJ IDEA: <https://www.jetbrains.com/idea/>
 * Clion: <https://www.jetbrains.com/clion/>
 * RustRover: <https://www.jetbrains.com/rust/>
+* RubyMine: <https://www.jetbrains.com/ruby/>
 * Eclipse Code Formatter: <http://plugins.jetbrains.com/plugin/6546-eclipse-code-formatter>
 
 ## Emacs
