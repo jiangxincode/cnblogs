@@ -91,6 +91,7 @@
 
 ### Input相关
 
+* 输入: <https://source.android.google.cn/docs/core/interaction/input?hl=zh-cn>
 * 图解 Android 事件分发机制: <https://www.jianshu.com/p/e99b5e8bd67b>
 * requestDisallowInterceptTouchEvent() 阻止父层的View截获touch事件(事件处理机制): <https://blog.csdn.net/cl18652469346/article/details/53184508>
 * View·InputEvent事件投递源码分析: <https://www.jianshu.com/p/b7f33f46d33c>
