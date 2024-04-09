@@ -16,8 +16,6 @@
 
 * NDK: <https://developer.android.com/ndk/>
 
-* Intent: <https://developer.android.com/reference/android/content/Intent.html>
-* PendingIntent: <https://developer.android.com/reference/android/app/PendingIntent>
 * Settings.Global: <https://developer.android.com/reference/android/provider/Settings.Global>
 
 * Android开发者预览版: <https://developer.android.com/preview/>
@@ -157,10 +155,6 @@
 
 * 复制和粘贴: <https://developer.android.com/develop/ui/views/touch-and-input/copy-paste>
 
-### 输入法与输入法框架
-
-* 关于Android外设键盘导致系统输入法隐藏的解决方案: <https://blog.csdn.net/xiaolei10086/article/details/41212845>
-
 ### USB
 
 * USB 主机和配件概览: <https://developer.android.google.cn/develop/connectivity/usb>
@@ -170,6 +164,21 @@
 
 * Android 对 USB 音频类的支持: <https://source.android.com/docs/core/audio/usb?hl=zh-cn#androidSupport>
 * How to enable USB "Audio Source" option on Android 9+? <https://android.stackexchange.com/questions/225334/how-to-enable-usb-audio-source-option-on-android-9>
+
+### 输入法与输入法框架
+
+* Create an input method: <https://developer.android.google.cn/develop/ui/views/touch-and-input/creating-input-method?hl=en>
+* InputMethodManager#Security: <https://developer.android.google.cn/reference/android/view/inputmethod/InputMethodManager#security>
+* 关于Android外设键盘导致系统输入法隐藏的解决方案: <https://blog.csdn.net/xiaolei10086/article/details/41212845>
+
+### AMS
+
+* Intent: <https://developer.android.com/reference/android/content/Intent.html>
+* PendingIntent: <https://developer.android.com/reference/android/app/PendingIntent>
+* android Application Component研究之Service: <https://blog.csdn.net/u011279649/article/details/52081441>
+* PendingIntent重定向：一种针对安卓系统和流行App的通用提权方法——BlackHat EU 2021议题详解（上）: <https://segmentfault.com/a/1190000041532963>
+* PendingIntent重定向：一种针对安卓系统和流行App的通用提权方法——BlackHat EU 2021议题详解 （下）: <https://segmentfault.com/a/1190000041550819>
+* 对于android.intent.action.MAIN和android.intent.category.LAUNCHER的理解: <http://blog.csdn.net/lindroid20/article/details/51993247>
 
 ### Binder
 
@@ -391,7 +400,6 @@
 
 * Android核心分析: <https://blog.csdn.net/maxleng/category_9260799.html>
 * Android系统开篇: <http://gityuan.com/android/>
-* 对于android.intent.action.MAIN和android.intent.category.LAUNCHER的理解: <http://blog.csdn.net/lindroid20/article/details/51993247>
 * 详解 Android 通信: <http://www.androidchina.net/5028.html>
 * Android Application的使用及其生命周期: <https://www.cnblogs.com/carlo/p/4734291.html>
 * Android Partitions Explained: boot, system, recovery, data, cache & misc: <https://www.addictivetips.com/mobile/android-partitions-explained-boot-system-recovery-data-cache-misc/>
