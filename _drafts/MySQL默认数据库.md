@@ -1,0 +1,14 @@
+欢迎和大家交流技术相关问题：
+邮箱: jiangxinnju@163.com
+博客园地址: http://www.cnblogs.com/jiangxinnju
+GitHub地址: https://github.com/jiangxincode
+知乎地址: https://www.zhihu.com/people/jiangxinnju
+
+INFORMATION_SCHEMA：提供了访问数据库元数据的方式。
+元数据是关于数据的数据，如数据库名、表名、列的数据类型或访问权限等。有些时候用于表述该信息的其他术语包括“数据词典”和“系统目录”。你可以讲INFORMATION_SCHEMA看成一个信息数据库，其中保存着关于MySQL服务器所维护的所有其他数据库的信息。在INFORMATION_SCHEMA中，有数个只读表。它们实际上是视图，而不是基本表，因此你将无法看到与之相关的任何文件。每位MySQL用户均有权访问这些表，但仅限于表中的特定行，在这类行中含有用户具有恰当访问权限的对象。
+
+PERFORMANCE_SCHEMA：主要用于收集数据库服务器性能参数。MySQL用户是不能创建存储引擎为PERFORMANCE_SCHEMA的表。performance_schema提供以下功能：提供进程等待的详细信息，包括锁、互斥变量、文件信息；保存历史的事件汇总信息，为提供MySQL服务器性能做出详细的判断；对于新增和删除监控事件点都非常容易，并可以随意改变mysql服务器的监控周期，例如（CYCLE、MICROSECOND）。通过以上得到的信息，DBA能够较明细得了解性能降低可能是由于哪些瓶颈。
+
+mysql：这个是mysql的核心数据库，类似于sql server中的master表，主要负责存储数据库的用户、权限设置、关键字等mysql自己需要使用的控制和管理信息。不可以删除，如果对mysql不是很了解，也不要轻易修改这个数据库里面的表信息。
+
+test：这个是安装时候创建的一个测试数据库，和它的名字一样，是一个完全的空数据库，没有任何表，可以删除。

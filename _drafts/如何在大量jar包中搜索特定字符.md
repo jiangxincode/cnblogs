@@ -1,0 +1,41 @@
+欢迎关注我的社交账号：
+
+博客园地址: http://www.cnblogs.com/jiangxinnju/p/4781259.html
+GitHub地址: https://github.com/jiangxincode
+知乎地址: https://www.zhihu.com/people/jiangxinnju
+邮箱: jiangxinnju@163.com
+
+工作中定位某些问题时需要在jar包中搜索某些特定的字符。如果jar包数量比较少可以直接使用JD-GUI等反编译软件导出源码，但是如果jar包数目庞大，这种方式工作量就太大了。
+
+现在介绍一种相对简单的方法，这种方式需要三种工具：
+
+* 能够批量解压jar包的程序，比如WinRAR。
+* 能够批量反编译jar包或者class文件的程序，比如jad（jd不支持命令行）。
+* 能够批量搜索文本文件的工具，比如FileLocator。
+
+## 具体步骤：
+
+假如需要在D:\jar\目录中的所有jar包中搜索Calendar一词：
+
+![](http://images2015.cnblogs.com/blog/611264/201601/611264-20160117203308710-1291877493.jpg)
+
+首先需要利用WinRAR将所有jar包解压到独立的目录中：
+
+![](http://images2015.cnblogs.com/blog/611264/201601/611264-20160117203336944-673584009.jpg)
+
+![](http://images2015.cnblogs.com/blog/611264/201601/611264-20160117203354132-391911217.jpg)
+
+打开命令行窗口，进入D:\jar\目录，输入下面命令（假设jad工具已经在path中设置）：
+
+```cmd
+    jad -o -r -sjava -dsrc ./**/*.class
+```
+
+会发现在该目录多了一个src目录。
+注：反编译输出中经常会出现类似于The class file version is 49.0 (only 45.3, 46.0 and 47.0 are supported)的内容，说明jad只能编译49.0以下版本的class文件，虽然可以生成java文件，但是并没有正确反编译，如果大家知道其他可以在命令行执行，且不会出现类似问题的反编译工具可以告诉我。当然有一个比较折中的办法是使用我写的一个批量修改class文件版本号的小程序（通过邮件与我联系），通过修改版本号将class文件伪装成低版本的，供jad读取，但是这种方式不支持高版本的特性，比如拉姆达表达式。
+
+![](http://images2015.cnblogs.com/blog/611264/201601/611264-20160117203446835-105419615.jpg)
+
+然后使用FileLocator进行搜索即可。
+
+![](http://images2015.cnblogs.com/blog/611264/201601/611264-20160117203501022-1311945266.jpg)
