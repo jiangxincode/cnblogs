@@ -32,7 +32,7 @@ JUnit是老牌单元测试工具了，从3.X,4.X到最新的5.X版本，一直�
 
 JUnit面对市场份额被TestNG不断蚕食的情况，研发了更加强大的JUnit 5版本，补齐了能力差距，易用性方面也有了更大的提升。因此大家如果可以选择的话，我个人推荐大家直接使用JUnit 5，功能和易用性丝毫不逊色，还有广大的群众基础，出现问题也方便更快的搜索到解决方案。那你用JUnit或者TestNG工具写完了单元测试用例，怎么执行呢？你可以在各种IDE（比如Eclipse或者IntelliJ IDEA）使用对应的插件来帮助运行这些测试用例，当然你甚至都可以不用IDE，配置好依赖，直接命令行运行这些测试用例。
 
-![](https://img2020.cnblogs.com/blog/611264/202008/611264-20200823170134052-10990627.png)
+![](https://raw.githubusercontent.com/jiangxincode/PicGo/master/611264-20200823170134052-10990627.png)
 
 但是如何在Maven项目中自动执行这些步骤呢？这就是maven-surefire-plugin所做的事情了。
 
@@ -42,11 +42,11 @@ JUnit面对市场份额被TestNG不断蚕食的情况，研发了更加强大的
 
 maven-surefire-plugin是Maven内嵌的一个插件，会帮助你在执行mvn test的时候自动执行用JUnit/TestNG编写的测试用例。
 
-![](https://img2020.cnblogs.com/blog/611264/202008/611264-20200823170247317-1745411381.png)
+![](https://raw.githubusercontent.com/jiangxincode/PicGo/master/611264-20200823170247317-1745411381.png)
 
 除了将用例执行结果打印到屏幕上之外，还会在`target\surefire-reports`目录下生成两种形式的用例执行结果：
 
-![](https://img2020.cnblogs.com/blog/611264/202008/611264-20200823170314097-523339706.png)
+![](https://raw.githubusercontent.com/jiangxincode/PicGo/master/611264-20200823170314097-523339706.png)
 
 但是xml和txt格式的报告文件不太方便查看，要是能以html格式展示就好，所以你需要maven-surefire-report-plugin
 
@@ -56,11 +56,11 @@ maven-surefire-plugin是Maven内嵌的一个插件，会帮助你在执行mvn te
 
 maven-surefire-report-plugin的输入就是maven-surefire-plugin所产生的的xml后者txt格式的用例执行报告，输出就是html格式的用例执行报告。当你执行`surefire-report:report`时，你就会获得一个html格式的文件：
 
-![](https://img2020.cnblogs.com/blog/611264/202008/611264-20200823170358803-2126291467.png)
+![](https://raw.githubusercontent.com/jiangxincode/PicGo/master/611264-20200823170358803-2126291467.png)
 
 内容如下：
 
-![](https://img2020.cnblogs.com/blog/611264/202008/611264-20200823171109951-322803827.png)
+![](https://raw.githubusercontent.com/jiangxincode/PicGo/master/611264-20200823171109951-322803827.png)
 
 是不是感觉很丑？没有关系，我们可以利用maven-project-info-reports-plugin让他变得漂亮些。
 
@@ -71,11 +71,11 @@ maven-surefire-report-plugin的输入就是maven-surefire-plugin所产生的的x
 
 maven-site-plugin主要作用是帮你迅速生成(site:site)一个站点，并完成站点的部署(site:deploy)和启动(site:run)。当你执行site:site时，maven会同时调用maven-project-info-reports-plugin（所以如非定制要求，你可以不在pom.xml中配置maven-project-info-reports-plugin的依赖），生成一个项目框架结构，类似这种：
 
-![](https://img2020.cnblogs.com/blog/611264/202008/611264-20200823170514421-278511798.png)
+![](https://raw.githubusercontent.com/jiangxincode/PicGo/master/611264-20200823170514421-278511798.png)
 
 其实maven-project-info-reports-plugin还能根据你在pom.xml中配置的`<project><reporting><plugins>`配置的report插件，生成各种各样的项目报告，比如刚才说的maven-surefire-plugin生成的用例执行报告，和马上要说的用例覆盖报告。是不是感觉这里面展示的报告样式比直接打开surefire-report.html好多了？
 
-![](https://img2020.cnblogs.com/blog/611264/202008/611264-20200823170537517-1970699000.png)
+![](https://raw.githubusercontent.com/jiangxincode/PicGo/master/611264-20200823170537517-1970699000.png)
 
 ## [Emma/emma-maven-plugin][Jacoco/jacoco-maven-plugin][Cobertura/cobertura-maven-plugin]
 
