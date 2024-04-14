@@ -1,8 +1,4 @@
-欢迎关注我的社交账号：
 
-博客园地址: <http://www.cnblogs.com/jiangxinnju/p/4781259.html>
-GitHub地址: <https://github.com/jiangxincode>
-知乎地址: <https://www.zhihu.com/people/jiangxinnju>
 
 本文转自：<http://www.codeweblog.com/use-the-svn-command-line-tool/>
 排版有修改

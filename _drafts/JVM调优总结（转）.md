@@ -1,8 +1,4 @@
-欢迎和大家交流技术相关问题：
-邮箱: jiangxinnju@163.com
-博客园地址: <http://www.cnblogs.com/jiangxinnju>
-GitHub地址: <https://github.com/jiangxincode>
-知乎地址: <https://www.zhihu.com/people/jiangxinnju>
+
 
 JVM调优总结（一）-- 一些概念: <http://pengjiaheng.iteye.com/blog/518623>
 JVM调优总结（二）-一些概念: <http://pengjiaheng.iteye.com/blog/519471>

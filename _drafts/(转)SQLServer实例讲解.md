@@ -1,8 +1,3 @@
-欢迎和大家交流技术相关问题：
-邮箱: jiangxinnju@163.com
-博客园地址: http://www.cnblogs.com/jiangxinnju
-GitHub地址: https://github.com/jiangxincode
-知乎地址: https://www.zhihu.com/people/jiangxinnju
 
 实例就是一个在数据库中存在的，现实的数据库例子。数据库实例就是后台进程和数据库文件的集合。一个SQL Server服务器就是一个实例，2000支持在同一个NT/2000 Server操作系统装多个服务器，换言之，就是多个实例。
 

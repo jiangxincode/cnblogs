@@ -1,8 +1,4 @@
-欢迎和大家交流技术相关问题：
-邮箱: jiangxinnju@163.com
-博客园地址: <http://www.cnblogs.com/jiangxinnju>
-GitHub地址: <https://github.com/jiangxincode>
-知乎地址: <https://www.zhihu.com/people/jiangxinnju>
+
 
 * src源代码生成html格式文档: <http://www.cnblogs.com/shenliang123/archive/2012/04/23/2466483.html>
 * 自己动手制作chm格式开源文档: <http://www.cnblogs.com/shenliang123/archive/2012/04/23/2466441.html>
