@@ -1,15 +1,14 @@
-# Java 性能分析工具，第 2 部分：Java 内置监控工具
+---
+title: "Java 性能分析工具，第 2 部分：Java 内置监控工具"
+categories:
+  - Blog
+tags:
+  - Java
+  - 性能分析工具
+toc: true
+---
+
 使用 Java 内置监控工具将程序运行状况和 JVM 信息以直观的方式展现以便于分析
-
-**标签:** Java
-
-[原文链接](https://developer.ibm.com/zh/articles/j-lo-performance-analysissy-tools2/)
-
-李伟军, 宋翰瀛, 杨翔宇
-
-发布: 2016-08-23
-
-* * *
 
 ## 前言
 
@@ -237,7 +236,7 @@ Java 提供的性能分析器是最重要的分析工具。它的种类繁多，
 
 ##### 图 7\. 采样模式分析示例图
 
-![图 7. 采样模式分析示例图](../ibm_articles_img/j-lo-performance-analysissy-tools2_images_img007.png)
+![图 7. 采样模式分析示例图](https://raw.githubusercontent.com/jiangxincode/PicGo/master/j-lo-performance-analysissy-tools2_images_img007.png)
 
 无论使用何种性能分析工具，最重要的是熟悉每种工具的优势和劣势。这样才能取长补短，配合使用。开发人员必须学会如何使用性能分析器来找到性能瓶颈，找到需要优化的代码，而不是单纯的关注最耗时的个别方法。
 
@@ -252,3 +251,9 @@ Java 提供的性能分析器是最重要的分析工具。它的种类繁多，
 本地分析提供了既可以深入查看 JVM 内部，同时也可以查看应用程序代码执行的情况。
 
 如果本地分析显示在 GC 过程中大量的使用 CPU 资源，那么调优收集器就是必要的。需要提醒大家的是，编译线程通常是不影响应用程序的性能。
+
+[原文链接](https://developer.ibm.com/zh/articles/j-lo-performance-analysissy-tools2/)
+
+李伟军, 宋翰瀛, 杨翔宇
+
+发布: 2016-08-23

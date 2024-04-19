@@ -1,14 +1,12 @@
-# Java 性能分析工具（1）：操作系统工具
-
-**标签:** Java
-
-[原文链接](https://www.ibm.com/developerworks/cn/java/j-lo-performance-analysissy-tools/index.html)
-
-李伟军, 宋翰瀛, 杨翔宇
-
-发布: 2016-08-23
-
-* * *
+---
+title: "Java 性能分析工具（1）：操作系统工具"
+categories:
+  - Blog
+tags:
+  - Java
+  - 性能分析工具
+toc: true
+---
 
 ## 引言
 
@@ -183,3 +181,9 @@ Perfmon 有两种管理方式：控制台管理和命令行管理，如前文所
 最后，本文讲解了 Java 自带的性能分析工具的使用，在使用这些工具的时候请大家铭记一点，
 
 没有一个完美的工具来帮您完全理解应用程序的整体性能问题，实际工作中我们可能需要结合多种工具来完成一个应用程序的性能分析。不同的工具有不同的方向，全方面的理解和使用才能够更好的完成分析任务。
+
+[原文链接](https://www.ibm.com/developerworks/cn/java/j-lo-performance-analysissy-tools/)
+
+李伟军, 宋翰瀛, 杨翔宇
+
+发布: 2016-08-23

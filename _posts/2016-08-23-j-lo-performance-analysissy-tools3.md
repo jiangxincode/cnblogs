@@ -1,15 +1,15 @@
-# Java 性能分析工具，第 3 部分：Java Mission Control
+---
+title: "Java 性能分析工具，第 3 部分：Java Mission Control"
+categories:
+  - Blog
+tags:
+  - Android
+  - Gradle
+  - Gradle Wrapper
+  - Android Plugin for Gradle
+---
+
 使用在 Java 7u40 之后加入的性能监控新功能 Java Mission Control 来对 Java 应用程序进行分析
-
-**标签:** Java
-
-[原文链接](https://developer.ibm.com/zh/articles/j-lo-performance-analysissy-tools3/)
-
-李伟军, 宋翰瀛, 杨翔宇
-
-发布: 2016-08-23
-
-* * *
 
 ## 引言
 
@@ -305,3 +305,9 @@ Java Flight Recorder（JFR）提供了深入 JVM 内部去看运行时的状态�
 对于性能分析人员来说命令行工具也是非常有帮助，所以不要拒绝它所能带来的强大力量。它往往能在自动化的性能监控，或者性能测试中发挥巨大作用。
 
 希望这些介绍能够给性能调优人员和开发人员的日常工作带来帮助。俗话说金无足赤，人无完人，工具亦如此。每一个工具都有其各自的优劣势，只有充分了解每个工具适合的场景，才能让这些工具扬长避短，更加充分地发挥其作用。
+
+[原文链接](https://developer.ibm.com/zh/articles/j-lo-performance-analysissy-tools3/)
+
+李伟军, 宋翰瀛, 杨翔宇
+
+发布: 2016-08-23
