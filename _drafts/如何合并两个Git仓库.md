@@ -145,7 +145,7 @@ To https://bitbucket.org/jiangxincode/thesis.git
 
 此时查看本地和远程的所有分支:
 
-```
+```shell
 $ git branch -a
   github_master
 * master

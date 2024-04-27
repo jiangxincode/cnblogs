@@ -7,6 +7,7 @@ tags:
   - Gradle
   - Gradle Wrapper
   - Android Plugin for Gradle
+toc: true
 ---
 
 使用在 Java 7u40 之后加入的性能监控新功能 Java Mission Control 来对 Java 应用程序进行分析
