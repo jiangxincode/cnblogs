@@ -641,7 +641,7 @@ mvn deploy:deploy-file -DgroupId="edu.jiangxin" -DartifactId=”gcu” -Dversion
 
 ## Java程序分析工具
 
-* 洞悉 Java 应用性能瓶颈的利器：Visual Performance Analyzer: <http://www.ibm.com/developerworks/cn/java/j-lo-vpa/>
+* 洞悉 Java 应用性能瓶颈的利器：Visual Performance Analyzer: <https://www.oschina.net/question/12_12665>
 * VisualVM: <http://visualvm.java.net/>
 * arthas: <https://github.com/alibaba/arthas>
 
@@ -895,6 +895,10 @@ The yFiles diagramming software components are extensive class libraries that en
 * ANTLR 4进阶: <https://liangshuang.name/2017/08/20/antlr/>
 * Enkel-JVM-language: <https://github.com/JakubDziworski/Enkel-JVM-language>
 * JC-Compiler: <https://github.com/cjwcommuny/JC-Compiler>
+
+## JavaParser
+
+* JavaParser: <https://javaparser.org/>
 
 ## Markdown转换
 
