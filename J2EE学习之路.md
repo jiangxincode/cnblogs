@@ -661,7 +661,7 @@ mvn deploy:deploy-file -DgroupId="edu.jiangxin" -DartifactId=”gcu” -Dversion
 * ~~JODE(Java Optimize and Decompile Environment, ，支持的class版本过低): <https://sourceforge.net/projects/jode/>~~
 * ~~Jode Eclipse Plugin(基于JODE): <https://sourceforge.net/projects/jodeeclipse/>~~
 * Fernflower(IDEA内置反编译工具): <https://github.com/JetBrains/intellij-community/tree/master/plugins/java-decompiler/engine>
-* Vineflower(QuiltflowerFork自Fernflower，后改名叫做Quiltflower): <https://github.com/Vineflower/vineflower>
+* Vineflower(Quiltflower Fork自Fernflower，后改名叫做Vineflower): <https://github.com/Vineflower/vineflower>
 * CFR(Another Java Decompiler): <https://github.com/leibnitz27/cfr>
 * Procyon: <https://github.com/mstrobel/procyon>
 * Luyten(Java Decompiler Gui for Procyon): <https://github.com/deathmarine/Luyten>
@@ -866,9 +866,6 @@ The yFiles diagramming software components are extensive class libraries that en
 
 ## Archiver/Compressor
 
-* zip4j: <https://github.com/srikanth-lingala/zip4j>
-* jukka/java-unrar(No maintance): <https://github.com/jukka/java-unrar>
-* java-unrar(No maintance, based on jukka/java-unrar): <https://code.google.com/archive/p/java-unrar/>
 * junrar/junrar(Recommend): <https://github.com/junrar/junrar>
 
 ## JFlex

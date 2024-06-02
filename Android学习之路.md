@@ -76,17 +76,6 @@
 * Activity的创建（从Activity的角度理解IWindowSession）: <https://blog.csdn.net/lu1024188315/article/details/74911179>
 * Android多点触控问题解决(windowEnableSplitTouch, splitMotionEvents): <https://blog.csdn.net/yztbydh/article/details/82734884>
 
-### 手势导航相关
-
-* Ensure compatibility with gesture navigation: <https://developer.android.com/develop/ui/views/touch-and-input/gestures/gesturenav>
-* 深入分析 Android 系统返回手势的实现原理: <https://juejin.cn/post/7103503592119599117>
-* Android 13 返回导航大变更：返回键彻底废弃 + 可预见型返回手势: <https://juejin.cn/post/7105645114760331300>
-* Android 14 之返回界面升级：预览目标界面 + 全新返回箭头：<https://juejin.cn/post/7241125859729260600>
-* 开启全面屏体验 | 手势导航 (一): <https://cloud.tencent.com/developer/article/1542904>
-* 处理视觉冲突 | 手势导航 (二): <https://cloud.tencent.com/developer/article/1545958>
-* 如何处理手势冲突 | 手势导航连载 (三): <https://cloud.tencent.com/developer/article/1555442>
-* 沉浸模式 | 手势导航连载 (四) :<https://cloud.tencent.com/developer/article/1563846>
-
 ### Input相关
 
 * 输入: <https://source.android.google.cn/docs/core/interaction/input?hl=zh-cn>
@@ -108,6 +97,32 @@
 * Android触摸事件的传递（四-1）--输入系统-InputReader: <https://www.jianshu.com/p/34f5c7d55337>
 * Input源码解读——从"Show tabs"开始: <https://www.cnblogs.com/jiangxinnju/p/17035554.html>
 * input-samples: <https://github.com/android/input-samples>
+
+### 输入法与输入法框架
+
+* Create an input method: <https://developer.android.google.cn/develop/ui/views/touch-and-input/creating-input-method?hl=en>
+* InputMethodManager#Security: <https://developer.android.google.cn/reference/android/view/inputmethod/InputMethodManager#security>
+* 关于Android外设键盘导致系统输入法隐藏的解决方案: <https://blog.csdn.net/xiaolei10086/article/details/41212845>
+
+### 手势导航相关
+
+* Ensure compatibility with gesture navigation: <https://developer.android.com/develop/ui/views/touch-and-input/gestures/gesturenav>
+
+* Gesture Navigation: going edge-to-edge (I): <https://medium.com/androiddevelopers/gesture-navigation-going-edge-to-edge-812f62e4e83e>
+* Gesture Navigation: handling visual overlaps (II): <https://medium.com/androiddevelopers/gesture-navigation-handling-visual-overlaps-4aed565c134c>
+* Gesture Navigation: handling gesture conflicts (III): <https://medium.com/androiddevelopers/gesture-navigation-handling-visual-overlaps-4aed565c134c>
+* Gesture Navigation: immersive modes (IV): <https://medium.com/androiddevelopers/gesture-navigation-handling-gesture-conflicts-8ee9c2665c69>
+
+* 开启全面屏体验 | 手势导航 (一): <https://mp.weixin.qq.com/s?__biz=MzAwODY4OTk2Mg==&mid=2652051441&idx=1&sn=1443ac0f269935e110af85c0098e1c67>
+* 处理视觉冲突 | 手势导航 (二): <https://mp.weixin.qq.com/s?__biz=MzAwODY4OTk2Mg==&mid=2652051519&idx=1&sn=1c35a389909ada77852454b4910150b0>
+* 如何处理手势冲突 | 手势导航连载 (三): <https://mp.weixin.qq.com/s?__biz=MzAwODY4OTk2Mg==&mid=2652051883&idx=1&sn=f4818daa2f7151f059a5b10a972a938a>
+* 沉浸模式 | 手势导航连载 (四) : <https://mp.weixin.qq.com/s?__biz=MzAwODY4OTk2Mg==&mid=2652052076&idx=1&sn=e3192b4c0a84feb141073808846fb701>
+
+* 深入分析 Android 系统返回手势的实现原理: <https://juejin.cn/post/7103503592119599117>
+
+* 添加预测性返回动画: <https://developer.android.com/codelabs/predictive-back>
+* Android 13 返回导航大变更：返回键彻底废弃 + 可预见型返回手势: <https://juejin.cn/post/7105645114760331300>
+* Android 14 之返回界面升级：预览目标界面 + 全新返回箭头：<https://juejin.cn/post/7241125859729260600>
 
 ### Accessibility
 
@@ -164,12 +179,6 @@
 
 * Android 对 USB 音频类的支持: <https://source.android.com/docs/core/audio/usb?hl=zh-cn#androidSupport>
 * How to enable USB "Audio Source" option on Android 9+? <https://android.stackexchange.com/questions/225334/how-to-enable-usb-audio-source-option-on-android-9>
-
-### 输入法与输入法框架
-
-* Create an input method: <https://developer.android.google.cn/develop/ui/views/touch-and-input/creating-input-method?hl=en>
-* InputMethodManager#Security: <https://developer.android.google.cn/reference/android/view/inputmethod/InputMethodManager#security>
-* 关于Android外设键盘导致系统输入法隐藏的解决方案: <https://blog.csdn.net/xiaolei10086/article/details/41212845>
 
 ### AMS
 

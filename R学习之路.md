@@ -16,6 +16,7 @@
 ## R Packages
 
 * R语言中，你最常用的软件包有哪些，请简述功能及特点？<https://www.zhihu.com/question/21792740>
+* R语言书籍的学习路线图: <https://jiangxincode.github.io/blogs/blog/how-to-learn-r-by-reading-books/>
 
 * Bioconductor: <https://www.bioconductor.org/>
 * Shiny(Easy web apps for data science without the compromises): <https://shiny.posit.co/>
@@ -29,6 +30,8 @@
 * reshape2(长宽数据转换): <https://github.com/hadley/reshape>
 * PerformanceAnalytics（Econometric tools for performance and risk analysis）: <https://github.com/braverock/PerformanceAnalytics>
 * lavaan(latent variable analysis, 隐变量分析): <https://lavaan.ugent.be/tutorial/index.html>
+
+* xlsx: <https://www.rdocumentation.org/packages/xlsx>
 
 * ggplot2 Version of Figures in “Lattice: Multivariate Data Visualization with R”: <https://learnr.wordpress.com/2009/06/28/ggplot2-version-of-figures-in-lattice-multivariate-data-visualization-with-r-part-1/>
 * The R Graph Gallery: <https://r-graph-gallery.com/>
