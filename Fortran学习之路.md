@@ -1,4 +1,12 @@
-# Fortran学习之路
+---
+title: "Fortran学习之路"
+categories:
+  - Blog
+tags:
+  - 学习之路
+  - Fortran
+toc: true
+---
 
 * <https://en.wikipedia.org/wiki/Fortran>
 * GNU Fortran: <https://gcc.gnu.org/fortran/>

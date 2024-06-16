@@ -1,4 +1,12 @@
-# Golang学习之路
+---
+title: "Golang学习之路"
+categories:
+  - Blog
+tags:
+  - 学习之路
+  - Golang
+toc: true
+---
 
 * Go: <https://go.dev/>
 * Go Documentation: <https://go.dev/doc/>

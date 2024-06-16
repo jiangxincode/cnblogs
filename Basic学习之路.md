@@ -1,4 +1,12 @@
-# Basic语言学习之路
+---
+title: "Basic学习之路"
+categories:
+  - Blog
+tags:
+  - 学习之路
+  - Basic
+toc: true
+---
 
 * BASIC: <https://en.wikipedia.org/wiki/BASIC>
 

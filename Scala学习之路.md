@@ -1,4 +1,12 @@
-# Scala学习之路
+---
+title: "Scala学习之路"
+categories:
+  - Blog
+tags:
+  - 学习之路
+  - Scala
+toc: true
+---
 
 * <http://www.scala-lang.org/index.html>
 * documentation: <http://www.scala-lang.org/documentation/>

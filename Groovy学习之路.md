@@ -1,4 +1,12 @@
-# Groovy学习之路
+---
+title: "Groovy学习之路"
+categories:
+  - Blog
+tags:
+  - 学习之路
+  - Groovy
+toc: true
+---
 
 * Groovy: <http://www.groovy-lang.org/>
 * source: <https://github.com/apache/groovy>

@@ -1,4 +1,13 @@
-# Editor And IDE
+---
+title: "Editor与IDE学习之路"
+categories:
+  - Blog
+tags:
+  - 学习之路
+  - Editor
+  - IDE
+toc: true
+---
 
 ## VSCode
 

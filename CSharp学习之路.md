@@ -1,4 +1,12 @@
-# C#学习之路
+---
+title: "C#学习之路"
+categories:
+  - Blog
+tags:
+  - 学习之路
+  - C#
+toc: true
+---
 
 * Mono: <http://www.mono-project.com/>
 * MonoDevelop: <http://www.monodevelop.com/>

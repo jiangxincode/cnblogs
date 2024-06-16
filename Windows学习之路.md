@@ -1,4 +1,12 @@
-# Windows学习之路
+---
+title: "Windows学习之路"
+categories:
+  - Blog
+tags:
+  - 学习之路
+  - Windows
+toc: true
+---
 
 ## Dos
 

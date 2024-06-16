@@ -1,4 +1,12 @@
-# TeX学习之路
+---
+title: "TeX学习之路"
+categories:
+  - Blog
+tags:
+  - 学习之路
+  - TeX
+toc: true
+---
 
 * TeX Live: <http://tug.org/texlive/>
 

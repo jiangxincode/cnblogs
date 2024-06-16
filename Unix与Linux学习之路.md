@@ -1,4 +1,12 @@
-# Unix/Linux学习之路
+---
+title: "Unix与Linux学习之路"
+categories:
+  - Blog
+tags:
+  - 学习之路
+  - Linux
+toc: true
+---
 
 ## General Knowledge
 

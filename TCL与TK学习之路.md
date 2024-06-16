@@ -1,4 +1,12 @@
-# TCL与TK学习之路
+---
+title: "TCL与TK学习之路"
+categories:
+  - Blog
+tags:
+  - 学习之路
+  - TCL与TK
+toc: true
+---
 
 * Tloona Tcl/Tk IDE: <http://tloona.sourceforge.net/>
 * tclsqueak: <https://github.com/xdobry/tclsqueak>

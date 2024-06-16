@@ -1,4 +1,12 @@
-# Andriod学习之路
+---
+title: "Andriod学习之路"
+categories:
+  - Blog
+tags:
+  - 学习之路
+  - Android
+toc: true
+---
 
 * 开发者网站中文: <https://developer.android.google.cn>
 * 开发者网站英文: <https://developer.android.com>
