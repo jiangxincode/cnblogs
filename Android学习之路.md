@@ -101,8 +101,7 @@
 ### 输入法与输入法框架
 
 * Create an input method: <https://developer.android.google.cn/develop/ui/views/touch-and-input/creating-input-method?hl=en>
-* InputMethodManager#Security: <https://developer.android.google.cn/reference/android/view/inputmethod/InputMethodManager#security>
-* 关于Android外设键盘导致系统输入法隐藏的解决方案: <https://blog.csdn.net/xiaolei10086/article/details/41212845>
+* InputMethodManager: <https://developer.android.google.cn/reference/android/view/inputmethod/InputMethodManager>
 
 ### 手势导航相关
 

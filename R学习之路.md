@@ -3,15 +3,16 @@
 * R: <https://www.r-project.org/>
 * The Comprehensive R Archive Network: <https://cran.r-project.org/>
 
-## R Basics
-
-* A comprehensive survey of the types of things in R; 'mode' and 'class' and 'typeof' are insufficient: <https://stackoverflow.com/questions/8855589/a-comprehensive-survey-of-the-types-of-things-in-r-mode-and-class-and-type>
-
 ## RStudio
 
 * RStudio: <https://posit.co/products/open-source/rstudio/>
 * RStudio User Guide: <https://docs.posit.co/ide/user/>
 * Using RStudio Projects: <https://support.posit.co/hc/en-us/articles/200526207-Using-Projects>
+
+## style guide
+
+* The tidyverse style guide: <https://style.tidyverse.org/index.html>
+* Google’s R Style Guide: <https://google.github.io/styleguide/Rguide.html>
 
 ## R Packages
 
@@ -30,6 +31,9 @@
 * reshape2(长宽数据转换): <https://github.com/hadley/reshape>
 * PerformanceAnalytics（Econometric tools for performance and risk analysis）: <https://github.com/braverock/PerformanceAnalytics>
 * lavaan(latent variable analysis, 隐变量分析): <https://lavaan.ugent.be/tutorial/index.html>
+* brew(用于动态生成文本和代码，类似于模板引擎): <https://cran.r-project.org/web/packages/brew>
+* rstatscn(R Interface for China National Data): <https://cran.r-project.org/web/packages/rstatscn>
+* Hmisc(数据分析、数据操作、数据可视化以及生成描述性统计信息): <https://cran.r-project.org/web/packages/Hmisc>
 
 * xlsx: <https://www.rdocumentation.org/packages/xlsx>
 
@@ -42,3 +46,5 @@
 * Econometrics in R: <https://cran.r-project.org/doc/contrib/Farnsworth-EconometricsInR.pdf>
 * Applied Econometrics with R: <https://cran.r-project.org/web/packages/AER/AER.pdf>
 * Statistics Using R with Biological Examples: <https://cran.r-project.org/doc/contrib/Seefeld_StatsRBio.pdf>
+
+* Statorials – 您的统计素养指南！<https://statorials.org/cn/>

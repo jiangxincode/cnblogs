@@ -48,6 +48,7 @@
 
 ## 输入法
 
+* 搜狗输入法: <https://shurufa.sogou.com/>
 * fcitx5: <https://github.com/fcitx/fcitx5>
 * fcitx5-android: <https://github.com/fcitx5-android/fcitx5-android>
 * ibus: <https://github.com/ibus/ibus>
