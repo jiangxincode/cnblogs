@@ -1,0 +1,126 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: Aloys's Blogs
+email:
+description: >- # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+twitter_username: username
+github_username: jiangxincode
+minimal_mistakes_skin: default
+search: true
+
+comments:
+  provider: "disqus"
+  disqus:
+    shortname: "aloys-1"
+
+# Build settings
+markdown: kramdown
+remote_theme: mmistakes/minimal-mistakes
+# Outputting
+permalink: /:categories/:title/
+paginate: 5 # amount of posts to show
+paginate_path: /page:num/
+timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+
+include:
+  - _pages
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
+
+# Plugins (previously gems:)
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
+  - jekyll-include-cache
+
+author:
+  name   : "Aloys"
+  avatar : "/assets/images/bio-photo.jpg"
+  bio    : "心若冰清，天塌不惊"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/jiangxincode"
+    - label: "知乎"
+      icon: "fas fa-fw fa-link"
+      url: "https://www.zhihu.com/people/jiangxinnju"
+    - label: "博客园"
+      icon: "fas fa-fw fa-link"
+      url: "https://www.cnblogs.com/jiangxinnju"
+
+footer:
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/jiangxincode"
+    - label: "知乎"
+      icon: "fas fa-fw fa-link"
+      url: "https://www.zhihu.com/people/jiangxinnju"
+    - label: "博客园"
+      icon: "fas fa-fw fa-link"
+      url: "https://www.cnblogs.com/jiangxinnju"
+
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+  # _pages
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/
+
+google_site_verification: "4LAS-hCkhl0WUaro31t6GDjLZGw-MY2U9watBogn7FQ"
+bing_site_verification: "1F0D00B26293ADD828A9F5A0BBF6A630"
+
+analytics:
+  provider: "google-gtag"
+  google:
+    tracking_id: "G-VJG4XMXTJV"
+    anonymize_ip: false # default

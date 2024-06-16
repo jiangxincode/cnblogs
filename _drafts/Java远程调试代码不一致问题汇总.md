@@ -1,0 +1,13 @@
+欢迎和大家交流技术相关问题：
+邮箱: jiangxinnju@163.com
+博客园地址: http://www.cnblogs.com/jiangxinnju
+GitHub地址: https://github.com/jiangxincode
+知乎地址: https://www.zhihu.com/people/jiangxinnju
+
+Java（Eclipse IDE）远程调试Tomcat容器中的代码，经常出现两端代码不一致的情况，下面针对之前出现过的问题进行汇总，作为以后快速排查的依据。
+
+1. 服务器中的jar包与Eclipse中的对应代码版本确实不一致。
+2. Tomcat容器中可能会出现相同包路径，相同类名的情况，此种情况要注意。可以使用命令下面的命令去服务器上查看是否有相同包路径相同类名的情况：`find -type f -name "*.jar" | xargs grep "ClassName"`
+3. 意外情况，比如本想望Linux服务器上替换jar包，但是由于某种情况（权限不足等）没有替换成功，或者替换错了服务器。
+4. Eclipse上的jar包反编译插件有问题，或者配置错误。
+5. Eclipse抽风，重启一下试试。
