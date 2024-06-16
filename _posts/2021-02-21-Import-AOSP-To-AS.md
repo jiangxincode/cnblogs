@@ -42,6 +42,12 @@ rsync -az --progress --delete --exclude=".git" ${USER_NAME}@${IP}:/${REMOTE_DIR}
 rsync -az --progress --delete --exclude=".git" jiangxin@192.168.1.181:/home/jiangxin/aosp/frameworks /drives/d/aosp/
 ```
 
+如果想保留git记录，可以使用
+
+```shell
+rsync -azL --progress --delete jiangxin@192.168.1.181:/home/jiangxin/aosp/frameworks /drives/d/aosp/
+```
+
 如果使用FTP命令，由于文件数目较多，直接下载或者上传目录耗时比较长，可以考虑使用`tar`将需要的文件和目录打包，然后再进行同步。
 
 我选择的是把`android.iml`/`android.ipr`以及`frameworks`目录同步到本地。打开Android Studio，`Open an Existed Project`，选择`android.ipr`，导入时间根据机器性能以及源码规模相关，可能比较长。
