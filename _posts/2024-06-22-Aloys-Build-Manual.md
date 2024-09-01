@@ -2916,6 +2916,91 @@ sudo vi /etc/mysql/mysql.conf.d/mysqld.cnf
 bind-address = 127.0.0.1
 ```
 
+## Ubuntu安装MySQL(安装包方式)
+
+```shell
+root@ubuntu:~# mkdir /usr/local/mysql
+root@ubuntu:~# cd /usr/local/mysql/
+root@ubuntu:/usr/local/mysql# groupadd mysql
+root@ubuntu:/usr/local/mysql# useradd -r -g mysql -s /bin/false mysql
+root@ubuntu:/usr/local/mysql# tar zxvf mysql-5.7.19-linux-glibc2.12-x86_64.tar.gz
+root@ubuntu:/usr/local/mysql# cd mysql-5.7.19-linux-glibc2.12-x86_64/
+root@ubuntu:/usr/local/mysql/mysql-5.7.19-linux-glibc2.12-x86_64# mkdir mysql-files
+root@ubuntu:/usr/local/mysql/mysql-5.7.19-linux-glibc2.12-x86_64# chmod 750 mysql-files
+root@ubuntu:/usr/local/mysql/mysql-5.7.19-linux-glibc2.12-x86_64# chown -R mysql .
+root@ubuntu:/usr/local/mysql/mysql-5.7.19-linux-glibc2.12-x86_64# chgrp -R mysql .
+# 安装过程中会生成一个随机密码，需要记录下来
+root@ubuntu:/usr/local/mysql/mysql-5.7.19-linux-glibc2.12-x86_64# bin/mysqld --initialize --user=mysql
+root@ubuntu:/usr/local/mysql/mysql-5.7.19-linux-glibc2.12-x86_64# bin/mysql_ssl_rsa_setup
+
+# 添加环境变量
+root@ubuntu:/usr/local/mysql/mysql-5.7.19-linux-glibc2.12-x86_64# sudo vim /etc/profile
+
+export MYSQL_HOME=/usr/local/mysql/mysql-5.7.19-linux-glibc2.12-x86_64
+export PATH=$PATH:$MYSQL_HOME/bin
+
+root@ubuntu:/usr/local/mysql/mysql-5.7.19-linux-glibc2.12-x86_64# source /etc/profile
+
+root@ubuntu:/usr/local/mysql/mysql-5.7.19-linux-glibc2.12-x86_64# cd
+root@ubuntu:~# mysqld_safe --user=mysql &
+[1] 1931893
+root@ubuntu:~# Logging to '/usr/local/mysql/data/ubuntu.err'.
+2023-05-19T15:00:22.730000Z mysqld_safe Starting mysqld daemon with databases from /usr/local/mysql/data
+
+root@ubuntu:~# mysql -u root -p
+Enter password:
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 3
+Server version: 5.7.19
+
+Copyright (c) 2000, 2017, Oracle and/or its affiliates. All rights reserved.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> exit
+Bye
+root@ubuntu:~# mysqladmin -uroot -p'/2jW>kFeerno' password test
+mysqladmin: [Warning] Using a password on the command line interface can be insecure.
+Warning: Since password will be sent to server in plain text, use ssl connection to ensure password safety.
+root@ubuntu:~# mysql -u root -p
+Enter password:
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 5
+Server version: 5.7.19 MySQL Community Server (GPL)
+
+Copyright (c) 2000, 2017, Oracle and/or its affiliates. All rights reserved.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> select `user`, `host` from mysql.user;
++---------------+-----------+
+| user          | host      |
++---------------+-----------+
+| mysql.session | localhost |
+| mysql.sys     | localhost |
+| root          | localhost |
++---------------+-----------+
+3 rows in set (0.00 sec)
+
+mysql> update mysql.user set host = '%' where user = 'root';
+Query OK, 1 row affected (0.00 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> flush privileges;
+Query OK, 0 rows affected (0.00 sec)
+
+mysql> exit
+Bye
+```
+
 ## Windows 10安装MySQL5.5 安装
 
 ![](https://raw.githubusercontent.com/jiangxincode/PicGo/master/aloys_build_manual/image177.jpg)
@@ -2946,44 +3031,6 @@ bind-address = 127.0.0.1
 
 ```shell
 jiangxin@db01:~$ sudo apt-get install sqlite3
-[sudo] jiangxin 的密码： 
-正在读取软件包列表... 完成
-正在分析软件包的依赖关系树       
-正在读取状态信息... 完成       
-建议安装：
-  sqlite3-doc
-下列【新】软件包将被安装：
-  sqlite3
-升级了 0 个软件包，新安装了 1 个软件包，要卸载 0 个软件包，有 244 个软件包未被升级。
-需要下载 515 kB 的归档。
-解压缩后会消耗 1,938 kB 的额外空间。
-获取:1 http://cn.archive.ubuntu.com/ubuntu xenial/main amd64 sqlite3 amd64 3.11.0-1ubuntu1 [515 kB]
-已下载 515 kB，耗时 0秒 (713 kB/s)
-正在选中未选择的软件包 sqlite3。
-(正在读取数据库 ... 系统当前共安装有 213307 个文件和目录。)
-正准备解包 .../sqlite3_3.11.0-1ubuntu1_amd64.deb  ...
-正在解包 sqlite3 (3.11.0-1ubuntu1) ...
-正在处理用于 man-db (2.7.5-1) 的触发器 ...
-正在设置 sqlite3 (3.11.0-1ubuntu1) ...
-jiangxin@db01:~$ sudo apt-get install sqlite3-doc 
-正在读取软件包列表... 完成
-正在分析软件包的依赖关系树       
-正在读取状态信息... 完成       
-下列【新】软件包将被安装：
-  sqlite3-doc
-升级了 0 个软件包，新安装了 1 个软件包，要卸载 0 个软件包，有 244 个软件包未被升级。
-需要下载 3,145 kB 的归档。
-解压缩后会消耗 13.4 MB 的额外空间。
-获取:1 http://cn.archive.ubuntu.com/ubuntu xenial/main amd64 sqlite3-doc all 3.11.0-1ubuntu1 [3,145 kB]
-已下载 3,145 kB，耗时 8秒 (363 kB/s)                                                                                                                                                                             
-正在选中未选择的软件包 sqlite3-doc。
-(正在读取数据库 ... 系统当前共安装有 213313 个文件和目录。)
-正准备解包 .../sqlite3-doc_3.11.0-1ubuntu1_all.deb  ...
-正在解包 sqlite3-doc (3.11.0-1ubuntu1) ...
-正在处理用于 doc-base (0.10.7) 的触发器 ...
-Processing 1 added doc-base file...
-正在设置 sqlite3-doc (3.11.0-1ubuntu1) ...
-
 jiangxin@db01:~$ sqlite3 test.db
 SQLite version 3.11.0 2016-02-15 17:29:24
 Enter ".help" for usage hints.
@@ -4230,96 +4277,8 @@ http://124.222.145.48:8080/
 
 ### 安装MySQL
 
-root@ubuntu:~# mkdir /usr/local/mysql
-root@ubuntu:~# cd /usr/local/mysql/
-root@ubuntu:/usr/local/mysql# groupadd mysql
-root@ubuntu:/usr/local/mysql# useradd -r -g mysql -s /bin/false mysql
-root@ubuntu:/usr/local/mysql# tar zxvf mysql-5.7.19-linux-glibc2.12-x86_64.tar.gz
-root@ubuntu:/usr/local/mysql# cd mysql-5.7.19-linux-glibc2.12-x86_64/
-root@ubuntu:/usr/local/mysql/mysql-5.7.19-linux-glibc2.12-x86_64# mkdir mysql-files
-root@ubuntu:/usr/local/mysql/mysql-5.7.19-linux-glibc2.12-x86_64# chmod 750 mysql-files
-root@ubuntu:/usr/local/mysql/mysql-5.7.19-linux-glibc2.12-x86_64# chown -R mysql .
-root@ubuntu:/usr/local/mysql/mysql-5.7.19-linux-glibc2.12-x86_64# chgrp -R mysql .
-root@ubuntu:/usr/local/mysql/mysql-5.7.19-linux-glibc2.12-x86_64# bin/mysqld --initialize --user=mysql
-2023-05-19T14:53:42.895566Z 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
-2023-05-19T14:53:42.895679Z 0 [ERROR] Can't find error-message file '/usr/local/mysql/share/errmsg.sys'. Check error-message file location and 'lc-messages-dir' configuration directive.
-2023-05-19T14:53:43.307387Z 0 [Warning] InnoDB: New log files created, LSN=45790
-2023-05-19T14:53:43.391326Z 0 [Warning] InnoDB: Creating foreign key constraint system tables.
-2023-05-19T14:53:43.460485Z 0 [Warning] No existing UUID has been found, so we assume that this is the first time that this server has been started. Generating a new UUID: f319f8fa-f654-11ed-96fb-525400468e37.
-2023-05-19T14:53:43.467893Z 0 [Warning] Gtid table is not ready to be used. Table 'mysql.gtid_executed' cannot be opened.
-2023-05-19T14:53:43.468453Z 1 [Note] A temporary password is generated for root@localhost: /2jW>kFeerno
-root@ubuntu:/usr/local/mysql/mysql-5.7.19-linux-glibc2.12-x86_64# bin/mysql_ssl_rsa_setup
+参考前文
 
-
-root@ubuntu:/usr/local/mysql/mysql-5.7.19-linux-glibc2.12-x86_64# sudo vim /etc/profile
-
-export MYSQL_HOME=/usr/local/mysql/mysql-5.7.19-linux-glibc2.12-x86_64
-export PATH=$PATH:$MYSQL_HOME/bin
-
-root@ubuntu:/usr/local/mysql/mysql-5.7.19-linux-glibc2.12-x86_64# source /etc/profile
-
-root@ubuntu:/usr/local/mysql/mysql-5.7.19-linux-glibc2.12-x86_64# cd
-root@ubuntu:~# mysqld_safe --user=mysql &
-[1] 1931893
-root@ubuntu:~# Logging to '/usr/local/mysql/data/ubuntu.err'.
-2023-05-19T15:00:22.730000Z mysqld_safe Starting mysqld daemon with databases from /usr/local/mysql/data
-root@ubuntu:~# mysql -u root -p
-[1] 1931893
-root@ubuntu:~# Logging to '/usr/local/mysql/data/ubuntu.err'.
-2023-05-19T15:00:22.730000Z mysqld_safe Starting mysqld daemon with databases from /usr/local/mysql/data
-
-root@ubuntu:~# mysql -u root -p
-Enter password:
-Welcome to the MySQL monitor.  Commands end with ; or \g.
-Your MySQL connection id is 3
-Server version: 5.7.19
-
-Copyright (c) 2000, 2017, Oracle and/or its affiliates. All rights reserved.
-
-Oracle is a registered trademark of Oracle Corporation and/or its
-affiliates. Other names may be trademarks of their respective
-owners.
-
-Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
-
-mysql> exit
-Bye
-root@ubuntu:~# mysqladmin -uroot -p'/2jW>kFeerno' password test
-mysqladmin: [Warning] Using a password on the command line interface can be insecure.
-Warning: Since password will be sent to server in plain text, use ssl connection to ensure password safety.
-root@ubuntu:~# mysql -u root -p
-Enter password:
-Welcome to the MySQL monitor.  Commands end with ; or \g.
-Your MySQL connection id is 5
-Server version: 5.7.19 MySQL Community Server (GPL)
-
-Copyright (c) 2000, 2017, Oracle and/or its affiliates. All rights reserved.
-
-Oracle is a registered trademark of Oracle Corporation and/or its
-affiliates. Other names may be trademarks of their respective
-owners.
-
-Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
-
-mysql> select `user`, `host` from mysql.user;
-+---------------+-----------+
-| user          | host      |
-+---------------+-----------+
-| mysql.session | localhost |
-| mysql.sys     | localhost |
-| root          | localhost |
-+---------------+-----------+
-3 rows in set (0.00 sec)
-
-mysql> update mysql.user set host = '%' where user = 'root';
-Query OK, 1 row affected (0.00 sec)
-Rows matched: 1  Changed: 1  Warnings: 0
-
-mysql> flush privileges;
-Query OK, 0 rows affected (0.00 sec)
-
-mysql> exit
-Bye
 ### 部署项目
 war包放到$CATALINA_HOME/webapps/目录下，然后重启tomcat
 shutdown.sh; startup.sh ; tail -f $CATALINA_HOME/logs/catalina.out

@@ -19,7 +19,6 @@ toc: true
 
 * The Linux Kernel Archives: <https://www.kernel.org/>
 * Elixir Cross Referencer: <https://elixir.bootlin.com/linux/latest/source>
-* Linux online: <https://code.woboq.org/linux/linux/>
 * VGER.KERNEL.ORG(provide email list services for the linux kernel developers): <http://vger.kernel.org/>
 * GNU Operating System: <http://www.gnu.org/>
 * Free Software Foundation (FSF): <https://www.fsf.org/>
