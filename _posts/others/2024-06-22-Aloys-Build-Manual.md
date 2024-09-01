@@ -1,4 +1,11 @@
-# Aloys的环境搭建手册
+---
+title: "Aloys的环境搭建手册"
+categories:
+  - others
+tags:
+  - 环境搭建
+toc: true
+---
 
 Windows信息：
 
@@ -3674,14 +3681,22 @@ http://192.168.1.130:9090/graph
 
 ![](https://raw.githubusercontent.com/jiangxincode/PicGo/master/aloys_build_manual/image190.png)
 
-## 安装配置CAS 
-#### 基础环境安装
+## 安装配置CAS
+
+### 基础环境安装
+
 搭建CAS单点登录系统，首先需要基础环境的部署。主要包括Windows/Linux/Java/Maven/GIT/Tomcat等，基础环境的部署不是本文的描写重点，本文仅做简要说明，如有疑问可以邮件咨询。
-#### Windows
+
+### Windows
+
 Windows 10，安装有JDK/GIT/Maven等工具，主要功能是下载CAS服务端和客户端源码，并进行编译打包，上传到Linux服务器上进行部署。同时利用Chrome浏览器对安装之后的环境进行检验。
-#### Linux
+
+### Linux
+
 Ubuntu 16.04.1 LTS，安装有JDK、Tomcat等工具，主要作为CAS Server和Web Server的宿主环境。
-#### JDK
+
+### JDK
+
 Linux服务器端安装JDK主要是作为Tomcat的运行时环境，并提供keytool等工具进行HTTPS配置；Windows客户端安装JDK主要是作为Maven的运行时环境。
 
 jiangxin@tomcat:~$ java -version
@@ -3693,11 +3708,15 @@ PS C:\Users\jiang> java -version
 java version "1.8.0_102"
 Java(TM) SE Runtime Environment (build 1.8.0_102-b14)
 Java HotSpot(TM) 64-Bit Server VM (build 25.102-b14, mixed mode)
-#### GIT
+
+
+### GIT
 安装在Windows机器，主要用于下载并及时更新CAS Server和Client源码。
 PS C:\Users\jiang> git --version
 git version 2.8.3.windows.1
-#### Maven
+
+### Maven
+
 安装在Windows机器，主要作用是编译打包。
 PS C:\Users\jiang> mvn -v
 Apache Maven 3.3.9 (bb52d8502b132ec0a5a3f4c09453c07478323dc5; 2015-11-11T00:41:47+08:00)
@@ -3706,7 +3725,9 @@ Java version: 1.8.0_102, vendor: Oracle Corporation
 Java home: C:\Java\jdk1.8.0_102\jre
 Default locale: zh_CN, platform encoding: GBK
 OS name: "windows 10", version: "10.0", arch: "amd64", family: "dos"
-#### Tomcat
+
+### Tomcat
+
 安装在Linux，安装包为：
 apache-tomcat-8.5.14.tar.gz
 为了更好的模拟单点登录，需要安装三个Tomcat实例，其中一个作为CAS Server，另外两个作为CAS Client。具体分配
@@ -3751,6 +3772,7 @@ Using JRE_HOME:        /usr/local/java/jdk1.8.0_121
 Using CLASSPATH:       /usr/local/tomcat/apache-tomcat-8.5.14/bin/bootstrap.jar:/usr/local/tomcat/apache-tomcat-8.5.14/bin/tomcat-juli.jar
 
 ### 安装CAS服务端
+
 在较新的CAS版本中不在提供CAS服务端和客户端的安装包，都是依靠下载源码，重新打包。如果对本文的安装内容有疑问可以参考CAS的官网：
 
 https://apereo.github.io/cas/5.0.x/installation/Maven-Overlay-Installation.html
@@ -3833,7 +3855,9 @@ http://192.168.1.130:8080/cas/login
 使用casuser/Mellon进行登录（application.properties中配置用户名和密码），查看是否登录成功。
 
 ![](https://raw.githubusercontent.com/jiangxincode/PicGo/master/aloys_build_manual/image193.png)
+
 ### 配置数字证书
+
 CAS要求CAS Server和CAS Client以及客户端浏览器端全部使用https访问，所以需要配置证书。
 
 正常情况下，数字证书的生成，分发，使用是在多台机器上，以本文搭建的SSO系统为例，在A机器（CA）上生成证书，然后将证书（包括私钥和公钥）分发到B机器（SSO Server），B机器根据该证书导出公钥分发给C机器（SSO Client），此时B和C即可正常建立连接。同时当D机器（客户端浏览器）与A机器交互时即可在A机器上下载公钥，进行连接。
@@ -3935,18 +3959,17 @@ KeyIdentifier [
 
 是否信任此证书? [否]:  y
 证书已添加到密钥库中
+
 ### 安装CAS客户端
+
 建立客户端工程，参考：
 
 https://bitbucket.org/jiangxincode/casclient/
 
 使用maven打包，得到casclient.war，上传到服务器上
 
-
-
-
-
 ### 验证
+
 验证之前先在Windows和Linux机器的hosts文件中加入：
 192.168.1.130   cas.sso.com
 
@@ -3959,6 +3982,7 @@ https://cas.sso.com:8443/cas/login?service=https%3A%2F%2Fcas.sso.com%3A8443%2Fca
 https://cas.sso.com:8443/casclient/index.jsp;jsessionid=23551AEBF9B7B61431D0CC942F923771
 
 ### 配置日志路径
+
 为了防止在不同地方启动tomcat，导致日志位置不同，不方便查找，修改一下日志路径。
 
 jiangxin@tomcat:/usr/local/tomcat/apache-tomcat-8.5.14/webapps/cas/WEB-INF/classes$ cp log4j2.xml log4j2.xml.bak
@@ -4023,6 +4047,7 @@ jiangxin@tomcat:/usr/local/tomcat/apache-tomcat-8.5.14/webapps/cas/WEB-INF/class
 ```
 
 ### 其它配置
+
 CAS支持的配置很多，此处不一一说明，有需要的可以参考下面的链接：
 
 https://github.com/apereo/cas
@@ -4032,16 +4057,21 @@ cas系列文章: http://www.cnblogs.com/vhua/tag/cas/
 cas单点登录配置速成: http://www.blogjava.net/goodlyts/archive/2009/10/20/299091.html
 
 ## Windows 10系统下搭建Jenkins环境
+
 主要参考：
 http://www.cnblogs.com/edward2013/p/5269465.html
 但是没有安装ant，而且java、maven、tomcat都是使用的压缩包方式安装。
+
 ## Ubuntu 16.04安装docker
+
 主要参考：
 https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository
 
 ## Ubuntu 22.04安装Samba
+
 ### 下载/安装Samba服务器:
 sudo apt-get install samba samba-common
+
 ### 配置Samba服务器
 首先将默认的配置文件进行备份
 sudo cp /etc/samba/smb.conf /etc/samba/smb.conf.bak
@@ -4055,10 +4085,14 @@ browseable = yes
 public = yes
 writable = yes 
 valid users = jiangxin
+
 ### 设置密码并重启服务器
+
 sudo smbpasswd -a jiangxin //设置访问的密码
 sudo service smbd restart //重启smb服务器
+
 ### 访问
+
 在Windows资源管理器导航栏输入`\\ip_adress`，然后输入账号和密码就可以访问了。为了后续方便快速访问Linux侧目录，将远程目录映射为网络驱动器：
 ![](https://raw.githubusercontent.com/jiangxincode/PicGo/master/aloys_build_manual/image197.png)
 
@@ -4067,6 +4101,7 @@ sudo service smbd restart //重启smb服务器
 ![](https://raw.githubusercontent.com/jiangxincode/PicGo/master/aloys_build_manual/image199.png)
 
 ### 其它问题
+
 如果Windows无法访问samba服务器，尝试通过以下方式确认问题所在：
 
 控制面板-系统和安全-Windows Defender 防火墙，关闭防火墙
@@ -4081,7 +4116,9 @@ Win+R，输入gpedit.msc，计算器配置-管理模板-网络-Lanman工作站�
 ![](https://raw.githubusercontent.com/jiangxincode/PicGo/master/aloys_build_manual/image203.png)
 
 ## 配置AOSP源码查看环境
+
 ### 在Windows上安装Repo，同步AOSP代码【不推荐】
+
 第一个想到的方案是在Windows上配置Repo，然后下载AOSP源码，参考：
 Windows安装repo的真正解决方案：https://ysy950803.blog.csdn.net/article/details/104188793
 但是就像Repo官网（https://gerrit.googlesource.com/git-repo/+/HEAD/docs/windows.md）说的那样：
@@ -4090,18 +4127,24 @@ Keep in mind that Windows in general is “best effort” and “community suppo
 Windows版的Repo虽然可用，但是可能会出现各种各样的问题，这些问题可能会让我们在解决环境问题上分心过多，所以不推荐这种方式。
 
 ### 在Linux上安装Repo，同步AOSP代码【推荐】
+
 根据实际情况有两种工作模式：
 1、	Linux作为AOSP代码的同步、存储、查看、修改、编译环境，大部分工作都是在Linux上完成，Android Studio也是安装在Linux上，这种我觉得是最完美的模式。但是要求Linux的性能足够好。由于我这边没有实际的Linux机器，是在Windows上用虚拟机配置的Linux环境，所以没有采用这种方法。
 2、	Linux作为AOSP代码的同步、存储、编译环境，查看和修改工作在Windows上完成，具体的实现方式有两种：
 a)	用Samba服务器把Linux上的AOSP代码共享到Windows平台，然后在Windows平台上安装IDE环境，直接打开远程AOSP代码目录，查看和修改，这种方式的优点是配置简单，不用代码同步。但是我这边网速一般，而AOSP代码量太大，导致Android Studio经常卡死，所以我也放弃了这种方式。
 b)	将android.iml/android.ipr以及常用的仓（比如frameworks/base frameworks/native等）使用rsync等工具同步到Windows平台，然后在Windows上使用Android Studio导入，进行查看和修改，修改完成后通过Beyondcompare工具将修改的内容同步到Linux平台进行编译等工作。这个各方面折中的方案。后续主要介绍这种工作环境的配置。
+
 #### 安装配置Linux环境
+
 如果已经有Linux机器，本步骤省略。我在家中没有，遂采用在Windows上安装Virtualbox，然后通过Virtualbox安装Linux（Ubuntu）。
 同时按需安装Git/Vim/OpenSSH Server等工具，安装方式不再赘述，网上有很多。
+
 #### 下载AOSP源码
+
 在配置好的Linux环境中下载AOSP源码，Google官方的下载AOSP源码的方式：https://source.android.com/docs/setup/build/downloading。
 但是由于墙的原因，这种方式不容易实现，所以推荐使用清华的镜像，使用指导：https://mirrors.tuna.tsinghua.edu.cn/help/AOSP/。
 Repo的使用方式可以参考：Repo实践指南：https://www.cnblogs.com/jiangxinnju/p/14274982.html
+
 #### 配置Windows上的工具
 1、	安装SSH客户端工具，这里推荐MobaXTerm，因为它不仅免费还自带了rsync命令行工具，可以非常方便从Linux上同步代码到Windows。
 a)	mkdir -p /drives/d/Code/sync/aosp/frameworks
@@ -4110,11 +4153,15 @@ c)	rsync -az --progress --delete --exclude=".git" android@192.168.1.125:/home/an
 2、	安装BeyondCompare工具，方便对比，将修改的代码同步到Linux环境。
 3、	安装Android Sudio，将AOSP源码导入到Android Studio进行查看：https://www.cnblogs.com/jiangxinnju/p/14426645.html
 4、	安装Source Insight工具，AS查看AOSP的Java代码比较合适，但是C/C++代码不支持跳转，着色也比较差，看这部分代码还是SI比较好用。
+
 ## TensorFlow环境搭建
+
 ### 预备条件
 	Ubuntu 22.04.2 LTS
 	配置好固定IP，安装SSH(Server)/Samba等基础网络连接软件
+
 ## 腾讯云环境构建
+
 ### 开启root用户
 sudo passwd root
 
