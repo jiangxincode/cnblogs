@@ -8,6 +8,7 @@
 
 博客地址：
 
+* [原有"学习之路系列博客"](https://jiangxincode.github.io/cnblogs/categories/#the-way-of-learning)
 * [Github](https://jiangxincode.github.io/cnblogs/)
 * [博客园](https://www.cnblogs.com/jiangxinnju)
 
