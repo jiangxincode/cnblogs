@@ -20,6 +20,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
 twitter_username: username
+url: "https://jiangxincode.github.io/cnblogs/"
 github_username: jiangxincode
 #minimal_mistakes_skin: default
 minimal_mistakes_skin: sunrise
