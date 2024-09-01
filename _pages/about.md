@@ -3,6 +3,15 @@ permalink: /about/
 title: "About"
 ---
 
-Tempor velit sint sunt ipsum tempor enim ad qui ullamco. Est dolore anim ad velit duis dolore minim sunt aliquip amet commodo labore. Ut eu pariatur aute ea aute excepteur laborum. Esse ea esse excepteur minim mollit qui cillum excepteur ex dolore magna. Labore deserunt fugiat incididunt incididunt sint ea. Consequat dolore aute laboris quis proident quis non et est consectetur ex eiusmod sit culpa.
+一些我在平时工作和学习中积累的编程相关的资源。每个程序员都有自己的学习之路，过程中会学习各种各样的网上知识，学习完最好记录下来，每隔一段时间看一看，会有不一样的收获。
 
-Cupidatat ea do et in excepteur in. Ad nostrud ut est esse eu duis ea sunt eiusmod. Aliquip tempor veniam sint elit fugiat. Velit incididunt laboris amet incididunt labore dolore irure velit excepteur commodo deserunt laborum. Consectetur eu fugiat veniam veniam Lorem labore magna eiusmod. Ea occaecat reprehenderit pariatur consectetur minim labore ut aliquip.
+博客地址：
+
+* [原有"学习之路系列博客"](https://jiangxincode.github.io/cnblogs/categories/#the-way-of-learning)
+* [Github](https://jiangxincode.github.io/cnblogs/)
+* [博客园](https://www.cnblogs.com/jiangxinnju)
+
+如果大家有兴趣可以一起增加，修改。
+
+* [文章源码目录](https://github.com/jiangxincode/cnblogs/tree/master/_posts)
+* [文章依赖图床](https://github.com/jiangxincode/PicGo)
