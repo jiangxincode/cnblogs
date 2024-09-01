@@ -1,7 +1,7 @@
 ---
 title: "彻底搞懂Ubuntu系统上的包管理"
 categories:
-  - others
+  - linux
 tags:
   - Linux
   - Ubuntu

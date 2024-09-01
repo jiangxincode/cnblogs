@@ -1,7 +1,7 @@
 ---
 title: "一个例子掌握grep, sed, awk"
 categories:
-  - others
+  - linux
 tags:
   - Linux
   - Grep

@@ -1,7 +1,7 @@
 ---
 title: "Linux内存工具解析之RSS/VSS/USS/PSS区别于联系"
 categories:
-  - others
+  - linux
 tags:
   - Linux Memory Analysis
 ---
