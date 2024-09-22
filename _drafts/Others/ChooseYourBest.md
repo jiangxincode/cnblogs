@@ -231,7 +231,6 @@ Windows 10 already has this functionality built in so WizMouse is most useful if
 * 迅雷(Thunder): <https://dl.xunlei.com/>
 * 硕鼠(bigrats): <https://124.232.150.144/>
 
-* CoolFormat: <https://github.com/akof1314/CoolFormat>
 * Convert Between Programming Languages(The Most Accurate and Reliable Source Code Converters): <https://www.tangiblesoftwaresolutions.com/>
 
 * inkscape: <https://inkscape.org/>
