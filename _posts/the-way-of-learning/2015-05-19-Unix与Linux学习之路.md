@@ -200,8 +200,6 @@ toc: true
     netstat -s             # 查看网络统计信息进程
     find . –name "*.log" | xargs grep error # 在当前目录的所有日志文件中查找关键词"error"
     ls -t `find . -name "*.log"` #列出最近修改的文件
-    glxinfo | grep rendering # 查询OpenGL是否打开。提示: direct rendering: Yes 表明启动正常
-    glxgears # glxgears是一个测试你的Linux是否可以顺利运行2D、3D的测试软件。
 
     watch "ls -al myfile" 监控文件变化
 
