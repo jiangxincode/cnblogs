@@ -62,6 +62,7 @@
 
 ## PDF
 
+* 福昕PDF阅读器: <https://www.foxitsoftware.cn/foxitoffice/>
 * wondershare(All-in-1 PDF Solution，PDF阅读器，PDF转换到其它文件等): <https://www.wondershare.com/products-solutions/office-productivity/document.html>
 * PDF-XChange: <https://www.tracker-software.com/product/pdf-xchange-editor>
 * ILovePDF: <https://www.ilovepdf.com>
@@ -96,6 +97,7 @@
 * SpaceSniffer: <http://www.uderzo.it/main_products/space_sniffer/>
 * UltraISO: <https://cn.ultraiso.net/xiazai.html>
 * DAEMON Tools Lite: <https://www.daemon-tools.cc/chn/products/dtLite>
+* Nero Burning ROM: <https://www.nero.com/chs/products/nero-burning-rom>
 * 鲁大师: <https://www.ludashi.com/>
 
 ## 地质相关软件
@@ -173,9 +175,6 @@
 * MotionPro(VPN工具): <https://client.arraynetworks.com.cn:8080/zh/troubleshooting>
 * realvnc(安全远程连接): <https://www.realvnc.com/>
 
-* Clementine: <https://www.clementine-player.org/>
-* osdlyrics: <https://github.com/osdlyrics/osdlyrics>
-
 * FFmpeg: <https://ffmpeg.org/>
 * K-Lite Codec Pack: <https://codecguide.com/download_kl.htm>
 * Shark007 Codecs: <https://shark007.net/index.html>
@@ -194,18 +193,24 @@
 * HyperSnap：<http://www.hyperionics.com/>
 * Snipaste：<https://www.snipaste.com/index.html>
 * PicPick: <https://picpick.app/zh/>
+* Camtasia: <https://www.techsmith.com/camtasia/>
 * Snagit: <https://www.techsmith.com/screen-capture.html>
 * FastStone Capture: <http://www.softerviews.org/FastStone.html>
 * OBS Studio: <https://obsproject.com/>
 * ScreenToGif: <https://www.screentogif.com/>
 * ClipMate: <http://www.thornsoft.com/>
-* babun：<https://github.com/babun/babun>
-* catdoc ported to Windows: <https://blog.brush.co.nz/2009/09/catdoc-windows/>
 * Sothink SWF Decompiler: <https://sothink.com/product/flashdecompiler/>
 * Sothink Logo Maker: <https://sothink.com/product/logo-design-software/>
 * Wondershare DVD Slideshow Builder Deluxe: <https://www.wondershare.com/pro/dvd-slideshow-builder-deluxe.html>
 * Wondershare Flash Gallery Factory Deluxe: <http://www.wondershare.com/pro/flash-gallery-factory-deluxe.html>
 * Action Script Viewer: <https://www.buraks.com/asv/>
+* Clementine: <https://www.clementine-player.org/>
+* osdlyrics: <https://github.com/osdlyrics/osdlyrics>
+* Switch Audio File Converter: <https://www.nch.com.au/switch/index.html>
+* Digital Voice Player: <https://www.sony.co.uk/electronics/support/downloads/Z0005291>
+
+* babun：<https://github.com/babun/babun>
+* catdoc ported to Windows: <https://blog.brush.co.nz/2009/09/catdoc-windows/>
 * install-us: <http://www.install-us.com/>
 
 * 人人钢琴: <https://www.everyonepiano.com/Software.html>
@@ -235,6 +240,8 @@ Windows 10 already has this functionality built in so WizMouse is most useful if
 
 * inkscape: <https://inkscape.org/>
 * OpenShot(Video Editor): <https://www.openshot.org/>
+* Boilsoft Video Splitter: <https://www.boilsoft.com/videosplitter/>
+* Easy RealMedia Producer & Easy RealMedia Editor: <https://www.rickw.cn/erm/>
 * GIMP(Image Editor): <https://www.gimp.org/>
 * Eagle(设计师图片管理工具): <https://cn.eagle.cool/>
 * blender(3D CG): <https://www.blender.org/>
@@ -251,6 +258,7 @@ Windows 10 already has this functionality built in so WizMouse is most useful if
 * httpwatch(HTTP sniffer): <https://www.httpwatch.com/>
 * Fiddler(Http sniffer): <https://www.telerik.com/fiddler>
 * Burp Suite(用于攻击web 应用程序的集成平台): <https://portswigger.net/burp>
+* IETester: <https://www.my-debugbar.com/wiki/IETester/HomePage>
 * tcpdump: <https://github.com/the-tcpdump-group/tcpdump>
 * tcpdump捕捉样例: <https://www.cnblogs.com/jiangxinnju/p/6012867.html>
 * WinDump: <https://www.winpcap.org/windump/>
