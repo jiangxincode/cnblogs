@@ -56,9 +56,12 @@
 
 ## 虚拟机软件
 
+* Hypervisor: <https://en.wikipedia.org/wiki/Hypervisor>
 * VMware Workstation Player: <https://www.vmware.com/cn/products/workstation-player.html>
 * VirtualBox: <https://www.virtualbox.org/>
 * VMTransferFiles: <http://www.newesttools.com/vmtransfer.php>
+* QEMU: <https://www.qemu.org/>
+* Kernel Virtual Machine: <https://linux-kvm.org/page/Main_Page>
 
 ## PDF
 

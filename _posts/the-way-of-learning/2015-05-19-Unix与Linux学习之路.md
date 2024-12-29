@@ -42,6 +42,11 @@ toc: true
 * opensuse-guide: <https://lug.ustc.edu.cn/sites/opensuse-guide/>
 * manjaro: <https://manjaro.org/>
 
+* ChromiumOS: <https://opensource.google/projects/chromiumos>
+* ChromeOS: <https://chromeos.google/products/chromeos-flex/>
+* Differences between ChromeOS Flex and ChromeOS: <https://support.google.com/chromeosflex/answer/11542901>
+* FydeOS: <https://fydeos.com/>
+
 * 鳥哥的 Linux 私房菜: <http://linux.vbird.org/>
 
 ## Softwares/Tools/Knowledge
