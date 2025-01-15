@@ -4330,7 +4330,7 @@ http://124.222.145.48:8080/
 war包放到$CATALINA_HOME/webapps/目录下，然后重启tomcat
 shutdown.sh; startup.sh ; tail -f $CATALINA_HOME/logs/catalina.out
 
-http://124.222.145.48:8080/JavaWebTest/index.jsp
+http://124.222.145.48:8080/java-web-test/index.jsp
 
 ## MyEclipse 2014安装说明
 
