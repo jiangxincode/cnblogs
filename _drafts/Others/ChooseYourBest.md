@@ -245,7 +245,6 @@ Windows 10 already has this functionality built in so WizMouse is most useful if
 * OpenShot(Video Editor): <https://www.openshot.org/>
 * Boilsoft Video Splitter: <https://www.boilsoft.com/videosplitter/>
 * Easy RealMedia Producer & Easy RealMedia Editor: <https://www.rickw.cn/erm/>
-* GIMP(Image Editor): <https://www.gimp.org/>
 * Eagle(设计师图片管理工具): <https://cn.eagle.cool/>
 * BusinessCards MX(名片制作工具): <https://www.businesscards-mx.com/>
 
