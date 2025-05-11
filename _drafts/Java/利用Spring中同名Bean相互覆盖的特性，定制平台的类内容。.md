@@ -1,8 +1,3 @@
-欢迎和大家交流技术相关问题：
-邮箱: jiangxinnju@163.com
-博客园地址: http://www.cnblogs.com/jiangxinnju
-GitHub地址: https://github.com/jiangxincode
-知乎地址: https://www.zhihu.com/people/jiangxinnju
 
 今天处理了一个问题，J2EE项目依赖了底层平台的功能，平台JAR包中配置了一个Bean，对应的实现类也在该平台JAR包中，由于Bean的配置不是懒加载的，所以在Tomcat容器启动时就会调用该Bean对应实现类中的init方法，但是该方法会对我们的业务产生副作用。现在想屏蔽这种副作用，我们肯定不能要求底层平台去修改代码，去除该Bean。所以考虑采取hack的方法解决。
 

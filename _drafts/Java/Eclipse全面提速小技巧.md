@@ -1,12 +1,5 @@
 转自：http://rongmayisheng.com/post/eclipse%E5%85%A8%E9%9D%A2%E6%8F%90%E9%80%9F
 
-欢迎关注我的社交账号：
-
-博客园地址: http://www.cnblogs.com/jiangxinnju
-GitHub地址: https://github.com/jiangxincode
-知乎地址: https://www.zhihu.com/people/jiangxinnju
-
-
 你是否经常在等待eclipse的一些操作完成？
 
 如果你看到这里，说明答案是yes。如果你苦于eclipse中响应很慢的功能，并且想给eclipse提速让开发更舒服些，就请看看下面的内容。

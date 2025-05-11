@@ -1,8 +1,3 @@
-欢迎和大家交流技术相关问题：
-邮箱: jiangxinnju@163.com
-博客园地址: http://www.cnblogs.com/jiangxinnju
-GitHub地址: https://github.com/jiangxincode
-知乎地址: https://www.zhihu.com/people/jiangxinnju
 
 现在各种编程语言都有自己的lint工具来做静态检查，防止一些低级错误并维持统一的风格。Markdown这样的样式标记语言也不例外，现在大家用的比较多的是markdownlint。该项目开源在github:<https://github.com/markdownlint/markdownlint>，当前很多实用markdown语言的项目都使用该工具。
 

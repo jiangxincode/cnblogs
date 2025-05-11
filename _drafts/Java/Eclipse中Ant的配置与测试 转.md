@@ -1,9 +1,3 @@
-欢迎关注我的社交账号：
-
-博客园地址: http://www.cnblogs.com/jiangxinnju/p/4781259.html
-GitHub地址: https://github.com/jiangxincode
-知乎地址: https://www.zhihu.com/people/jiangxinnju
-
 
 Ant是Java平台下非常棒的批处理命令执行程序，能非常方便地自动完成编译，测试，打包，部署等等一系列任务，大大提高开发效率。如果你现在还没有开始使用Ant，那就要赶快开始学习使用，使自己的开发水平上一个新台阶。Eclipse中已经集成了Ant，我们可以直接在Eclipse中运行Ant。以前面建立的Hello工程为例，创建以下目录结构：
 

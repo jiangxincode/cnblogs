@@ -1,8 +1,3 @@
-欢迎关注我的社交账号：
-
-博客园地址: http://www.cnblogs.com/jiangxinnju/p/4781259.html
-GitHub地址: https://github.com/jiangxincode
-知乎地址: https://www.zhihu.com/people/jiangxinnju
 
 工作中经常需要使用Eclipse远程连接Tomcat，调试Web应用程序，关于如何进行远程调试，本文不再赘述，可以参考下面的文章：
 

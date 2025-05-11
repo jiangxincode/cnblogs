@@ -1,8 +1,3 @@
-欢迎关注我的社交账号：
-
-博客园地址: http://www.cnblogs.com/jiangxinnju/p/4781259.html
-GitHub地址: https://github.com/jiangxincode
-知乎地址: https://www.zhihu.com/people/jiangxinnju
 
 在这几年的编程学习和工作中，我积累的许多轻量级的小工具，比如Everything，BeyondCompare，BatchRename、HperSnap等等，这些软件都是绿色软件，无需安装，即使重装系统也可以很容易的迁移。但是由于工具比较多，不可能在桌面上为这些工具全部设置快捷方式，于是只能使用命令行进行调用。程序员们应该都知道，如果想要在cmd或者powershell中调用这些小工具，就要把这些工具的可执行文件的所在目录添加到系统环境变量Path之中。但是这样手工去添加太麻烦了，因为要添加的目录比较多，而且之后如果还想加入新的工具就必须继续设置环境变量，最重要的一点是每次重装系统还要重新设置一遍。作为一个程序员怎么去做这么笨的事情呢？于是我写了一个powershell配置脚本，让powershell每次启动时都去读该脚本，设置环境变量。
     首先介绍一下我的工具集的结构：

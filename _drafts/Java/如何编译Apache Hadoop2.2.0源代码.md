@@ -1,11 +1,5 @@
 转自（原文图片已丢失，本文修复图片，重新排版，并更正部分原文错误）：http://www.superwu.cn/2013/12/26/913
 
-欢迎和大家交流技术相关问题：
-邮箱: jiangxinnju@163.com
-博客园地址: http://www.cnblogs.com/jiangxinnju
-GitHub地址: https://github.com/jiangxincode
-知乎地址: https://www.zhihu.com/people/jiangxinnju
-
 Hadoop2的学习资料很少，只有官网的少数文档。如果想更深入的研究hadoop2，除了仅看官网的文档外，还要学习如何看源码，通过不断的调试跟踪源码，学习hadoop的运行机制。
 
 # 1.安装CentOS

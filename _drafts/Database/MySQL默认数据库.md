@@ -1,8 +1,3 @@
-欢迎和大家交流技术相关问题：
-邮箱: jiangxinnju@163.com
-博客园地址: http://www.cnblogs.com/jiangxinnju
-GitHub地址: https://github.com/jiangxincode
-知乎地址: https://www.zhihu.com/people/jiangxinnju
 
 INFORMATION_SCHEMA：提供了访问数据库元数据的方式。
 元数据是关于数据的数据，如数据库名、表名、列的数据类型或访问权限等。有些时候用于表述该信息的其他术语包括“数据词典”和“系统目录”。你可以讲INFORMATION_SCHEMA看成一个信息数据库，其中保存着关于MySQL服务器所维护的所有其他数据库的信息。在INFORMATION_SCHEMA中，有数个只读表。它们实际上是视图，而不是基本表，因此你将无法看到与之相关的任何文件。每位MySQL用户均有权访问这些表，但仅限于表中的特定行，在这类行中含有用户具有恰当访问权限的对象。

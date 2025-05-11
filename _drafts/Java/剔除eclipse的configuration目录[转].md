@@ -1,9 +1,3 @@
-欢迎和大家交流技术相关问题：
-邮箱: jiangxinnju@163.com
-博客园地址: http://www.cnblogs.com/jiangxinnju
-GitHub地址: https://github.com/jiangxincode
-知乎地址: https://www.zhihu.com/people/jiangxinnju
-
 
 eclipse 3.4以前的版本，如果出现什么问题了，一般都会选择删除eclipse安装目录下configuration目录下除了config.ini之外的所有文件，同时在删除eclipse工作空间中的.metadata目录，这样就删除掉了eclipse的所有的配置信息，重新得到了一个类似全新安装的eclipse了，通常这种方法能够解决很多eclipse中遇到的错误。
 但是，eclipse 3.4 情况就不一样了，一个全新的eclipse/configuration目录下不再是只有一个config.ini文件，另外多了三个目录:

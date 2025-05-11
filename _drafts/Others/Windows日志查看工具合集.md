@@ -1,10 +1,3 @@
-欢迎关注我的社交账号：
-
-博客园地址: http://www.cnblogs.com/jiangxinnju
-GitHub地址: https://github.com/jiangxincode
-知乎地址: https://www.zhihu.com/people/jiangxinnju
-
-希望可以和大家多多交流。
 
 平时在Linux下查看日志，使用tail、grep、find等命令还比较方便，后来需要在Windows中处理一些问题，发现缺少类似的功能，比如tailf实时输出，于是在网上收集了一些相关的小工具，希望能够帮助到大家。
 

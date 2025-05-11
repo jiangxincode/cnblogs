@@ -1,8 +1,3 @@
-欢迎和大家交流技术相关问题：
-邮箱: jiangxinnju@163.com
-博客园地址: http://www.cnblogs.com/jiangxinnju
-GitHub地址: https://github.com/jiangxincode
-知乎地址: https://www.zhihu.com/people/jiangxinnju
 
 ```
 -- DBA/ALL/USER/V_$/GV_$/SESSION/INDEX开头的绝大部分都是视图

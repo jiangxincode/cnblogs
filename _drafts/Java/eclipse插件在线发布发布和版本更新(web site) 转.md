@@ -1,8 +1,3 @@
-欢迎关注我的社交账号：
-
-博客园地址: http://www.cnblogs.com/jiangxinnju/p/4781259.html
-GitHub地址: https://github.com/jiangxincode
-知乎地址: https://www.zhihu.com/people/jiangxinnju
 
 eclipse插件在线发布发布和版本更新(web site)
 

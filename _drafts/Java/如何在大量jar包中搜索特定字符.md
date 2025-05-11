@@ -1,9 +1,3 @@
-欢迎关注我的社交账号：
-
-博客园地址: http://www.cnblogs.com/jiangxinnju/p/4781259.html
-GitHub地址: https://github.com/jiangxincode
-知乎地址: https://www.zhihu.com/people/jiangxinnju
-邮箱: jiangxinnju@163.com
 
 工作中定位某些问题时需要在jar包中搜索某些特定的字符。如果jar包数量比较少可以直接使用JD-GUI等反编译软件导出源码，但是如果jar包数目庞大，这种方式工作量就太大了。
 

@@ -1,8 +1,3 @@
-欢迎和大家交流技术相关问题：
-邮箱: jiangxinnju@163.com
-博客园地址: http://www.cnblogs.com/jiangxinnju
-GitHub地址: https://github.com/jiangxincode
-知乎地址: https://www.zhihu.com/people/jiangxinnju
 
 在我们写样式的时候，页面的CSS在经历几个版本的修改之后，可能有些样式已经用不到了，或许将某些样式更名了而原来的忘了删除，总之页面中可能存在着一些无用的样式。这些无用的浪费了一些服务器空间和带宽消耗，也会增大我们的维护成本。那么有没有一些办法来清理那些无用的样式呢？今天就让我们来了解一下几个比较有用的工具。
 

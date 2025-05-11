@@ -1,9 +1,3 @@
-欢迎关注我的社交账号：
-
-博客园地址: http://www.cnblogs.com/jiangxinnju/p/4781259.html
-GitHub地址: https://github.com/jiangxincode
-知乎地址: https://www.zhihu.com/people/jiangxinnju
-
 
 * Origin Article: Peer Code Reviews Made Easy with Eclipse Plug-In
 * Origin Author: John Ferguson Smart

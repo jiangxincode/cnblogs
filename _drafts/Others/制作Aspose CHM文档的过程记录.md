@@ -1,8 +1,3 @@
-欢迎和大家交流技术相关问题：
-邮箱: jiangxinnju@163.com
-博客园地址: http://www.cnblogs.com/jiangxinnju
-GitHub地址: https://github.com/jiangxincode
-知乎地址: https://www.zhihu.com/people/jiangxinnju
 
 最近公司需要使用Aspose组件开发相关内容，但是网上找不到理想的参考文档，官网访问速度也慢的可以。所以打算自己做份CHM文档，做的过程中遇到很多困难，这里记录一下。
 第一步是在Aspose官网上把javadoc文档爬取出来，我使用的工具是TeleportPro。爬取的网址是

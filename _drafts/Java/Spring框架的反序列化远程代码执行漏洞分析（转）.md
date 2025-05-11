@@ -1,9 +1,3 @@
-欢迎和大家交流技术相关问题：
-邮箱: jiangxinnju@163.com
-博客园地址: http://www.cnblogs.com/jiangxinnju
-GitHub地址: https://github.com/jiangxincode
-知乎地址: https://www.zhihu.com/people/jiangxinnju
-
 
 ## 漏洞介绍
 国外的研究人员zero thoughts发现了一个Spring框架的反序列化远程代码执行漏洞。

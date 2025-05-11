@@ -3341,13 +3341,6 @@ Oracle基目录：$ORACLE_BASE
 
 ## 如何利用Oracle VM Templates 在几分钟内部署Oracle Real Application Clusters (RAC) 
 
-本文未经授权，禁止一切形式的转载。如果对本文有任何疑问可以通过以下方式和我交流：
-
-邮箱: jiangxinnju@163.com
-博客园地址: http://www.cnblogs.com/jiangxinnju
-GitHub地址: https://github.com/jiangxincode
-知乎地址: https://www.zhihu.com/people/jiangxinnju
-
 ### 阅读前准备
 阅读本教程前首先需要访问如下地址：
 http://www.oracle.com/technetwork/server-storage/vm/downloads/hol-oraclevm-2368799.html

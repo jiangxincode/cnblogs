@@ -1,10 +1,3 @@
-欢迎关注我的社交账号：
-
-邮箱: jiangxinnju@163.com
-博客园地址: http://www.cnblogs.com/jiangxinnju
-GitHub地址: https://github.com/jiangxincode
-知乎地址: https://www.zhihu.com/people/jiangxinnju
-
 
 * VirtualBox Images: http://www.osboxes.org/virtualbox-images
 * VirtualBoxes – Free VirtualBox® Images: https://virtualboxes.org/images

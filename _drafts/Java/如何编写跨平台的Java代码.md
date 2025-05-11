@@ -1,9 +1,3 @@
-欢迎和大家交流技术相关问题：
-邮箱: jiangxinnju@163.com
-博客园地址: http://www.cnblogs.com/jiangxinnju
-GitHub地址: https://github.com/jiangxincode
-知乎地址: https://www.zhihu.com/people/jiangxinnju
-
 
 使用Java语言编写应用程序最大的优点在于“一次编译，处处运行”，然而这并不是说所有的Java程序都具有跨平台的特性，事实上，相当一部分的Java程序是不能在别的操作系统上正确运行的，那么如何才能编写一个真正的跨平台的Java程序呢？
 下面是在编写跨平台的Java程序是需要注意的一些事情：

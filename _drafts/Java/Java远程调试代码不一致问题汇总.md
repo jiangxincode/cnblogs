@@ -1,8 +1,3 @@
-欢迎和大家交流技术相关问题：
-邮箱: jiangxinnju@163.com
-博客园地址: http://www.cnblogs.com/jiangxinnju
-GitHub地址: https://github.com/jiangxincode
-知乎地址: https://www.zhihu.com/people/jiangxinnju
 
 Java（Eclipse IDE）远程调试Tomcat容器中的代码，经常出现两端代码不一致的情况，下面针对之前出现过的问题进行汇总，作为以后快速排查的依据。
 
