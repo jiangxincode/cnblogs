@@ -8,6 +8,8 @@ tags:
 toc: true
 ---
 
+本篇文章汇总了 Unix 和 Linux 学习的相关资源，包括 Unix 和 Linux 的历史渊源、相关工具等内容，适合 Unix 和 Linux 开发者参考。
+
 ## General Knowledge
 
 * The Open Group(Unix): <http://opengroup.org/subjectareas/platform/unix>

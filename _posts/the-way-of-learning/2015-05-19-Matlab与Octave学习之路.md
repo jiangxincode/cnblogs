@@ -9,6 +9,8 @@ tags:
 toc: true
 ---
 
+本篇文章汇总了 Matlab 和 Octave 学习的相关资源，包括 Matlab 和 Octave 的基本概念、安装配置、编程语言特性等内容，适合 Matlab 和 Octave 开发者参考。
+
 ## Matlab
 
 * Matlab: <http://cn.mathworks.com>

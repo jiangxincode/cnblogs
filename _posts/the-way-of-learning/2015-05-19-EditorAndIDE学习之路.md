@@ -9,6 +9,8 @@ tags:
 toc: true
 ---
 
+本篇文章汇总了多种编辑器与 IDE 的学习资源，包括 VSCode、VIM、Eclipse、JetBrains 系列等工具的使用技巧和插件推荐，适合开发者提升开发效率。
+
 ## VSCode
 
 * Visual Studio Code: <https://code.visualstudio.com/Download>

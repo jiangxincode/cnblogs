@@ -9,6 +9,8 @@ tags:
 toc: true
 ---
 
+本篇文章汇总了 Pascal&Delphi 学习的相关资源，包括 Pascal&Delphi 的基本概念、安装配置、编程语言特性等内容，适合 Pascal&Delphi 开发者参考。
+
 * free pascal: <http://www.freepascal.org/>
 * free pascal docs: <https://www.freepascal.org/docs.html>
 * Lazarus: <http://www.lazarus-ide.org/>
