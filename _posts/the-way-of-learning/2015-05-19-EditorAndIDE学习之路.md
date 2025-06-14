@@ -142,7 +142,6 @@ toc: true
 * groovy-eclipse: <https://github.com/groovy/groovy-eclipse>
 * ~~Eclipse Photran Fortran Development Tools：<https://projects.eclipse.org/projects/tools.ptp.photran>~~
 * ~~Cusp(Cusp is an Eclipse IDE plugin that runs on top of SBCL)：<https://www.cliki.net/Cusp>~~
-* The TeXlipse plugin for Eclipse provides support for LaTeX projects: <https://github.com/eclipse/texlipse>
 * Configuring Eclipse as TCL/TK IDE: <https://blogsai.wordpress.com/2009/10/15/configuring-eclipse-as-tcltk-ide/>
 
 ### Eclipse插件开发
