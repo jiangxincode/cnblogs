@@ -169,6 +169,7 @@ toc: true
 * curl: <https://curl.haxx.se/>
 * Poptop - The PPTP Server for Linux: <http://poptop.sourceforge.net/dox/>
 * Linux Extended BPF (eBPF) Tracing Tools: <http://www.brendangregg.com/ebpf.html>
+* wachy(A dynamic tracing profiler for Linux): <https://github.com/rubrikinc/wachy>
 
 * grep_sed_awk练习: <https://www.cnblogs.com/jiangxinnju/p/17938752>
 

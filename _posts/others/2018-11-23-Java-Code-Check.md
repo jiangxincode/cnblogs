@@ -178,6 +178,12 @@ toc: true
 * <https://fbinfer.com/>
 * infer-maven-plugin（简单封装，意义不大，可以直接使用其它方式进行CI集成）: <https://github.com/anthemengineering/infer-maven-plugin>
 
+## Tencent Cloud Code Analysis
+
+    Tencent Cloud Code Analysis (TCA for short, code-named CodeDog inside the company early) is a comprehensive platform for code analysis and issue tracking. TCA consist of three components, server, web and client. It integrates of a number of self-developed tools, and also supports dynamic integration of code analysis tools in various programming languages.
+
+* <https://github.com/tencent/codeanalysis>
+
 ## FireLine
 
 * <http://magic.360.cn/>
