@@ -1,0 +1,14 @@
+---
+title: "计算机网络学习之路"
+categories:
+  - the-way-of-learning
+tags:
+  - 学习之路
+  - 计算机网络
+toc: true
+---
+
+* 子网掩码最长匹配: <http://blog.sina.com.cn/s/blog_5d4a8ac90100d36q.html>
+* ip首部校验和计算: <http://blog.csdn.net/clangke/article/details/6216610>
+* ip首部校验和的计算: <http://blog.sina.com.cn/s/blog_59e87cd40100dviu.html>
+* IP校验与算法反码求和详解: <http://database.chinaunix.net/a2009/0915/679/000000679716_2.shtml>
