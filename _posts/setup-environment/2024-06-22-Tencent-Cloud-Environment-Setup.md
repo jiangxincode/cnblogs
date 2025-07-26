@@ -26,49 +26,27 @@ ubuntu@ubuntu:~$ sudo vim /etc/hostname
 ubuntu@ubuntu:~$ sudo reboot
 ```
 
-## 防止SSH经常断连
+## 调整SSH配置
 
 ```bash
+# 注意是sshd_config，不是ssh_config
 ubuntu@ubuntu:~$ sudo vim /etc/ssh/sshd_config
 ```
 
-修改或者添加如下内容
+修改或者取消注释如下内容
 
-```text
+```bash
+# 允许root用户登录
+PermitRootLogin yes
+
+# 防止SSH经常断连
 ClientAliveInterval 30
 ClientAliveCountMax 86400
 ```
 
 ```bash
-ubuntu@ubuntu:~$ sudo /etc/init.d/ssh restart
+ubuntu@ubuntu:~$ sudo service ssh restart
 ```
-
-## 安装JDK 8
-
-```bash
-ubuntu@ubuntu:/usr/local$ sudo mkdir java
-ubuntu@ubuntu:/usr/local$ sudo chown ubuntu:ubuntu java
-```
-
-上传jdk-8u371-linux-x64.tar.gz到java目录
-
-ubuntu@ubuntu:/usr/local$ cd java/
-ubuntu@ubuntu:/usr/local/java$ tar -zxvf jdk-8u371-linux-x64.tar.gz
-
-ubuntu@ubuntu:/usr/local/java $ cd
-ubuntu@ubuntu:~$ sudo vim /etc/profile
-
-在文件末尾添加如下内容：
-
-export JAVA_HOME=/usr/local/java/jdk1.8.0_371
-export CLASSPATH=.:$JAVA_HOME/lib:$CLASSPATH
-export PATH=$JAVA_HOME/bin:$PATH
-
-ubuntu@ubuntu:~$ source /etc/profile
-ubuntu@ubuntu:~$ java -version
-java version "1.8.0_371"
-Java(TM) SE Runtime Environment (build 1.8.0_371-b11)
-Java HotSpot(TM) 64-Bit Server VM (build 25.371-b11, mixed mode)
 
 ## 安装JDK 17
 
@@ -217,3 +195,49 @@ war包放到$CATALINA_HOME/webapps/目录下，然后重启tomcat
 shutdown.sh; startup.sh ; tail -f $CATALINA_HOME/logs/catalina.out
 
 http://124.222.145.48:8080/java-web-test/index.jsp
+
+## 安装Apache
+
+安装Apache作为HTTP文件下载服务器
+
+```bash
+ubuntu@ubuntu:~$ sudo apt-get install apache2
+```
+
+尝试启动Apache2服务
+
+```bash
+ubuntu@ubuntu:~$ /etc/init.d/apache2 start
+Starting apache2 (via systemctl): apache2.service==== AUTHENTICATING FOR org.freedesktop.systemd1.manage-units ===
+Authentication is required to start 'apache2.service'.
+Authenticating as: qcloud (ubuntu)
+Password:
+==== AUTHENTICATION COMPLETE ===
+.
+```
+
+直接访问<http://124.222.145.48:80/>，既可看到对应的Apache2默认页面。
+
+![](https://raw.githubusercontent.com/jiangxincode/PicGo/master/2025-07-26_12-25-59.png)
+
+存放的目录为`/var/www/html/`，想要下载的文件直接放到这个目录下，然后直接访问既可。
+
+<http://124.222.145.48/download/>
+
+```bash
+
+命令汇总
+
+```bash
+# 启动Apache2服务
+/etc/init.d/apache2 start
+
+# 查看Apache2服务状态
+/etc/init.d/apache2 status
+
+# 停止Apache2服务
+/etc/init.d/apache2 stop
+
+# 重启Apache2服务
+/etc/init.d/apache2 restart
+```
