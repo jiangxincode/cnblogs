@@ -43,3 +43,7 @@ toc: true
 ## Mathcad
 
 * Mathcad: <https://www.mathcad.com/>
+
+## MWORKS
+
+* MWORKS: <https://www.tongyuan.cc/product>
