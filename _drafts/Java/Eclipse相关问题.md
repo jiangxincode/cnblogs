@@ -71,36 +71,6 @@ Window->Preferences->Java->Editor->Hovers 将[Variable Values]选择即可，如
 
 其实，Eclipse生成的结果不像VC,Jcreator那样可以直接打开，若要打开非workspace文件夹下的其他已有工程，可以打开菜单file->import→general→existing project into space.在select root directory中选中要打开的文件夹即可。此时如果选择copy existing project into workspace就会同时将文件拷贝到workspace下。这里首先要保证要保证Eclipse两个文件.classpath和.project还在，不然无法导入，就是说Eclipse的import只认自己家的东西。
 
-## Eclipse乱码问题
-
-我的eclipse在执行System.out.println("中文出现乱码！");时，控制台上打印的都是乱码，这个是什么问题啊！我整个eclipse的工作空间都设为UTF-8了啊！！！好晕啊！ 对啊，设置为GBK的就没有问题，我用maven跑工程的时候为什么控制台又不是乱码了？maven的那些工程都是设置的UTF-8的。
-
-把整个工程的“Text file encoding”属性设为GBK，就不会有乱码了。设置方法：在eclipse中右击工程，点击弹出框最下面的“Properties”，然后在弹出的窗口左侧点击“Resource”，便可以在窗口的右部看到“Text file encoding”属性，点击“Other”前的单选框，在下拉列表中选择“GBK”。最后，点击右下部的“Apply”，“OK”退出。这样设置后，你再执行System.out.println("中文出现乱码！");时控制台上就不会是乱码了。
-
-
-
-Eclipse 的控制台必须用GBK编码。所以条件1和条件4必须同时满足否则运行的还是乱码。才能保证不是乱码。
-
-条件1，Window  | Preferences  | Workspace  |  Text fileencoding  | GBK编码。
-
-这样定义的是整个工作区间的编码。
-
-这样就把整个工作空间的编码格式定死了，但是如果某一个工程用的是不同的编码格式的话这样单独再解决。如下：
-
-条件2，工程上右键  | Properties  | Resource  |  Text fileencoding  | UTF-8编码。或者适合的编码格式。这样定义的是整个工程的编码。
-
-这样就把整个工程的编码格式定死了，但是如果某一个文件用的是不同的编码格式的话这样单独再解决。如下：
-
-条件3，在某个文件上右键| Properties  | Resource  |  Text fileencoding  | UTF-8编码。或者适合的编码格式。这样定义的是单独某个文件的编码。
-
-这里要说的是文件的实际编码格式优先用的是：第3个，其次再用2，最后先用1。有时候是123，必须满足条件。无论怎样这几种编码格式试一试就全知道了。
-
-
-
-条件4，还有运行时编码设置如下：菜单：Run Configuration  | 右侧的选项卡Common 的 Console Encoding 选择GBK编码。这个是用来控制console控制台显示，必须是GBK，就不会乱码。尽管1，2，3条件都不是GBK，只要4是GBK。控制台就不会乱码。
-
-这样保证了工作空间和工程代码编程方式和工程里的单独文件的编码格式的不冲突。
-
 ## 如何修改eclipse的默认工作空间
 
 打开eclipse，选择File菜单，再选择switch workspace，最后选择other，接着你就选择你想要存储的工作区间
