@@ -60,7 +60,6 @@ toc: true
 * Linux快捷键: <https://www.cnblogs.com/jiangxinnju/p/6045204.html>
 * ssh相关原理学习与常见错误总结: <https://www.cnblogs.com/jiangxinnju/p/7859488.html>
 
-* Linux命令大全: <http://man.linuxde.net/>
 * explainshell: <https://explainshell.com/>
 * tldr: <https://github.com/tldr-pages/tldr>
 * Nushell: <https://www.nushell.sh/>
@@ -86,7 +85,6 @@ toc: true
 * linux中时间设置date、hwclock、clock：<http://lomomo.blog.51cto.com/65441/277618>
 * Linux&Windows双系统时间不一致解决方案: <https://blog.csdn.net/sunchengyun/article/details/126995040>
 * 通过命令行查找一个IP的地理位置信息: <http://www.geekfan.net/7863/>
-* 多终端管理器tmux使用详解: <http://blog.csdn.net/stelalala/article/details/9025691>
 * Linux系统里如何彻底的清空屏幕？: <http://www.vaikan.com/how-to-clear-the-terminal-screen-for-real-in-case-of-linux/>
 * 如何在Linux上将HTML页面转化成png图片: <http://linux.cn/article-2708-1.html>
 * Ubuntu输入密码登陆后又跳回到登录界面: <https://askubuntu.com/questions/223501/ubuntu-gets-stuck-in-a-login-loop>
@@ -147,9 +145,6 @@ toc: true
 * 新立得(Synaptic): <http://www.nongnu.org/synaptic/>
 * gparted: <https://gparted.org/>
 * GLX-Dock: <http://www.glx-dock.org/>
-* vncview: <https://www.realvnc.com/en/connect/download/viewer/>
-* PDFtk: <https://www.pdflabs.com/>
-* Master PDF Editor for Linux:<https://code-industry.net/free-pdf-editor/>
 * Okular: <https://okular.kde.org/>
 * AppImage(Package desktop applications as AppImages that run on common Linux-based operating systems): <http://appimage.org/>
 * shunit2: <https://github.com/zandev/shunit2>

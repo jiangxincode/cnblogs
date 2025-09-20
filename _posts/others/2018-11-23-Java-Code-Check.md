@@ -45,6 +45,7 @@ toc: true
 * PMD(various plugin addresses included)：<https://pmd.github.io/>
 * PMD Rules: <https://pmd.github.io/pmd-5.3.6/pmd-java/rules/index.html>
 * maven-pmd-plugin: <http://maven.apache.org/plugins/maven-pmd-plugin/>
+* pmd-github-action: <https://github.com/pmd/pmd-github-action>
 
 ## p3c
 

@@ -15,7 +15,7 @@ ssh-keygen 产生出 id_rsa, id_rsa.pub, 已经都放到正确位置(.ssh), 但�
 ## 解决SSH超时断开连接问题
 
 ```sh
-vim /etc/ssh/sshd_config
+# 修改/etc/ssh/sshd_config
 
 ClientAliveInterval # 指定服务器向客户端请求消息的时间间隔，默认是0表示不发送；可以改为60表示每分钟发送一次
 ClientAliveCountMax # 表示服务器发出请求后客户端没有响应的次数达到一定值, 就自动断开

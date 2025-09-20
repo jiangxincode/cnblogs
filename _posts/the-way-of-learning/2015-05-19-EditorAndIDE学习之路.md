@@ -21,10 +21,8 @@ toc: true
 ## VIM
 
 * vim/gvim: <http://www.vim.org/>
-* <http://vim.sourceforge.net/>
-* Vim documentation: usr_41: <http://vimdoc.sourceforge.net/htmldoc/usr_41.html>
-* map.txt: <http://vimcdoc.sourceforge.net/doc/map.html>
-* Vim FAQ: <http://vimdoc.sourceforge.net/cgi-bin/vimfaq2html3.pl>
+* Vim documentation: <https://vimhelp.org/>
+* Vim documentation(中文版): <https://github.com/yianwillis/vimcdoc>
 * Vim of AlloVince: <http://avnpc.com/pages/vim-of-allovince>
 * 奉献一个vim自动加载模板的插件: <http://bbs.chinaunix.net/forum.php?mod=viewthread&tid=895258>
 * vim安装YouCompleteMe 插件: <http://www.cnblogs.com/junnyfeng/p/3633697.html>
@@ -262,3 +260,4 @@ toc: true
 * QtCreator: <https://www.qt.io/qt-features-libraries-apis-tools-and-ide/#ide>
 * SlickEdit: <https://www.slickedit.com/products/slickedit>
 * ReText(Simple but powerful editor for Markdown and reStructuredText): <https://github.com/retext-project/retext>
+* SourceInsight: <https://www.sourceinsight.com/>

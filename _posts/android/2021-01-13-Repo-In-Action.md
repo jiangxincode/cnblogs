@@ -314,6 +314,7 @@ repo forall -c git remote add origin_1 # 删除远程仓库
 repo forall –c git branch aosp-dev # 切换分支
 repo forall –c git checkout –b aosp-dev # 创建分支
 repo forall -c git reset --hard # 当repo sync时如果提示discarding xx commits时可以通过该命令废弃所有提交，然后继续repo sync
+repo forall -p -c "git log -S fitsSystemWindows --pretty=oneline --since=2024-01-01 --until=2024-12-31 author:jiangxin" # 在所有项目中查找fitsSystemWindows的提交记录
 ```
 
 ### repo grep
