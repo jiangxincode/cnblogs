@@ -260,3 +260,4 @@ toc: true
 * QtCreator: <https://www.qt.io/qt-features-libraries-apis-tools-and-ide/#ide>
 * SlickEdit: <https://www.slickedit.com/products/slickedit>
 * ReText(Simple but powerful editor for Markdown and reStructuredText): <https://github.com/retext-project/retext>
+* SourceInsight: <https://www.sourceinsight.com/>
