@@ -154,18 +154,11 @@ http://192.168.1.130:9090/graph
 
 ![](https://raw.githubusercontent.com/jiangxincode/PicGo/master/aloys_build_manual/image190.png)
 
-
-
 ## Windows 10系统下搭建Jenkins环境
 
 主要参考：
 http://www.cnblogs.com/edward2013/p/5269465.html
 但是没有安装ant，而且java、maven、tomcat都是使用的压缩包方式安装。
-
-## Ubuntu 16.04安装docker
-
-主要参考：
-https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository
 
 ## 配置AOSP源码查看环境
 
@@ -188,7 +181,7 @@ b)	将android.iml/android.ipr以及常用的仓（比如frameworks/base framewor
 
 #### 安装配置Linux环境
 
-如果已经有Linux机器，本步骤省略。我在家中没有，遂采用在Windows上安装Virtualbox，然后通过Virtualbox安装Linux（Ubuntu）。
+如果已经有Linux机器，本步骤省略。我采用在Windows上安装虚拟机，然后通过虚拟机安装Linux（Ubuntu）。
 同时按需安装Git/Vim/OpenSSH Server等工具，安装方式不再赘述，网上有很多。
 
 #### 下载AOSP源码

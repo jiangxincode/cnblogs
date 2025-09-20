@@ -591,11 +591,3 @@ sudo ln -s /lib/systemd/system/lightdm.service /etc/systemd/system/display-manag
 ```
 
 CentOS/Redhat可以参考如下地址：<http://blog.csdn.net/zoubf/article/details/47607039>
-
-## vSphere专题
-
-* vSphere正确分配虚拟机CPU资源: <http://xjlegend.blog.51cto.com/59163/1642460>
-* 如何通过Vmware vSphere Client安装虚拟机教程: <http://jingyan.baidu.com/article/bea41d439726c1b4c51be629.html>
-* VMWARE ESXI 虚拟硬盘的格式:精简置备、厚置备延迟置零、厚置备置零: <http://blog.csdn.net/xiaoxing1521025/article/details/51282248>
-* Download link for All Versions of VMware vSphere Client: <http://www.vmwarearena.com/download-link-for-all-versions-of-vmware-vsphere-client/>
-* [vSphere 6] vmclicent连接单机时报错: <http://bbs.vmsky.com/thread-55705-1-1.html>
