@@ -111,44 +111,44 @@ jiangxin@db01:~$ mv test.db share/sqlite/
 ![](https://raw.githubusercontent.com/jiangxincode/PicGo/master/aloys_build_manual/image106.png)
 
 ## 安装Prometheus
-下载地址：
-https://prometheus.io/download/
 
-jiangxin@tomcat:~$ sudo mkdir /usr/local/prometheus
-jiangxin@tomcat:~$ sudo chown -R jiangxin:jiangxin /usr/local/prometheus
-jiangxin@tomcat:~$ cd /usr/local/prometheus/
-jiangxin@tomcat:/usr/local/prometheus$ ls
+下载地址：<https://prometheus.io/download/>
+
+```shell
+jiangxin@ubuntu11:~$ sudo mkdir /usr/local/prometheus
+jiangxin@ubuntu11:~$ sudo chown -R jiangxin:jiangxin /usr/local/prometheus
+jiangxin@ubuntu11:~$ cd /usr/local/prometheus/
+jiangxin@ubuntu11:/usr/local/prometheus$ ls
 prometheus-1.7.1.linux-amd64.tar.gz
-jiangxin@tomcat:/usr/local/prometheus$ tar -zxvf prometheus-1.7.1.linux-amd64.tar.gz
-jiangxin@tomcat:/usr/local/prometheus$ cd prometheus-1.7.1.linux-amd64/
+jiangxin@ubuntu11:/usr/local/prometheus$ tar -zxvf prometheus-1.7.1.linux-amd64.tar.gz
+jiangxin@ubuntu11:/usr/local/prometheus$ cd prometheus-1.7.1.linux-amd64/
+```
 
-jiangxin@tomcat:/usr/local/prometheus/prometheus-1.7.1.linux-amd64$ sudo vim /etc/profile
+修改：`/etc/profile`
 
+```shell
 export PROMETHEUS_HOME=/usr/local/prometheus/prometheus-1.7.1.linux-amd64
 export PATH=$PATH:$PROMETHEUS_HOME
+```
 
-jiangxin@tomcat:/usr/local/prometheus/prometheus-1.7.1.linux-amd64$ source /etc/profile
-jiangxin@tomcat:/usr/local/prometheus/prometheus-1.7.1.linux-amd64$ cd
+```shell
+jiangxin@ubuntu11:/usr/local/prometheus/prometheus-1.7.1.linux-amd64$ source /etc/profile
+jiangxin@ubuntu11:/usr/local/prometheus/prometheus-1.7.1.linux-amd64$ cd
+```
+
 ### 启动
-jiangxin@tomcat:~$ prometheus -config.file=${PROMETHEUS_HOME}/prometheus.yml
+
+jiangxin@ubuntu11:~$ prometheus -config.file=${PROMETHEUS_HOME}/prometheus.yml
+
+```log
 INFO[0000] Starting prometheus (version=1.7.1, branch=master, revision=3afb3fffa3a29c3de865e1172fb740442e9d0133)  source="main.go:88"
-INFO[0000] Build context (go=go1.8.3, user=root@0aa1b7fc430d, date=20170612-11:44:05)  source="main.go:89"
-INFO[0000] Host details (Linux 4.4.0-78-generic #99-Ubuntu SMP Thu Apr 27 15:29:09 UTC 2017 x86_64 tomcat (none))  source="main.go:90"
-INFO[0000] Loading configuration file /usr/local/prometheus/prometheus-1.7.1.linux-amd64/prometheus.yml  source="main.go:252"
-INFO[0000] Loading series map and head chunks...         source="storage.go:428"
-INFO[0000] 0 series loaded.                              source="storage.go:439"
-INFO[0000] Starting target manager...                    source="targetmanager.go:63"
-INFO[0000] Listening on :9090                            source="web.go:259"
-
-
-
+...
+```
 
 ### 查看界面
 http://192.168.1.130:9090/metrics
 
 ![](https://raw.githubusercontent.com/jiangxincode/PicGo/master/aloys_build_manual/image189.png)
-
-
 
 http://192.168.1.130:9090/graph
 

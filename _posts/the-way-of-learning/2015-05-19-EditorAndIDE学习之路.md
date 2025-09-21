@@ -152,6 +152,7 @@ toc: true
 * Tycho - Building Eclipse plug-ins with maven: <https://github.com/eclipse-tycho/tycho>
 * 使用Tycho来构建你的RCP程序: <http://chnic.iteye.com/category/337072>
 * Dependencies from pom.xml not considered by Eclipse in Tycho Project: <http://stackoverflow.com/questions/12476451/dependencies-from-pom-xml-not-considered-by-eclipse-in-tycho-project>
+* Eclipse plugin web site 发布和版本更新: <https://www.cnblogs.com/wjhome/p/plugin_web_site.html>
 
 ### Eclipse C/C++
 

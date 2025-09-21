@@ -1,3 +1,5 @@
+# MySQL安装
+
 ## Ubunut安装/卸载Mysql（apg-get方式）
 
 ### 安装
