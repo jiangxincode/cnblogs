@@ -3,28 +3,25 @@
 
 这些工具分为两类，一种是在Windows上模仿Linux的行为，使用类似的命令解决，比如：
 
-* tail for Windows: http://www.trisunsoft.com/tail-for-windows.htm
-* Tail for Win32: https://sourceforge.net/projects/tailforwin32/
-* MinGW: http://www.mingw.org/
-* Cygwin: https://www.cygwin.com/
-* git自带的tail: https://git-scm.com/
+* tail for Windows: <https://www.trisunsoft.com/tail-for-windows.htm>
+* Tail for Win32: <https://sourceforge.net/projects/tailforwin32/>
 
 另外一种就是Windows GUI风格的工具，比如：
 
-* Hoo WinTail: http://www.hootech.com/WinTail/
-* BareTail: http://www.baremetalsoft.com/baretail/index.php
-* Tail4win: http://www.withdata.com/tail4win/index.html
-* LogViewer Pro: http://www.uvviewsoft.com/logviewer/
-* Java Log Viewer: https://sourceforge.net/projects/jlogviewer/
-* OtrosLogViewer: https://github.com/otros-systems/otroslogviewer
-* LogExpert: http://www.log-expert.de/
+* Hoo WinTail: <http://www.hootech.com/WinTail/>
+* BareTail: <http://www.baremetalsoft.com/baretail/index.php>
+* Tail4win: <http://www.withdata.com/tail4win/index.html>
+* LogViewer Pro: <http://www.uvviewsoft.com/logviewer/>
+* Java Log Viewer: <https://sourceforge.net/projects/jlogviewer/>
+* OtrosLogViewer: <https://github.com/otros-systems/otroslogviewer>
+* LogExpert: <http://www.log-expert.de/>
 
 其中我选用的是BareTail。
 
 另外介绍几个Java GC日志查看工具：
 
-* GCViewer: https://github.com/chewiebug/GCViewer
-* garbagecat: https://github.com/doctau/garbagecat
-* gchisto: https://java.net/projects/gchisto
-* GCLogViewer: https://github.com/potatofantasy/gclogviewer
-* HPjmeter: http://www.hp.com/go/java
+* GCViewer: <https://github.com/chewiebug/GCViewer>
+* garbagecat: <https://github.com/doctau/garbagecat>
+* gchisto: <https://java.net/projects/gchisto>
+* GCLogViewer: <https://github.com/potatofantasy/gclogviewer>
+* HPjmeter: <http://www.hp.com/go/java>
