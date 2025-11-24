@@ -203,6 +203,7 @@ toc: true
 
 ## Jetbrains
 
+* 官网: <https://www.jetbrains.com/ides/>
 * IntelliJ IDEA: <https://www.jetbrains.com/idea/>
 * Clion: <https://www.jetbrains.com/clion/>
 * RustRover: <https://www.jetbrains.com/rust/>
@@ -262,3 +263,4 @@ toc: true
 * SlickEdit: <https://www.slickedit.com/products/slickedit>
 * ReText(Simple but powerful editor for Markdown and reStructuredText): <https://github.com/retext-project/retext>
 * SourceInsight: <https://www.sourceinsight.com/>
+* ideone(在线IDE和编译器): <https://ideone.com/>
