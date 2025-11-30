@@ -14,6 +14,7 @@ toc: true
 ## VSCode
 
 * Visual Studio Code: <https://code.visualstudio.com/Download>
+* Keyboard shortcuts for Windows: <https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf>
 * Settings Sync: <https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync>
 * VSCode调试远程Linux机器上的C代码: <https://github.com/jiangxincode/data>
 * R in Visual Studio Code: <https://code.visualstudio.com/docs/languages/r>

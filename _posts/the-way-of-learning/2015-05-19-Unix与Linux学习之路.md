@@ -118,9 +118,6 @@ toc: true
 * Shell脚本: 判断用户和用户组是否已经存在/创建用户和用户组: <http://blog.csdn.net/bluishglc/article/details/42060223>
 * nc命令用法举例: <http://www.cnblogs.com/nmap/p/6148306.html>
 * How to Manage ‘Systemd’ Services and Units Using ‘Systemctl’ in Linux: <https://www.tecmint.com/manage-services-using-systemd-and-systemctl-in-linux/>
-* linux中screen命令的用法: <http://www.9usb.net/201002/linux-screen-mingling.html>
-* linux 下script命令记录终端会话: <http://blog.chinaunix.net/uid-25885064-id-3430216.html>
-* 记录终端下的操作（tee）: <http://os.chinaunix.net/a2008/0810/986/000000986568.shtml>
 * Shell脚本交互之: 自动输入密码: <http://blog.csdn.net/zhangjikuan/article/details/51105166>
 * Shell中重定向<<EOF注意事项: <http://blog.csdn.net/iamlaosong/article/details/40509399>
 * linux 终端backspace不能删除字符: <http://blog.163.com/chen_cong_520/blog/static/841151912010829240926/>
@@ -163,7 +160,6 @@ toc: true
 * ttyrec 和 ttyplay(记录、保存和播放终端会话软件): <http://0xcc.net/ttyrec/>
 * curl: <https://curl.haxx.se/>
 * Poptop - The PPTP Server for Linux: <http://poptop.sourceforge.net/dox/>
-* Linux Extended BPF (eBPF) Tracing Tools: <http://www.brendangregg.com/ebpf.html>
 * wachy(A dynamic tracing profiler for Linux): <https://github.com/rubrikinc/wachy>
 
 * grep_sed_awk练习: <https://www.cnblogs.com/jiangxinnju/p/17938752>
@@ -304,6 +300,11 @@ toc: true
     # 切换用户并执行一个shell文件
     su - oracle -s /bin/bash shell.sh
 ```
+
+## Linux性能分析与调优
+
+* Linux Extended BPF (eBPF) Tracing Tools: <http://www.brendangregg.com/ebpf.html>
+* Linux Performance: <https://www.brendangregg.com/linuxperf.html>
 
 ## 修改文件打开方式
 
