@@ -28,25 +28,7 @@ ubuntu@ubuntu:~$ sudo reboot
 
 ## 调整SSH配置
 
-```bash
-# 注意是sshd_config，不是ssh_config
-ubuntu@ubuntu:~$ sudo vim /etc/ssh/sshd_config
-```
-
-修改或者取消注释如下内容
-
-```bash
-# 允许root用户登录
-PermitRootLogin yes
-
-# 防止SSH经常断连
-ClientAliveInterval 30
-ClientAliveCountMax 86400
-```
-
-```bash
-ubuntu@ubuntu:~$ sudo service ssh restart
-```
+略
 
 ## 安装JDK
 

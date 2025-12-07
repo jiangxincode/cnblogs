@@ -12,16 +12,18 @@
 
 ssh-keygen 产生出 id_rsa, id_rsa.pub, 已经都放到正确位置(.ssh), 但是联机时却出现下述讯息:`Agent admitted failure to sign using the key`。解决方法是在自己的机器上, 执行 ssh-add, 会出现: `Identity added: /home/user/.ssh/id_rsa (/home/user/.ssh/id_rsa)`
 
-## 解决SSH超时断开连接问题
+## sshd相关配置优化
 
 ```sh
-# 修改/etc/ssh/sshd_config
+# 修改/etc/ssh/sshd_config（注意是sshd_config，不是ssh_config）
 
-ClientAliveInterval # 指定服务器向客户端请求消息的时间间隔，默认是0表示不发送；可以改为60表示每分钟发送一次
-ClientAliveCountMax # 表示服务器发出请求后客户端没有响应的次数达到一定值, 就自动断开
+ClientAliveInterval 60 # 指定服务器向客户端请求消息的时间间隔，默认是0表示不发送；可以改为60表示每分钟发送一次
+ClientAliveCountMax 86400 # 表示服务器发出请求后客户端没有响应的次数达到一定值, 就自动断开
 
-service sshd restart
+PermitRootLogin yes # 允许root用户登录
 ```
+
+ubuntu@ubuntu:~$ sudo service ssh restart
 
 ## sftp子系统申请已拒绝 请确保ssh连接的sftp子系统设置有效
 

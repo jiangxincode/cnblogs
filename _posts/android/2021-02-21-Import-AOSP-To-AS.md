@@ -39,6 +39,7 @@ rsync -az --progress --delete --exclude=".git" ${USER_NAME}@${IP}:/${REMOTE_DIR}
 比如：
 
 ```shell
+mkdir -p /drives/d/Code/sync/aosp
 rsync -az --progress --delete --exclude=".git" jiangxin@192.168.0.181:/home/jiangxin/aosp/frameworks /drives/d/aosp/
 ```
 
