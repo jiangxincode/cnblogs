@@ -12,14 +12,24 @@
 
 ssh-keygen 产生出 id_rsa, id_rsa.pub, 已经都放到正确位置(.ssh), 但是联机时却出现下述讯息:`Agent admitted failure to sign using the key`。解决方法是在自己的机器上, 执行 ssh-add, 会出现: `Identity added: /home/user/.ssh/id_rsa (/home/user/.ssh/id_rsa)`
 
-## sshd相关配置优化
+## ssh长时间误操作断开
 
 ```sh
 # 修改/etc/ssh/sshd_config（注意是sshd_config，不是ssh_config）
 
 ClientAliveInterval 60 # 指定服务器向客户端请求消息的时间间隔，默认是0表示不发送；可以改为60表示每分钟发送一次
 ClientAliveCountMax 86400 # 表示服务器发出请求后客户端没有响应的次数达到一定值, 就自动断开
+```
 
+ubuntu@ubuntu:~$ sudo service ssh restart
+
+* 如果使用MobaXterm，需要开启keepalive功能：Settings -> Configuration -> SSH -> SSH keepalive
+* 同时注意电脑的电源管理设置，避免进入睡眠模式。
+
+## root用户通过ssh登录
+
+```sh
+# 修改/etc/ssh/sshd_config（注意是sshd_config，不是ssh_config）
 PermitRootLogin yes # 允许root用户登录
 ```
 
@@ -41,3 +51,25 @@ Subsystem       sftp /usr/libexec/openssh/sftp-server
 使用xshell提示此问题，但可以通过Putty登录系统。
 打开文件 /etc/ssh/sshd_config
 修改 MaxAuthTries 这个参数的值，不建议修改太大。
+
+## Xshell利用登录脚本从服务器登录到另外一个服务器
+
+通过脚本设置，可以实现从这个服务器登录到另外一个服务器。打开Xshell 4的会话属性（【文件】->【属性】），左边的类别下选择【登录脚本】，在右边底下你可以看到有个【连接会话时运行脚本】的复选框。
+
+登录脚本的格式如下：
+
+```VBS
+Sub Main
+    xsh.Screen.Send "ssh 用户名@服务器地址"
+    xsh.Screen.Send VbCr
+    xsh.Screen.WaitForString "password: "
+    xsh.Screen.Send "登录密码"
+    xsh.Screen.Send VbCr
+End Sub
+```
+
+将上面内容保存成一个vbs后缀的文件（最好保存到Xshell安装文件下面），准备好脚本文件后在Xshell中打开
+
+会话属性，勾选【连接会话时运行脚本】这个复选框，选择刚才保存的那个vbs后缀的文件就可以了。
+
+如果想进一步了解Xshell支持的脚本API，可以查看Xshell的帮助文档。

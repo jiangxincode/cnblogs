@@ -58,7 +58,6 @@ toc: true
 * Linux压缩与解压常用命令: <https://www.cnblogs.com/jiangxinnju/p/6055870.html>
 * linux中无 conio.h的解决办法: <https://www.cnblogs.com/jiangxinnju/p/5516906.html>
 * Linux快捷键: <https://www.cnblogs.com/jiangxinnju/p/6045204.html>
-* ssh相关原理学习与常见错误总结: <https://www.cnblogs.com/jiangxinnju/p/7859488.html>
 
 * explainshell: <https://explainshell.com/>
 * tldr: <https://github.com/tldr-pages/tldr>
