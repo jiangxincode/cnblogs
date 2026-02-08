@@ -9,6 +9,11 @@ JDK(Java Development Kit)是一个写Java程序所需的开发环境。它由一
 
 JDK中还包括完整的JRE（Java Runtime Environment，Java运行环境），也被称为private runtime。包括了用于产品环境的各种库类，以及给开发员使用的补充库，如国际化的库、IDL库。 JDK中还包括各种例子程序，用以展示Java API中的各部分。
 
+```shell
+jar -cvfM0 game.war ./ # 把当前目录下的所有文件打包成game.war
+jar -xvf game.war # 解压game.war到当前目录
+```
+
 ## 配置JDK环境变量(Windows)
 
 安装JDK以后，需要配置一下环境变量，在我的电脑->属性->高级->环境变量->系统变量中添加以下环境变量(假定你的jdk安装在c:\jdk1.6）:

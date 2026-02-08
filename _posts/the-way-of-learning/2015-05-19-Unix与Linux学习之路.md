@@ -172,132 +172,333 @@ toc: true
 ## Linux常用命令
 
 ```shell
-    # 先尝试man再尝试google
-    man xxx
+# 先尝试man再尝试google
+man xxx
 
-    sha1sum/md5sum
-    find "/etc/" -name "*" -type f | xargs wc -l | awk '{print $2" "$1"lines"}' # 打印某一文件夹下的所有文件名及其行数
+sha1sum/md5sum
 
-    mtools # mtools 命令用于显示mtools 支持的指令。mtools 实际上是一个命令集合，是DOS 文件系统的工具程序，它可以模拟许多MS-DOS命令，使用起来非常方便。使用权限是所有用户。
+mtools # mtools 命令用于显示mtools 支持的指令。mtools 实际上是一个命令集合，是DOS 文件系统的工具程序，它可以模拟许多MS-DOS命令，使用起来非常方便。使用权限是所有用户。
 
-    # set the system's date from a remote host
-    # sudo apt-get install rdate
-    rdate
+# set the system's date from a remote host
+# sudo apt-get install rdate
+rdate
 
-    grep -R "org.apache.commons.FileUtils" *
-    grep -inr --color "ERROR" test_debug.log
-    ps –fu $USER | grep java # 显示当前用户的所有线程
-    ps -ef | grep 4736 # 查看4736端口是否被占用
-    ps -aux
-    ps -ef                 # 查看所有进程
-    netstat -tulnp | grep mysqld # 查看mysqld的监听情况
-    netstat –apn | grep pid   #先查进程号，再找到进程信息
-    netstat -lntp          # 查看所有监听端口
-    netstat -antp          # 查看所有已经建立的连接
-    netstat -anp | grep xxxx   #xxxx为端口号 Linux下查看某个端口下运行的是什么程序
-    netstat -s             # 查看网络统计信息进程
-    find . –name "*.log" | xargs grep error # 在当前目录的所有日志文件中查找关键词"error"
-    ls -t `find . -name "*.log"` #列出最近修改的文件
+grep -R "org.apache.commons.FileUtils" *
+grep -inr --color "ERROR" test_debug.log
+netstat -tulnp | grep mysqld # 查看mysqld的监听情况
+netstat –apn | grep pid   #先查进程号，再找到进程信息
+netstat -lntp          # 查看所有监听端口
+netstat -antp          # 查看所有已经建立的连接
+netstat -anp | grep xxxx   #xxxx为端口号 Linux下查看某个端口下运行的是什么程序
+netstat -s             # 查看网络统计信息进程
+ls -t `find . -name "*.log"` #列出最近修改的文件
+ls --full-timne myfile # 查看文件的完整时间信息
+watch "ls -al myfile" 监控文件变化
 
-    watch "ls -al myfile" 监控文件变化
+cat /etc/issue # 查看当前操作系统发行版信息
 
-    cat /etc/issue # 查看当前操作系统发行版信息
+nproc --all #查看核心数
 
-    apt-cache # query the APT cache
-    apt-file search libz.so.1 # APT package searching utility
-    apt-cdrom # apt-cdrom is a tool to add CDROM's to APT's source list.
-    dpkg
+apt-cache # query the APT cache
+apt-file search libz.so.1 # APT package searching utility
+apt-cdrom # apt-cdrom is a tool to add CDROM's to APT's source list.
+dpkg
 
-    sudo sh *.sh # 打开.sh文件
-    ./*** # 打开其它可执行文件,如果没有可执行权限，需要chmod
+sudo sh *.sh # 打开.sh文件
+./*** # 打开其它可执行文件,如果没有可执行权限，需要chmod
 
-    man nautilus
-    man ed
+man nautilus
+man ed
 
-    file explore
+file explore
 
-    xdg-open # 命令行快速打开各类型文件
-    mplayer xxx.mp3 # 使用mplayer打开
+xdg-open # 命令行快速打开各类型文件
+mplayer xxx.mp3 # 使用mplayer打开
 
-    fc-list :lang=zh-cn # 查看字体
+fc-list :lang=zh-cn # 查看字体
 
-    uname -a               # 查看系统信息
-    head -n 1 /etc/issue   # 查看操作系统版本
-    hostname               # 查看计算机名,hostname name只能暂时修改，重启后失效，如果需要永久修改，使用/etc/hostname文件
-    lspci -tv              # 列出所有PCI设备。PCI和PCI Express，是计算机常使用的一种高速总线。操作系统中的PCI/PCI-E设备驱动以及操作系统内核，都需要访问PCI及PCI-E配置空间。PCI/PCI-E设备的正常运行，离不开PCI/PCI-E配置空间。通过读写PCI/PCI-E配置空间，可以更改设备运行参数，优化设备运行。本文介绍用户空间可以读取、修改、扫描PCI/PCIE设备的用户命令及使用。在Linux内核中，为PCI和PCI-E只适用了一种总线PCI（内核提供的总线系统），故访问PCI-E配置空间，也包括了PCI设备配置空间。
-    lsusb -tv              # 列出所有USB设备
-    lsmod                  # 列出加载的内核模块
-    env                    # 查看环境变量资源
-    df -h                  # 查看各分区使用情况
-    df -i                   # 查看inode使用
-    du -sh <目录名>        # 查看指定目录的大小
-    du --max-depth=1 dir   # 查看指定目录指定深度的大小
-    grep MemTotal /proc/meminfo   # 查看内存总量
-    grep MemFree /proc/meminfo    # 查看空闲内存量
-    uptime                 # 查看系统运行时间、用户数、负载
-    cat /proc/loadavg      # 查看系统负载磁盘和分区
-    mount | column -t      # 查看挂接的分区状态
-    fdisk -l               # 查看所有分区
-    cfdisk -Ps # 查看磁盘分区的用法   cfdisk   -Ps 磁盘设备名 只有一个硬盘也可以用 cfdisk -Ps
-    cfdisk -Ps /dev/sda
-    sfdisk -l
-    hdparm -i /dev/hda     # 查看磁盘参数(仅适用于IDE设备)
-    dmesg | grep IDE       # 查看启动时IDE设备检测状况网络
-    ifconfig               # 查看所有网络接口的属性
-    route -n               # 查看路由表
-    top                    # 实时显示进程状态用户
-    w                      # 查看活动用户
-    id <用户名>            # 查看指定用户信息
-    last                   # 查看用户登录日志
-    cut -d: -f1 /etc/passwd   # 查看系统所有用户
-    cut -d: -f1 /etc/group    # 查看系统所有组
-    crontab -l             # 查看当前用户的计划任务服务
-    rpm -qa                # 查看所有安装的软件包
-    rpm -q mysql   # 查看是否安装了mysql客户端
+uname -a               # 查看系统信息
+head -n 1 /etc/issue   # 查看操作系统版本
+hostname               # 查看计算机名,hostname name只能暂时修改，重启后失效，如果需要永久修改，使用/etc/hostname文件
+lspci -tv              # 列出所有PCI设备。PCI和PCI Express，是计算机常使用的一种高速总线。操作系统中的PCI/PCI-E设备驱动以及操作系统内核，都需要访问PCI及PCI-E配置空间。PCI/PCI-E设备的正常运行，离不开PCI/PCI-E配置空间。通过读写PCI/PCI-E配置空间，可以更改设备运行参数，优化设备运行。本文介绍用户空间可以读取、修改、扫描PCI/PCIE设备的用户命令及使用。在Linux内核中，为PCI和PCI-E只适用了一种总线PCI（内核提供的总线系统），故访问PCI-E配置空间，也包括了PCI设备配置空间。
+lsusb -tv              # 列出所有USB设备
+lsmod                  # 列出加载的内核模块
+env                    # 查看环境变量资源
+df -h                  # 查看各分区使用情况
+df -i                   # 查看inode使用
+grep MemTotal /proc/meminfo   # 查看内存总量
+grep MemFree /proc/meminfo    # 查看空闲内存量
+uptime                 # 查看系统运行时间、用户数、负载
+cat /proc/loadavg      # 查看系统负载磁盘和分区
+mount | column -t      # 查看挂接的分区状态
+fdisk -l               # 查看所有分区
+cfdisk -Ps # 查看磁盘分区的用法   cfdisk   -Ps 磁盘设备名 只有一个硬盘也可以用 cfdisk -Ps
+cfdisk -Ps /dev/sda
+sfdisk -l
+hdparm -i /dev/hda     # 查看磁盘参数(仅适用于IDE设备)
+dmesg | grep IDE       # 查看启动时IDE设备检测状况网络
+ifconfig               # 查看所有网络接口的属性
+route -n               # 查看路由表
+w                      # 查看活动用户
+id <用户名>            # 查看指定用户信息
+last                   # 查看用户登录日志
+cut -d: -f1 /etc/passwd   # 查看系统所有用户
+cut -d: -f1 /etc/group    # 查看系统所有组
+crontab -l             # 查看当前用户的计划任务服务
+rpm -qa                # 查看所有安装的软件包
+rpm -q mysql   # 查看是否安装了mysql客户端
 
-    lsof -i :xxxx    #xxxx为端口号
+lsof -i :xxxx    #xxxx为端口号
 
-    cat /proc/version # 查看内核版本命令
-    lsb_release -a ##查看linux版本
-    cat /etc/debian_version
-    cat /etc/issue
-    file /bin/bash
-    file /bin/cat
-    cat /etc/debian_version //Only for Debian
-    cat /etc/redhat-release //Only for Redhat
-    rpm -q redhat-release //Only for Redhat
-    redhat-release-5Server-5.6.0.3
+cat /proc/version # 查看内核版本命令
+lsb_release -a ##查看linux版本
+cat /etc/debian_version
+cat /etc/issue
+file /bin/bash
+file /bin/cat
+cat /etc/debian_version //Only for Debian
+cat /etc/redhat-release //Only for Redhat
+rpm -q redhat-release //Only for Redhat
+redhat-release-5Server-5.6.0.3
 
-    # 注:这种方式下可看到一个所谓的release号，比如上边的例子是5，这个release号和实际的版本之间存在一定的对应关系，如下:
-    # redhat-release-3AS-1 -> Redhat Enterprise Linux AS 3
-    # redhat-release-3AS-7.4 -> Redhat Enterprise Linux AS 3 Update 4
-    # redhat-release-4AS-2 -> Redhat Enterprise Linux AS 4
-    # redhat-release-4AS-2.4 -> Redhat Enterprise Linux AS 4 Update 1
-    # redhat-release-4AS-3 -> Redhat Enterprise Linux AS 4 Update 2
-    # redhat-release-4AS-4.1 -> Redhat Enterprise Linux AS 4 Update 3
-    # redhat-release-4AS-5.5 -> Redhat Enterprise Linux AS 4 Update 4
+# 注:这种方式下可看到一个所谓的release号，比如上边的例子是5，这个release号和实际的版本之间存在一定的对应关系，如下:
+# redhat-release-3AS-1 -> Redhat Enterprise Linux AS 3
+# redhat-release-3AS-7.4 -> Redhat Enterprise Linux AS 3 Update 4
+# redhat-release-4AS-2 -> Redhat Enterprise Linux AS 4
+# redhat-release-4AS-2.4 -> Redhat Enterprise Linux AS 4 Update 1
+# redhat-release-4AS-3 -> Redhat Enterprise Linux AS 4 Update 2
+# redhat-release-4AS-4.1 -> Redhat Enterprise Linux AS 4 Update 3
+# redhat-release-4AS-5.5 -> Redhat Enterprise Linux AS 4 Update 4
 
-    # man update-alternatives
+# man update-alternatives
 
-    # Configure参数解释说明: autoconf: 16 Running configure Scripts
+# Configure参数解释说明: autoconf: 16 Running configure Scripts
 
-    # 把/dev/cdrom目录制作为镜像，名字为/root/rh1.iso，可以使用下面命令中的任意一条
-    dd if=/dev/cdrom of=/root/rh1.iso
-    #cat /dev/cdrom >;/root/1.iso
-    mkisofs -r -o myiso.iso /dev/cdrom
-    cp -r /home/user name.iso
+# 把/dev/cdrom目录制作为镜像，名字为/root/rh1.iso，可以使用下面命令中的任意一条
+dd if=/dev/cdrom of=/root/rh1.iso
+#cat /dev/cdrom >;/root/1.iso
+mkisofs -r -o myiso.iso /dev/cdrom
+cp -r /home/user name.iso
 
-    # man tailf
-    # Linux下分割合并文: man split/cat
-    # 生成目录树结构: man tree
+# man tailf
+# Linux下分割合并文: man split/cat
+# 生成目录树结构: man tree
 
-    # 重命名文件
-    rename
+# 重命名文件
+rename
 
-    # 切换用户并执行一条命令
-    su - oracle -c command
-    # 切换用户并执行一个shell文件
-    su - oracle -s /bin/bash shell.sh
+# 切换用户并执行一条命令
+su - oracle -c command
+# 切换用户并执行一个shell文件
+su - oracle -s /bin/bash shell.sh
+
+pushd ~/Code/java
+popd
+```
+
+## 常见Linux工具
+
+### top
+
+```shell
+top # 实时显示进程状态用户
+top -U jiangxin11 #仅查看特定用户
+# 使用E切换内存使用总和的单位（KB、MB、GB、TB、PB）
+# 使用e切换每个应用占用内存的单位（KB、MB、GB、TB、PB）
+```
+
+### ps
+
+```shell
+ps -u jiangxin11 # 查看某个用户的进程，使用$USER可以代替当前用户
+ps -ef # -e 显示所有进程；-f 显示完整格式
+ps -ef -w # -w 显示宽格式, -ww 显示更宽格式，防止被截断
+ps -ef | grep 4736 # 查看4736端口是否被占用
+ps -p <PID> -o comm,args # comm 显示进程名，args 显示完整的启动命令（含参数）
+ps -p <PID> -o stat # 显示某个进程的状态
+ps -aux
+```
+
+### du
+
+```shell
+du -sh <目录名>        # 查看指定目录的大小
+du --max-depth=1 dir   # 查看指定目录指定深度的大小
+du -h --max-depth=1 dir   # 查看指定目录指定深度的大小，并且以人类可读的方式显示
+```
+
+### find
+
+```shell
+find . –name "*.log" | xargs grep error # 在当前目录的所有日志文件中查找关键词"error"
+find . -type f | wc -l #查询当前目录文件数目
+find "/etc/" -name "*" -type f | xargs wc -l | awk '{print $2" "$1"lines"}' # 打印某一文件夹下的所有文件名及其行数
+find -maxdepth 1 -name "make*.log" -not -name "make_2026-02-04_19-23-30.log" -exec mv {} ~/log_tmp/ \; # 逐个移动
+find -maxdepth 1 -name "make*.log" -not -name "make_2026-02-04_19-23-30.log" -exec mv -t ~/log_tmp/ {} + # 批量移动
+find -maxdepth 1 -name "make*.log" -not -name "make_2026-02-04_19-23-30.log" | xargs -I {} mv {} ~/log_tmp/ # 如果不适用-I，xargs 会把所有输入追加到命令末尾，变成mv ~/log_tmp/ ./xxx.log ./yyy.log ./zzz.log这样
+```
+
+### tar
+
+tar的相关参数
+-c: 建立压缩档案
+-x：解压
+-t：查看内容
+-r：向压缩归档文件末尾追加文件
+-u：更新原压缩包中的文件
+
+这五个是独立的命令，压缩解压都要用到其中一个，可以和别的命令连用但只能用其中一个。下面的参数是根据需要在压缩或解压档案时可选的。
+
+-z：有gzip属性的
+-j：有bz2属性的
+-Z：有compress属性的
+-v：显示所有过程
+-O：将文件解开到标准输出
+
+*.gz 用 gzip -d或者gunzip 解压
+*.bz2 用 bzip2 -d或者用bunzip2 解压
+*.Z 用 uncompress 解压
+
+下面的参数-f是必须的
+
+-f: 使用档案名字，切记，这个参数是最后一个参数，后面只能接档案名。
+
+```shell
+tar -cf all.tar *.jpg # 这条命令是将所有.jpg的文件打成一个名为all.tar的包。-c是表示产生新的包，-f指定包的文件名。
+tar -rf all.tar *.gif # 这条命令是将所有.gif的文件增加到all.tar的包里面去。-r是表示增加文件的意思。
+tar -uf all.tar logo.gif # 这条命令是更新原来tar包all.tar中logo.gif文件，-u是表示更新文件的意思。
+tar -tf all.tar # 这条命令是列出all.tar包中所有文件，-t是列出文件的意思
+tar -xf all.tar # 这条命令是解出all.tar包中所有文件，-x是解开的意思
+
+tar –cvf jpg.tar *.jpg # 将目录里所有jpg文件打包成tar.jpg
+tar –czf jpg.tar.gz *.jpg   # 将目录里所有jpg文件打包成jpg.tar后，并且将其用gzip压缩，生成一个gzip压缩过的包，命名为jpg.tar.gz
+tar -czf jpg.tgz *.jpg # 将目录里所有jpg文件打包成jpg.tar后，并且将其用gzip压缩，生成一个gzip压缩过的包，命名为jpg.tgz
+tar –cjf jpg.tar.bz2 *.jpg # 将目录里所有jpg文件打包成jpg.tar后，并且将其用bzip2压缩，生成一个bzip2压缩过的包，命名为jpg.tar.bz2
+tar –cZf jpg.tar.Z *.jpg   # 将目录里所有jpg文件打包成jpg.tar后，并且将其用compress压缩，生成一个umcompress压缩过的包，命名为jpg.tar.Z
+
+tar –xvf file.tar # 解压 tar包
+tar -xzvf file.tar.gz # 解压tar.gz
+tar -xjvf file.tar.bz2   # 解压 tar.bz2
+tar –xZvf file.tar.Z   # 解压tar.Z
+```
+
+### rar/unrar
+
+```shell
+rar a jpg.rar *.jpg # rar格式的压缩，需要先下载rar for linux
+unrar e file.rar # 解压rar
+```
+
+### zip/unzip
+
+```shell
+zip jpg.zip *.jpg # zip格式的压缩，需要先下载zip for linux
+zip -ry dir.zip dir # 将目录dir下的所有文件打包成dir.zip，-r参数表示递归打包，-y参数表示保留符号链接
+unzip file.zip # 解压zip
+```
+
+### tmux
+
+tmux 是一个终端复用器：它允许创建、访问和控制多个终端，所有这些都可以在单个屏幕上进行。tmux 可以从屏幕中分离出来，在后台继续运行，稍后可以重新连接。
+
+* tmux(terminal multiplexer): <https://github.com/tmux/tmux>
+* tmux: <https://www.man7.org/linux/man-pages/man1/tmux.1.html>
+* Tmux 使用教程: <https://www.ruanyifeng.com/blog/2019/10/tmux.html>
+
+### screen
+
+会话恢复，多窗口，会话共享，与tmux功能类似，兼容一些老系统，新系统上用tmux的比较多。
+
+* Screen: <https://www.gnu.org/software/screen/>
+
+### Byobu
+
+Byobu 是一个功能强大的开源文本终端窗口管理器，它基于 tmux 或 GNU Screen 提供了一个增强的用户体验。
+
+* Byobu: <https://www.byobu.org/>
+
+### script
+
+记录所有终端活动，包括输入和输出（所以记录的日志中包含很多特殊字符，不方便直接查看），可以通过`scriptreplay`工具进行回放。
+
+* script — Linux manual page: <https://www.man7.org/linux/man-pages/man1/script.1.html>
+* script command in Linux with Examples: <https://www.geeksforgeeks.org/linux-unix/script-command-in-linux-with-examples/>
+
+### tee
+
+从标准输入中获取数据然后同时写到标准输出和文件。
+
+* tee — Linux manual page: <https://www.man7.org/linux/man-pages/man1/tee.1.html>
+
+```shell
+xxx 2>&1 | tee xxx_$(date "+%Y-%m-%d_%H-%M-%S").log
+```
+
+### sshfs
+
+* sshfs: <https://github.com/libfuse/sshfs>
+* winfsp: <https://winfsp.dev/>
+* sshfs-win: <https://github.com/winfsp/sshfs-win>
+
+```shell
+# 在linux下使用sshfs挂载另一台服务器的某个目录
+sshfs ${USER}@${HOST}:${DIR} ./remote
+sudo umount remote
+```
+
+挂载之后可以通过wsl进行访问，但是Powershell或者Windows资源管理器无法访问，报错：
+
+```txt
+\\wsl$\Ubuntu\home\jiangxin\remote 无法访问。你可能没有权限使用网络资源。请与这台服务器的管理员联系以查明你是否有访问权限。
+
+试图访问无效的地址。
+```
+
+这是因为默认情况下目录只允许挂载目录的用户访问，这里就是wsl用户本身。可以通过如下方式解决：
+
+1. 修改/etc/fuse.conf，将user_allow_other取消注释
+2. 取消挂载后重新挂载，并增加-o allow_other参数: `sshfs -o allow_other ${USER}@${HOST}:${DIR} ./remote`
+
+### parallel
+
+* <https://www.gnu.org/software/parallel/>
+
+```shell
+sudo apt install parallel
+
+## 通过源码安装
+curl -s -L https://git.savannah.gnu.org/cgit/parallel.git/plain/src/parallel > ~/.bin/parallel
+chmod +x ~/.bin/parallel
+export PATH="$HOME/.bin:$PATH"
+source ~/.bashrc
+```
+
+### libavif
+
+* <https://github.com/AOMediaCodec/libavif>
+
+```shell
+sudo apt install libavif-bin
+avifenc -q 75 input.[jpg|png|y4m] output.avif
+avifdec output.avif decoded.png
+```
+
+### imagemagick
+
+* <https://imagemagick.org/>
+
+```shell
+sudo apt install imagemagick
+convert input.jpg output.png
+```
+
+### ffmpeg
+
+* <https://ffmpeg.org/>
+
+```shell
+sudo apt install ffmpeg
+ffmpeg -i input.mp4 output.avi
 ```
 
 ## Linux性能分析与调优
@@ -372,6 +573,29 @@ Tools → Options... → LibreOffice → View → Graphics output (取消钩选U
 ```shell
     export LANG=zh_CN.UTF-8
 ```
+
+## local设置不准确（适用于WSL2）
+
+jiang@jiang:~$ locale -a
+C
+C.utf8
+POSIX
+
+sudo apt install -y language-pack-zh-hans
+
+jiang@jiang:~$ locale -a
+C
+C.utf8
+POSIX
+zh_CN.utf8
+zh_SG.utf8
+
+jiang@jiang:~$ sudo update-locale LANG=zh_CN.UTF8
+
+## 由于缺少字体而显示乱码（适用于WSL2）
+
+sudo apt install -y fontconfig fonts-noto-cjk fonts-noto-color-emoji
+fc-cache -fv
 
 ## 重装Ubuntu如何保留/home分区中的数据
 
