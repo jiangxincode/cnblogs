@@ -1,3 +1,5 @@
+# Android Studio相关目录解析
+
 ## `%USERPROFILE%\.<CONFIGURATION_FOLDER>`
 
 其中`CONFIGURATION_FOLDER`与Android Studio版本相关，比如对于Android Studio 3.0.1来说，该目录是指`C:\Users\jiang\.AndroidStudio3.0`。这个目录中保存着用户对于Android Studio的配置修改情况，比如你修改了字体、JVM参数等，都会在该文件中体现。如果你想重置Android Studid的设置，直接删除该文件夹，并重启Android Studio即可。想了解更详细的情况可以参考：[Configure Android Studio: <https://developer.android.com/studio/intro/studio-config.html>]
