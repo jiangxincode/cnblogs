@@ -124,7 +124,6 @@ toc: true
 * linux关于S权限和T权限的介绍: <http://blog.csdn.net/qq_35116353/article/details/56049592>
 * Linux使用技巧12--Ubuntu代理: <http://blog.csdn.net/lincyang/article/details/51306367>
 * Bash的陷阱: <https://charlee.li/bash-pitfalls.html>
-* Linux命令之file - 检测并显示文件类型: <https://codingstandards.iteye.com/blog/804463>
 * Linux Centos 删除除某(多)个文件之外的所有文件: <https://blog.csdn.net/weixin_33994429/article/details/86363583>
 * linux如何删除zip包中某个文件夹及里面的内容: <https://zhidao.baidu.com/question/2074079962247221788.html>
 * GPG入门教程: <https://www.ruanyifeng.com/blog/2013/07/gpg.html>
@@ -160,14 +159,6 @@ toc: true
 * curl: <https://curl.haxx.se/>
 * Poptop - The PPTP Server for Linux: <http://poptop.sourceforge.net/dox/>
 * wachy(A dynamic tracing profiler for Linux): <https://github.com/rubrikinc/wachy>
-
-* grep_sed_awk练习: <https://www.cnblogs.com/jiangxinnju/p/17938752>
-
-* GNU Grep: <http://www.gnu.org/software/grep/>
-* ack: <http://beyondgrep.com/>
-
-* gawk: <http://www.gnu.org/software/gawk/>
-* GNU sed: <http://www.gnu.org/software/sed/>
 
 ## Linux常用命令
 
@@ -210,8 +201,6 @@ sudo sh *.sh # 打开.sh文件
 man nautilus
 man ed
 
-file explore
-
 xdg-open # 命令行快速打开各类型文件
 mplayer xxx.mp3 # 使用mplayer打开
 
@@ -250,12 +239,13 @@ rpm -q mysql   # 查看是否安装了mysql客户端
 
 lsof -i :xxxx    #xxxx为端口号
 
+# file 检测并显示文件类型
+file /bin/bash
+
 cat /proc/version # 查看内核版本命令
 lsb_release -a ##查看linux版本
 cat /etc/debian_version
 cat /etc/issue
-file /bin/bash
-file /bin/cat
 cat /etc/debian_version //Only for Debian
 cat /etc/redhat-release //Only for Redhat
 rpm -q redhat-release //Only for Redhat
@@ -395,6 +385,25 @@ unrar e file.rar # 解压rar
 zip jpg.zip *.jpg # zip格式的压缩，需要先下载zip for linux
 zip -ry dir.zip dir # 将目录dir下的所有文件打包成dir.zip，-r参数表示递归打包，-y参数表示保留符号链接
 unzip file.zip # 解压zip
+```
+
+### readelf
+
+readelf 是一个显示ELF格式文件信息的工具，ELF是Executable and Linkable Format的缩写，是Linux系统下可执行文件、目标代码、共享库和核心转储的标准文件格式。
+
+```shell
+readelf -d xxx.so # 查看xxx.so的动态段信息
+readelf -d xxx.so | grep NEEDED # 查看xxx.so依赖的库
+```
+
+### addrline
+
+```shell
+# Android本地构建的时候会生成符号表
+$ llvm-addr2line -e out/target/product/missi/symbols/system_ext/lib64/libmisurfaceflinger.so -f 0x5535c
+
+ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEC2B8nn210000EOS5
+prebuilts/clang/host/linux-x86/clang-r563880/include/c++/v1/string:1057
 ```
 
 ### tmux

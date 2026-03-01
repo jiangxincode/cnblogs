@@ -11,6 +11,12 @@ tags:
 toc: true
 ---
 
+* GNU Grep: <http://www.gnu.org/software/grep/>
+* GNU sed: <http://www.gnu.org/software/sed/>
+* gawk: <http://www.gnu.org/software/gawk/>
+* ripgrep (rg): <https://github.com/BurntSushi/ripgrep>
+* ack: <http://beyondgrep.com/>
+
 ## 数据文件
 
 在开始练习之前，创建数据文件`datafile`，内容如下：
