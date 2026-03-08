@@ -23,7 +23,7 @@ toc: true
 * 软件包更新升级相关：
   * `apt-get update`
   * `apt-get upgrade`
-  * `apt-get upgrade`
+  * `apt-get dist-upgrade`
   * `do-release-upgrade`
 * 软件包删除相关：
   * `apt-get remove`
