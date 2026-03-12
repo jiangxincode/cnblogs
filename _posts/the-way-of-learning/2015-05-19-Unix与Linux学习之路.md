@@ -182,8 +182,6 @@ netstat -lntp          # 查看所有监听端口
 netstat -antp          # 查看所有已经建立的连接
 netstat -anp | grep xxxx   #xxxx为端口号 Linux下查看某个端口下运行的是什么程序
 netstat -s             # 查看网络统计信息进程
-ls -t `find . -name "*.log"` #列出最近修改的文件
-ls --full-timne myfile # 查看文件的完整时间信息
 watch "ls -al myfile" 监控文件变化
 
 cat /etc/issue # 查看当前操作系统发行版信息
@@ -281,12 +279,29 @@ rename
 su - oracle -c command
 # 切换用户并执行一个shell文件
 su - oracle -s /bin/bash shell.sh
-
-pushd ~/Code/java
-popd
 ```
 
 ## 常见Linux工具
+
+### ls/eza
+
+```shell
+ls -t `find . -name "*.log"` #列出最近修改的文件
+ls --full-timne myfile # 查看文件的完整时间信息
+```
+
+eza is a modern alternative for the venerable file-listing command-line program ls that ships with Unix and Linux operating systems, giving it more features and better defaults. It uses colours to distinguish file types and metadata. It knows about symlinks, extended attributes, and Git. And it’s small, fast, and just one single binary.
+
+* eza: <https://github.com/eza-community/eza>
+
+### cd/zoxide/pushd/popd
+
+* zoxide(a smarter cd command): <https://github.com/ajeetdsouza/zoxide>
+
+```shell
+pushd ~/Code/java
+popd
+```
 
 ### top
 
@@ -327,6 +342,12 @@ find -maxdepth 1 -name "make*.log" -not -name "make_2026-02-04_19-23-30.log" -ex
 find -maxdepth 1 -name "make*.log" -not -name "make_2026-02-04_19-23-30.log" -exec mv -t ~/log_tmp/ {} + # 批量移动
 find -maxdepth 1 -name "make*.log" -not -name "make_2026-02-04_19-23-30.log" | xargs -I {} mv {} ~/log_tmp/ # 如果不适用-I，xargs 会把所有输入追加到命令末尾，变成mv ~/log_tmp/ ./xxx.log ./yyy.log ./zzz.log这样
 ```
+
+### fd
+
+fd is a program to find entries in your filesystem. It is a simple, fast and user-friendly alternative to `find`.
+
+* fd: <https://github.com/sharkdp/fd>
 
 ### tar
 
