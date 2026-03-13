@@ -103,7 +103,6 @@ toc: true
 * java.lang.VerifyError: Expecting a stackmap frame at branch target JDK 1.7: <http://stackoverflow.com/questions/15122890/java-lang-verifyerror-expecting-a-stackmap-frame-at-branch-target-jdk-1-7>
 * 将Linux下编译的warning警告信息输出到文件中[整理笔记]: <http://blog.csdn.net/feihongwang/article/details/6975670>
 * linux C中调用shell命令和运行shell脚本: <http://blog.sina.com.cn/s/blog_8043547601013rxf.html>
-* find 删除拷贝用法: <http://6764097.blog.51cto.com/6754097/1795690>
 * linux 修改分区卷标 ( Partition Label ) : <http://blog.chinaunix.net/uid-20321915-id-1966428.html>
 * shell脚本“syntax error:unexpected end of file”解决方案 : <http://renyongjie668.blog.163.com/blog/static/1600531201172803244846/>
 * String contains in Bash: <http://stackoverflow.com/questions/229551/string-contains-in-bash>
@@ -302,6 +301,10 @@ eza is a modern alternative for the venerable file-listing command-line program 
 pushd ~/Code/java
 popd
 ```
+
+### cat/bat
+
+* bat(a cat clone with syntax highlighting and Git integration): <https://github.com/sharkdp/bat>
 
 ### top
 
