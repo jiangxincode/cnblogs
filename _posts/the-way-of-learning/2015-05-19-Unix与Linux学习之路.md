@@ -31,6 +31,8 @@ toc: true
 * RPM Fusion(RPM Fusion provides software that the Fedora Project or Red Hat doesn't want to ship): <http://rpmfusion.org/>
 * Linux From Scratch: <http://www.linuxfromscratch.org/>
 
+* It's FOSS(Making You A Better Linux User): <https://itsfoss.com/>
+
 ## Linux Distributions
 
 * Ubuntu: <https://www.ubuntu.com>
