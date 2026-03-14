@@ -54,6 +54,7 @@ toc: true
 ## Softwares/Tools/Knowledge
 
 * 一篇文章搞懂Debian_Ubuntu软件包更新和删除: <https://www.cnblogs.com/jiangxinnju/p/14017675.html>
+* Difference between systemctl and service commands: <https://askubuntu.com/questions/903354/difference-between-systemctl-and-service-commands/903405>
 * 扩容swap文件: <https://www.cnblogs.com/jiangxinnju/p/17938602>
 * Linux压缩与解压常用命令: <https://www.cnblogs.com/jiangxinnju/p/6055870.html>
 * linux中无 conio.h的解决办法: <https://www.cnblogs.com/jiangxinnju/p/5516906.html>
@@ -126,6 +127,8 @@ toc: true
 * Linux Centos 删除除某(多)个文件之外的所有文件: <https://blog.csdn.net/weixin_33994429/article/details/86363583>
 * linux如何删除zip包中某个文件夹及里面的内容: <https://zhidao.baidu.com/question/2074079962247221788.html>
 * GPG入门教程: <https://www.ruanyifeng.com/blog/2013/07/gpg.html>
+
+* Windows+Ubuntu双系统如何彻底删除Ubuntu操作系统: <https://blog.csdn.net/lele_god/article/details/109046860>
 
 * Linux下好玩的命令: <http://www.cnblogs.com/joeyupdo/articles/2768113.html>
 * 动画演示一些无用但有趣的Linux命令: <http://www.vaikan.com/10-funny-liunx-command/>
