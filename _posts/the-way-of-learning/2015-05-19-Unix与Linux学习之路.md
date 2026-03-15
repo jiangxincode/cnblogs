@@ -188,8 +188,6 @@ netstat -anp | grep xxxx   #xxxx为端口号 Linux下查看某个端口下运行
 netstat -s             # 查看网络统计信息进程
 watch "ls -al myfile" 监控文件变化
 
-cat /etc/issue # 查看当前操作系统发行版信息
-
 nproc --all #查看核心数
 
 apt-cache # query the APT cache
@@ -208,9 +206,6 @@ mplayer xxx.mp3 # 使用mplayer打开
 
 fc-list :lang=zh-cn # 查看字体
 
-uname -a               # 查看系统信息
-head -n 1 /etc/issue   # 查看操作系统版本
-hostname               # 查看计算机名,hostname name只能暂时修改，重启后失效，如果需要永久修改，使用/etc/hostname文件
 lspci -tv              # 列出所有PCI设备。PCI和PCI Express，是计算机常使用的一种高速总线。操作系统中的PCI/PCI-E设备驱动以及操作系统内核，都需要访问PCI及PCI-E配置空间。PCI/PCI-E设备的正常运行，离不开PCI/PCI-E配置空间。通过读写PCI/PCI-E配置空间，可以更改设备运行参数，优化设备运行。本文介绍用户空间可以读取、修改、扫描PCI/PCIE设备的用户命令及使用。在Linux内核中，为PCI和PCI-E只适用了一种总线PCI（内核提供的总线系统），故访问PCI-E配置空间，也包括了PCI设备配置空间。
 lsusb -tv              # 列出所有USB设备
 lsmod                  # 列出加载的内核模块
@@ -234,13 +229,9 @@ rpm -q mysql   # 查看是否安装了mysql客户端
 
 lsof -i :xxxx    #xxxx为端口号
 
-# file 检测并显示文件类型
-file /bin/bash
-
 cat /proc/version # 查看内核版本命令
 lsb_release -a ##查看linux版本
 cat /etc/debian_version
-cat /etc/issue
 cat /etc/debian_version //Only for Debian
 cat /etc/redhat-release //Only for Redhat
 rpm -q redhat-release //Only for Redhat
@@ -259,13 +250,6 @@ redhat-release-5Server-5.6.0.3
 
 # Configure参数解释说明: autoconf: 16 Running configure Scripts
 
-# 把/dev/cdrom目录制作为镜像，名字为/root/rh1.iso，可以使用下面命令中的任意一条
-dd if=/dev/cdrom of=/root/rh1.iso
-#cat /dev/cdrom >;/root/1.iso
-mkisofs -r -o myiso.iso /dev/cdrom
-cp -r /home/user name.iso
-
-# man tailf
 # Linux下分割合并文: man split/cat
 # 生成目录树结构: man tree
 
@@ -279,6 +263,16 @@ su - oracle -s /bin/bash shell.sh
 ```
 
 ## 常见Linux工具
+
+### 系统信息查看
+
+```shell
+# 查看当前操作系统发行版信息
+/etc/issue
+
+# 查看内核和操作系统信息
+uname -a
+```
 
 ### ls/eza
 
@@ -300,9 +294,27 @@ pushd ~/Code/java
 popd
 ```
 
-### cat/bat
+### 文件内容查看
 
 * bat(a cat clone with syntax highlighting and Git integration): <https://github.com/sharkdp/bat>
+
+```shell
+cat file.txt
+
+# 查看文件的前几行
+head -n 1 file.txt
+
+# 查看文件的后几行
+tail -n 1 file.txt
+# 实时查看文件内容变化
+tail -f file.txt
+
+# tailf 命令与 tail -f 类似，但它不会检查文件是否被截断或重新创建，因此在某些情况下可能更适合监视日志文件的变化。
+tailf file.txt
+
+# 检测文件类型
+file /bin/bash
+```
 
 ### top
 
@@ -544,6 +556,24 @@ sudo quota -uvs username
 repquota -a
 ```
 
+### dd
+
+```shell
+# 创建一个 10MB 大小的空文件（填充零字节）
+dd if=/dev/zero of=/data/local/tmp/test.txt bs=1M count=10
+
+# 把/dev/cdrom目录制作为镜像，名字为/root/name.iso
+dd if=/dev/cdrom of=/root/name.iso
+```
+
+### mkisofs
+
+```shell
+# 将iso_src目录下的文件打包成一个iso文件
+mkisofs -r -o myiso.iso ~/iso_src
+```
+
+
 ### libavif
 
 * <https://github.com/AOMediaCodec/libavif>
@@ -671,6 +701,18 @@ fc-cache -fv
 ## 重装Ubuntu如何保留/home分区中的数据
 
 windows系统可以在重装时只格式化C盘，从而保留其他分区的数据。 Ubuntu系统也可以，只要在安装系统时分出一个/home分区。你可以把Ubuntu的“/”分区看为windows的C盘，重装Ubuntu时只格式化“/”分区，不格式化“/home”，这样就可以保留“/home”中的数据
+
+## 查看/修改主机名
+
+```shell
+# 查看主机名
+hostname
+
+# 临时修改主机名，重启后失效
+hostname newHostname
+
+# 永久修改主机名，需要修改/etc/hostname文件，`sudo reboot`后生效
+```
 
 ## 如何启用 Ubuntu 中的 root 帐号
 

@@ -79,7 +79,6 @@ adb remount
 adb shell dumspys battery set level 8
 
 adb unistall pkgName
-adb shell "dd if=/dev/zero of=/data/local/tmp/test.txt bs=1M count=10"
 
 adb shell setprop persist.sys.dalvik.vm.lib.2 art
 adb shell getprop persist.sys.dalvik.vm.lib.2
