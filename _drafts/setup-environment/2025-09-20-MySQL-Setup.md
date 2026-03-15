@@ -35,41 +35,18 @@ root@db01:~# rm -rf /var/lib/mysql
 root@db01:~# rm -rf /etc/mysql
 ```
 
-### MySQL简单管理
+### MySQL服务的管理
 
 ```shell
-#启动MySQL服务
-sudo service mysql start
-#停止MySQL服务
-sudo service mysql stop
+# 使用service命令启动/停止MySQL服务（仅适用于mysql注册为系统服务的情况）
+sudo service mysql start/stop
+
+# 使用mysqld_safe命令启动MySQL服务
+root@ubuntu:~# mysqld_safe --user=mysql &
+
 #修改 MySQL 的管理员密码
-sudo mysqladmin -u root password newpassword
-
-#正常情况下，mysql占用的3306端口只是在IP 127.0.0.1上监听，拒绝了其他IP的访问。取消本地监听限制需要修改 mysqld.cnf 文件
-
-sudo vi /etc/mysql/mysql.conf.d/mysqld.cnf
-# 找到此内容并且注释
-bind-address = 127.0.0.1
-```
-
-使用mysql命令登录MySQL
-
-```shell
-# 对于mysql 8+版本，在ubuntu上安装mysql的时候root用户默认认证方式为auth_socket。
-# 这个时候只有使用ubuntu的root账户登录时候才能够通过`mysql -u root`登录数据库进行配置操作。
-jiangxin@db01:~$ mysql -u root -p
-Enter password: 
-Welcome to the MySQL monitor.  Commands end with ; or \g.
-Your MySQL connection id is 6
-Server version: 5.7.17-0ubuntu0.16.04.1 (Ubuntu)
-
-Copyright (c) 2000, 2016, Oracle and/or its affiliates. All rights reserved.
-
-Oracle is a registered trademark of Oracle Corporation and/or its
-affiliates. Other names may be trademarks of their respective
-owners.
-
-Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+sudo mysqladmin -u root password test
+sudo mysqladmin -uroot -p'/2jW>kFeerno' password test
 ```
 
 ## Ubuntu安装MySQL(安装包方式)
@@ -98,14 +75,6 @@ export PATH=$PATH:$MYSQL_HOME/bin
 root@ubuntu:/usr/local/mysql/mysql-5.7.19-linux-glibc2.12-x86_64# source /etc/profile
 
 root@ubuntu:/usr/local/mysql/mysql-5.7.19-linux-glibc2.12-x86_64# cd
-root@ubuntu:~# mysqld_safe --user=mysql &
-[1] 1931893
-root@ubuntu:~# Logging to '/usr/local/mysql/data/ubuntu.err'.
-2023-05-19T15:00:22.730000Z mysqld_safe Starting mysqld daemon with databases from /usr/local/mysql/data
-
-root@ubuntu:~# mysqladmin -uroot -p'/2jW>kFeerno' password test
-mysqladmin: [Warning] Using a password on the command line interface can be insecure.
-Warning: Since password will be sent to server in plain text, use ssl connection to ensure password safety.
 ```
 
 ## Windows 10安装MySQL5.5 安装
@@ -135,6 +104,26 @@ Warning: Since password will be sent to server in plain text, use ssl connection
 ![](https://raw.githubusercontent.com/jiangxincode/PicGo/master/aloys_build_manual/image188.jpg)
 
 ## MySQL常用语句
+
+使用mysql命令登录MySQL
+
+```shell
+# 对于mysql 8+版本，在ubuntu上安装mysql的时候root用户默认认证方式为auth_socket。
+# 这个时候只有使用ubuntu的root账户登录时候才能够通过`mysql -u root`登录数据库进行配置操作。
+jiangxin@db01:~$ mysql -u root -p
+Enter password: 
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 6
+Server version: 5.7.17-0ubuntu0.16.04.1 (Ubuntu)
+
+Copyright (c) 2000, 2016, Oracle and/or its affiliates. All rights reserved.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+```
 
 ```sql
 mysql> show databases;
@@ -189,9 +178,13 @@ root localhost ……..
 root 127.0.0.1 …….
 
 * 保证root用户拥有所有权限,也就是user表里面的所有字段里面对应的内容是Y
-* 在my.ini后者my.cnf里面有这个配置项的时候
-bind-address=localhost
-启用这个配置项可以保证安全
+
+另外还有可能，mysql占用的3306端口只是在IP 127.0.0.1上监听，拒绝了其他IP的访问。取消本地监听限制需要修改 /etc/mysql/mysql.conf.d/mysqld.cnf 文件
+
+```shell
+# 找到此内容并且注释
+bind-address = 127.0.0.1
+```
 
 ### Error: 1265 SQLSTATE: 01000 (WARN_DATA_TRUNCATED
 
