@@ -103,58 +103,9 @@ root@ubuntu:~# mysqld_safe --user=mysql &
 root@ubuntu:~# Logging to '/usr/local/mysql/data/ubuntu.err'.
 2023-05-19T15:00:22.730000Z mysqld_safe Starting mysqld daemon with databases from /usr/local/mysql/data
 
-root@ubuntu:~# mysql -u root -p
-Enter password:
-Welcome to the MySQL monitor.  Commands end with ; or \g.
-Your MySQL connection id is 3
-Server version: 5.7.19
-
-Copyright (c) 2000, 2017, Oracle and/or its affiliates. All rights reserved.
-
-Oracle is a registered trademark of Oracle Corporation and/or its
-affiliates. Other names may be trademarks of their respective
-owners.
-
-Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
-
-mysql> exit
-Bye
 root@ubuntu:~# mysqladmin -uroot -p'/2jW>kFeerno' password test
 mysqladmin: [Warning] Using a password on the command line interface can be insecure.
 Warning: Since password will be sent to server in plain text, use ssl connection to ensure password safety.
-root@ubuntu:~# mysql -u root -p
-Enter password:
-Welcome to the MySQL monitor.  Commands end with ; or \g.
-Your MySQL connection id is 5
-Server version: 5.7.19 MySQL Community Server (GPL)
-
-Copyright (c) 2000, 2017, Oracle and/or its affiliates. All rights reserved.
-
-Oracle is a registered trademark of Oracle Corporation and/or its
-affiliates. Other names may be trademarks of their respective
-owners.
-
-Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
-
-mysql> select `user`, `host` from mysql.user;
-+---------------+-----------+
-| user          | host      |
-+---------------+-----------+
-| mysql.session | localhost |
-| mysql.sys     | localhost |
-| root          | localhost |
-+---------------+-----------+
-3 rows in set (0.00 sec)
-
-mysql> update mysql.user set host = '%' where user = 'root';
-Query OK, 1 row affected (0.00 sec)
-Rows matched: 1  Changed: 1  Warnings: 0
-
-mysql> flush privileges;
-Query OK, 0 rows affected (0.00 sec)
-
-mysql> exit
-Bye
 ```
 
 ## Windows 10安装MySQL5.5 安装
@@ -211,15 +162,23 @@ mysql> show databases;
 猜想是无法给远程连接的用户权限问题。结果这样子操作MySQL库，即可解决。在本机登入MySQL后，更改 “mysql” 数据库里的 “user” 表里的 “host” 项，从”localhost”改称'%'。
 
 ```SQL
-mysql -u root -p
-use mysql; 
-select `Host`, `User` from `user` where `User` = 'root';
-update user set host = '%' where user ='root'; 
-flush privileges; 
-select `Host`, `User` from `user` where `User` = 'root';
-```
+mysql> select `user`, `host` from mysql.user;
++---------------+-----------+
+| user          | host      |
++---------------+-----------+
+| mysql.session | localhost |
+| mysql.sys     | localhost |
+| root          | localhost |
++---------------+-----------+
+3 rows in set (0.00 sec)
 
-第一句是以权限用户root登录；第二句：选择mysql库；第三句：查看mysql库中的user表的host值；第四句：修改host值（以通配符%的内容增加主机/IP地址），当然也可以直接增加IP地址；第五句：刷新MySQL的系统权限相关表；第六句：再重新查看user表时。重启mysql服务即可完成。
+mysql> update mysql.user set host = '%' where user = 'root';
+Query OK, 1 row affected (0.00 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> flush privileges;
+Query OK, 0 rows affected (0.00 sec)
+```
 
 ### ERROR 1044 (42000):Access denied for user
 
