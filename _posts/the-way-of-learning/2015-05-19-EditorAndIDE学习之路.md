@@ -256,6 +256,7 @@ toc: true
 * Lime Text: <http://limetext.org/>
 * Scintilla: <http://www.scintilla.org/>
 * XMLSpy(Altova XMLSpy is the world's best selling JSON and XML editor for modeling, editing, transforming, and debugging related technologies.): <https://www.altova.com/xmlspy-xml-editor>
+* Arbortext: <https://www.ptc.com/en/products/arbortext>
 * Bluefish: <http://bluefish.openoffice.nl/index.html>
 * codelite: <http://www.codelite.org/>
 * kdevelop：<https://www.kdevelop.org/>

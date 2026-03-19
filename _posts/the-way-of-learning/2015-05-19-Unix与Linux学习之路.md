@@ -163,6 +163,7 @@ toc: true
 * curl: <https://curl.haxx.se/>
 * Poptop - The PPTP Server for Linux: <http://poptop.sourceforge.net/dox/>
 * wachy(A dynamic tracing profiler for Linux): <https://github.com/rubrikinc/wachy>
+* hasciicam(html refreshed ascii video cam): <https://github.com/dyne/hasciicam>
 
 ## Linux常用命令
 
@@ -573,6 +574,9 @@ dd if=/dev/cdrom of=/root/name.iso
 mkisofs -r -o myiso.iso ~/iso_src
 ```
 
+### 网络相关工具
+
+* netfilter: <https://www.netfilter.org/>
 
 ### libavif
 
