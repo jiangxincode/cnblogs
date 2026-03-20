@@ -108,3 +108,23 @@ toc: true
 * `aptitude remove C`将删除B，C
 
 删除C，而B没有被其他手动安装的包直接依赖或者间接依赖(我指那些一层层depend on的关系)，D被E依赖，所以B不是必要的，可以删除，而D不能删除。
+
+## 其他和软件包管理相关的命令
+
+```shell
+# query the APT cache
+apt-cache
+
+# APT package searching utility
+apt-file search libz.so.1
+
+# apt-cdrom is a tool to add CDROM's to APT's source list
+apt-cdrom
+
+# 命令行软件包管理器 apt 提供软件包搜索，管理和信息查询等功能。
+# 它提供的功能与其他 APT 工具相同（像 apt-get 和 apt-cache），
+# 但是默认情况下被设置得更适合交互。
+apt help
+
+# Debian package manager，是底层工具，只能安装、卸载、查询本地的 .deb 包，不会自动处理依赖关系。
+dpkg

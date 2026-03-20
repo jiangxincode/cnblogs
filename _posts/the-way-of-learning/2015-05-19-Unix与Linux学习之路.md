@@ -51,7 +51,10 @@ toc: true
 * Differences between ChromeOS Flex and ChromeOS: <https://support.google.com/chromeosflex/answer/11542901>
 * FydeOS: <https://fydeos.com/>
 
-* 鳥哥的 Linux 私房菜: <http://linux.vbird.org/>
+## 镜像站
+
+* 阿里云: <https://developer.aliyun.com/mirror/ubuntu>
+* 清华大学: <https://mirrors.tuna.tsinghua.edu.cn/help/ubuntu/>
 
 ## Softwares/Tools/Knowledge
 
@@ -60,6 +63,8 @@ toc: true
 * 扩容swap文件: <https://www.cnblogs.com/jiangxinnju/p/17938602>
 * linux中无 conio.h的解决办法: <https://www.cnblogs.com/jiangxinnju/p/5516906.html>
 * Linux快捷键: <https://www.cnblogs.com/jiangxinnju/p/6045204.html>
+
+* 鳥哥的 Linux 私房菜: <http://linux.vbird.org/>
 
 * explainshell: <https://explainshell.com/>
 * tldr: <https://github.com/tldr-pages/tldr>
@@ -174,7 +179,6 @@ sha1sum/md5sum
 mtools # mtools 命令用于显示mtools 支持的指令。mtools 实际上是一个命令集合，是DOS 文件系统的工具程序，它可以模拟许多MS-DOS命令，使用起来非常方便。使用权限是所有用户。
 
 # set the system's date from a remote host
-# sudo apt-get install rdate
 rdate
 
 grep -R "org.apache.commons.FileUtils" *
@@ -188,11 +192,6 @@ netstat -s             # 查看网络统计信息进程
 watch "ls -al myfile" 监控文件变化
 
 nproc --all #查看核心数
-
-apt-cache # query the APT cache
-apt-file search libz.so.1 # APT package searching utility
-apt-cdrom # apt-cdrom is a tool to add CDROM's to APT's source list.
-dpkg
 
 sudo sh *.sh # 打开.sh文件
 ./*** # 打开其它可执行文件,如果没有可执行权限，需要chmod
