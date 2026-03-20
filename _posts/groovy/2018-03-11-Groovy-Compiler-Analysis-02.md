@@ -1,7 +1,7 @@
 ---
 title: "Groovy实现原理分析——词法分析、语法分析、生成JVM字节码综述"
 categories:
-  - others
+  - groovy
 tags:
   - Groovy
   - 源码分析

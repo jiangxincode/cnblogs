@@ -1,7 +1,7 @@
 ---
 title: "Groovy实现原理分析——准备工作"
 categories:
-  - others
+  - groovy
 tags:
   - Groovy
   - 源码分析
