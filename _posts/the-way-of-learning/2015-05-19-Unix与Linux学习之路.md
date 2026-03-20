@@ -137,9 +137,6 @@ toc: true
 * Windows+Ubuntu双系统如何彻底删除Ubuntu操作系统: <https://blog.csdn.net/lele_god/article/details/109046860>
 
 * Linux下好玩的命令: <http://www.cnblogs.com/joeyupdo/articles/2768113.html>
-* 动画演示一些无用但有趣的Linux命令: <http://www.vaikan.com/10-funny-liunx-command/>
-* Linux中10个有用的命令行补齐命令: <http://www.geekfan.net/8169/>
-* Linux中的10个链接操作符: <http://linux.cn/thread/12205/1/1/>
 
 * wine: <https://www.winehq.org/>
 * Winetricks: <https://wiki.winehq.org/Winetricks>
