@@ -703,14 +703,7 @@ ffmpeg -i input.mp4 output.avi
 
 ## Linux重装系统指南(Ubuntu)
 
-* 安装金山wps，解决字体问题
-
-```shell
-     fedora:/opt/kingsoft/wps-office/office6/wps: error while loading shared libraries: libstdc++.so.6: cannot open shared object file: No such file or directory
-     yum install libstdc++-devel.i686
-```
-
-* 卸载libreoffice/firefox/youker-assistant/amazon
+* 卸载firefox/youker-assistant/amazon
 * 重新启动计算机
 * 安装GLX-Dock并进行配置
 * 安装快盘，进行配快盘和ubuntu one
@@ -740,10 +733,6 @@ ffmpeg -i input.mp4 output.avi
     有一些索引文件不能下载，它们可能被忽略了，也可能转而使用了旧的索引文件。
 
 解决方法: 把 /etc/apt/sources.list里面有cdrom的几行删掉，或者利用软件中心或新立德包管理器把软件源终中的cdrom去掉。
-
-## libreoffice中PPT字体便粗问题
-
-Tools → Options... → LibreOffice → View → Graphics output (取消钩选Use hardware acceleration)
 
 ## 主文件夹里的中文文件夹改成英文文件夹
 
