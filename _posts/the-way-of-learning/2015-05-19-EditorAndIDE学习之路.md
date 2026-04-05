@@ -16,6 +16,7 @@ toc: true
 * Visual Studio Code: <https://code.visualstudio.com/Download>
 * Keyboard shortcuts for Windows: <https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf>
 * Settings Sync: <https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync>
+* Extensions for VS Code Compatible Editors: <https://open-vsx.org/>
 * VSCode调试远程Linux机器上的C代码: <https://github.com/jiangxincode/data>
 * R in Visual Studio Code: <https://code.visualstudio.com/docs/languages/r>
 
@@ -107,7 +108,6 @@ toc: true
 * AnyEdit: <http://marketplace.eclipse.org/content/anyedit-tools>
 * YEdit: <https://marketplace.eclipse.org/content/yedit>
 * Properties Editor: <http://propedit.osdn.jp/index_en.html>
-* Eclipse Json Editor Plugin: <https://sourceforge.net/projects/eclipsejsonedit/>
 * Eclipse-Markdown-Editor-Plugin: <https://github.com/winterstein/Eclipse-Markdown-Editor-Plugin>
 * eclipse-rbe: <https://github.com/essiembre/eclipse-rbe>
 
@@ -255,7 +255,6 @@ toc: true
 * geany: <http://www.geany.org/Download/Extras>
 * Lime Text: <http://limetext.org/>
 * Scintilla: <http://www.scintilla.org/>
-* XMLSpy(Altova XMLSpy is the world's best selling JSON and XML editor for modeling, editing, transforming, and debugging related technologies.): <https://www.altova.com/xmlspy-xml-editor>
 * Arbortext: <https://www.ptc.com/en/products/arbortext>
 * Bluefish: <http://bluefish.openoffice.nl/index.html>
 * codelite: <http://www.codelite.org/>
