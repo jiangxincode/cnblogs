@@ -160,9 +160,6 @@ sha1sum/md5sum
 
 mtools # mtools 命令用于显示mtools 支持的指令。mtools 实际上是一个命令集合，是DOS 文件系统的工具程序，它可以模拟许多MS-DOS命令，使用起来非常方便。使用权限是所有用户。
 
-# set the system's date from a remote host
-rdate
-
 grep -R "org.apache.commons.FileUtils" *
 grep -inr --color "ERROR" test_debug.log
 
@@ -432,7 +429,11 @@ prebuilts/clang/host/linux-x86/clang-r563880/include/c++/v1/string:1057
 * Linux&Windows双系统时间不一致解决方案: <https://blog.csdn.net/sunchengyun/article/details/126995040>
 
 ```shell
-uptime # 查看系统运行时间、用户数、负载
+# 查看系统运行时间、用户数、负载
+uptime
+
+# set the system's date from a remote host
+rdate
 ```
 
 ### tmux
