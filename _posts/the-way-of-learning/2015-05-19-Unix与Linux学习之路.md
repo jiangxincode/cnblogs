@@ -68,7 +68,6 @@ toc: true
 * tldr: <https://github.com/tldr-pages/tldr>
 
 * Install Microsoft Windows Fonts in Ubuntu: <https://www.ostechnix.com/install-microsoft-windows-fonts-ubuntu-16-04/>
-* Linux Performance: <http://www.brendangregg.com/linuxperf.html>
 * File system: <https://en.wikipedia.org/wiki/File_system>
 * Linux-HA: <http://www.linux-ha.org>
 * su cannot set user id Resource temporarily unavailable故障解决 : <http://blog.itpub.net/12457158/viewspace-753400>
@@ -91,14 +90,11 @@ toc: true
 * linux连接投影机: <http://www.2cto.com/os/201211/168387.html>
 * Devhelp: <https://wiki.gnome.org/Apps/Devhelp>
 * Unix 即集成开发环境: <https://github.com/ConanChou/Unix-as-IDE--Chinese->
-* Linux Troubleshooting Cheatsheet: strace, htop, lsof, tcpdump, iftop & sysdig: <https://sysdig.com/blog/linux-troubleshooting-cheatsheet/>
-* strace: <https://github.com/strace/strace>
 * java.lang.VerifyError: Expecting a stackmap frame at branch target JDK 1.7: <http://stackoverflow.com/questions/15122890/java-lang-verifyerror-expecting-a-stackmap-frame-at-branch-target-jdk-1-7>
 * 将Linux下编译的warning警告信息输出到文件中[整理笔记]: <http://blog.csdn.net/feihongwang/article/details/6975670>
 * linux C中调用shell命令和运行shell脚本: <http://blog.sina.com.cn/s/blog_8043547601013rxf.html>
 * linux 修改分区卷标 ( Partition Label ) : <http://blog.chinaunix.net/uid-20321915-id-1966428.html>
 * Could not get lock /var/lib/apt/lists/lock - open: <http://blog.csdn.net/zyxlinux888/article/details/6358615>
-* Slow Server? This is the Flow Chart You're Looking For: <http://blog.scoutapp.com/articles/2014/07/31/slow_server_flow_chart>
 * 设置Linux系统的空闲等待时间TMOUT: <http://zzkai.blog.51cto.com/804611/1352964>
 * Linux下chkconfig命令详解: <http://www.cnblogs.com/panjun-Donet/archive/2010/08/10/1796873.html>
 * How to Manage ‘Systemd’ Services and Units Using ‘Systemctl’ in Linux: <https://www.tecmint.com/manage-services-using-systemd-and-systemctl-in-linux/>
@@ -119,23 +115,11 @@ toc: true
 * fswatch: <https://github.com/emcrisostomo/fswatch>
 * Compiz: <http://www.compiz.org/>
 * 新立得(Synaptic): <http://www.nongnu.org/synaptic/>
-* gparted: <https://gparted.org/>
 * GLX-Dock: <http://www.glx-dock.org/>
 * AppImage(Package desktop applications as AppImages that run on common Linux-based operating systems): <http://appimage.org/>
-* iPerf / iPerf3: <https://iperf.fr/>
-* Glances: <https://github.com/nicolargo/glances/>
-* Atop: <http://www.atoptool.nl/index.php>
-* htop: <https://sourceforge.net/projects/htop/>
-* iftop: <http://www.ex-parrot.com/~pdw/iftop/>
-* Iotop: <http://guichaz.free.fr/iotop/>
-* lrzsz(串口传输文件): <http://www.cnblogs.com/lidabo/p/4780866.html>
-* httpry(HTTP logging and information retrieval tool ): <https://github.com/jbittel/httpry>
 * indent: <https://www.gnu.org/software/indent/>
 * cproto: <https://sourceforge.net/projects/cproto/>
-* ttyrec 和 ttyplay(记录、保存和播放终端会话软件): <http://0xcc.net/ttyrec/>
-* curl: <https://curl.haxx.se/>
 * Poptop - The PPTP Server for Linux: <http://poptop.sourceforge.net/dox/>
-* wachy(A dynamic tracing profiler for Linux): <https://github.com/rubrikinc/wachy>
 * hasciicam(html refreshed ascii video cam): <https://github.com/dyne/hasciicam>
 
 ## Shell编程
@@ -154,6 +138,17 @@ toc: true
 * Shell脚本交互之: 自动输入密码: <http://blog.csdn.net/zhangjikuan/article/details/51105166>
 * Shell中重定向<<EOF注意事项: <http://blog.csdn.net/iamlaosong/article/details/40509399>
 * Bash的陷阱: <https://charlee.li/bash-pitfalls.html>
+
+### 怎样给变量传递执行命令结果
+
+在linux shell脚本里，设置一个变量，但是变量是一个命令，需要将执行结果放到变量里，并输出，例如: ip='ifconfig eth0'  echo $ip，怎样可以叫页面显示的是eth0的网络状况？就是ifconfig eth0的结果？
+
+```shell
+ip=`ifconfig eth0`
+echo $ip
+```
+
+使用反引号可以把一个命令的输出插到另一个命令中去。相同功能的写法还有$()，功能同反引号效果是一样的。不过某些unix系统不支持$()这种写法。但是反引号在任何unix或linux系统下都可以使用。
 
 ## Linux常用命令
 
@@ -283,15 +278,6 @@ tailf file.txt
 
 # 检测文件类型
 file /bin/bash
-```
-
-### top
-
-```shell
-top # 实时显示进程状态用户
-top -U jiangxin11 #仅查看特定用户
-# 使用E切换内存使用总和的单位（KB、MB、GB、TB、PB）
-# 使用e切换每个应用占用内存的单位（KB、MB、GB、TB、PB）
 ```
 
 ### ps
@@ -469,6 +455,10 @@ Byobu 是一个功能强大的开源文本终端窗口管理器，它基于 tmux
 
 * Byobu: <https://www.byobu.org/>
 
+### ttyrec/ttyplay
+
+* ttyrec 和 ttyplay(记录、保存和播放终端会话软件): <http://0xcc.net/ttyrec/>
+
 ### script
 
 记录所有终端活动，包括输入和输出（所以记录的日志中包含很多特殊字符，不方便直接查看），可以通过`scriptreplay`工具进行回放。
@@ -596,6 +586,7 @@ mkisofs -r -o myiso.iso ~/iso_src
 
 ### 网络相关工具
 
+* curl: <https://curl.haxx.se/>
 * netfilter: <https://www.netfilter.org/>
 * 基于CentOS的Linux基本网络配置,包括网卡eth0、DNS、Host等: <http://www.cnblogs.com/rooney/archive/2012/03/24/2415144.html>
 * 通过命令行查找一个IP的地理位置信息: <http://www.geekfan.net/7863/>
@@ -603,6 +594,8 @@ mkisofs -r -o myiso.iso ~/iso_src
 * TCP 连接断连问题剖析: <http://www.ibm.com/developerworks/cn/aix/library/0808_zhengyong_tcp/>
 * ethtool的基本设置: <http://www.cnblogs.com/fbwfbi/p/3612658.html>
 * nc命令用法举例: <http://www.cnblogs.com/nmap/p/6148306.html>
+* lrzsz(串口传输文件): <http://www.cnblogs.com/lidabo/p/4780866.html>
+* httpry(HTTP logging and information retrieval tool ): <https://github.com/jbittel/httpry>
 
 ```shell
 # net-tools包含netstat/ifconfig/route等工具，
@@ -711,6 +704,26 @@ ffmpeg -i input.mp4 output.avi
 * Linux Performance: <https://www.brendangregg.com/linuxperf.html>
 * PSI - Pressure Stall Information: <https://docs.kernel.org/accounting/psi.html>
 * vmstat(Report virtual memory statistics): <https://manpages.ubuntu.com/manpages/focal/man8/vmstat.8.html>
+* Linux Troubleshooting Cheatsheet: strace, htop, lsof, tcpdump, iftop & sysdig: <https://sysdig.com/blog/linux-troubleshooting-cheatsheet/>
+* strace: <https://github.com/strace/strace>
+* iPerf / iPerf3: <https://iperf.fr/>
+* Glances: <https://github.com/nicolargo/glances/>
+* Atop: <http://www.atoptool.nl/index.php>
+* htop: <https://sourceforge.net/projects/htop/>
+* iftop: <http://www.ex-parrot.com/~pdw/iftop/>
+* Iotop: <http://guichaz.free.fr/iotop/>
+* wachy(A dynamic tracing profiler for Linux): <https://github.com/rubrikinc/wachy>
+* Linux Performance: <http://www.brendangregg.com/linuxperf.html>
+* Slow Server? This is the Flow Chart You're Looking For: <https://www.scoutapm.com/blog/slow_server_flow_chart>
+
+### top
+
+```shell
+top # 实时显示进程状态用户
+top -U jiangxin11 #仅查看特定用户
+# 使用E切换内存使用总和的单位（KB、MB、GB、TB、PB）
+# 使用e切换每个应用占用内存的单位（KB、MB、GB、TB、PB）
+```
 
 ## 修改文件打开方式
 
@@ -901,19 +914,17 @@ hostname newHostname
 
 DOS/Windows和Linux/Unix的文本文件换行格式不同，基于 DOS/Windows 的文本文件在每一行末尾有一个 CR（回车）和 LF（换行），而 UNIX 文本只有一个LF（换行）。
 
-DOS/Windows文本文件格式转换成Linux/Unix文本文件格式: `sed -e 's/.$//' mydos.txt > myunix.txt`
-
-说明: 替代正则表达式与一行的最末字符匹配，而该字符恰好就是回车。我们用空字符替换它，从而将其从输出中彻底删除。
-
-把Linux/Unix 文本文件格式转换成 DOS/Windows文本文件格式: `sed -e 's/$/\r/' myunix.txt > mydos.txt`
-
-说明: '$' 正则表达式将与行的末尾匹配，而 '\r' 告诉 sed 在其之前插入一个回车。在换行之前插入回车，每一行就以 CR/LF 结束。
-
-另外还有个方法，使用命令:
-
 ```shell
-    unix2dos filename
-    dos2unix filename
+# DOS/Windows文本文件格式转换成Linux/Unix文本文件格式
+# 替代正则表达式与一行的最末字符匹配，而该字符恰好就是回车。我们用空字符替换它，从而将其从输出中彻底删除。
+sed -e 's/.$//' mydos.txt > myunix.txt
+
+# 把Linux/Unix文本文件格式转换成DOS/Windows文本文件格式
+# '$' 正则表达式将与行的末尾匹配，而 '\r' 告诉 sed 在其之前插入一个回车。在换行之前插入回车，每一行就以 CR/LF 结束。
+sed -e 's/$/\r/' myunix.txt > mydos.txt
+
+unix2dos filename
+dos2unix filename
 ```
 
 ## 获取某程序的完整路径名
@@ -941,30 +952,6 @@ bash-3.2# ls -l /data1/1230/server-a
 * cpu记录了进程可能运行在其上的cpu；显示虚拟的cpu信息
 * environ记录了进程运行时的环境变量
 * fd目录下是进程打开或使用的文件的符号连接
-
-## Linux中C语言如何清空标准输入流
-
-今天在Linux程序设计的时候需要清空标准输入缓冲区，于是使用了如下Windows程序设计中的方法: fflush(stdin)，这个fflush()函数根本不是标准C中的函数，只是标准C的扩展，所以在Linux中使用根本不行；在网上搜索了下，发现有网友建议使用rewind(stdin)；这个函数其实是将指针指向流的开始处。但是它是文件操作中的一个函数，操作的是FILE型流，在Windows程序设计中是可以清空标准输入缓冲区的，但是在Linux中不行。
-
-注: 上述内容有几处错误，详见《The Standart Library》
-
-Linux上可以通过getchar()函数读完标准缓冲区中的剩余字符来清空标准缓冲区:
-
-```c
-char ch;
-while((ch=getchar())!='/n'&&ch!=EOF);
-```
-
-## 怎样给变量传递执行命令结果
-
-在linux shell脚本里，设置一个变量，但是变量是一个命令，需要将执行结果放到变量里，并输出，例如: ip='ifconfig eth0'  echo $ip，怎样可以叫页面显示的是eth0的网络状况？就是ifconfig eth0的结果？
-
-```shell
-ip=`ifconfig eth0`
-echo $ip
-```
-
-使用反引号可以把一个命令的输出插到另一个命令中去。相同功能的写法还有$()，功能同反引号效果是一样的。不过某些unix系统不支持$()这种写法。但是反引号在任何unix或linux系统下都可以使用。
 
 ## debian hosts文件中的 127.0.1.1 主机地址
 
