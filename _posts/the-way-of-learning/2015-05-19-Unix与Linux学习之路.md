@@ -568,6 +568,10 @@ umount /dev/vdb1 /data
 # 查看挂接的分区状态
 mount | column -t
 
+# 绑定挂载，将test1目录绑定挂载到test2目录，test2目录会显示test1目录的内容
+# https://www.cnblogs.com/xingmuxin/p/8446115.html
+mount --bind test1 test2
+
 # 设置自动挂载，修改/etc/fstab，需要执行`mount -a`命令使修改生效
 # 磁盘分区 挂载目录 文件系统类型 挂载选项 转储频率 检查顺序
 # 例如：/dev/vdb1 /data ext4 defaults  0  0
@@ -693,6 +697,8 @@ ffmpeg -i input.mp4 output.avi
 
 * Linux Extended BPF (eBPF) Tracing Tools: <http://www.brendangregg.com/ebpf.html>
 * Linux Performance: <https://www.brendangregg.com/linuxperf.html>
+* PSI - Pressure Stall Information: <https://docs.kernel.org/accounting/psi.html>
+* vmstat(Report virtual memory statistics): <https://manpages.ubuntu.com/manpages/focal/man8/vmstat.8.html>
 
 ## 修改文件打开方式
 
