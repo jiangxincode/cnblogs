@@ -62,39 +62,25 @@ toc: true
 * Difference between systemctl and service commands: <https://askubuntu.com/questions/903354/difference-between-systemctl-and-service-commands/903405>
 * 扩容swap文件: <https://www.cnblogs.com/jiangxinnju/p/17938602>
 * linux中无 conio.h的解决办法: <https://www.cnblogs.com/jiangxinnju/p/5516906.html>
-* Linux快捷键: <https://www.cnblogs.com/jiangxinnju/p/6045204.html>
 
 * 鳥哥的 Linux 私房菜: <http://linux.vbird.org/>
 
-* explainshell: <https://explainshell.com/>
 * tldr: <https://github.com/tldr-pages/tldr>
-* Nushell: <https://www.nushell.sh/>
 
 * Install Microsoft Windows Fonts in Ubuntu: <https://www.ostechnix.com/install-microsoft-windows-fonts-ubuntu-16-04/>
 * Linux Performance: <http://www.brendangregg.com/linuxperf.html>
 * File system: <https://en.wikipedia.org/wiki/File_system>
 * Linux-HA: <http://www.linux-ha.org>
-* Unix Shells: Bash, Fish, Ksh, Tcsh, Zsh: <http://hyperpolyglot.org/unix-shells>
-* Shell 编程: Bash空格的那点事: <http://justcoding.iteye.com/blog/1944238>
-* Shell编程: Bash引号的那点事: <http://justcoding.iteye.com/blog/1944239>
-* 基于CentOS的Linux基本网络配置,包括网卡eth0、DNS、Host等: <http://www.cnblogs.com/rooney/archive/2012/03/24/2415144.html>
 * su cannot set user id Resource temporarily unavailable故障解决 : <http://blog.itpub.net/12457158/viewspace-753400>
 * Linux查看物理CPU个数、核数、逻辑CPU个数: <http://www.cnblogs.com/bugutian/p/6138880.html>
 * Linux查看CPU信息、机器型号等硬件信息: <http://www.51testing.com/html/38/225738-210333.html>
 * 理解inode: <http://www.ruanyifeng.com/blog/2011/12/inode.html>
 * rm参数列表过长: <http://blog.sina.com.cn/s/blog_63a2aa330100v2ax.html>
 * Unix/Linux如何同时统计多文件夹下文件、文件夹的个数: <http://bbs.51cto.com/thread-1083941-1-1.html>
-* Linux shell脚本的字符串截取: <http://www.cnblogs.com/wangbin/archive/2011/10/11/2207179.html>
-* Linux 技巧: Bash 参数和参数扩展: <https://www.ibm.com/developerworks/cn/linux/l-bash-parameters.html>
 * 理解Linux系统的日志: <http://blog.donews.com/zhaiming/archive/2006/12/01/1088458.aspx>
-* linux时间和时区修改（附suse）: <http://chopper.blog.51cto.com/3946170/1095274>
-* linux中时间设置date、hwclock、clock：<http://lomomo.blog.51cto.com/65441/277618>
-* Linux&Windows双系统时间不一致解决方案: <https://blog.csdn.net/sunchengyun/article/details/126995040>
-* 通过命令行查找一个IP的地理位置信息: <http://www.geekfan.net/7863/>
 * Linux系统里如何彻底的清空屏幕？: <http://www.vaikan.com/how-to-clear-the-terminal-screen-for-real-in-case-of-linux/>
 * 如何在Linux上将HTML页面转化成png图片: <http://linux.cn/article-2708-1.html>
 * Ubuntu输入密码登陆后又跳回到登录界面: <https://askubuntu.com/questions/223501/ubuntu-gets-stuck-in-a-login-loop>
-* LNMP安装快速导航（官网教程）: <http://lnmp.org/install.html>
 * ubuntu删除旧内核和多余启动项: <https://askubuntu.com/questions/2793/how-do-i-remove-old-kernel-versions-to-clean-up-the-boot-menu>
 * 各个Linux版本的本地root密码破解方法: <http://os.51cto.com/art/200910/159523.htm>
 * Linux 软件看门狗 watchdog: <http://blog.csdn.net/liigo/article/details/9227205>
@@ -111,25 +97,15 @@ toc: true
 * 将Linux下编译的warning警告信息输出到文件中[整理笔记]: <http://blog.csdn.net/feihongwang/article/details/6975670>
 * linux C中调用shell命令和运行shell脚本: <http://blog.sina.com.cn/s/blog_8043547601013rxf.html>
 * linux 修改分区卷标 ( Partition Label ) : <http://blog.chinaunix.net/uid-20321915-id-1966428.html>
-* shell脚本“syntax error:unexpected end of file”解决方案 : <http://renyongjie668.blog.163.com/blog/static/1600531201172803244846/>
-* String contains in Bash: <http://stackoverflow.com/questions/229551/string-contains-in-bash>
 * Could not get lock /var/lib/apt/lists/lock - open: <http://blog.csdn.net/zyxlinux888/article/details/6358615>
 * Slow Server? This is the Flow Chart You're Looking For: <http://blog.scoutapp.com/articles/2014/07/31/slow_server_flow_chart>
 * 设置Linux系统的空闲等待时间TMOUT: <http://zzkai.blog.51cto.com/804611/1352964>
 * Linux下chkconfig命令详解: <http://www.cnblogs.com/panjun-Donet/archive/2010/08/10/1796873.html>
-* linux下如何关闭防火墙？如何查看防火墙当前的状态: <http://www.cnblogs.com/8899man/p/5899176.html>
-* TCP 连接断连问题剖析: <http://www.ibm.com/developerworks/cn/aix/library/0808_zhengyong_tcp/>
-* ethtool的基本设置: <http://www.cnblogs.com/fbwfbi/p/3612658.html>
-* Shell脚本: 判断用户和用户组是否已经存在/创建用户和用户组: <http://blog.csdn.net/bluishglc/article/details/42060223>
-* nc命令用法举例: <http://www.cnblogs.com/nmap/p/6148306.html>
 * How to Manage ‘Systemd’ Services and Units Using ‘Systemctl’ in Linux: <https://www.tecmint.com/manage-services-using-systemd-and-systemctl-in-linux/>
-* Shell脚本交互之: 自动输入密码: <http://blog.csdn.net/zhangjikuan/article/details/51105166>
-* Shell中重定向<<EOF注意事项: <http://blog.csdn.net/iamlaosong/article/details/40509399>
 * linux 终端backspace不能删除字符: <http://blog.163.com/chen_cong_520/blog/static/841151912010829240926/>
 * Fedora 删除旧内核: <http://www.cnblogs.com/william-lee/archive/2011/07/23/2115084.html>
 * linux关于S权限和T权限的介绍: <http://blog.csdn.net/qq_35116353/article/details/56049592>
 * Linux使用技巧12--Ubuntu代理: <http://blog.csdn.net/lincyang/article/details/51306367>
-* Bash的陷阱: <https://charlee.li/bash-pitfalls.html>
 * Linux Centos 删除除某(多)个文件之外的所有文件: <https://blog.csdn.net/weixin_33994429/article/details/86363583>
 * linux如何删除zip包中某个文件夹及里面的内容: <https://zhidao.baidu.com/question/2074079962247221788.html>
 * GPG入门教程: <https://www.ruanyifeng.com/blog/2013/07/gpg.html>
@@ -145,9 +121,7 @@ toc: true
 * 新立得(Synaptic): <http://www.nongnu.org/synaptic/>
 * gparted: <https://gparted.org/>
 * GLX-Dock: <http://www.glx-dock.org/>
-* Okular: <https://okular.kde.org/>
 * AppImage(Package desktop applications as AppImages that run on common Linux-based operating systems): <http://appimage.org/>
-* shunit2: <https://github.com/zandev/shunit2>
 * iPerf / iPerf3: <https://iperf.fr/>
 * Glances: <https://github.com/nicolargo/glances/>
 * Atop: <http://www.atoptool.nl/index.php>
@@ -156,7 +130,6 @@ toc: true
 * Iotop: <http://guichaz.free.fr/iotop/>
 * lrzsz(串口传输文件): <http://www.cnblogs.com/lidabo/p/4780866.html>
 * httpry(HTTP logging and information retrieval tool ): <https://github.com/jbittel/httpry>
-* iproute2: <https://en.wikipedia.org/wiki/Iproute2>
 * indent: <https://www.gnu.org/software/indent/>
 * cproto: <https://sourceforge.net/projects/cproto/>
 * ttyrec 和 ttyplay(记录、保存和播放终端会话软件): <http://0xcc.net/ttyrec/>
@@ -164,6 +137,23 @@ toc: true
 * Poptop - The PPTP Server for Linux: <http://poptop.sourceforge.net/dox/>
 * wachy(A dynamic tracing profiler for Linux): <https://github.com/rubrikinc/wachy>
 * hasciicam(html refreshed ascii video cam): <https://github.com/dyne/hasciicam>
+
+## Shell编程
+
+* Unix Shells: Bash, Fish, Ksh, Tcsh, Zsh: <http://hyperpolyglot.org/unix-shells>
+* explainshell: <https://explainshell.com/>
+* Nushell: <https://www.nushell.sh/>
+* shunit2: <https://github.com/zandev/shunit2>
+* Shell 编程: Bash空格的那点事: <http://justcoding.iteye.com/blog/1944238>
+* Shell编程: Bash引号的那点事: <http://justcoding.iteye.com/blog/1944239>
+* Linux shell脚本的字符串截取: <http://www.cnblogs.com/wangbin/archive/2011/10/11/2207179.html>
+* Linux 技巧: Bash 参数和参数扩展: <https://www.ibm.com/developerworks/cn/linux/l-bash-parameters.html>
+* shell脚本“syntax error:unexpected end of file”解决方案 : <http://renyongjie668.blog.163.com/blog/static/1600531201172803244846/>
+* String contains in Bash: <http://stackoverflow.com/questions/229551/string-contains-in-bash>
+* Shell脚本: 判断用户和用户组是否已经存在/创建用户和用户组: <http://blog.csdn.net/bluishglc/article/details/42060223>
+* Shell脚本交互之: 自动输入密码: <http://blog.csdn.net/zhangjikuan/article/details/51105166>
+* Shell中重定向<<EOF注意事项: <http://blog.csdn.net/iamlaosong/article/details/40509399>
+* Bash的陷阱: <https://charlee.li/bash-pitfalls.html>
 
 ## Linux常用命令
 
@@ -180,15 +170,8 @@ rdate
 
 grep -R "org.apache.commons.FileUtils" *
 grep -inr --color "ERROR" test_debug.log
-netstat -tulnp | grep mysqld # 查看mysqld的监听情况
-netstat –apn | grep pid   #先查进程号，再找到进程信息
-netstat -lntp          # 查看所有监听端口
-netstat -antp          # 查看所有已经建立的连接
-netstat -anp | grep xxxx   #xxxx为端口号 Linux下查看某个端口下运行的是什么程序
-netstat -s             # 查看网络统计信息进程
-watch "ls -al myfile" 监控文件变化
 
-nproc --all #查看核心数
+watch "ls -al myfile" 监控文件变化
 
 sudo sh *.sh # 打开.sh文件
 ./*** # 打开其它可执行文件,如果没有可执行权限，需要chmod
@@ -207,39 +190,15 @@ lsmod                  # 列出加载的内核模块
 env                    # 查看环境变量资源
 grep MemTotal /proc/meminfo   # 查看内存总量
 grep MemFree /proc/meminfo    # 查看空闲内存量
-uptime                 # 查看系统运行时间、用户数、负载
 cat /proc/loadavg      # 查看系统负载磁盘和分区
 hdparm -i /dev/hda     # 查看磁盘参数(仅适用于IDE设备)
 dmesg | grep IDE       # 查看启动时IDE设备检测状况网络
-ifconfig               # 查看所有网络接口的属性
-route -n               # 查看路由表
 w                      # 查看活动用户
 id <用户名>            # 查看指定用户信息
 last                   # 查看用户登录日志
 cut -d: -f1 /etc/passwd   # 查看系统所有用户
 cut -d: -f1 /etc/group    # 查看系统所有组
 crontab -l             # 查看当前用户的计划任务服务
-rpm -qa                # 查看所有安装的软件包
-rpm -q mysql   # 查看是否安装了mysql客户端
-
-lsof -i :xxxx    #xxxx为端口号
-
-cat /proc/version # 查看内核版本命令
-lsb_release -a ##查看linux版本
-cat /etc/debian_version
-cat /etc/debian_version //Only for Debian
-cat /etc/redhat-release //Only for Redhat
-rpm -q redhat-release //Only for Redhat
-redhat-release-5Server-5.6.0.3
-
-# 注:这种方式下可看到一个所谓的release号，比如上边的例子是5，这个release号和实际的版本之间存在一定的对应关系，如下:
-# redhat-release-3AS-1 -> Redhat Enterprise Linux AS 3
-# redhat-release-3AS-7.4 -> Redhat Enterprise Linux AS 3 Update 4
-# redhat-release-4AS-2 -> Redhat Enterprise Linux AS 4
-# redhat-release-4AS-2.4 -> Redhat Enterprise Linux AS 4 Update 1
-# redhat-release-4AS-3 -> Redhat Enterprise Linux AS 4 Update 2
-# redhat-release-4AS-4.1 -> Redhat Enterprise Linux AS 4 Update 3
-# redhat-release-4AS-5.5 -> Redhat Enterprise Linux AS 4 Update 4
 
 # man update-alternatives
 
@@ -265,8 +224,23 @@ su - oracle -s /bin/bash shell.sh
 # 查看当前操作系统发行版信息
 /etc/issue
 
+/etc/debian_version # Only for Debian
+/etc/redhat-release # Only for Redhat
+
 # 查看内核和操作系统信息
 uname -a
+
+# 查看内核版本命令
+cat /proc/version
+
+# 查看linux版本
+lsb_release -a
+
+# https://github.com/fastfetch-cli/fastfetch
+fastfetch
+
+# 查看核心数
+nproc --all
 ```
 
 ### ls/eza
@@ -465,6 +439,16 @@ ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEC2B8nn210000EOS5
 prebuilts/clang/host/linux-x86/clang-r563880/include/c++/v1/string:1057
 ```
 
+### 时间相关
+
+* linux时间和时区修改（附suse）: <http://chopper.blog.51cto.com/3946170/1095274>
+* linux中时间设置date、hwclock、clock：<http://lomomo.blog.51cto.com/65441/277618>
+* Linux&Windows双系统时间不一致解决方案: <https://blog.csdn.net/sunchengyun/article/details/126995040>
+
+```shell
+uptime # 查看系统运行时间、用户数、负载
+```
+
 ### tmux
 
 tmux 是一个终端复用器：它允许创建、访问和控制多个终端，所有这些都可以在单个屏幕上进行。tmux 可以从屏幕中分离出来，在后台继续运行，稍后可以重新连接。
@@ -613,6 +597,34 @@ mkisofs -r -o myiso.iso ~/iso_src
 ### 网络相关工具
 
 * netfilter: <https://www.netfilter.org/>
+* 基于CentOS的Linux基本网络配置,包括网卡eth0、DNS、Host等: <http://www.cnblogs.com/rooney/archive/2012/03/24/2415144.html>
+* 通过命令行查找一个IP的地理位置信息: <http://www.geekfan.net/7863/>
+* linux下如何关闭防火墙？如何查看防火墙当前的状态: <http://www.cnblogs.com/8899man/p/5899176.html>
+* TCP 连接断连问题剖析: <http://www.ibm.com/developerworks/cn/aix/library/0808_zhengyong_tcp/>
+* ethtool的基本设置: <http://www.cnblogs.com/fbwfbi/p/3612658.html>
+* nc命令用法举例: <http://www.cnblogs.com/nmap/p/6148306.html>
+
+```shell
+# net-tools包含netstat/ifconfig/route等工具，
+# 部分Linux发行版已经废弃了net-tools，推荐使用iproute2工具集中的ip命令替代ifconfig，ss命令替代netstat
+# iproute2: <https://wiki.linuxfoundation.org/networking/iproute2>
+
+netstat -tulnp | grep mysqld # 查看mysqld的监听情况
+netstat –apn | grep pid   #先查进程号，再找到进程信息
+netstat -lntp          # 查看所有监听端口
+netstat -antp          # 查看所有已经建立的连接
+netstat -anp | grep xxxx   #xxxx为端口号 Linux下查看某个端口下运行的是什么程序
+netstat -s             # 查看网络统计信息进程
+
+ifconfig               # 查看所有网络接口的属性
+route -n               # 查看路由表
+
+lsof -i :xxxx    #xxxx为端口号
+
+ip addr         # 查看网络接口的IP地址和状态
+ip -br addr       # 以简洁的格式查看网络接口的IP地址和状态
+ip route         # 查看路由表
+```
 
 ### libavif
 
@@ -975,6 +987,23 @@ hostname --fqdn # 查看FQDN名字
 ubuntukylin-13.10登陆用户使用ls命令，终端显示的所有输出都是黑底白字，没有彩色，`su - root`后使用ls命令，输出为彩色。分别在登陆用户和root用户下执行`echo $PS1` 输出有差异。后发现登陆用户目录下没有`.bashrc`文件。复制默认`.bashrc`文件后解决: `cp /etc/skel/.bashrc  ~/`。
 
 ## YUM相关问题解决
+
+```shell
+rpm -qa                # 查看所有安装的软件包
+rpm -q mysql   # 查看是否安装了mysql客户端
+
+rpm -q redhat-release //Only for Redhat
+redhat-release-5Server-5.6.0.3
+
+# 注:这种方式下可看到一个所谓的release号，比如上边的例子是5，这个release号和实际的版本之间存在一定的对应关系，如下:
+# redhat-release-3AS-1 -> Redhat Enterprise Linux AS 3
+# redhat-release-3AS-7.4 -> Redhat Enterprise Linux AS 3 Update 4
+# redhat-release-4AS-2 -> Redhat Enterprise Linux AS 4
+# redhat-release-4AS-2.4 -> Redhat Enterprise Linux AS 4 Update 1
+# redhat-release-4AS-3 -> Redhat Enterprise Linux AS 4 Update 2
+# redhat-release-4AS-4.1 -> Redhat Enterprise Linux AS 4 Update 3
+# redhat-release-4AS-5.5 -> Redhat Enterprise Linux AS 4 Update 4
+```
 
 * yum history [undo|redo|info|...]: yum的子命令，显示你yum的历史记录，并且可以撤销指定的记录(undo)，重做指定记录(redo)等等，更多的功能看man yum
 * yum-plugin-remove-with-leaves: 卸载软件包时把因此产生的叶子一起卸载掉，用的时候别加-y选项，看清楚了再确认，有些非常大的依赖树会把主要的系统组件卸载掉，具体用法安装完该插件以后看帮助:yum --help，这个yum插件应该就是最贴近你需求的，不过记住，慎用，如果能从yum history里查到记录的话，还是用yum history undo来操作比较安全。
