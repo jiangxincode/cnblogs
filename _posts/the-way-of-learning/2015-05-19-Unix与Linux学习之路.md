@@ -84,7 +84,6 @@ toc: true
 * ubuntu删除旧内核和多余启动项: <https://askubuntu.com/questions/2793/how-do-i-remove-old-kernel-versions-to-clean-up-the-boot-menu>
 * 各个Linux版本的本地root密码破解方法: <http://os.51cto.com/art/200910/159523.htm>
 * Linux 软件看门狗 watchdog: <http://blog.csdn.net/liigo/article/details/9227205>
-* C语言调试手段:锁定错误的实现方法: <http://blog.csdn.net/huangblog/article/details/8281165>
 * Linux终端字符颜色设置: <http://blog.csdn.net/fuyajun01/article/details/7931934>
 * hexdump命令使用: <http://blog.csdn.net/zybasjj/article/details/7874720>
 * ubuntu下终端路径只显示当前目录: <http://www.cnblogs.com/king-77024128/articles/2270487.html>
@@ -117,9 +116,6 @@ toc: true
 * 新立得(Synaptic): <http://www.nongnu.org/synaptic/>
 * GLX-Dock: <http://www.glx-dock.org/>
 * AppImage(Package desktop applications as AppImages that run on common Linux-based operating systems): <http://appimage.org/>
-* indent: <https://www.gnu.org/software/indent/>
-* cproto: <https://sourceforge.net/projects/cproto/>
-* Poptop - The PPTP Server for Linux: <http://poptop.sourceforge.net/dox/>
 * hasciicam(html refreshed ascii video cam): <https://github.com/dyne/hasciicam>
 
 ## Shell编程
