@@ -60,6 +60,7 @@ toc: true
 
 * 一篇文章搞懂Debian_Ubuntu软件包更新和删除: <https://www.cnblogs.com/jiangxinnju/p/14017675.html>
 * Difference between systemctl and service commands: <https://askubuntu.com/questions/903354/difference-between-systemctl-and-service-commands/903405>
+* How to Manage ‘Systemd’ Services and Units Using ‘Systemctl’ in Linux: <https://www.tecmint.com/manage-services-using-systemd-and-systemctl-in-linux/>
 * 扩容swap文件: <https://www.cnblogs.com/jiangxinnju/p/17938602>
 * linux中无 conio.h的解决办法: <https://www.cnblogs.com/jiangxinnju/p/5516906.html>
 
@@ -97,7 +98,6 @@ toc: true
 * Could not get lock /var/lib/apt/lists/lock - open: <http://blog.csdn.net/zyxlinux888/article/details/6358615>
 * 设置Linux系统的空闲等待时间TMOUT: <http://zzkai.blog.51cto.com/804611/1352964>
 * Linux下chkconfig命令详解: <http://www.cnblogs.com/panjun-Donet/archive/2010/08/10/1796873.html>
-* How to Manage ‘Systemd’ Services and Units Using ‘Systemctl’ in Linux: <https://www.tecmint.com/manage-services-using-systemd-and-systemctl-in-linux/>
 * linux 终端backspace不能删除字符: <http://blog.163.com/chen_cong_520/blog/static/841151912010829240926/>
 * Fedora 删除旧内核: <http://www.cnblogs.com/william-lee/archive/2011/07/23/2115084.html>
 * linux关于S权限和T权限的介绍: <http://blog.csdn.net/qq_35116353/article/details/56049592>
